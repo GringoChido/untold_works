@@ -111,10 +111,10 @@ const ContactPage: React.FC = () => {
             {/* Aesthetic Logic Audit */}
             <div className="hidden lg:block pt-16 opacity-10">
               <div className="font-mono text-[10px] leading-relaxed uppercase tracking-[0.2em] space-y-2 text-white/50">
-                <div className="text-untold-orange">> ESTABLISHING_HANDSHAKE... [OK]</div>
-                <div>> ENCRYPTING_SIGNAL_v2.6... [ACTIVE]</div>
-                <div>> ROUTING_TO_MEXICO_NODE_01... [DONE]</div>
-                <div className="text-untold-orange">> STAND_BY_FOR_RESPONSE_PACKET</div>
+                <div className="text-untold-orange">&gt; ESTABLISHING_HANDSHAKE... [OK]</div>
+                <div>&gt; ENCRYPTING_SIGNAL_v2.6... [ACTIVE]</div>
+                <div>&gt; ROUTING_TO_MEXICO_NODE_01... [DONE]</div>
+                <div className="text-untold-orange">&gt; STAND_BY_FOR_RESPONSE_PACKET</div>
               </div>
             </div>
           </div>
