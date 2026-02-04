@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { useLanguage } from '../App';
 import { projects } from '../data/projects';
+import CuratedEngine from '../components/CuratedEngine';
 
 const Portfolio: React.FC = () => {
   const { t } = useLanguage();
@@ -25,8 +26,8 @@ const Portfolio: React.FC = () => {
           </h1>
           <p className="text-2xl lg:text-4xl font-medium text-untold-beige/80 max-w-5xl leading-tight">
             {t({ 
-              en: 'Engineering the technical spine of modern growth. I leverage Claude Code, n8n, and Python to replace manual bottlenecks with autonomous workflows—built for enterprise scale and operational clarity.', 
-              es: 'Ingeniería de la columna vertebral técnica del crecimiento moderno. Aprovecho Claude Code, n8n y Python para reemplazar los cuellos de botella manuales con flujos de trabajo autónomos, construidos para la escala empresarial y la claridad operativa.' 
+              en: 'Engineering the technical spine of modern growth. Built on a foundation of 20 years of production-grade storytelling and enterprise execution.', 
+              es: 'Ingeniería de la columna vertebral técnica del crecimiento moderno. Construido sobre una base de 20 años de narrativa de grado de producción y ejecución empresarial.' 
             })}
           </p>
         </div>
@@ -45,7 +46,6 @@ const Portfolio: React.FC = () => {
                 <div className="flex justify-between items-start mb-14">
                   <div className="flex flex-col">
                     <span className="font-mono text-[11px] uppercase tracking-[0.5em] text-white/30 mb-4">ARTIFACT_00{idx + 1}</span>
-                    {/* ROI Metric prominently placed at the top */}
                     {project.metrics && project.metrics[0] && (
                       <div className="flex flex-col mt-4">
                         <span className="text-6xl lg:text-8xl font-sans font-black tracking-tighter text-untold-orange leading-none mb-2">
@@ -70,7 +70,6 @@ const Portfolio: React.FC = () => {
                   {t(project.summary)}
                 </p>
 
-                {/* Second metric if available */}
                 {project.metrics && project.metrics.length > 1 && (
                   <div className="pt-10 border-t border-white/5">
                     <span className="block font-mono text-[10px] uppercase tracking-[0.3em] text-white/20 mb-4">{t(project.metrics[1].label)}</span>
@@ -90,6 +89,9 @@ const Portfolio: React.FC = () => {
           ))}
         </div>
       </section>
+
+      {/* The Curated Engine - Deep Dive */}
+      <CuratedEngine />
 
       {/* Footer CTA */}
       <section className="px-10 py-48 text-center border-t border-white/5">

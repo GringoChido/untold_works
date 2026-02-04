@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { useLanguage } from '../App';
 import * as i18n from '../i18n';
@@ -27,7 +26,6 @@ const ContactPage: React.FC = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     setStatus('submitting');
-    // Simulate API transmission
     setTimeout(() => {
       setStatus('success');
       setFormData({ name: '', email: '', message: '' });
@@ -37,7 +35,7 @@ const ContactPage: React.FC = () => {
 
   return (
     <div className="bg-untold-black min-h-screen font-serif text-white selection:bg-untold-orange selection:text-white">
-      {/* Hero Header - Active Connection Hub */}
+      {/* Hero Header */}
       <section className="px-10 pt-32 pb-24 lg:pt-56 lg:pb-32 border-b border-white/10">
         <div className="max-w-[1440px] mx-auto">
           <div className="flex items-center space-x-4 mb-14">
@@ -58,8 +56,6 @@ const ContactPage: React.FC = () => {
       {/* Main Hub Content */}
       <section className="px-10 py-24 lg:py-40">
         <div className="max-w-[1440px] mx-auto grid lg:grid-cols-12 gap-24">
-          
-          {/* Left Column: Direct Links & Anchors */}
           <div className="lg:col-span-5 space-y-24">
             <div className="space-y-16">
               <div className="group">
@@ -93,41 +89,21 @@ const ContactPage: React.FC = () => {
 
               <div className="pt-12 border-t border-white/5">
                 <a 
-                  href="https://linkedin.com" 
+                  href="https://linkedin.com/in/semolik/" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="inline-flex items-center space-x-8 group"
+                  className="inline-flex items-center space-x-10 group bg-white text-untold-black px-12 py-6 shadow-2xl hover:bg-untold-orange hover:text-white transition-all"
                 >
-                  <div className="w-16 h-16 border border-white/10 flex items-center justify-center group-hover:border-untold-orange group-hover:bg-untold-orange/5 transition-all">
-                    <span className="text-3xl text-untold-orange group-hover:scale-125 transition-transform duration-500">→</span>
-                  </div>
-                  <span className="font-mono text-[11px] uppercase tracking-[0.5em] text-white/40 font-bold group-hover:text-white transition-colors">
-                    {t(content.socialLabel)}
+                  <span className="font-sans font-black text-xl uppercase tracking-tighter">
+                    LinkedIn Node →
                   </span>
                 </a>
               </div>
             </div>
-
-            {/* Aesthetic Logic Audit */}
-            <div className="hidden lg:block pt-16 opacity-10">
-              <div className="font-mono text-[10px] leading-relaxed uppercase tracking-[0.2em] space-y-2 text-white/50">
-                <div className="text-untold-orange">&gt; ESTABLISHING_HANDSHAKE... [OK]</div>
-                <div>&gt; ENCRYPTING_SIGNAL_v2.6... [ACTIVE]</div>
-                <div>&gt; ROUTING_TO_MEXICO_NODE_01... [DONE]</div>
-                <div className="text-untold-orange">&gt; STAND_BY_FOR_RESPONSE_PACKET</div>
-              </div>
-            </div>
           </div>
 
-          {/* Right Column: Submission Protocol */}
           <div className="lg:col-span-7">
             <div className="bg-white/[0.02] border border-white/10 p-12 lg:p-20 relative overflow-hidden group shadow-2xl">
-              {/* Corner Accents */}
-              <div className="absolute top-0 right-0 p-8 pointer-events-none">
-                 <div className="w-16 h-px bg-white/20"></div>
-                 <div className="w-px h-16 bg-white/20 absolute top-8 right-8"></div>
-              </div>
-
               {status === 'success' ? (
                 <div className="py-24 text-center space-y-12 animate-in fade-in zoom-in duration-700">
                   <div className="w-24 h-24 rounded-full border-2 border-untold-orange flex items-center justify-center mx-auto bg-untold-orange/5">
@@ -180,7 +156,7 @@ const ContactPage: React.FC = () => {
                     disabled={status === 'submitting'}
                     className="w-full bg-untold-orange text-white py-12 font-sans font-black uppercase tracking-tighter text-2xl hover:bg-white hover:text-untold-black active:scale-[0.98] transition-all disabled:opacity-50 shadow-[0_40px_100px_rgba(255,77,23,0.1)] mt-8"
                   >
-                    {status === 'submitting' ? 'UPLOADING_SIGNAL...' : t(content.cta)}
+                    {status === 'submitting' ? 'UPLOADING_SIGNAL...' : t(i18n.navigation.cta)}
                   </button>
                 </form>
               )}

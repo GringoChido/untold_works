@@ -3,9 +3,8 @@ import { ContentStrings, WorkflowProof } from './types';
 
 export const navigation = {
   portfolio: { en: 'Portfolio', es: 'Portafolio' },
-  workshops: { en: 'Workshops', es: 'Talleres' },
+  workshops: { en: 'Workshop', es: 'Taller' },
   about: { en: 'About', es: 'Acerca de' },
-  blog: { en: 'Blog', es: 'Blog' },
   contact: { en: 'Contact', es: 'Contacto' },
   cta: { en: 'Start a conversation', es: 'Iniciar conversación' }
 };
@@ -16,116 +15,132 @@ export const footer = {
     es: 'untold.works // ESTE_FLUJO_DE_TRABAJO_ES_MI_MARKETING'
   },
   narrative: {
-    en: "I don't sell hype. I build the agentic systems that speak for themselves. Bilingual operating models engineered for high-integrity growth across the US and Latin America.",
-    es: "No vendo hype. Construyo los sistemas agénticos que hablan por sí mismos. Modelos operativos bilingües diseñados para un crecimiento de alta integridad en EE. UU. y Latinoamérica."
+    en: "I build the agentic systems that speak for themselves. Cross-border operating models engineered for high-integrity growth across the US and Latin America.",
+    es: "Construyo los sistemas agénticos que hablan por sí mismos. Modelos operativos transfronterizos diseñados para un crecimiento de alta integridad en EE. UU. y Latinoamérica."
   },
   version: { en: 'CAMPAIGN_ID // 2026.WORKS', es: 'CAMPAIGN_ID // 2026.WORKS' },
   location: { en: 'LOC // SMA_MX_USA', es: 'LOC // SMA_MX_USA' }
 };
 
-export const contactPage = {
-  eyebrow: { en: 'COMMUNICATION_HUB // BORDERLESS_SYNC_v2.6', es: 'CENTRO_DE_COMUNICACIÓN // SINCRONÍA_SIN_FRONTERAS_v2.6' },
-  headline: { en: 'Start a Conversation.', es: 'Iniciar una Conversación.' },
-  subheadline: { 
-    en: 'Based in Mexico for six years, I work cross-border across the US and LATAM, bridging creative craft with engineering workflows for distributed teams. Whether you are navigating the "AI noise" or ready to architect a production-ready system, I will guide you to the signal.', 
-    es: 'Basado en México durante seis años, trabajo de forma transfronteriza en EE. UU. y LATAM, conectando el oficio creativo con los flujos de ingeniería para equipos distribuidos. Ya sea que estés navegando por el "ruido de la IA" o listo para diseñar un sistema listo para producción, te guiaré hacia la señal.' 
-  },
-  emailLabel: { en: 'DIGITAL_UPLINK', es: 'ENLACE_DIGITAL' },
-  locationLabel: { en: 'PHYSICAL_NODE', es: 'NODO_FÍSICO' },
-  location: { en: 'San Miguel de Allende, Mexico | US & LATAM Cross-Border', es: 'San Miguel de Allende, México | Transfronterizo EE. UU. y LATAM' },
-  socialLabel: { en: 'SOCIAL_01 // CONNECT_ON_LINKEDIN', es: 'SOCIAL_01 // CONECTAR_EN_LINKEDIN' },
-  cta: { en: 'ESTABLISH CONNECTION', es: 'ESTABLECER CONEXIÓN' }
-};
-
-export const workshopSyllabus = {
-  eyebrow: { en: 'THE_LAB // AI_FOR_BEGINNERS_v1.0', es: 'EL_LAB // IA_PARA_PRINCIPIANTES_v1.0' },
-  headline: { 
-    en: 'Two Hours to Confidence.', 
-    es: 'Dos Horas de Confianza.' 
-  },
-  transformation: { 
-    en: 'A zero-stress, jargon-free intensive for small business owners and locals. Move from AI-curious to AI-capable in a single morning. You won’t just learn—I’ll ensure you finish one real asset you can use today.', 
-    es: 'Un intensivo sin estrés y sin jerga técnica para dueños de pequeños negocios y residentes locales. Pase de tener curiosidad por la IA a ser capaz de usarla en una sola mañana. No solo aprenderá, me aseguraré de que termine un activo real que pueda usar hoy mismo.' 
-  },
-  location: { en: 'LOC // SAN_MIGUEL_DE_ALLENDE_MX', es: 'UBIC // SAN_MIGUEL_DE_ALLENDE_MX' },
-  time: { en: 'TIME // 10:00_AM', es: 'HORA // 10:00_AM' },
-  lead: { en: 'LEAD // JOSHUA_SEMOLIK', es: 'LÍDER // JOSHUA_SEMOLIK' },
-  phases: [
-    {
-      id: '01',
-      title: { en: 'The AI Mindset', es: 'La Mentalidad de IA' },
-      focus: { 
-        en: 'Plain-language basics and safety rules. Understanding what AI is good at (drafts/ideas) and what I’ve found it’s bad at (truth/math).', 
-        es: 'Conceptos básicos en lenguaje sencillo y reglas de seguridad. Entender en qué es buena la IA (borradores/ideas) y en qué he descubierto que es mala (verdad/matemáticas).' 
-      }
-    },
-    {
-      id: '02',
-      title: { en: 'The Universal Prompt Formula', es: 'La Fórmula Universal del Prompt' },
-      focus: { 
-        en: 'Master the only skill you need: Goal + Context + Constraints + Format. I help you build prompts that actually work.', 
-        es: 'Domina la única habilidad que necesitas: Objetivo + Contexto + Restricciones + Formato. Te ayudo a construir prompts que realmente funcionen.' 
-      }
-    },
-    {
-      id: '03',
-      title: { en: 'Life & Business Wins', es: 'Victorias de Vida y Negocio' },
-      focus: { 
-        en: 'I lead live demos of everyday utility: from weekly meal plans and Spanish practice to Instagram captions and customer replies.', 
-        es: 'Dirijo demostraciones en vivo de utilidad diaria: desde planes de comidas semanales y práctica de español hasta subtítulos de Instagram y respuestas a clientes.' 
-      }
-    },
-    {
-      id: '04',
-      title: { en: 'Designing Workflows', es: 'Diseñando Flujos de Trabajo' },
-      focus: { 
-        en: 'I map your daily tasks from trigger to outcome. Learn where AI fits and why the human still makes the final call.', 
-        es: 'Mapeo tus tareas diarias desde el activador hasta el resultado. Aprende dónde encaja la IA y por qué el humano sigue teniendo la última palabra.' 
-      }
-    }
-  ],
-  kit: {
-    title: { en: 'THE_KIT // TAKE_HOME_ASSETS', es: 'EL_KIT // ACTIVOS_PARA_LLEVAR' },
-    items: [
-      { en: '1-Page Cheat Sheet', es: 'Hoja de Referencia Rápida' },
-      { en: 'The Prompt Formula', es: 'La Fórmula del Prompt' },
-      { en: '10 Starter Prompts', es: '10 Prompts Iniciales' },
-      { en: 'Safety Rules', es: 'Reglas de Seguridad' },
-      { en: 'Workflow Template', es: 'Plantilla de Flujo de Trabajo' }
-    ]
-  },
-  cardTitle: { en: 'REAL_RESULTS', es: 'RESULTADOS_REALES' },
-  rule: {
-    en: 'Limited seats for personal guidance. This is a walking-around class where I sharpen every prompt.',
-    es: 'Asientos limitados para guía personalizada. Esta es una clase dinámica donde perfecciono cada prompt.'
-  },
-  cta: { en: 'RESERVE YOUR SPOT', es: 'RESERVAR LUGAR' }
-};
-
 export const hero = {
-  eyebrow: { 
-    en: 'PRINCIPAL_ARCHITECT | 20_YEARS_GTM | MIT_SLOAN_2025', 
-    es: 'ARQUITECTO_PRINCIPAL | 20_AÑOS_GTM | MIT_SLOAN_2025' 
+  eyebrow: {
+    en: 'PRINCIPAL ARCHITECT & CREATIVE TECHNOLOGIST',
+    es: 'ARQUITECTO PRINCIPAL Y TECNÓLOGO CREATIVO'
   },
-  headline: { 
-    en: 'Creative Technologist focused on AI powered storytelling.', 
-    es: 'Tecnólogo Creativo enfocado en storytelling potenciado por IA.' 
+  headline: {
+    en: 'Joshua Semolik',
+    es: 'Joshua Semolik'
   },
-  paragraph: { 
-    en: 'I set the vision and build the workflows that move ideas from concept to shipped assets fast, while protecting creativity and brand consistency. Grounded systems. No hype. Clear ownership.', 
-    es: 'Establezco la visión y construyo los flujos de trabajo que mueven las ideas del concepto a los activos entregados rápidamente, protegiendo la creatividad y la consistencia de la marca. Sistemas fundamentados. Sin hype. Propiedad clara.' 
+  subheadline: {
+    en: 'Principal Architect & Creative Technologist',
+    es: 'Arquitecto Principal y Tecnólogo Creativo'
   },
-  regional: {
-    en: 'Based in Mexico for six years, I work cross-border across the US and LATAM, bridging creative craft with engineering workflows for distributed teams.',
-    es: 'Basado en México durante seis años, trabajo de forma transfronteriza en EE. UU. y LATAM, conectando el oficio creativo con los flujos de ingeniería para equipos distribuidos.'
-  },
-  support: { 
-    en: 'Grounded systems. No hype. Clear ownership.', 
-    es: 'Sistemas fundamentados. Sin hype. Propiedad clara.' 
+  paragraph: {
+    en: 'I bridge the gap between design vision and engineering execution. I build the systems that integrate AI into creative workflows so teams can stop fighting with tools and start focusing on their craft.',
+    es: 'Cierro la brecha entre la visión de diseño y la ejecución de ingeniería. Construyo los sistemas que integran la IA en flujos de trabajo creativos para que los equipos dejen de luchar con las herramientas y empiecen a enfocarse en su oficio.'
   },
   cta: {
     en: 'START_A_CONVERSATION',
     es: 'INICIAR_CONVERSACIÓN'
+  },
+  support: {
+    en: 'Cross-Border Orchestrator: Bridging US creative standards with global execution.',
+    es: 'Orquestador Transfronterizo: Conectando estándares creativos de EE. UU. con ejecución global.'
+  }
+};
+
+export const aboutPage = {
+  hero: {
+    headline: { en: 'The 20-Year Story', es: 'La Historia de 20 Años' },
+    hook: {
+      en: 'Video Editor → Director → Global Creative Director → AI Architect (MIT Alumnus). 20 years of creative craft, now architected for the agentic era.',
+      es: 'Editor de Video → Director → Director Creativo Global → Arquitecto de IA (Alumno MIT). 20 años de oficio creativo, ahora arquitectado para la era agéntica.'
+    },
+    regional: {
+      en: 'Based in Mexico for six years, I work cross-border across the US and LATAM, bridging US creative standards with global execution for distributed teams.',
+      es: 'Basado en México durante seis años, trabajo de forma transfronteriza en EE. UU. y LATAM, conectando estándares creativos de EE. UU. con ejecución global para equipos distribuidos.'
+    }
+  },
+  narrative: {
+    veteran: {
+      en: "I've spent 20 years mastering the craft of storytelling. My path moved from Video Editor to Director, then Global Creative Director. I've led global product launches for enterprises, built influencer programs, and optimized sales enablement within highly regulated compliant markets. I've seen every production hurdle—now I build the systems to solve them.",
+      es: "He pasado 20 años dominando el oficio de la narrativa. Mi camino pasó de Editor de Video a Director, luego Director Creativo Global. He liderado lanzamientos globales de productos para empresas, construido programas de influencers y optimizado la habilitación de ventas en mercados altamente regulados. He visto cada obstáculo de producción—ahora construyo los sistemas para resolverlos."
+    },
+    theBridge: {
+      en: "My current AI stack (n8n, Python, Claude) and MIT Sloan certification are the culmination of this career. I'm automating what I've already mastered at scale—replacing friction with production-ready systems that allow teams to move from manual execution to high-level orchestration.",
+      es: "Mi stack actual de IA (n8n, Python, Claude) y la certificación de MIT Sloan son la culminación de esta carrera. Estoy automatizando lo que ya he dominado a escala—reemplazando la fricción con sistemas listos para producción que permiten a los equipos pasar de la ejecución manual a la orquestación de alto nivel."
+    },
+    manifesto: {
+      en: "My goal isn't just automation; it's clarity. I protect your brand by building the technical spine of modern growth.",
+      es: "Mi objetivo no es solo la automatización; es la claridad. Protejo tu marca construyendo la columna vertebral técnica del crecimiento moderno."
+    }
+  },
+  pillars: [
+    { id: '01', title: { en: 'WORKFLOW_TRANSFORMATION', es: 'TRANSFORMACIÓN_DE_FLUJO' }, content: { en: 'Redesigning the path from intake to delivery to eliminate friction and maximize throughput.', es: 'Rediseñando el camino desde la entrada hasta la entrega para eliminar la fricción y maximizar el rendimiento.' } },
+    { id: '02', title: { en: 'AGENTIC_INTEGRATION', es: 'INTEGRACIÓN_AGÉNTICA' }, content: { en: 'Embedding AI (Claude Code, n8n) into drafting and routing to protect creative integrity.', es: 'Integrando IA (Claude Code, n8n) en la redacción y enrutamiento para proteger la integridad creativa.' } },
+    { id: '03', title: { en: 'CROSS_BORDER_SYSTEMS', es: 'SISTEMAS_TRANSFRONTERIZOS' }, content: { en: 'Connecting touchpoints across US and LATAM markets with cross-border, production-ready logic.', es: 'Conectando puntos de contacto en los mercados de EE. UU. y LATAM con lógica transfronteriza lista para producción.' } },
+    { id: '04', title: { en: 'GOVERNANCE_&_LEADERSHIP', es: 'GOBERNANZA_Y_LIDERAZGO' }, content: { en: 'Clarifying ownership, aligning stakeholders, and ensuring long-term system reliability.', es: 'Clarificando la propiedad, alineando a las partes interesadas y asegurando la confiabilidad del sistema a largo plazo.' } }
+  ],
+  closing: {
+    headline: { en: 'THE WORKFLOW IS MY MARKETING.', es: 'EL FLUJO DE TRABAJO ES MI MARKETING.' },
+    subtext: { en: 'Open to Full-time Leadership Roles and Strategic Partnerships. Follow my latest AI insights on LinkedIn.', es: 'Abierto a Roles de Liderazgo a tiempo completo y Alianzas Estratégicas. Sigue mis últimos insights de IA en LinkedIn.' }
+  }
+};
+
+export const curatedEngine = {
+  title: { en: 'THE_CURATED_ENGINE // DEEP_DIVE', es: 'EL_MOTOR_CURADO // INMERSIÓN' },
+  headline: {
+    en: 'Finding Balance in the Ever-Changing Landscape: I’ve spent 20 years learning, breaking, and mastering these tools to find the perfect harmony between creative vision and technical execution.',
+    es: 'Encontrando el equilibrio en un panorama en constante cambio: He pasado 20 años aprendiendo, rompiendo y dominando estas herramientas para encontrar la armonía perfecta entre la visión creativa y la ejecución técnica.'
+  },
+  balance: {
+    title: { en: 'ORCHESTRATION_BALANCE', es: 'EQUILIBRIO_DE_ORQUESTACIÓN' },
+    creative: { en: 'CREATIVE_VISION', es: 'VISIÓN_CREATIVA' },
+    technical: { en: 'TECHNICAL_EXECUTION', es: 'EJECUCIÓN_TÉCNICA' },
+    integration: { en: 'AI_INTEGRATION', es: 'INTEGRACIÓN_DE_IA' }
+  },
+  categories: {
+    engine: {
+      label: { en: 'THE ENGINE (Technical Foundation)', es: 'EL MOTOR (Base Técnica)' },
+      tagline: { en: 'Building the systems that think.', es: 'Construyendo los sistemas que piensan.' },
+      insight: { 
+        en: 'I use Claude for the logic and Python for the heavy lifting. This is where the agentic systems actually take shape, stress-tested over 20 years of production experience.',
+        es: 'Uso Claude para la lógica y Python para el trabajo pesado. Aquí es donde los sistemas agénticos realmente toman forma, probados bajo estrés durante 20 años de experiencia en producción.'
+      }
+    },
+    ops: {
+      label: { en: 'THE OPERATIONS (GTM Orchestration)', es: 'LAS OPERACIONES (Orquestación GTM)' },
+      tagline: { en: 'Automating the business of growth.', es: 'Automatizando el negocio del crecimiento.' },
+      insight: {
+        en: 'Automation is the connective tissue. I bridge enterprise CRM data with autonomous routing pipelines developed through years of GTM strategy.',
+        es: 'La automatización es el tejido conectivo. Conecto datos de CRM empresarial con pipelines de enrutamiento autónomos desarrollados a través de años de estrategia GTM.'
+      }
+    },
+    workspace: {
+      label: { en: 'THE WORKSPACE (Creative Output)', es: 'EL ESPACIO DE TRABAJO (Producción Creativa)' },
+      tagline: { en: 'High-fidelity design and strategy.', es: 'Diseño y estrategia de alta fidelidad.' },
+      insight: {
+        en: 'Adobe Creative Cloud is my native language. Design is strategy. I use these tools to visualize complex architectures with the eye of a veteran Creative Director.',
+        es: 'Adobe Creative Cloud es mi lengua materna. El diseño es estrategia. Uso estas herramientas para visualizar arquitecturas complejas con el ojo de un Director Creativo veterano.'
+      }
+    }
+  },
+  workflows: {
+    Claude_Code: { en: 'Architectural Logic & Build Safety', es: 'Lógica Arquitectónica y Seguridad de Construcción' },
+    Python: { en: 'Data Processing & Logic Heavy Lifting', es: 'Procesamiento de Datos y Trabajo Pesado de Lógica' },
+    n8n: { en: 'Agentic Workflow Orchestration', es: 'Orquestación de Flujo de Trabajo Agéntico' },
+    GitHub: { en: 'Version Control & Build Integrity', es: 'Control de Versiones e Integridad de Construcción' },
+    VS_Code: { en: 'IDE for Production Engineering', es: 'IDE para Ingeniería de Producción' },
+    ChatGPT: { en: 'Rapid Prototyping & Drafting', es: 'Prototipado Rápido y Redacción' },
+    Salesforce: { en: 'Enterprise CRM & Revenue Logic', es: 'CRM Empresarial y Lógica de Ingresos' },
+    HubSpot: { en: 'GTM Operations & Lead Management', es: 'Operaciones GTM y Gestión de Leads' },
+    Google_Drive: { en: 'Distributed Asset Synchronization', es: 'Sincronización de Activos Distribuidos' },
+    Gemini: { en: 'Multi-modal RAG & Search Grounding', es: 'RAG Multimodal y Grounding de Búsqueda' },
+    'Adobe Creative Cloud': { en: 'High-Fidelity Brand Production (Native Language)', es: 'Producción de Marca de Alta Fidelidad (Lengua Materna)' },
+    Figma: { en: 'Interface Systems & Prototyping', es: 'Sistemas de Interfaz y Prototipado' },
+    FigJam: { en: 'Flowcharting & System Architecture', es: 'Diagramas de Flujo y Arquitectura de Sistemas' },
+    AI_Studio: { en: 'Prompt Engineering & Model Tuning', es: 'Ingeniería de Prompts y Ajuste de Modelos' },
+    NotebookLM: { en: 'Strategic R&D & Knowledge Synthesis', es: 'I+D Estratégica y Síntesis de Conocimiento' }
   }
 };
 
@@ -148,14 +163,40 @@ export const model = {
   }
 };
 
+export const servicePillars = {
+  title: { en: 'SERVICE_PILLARS // WHAT_I_BUILD', es: 'PILARES_DE_SERVICIO // LO_QUE_CONSTRUYO' },
+  content: {
+    title: { en: 'CONTENT_SYSTEMS', es: 'SISTEMAS_DE_CONTENIDO' },
+    subtitle: { en: 'The Creative Veteran', es: 'El Veterano Creativo' },
+    description: { en: 'Copywriting, Video/Photo Production, Social Media Campaigns, Ads, and Sales Enablement—backed by 20 years of craft.', es: 'Redacción, Producción de Video/Foto, Campañas de Redes Sociales, Anuncios y Habilitación de Ventas—respaldados por 20 años de oficio.' },
+    tags: ['COPYWRITING', 'VIDEO', 'SOCIAL', 'ADS', 'SALES ENABLEMENT']
+  },
+  automation: {
+    title: { en: 'INTELLIGENT_AUTOMATION', es: 'AUTOMATIZACIÓN_INTELIGENTE' },
+    subtitle: { en: 'The Engine', es: 'El Motor' },
+    description: { en: 'Web and App deployment via n8n orchestration and custom logic via Python. I build the systems that think.', es: 'Despliegue web y de apps mediante orquestación n8n y lógica personalizada en Python. Construyo los sistemas que piensan.' },
+    tags: ['n8n', 'PYTHON', 'CLAUDE', 'AGENTIC AI']
+  },
+  infrastructure: {
+    title: { en: 'INFRASTRUCTURE_&_DELIVERY', es: 'INFRAESTRUCTURA_Y_ENTREGA' },
+    subtitle: { en: 'The Output', es: 'La Salida' },
+    description: { en: 'High-integrity delivery using GitHub for version control and Netlify for cloud deployment. Production-ready, every time.', es: 'Entrega de alta integridad usando GitHub para control de versiones y Netlify para despliegue en la nube. Listo para producción, siempre.' },
+    tags: ['GITHUB', 'NETLIFY', 'VITE', 'REACT']
+  }
+};
+
 export const stack = {
   title: { en: 'THE_STACK // PRODUCTION_READY_TOOLS', es: 'EL_STACK // HERRAMIENTAS_LISTAS_PARA_PRODUCCIÓN' },
-  coreLabel: { en: 'CORE_SYSTEMS // THE_ENGINE', es: 'SISTEMAS_NÚCLEO // EL_MOTOR' },
-  core: ['CLAUDE_CODE', 'PYTHON', 'N8N', 'GITHUB', 'VS_CODE', 'CHATGPT'],
-  gtmLabel: { en: 'GTM_ORCHESTRATION // THE_OPERATIONS', es: 'ORQUESTACIÓN_GTM // LAS_OPERACIONES' },
-  gtm: ['SALESFORCE', 'HUBSPOT', 'GOOGLE_DRIVE', 'GEMINI'],
-  designLabel: { en: 'STRATEGIC_DESIGN // THE_WORKSPACE', es: 'DISEÑO_ESTRATÉGICO // EL_ESPACIO_DE_TRABAJO' },
-  design: ['FIGMA', 'FIGJAM', 'AI_STUDIO', 'NOTEBOOK_LM']
+  quote: {
+    en: "I don't just use these tools; I orchestrate them into custom agentic systems that bridge the gap between design vision and enterprise execution.",
+    es: "No solo uso estas herramientas; las orquesto en sistemas agénticos personalizados que cierran la brecha entre la visión de diseño y la ejecución empresarial."
+  },
+  engineLabel: { en: 'THE ENGINE (Core Systems & Automation)', es: 'EL MOTOR (Sistemas Núcleo y Automatización)' },
+  engine: ['Claude_Code', 'Python', 'n8n', 'GitHub', 'VS_Code', 'ChatGPT'],
+  opsLabel: { en: 'THE OPERATIONS (GTM & Execution)', es: 'LAS OPERACIONES (GTM y Ejecución)' },
+  ops: ['Salesforce', 'HubSpot', 'Google_Drive', 'Gemini'],
+  workspaceLabel: { en: 'THE WORKSPACE (Strategic Design & Creative)', es: 'EL ESPACIO DE TRABAJO (Diseño Estratégico y Creativo)' },
+  workspace: ['Adobe Creative Cloud', 'Figma', 'FigJam', 'AI_Studio', 'NotebookLM']
 };
 
 export const artifacts = {
@@ -186,61 +227,81 @@ export const proofs: WorkflowProof[] = [
   }
 ];
 
-export const about = {
-  eyebrow: { en: 'SYSTEM_LEAD // JOSHUA_SEMOLIK', es: 'LÍDER_SISTEMAS // JOSHUA_SEMOLIK' },
-  narrative: { en: 'Engineering the technical spine of modern growth.', es: 'Ingeniería de la columna vertebral técnica del crecimiento moderno.' },
-  context: { en: 'I bridge the gap between AI hype and production reality, focusing on the workflows that actually drive revenue and reclaim time.', es: 'Cierro la brecha entre el hype de la IA y la realidad de producción, centrándome en los flujos de trabajo que realmente impulsan los ingresos y recuperan tiempo.' },
-  stackLabel: { en: 'AUTHORITY_STACK', es: 'STACK_DE_AUTORIDAD' },
-  stackItems: { en: 'CLAUDE CODE // N8N // PYTHON // MIT SLOAN', es: 'CLAUDE CODE // N8N // PYTHON // MIT SLOAN' },
-  cta: { en: 'LEARN MORE ABOUT THE SYSTEM', es: 'MÁS INFORMACIÓN SOBRE EL SISTEMA' }
-};
-
-export const aboutPage = {
-  hero: {
-    headline: { en: 'Creative Technologist focused on AI powered storytelling.', es: 'Tecnólogo Creativo enfocado en storytelling potenciado por IA.' },
-    hook: { 
-      en: 'Creative Technologist with a creator’s track record and an AI strategist’s skill set. I turn scattered creative output into repeatable, high-integrity systems—from initial brief to final delivery. My work has historically driven over $4.5M in trackable revenue while achieving a 31% lift in conversion efficiency through systemization.', 
-      es: 'Tecnólogo Creativo con trayectoria de creador y el conjunto de habilidades de un estratega de IA. Convierto la producción creativa dispersa en sistemas repetibles de alta integridad, desde el brief inicial hasta la entrega final. Mi trabajo ha impulsado históricamente más de $4.5M en ingresos rastreables, logrando un aumento del 31% en la eficiencia de conversión mediante la sistematización.' 
-    },
-    regional: {
-      en: 'Based in Mexico for six years, I work cross-border across the US and LATAM, bridging creative craft with engineering workflows for distributed teams.',
-      es: 'Basado en México durante seis años, trabajo de forma transfronteriza en EE. UU. y LATAM, conectando el oficio creativo con los flujos de ingeniería para equipos distribuidos.'
-    },
-    portraitAlt: {
-      en: 'Joshua Semolik - Principal Architect and Creative Technologist.',
-      es: 'Joshua Semolik - Arquitecto Principal y Tecnólogo Creativo.'
-    }
+export const workshopSyllabus = {
+  eyebrow: { en: 'THE_LAB // AI_FOR_EVERYDAY_LIFE_v1.0', es: 'EL_LAB // IA_PARA_LA_VIDA_DIARIA_v1.0' },
+  headline: { 
+    en: 'No jargon. Just AI for Everyday Life.', 
+    es: 'Sin jerga. Solo IA para la Vida Diaria.' 
   },
-  narrative: {
-    creatorStrategist: {
-      en: "I bring a creator’s track record and an AI strategist’s skill set. I focus on what humans do best—taste, story, and direction—then I build adaptive AI powered systems that automate the repeatable work inside workflows, platforms, and audience experiences. I map the blueprint and build the system behind briefs, production flow, review gates, and partner collaboration, so teams ship on-brand work that hits the goal. I’ve led storytelling across design, content, and digital experiences for brands, music, and startups.",
-      es: "Aporto una trayectoria de creador y el conjunto de habilidades de un estratega de IA. Me enfoco en lo que los humanos hacen mejor —gusto, historia y dirección— y luego construyo sistemas adaptables potenciados por IA que automatizan el trabajo repetitivo dentro de flujos de trabajo, plataformas y experiencias de audiencia. Mapeo el plano y construyo el sistema detrás de los briefs, el flujo de producción, las compuertas de revisión y la colaboración con socios, para que los equipos entreguen un trabajo alineado con la marca que alcance el objetivo. He liderado el storytelling a través del diseño, el contenido y las experiencias digitales para marcas, música y artistas."
-    },
-    origin: {
-      en: 'With 20 years of seniority in Go-To-Market strategy, rebuilt for the Agentic era, I bridge the Emmy-nominated craft of broadcast storytelling with rigorous technical architecture. This "Human-First" approach to AI is grounded in decades of production experience.',
-      es: 'Con 20 años de antigüedad en estrategia Go-To-Market, reconstruidos para la era Agéntica, conecto el oficio nominado al Emmy de la narrativa televisiva con una arquitectura técnica rigurosa. Este enfoque de "Humano Primero" para la IA está fundamentado en décadas de experiencia en producción.'
-    },
-    manifesto: {
-      en: "My goal isn't just automation; it's clarity. I replace the 'Pilot Trap' with production-ready systems that allow humans to move from manual execution to high-level orchestration.",
-      es: "Mi objetivo no es solo la automatización; es la claridad. Reemplazo la 'Trampa del Piloto' con sistemas listos para producción que permiten a los humanos pasar de la ejecución manual a la orquestación de alto nivel."
-    }
+  transformation: { 
+    en: 'A practical masterclass for daily life and small business. Move from curious to capable in a single morning. I will show you the exact prompting techniques and workflows that actually save you time.', 
+    es: 'Una clase magistral práctica para la vida diaria y pequeños negocios. Pasa de tener curiosidad a ser capaz en una sola mañana. Te mostraré las técnicas de prompting y flujos de trabajo exactos que realmente te ahorran tiempo.' 
   },
-  pillars: [
-    { id: '01', title: { en: 'WORKFLOW_TRANSFORMATION', es: 'TRANSFORMACIÓN_DE_FLUJO' }, content: { en: 'Redesigning the path from intake to delivery to eliminate friction and maximize throughput.', es: 'Rediseñando el camino desde la entrada hasta la entrega para eliminar la fricción y maximizar el rendimiento.' } },
-    { id: '02', title: { en: 'AGENTIC_INTEGRATION', es: 'INTEGRACIÓN_AGÉNTICA' }, content: { en: 'Embedding AI (Claude Code, n8n) into drafting and routing to protect creative integrity.', es: 'Integrando IA (Claude Code, n8n) en la redacción y enrutamiento para proteger la integridad creativa.' } },
-    { id: '03', title: { en: 'EXPERIENCE_SYSTEMS', es: 'SISTEMAS_DE_EXPERIENCIA' }, content: { en: 'Connecting touchpoints across US and LATAM markets with bilingual, production-ready logic.', es: 'Conectando puntos de contacto en los mercados de EE. UU. y LATAM con lógica bilingüe lista para producción.' } },
-    { id: '04', title: { en: 'GOVERNANCE_&_LEADERSHIP', es: 'GOBERNANZA_Y_LIDERAZGO' }, content: { en: 'Clarifying ownership, aligning stakeholders, and ensuring long-term system reliability.', es: 'Clarificando la propiedad, alineando a las partes interesadas y asegurando la confiabilidad del sistema a largo plazo.' } }
+  location: { en: 'LOC // SAN_MIGUEL_DE_ALLENDE_MX', es: 'UBIC // SAN_MIGUEL_DE_ALLENDE_MX' },
+  time: { en: 'TIME // 10:00_AM', es: 'HORA // 10:00_AM' },
+  lead: { en: 'LEAD // JOSHUA_SEMOLIK', es: 'LÍDER // JOSHUA_SEMOLIK' },
+  phases: [
+    {
+      id: '01',
+      title: { en: 'Practical AI Basics', es: 'Conceptos Básicos de IA' },
+      focus: { 
+        en: 'Simple language. Understanding what AI can do (drafting, ideas, organization) and where it needs your help.', 
+        es: 'Lenguaje sencillo. Entender qué puede hacer la IA (borradores, ideas, organización) y dónde necesita tu ayuda.' 
+      }
+    },
+    {
+      id: '02',
+      title: { en: 'The Art of the Prompt', es: 'El Arte del Prompt' },
+      focus: { 
+        en: 'Learn the formula for prompts that work the first time. No complex engineering—just clear communication.', 
+        es: 'Aprende la fórmula para prompts que funcionan a la primera. Sin ingeniería compleja—solo comunicación clara.' 
+      }
+    },
+    {
+      id: '03',
+      title: { en: 'Your Daily Reclaim', es: 'Tu Recuperación Diaria' },
+      focus: { 
+        en: 'Live walkthroughs: meal plans, local Spanish practice, and handling business emails in seconds instead of minutes.', 
+        es: 'Ejemplos en vivo: planes de comida, práctica de español local y manejo de correos de negocios en segundos.' 
+      }
+    },
+    {
+      id: '04',
+      title: { en: 'Small Business Wins', es: 'Victorias en el Negocio' },
+      focus: { 
+        en: 'Simple workflows to keep your small business moving. Automate the repetitive stuff so you can focus on your customers.', 
+        es: 'Flujos simples para mantener tu negocio en movimiento. Automatiza lo repetitivo para enfocarte en tus clientes.' 
+      }
+    }
   ],
-  stack: {
-    title: { en: 'THE_TECHNICAL_SPINE', es: 'LA_COLUMNA_VERTEBRAL_TÉCNICA' },
-    tools: ['CLAUDE_CODE', 'N8N', 'PYTHON', 'GITHUB', 'VS_CODE', 'SALESFORCE', 'HUBSPOT', 'GOOGLE_WORKSPACE'],
-    credentials: [
-      { en: 'MIT Sloan (2025) - AI: Implications for Business Strategy', es: 'MIT Sloan (2025) - IA: Implicaciones para la Estrategia Empresarial' },
-      { en: 'Two-time Emmy Nominee for Broadcast Storytelling', es: 'Nominado al Emmy en dos ocasiones por Narrativa Televisiva' }
+  kit: {
+    title: { en: 'THE_KIT // TAKE_HOME_ASSETS', es: 'EL_KIT // ACTIVOS_PARA_LLEVAR' },
+    items: [
+      { en: 'Simple Cheat Sheet', es: 'Guía de Referencia Rápida' },
+      { en: 'The Prompt Formula', es: 'La Fórmula del Prompt' },
+      { en: '10 Starter Prompts', es: '10 Prompts de Inicio' },
+      { en: 'Safety Basics', es: 'Conceptos de Seguridad' },
+      { en: 'Life Workflow Guide', es: 'Guía de Flujo de Vida' }
     ]
   },
-  closing: {
-    headline: { en: 'THIS WORKFLOW IS MY MARKETING.', es: 'ESTE FLUJO DE TRABAJO ES MI MARKETING.' },
-    subtext: { en: 'Ready to architect a production-ready system that protects your brand while automating the heavy lifting?', es: '¿Listo para diseñar un sistema listo para producción que proteja tu marca mientras automatizas el trabajo pesado?' }
-  }
+  cardTitle: { en: 'PRACTICAL_IMPACT', es: 'IMPACTO_PRÁCTICO' },
+  rule: {
+    en: 'Limited seats for direct guidance. I keep these classes small to ensure you leave with a workflow you can use today.',
+    es: 'Asientos limitados para guía directa. Mantengo estas clases pequeñas para asegurar que salgas con un flujo que puedas usar hoy.'
+  },
+  cta: { en: 'RESERVE YOUR SPOT', es: 'RESERVAR LUGAR' }
+};
+
+export const contactPage = {
+  eyebrow: { en: 'COMMUNICATION_HUB // BORDERLESS_SYNC_v2.6', es: 'CENTRO_DE_COMUNICACIÓN // SINCRONÍA_SIN_FRONTERAS_v2.6' },
+  headline: { en: 'Start a Conversation.', es: 'Iniciar una Conversación.' },
+  subheadline: { 
+    en: 'Based in Mexico for six years, I work cross-border across the US and LATAM, bridging creative craft with engineering workflows for distributed teams. I am currently seeking leadership opportunities to architect the future of creative automation.', 
+    es: 'Basado en México durante seis años, trabajo de forma transfronteriza en EE. UU. y LATAM, conectando el oficio creativo con los flujos de ingeniería para equipos distribuidos. Actualmente busco oportunidades de liderazgo para diseñar el futuro de la automatización creativa.' 
+  },
+  emailLabel: { en: 'DIGITAL_UPLINK', es: 'ENLACE_DIGITAL' },
+  locationLabel: { en: 'PHYSICAL_NODE', es: 'NODO_FÍSICO' },
+  location: { en: 'San Miguel de Allende, Mexico | US & LATAM Cross-Border', es: 'San Miguel de Allende, México | Transfronterizo EE. UU. y LATAM' },
+  socialLabel: { en: 'SOCIAL_01 // CONNECT_ON_LINKEDIN', es: 'SOCIAL_01 // CONECTAR_EN_LINKEDIN' },
+  cta: { en: 'ESTABLISH CONNECTION', es: 'ESTABLECER CONEXIÓN' }
 };

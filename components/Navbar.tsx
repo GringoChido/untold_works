@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useLanguage } from '../App';
@@ -8,11 +7,11 @@ const Navbar: React.FC = () => {
   const { lang, setLang, t } = useLanguage();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
+  // Exact Sequence: 1. Home (Logo), 2. Portfolio, 3. About, 4. Workshop, 5. Contact
   const navItems = [
     { key: 'portfolio', path: '/portfolio' },
-    { key: 'workshops', path: '/workshops' },
     { key: 'about', path: '/about' },
-    { key: 'blog', path: '/blog' },
+    { key: 'workshops', path: '/workshops' },
     { key: 'contact', path: '/contact' }
   ];
 

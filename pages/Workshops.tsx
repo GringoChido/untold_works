@@ -1,4 +1,3 @@
-
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { useLanguage } from '../App';
@@ -40,10 +39,9 @@ const WorkshopsPage: React.FC = () => {
               </div>
             </div>
 
-            {/* Scarcity Note */}
             <div className="lg:col-span-4 lg:pt-8">
               <div className="bg-white/[0.02] border border-white/10 p-10 lg:p-14 space-y-8 relative overflow-hidden group">
-                <div className="absolute top-0 right-0 p-4 font-mono text-[8px] text-white/20 uppercase tracking-[0.4em] font-bold">LIMITED_SEATS</div>
+                <div className="absolute top-0 right-0 p-4 font-mono text-[8px] text-white/20 uppercase tracking-[0.4em] font-bold">READY_TO_USE</div>
                 <h4 className="font-sans font-black text-3xl uppercase tracking-tighter text-untold-orange">
                   {t(syllabus.cardTitle)}
                 </h4>
@@ -62,12 +60,12 @@ const WorkshopsPage: React.FC = () => {
         </div>
       </section>
 
-      {/* Rapid Value Grid - Four Phases */}
+      {/* Practical Pathway Grid */}
       <section className="px-10 py-24 lg:py-40 bg-white/[0.01] border-b border-white/10">
         <div className="max-w-[1440px] mx-auto">
           <div className="flex items-center space-x-4 mb-24">
              <span className="w-2.5 h-2.5 rounded-full bg-untold-orange"></span>
-             <h2 className="font-mono text-[11px] uppercase tracking-[0.6em] font-bold text-white/30 uppercase">RAPID_VALUE_GRID // SYLLABUS_PHASES</h2>
+             <h2 className="font-mono text-[11px] uppercase tracking-[0.6em] font-bold text-white/30 uppercase">LEARNING_LOG // EVERYDAY_PHASES</h2>
           </div>
           
           <div className="grid md:grid-cols-2 gap-px bg-white/10 border border-white/10">
@@ -88,7 +86,7 @@ const WorkshopsPage: React.FC = () => {
 
                 <div className="mt-auto pt-10 border-t border-white/5 flex items-center space-x-3">
                    <div className="w-1.5 h-1.5 rounded-full bg-untold-orange"></div>
-                   <span className="font-mono text-[9px] uppercase tracking-[0.3em] text-white/20 font-bold">SIN_JERGA_TECNICA // 100%_UTILIDAD</span>
+                   <span className="font-mono text-[9px] uppercase tracking-[0.3em] text-white/20 font-bold">NO_JARGON // 100%_PRACTICAL</span>
                 </div>
               </div>
             ))}
@@ -96,7 +94,7 @@ const WorkshopsPage: React.FC = () => {
         </div>
       </section>
 
-      {/* Take-Home Kit Status Block */}
+      {/* Toolkit Section */}
       <section className="px-10 py-24 lg:py-40 border-b border-white/10">
         <div className="max-w-[1440px] mx-auto grid lg:grid-cols-12 gap-20 items-center">
           <div className="lg:col-span-6 space-y-12">
@@ -105,7 +103,7 @@ const WorkshopsPage: React.FC = () => {
                <h2 className="font-mono text-[11px] uppercase tracking-[0.6em] font-bold text-white/30 uppercase">{t(syllabus.kit.title)}</h2>
             </div>
             <h3 className="font-sans font-black text-6xl lg:text-8xl uppercase tracking-tighter text-white leading-[0.85]">
-              {t({ en: 'Everything\nYou Need\nTo Ship.', es: 'Todo Lo Que\nNecesitas\nPara Enviar.' })}
+              {t({ en: 'Tools For\nReal Life\nImpact.', es: 'Herramientas\nPara Impacto\nReal.' })}
             </h3>
           </div>
           <div className="lg:col-span-6">
@@ -122,18 +120,18 @@ const WorkshopsPage: React.FC = () => {
                   ))}
                </ul>
                <div className="mt-16 font-mono text-[10px] uppercase tracking-[0.3em] text-white/20 italic">
-                 {t({ en: '> Packaging complete. Ready for implementation.', es: '> Empaquetado completo. Listo para implementación.' })}
+                 {t({ en: '> Practical kit ready for immediate life integration.', es: '> Kit práctico listo para integración inmediata en tu vida.' })}
                </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Final Action Hub */}
+      {/* Final Call */}
       <section className="px-10 py-48 lg:py-72 text-center bg-white/[0.02]">
         <div className="max-w-6xl mx-auto flex flex-col items-center">
           <h2 className="font-sans font-black text-[clamp(4.5rem,14vw,180px)] leading-[0.8] mb-16 tracking-tighter uppercase text-white">
-            {t({ en: 'Reserve\nYour\nSpot.', es: 'Reserva\nTu\nLugar.' })}
+            {t({ en: 'Save\nYour\nTime.', es: 'Ahorra\nTu\nTiempo.' })}
           </h2>
           <p className="text-2xl lg:text-[2.5rem] text-white/50 mb-24 max-w-3xl mx-auto font-serif italic leading-tight tracking-tight">
             {t(syllabus.rule)}
@@ -144,9 +142,6 @@ const WorkshopsPage: React.FC = () => {
           >
             {t(syllabus.cta)}
           </Link>
-          <div className="mt-16 font-mono text-[11px] uppercase tracking-[0.5em] text-white/20 font-bold">
-            {t({ en: 'NO_TECH_SKILLS_REQUIRED // START_HERE', es: 'SIN_HABILIDADES_TECNICAS_REQUERIDAS // EMPIEZA_AQUI' })}
-          </div>
         </div>
       </section>
     </div>

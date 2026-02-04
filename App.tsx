@@ -1,4 +1,3 @@
-
 import React, { useState, createContext, useContext, useEffect } from 'react';
 import { HashRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import { Language } from './types';
@@ -9,8 +8,6 @@ import WorkshopsPage from './pages/Workshops';
 import Portfolio from './pages/Portfolio';
 import ProjectDetail from './pages/ProjectDetail';
 import AboutPage from './pages/About';
-import BlogPage from './pages/Blog';
-import BlogPostTemplate from './pages/BlogPost';
 import ContactPage from './pages/Contact';
 
 interface LanguageContextType {
@@ -51,13 +48,12 @@ const App: React.FC = () => {
           <Navbar />
           <main className="flex-grow">
             <Routes>
+              {/* Architecture Order: Home, Portfolio, About, Workshop, Contact */}
               <Route path="/" element={<Home />} />
               <Route path="/portfolio" element={<Portfolio />} />
               <Route path="/portfolio/:projectId" element={<ProjectDetail />} />
-              <Route path="/workshops" element={<WorkshopsPage />} />
               <Route path="/about" element={<AboutPage />} />
-              <Route path="/blog" element={<BlogPage />} />
-              <Route path="/blog/:postSlug" element={<BlogPostTemplate />} />
+              <Route path="/workshops" element={<WorkshopsPage />} />
               <Route path="/contact" element={<ContactPage />} />
             </Routes>
           </main>

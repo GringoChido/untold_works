@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { useLanguage } from '../App';
@@ -43,10 +42,10 @@ const Footer: React.FC = () => {
             </Link>
           </div>
 
-          {/* Quick Navigation */}
+          {/* Quick Navigation - Reordered to Home, Portfolio, About, Workshop, Contact */}
           <div className="lg:col-span-4 flex flex-col space-y-6 lg:text-right pt-24 lg:pt-0">
             <span className="font-mono text-[10px] uppercase tracking-[0.6em] text-white/20 font-bold mb-6">NAV_DIRECTORY</span>
-            {['portfolio', 'workshops', 'about', 'blog', 'contact'].map((key) => (
+            {['portfolio', 'about', 'workshops', 'contact'].map((key) => (
               <Link 
                 key={key}
                 to={`/${key}`}

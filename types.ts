@@ -41,15 +41,3 @@ export interface WorkflowProof {
   tags: string[];
 }
 
-export interface BlogPost {
-  slug: string;
-  title: { en: string; es: string };
-  excerpt: { en: string; es: string };
-  content: { en: string; es: string };
-  date: string;
-  category: string;
-  readTime: string;
-  author: string;
-  tags: string[];
-  images: string[]; // [hero, body, footer]
-}
