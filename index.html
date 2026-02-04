@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>untold.works | Principal AI Workflow Architect</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@800;900&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=IBM+Plex+Mono:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+      body {
+        font-family: 'Libre Caslon Text', serif;
+        background-color: #F5F3EF;
+        -webkit-font-smoothing: antialiased;
+        color: #000000;
+      }
+      .tracking-tight-custom {
+        letter-spacing: -0.06em;
+      }
+      ::selection {
+        background-color: #FF4D17;
+        color: white;
+      }
+    </style>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              untold: {
+                beige: '#F5F3EF',
+                orange: '#FF4D17',
+                black: '#000000',
+                gray: '#4A4A4A',
+                border: '#D9D5CF'
+              }
+            },
+            fontFamily: {
+              sans: ['Inter', 'Helvetica', 'Arial', 'sans-serif'],
+              serif: ['"Libre Caslon Text"', 'serif'],
+              mono: ['"IBM Plex Mono"', 'monospace'],
+            }
+          }
+        }
+      }
+    </script>
+  </head>
+  <body class="text-untold-black overflow-x-hidden">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
