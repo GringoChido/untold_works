@@ -17,9 +17,9 @@ const Navbar: React.FC = () => {
 
   return (
     <>
-      <nav className="sticky top-0 z-50 bg-untold-beige/95 backdrop-blur-md border-b border-untold-border px-10 lg:px-14 py-8 lg:py-10">
+      <nav className="sticky top-0 z-50 bg-untold-beige/95 backdrop-blur-md border-b border-untold-border px-4 sm:px-6 md:px-10 lg:px-14 py-6 sm:py-8 lg:py-10">
         <div className="max-w-[1540px] mx-auto flex justify-between items-center">
-          <Link to="/" className="text-[32px] font-sans font-black tracking-tighter leading-none group flex items-center shrink-0">
+          <Link to="/" className="text-2xl sm:text-[28px] lg:text-[32px] font-sans font-black tracking-tighter leading-none group flex items-center shrink-0">
             untold<span className="text-untold-orange group-hover:text-black transition-colors duration-300">.works</span>
           </Link>
 
@@ -58,42 +58,43 @@ const Navbar: React.FC = () => {
 
           {/* Mobile Toggle */}
           <button 
-            className="lg:hidden p-2"
+            className="lg:hidden p-2 flex-shrink-0"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
+            aria-label="Toggle menu"
           >
-            <div className={`w-10 h-0.5 bg-black mb-2.5 transition-all ${isMenuOpen ? 'rotate-45 translate-y-3' : ''}`}></div>
-            <div className={`w-10 h-0.5 bg-black mb-2.5 transition-all ${isMenuOpen ? 'opacity-0' : ''}`}></div>
-            <div className={`w-10 h-0.5 bg-black transition-all ${isMenuOpen ? '-rotate-45 -translate-y-3' : ''}`}></div>
+            <div className={`w-8 h-0.5 bg-black mb-2 transition-all ${isMenuOpen ? 'rotate-45 translate-y-2.5' : ''}`}></div>
+            <div className={`w-8 h-0.5 bg-black mb-2 transition-all ${isMenuOpen ? 'opacity-0' : ''}`}></div>
+            <div className={`w-8 h-0.5 bg-black transition-all ${isMenuOpen ? '-rotate-45 -translate-y-2.5' : ''}`}></div>
           </button>
         </div>
 
         {/* Mobile Menu */}
         {isMenuOpen && (
-          <div className="lg:hidden fixed inset-x-0 top-[96px] h-screen bg-untold-beige z-40 flex flex-col p-12 space-y-10 animate-in slide-in-from-top duration-300 overflow-y-auto">
+          <div className="lg:hidden fixed inset-x-0 top-[88px] sm:top-[96px] h-screen bg-untold-beige z-40 flex flex-col p-6 sm:p-8 md:p-12 space-y-8 sm:space-y-10 animate-in slide-in-from-top duration-300 overflow-y-auto">
             {navItems.map((item) => (
               <Link 
                 key={item.key} 
                 to={item.path} 
-                className="text-6xl font-sans font-black uppercase tracking-tighter hover:text-untold-orange transition-colors"
+                className="text-4xl sm:text-5xl md:text-6xl font-sans font-black uppercase tracking-tighter hover:text-untold-orange transition-colors"
                 onClick={() => setIsMenuOpen(false)}
               >
                 {t((navigation as any)[item.key])}
               </Link>
             ))}
-            <div className="pt-10 flex flex-col space-y-8 border-t border-untold-border">
+            <div className="pt-8 sm:pt-10 flex flex-col space-y-6 sm:space-y-8 border-t border-untold-border">
               <button 
                 onClick={() => {
                   setLang(lang === 'en' ? 'es' : 'en');
                   setIsMenuOpen(false);
                 }}
-                className="text-left font-mono text-sm font-bold uppercase tracking-widest text-untold-gray hover:text-untold-orange"
+                className="text-left font-mono text-xs sm:text-sm font-bold uppercase tracking-widest text-untold-gray hover:text-untold-orange"
               >
                 → {lang === 'en' ? 'Switch to Spanish' : 'Cambiar a Inglés'}
               </button>
               <Link 
                 to="/contact"
                 onClick={() => setIsMenuOpen(false)}
-                className="bg-untold-black text-white px-10 py-8 rounded-none font-sans font-black uppercase tracking-widest text-2xl hover:bg-untold-orange transition-colors text-center"
+                className="bg-untold-black text-white px-8 sm:px-10 py-6 sm:py-8 rounded-none font-sans font-black uppercase tracking-widest text-xl sm:text-2xl hover:bg-untold-orange transition-colors text-center"
               >
                 {t(navigation.cta)}
               </Link>

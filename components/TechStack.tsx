@@ -13,7 +13,7 @@ const TechStack: React.FC = () => {
   ];
 
   return (
-    <section className="px-10 py-32 lg:py-56 bg-untold-beige border-b border-untold-border overflow-hidden text-untold-black relative">
+    <section className="px-4 sm:px-6 md:px-10 py-24 sm:py-32 lg:py-56 bg-untold-beige border-b border-untold-border overflow-hidden text-untold-black relative">
       {/* Background Schematic Detail */}
       <div className="absolute inset-0 opacity-[0.02] pointer-events-none" 
            style={{ backgroundImage: 'linear-gradient(#000 1px, transparent 1px), linear-gradient(90deg, #000 1px, transparent 1px)', backgroundSize: '100px 100px' }}></div>
