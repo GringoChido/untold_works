@@ -8,39 +8,39 @@ const Portfolio: React.FC = () => {
   const { t } = useLanguage();
 
   return (
-    <div className="bg-untold-black text-white min-h-screen font-serif overflow-x-hidden max-w-full">
+    <div className="bg-untold-black text-white min-h-screen font-serif">
       {/* Header */}
-      <section className="w-full px-4 sm:px-6 md:px-10 py-24 sm:py-32 lg:py-48 border-b border-white/5">
-        <div className="max-w-full lg:max-w-[1440px] mx-auto">
-          <div className="flex items-center space-x-3 sm:space-x-4 mb-10">
-            <span className="w-2.5 h-2.5 sm:w-3 sm:h-3 rounded-full bg-untold-orange"></span>
-            <p className="font-mono text-[10px] sm:text-[12px] uppercase tracking-[0.5em] font-bold text-white/40">
+      <section className="px-5 sm:px-10 py-20 sm:py-32 lg:py-48 border-b border-white/5">
+        <div className="max-w-[1440px] mx-auto">
+          <div className="flex items-center space-x-4 mb-10">
+            <span className="w-3 h-3 rounded-full bg-untold-orange"></span>
+            <p className="font-mono text-[12px] uppercase tracking-[0.5em] font-bold text-white/40">
               {t({ en: 'VERIFIED_SYSTEMS', es: 'SISTEMAS_VERIFICADOS' })}
             </p>
           </div>
           <h1 className="font-sans font-black text-[clamp(3rem,8vw,120px)] leading-[0.8] mb-16 tracking-tighter uppercase">
-            {t({ 
-              en: 'High-Integrity Systems:\nProduction-Ready\nAutomation.', 
-              es: 'Sistemas de Alta Integridad:\nAutomatización Lista\npara Producción.' 
+            {t({
+              en: 'Production-Ready\nSystems.\nReal Results.',
+              es: 'Sistemas Listos\npara Producción.\nResultados Reales.'
             })}
           </h1>
           <p className="text-2xl lg:text-4xl font-medium text-untold-beige/80 max-w-5xl leading-tight">
-            {t({ 
-              en: 'Engineering the technical spine of modern growth. Built on a foundation of 20 years of production-grade storytelling and enterprise execution.', 
-              es: 'Ingeniería de la columna vertebral técnica del crecimiento moderno. Construido sobre una base de 20 años de narrativa de grado de producción y ejecución empresarial.' 
+            {t({
+              en: 'AI-enabled workflows built on 20 years of creative production and enterprise execution.',
+              es: 'Flujos de trabajo con IA construidos sobre 20 años de producción creativa y ejecución empresarial.'
             })}
           </p>
         </div>
       </section>
 
       {/* Grid */}
-      <section className="w-full px-4 sm:px-6 md:px-10 py-10">
-        <div className="max-w-full lg:max-w-[1440px] mx-auto grid lg:grid-cols-2 gap-px bg-white/10 border border-white/10">
+      <section className="px-5 sm:px-10 py-10">
+        <div className="max-w-[1440px] mx-auto grid lg:grid-cols-2 gap-px bg-white/10 border border-white/10">
           {projects.map((project, idx) => (
             <Link 
               key={project.id} 
               to={`/portfolio/${project.id}`}
-              className="group relative bg-untold-black p-12 lg:p-20 flex flex-col justify-between min-h-[750px] hover:bg-white/5 transition-all duration-700"
+              className="group relative bg-untold-black p-6 sm:p-12 lg:p-20 flex flex-col justify-between min-h-[550px] sm:min-h-[750px] hover:bg-white/5 transition-all duration-700"
             >
               <div className="mb-20">
                 <div className="flex justify-between items-start mb-14">
@@ -94,12 +94,12 @@ const Portfolio: React.FC = () => {
       <CuratedEngine />
 
       {/* Footer CTA */}
-      <section className="w-full px-4 sm:px-6 md:px-10 py-48 text-center border-t border-white/5">
-        <h2 className="font-sans font-black text-4xl lg:text-8xl mb-12 uppercase tracking-tighter leading-none">
+      <section className="px-5 sm:px-10 py-24 sm:py-48 text-center border-t border-white/5">
+        <h2 className="font-sans font-black text-3xl sm:text-4xl lg:text-8xl mb-12 uppercase tracking-tighter leading-none">
           {t({ en: 'Ready to\nmap yours?', es: '¿Listo para\nmapear el tuyo?' })}
         </h2>
-        <Link to="/contact" className="inline-block bg-untold-orange text-white px-24 py-10 font-sans font-black uppercase tracking-tighter text-2xl hover:scale-105 active:scale-95 transition-all shadow-[0_40px_100px_rgba(255,77,23,0.3)]">
-          {t({ en: 'START A PROJECT', es: 'INICIAR PROYECTO' })}
+        <Link to="/contact" className="inline-block bg-untold-orange text-white px-10 sm:px-24 py-6 sm:py-10 font-sans font-black uppercase tracking-tighter text-lg sm:text-2xl hover:scale-105 active:scale-95 transition-all shadow-[0_40px_100px_rgba(255,77,23,0.3)]">
+          {t({ en: 'START A CONVERSATION', es: 'INICIAR CONVERSACIÓN' })}
         </Link>
       </section>
     </div>
