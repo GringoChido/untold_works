@@ -18,7 +18,7 @@ const TechStack: React.FC = () => {
       <div className="absolute inset-0 opacity-[0.02] pointer-events-none" 
            style={{ backgroundImage: 'linear-gradient(#000 1px, transparent 1px), linear-gradient(90deg, #000 1px, transparent 1px)', backgroundSize: '100px 100px' }}></div>
 
-      <div className="max-w-[1440px] mx-auto relative">
+      <div className="max-w-full lg:max-w-[1440px] mx-auto relative">
         <div className="flex items-center space-x-4 mb-24">
           <span className="w-2.5 h-2.5 rounded-full bg-untold-orange"></span>
           <h2 className="font-mono text-[13px] uppercase tracking-[0.6em] font-bold text-untold-black/40">

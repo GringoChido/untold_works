@@ -17,8 +17,8 @@ const Navbar: React.FC = () => {
 
   return (
     <>
-      <nav className="sticky top-0 z-50 bg-untold-beige/95 backdrop-blur-md border-b border-untold-border px-4 sm:px-6 md:px-10 lg:px-14 py-6 sm:py-8 lg:py-10">
-        <div className="max-w-[1540px] mx-auto flex justify-between items-center">
+      <nav className="sticky top-0 z-50 bg-untold-beige/95 backdrop-blur-md border-b border-untold-border px-4 sm:px-6 md:px-10 lg:px-14 py-6 sm:py-8 lg:py-10 overflow-x-hidden">
+        <div className="max-w-full lg:max-w-full lg:max-w-[1540px] mx-auto flex justify-between items-center">
           <Link to="/" className="text-2xl sm:text-[28px] lg:text-[32px] font-sans font-black tracking-tighter leading-none group flex items-center shrink-0">
             untold<span className="text-untold-orange group-hover:text-black transition-colors duration-300">.works</span>
           </Link>
@@ -70,12 +70,12 @@ const Navbar: React.FC = () => {
 
         {/* Mobile Menu */}
         {isMenuOpen && (
-          <div className="lg:hidden fixed inset-x-0 top-[88px] sm:top-[96px] h-screen bg-untold-beige z-40 flex flex-col p-6 sm:p-8 md:p-12 space-y-8 sm:space-y-10 animate-in slide-in-from-top duration-300 overflow-y-auto">
+          <div className="lg:hidden fixed inset-x-0 top-[88px] sm:top-[96px] h-screen bg-untold-beige z-40 flex flex-col p-6 sm:p-8 md:p-12 space-y-8 sm:space-y-10 animate-in slide-in-from-top duration-300 overflow-y-auto overflow-x-hidden max-w-full">
             {navItems.map((item) => (
               <Link 
                 key={item.key} 
                 to={item.path} 
-                className="text-4xl sm:text-5xl md:text-6xl font-sans font-black uppercase tracking-tighter hover:text-untold-orange transition-colors"
+                className="text-4xl sm:text-5xl md:text-6xl font-sans font-black uppercase tracking-tighter hover:text-untold-orange transition-colors break-words"
                 onClick={() => setIsMenuOpen(false)}
               >
                 {t((navigation as any)[item.key])}

@@ -11,7 +11,7 @@ const Footer: React.FC = () => {
       <div className="absolute inset-0 pointer-events-none opacity-[0.03]" 
            style={{ backgroundImage: 'radial-gradient(circle at 2px 2px, white 1px, transparent 0)', backgroundSize: '40px 40px' }}></div>
 
-      <div className="max-w-[1440px] mx-auto relative">
+      <div className="max-w-full lg:max-w-[1440px] mx-auto relative">
         <div className="grid lg:grid-cols-12 gap-20 items-start">
           
           {/* Main Campaign Area */}
