@@ -44,9 +44,9 @@ const App: React.FC = () => {
     <LanguageContext.Provider value={{ lang, setLang, t }}>
       <Router>
         <ScrollToTop />
-        <div className="min-h-screen flex flex-col selection:bg-untold-orange selection:text-white">
+        <div className="min-h-screen flex flex-col selection:bg-untold-orange selection:text-white overflow-x-hidden max-w-full">
           <Navbar />
-          <main className="flex-grow">
+          <main className="flex-grow overflow-x-hidden w-full">
             <Routes>
               {/* Architecture Order: Home, Portfolio, About, Workshop, Contact */}
               <Route path="/" element={<Home />} />
