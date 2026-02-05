@@ -15,8 +15,8 @@ export const footer = {
     es: 'untold.works // ESTE_FLUJO_DE_TRABAJO_ES_MI_MARKETING'
   },
   narrative: {
-    en: "I build the agentic systems that speak for themselves. Cross-border operating models engineered for high-integrity growth across the US and Latin America.",
-    es: "Construyo los sistemas agénticos que hablan por sí mismos. Modelos operativos transfronterizos diseñados para un crecimiento de alta integridad en EE. UU. y Latinoamérica."
+    en: "I build the systems that speak for themselves. Cross-border operating models designed for sustainable growth across the US and Latin America.",
+    es: "Construyo los sistemas que hablan por sí mismos. Modelos operativos transfronterizos diseñados para un crecimiento sostenible en EE.\u00A0UU. y Latinoamérica."
   },
   version: { en: 'CAMPAIGN_ID // 2026.WORKS', es: 'CAMPAIGN_ID // 2026.WORKS' },
   location: { en: 'LOC // SMA_MX_USA', es: 'LOC // SMA_MX_USA' }
@@ -32,20 +32,20 @@ export const hero = {
     es: 'Joshua Semolik'
   },
   subheadline: {
-    en: 'Principal Architect & Creative Technologist',
-    es: 'Arquitecto Principal y Tecnólogo Creativo'
+    en: 'I design AI-enabled workflows and operating models for teams working across the US and Latin America.',
+    es: 'Diseño flujos de trabajo con IA y modelos operativos para equipos en EE.\u00A0UU. y Latinoamérica.'
   },
   paragraph: {
-    en: 'I bridge the gap between design vision and engineering execution. I build the systems that integrate AI into creative workflows so teams can stop fighting with tools and start focusing on their craft.',
-    es: 'Cierro la brecha entre la visión de diseño y la ejecución de ingeniería. Construyo los sistemas que integran la IA en flujos de trabajo creativos para que los equipos dejen de luchar con las herramientas y empiecen a enfocarse en su oficio.'
+    en: 'Clear process. Clean handoffs. Production-ready execution. I build systems that integrate AI into creative workflows so teams can focus on their craft.',
+    es: 'Proceso claro. Entregas limpias. Ejecución lista para producción. Construyo sistemas que integran la IA en flujos creativos para que los equipos se enfoquen en su oficio.'
   },
   cta: {
     en: 'START_A_CONVERSATION',
     es: 'INICIAR_CONVERSACIÓN'
   },
   support: {
-    en: 'Cross-Border Orchestrator: Bridging US creative standards with global execution.',
-    es: 'Orquestador Transfronterizo: Conectando estándares creativos de EE. UU. con ejecución global.'
+    en: 'Cross-border operations bridging US creative standards with global execution.',
+    es: 'Operaciones transfronterizas conectando estándares creativos de EE.\u00A0UU. con ejecución global.'
   }
 };
 
@@ -53,26 +53,26 @@ export const aboutPage = {
   hero: {
     headline: { en: 'The 20-Year Story', es: 'La Historia de 20 Años' },
     hook: {
-      en: 'Video Editor → Director → Global Creative Director → AI Architect (MIT Alumnus). 20 years of creative craft, now architected for the agentic era.',
-      es: 'Editor de Video → Director → Director Creativo Global → Arquitecto de IA (Alumno MIT). 20 años de oficio creativo, ahora arquitectado para la era agéntica.'
+      en: 'Video Editor → Director → Global Creative Director → AI Architect (MIT Alumnus). 20 years of creative craft, now applied to AI-enabled workflows.',
+      es: 'Editor de Video → Director → Director Creativo Global → Arquitecto de IA (Alumno MIT). 20 años de oficio creativo, ahora aplicados a flujos de trabajo con IA.'
     },
     regional: {
       en: 'Based in Mexico for six years, I work cross-border across the US and LATAM, bridging US creative standards with global execution for distributed teams.',
-      es: 'Basado en México durante seis años, trabajo de forma transfronteriza en EE. UU. y LATAM, conectando estándares creativos de EE. UU. con ejecución global para equipos distribuidos.'
+      es: 'Basado en México durante seis años, trabajo de forma transfronteriza en EE.\u00A0UU. y LATAM, conectando estándares creativos de EE.\u00A0UU. con ejecución global para equipos distribuidos.'
     }
   },
   narrative: {
     veteran: {
-      en: "I've spent 20 years mastering the craft of storytelling. My path moved from Video Editor to Director, then Global Creative Director. I've led global product launches for enterprises, built influencer programs, and optimized sales enablement within highly regulated compliant markets. I've seen every production hurdle—now I build the systems to solve them.",
-      es: "He pasado 20 años dominando el oficio de la narrativa. Mi camino pasó de Editor de Video a Director, luego Director Creativo Global. He liderado lanzamientos globales de productos para empresas, construido programas de influencers y optimizado la habilitación de ventas en mercados altamente regulados. He visto cada obstáculo de producción—ahora construyo los sistemas para resolverlos."
+      en: "20 years mastering the craft of storytelling. Video Editor to Director, then Global Creative Director. I've led global product launches, built influencer programs, and optimized sales enablement in regulated markets. I've seen every production hurdle—now I build the systems to solve them.",
+      es: "20 años dominando el oficio de la narrativa. De Editor de Video a Director, luego Director Creativo Global. He liderado lanzamientos globales de productos, construido programas de influencers y optimizado la habilitación de ventas en mercados regulados. He visto cada obstáculo de producción—ahora construyo los sistemas para resolverlos."
     },
     theBridge: {
-      en: "My current AI stack (n8n, Python, Claude) and MIT Sloan certification are the culmination of this career. I'm automating what I've already mastered at scale—replacing friction with production-ready systems that allow teams to move from manual execution to high-level orchestration.",
-      es: "Mi stack actual de IA (n8n, Python, Claude) y la certificación de MIT Sloan son la culminación de esta carrera. Estoy automatizando lo que ya he dominado a escala—reemplazando la fricción con sistemas listos para producción que permiten a los equipos pasar de la ejecución manual a la orquestación de alto nivel."
+      en: "My current AI toolkit (n8n, Python, Claude) and MIT Sloan certification are the culmination of this career. I automate what I've already mastered at scale—replacing friction with production-ready systems that move teams from manual execution to focused orchestration.",
+      es: "Mi toolkit actual de IA (n8n, Python, Claude) y la certificación de MIT Sloan son la culminación de esta carrera. Automatizo lo que ya he dominado a escala—reemplazando la fricción con sistemas listos para producción que permiten a los equipos pasar de la ejecución manual a la orquestación enfocada."
     },
     manifesto: {
-      en: "My goal isn't just automation; it's clarity. I protect your brand by building the technical spine of modern growth.",
-      es: "Mi objetivo no es solo la automatización; es la claridad. Protejo tu marca construyendo la columna vertebral técnica del crecimiento moderno."
+      en: "My goal is clarity. I build systems that protect your brand while your team moves faster.",
+      es: "Mi objetivo es la claridad. Construyo sistemas que protegen tu marca mientras tu equipo avanza más rápido."
     }
   },
   pillars: [
@@ -188,8 +188,8 @@ export const servicePillars = {
 export const stack = {
   title: { en: 'THE_STACK // PRODUCTION_READY_TOOLS', es: 'EL_STACK // HERRAMIENTAS_LISTAS_PARA_PRODUCCIÓN' },
   quote: {
-    en: "I don't just use these tools; I orchestrate them into custom agentic systems that bridge the gap between design vision and enterprise execution.",
-    es: "No solo uso estas herramientas; las orquesto en sistemas agénticos personalizados que cierran la brecha entre la visión de diseño y la ejecución empresarial."
+    en: "I don't just use these tools—I connect them into custom systems that bridge design vision and production execution.",
+    es: "No solo uso estas herramientas—las conecto en sistemas personalizados que unen la visión de diseño y la ejecución de producción."
   },
   engineLabel: { en: 'THE ENGINE (Core Systems & Automation)', es: 'EL MOTOR (Sistemas Núcleo y Automatización)' },
   engine: ['Claude_Code', 'Python', 'n8n', 'GitHub', 'VS_Code', 'ChatGPT'],
@@ -202,7 +202,7 @@ export const stack = {
 export const artifacts = {
   eyebrow: { en: 'VERIFIED_OUTPUTS // SYSTEM_ARTIFACTS', es: 'RESULTADOS_VERIFICADOS // ARTEFACTOS_DEL_SISTEMA' },
   headline: { en: 'Selected Artifacts.', es: 'Artefactos Seleccionados.' },
-  intro: { en: 'I’ve shipped end-to-end creative workflows using AI and automation for global product launches and distributed creative teams.', es: 'He entregado flujos de trabajo creativos de extremo a extremo utilizando IA y automatización para lanzamientos de productos globales y equipos creativos distribuidos.' },
+  intro: { en: 'End-to-end creative workflows using AI and automation—shipped for global product launches and distributed teams.', es: 'Flujos de trabajo creativos de extremo a extremo con IA y automatización—entregados para lanzamientos globales y equipos distribuidos.' },
   headerLeft: { en: 'PRODUCTION_LOG', es: 'LOG_DE_PRODUCCIÓN' },
   headerRight: { en: 'STATUS // VERIFIED', es: 'ESTADO // VERIFICADO' },
   labels: {
@@ -215,15 +215,15 @@ export const artifacts = {
 export const proofs: WorkflowProof[] = [
   {
     name: { en: 'Spotify - WhatsApp Publishing', es: 'Publicación de Spotify - WhatsApp' },
-    description: { en: 'I am eliminating 15+ hours of manual content orchestration weekly via an agentic RAG-pipeline.', es: 'Estoy eliminando más de 15 horas semanales de orquestación manual de contenido mediante un pipeline RAG agéntico.' },
+    description: { en: 'Replaced manual content curation with an automated publishing pipeline. Reclaimed up to 15 hours per week for the creative team.', es: 'Reemplacé la curaduría manual de contenido con un pipeline de publicación automatizado. Recuperando hasta 15 horas semanales para el equipo creativo.' },
     builtWith: { en: 'n8n, Claude Code, Python, RAG Architecture', es: 'n8n, Claude Code, Python, Arquitectura RAG' },
     tags: ['AUTOMATION', 'RAG', 'LLM OPS']
   },
   {
-    name: { en: 'OMI Agentic Intake & Routing', es: 'Ingestión y Enrutamiento Agéntico OMI' },
-    description: { en: 'Delivering 98% MQL accuracy and 4.2x Sales ROI through my intelligent agentic routing.', es: 'Entregando un 98% de precisión en MQL y un ROI de ventas de 4.2x mediante mi enrutamiento agéntico inteligente.' },
+    name: { en: 'OMI Intake & Routing', es: 'Ingestión y Enrutamiento OMI' },
+    description: { en: 'Built an intelligent lead routing system that scores and qualifies inbound leads automatically. Measured 98% MQL accuracy and 4.2x sales ROI.', es: 'Construí un sistema inteligente de enrutamiento de leads que califica automáticamente. Precisión MQL medida del 98% y ROI de ventas de 4.2x.' },
     builtWith: { en: 'n8n, OpenAI Agents, Apollo API, Salesforce', es: 'n8n, Agentes de OpenAI, Apollo API, Salesforce' },
-    tags: ['AGENTIC AI', 'CRM', 'SALES OPS']
+    tags: ['AI ROUTING', 'CRM', 'SALES OPS']
   }
 ];
 
