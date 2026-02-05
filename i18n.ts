@@ -19,7 +19,7 @@ export const footer = {
     es: "Construyo los sistemas que hablan por sí mismos. Modelos operativos transfronterizos diseñados para un crecimiento sostenible en EE.\u00A0UU. y Latinoamérica."
   },
   version: { en: 'CAMPAIGN_ID // 2026.WORKS', es: 'CAMPAIGN_ID // 2026.WORKS' },
-  location: { en: 'LOC // SMA_MX_USA', es: 'LOC // SMA_MX_USA' }
+  location: { en: 'LOC // CDMX_MX_USA', es: 'LOC // CDMX_MX_USA' }
 };
 
 export const hero = {
@@ -237,7 +237,7 @@ export const workshopSyllabus = {
     en: 'A practical masterclass for daily life and small business. Move from curious to capable in a single morning. I will show you the exact prompting techniques and workflows that actually save you time.', 
     es: 'Una clase magistral práctica para la vida diaria y pequeños negocios. Pasa de tener curiosidad a ser capaz en una sola mañana. Te mostraré las técnicas de prompting y flujos de trabajo exactos que realmente te ahorran tiempo.' 
   },
-  location: { en: 'LOC // SAN_MIGUEL_DE_ALLENDE_MX', es: 'UBIC // SAN_MIGUEL_DE_ALLENDE_MX' },
+  location: { en: 'LOC // MEXICO_CITY_MX', es: 'UBIC // CIUDAD_DE_MEXICO_MX' },
   time: { en: 'TIME // 10:00_AM', es: 'HORA // 10:00_AM' },
   lead: { en: 'LEAD // JOSHUA_SEMOLIK', es: 'LÍDER // JOSHUA_SEMOLIK' },
   phases: [
@@ -301,7 +301,7 @@ export const contactPage = {
   },
   emailLabel: { en: 'DIGITAL_UPLINK', es: 'ENLACE_DIGITAL' },
   locationLabel: { en: 'PHYSICAL_NODE', es: 'NODO_FÍSICO' },
-  location: { en: 'San Miguel de Allende, Mexico | US & LATAM Cross-Border', es: 'San Miguel de Allende, México | Transfronterizo EE. UU. y LATAM' },
+  location: { en: 'Mexico City, Mexico | US & LATAM Cross-Border', es: 'Ciudad de México, México | Transfronterizo EE. UU. y LATAM' },
   socialLabel: { en: 'SOCIAL_01 // CONNECT_ON_LINKEDIN', es: 'SOCIAL_01 // CONECTAR_EN_LINKEDIN' },
   cta: { en: 'ESTABLISH CONNECTION', es: 'ESTABLECER CONEXIÓN' }
 };
