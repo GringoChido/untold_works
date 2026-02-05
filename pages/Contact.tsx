@@ -31,44 +31,44 @@ const ContactPage: React.FC = () => {
   };
 
   return (
-    <div className="bg-untold-black min-h-screen font-serif text-white overflow-x-hidden max-w-full selection:bg-untold-orange selection:text-white">
+    <div className="bg-untold-black min-h-screen font-serif text-white selection:bg-untold-orange selection:text-white">
       {/* Hero Header */}
-      <section className="w-full px-4 sm:px-6 md:px-10 pt-24 pb-20 sm:pt-32 sm:pb-24 lg:pt-56 lg:pb-32 border-b border-white/10">
-        <div className="max-w-full lg:max-w-[1440px] mx-auto">
-          <div className="flex items-center space-x-3 sm:space-x-4 mb-10 sm:mb-14">
-            <span className="w-2.5 h-2.5 sm:w-3 sm:h-3 rounded-full bg-untold-orange animate-pulse"></span>
-            <p className="font-mono text-[10px] sm:text-[12px] uppercase tracking-[0.4em] sm:tracking-[0.5em] font-bold text-white/40">
+      <section className="px-5 sm:px-10 pt-20 sm:pt-32 pb-24 lg:pt-56 lg:pb-32 border-b border-white/10">
+        <div className="max-w-[1440px] mx-auto">
+          <div className="flex items-center space-x-4 mb-14">
+            <span className="w-3 h-3 rounded-full bg-untold-orange animate-pulse"></span>
+            <p className="font-mono text-[12px] uppercase tracking-[0.5em] font-bold text-white/40">
               {t(content.eyebrow)}
             </p>
           </div>
-          <h1 className="font-sans font-black text-[clamp(3.5rem,10vw,140px)] leading-[0.8] mb-10 sm:mb-12 tracking-tighter uppercase max-w-5xl">
+          <h1 className="font-sans font-black text-[clamp(3.5rem,10vw,140px)] leading-[0.8] mb-12 tracking-tighter uppercase max-w-5xl">
             {t(content.headline)}
           </h1>
-          <p className="text-xl sm:text-2xl lg:text-4xl font-serif italic text-white/60 max-w-4xl border-l-4 border-untold-orange pl-6 sm:pl-10 leading-tight">
+          <p className="text-2xl lg:text-4xl font-serif italic text-white/60 max-w-4xl border-l-4 border-untold-orange pl-10 leading-tight">
             {t(content.subheadline)}
           </p>
         </div>
       </section>
 
       {/* Main Hub Content */}
-      <section className="w-full px-4 sm:px-6 md:px-10 py-20 sm:py-24 lg:py-40">
-        <div className="max-w-full lg:max-w-[1440px] mx-auto grid lg:grid-cols-12 gap-16 sm:gap-20 md:gap-24">
-          <div className="lg:col-span-5 space-y-20 sm:space-y-24">
-            <div className="space-y-12 sm:space-y-16">
+      <section className="px-5 sm:px-10 py-24 lg:py-40">
+        <div className="max-w-[1440px] mx-auto grid lg:grid-cols-12 gap-24">
+          <div className="lg:col-span-5 space-y-24">
+            <div className="space-y-16">
               <div className="group">
-                <span className="block font-mono text-[10px] sm:text-[11px] uppercase tracking-[0.5em] sm:tracking-[0.6em] text-white/20 mb-5 sm:mb-6 font-bold group-hover:text-untold-orange transition-colors">
+                <span className="block font-mono text-[11px] uppercase tracking-[0.6em] text-white/20 mb-6 font-bold group-hover:text-untold-orange transition-colors">
                   {t(content.emailLabel)}
                 </span>
-                <div className="flex flex-col items-start space-y-3 sm:space-y-4">
+                <div className="flex flex-col items-start space-y-4">
                   <a 
                     href="mailto:joshua@untold.works" 
-                    className="text-2xl sm:text-3xl lg:text-5xl font-sans font-black uppercase tracking-tighter hover:text-untold-orange transition-colors break-all"
+                    className="text-3xl lg:text-5xl font-sans font-black uppercase tracking-tighter hover:text-untold-orange transition-colors"
                   >
                     joshua@untold.works
                   </a>
                   <button 
                     onClick={handleCopyEmail}
-                    className="font-mono text-[9px] sm:text-[10px] uppercase tracking-widest text-untold-orange font-bold hover:text-white transition-colors flex items-center space-x-2"
+                    className="font-mono text-[10px] uppercase tracking-widest text-untold-orange font-bold hover:text-white transition-colors flex items-center space-x-2"
                   >
                     <span>{copied ? '[_COPIED_TO_CLIPBOARD_]' : '[_COPY_UPLINK_ADR_]'}</span>
                   </button>
@@ -76,22 +76,22 @@ const ContactPage: React.FC = () => {
               </div>
 
               <div className="group">
-                <span className="block font-mono text-[10px] sm:text-[11px] uppercase tracking-[0.5em] sm:tracking-[0.6em] text-white/20 mb-5 sm:mb-6 font-bold group-hover:text-untold-orange transition-colors">
+                <span className="block font-mono text-[11px] uppercase tracking-[0.6em] text-white/20 mb-6 font-bold group-hover:text-untold-orange transition-colors">
                   {t(content.locationLabel)}
                 </span>
-                <p className="text-xl sm:text-2xl lg:text-3xl font-serif italic text-white/60 leading-relaxed max-w-sm">
+                <p className="text-2xl lg:text-3xl font-serif italic text-white/60 leading-relaxed max-w-sm">
                   {t(content.location)}
                 </p>
               </div>
 
-              <div className="pt-10 sm:pt-12 border-t border-white/5">
+              <div className="pt-12 border-t border-white/5">
                 <a 
                   href="https://linkedin.com/in/semolik/" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="inline-flex items-center space-x-6 sm:space-x-10 group bg-white text-untold-black px-10 sm:px-12 py-5 sm:py-6 shadow-2xl hover:bg-untold-orange hover:text-white transition-all"
+                  className="inline-flex items-center space-x-10 group bg-white text-untold-black px-12 py-6 shadow-2xl hover:bg-untold-orange hover:text-white transition-all"
                 >
-                  <span className="font-sans font-black text-lg sm:text-xl uppercase tracking-tighter">
+                  <span className="font-sans font-black text-xl uppercase tracking-tighter">
                     LinkedIn Node →
                   </span>
                 </a>
@@ -100,7 +100,7 @@ const ContactPage: React.FC = () => {
           </div>
 
           <div className="lg:col-span-7">
-            <div className="bg-white/[0.02] border border-white/10 p-8 sm:p-12 lg:p-20 relative overflow-hidden group shadow-2xl">
+            <div className="bg-white/[0.02] border border-white/10 p-12 lg:p-20 relative overflow-hidden group shadow-2xl">
               {status === 'success' ? (
                 <div className="py-24 text-center space-y-12 animate-in fade-in zoom-in duration-700">
                   <div className="w-24 h-24 rounded-full border-2 border-untold-orange flex items-center justify-center mx-auto bg-untold-orange/5">
@@ -119,7 +119,7 @@ const ContactPage: React.FC = () => {
                       required
                       type="text"
                       placeholder="ENTER_YOUR_NAME"
-                      className="w-full bg-transparent border-b-2 border-white/10 py-6 text-2xl lg:text-3xl font-sans font-black uppercase tracking-tighter outline-none focus:border-untold-orange transition-all text-white placeholder:text-white/5"
+                      className="w-full bg-transparent border-b-2 border-white/10 py-6 text-2xl lg:text-3xl font-sans font-black uppercase tracking-tighter outline-none focus:border-untold-orange transition-all text-white placeholder:text-white/20"
                       value={formData.name}
                       onChange={(e) => setFormData({...formData, name: e.target.value})}
                     />
@@ -131,7 +131,7 @@ const ContactPage: React.FC = () => {
                       required
                       type="email"
                       placeholder="ENTER_CONTACT_UPLINK"
-                      className="w-full bg-transparent border-b-2 border-white/10 py-6 text-2xl lg:text-3xl font-sans font-black uppercase tracking-tighter outline-none focus:border-untold-orange transition-all text-white placeholder:text-white/5"
+                      className="w-full bg-transparent border-b-2 border-white/10 py-6 text-2xl lg:text-3xl font-sans font-black uppercase tracking-tighter outline-none focus:border-untold-orange transition-all text-white placeholder:text-white/20"
                       value={formData.email}
                       onChange={(e) => setFormData({...formData, email: e.target.value})}
                     />
@@ -143,7 +143,7 @@ const ContactPage: React.FC = () => {
                       required
                       rows={5}
                       placeholder="MAP_YOUR_SPECIFIC_AI_CHALLENGE_OR_OPPORTUNITY"
-                      className="w-full bg-transparent border-b-2 border-white/10 py-6 text-xl lg:text-2xl font-serif italic outline-none focus:border-untold-orange transition-all text-white placeholder:text-white/5 resize-none"
+                      className="w-full bg-transparent border-b-2 border-white/10 py-6 text-xl lg:text-2xl font-serif italic outline-none focus:border-untold-orange transition-all text-white placeholder:text-white/20 resize-none"
                       value={formData.message}
                       onChange={(e) => setFormData({...formData, message: e.target.value})}
                     />

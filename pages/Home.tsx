@@ -111,7 +111,7 @@ const Home: React.FC = () => {
             <div className="bg-untold-black p-6 sm:p-12 lg:p-16 group hover:bg-white/5 transition-all">
               <div className="mb-10">
                 <span className="font-mono text-[10px] uppercase tracking-[0.5em] text-untold-orange font-bold block mb-4">01</span>
-                <h3 className="font-sans font-black text-3xl lg:text-4xl uppercase tracking-tighter mb-3 group-hover:text-untold-orange transition-colors">
+                <h3 className="font-sans font-black text-xl sm:text-3xl lg:text-4xl uppercase tracking-tighter mb-3 group-hover:text-untold-orange transition-colors break-words">
                   {t(i18n.servicePillars.content.title)}
                 </h3>
                 <p className="font-mono text-[11px] uppercase tracking-[0.3em] text-white/40 font-bold">
@@ -134,7 +134,7 @@ const Home: React.FC = () => {
             <div className="bg-untold-black p-6 sm:p-12 lg:p-16 group hover:bg-white/5 transition-all">
               <div className="mb-10">
                 <span className="font-mono text-[10px] uppercase tracking-[0.5em] text-untold-orange font-bold block mb-4">02</span>
-                <h3 className="font-sans font-black text-3xl lg:text-4xl uppercase tracking-tighter mb-3 group-hover:text-untold-orange transition-colors">
+                <h3 className="font-sans font-black text-xl sm:text-3xl lg:text-4xl uppercase tracking-tighter mb-3 group-hover:text-untold-orange transition-colors break-words">
                   {t(i18n.servicePillars.automation.title)}
                 </h3>
                 <p className="font-mono text-[11px] uppercase tracking-[0.3em] text-white/40 font-bold">
@@ -157,7 +157,7 @@ const Home: React.FC = () => {
             <div className="bg-untold-black p-6 sm:p-12 lg:p-16 group hover:bg-white/5 transition-all">
               <div className="mb-10">
                 <span className="font-mono text-[10px] uppercase tracking-[0.5em] text-untold-orange font-bold block mb-4">03</span>
-                <h3 className="font-sans font-black text-3xl lg:text-4xl uppercase tracking-tighter mb-3 group-hover:text-untold-orange transition-colors">
+                <h3 className="font-sans font-black text-xl sm:text-3xl lg:text-4xl uppercase tracking-tighter mb-3 group-hover:text-untold-orange transition-colors break-words">
                   {t(i18n.servicePillars.infrastructure.title)}
                 </h3>
                 <p className="font-mono text-[11px] uppercase tracking-[0.3em] text-white/40 font-bold">
