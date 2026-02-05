@@ -12,9 +12,9 @@ export const projects: Project[] = [
       { en: 'Claude Code Integration', es: 'Integración de Claude Code' },
       { en: 'Content Synthesis', es: 'Síntesis de Contenido' }
     ],
-    summary: { 
-      en: 'Eliminating 15+ hours of manual content orchestration weekly via an agentic RAG-pipeline.', 
-      es: 'Eliminando más de 15 horas semanales de orquestación manual de contenido mediante un pipeline RAG agéntico.' 
+    summary: {
+      en: 'Replaced manual content curation with an automated publishing pipeline. Reclaimed up to 15 hours per week.',
+      es: 'Reemplacé la curaduría manual de contenido con un pipeline de publicación automatizado. Recuperando hasta 15 horas semanales.'
     },
     challenge: { 
       en: 'Manual curation was a massive bottleneck for scale. Curators were spending 15+ hours weekly on manual data entry and drafting, causing significant lead-time delays and operational fatigue.', 
@@ -58,9 +58,9 @@ export const projects: Project[] = [
       { en: 'Launch Orchestration', es: 'Orquestación de Lanzamiento' },
       { en: 'GTM Governance', es: 'Gobernanza GTM' }
     ],
-    summary: { 
-      en: 'Transitioning from manual posting to an autonomous content engine that handles 500+ signals.', 
-      es: 'Transición de publicaciones manuales a un motor de contenido autónomo que maneja más de 500 señales.' 
+    summary: {
+      en: 'Automated social campaign packaging and scheduling across platforms. Grew audience reach by 300%.',
+      es: 'Automaticé el empaquetado y programación de campañas sociales. Crecimiento de alcance de audiencia del 300%.'
     },
     challenge: { 
       en: 'Maintaining high-integrity, cinematic brand dominance required impossible manual hours for content packaging and scheduling across multiple social platforms.', 
@@ -88,7 +88,7 @@ export const projects: Project[] = [
   },
   {
     id: 'omi-lead-intake-qualification',
-    name: { en: 'OMI Agentic Intake & Routing', es: 'Ingestión y Enrutamiento Agéntico OMI' },
+    name: { en: 'OMI Intake & Routing', es: 'Ingestión y Enrutamiento OMI' },
     client: { en: 'OMI Growth', es: 'OMI Growth' },
     timeline: '2024 - Present',
     stack: ['n8n', 'OpenAI Agents', 'Apollo API', 'Salesforce', 'Google Sheets'],
@@ -97,9 +97,9 @@ export const projects: Project[] = [
       { en: 'Revenue Enablement', es: 'Habilitación de Ingresos' },
       { en: 'Attribution Modeling', es: 'Modelado de Atribución' }
     ],
-    summary: { 
-      en: 'Delivering 98% MQL accuracy and 4.2x Sales ROI through intelligent agentic routing.', 
-      es: 'Entregando un 98% de precisión en MQL y un ROI de ventas de 4.2x mediante enrutamiento agéntico inteligente.' 
+    summary: {
+      en: 'Built an intelligent lead routing system that qualifies inbound leads automatically. Measured 98% MQL accuracy and 4.2x sales ROI.',
+      es: 'Construí un sistema inteligente de enrutamiento que califica leads entrantes automáticamente. Precisión MQL medida del 98% y ROI de ventas de 4.2x.'
     },
     challenge: { 
       en: 'Lead leakage and poor MQL accuracy were creating massive sales inefficiencies. High-volume intake meant sales reps were wasting 40% of their time on unqualified prospects.', 
@@ -136,9 +136,9 @@ export const projects: Project[] = [
       { en: 'Unit Economics', es: 'Economía de Unidad' },
       { en: 'GTM Governance', es: 'Gobernanza GTM' }
     ],
-    summary: { 
-      en: 'Driving a 20% sales lift through a unified cross-channel operating model for 4,000+ products.', 
-      es: 'Impulsando un aumento del 20% en las ventas mediante un modelo operativo multicanal unificado para más de 4,000 productos.' 
+    summary: {
+      en: 'Unified product data across physical and digital storefronts. Measured a 20% sales lift across 4,000+ products.',
+      es: 'Unifiqué los datos de productos entre tiendas físicas y digitales. Aumento medido del 20% en ventas en más de 4,000 productos.'
     },
     challenge: { 
       en: 'Operational silos and fragmented data across physical and digital storefronts were preventing unified inventory control and effective retail marketing.', 
