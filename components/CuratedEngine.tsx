@@ -60,7 +60,7 @@ const CuratedEngine: React.FC = () => {
   };
 
   return (
-    <section className="px-10 py-32 lg:py-48 bg-[#050505] border-t border-b border-white/5 relative overflow-hidden font-mono selection:bg-untold-orange/30">
+    <section className="px-5 sm:px-10 py-20 sm:py-32 lg:py-48 bg-[#050505] border-t border-b border-white/5 relative overflow-hidden font-mono selection:bg-untold-orange/30">
       {/* IDE Style Grid Overlay */}
       <div className="absolute inset-0 opacity-[0.05] pointer-events-none" 
            style={{ backgroundImage: 'linear-gradient(#fff 1px, transparent 1px), linear-gradient(90deg, #fff 1px, transparent 1px)', backgroundSize: '40px 40px' }}></div>
@@ -93,7 +93,7 @@ const CuratedEngine: React.FC = () => {
           {/* Main Content Area */}
           <div className="lg:col-span-8">
             <div className="mb-24">
-              <h3 className="text-3xl lg:text-5xl font-serif italic text-white/90 leading-[1.15] tracking-tight mb-10 max-w-4xl">
+              <h3 className="text-xl sm:text-3xl lg:text-5xl font-serif italic text-white/90 leading-[1.15] tracking-tight mb-10 max-w-4xl">
                 {t(content.headline)}
               </h3>
               <div className="flex items-center space-x-4">
@@ -112,7 +112,7 @@ const CuratedEngine: React.FC = () => {
                 >
                   <div className="grid md:grid-cols-12">
                     {/* Lateral Label */}
-                    <div className="md:col-span-4 p-10 border-b md:border-b-0 md:border-r border-white/5 flex flex-col justify-between">
+                    <div className="md:col-span-4 p-6 sm:p-10 border-b md:border-b-0 md:border-r border-white/5 flex flex-col justify-between">
                       <div>
                         <div className={`flex items-center space-x-4 mb-8 ${cat.color} opacity-40 group-hover:opacity-100 transition-opacity`}>
                           {cat.icon}
@@ -131,7 +131,7 @@ const CuratedEngine: React.FC = () => {
                     </div>
 
                     {/* Tools & Playbook Insight */}
-                    <div className="md:col-span-8 p-10 relative">
+                    <div className="md:col-span-8 p-6 sm:p-10 relative">
                       <AnimatePresence mode="wait">
                         {activeCategory === cat.key ? (
                           <motion.div 
@@ -139,7 +139,7 @@ const CuratedEngine: React.FC = () => {
                             initial={{ opacity: 0, x: 20 }}
                             animate={{ opacity: 1, x: 0 }}
                             exit={{ opacity: 0, x: -20 }}
-                            className="absolute inset-0 p-10 bg-untold-black/90 backdrop-blur-md z-10 flex flex-col justify-center"
+                            className="absolute inset-0 p-6 sm:p-10 bg-untold-black/90 backdrop-blur-md z-10 flex flex-col justify-center"
                           >
                             <span className="text-[10px] text-untold-orange mb-4 font-bold tracking-[0.5em] uppercase">Joshua's Insight</span>
                             <p className="text-xl lg:text-2xl font-serif italic text-white leading-relaxed">
@@ -185,7 +185,7 @@ const CuratedEngine: React.FC = () => {
           {/* Sidebar: System Balance Visualization */}
           <div className="lg:col-span-4">
             <div className="sticky top-48">
-              <div className="border border-white/10 bg-white/[0.02] p-10 lg:p-14 relative overflow-hidden">
+              <div className="border border-white/10 bg-white/[0.02] p-6 sm:p-10 lg:p-14 relative overflow-hidden">
                 <div className="absolute top-0 right-0 p-4 opacity-10"><Activity className="w-12 h-12" /></div>
                 
                 <h4 className="text-[12px] uppercase tracking-[0.5em] font-bold text-untold-orange mb-14">
