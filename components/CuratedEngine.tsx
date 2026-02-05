@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useLanguage } from '../App';
 import * as i18n from '../i18n';
-import { Layers, Zap, PenTool, Terminal, Activity, Code2, Globe } from 'lucide-react';
+import { Layers, Zap, PenTool, Terminal, Code2, Globe } from 'lucide-react';
 
 const CuratedEngine: React.FC = () => {
   const { t } = useLanguage();
@@ -38,12 +38,6 @@ const CuratedEngine: React.FC = () => {
       icon: <PenTool className="w-5 h-5" />,
       color: 'text-purple-400'
     }
-  ];
-
-  const balanceStats = [
-    { label: content.balance.creative, value: 95 },
-    { label: content.balance.technical, value: 90 },
-    { label: content.balance.integration, value: 100 }
   ];
 
   const containerVariants = {
@@ -89,9 +83,9 @@ const CuratedEngine: React.FC = () => {
           </div>
         </div>
 
-        <div className="grid lg:grid-cols-12 gap-16 lg:gap-24">
-          {/* Main Content Area */}
-          <div className="lg:col-span-8">
+        <div>
+          {/* Main Content Area - Full Width */}
+          <div>
             <div className="mb-24">
               <h3 className="text-xl sm:text-3xl lg:text-5xl font-serif italic text-white/90 leading-[1.15] tracking-tight mb-10 max-w-4xl">
                 {t(content.headline)}
@@ -104,8 +98,8 @@ const CuratedEngine: React.FC = () => {
 
             <div className="space-y-10">
               {categories.map((cat, idx) => (
-                <div 
-                  key={cat.key} 
+                <div
+                  key={cat.key}
                   onMouseEnter={() => setActiveCategory(cat.key)}
                   onMouseLeave={() => setActiveCategory(null)}
                   className={`group relative border transition-all duration-500 overflow-hidden ${activeCategory === cat.key ? 'border-white/30 bg-white/[0.04]' : 'border-white/5 bg-white/[0.01]'}`}
@@ -122,7 +116,7 @@ const CuratedEngine: React.FC = () => {
                           {t(cat.label)}
                         </h4>
                       </div>
-                      
+
                       <div className="mt-8">
                         <p className="text-[10px] uppercase tracking-[0.3em] text-white/30 font-bold leading-relaxed">
                           {t(cat.tagline)}
@@ -134,7 +128,7 @@ const CuratedEngine: React.FC = () => {
                     <div className="md:col-span-8 p-6 sm:p-10 relative">
                       <AnimatePresence mode="wait">
                         {activeCategory === cat.key ? (
-                          <motion.div 
+                          <motion.div
                             key="insight"
                             initial={{ opacity: 0, x: 20 }}
                             animate={{ opacity: 1, x: 0 }}
@@ -153,15 +147,15 @@ const CuratedEngine: React.FC = () => {
                         ) : null}
                       </AnimatePresence>
 
-                      <motion.div 
+                      <motion.div
                         initial="hidden"
                         whileInView="visible"
                         viewport={{ once: true }}
                         variants={containerVariants}
-                        className="grid grid-cols-2 md:grid-cols-3 gap-8"
+                        className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8"
                       >
                         {cat.tools.map((tool) => (
-                          <motion.div 
+                          <motion.div
                             key={tool}
                             variants={itemVariants}
                             className="flex flex-col space-y-3"
@@ -179,64 +173,6 @@ const CuratedEngine: React.FC = () => {
                   </div>
                 </div>
               ))}
-            </div>
-          </div>
-
-          {/* Sidebar: System Balance Visualization */}
-          <div className="lg:col-span-4">
-            <div className="sticky top-48">
-              <div className="border border-white/10 bg-white/[0.02] p-6 sm:p-10 lg:p-14 relative overflow-hidden">
-                <div className="absolute top-0 right-0 p-4 opacity-10"><Activity className="w-12 h-12" /></div>
-                
-                <h4 className="text-[12px] uppercase tracking-[0.5em] font-bold text-untold-orange mb-14">
-                  {t(content.balance.title)}
-                </h4>
-
-                <div className="space-y-12">
-                  {balanceStats.map((stat, idx) => (
-                    <div key={idx} className="space-y-4 group">
-                      <div className="flex justify-between items-end">
-                        <span className="text-[10px] uppercase tracking-[0.4em] font-bold text-white/40 group-hover:text-white transition-colors">{t(stat.label)}</span>
-                        <span className="text-xl font-black text-white">{stat.value}%</span>
-                      </div>
-                      <div className="h-1.5 w-full bg-white/5 relative">
-                        <motion.div 
-                          initial={{ width: 0 }}
-                          whileInView={{ width: `${stat.value}%` }}
-                          transition={{ duration: 1.5, delay: idx * 0.2 }}
-                          viewport={{ once: true }}
-                          className={`absolute inset-y-0 left-0 ${idx === 0 ? 'bg-purple-500' : idx === 1 ? 'bg-cyan-500' : 'bg-untold-orange'}`}
-                        ></motion.div>
-                        <div className="absolute inset-y-0 left-0 bg-white/20 blur-sm w-full opacity-0 group-hover:opacity-100 transition-opacity"></div>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-
-                <div className="mt-16 pt-10 border-t border-white/5 space-y-6">
-                  <p className="text-[11px] text-white/40 leading-relaxed italic">
-                    This profile confirms my capability as the bridge between creative vision and enterprise execution. 
-                  </p>
-                  <div className="flex items-center space-x-3 text-[9px] text-untold-orange font-bold uppercase tracking-[0.2em]">
-                    <span className="w-2 h-2 rounded-full bg-untold-orange animate-ping"></span>
-                    <span>Systems Alignment: Optimized</span>
-                  </div>
-                </div>
-              </div>
-
-              {/* Technical Code Snippet Detail */}
-              <div className="mt-10 p-10 bg-[#0a0a0a] border border-white/5 text-[10px] text-white/10 leading-tight">
-                <pre>
-                  <code>{`// JS_SYNC_PROTOCOL
-const harmony = {
-  vision: 0.95,
-  execution: 0.90,
-  integration: 1.0,
-  bridge: (v, e) => v * e * 1.5
-};
-return harmony.bridge();`}</code>
-                </pre>
-              </div>
             </div>
           </div>
         </div>
