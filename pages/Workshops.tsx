@@ -16,9 +16,9 @@ const WorkshopsPage: React.FC = () => {
       {/* Outcome-First Hero Section */}
       <section className="px-10 pt-32 pb-24 lg:pt-56 lg:pb-40 border-b border-white/10">
         <div className="max-w-[1440px] mx-auto">
-          <div className="flex items-center space-x-4 mb-14">
-            <span className="w-3 h-3 rounded-full bg-untold-orange animate-pulse"></span>
-            <p className="font-mono text-[12px] uppercase tracking-[0.5em] font-bold text-white/40">
+          <div className="flex items-center space-x-3 sm:space-x-4 mb-14">
+            <span className="w-2.5 h-2.5 sm:w-3 sm:h-3 rounded-full bg-untold-orange animate-pulse"></span>
+            <p className="font-mono text-[10px] sm:text-[12px] uppercase tracking-[0.5em] font-bold text-white/40">
               {t(syllabus.eyebrow)}
             </p>
           </div>
@@ -61,9 +61,9 @@ const WorkshopsPage: React.FC = () => {
       </section>
 
       {/* Practical Pathway Grid */}
-      <section className="px-10 py-24 lg:py-40 bg-white/[0.01] border-b border-white/10">
+      <section className="px-4 sm:px-6 md:px-10 py-24 lg:py-40 bg-white/[0.01] border-b border-white/10">
         <div className="max-w-[1440px] mx-auto">
-          <div className="flex items-center space-x-4 mb-24">
+          <div className="flex items-center space-x-3 sm:space-x-4 mb-24">
              <span className="w-2.5 h-2.5 rounded-full bg-untold-orange"></span>
              <h2 className="font-mono text-[11px] uppercase tracking-[0.6em] font-bold text-white/30 uppercase">LEARNING_LOG // EVERYDAY_PHASES</h2>
           </div>
@@ -95,7 +95,7 @@ const WorkshopsPage: React.FC = () => {
       </section>
 
       {/* Toolkit Section */}
-      <section className="px-10 py-24 lg:py-40 border-b border-white/10">
+      <section className="px-4 sm:px-6 md:px-10 py-24 lg:py-40 border-b border-white/10">
         <div className="max-w-[1440px] mx-auto grid lg:grid-cols-12 gap-20 items-center">
           <div className="lg:col-span-6 space-y-12">
             <div className="flex items-center space-x-4">
@@ -128,7 +128,7 @@ const WorkshopsPage: React.FC = () => {
       </section>
 
       {/* Final Call */}
-      <section className="px-10 py-48 lg:py-72 text-center bg-white/[0.02]">
+      <section className="px-4 sm:px-6 md:px-10 py-48 lg:py-72 text-center bg-white/[0.02]">
         <div className="max-w-6xl mx-auto flex flex-col items-center">
           <h2 className="font-sans font-black text-[clamp(4.5rem,14vw,180px)] leading-[0.8] mb-16 tracking-tighter uppercase text-white">
             {t({ en: 'Save\nYour\nTime.', es: 'Ahorra\nTu\nTiempo.' })}

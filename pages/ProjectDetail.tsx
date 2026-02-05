@@ -55,7 +55,7 @@ const ProjectDetail: React.FC = () => {
               <span className="block font-mono text-[10px] uppercase tracking-[0.5em] text-white/30">TECHNICAL_STACK</span>
               <div className="flex flex-wrap gap-x-6 gap-y-2">
                 {project.stack.map((item, idx) => (
-                  <p key={idx} className="text-[12px] font-bold uppercase tracking-tight font-mono text-white/60">{item}</p>
+                  <p key={idx} className="text-[10px] sm:text-[12px] font-bold uppercase tracking-tight font-mono text-white/60">{item}</p>
                 ))}
               </div>
             </div>
@@ -63,7 +63,7 @@ const ProjectDetail: React.FC = () => {
               <span className="block font-mono text-[10px] uppercase tracking-[0.5em] text-white/30">SERVICES_PROVIDED</span>
               <div className="flex flex-wrap gap-x-8 gap-y-2">
                 {project.services.map((service, idx) => (
-                  <p key={idx} className="text-[12px] font-bold uppercase tracking-tight font-mono">{t(service)}</p>
+                  <p key={idx} className="text-[10px] sm:text-[12px] font-bold uppercase tracking-tight font-mono">{t(service)}</p>
                 ))}
               </div>
             </div>
@@ -72,7 +72,7 @@ const ProjectDetail: React.FC = () => {
       </header>
 
       {/* Narrative Grid - Split Layout */}
-      <section className="px-10 py-32 lg:py-56 border-b border-white/5">
+      <section className="px-4 sm:px-6 md:px-10 py-24 sm:py-32 lg:py-56 border-b border-white/5">
         <div className="max-w-[1440px] mx-auto grid lg:grid-cols-12 gap-24 items-start">
           <div className="lg:col-span-6 sticky top-48">
             <h2 className="text-4xl lg:text-7xl font-serif italic text-untold-orange leading-[1.05] tracking-tighter mb-16">
@@ -132,9 +132,9 @@ const ProjectDetail: React.FC = () => {
       </section>
 
       {/* Artifact Gallery - 4-Column Responsive Grid */}
-      <section className="px-10 py-32 lg:py-48 bg-white/[0.02]">
+      <section className="px-4 sm:px-6 md:px-10 py-24 sm:py-32 lg:py-48 bg-white/[0.02]">
         <div className="max-w-[1440px] mx-auto">
-          <div className="flex items-center space-x-4 mb-24">
+          <div className="flex items-center space-x-3 sm:space-x-4 mb-24">
              <span className="w-2.5 h-2.5 rounded-full bg-untold-orange"></span>
              <h3 className="font-mono text-[11px] uppercase tracking-[0.6em] font-bold text-white/40 tracking-widest">SYSTEM_VISUALS_&_ARTIFACTS</h3>
           </div>
@@ -154,7 +154,7 @@ const ProjectDetail: React.FC = () => {
       </section>
 
       {/* Bottom Nav - Next/Previous Toggle */}
-      <section className="px-10 py-32 border-t border-white/5 bg-black">
+      <section className="px-4 sm:px-6 md:px-10 py-24 sm:py-32 border-t border-white/5 bg-black">
         <div className="max-w-[1440px] mx-auto grid md:grid-cols-2 gap-px bg-white/5 border border-white/10">
            <Link to={`/portfolio/${prevProject.id}`} className="group p-12 lg:p-20 bg-black hover:bg-white/[0.03] transition-all border-r border-white/10">
               <span className="block font-mono text-[10px] uppercase tracking-[0.5em] text-white/30 mb-10">PREVIOUS_ARTIFACT</span>

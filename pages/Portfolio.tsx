@@ -10,11 +10,11 @@ const Portfolio: React.FC = () => {
   return (
     <div className="bg-untold-black text-white min-h-screen font-serif">
       {/* Header */}
-      <section className="px-10 py-32 lg:py-48 border-b border-white/5">
+      <section className="px-4 sm:px-6 md:px-10 py-24 sm:py-32 lg:py-48 border-b border-white/5">
         <div className="max-w-[1440px] mx-auto">
-          <div className="flex items-center space-x-4 mb-10">
-            <span className="w-3 h-3 rounded-full bg-untold-orange"></span>
-            <p className="font-mono text-[12px] uppercase tracking-[0.5em] font-bold text-white/40">
+          <div className="flex items-center space-x-3 sm:space-x-4 mb-10">
+            <span className="w-2.5 h-2.5 sm:w-3 sm:h-3 rounded-full bg-untold-orange"></span>
+            <p className="font-mono text-[10px] sm:text-[12px] uppercase tracking-[0.5em] font-bold text-white/40">
               {t({ en: 'VERIFIED_SYSTEMS', es: 'SISTEMAS_VERIFICADOS' })}
             </p>
           </div>
@@ -34,7 +34,7 @@ const Portfolio: React.FC = () => {
       </section>
 
       {/* Grid */}
-      <section className="px-10 py-10">
+      <section className="px-4 sm:px-6 md:px-10 py-10">
         <div className="max-w-[1440px] mx-auto grid lg:grid-cols-2 gap-px bg-white/10 border border-white/10">
           {projects.map((project, idx) => (
             <Link 
@@ -94,7 +94,7 @@ const Portfolio: React.FC = () => {
       <CuratedEngine />
 
       {/* Footer CTA */}
-      <section className="px-10 py-48 text-center border-t border-white/5">
+      <section className="px-4 sm:px-6 md:px-10 py-48 text-center border-t border-white/5">
         <h2 className="font-sans font-black text-4xl lg:text-8xl mb-12 uppercase tracking-tighter leading-none">
           {t({ en: 'Ready to\nmap yours?', es: '¿Listo para\nmapear el tuyo?' })}
         </h2>
