@@ -74,8 +74,8 @@ const Home: React.FC = () => {
           
           <div className="border-t border-untold-border">
             {[i18n.model.design, i18n.model.build, i18n.model.operate].map((step, idx) => (
-              <div key={idx} className="grid lg:grid-cols-12 gap-0 border-b border-untold-border group hover:bg-untold-beige transition-all duration-700">
-                <div className="lg:col-span-5 p-8 sm:p-12 lg:p-20 border-r border-untold-border">
+              <div key={idx} className="grid grid-cols-1 lg:grid-cols-12 gap-0 border-b border-untold-border group hover:bg-untold-beige transition-all duration-700">
+                <div className="lg:col-span-5 p-8 sm:p-12 lg:p-20 lg:border-r border-untold-border">
                   <span className="font-mono text-[10px] sm:text-[11px] font-bold text-untold-orange mb-6 sm:mb-8 block tracking-[0.3em] sm:tracking-[0.4em] uppercase">{t({en: step.title.en.split(': ')[0], es: step.title.es.split(': ')[0]})}</span>
                   <h3 className="font-sans font-black text-3xl sm:text-4xl lg:text-6xl uppercase tracking-tighter leading-tight group-hover:text-untold-orange transition-colors">
                     {t({ en: step.title.en.split(': ')[1], es: step.title.es.split(': ')[1] })}
@@ -106,7 +106,7 @@ const Home: React.FC = () => {
             <h2 className="font-mono text-[11px] sm:text-[13px] uppercase tracking-[0.5em] sm:tracking-[0.6em] font-bold text-white/40">{t(i18n.servicePillars.title)}</h2>
           </div>
 
-          <div className="grid lg:grid-cols-3 gap-px bg-white/10">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-px bg-white/10">
             {/* Content Systems */}
             <div className="bg-untold-black p-8 sm:p-12 lg:p-16 group hover:bg-white/5 transition-all">
               <div className="mb-8 sm:mb-10">
