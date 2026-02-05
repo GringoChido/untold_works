@@ -31,10 +31,10 @@ const ContactPage: React.FC = () => {
   };
 
   return (
-    <div className="bg-untold-black min-h-screen font-serif text-white selection:bg-untold-orange selection:text-white">
+    <div className="bg-untold-black min-h-screen font-serif text-white overflow-x-hidden max-w-full selection:bg-untold-orange selection:text-white">
       {/* Hero Header */}
-      <section className="px-4 sm:px-6 md:px-10 pt-24 pb-20 sm:pt-32 sm:pb-24 lg:pt-56 lg:pb-32 border-b border-white/10">
-        <div className="max-w-[1440px] mx-auto">
+      <section className="w-full px-4 sm:px-6 md:px-10 pt-24 pb-20 sm:pt-32 sm:pb-24 lg:pt-56 lg:pb-32 border-b border-white/10">
+        <div className="max-w-full lg:max-w-[1440px] mx-auto">
           <div className="flex items-center space-x-3 sm:space-x-4 mb-10 sm:mb-14">
             <span className="w-2.5 h-2.5 sm:w-3 sm:h-3 rounded-full bg-untold-orange animate-pulse"></span>
             <p className="font-mono text-[10px] sm:text-[12px] uppercase tracking-[0.4em] sm:tracking-[0.5em] font-bold text-white/40">
@@ -51,8 +51,8 @@ const ContactPage: React.FC = () => {
       </section>
 
       {/* Main Hub Content */}
-      <section className="px-4 sm:px-6 md:px-10 py-20 sm:py-24 lg:py-40">
-        <div className="max-w-[1440px] mx-auto grid lg:grid-cols-12 gap-16 sm:gap-20 md:gap-24">
+      <section className="w-full px-4 sm:px-6 md:px-10 py-20 sm:py-24 lg:py-40">
+        <div className="max-w-full lg:max-w-[1440px] mx-auto grid lg:grid-cols-12 gap-16 sm:gap-20 md:gap-24">
           <div className="lg:col-span-5 space-y-20 sm:space-y-24">
             <div className="space-y-12 sm:space-y-16">
               <div className="group">

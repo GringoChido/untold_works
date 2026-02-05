@@ -12,13 +12,13 @@ const AboutPage: React.FC = () => {
   }, []);
 
   return (
-    <div className="bg-untold-black min-h-screen font-serif text-white selection:bg-untold-orange selection:text-white">
+    <div className="bg-untold-black min-h-screen font-serif text-white overflow-x-hidden max-w-full selection:bg-untold-orange selection:text-white">
       {/* Principal Identity Hero Section */}
-      <section className="px-4 sm:px-6 md:px-10 pt-24 pb-32 sm:pt-32 sm:pb-40 lg:pt-56 lg:pb-64 border-b border-white/10 relative overflow-hidden">
+      <section className="w-full px-4 sm:px-6 md:px-10 pt-24 pb-32 sm:pt-32 sm:pb-40 lg:pt-56 lg:pb-64 border-b border-white/10 relative overflow-hidden">
         <div className="absolute inset-0 opacity-[0.03] pointer-events-none" 
              style={{ backgroundImage: 'linear-gradient(#fff 1px, transparent 1px), linear-gradient(90deg, #fff 1px, transparent 1px)', backgroundSize: '80px 80px' }}></div>
         
-        <div className="max-w-[1440px] mx-auto relative">
+        <div className="max-w-full lg:max-w-[1440px] mx-auto relative">
           <div className="flex items-center space-x-3 sm:space-x-4 mb-10 sm:mb-14">
             <span className="w-2.5 h-2.5 sm:w-3 sm:h-3 rounded-full bg-untold-orange animate-pulse"></span>
             <p className="font-mono text-[10px] sm:text-[12px] uppercase tracking-[0.4em] sm:tracking-[0.5em] font-bold text-white/40">
@@ -53,8 +53,8 @@ const AboutPage: React.FC = () => {
       </section>
 
       {/* Career Evolution Block */}
-      <section className="px-4 sm:px-6 md:px-10 py-24 sm:py-32 lg:py-48 border-b border-white/10 bg-white/[0.01]">
-        <div className="max-w-[1440px] mx-auto grid lg:grid-cols-12 gap-16 sm:gap-20 md:gap-24 items-start">
+      <section className="w-full px-4 sm:px-6 md:px-10 py-24 sm:py-32 lg:py-48 border-b border-white/10 bg-white/[0.01]">
+        <div className="max-w-full lg:max-w-[1440px] mx-auto grid lg:grid-cols-12 gap-16 sm:gap-20 md:gap-24 items-start">
            <div className="lg:col-span-4">
              <div className="sticky top-48">
                <span className="font-mono text-[10px] sm:text-[11px] uppercase tracking-[0.5em] sm:tracking-[0.6em] font-bold text-white/30 block mb-8 sm:mb-10">THE_PRACTITIONER // LOG_01</span>
@@ -98,7 +98,7 @@ const AboutPage: React.FC = () => {
       </section>
 
       {/* Partnerships Closing Section */}
-      <section className="px-4 sm:px-6 md:px-10 py-32 sm:py-40 md:py-48 text-center bg-white/[0.02]">
+      <section className="w-full px-4 sm:px-6 md:px-10 py-32 sm:py-40 md:py-48 text-center bg-white/[0.02]">
         <div className="max-w-5xl mx-auto">
           <div className="w-px h-24 sm:h-32 bg-gradient-to-b from-untold-orange to-transparent mx-auto mb-12 sm:mb-16"></div>
           <h2 className="font-sans font-black text-5xl sm:text-6xl lg:text-[110px] mb-10 sm:mb-12 uppercase tracking-tighter leading-none text-white">

@@ -12,14 +12,14 @@ const Home: React.FC = () => {
   }, []);
 
   return (
-    <div className="bg-untold-beige font-serif text-untold-black">
+    <div className="bg-untold-beige font-serif text-untold-black overflow-x-hidden max-w-full">
       {/* High-Authority Technical Hero Section */}
-      <section className="bg-untold-black text-white px-4 sm:px-6 md:px-10 py-24 sm:py-32 lg:py-56 border-b border-white/10 relative overflow-hidden">
+      <section className="w-full bg-untold-black text-white px-4 sm:px-6 md:px-10 py-24 sm:py-32 lg:py-56 border-b border-white/10 relative overflow-hidden">
         {/* Schematic Grid Overlay */}
         <div className="absolute inset-0 opacity-[0.03] pointer-events-none" 
              style={{ backgroundImage: 'linear-gradient(#fff 1px, transparent 1px), linear-gradient(90deg, #fff 1px, transparent 1px)', backgroundSize: '80px 80px' }}></div>
         
-        <div className="max-w-[1440px] mx-auto relative">
+        <div className="max-w-full lg:max-w-[1440px] mx-auto relative">
           <div className="flex items-center space-x-3 sm:space-x-4 mb-10 sm:mb-14">
             <span className="w-2.5 h-2.5 sm:w-3 sm:h-3 rounded-full bg-untold-orange animate-pulse"></span>
             <p className="font-mono text-[10px] sm:text-[11px] lg:text-[13px] uppercase tracking-[0.4em] sm:tracking-[0.6em] font-bold text-white/40">
@@ -65,8 +65,8 @@ const Home: React.FC = () => {
       </section>
 
       {/* Operating Model Section */}
-      <section className="px-4 sm:px-6 md:px-10 py-24 sm:py-32 bg-white border-b border-untold-border overflow-hidden">
-        <div className="max-w-[1440px] mx-auto">
+      <section className="w-full px-4 sm:px-6 md:px-10 py-24 sm:py-32 bg-white border-b border-untold-border overflow-hidden">
+        <div className="max-w-full lg:max-w-[1440px] mx-auto">
           <div className="flex items-center space-x-3 sm:space-x-4 mb-20 sm:mb-32">
              <span className="w-2 h-2 sm:w-2.5 sm:h-2.5 rounded-full bg-untold-black"></span>
              <h2 className="font-mono text-[11px] sm:text-[13px] uppercase tracking-[0.5em] sm:tracking-[0.6em] font-bold text-untold-black/40">{t(i18n.model.title)}</h2>
@@ -99,8 +99,8 @@ const Home: React.FC = () => {
       </section>
 
       {/* Service Pillars Section */}
-      <section className="px-4 sm:px-6 md:px-10 py-24 sm:py-32 bg-untold-black text-white border-b border-white/5">
-        <div className="max-w-[1440px] mx-auto">
+      <section className="w-full px-4 sm:px-6 md:px-10 py-24 sm:py-32 bg-untold-black text-white border-b border-white/5">
+        <div className="max-w-full lg:max-w-[1440px] mx-auto">
           <div className="flex items-center space-x-3 sm:space-x-4 mb-16 sm:mb-20">
             <span className="w-2 h-2 sm:w-2.5 sm:h-2.5 rounded-full bg-untold-orange"></span>
             <h2 className="font-mono text-[11px] sm:text-[13px] uppercase tracking-[0.5em] sm:tracking-[0.6em] font-bold text-white/40">{t(i18n.servicePillars.title)}</h2>
@@ -183,8 +183,8 @@ const Home: React.FC = () => {
       <TechStack />
 
       {/* Selected Artifacts Section */}
-      <section className="bg-untold-black text-white py-24 sm:py-32 overflow-hidden border-b border-white/5">
-        <div className="max-w-[1440px] mx-auto px-4 sm:px-6 md:px-10">
+      <section className="w-full bg-untold-black text-white py-24 sm:py-32 overflow-hidden border-b border-white/5">
+        <div className="max-w-full lg:max-w-[1440px] mx-auto px-4 sm:px-6 md:px-10">
            <div className="mb-16 sm:mb-20 md:mb-24">
              <span className="font-mono text-[10px] sm:text-[11px] uppercase tracking-[0.4em] sm:tracking-[0.5em] font-bold text-untold-gray mb-4 sm:mb-6 block uppercase">{t(i18n.artifacts.eyebrow)}</span>
              <h2 className="font-sans font-black text-5xl sm:text-6xl lg:text-[100px] leading-[0.85] uppercase tracking-tighter mb-8 sm:mb-10">{t(i18n.artifacts.headline)}</h2>
@@ -262,7 +262,7 @@ const Home: React.FC = () => {
       </section>
 
       {/* Final CTA */}
-      <section className="px-4 sm:px-6 md:px-10 py-32 sm:py-48 lg:py-72 text-center bg-untold-beige/40">
+      <section className="w-full px-4 sm:px-6 md:px-10 py-32 sm:py-48 lg:py-72 text-center bg-untold-beige/40">
         <div className="max-w-6xl mx-auto flex flex-col items-center">
           <h2 className="font-sans font-black text-[clamp(3.5rem,12vw,180px)] leading-[0.8] mb-12 sm:mb-16 tracking-tighter uppercase group cursor-default whitespace-pre-line text-center">
             {t({ 
