@@ -41,9 +41,6 @@ const AboutPage: React.FC = () => {
 
             <div className="lg:col-span-5 relative">
               <div className="aspect-[4/5] bg-untold-beige/5 border border-white/20 relative group overflow-hidden">
-                <div className="absolute top-0 right-0 p-4 font-mono text-[9px] text-white/30 uppercase tracking-[0.4em] font-bold z-10 bg-untold-black/60">
-                  PRINCIPAL_IMAGE // JS_2026
-                </div>
                 <img 
                   src="/images/about-photo.jpg" 
                   alt="Joshua Semolik" 
