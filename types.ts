@@ -41,3 +41,21 @@ export interface WorkflowProof {
   tags: string[];
 }
 
+export interface Track {
+  id: string;
+  name: string;
+  artist: string;
+  spotifyId: string;
+}
+
+export interface StereoState {
+  power: boolean;
+  playing: boolean;
+  volume: number;
+  currentTrack: Track | null;
+  currentTrackIndex: number;
+  shuffledQueue: Track[];
+  vuLeft: number;
+  vuRight: number;
+}
+

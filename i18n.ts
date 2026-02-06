@@ -305,3 +305,16 @@ export const contactPage = {
   socialLabel: { en: 'SOCIAL_01 // CONNECT_ON_LINKEDIN', es: 'SOCIAL_01 // CONECTAR_EN_LINKEDIN' },
   cta: { en: 'ESTABLISH CONNECTION', es: 'ESTABLECER CONEXIÓN' }
 };
+
+export const stereoTeaser = {
+  label: { en: 'UNTOLD_ANALOG // TUNE_IN →', es: 'UNTOLD_ANALOG // SINTONIZA →' }
+};
+
+export const stereoPage = {
+  back: { en: '← BACK TO UNTOLD.WORKS', es: '← VOLVER A UNTOLD.WORKS' },
+  title: { en: 'UNTOLD_ANALOG', es: 'UNTOLD_ANALOG' },
+  noTrack: { en: 'NO SIGNAL', es: 'SIN SEÑAL' },
+  nowPlaying: { en: 'NOW PLAYING', es: 'REPRODUCIENDO' },
+  volume: { en: 'VOL', es: 'VOL' },
+  powerHint: { en: 'PRESS POWER TO START', es: 'PRESIONA POWER PARA INICIAR' }
+};

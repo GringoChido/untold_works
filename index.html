@@ -7,40 +7,13 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@800;900&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=IBM+Plex+Mono:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@800;900&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=IBM+Plex+Mono:wght@400;600;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
     <style>
-      * {
-        box-sizing: border-box;
-      }
-      html, body {
-        overflow-x: hidden !important;
-        max-width: 100vw;
-        width: 100%;
-        position: relative;
-      }
       body {
         font-family: 'Libre Caslon Text', serif;
         background-color: #F5F3EF;
         -webkit-font-smoothing: antialiased;
         color: #000000;
-      }
-      #root {
-        overflow-x: hidden !important;
-        max-width: 100vw;
-        width: 100%;
-      }
-      /* Force all containers to respect mobile width */
-      @media (max-width: 1023px) {
-        .max-w-\[1440px\],
-        .max-w-\[1540px\],
-        [class*="max-w-["] {
-          max-width: 100% !important;
-        }
-        /* Ensure padding doesn't cause overflow */
-        .px-10 {
-          padding-left: 1rem !important;
-          padding-right: 1rem !important;
-        }
       }
       .tracking-tight-custom {
         letter-spacing: -0.06em;
@@ -60,13 +33,19 @@
                 orange: '#FF4D17',
                 black: '#000000',
                 gray: '#4A4A4A',
-                border: '#D9D5CF'
+                border: '#D9D5CF',
+              },
+              stereo: {
+                wood: '#5C3A1E',
+                metal: '#2A2A2A',
+                felt: '#1a1a1a'
               }
             },
             fontFamily: {
               sans: ['Inter', 'Helvetica', 'Arial', 'sans-serif'],
               serif: ['"Libre Caslon Text"', 'serif'],
               mono: ['"IBM Plex Mono"', 'monospace'],
+              led: ['"Share Tech Mono"', 'monospace'],
             }
           }
         }

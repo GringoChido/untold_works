@@ -9,6 +9,7 @@ import Portfolio from './pages/Portfolio';
 import ProjectDetail from './pages/ProjectDetail';
 import AboutPage from './pages/About';
 import ContactPage from './pages/Contact';
+import StereoPage from './pages/Stereo';
 
 interface LanguageContextType {
   lang: Language;
@@ -44,9 +45,9 @@ const App: React.FC = () => {
     <LanguageContext.Provider value={{ lang, setLang, t }}>
       <Router>
         <ScrollToTop />
-        <div className="min-h-screen flex flex-col selection:bg-untold-orange selection:text-white overflow-x-hidden max-w-full">
+        <div className="min-h-screen flex flex-col selection:bg-untold-orange selection:text-white">
           <Navbar />
-          <main className="flex-grow overflow-x-hidden w-full">
+          <main className="flex-grow">
             <Routes>
               {/* Architecture Order: Home, Portfolio, About, Workshop, Contact */}
               <Route path="/" element={<Home />} />
@@ -55,6 +56,7 @@ const App: React.FC = () => {
               <Route path="/about" element={<AboutPage />} />
               <Route path="/workshops" element={<WorkshopsPage />} />
               <Route path="/contact" element={<ContactPage />} />
+              <Route path="/stereo" element={<StereoPage />} />
             </Routes>
           </main>
           <Footer />
