@@ -26,12 +26,25 @@ export function useStereoPlayer() {
     };
   });
 
+  // Use refs so the animation loop doesn't cause effect re-runs
   const vuFrameRef = useRef<number>(0);
+  const isPlayingRef = useRef(false);
+  const isPowerRef = useRef(false);
 
-  // VU meter simulation — organic, music-like movement
+  // Keep refs in sync with state
   useEffect(() => {
-    if (state.playing && state.power) {
-      const animate = (time: number) => {
+    isPlayingRef.current = state.playing;
+    isPowerRef.current = state.power;
+  }, [state.playing, state.power]);
+
+  // VU meter animation — runs in its own stable loop, reads refs not state
+  useEffect(() => {
+    let running = true;
+
+    const animate = (time: number) => {
+      if (!running) return;
+
+      if (isPlayingRef.current && isPowerRef.current) {
         const t = time * 0.001;
         const baseL = 0.45 + 0.25 * Math.sin(t * 2.1) + 0.15 * Math.sin(t * 5.3) + 0.08 * Math.sin(t * 8.7);
         const baseR = 0.45 + 0.25 * Math.sin(t * 2.3 + 0.5) + 0.15 * Math.sin(t * 4.7 + 1.2) + 0.08 * Math.sin(t * 9.1 + 0.8);
@@ -39,23 +52,24 @@ export function useStereoPlayer() {
         const noiseR = (Math.random() - 0.5) * 0.18;
         const vuLeft = Math.max(0, Math.min(1, baseL + noiseL));
         const vuRight = Math.max(0, Math.min(1, baseR + noiseR));
-
+        setState(prev => ({ ...prev, vuLeft, vuRight }));
+      } else {
         setState(prev => {
-          if (!prev.playing || !prev.power) return prev;
-          return { ...prev, vuLeft, vuRight };
+          if (prev.vuLeft === 0 && prev.vuRight === 0) return prev;
+          return { ...prev, vuLeft: 0, vuRight: 0 };
         });
-        vuFrameRef.current = requestAnimationFrame(animate);
-      };
+      }
+
       vuFrameRef.current = requestAnimationFrame(animate);
-      return () => cancelAnimationFrame(vuFrameRef.current);
-    } else {
+    };
+
+    vuFrameRef.current = requestAnimationFrame(animate);
+
+    return () => {
+      running = false;
       cancelAnimationFrame(vuFrameRef.current);
-      setState(prev => {
-        if (prev.vuLeft === 0 && prev.vuRight === 0) return prev;
-        return { ...prev, vuLeft: 0, vuRight: 0 };
-      });
-    }
-  }, [state.playing, state.power]);
+    };
+  }, []); // Empty deps — runs once, reads refs
 
   const togglePower = useCallback(() => {
     setState(prev => {
