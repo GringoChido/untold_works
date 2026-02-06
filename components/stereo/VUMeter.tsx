@@ -1,5 +1,4 @@
-import React from 'react';
-import { motion, useSpring, useTransform } from 'framer-motion';
+import React, { useRef, useEffect } from 'react';
 import './stereo.css';
 
 interface VUMeterProps {
@@ -8,8 +7,15 @@ interface VUMeterProps {
 }
 
 const VUMeter: React.FC<VUMeterProps> = ({ level, label }) => {
-  const springLevel = useSpring(level, { stiffness: 300, damping: 15, mass: 0.5 });
-  const rotation = useTransform(springLevel, [0, 1], [-45, 45]);
+  const needleRef = useRef<HTMLDivElement>(null);
+
+  // Direct DOM manipulation — bypasses React render cycle for smooth 60fps needle movement
+  useEffect(() => {
+    if (needleRef.current) {
+      const rotation = -45 + level * 90; // maps 0→-45deg, 1→+45deg
+      needleRef.current.style.transform = `translateX(-50%) rotate(${rotation}deg)`;
+    }
+  }, [level]);
 
   const tickMarks = [
     { angle: -45, label: '-20' },
@@ -24,13 +30,17 @@ const VUMeter: React.FC<VUMeterProps> = ({ level, label }) => {
 
   return (
     <div className="flex flex-col items-center">
-      <div className="relative w-[120px] h-[70px] sm:w-[140px] sm:h-[80px] overflow-hidden">
-        {/* VU Meter face */}
+      {/* Meter housing */}
+      <div className="relative w-[130px] h-[75px] sm:w-[155px] sm:h-[90px] overflow-hidden">
+        {/* Warm backlight glow */}
         <div className="absolute inset-0 vu-backlight rounded-t-full" />
 
-        {/* Dial face background */}
-        <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[110px] h-[55px] sm:w-[130px] sm:h-[65px] rounded-t-full bg-[#1a1812] border border-white/10 border-b-0 overflow-hidden">
-          {/* Tick marks and labels */}
+        {/* Dial face */}
+        <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[120px] h-[60px] sm:w-[145px] sm:h-[72px] rounded-t-full bg-gradient-to-b from-[#1e1c16] to-[#15130e] border border-white/[0.08] border-b-0 overflow-hidden shadow-[inset_0_1px_6px_rgba(0,0,0,0.5)]">
+          {/* Subtle warm tint */}
+          <div className="absolute inset-0 bg-gradient-to-b from-[#ff8c00]/[0.02] to-transparent pointer-events-none" />
+
+          {/* Tick marks */}
           {tickMarks.map((tick, i) => (
             <div
               key={i}
@@ -38,14 +48,14 @@ const VUMeter: React.FC<VUMeterProps> = ({ level, label }) => {
               style={{
                 transform: `translateX(-50%) rotate(${tick.angle}deg)`,
                 transformOrigin: 'bottom center',
-                height: '50px',
+                height: '55px',
                 width: '1px',
               }}
             >
-              <div className={`w-[1px] ${i >= 6 ? 'bg-red-500/70' : 'bg-white/30'}`} style={{ height: tick.label ? '7px' : '5px' }} />
+              <div className={`w-[1px] ${i >= 6 ? 'bg-red-500/80' : 'bg-[#e8e4d8]/30'}`} style={{ height: tick.label ? '8px' : '5px' }} />
               {tick.label && (
                 <span
-                  className={`absolute top-[9px] left-1/2 -translate-x-1/2 font-led text-[7px] sm:text-[8px] ${i >= 6 ? 'text-red-400/70' : 'text-white/35'}`}
+                  className={`absolute top-[10px] left-1/2 -translate-x-1/2 font-led text-[7px] sm:text-[8px] ${i >= 6 ? 'text-red-400/80' : 'text-[#e8e4d8]/30'}`}
                   style={{ transform: `translateX(-50%) rotate(${-tick.angle}deg)` }}
                 >
                   {tick.label}
@@ -55,28 +65,33 @@ const VUMeter: React.FC<VUMeterProps> = ({ level, label }) => {
           ))}
 
           {/* "VU" label */}
-          <div className="absolute bottom-[5px] left-1/2 -translate-x-1/2 font-led text-[8px] sm:text-[9px] text-white/20 tracking-[0.25em]">
+          <div className="absolute bottom-[5px] left-1/2 -translate-x-1/2 font-led text-[8px] sm:text-[10px] text-[#e8e4d8]/20 tracking-[0.3em]">
             VU
           </div>
         </div>
 
-        {/* Needle */}
-        <motion.div
-          className="absolute bottom-0 left-1/2 w-[1.5px] bg-gradient-to-t from-white/80 to-red-400 z-10"
+        {/* Needle — direct DOM via ref, no Framer Motion */}
+        <div
+          ref={needleRef}
+          className="absolute bottom-0 left-1/2 w-[1.5px] z-10"
           style={{
-            height: '48px',
+            height: '54px',
             transformOrigin: 'bottom center',
-            rotate: rotation,
-            translateX: '-50%',
+            transform: 'translateX(-50%) rotate(-45deg)',
+            background: 'linear-gradient(to top, rgba(255,255,255,0.8), #e8524a)',
+            transition: 'transform 0.08s linear',
           }}
         >
-          <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[3px] h-[3px] rounded-full bg-red-400 shadow-[0_0_4px_rgba(239,68,68,0.5)]" />
-        </motion.div>
+          {/* Needle tip glow */}
+          <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[3px] h-[3px] rounded-full bg-red-400 shadow-[0_0_6px_rgba(239,68,68,0.6)]" />
+        </div>
 
-        {/* Needle pivot point */}
-        <div className="absolute bottom-[-3px] left-1/2 -translate-x-1/2 w-[8px] h-[8px] rounded-full bg-white/15 border border-white/10 z-20" />
+        {/* Needle pivot */}
+        <div className="absolute bottom-[-4px] left-1/2 -translate-x-1/2 w-[10px] h-[10px] rounded-full bg-gradient-to-b from-[#444] to-[#222] border border-white/10 z-20 shadow-[0_0_4px_rgba(0,0,0,0.5)]" />
       </div>
-      <span className="font-led text-[7px] sm:text-[8px] text-white/25 tracking-[0.3em] mt-1.5 uppercase">{label}</span>
+
+      {/* Channel label */}
+      <span className="font-led text-[8px] sm:text-[9px] text-[#e8e4d8]/20 tracking-[0.4em] mt-2 uppercase">{label}</span>
     </div>
   );
 };
