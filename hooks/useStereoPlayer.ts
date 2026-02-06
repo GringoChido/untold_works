@@ -29,17 +29,17 @@ export function useStereoPlayer() {
   const vuFrameRef = useRef<number>(0);
   const vuTimeRef = useRef<number>(0);
 
-  // VU meter simulation
+  // VU meter simulation — organic, music-like movement
   useEffect(() => {
     if (state.playing) {
       const animate = (time: number) => {
         vuTimeRef.current = time;
         const t = time * 0.001;
-        // Organic, music-like VU movement
-        const baseL = 0.45 + 0.25 * Math.sin(t * 2.1) + 0.15 * Math.sin(t * 5.3);
-        const baseR = 0.45 + 0.25 * Math.sin(t * 2.3 + 0.5) + 0.15 * Math.sin(t * 4.7 + 1.2);
-        const noiseL = (Math.random() - 0.5) * 0.2;
-        const noiseR = (Math.random() - 0.5) * 0.2;
+        // Multi-layered sine waves for organic feel
+        const baseL = 0.45 + 0.25 * Math.sin(t * 2.1) + 0.15 * Math.sin(t * 5.3) + 0.08 * Math.sin(t * 8.7);
+        const baseR = 0.45 + 0.25 * Math.sin(t * 2.3 + 0.5) + 0.15 * Math.sin(t * 4.7 + 1.2) + 0.08 * Math.sin(t * 9.1 + 0.8);
+        const noiseL = (Math.random() - 0.5) * 0.18;
+        const noiseR = (Math.random() - 0.5) * 0.18;
         const vuLeft = Math.max(0, Math.min(1, baseL + noiseL));
         const vuRight = Math.max(0, Math.min(1, baseR + noiseR));
 
@@ -85,19 +85,31 @@ export function useStereoPlayer() {
     });
   }, []);
 
+  // Next track — keeps playing if was already playing
   const nextTrack = useCallback(() => {
     setState(prev => {
       if (!prev.power || prev.shuffledQueue.length === 0) return prev;
       const nextIdx = (prev.currentTrackIndex + 1) % prev.shuffledQueue.length;
-      return { ...prev, currentTrackIndex: nextIdx, currentTrack: prev.shuffledQueue[nextIdx] };
+      return {
+        ...prev,
+        currentTrackIndex: nextIdx,
+        currentTrack: prev.shuffledQueue[nextIdx],
+        playing: prev.playing, // maintain playing state
+      };
     });
   }, []);
 
+  // Prev track — keeps playing if was already playing
   const prevTrack = useCallback(() => {
     setState(prev => {
       if (!prev.power || prev.shuffledQueue.length === 0) return prev;
       const prevIdx = prev.currentTrackIndex <= 0 ? prev.shuffledQueue.length - 1 : prev.currentTrackIndex - 1;
-      return { ...prev, currentTrackIndex: prevIdx, currentTrack: prev.shuffledQueue[prevIdx] };
+      return {
+        ...prev,
+        currentTrackIndex: prevIdx,
+        currentTrack: prev.shuffledQueue[prevIdx],
+        playing: prev.playing, // maintain playing state
+      };
     });
   }, []);
 
