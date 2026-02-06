@@ -7,7 +7,7 @@ import './stereo/stereo.css';
 const EQBar: React.FC<{ delay: number; maxHeight: number; color?: string }> = ({ delay, maxHeight, color = 'bg-green-400' }) => {
   return (
     <motion.div
-      className={`w-[3px] sm:w-[4px] rounded-sm ${color}`}
+      className={`w-[4px] sm:w-[5px] rounded-sm ${color}`}
       animate={{
         height: [
           `${maxHeight * 0.2}px`,
@@ -33,11 +33,11 @@ const EQBar: React.FC<{ delay: number; maxHeight: number; color?: string }> = ({
 };
 
 const StereoTeaser: React.FC = () => {
-  // Generate bars with varied heights for realistic EQ look
-  const bars = Array.from({ length: 16 }, (_, i) => ({
-    delay: i * 0.12,
-    maxHeight: 20 + Math.sin(i * 0.8) * 15 + Math.random() * 10,
-    color: i > 12 ? 'bg-red-500' : i > 10 ? 'bg-yellow-400' : 'bg-green-400',
+  // Generate bars with varied heights for realistic EQ look — taller for bigger visual impact
+  const bars = Array.from({ length: 20 }, (_, i) => ({
+    delay: i * 0.1,
+    maxHeight: 32 + Math.sin(i * 0.7) * 20 + Math.random() * 14,
+    color: i > 16 ? 'bg-red-500' : i > 13 ? 'bg-yellow-400' : 'bg-green-400',
   }));
 
   return (
@@ -48,18 +48,19 @@ const StereoTeaser: React.FC = () => {
           style={{ background: 'radial-gradient(ellipse at center, rgba(255,77,23,0.08) 0%, transparent 70%)' }}
         />
 
-        <div className="max-w-[1440px] mx-auto px-5 sm:px-10 py-8 sm:py-12">
-          <div className="flex items-center justify-between">
-            {/* Left: Equalizer bars */}
-            <div className="flex items-end gap-[2px] sm:gap-[3px] h-[45px] sm:h-[55px]">
-              {bars.slice(0, 8).map((bar, i) => (
+        <div className="max-w-[1440px] mx-auto px-5 sm:px-10 py-10 sm:py-14">
+          {/* Stacked layout: bars flanking headline, tighter spacing */}
+          <div className="flex items-center justify-center gap-4 sm:gap-6">
+            {/* Left: Equalizer bars — bigger */}
+            <div className="flex items-end gap-[2px] sm:gap-[3px] h-[55px] sm:h-[70px]">
+              {bars.slice(0, 10).map((bar, i) => (
                 <EQBar key={i} delay={bar.delay} maxHeight={bar.maxHeight} color={bar.color} />
               ))}
             </div>
 
-            {/* Center: Bold headline */}
-            <div className="flex flex-col items-center gap-2 px-4">
-              <div className="font-sans font-black text-xl sm:text-3xl lg:text-4xl text-white/80 uppercase tracking-tighter leading-none text-center group-hover:text-untold-orange transition-colors duration-500">
+            {/* Center: Bold headline — tighter to bars */}
+            <div className="flex flex-col items-center gap-2">
+              <div className="font-sans font-black text-2xl sm:text-4xl lg:text-5xl text-white/80 uppercase tracking-tighter leading-none text-center group-hover:text-untold-orange transition-colors duration-500">
                 UNTOLD ANALOG
               </div>
               <div className="flex items-center gap-3">
@@ -71,10 +72,10 @@ const StereoTeaser: React.FC = () => {
               </div>
             </div>
 
-            {/* Right: Equalizer bars */}
-            <div className="flex items-end gap-[2px] sm:gap-[3px] h-[45px] sm:h-[55px]">
-              {bars.slice(8, 16).map((bar, i) => (
-                <EQBar key={i + 8} delay={bar.delay} maxHeight={bar.maxHeight} color={bar.color} />
+            {/* Right: Equalizer bars — bigger */}
+            <div className="flex items-end gap-[2px] sm:gap-[3px] h-[55px] sm:h-[70px]">
+              {bars.slice(10, 20).map((bar, i) => (
+                <EQBar key={i + 10} delay={bar.delay} maxHeight={bar.maxHeight} color={bar.color} />
               ))}
             </div>
           </div>
