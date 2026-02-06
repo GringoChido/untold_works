@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React from 'react';
 import { StereoState } from '../../types';
 import Turntable from './Turntable';
 import ReceiverPanel from './ReceiverPanel';
@@ -53,41 +53,39 @@ const StereoUnit: React.FC<StereoUnitProps> = ({
             onVolumeChange={onVolumeChange}
             onShuffle={onShuffle}
           />
+
+          {/* ── Spotify embed — "tape deck" slot ──
+              Must be VISIBLE to browser for audio to work.
+              Styled as a compact dark strip integrated into the chassis.
+              Spotify suppresses audio on hidden/off-screen/zero-size iframes. */}
+          {state.power && embedUrl && (
+            <div className="relative rounded-sm overflow-hidden bg-black/60 border border-white/5"
+              style={{ height: '80px' }}
+            >
+              {/* Subtle label */}
+              <div className="absolute top-1 left-3 z-10 font-led text-[7px] text-white/10 tracking-[0.3em] uppercase pointer-events-none">
+                MEDIA SOURCE
+              </div>
+              <iframe
+                key={embedUrl}
+                src={embedUrl}
+                width="100%"
+                height="152"
+                frameBorder="0"
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                title="Spotify Player"
+                style={{
+                  borderRadius: '4px',
+                  marginTop: '-10px',
+                }}
+              />
+            </div>
+          )}
         </div>
 
         {/* Bottom edge */}
         <div className="h-[3px] bg-gradient-to-t from-black/30 to-transparent" />
       </div>
-
-      {/* Spotify iframe — visible to browser (real dimensions, on-screen)
-          but visually hidden via 1px height + opacity. Browsers block audio
-          from truly hidden (w-0/h-0/off-screen) iframes. This stays "visible"
-          to the DOM while being invisible to the user.
-          Key prop forces remount on track change so autoplay kicks in fresh. */}
-      {state.power && embedUrl && (
-        <div
-          style={{
-            width: '300px',
-            height: '1px',
-            overflow: 'hidden',
-            opacity: 0.01,
-            pointerEvents: 'none',
-            position: 'relative',
-          }}
-          aria-hidden="true"
-        >
-          <iframe
-            key={embedUrl}
-            src={embedUrl}
-            width="300"
-            height="152"
-            frameBorder="0"
-            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-            title="Spotify Player"
-            style={{ position: 'absolute', top: 0, left: 0 }}
-          />
-        </div>
-      )}
 
       {/* Feet / stands */}
       <div className="flex justify-between px-6 mt-[-2px]">
