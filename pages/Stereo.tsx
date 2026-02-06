@@ -22,8 +22,20 @@ const StereoPage: React.FC = () => {
   return (
     <div className="bg-untold-black min-h-screen font-serif text-white selection:bg-untold-orange selection:text-white">
 
+      {/* ━━━━━━━━━━ TOP NAV — Logo back to Home ━━━━━━━━━━ */}
+      <nav className="fixed top-0 left-0 right-0 z-50 px-5 sm:px-10 lg:px-14 py-5 sm:py-6">
+        <div className="max-w-[1540px] mx-auto">
+          <Link
+            to="/"
+            className="text-[28px] sm:text-[32px] font-sans font-black tracking-tighter leading-none group inline-flex items-center text-white hover:text-white transition-colors duration-300"
+          >
+            untold<span className="text-untold-orange group-hover:text-white transition-colors duration-300">.works</span>
+          </Link>
+        </div>
+      </nav>
+
       {/* ━━━━━━━━━━ HERO ━━━━━━━━━━ */}
-      <section className="px-5 sm:px-10 pt-20 sm:pt-32 pb-16 sm:pb-24 lg:pt-48 lg:pb-32 border-b border-white/10 relative overflow-hidden">
+      <section className="px-5 sm:px-10 pt-28 sm:pt-36 pb-16 sm:pb-24 lg:pt-48 lg:pb-32 border-b border-white/10 relative overflow-hidden">
         <div className="absolute inset-0 opacity-[0.03] pointer-events-none"
           style={{ backgroundImage: 'linear-gradient(#fff 1px, transparent 1px), linear-gradient(90deg, #fff 1px, transparent 1px)', backgroundSize: '80px 80px' }}
         />
