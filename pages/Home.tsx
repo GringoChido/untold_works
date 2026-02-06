@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { useLanguage } from '../App';
 import TechStack from '../components/TechStack';
+import StereoTeaser from '../components/StereoTeaser';
 import * as i18n from '../i18n';
 
 const Home: React.FC = () => {
@@ -63,6 +64,9 @@ const Home: React.FC = () => {
           </div>
         </div>
       </section>
+
+      {/* Untold Analog Teaser */}
+      <StereoTeaser />
 
       {/* Operating Model Section */}
       <section className="px-5 sm:px-10 py-20 sm:py-32 bg-white border-b border-untold-border overflow-hidden">
