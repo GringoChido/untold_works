@@ -46,13 +46,13 @@ const StereoPage: React.FC = () => {
         onShuffle={reshuffle}
       />
 
-      {/* Bottom info bar */}
-      <div className="px-5 sm:px-10 py-6 border-t border-white/5 bg-[#050403]">
+      {/* Bottom info bar — bright orange */}
+      <div className="px-5 sm:px-10 py-6 border-t border-untold-orange/20 bg-[#050403]">
         <div className="max-w-[800px] mx-auto flex flex-col sm:flex-row justify-between items-center gap-4">
-          <div className="font-mono text-[9px] text-white/15 tracking-[0.3em] uppercase text-center sm:text-left">
+          <div className="font-mono text-[9px] sm:text-[10px] text-untold-orange/50 tracking-[0.3em] uppercase text-center sm:text-left">
             BUILT WITH REACT + TYPESCRIPT + FRAMER MOTION // SPOTIFY EMBED API
           </div>
-          <div className="font-mono text-[9px] text-white/15 tracking-[0.3em] uppercase">
+          <div className="font-mono text-[9px] sm:text-[10px] text-untold-orange/50 tracking-[0.3em] uppercase">
             {state.shuffledQueue.length} TRACKS LOADED
           </div>
         </div>
