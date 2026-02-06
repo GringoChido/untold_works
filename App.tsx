@@ -1,5 +1,5 @@
 import React, { useState, createContext, useContext, useEffect } from 'react';
-import { HashRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import { Language } from './types';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
@@ -28,12 +28,36 @@ export const useLanguage = () => {
 // Global scroll to top rule
 const ScrollToTop: React.FC = () => {
   const { pathname } = useLocation();
-  
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [pathname]);
 
   return null;
+};
+
+// Layout wrapper — hides Navbar/Footer on standalone pages like /stereo
+const AppLayout: React.FC = () => {
+  const { pathname } = useLocation();
+  const isStandalone = pathname === '/stereo';
+
+  return (
+    <div className="min-h-screen flex flex-col selection:bg-untold-orange selection:text-white">
+      {!isStandalone && <Navbar />}
+      <main className="flex-grow">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/portfolio" element={<Portfolio />} />
+          <Route path="/portfolio/:projectId" element={<ProjectDetail />} />
+          <Route path="/about" element={<AboutPage />} />
+          <Route path="/workshops" element={<WorkshopsPage />} />
+          <Route path="/contact" element={<ContactPage />} />
+          <Route path="/stereo" element={<StereoPage />} />
+        </Routes>
+      </main>
+      {!isStandalone && <Footer />}
+    </div>
+  );
 };
 
 const App: React.FC = () => {
@@ -45,22 +69,7 @@ const App: React.FC = () => {
     <LanguageContext.Provider value={{ lang, setLang, t }}>
       <Router>
         <ScrollToTop />
-        <div className="min-h-screen flex flex-col selection:bg-untold-orange selection:text-white">
-          <Navbar />
-          <main className="flex-grow">
-            <Routes>
-              {/* Architecture Order: Home, Portfolio, About, Workshop, Contact */}
-              <Route path="/" element={<Home />} />
-              <Route path="/portfolio" element={<Portfolio />} />
-              <Route path="/portfolio/:projectId" element={<ProjectDetail />} />
-              <Route path="/about" element={<AboutPage />} />
-              <Route path="/workshops" element={<WorkshopsPage />} />
-              <Route path="/contact" element={<ContactPage />} />
-              <Route path="/stereo" element={<StereoPage />} />
-            </Routes>
-          </main>
-          <Footer />
-        </div>
+        <AppLayout />
       </Router>
     </LanguageContext.Provider>
   );
