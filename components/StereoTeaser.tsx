@@ -41,7 +41,7 @@ const StereoTeaser: React.FC = () => {
   }));
 
   return (
-    <Link to="/stereo" className="block group">
+    <Link to="/analog" className="block group">
       <section className="relative bg-[#0a0806] border-y border-untold-orange/10 overflow-hidden cursor-pointer">
         {/* Warm ambient glow on hover */}
         <div className="absolute inset-0 opacity-30 group-hover:opacity-60 transition-opacity duration-700"
