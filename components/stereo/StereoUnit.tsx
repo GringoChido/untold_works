@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef, useEffect, useCallback } from 'react';
 import { StereoState } from '../../types';
 import Turntable from './Turntable';
 import ReceiverPanel from './ReceiverPanel';
@@ -18,6 +18,28 @@ interface StereoUnitProps {
 const StereoUnit: React.FC<StereoUnitProps> = ({
   state, embedUrl, onTogglePower, onTogglePlay, onNext, onPrev, onVolumeChange, onShuffle
 }) => {
+  const iframeRef = useRef<HTMLIFrameElement>(null);
+  const prevPlayingRef = useRef(state.playing);
+
+  // Send play/pause commands to Spotify iframe via postMessage
+  const sendSpotifyCommand = useCallback((command: string) => {
+    if (iframeRef.current?.contentWindow) {
+      iframeRef.current.contentWindow.postMessage({ command }, '*');
+    }
+  }, []);
+
+  // When playing state changes, tell the Spotify iframe
+  useEffect(() => {
+    if (prevPlayingRef.current !== state.playing) {
+      if (state.playing) {
+        sendSpotifyCommand('toggle');
+      } else {
+        sendSpotifyCommand('toggle');
+      }
+      prevPlayingRef.current = state.playing;
+    }
+  }, [state.playing, sendSpotifyCommand]);
+
   return (
     <div className="relative">
       {/* Main chassis */}
@@ -62,24 +84,19 @@ const StereoUnit: React.FC<StereoUnitProps> = ({
         <div className="h-[3px] bg-gradient-to-t from-black/30 to-transparent" />
       </div>
 
-      {/* Spotify embed — full height for login + full playback (not just preview) */}
+      {/* Hidden Spotify iframe — invisible but functional for audio playback */}
       {state.power && embedUrl && (
-        <div className="mt-4 space-y-2">
-          <div className="font-mono text-[8px] text-untold-orange/40 tracking-[0.2em] uppercase text-center">
-            LOG IN TO SPOTIFY BELOW FOR FULL TRACKS
-          </div>
-          <div className="rounded-sm overflow-hidden border border-white/10">
-            <iframe
-              src={embedUrl}
-              width="100%"
-              height="152"
-              frameBorder="0"
-              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-              loading="lazy"
-              style={{ borderRadius: '8px' }}
-              title="Spotify Player"
-            />
-          </div>
+        <div className="absolute w-0 h-0 overflow-hidden opacity-0 pointer-events-none" aria-hidden="true">
+          <iframe
+            ref={iframeRef}
+            src={`${embedUrl}&autoplay=1`}
+            width="300"
+            height="152"
+            frameBorder="0"
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+            loading="lazy"
+            title="Spotify Player"
+          />
         </div>
       )}
 
