@@ -22,9 +22,8 @@ const StereoPage: React.FC = () => {
   return (
     <div className="bg-untold-black min-h-screen font-serif text-white selection:bg-untold-orange selection:text-white">
 
-      {/* ━━━━━━━━━━ HERO — "UNTOLD ANALOG" ━━━━━━━━━━ */}
+      {/* ━━━━━━━━━━ HERO ━━━━━━━━━━ */}
       <section className="px-5 sm:px-10 pt-20 sm:pt-32 pb-16 sm:pb-24 lg:pt-48 lg:pb-32 border-b border-white/10 relative overflow-hidden">
-        {/* Grid overlay — matches Home/About */}
         <div className="absolute inset-0 opacity-[0.03] pointer-events-none"
           style={{ backgroundImage: 'linear-gradient(#fff 1px, transparent 1px), linear-gradient(90deg, #fff 1px, transparent 1px)', backgroundSize: '80px 80px' }}
         />
@@ -37,9 +36,13 @@ const StereoPage: React.FC = () => {
             </p>
           </div>
 
-          <h1 className="font-sans font-black text-[clamp(3.5rem,10vw,140px)] leading-[0.8] tracking-tighter uppercase text-untold-orange">
+          <h1 className="font-sans font-black text-[clamp(3.5rem,10vw,140px)] leading-[0.8] tracking-tighter uppercase text-untold-orange mb-10 sm:mb-16">
             Untold<br />Analog
           </h1>
+
+          <h2 className="text-xl sm:text-2xl lg:text-[42px] font-serif italic text-white/80 leading-[1.15] tracking-tight max-w-5xl">
+            When The API Said No, I Built My Own.
+          </h2>
         </div>
       </section>
 
@@ -57,25 +60,6 @@ const StereoPage: React.FC = () => {
         />
       </section>
 
-      {/* ━━━━━━━━━━ THE STORY ━━━━━━━━━━ */}
-      <section className="px-5 sm:px-10 py-20 sm:py-32 lg:py-48 border-b border-white/10 bg-white/[0.01]">
-        <div className="max-w-[1440px] mx-auto grid lg:grid-cols-12 gap-16 sm:gap-24 items-start">
-          <div className="lg:col-span-4">
-            <span className="font-mono text-[11px] uppercase tracking-[0.6em] font-bold text-white/30 block mb-10">
-              THE_CONSTRAINT // LOG_01
-            </span>
-            <h2 className="font-sans font-black text-4xl lg:text-6xl uppercase tracking-tighter text-white leading-none">
-              When The API Said No, I Built My Own.
-            </h2>
-          </div>
-          <div className="lg:col-span-8 lg:pl-16">
-            <p className="text-xl sm:text-3xl lg:text-5xl font-serif text-white/70 leading-[1.25] tracking-tight">
-              Spotify wasn't granting API access. So I built a spreadsheet-powered music system. Sometimes the best solutions come from building around constraints.
-            </p>
-          </div>
-        </div>
-      </section>
-
       {/* ━━━━━━━━━━ LINER NOTES / THE BUILD ━━━━━━━━━━ */}
       <section className="px-5 sm:px-10 py-20 sm:py-32 border-b border-white/10">
         <div className="max-w-[1440px] mx-auto">
@@ -87,14 +71,28 @@ const StereoPage: React.FC = () => {
           </div>
 
           <div className="grid lg:grid-cols-12 gap-16 sm:gap-24 items-start">
-            <div className="lg:col-span-5">
-              <h3 className="font-sans font-black text-4xl lg:text-6xl uppercase tracking-tighter text-untold-orange leading-none mb-8">
-                The Build
-              </h3>
-              <p className="text-xl sm:text-2xl lg:text-3xl font-serif text-white/60 leading-relaxed">
-                Built with React, Framer Motion, Web Audio API, and a Google Sheet. When platforms close their doors, you build your own.
-              </p>
+            <div className="lg:col-span-5 space-y-16">
+              {/* Constraints */}
+              <div>
+                <span className="font-mono text-[11px] uppercase tracking-[0.5em] text-untold-orange font-bold block mb-6">
+                  CONSTRAINTS
+                </span>
+                <p className="text-xl sm:text-2xl lg:text-3xl font-serif text-white/70 leading-relaxed">
+                  Spotify wasn't granting API access. So I built a spreadsheet-powered music system. Sometimes the best solutions come from building around constraints.
+                </p>
+              </div>
+
+              {/* The Build */}
+              <div className="pt-16 border-t border-white/5">
+                <h3 className="font-sans font-black text-4xl lg:text-6xl uppercase tracking-tighter text-untold-orange leading-none mb-8">
+                  The Build
+                </h3>
+                <p className="text-xl sm:text-2xl lg:text-3xl font-serif text-white/60 leading-relaxed">
+                  Built with React, Framer Motion, Web Audio API, and a Google Sheet. When platforms close their doors, you build your own.
+                </p>
+              </div>
             </div>
+
             <div className="lg:col-span-7 lg:pl-16">
               <div className="border-t border-white/10 pt-12">
                 <span className="font-mono text-[10px] uppercase tracking-[0.4em] font-bold text-white/20 block mb-8">
