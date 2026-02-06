@@ -27,15 +27,12 @@ export function useStereoPlayer() {
   });
 
   const vuFrameRef = useRef<number>(0);
-  const vuTimeRef = useRef<number>(0);
 
   // VU meter simulation — organic, music-like movement
   useEffect(() => {
-    if (state.playing) {
+    if (state.playing && state.power) {
       const animate = (time: number) => {
-        vuTimeRef.current = time;
         const t = time * 0.001;
-        // Multi-layered sine waves for organic feel
         const baseL = 0.45 + 0.25 * Math.sin(t * 2.1) + 0.15 * Math.sin(t * 5.3) + 0.08 * Math.sin(t * 8.7);
         const baseR = 0.45 + 0.25 * Math.sin(t * 2.3 + 0.5) + 0.15 * Math.sin(t * 4.7 + 1.2) + 0.08 * Math.sin(t * 9.1 + 0.8);
         const noiseL = (Math.random() - 0.5) * 0.18;
@@ -43,37 +40,31 @@ export function useStereoPlayer() {
         const vuLeft = Math.max(0, Math.min(1, baseL + noiseL));
         const vuRight = Math.max(0, Math.min(1, baseR + noiseR));
 
-        setState(prev => ({ ...prev, vuLeft, vuRight }));
+        setState(prev => {
+          if (!prev.playing || !prev.power) return prev;
+          return { ...prev, vuLeft, vuRight };
+        });
         vuFrameRef.current = requestAnimationFrame(animate);
       };
       vuFrameRef.current = requestAnimationFrame(animate);
+      return () => cancelAnimationFrame(vuFrameRef.current);
     } else {
       cancelAnimationFrame(vuFrameRef.current);
-      setState(prev => ({ ...prev, vuLeft: 0, vuRight: 0 }));
+      setState(prev => {
+        if (prev.vuLeft === 0 && prev.vuRight === 0) return prev;
+        return { ...prev, vuLeft: 0, vuRight: 0 };
+      });
     }
-    return () => cancelAnimationFrame(vuFrameRef.current);
-  }, [state.playing]);
+  }, [state.playing, state.power]);
 
   const togglePower = useCallback(() => {
     setState(prev => {
       if (prev.power) {
-        return { ...prev, power: false, playing: false, currentTrack: null, currentTrackIndex: -1 };
+        return { ...prev, power: false, playing: false, currentTrack: null, currentTrackIndex: -1, vuLeft: 0, vuRight: 0 };
       }
       const shuffled = shuffleArray(allTracks);
       return { ...prev, power: true, shuffledQueue: shuffled, currentTrackIndex: 0, currentTrack: shuffled[0] };
     });
-  }, []);
-
-  const play = useCallback(() => {
-    setState(prev => {
-      if (!prev.power || prev.shuffledQueue.length === 0) return prev;
-      const idx = prev.currentTrackIndex >= 0 ? prev.currentTrackIndex : 0;
-      return { ...prev, playing: true, currentTrackIndex: idx, currentTrack: prev.shuffledQueue[idx] };
-    });
-  }, []);
-
-  const pause = useCallback(() => {
-    setState(prev => ({ ...prev, playing: false }));
   }, []);
 
   const togglePlay = useCallback(() => {
@@ -85,7 +76,7 @@ export function useStereoPlayer() {
     });
   }, []);
 
-  // Next track — keeps playing if was already playing
+  // Next track — ALWAYS sets playing: true so music continues seamlessly
   const nextTrack = useCallback(() => {
     setState(prev => {
       if (!prev.power || prev.shuffledQueue.length === 0) return prev;
@@ -94,12 +85,12 @@ export function useStereoPlayer() {
         ...prev,
         currentTrackIndex: nextIdx,
         currentTrack: prev.shuffledQueue[nextIdx],
-        playing: prev.playing, // maintain playing state
+        playing: true,
       };
     });
   }, []);
 
-  // Prev track — keeps playing if was already playing
+  // Prev track — ALWAYS sets playing: true so music continues seamlessly
   const prevTrack = useCallback(() => {
     setState(prev => {
       if (!prev.power || prev.shuffledQueue.length === 0) return prev;
@@ -108,7 +99,7 @@ export function useStereoPlayer() {
         ...prev,
         currentTrackIndex: prevIdx,
         currentTrack: prev.shuffledQueue[prevIdx],
-        playing: prev.playing, // maintain playing state
+        playing: true,
       };
     });
   }, []);
@@ -137,8 +128,6 @@ export function useStereoPlayer() {
   return {
     state,
     togglePower,
-    play,
-    pause,
     togglePlay,
     nextTrack,
     prevTrack,
