@@ -3,32 +3,25 @@ import './stereo.css';
 
 const RoomScene: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   return (
-    <div className="relative w-full min-h-screen bg-[#0a0806] overflow-hidden">
-      {/* Wall texture */}
-      <div className="absolute inset-0 wood-dark opacity-40" />
+    <div className="relative w-full bg-[#0a0806] overflow-hidden py-8 sm:py-12">
+      {/* Warm ambient spotlight from above */}
+      <div
+        className="absolute inset-0 pointer-events-none"
+        style={{
+          background:
+            'radial-gradient(ellipse 60% 40% at 50% 20%, rgba(255,180,100,0.06) 0%, transparent 70%), radial-gradient(ellipse 80% 50% at 50% 80%, rgba(255,120,50,0.03) 0%, transparent 60%)',
+        }}
+      />
 
-      {/* Ambient warm glow from behind stereo */}
-      <div className="absolute inset-0 ambient-glow" />
+      {/* Subtle wall grain */}
+      <div className="absolute inset-0 opacity-20 pointer-events-none"
+        style={{
+          backgroundImage: 'repeating-linear-gradient(90deg, transparent 0px, transparent 3px, rgba(255,255,255,0.01) 3px, rgba(255,255,255,0.01) 4px)',
+        }}
+      />
 
-      {/* Wall — Bold "UNTOLD ANALOG" headline */}
-      <div className="absolute top-[4%] sm:top-[6%] left-0 right-0 flex flex-col items-center px-4">
-        <h2 className="font-sans font-black text-[clamp(2.5rem,12vw,120px)] text-white/[0.06] uppercase tracking-tighter leading-none text-center select-none">
-          UNTOLD
-        </h2>
-        <h2 className="font-sans font-black text-[clamp(2.5rem,12vw,120px)] text-white/[0.06] uppercase tracking-tighter leading-none text-center select-none -mt-2 sm:-mt-4">
-          ANALOG
-        </h2>
-        {/* Subtle accent line */}
-        <div className="w-[60px] h-[2px] bg-untold-orange/15 mt-3 sm:mt-5" />
-      </div>
-
-      {/* Shelf surface */}
-      <div className="absolute left-0 right-0" style={{ top: '38%' }}>
-        <div className="h-[12px] wood-grain border-t border-white/5 shadow-[0_-4px_20px_rgba(0,0,0,0.5)]" />
-      </div>
-
-      {/* Main content (stereo unit goes here) */}
-      <div className="relative z-10 pt-[40%] sm:pt-[38%] px-4 sm:px-8 pb-20">
+      {/* Main content (stereo unit) */}
+      <div className="relative z-10 px-4 sm:px-8">
         <div className="max-w-[800px] mx-auto">
           {children}
         </div>
