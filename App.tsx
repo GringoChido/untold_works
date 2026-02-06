@@ -36,10 +36,10 @@ const ScrollToTop: React.FC = () => {
   return null;
 };
 
-// Layout wrapper — hides Navbar/Footer on standalone pages like /stereo
+// Layout wrapper — hides Navbar/Footer on standalone pages like /analog
 const AppLayout: React.FC = () => {
   const { pathname } = useLocation();
-  const isStandalone = pathname === '/stereo';
+  const isStandalone = pathname === '/analog';
 
   return (
     <div className="min-h-screen flex flex-col selection:bg-untold-orange selection:text-white">
@@ -52,7 +52,7 @@ const AppLayout: React.FC = () => {
           <Route path="/about" element={<AboutPage />} />
           <Route path="/workshops" element={<WorkshopsPage />} />
           <Route path="/contact" element={<ContactPage />} />
-          <Route path="/stereo" element={<StereoPage />} />
+          <Route path="/analog" element={<StereoPage />} />
         </Routes>
       </main>
       {!isStandalone && <Footer />}
