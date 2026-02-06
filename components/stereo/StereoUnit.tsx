@@ -59,10 +59,23 @@ const StereoUnit: React.FC<StereoUnitProps> = ({
         <div className="h-[3px] bg-gradient-to-t from-black/30 to-transparent" />
       </div>
 
-      {/* Spotify iframe — hidden but plays audio.
+      {/* Spotify iframe — visible to browser (real dimensions, on-screen)
+          but visually hidden via 1px height + opacity. Browsers block audio
+          from truly hidden (w-0/h-0/off-screen) iframes. This stays "visible"
+          to the DOM while being invisible to the user.
           Key prop forces remount on track change so autoplay kicks in fresh. */}
       {state.power && embedUrl && (
-        <div className="fixed" style={{ left: '-9999px', top: '-9999px', width: '300px', height: '152px' }} aria-hidden="true">
+        <div
+          style={{
+            width: '300px',
+            height: '1px',
+            overflow: 'hidden',
+            opacity: 0.01,
+            pointerEvents: 'none',
+            position: 'relative',
+          }}
+          aria-hidden="true"
+        >
           <iframe
             key={embedUrl}
             src={embedUrl}
@@ -71,6 +84,7 @@ const StereoUnit: React.FC<StereoUnitProps> = ({
             frameBorder="0"
             allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
             title="Spotify Player"
+            style={{ position: 'absolute', top: 0, left: 0 }}
           />
         </div>
       )}
