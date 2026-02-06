@@ -26,61 +26,73 @@ export function useStereoPlayer() {
     };
   });
 
-  // Use refs so the animation loop doesn't cause effect re-runs
+  // Refs for the VU animation loop — decoupled from React render cycle
   const vuFrameRef = useRef<number>(0);
-  const isPlayingRef = useRef(false);
-  const isPowerRef = useRef(false);
+  const playingRef = useRef(false);
+  const powerRef = useRef(false);
+  const vuLeftRef = useRef(0);
+  const vuRightRef = useRef(0);
+  const setStateRef = useRef(setState);
+  setStateRef.current = setState;
 
-  // Keep refs in sync with state
+  // Keep refs in sync
   useEffect(() => {
-    isPlayingRef.current = state.playing;
-    isPowerRef.current = state.power;
+    playingRef.current = state.playing;
+    powerRef.current = state.power;
   }, [state.playing, state.power]);
 
-  // VU meter animation — runs in its own stable loop, reads refs not state
+  // VU meter animation — one stable loop, never restarts
   useEffect(() => {
-    let running = true;
+    let active = true;
 
-    const animate = (time: number) => {
-      if (!running) return;
+    const tick = (time: number) => {
+      if (!active) return;
 
-      if (isPlayingRef.current && isPowerRef.current) {
+      if (playingRef.current && powerRef.current) {
         const t = time * 0.001;
-        const baseL = 0.45 + 0.25 * Math.sin(t * 2.1) + 0.15 * Math.sin(t * 5.3) + 0.08 * Math.sin(t * 8.7);
-        const baseR = 0.45 + 0.25 * Math.sin(t * 2.3 + 0.5) + 0.15 * Math.sin(t * 4.7 + 1.2) + 0.08 * Math.sin(t * 9.1 + 0.8);
-        const noiseL = (Math.random() - 0.5) * 0.18;
-        const noiseR = (Math.random() - 0.5) * 0.18;
-        const vuLeft = Math.max(0, Math.min(1, baseL + noiseL));
-        const vuRight = Math.max(0, Math.min(1, baseR + noiseR));
-        setState(prev => ({ ...prev, vuLeft, vuRight }));
+        const bL = 0.45 + 0.25 * Math.sin(t * 2.1) + 0.15 * Math.sin(t * 5.3) + 0.08 * Math.sin(t * 8.7);
+        const bR = 0.45 + 0.25 * Math.sin(t * 2.3 + 0.5) + 0.15 * Math.sin(t * 4.7 + 1.2) + 0.08 * Math.sin(t * 9.1 + 0.8);
+        const nL = (Math.random() - 0.5) * 0.18;
+        const nR = (Math.random() - 0.5) * 0.18;
+        vuLeftRef.current = Math.max(0, Math.min(1, bL + nL));
+        vuRightRef.current = Math.max(0, Math.min(1, bR + nR));
       } else {
-        setState(prev => {
-          if (prev.vuLeft === 0 && prev.vuRight === 0) return prev;
-          return { ...prev, vuLeft: 0, vuRight: 0 };
-        });
+        vuLeftRef.current = 0;
+        vuRightRef.current = 0;
       }
 
-      vuFrameRef.current = requestAnimationFrame(animate);
+      // Push to React state — this drives the VUMeter component props
+      setStateRef.current(prev => {
+        if (prev.vuLeft === vuLeftRef.current && prev.vuRight === vuRightRef.current) return prev;
+        return { ...prev, vuLeft: vuLeftRef.current, vuRight: vuRightRef.current };
+      });
+
+      vuFrameRef.current = requestAnimationFrame(tick);
     };
 
-    vuFrameRef.current = requestAnimationFrame(animate);
+    vuFrameRef.current = requestAnimationFrame(tick);
+    return () => { active = false; cancelAnimationFrame(vuFrameRef.current); };
+  }, []);
 
-    return () => {
-      running = false;
-      cancelAnimationFrame(vuFrameRef.current);
-    };
-  }, []); // Empty deps — runs once, reads refs
-
+  // Power ON → auto-play the first track immediately
   const togglePower = useCallback(() => {
     setState(prev => {
       if (prev.power) {
         return { ...prev, power: false, playing: false, currentTrack: null, currentTrackIndex: -1, vuLeft: 0, vuRight: 0 };
       }
       const shuffled = shuffleArray(allTracks);
-      return { ...prev, power: true, shuffledQueue: shuffled, currentTrackIndex: 0, currentTrack: shuffled[0] };
+      return {
+        ...prev,
+        power: true,
+        playing: true, // auto-play on power on
+        shuffledQueue: shuffled,
+        currentTrackIndex: 0,
+        currentTrack: shuffled[0],
+      };
     });
   }, []);
 
+  // Play/Pause toggle — only button that can pause
   const togglePlay = useCallback(() => {
     setState(prev => {
       if (!prev.power) return prev;
@@ -90,7 +102,7 @@ export function useStereoPlayer() {
     });
   }, []);
 
-  // Next track — ALWAYS sets playing: true so music continues seamlessly
+  // Next track — always plays
   const nextTrack = useCallback(() => {
     setState(prev => {
       if (!prev.power || prev.shuffledQueue.length === 0) return prev;
@@ -104,7 +116,7 @@ export function useStereoPlayer() {
     });
   }, []);
 
-  // Prev track — ALWAYS sets playing: true so music continues seamlessly
+  // Prev track — always plays
   const prevTrack = useCallback(() => {
     setState(prev => {
       if (!prev.power || prev.shuffledQueue.length === 0) return prev;
@@ -130,6 +142,7 @@ export function useStereoPlayer() {
         shuffledQueue: shuffled,
         currentTrackIndex: 0,
         currentTrack: prev.power ? shuffled[0] : null,
+        playing: prev.power, // keep playing if on
       };
     });
   }, []);
