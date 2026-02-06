@@ -62,7 +62,7 @@ const StereoUnit: React.FC<StereoUnitProps> = ({
       {/* Spotify iframe — hidden but plays audio.
           Key prop forces remount on track change so autoplay kicks in fresh. */}
       {state.power && embedUrl && (
-        <div className="absolute w-0 h-0 overflow-hidden opacity-0 pointer-events-none" aria-hidden="true">
+        <div className="fixed" style={{ left: '-9999px', top: '-9999px', width: '300px', height: '152px' }} aria-hidden="true">
           <iframe
             key={embedUrl}
             src={embedUrl}
