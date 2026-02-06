@@ -1,4 +1,4 @@
-import React, { useRef, useEffect, useCallback } from 'react';
+import React, { useRef } from 'react';
 import { StereoState } from '../../types';
 import Turntable from './Turntable';
 import ReceiverPanel from './ReceiverPanel';
@@ -18,28 +18,6 @@ interface StereoUnitProps {
 const StereoUnit: React.FC<StereoUnitProps> = ({
   state, embedUrl, onTogglePower, onTogglePlay, onNext, onPrev, onVolumeChange, onShuffle
 }) => {
-  const iframeRef = useRef<HTMLIFrameElement>(null);
-  const prevPlayingRef = useRef(state.playing);
-
-  // Send play/pause commands to Spotify iframe via postMessage
-  const sendSpotifyCommand = useCallback((command: string) => {
-    if (iframeRef.current?.contentWindow) {
-      iframeRef.current.contentWindow.postMessage({ command }, '*');
-    }
-  }, []);
-
-  // When playing state changes, tell the Spotify iframe
-  useEffect(() => {
-    if (prevPlayingRef.current !== state.playing) {
-      if (state.playing) {
-        sendSpotifyCommand('toggle');
-      } else {
-        sendSpotifyCommand('toggle');
-      }
-      prevPlayingRef.current = state.playing;
-    }
-  }, [state.playing, sendSpotifyCommand]);
-
   return (
     <div className="relative">
       {/* Main chassis */}
@@ -47,7 +25,6 @@ const StereoUnit: React.FC<StereoUnitProps> = ({
         className="wood-grain rounded-sm overflow-hidden"
         style={{
           boxShadow: '0 8px 40px rgba(0,0,0,0.6), 0 2px 8px rgba(0,0,0,0.4), inset 0 1px 0 rgba(255,255,255,0.05)',
-          perspective: '800px',
         }}
       >
         {/* Top edge bevel */}
@@ -57,14 +34,12 @@ const StereoUnit: React.FC<StereoUnitProps> = ({
         <div className="p-3 sm:p-5 space-y-4">
           {/* Turntable section with dust cover */}
           <div className="relative bg-[#0d0d0d] rounded-sm p-4 sm:p-6 border border-white/5">
-            {/* Dust cover glass sheen */}
             <div
               className="absolute inset-0 rounded-sm pointer-events-none z-10"
               style={{
                 background: 'linear-gradient(165deg, rgba(255,255,255,0.03) 0%, transparent 40%, rgba(255,255,255,0.01) 100%)',
               }}
             />
-
             <Turntable playing={state.playing} power={state.power} />
           </div>
 
@@ -84,17 +59,17 @@ const StereoUnit: React.FC<StereoUnitProps> = ({
         <div className="h-[3px] bg-gradient-to-t from-black/30 to-transparent" />
       </div>
 
-      {/* Hidden Spotify iframe — invisible but functional for audio playback */}
+      {/* Spotify iframe — hidden but plays audio.
+          Key prop forces remount on track change so autoplay kicks in fresh. */}
       {state.power && embedUrl && (
         <div className="absolute w-0 h-0 overflow-hidden opacity-0 pointer-events-none" aria-hidden="true">
           <iframe
-            ref={iframeRef}
-            src={`${embedUrl}&autoplay=1`}
+            key={embedUrl}
+            src={embedUrl}
             width="300"
             height="152"
             frameBorder="0"
             allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-            loading="lazy"
             title="Spotify Player"
           />
         </div>
