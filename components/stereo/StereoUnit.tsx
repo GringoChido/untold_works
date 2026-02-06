@@ -62,19 +62,24 @@ const StereoUnit: React.FC<StereoUnitProps> = ({
         <div className="h-[3px] bg-gradient-to-t from-black/30 to-transparent" />
       </div>
 
-      {/* Spotify embed - positioned below the unit, visible and styled */}
+      {/* Spotify embed — full height for login + full playback (not just preview) */}
       {state.power && embedUrl && (
-        <div className="mt-4 rounded-sm overflow-hidden border border-white/10">
-          <iframe
-            src={embedUrl}
-            width="100%"
-            height="80"
-            frameBorder="0"
-            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-            loading="lazy"
-            style={{ borderRadius: '4px' }}
-            title="Spotify Player"
-          />
+        <div className="mt-4 space-y-2">
+          <div className="font-mono text-[8px] text-untold-orange/40 tracking-[0.2em] uppercase text-center">
+            LOG IN TO SPOTIFY BELOW FOR FULL TRACKS
+          </div>
+          <div className="rounded-sm overflow-hidden border border-white/10">
+            <iframe
+              src={embedUrl}
+              width="100%"
+              height="152"
+              frameBorder="0"
+              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+              loading="lazy"
+              style={{ borderRadius: '8px' }}
+              title="Spotify Player"
+            />
+          </div>
         </div>
       )}
 
