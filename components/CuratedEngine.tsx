@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useLanguage } from '../App';
 import * as i18n from '../i18n';
-import { Layers, Zap, PenTool, Terminal, Code2, Globe } from 'lucide-react';
+import { Layers, Zap, PenTool, Terminal, Activity, Code2, Globe } from 'lucide-react';
 
 const CuratedEngine: React.FC = () => {
   const { t } = useLanguage();
