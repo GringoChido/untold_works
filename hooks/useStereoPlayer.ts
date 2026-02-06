@@ -119,7 +119,7 @@ export function useStereoPlayer() {
 
   const getEmbedUrl = useCallback((): string | null => {
     if (!state.currentTrack) return null;
-    return `https://open.spotify.com/embed/track/${state.currentTrack.spotifyId}?utm_source=generator&theme=0`;
+    return `https://open.spotify.com/embed/track/${state.currentTrack.spotifyId}?utm_source=generator&theme=0&autoplay=1`;
   }, [state.currentTrack]);
 
   return {
