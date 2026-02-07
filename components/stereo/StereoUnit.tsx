@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef, useEffect } from 'react';
 import { StereoState } from '../../types';
 import Turntable from './Turntable';
 import ReceiverPanel from './ReceiverPanel';
@@ -6,18 +6,28 @@ import './stereo.css';
 
 interface StereoUnitProps {
   state: StereoState;
-  embedUrl: string | null;
   onTogglePower: () => void;
   onTogglePlay: () => void;
   onNext: () => void;
   onPrev: () => void;
   onVolumeChange: (v: number) => void;
   onShuffle: () => void;
+  registerEmbedElement: (el: HTMLElement | null) => void;
 }
 
 const StereoUnit: React.FC<StereoUnitProps> = ({
-  state, embedUrl, onTogglePower, onTogglePlay, onNext, onPrev, onVolumeChange, onShuffle
+  state, onTogglePower, onTogglePlay, onNext, onPrev, onVolumeChange, onShuffle, registerEmbedElement
 }) => {
+  const embedRef = useRef<HTMLDivElement>(null);
+
+  // Register the embed element with the player hook
+  useEffect(() => {
+    if (embedRef.current) {
+      registerEmbedElement(embedRef.current);
+    }
+    return () => registerEmbedElement(null);
+  }, [registerEmbedElement]);
+
   return (
     <div className="relative">
       {/* Main chassis */}
@@ -54,30 +64,19 @@ const StereoUnit: React.FC<StereoUnitProps> = ({
             onShuffle={onShuffle}
           />
 
-          {/* ── Spotify embed — "tape deck" slot ──
-              Must be VISIBLE to browser for audio to work.
-              Styled as a compact dark strip integrated into the chassis.
-              Spotify suppresses audio on hidden/off-screen/zero-size iframes. */}
-          {state.power && embedUrl && (
+          {/* Spotify Embed — managed by the IFrame API.
+              Shown as a compact "tape deck" strip inside the chassis.
+              The API creates its own iframe into this div. */}
+          {state.power && (
             <div className="relative rounded-sm overflow-hidden bg-black/60 border border-white/5"
               style={{ height: '80px' }}
             >
-              {/* Subtle label */}
               <div className="absolute top-1 left-3 z-10 font-led text-[7px] text-white/10 tracking-[0.3em] uppercase pointer-events-none">
                 MEDIA SOURCE
               </div>
-              <iframe
-                key={embedUrl}
-                src={embedUrl}
-                width="100%"
-                height="152"
-                frameBorder="0"
-                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-                title="Spotify Player"
-                style={{
-                  borderRadius: '4px',
-                  marginTop: '-10px',
-                }}
+              <div
+                ref={embedRef}
+                style={{ marginTop: '-10px' }}
               />
             </div>
           )}

@@ -5,13 +5,13 @@ import StereoUnit from './StereoUnit';
 
 interface StereoRoomProps {
   state: StereoState;
-  embedUrl: string | null;
   onTogglePower: () => void;
   onTogglePlay: () => void;
   onNext: () => void;
   onPrev: () => void;
   onVolumeChange: (v: number) => void;
   onShuffle: () => void;
+  registerEmbedElement: (el: HTMLElement | null) => void;
 }
 
 const StereoRoom: React.FC<StereoRoomProps> = (props) => {
