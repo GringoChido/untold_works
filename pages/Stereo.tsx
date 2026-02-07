@@ -12,7 +12,7 @@ const StereoPage: React.FC = () => {
     prevTrack,
     setVolume,
     reshuffle,
-    getEmbedUrl,
+    registerEmbedElement,
   } = useStereoPlayer();
 
   useEffect(() => {
@@ -22,8 +22,8 @@ const StereoPage: React.FC = () => {
   return (
     <div className="bg-untold-black min-h-screen font-serif text-white selection:bg-untold-orange selection:text-white">
 
-      {/* ━━━━━━━━━━ TOP NAV — Logo back to Home ━━━━━━━━━━ */}
-      <nav className="fixed top-0 left-0 right-0 z-50 px-5 sm:px-10 lg:px-14 py-5 sm:py-6">
+      {/* ━━━━━━━━━━ TOP NAV — Logo back to Home (stays at top, does NOT scroll) ━━━━━━━━━━ */}
+      <nav className="absolute top-0 left-0 right-0 z-50 px-5 sm:px-10 lg:px-14 py-5 sm:py-6">
         <div className="max-w-[1540px] mx-auto">
           <Link
             to="/"
@@ -62,13 +62,13 @@ const StereoPage: React.FC = () => {
       <section className="border-b border-white/10">
         <StereoRoom
           state={state}
-          embedUrl={getEmbedUrl()}
           onTogglePower={togglePower}
           onTogglePlay={togglePlay}
           onNext={nextTrack}
           onPrev={prevTrack}
           onVolumeChange={setVolume}
           onShuffle={reshuffle}
+          registerEmbedElement={registerEmbedElement}
         />
       </section>
 
