@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from 'react';
+import React from 'react';
 import { StereoState } from '../../types';
 import Turntable from './Turntable';
 import ReceiverPanel from './ReceiverPanel';
@@ -12,22 +12,11 @@ interface StereoUnitProps {
   onPrev: () => void;
   onVolumeChange: (v: number) => void;
   onShuffle: () => void;
-  registerEmbedElement: (el: HTMLElement | null) => void;
 }
 
 const StereoUnit: React.FC<StereoUnitProps> = ({
-  state, onTogglePower, onTogglePlay, onNext, onPrev, onVolumeChange, onShuffle, registerEmbedElement
+  state, onTogglePower, onTogglePlay, onNext, onPrev, onVolumeChange, onShuffle
 }) => {
-  const embedRef = useRef<HTMLDivElement>(null);
-
-  // Register the embed element with the player hook
-  useEffect(() => {
-    if (embedRef.current) {
-      registerEmbedElement(embedRef.current);
-    }
-    return () => registerEmbedElement(null);
-  }, [registerEmbedElement]);
-
   return (
     <div className="relative">
       {/* Main chassis */}
@@ -63,23 +52,6 @@ const StereoUnit: React.FC<StereoUnitProps> = ({
             onVolumeChange={onVolumeChange}
             onShuffle={onShuffle}
           />
-
-          {/* Spotify Embed — managed by the IFrame API.
-              Shown as a compact "tape deck" strip inside the chassis.
-              The API creates its own iframe into this div. */}
-          {state.power && (
-            <div className="relative rounded-sm overflow-hidden bg-black/60 border border-white/5"
-              style={{ height: '80px' }}
-            >
-              <div className="absolute top-1 left-3 z-10 font-led text-[7px] text-white/10 tracking-[0.3em] uppercase pointer-events-none">
-                MEDIA SOURCE
-              </div>
-              <div
-                ref={embedRef}
-                style={{ marginTop: '-10px' }}
-              />
-            </div>
-          )}
         </div>
 
         {/* Bottom edge */}

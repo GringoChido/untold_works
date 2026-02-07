@@ -11,7 +11,6 @@ interface StereoRoomProps {
   onPrev: () => void;
   onVolumeChange: (v: number) => void;
   onShuffle: () => void;
-  registerEmbedElement: (el: HTMLElement | null) => void;
 }
 
 const StereoRoom: React.FC<StereoRoomProps> = (props) => {
