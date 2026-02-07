@@ -46,6 +46,7 @@ export interface Track {
   name: string;
   artist: string;
   spotifyId: string;
+  previewUrl: string | null;
 }
 
 export interface StereoState {
