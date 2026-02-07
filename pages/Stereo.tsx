@@ -12,7 +12,6 @@ const StereoPage: React.FC = () => {
     prevTrack,
     setVolume,
     reshuffle,
-    registerEmbedElement,
   } = useStereoPlayer();
 
   useEffect(() => {
@@ -68,7 +67,6 @@ const StereoPage: React.FC = () => {
           onPrev={prevTrack}
           onVolumeChange={setVolume}
           onShuffle={reshuffle}
-          registerEmbedElement={registerEmbedElement}
         />
       </section>
 
