@@ -11,35 +11,12 @@ function shuffleArray<T>(array: T[]): T[] {
   return shuffled;
 }
 
-// Spotify IFrame API types
-interface SpotifyIFrameAPI {
-  createController: (
-    el: HTMLElement,
-    options: { uri: string; width?: string | number; height?: string | number },
-    callback: (controller: SpotifyEmbedController) => void
-  ) => void;
-}
-
-interface SpotifyEmbedController {
-  loadUri: (uri: string) => void;
-  play: () => void;
-  pause: () => void;
-  resume: () => void;
-  togglePlay: () => void;
-  destroy: () => void;
-  addListener: (event: string, callback: (data: any) => void) => void;
-}
-
-declare global {
-  interface Window {
-    onSpotifyIframeApiReady?: (api: SpotifyIFrameAPI) => void;
-    _spotifyIFrameAPI?: SpotifyIFrameAPI;
-  }
-}
+// Filter to only tracks with preview URLs
+const playableTracks = allTracks.filter(t => t.previewUrl !== null);
 
 export function useStereoPlayer() {
   const [state, setState] = useState<StereoState>(() => {
-    const shuffled = shuffleArray(allTracks);
+    const shuffled = shuffleArray(playableTracks);
     return {
       power: false,
       playing: false,
@@ -53,133 +30,95 @@ export function useStereoPlayer() {
   });
 
   // ── Refs ──
+  const audioRef = useRef<HTMLAudioElement | null>(null);
   const vuFrameRef = useRef<number>(0);
   const playingRef = useRef(false);
   const powerRef = useRef(false);
   const setStateRef = useRef(setState);
   setStateRef.current = setState;
 
-  // Spotify controller ref
-  const controllerRef = useRef<SpotifyEmbedController | null>(null);
-  const embedElRef = useRef<HTMLElement | null>(null);
-  const apiReadyRef = useRef(false);
-  const pendingUriRef = useRef<string | null>(null);
-  const controllerReadyRef = useRef(false);
-
-  // Track state refs for the animation loop + track end detection
-  const stateRef = useRef(state);
+  // Keep refs in sync
   useEffect(() => {
-    stateRef.current = state;
     playingRef.current = state.playing;
     powerRef.current = state.power;
-  }, [state]);
+  }, [state.playing, state.power]);
 
-  // ── Spotify IFrame API initialization ──
-  const initController = useCallback((el: HTMLElement, uri: string) => {
-    const api = window._spotifyIFrameAPI;
-    if (!api || !el) return;
+  // ── Create the Audio element once on mount ──
+  useEffect(() => {
+    const audio = new Audio();
+    audio.volume = 0.7;
+    audioRef.current = audio;
 
-    // Destroy existing controller if any
-    if (controllerRef.current) {
-      try { controllerRef.current.destroy(); } catch (e) { /* ignore */ }
-      controllerRef.current = null;
-      controllerReadyRef.current = false;
-    }
-
-    api.createController(el, { uri, width: '100%', height: '152' }, (ctrl) => {
-      controllerRef.current = ctrl;
-      controllerReadyRef.current = true;
-
-      // Start playback once the embed is ready
-      ctrl.addListener('ready', () => {
-        if (playingRef.current) {
-          ctrl.play();
-        }
+    // When a track ends, auto-advance to next
+    audio.addEventListener('ended', () => {
+      setStateRef.current(prev => {
+        if (!prev.power || prev.shuffledQueue.length === 0) return prev;
+        const nextIdx = (prev.currentTrackIndex + 1) % prev.shuffledQueue.length;
+        return {
+          ...prev,
+          currentTrackIndex: nextIdx,
+          currentTrack: prev.shuffledQueue[nextIdx],
+          playing: true,
+        };
       });
-
-      // Track playback state
-      ctrl.addListener('playback_update', (data: any) => {
-        if (!data) return;
-        const { isPaused, duration, position } = data?.data || data;
-
-        // Auto-advance when track ends (within 1.5s of end)
-        if (duration > 0 && position > 0 && duration - position < 1500 && !isPaused) {
-          const s = stateRef.current;
-          if (s.power && s.shuffledQueue.length > 0) {
-            const nextIdx = (s.currentTrackIndex + 1) % s.shuffledQueue.length;
-            setStateRef.current(prev => ({
-              ...prev,
-              currentTrackIndex: nextIdx,
-              currentTrack: prev.shuffledQueue[nextIdx],
-              playing: true,
-            }));
-          }
-        }
-      });
-
-      // If we have a pending URI to load (e.g., from track change), load it now
-      if (pendingUriRef.current && pendingUriRef.current !== uri) {
-        ctrl.loadUri(pendingUriRef.current);
-        pendingUriRef.current = null;
-      }
     });
+
+    return () => {
+      audio.pause();
+      audio.src = '';
+      audioRef.current = null;
+    };
   }, []);
 
-  // Wait for the Spotify API to be ready
+  // ── When current track changes, load and play the preview ──
   useEffect(() => {
-    // If API is already loaded
-    if (window._spotifyIFrameAPI) {
-      apiReadyRef.current = true;
+    const audio = audioRef.current;
+    if (!audio) return;
+
+    if (!state.currentTrack || !state.power) {
+      audio.pause();
       return;
     }
 
-    // Set up the global callback
-    window.onSpotifyIframeApiReady = (api: SpotifyIFrameAPI) => {
-      window._spotifyIFrameAPI = api;
-      apiReadyRef.current = true;
-
-      // If we already have an embed element and a pending URI, init now
-      if (embedElRef.current && pendingUriRef.current) {
-        initController(embedElRef.current, pendingUriRef.current);
-        pendingUriRef.current = null;
-      }
-    };
-  }, [initController]);
-
-  // ── When the current track changes, update the Spotify controller ──
-  useEffect(() => {
-    if (!state.currentTrack || !state.power) return;
-
-    const uri = `spotify:track:${state.currentTrack.spotifyId}`;
-
-    if (controllerRef.current && controllerReadyRef.current) {
-      // Controller exists — load new URI and play
-      controllerRef.current.loadUri(uri);
-      // Small delay to let it load, then play
-      setTimeout(() => {
-        if (playingRef.current && controllerRef.current) {
-          controllerRef.current.play();
-        }
-      }, 300);
-    } else if (embedElRef.current && apiReadyRef.current) {
-      // API ready but no controller yet — create one
-      initController(embedElRef.current, uri);
-    } else {
-      // API not ready yet — store pending
-      pendingUriRef.current = uri;
+    const url = state.currentTrack.previewUrl;
+    if (!url) {
+      // No preview — skip to next track
+      const nextIdx = (state.currentTrackIndex + 1) % state.shuffledQueue.length;
+      setState(prev => ({
+        ...prev,
+        currentTrackIndex: nextIdx,
+        currentTrack: prev.shuffledQueue[nextIdx],
+      }));
+      return;
     }
-  }, [state.currentTrack?.spotifyId, state.power, initController]);
 
-  // ── When playing state changes, sync with controller ──
+    audio.src = url;
+    if (state.playing) {
+      audio.play().catch(() => {
+        // Browser may block autoplay on first interaction — that's OK,
+        // the power button click counts as user gesture
+      });
+    }
+  }, [state.currentTrack?.spotifyId, state.power]);
+
+  // ── When playing state changes, play or pause ──
   useEffect(() => {
-    if (!controllerRef.current || !controllerReadyRef.current) return;
+    const audio = audioRef.current;
+    if (!audio || !state.currentTrack) return;
 
     if (state.playing) {
-      controllerRef.current.resume();
+      audio.play().catch(() => {});
     } else {
-      controllerRef.current.pause();
+      audio.pause();
     }
   }, [state.playing]);
+
+  // ── Volume control ──
+  useEffect(() => {
+    if (audioRef.current) {
+      audioRef.current.volume = state.volume / 100;
+    }
+  }, [state.volume]);
 
   // ── VU meter animation — one stable loop, never restarts ──
   useEffect(() => {
@@ -215,27 +154,15 @@ export function useStereoPlayer() {
     return () => { active = false; cancelAnimationFrame(vuFrameRef.current); };
   }, []);
 
-  // ── Register the embed DOM element (called from StereoUnit) ──
-  const registerEmbedElement = useCallback((el: HTMLElement | null) => {
-    embedElRef.current = el;
-    // If API is ready and we have a pending URI, init now
-    if (el && apiReadyRef.current && pendingUriRef.current) {
-      initController(el, pendingUriRef.current);
-      pendingUriRef.current = null;
-    }
-  }, [initController]);
-
   // ── Power ON → auto-play the first track ──
   const togglePower = useCallback(() => {
     setState(prev => {
       if (prev.power) {
-        // Power OFF — pause and clean up
-        if (controllerRef.current) {
-          try { controllerRef.current.pause(); } catch (e) { /* ignore */ }
-        }
+        // Power OFF
+        if (audioRef.current) audioRef.current.pause();
         return { ...prev, power: false, playing: false, currentTrack: null, currentTrackIndex: -1, vuLeft: 0, vuRight: 0 };
       }
-      const shuffled = shuffleArray(allTracks);
+      const shuffled = shuffleArray(playableTracks);
       return {
         ...prev,
         power: true,
@@ -291,7 +218,7 @@ export function useStereoPlayer() {
 
   const reshuffle = useCallback(() => {
     setState(prev => {
-      const shuffled = shuffleArray(allTracks);
+      const shuffled = shuffleArray(playableTracks);
       return {
         ...prev,
         shuffledQueue: shuffled,
@@ -310,6 +237,5 @@ export function useStereoPlayer() {
     prevTrack,
     setVolume,
     reshuffle,
-    registerEmbedElement,
   };
 }
