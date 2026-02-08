@@ -15,19 +15,19 @@ const Portfolio: React.FC = () => {
           <div className="flex items-center space-x-4 mb-10">
             <span className="w-3 h-3 rounded-full bg-untold-orange"></span>
             <p className="font-mono text-[12px] uppercase tracking-[0.5em] font-bold text-white/40">
-              {t({ en: 'VERIFIED_SYSTEMS', es: 'SISTEMAS_VERIFICADOS' })}
+              {t({ en: 'VERIFIED_REVENUE_SYSTEMS', es: 'SISTEMAS_DE_INGRESOS_VERIFICADOS' })}
             </p>
           </div>
           <h1 className="font-sans font-black text-[clamp(3rem,8vw,120px)] leading-[0.8] mb-16 tracking-tighter uppercase">
             {t({
-              en: 'Production-Ready\nSystems.\nReal Results.',
-              es: 'Sistemas Listos\npara Producción.\nResultados Reales.'
+              en: 'Revenue-Ready\nSystems.\nReal ROI.',
+              es: 'Sistemas Listos\npara Ingresos.\nROI Real.'
             })}
           </h1>
           <p className="text-2xl lg:text-4xl font-medium text-untold-beige/80 max-w-5xl leading-tight">
             {t({
-              en: 'AI-enabled workflows built on 20 years of creative production and enterprise execution.',
-              es: 'Flujos de trabajo con IA construidos sobre 20 años de producción creativa y ejecución empresarial.'
+              en: 'AI-powered revenue operations built on 20 years of cross-functional leadership and enterprise GTM execution.',
+              es: 'Operaciones de ingresos impulsadas por IA construidas sobre 20 años de liderazgo multifuncional y ejecución GTM empresarial.'
             })}
           </p>
         </div>
@@ -96,7 +96,7 @@ const Portfolio: React.FC = () => {
       {/* Footer CTA */}
       <section className="px-5 sm:px-10 py-24 sm:py-48 text-center border-t border-white/5">
         <h2 className="font-sans font-black text-3xl sm:text-4xl lg:text-8xl mb-12 uppercase tracking-tighter leading-none">
-          {t({ en: 'Ready to\nmap yours?', es: '¿Listo para\nmapear el tuyo?' })}
+          {t({ en: 'Ready to\naccelerate yours?', es: '¿Listo para\nacelerar el tuyo?' })}
         </h2>
         <Link to="/contact" className="inline-block bg-untold-orange text-white px-10 sm:px-24 py-6 sm:py-10 font-sans font-black uppercase tracking-tighter text-lg sm:text-2xl hover:scale-105 active:scale-95 transition-all shadow-[0_40px_100px_rgba(255,77,23,0.3)]">
           {t({ en: 'START A CONVERSATION', es: 'INICIAR CONVERSACIÓN' })}

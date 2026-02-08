@@ -55,7 +55,7 @@ const Home: React.FC = () => {
             
             <div className="lg:col-span-4 flex flex-col justify-end">
               <div className="p-10 border border-white/5 bg-white/[0.02] space-y-4">
-                <span className="font-mono text-[10px] uppercase tracking-[0.4em] text-white/20 font-bold block">OPERATIONAL_FOCUS</span>
+                <span className="font-mono text-[10px] uppercase tracking-[0.4em] text-white/20 font-bold block">GTM_FOCUS</span>
                 <p className="text-2xl lg:text-3xl font-medium text-white/50 italic leading-tight">
                   {t(i18n.hero.support)}
                 </p>
@@ -269,15 +269,15 @@ const Home: React.FC = () => {
       <section className="px-5 sm:px-10 py-24 sm:py-48 lg:py-72 text-center bg-untold-beige/40">
         <div className="max-w-6xl mx-auto flex flex-col items-center">
           <h2 className="font-sans font-black text-[clamp(3rem,14vw,180px)] leading-[0.8] mb-10 sm:mb-16 tracking-tighter uppercase group cursor-default whitespace-pre-line text-center">
-            {t({ 
-              en: 'This\nWorkflow\nIs My\nMarketing.', 
-              es: 'Este\nFlujo es\nMi\nMarketing.' 
+            {t({
+              en: 'This\nPipeline\nIs My\nResume.',
+              es: 'Este\nPipeline\nEs Mi\nCurrículum.'
             })}
           </h2>
           <p className="text-xl sm:text-2xl lg:text-[2.5rem] text-untold-black mb-12 sm:mb-24 max-w-3xl mx-auto font-serif italic leading-tight tracking-tight">
-            {t({ 
-              en: 'I build systems that integrate AI into creative workflows.', 
-              es: 'Construyo sistemas que integran la IA en flujos de trabajo creativos.' 
+            {t({
+              en: 'I build AI systems that accelerate revenue operations.',
+              es: 'Construyo sistemas de IA que aceleran operaciones de ingresos.'
             })}
           </p>
           <Link 

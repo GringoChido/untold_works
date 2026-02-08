@@ -142,7 +142,7 @@ const ContactPage: React.FC = () => {
                     <textarea 
                       required
                       rows={5}
-                      placeholder="MAP_YOUR_SPECIFIC_AI_CHALLENGE_OR_OPPORTUNITY"
+                      placeholder="DESCRIBE_YOUR_REVOPS_CHALLENGE_OR_AUTOMATION_GOAL"
                       className="w-full bg-transparent border-b-2 border-white/10 py-6 text-xl lg:text-2xl font-serif italic outline-none focus:border-untold-orange transition-all text-white placeholder:text-white/20 resize-none"
                       value={formData.message}
                       onChange={(e) => setFormData({...formData, message: e.target.value})}

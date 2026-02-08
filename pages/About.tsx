@@ -22,7 +22,7 @@ const AboutPage: React.FC = () => {
           <div className="flex items-center space-x-4 mb-14">
             <span className="w-3 h-3 rounded-full bg-untold-orange animate-pulse"></span>
             <p className="font-mono text-[12px] uppercase tracking-[0.5em] font-bold text-white/40">
-              {t({ en: 'LEGACY_OF_VISION // 20_YEARS_MASTERY', es: 'LEGADO_DE_VISIÓN // 20_AÑOS_DE_MAESTRÍA' })}
+              {t({ en: 'OPERATIONAL_LEADERSHIP // 20_YEARS_EXECUTION', es: 'LIDERAZGO_OPERATIVO // 20_AÑOS_DE_EJECUCIÓN' })}
             </p>
           </div>
           
@@ -57,9 +57,9 @@ const AboutPage: React.FC = () => {
         <div className="max-w-[1440px] mx-auto grid lg:grid-cols-12 gap-16 sm:gap-24 items-start">
            <div className="lg:col-span-4">
              <div className="sticky top-48">
-               <span className="font-mono text-[11px] uppercase tracking-[0.6em] font-bold text-white/30 block mb-10">THE_PRACTITIONER // LOG_01</span>
+               <span className="font-mono text-[11px] uppercase tracking-[0.6em] font-bold text-white/30 block mb-10">THE_OPERATOR // LOG_01</span>
                <h2 className="font-sans font-black text-5xl lg:text-6xl uppercase tracking-tighter text-untold-orange leading-none">
-                 {t({ en: 'Creative Leadership.\nSystems Thinking.', es: 'Liderazgo Creativo.\nPensamiento de Sistemas.' })}
+                 {t({ en: 'Operational Leadership.\nRevenue Systems.', es: 'Liderazgo Operativo.\nSistemas de Ingresos.' })}
                </h2>
                <div className="mt-16">
                  <a
@@ -68,7 +68,7 @@ const AboutPage: React.FC = () => {
                     rel="noopener noreferrer"
                     className="inline-block bg-white text-untold-black px-10 py-5 font-sans font-black uppercase tracking-tighter text-lg hover:bg-untold-orange hover:text-white transition-all shadow-xl"
                  >
-                   {t({ en: 'Follow my latest AI insights →', es: 'Sigue mis insights de IA →' })}
+                   {t({ en: 'Follow my latest automation insights →', es: 'Sigue mis insights de automatización →' })}
                  </a>
                </div>
              </div>
