@@ -15,8 +15,8 @@ export const footer = {
     es: 'untold.works // ESTE_FLUJO_DE_TRABAJO_ES_MI_MARKETING'
   },
   narrative: {
-    en: "I build the systems that speak for themselves. Cross-border operating models designed for sustainable growth across the US and Latin America.",
-    es: "Construyo los sistemas que hablan por sí mismos. Modelos operativos transfronterizos diseñados para un crecimiento sostenible en EE.\u00A0UU. y Latinoamérica."
+    en: "I build the revenue systems that speak for themselves. AI-driven GTM automation and RevOps pipelines designed for measurable growth across the US and Latin America.",
+    es: "Construyo los sistemas de ingresos que hablan por sí mismos. Automatización GTM impulsada por IA y pipelines de RevOps diseñados para crecimiento medible en EE.\u00A0UU. y Latinoamérica."
   },
   version: { en: 'CAMPAIGN_ID // 2026.WORKS', es: 'CAMPAIGN_ID // 2026.WORKS' },
   location: { en: 'LOC // CDMX_MX_USA', es: 'LOC // CDMX_MX_USA' }
@@ -24,78 +24,78 @@ export const footer = {
 
 export const hero = {
   eyebrow: {
-    en: 'PRINCIPAL ARCHITECT & CREATIVE TECHNOLOGIST',
-    es: 'ARQUITECTO PRINCIPAL Y TECNÓLOGO CREATIVO'
+    en: 'AI WORKFLOW & AUTOMATION LEAD | REVOPS / GTM SYSTEMS',
+    es: 'LÍDER DE FLUJOS DE TRABAJO IA Y AUTOMATIZACIÓN | REVOPS / SISTEMAS GTM'
   },
   headline: {
     en: 'Joshua Semolik',
     es: 'Joshua Semolik'
   },
   subheadline: {
-    en: 'I design AI-enabled workflows and operating models for teams working across the US and Latin America.',
-    es: 'Diseño flujos de trabajo con IA y modelos operativos para equipos en EE.\u00A0UU. y Latinoamérica.'
+    en: 'I architect AI-driven revenue operations and GTM automation for high-growth teams across the US and Latin America.',
+    es: 'Diseño operaciones de ingresos impulsadas por IA y automatización GTM para equipos de alto crecimiento en EE.\u00A0UU. y Latinoamérica.'
   },
   paragraph: {
-    en: 'Clear process. Clean handoffs. Production-ready execution. I build systems that integrate AI into creative workflows so teams can focus on their craft.',
-    es: 'Proceso claro. Entregas limpias. Ejecución lista para producción. Construyo sistemas que integran la IA en flujos creativos para que los equipos se enfoquen en su oficio.'
+    en: 'Pipeline orchestration. Lead routing. CRM integration. I build AI automation systems that accelerate revenue operations — 98% MQL accuracy, 4.2x sales ROI, 15 hours reclaimed per week.',
+    es: 'Orquestación de pipeline. Enrutamiento de leads. Integración CRM. Construyo sistemas de automatización con IA que aceleran operaciones de ingresos — 98% de precisión MQL, 4.2x ROI en ventas, 15 horas recuperadas por semana.'
   },
   cta: {
     en: 'START_A_CONVERSATION',
     es: 'INICIAR_CONVERSACIÓN'
   },
   support: {
-    en: 'Cross-border operations bridging US creative standards with global execution.',
-    es: 'Operaciones transfronterizas conectando estándares creativos de EE.\u00A0UU. con ejecución global.'
+    en: 'Cross-border GTM operations bridging US revenue standards with Latin American market execution.',
+    es: 'Operaciones GTM transfronterizas conectando estándares de ingresos de EE.\u00A0UU. con la ejecución en mercados latinoamericanos.'
   }
 };
 
 export const aboutPage = {
   hero: {
-    headline: { en: 'The 20-Year Story', es: 'La Historia de 20 Años' },
+    headline: { en: 'The Operator Behind the Automation', es: 'El Operador Detrás de la Automatización' },
     hook: {
-      en: 'Video Editor → Director → Global Creative Director → AI Architect (MIT Alumnus). 20 years of creative craft, now applied to AI-enabled workflows.',
-      es: 'Editor de Video → Director → Director Creativo Global → Arquitecto de IA (Alumno MIT). 20 años de oficio creativo, ahora aplicados a flujos de trabajo con IA.'
+      en: 'Production Lead → Global Director → AI Automation Architect (MIT Sloan Certified). 20 years leading cross-functional teams and go-to-market execution, now applied to RevOps and AI workflow systems.',
+      es: 'Líder de Producción → Director Global → Arquitecto de Automatización IA (Certificado MIT Sloan). 20 años liderando equipos multifuncionales y ejecución go-to-market, ahora aplicados a RevOps y sistemas de flujos de trabajo con IA.'
     },
     regional: {
-      en: 'Based in Mexico for six years, I work cross-border across the US and LATAM, bridging US creative standards with global execution for distributed teams.',
-      es: 'Basado en México durante seis años, trabajo de forma transfronteriza en EE.\u00A0UU. y LATAM, conectando estándares creativos de EE.\u00A0UU. con ejecución global para equipos distribuidos.'
+      en: 'Based in Mexico for six years, I operate cross-border across the US and LATAM, bridging enterprise revenue standards with distributed GTM execution.',
+      es: 'Basado en México durante seis años, opero de forma transfronteriza en EE.\u00A0UU. y LATAM, conectando estándares de ingresos empresariales con ejecución GTM distribuida.'
     }
   },
   narrative: {
     veteran: {
-      en: "20 years mastering the craft of storytelling. Video Editor to Director, then Global Creative Director. I've led global product launches, built influencer programs, and optimized sales enablement in regulated markets. I've seen every production hurdle—now I build the systems to solve them.",
-      es: "20 años dominando el oficio de la narrativa. De Editor de Video a Director, luego Director Creativo Global. He liderado lanzamientos globales de productos, construido programas de influencers y optimizado la habilitación de ventas en mercados regulados. He visto cada obstáculo de producción—ahora construyo los sistemas para resolverlos."
+      en: "20 years leading cross-functional operations from production floor to global strategy. I've managed product launches across 12 markets, built pipeline programs from zero, and optimized sales enablement in regulated industries. I've seen every operational bottleneck — now I build the AI systems that eliminate them.",
+      es: "20 años liderando operaciones multifuncionales desde el piso de producción hasta la estrategia global. He gestionado lanzamientos de productos en 12 mercados, construido programas de pipeline desde cero y optimizado la habilitación de ventas en industrias reguladas. He visto cada cuello de botella operativo — ahora construyo los sistemas de IA que los eliminan."
     },
     theBridge: {
-      en: "My current AI toolkit (n8n, Python, Claude) and MIT Sloan certification are the culmination of this career. I automate what I've already mastered at scale—replacing friction with production-ready systems that move teams from manual execution to focused orchestration.",
-      es: "Mi toolkit actual de IA (n8n, Python, Claude) y la certificación de MIT Sloan son la culminación de esta carrera. Automatizo lo que ya he dominado a escala—reemplazando la fricción con sistemas listos para producción que permiten a los equipos pasar de la ejecución manual a la orquestación enfocada."
+      en: "My AI toolkit (n8n, Python, Claude, Salesforce, HubSpot) and MIT Sloan AI certification are the culmination of two decades in operational leadership. I automate the revenue workflows I've already mastered at scale — replacing manual pipeline management with intelligent lead routing, CRM orchestration, and GTM automation.",
+      es: "Mi toolkit de IA (n8n, Python, Claude, Salesforce, HubSpot) y la certificación de IA de MIT Sloan son la culminación de dos décadas en liderazgo operativo. Automatizo los flujos de ingresos que ya he dominado a escala — reemplazando la gestión manual de pipeline con enrutamiento inteligente de leads, orquestación CRM y automatización GTM."
     },
     manifesto: {
-      en: "My goal is clarity. I build systems that protect your brand while your team moves faster.",
-      es: "Mi objetivo es la claridad. Construyo sistemas que protegen tu marca mientras tu equipo avanza más rápido."
+      en: "My goal is pipeline velocity. I build systems that protect your revenue while your team closes faster.",
+      es: "Mi objetivo es la velocidad de pipeline. Construyo sistemas que protegen tus ingresos mientras tu equipo cierra más rápido."
     }
   },
   pillars: [
-    { id: '01', title: { en: 'WORKFLOW_TRANSFORMATION', es: 'TRANSFORMACIÓN_DE_FLUJO' }, content: { en: 'Redesigning the path from intake to delivery to eliminate friction and maximize throughput.', es: 'Rediseñando el camino desde la entrada hasta la entrega para eliminar la fricción y maximizar el rendimiento.' } },
-    { id: '02', title: { en: 'AGENTIC_INTEGRATION', es: 'INTEGRACIÓN_AGÉNTICA' }, content: { en: 'Embedding AI (Claude Code, n8n) into drafting and routing to protect creative integrity.', es: 'Integrando IA (Claude Code, n8n) en la redacción y enrutamiento para proteger la integridad creativa.' } },
-    { id: '03', title: { en: 'CROSS_BORDER_SYSTEMS', es: 'SISTEMAS_TRANSFRONTERIZOS' }, content: { en: 'Connecting touchpoints across US and LATAM markets with cross-border, production-ready logic.', es: 'Conectando puntos de contacto en los mercados de EE. UU. y LATAM con lógica transfronteriza lista para producción.' } },
-    { id: '04', title: { en: 'GOVERNANCE_&_LEADERSHIP', es: 'GOBERNANZA_Y_LIDERAZGO' }, content: { en: 'Clarifying ownership, aligning stakeholders, and ensuring long-term system reliability.', es: 'Clarificando la propiedad, alineando a las partes interesadas y asegurando la confiabilidad del sistema a largo plazo.' } }
+    { id: '01', title: { en: 'REVENUE_PIPELINE_DESIGN', es: 'DISEÑO_DE_PIPELINE_DE_INGRESOS' }, content: { en: 'Mapping the path from lead intake to closed-won, eliminating friction and maximizing pipeline velocity.', es: 'Mapeando el camino desde la captación de leads hasta el cierre, eliminando fricción y maximizando la velocidad del pipeline.' } },
+    { id: '02', title: { en: 'AI_LEAD_ROUTING_&_SCORING', es: 'ENRUTAMIENTO_Y_SCORING_DE_LEADS_IA' }, content: { en: 'Deploying AI agents (Claude, n8n, OpenAI) into lead qualification and CRM routing to eliminate manual scoring.', es: 'Desplegando agentes de IA (Claude, n8n, OpenAI) en la calificación de leads y enrutamiento CRM para eliminar el scoring manual.' } },
+    { id: '03', title: { en: 'CROSS_BORDER_GTM_OPS', es: 'OPS_GTM_TRANSFRONTERIZAS' }, content: { en: 'Orchestrating go-to-market systems across US and LATAM with unified CRM logic and localized execution.', es: 'Orquestando sistemas go-to-market en EE. UU. y LATAM con lógica CRM unificada y ejecución localizada.' } },
+    { id: '04', title: { en: 'REVOPS_GOVERNANCE', es: 'GOBERNANZA_REVOPS' }, content: { en: 'Clarifying data ownership, aligning sales and marketing stakeholders, and ensuring long-term attribution integrity.', es: 'Clarificando la propiedad de datos, alineando a los stakeholders de ventas y marketing, y asegurando la integridad de atribución a largo plazo.' } }
   ],
   closing: {
     headline: { en: 'THE WORKFLOW IS MY MARKETING.', es: 'EL FLUJO DE TRABAJO ES MI MARKETING.' },
-    subtext: { en: 'Open to Full-time Leadership Roles and Strategic Partnerships. Follow my latest AI insights on LinkedIn.', es: 'Abierto a Roles de Liderazgo a tiempo completo y Alianzas Estratégicas. Sigue mis últimos insights de IA en LinkedIn.' }
+    subtext: { en: 'Open to Full-time AI Workflow & RevOps Leadership Roles. Follow my latest automation insights on LinkedIn.', es: 'Abierto a Roles de Liderazgo en Flujos de Trabajo IA y RevOps a tiempo completo. Sigue mis últimos insights de automatización en LinkedIn.' }
   }
 };
 
 export const curatedEngine = {
   title: { en: 'THE_CURATED_ENGINE // DEEP_DIVE', es: 'EL_MOTOR_CURADO // INMERSIÓN' },
   headline: {
-    en: 'Finding Balance in the Ever-Changing Landscape: I’ve spent 20 years learning, breaking, and mastering these tools to find the perfect harmony between creative vision and technical execution.',
-    es: 'Encontrando el equilibrio en un panorama en constante cambio: He pasado 20 años aprendiendo, rompiendo y dominando estas herramientas para encontrar la armonía perfecta entre la visión creativa y la ejecución técnica.'
+    en: 'The Revenue Operations Stack: 20 years of operational leadership distilled into an integrated AI automation toolkit — connecting CRM intelligence, pipeline orchestration, and GTM execution.',
+    es: 'El Stack de Operaciones de Ingresos: 20 años de liderazgo operativo destilados en un toolkit de automatización IA integrado — conectando inteligencia CRM, orquestación de pipeline y ejecución GTM.'
   },
   balance: {
     title: { en: 'ORCHESTRATION_BALANCE', es: 'EQUILIBRIO_DE_ORQUESTACIÓN' },
-    creative: { en: 'CREATIVE_VISION', es: 'VISIÓN_CREATIVA' },
+    creative: { en: 'STRATEGIC_VISION', es: 'VISIÓN_ESTRATÉGICA' },
     technical: { en: 'TECHNICAL_EXECUTION', es: 'EJECUCIÓN_TÉCNICA' },
     integration: { en: 'AI_INTEGRATION', es: 'INTEGRACIÓN_DE_IA' }
   },
@@ -104,24 +104,24 @@ export const curatedEngine = {
       label: { en: 'THE ENGINE (Technical Foundation)', es: 'EL MOTOR (Base Técnica)' },
       tagline: { en: 'Building the systems that think.', es: 'Construyendo los sistemas que piensan.' },
       insight: { 
-        en: 'I use Claude for the logic and Python for the heavy lifting. This is where the agentic systems actually take shape, stress-tested over 20 years of production experience.',
-        es: 'Uso Claude para la lógica y Python para el trabajo pesado. Aquí es donde los sistemas agénticos realmente toman forma, probados bajo estrés durante 20 años de experiencia en producción.'
+        en: 'I use Claude for the logic and Python for the heavy lifting. This is where lead scoring models, CRM routing agents, and pipeline automation take shape — stress-tested across enterprise revenue operations.',
+        es: 'Uso Claude para la lógica y Python para el trabajo pesado. Aquí es donde los modelos de scoring de leads, agentes de enrutamiento CRM y automatización de pipeline toman forma — probados bajo estrés en operaciones de ingresos empresariales.'
       }
     },
     ops: {
       label: { en: 'THE OPERATIONS (GTM Orchestration)', es: 'LAS OPERACIONES (Orquestación GTM)' },
       tagline: { en: 'Automating the business of growth.', es: 'Automatizando el negocio del crecimiento.' },
       insight: {
-        en: 'Automation is the connective tissue. I bridge enterprise CRM data with autonomous routing pipelines developed through years of GTM strategy.',
-        es: 'La automatización es el tejido conectivo. Conecto datos de CRM empresarial con pipelines de enrutamiento autónomos desarrollados a través de años de estrategia GTM.'
+        en: 'Automation is the connective tissue. I bridge enterprise CRM data with autonomous lead routing, attribution modeling, and revenue pipeline orchestration built through years of hands-on GTM leadership.',
+        es: 'La automatización es el tejido conectivo. Conecto datos de CRM empresarial con enrutamiento autónomo de leads, modelado de atribución y orquestación de pipeline de ingresos construidos a través de años de liderazgo GTM práctico.'
       }
     },
     workspace: {
-      label: { en: 'THE WORKSPACE (Creative Output)', es: 'EL ESPACIO DE TRABAJO (Producción Creativa)' },
+      label: { en: 'THE WORKSPACE (Strategic Design & Reporting)', es: 'EL ESPACIO DE TRABAJO (Diseño Estratégico y Reportes)' },
       tagline: { en: 'High-fidelity design and strategy.', es: 'Diseño y estrategia de alta fidelidad.' },
       insight: {
-        en: 'Adobe Creative Cloud is my native language. Design is strategy. I use these tools to visualize complex architectures with the eye of a veteran Creative Director.',
-        es: 'Adobe Creative Cloud es mi lengua materna. El diseño es estrategia. Uso estas herramientas para visualizar arquitecturas complejas con el ojo de un Director Creativo veterano.'
+        en: 'Adobe Creative Cloud is my native language. I use these tools to visualize pipeline architectures, GTM dashboards, and system documentation with the eye of a veteran operational leader.',
+        es: 'Adobe Creative Cloud es mi lengua materna. Uso estas herramientas para visualizar arquitecturas de pipeline, dashboards GTM y documentación de sistemas con el ojo de un líder operativo veterano.'
       }
     }
   },
@@ -148,48 +148,48 @@ export const model = {
   title: { en: 'OPERATING_MODEL // DESIGN_BUILD_OPERATE', es: 'MODELO_OPERATIVO // DISEÑO_CONSTRUCCIÓN_OPERACIÓN' },
   design: {
     title: { en: '01: DESIGN', es: '01: DISEÑO' },
-    copy: { en: 'I map your existing manual workflows to identify the highest-leverage nodes for automation.', es: 'Mapeo sus flujos de trabajo manuales existentes para identificar los nodos de mayor apalancamiento para la automatización.' },
-    deliverable: { en: 'TECHNICAL_SYSTEM_BLUEPRINT', es: 'PLANO_TÉCNICO_DEL_SISTEMA' }
+    copy: { en: 'I audit your existing revenue workflows, CRM configurations, and lead routing logic to identify the highest-leverage automation opportunities.', es: 'Audito sus flujos de ingresos existentes, configuraciones CRM y lógica de enrutamiento de leads para identificar las oportunidades de automatización de mayor apalancamiento.' },
+    deliverable: { en: 'REVOPS_AUTOMATION_BLUEPRINT', es: 'PLANO_DE_AUTOMATIZACIÓN_REVOPS' }
   },
   build: {
     title: { en: '02: BUILD', es: '02: CONSTRUCCIÓN' },
-    copy: { en: 'I engineer production-ready agents and integration pipelines using n8n and Python.', es: 'Diseño agentes listos para producción y pipelines de integración usando n8n y Python.' },
-    deliverable: { en: 'FUNCTIONAL_PIPELINE', es: 'PIPELINE_FUNCIONAL' }
+    copy: { en: 'I engineer production-ready AI agents, CRM integrations, and lead routing pipelines using n8n, Python, and enterprise APIs.', es: 'Diseño agentes de IA listos para producción, integraciones CRM y pipelines de enrutamiento de leads usando n8n, Python y APIs empresariales.' },
+    deliverable: { en: 'LIVE_REVENUE_PIPELINE', es: 'PIPELINE_DE_INGRESOS_EN_VIVO' }
   },
   operate: {
     title: { en: '03: OPERATE', es: '03: OPERACIÓN' },
-    copy: { en: 'I manage and optimize your systems to ensure continuous growth and operational reliability.', es: 'Gestiono y optimizo sus sistemas para asegurar un crecimiento continuo y confiabilidad operativa.' },
-    deliverable: { en: 'CONTINUOUS_INTEGRITY_SUPPORT', es: 'SOPORTE_DE_INTEGRIDAD_CONTINUA' }
+    copy: { en: 'I monitor pipeline performance, optimize conversion rates, and iterate on lead scoring models to ensure continuous revenue growth.', es: 'Monitoreo el rendimiento del pipeline, optimizo tasas de conversión e itero en modelos de scoring de leads para asegurar crecimiento continuo de ingresos.' },
+    deliverable: { en: 'ONGOING_REVENUE_OPTIMIZATION', es: 'OPTIMIZACIÓN_CONTINUA_DE_INGRESOS' }
   }
 };
 
 export const servicePillars = {
   title: { en: 'SERVICE_PILLARS // WHAT_I_BUILD', es: 'PILARES_DE_SERVICIO // LO_QUE_CONSTRUYO' },
   content: {
-    title: { en: 'CONTENT_SYSTEMS', es: 'SISTEMAS_DE_CONTENIDO' },
-    subtitle: { en: 'The Creative Veteran', es: 'El Veterano Creativo' },
-    description: { en: 'Copywriting, Video/Photo Production, Social Media Campaigns, Ads, and Sales Enablement—backed by 20 years of craft.', es: 'Redacción, Producción de Video/Foto, Campañas de Redes Sociales, Anuncios y Habilitación de Ventas—respaldados por 20 años de oficio.' },
-    tags: ['COPYWRITING', 'VIDEO', 'SOCIAL', 'ADS', 'SALES ENABLEMENT']
+    title: { en: 'REVENUE_&_GTM_OPERATIONS', es: 'OPERACIONES_DE_INGRESOS_Y_GTM' },
+    subtitle: { en: 'The Revenue Architect', es: 'El Arquitecto de Ingresos' },
+    description: { en: 'Lead routing, pipeline orchestration, CRM integration, attribution modeling, and sales enablement — backed by 20 years of cross-functional operations leadership.', es: 'Enrutamiento de leads, orquestación de pipeline, integración CRM, modelado de atribución y habilitación de ventas — respaldado por 20 años de liderazgo en operaciones multifuncionales.' },
+    tags: ['LEAD ROUTING', 'PIPELINE OPS', 'CRM', 'ATTRIBUTION', 'SALES ENABLEMENT']
   },
   automation: {
     title: { en: 'INTELLIGENT_AUTOMATION', es: 'AUTOMATIZACIÓN_INTELIGENTE' },
     subtitle: { en: 'The Engine', es: 'El Motor' },
-    description: { en: 'Web and App deployment via n8n orchestration and custom logic via Python. I build the systems that think.', es: 'Despliegue web y de apps mediante orquestación n8n y lógica personalizada en Python. Construyo los sistemas que piensan.' },
+    description: { en: 'Agentic AI workflows via n8n orchestration and custom Python logic. Lead scoring, intelligent routing, and autonomous pipeline management. I build the systems that think.', es: 'Flujos de trabajo de IA agéntica vía orquestación n8n y lógica personalizada en Python. Scoring de leads, enrutamiento inteligente y gestión autónoma de pipeline. Construyo los sistemas que piensan.' },
     tags: ['n8n', 'PYTHON', 'CLAUDE', 'AGENTIC AI']
   },
   infrastructure: {
-    title: { en: 'INFRASTRUCTURE_&_DELIVERY', es: 'INFRAESTRUCTURA_Y_ENTREGA' },
-    subtitle: { en: 'The Output', es: 'La Salida' },
-    description: { en: 'High-integrity delivery using GitHub for version control and Netlify for cloud deployment. Production-ready, every time.', es: 'Entrega de alta integridad usando GitHub para control de versiones y Netlify para despliegue en la nube. Listo para producción, siempre.' },
-    tags: ['GITHUB', 'NETLIFY', 'VITE', 'REACT']
+    title: { en: 'DATA_&_INTEGRATION', es: 'DATOS_E_INTEGRACIÓN' },
+    subtitle: { en: 'The Connective Tissue', es: 'El Tejido Conectivo' },
+    description: { en: 'Salesforce, HubSpot, Apollo, and ERP integrations unified through API pipelines and version-controlled deployment. Clean data, every time.', es: 'Integraciones de Salesforce, HubSpot, Apollo y ERP unificadas a través de pipelines API y despliegue con control de versiones. Datos limpios, siempre.' },
+    tags: ['SALESFORCE', 'HUBSPOT', 'APOLLO', 'ERP', 'API']
   }
 };
 
 export const stack = {
   title: { en: 'THE_STACK // PRODUCTION_READY_TOOLS', es: 'EL_STACK // HERRAMIENTAS_LISTAS_PARA_PRODUCCIÓN' },
   quote: {
-    en: "I don't just use these tools—I connect them into custom systems that bridge design vision and production execution.",
-    es: "No solo uso estas herramientas—las conecto en sistemas personalizados que unen la visión de diseño y la ejecución de producción."
+    en: "I don't just use these tools — I connect them into custom revenue systems that bridge CRM data, AI logic, and GTM execution.",
+    es: "No solo uso estas herramientas — las conecto en sistemas de ingresos personalizados que unen datos CRM, lógica IA y ejecución GTM."
   },
   engineLabel: { en: 'THE ENGINE (Core Systems & Automation)', es: 'EL MOTOR (Sistemas Núcleo y Automatización)' },
   engine: ['Claude_Code', 'Python', 'n8n', 'GitHub', 'VS_Code', 'ChatGPT'],
@@ -202,7 +202,7 @@ export const stack = {
 export const artifacts = {
   eyebrow: { en: 'VERIFIED_OUTPUTS // SYSTEM_ARTIFACTS', es: 'RESULTADOS_VERIFICADOS // ARTEFACTOS_DEL_SISTEMA' },
   headline: { en: 'Selected Artifacts.', es: 'Artefactos Seleccionados.' },
-  intro: { en: 'End-to-end creative workflows using AI and automation—shipped for global product launches and distributed teams.', es: 'Flujos de trabajo creativos de extremo a extremo con IA y automatización—entregados para lanzamientos globales y equipos distribuidos.' },
+  intro: { en: 'End-to-end revenue automation using AI and pipeline orchestration — shipped for enterprise sales teams and cross-border GTM operations.', es: 'Automatización de ingresos de extremo a extremo usando IA y orquestación de pipeline — entregada para equipos de ventas empresariales y operaciones GTM transfronterizas.' },
   headerLeft: { en: 'PRODUCTION_LOG', es: 'LOG_DE_PRODUCCIÓN' },
   headerRight: { en: 'STATUS // VERIFIED', es: 'ESTADO // VERIFICADO' },
   labels: {
@@ -215,13 +215,13 @@ export const artifacts = {
 export const proofs: WorkflowProof[] = [
   {
     name: { en: 'Spotify - WhatsApp Publishing', es: 'Publicación de Spotify - WhatsApp' },
-    description: { en: 'Replaced manual content curation with an automated publishing pipeline. Reclaimed up to 15 hours per week for the creative team.', es: 'Reemplacé la curaduría manual de contenido con un pipeline de publicación automatizado. Recuperando hasta 15 horas semanales para el equipo creativo.' },
+    description: { en: 'Replaced manual content operations with an automated AI publishing pipeline. Reclaimed 15 hours per week, scaling output capacity 10x.', es: 'Reemplacé operaciones de contenido manual con un pipeline de publicación automatizado con IA. Recuperé 15 horas semanales, escalando la capacidad de producción 10x.' },
     builtWith: { en: 'n8n, Claude Code, Python, RAG Architecture', es: 'n8n, Claude Code, Python, Arquitectura RAG' },
     tags: ['AUTOMATION', 'RAG', 'LLM OPS']
   },
   {
     name: { en: 'OMI Intake & Routing', es: 'Ingestión y Enrutamiento OMI' },
-    description: { en: 'Built an intelligent lead routing system that scores and qualifies inbound leads automatically. Measured 98% MQL accuracy and 4.2x sales ROI.', es: 'Construí un sistema inteligente de enrutamiento de leads que califica automáticamente. Precisión MQL medida del 98% y ROI de ventas de 4.2x.' },
+    description: { en: 'Built an intelligent lead routing system that scores, qualifies, and routes inbound leads through Salesforce automatically. Measured 98% MQL accuracy and 4.2x sales ROI.', es: 'Construí un sistema inteligente de enrutamiento de leads que califica y enruta leads entrantes a través de Salesforce automáticamente. Precisión MQL medida del 98% y ROI de ventas de 4.2x.' },
     builtWith: { en: 'n8n, OpenAI Agents, Apollo API, Salesforce', es: 'n8n, Agentes de OpenAI, Apollo API, Salesforce' },
     tags: ['AI ROUTING', 'CRM', 'SALES OPS']
   }
@@ -296,8 +296,8 @@ export const contactPage = {
   eyebrow: { en: 'COMMUNICATION_HUB // BORDERLESS_SYNC_v2.6', es: 'CENTRO_DE_COMUNICACIÓN // SINCRONÍA_SIN_FRONTERAS_v2.6' },
   headline: { en: 'Start a Conversation.', es: 'Iniciar una Conversación.' },
   subheadline: { 
-    en: 'Based in Mexico for six years, I work cross-border across the US and LATAM, bridging creative craft with engineering workflows for distributed teams. I am currently seeking leadership opportunities to architect the future of creative automation.', 
-    es: 'Basado en México durante seis años, trabajo de forma transfronteriza en EE. UU. y LATAM, conectando el oficio creativo con los flujos de ingeniería para equipos distribuidos. Actualmente busco oportunidades de liderazgo para diseñar el futuro de la automatización creativa.' 
+    en: 'Based in Mexico for six years, I work cross-border across the US and LATAM, building AI-powered revenue operations for distributed sales and marketing teams. I am currently seeking a full-time role as AI Workflow & Automation Lead in RevOps / GTM Systems.',
+    es: 'Basado en México durante seis años, trabajo de forma transfronteriza en EE. UU. y LATAM, construyendo operaciones de ingresos impulsadas por IA para equipos de ventas y marketing distribuidos. Actualmente busco un rol a tiempo completo como Líder de Flujos de Trabajo IA y Automatización en RevOps / Sistemas GTM.' 
   },
   emailLabel: { en: 'DIGITAL_UPLINK', es: 'ENLACE_DIGITAL' },
   locationLabel: { en: 'PHYSICAL_NODE', es: 'NODO_FÍSICO' },
