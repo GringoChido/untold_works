@@ -92,7 +92,7 @@ const CuratedEngine: React.FC = () => {
               </h3>
               <div className="flex items-center space-x-4">
                 <div className="h-0.5 w-12 bg-untold-orange"></div>
-                <p className="text-[11px] uppercase tracking-[0.4em] text-white/40 font-bold">Principal Architect // Joshua Semolik</p>
+                <p className="text-[11px] uppercase tracking-[0.4em] text-white/40 font-bold">AI Automation Lead // Joshua Semolik</p>
               </div>
             </div>
 
