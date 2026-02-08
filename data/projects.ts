@@ -10,19 +10,19 @@ export const projects: Project[] = [
     services: [
       { en: 'n8n Orchestration', es: 'Orquestación n8n' },
       { en: 'Claude Code Integration', es: 'Integración de Claude Code' },
-      { en: 'Content Synthesis', es: 'Síntesis de Contenido' }
+      { en: 'Automated Pipeline Ops', es: 'Ops de Pipeline Automatizado' }
     ],
     summary: {
-      en: 'Replaced manual content curation with an automated publishing pipeline. Reclaimed up to 15 hours per week.',
-      es: 'Reemplacé la curaduría manual de contenido con un pipeline de publicación automatizado. Recuperando hasta 15 horas semanales.'
+      en: 'Replaced manual content operations with an AI-driven publishing pipeline. Reclaimed 15 hours per week, scaling capacity 10x.',
+      es: 'Reemplacé operaciones manuales de contenido con un pipeline de publicación impulsado por IA. Recuperé 15 horas semanales, escalando la capacidad 10x.'
     },
     challenge: { 
-      en: 'Manual curation was a massive bottleneck for scale. Curators were spending 15+ hours weekly on manual data entry and drafting, causing significant lead-time delays and operational fatigue.', 
-      es: 'La curaduría manual era un cuello de botella masivo para la escala. Los curadores dedicaban más de 15 horas semanales a la entrada manual de datos y la redacción, lo que provocaba retrasos significativos.' 
+      en: 'Manual content operations were a massive bottleneck for scale. The team was spending 15+ hours weekly on repetitive data processing and drafting, causing lead-time delays and unsustainable operational overhead.',
+      es: 'Las operaciones de contenido manual eran un cuello de botella masivo para la escala. El equipo dedicaba más de 15 horas semanales al procesamiento repetitivo de datos y redacción, causando retrasos y sobrecarga operativa insostenible.' 
     },
     goal: {
-      en: 'Reclaim creative time by automating the ingestion-to-draft pipeline while ensuring high-integrity publishing at scale.',
-      es: 'Recuperar el tiempo creativo automatizando el pipeline de ingestión a borrador mientras se asegura una publicación de alta integridad a escala.'
+      en: 'Reclaim operational capacity by automating the ingestion-to-publish pipeline while maintaining output quality at scale.',
+      es: 'Recuperar capacidad operativa automatizando el pipeline de ingestión-a-publicación mientras se mantiene la calidad de salida a escala.'
     },
     solution: {
       en: 'I built an agentic RAG-pipeline that ingests Spotify metadata, generates synthesized recommendations via Claude, and routes through a human-in-the-loop approval gate to WhatsApp.',
@@ -32,7 +32,7 @@ export const projects: Project[] = [
       { label: { en: 'Time Reclaimed', es: 'Tiempo Recuperado' }, value: '15h/wk' },
       { label: { en: 'Capacity Shift', es: 'Cambio de Capacidad' }, value: '10x' }
     ],
-    tags: ['AUTOMATION', 'RAG', 'LLM OPS'],
+    tags: ['AUTOMATION', 'RAG', 'PIPELINE OPS'],
     images: [
       '/images/project1-spotify/image1.jpg',
       '/images/project1-spotify/image2.png',
@@ -49,7 +49,7 @@ export const projects: Project[] = [
   },
   {
     id: 'black-radio-experience',
-    name: { en: 'Black Radio Experience Engine', es: 'Motor de Black Radio Experience' },
+    name: { en: 'Black Radio GTM Engine', es: 'Motor GTM de Black Radio' },
     client: { en: 'Black Radio', es: 'Black Radio' },
     timeline: '2023 - 2024',
     stack: ['Python', 'FastAPI', 'FFmpeg', 'Cloud Storage', 'Instagram Graph API'],
@@ -59,26 +59,26 @@ export const projects: Project[] = [
       { en: 'GTM Governance', es: 'Gobernanza GTM' }
     ],
     summary: {
-      en: 'Automated social campaign packaging and scheduling across platforms. Grew audience reach by 300%.',
-      es: 'Automaticé el empaquetado y programación de campañas sociales. Crecimiento de alcance de audiencia del 300%.'
+      en: 'Automated GTM campaign packaging and cross-platform distribution. Grew measurable audience reach by 300% with 500+ engagement signals processed.',
+      es: 'Automaticé el empaquetado de campañas GTM y la distribución multiplataforma. Crecimiento medible de alcance del 300% con más de 500 señales de engagement procesadas.'
     },
     challenge: { 
-      en: 'Maintaining high-integrity, cinematic brand dominance required impossible manual hours for content packaging and scheduling across multiple social platforms.', 
-      es: 'Mantener el dominio cinematográfico de la marca con alta integridad requería horas manuales imposibles para el empaquetado y la programación de contenido en múltiples plataformas.' 
+      en: 'Maintaining brand-consistent campaign execution required unsustainable manual hours for content packaging, scheduling, and cross-platform GTM distribution.',
+      es: 'Mantener una ejecución de campañas consistente con la marca requería horas manuales insostenibles para el empaquetado de contenido, programación y distribución GTM multiplataforma.' 
     },
     goal: {
-      en: 'Eliminate manual friction in social content delivery while scaling audience reach across borders.',
-      es: 'Eliminar la fricción manual en la entrega de contenido social mientras se escala el alcance de la audiencia a través de las fronteras.'
+      en: 'Eliminate manual friction in campaign delivery while scaling audience reach and measurable engagement signals across borders.',
+      es: 'Eliminar la fricción manual en la entrega de campañas mientras se escala el alcance de audiencia y las señales de engagement medibles a través de las fronteras.'
     },
     solution: {
-      en: 'I engineered a Python-driven pipeline that pre-builds complex weekend social campaigns, automates carousel packaging, and handles cross-platform scheduling with zero manual intervention.',
-      es: 'Diseñé un pipeline impulsado por Python que pre-construye campañas sociales complejas para fines de semana, automatiza el empaquetado de carruseles y gestiona la programación multiplataforma.'
+      en: 'I engineered a Python-driven GTM pipeline that pre-builds campaign assets, automates cross-platform packaging, and handles multi-channel scheduling with zero manual intervention.',
+      es: 'Diseñé un pipeline GTM impulsado por Python que pre-construye activos de campaña, automatiza el empaquetado multiplataforma y gestiona la programación multicanal sin intervención manual.'
     },
     metrics: [
       { label: { en: 'Reach Growth', es: 'Crecimiento Alcance' }, value: '300%' },
-      { label: { en: 'Signals Processed', es: 'Señales Procesadas' }, value: '500+' }
+      { label: { en: 'Engagement Signals', es: 'Señales de Engagement' }, value: '500+' }
     ],
-    tags: ['MEDIA OPS', 'PYTHON', 'AUTONOMOUS'],
+    tags: ['GTM AUTOMATION', 'PYTHON', 'CAMPAIGN OPS'],
     images: [
       '/images/project2-blackradio/image1.jpg',
       '/images/project2-blackradio/image2.png',
@@ -117,7 +117,7 @@ export const projects: Project[] = [
       { label: { en: 'MQL Accuracy', es: 'Precisión MQL' }, value: '98%' },
       { label: { en: 'Sales ROI', es: 'ROI de Ventas' }, value: '4.2x' }
     ],
-    tags: ['AGENTIC AI', 'CRM', 'SALES OPS'],
+    tags: ['AGENTIC AI', 'CRM', 'REVOPS'],
     images: [
       '/images/project3-omi/image1.jpg',
       '/images/project3-omi/image2.png',
@@ -127,36 +127,36 @@ export const projects: Project[] = [
   },
   {
     id: 'billiard-factory-retail-architecture',
-    name: { en: 'Billiard Factory Operating Model', es: 'Modelo Operativo de Billiard Factory' },
+    name: { en: 'Billiard Factory Revenue Operations', es: 'Operaciones de Ingresos de Billiard Factory' },
     client: { en: 'Billiard Factory', es: 'Billiard Factory' },
     timeline: 'Enterprise Scale - 2024',
     stack: ['Shopify Plus', 'ERP Integration', 'n8n', 'Python', 'Webflow'],
     services: [
-      { en: 'E-commerce Architecture', es: 'Arquitectura E-commerce' },
+      { en: 'Revenue Architecture', es: 'Arquitectura de Ingresos' },
       { en: 'Unit Economics', es: 'Economía de Unidad' },
       { en: 'GTM Governance', es: 'Gobernanza GTM' }
     ],
     summary: {
-      en: 'Unified product data across physical and digital storefronts. Measured a 20% sales lift across 4,000+ products.',
-      es: 'Unifiqué los datos de productos entre tiendas físicas y digitales. Aumento medido del 20% en ventas en más de 4,000 productos.'
+      en: 'Unified revenue data across physical and digital sales channels. Measured a 20% sales lift across 4,000+ SKUs with 35% operational efficiency gain.',
+      es: 'Unifiqué datos de ingresos en canales de ventas físicos y digitales. Aumento medido del 20% en ventas en más de 4,000 SKUs con ganancia de eficiencia operativa del 35%.'
     },
     challenge: { 
-      en: 'Operational silos and fragmented data across physical and digital storefronts were preventing unified inventory control and effective retail marketing.', 
-      es: 'Los silos operativos y los datos fragmentados en tiendas físicas y digitales impedían el control de inventario unificado y el marketing minorista efectivo.' 
+      en: 'Operational silos and fragmented data across physical and digital sales channels were preventing unified inventory control, accurate attribution, and effective omnichannel revenue operations.',
+      es: 'Los silos operativos y los datos fragmentados en canales de ventas físicos y digitales impedían el control de inventario unificado, la atribución precisa y operaciones de ingresos omnicanal efectivas.' 
     },
     goal: {
-      en: 'Unify the retail catalog data architecture to drive measurable ROI across all sales channels.',
-      es: 'Unificar la arquitectura de datos del catálogo minorista para impulsar un ROI medible en todos los canales de venta.'
+      en: 'Unify the product data architecture and revenue attribution to drive measurable ROI across all sales channels.',
+      es: 'Unificar la arquitectura de datos de productos y la atribución de ingresos para impulsar un ROI medible en todos los canales de venta.'
     },
     solution: {
-      en: 'I architected a unified product engine and cross-channel operating model, integrating the ERP with n8n and automating stock-based social publishing.',
-      es: 'Arquitecturé un motor de productos unificado y un modelo operativo multicanal, integrando el ERP con n8n y automatizando la publicación social.'
+      en: 'I architected a unified product data engine and cross-channel revenue model, integrating ERP with n8n automation and driving stock-based demand signals across all GTM channels.',
+      es: 'Arquitecturé un motor de datos de productos unificado y un modelo de ingresos multicanal, integrando el ERP con automatización n8n e impulsando señales de demanda basadas en inventario en todos los canales GTM.'
     },
     metrics: [
       { label: { en: 'Sales Lift', es: 'Aumento de Ventas' }, value: '20%' },
       { label: { en: 'Efficiency', es: 'Eficiencia' }, value: '+35%' }
     ],
-    tags: ['ENTERPRISE', 'COMMERCE', 'ARCHITECTURE'],
+    tags: ['ENTERPRISE', 'REVOPS', 'OMNICHANNEL'],
     images: [
       '/images/project4-billiard/image1.jpg',
       '/images/project4-billiard/image2.jpg',
