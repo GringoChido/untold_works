@@ -1,11 +1,17 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { useLanguage } from '../App';
+import { usePageMeta } from '../hooks/usePageMeta';
 import * as i18n from '../i18n';
 
 const AboutPage: React.FC = () => {
   const { t } = useLanguage();
   const content = i18n.aboutPage;
+
+  usePageMeta(
+    'About — Joshua Semolik, AI Automation Lead',
+    '20 years of operational leadership, now applied to AI automation and RevOps. MIT Sloan certified. Based in Mexico, operating cross-border US and LATAM.'
+  );
 
   useEffect(() => {
     window.scrollTo(0, 0);

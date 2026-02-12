@@ -1,10 +1,16 @@
 import React, { useState, useEffect } from 'react';
 import { useLanguage } from '../App';
+import { usePageMeta } from '../hooks/usePageMeta';
 import * as i18n from '../i18n';
 
 const ContactPage: React.FC = () => {
   const { t } = useLanguage();
   const content = i18n.contactPage;
+
+  usePageMeta(
+    'Contact — Joshua Semolik',
+    'Start a conversation about AI-powered revenue operations, GTM automation, or RevOps systems. Currently seeking full-time AI workflow leadership roles.'
+  );
   const [status, setStatus] = useState<'idle' | 'submitting' | 'success'>('idle');
   const [copied, setCopied] = useState(false);
   const [formData, setFormData] = useState({
@@ -107,7 +113,7 @@ const ContactPage: React.FC = () => {
                     <span className="text-5xl text-untold-orange animate-pulse">✦</span>
                   </div>
                   <div>
-                    <h3 className="font-sans font-black text-5xl lg:text-6xl uppercase tracking-tighter mb-4">Signal Received.</h3>
+                    <h2 className="font-sans font-black text-5xl lg:text-6xl uppercase tracking-tighter mb-4">Signal Received.</h2>
                     <p className="font-mono text-[10px] uppercase tracking-[0.5em] text-white/30 font-bold">Stand by for connection.</p>
                   </div>
                 </div>

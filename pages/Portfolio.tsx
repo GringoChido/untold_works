@@ -1,11 +1,17 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { useLanguage } from '../App';
+import { usePageMeta } from '../hooks/usePageMeta';
 import { projects } from '../data/projects';
 import CuratedEngine from '../components/CuratedEngine';
 
 const Portfolio: React.FC = () => {
   const { t } = useLanguage();
+
+  usePageMeta(
+    'Portfolio — Revenue Systems & AI Automation',
+    'Production-ready AI automation systems. Revenue pipelines, lead routing engines, and GTM operations built on 20 years of cross-functional leadership.'
+  );
 
   return (
     <div className="bg-untold-black text-white min-h-screen font-serif">
@@ -62,9 +68,9 @@ const Portfolio: React.FC = () => {
                   </div>
                 </div>
 
-                <h3 className="font-sans font-black text-4xl lg:text-6xl leading-[0.95] uppercase tracking-tighter mb-10 transition-colors group-hover:text-untold-orange">
+                <h2 className="font-sans font-black text-4xl lg:text-6xl leading-[0.95] uppercase tracking-tighter mb-10 transition-colors group-hover:text-untold-orange">
                   {t(project.name)}
-                </h3>
+                </h2>
 
                 <p className="text-xl lg:text-2xl font-serif text-untold-beige/60 leading-relaxed mb-16 max-w-lg">
                   {t(project.summary)}

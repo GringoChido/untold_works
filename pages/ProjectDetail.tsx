@@ -2,17 +2,40 @@
 import React, { useEffect } from 'react';
 import { useParams, Link, Navigate } from 'react-router-dom';
 import { useLanguage } from '../App';
+import { usePageMeta } from '../hooks/usePageMeta';
 import { projects } from '../data/projects';
+
+const projectMeta: Record<string, { title: string; description: string }> = {
+  'spotify-whatsapp-publishing': {
+    title: 'Spotify-WhatsApp Pipeline — Joshua Semolik',
+    description: 'AI publishing pipeline replacing manual content ops. 15 hours/week reclaimed, 10x capacity scaling using n8n, Claude Code, and RAG architecture.',
+  },
+  'black-radio-experience': {
+    title: 'Black Radio GTM Engine — Joshua Semolik',
+    description: 'Automated GTM campaign engine. 300% audience reach growth and 500+ engagement signals via Python-driven cross-platform distribution pipeline.',
+  },
+  'omi-lead-intake-qualification': {
+    title: 'OMI Lead Intake & Routing — Joshua Semolik',
+    description: 'Intelligent lead routing system with 98% MQL accuracy and 4.2x sales ROI. Agentic AI workflows using n8n, OpenAI, and CRM integration.',
+  },
+  'billiard-factory-retail-architecture': {
+    title: 'Billiard Factory RevOps — Joshua Semolik',
+    description: 'Unified omnichannel revenue operations. 20% sales lift across 4,000+ SKUs with 35% efficiency gain via ERP integration and n8n automation.',
+  },
+};
 
 const ProjectDetail: React.FC = () => {
   const { projectId } = useParams();
   const { t } = useLanguage();
-  
+
   const currentIndex = projects.findIndex(p => p.id === projectId);
   const project = projects[currentIndex];
 
   const nextProject = projects[(currentIndex + 1) % projects.length];
   const prevProject = projects[(currentIndex - 1 + projects.length) % projects.length];
+
+  const meta = projectMeta[projectId || ''] || { title: 'Project — Joshua Semolik', description: '' };
+  usePageMeta(meta.title, meta.description);
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -20,11 +43,21 @@ const ProjectDetail: React.FC = () => {
 
   if (!project) return <Navigate to="/portfolio" />;
 
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'CreativeWork',
+    name: t(project.name),
+    description: t(project.summary),
+    author: { '@type': 'Person', name: 'Joshua Semolik' },
+    url: `https://untold.works/portfolio/${project.id}`,
+  };
+
   return (
-    <div className="bg-untold-black min-h-screen font-serif text-white overflow-x-hidden max-w-full">
+    <div className="bg-untold-black min-h-screen font-serif text-white">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       {/* Top Metadata Bar - High Contrast Mono */}
       <header className="px-10 pt-32 pb-16 lg:pt-48 border-b border-white/10">
-        <div className="max-w-full lg:max-w-[1440px] mx-auto">
+        <div className="max-w-[1440px] mx-auto">
           <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-16">
             <Link to="/portfolio" className="inline-flex items-center space-x-4 group mb-8 md:mb-0">
                <span className="text-2xl group-hover:-translate-x-3 transition-transform duration-500 text-untold-orange">←</span>
@@ -55,7 +88,7 @@ const ProjectDetail: React.FC = () => {
               <span className="block font-mono text-[10px] uppercase tracking-[0.5em] text-white/30">TECHNICAL_STACK</span>
               <div className="flex flex-wrap gap-x-6 gap-y-2">
                 {project.stack.map((item, idx) => (
-                  <p key={idx} className="text-[10px] sm:text-[12px] font-bold uppercase tracking-tight font-mono text-white/60">{item}</p>
+                  <p key={idx} className="text-[12px] font-bold uppercase tracking-tight font-mono text-white/60">{item}</p>
                 ))}
               </div>
             </div>
@@ -63,7 +96,7 @@ const ProjectDetail: React.FC = () => {
               <span className="block font-mono text-[10px] uppercase tracking-[0.5em] text-white/30">SERVICES_PROVIDED</span>
               <div className="flex flex-wrap gap-x-8 gap-y-2">
                 {project.services.map((service, idx) => (
-                  <p key={idx} className="text-[10px] sm:text-[12px] font-bold uppercase tracking-tight font-mono">{t(service)}</p>
+                  <p key={idx} className="text-[12px] font-bold uppercase tracking-tight font-mono">{t(service)}</p>
                 ))}
               </div>
             </div>
@@ -72,8 +105,8 @@ const ProjectDetail: React.FC = () => {
       </header>
 
       {/* Narrative Grid - Split Layout */}
-      <section className="w-full px-4 sm:px-6 md:px-10 py-24 sm:py-32 lg:py-56 border-b border-white/5">
-        <div className="max-w-full lg:max-w-[1440px] mx-auto grid lg:grid-cols-12 gap-24 items-start">
+      <section className="px-10 py-32 lg:py-56 border-b border-white/5">
+        <div className="max-w-[1440px] mx-auto grid lg:grid-cols-12 gap-24 items-start">
           <div className="lg:col-span-6 sticky top-48">
             <h2 className="text-4xl lg:text-7xl font-serif italic text-untold-orange leading-[1.05] tracking-tighter mb-16">
               {t(project.summary)}
@@ -132,11 +165,11 @@ const ProjectDetail: React.FC = () => {
       </section>
 
       {/* Artifact Gallery - 4-Column Responsive Grid */}
-      <section className="w-full px-4 sm:px-6 md:px-10 py-24 sm:py-32 lg:py-48 bg-white/[0.02]">
-        <div className="max-w-full lg:max-w-[1440px] mx-auto">
-          <div className="flex items-center space-x-3 sm:space-x-4 mb-24">
+      <section className="px-10 py-32 lg:py-48 bg-white/[0.02]">
+        <div className="max-w-[1440px] mx-auto">
+          <div className="flex items-center space-x-4 mb-24">
              <span className="w-2.5 h-2.5 rounded-full bg-untold-orange"></span>
-             <h3 className="font-mono text-[11px] uppercase tracking-[0.6em] font-bold text-white/40 tracking-widest">SYSTEM_VISUALS_&_ARTIFACTS</h3>
+             <h2 className="font-mono text-[11px] uppercase tracking-[0.6em] font-bold text-white/40 tracking-widest">SYSTEM_VISUALS_&_ARTIFACTS</h2>
           </div>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -144,7 +177,7 @@ const ProjectDetail: React.FC = () => {
               <div key={idx} className="aspect-square bg-white/5 overflow-hidden group border border-white/10 hover:border-untold-orange transition-colors">
                 <img 
                   src={img} 
-                  alt={`${project.id}-artifact-${idx}`} 
+                  alt={project.imageAlts?.[idx] || `${t(project.name)} artifact ${idx + 1}`}
                   className="w-full h-full object-cover grayscale contrast-125 group-hover:grayscale-0 group-hover:scale-105 transition-all duration-1000"
                 />
               </div>
@@ -154,23 +187,23 @@ const ProjectDetail: React.FC = () => {
       </section>
 
       {/* Bottom Nav - Next/Previous Toggle */}
-      <section className="w-full px-4 sm:px-6 md:px-10 py-24 sm:py-32 border-t border-white/5 bg-black">
-        <div className="max-w-full lg:max-w-[1440px] mx-auto grid md:grid-cols-2 gap-px bg-white/5 border border-white/10">
+      <section className="px-10 py-32 border-t border-white/5 bg-black">
+        <div className="max-w-[1440px] mx-auto grid md:grid-cols-2 gap-px bg-white/5 border border-white/10">
            <Link to={`/portfolio/${prevProject.id}`} className="group p-12 lg:p-20 bg-black hover:bg-white/[0.03] transition-all border-r border-white/10">
               <span className="block font-mono text-[10px] uppercase tracking-[0.5em] text-white/30 mb-10">PREVIOUS_ARTIFACT</span>
               <div className="flex items-center space-x-8">
                 <span className="text-4xl group-hover:-translate-x-4 transition-transform duration-500 text-untold-orange">←</span>
-                <h4 className="font-sans font-black text-3xl lg:text-5xl uppercase tracking-tighter group-hover:text-untold-orange transition-colors">
+                <h3 className="font-sans font-black text-3xl lg:text-5xl uppercase tracking-tighter group-hover:text-untold-orange transition-colors">
                   {t(prevProject.name)}
-                </h4>
+                </h3>
               </div>
            </Link>
            <Link to={`/portfolio/${nextProject.id}`} className="group p-12 lg:p-20 bg-black hover:bg-white/[0.03] transition-all text-right">
               <span className="block font-mono text-[10px] uppercase tracking-[0.5em] text-white/30 mb-10">NEXT_ARTIFACT</span>
               <div className="flex items-center justify-end space-x-8">
-                <h4 className="font-sans font-black text-3xl lg:text-5xl uppercase tracking-tighter group-hover:text-untold-orange transition-colors">
+                <h3 className="font-sans font-black text-3xl lg:text-5xl uppercase tracking-tighter group-hover:text-untold-orange transition-colors">
                   {t(nextProject.name)}
-                </h4>
+                </h3>
                 <span className="text-4xl group-hover:translate-x-4 transition-transform duration-500 text-untold-orange">→</span>
               </div>
            </Link>

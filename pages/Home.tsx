@@ -1,12 +1,18 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { useLanguage } from '../App';
+import { usePageMeta } from '../hooks/usePageMeta';
 import TechStack from '../components/TechStack';
 import StereoTeaser from '../components/StereoTeaser';
 import * as i18n from '../i18n';
 
 const Home: React.FC = () => {
   const { t } = useLanguage();
+
+  usePageMeta(
+    'Joshua Semolik — AI Workflow & Automation Lead',
+    'AI-powered revenue operations and GTM automation. 98% MQL accuracy, 4.2x sales ROI. Pipeline orchestration, lead routing, and CRM integration.'
+  );
 
   useEffect(() => {
     window.scrollTo(0, 0);
