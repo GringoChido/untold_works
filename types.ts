@@ -27,6 +27,7 @@ export interface Project {
   metrics?: Metric[];
   tags: string[];
   images: string[];
+  imageAlts?: string[];
   codeSnippets?: {
     language: string;
     code: string;
@@ -58,5 +59,40 @@ export interface StereoState {
   shuffledQueue: Track[];
   vuLeft: number;
   vuRight: number;
+}
+
+// ── Untold Slides ──
+
+export type SlideScene =
+  | 'vintage'
+  | 'haring'
+  | 'bigsur'
+  | 'polaroid'
+  | 'tokyo'
+  | 'brutalist'
+  | 'campfire'
+  | 'cinema';
+
+export interface SlideImage {
+  url: string;
+  alt: string;
+  caption?: string;
+}
+
+export interface SlideCollection {
+  id: string;
+  title: string;
+  subtitle: string;
+  scene: SlideScene;
+  track: Track;
+  images: SlideImage[];
+}
+
+export interface SlidesState {
+  activeCollection: SlideCollection | null;
+  currentImageIndex: number;
+  playing: boolean;
+  musicPlaying: boolean;
+  volume: number;
 }
 
