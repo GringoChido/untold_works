@@ -98,15 +98,32 @@ const Navbar: React.FC = () => {
             </div>
           </div>
 
-          {/* Mobile Toggle */}
-          <button
-            className="lg:hidden p-2"
-            onClick={() => setIsMenuOpen(!isMenuOpen)}
-          >
-            <div className={`w-10 h-0.5 bg-black mb-2.5 transition-all ${isMenuOpen ? 'rotate-45 translate-y-3' : ''}`}></div>
-            <div className={`w-10 h-0.5 bg-black mb-2.5 transition-all ${isMenuOpen ? 'opacity-0' : ''}`}></div>
-            <div className={`w-10 h-0.5 bg-black transition-all ${isMenuOpen ? '-rotate-45 -translate-y-3' : ''}`}></div>
-          </button>
+          {/* Mobile Language Toggle + Hamburger */}
+          <div className="lg:hidden flex items-center">
+            <div className="flex items-center space-x-1.5 mr-4">
+              <button
+                onClick={() => setLang('en')}
+                className={`font-mono text-[11px] font-bold uppercase tracking-widest transition-colors ${lang === 'en' ? 'text-untold-orange' : 'text-untold-black/40'}`}
+              >
+                EN
+              </button>
+              <span className="font-mono text-[11px] text-untold-black/20">|</span>
+              <button
+                onClick={() => setLang('es')}
+                className={`font-mono text-[11px] font-bold uppercase tracking-widest transition-colors ${lang === 'es' ? 'text-untold-orange' : 'text-untold-black/40'}`}
+              >
+                ES
+              </button>
+            </div>
+            <button
+              className="p-2"
+              onClick={() => setIsMenuOpen(!isMenuOpen)}
+            >
+              <div className={`w-10 h-0.5 bg-black mb-2.5 transition-all ${isMenuOpen ? 'rotate-45 translate-y-3' : ''}`}></div>
+              <div className={`w-10 h-0.5 bg-black mb-2.5 transition-all ${isMenuOpen ? 'opacity-0' : ''}`}></div>
+              <div className={`w-10 h-0.5 bg-black transition-all ${isMenuOpen ? '-rotate-45 -translate-y-3' : ''}`}></div>
+            </button>
+          </div>
         </div>
 
         {/* Mobile Menu */}
