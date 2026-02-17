@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <!-- Core Pages -->
+  <url>
+    <loc>https://untold.works/</loc>
+    <lastmod>2026-02-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://untold.works/" />
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://untold.works/?lang=es" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://untold.works/" />
+  </url>
+
+  <url>
+    <loc>https://untold.works/solutions/professional-services</loc>
+    <lastmod>2026-02-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://untold.works/solutions/professional-services" />
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://untold.works/solutions/professional-services?lang=es" />
+  </url>
+
+  <url>
+    <loc>https://untold.works/solutions/small-business</loc>
+    <lastmod>2026-02-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://untold.works/solutions/small-business" />
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://untold.works/solutions/small-business?lang=es" />
+  </url>
+
+  <url>
+    <loc>https://untold.works/solutions/enterprise</loc>
+    <lastmod>2026-02-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://untold.works/solutions/enterprise" />
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://untold.works/solutions/enterprise?lang=es" />
+  </url>
+
+  <url>
+    <loc>https://untold.works/portfolio</loc>
+    <lastmod>2026-02-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://untold.works/portfolio" />
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://untold.works/portfolio?lang=es" />
+  </url>
+
+  <url>
+    <loc>https://untold.works/about</loc>
+    <lastmod>2026-02-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://untold.works/about" />
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://untold.works/about?lang=es" />
+  </url>
+
+  <url>
+    <loc>https://untold.works/contact</loc>
+    <lastmod>2026-02-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://untold.works/contact" />
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://untold.works/contact?lang=es" />
+  </url>
+
+  <!-- Portfolio Projects -->
+  <url>
+    <loc>https://untold.works/portfolio/spotify-whatsapp-publishing</loc>
+    <lastmod>2026-01-15</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://untold.works/portfolio/black-radio-experience</loc>
+    <lastmod>2026-01-15</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://untold.works/portfolio/omi-lead-intake-qualification</loc>
+    <lastmod>2026-01-15</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://untold.works/portfolio/billiard-factory-retail-architecture</loc>
+    <lastmod>2026-01-15</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Blog -->
+  <url>
+    <loc>https://untold.works/blog</loc>
+    <lastmod>2026-02-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://untold.works/blog" />
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://untold.works/blog?lang=es" />
+  </url>
+
+  <url>
+    <loc>https://untold.works/blog/ai-tools-every-small-business-should-know-2026</loc>
+    <lastmod>2026-01-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://untold.works/blog/how-to-use-chatgpt-for-customer-service</loc>
+    <lastmod>2026-01-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://untold.works/blog/ai-content-strategy-what-to-automate-what-to-keep-human</loc>
+    <lastmod>2026-02-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://untold.works/blog/your-website-is-not-a-brochure-its-a-business-system</loc>
+    <lastmod>2026-01-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://untold.works/blog/headless-cms-explained-for-business-owners</loc>
+    <lastmod>2026-01-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://untold.works/blog/bilingual-websites-why-translation-plugins-fail</loc>
+    <lastmod>2026-02-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://untold.works/blog/run-your-business-from-your-phone-the-real-guide</loc>
+    <lastmod>2026-01-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://untold.works/blog/why-your-website-must-be-fast-on-3g</loc>
+    <lastmod>2026-01-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://untold.works/blog/san-miguel-de-allende-digital-presence-guide-2026</loc>
+    <lastmod>2026-01-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://untold.works/blog/how-sma-restaurants-can-capture-tourist-traffic-online</loc>
+    <lastmod>2026-01-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://untold.works/blog/case-study-boutique-hotel-booking-system</loc>
+    <lastmod>2026-02-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://untold.works/blog/case-study-law-firm-client-intake-automation</loc>
+    <lastmod>2026-01-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://untold.works/blog/case-study-ecommerce-brand-migration-shopify-to-custom</loc>
+    <lastmod>2026-01-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://untold.works/blog/the-professional-services-website-playbook</loc>
+    <lastmod>2026-02-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://untold.works/blog/retail-and-hospitality-digital-survival-guide</loc>
+    <lastmod>2026-01-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Secondary -->
+  <url>
+    <loc>https://untold.works/workshops</loc>
+    <lastmod>2026-02-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://untold.works/workshops" />
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://untold.works/workshops?lang=es" />
+  </url>
+
+</urlset>

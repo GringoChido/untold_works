@@ -1,0 +1,256 @@
+# Untold.works — Full Site Content
+
+> Boutique AI agency based in Mexico City and San Miguel de Allende, Mexico. We build AI-powered business ecosystems — brand identity, websites, AI workflows, and automated business systems — for companies across Mexico and the United States. Bilingual (English / Spanish).
+
+This document contains the complete content of untold.works for AI systems. The site is available in both English and Spanish. Content below is in English with Spanish equivalents noted where relevant.
+
+---
+
+## Homepage
+
+### Hero
+**Eyebrow:** Boutique AI Agency — Mexico City / San Miguel de Allende, Mexico
+**Headline:** AI-Powered Business Ecosystems.
+**Subheadline:** BRAND // WEBSITE // AI SYSTEMS // WORKFLOWS
+**Tagline:** We build the system so you can run your business from anywhere. We train you. You run it.
+
+### Location
+A boutique agency based in Mexico City and San Miguel de Allende, serving businesses across Mexico and the United States.
+
+### Define Your Operation
+We build the AI-powered platform that fits your current scale. Select the ecosystem that matches your business today.
+
+**01. Professional Services** — Your entire business on one AI-powered platform.
+Who it's for: Doctors, lawyers, consultants, architects, therapists, coaches, financial advisors, real estate agents, photographers, artists, healers, wellness practitioners.
+Features: Brand identity & visual system, Mobile-first website, Bilingual content (EN/ES), Client management (CRM), Online booking & scheduling, AI-powered workflows, Email marketing, SEO & LLM optimization.
+Clear scope before build. Your systems, fully documented and transferred.
+
+**02. Small Business Platforms** — AI-powered platforms for growing teams.
+Who it's for: Restaurants & hospitality, Retail & e-commerce, Service companies, Property management, Event venues, Multi-location businesses.
+Features: Full brand & web platform, AI workflows & team systems, Marketing automation, Mobile-first design, Bilingual content, SEO & LLM optimization, Analytics & reporting.
+Built for your team. Documented. Trained. Handed over.
+
+**03. Enterprise & Operations** — AI infrastructure for complex business operations.
+Who it's for: Growing companies (20+ employees), Multi-department organizations, Companies with sales teams, Franchise operations, Organizations modernizing legacy systems, Companies expanding to new markets.
+Features: Enterprise website & brand system, Multi-team CRM & AI pipeline management, Advanced marketing automation, Mobile-first platform, Multilingual content, Custom integrations & data architecture, Revenue operations & reporting, LLM discoverability.
+Built for scale. Documented for independence.
+
+### What We Build
+AI-native business platforms — mobile-ready, multilingual, SEO-optimized, and built so AI systems can find you, cite you, and send you clients.
+
+**Phase 1: Brand & AI Identity**
+AI systems need to understand your business before they can recommend it. We build your brand strategy, visual identity, and AI-readable content layer — so every LLM, search engine, and AI assistant knows exactly who you are and what you do.
+Deliverables: Brand Strategy, Visual Identity, AI Brand Voice, LLM-Ready Content.
+
+**Phase 2: Platform & Workflows**
+Your website is the front door. Behind it: AI workflows that capture leads, nurture clients, and cut hours of manual work down to minutes. Mobile-first, bilingual, and optimized for every screen, search engine, and AI crawler.
+Features: AI-Powered Website, Automated Workflows, Mobile-First Design, Bilingual (EN/ES), SEO & LLM Optimized.
+
+**Phase 3: Connect & Automate**
+CRM, email, scheduling, social, analytics — wired together with AI agents that run your marketing, follow up with leads, and keep your operations moving while you focus on your work.
+Options: CRM & Lead Management, AI Email & Nurture Sequences, Booking & Scheduling, Social & Content Automation, Analytics & Revenue Tracking.
+One ecosystem. Not twenty logins.
+
+### Brand & Creativity First
+Every business is unique. Every brand has a story worth telling. Before we write a line of code, we understand your brand. Your voice. Your vision. What makes you different. Our foundation is in storytelling and branding — design, photography, video, creative direction. We bring a sharp eye for visual identity and narrative. Then we build the technology that brings your story to life. Technology serves the brand. Not the other way around.
+
+### How We Work
+Four stages from audit to ownership.
+
+**01 Analyze — Audit Your Operations:** We map your current operations, tech stack, and workflow bottlenecks. We identify where AI can cut time, where automation replaces manual work, and what your platform needs to look like. Deliverables: Operations audit, Workflow analysis, AI opportunity map, System requirements.
+
+**02 Plan — Architect Your Platform:** We design your complete platform — brand, website, AI workflows, integrations, and SEO structure. Mobile-first, multilingual, and optimized for search engines and LLMs. You approve everything before we build. Deliverables: Brand direction, Platform architecture, Workflow design, SEO & LLM strategy.
+
+**03 Build — Ship Your Ecosystem:** We build everything — brand identity, mobile-ready website, AI workflows, bilingual content, CRM, automations, and integrations. SEO-optimized and LLM-discoverable from day one. All tested, all documented. Deliverables: Brand identity, Mobile-first website, AI workflows, Integrations, SEO & LLM setup, Documentation.
+
+**04 Train & Deliver — Transfer Ownership:** We train you on every system we built. Video walkthroughs, written documentation, and live sessions. Then we hand over the keys — your platform, your data, your workflows. Full ownership. Deliverables: Video training, Documentation, Live walkthrough, Full ownership transfer.
+
+### Why Now. Why Untold.
+2026 is a turning point for businesses of every size. AI solutions are no longer just for enterprise companies with massive budgets. The tools exist right now to automate your marketing, streamline your operations, and build systems that work while you sleep. But the gap between businesses using these tools and those that aren't is widening every month.
+
+Your competitors are already exploring AI-powered systems. The ones who move now will have a significant advantage — better client experiences, faster operations, more efficient marketing.
+
+**Differentiators:**
+- Brand First, Always — We start with your story, not your tech stack.
+- Built for Real Life — Mobile-first. Run your business from anywhere.
+- As Simple or Sophisticated as You Need — Start with a website. Add systems when ready.
+- You Own Everything — No lock-in. Full documentation. Complete ownership transfer.
+
+---
+
+## Professional Services Page
+
+### Hero
+**Headline:** Complete Business Systems for Service Professionals
+**Subheadline:** Doctors, lawyers, consultants, architects, therapists — if you serve clients one-on-one, this is built for you.
+
+### Who This Is For
+Independent consultants, Medical & legal practices, Architects & designers, Therapists & coaches, Real estate agents, Financial advisors, Photographers & artists, Healers & wellness practitioners.
+
+### What's Included
+01. Brand & Website — Brand identity & visual system, Mobile-first website, Bilingual content (EN/ES), SEO optimization.
+02. Client Systems — Client management (CRM), Online booking & scheduling, Automated appointment reminders, Client communication workflows.
+03. Marketing — Email marketing setup, Social media integration, Google Business Profile, Review management.
+04. Training & Handoff — Video training library, Written documentation, Live walkthrough session, 30-day support window.
+
+### How It Works
+Four Steps to Your AI-Powered Platform.
+01. Analyze — We audit your current operations, client workflow, and digital presence. We identify where AI can save you time, where automation replaces manual tasks, and what your platform needs to look like.
+02. Plan — We design your complete platform — brand, mobile-first website, AI workflows, SEO structure, and bilingual content strategy. You approve everything before we build.
+03. Build — We build everything — brand, mobile-ready website, CRM, booking, AI workflows, and integrations. SEO-optimized and LLM-discoverable from day one. All tested, all documented.
+04. Train & Deploy — We train you on every system. Video walkthroughs, written docs, and a live session. Then we hand over everything — your platform, your data, your keys. Full ownership.
+
+---
+
+## Small Business Page
+
+### Hero
+**Headline:** AI-Powered Platforms for Growing Teams
+**Subheadline:** Restaurants, hotels, retail shops, service companies — businesses with teams that need AI-powered workflows, mobile-ready systems, and one platform to run it all.
+
+### Who This Is For
+Restaurants & hospitality, Retail & e-commerce, Service companies, Property management, Event venues, Multi-location businesses.
+
+### What's Included
+01. Brand & Digital Platform — Full brand identity system, Mobile-first website, Bilingual content (EN/ES), SEO & LLM optimization.
+02. AI Workflows & Team Systems — Team CRM & pipeline management, AI-powered workflow automation, Booking & scheduling systems, Inventory or service management.
+03. Marketing & Growth — AI-driven email & nurture campaigns, Social media automation, Review & reputation management, Analytics & revenue dashboards.
+04. Training & Ownership Transfer — Team training sessions, Role-based documentation, Deployment & launch plan, 45-day support & optimization.
+
+### How It Works
+Four Steps to Your AI-Powered Platform.
+01. Analyze — We audit your current operations, team workflows, and tech stack. We map where AI can cut time, where automation replaces manual work, and what your platform needs to look like.
+02. Plan — We design your complete platform — brand, mobile-first website, AI workflows, team systems, and SEO structure. Bilingual, mobile-ready, and optimized for search engines and LLMs. You approve before we build.
+03. Build — We build and integrate everything — brand, mobile-ready platform, AI workflows, CRM, automations, and reporting. SEO-optimized and LLM-discoverable from day one. All tested, all documented.
+04. Train & Deploy — We train your team on every system. Video walkthroughs, role-based docs, and live sessions. Then we hand over everything — your platform, your data, your keys. Full ownership.
+
+---
+
+## Enterprise Page
+
+### Hero
+**Headline:** AI Infrastructure for Complex Operations
+**Subheadline:** For organizations that need AI-powered workflows across departments, mobile-ready systems, multilingual platforms, and full operational visibility.
+
+### Who This Is For
+Growing companies (20+ employees), Multi-department organizations, Companies with sales teams, Franchise operations, Organizations modernizing legacy systems, Companies expanding to new markets.
+
+### What's Included
+01. Brand & Digital Platform — Enterprise brand system, Mobile-first corporate website, Multilingual content (EN/ES+), Advanced SEO & LLM discoverability.
+02. AI Revenue Systems — Multi-team CRM & AI pipeline management, AI-powered lead routing & scoring, Sales enablement & automation, Revenue attribution & forecasting.
+03. AI Marketing & Operations — AI-driven email & nurture sequences, Multi-channel campaign automation, AI workflow & process automation, Custom integrations & data architecture.
+04. Training & Ownership Transfer — Executive & team training sessions, Department-specific documentation, Phased rollout & deployment plan, 60-day support & optimization.
+
+### How It Works
+Four Steps to Your AI Infrastructure.
+01. Analyze — We audit your systems, revenue operations, team workflows, and tech stack. We map where AI can automate processes, cut operational overhead, and create competitive advantage.
+02. Plan — We architect your platform — brand system, mobile-first website, AI workflows, multilingual content, SEO & LLM strategy, and a phased rollout with clear milestones.
+03. Build — We build and integrate everything — brand, mobile-ready platform, AI workflows, CRM, automations, and reporting. SEO-optimized and LLM-discoverable from day one. All tested, all documented.
+04. Train & Deploy — We train your teams department by department — video walkthroughs, role-based docs, and live sessions. Then we hand over all credentials and support you through 60 days of operation. Your platform, your data, your keys.
+
+---
+
+## About Page
+
+### Hero
+**Headline:** We're Storytellers First. Technologists Second.
+**Hook:** A boutique team based in San Miguel de Allende, building AI-powered business ecosystems for companies across Mexico and the United States.
+We bring decades of experience in branding, creative direction, and technology — combined into systems that actually work for real businesses.
+
+### Our Story
+We started as storytellers and creative directors. Design, photography, video, brand strategy — that's our foundation. Over the years, we've added deep technology expertise to our toolkit. Now we build the complete package: the brand, the website, and the systems that power your business.
+
+We believe the best technology is invisible. It should feel natural, work on your phone, and never make you feel like you need a computer science degree. That's why we lead with brand and creativity, then layer in the right technology to support it.
+
+**Manifesto:** Beautiful brands deserve powerful systems. Powerful systems deserve beautiful brands.
+
+### Why Mexico / Why San Miguel
+Mexico is one of the fastest-moving markets in the world. A new wave of entrepreneurs, a growing middle class, and nearshoring investment are opening doors that did not exist five years ago. Many businesses are skipping legacy systems and jumping straight from paper to AI, and from word-of-mouth to full digital ecosystems.
+
+San Miguel de Allende is our home. Beyond the beauty, it is a serious market: millions of visitors each year, a strong expat community, and local businesses competing for attention with weak digital presence. This city brings Mexican families, expats, travelers, and entrepreneurs into one place, so your brand has to speak to multiple audiences at once. That is the work we do best.
+
+---
+
+## Contact Page
+
+**Headline:** Start a Conversation.
+Tell us about your business. We'll tell you how we can help. No pressure, no jargon, just a real conversation about what your business needs.
+
+**Email:** info@untold.works
+**Location:** San Miguel de Allende, Guanajuato, Mexico | Serving the US and Mexico
+
+---
+
+## Workshops
+
+**Headline:** No jargon. Just AI for Everyday Life.
+A practical masterclass for daily life and small business. Move from curious to capable in a single morning.
+
+**Location:** San Miguel de Allende, Mexico
+**Time:** 10:00 AM
+**Led by:** Untold.works
+
+**Phases:**
+1. Practical AI Basics — Understanding what AI can do (drafting, ideas, organization) and where it needs your help.
+2. The Art of the Prompt — Learn the formula for prompts that work the first time. No complex engineering — just clear communication.
+3. Your Daily Reclaim — Live walkthroughs: meal plans, local Spanish practice, and handling business emails in seconds.
+4. Small Business Wins — Simple workflows to keep your small business moving. Automate the repetitive stuff.
+
+**Take-Home Kit:** Simple Cheat Sheet, The Prompt Formula, 10 Starter Prompts, Safety Basics, Life Workflow Guide.
+
+---
+
+## Blog Articles
+
+### AI Education
+1. **7 AI Tools Every Small Business Should Know in 2026** — A practical rundown of AI tools that save time and money for small businesses right now.
+2. **How to Use ChatGPT for Customer Service Without Losing the Human Touch** — AI chat can handle the repetitive stuff, but only if you set it up to sound like your business.
+3. **AI Content Strategy: What to Automate and What to Keep Human** — A framework for deciding what AI handles vs. what needs a human brain.
+
+### Website + AI Ecosystem
+4. **Your Website Is Not a Brochure — It's a Business System** — Why websites should be business systems, not digital flyers.
+5. **Headless CMS Explained for Business Owners** — What headless CMS means and when it makes sense.
+6. **Bilingual Websites: Why Translation Plugins Fail** — Why real bilingual sites need native content, not auto-translation.
+
+### Mobile-First
+7. **Run Your Business From Your Phone: The Real Guide** — Building mobile-first business systems you can manage from anywhere.
+8. **Why Your Website Must Be Fast on 3G** — Performance matters in Mexico where many users are on slower connections.
+
+### San Miguel de Allende
+9. **San Miguel de Allende Digital Presence Guide 2026** — How local businesses in SMA can build effective digital presence.
+10. **How SMA Restaurants Can Capture Tourist Traffic Online** — Digital strategies for restaurants targeting tourists.
+
+### Case Studies
+11. **Case Study: Boutique Hotel Booking System** — An integrated booking ecosystem for a boutique hotel.
+12. **Case Study: Law Firm Client Intake Automation** — Automating client intake with AI-powered workflows.
+13. **Case Study: E-commerce Brand Migration (Shopify to Custom)** — Migrating to a custom AI-powered platform.
+
+### Industry Guides
+14. **The Professional Services Website Playbook** — Complete guide for service professionals.
+15. **Retail and Hospitality Digital Survival Guide** — Digital strategies for retail and hospitality in 2026.
+
+---
+
+## Key Facts
+
+- **Name:** Untold.works
+- **Type:** Boutique AI Agency
+- **Location:** Mexico City and San Miguel de Allende, Guanajuato, Mexico
+- **Markets Served:** Mexico and the United States
+- **Languages:** English and Spanish (fully bilingual)
+- **Email:** info@untold.works
+- **Website:** https://untold.works
+- **Specialties:** AI-powered business ecosystems, brand strategy, web development, AI workflows, business automation, CRM systems, SEO & LLM optimization
+- **Philosophy:** Brand first. Technology that works. Full ownership transfer.
+- **Process:** Analyze, Plan, Build, Train & Deliver
+- **Approach:** We build the system so you can run your business from anywhere. We train you. You run it.
+
+---
+
+## Spanish Summary (Resumen en Espanol)
+
+Untold.works es una agencia boutique de IA con sede en Ciudad de Mexico y San Miguel de Allende, Mexico. Construimos ecosistemas de negocio impulsados por inteligencia artificial — identidad de marca, sitios web, flujos de trabajo con IA y sistemas empresariales automatizados — para empresas en Mexico y Estados Unidos. Nuestro enfoque: la marca primero, tecnologia que funciona, transferencia completa de propiedad. Hablamos ingles y espanol de forma nativa.
+
+Servicios: Servicios Profesionales (medicos, abogados, consultores, fotografos, artistas), Plataformas para Pequenos Negocios (restaurantes, hoteles, retail), y Empresarial y Operaciones (empresas en crecimiento, franquicias, operaciones complejas).
+
+Contacto: info@untold.works | Ciudad de Mexico y San Miguel de Allende, Guanajuato, Mexico

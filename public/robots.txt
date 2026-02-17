@@ -1,0 +1,83 @@
+# ═══════════════════════════════════════════════════════════════
+# Untold.works — robots.txt
+# Boutique AI Agency — San Miguel de Allende, Mexico
+# ═══════════════════════════════════════════════════════════════
+
+# Default: Allow all crawlers
+User-agent: *
+Allow: /
+Disallow: /slides
+
+# ───────────────────────────────────────────────────────────────
+# AI / LLM Crawlers — Explicitly Allowed
+# ───────────────────────────────────────────────────────────────
+
+# OpenAI
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+# Anthropic
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+# Google AI
+User-agent: Google-Extended
+Allow: /
+
+# Perplexity
+User-agent: PerplexityBot
+Allow: /
+
+# Amazon
+User-agent: Amazonbot
+Allow: /
+
+# Apple
+User-agent: Applebot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+# Meta
+User-agent: FacebookBot
+Allow: /
+
+User-agent: meta-externalagent
+Allow: /
+
+# Microsoft / Copilot
+User-agent: Bingbot
+Allow: /
+
+# Common Crawl
+User-agent: CCBot
+Allow: /
+
+# Cohere
+User-agent: cohere-ai
+Allow: /
+
+# AI2
+User-agent: Ai2Bot
+Allow: /
+
+User-agent: Ai2Bot-Dolma
+Allow: /
+
+# ───────────────────────────────────────────────────────────────
+# Sitemaps & AI Content
+# ───────────────────────────────────────────────────────────────
+Sitemap: https://untold.works/sitemap.xml

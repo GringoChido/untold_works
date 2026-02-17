@@ -1,0 +1,115 @@
+import React, { useState, createContext, useContext, useEffect, lazy, Suspense } from 'react';
+import { BrowserRouter as Router, Routes, Route, Navigate, useLocation } from 'react-router-dom';
+import { Language } from './types';
+import Navbar from './components/Navbar';
+import Footer from './components/Footer';
+import Home from './pages/Home';
+import WorkshopsPage from './pages/Workshops';
+import Portfolio from './pages/Portfolio';
+import ProjectDetail from './pages/ProjectDetail';
+import AboutPage from './pages/About';
+import ContactPage from './pages/Contact';
+import StereoPage from './pages/Stereo';
+import SlidesPage from './pages/Slides';
+
+// Lazy-loaded pages
+const ProfessionalServices = lazy(() => import('./pages/solutions/ProfessionalServices'));
+const SmallBusiness = lazy(() => import('./pages/solutions/SmallBusiness'));
+const Enterprise = lazy(() => import('./pages/solutions/Enterprise'));
+const Blog = lazy(() => import('./pages/Blog'));
+const BlogPost = lazy(() => import('./pages/BlogPost'));
+
+interface LanguageContextType {
+  lang: Language;
+  setLang: (lang: Language) => void;
+  t: (obj: { en: string; es: string }) => string;
+}
+
+const LanguageContext = createContext<LanguageContextType | undefined>(undefined);
+
+export const useLanguage = () => {
+  const context = useContext(LanguageContext);
+  if (!context) throw new Error("useLanguage must be used within LanguageProvider");
+  return context;
+};
+
+// Global scroll to top rule
+const ScrollToTop: React.FC = () => {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  return null;
+};
+
+// Loading fallback
+const PageLoader: React.FC = () => (
+  <div className="min-h-screen flex items-center justify-center bg-untold-beige">
+    <div className="w-3 h-3 rounded-full bg-untold-orange animate-pulse"></div>
+  </div>
+);
+
+// Layout wrapper — hides Navbar/Footer on standalone pages like /analog
+const AppLayout: React.FC = () => {
+  const { pathname } = useLocation();
+  const isStandalone = pathname === '/analog' || pathname === '/slides';
+
+  return (
+    <div className="min-h-screen flex flex-col selection:bg-untold-orange selection:text-white">
+      {!isStandalone && <Navbar />}
+      <main className="flex-grow">
+        <Suspense fallback={<PageLoader />}>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/solutions" element={<Navigate to="/" replace />} />
+            <Route path="/solutions/professional-services" element={<ProfessionalServices />} />
+            <Route path="/solutions/small-business" element={<SmallBusiness />} />
+            <Route path="/solutions/enterprise" element={<Enterprise />} />
+            <Route path="/portfolio" element={<Portfolio />} />
+            <Route path="/portfolio/:projectId" element={<ProjectDetail />} />
+            <Route path="/blog" element={<Blog />} />
+            <Route path="/blog/:slug" element={<BlogPost />} />
+            <Route path="/about" element={<AboutPage />} />
+            <Route path="/workshops" element={<WorkshopsPage />} />
+            <Route path="/contact" element={<ContactPage />} />
+            <Route path="/analog" element={<StereoPage />} />
+            <Route path="/slides" element={<SlidesPage />} />
+          </Routes>
+        </Suspense>
+      </main>
+      {!isStandalone && <Footer />}
+    </div>
+  );
+};
+
+const App: React.FC = () => {
+  const [lang, setLang] = useState<Language>(() => {
+    if (typeof window !== 'undefined') {
+      const params = new URLSearchParams(window.location.search);
+      const urlLang = params.get('lang');
+      if (urlLang === 'es') return 'es';
+      const stored = localStorage.getItem('untold-lang');
+      if (stored === 'es') return 'es';
+    }
+    return 'en';
+  });
+
+  useEffect(() => {
+    localStorage.setItem('untold-lang', lang);
+  }, [lang]);
+
+  const t = (obj: { en: string; es: string }) => obj[lang];
+
+  return (
+    <LanguageContext.Provider value={{ lang, setLang, t }}>
+      <Router>
+        <ScrollToTop />
+        <AppLayout />
+      </Router>
+    </LanguageContext.Provider>
+  );
+};
+
+export default App;

@@ -1,0 +1,42 @@
+# Untold.works
+
+> Boutique AI agency based in Mexico City and San Miguel de Allende, Mexico. We build AI-powered business ecosystems — brand identity, websites, AI workflows, and automated business systems — for companies across Mexico and the United States. Bilingual (English/Spanish). Founded on storytelling and creative direction, powered by AI.
+
+Untold.works is a boutique agency that combines brand strategy, web development, and AI-powered business systems into complete ecosystems. We serve solo professionals, small businesses, and enterprise teams. Every project starts with brand and ends with a fully documented, fully trained handoff. We specialize in the Mexico and US markets, with deep roots in Mexico City and San Miguel de Allende.
+
+## Core Pages
+
+- [Home](https://untold.works/): AI-powered business ecosystems. Brand, website, AI systems, workflows — built mobile-first.
+- [About](https://untold.works/about): Storytellers first, technologists second. Our team, philosophy, and why we're based in Mexico.
+- [Contact](https://untold.works/contact): Start a conversation. Based in Mexico City and San Miguel de Allende, serving Mexico and the US.
+- [Portfolio](https://untold.works/portfolio): Case studies of AI-powered ecosystems built for real businesses.
+- [Blog](https://untold.works/blog): Practical guides on AI tools, business systems, and brand strategy.
+- [Workshops](https://untold.works/workshops): AI workshops in San Miguel de Allende. Practical AI for everyday life and small business.
+
+## Solutions
+
+- [Professional Services](https://untold.works/solutions/professional-services): Complete AI-powered business systems for doctors, lawyers, consultants, architects, and service professionals.
+- [Small Business Platforms](https://untold.works/solutions/small-business): Integrated AI systems for restaurants, hotels, retail, and growing teams.
+- [Enterprise & Operations](https://untold.works/solutions/enterprise): AI infrastructure for complex operations — multi-team CRM, automation, revenue operations.
+
+## Blog Articles
+
+- [7 AI Tools Every Small Business Should Know in 2026](https://untold.works/blog/ai-tools-every-small-business-should-know-2026): Practical rundown of AI tools that save time and money for small businesses.
+- [How to Use ChatGPT for Customer Service](https://untold.works/blog/how-to-use-chatgpt-for-customer-service): Setting up AI chat that sounds like your business, not a robot.
+- [AI Content Strategy: What to Automate and What to Keep Human](https://untold.works/blog/ai-content-strategy-what-to-automate-what-to-keep-human): Framework for deciding what AI handles vs. what needs a human brain.
+- [Your Website Is Not a Brochure](https://untold.works/blog/your-website-is-not-a-brochure-its-a-business-system): Why websites should be business systems, not digital flyers.
+- [Headless CMS Explained for Business Owners](https://untold.works/blog/headless-cms-explained-for-business-owners): What headless CMS means and when it makes sense for your business.
+- [Bilingual Websites: Why Translation Plugins Fail](https://untold.works/blog/bilingual-websites-why-translation-plugins-fail): Why real bilingual sites need native content, not auto-translation.
+- [Run Your Business From Your Phone](https://untold.works/blog/run-your-business-from-your-phone-the-real-guide): Building mobile-first business systems you can manage from anywhere.
+- [Why Your Website Must Be Fast on 3G](https://untold.works/blog/why-your-website-must-be-fast-on-3g): Performance matters in Mexico where many users are on slower connections.
+- [San Miguel de Allende Digital Presence Guide 2026](https://untold.works/blog/san-miguel-de-allende-digital-presence-guide-2026): How local businesses in SMA can build effective digital presence.
+- [How SMA Restaurants Can Capture Tourist Traffic Online](https://untold.works/blog/how-sma-restaurants-can-capture-tourist-traffic-online): Digital strategies for restaurants targeting tourists in San Miguel de Allende.
+- [Case Study: Boutique Hotel Booking System](https://untold.works/blog/case-study-boutique-hotel-booking-system): How we built an integrated booking ecosystem for a boutique hotel.
+- [Case Study: Law Firm Client Intake Automation](https://untold.works/blog/case-study-law-firm-client-intake-automation): Automating client intake for a law firm with AI-powered workflows.
+- [Case Study: E-commerce Brand Migration](https://untold.works/blog/case-study-ecommerce-brand-migration-shopify-to-custom): Migrating from Shopify to a custom AI-powered platform.
+- [The Professional Services Website Playbook](https://untold.works/blog/the-professional-services-website-playbook): Complete guide to building a website that works for service professionals.
+- [Retail and Hospitality Digital Survival Guide](https://untold.works/blog/retail-and-hospitality-digital-survival-guide): Digital strategies for retail and hospitality businesses in 2026.
+
+## Optional
+
+- [UNTOLD ANALOG](https://untold.works/analog): A curated music experience — vinyl, jazz, soul, and lo-fi.
