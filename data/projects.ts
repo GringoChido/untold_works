@@ -233,15 +233,14 @@ export const projects: Project[] = [
       { label: { en: 'AI Systems Built', es: 'Sistemas de IA' }, value: '6' }
     ],
     tags: ['REBRAND', 'AI INFRASTRUCTURE', 'SALES ENABLEMENT'],
+    heroImage: '/images/project5-noxguard/truck.png',
     images: [
-      '/images/project5-noxguard/truck.png',
       '/images/project5-noxguard/worker.png',
       '/images/project5-noxguard/product.png',
       '/images/project5-noxguard/mobile-app.png',
       '/images/project5-noxguard/packaging.png'
     ],
     imageAlts: [
-      'Noxguard branded truck and trailer fleet wrap',
       'Noxguard operations engineer monitoring data systems',
       'Noxguard Urea Automotriz product on dark background',
       'Noxguard mobile app interface mockup',
