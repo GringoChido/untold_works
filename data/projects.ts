@@ -234,11 +234,11 @@ export const projects: Project[] = [
     ],
     tags: ['REBRAND', 'AI INFRASTRUCTURE', 'SALES ENABLEMENT'],
     images: [
-      '/images/project5-noxguard/image1.png',
-      '/images/project5-noxguard/image2.png',
-      '/images/project5-noxguard/image3.png',
-      '/images/project5-noxguard/image4.png',
-      '/images/project5-noxguard/image5.png'
+      '/images/project5-noxguard/truck.png',
+      '/images/project5-noxguard/worker.png',
+      '/images/project5-noxguard/product.png',
+      '/images/project5-noxguard/mobile-app.png',
+      '/images/project5-noxguard/packaging.png'
     ],
     imageAlts: [
       'Noxguard branded truck and trailer fleet wrap',

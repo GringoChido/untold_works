@@ -120,13 +120,13 @@ const ProjectDetail: React.FC = () => {
         </div>
       </header>
 
-      {/* Hero Image */}
-      {(project.heroImage || project.images[0]) && (
+      {/* Hero Image - only shows when heroImage is explicitly set */}
+      {project.heroImage && (
         <section className="px-5 sm:px-10 py-12 lg:py-20">
           <div className="max-w-[1440px] mx-auto">
             <div className="aspect-[16/9] overflow-hidden border border-white/10">
               <img
-                src={project.heroImage || project.images[0]}
+                src={project.heroImage}
                 alt={t(project.name)}
                 className="w-full h-full object-cover"
               />
