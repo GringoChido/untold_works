@@ -133,6 +133,70 @@ const Portfolio: React.FC = () => {
               </div>
             </Link>
           ))}
+
+          {/* Casa Schuck — In Process */}
+          {(activePillar === 'all' || activePillar === 'small-business') && (
+            <div className="relative bg-untold-black flex flex-col cursor-default border-l border-untold-orange/20">
+              {/* Cover Image with "In Process" Overlay */}
+              <div className="aspect-[16/10] overflow-hidden border-b border-white/10 relative">
+                <img
+                  src="/images/casa-schuck-preview.png"
+                  alt="Casa Schuck Hotel — current website"
+                  className="w-full h-full object-cover object-top opacity-40"
+                />
+                <div className="absolute inset-0 bg-black/50 flex flex-col items-center justify-center">
+                  <div className="flex items-center gap-3 mb-4">
+                    <span className="w-3 h-3 rounded-full bg-untold-orange animate-pulse"></span>
+                    <span className="font-mono text-[11px] uppercase tracking-[0.5em] text-untold-orange font-bold">
+                      {t({ en: 'Currently Building', es: 'En Construcción' })}
+                    </span>
+                  </div>
+                  <h3 className="font-sans font-black text-4xl sm:text-5xl lg:text-7xl uppercase tracking-tighter text-white text-center leading-[0.85]">
+                    {t({ en: 'In\nProcess', es: 'En\nProceso' })}
+                  </h3>
+                </div>
+              </div>
+
+              {/* Card Content */}
+              <div className="p-6 sm:p-10 lg:p-14 flex flex-col flex-1">
+                <div className="flex justify-between items-start mb-8">
+                  <span className="font-mono text-[11px] uppercase tracking-[0.5em] text-white/30">PROJECT_00{filtered.length + 1}</span>
+                  <div className="flex items-center gap-2">
+                    <span className="w-2 h-2 rounded-full bg-untold-orange animate-pulse"></span>
+                    <span className="font-mono text-[10px] uppercase tracking-[0.3em] text-untold-orange font-bold">
+                      {t({ en: 'Active', es: 'Activo' })}
+                    </span>
+                  </div>
+                </div>
+
+                <h2 className="font-sans font-black text-3xl lg:text-5xl leading-[0.95] uppercase tracking-tighter mb-6 text-white">
+                  {t({ en: 'Casa Schuck Hotel', es: 'Hotel Casa Schuck' })}
+                </h2>
+
+                <p className="text-lg lg:text-xl font-serif text-untold-beige/60 leading-relaxed mb-8 italic">
+                  {t({
+                    en: 'Complete website rebuild, marketing strategy, and backend booking system for a boutique hacienda bed & breakfast in the heart of San Miguel de Allende.',
+                    es: 'Reconstrucción completa de sitio web, estrategia de marketing y sistema de reservaciones para una hacienda boutique bed & breakfast en el corazón de San Miguel de Allende.'
+                  })}
+                </p>
+
+                <div className="flex flex-wrap gap-3 mt-auto">
+                  <span className="border border-untold-orange bg-untold-orange/20 px-4 py-1.5 font-mono text-[10px] uppercase tracking-[0.3em] text-untold-orange font-bold">
+                    {t({ en: 'In Process', es: 'En Proceso' })}
+                  </span>
+                  <span className="border border-white/10 px-4 py-1.5 font-mono text-[10px] uppercase tracking-[0.3em] text-white/30">
+                    Website
+                  </span>
+                  <span className="border border-white/10 px-4 py-1.5 font-mono text-[10px] uppercase tracking-[0.3em] text-white/30">
+                    Booking System
+                  </span>
+                  <span className="border border-white/10 px-4 py-1.5 font-mono text-[10px] uppercase tracking-[0.3em] text-white/30">
+                    Marketing
+                  </span>
+                </div>
+              </div>
+            </div>
+          )}
         </div>
       </section>
 
