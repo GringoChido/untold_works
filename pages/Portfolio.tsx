@@ -79,55 +79,57 @@ const Portfolio: React.FC = () => {
             <Link
               key={project.id}
               to={`/portfolio/${project.id}`}
-              className="group relative bg-untold-black p-6 sm:p-12 lg:p-20 flex flex-col justify-between min-h-[400px] sm:min-h-[550px] lg:min-h-[750px] hover:bg-white/5 transition-all duration-700"
+              className="group relative bg-untold-black flex flex-col hover:bg-white/5 transition-all duration-700"
             >
-              <div className="mb-20">
-                <div className="flex justify-between items-start mb-14">
-                  <div className="flex flex-col">
-                    <span className="font-mono text-[11px] uppercase tracking-[0.5em] text-white/30 mb-4">PROJECT_00{idx + 1}</span>
-                    {project.metrics && project.metrics[0] && (
-                      <div className="flex flex-col mt-4">
-                        <span className="text-4xl sm:text-6xl lg:text-8xl font-sans font-black tracking-tighter text-untold-orange leading-none mb-2">
-                          {project.metrics[0].value}
-                        </span>
-                        <span className="font-mono text-[10px] uppercase tracking-[0.3em] text-white/40 font-bold">
-                          {t(project.metrics[0].label)}
-                        </span>
-                      </div>
-                    )}
-                  </div>
-                  <div className="w-14 h-14 border border-white/10 flex items-center justify-center group-hover:bg-untold-orange group-hover:border-untold-orange transition-all duration-500">
-                    <span className="text-2xl group-hover:scale-125 transition-transform duration-500">&rarr;</span>
+              {/* Cover Image */}
+              <div className="aspect-[16/10] overflow-hidden border-b border-white/10">
+                <img
+                  src={project.heroImage || project.images[0]}
+                  alt={t(project.name)}
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000"
+                />
+              </div>
+
+              {/* Card Content */}
+              <div className="p-6 sm:p-10 lg:p-14 flex flex-col flex-1">
+                <div className="flex justify-between items-start mb-8">
+                  <span className="font-mono text-[11px] uppercase tracking-[0.5em] text-white/30">PROJECT_00{idx + 1}</span>
+                  <div className="w-10 h-10 border border-white/10 flex items-center justify-center group-hover:bg-untold-orange group-hover:border-untold-orange transition-all duration-500">
+                    <span className="text-lg group-hover:scale-125 transition-transform duration-500">&rarr;</span>
                   </div>
                 </div>
 
-                <h2 className="font-sans font-black text-4xl lg:text-6xl leading-[0.95] uppercase tracking-tighter mb-10 transition-colors group-hover:text-untold-orange">
+                <h2 className="font-sans font-black text-3xl lg:text-5xl leading-[0.95] uppercase tracking-tighter mb-6 transition-colors group-hover:text-untold-orange">
                   {t(project.name)}
                 </h2>
 
-                <p className="text-xl lg:text-2xl font-serif text-untold-beige/60 leading-relaxed mb-16 max-w-lg">
+                <p className="text-lg lg:text-xl font-serif text-untold-beige/60 leading-relaxed mb-8">
                   {t(project.summary)}
                 </p>
 
-                {project.metrics && project.metrics.length > 1 && (
-                  <div className="pt-10 border-t border-white/5">
-                    <span className="block font-mono text-[10px] uppercase tracking-[0.3em] text-white/20 mb-4">{t(project.metrics[1].label)}</span>
-                    <span className="text-3xl font-sans font-black tracking-tighter text-white">{project.metrics[1].value}</span>
+                {project.metrics && (
+                  <div className="flex gap-8 mb-8 pt-6 border-t border-white/5">
+                    {project.metrics.map((metric, mIdx) => (
+                      <div key={mIdx}>
+                        <span className="block font-mono text-[10px] uppercase tracking-[0.3em] text-white/30 mb-2">{t(metric.label)}</span>
+                        <span className="text-2xl lg:text-3xl font-sans font-black tracking-tighter text-untold-orange">{metric.value}</span>
+                      </div>
+                    ))}
                   </div>
                 )}
-              </div>
 
-              <div className="flex flex-wrap gap-4 mt-auto">
-                {project.pillar && (
-                  <span className="border border-untold-orange/30 bg-untold-orange/10 px-4 py-1 font-mono text-[10px] uppercase tracking-[0.2em] text-untold-orange">
-                    {project.pillar.replace(/-/g, ' ')}
-                  </span>
-                )}
-                {project.tags.map(tag => (
-                  <span key={tag} className="border border-white/10 px-6 py-2 font-mono text-[10px] uppercase tracking-[0.3em] text-white/30 group-hover:text-white group-hover:border-white/50 transition-colors">
-                    {tag}
-                  </span>
-                ))}
+                <div className="flex flex-wrap gap-3 mt-auto">
+                  {project.pillar && (
+                    <span className="border border-untold-orange/30 bg-untold-orange/10 px-4 py-1 font-mono text-[10px] uppercase tracking-[0.2em] text-untold-orange">
+                      {project.pillar.replace(/-/g, ' ')}
+                    </span>
+                  )}
+                  {project.tags.map(tag => (
+                    <span key={tag} className="border border-white/10 px-4 py-1.5 font-mono text-[10px] uppercase tracking-[0.3em] text-white/30 group-hover:text-white group-hover:border-white/50 transition-colors">
+                      {tag}
+                    </span>
+                  ))}
+                </div>
               </div>
             </Link>
           ))}

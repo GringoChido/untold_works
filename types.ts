@@ -32,6 +32,8 @@ export interface Project {
   tags: string[];
   images: string[];
   imageAlts?: string[];
+  heroImage?: string;
+  websiteUrl?: string;
   pillar?: Pillar;
   codeSnippets?: {
     language: string;

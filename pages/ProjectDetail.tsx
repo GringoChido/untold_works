@@ -63,11 +63,23 @@ const ProjectDetail: React.FC = () => {
                <span className="text-2xl group-hover:-translate-x-3 transition-transform duration-500 text-untold-orange">←</span>
                <span className="font-mono text-[11px] uppercase tracking-[0.4em] font-bold text-white/40 group-hover:text-white transition-colors">{t({ en: 'Back to Portfolio', es: 'Volver al Portafolio' })}</span>
             </Link>
-            
-            <div className="flex space-x-8 font-mono text-[10px] uppercase tracking-[0.3em] font-bold text-white/20">
-              <span className="text-untold-orange">PRODUCTION_READY</span>
-              <span>VERIFIED_SYSTEM</span>
-              <span>UNTOLD_WORKS_STND</span>
+
+            <div className="flex items-center space-x-8">
+              {project.websiteUrl && (
+                <a
+                  href={project.websiteUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center space-x-3 font-mono text-[11px] uppercase tracking-[0.3em] font-bold text-untold-orange hover:text-white transition-colors"
+                >
+                  <span>{t({ en: 'VISIT_WEBSITE', es: 'VER_SITIO' })}</span>
+                  <span className="text-lg">↗</span>
+                </a>
+              )}
+              <div className="hidden md:flex space-x-8 font-mono text-[10px] uppercase tracking-[0.3em] font-bold text-white/20">
+                <span className="text-untold-orange">PRODUCTION_READY</span>
+                <span>VERIFIED_SYSTEM</span>
+              </div>
             </div>
           </div>
           
@@ -103,6 +115,21 @@ const ProjectDetail: React.FC = () => {
           </div>
         </div>
       </header>
+
+      {/* Hero Image */}
+      {(project.heroImage || project.images[0]) && (
+        <section className="px-5 sm:px-10 py-12 lg:py-20">
+          <div className="max-w-[1440px] mx-auto">
+            <div className="aspect-[16/9] overflow-hidden border border-white/10">
+              <img
+                src={project.heroImage || project.images[0]}
+                alt={t(project.name)}
+                className="w-full h-full object-cover"
+              />
+            </div>
+          </div>
+        </section>
+      )}
 
       {/* Narrative Grid - Split Layout */}
       <section className="px-10 py-32 lg:py-56 border-b border-white/5">
@@ -172,13 +199,13 @@ const ProjectDetail: React.FC = () => {
              <h2 className="font-mono text-[11px] uppercase tracking-[0.6em] font-bold text-white/40 tracking-widest">SYSTEM_VISUALS_&_ARTIFACTS</h2>
           </div>
           
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid md:grid-cols-2 gap-8">
             {project.images.map((img, idx) => (
-              <div key={idx} className="aspect-square bg-white/5 overflow-hidden group border border-white/10 hover:border-untold-orange transition-colors">
-                <img 
-                  src={img} 
+              <div key={idx} className="aspect-[16/10] bg-white/5 overflow-hidden group border border-white/10 hover:border-untold-orange transition-colors">
+                <img
+                  src={img}
                   alt={project.imageAlts?.[idx] || `${t(project.name)} artifact ${idx + 1}`}
-                  className="w-full h-full object-cover grayscale contrast-125 group-hover:grayscale-0 group-hover:scale-105 transition-all duration-1000"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-all duration-1000"
                 />
               </div>
             ))}
