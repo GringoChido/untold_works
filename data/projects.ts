@@ -57,7 +57,8 @@ export const projects: Project[] = [
   },
   {
     id: 'black-radio-experience',
-    name: { en: 'Black Radio GTM Engine', es: 'Motor GTM de Black Radio' },
+    name: { en: 'Black Radio Experience', es: 'Black Radio Experience' },
+    websiteUrl: 'https://www.bluenotejazz.com/black-radio-experience/',
     client: { en: 'Black Radio', es: 'Black Radio' },
     timeline: '2023 - 2024',
     pillar: 'small-business',
@@ -105,6 +106,7 @@ export const projects: Project[] = [
   {
     id: 'omi-lead-intake-qualification',
     name: { en: 'OMI Intake & Routing', es: 'Ingestión y Enrutamiento OMI' },
+    websiteUrl: 'https://omi1.com/',
     client: { en: 'OMI Growth', es: 'OMI Growth' },
     timeline: '2024 - Present',
     pillar: 'enterprise',
@@ -152,6 +154,7 @@ export const projects: Project[] = [
   {
     id: 'billiard-factory-retail-architecture',
     name: { en: 'Billiard Factory Revenue Operations', es: 'Operaciones de Ingresos de Billiard Factory' },
+    websiteUrl: 'https://billiardfactory.com/',
     client: { en: 'Billiard Factory', es: 'Billiard Factory' },
     timeline: 'Enterprise Scale - 2024',
     pillar: 'enterprise',
