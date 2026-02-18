@@ -59,7 +59,7 @@ export const projects: Project[] = [
     id: 'black-radio-experience',
     name: { en: 'Black Radio Experience', es: 'Black Radio Experience' },
     websiteUrl: 'https://www.bluenotejazz.com/black-radio-experience/',
-    client: { en: 'Black Radio', es: 'Black Radio' },
+    client: { en: 'Blue Note Entertainment', es: 'Blue Note Entertainment' },
     timeline: '2023 - 2024',
     pillar: 'small-business',
     stack: ['Python', 'FastAPI', 'FFmpeg', 'Cloud Storage', 'Instagram Graph API'],
@@ -137,14 +137,16 @@ export const projects: Project[] = [
       { label: { en: 'Sales ROI', es: 'ROI de Ventas' }, value: '4.2x' }
     ],
     tags: ['AGENTIC AI', 'CRM', 'REVOPS'],
-    heroImage: '/images/project3-omi/image1.jpg',
+    heroImage: '/images/project3-omi/image5.png',
     images: [
+      '/images/project3-omi/image5.png',
       '/images/project3-omi/image1.jpg',
       '/images/project3-omi/image2.png',
       '/images/project3-omi/image3.png',
       '/images/project3-omi/image4.png'
     ],
     imageAlts: [
+      'OMI Mexico Expansion aerial facility view',
       'OMI lead intake qualification flow',
       'CRM routing logic diagram',
       'Lead scoring model dashboard',
@@ -185,14 +187,16 @@ export const projects: Project[] = [
       { label: { en: 'Efficiency', es: 'Eficiencia' }, value: '+35%' }
     ],
     tags: ['ENTERPRISE', 'REVOPS', 'OMNICHANNEL'],
-    heroImage: '/images/project4-billiard/image1.jpg',
+    heroImage: '/images/project4-billiard/image5.png',
     images: [
+      '/images/project4-billiard/image5.png',
       '/images/project4-billiard/image1.jpg',
       '/images/project4-billiard/image2.jpg',
       '/images/project4-billiard/image3.png',
       '/images/project4-billiard/image4.png'
     ],
     imageAlts: [
+      'Billiard Factory website on laptop and mobile devices',
       'Billiard Factory product data architecture',
       'Omnichannel revenue dashboard',
       'ERP integration pipeline',
@@ -238,11 +242,13 @@ export const projects: Project[] = [
       '/images/project5-noxguard/image1.png',
       '/images/project5-noxguard/image2.png',
       '/images/project5-noxguard/image3.png',
-      '/images/project5-noxguard/image4.png'
+      '/images/project5-noxguard/image4.png',
+      '/images/project5-noxguard/image5.png'
     ],
     imageAlts: [
-      'Noxguard website homepage with product lineup',
       'Noxguard branded truck and trailer fleet wrap',
+      'Noxguard operations engineer monitoring data systems',
+      'Noxguard Urea Automotriz product on dark background',
       'Noxguard mobile app interface mockup',
       'Noxguard DEF product packaging on pallet'
     ]
