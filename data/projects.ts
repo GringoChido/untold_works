@@ -198,5 +198,53 @@ export const projects: Project[] = [
       'ERP integration pipeline',
       'Cross-channel SKU management'
     ]
+  },
+  {
+    id: 'noxguard-brand-rebrand',
+    name: { en: 'Noxguard Complete Rebrand', es: 'Rebrand Completo de Noxguard' },
+    websiteUrl: 'https://www.noxguard.com/',
+    client: { en: 'Noxguard (Transliquid Technologies)', es: 'Noxguard (Transliquid Technologies)' },
+    timeline: '2024 - 2025',
+    pillar: 'enterprise',
+    stack: ['AI Strategy', 'Brand Identity', 'Sales Enablement', 'WhatsApp AI', 'n8n', 'Python'],
+    services: [
+      { en: 'Brand Identity & Strategy', es: 'Identidad de Marca y Estrategia' },
+      { en: 'Sales Enablement', es: 'Habilitación de Ventas' },
+      { en: 'AI Infrastructure', es: 'Infraestructura de IA' }
+    ],
+    summary: {
+      en: 'Complete brand rebrand for Mexico\'s leading automotive urea manufacturer. Redefined mission, vision, and values. Built strategic sales pillars, sales enablement tools, and AI infrastructure for internal operations and customer-facing products.',
+      es: 'Rebrand completo para el principal fabricante de urea automotriz en México. Redefinimos misión, visión y valores. Construimos pilares estratégicos de ventas, herramientas de habilitación y infraestructura de IA para operaciones internas y productos al cliente.'
+    },
+    challenge: {
+      en: 'Noxguard had 15+ years of market presence but lacked a unified brand strategy. The brand identity, sales processes, and technology infrastructure were fragmented — no cohesive messaging for compliance positioning, no digital sales tools for fleet customers, and no AI systems to optimize distribution or customer engagement across Mexico.',
+      es: 'Noxguard tenía más de 15 años de presencia en el mercado pero carecía de una estrategia de marca unificada. La identidad, los procesos de ventas y la infraestructura tecnológica estaban fragmentados — sin mensajes cohesivos para posicionamiento regulatorio, sin herramientas digitales de ventas para clientes de flotas, y sin sistemas de IA para optimizar la distribución o el engagement en México.'
+    },
+    goal: {
+      en: 'Rebuild Noxguard from the ground up — unified brand identity, strategic sales pillars, and AI-powered infrastructure that positions them as the leader in clean transport solutions across North America.',
+      es: 'Reconstruir Noxguard desde cero — identidad de marca unificada, pilares estratégicos de ventas e infraestructura impulsada por IA que los posicione como líderes en soluciones de transporte limpio en Norteamérica.'
+    },
+    solution: {
+      en: 'Delivered a complete brand transformation: new mission ("Accelerating Mexican Logistics Toward Net-Zero"), vision, and values centered on chemical integrity, regional agility, and data transparency. Built three strategic pillars — Compliance First (NOM-044), Total Cost of Ownership, and Cross-Border Synergy. Created a full sales enablement suite including a Fleet Carbon Audit Tool, technical knowledge base, and automated case study generator. Engineered internal AI (route optimization, predictive inventory, regulatory monitoring) and customer-facing AI (WhatsApp Smart Dispatch, consumption forecasting API, emissions reporting portal).',
+      es: 'Entregamos una transformación completa de marca: nueva misión ("Acelerando la Logística Mexicana Hacia Cero Emisiones"), visión y valores centrados en integridad química, agilidad regional y transparencia de datos. Construimos tres pilares estratégicos — Cumplimiento Primero (NOM-044), Costo Total de Propiedad y Sinergia Transfronteriza. Creamos una suite completa de habilitación de ventas incluyendo herramienta de auditoría de carbono de flotas, base de conocimiento técnico y generador automatizado de casos de estudio. Diseñamos IA interna (optimización de rutas, inventario predictivo, monitoreo regulatorio) e IA orientada al cliente (WhatsApp Smart Dispatch, API de pronóstico de consumo, portal de reportes de emisiones).'
+    },
+    metrics: [
+      { label: { en: 'Strategic Pillars', es: 'Pilares Estratégicos' }, value: '3' },
+      { label: { en: 'AI Systems Built', es: 'Sistemas de IA' }, value: '6' }
+    ],
+    tags: ['REBRAND', 'AI INFRASTRUCTURE', 'SALES ENABLEMENT'],
+    heroImage: '/images/project5-noxguard/image1.png',
+    images: [
+      '/images/project5-noxguard/image1.png',
+      '/images/project5-noxguard/image2.png',
+      '/images/project5-noxguard/image3.png',
+      '/images/project5-noxguard/image4.png'
+    ],
+    imageAlts: [
+      'Noxguard website homepage with product lineup',
+      'Noxguard branded truck and trailer fleet wrap',
+      'Noxguard mobile app interface mockup',
+      'Noxguard DEF product packaging on pallet'
+    ]
   }
 ];

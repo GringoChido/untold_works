@@ -96,6 +96,13 @@
     <priority>0.7</priority>
   </url>
 
+  <url>
+    <loc>https://untold.works/portfolio/noxguard-brand-rebrand</loc>
+    <lastmod>2026-02-18</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
   <!-- Blog -->
   <url>
     <loc>https://untold.works/blog</loc>
