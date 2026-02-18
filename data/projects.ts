@@ -139,14 +139,12 @@ export const projects: Project[] = [
     tags: ['AGENTIC AI', 'CRM', 'REVOPS'],
     heroImage: '/images/project3-omi/image5.png',
     images: [
-      '/images/project3-omi/image5.png',
       '/images/project3-omi/image1.jpg',
       '/images/project3-omi/image2.png',
       '/images/project3-omi/image3.png',
       '/images/project3-omi/image4.png'
     ],
     imageAlts: [
-      'OMI Mexico Expansion aerial facility view',
       'OMI lead intake qualification flow',
       'CRM routing logic diagram',
       'Lead scoring model dashboard',
@@ -189,14 +187,12 @@ export const projects: Project[] = [
     tags: ['ENTERPRISE', 'REVOPS', 'OMNICHANNEL'],
     heroImage: '/images/project4-billiard/image5.png',
     images: [
-      '/images/project4-billiard/image5.png',
       '/images/project4-billiard/image1.jpg',
       '/images/project4-billiard/image2.jpg',
       '/images/project4-billiard/image3.png',
       '/images/project4-billiard/image4.png'
     ],
     imageAlts: [
-      'Billiard Factory website on laptop and mobile devices',
       'Billiard Factory product data architecture',
       'Omnichannel revenue dashboard',
       'ERP integration pipeline',
@@ -237,7 +233,6 @@ export const projects: Project[] = [
       { label: { en: 'AI Systems Built', es: 'Sistemas de IA' }, value: '6' }
     ],
     tags: ['REBRAND', 'AI INFRASTRUCTURE', 'SALES ENABLEMENT'],
-    heroImage: '/images/project5-noxguard/image1.png',
     images: [
       '/images/project5-noxguard/image1.png',
       '/images/project5-noxguard/image2.png',
