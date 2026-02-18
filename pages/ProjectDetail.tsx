@@ -23,8 +23,8 @@ const projectMeta: Record<string, { title: string; description: string }> = {
     description: 'Unified omnichannel revenue operations. 20% sales lift across 4,000+ SKUs with 35% efficiency gain via ERP integration and n8n automation.',
   },
   'noxguard-brand-rebrand': {
-    title: 'Noxguard Complete Rebrand — Untold.works',
-    description: 'Complete brand transformation for Mexico\'s leading DEF manufacturer. Mission, vision, strategic pillars, sales enablement suite, and 6 AI systems for operations and customer engagement.',
+    title: 'Noxguard — Brand, Strategy & AI Build — Untold.works',
+    description: 'End-to-end transformation for Mexico\'s leading DEF manufacturer. Brand strategy, business pillar architecture, sales enablement suite, and 6 AI systems — route optimization, predictive inventory, WhatsApp ordering, consumption forecasting, and ESG reporting.',
   },
 };
 
