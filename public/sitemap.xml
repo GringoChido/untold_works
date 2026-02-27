@@ -5,7 +5,7 @@
   <!-- Core Pages -->
   <url>
     <loc>https://untold.works/</loc>
-    <lastmod>2026-02-17</lastmod>
+    <lastmod>2026-02-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://untold.works/" />
@@ -15,7 +15,7 @@
 
   <url>
     <loc>https://untold.works/solutions/professional-services</loc>
-    <lastmod>2026-02-17</lastmod>
+    <lastmod>2026-02-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://untold.works/solutions/professional-services" />
@@ -24,7 +24,7 @@
 
   <url>
     <loc>https://untold.works/solutions/small-business</loc>
-    <lastmod>2026-02-17</lastmod>
+    <lastmod>2026-02-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://untold.works/solutions/small-business" />
@@ -33,7 +33,7 @@
 
   <url>
     <loc>https://untold.works/solutions/enterprise</loc>
-    <lastmod>2026-02-17</lastmod>
+    <lastmod>2026-02-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://untold.works/solutions/enterprise" />
@@ -42,7 +42,7 @@
 
   <url>
     <loc>https://untold.works/portfolio</loc>
-    <lastmod>2026-02-01</lastmod>
+    <lastmod>2026-02-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://untold.works/portfolio" />
@@ -51,7 +51,7 @@
 
   <url>
     <loc>https://untold.works/about</loc>
-    <lastmod>2026-02-17</lastmod>
+    <lastmod>2026-02-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://untold.works/about" />
@@ -60,7 +60,7 @@
 
   <url>
     <loc>https://untold.works/contact</loc>
-    <lastmod>2026-02-01</lastmod>
+    <lastmod>2026-02-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://untold.works/contact" />
@@ -70,35 +70,35 @@
   <!-- Portfolio Projects -->
   <url>
     <loc>https://untold.works/portfolio/spotify-whatsapp-publishing</loc>
-    <lastmod>2026-01-15</lastmod>
+    <lastmod>2026-02-26</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
     <loc>https://untold.works/portfolio/black-radio-experience</loc>
-    <lastmod>2026-01-15</lastmod>
+    <lastmod>2026-02-26</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
     <loc>https://untold.works/portfolio/omi-lead-intake-qualification</loc>
-    <lastmod>2026-01-15</lastmod>
+    <lastmod>2026-02-26</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
     <loc>https://untold.works/portfolio/billiard-factory-retail-architecture</loc>
-    <lastmod>2026-01-15</lastmod>
+    <lastmod>2026-02-26</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
     <loc>https://untold.works/portfolio/noxguard-brand-rebrand</loc>
-    <lastmod>2026-02-18</lastmod>
+    <lastmod>2026-02-26</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -106,7 +106,7 @@
   <!-- Blog -->
   <url>
     <loc>https://untold.works/blog</loc>
-    <lastmod>2026-02-17</lastmod>
+    <lastmod>2026-02-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://untold.works/blog" />
@@ -221,7 +221,7 @@
   <!-- Secondary -->
   <url>
     <loc>https://untold.works/workshops</loc>
-    <lastmod>2026-02-01</lastmod>
+    <lastmod>2026-02-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://untold.works/workshops" />
