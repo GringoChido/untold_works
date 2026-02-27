@@ -669,58 +669,58 @@ export const seo = {
       es: 'Agencia de IA en México | Web y Automatización para Música, Negocios y Marcas — Untold.works'
     },
     description: {
-      en: 'Boutique AI agency in San Miguel de Allende building AI-powered websites and automation for musicians, labels, management companies, and businesses across Mexico and the US.',
-      es: 'Agencia boutique de IA en San Miguel de Allende. Sitios web y automatización con IA para músicos, sellos, management y negocios en México y Estados Unidos.'
+      en: 'Boutique AI agency building both customer-facing websites and internal dashboards, sales enablement, and workflow automation for musicians, record labels, restaurants, and businesses across Mexico and the US.',
+      es: 'Agencia boutique de IA. Construimos sitios web para clientes y dashboards internos, herramientas de ventas y automatización para músicos, sellos, restaurantes y negocios en México y EE. UU.'
     }
   },
   solutions: {
     title: {
-      en: 'AI Solutions for Music, Business & Enterprise — Untold.works',
-      es: 'Soluciones de IA para Música, Negocios y Empresas — Untold.works'
+      en: 'AI Solutions | Customer-Facing Websites to Internal Dashboards — Untold.works',
+      es: 'Soluciones de IA | Sitios para Clientes y Dashboards Internos — Untold.works'
     },
     description: {
-      en: 'AI-powered ecosystems for musicians, management companies, professional services, and enterprises. Websites, content automation, CRM, and bilingual platforms.',
-      es: 'Ecosistemas con IA para músicos, empresas de management, servicios profesionales y corporativos. Sitios web, automatización de contenido, CRM y plataformas bilingües.'
+      en: 'Full-stack AI solutions: customer-facing websites, social media campaigns, backend dashboards, sales enablement, and workflow automation for music, professional services, and enterprises.',
+      es: 'Soluciones completas de IA: sitios web, campañas de redes sociales, dashboards internos, herramientas de ventas y automatización para música, servicios profesionales y empresas.'
     }
   },
   professionalServices: {
     title: {
-      en: 'AI Websites for Professional Services | Law Firms, Therapists, Consultants — Untold.works',
-      es: 'Sitios Web con IA para Profesionales | Abogados, Terapeutas, Consultores — Untold.works'
+      en: 'AI Websites & Sales Enablement for Law Firms, Therapists, Consultants — Untold.works',
+      es: 'Sitios Web y Herramientas de Ventas con IA para Abogados, Terapeutas, Consultores — Untold.works'
     },
     description: {
-      en: 'AI-powered websites and client intake automation for law firms, therapists, consultants, accountants, and architects. Lead generation, booking systems, and CRM built for service professionals.',
-      es: 'Sitios web con IA y automatización de captación de clientes para despachos, terapeutas, consultores, contadores y arquitectos. Generación de leads, reservas y CRM para profesionales.'
+      en: 'Customer-facing websites and internal sales enablement tools for law firms, therapists, consultants, and architects. AI-powered lead generation, client intake automation, CRM dashboards, and booking systems.',
+      es: 'Sitios web para clientes y herramientas internas de ventas para despachos, terapeutas, consultores y arquitectos. Generación de leads con IA, automatización de captación, dashboards CRM y reservas.'
     }
   },
   smallBusiness: {
     title: {
-      en: 'AI for Musicians & Small Business | Artists, Labels, Restaurants — Untold.works',
-      es: 'IA para Músicos y Pequeños Negocios | Artistas, Sellos, Restaurantes — Untold.works'
+      en: 'AI for Record Labels, Restaurants & Small Business — Untold.works',
+      es: 'IA para Sellos Discográficos, Restaurantes y Pequeños Negocios — Untold.works'
     },
     description: {
-      en: 'AI-powered platforms for musicians, artists, labels, management companies, restaurants, hotels, and entertainment brands. Websites, content automation, booking systems, and social media tools.',
-      es: 'Plataformas con IA para músicos, artistas, sellos, empresas de management, restaurantes, hoteles y entretenimiento. Sitios web, automatización de contenido, reservas y redes sociales.'
+      en: 'Customer-facing websites and back-office tools for record labels, restaurants, musicians, and small businesses. Social media design and management, creative marketing campaigns, booking systems, and internal dashboards.',
+      es: 'Sitios web para clientes y herramientas de gestión interna para sellos discográficos, restaurantes, músicos y pequeños negocios. Diseño y gestión de redes sociales, campañas creativas, reservas y dashboards.'
     }
   },
   enterprise: {
     title: {
-      en: 'Enterprise AI Automation | Logistics, RevOps & Workflow Integration — Untold.works',
-      es: 'Automatización Empresarial con IA | Logística, RevOps e Integración — Untold.works'
+      en: 'Enterprise AI | Backend Dashboards, Sales Enablement & Logistics Automation — Untold.works',
+      es: 'IA Empresarial | Dashboards Internos, Herramientas de Ventas y Automatización Logística — Untold.works'
     },
     description: {
-      en: 'AI infrastructure for logistics, warehouse operations, and complex enterprises. Revenue operations, multi-team CRM, supply chain automation, n8n workflows, and custom API integrations.',
-      es: 'Infraestructura de IA para logística, operaciones de almacén y empresas complejas. RevOps, CRM multi-equipo, automatización de cadena de suministro, flujos n8n e integraciones API.'
+      en: 'Customer-facing platforms and backend dashboards for enterprises. Sales enablement, revenue operations, logistics automation, warehouse management, multi-team CRM, and custom API integrations.',
+      es: 'Plataformas para clientes y dashboards internos para empresas. Herramientas de ventas, RevOps, automatización logística, gestión de almacenes, CRM multi-equipo e integraciones API.'
     }
   },
   portfolio: {
     title: {
-      en: 'Case Studies | AI for Music Industry, Labels & Business — Untold.works',
-      es: 'Casos de Éxito | IA para la Industria Musical, Sellos y Negocios — Untold.works'
+      en: 'Case Studies | Creative Campaigns, Dashboards & AI for Music — Untold.works',
+      es: 'Casos de Éxito | Campañas Creativas, Dashboards e IA para Música — Untold.works'
     },
     description: {
-      en: 'AI automation for music labels, artists, and businesses. 300% reach growth for Blue Note, Spotify-WhatsApp publishing pipelines, 98% lead accuracy, and 20% sales lift.',
-      es: 'Automatización con IA para sellos musicales, artistas y negocios. 300% crecimiento para Blue Note, pipelines Spotify-WhatsApp, 98% precisión en leads y 20% aumento en ventas.'
+      en: 'Creative marketing campaigns, backend dashboards, and AI automation for music labels, artists, and businesses. 300% reach growth, Spotify-WhatsApp pipelines, 98% lead accuracy, and 20% sales lift.',
+      es: 'Campañas de marketing creativas, dashboards internos y automatización con IA para sellos musicales, artistas y negocios. 300% crecimiento, pipelines Spotify-WhatsApp, 98% precisión en leads y 20% ventas.'
     }
   },
   blog: {
@@ -735,22 +735,22 @@ export const seo = {
   },
   about: {
     title: {
-      en: 'About Untold.works | AI Agency for Music, Entertainment & Business',
-      es: 'Sobre Untold.works | Agencia de IA para Música, Entretenimiento y Negocios'
+      en: 'About Untold.works | Customer-Facing & Internal AI Systems for Music & Business',
+      es: 'Sobre Untold.works | Sistemas de IA para Clientes e Internos para Música y Negocios'
     },
     description: {
-      en: 'Bilingual AI agency in San Miguel de Allende serving musicians, labels, management companies, and businesses across Mexico and the US. Brand-first, technology-driven.',
-      es: 'Agencia de IA bilingüe en San Miguel de Allende para músicos, sellos, empresas de management y negocios en México y EE. UU. Marca primero, tecnología al servicio.'
+      en: 'Bilingual AI agency building customer-facing websites and internal dashboards for musicians, labels, restaurants, and enterprises. From creative campaigns to backend operations — Mexico and the US.',
+      es: 'Agencia de IA bilingüe. Construimos sitios web para clientes y dashboards internos para músicos, sellos, restaurantes y empresas. De campañas creativas a operaciones internas — México y EE. UU.'
     }
   },
   contact: {
     title: {
-      en: 'Contact Untold.works | AI Website & Business Automation Consultation',
-      es: 'Contacto Untold.works | Consulta de Sitios Web y Automatización con IA'
+      en: 'Contact Untold.works | AI Websites, Dashboards & Creative Campaign Consultation',
+      es: 'Contacto Untold.works | Consulta de Sitios Web, Dashboards y Campañas Creativas con IA'
     },
     description: {
-      en: 'Get a consultation for AI-powered website design, business automation, or bilingual digital platforms. Based in San Miguel de Allende, serving Mexico and the US.',
-      es: 'Solicita una consulta sobre diseño web con IA, automatización de negocios o plataformas digitales bilingües. Con sede en San Miguel de Allende, atendemos México y EE. UU.'
+      en: 'Get a consultation for customer-facing websites, backend dashboards, social media management, creative marketing campaigns, or sales enablement. Mexico and the US.',
+      es: 'Solicita una consulta sobre sitios web, dashboards internos, gestión de redes sociales, campañas de marketing creativas o herramientas de ventas. México y EE. UU.'
     }
   },
   workshops: {
