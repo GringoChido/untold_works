@@ -698,4 +698,51 @@ export const blogPosts: BlogPost[] = [
     },
     image: '/blog/retail-hospitality-guide.jpg',
   },
+  // ──────────────────────────────────────────────
+  // Build Notes (personal series by Joshua)
+  // ──────────────────────────────────────────────
+  {
+    slug: 'yo-this-thing-is-broken',
+    title: {
+      en: 'Yo, This Thing is Broken!',
+      es: 'Oye, Esta Cosa No Sirve!',
+    },
+    date: '2026-02-26',
+    author: 'Joshua Semolik',
+    category: 'build-notes',
+    pillar: 'all',
+    excerpt: {
+      en: 'Build Notes #1: I didn\'t set out to learn what an API was. I just wanted to not get left behind. This is how it started.',
+      es: 'Notas de Construccion #1: No me propuse aprender que era una API. Solo no queria quedarme atras. Asi empezo todo.',
+    },
+    content: {
+      en: `<p class="text-sm font-mono text-untold-gray mb-8">BUILD NOTES #1 // A series about going from creative-who-feared-code to building real things with AI</p>
+<p>I didn't set out to learn what an API was. I just wanted to not get left behind.</p>
+<p>About a year ago, I could feel AI reshaping the creative world. My world. I'm a freelance creative. I think in mood boards and vibes, not code. But the ground was shifting, so I enrolled in MIT Sloan and CSAIL's <em>Artificial Intelligence: Implications for Business Strategy</em> program. Six weeks of machine learning, NLP, robotics, generative AI. All through the lens of what it means for business, not how to build it.</p>
+<p>The program was exactly what I needed and not enough at the same time.</p>
+<p>Every week my brain was on fire. I was connecting dots between my creative career and what was suddenly possible. Meeting sharp people from different industries, all figuring out the same thing. Ideas were everywhere.</p>
+<p>But I kept hitting this wall: I understand the strategy. I see the opportunity. I just can't touch any of the buttons.</p>
+<p>So I started trying. On my own, outside the coursework, I messed around with ChatGPT and n8n. I had this music project I'd been carrying around forever, and I figured I'd try to build it. Frustrating as hell. ChatGPT kept dragging me down paths that had nothing to do with what I was making. Nothing was focused. It felt like trying to build a house while someone keeps handing you random tools and pointing in different directions.</p>
+<p>I remember telling one of my professors, "Yo, this thing is broken. It's like a really smart kid with ADHD."</p>
+<p>He said: "Yes. We provided the scaffold. Now you guys need to build the house."</p>
+<p>That hit different.</p>
+<p>The program gave me the scaffold. The strategy, the mental models, the confidence to know this was real. But nobody was going to build the house for me.</p>
+<p>If you're a creative on the sideline right now, watching AI reshape your industry, the scaffold is there. But at some point you have to touch the buttons. Even if you have no idea what you're doing. Especially if you have no idea what you're doing.</p>
+<p class="font-mono text-sm text-untold-gray mt-8">Next up: Build Notes #2, "I Just Wanted to Send My Homies a Song"</p>`,
+      es: `<p class="text-sm font-mono text-untold-gray mb-8">NOTAS DE CONSTRUCCION #1 // Una serie sobre pasar de creativo-que-le-temia-al-codigo a construir cosas reales con IA</p>
+<p>No me propuse aprender que era una API. Solo no queria quedarme atras.</p>
+<p>Hace como un ano, podia sentir la IA transformando el mundo creativo. Mi mundo. Soy un creativo freelance. Pienso en mood boards y vibras, no en codigo. Pero el terreno estaba cambiando, asi que me inscribi en el programa de MIT Sloan y CSAIL, <em>Artificial Intelligence: Implications for Business Strategy</em>. Seis semanas de machine learning, NLP, robotica, IA generativa. Todo desde la perspectiva de lo que significa para los negocios, no de como construirlo.</p>
+<p>El programa fue exactamente lo que necesitaba y al mismo tiempo no fue suficiente.</p>
+<p>Cada semana mi cerebro estaba en llamas. Estaba conectando puntos entre mi carrera creativa y lo que de repente era posible. Conociendo gente inteligente de diferentes industrias, todos descubriendo lo mismo. Las ideas estaban por todos lados.</p>
+<p>Pero seguia chocando con el mismo muro: entiendo la estrategia. Veo la oportunidad. Simplemente no puedo tocar ninguno de los botones.</p>
+<p>Asi que empece a intentar. Por mi cuenta, fuera del curso, probe con ChatGPT y n8n. Tenia este proyecto musical que habia cargado por anos, y pense en intentar construirlo. Frustrante. ChatGPT me arrastraba por caminos que no tenian nada que ver con lo que estaba haciendo. Nada estaba enfocado. Se sentia como intentar construir una casa mientras alguien te sigue dando herramientas al azar y senalando en diferentes direcciones.</p>
+<p>Recuerdo decirle a uno de mis profesores, "Oye, esta cosa no sirve. Es como un nino muy inteligente con TDAH."</p>
+<p>El dijo: "Si. Nosotros dimos la estructura. Ahora ustedes tienen que construir la casa."</p>
+<p>Eso pego diferente.</p>
+<p>El programa me dio la estructura. La estrategia, los modelos mentales, la confianza de saber que esto era real. Pero nadie iba a construir la casa por mi.</p>
+<p>Si eres un creativo al margen ahora mismo, viendo como la IA transforma tu industria, la estructura esta ahi. Pero en algun momento tienes que tocar los botones. Aunque no tengas idea de lo que estas haciendo. Especialmente si no tienes idea de lo que estas haciendo.</p>
+<p class="font-mono text-sm text-untold-gray mt-8">Siguiente: Notas de Construccion #2, "Solo Queria Mandarle una Cancion a Mis Compas"</p>`,
+    },
+    image: '/blog/build-notes-01.jpg',
+  },
 ];

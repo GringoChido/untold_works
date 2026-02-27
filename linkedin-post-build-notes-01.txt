@@ -1,0 +1,32 @@
+PERSONAL ACCOUNT (linkedin.com/in/semolik/)
+─────────────────────────────────────────────
+
+I told my MIT professor that AI was broken. He told me to build the house.
+
+A year ago I was a creative who thought in mood boards, not code. I didn't know what an API was. But I could feel AI changing my industry, so I enrolled in MIT Sloan's AI strategy program and started trying to build things on my own.
+
+It was a mess. ChatGPT kept dragging me in circles. Nothing I built worked. I felt like I was assembling furniture with the wrong instructions in a language I didn't speak.
+
+Then my professor said something that stuck: "We gave you the scaffold. Now you build the house."
+
+That's what this series is about. Not tutorials. Not advice. Just an honest account of what happens when a creative person decides to stop watching from the sideline and starts touching the buttons.
+
+First post is live.
+
+https://untold.works/blog/yo-this-thing-is-broken
+
+#AI #BuildInPublic #CreativeTech
+
+
+COMPANY PAGE (linkedin.com/company/111617625/)
+─────────────────────────────────────────────
+
+New series on the blog: Build Notes.
+
+Our founder Joshua went from not knowing what an API was to building production AI systems for music labels and businesses. This series documents that entire journey. No jargon, no polish. Just what actually happened.
+
+First post: the MIT program that gave him the strategy, ChatGPT sessions that went nowhere, and the professor who told him to stop waiting for someone else to build the house.
+
+https://untold.works/blog/yo-this-thing-is-broken
+
+#BuildNotes #AI #CreativeTech

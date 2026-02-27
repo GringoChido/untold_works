@@ -42,6 +42,7 @@ const routes = [
   '/blog/case-study-ecommerce-brand-migration-shopify-to-custom',
   '/blog/the-professional-services-website-playbook',
   '/blog/retail-and-hospitality-digital-survival-guide',
+  '/blog/yo-this-thing-is-broken',
 ];
 
 async function waitForServer(url, maxAttempts = 30) {

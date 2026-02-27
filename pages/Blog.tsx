@@ -15,6 +15,7 @@ const categories: { key: BlogCategory | 'all'; label: { en: string; es: string }
   { key: 'san-miguel', label: { en: 'San Miguel', es: 'San Miguel' } },
   { key: 'case-studies', label: { en: 'Case Studies', es: 'Casos de Estudio' } },
   { key: 'industry-guides', label: { en: 'Industry Guides', es: 'Gu\u00edas por Industria' } },
+  { key: 'build-notes', label: { en: 'Build Notes', es: 'Notas de Construcci\u00f3n' } },
 ];
 
 const Blog: React.FC = () => {
