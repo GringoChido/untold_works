@@ -669,8 +669,8 @@ export const seo = {
       es: 'Agencia de IA en México | Web y Automatización para Música, Negocios y Marcas — Untold.works'
     },
     description: {
-      en: 'Boutique AI agency building both customer-facing websites and internal dashboards, sales enablement, and workflow automation for musicians, record labels, restaurants, and businesses across Mexico and the US.',
-      es: 'Agencia boutique de IA. Construimos sitios web para clientes y dashboards internos, herramientas de ventas y automatización para músicos, sellos, restaurantes y negocios en México y EE. UU.'
+      en: 'Workflow automation agency building customer-facing websites, internal dashboards, and n8n automation for musicians, record labels, restaurants, and businesses across Mexico and the US.',
+      es: 'Agencia de automatización de flujos de trabajo. Sitios web, dashboards internos y automatización con n8n para músicos, sellos, restaurantes y negocios en México y EE. UU.'
     }
   },
   solutions: {
@@ -679,8 +679,8 @@ export const seo = {
       es: 'Soluciones de IA | Sitios para Clientes y Dashboards Internos — Untold.works'
     },
     description: {
-      en: 'Full-stack AI solutions: customer-facing websites, social media campaigns, backend dashboards, sales enablement, and workflow automation for music, professional services, and enterprises.',
-      es: 'Soluciones completas de IA: sitios web, campañas de redes sociales, dashboards internos, herramientas de ventas y automatización para música, servicios profesionales y empresas.'
+      en: 'Full-stack AI solutions: customer-facing websites, social media campaigns, backend dashboards, sales enablement, and n8n workflow automation for music, professional services, and enterprises.',
+      es: 'Soluciones completas de IA: sitios web, campañas de redes sociales, dashboards internos, herramientas de ventas y automatización n8n para música, servicios profesionales y empresas.'
     }
   },
   professionalServices: {
@@ -709,8 +709,8 @@ export const seo = {
       es: 'IA Empresarial | Dashboards Internos, Herramientas de Ventas y Automatización Logística — Untold.works'
     },
     description: {
-      en: 'Customer-facing platforms and backend dashboards for enterprises. Sales enablement, revenue operations, logistics automation, warehouse management, multi-team CRM, and custom API integrations.',
-      es: 'Plataformas para clientes y dashboards internos para empresas. Herramientas de ventas, RevOps, automatización logística, gestión de almacenes, CRM multi-equipo e integraciones API.'
+      en: 'Customer-facing platforms and backend dashboards for enterprises. N8n workflow automation, sales enablement, revenue operations, logistics automation, warehouse management, and multi-team CRM.',
+      es: 'Plataformas para clientes y dashboards internos para empresas. Automatización de flujos con n8n, herramientas de ventas, RevOps, logística, gestión de almacenes y CRM multi-equipo.'
     }
   },
   portfolio: {
@@ -739,8 +739,8 @@ export const seo = {
       es: 'Sobre Untold.works | Sistemas de IA para Clientes e Internos para Música y Negocios'
     },
     description: {
-      en: 'Bilingual AI agency building customer-facing websites and internal dashboards for musicians, labels, restaurants, and enterprises. From creative campaigns to backend operations — Mexico and the US.',
-      es: 'Agencia de IA bilingüe. Construimos sitios web para clientes y dashboards internos para músicos, sellos, restaurantes y empresas. De campañas creativas a operaciones internas — México y EE. UU.'
+      en: 'Bilingual workflow automation agency building customer-facing websites and internal dashboards for musicians, labels, restaurants, and enterprises. N8n automation, creative campaigns, and backend operations — Mexico and the US.',
+      es: 'Agencia bilingüe de automatización de flujos de trabajo. Sitios web y dashboards internos para músicos, sellos, restaurantes y empresas. Automatización n8n, campañas creativas y operaciones — México y EE. UU.'
     }
   },
   contact: {
