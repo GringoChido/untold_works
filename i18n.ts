@@ -685,32 +685,32 @@ export const seo = {
   },
   professionalServices: {
     title: {
-      en: 'AI Websites for Professional Services | Law Firms, Consultants, Architects — Untold.works',
-      es: 'Sitios Web con IA para Servicios Profesionales | Abogados, Consultores, Arquitectos — Untold.works'
+      en: 'AI Websites for Professional Services | Law Firms, Therapists, Consultants — Untold.works',
+      es: 'Sitios Web con IA para Profesionales | Abogados, Terapeutas, Consultores — Untold.works'
     },
     description: {
-      en: 'AI-powered websites and client intake automation for law firms, consultants, accountants, and architects. Lead generation, booking systems, and CRM built for service professionals.',
-      es: 'Sitios web con IA y automatización de captación de clientes para despachos, consultores, contadores y arquitectos. Generación de leads, reservas y CRM para profesionales.'
+      en: 'AI-powered websites and client intake automation for law firms, therapists, consultants, accountants, and architects. Lead generation, booking systems, and CRM built for service professionals.',
+      es: 'Sitios web con IA y automatización de captación de clientes para despachos, terapeutas, consultores, contadores y arquitectos. Generación de leads, reservas y CRM para profesionales.'
     }
   },
   smallBusiness: {
     title: {
-      en: 'AI Tools for Small Business | Restaurants, Hotels, Retail — Untold.works',
-      es: 'Herramientas de IA para Pequeños Negocios | Restaurantes, Hoteles, Retail — Untold.works'
+      en: 'AI Tools for Small Business | Restaurants, Hotels, Entertainment — Untold.works',
+      es: 'Herramientas de IA para Negocios | Restaurantes, Hoteles, Entretenimiento — Untold.works'
     },
     description: {
-      en: 'AI-powered platforms for small businesses in Mexico and the US. Restaurants, hotels, retail, and service companies get websites, booking systems, WhatsApp automation, and local SEO.',
-      es: 'Plataformas con IA para pequeños negocios en México y EE. UU. Restaurantes, hoteles, retail y servicios obtienen sitios web, reservas, automatización de WhatsApp y SEO local.'
+      en: 'AI-powered platforms for small businesses, musicians, and entertainment brands. Restaurants, hotels, retail, and artists get websites, booking systems, WhatsApp automation, and local SEO.',
+      es: 'Plataformas con IA para pequeños negocios, músicos y marcas de entretenimiento. Restaurantes, hoteles, retail y artistas obtienen sitios web, reservas, automatización de WhatsApp y SEO local.'
     }
   },
   enterprise: {
     title: {
-      en: 'Enterprise AI Automation | RevOps, CRM & Workflow Integration — Untold.works',
-      es: 'Automatización Empresarial con IA | RevOps, CRM e Integración — Untold.works'
+      en: 'Enterprise AI Automation | Logistics, RevOps & Workflow Integration — Untold.works',
+      es: 'Automatización Empresarial con IA | Logística, RevOps e Integración — Untold.works'
     },
     description: {
-      en: 'AI infrastructure for complex operations. Revenue operations, multi-team CRM, headless commerce, n8n workflow automation, and custom API integrations for growing enterprises.',
-      es: 'Infraestructura de IA para operaciones complejas. RevOps, CRM multi-equipo, comercio headless, automatización con n8n e integraciones API para empresas en crecimiento.'
+      en: 'AI infrastructure for logistics, warehouse operations, and complex enterprises. Revenue operations, multi-team CRM, supply chain automation, n8n workflows, and custom API integrations.',
+      es: 'Infraestructura de IA para logística, operaciones de almacén y empresas complejas. RevOps, CRM multi-equipo, automatización de cadena de suministro, flujos n8n e integraciones API.'
     }
   },
   portfolio: {
