@@ -7,24 +7,24 @@ import { projects } from '../data/projects';
 
 const projectMeta: Record<string, { title: string; description: string }> = {
   'spotify-whatsapp-publishing': {
-    title: 'Spotify-WhatsApp Pipeline — Untold.works',
-    description: 'AI publishing pipeline replacing manual content ops. 15 hours/week reclaimed, 10x capacity scaling using n8n, Claude Code, and RAG architecture.',
+    title: 'AI Content Automation Case Study | Spotify-WhatsApp Pipeline — Untold.works',
+    description: 'AI-powered content automation replacing manual publishing ops. 15 hours/week reclaimed, 10x capacity with n8n workflow automation, Claude Code, and RAG architecture.',
   },
   'black-radio-experience': {
-    title: 'Black Radio Experience — Untold.works',
-    description: 'Automated campaign engine. 300% audience reach growth and 500+ engagement signals via Python-driven cross-platform distribution pipeline.',
+    title: 'AI Campaign Automation Case Study | 300% Reach Growth — Untold.works',
+    description: 'Automated social media campaign engine delivering 300% audience reach growth and 500+ engagement signals. Python-driven cross-platform AI distribution pipeline.',
   },
   'omi-lead-intake-qualification': {
-    title: 'OMI Lead Intake & Routing — Untold.works',
-    description: 'Intelligent lead routing system with 98% MQL accuracy and 4.2x sales ROI. Agentic AI workflows using n8n, OpenAI, and CRM integration.',
+    title: 'AI Lead Qualification Case Study | 98% MQL Accuracy — Untold.works',
+    description: 'AI-powered lead intake and routing system achieving 98% MQL accuracy and 4.2x sales ROI. Built with n8n automation, OpenAI agents, and Salesforce CRM integration.',
   },
   'billiard-factory-retail-architecture': {
-    title: 'Billiard Factory Retail Architecture — Untold.works',
-    description: 'Unified omnichannel revenue operations. 20% sales lift across 4,000+ SKUs with 35% efficiency gain via ERP integration and n8n automation.',
+    title: 'Omnichannel Revenue Operations Case Study | 20% Sales Lift — Untold.works',
+    description: 'Unified omnichannel RevOps for 4,000+ SKU retail operation. 20% sales lift and 35% efficiency gain via Shopify Plus, ERP integration, and n8n AI automation.',
   },
   'noxguard-brand-rebrand': {
-    title: 'Noxguard — Brand, Strategy & AI Build — Untold.works',
-    description: 'End-to-end transformation for Mexico\'s leading DEF manufacturer. Brand strategy, business pillar architecture, sales enablement suite, and 6 AI systems — route optimization, predictive inventory, WhatsApp ordering, consumption forecasting, and ESG reporting.',
+    title: 'Enterprise AI Transformation Case Study | Brand + 6 AI Systems — Untold.works',
+    description: 'End-to-end AI transformation for Mexico\'s leading DEF manufacturer. Brand strategy, 6 AI systems including route optimization, predictive inventory, WhatsApp ordering, and ESG reporting.',
   },
 };
 

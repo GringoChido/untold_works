@@ -665,102 +665,102 @@ export const blogPage = {
 export const seo = {
   home: {
     title: {
-      en: 'Untold.works — AI-Powered Business Ecosystems',
-      es: 'Untold.works — Ecosistemas de Negocio Impulsados por IA'
+      en: 'AI Agency Mexico | AI-Powered Websites & Business Automation — Untold.works',
+      es: 'Agencia de IA en México | Sitios Web y Automatización de Negocios — Untold.works'
     },
     description: {
-      en: 'Boutique AI agency based in San Miguel de Allende. We build AI-powered websites, business systems, and brand ecosystems for companies across Mexico and the United States.',
-      es: 'Agencia boutique de IA en San Miguel de Allende. Construimos sitios web, sistemas de negocio y ecosistemas de marca impulsados por inteligencia artificial para empresas en México y Estados Unidos.'
+      en: 'Boutique AI agency in San Miguel de Allende. We build AI-powered websites, business automation systems, and bilingual digital ecosystems for companies across Mexico and the US.',
+      es: 'Agencia boutique de IA en San Miguel de Allende. Construimos sitios web con IA, sistemas de automatización y ecosistemas digitales bilingües para empresas en México y Estados Unidos.'
     }
   },
   solutions: {
     title: {
-      en: 'Solutions — Untold.works',
-      es: 'Soluciones — Untold.works'
+      en: 'AI Business Solutions | Websites, Automation & CRM — Untold.works',
+      es: 'Soluciones de IA para Negocios | Web, Automatización y CRM — Untold.works'
     },
     description: {
-      en: 'Three AI-powered ecosystems designed for how you actually work. From solo professionals to enterprise teams.',
-      es: 'Tres ecosistemas impulsados por IA diseñados para cómo realmente trabajas. Desde profesionales independientes hasta equipos empresariales.'
+      en: 'AI-powered business ecosystems for professionals, small businesses, and enterprises. Custom websites, workflow automation, CRM integration, and bilingual platforms.',
+      es: 'Ecosistemas de negocio con IA para profesionales, pequeñas empresas y corporativos. Sitios web, automatización de flujos, integración CRM y plataformas bilingües.'
     }
   },
   professionalServices: {
     title: {
-      en: 'Professional Services — Untold.works',
-      es: 'Servicios Profesionales — Untold.works'
+      en: 'AI Websites for Professional Services | Law Firms, Consultants, Architects — Untold.works',
+      es: 'Sitios Web con IA para Servicios Profesionales | Abogados, Consultores, Arquitectos — Untold.works'
     },
     description: {
-      en: 'Complete AI-powered business systems for service professionals. Doctors, lawyers, consultants, architects — built for how you serve clients.',
-      es: 'Sistemas de negocio completos con IA para profesionales de servicio. Médicos, abogados, consultores, arquitectos — diseñados para cómo atiendes a tus clientes.'
+      en: 'AI-powered websites and client intake automation for law firms, consultants, accountants, and architects. Lead generation, booking systems, and CRM built for service professionals.',
+      es: 'Sitios web con IA y automatización de captación de clientes para despachos, consultores, contadores y arquitectos. Generación de leads, reservas y CRM para profesionales.'
     }
   },
   smallBusiness: {
     title: {
-      en: 'Small Business Platforms — Untold.works',
-      es: 'Plataformas para Pequeños Negocios — Untold.works'
+      en: 'AI Tools for Small Business | Restaurants, Hotels, Retail — Untold.works',
+      es: 'Herramientas de IA para Pequeños Negocios | Restaurantes, Hoteles, Retail — Untold.works'
     },
     description: {
-      en: 'Integrated AI systems for growing teams. Restaurants, hotels, retail, service companies — connected platforms that scale with your business.',
-      es: 'Sistemas integrados con IA para equipos en crecimiento. Restaurantes, hoteles, retail, empresas de servicio — plataformas conectadas que crecen con tu negocio.'
+      en: 'AI-powered platforms for small businesses in Mexico and the US. Restaurants, hotels, retail, and service companies get websites, booking systems, WhatsApp automation, and local SEO.',
+      es: 'Plataformas con IA para pequeños negocios en México y EE. UU. Restaurantes, hoteles, retail y servicios obtienen sitios web, reservas, automatización de WhatsApp y SEO local.'
     }
   },
   enterprise: {
     title: {
-      en: 'Enterprise & Operations — Untold.works',
-      es: 'Empresarial y Operaciones — Untold.works'
+      en: 'Enterprise AI Automation | RevOps, CRM & Workflow Integration — Untold.works',
+      es: 'Automatización Empresarial con IA | RevOps, CRM e Integración — Untold.works'
     },
     description: {
-      en: 'AI infrastructure for complex business operations. Multi-team CRM, advanced automation, revenue operations, and custom integrations.',
-      es: 'Infraestructura de IA para operaciones empresariales complejas. CRM multi-equipo, automatización avanzada, operaciones de ingresos e integraciones personalizadas.'
+      en: 'AI infrastructure for complex operations. Revenue operations, multi-team CRM, headless commerce, n8n workflow automation, and custom API integrations for growing enterprises.',
+      es: 'Infraestructura de IA para operaciones complejas. RevOps, CRM multi-equipo, comercio headless, automatización con n8n e integraciones API para empresas en crecimiento.'
     }
   },
   portfolio: {
     title: {
-      en: 'Portfolio — Untold.works',
-      es: 'Portafolio — Untold.works'
+      en: 'AI Automation Case Studies | Business Systems We\'ve Built — Untold.works',
+      es: 'Casos de Éxito en Automatización con IA | Sistemas que Hemos Construido — Untold.works'
     },
     description: {
-      en: 'See the AI-powered ecosystems we\'ve built for businesses across Mexico and the US. Brand identity, websites, and business systems.',
-      es: 'Mira los ecosistemas con IA que hemos construido para negocios en México y EE. UU. Identidad de marca, sitios web y sistemas empresariales.'
+      en: 'Real AI automation results: 98% lead accuracy, 300% reach growth, 20% sales lift. Case studies in workflow automation, brand strategy, and AI-powered business systems.',
+      es: 'Resultados reales de automatización con IA: 98% precisión en leads, 300% crecimiento de alcance, 20% aumento en ventas. Casos de éxito en automatización y estrategia de marca.'
     }
   },
   blog: {
     title: {
-      en: 'Blog — Untold.works',
-      es: 'Blog — Untold.works'
+      en: 'AI & Business Blog | Tools, Strategies & Guides for Small Business — Untold.works',
+      es: 'Blog de IA y Negocios | Herramientas, Estrategias y Guías — Untold.works'
     },
     description: {
-      en: 'Practical guides on AI tools, business systems, and brand strategy for businesses in Mexico and the United States.',
-      es: 'Guías prácticas sobre herramientas de IA, sistemas de negocio y estrategia de marca para empresas en México y Estados Unidos.'
+      en: 'Practical guides on AI tools for small business, bilingual website design, business automation, and digital strategy for companies in Mexico and the United States.',
+      es: 'Guías prácticas sobre herramientas de IA para negocios, diseño web bilingüe, automatización y estrategia digital para empresas en México y Estados Unidos.'
     }
   },
   about: {
     title: {
-      en: 'About — Untold.works',
-      es: 'Nosotros — Untold.works'
+      en: 'About Untold.works | Bilingual AI Agency in San Miguel de Allende',
+      es: 'Sobre Untold.works | Agencia de IA Bilingüe en San Miguel de Allende'
     },
     description: {
-      en: 'A boutique AI agency in San Miguel de Allende, Mexico. Storytellers first, technologists second. Serving businesses across Mexico and the US.',
-      es: 'Agencia boutique de IA en San Miguel de Allende, México. Narradores primero, tecnólogos después. Atendemos negocios en México y Estados Unidos.'
+      en: 'Bilingual AI agency based in San Miguel de Allende, Mexico. We build AI-powered websites and business systems for companies across Mexico and the United States. Brand-first, technology-driven.',
+      es: 'Agencia de IA bilingüe en San Miguel de Allende, México. Construimos sitios web y sistemas de negocio con IA para empresas en México y EE. UU. Marca primero, tecnología al servicio.'
     }
   },
   contact: {
     title: {
-      en: 'Contact — Untold.works',
-      es: 'Contacto — Untold.works'
+      en: 'Contact Untold.works | AI Website & Business Automation Consultation',
+      es: 'Contacto Untold.works | Consulta de Sitios Web y Automatización con IA'
     },
     description: {
-      en: 'Start a conversation about your business. AI-powered websites, brand identity, and business systems. Based in San Miguel de Allende.',
-      es: 'Inicia una conversación sobre tu negocio. Sitios web con IA, identidad de marca y sistemas empresariales. Con sede en San Miguel de Allende.'
+      en: 'Get a consultation for AI-powered website design, business automation, or bilingual digital platforms. Based in San Miguel de Allende, serving Mexico and the US.',
+      es: 'Solicita una consulta sobre diseño web con IA, automatización de negocios o plataformas digitales bilingües. Con sede en San Miguel de Allende, atendemos México y EE. UU.'
     }
   },
   workshops: {
     title: {
-      en: 'AI Workshops — Untold.works',
-      es: 'Talleres de IA — Untold.works'
+      en: 'AI Workshops San Miguel de Allende | Practical AI Training for Business — Untold.works',
+      es: 'Talleres de IA en San Miguel de Allende | Capacitación Práctica para Negocios — Untold.works'
     },
     description: {
-      en: 'Practical AI workshops in San Miguel de Allende. No jargon — just AI for everyday life and small business.',
-      es: 'Talleres prácticos de IA en San Miguel de Allende. Sin jerga — solo IA para la vida diaria y pequeños negocios.'
+      en: 'Hands-on AI workshops in San Miguel de Allende. Learn ChatGPT, automation tools, and AI content strategy for your business. No jargon, real results.',
+      es: 'Talleres presenciales de IA en San Miguel de Allende. Aprende ChatGPT, herramientas de automatización y estrategia de contenido con IA. Sin jerga, resultados reales.'
     }
   },
   analog: {
