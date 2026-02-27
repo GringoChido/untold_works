@@ -44,7 +44,7 @@ const Blog: React.FC = () => {
       );
     }
 
-    return posts;
+    return posts.sort((a, b) => b.date.localeCompare(a.date));
   }, [activeCategory, searchQuery]);
 
   return (
