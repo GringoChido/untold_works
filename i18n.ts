@@ -665,22 +665,22 @@ export const blogPage = {
 export const seo = {
   home: {
     title: {
-      en: 'AI Agency Mexico | AI-Powered Websites & Business Automation — Untold.works',
-      es: 'Agencia de IA en México | Sitios Web y Automatización de Negocios — Untold.works'
+      en: 'AI Agency Mexico | Websites & Automation for Music, Business & Brands — Untold.works',
+      es: 'Agencia de IA en México | Web y Automatización para Música, Negocios y Marcas — Untold.works'
     },
     description: {
-      en: 'Boutique AI agency in San Miguel de Allende. We build AI-powered websites, business automation systems, and bilingual digital ecosystems for companies across Mexico and the US.',
-      es: 'Agencia boutique de IA en San Miguel de Allende. Construimos sitios web con IA, sistemas de automatización y ecosistemas digitales bilingües para empresas en México y Estados Unidos.'
+      en: 'Boutique AI agency in San Miguel de Allende building AI-powered websites and automation for musicians, labels, management companies, and businesses across Mexico and the US.',
+      es: 'Agencia boutique de IA en San Miguel de Allende. Sitios web y automatización con IA para músicos, sellos, management y negocios en México y Estados Unidos.'
     }
   },
   solutions: {
     title: {
-      en: 'AI Business Solutions | Websites, Automation & CRM — Untold.works',
-      es: 'Soluciones de IA para Negocios | Web, Automatización y CRM — Untold.works'
+      en: 'AI Solutions for Music, Business & Enterprise — Untold.works',
+      es: 'Soluciones de IA para Música, Negocios y Empresas — Untold.works'
     },
     description: {
-      en: 'AI-powered business ecosystems for professionals, small businesses, and enterprises. Custom websites, workflow automation, CRM integration, and bilingual platforms.',
-      es: 'Ecosistemas de negocio con IA para profesionales, pequeñas empresas y corporativos. Sitios web, automatización de flujos, integración CRM y plataformas bilingües.'
+      en: 'AI-powered ecosystems for musicians, management companies, professional services, and enterprises. Websites, content automation, CRM, and bilingual platforms.',
+      es: 'Ecosistemas con IA para músicos, empresas de management, servicios profesionales y corporativos. Sitios web, automatización de contenido, CRM y plataformas bilingües.'
     }
   },
   professionalServices: {
@@ -695,12 +695,12 @@ export const seo = {
   },
   smallBusiness: {
     title: {
-      en: 'AI Tools for Small Business | Restaurants, Hotels, Entertainment — Untold.works',
-      es: 'Herramientas de IA para Negocios | Restaurantes, Hoteles, Entretenimiento — Untold.works'
+      en: 'AI for Musicians & Small Business | Artists, Labels, Restaurants — Untold.works',
+      es: 'IA para Músicos y Pequeños Negocios | Artistas, Sellos, Restaurantes — Untold.works'
     },
     description: {
-      en: 'AI-powered platforms for small businesses, musicians, and entertainment brands. Restaurants, hotels, retail, and artists get websites, booking systems, WhatsApp automation, and local SEO.',
-      es: 'Plataformas con IA para pequeños negocios, músicos y marcas de entretenimiento. Restaurantes, hoteles, retail y artistas obtienen sitios web, reservas, automatización de WhatsApp y SEO local.'
+      en: 'AI-powered platforms for musicians, artists, labels, management companies, restaurants, hotels, and entertainment brands. Websites, content automation, booking systems, and social media tools.',
+      es: 'Plataformas con IA para músicos, artistas, sellos, empresas de management, restaurantes, hoteles y entretenimiento. Sitios web, automatización de contenido, reservas y redes sociales.'
     }
   },
   enterprise: {
@@ -715,12 +715,12 @@ export const seo = {
   },
   portfolio: {
     title: {
-      en: 'AI Automation Case Studies | Business Systems We\'ve Built — Untold.works',
-      es: 'Casos de Éxito en Automatización con IA | Sistemas que Hemos Construido — Untold.works'
+      en: 'Case Studies | AI for Music Industry, Labels & Business — Untold.works',
+      es: 'Casos de Éxito | IA para la Industria Musical, Sellos y Negocios — Untold.works'
     },
     description: {
-      en: 'Real AI automation results: 98% lead accuracy, 300% reach growth, 20% sales lift. Case studies in workflow automation, brand strategy, and AI-powered business systems.',
-      es: 'Resultados reales de automatización con IA: 98% precisión en leads, 300% crecimiento de alcance, 20% aumento en ventas. Casos de éxito en automatización y estrategia de marca.'
+      en: 'AI automation for music labels, artists, and businesses. 300% reach growth for Blue Note, Spotify-WhatsApp publishing pipelines, 98% lead accuracy, and 20% sales lift.',
+      es: 'Automatización con IA para sellos musicales, artistas y negocios. 300% crecimiento para Blue Note, pipelines Spotify-WhatsApp, 98% precisión en leads y 20% aumento en ventas.'
     }
   },
   blog: {
@@ -735,12 +735,12 @@ export const seo = {
   },
   about: {
     title: {
-      en: 'About Untold.works | Bilingual AI Agency in San Miguel de Allende',
-      es: 'Sobre Untold.works | Agencia de IA Bilingüe en San Miguel de Allende'
+      en: 'About Untold.works | AI Agency for Music, Entertainment & Business',
+      es: 'Sobre Untold.works | Agencia de IA para Música, Entretenimiento y Negocios'
     },
     description: {
-      en: 'Bilingual AI agency based in San Miguel de Allende, Mexico. We build AI-powered websites and business systems for companies across Mexico and the United States. Brand-first, technology-driven.',
-      es: 'Agencia de IA bilingüe en San Miguel de Allende, México. Construimos sitios web y sistemas de negocio con IA para empresas en México y EE. UU. Marca primero, tecnología al servicio.'
+      en: 'Bilingual AI agency in San Miguel de Allende serving musicians, labels, management companies, and businesses across Mexico and the US. Brand-first, technology-driven.',
+      es: 'Agencia de IA bilingüe en San Miguel de Allende para músicos, sellos, empresas de management y negocios en México y EE. UU. Marca primero, tecnología al servicio.'
     }
   },
   contact: {

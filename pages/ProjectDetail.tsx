@@ -7,12 +7,12 @@ import { projects } from '../data/projects';
 
 const projectMeta: Record<string, { title: string; description: string }> = {
   'spotify-whatsapp-publishing': {
-    title: 'AI Content Automation Case Study | Spotify-WhatsApp Pipeline — Untold.works',
-    description: 'AI-powered content automation replacing manual publishing ops. 15 hours/week reclaimed, 10x capacity with n8n workflow automation, Claude Code, and RAG architecture.',
+    title: 'AI for Music Labels | Spotify-WhatsApp Publishing Automation — Untold.works',
+    description: 'AI-powered music content automation for independent labels. Spotify-to-WhatsApp publishing pipeline reclaiming 15 hours/week with n8n, Claude Code, and RAG architecture.',
   },
   'black-radio-experience': {
-    title: 'AI Campaign Automation Case Study | 300% Reach Growth — Untold.works',
-    description: 'Automated social media campaign engine delivering 300% audience reach growth and 500+ engagement signals. Python-driven cross-platform AI distribution pipeline.',
+    title: 'AI for Music Marketing | Blue Note 300% Audience Growth — Untold.works',
+    description: 'AI-powered campaign automation for Blue Note Entertainment. 300% audience reach growth and 500+ engagement signals via automated cross-platform music marketing pipeline.',
   },
   'omi-lead-intake-qualification': {
     title: 'AI Lead Qualification Case Study | 98% MQL Accuracy — Untold.works',
