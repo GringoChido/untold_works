@@ -94,10 +94,11 @@ async function processInBatches(browser, items, batchSize) {
 async function main() {
   console.log(`\nPrerendering ${routes.length} routes...\n`);
 
-  // Start vite preview server
+  // Start vite preview server (detached so we can kill the entire process tree)
   const server = spawn('npx', ['vite', 'preview', '--port', String(PORT)], {
     cwd: import.meta.dirname,
     stdio: 'pipe',
+    detached: true,
   });
 
   try {
@@ -114,11 +115,14 @@ async function main() {
     await browser.close();
     console.log(`\nDone — ${routes.length} pages prerendered to dist/\n`);
   } finally {
-    server.kill();
+    // Kill the entire process group (npx + vite) so Node can exit cleanly
+    try { process.kill(-server.pid, 'SIGTERM'); } catch {}
   }
 }
 
-main().catch((err) => {
-  console.error('Prerender failed:', err);
-  process.exit(1);
-});
+main()
+  .then(() => process.exit(0))
+  .catch((err) => {
+    console.error('Prerender failed:', err);
+    process.exit(1);
+  });
