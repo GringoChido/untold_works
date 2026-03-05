@@ -15,6 +15,7 @@ const routes = [
   '/portfolio',
   '/blog',
   '/workshops',
+  '/solutions',
   '/solutions/professional-services',
   '/solutions/small-business',
   '/solutions/enterprise',
@@ -26,6 +27,14 @@ const routes = [
   '/portfolio/omi-lead-intake-qualification',
   '/portfolio/billiard-factory-retail-architecture',
   '/portfolio/noxguard-brand-rebrand',
+  // Blog categories
+  '/blog/category/ai-education',
+  '/blog/category/website-ecosystem',
+  '/blog/category/mobile-first',
+  '/blog/category/san-miguel',
+  '/blog/category/case-studies',
+  '/blog/category/industry-guides',
+  '/blog/category/build-notes',
   // Blog posts
   '/blog/ai-tools-every-small-business-should-know-2026',
   '/blog/how-to-use-chatgpt-for-customer-service',

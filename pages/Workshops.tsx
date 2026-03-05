@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useMemo } from 'react';
 import { Link } from 'react-router-dom';
 import { useLanguage } from '../App';
 import { usePageMeta } from '../hooks/usePageMeta';
@@ -8,9 +8,40 @@ const WorkshopsPage: React.FC = () => {
   const { t } = useLanguage();
   const syllabus = i18n.workshopSyllabus;
 
+  const eventSchema = useMemo(() => ({
+    '@context': 'https://schema.org',
+    '@type': 'EducationEvent',
+    name: 'AI for Everyday Life — Practical AI Workshop',
+    description: 'A practical masterclass for daily life and small business. Learn ChatGPT, prompting techniques, and AI workflows in a single morning session.',
+    organizer: {
+      '@type': 'Organization',
+      name: 'Untold.works',
+      url: 'https://untold.works',
+    },
+    location: {
+      '@type': 'Place',
+      name: 'San Miguel de Allende',
+      address: {
+        '@type': 'PostalAddress',
+        addressLocality: 'San Miguel de Allende',
+        addressRegion: 'Guanajuato',
+        addressCountry: 'MX',
+      },
+    },
+    eventAttendanceMode: 'https://schema.org/OfflineEventAttendanceMode',
+    eventStatus: 'https://schema.org/EventScheduled',
+    inLanguage: ['en', 'es'],
+    offers: {
+      '@type': 'Offer',
+      url: 'https://untold.works/workshops',
+      availability: 'https://schema.org/LimitedAvailability',
+    },
+  }), []);
+
   usePageMeta(
     i18n.seo.workshops.title,
-    i18n.seo.workshops.description
+    i18n.seo.workshops.description,
+    { path: '/workshops', schema: eventSchema }
   );
 
   useEffect(() => {

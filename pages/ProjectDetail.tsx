@@ -4,6 +4,14 @@ import { useParams, Link, Navigate } from 'react-router-dom';
 import { useLanguage } from '../App';
 import { usePageMeta } from '../hooks/usePageMeta';
 import { projects } from '../data/projects';
+import Breadcrumbs from '../components/Breadcrumbs';
+import type { Pillar } from '../types';
+
+const pillarLinks: Record<Exclude<Pillar, 'all'>, { path: string; label: { en: string; es: string } }> = {
+  'professional-services': { path: '/solutions/professional-services', label: { en: 'Professional Services Solutions', es: 'Soluciones para Servicios Profesionales' } },
+  'small-business': { path: '/solutions/small-business', label: { en: 'Small Business Solutions', es: 'Soluciones para Pequenos Negocios' } },
+  enterprise: { path: '/solutions/enterprise', label: { en: 'Enterprise Solutions', es: 'Soluciones Empresariales' } },
+};
 
 const projectMeta: Record<string, { title: string; description: string }> = {
   'spotify-whatsapp-publishing': {
@@ -39,7 +47,11 @@ const ProjectDetail: React.FC = () => {
   const prevProject = projects[(currentIndex - 1 + projects.length) % projects.length];
 
   const meta = projectMeta[projectId || ''] || { title: 'Project — Untold.works', description: '' };
-  usePageMeta(meta.title, meta.description);
+  const ogImage = project?.heroImage ? `https://untold.works${project.heroImage}` : undefined;
+  usePageMeta(meta.title, meta.description, {
+    path: `/portfolio/${projectId}`,
+    ogImage,
+  });
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -62,6 +74,16 @@ const ProjectDetail: React.FC = () => {
       {/* Top Metadata Bar - High Contrast Mono */}
       <header className="px-10 pt-32 pb-16 lg:pt-48 border-b border-white/10">
         <div className="max-w-[1440px] mx-auto">
+          <div className="mb-8">
+            <Breadcrumbs
+              variant="dark"
+              crumbs={[
+                { label: { en: 'Home', es: 'Inicio' }, path: '/' },
+                { label: { en: 'Portfolio', es: 'Portafolio' }, path: '/portfolio' },
+                { label: project.name },
+              ]}
+            />
+          </div>
           <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-16">
             <Link to="/portfolio" className="inline-flex items-center space-x-4 group mb-8 md:mb-0">
                <span className="text-2xl group-hover:-translate-x-3 transition-transform duration-500 text-untold-orange">←</span>
@@ -128,6 +150,7 @@ const ProjectDetail: React.FC = () => {
               <img
                 src={project.heroImage}
                 alt={t(project.name)}
+                loading="lazy"
                 className="w-full h-full object-cover"
               />
             </div>
@@ -158,6 +181,17 @@ const ProjectDetail: React.FC = () => {
                   </div>
                 ))}
               </div>
+            )}
+            {project.pillar && project.pillar !== 'all' && pillarLinks[project.pillar] && (
+              <Link
+                to={pillarLinks[project.pillar].path}
+                className="inline-flex items-center space-x-4 mt-16 pt-8 border-t border-white/10 group"
+              >
+                <span className="font-mono text-[11px] uppercase tracking-[0.3em] text-white/40 group-hover:text-untold-orange transition-colors font-bold">
+                  {t(pillarLinks[project.pillar].label)}
+                </span>
+                <span className="text-untold-orange group-hover:translate-x-2 transition-transform">&rarr;</span>
+              </Link>
             )}
           </div>
 
@@ -209,6 +243,7 @@ const ProjectDetail: React.FC = () => {
                 <img
                   src={img}
                   alt={project.imageAlts?.[idx] || `${t(project.name)} artifact ${idx + 1}`}
+                  loading="lazy"
                   className="w-full h-full object-cover group-hover:scale-105 transition-all duration-1000"
                 />
               </div>

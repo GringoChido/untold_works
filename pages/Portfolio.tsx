@@ -86,6 +86,7 @@ const Portfolio: React.FC = () => {
                 <img
                   src={project.heroImage || project.images[0]}
                   alt={t(project.name)}
+                  loading="lazy"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000"
                 />
               </div>
@@ -142,6 +143,7 @@ const Portfolio: React.FC = () => {
                 <img
                   src="/images/casa-schuck-preview.png"
                   alt="Casa Schuck Hotel — current website"
+                  loading="lazy"
                   className="w-full h-full object-cover object-top opacity-40"
                 />
                 <div className="absolute inset-0 bg-black/50 flex flex-col items-center justify-center">

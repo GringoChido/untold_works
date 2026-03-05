@@ -3,7 +3,15 @@ import { Link, useParams, Navigate } from 'react-router-dom';
 import { useLanguage } from '../App';
 import { usePageMeta } from '../hooks/usePageMeta';
 import { blogPosts } from '../data/blogPosts';
+import Breadcrumbs from '../components/Breadcrumbs';
 import * as i18n from '../i18n';
+import type { Pillar } from '../types';
+
+const pillarLinks: Record<Exclude<Pillar, 'all'>, { path: string; label: { en: string; es: string } }> = {
+  'professional-services': { path: '/solutions/professional-services', label: { en: 'Explore Professional Services Solutions', es: 'Explorar Soluciones para Servicios Profesionales' } },
+  'small-business': { path: '/solutions/small-business', label: { en: 'Explore Small Business Solutions', es: 'Explorar Soluciones para Pequenos Negocios' } },
+  enterprise: { path: '/solutions/enterprise', label: { en: 'Explore Enterprise Solutions', es: 'Explorar Soluciones Empresariales' } },
+};
 
 const BlogPost: React.FC = () => {
   const { slug } = useParams<{ slug: string }>();
@@ -14,6 +22,8 @@ const BlogPost: React.FC = () => {
   const pageTitle = post ? `${t(post.title)} — Untold.works` : 'Blog — Untold.works';
   const pageDesc = post ? t(post.excerpt) : '';
 
+  const ogImage = post?.image ? `https://untold.works${post.image}` : undefined;
+
   const schema = useMemo(() => {
     if (!post) return undefined;
     return {
@@ -21,6 +31,7 @@ const BlogPost: React.FC = () => {
       '@type': 'Article',
       headline: post.title.en,
       description: post.excerpt.en,
+      image: post.image ? `https://untold.works${post.image}` : undefined,
       author: { '@type': 'Organization', name: 'Untold.works' },
       publisher: {
         '@type': 'Organization',
@@ -36,6 +47,7 @@ const BlogPost: React.FC = () => {
   usePageMeta(pageTitle, pageDesc, {
     path: `/blog/${slug || ''}`,
     ogType: 'article',
+    ogImage,
     schema,
   });
 
@@ -52,6 +64,16 @@ const BlogPost: React.FC = () => {
       {/* Header */}
       <section className="bg-untold-black text-white px-5 sm:px-10 py-20 sm:py-32 lg:py-40 border-b border-white/10">
         <div className="max-w-[900px] mx-auto">
+          <div className="mb-8">
+            <Breadcrumbs
+              variant="dark"
+              crumbs={[
+                { label: { en: 'Home', es: 'Inicio' }, path: '/' },
+                { label: { en: 'Blog', es: 'Blog' }, path: '/blog' },
+                { label: post.title },
+              ]}
+            />
+          </div>
           <Link
             to="/blog"
             className="inline-flex items-center space-x-2 font-mono text-[11px] uppercase tracking-[0.3em] text-white/40 hover:text-untold-orange transition-colors mb-12 block"
@@ -89,13 +111,30 @@ const BlogPost: React.FC = () => {
         />
       </section>
 
+      {/* Pillar CTA — internal link to relevant solution page */}
+      {post.pillar && post.pillar !== 'all' && pillarLinks[post.pillar] && (
+        <section className="px-5 sm:px-10 py-10">
+          <div className="max-w-[900px] mx-auto">
+            <Link
+              to={pillarLinks[post.pillar].path}
+              className="flex items-center justify-between border border-untold-orange/20 bg-untold-orange/5 p-6 sm:p-8 hover:border-untold-orange/40 hover:bg-untold-orange/10 transition-all group"
+            >
+              <span className="font-sans font-black text-lg sm:text-xl uppercase tracking-tighter group-hover:text-untold-orange transition-colors">
+                {t(pillarLinks[post.pillar].label)}
+              </span>
+              <span className="text-2xl text-untold-orange group-hover:translate-x-2 transition-transform">&rarr;</span>
+            </Link>
+          </div>
+        </section>
+      )}
+
       {/* Related Posts */}
       {relatedPosts.length > 0 && (
         <section className="px-5 sm:px-10 py-16 sm:py-24 border-t border-untold-border">
           <div className="max-w-[1440px] mx-auto">
-            <h3 className="font-sans font-black text-2xl uppercase tracking-tighter mb-10">
+            <h2 className="font-sans font-black text-2xl uppercase tracking-tighter mb-10">
               {t({ en: 'Related Articles', es: 'Art\u00edculos Relacionados' })}
-            </h3>
+            </h2>
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
               {relatedPosts.map((rp) => (
                 <Link
@@ -121,9 +160,9 @@ const BlogPost: React.FC = () => {
 
       {/* CTA */}
       <section className="bg-untold-black text-white px-5 sm:px-10 py-16 sm:py-24 text-center">
-        <h3 className="font-sans font-black text-3xl sm:text-5xl uppercase tracking-tighter mb-8">
+        <h2 className="font-sans font-black text-3xl sm:text-5xl uppercase tracking-tighter mb-8">
           {t(i18n.blogPage.ctaHeadline)}
-        </h3>
+        </h2>
         <Link
           to="/contact"
           className="inline-block bg-untold-orange text-white px-10 py-5 font-sans font-black uppercase tracking-tighter text-lg hover:scale-105 active:scale-95 transition-all"

@@ -4,6 +4,7 @@ import { useLanguage } from '../../App';
 import { usePageMeta } from '../../hooks/usePageMeta';
 import * as i18n from '../../i18n';
 import QuickLeadForm from '../../components/QuickLeadForm';
+import Breadcrumbs from '../../components/Breadcrumbs';
 
 const Enterprise: React.FC = () => {
   const { t } = useLanguage();
@@ -117,6 +118,16 @@ const Enterprise: React.FC = () => {
       {/* Hero */}
       <section className="bg-untold-black text-white px-5 sm:px-10 py-20 sm:py-32 lg:py-48 border-b border-white/10">
         <div className="max-w-[1440px] mx-auto">
+          <div className="mb-8">
+            <Breadcrumbs
+              variant="dark"
+              crumbs={[
+                { label: { en: 'Home', es: 'Inicio' }, path: '/' },
+                { label: { en: 'Solutions', es: 'Soluciones' }, path: '/solutions' },
+                { label: { en: 'Enterprise', es: 'Empresarial' } },
+              ]}
+            />
+          </div>
           <div className="flex items-center space-x-4 mb-14">
             <span className="w-3 h-3 rounded-full bg-untold-orange animate-pulse"></span>
             <p className="font-mono text-[11px] lg:text-[13px] uppercase tracking-[0.6em] font-bold text-white/40">
