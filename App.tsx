@@ -13,6 +13,7 @@ import StereoPage from './pages/Stereo';
 import SlidesPage from './pages/Slides';
 
 // Lazy-loaded pages
+const Solutions = lazy(() => import('./pages/Solutions'));
 const ProfessionalServices = lazy(() => import('./pages/solutions/ProfessionalServices'));
 const SmallBusiness = lazy(() => import('./pages/solutions/SmallBusiness'));
 const Enterprise = lazy(() => import('./pages/solutions/Enterprise'));
@@ -63,13 +64,14 @@ const AppLayout: React.FC = () => {
         <Suspense fallback={<PageLoader />}>
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/solutions" element={<Navigate to="/" replace />} />
+            <Route path="/solutions" element={<Solutions />} />
             <Route path="/solutions/professional-services" element={<ProfessionalServices />} />
             <Route path="/solutions/small-business" element={<SmallBusiness />} />
             <Route path="/solutions/enterprise" element={<Enterprise />} />
             <Route path="/portfolio" element={<Portfolio />} />
             <Route path="/portfolio/:projectId" element={<ProjectDetail />} />
             <Route path="/blog" element={<Blog />} />
+            <Route path="/blog/category/:category" element={<Blog />} />
             <Route path="/blog/:slug" element={<BlogPost />} />
             <Route path="/about" element={<AboutPage />} />
             <Route path="/workshops" element={<WorkshopsPage />} />

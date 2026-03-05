@@ -52,8 +52,8 @@ export const hero = {
     es: 'MARCA // SITIO WEB // SISTEMAS DE IA // FLUJOS DE TRABAJO'
   },
   primaryCta: {
-    en: 'Start a conversation',
-    es: 'Iniciar conversación'
+    en: 'Check out the Portfolio',
+    es: 'Ver el Portafolio'
   },
   secondaryCta: {
     en: 'See what we build',

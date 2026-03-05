@@ -1,8 +1,56 @@
-import React from 'react';
+import React, { useMemo } from 'react';
 import { Link } from 'react-router-dom';
 import { useLanguage } from '../App';
 import { usePageMeta } from '../hooks/usePageMeta';
+import { projects } from '../data/projects';
 import * as i18n from '../i18n';
+
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
+    {
+      '@type': 'Question',
+      name: 'What does Untold.works build?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'We build AI-powered business ecosystems: customer-facing websites, internal dashboards, n8n workflow automation, CRM integrations, and bilingual content systems for businesses in Mexico and the United States.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Do you build bilingual websites?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Yes. Every client-facing site we build supports English and Spanish with natively written content — not machine translation. Proper hreflang tags, separate URL structures, and SEO optimization for both languages.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'What industries do you serve?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'We serve professional services (law firms, therapists, consultants), small businesses (restaurants, hotels, retail), musicians and record labels, and enterprise organizations across Mexico and the US.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Where is Untold.works located?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'We are based in San Miguel de Allende, Guanajuato, Mexico, serving clients across Mexico and the United States.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Do I own the website and systems you build?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Yes. Full ownership transfer is part of every project. You get the code, the data, the documentation, and video training. No lock-in, no recurring fees for access to your own systems.',
+      },
+    },
+  ],
+};
 
 const Home: React.FC = () => {
   const { t } = useLanguage();
@@ -10,7 +58,7 @@ const Home: React.FC = () => {
   usePageMeta(
     i18n.seo.home.title,
     i18n.seo.home.description,
-    { path: '/' }
+    { path: '/', schema: faqSchema }
   );
 
   return (
@@ -46,7 +94,7 @@ const Home: React.FC = () => {
 
           <div className="flex flex-col sm:flex-row items-start gap-6">
             <Link
-              to="/contact"
+              to="/portfolio"
               className="inline-flex items-center space-x-6 sm:space-x-10 group border border-white/10 px-8 sm:px-16 py-6 sm:py-10 hover:border-untold-orange hover:bg-untold-orange/5 transition-all shadow-[0_40px_100px_rgba(255,77,23,0.15)]"
             >
               <span className="font-sans font-black text-lg sm:text-2xl uppercase tracking-tighter">
@@ -179,118 +227,78 @@ const Home: React.FC = () => {
       </section>
 
       {/* ═══════════════════════════════════════════════════════════
-          SECTION 4: WHAT WE BUILD
+          SECTION 4: SELECTED WORK
       ═══════════════════════════════════════════════════════════ */}
-      <section id="what-we-build" className="px-5 sm:px-10 py-20 sm:py-32 bg-untold-beige border-b border-untold-border">
+      <section id="what-we-build" className="px-5 sm:px-10 py-20 sm:py-32 bg-untold-black text-white border-b border-white/5">
         <div className="max-w-[1440px] mx-auto">
-          <div className="flex items-center space-x-4 mb-16">
-            <span className="w-2.5 h-2.5 rounded-full bg-untold-orange"></span>
-            <h2 className="font-mono text-[13px] uppercase tracking-[0.6em] font-bold text-untold-black/40">
-              {t({ en: 'WHAT WE BUILD', es: 'LO QUE CONSTRUIMOS' })}
-            </h2>
+          <div className="flex items-center justify-between mb-16">
+            <div className="flex items-center space-x-4">
+              <span className="w-2.5 h-2.5 rounded-full bg-untold-orange"></span>
+              <h2 className="font-mono text-[13px] uppercase tracking-[0.6em] font-bold text-white/40">
+                {t({ en: 'SELECTED WORK', es: 'TRABAJO SELECCIONADO' })}
+              </h2>
+            </div>
+            <Link
+              to="/portfolio"
+              className="hidden sm:inline-flex items-center space-x-3 font-mono text-[11px] uppercase tracking-[0.3em] text-white/40 hover:text-untold-orange transition-colors font-bold"
+            >
+              <span>{t({ en: 'View All', es: 'Ver Todo' })}</span>
+              <span className="text-untold-orange">→</span>
+            </Link>
           </div>
 
-          <h3 className="font-sans font-black text-4xl sm:text-6xl lg:text-8xl uppercase tracking-tighter mb-6 leading-[0.85]">
-            {t(i18n.whatWeBuild.headline)}
-          </h3>
-          <p className="text-xl sm:text-2xl lg:text-3xl font-serif italic text-untold-gray mb-20 max-w-4xl leading-tight">
-            {t(i18n.whatWeBuild.subheadline)}
-          </p>
-
-          {/* Three phases */}
-          <div className="grid lg:grid-cols-3 gap-px bg-untold-border border border-untold-border mb-16">
-            {i18n.whatWeBuild.phases.map((phase, idx) => (
-              <div key={idx} className="bg-white p-8 sm:p-12 lg:p-14 flex flex-col group hover:bg-untold-beige/50 transition-all">
-                <span className="font-mono text-[10px] uppercase tracking-[0.5em] text-untold-orange font-bold mb-6">
-                  {String(idx + 1).padStart(2, '0')}
-                </span>
-                <h4 className="font-sans font-black text-2xl sm:text-3xl uppercase tracking-tighter mb-6 group-hover:text-untold-orange transition-colors">
-                  {t(phase.title)}
-                </h4>
-                <p className="text-base sm:text-lg font-serif italic text-untold-gray leading-relaxed mb-8 flex-grow">
-                  {t(phase.description)}
-                </p>
-                <div className="flex flex-wrap gap-2 pt-6 border-t border-untold-border">
-                  {((phase as any).deliverables || (phase as any).features || (phase as any).options || []).map((item: { en: string; es: string }, i: number) => (
-                    <span key={i} className="text-[10px] font-mono uppercase tracking-[0.2em] text-untold-black/40 border border-untold-border px-3 py-1">
-                      {t(item)}
-                    </span>
-                  ))}
+          <div className="grid md:grid-cols-2 gap-px bg-white/10 border border-white/10">
+            {projects.slice(0, 4).map((project, idx) => (
+              <Link
+                key={project.id}
+                to={`/portfolio/${project.id}`}
+                className="group relative bg-untold-black overflow-hidden"
+              >
+                <div className="aspect-[16/10] overflow-hidden">
+                  <img
+                    src={project.heroImage || project.images[0]}
+                    alt={t(project.name)}
+                    loading="lazy"
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
                 </div>
-              </div>
+                <div className="absolute bottom-0 left-0 right-0 p-6 sm:p-8 lg:p-10">
+                  <span className="font-mono text-[10px] uppercase tracking-[0.5em] text-white/40 mb-3 block">
+                    {String(idx + 1).padStart(2, '0')}
+                  </span>
+                  <h3 className="font-sans font-black text-2xl sm:text-3xl lg:text-4xl uppercase tracking-tighter leading-[0.9] mb-3 group-hover:text-untold-orange transition-colors">
+                    {t(project.name)}
+                  </h3>
+                  {project.metrics && (
+                    <div className="flex gap-6">
+                      {project.metrics.slice(0, 2).map((metric, mIdx) => (
+                        <div key={mIdx} className="flex items-baseline gap-2">
+                          <span className="text-xl sm:text-2xl font-sans font-black text-untold-orange">{metric.value}</span>
+                          <span className="font-mono text-[9px] uppercase tracking-[0.2em] text-white/40">{t(metric.label)}</span>
+                        </div>
+                      ))}
+                    </div>
+                  )}
+                </div>
+              </Link>
             ))}
           </div>
 
-          <div className="text-center">
+          <div className="mt-12 text-center sm:hidden">
             <Link
               to="/portfolio"
-              className="inline-flex items-center space-x-6 group"
+              className="inline-flex items-center space-x-4 font-sans font-black text-lg uppercase tracking-tighter text-untold-orange"
             >
-              <span className="font-sans font-black text-xl sm:text-2xl uppercase tracking-tighter border-b-4 border-untold-orange pb-2 group-hover:text-untold-orange transition-colors">
-                {t(i18n.whatWeBuild.cta)}
-              </span>
-              <span className="text-3xl group-hover:translate-x-4 transition-transform duration-500 text-untold-orange">→</span>
+              <span>{t({ en: 'View All Projects', es: 'Ver Todos los Proyectos' })}</span>
+              <span className="text-2xl">→</span>
             </Link>
           </div>
         </div>
       </section>
 
       {/* ═══════════════════════════════════════════════════════════
-          SECTION 5: HOW WE WORK
-      ═══════════════════════════════════════════════════════════ */}
-      <section className="px-5 sm:px-10 py-20 sm:py-32 bg-white border-b border-untold-border">
-        <div className="max-w-[1440px] mx-auto">
-          <div className="flex items-center space-x-4 mb-16">
-            <span className="w-2.5 h-2.5 rounded-full bg-untold-black"></span>
-            <h2 className="font-mono text-[13px] uppercase tracking-[0.6em] font-bold text-untold-black/40">
-              {t({ en: 'OUR PROCESS', es: 'NUESTRO PROCESO' })}
-            </h2>
-          </div>
-
-          <h3 className="font-sans font-black text-4xl sm:text-6xl lg:text-8xl uppercase tracking-tighter mb-6 leading-[0.85]">
-            {t(i18n.howWeWork.headline)}
-          </h3>
-          <p className="text-xl sm:text-2xl font-serif italic text-untold-gray mb-20 max-w-3xl">
-            {t(i18n.howWeWork.subheadline)}
-          </p>
-
-          <div className="border-t border-untold-border">
-            {i18n.howWeWork.stages.map((stage) => (
-              <div
-                key={stage.number}
-                className="grid lg:grid-cols-12 gap-0 border-b border-untold-border group hover:bg-untold-beige transition-all duration-500"
-              >
-                <div className="lg:col-span-4 p-6 sm:p-10 lg:p-14 lg:border-r border-untold-border">
-                  <span className="font-mono text-[11px] font-bold text-untold-orange mb-6 block tracking-[0.4em] uppercase">
-                    {t({ en: `STAGE ${stage.number}`, es: `ETAPA ${stage.number}` })}
-                  </span>
-                  <h4 className="font-sans font-black text-3xl sm:text-4xl lg:text-5xl uppercase tracking-tighter leading-tight group-hover:text-untold-orange transition-colors">
-                    {t(stage.title)}
-                  </h4>
-                  <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-untold-black/30 mt-4">
-                    {t(stage.subtitle)}
-                  </p>
-                </div>
-                <div className="lg:col-span-8 p-6 sm:p-10 lg:p-14 flex flex-col justify-between">
-                  <p className="text-lg sm:text-xl lg:text-2xl font-serif italic text-untold-gray leading-relaxed mb-8">
-                    {t(stage.description)}
-                  </p>
-                  <div className="flex flex-wrap gap-2 pt-6 border-t border-untold-border/50">
-                    {stage.deliverables.map((d, i) => (
-                      <span key={i} className="text-[10px] font-mono uppercase tracking-[0.2em] text-untold-black/40 border border-untold-border px-3 py-1">
-                        {t(d)}
-                      </span>
-                    ))}
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* ═══════════════════════════════════════════════════════════
-          SECTION 6: WHY UNTOLD
+          SECTION 5: WHY UNTOLD
       ═══════════════════════════════════════════════════════════ */}
       <section className="px-5 sm:px-10 py-20 sm:py-32 lg:py-48 bg-untold-black text-white border-b border-white/5">
         <div className="max-w-[1440px] mx-auto">
