@@ -109,6 +109,44 @@ const AboutPage: React.FC = () => {
         </div>
       </section>
 
+      {/* FAQ */}
+      <section className="px-5 sm:px-10 py-20 sm:py-32 bg-untold-beige text-untold-black border-b border-untold-border">
+        <div className="max-w-[900px] mx-auto">
+          <div className="flex items-center space-x-4 mb-16">
+            <span className="w-2.5 h-2.5 rounded-full bg-untold-orange"></span>
+            <h2 className="font-mono text-[13px] uppercase tracking-[0.6em] font-bold text-untold-black/40">
+              {t({ en: 'FREQUENTLY ASKED QUESTIONS', es: 'PREGUNTAS FRECUENTES' })}
+            </h2>
+          </div>
+
+          <h3 className="font-sans font-black text-3xl sm:text-5xl uppercase tracking-tighter mb-16 leading-[0.85]">
+            {t({ en: 'What People Want\nto Know About Us', es: '¿Qué Quiere Saber\nla Gente Sobre Nosotros?' })}
+          </h3>
+
+          <div className="space-y-0 border-t border-untold-border">
+            {[
+              { q: { en: 'Who runs Untold.works?', es: '¿Quién dirige Untold.works?' }, a: { en: 'Untold.works is led by Joshua Semolik, a creative director and technologist with decades of experience in branding, design, and AI systems. The agency combines deep creative expertise with modern technology to build complete business ecosystems.', es: 'Untold.works está dirigido por Joshua Semolik, un director creativo y tecnólogo con décadas de experiencia en branding, diseño y sistemas de IA. La agencia combina experiencia creativa profunda con tecnología moderna para construir ecosistemas empresariales completos.' } },
+              { q: { en: 'Can a Mexico-based agency serve US clients effectively?', es: '¿Puede una agencia en México atender clientes de EE.UU. efectivamente?' }, a: { en: 'Absolutely. We work with clients across both countries. Our bilingual team, shared time zones, and deep understanding of both markets make cross-border collaboration seamless. Many of our clients are US businesses looking to reach Mexican audiences, or Mexican businesses expanding north.', es: 'Absolutamente. Trabajamos con clientes en ambos países. Nuestro equipo bilingüe, husos horarios compartidos y profundo entendimiento de ambos mercados hacen que la colaboración transfronteriza sea fluida. Muchos de nuestros clientes son negocios de EE.UU. que buscan audiencias mexicanas, o negocios mexicanos expandiéndose al norte.' } },
+              { q: { en: 'What makes Untold.works different from other agencies?', es: '¿Qué hace diferente a Untold.works de otras agencias?' }, a: { en: 'We lead with brand and storytelling, then layer in AI technology. Most agencies do one or the other. We also transfer full ownership of everything we build — no lock-in, no monthly fees for access to your own systems.', es: 'Lideramos con marca y narrativa, después integramos tecnología de IA. La mayoría de las agencias hacen una cosa u otra. También transferimos propiedad total de todo lo que construimos — sin ataduras, sin cuotas mensuales por acceso a tus propios sistemas.' } },
+              { q: { en: 'What industries do you have experience in?', es: '¿En qué industrias tienen experiencia?' }, a: { en: 'Professional services (law firms, consultants, therapists), hospitality (hotels, restaurants), retail, music and entertainment, e-commerce, and enterprise operations. Our portfolio includes projects across all of these sectors.', es: 'Servicios profesionales (despachos, consultores, terapeutas), hospitalidad (hoteles, restaurantes), retail, música y entretenimiento, e-commerce y operaciones empresariales. Nuestro portafolio incluye proyectos en todos estos sectores.' } },
+              { q: { en: 'Do you work with startups or only established businesses?', es: '¿Trabajan con startups o solo negocios establecidos?' }, a: { en: 'Both. We work with solo practitioners launching their first practice, growing small businesses adding AI systems, and established enterprises modernizing operations. Our solutions scale to match where you are today.', es: 'Ambos. Trabajamos con profesionales independientes lanzando su primera práctica, pequeños negocios en crecimiento agregando sistemas de IA, y empresas establecidas modernizando operaciones. Nuestras soluciones se adaptan a donde estés hoy.' } },
+            ].map((faq, idx) => (
+              <details key={idx} className="border-b border-untold-border group">
+                <summary className="flex items-center justify-between py-6 sm:py-8 cursor-pointer list-none">
+                  <h4 className="font-sans font-black text-lg sm:text-xl uppercase tracking-tighter pr-8 group-open:text-untold-orange transition-colors">
+                    {t(faq.q)}
+                  </h4>
+                  <span className="text-2xl text-untold-orange shrink-0 group-open:rotate-45 transition-transform">+</span>
+                </summary>
+                <p className="pb-8 text-lg font-serif text-untold-gray leading-relaxed pr-12">
+                  {t(faq.a)}
+                </p>
+              </details>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Closing CTA */}
       <section className="px-5 sm:px-10 py-24 sm:py-48 text-center bg-white/[0.02]">
         <div className="max-w-5xl mx-auto">

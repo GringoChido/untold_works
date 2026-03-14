@@ -197,19 +197,19 @@ const ProjectDetail: React.FC = () => {
 
           <div className="lg:col-span-6 space-y-32">
             <div className="group">
-              <span className="block font-mono text-[11px] uppercase tracking-[0.5em] text-untold-orange mb-8 font-bold">SYSTEM_CHALLENGE</span>
+              <span className="block font-mono text-[11px] uppercase tracking-[0.5em] text-untold-orange mb-8 font-bold">{t({ en: 'WHAT WAS THE CHALLENGE?', es: '¿CUÁL FUE EL RETO?' })}</span>
               <p className="text-2xl lg:text-3xl font-medium leading-relaxed text-white/70 group-hover:text-white transition-colors">
                 {t(project.challenge)}
               </p>
             </div>
             <div className="group">
-              <span className="block font-mono text-[11px] uppercase tracking-[0.5em] text-untold-orange mb-8 font-bold">OPERATIONAL_GOAL</span>
+              <span className="block font-mono text-[11px] uppercase tracking-[0.5em] text-untold-orange mb-8 font-bold">{t({ en: 'WHAT WAS THE GOAL?', es: '¿CUÁL FUE EL OBJETIVO?' })}</span>
               <p className="text-2xl lg:text-3xl font-medium leading-relaxed text-white/70 group-hover:text-white transition-colors">
                 {t(project.goal)}
               </p>
             </div>
             <div className="group">
-              <span className="block font-mono text-[11px] uppercase tracking-[0.5em] text-untold-orange mb-8 font-bold">TECHNICAL_SOLUTION</span>
+              <span className="block font-mono text-[11px] uppercase tracking-[0.5em] text-untold-orange mb-8 font-bold">{t({ en: 'HOW DID WE SOLVE IT?', es: '¿CÓMO LO RESOLVIMOS?' })}</span>
               <p className="text-2xl lg:text-3xl font-medium leading-relaxed text-white/70 group-hover:text-white transition-colors">
                 {t(project.solution)}
               </p>

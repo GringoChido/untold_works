@@ -40,8 +40,8 @@ export const hero = {
     es: 'Agencia Boutique de IA — Ciudad de México / San Miguel de Allende, México'
   },
   headline: {
-    en: 'AI-Powered Business Ecosystems.',
-    es: 'Ecosistemas Empresariales con IA.'
+    en: 'What if Your Business Ran Itself?',
+    es: '¿Y Si Tu Negocio Se Manejara Solo?'
   },
   tagline: {
     en: 'We build the system so you can run your business from anywhere. We train you. You run it.',
@@ -78,8 +78,8 @@ export const locationBadge = {
 
 export const whatWeBuild = {
   headline: {
-    en: 'What We Build',
-    es: 'Lo Que Construimos'
+    en: 'What Does Untold.works Build?',
+    es: '¿Qué Construye Untold.works?'
   },
   subheadline: {
     en: 'AI-native business platforms — mobile-ready, multilingual, SEO-optimized, and built so AI systems can find you, cite you, and send you clients.',
@@ -190,8 +190,8 @@ export const brandCreativity = {
 
 export const howWeWork = {
   headline: {
-    en: 'How We Work',
-    es: 'Cómo Trabajamos'
+    en: 'How Does the Process Work?',
+    es: '¿Cómo Funciona el Proceso?'
   },
   subheadline: {
     en: 'Four stages from audit to ownership.',
@@ -297,8 +297,8 @@ export const whyUntold = {
     es: 'POR QUÉ AHORA. POR QUÉ UNTOLD.'
   },
   headline: {
-    en: 'The World is Shifting',
-    es: 'El Mundo Está Cambiando'
+    en: 'Why Do Businesses Need AI Systems Now?',
+    es: '¿Por Qué los Negocios Necesitan Sistemas de IA Ahora?'
   },
   opening: {
     en: '2026 is a turning point for businesses of every size. AI solutions are no longer just for enterprise companies with massive budgets. The tools exist right now to automate your marketing, streamline your operations, and build systems that work while you sleep. But the gap between businesses using these tools and those that aren\'t is widening every month.',
@@ -389,8 +389,8 @@ export const professionalServicesPage = {
     es: 'SERVICIOS PROFESIONALES'
   },
   headline: {
-    en: 'Complete Business Systems for Service Professionals',
-    es: 'Sistemas Empresariales Completos para Profesionales de Servicio'
+    en: 'Need a Complete Business System for Your Practice?',
+    es: '¿Necesitas un Sistema Completo para Tu Práctica?'
   },
   subheadline: {
     en: 'Doctors, lawyers, consultants, architects, therapists — if you serve clients one-on-one, this is built for you.',
@@ -466,8 +466,8 @@ export const smallBusinessPage = {
     es: 'PEQUEÑOS NEGOCIOS'
   },
   headline: {
-    en: 'Integrated Systems for Growing Teams',
-    es: 'Sistemas Integrados para Equipos en Crecimiento'
+    en: 'How Can Your Small Business Compete with AI?',
+    es: '¿Cómo Puede Tu Pequeño Negocio Competir con IA?'
   },
   subheadline: {
     en: 'Restaurants, hotels, retail shops, service companies — businesses with teams that need systems to scale.',
@@ -493,8 +493,8 @@ export const enterprisePage = {
     es: 'EMPRESARIAL'
   },
   headline: {
-    en: 'Modern Revenue Systems With Accountability',
-    es: 'Sistemas de Ingresos Modernos Con Rendición de Cuentas'
+    en: 'Ready to Scale Your Operations with AI?',
+    es: '¿Listo para Escalar Tus Operaciones con IA?'
   },
   subheadline: {
     en: 'For organizations that need integrated technology across departments, with clear reporting and team enablement.',
@@ -516,8 +516,8 @@ export const enterprisePage = {
 export const aboutPage = {
   hero: {
     headline: {
-      en: 'We\'re Storytellers First. Technologists Second.',
-      es: 'Somos Narradores Primero. Tecnólogos Después.'
+      en: 'Who Is Behind Untold.works?',
+      es: '¿Quién Está Detrás de Untold.works?'
     },
     hook: {
       en: 'A boutique team based in San Miguel de Allende, building AI-powered business ecosystems for companies across Mexico and the United States.',
@@ -548,8 +548,8 @@ export const aboutPage = {
       es: 'POR QUÉ MÉXICO // POR QUÉ SAN MIGUEL'
     },
     headline: {
-      en: 'Rooted in One of the Most Dynamic Markets in the World.',
-      es: 'Con Raíces en Uno de los Mercados Más Dinámicos del Mundo.'
+      en: 'Why Is Untold.works Based in Mexico?',
+      es: '¿Por Qué Untold.works Está en México?'
     },
     mexicoContent: {
       en: 'Mexico is one of the fastest-moving markets in the world. A new wave of entrepreneurs, a growing middle class, and nearshoring investment are opening doors that did not exist five years ago. Many businesses are skipping legacy systems and jumping straight from paper to AI, and from word-of-mouth to full digital ecosystems. We are here because the momentum is real.',
@@ -582,8 +582,8 @@ export const contactPage = {
     es: 'HABLEMOS'
   },
   headline: {
-    en: 'Start a Conversation.',
-    es: 'Inicia una Conversación.'
+    en: 'How Do I Start a Project with Untold.works?',
+    es: '¿Cómo Inicio un Proyecto con Untold.works?'
   },
   subheadline: {
     en: 'Tell us about your business. We\'ll tell you how we can help. No pressure, no jargon, just a real conversation about what your business needs.',

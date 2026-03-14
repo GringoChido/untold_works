@@ -11,7 +11,7 @@ export const blogPosts: BlogPost[] = [
       es: '7 Herramientas de IA que Todo Negocio Debe Conocer en 2026',
     },
     date: '2026-01-06',
-    author: 'Untold.works',
+    author: 'Joshua Semolik',
     category: 'ai-education',
     pillar: 'small-business',
     excerpt: {
@@ -63,7 +63,7 @@ export const blogPosts: BlogPost[] = [
       es: 'Como Usar ChatGPT para Atencion al Cliente sin Perder el Toque Humano',
     },
     date: '2026-01-18',
-    author: 'Untold.works',
+    author: 'Joshua Semolik',
     category: 'ai-education',
     pillar: 'professional-services',
     excerpt: {
@@ -103,7 +103,7 @@ export const blogPosts: BlogPost[] = [
       es: 'Estrategia de Contenido con IA: Que Automatizar y Que Mantener Humano',
     },
     date: '2026-02-03',
-    author: 'Untold.works',
+    author: 'Joshua Semolik',
     category: 'ai-education',
     pillar: 'all',
     excerpt: {
@@ -163,7 +163,7 @@ export const blogPosts: BlogPost[] = [
       es: 'Tu Sitio Web No Es un Folleto. Es un Sistema de Negocio.',
     },
     date: '2026-01-10',
-    author: 'Untold.works',
+    author: 'Joshua Semolik',
     category: 'website-ecosystem',
     pillar: 'small-business',
     excerpt: {
@@ -207,7 +207,7 @@ export const blogPosts: BlogPost[] = [
       es: 'CMS Headless Explicado para Duenos de Negocio (No para Desarrolladores)',
     },
     date: '2026-01-25',
-    author: 'Untold.works',
+    author: 'Joshua Semolik',
     category: 'website-ecosystem',
     pillar: 'professional-services',
     excerpt: {
@@ -245,7 +245,7 @@ export const blogPosts: BlogPost[] = [
       es: 'Sitios Web Bilingues: Por Que los Plugins de Traduccion Fallan y Que Hacer en Su Lugar',
     },
     date: '2026-02-10',
-    author: 'Untold.works',
+    author: 'Joshua Semolik',
     category: 'website-ecosystem',
     pillar: 'all',
     excerpt: {
@@ -287,7 +287,7 @@ export const blogPosts: BlogPost[] = [
       es: 'Administra Tu Negocio desde Tu Telefono: La Guia Real',
     },
     date: '2026-01-14',
-    author: 'Untold.works',
+    author: 'Joshua Semolik',
     category: 'mobile-first',
     pillar: 'small-business',
     excerpt: {
@@ -327,7 +327,7 @@ export const blogPosts: BlogPost[] = [
       es: 'Por Que Tu Sitio Web Debe Ser Rapido en 3G (Especialmente en Mexico)',
     },
     date: '2026-02-06',
-    author: 'Untold.works',
+    author: 'Joshua Semolik',
     category: 'mobile-first',
     pillar: 'all',
     excerpt: {
@@ -377,7 +377,7 @@ export const blogPosts: BlogPost[] = [
       es: 'Guia de Presencia Digital en San Miguel de Allende para 2026',
     },
     date: '2026-01-20',
-    author: 'Untold.works',
+    author: 'Joshua Semolik',
     category: 'san-miguel',
     pillar: 'small-business',
     excerpt: {
@@ -417,7 +417,7 @@ export const blogPosts: BlogPost[] = [
       es: 'Como los Restaurantes de SMA Pueden Capturar Trafico Turistico en Linea',
     },
     date: '2026-02-12',
-    author: 'Untold.works',
+    author: 'Joshua Semolik',
     category: 'san-miguel',
     pillar: 'small-business',
     excerpt: {
@@ -465,7 +465,7 @@ export const blogPosts: BlogPost[] = [
       es: 'Caso de Estudio: Como Construimos un Sistema de Reserva Directa para un Hotel Boutique',
     },
     date: '2026-01-28',
-    author: 'Untold.works',
+    author: 'Joshua Semolik',
     category: 'case-studies',
     pillar: 'small-business',
     excerpt: {
@@ -505,7 +505,7 @@ export const blogPosts: BlogPost[] = [
       es: 'Caso de Estudio: Automatizando la Recepcion de Clientes para un Despacho de Abogados en Crecimiento',
     },
     date: '2026-02-01',
-    author: 'Untold.works',
+    author: 'Joshua Semolik',
     category: 'case-studies',
     pillar: 'professional-services',
     excerpt: {
@@ -545,7 +545,7 @@ export const blogPosts: BlogPost[] = [
       es: 'Caso de Estudio: Migrando una Marca de E-Commerce de Shopify a un Stack Personalizado',
     },
     date: '2026-02-14',
-    author: 'Untold.works',
+    author: 'Joshua Semolik',
     category: 'case-studies',
     pillar: 'enterprise',
     excerpt: {
@@ -589,7 +589,7 @@ export const blogPosts: BlogPost[] = [
       es: 'El Manual de Sitios Web para Servicios Profesionales: Lo que Abogados, Consultores y Contadores Hacen Mal',
     },
     date: '2026-01-30',
-    author: 'Untold.works',
+    author: 'Joshua Semolik',
     category: 'industry-guides',
     pillar: 'professional-services',
     excerpt: {
@@ -631,7 +631,7 @@ export const blogPosts: BlogPost[] = [
       es: 'La Guia de Supervivencia Digital 2026 para Negocios de Retail y Hospitalidad',
     },
     date: '2026-02-08',
-    author: 'Untold.works',
+    author: 'Joshua Semolik',
     category: 'industry-guides',
     pillar: 'enterprise',
     excerpt: {

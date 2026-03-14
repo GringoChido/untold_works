@@ -32,13 +32,15 @@ const BlogPost: React.FC = () => {
       headline: post.title.en,
       description: post.excerpt.en,
       image: post.image ? `https://untold.works${post.image}` : undefined,
-      author: { '@type': 'Organization', name: 'Untold.works' },
+      author: { '@type': 'Person', name: post.author, jobTitle: 'Founder, Untold.works', url: 'https://www.linkedin.com/in/semolik/' },
       publisher: {
         '@type': 'Organization',
+        '@id': 'https://untold.works/#organization',
         name: 'Untold.works',
         logo: { '@type': 'ImageObject', url: 'https://untold.works/images/logo.png' },
       },
       datePublished: post.date,
+      dateModified: post.dateModified || post.date,
       url: `https://untold.works/blog/${post.slug}`,
       mainEntityOfPage: `https://untold.works/blog/${post.slug}`,
     };

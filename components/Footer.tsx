@@ -50,6 +50,7 @@ const Footer: React.FC = () => {
               <span className="font-mono text-[10px] uppercase tracking-[0.6em] text-white/20 font-bold mb-4">NAV_DIRECTORY</span>
               {[
                 { key: 'portfolio', path: '/portfolio' },
+                { key: 'solutions', path: '/solutions' },
                 { key: 'blog', path: '/blog' },
                 { key: 'about', path: '/about' },
                 { key: 'contact', path: '/contact' },
@@ -62,6 +63,21 @@ const Footer: React.FC = () => {
                   {t((i18n.navigation as any)[item.key])}
                 </Link>
               ))}
+              <div className="flex flex-col space-y-2 lg:text-right pt-2">
+                {[
+                  { label: { en: 'Professional Services', es: 'Servicios Profesionales' }, path: '/solutions/professional-services' },
+                  { label: { en: 'Small Business', es: 'Pequeños Negocios' }, path: '/solutions/small-business' },
+                  { label: { en: 'Enterprise', es: 'Empresa' }, path: '/solutions/enterprise' },
+                ].map((item) => (
+                  <Link
+                    key={item.path}
+                    to={item.path}
+                    className="text-sm font-mono uppercase tracking-[0.3em] text-white/20 hover:text-untold-orange transition-all duration-300"
+                  >
+                    {t(item.label)}
+                  </Link>
+                ))}
+              </div>
               {/* Workshops hidden link */}
               <Link
                 to="/workshops"

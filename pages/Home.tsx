@@ -131,7 +131,7 @@ const Home: React.FC = () => {
         <div className="max-w-[1440px] mx-auto">
           <div className="text-center mb-16">
             <h3 className="font-sans font-black text-4xl sm:text-6xl lg:text-8xl uppercase tracking-tighter mb-6 leading-[0.85]">
-              {t({ en: 'Define Your\nOperation.', es: 'Define Tu\nOperación.' })}
+              {t({ en: 'Which AI Ecosystem\nFits Your Business?', es: '¿Cuál Ecosistema de IA\nSe Adapta a Tu Negocio?' })}
             </h3>
             <p className="text-lg sm:text-xl font-serif italic text-untold-gray max-w-3xl mx-auto">
               {t({ en: 'We build the AI-powered platform that fits your current scale. Select the ecosystem that matches your business today.', es: 'Construimos la plataforma impulsada por IA que se adapta a tu escala actual. Selecciona el ecosistema que corresponde a tu negocio hoy.' })}
@@ -348,6 +348,61 @@ const Home: React.FC = () => {
             <p className="text-lg sm:text-xl font-serif italic text-white/50 max-w-3xl leading-relaxed">
               {t(i18n.whyUntold.closingContent)}
             </p>
+          </div>
+        </div>
+      </section>
+
+      {/* ═══════════════════════════════════════════════════════════
+          SECTION 6b: FAQ
+      ═══════════════════════════════════════════════════════════ */}
+      <section className="px-5 sm:px-10 py-20 sm:py-32 bg-white border-b border-untold-border">
+        <div className="max-w-[900px] mx-auto">
+          <div className="flex items-center space-x-4 mb-16">
+            <span className="w-2.5 h-2.5 rounded-full bg-untold-orange"></span>
+            <h2 className="font-mono text-[13px] uppercase tracking-[0.6em] font-bold text-untold-black/40">
+              {t({ en: 'FREQUENTLY ASKED QUESTIONS', es: 'PREGUNTAS FRECUENTES' })}
+            </h2>
+          </div>
+
+          <h3 className="font-sans font-black text-3xl sm:text-5xl lg:text-6xl uppercase tracking-tighter mb-16 leading-[0.85]">
+            {t({ en: 'What Do People\nAsk Us?', es: '¿Qué Nos\nPreguntan?' })}
+          </h3>
+
+          <div className="space-y-0 border-t border-untold-border">
+            {[
+              {
+                q: { en: 'What does Untold.works build?', es: '¿Qué construye Untold.works?' },
+                a: { en: 'We build AI-powered business ecosystems: customer-facing websites, internal dashboards, n8n workflow automation, CRM integrations, and bilingual content systems for businesses in Mexico and the United States.', es: 'Construimos ecosistemas empresariales impulsados por IA: sitios web para clientes, dashboards internos, automatización de flujos con n8n, integraciones CRM y sistemas de contenido bilingüe para negocios en México y Estados Unidos.' },
+              },
+              {
+                q: { en: 'Do you build bilingual websites?', es: '¿Construyen sitios web bilingües?' },
+                a: { en: 'Yes. Every client-facing site we build supports English and Spanish with natively written content — not machine translation. Proper hreflang tags, separate URL structures, and SEO optimization for both languages.', es: 'Sí. Cada sitio que construimos soporta inglés y español con contenido escrito nativamente — no traducción automática. Etiquetas hreflang, estructuras de URL separadas y optimización SEO para ambos idiomas.' },
+              },
+              {
+                q: { en: 'What industries do you serve?', es: '¿Qué industrias atienden?' },
+                a: { en: 'We serve professional services (law firms, therapists, consultants), small businesses (restaurants, hotels, retail), musicians and record labels, and enterprise organizations across Mexico and the US.', es: 'Atendemos servicios profesionales (despachos, terapeutas, consultores), pequeños negocios (restaurantes, hoteles, retail), músicos y sellos discográficos, y organizaciones empresariales en México y EE.UU.' },
+              },
+              {
+                q: { en: 'Where is Untold.works located?', es: '¿Dónde se ubica Untold.works?' },
+                a: { en: 'We are based in San Miguel de Allende, Guanajuato, Mexico, serving clients across Mexico and the United States.', es: 'Estamos ubicados en San Miguel de Allende, Guanajuato, México, atendiendo clientes en México y Estados Unidos.' },
+              },
+              {
+                q: { en: 'Do I own the website and systems you build?', es: '¿Soy dueño del sitio web y los sistemas que construyen?' },
+                a: { en: 'Yes. Full ownership transfer is part of every project. You get the code, the data, the documentation, and video training. No lock-in, no recurring fees for access to your own systems.', es: 'Sí. La transferencia completa de propiedad es parte de cada proyecto. Recibes el código, los datos, la documentación y capacitación en video. Sin ataduras, sin cuotas recurrentes.' },
+              },
+            ].map((faq, idx) => (
+              <details key={idx} className="border-b border-untold-border group">
+                <summary className="flex items-center justify-between py-6 sm:py-8 cursor-pointer list-none">
+                  <h4 className="font-sans font-black text-lg sm:text-xl uppercase tracking-tighter pr-8 group-open:text-untold-orange transition-colors">
+                    {t(faq.q)}
+                  </h4>
+                  <span className="text-2xl text-untold-orange shrink-0 group-open:rotate-45 transition-transform">+</span>
+                </summary>
+                <p className="pb-8 text-lg font-serif text-untold-gray leading-relaxed pr-12">
+                  {t(faq.a)}
+                </p>
+              </details>
+            ))}
           </div>
         </div>
       </section>

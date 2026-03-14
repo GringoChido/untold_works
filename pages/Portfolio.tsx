@@ -40,8 +40,8 @@ const Portfolio: React.FC = () => {
           </div>
           <h1 className="font-sans font-black text-[clamp(3rem,8vw,120px)] leading-[0.8] mb-16 tracking-tighter uppercase">
             {t({
-              en: 'Systems We\u2019ve\nBuilt.',
-              es: 'Sistemas Que\nHemos Construido.'
+              en: 'What Has\nUntold.works Built?',
+              es: '¿Qué Ha Construido\nUntold.works?'
             })}
           </h1>
           <p className="text-2xl lg:text-4xl font-serif italic text-white/60 max-w-5xl leading-tight">

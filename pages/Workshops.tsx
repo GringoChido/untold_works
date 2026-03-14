@@ -164,6 +164,44 @@ const WorkshopsPage: React.FC = () => {
         </div>
       </section>
 
+      {/* FAQ */}
+      <section className="px-5 sm:px-10 py-20 sm:py-32 border-b border-white/10">
+        <div className="max-w-[900px] mx-auto">
+          <div className="flex items-center space-x-4 mb-16">
+            <span className="w-2.5 h-2.5 rounded-full bg-untold-orange"></span>
+            <h2 className="font-mono text-[13px] uppercase tracking-[0.6em] font-bold text-white/30">
+              {t({ en: 'FREQUENTLY ASKED QUESTIONS', es: 'PREGUNTAS FRECUENTES' })}
+            </h2>
+          </div>
+
+          <h3 className="font-sans font-black text-3xl sm:text-5xl uppercase tracking-tighter mb-16 leading-[0.85]">
+            {t({ en: 'Is This Workshop\nRight for Me?', es: '¿Este Taller\nEs Para Mí?' })}
+          </h3>
+
+          <div className="space-y-0 border-t border-white/10">
+            {[
+              { q: { en: 'Do I need technical experience?', es: '¿Necesito experiencia técnica?' }, a: { en: 'No. This workshop is designed for people with zero AI experience. If you can use email and a smartphone, you can do everything we cover. No coding, no jargon.', es: 'No. Este taller está diseñado para personas sin experiencia en IA. Si puedes usar email y un smartphone, puedes hacer todo lo que cubrimos. Sin código, sin jerga.' } },
+              { q: { en: 'How long is the workshop?', es: '¿Cuánto dura el taller?' }, a: { en: 'One morning session — approximately 3 hours. You leave with a complete toolkit and workflows you can use immediately.', es: 'Una sesión matutina — aproximadamente 3 horas. Sales con un kit completo de herramientas y flujos que puedes usar inmediatamente.' } },
+              { q: { en: 'What will I be able to do after the workshop?', es: '¿Qué podré hacer después del taller?' }, a: { en: 'Draft emails in seconds, plan meals and schedules, practice languages, organize your business communications, and set up simple automations — all using AI tools you can access for free.', es: 'Redactar emails en segundos, planear comidas y horarios, practicar idiomas, organizar la comunicación de tu negocio y configurar automatizaciones simples — todo con herramientas de IA gratuitas.' } },
+              { q: { en: 'How many people per session?', es: '¿Cuántas personas por sesión?' }, a: { en: 'We keep classes small (8-12 people) to ensure everyone gets personalized guidance and leaves with a working workflow.', es: 'Mantenemos clases pequeñas (8-12 personas) para asegurar que todos reciban guía personalizada y salgan con un flujo de trabajo funcional.' } },
+              { q: { en: 'Is this for personal use or business?', es: '¿Es para uso personal o de negocio?' }, a: { en: 'Both. The first half covers everyday life applications (meal planning, language practice, email). The second half focuses on small business wins (customer communication, content creation, simple automation).', es: 'Ambos. La primera mitad cubre aplicaciones para la vida diaria (planes de comida, práctica de idiomas, email). La segunda mitad se enfoca en victorias para negocios (comunicación con clientes, creación de contenido, automatización simple).' } },
+            ].map((faq, idx) => (
+              <details key={idx} className="border-b border-white/10 group">
+                <summary className="flex items-center justify-between py-6 sm:py-8 cursor-pointer list-none">
+                  <h4 className="font-sans font-black text-lg sm:text-xl uppercase tracking-tighter pr-8 group-open:text-untold-orange transition-colors">
+                    {t(faq.q)}
+                  </h4>
+                  <span className="text-2xl text-untold-orange shrink-0 group-open:rotate-45 transition-transform">+</span>
+                </summary>
+                <p className="pb-8 text-lg font-serif text-white/60 leading-relaxed pr-12">
+                  {t(faq.a)}
+                </p>
+              </details>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Final Call */}
       <section className="px-5 sm:px-10 py-24 sm:py-48 lg:py-72 text-center bg-white/[0.02]">
         <div className="max-w-6xl mx-auto flex flex-col items-center">

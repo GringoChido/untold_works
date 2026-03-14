@@ -53,6 +53,7 @@ export interface BlogPost {
   slug: string;
   title: { en: string; es: string };
   date: string;
+  dateModified?: string;
   author: string;
   category: BlogCategory;
   pillar?: Pillar;

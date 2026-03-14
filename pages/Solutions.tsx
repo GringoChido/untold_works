@@ -193,7 +193,7 @@ const Solutions: React.FC = () => {
           </div>
 
           <h3 className="font-sans font-black text-3xl sm:text-5xl lg:text-6xl uppercase tracking-tighter mb-16 max-w-4xl">
-            {t({ en: 'Solutions Built for How You Work', es: 'Soluciones Hechas Para Cómo Trabajas' })}
+            {t({ en: 'Which Solution Fits Your Business?', es: '¿Cuál Solución Se Adapta a Tu Negocio?' })}
           </h3>
 
           <div className="grid lg:grid-cols-3 gap-8">
@@ -216,6 +216,93 @@ const Solutions: React.FC = () => {
                   {t({ en: 'Learn More', es: 'Saber Más' })} &rarr;
                 </span>
               </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Comparison Table */}
+      <section className="px-5 sm:px-10 py-20 sm:py-32 bg-white border-b border-untold-border">
+        <div className="max-w-[1440px] mx-auto">
+          <div className="flex items-center space-x-4 mb-16">
+            <span className="w-2.5 h-2.5 rounded-full bg-untold-orange"></span>
+            <h2 className="font-mono text-[13px] uppercase tracking-[0.6em] font-bold text-untold-black/40">
+              {t({ en: 'COMPARE SOLUTIONS', es: 'COMPARAR SOLUCIONES' })}
+            </h2>
+          </div>
+
+          <h3 className="font-sans font-black text-3xl sm:text-5xl uppercase tracking-tighter mb-16 leading-[0.85]">
+            {t({ en: 'How Do the Three Ecosystems Compare?', es: '¿Cómo Se Comparan los Tres Ecosistemas?' })}
+          </h3>
+
+          <div className="overflow-x-auto">
+            <table className="w-full text-left border-collapse">
+              <thead>
+                <tr className="border-b-2 border-untold-black">
+                  <th className="py-4 pr-6 font-mono text-[11px] uppercase tracking-[0.3em] text-untold-black/40 font-bold w-1/4"></th>
+                  <th className="py-4 px-4 font-sans font-black text-lg uppercase tracking-tighter">{t({ en: 'Professional Services', es: 'Servicios Profesionales' })}</th>
+                  <th className="py-4 px-4 font-sans font-black text-lg uppercase tracking-tighter">{t({ en: 'Small Business', es: 'Pequeños Negocios' })}</th>
+                  <th className="py-4 px-4 font-sans font-black text-lg uppercase tracking-tighter">{t({ en: 'Enterprise', es: 'Empresa' })}</th>
+                </tr>
+              </thead>
+              <tbody className="font-serif text-base">
+                {[
+                  { label: { en: 'Best for', es: 'Ideal para' }, values: [{ en: 'Solo practitioners, 1-5 person firms', es: 'Profesionales independientes, firmas de 1-5 personas' }, { en: 'Teams of 2-50, growing businesses', es: 'Equipos de 2-50, negocios en crecimiento' }, { en: 'Organizations with 20+ employees', es: 'Organizaciones con 20+ empleados' }] },
+                  { label: { en: 'Brand identity', es: 'Identidad de marca' }, values: [{ en: '✓', es: '✓' }, { en: '✓', es: '✓' }, { en: '✓ Enterprise system', es: '✓ Sistema empresarial' }] },
+                  { label: { en: 'AI-powered website', es: 'Sitio web con IA' }, values: [{ en: '✓', es: '✓' }, { en: '✓', es: '✓' }, { en: '✓ Multi-site capable', es: '✓ Multi-sitio' }] },
+                  { label: { en: 'CRM', es: 'CRM' }, values: [{ en: 'Client management', es: 'Gestión de clientes' }, { en: 'Team CRM', es: 'CRM de equipo' }, { en: 'Multi-team + pipeline', es: 'Multi-equipo + pipeline' }] },
+                  { label: { en: 'Automation', es: 'Automatización' }, values: [{ en: 'Intake & follow-up', es: 'Admisión y seguimiento' }, { en: 'Marketing + operations', es: 'Marketing + operaciones' }, { en: 'Full process automation', es: 'Automatización completa' }] },
+                  { label: { en: 'Booking & scheduling', es: 'Reservas y agenda' }, values: [{ en: '✓', es: '✓' }, { en: '✓', es: '✓' }, { en: '✓ Multi-location', es: '✓ Multi-ubicación' }] },
+                  { label: { en: 'Analytics', es: 'Analítica' }, values: [{ en: 'Revenue dashboard', es: 'Panel de ingresos' }, { en: 'Multi-user reporting', es: 'Reportes multiusuario' }, { en: 'Revenue ops + forecasting', es: 'RevOps + pronósticos' }] },
+                  { label: { en: 'Training & handoff', es: 'Capacitación y entrega' }, values: [{ en: '✓ Full ownership', es: '✓ Propiedad total' }, { en: '✓ Full ownership', es: '✓ Propiedad total' }, { en: '✓ Full ownership', es: '✓ Propiedad total' }] },
+                ].map((row, idx) => (
+                  <tr key={idx} className="border-b border-untold-border hover:bg-untold-beige/50 transition-colors">
+                    <td className="py-4 pr-6 font-sans font-bold text-sm uppercase tracking-tight">{t(row.label)}</td>
+                    {row.values.map((val, vIdx) => (
+                      <td key={vIdx} className="py-4 px-4 text-untold-gray">{t(val)}</td>
+                    ))}
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ */}
+      <section className="px-5 sm:px-10 py-20 sm:py-32 border-b border-untold-border">
+        <div className="max-w-[900px] mx-auto">
+          <div className="flex items-center space-x-4 mb-16">
+            <span className="w-2.5 h-2.5 rounded-full bg-untold-orange"></span>
+            <h2 className="font-mono text-[13px] uppercase tracking-[0.6em] font-bold text-untold-black/40">
+              {t({ en: 'FREQUENTLY ASKED QUESTIONS', es: 'PREGUNTAS FRECUENTES' })}
+            </h2>
+          </div>
+
+          <h3 className="font-sans font-black text-3xl sm:text-5xl uppercase tracking-tighter mb-16 leading-[0.85]">
+            {t({ en: 'What Should I Know\nBefore Starting?', es: '¿Qué Debo Saber\nAntes de Empezar?' })}
+          </h3>
+
+          <div className="space-y-0 border-t border-untold-border">
+            {[
+              { q: { en: 'How much does a project cost?', es: '¿Cuánto cuesta un proyecto?' }, a: { en: 'Every project is scoped to your needs. Professional Services ecosystems typically start at $5,000-$15,000. Small Business platforms range from $10,000-$30,000. Enterprise systems are custom-quoted based on complexity. We provide a detailed proposal after our initial conversation.', es: 'Cada proyecto se define según tus necesidades. Los ecosistemas de Servicios Profesionales generalmente comienzan en $5,000-$15,000 USD. Plataformas para Pequeños Negocios van de $10,000-$30,000 USD. Los sistemas Empresariales se cotizan según complejidad. Proporcionamos una propuesta detallada después de nuestra conversación inicial.' } },
+              { q: { en: 'How long does a project take?', es: '¿Cuánto tiempo toma un proyecto?' }, a: { en: 'Most Professional Services builds take 4-6 weeks. Small Business platforms take 6-10 weeks. Enterprise systems vary from 8-16 weeks depending on scope. We work in phases so you can see progress throughout.', es: 'La mayoría de los proyectos de Servicios Profesionales toman 4-6 semanas. Plataformas para Pequeños Negocios toman 6-10 semanas. Sistemas Empresariales varían de 8-16 semanas según el alcance. Trabajamos en fases para que veas el progreso.' } },
+              { q: { en: 'Do I own everything you build?', es: '¿Soy dueño de todo lo que construyen?' }, a: { en: 'Yes. Full ownership transfer is part of every project. You get the code, the data, the documentation, and video training. No lock-in, no recurring fees for access to your own systems.', es: 'Sí. La transferencia completa de propiedad es parte de cada proyecto. Recibes el código, los datos, la documentación y capacitación en video. Sin ataduras, sin cuotas recurrentes.' } },
+              { q: { en: 'Do I need to be technical?', es: '¿Necesito ser técnico?' }, a: { en: 'Not at all. We build systems designed for non-technical business owners. We train you with video walkthroughs and written guides, and provide a 30-day support window after launch.', es: 'Para nada. Construimos sistemas diseñados para dueños de negocio no técnicos. Te capacitamos con videos paso a paso y guías escritas, y proporcionamos soporte de 30 días después del lanzamiento.' } },
+              { q: { en: 'Can you work with businesses outside Mexico?', es: '¿Pueden trabajar con negocios fuera de México?' }, a: { en: 'Absolutely. We serve clients across Mexico and the United States. Our bilingual team works remotely with businesses anywhere in both countries.', es: 'Por supuesto. Atendemos clientes en México y Estados Unidos. Nuestro equipo bilingüe trabaja de forma remota con negocios en cualquier lugar de ambos países.' } },
+              { q: { en: 'What if I already have a website?', es: '¿Qué pasa si ya tengo un sitio web?' }, a: { en: 'We can either rebuild it as part of a complete ecosystem, or integrate new AI systems and automation into your existing setup. We will assess what you have and recommend the best path forward.', es: 'Podemos reconstruirlo como parte de un ecosistema completo, o integrar nuevos sistemas de IA y automatización en tu configuración existente. Evaluamos lo que tienes y recomendamos el mejor camino.' } },
+            ].map((faq, idx) => (
+              <details key={idx} className="border-b border-untold-border group">
+                <summary className="flex items-center justify-between py-6 sm:py-8 cursor-pointer list-none">
+                  <h4 className="font-sans font-black text-lg sm:text-xl uppercase tracking-tighter pr-8 group-open:text-untold-orange transition-colors">
+                    {t(faq.q)}
+                  </h4>
+                  <span className="text-2xl text-untold-orange shrink-0 group-open:rotate-45 transition-transform">+</span>
+                </summary>
+                <p className="pb-8 text-lg font-serif text-untold-gray leading-relaxed pr-12">
+                  {t(faq.a)}
+                </p>
+              </details>
             ))}
           </div>
         </div>

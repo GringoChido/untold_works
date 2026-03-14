@@ -83,6 +83,43 @@ const ContactPage: React.FC = () => {
           </div>
         </div>
       </section>
+
+      {/* FAQ */}
+      <section className="px-5 sm:px-10 py-20 sm:py-32 border-t border-white/10">
+        <div className="max-w-[900px] mx-auto">
+          <div className="flex items-center space-x-4 mb-16">
+            <span className="w-2.5 h-2.5 rounded-full bg-untold-orange"></span>
+            <h2 className="font-mono text-[13px] uppercase tracking-[0.6em] font-bold text-white/30">
+              {t({ en: 'FREQUENTLY ASKED QUESTIONS', es: 'PREGUNTAS FRECUENTES' })}
+            </h2>
+          </div>
+
+          <h3 className="font-sans font-black text-3xl sm:text-5xl uppercase tracking-tighter mb-16 leading-[0.85]">
+            {t({ en: 'What Happens After\nI Reach Out?', es: '¿Qué Pasa Después\nde que Me Contacto?' })}
+          </h3>
+
+          <div className="space-y-0 border-t border-white/10">
+            {[
+              { q: { en: 'How quickly do you respond?', es: '¿Qué tan rápido responden?' }, a: { en: 'We typically respond within 24 hours during business days. Most inquiries get a response the same day.', es: 'Normalmente respondemos en 24 horas durante días hábiles. La mayoría de las consultas reciben respuesta el mismo día.' } },
+              { q: { en: 'What happens after I submit the form?', es: '¿Qué pasa después de enviar el formulario?' }, a: { en: 'We review your message and schedule a 30-minute discovery call. No sales pitch — just a real conversation about your business, what you need, and whether we are the right fit.', es: 'Revisamos tu mensaje y programamos una llamada de descubrimiento de 30 minutos. Sin discurso de ventas — solo una conversación real sobre tu negocio, lo que necesitas y si somos el equipo adecuado.' } },
+              { q: { en: 'Do you offer free consultations?', es: '¿Ofrecen consultas gratuitas?' }, a: { en: 'The initial discovery call is always free. We will assess your current setup, discuss your goals, and outline what a project would look like — no commitment required.', es: 'La llamada inicial de descubrimiento siempre es gratuita. Evaluaremos tu configuración actual, discutiremos tus objetivos y delinearemos cómo sería un proyecto — sin compromiso.' } },
+              { q: { en: 'Can I just get a website without the full ecosystem?', es: '¿Puedo solo obtener un sitio web sin todo el ecosistema?' }, a: { en: 'Yes. Every project is scoped to your needs. Some clients start with a brand identity and website, then add AI systems and automation later as they grow.', es: 'Sí. Cada proyecto se adapta a tus necesidades. Algunos clientes comienzan con identidad de marca y sitio web, y después agregan sistemas de IA y automatización conforme crecen.' } },
+            ].map((faq, idx) => (
+              <details key={idx} className="border-b border-white/10 group">
+                <summary className="flex items-center justify-between py-6 sm:py-8 cursor-pointer list-none">
+                  <h4 className="font-sans font-black text-lg sm:text-xl uppercase tracking-tighter pr-8 group-open:text-untold-orange transition-colors">
+                    {t(faq.q)}
+                  </h4>
+                  <span className="text-2xl text-untold-orange shrink-0 group-open:rotate-45 transition-transform">+</span>
+                </summary>
+                <p className="pb-8 text-lg font-serif text-white/60 leading-relaxed pr-12">
+                  {t(faq.a)}
+                </p>
+              </details>
+            ))}
+          </div>
+        </div>
+      </section>
     </div>
   );
 };

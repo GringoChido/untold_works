@@ -1,14 +1,14 @@
 # Untold.works
 
-> Boutique AI agency based in Mexico City and San Miguel de Allende, Mexico. We build AI-powered business ecosystems — brand identity, websites, AI workflows, and automated business systems — for companies across Mexico and the United States. Bilingual (English/Spanish). Founded on storytelling and creative direction, powered by AI.
+> Boutique AI agency based in San Miguel de Allende, Mexico. We build AI-powered business ecosystems — brand identity, websites, AI workflows, and automated business systems — for companies across Mexico and the United States. Bilingual (English/Spanish). Founded on storytelling and creative direction, powered by AI.
 
-Untold.works is a boutique agency that combines brand strategy, web development, and AI-powered business systems into complete ecosystems. We serve solo professionals, small businesses, and enterprise teams. Every project starts with brand and ends with a fully documented, fully trained handoff. We specialize in the Mexico and US markets, with deep roots in Mexico City and San Miguel de Allende.
+Untold.works is a boutique agency that combines brand strategy, web development, and AI-powered business systems into complete ecosystems. We serve solo professionals, small businesses, and enterprise teams. Every project starts with brand and ends with a fully documented, fully trained handoff. We specialize in the Mexico and US markets, based in San Miguel de Allende, Guanajuato.
 
 ## Core Pages
 
 - [Home](https://untold.works/): AI-powered business ecosystems. Brand, website, AI systems, workflows — built mobile-first.
 - [About](https://untold.works/about): Storytellers first, technologists second. Our team, philosophy, and why we're based in Mexico.
-- [Contact](https://untold.works/contact): Start a conversation. Based in Mexico City and San Miguel de Allende, serving Mexico and the US.
+- [Contact](https://untold.works/contact): Start a conversation. Based in San Miguel de Allende, serving Mexico and the US.
 - [Portfolio](https://untold.works/portfolio): Case studies of AI-powered ecosystems built for real businesses.
 - [Blog](https://untold.works/blog): Practical guides on AI tools, business systems, and brand strategy.
 - [Workshops](https://untold.works/workshops): AI workshops in San Miguel de Allende. Practical AI for everyday life and small business.
