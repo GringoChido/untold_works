@@ -699,6 +699,60 @@ export const blogPosts: BlogPost[] = [
     image: '/blog/retail-hospitality-guide.jpg',
   },
   // ──────────────────────────────────────────────
+  // AEO / AI Strategy
+  // ──────────────────────────────────────────────
+  {
+    slug: 'aeo-the-shift-nobodys-talking-about',
+    title: {
+      en: 'AEO: The Shift Nobody\'s Talking About',
+      es: 'AEO: El Cambio del que Nadie Esta Hablando',
+    },
+    date: '2026-03-14',
+    author: 'Joshua Semolik',
+    category: 'ai-education',
+    pillar: 'all',
+    excerpt: {
+      en: '90% of founders said AEO was the biggest revenue opportunity of 2026. Most people still don\'t know what it is. Here\'s what AI Engine Optimization means for your business.',
+      es: 'El 90% de los fundadores dijo que AEO era la mayor oportunidad de ingresos de 2026. La mayoria aun no sabe que es. Esto es lo que significa la Optimizacion para Motores de IA para tu negocio.',
+    },
+    content: {
+      en: `<p>90% of founders and marketers said AEO was the biggest revenue opportunity of 2026. And most people still don't know what it is.</p>
+<p>So let me break it down.</p>
+<p>AEO stands for AI Engine Optimization. It's the practice of getting your business mentioned and recommended by AI platforms like ChatGPT, Gemini, Claude, Perplexity, and Google's own AI Overviews.</p>
+<p>Here's why it matters: more than 50% of Google searches now end with an AI overview. 7 billion searches a day are being answered by AI before anyone clicks a link. The way people find businesses is changing fast, and it's not going back.</p>
+<h2>SEO Was About Ranking. AEO Is About Getting Recommended.</h2>
+<p>That's a fundamental difference. AI doesn't show you a list of links. It reads the entire internet and decides who to mention by name. And the way it decides is different from how Google ranked pages.</p>
+<p>AI pulls from trusted sources. Wikipedia. Reddit. Crunchbase. News publications. It looks at whether your content sounds like a real expert or a keyword-stuffed article from 2019. It cares about trust, authority, and whether you actually answer the question someone is asking. In a conversation, not in a list of keywords.</p>
+<h2>Four Things That Matter Right Now</h2>
+<p><strong>1. Write content around real questions people ask, not keywords.</strong> Structure it conversationally.</p>
+<p><strong>2. Build authority in the places AI trusts.</strong> Get mentioned on Reddit, Wikipedia, reputable publications. That's your new backlink strategy.</p>
+<p><strong>3. Structure your content so AI can actually read it.</strong> Clean HTML, clear headings, FAQ sections, tables. Make it easy to cite.</p>
+<p><strong>4. Schema markup.</strong> Tell AI exactly what your business is and what your content means. Organizational schema for your brand, article schema for your content.</p>
+<h2>The Window Is Now</h2>
+<p>AEO isn't replacing SEO. Google still handles 14 billion searches a day. But it's the layer on top that most businesses are completely ignoring. And the window to get ahead is right now.</p>
+<p>Early SEO in 2009 was a land grab. This is the same moment.</p>
+<p class="text-sm text-untold-gray mt-8"><em>Joshua is the founder of Untold Works, a creative technology agency in San Miguel de Allende, Mexico.</em></p>`,
+      es: `<p>El 90% de los fundadores y marketers dijo que AEO era la mayor oportunidad de ingresos de 2026. Y la mayoria aun no sabe que es.</p>
+<p>Dejame explicarlo.</p>
+<p>AEO significa AI Engine Optimization, o Optimizacion para Motores de IA. Es la practica de lograr que tu negocio sea mencionado y recomendado por plataformas de IA como ChatGPT, Gemini, Claude, Perplexity y las propias AI Overviews de Google.</p>
+<p>Esto es lo que importa: mas del 50% de las busquedas en Google ahora terminan con una respuesta generada por IA. 7 mil millones de busquedas al dia estan siendo respondidas por IA antes de que alguien haga clic en un enlace. La forma en que las personas encuentran negocios esta cambiando rapido, y no va a volver atras.</p>
+<h2>SEO Era Sobre Posicionarse. AEO Es Sobre Ser Recomendado.</h2>
+<p>Esa es una diferencia fundamental. La IA no te muestra una lista de enlaces. Lee todo el internet y decide a quien mencionar por nombre. Y la forma en que decide es diferente a como Google clasificaba paginas.</p>
+<p>La IA extrae de fuentes confiables. Wikipedia. Reddit. Crunchbase. Publicaciones de noticias. Evalua si tu contenido suena como un experto real o como un articulo relleno de palabras clave de 2019. Le importa la confianza, la autoridad y si realmente respondes la pregunta que alguien esta haciendo. En una conversacion, no en una lista de keywords.</p>
+<h2>Cuatro Cosas que Importan Ahora Mismo</h2>
+<p><strong>1. Escribe contenido alrededor de preguntas reales que la gente hace, no palabras clave.</strong> Estructuralo de forma conversacional.</p>
+<p><strong>2. Construye autoridad en los lugares donde la IA confia.</strong> Que te mencionen en Reddit, Wikipedia, publicaciones de prestigio. Esa es tu nueva estrategia de backlinks.</p>
+<p><strong>3. Estructura tu contenido para que la IA pueda leerlo.</strong> HTML limpio, encabezados claros, secciones de preguntas frecuentes, tablas. Hazlo facil de citar.</p>
+<p><strong>4. Schema markup.</strong> Dile a la IA exactamente que es tu negocio y que significa tu contenido. Schema organizacional para tu marca, schema de articulo para tu contenido.</p>
+<h2>La Ventana Es Ahora</h2>
+<p>AEO no esta reemplazando al SEO. Google todavia maneja 14 mil millones de busquedas al dia. Pero es la capa encima que la mayoria de los negocios estan ignorando completamente. Y la ventana para adelantarte es ahora mismo.</p>
+<p>El SEO temprano en 2009 fue una carrera por territorio. Este es el mismo momento.</p>
+<p class="text-sm text-untold-gray mt-8"><em>Joshua es el fundador de Untold Works, una agencia de tecnologia creativa en San Miguel de Allende, Mexico.</em></p>`,
+    },
+    image: '/blog/aeo-shift.jpg',
+  },
+
+  // ──────────────────────────────────────────────
   // Build Notes (personal series by Joshua)
   // ──────────────────────────────────────────────
   {
