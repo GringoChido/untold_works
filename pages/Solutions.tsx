@@ -4,6 +4,7 @@ import { useLanguage } from '../App';
 import { usePageMeta } from '../hooks/usePageMeta';
 import * as i18n from '../i18n';
 import Breadcrumbs from '../components/Breadcrumbs';
+import Testimonials from '../components/Testimonials';
 
 const Solutions: React.FC = () => {
   const { t } = useLanguage();
@@ -307,6 +308,9 @@ const Solutions: React.FC = () => {
           </div>
         </div>
       </section>
+
+      {/* Testimonials */}
+      <Testimonials />
 
       {/* CTA */}
       <section className="bg-untold-black text-white px-5 sm:px-10 py-24 sm:py-40 text-center">

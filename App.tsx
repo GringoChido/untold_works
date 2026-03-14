@@ -19,6 +19,7 @@ const SmallBusiness = lazy(() => import('./pages/solutions/SmallBusiness'));
 const Enterprise = lazy(() => import('./pages/solutions/Enterprise'));
 const Blog = lazy(() => import('./pages/Blog'));
 const BlogPost = lazy(() => import('./pages/BlogPost'));
+const Privacy = lazy(() => import('./pages/Privacy'));
 
 interface LanguageContextType {
   lang: Language;
@@ -76,6 +77,7 @@ const AppLayout: React.FC = () => {
             <Route path="/about" element={<AboutPage />} />
             <Route path="/workshops" element={<WorkshopsPage />} />
             <Route path="/contact" element={<ContactPage />} />
+            <Route path="/privacy" element={<Privacy />} />
             <Route path="/analog" element={<StereoPage />} />
             <Route path="/slides" element={<SlidesPage />} />
           </Routes>

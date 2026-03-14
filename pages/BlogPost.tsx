@@ -4,6 +4,7 @@ import { useLanguage } from '../App';
 import { usePageMeta } from '../hooks/usePageMeta';
 import { blogPosts } from '../data/blogPosts';
 import Breadcrumbs from '../components/Breadcrumbs';
+import AuthorByline from '../components/AuthorByline';
 import * as i18n from '../i18n';
 import type { Pillar } from '../types';
 
@@ -104,13 +105,16 @@ const BlogPost: React.FC = () => {
 
       {/* Content */}
       <section className="px-5 sm:px-10 py-16 sm:py-24">
-        <div
-          className="max-w-[900px] mx-auto prose prose-lg prose-untold"
-          style={{
-            lineHeight: '1.8',
-          }}
-          dangerouslySetInnerHTML={{ __html: t(post.content) }}
-        />
+        <div className="max-w-[900px] mx-auto">
+          <div
+            className="prose prose-lg prose-untold"
+            style={{
+              lineHeight: '1.8',
+            }}
+            dangerouslySetInnerHTML={{ __html: t(post.content) }}
+          />
+          <AuthorByline name={post.author} date={post.date} variant="light" />
+        </div>
       </section>
 
       {/* Pillar CTA — internal link to relevant solution page */}

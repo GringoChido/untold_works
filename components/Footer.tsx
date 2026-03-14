@@ -135,8 +135,11 @@ const Footer: React.FC = () => {
             {t(i18n.footer.location)}
           </div>
 
-          <div className="font-mono text-[10px] uppercase tracking-[0.4em] text-white/20 font-bold text-center">
-            &copy; {new Date().getFullYear()} <span style={{ whiteSpace: 'nowrap' }}>untold.works</span> / SYSTEM_OPERATIONS / ALL RIGHTS RESERVED
+          <div className="font-mono text-[10px] uppercase tracking-[0.4em] text-white/20 font-bold text-center flex flex-col sm:flex-row items-center gap-2">
+            <span>&copy; {new Date().getFullYear()} <span style={{ whiteSpace: 'nowrap' }}>untold.works</span> / ALL RIGHTS RESERVED</span>
+            <Link to="/privacy" className="text-white/20 hover:text-untold-orange transition-colors">
+              / {t({ en: 'PRIVACY POLICY', es: 'PRIVACIDAD' })}
+            </Link>
           </div>
 
           <div className="font-mono text-[10px] uppercase tracking-[0.4em] text-untold-orange font-bold">

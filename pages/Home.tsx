@@ -4,6 +4,7 @@ import { useLanguage } from '../App';
 import { usePageMeta } from '../hooks/usePageMeta';
 import { projects } from '../data/projects';
 import * as i18n from '../i18n';
+import Testimonials from '../components/Testimonials';
 
 const faqSchema = {
   '@context': 'https://schema.org',
@@ -351,6 +352,11 @@ const Home: React.FC = () => {
           </div>
         </div>
       </section>
+
+      {/* ═══════════════════════════════════════════════════════════
+          SECTION 6: TESTIMONIALS
+      ═══════════════════════════════════════════════════════════ */}
+      <Testimonials variant="light" />
 
       {/* ═══════════════════════════════════════════════════════════
           SECTION 6b: FAQ
