@@ -2,7 +2,7 @@ import type { BlogPost } from '../types';
 
 export const blogPosts: BlogPost[] = [
   // ──────────────────────────────────────────────
-  // AI Education (3 posts)
+  // AI for Business
   // ──────────────────────────────────────────────
   {
     slug: 'ai-tools-every-small-business-should-know-2026',
@@ -12,7 +12,7 @@ export const blogPosts: BlogPost[] = [
     },
     date: '2026-01-06',
     author: 'Joshua Semolik',
-    category: 'ai-education',
+    category: 'ai-for-business',
     pillar: 'small-business',
     excerpt: {
       en: 'A practical, no-hype rundown of the AI tools that actually save time and money for small businesses right now.',
@@ -64,7 +64,7 @@ export const blogPosts: BlogPost[] = [
     },
     date: '2026-01-18',
     author: 'Joshua Semolik',
-    category: 'ai-education',
+    category: 'ai-for-business',
     pillar: 'professional-services',
     excerpt: {
       en: 'AI chat can handle repetitive customer questions, but only if you configure it to match your brand voice. Learn how to set up ChatGPT for support without losing the human touch.',
@@ -104,7 +104,7 @@ export const blogPosts: BlogPost[] = [
     },
     date: '2026-02-03',
     author: 'Joshua Semolik',
-    category: 'ai-education',
+    category: 'ai-for-business',
     pillar: 'all',
     excerpt: {
       en: 'Not everything should be AI-generated. Use this practical framework to decide what content to automate and what deserves a human brain — from social posts to brand storytelling.',
@@ -154,7 +154,7 @@ export const blogPosts: BlogPost[] = [
   },
 
   // ──────────────────────────────────────────────
-  // Website + AI Ecosystem (3 posts)
+  // Creative Technology
   // ──────────────────────────────────────────────
   {
     slug: 'your-website-is-not-a-brochure-its-a-business-system',
@@ -164,7 +164,7 @@ export const blogPosts: BlogPost[] = [
     },
     date: '2026-01-10',
     author: 'Joshua Semolik',
-    category: 'website-ecosystem',
+    category: 'creative-technology',
     pillar: 'small-business',
     excerpt: {
       en: 'Most small business websites just sit there. We build sites that book appointments, capture leads, and feed your CRM automatically.',
@@ -208,7 +208,7 @@ export const blogPosts: BlogPost[] = [
     },
     date: '2026-01-25',
     author: 'Joshua Semolik',
-    category: 'website-ecosystem',
+    category: 'creative-technology',
     pillar: 'professional-services',
     excerpt: {
       en: 'You have heard the term but never understood why it matters. Here is what a headless CMS means for your business in plain language.',
@@ -246,7 +246,7 @@ export const blogPosts: BlogPost[] = [
     },
     date: '2026-02-10',
     author: 'Joshua Semolik',
-    category: 'website-ecosystem',
+    category: 'creative-technology',
     pillar: 'all',
     excerpt: {
       en: 'If your bilingual site runs on Google Translate or a plugin, your Spanish-speaking customers can tell. Here is how to do it right.',
@@ -278,7 +278,7 @@ export const blogPosts: BlogPost[] = [
   },
 
   // ──────────────────────────────────────────────
-  // Mobile-First Business (2 posts)
+  // Creative Technology (cont.)
   // ──────────────────────────────────────────────
   {
     slug: 'run-your-business-from-your-phone-the-real-guide',
@@ -288,7 +288,7 @@ export const blogPosts: BlogPost[] = [
     },
     date: '2026-01-14',
     author: 'Joshua Semolik',
-    category: 'mobile-first',
+    category: 'creative-technology',
     pillar: 'small-business',
     excerpt: {
       en: 'You do not need to be at a desk to run your business. Here is the mobile-first stack we set up for owners who are always on the move.',
@@ -328,7 +328,7 @@ export const blogPosts: BlogPost[] = [
     },
     date: '2026-02-06',
     author: 'Joshua Semolik',
-    category: 'mobile-first',
+    category: 'creative-technology',
     pillar: 'all',
     excerpt: {
       en: 'Half your visitors are on slow mobile connections. If your site takes 8 seconds to load, you have already lost them. Here is how to optimize page speed for real-world conditions in Mexico.',
@@ -368,7 +368,7 @@ export const blogPosts: BlogPost[] = [
   },
 
   // ──────────────────────────────────────────────
-  // San Miguel Local (2 posts)
+  // Case Studies & Guides
   // ──────────────────────────────────────────────
   {
     slug: 'san-miguel-de-allende-digital-presence-guide-2026',
@@ -378,7 +378,7 @@ export const blogPosts: BlogPost[] = [
     },
     date: '2026-01-20',
     author: 'Joshua Semolik',
-    category: 'san-miguel',
+    category: 'case-studies',
     pillar: 'small-business',
     excerpt: {
       en: 'San Miguel is booming, but most local businesses are invisible online. Here is how to fix that in a town where word-of-mouth meets Google.',
@@ -418,7 +418,7 @@ export const blogPosts: BlogPost[] = [
     },
     date: '2026-02-12',
     author: 'Joshua Semolik',
-    category: 'san-miguel',
+    category: 'case-studies',
     pillar: 'small-business',
     excerpt: {
       en: 'Tourists decide where to eat before they leave the hotel. If your restaurant is not showing up in those searches, you are leaving tables empty.',
@@ -580,7 +580,7 @@ export const blogPosts: BlogPost[] = [
   },
 
   // ──────────────────────────────────────────────
-  // Industry Guides (2 posts)
+  // Case Studies & Guides (cont.)
   // ──────────────────────────────────────────────
   {
     slug: 'the-professional-services-website-playbook',
@@ -590,7 +590,7 @@ export const blogPosts: BlogPost[] = [
     },
     date: '2026-01-30',
     author: 'Joshua Semolik',
-    category: 'industry-guides',
+    category: 'case-studies',
     pillar: 'professional-services',
     excerpt: {
       en: 'Professional service firms treat their website like a resume. It should be a client acquisition machine. Here is the playbook.',
@@ -632,7 +632,7 @@ export const blogPosts: BlogPost[] = [
     },
     date: '2026-02-08',
     author: 'Joshua Semolik',
-    category: 'industry-guides',
+    category: 'case-studies',
     pillar: 'enterprise',
     excerpt: {
       en: 'Retail and hospitality businesses face unique digital challenges. Here is the tech stack and strategy that keeps you competitive in 2026.',
@@ -699,7 +699,7 @@ export const blogPosts: BlogPost[] = [
     image: '/blog/retail-hospitality-guide.jpg',
   },
   // ──────────────────────────────────────────────
-  // AEO / AI Strategy
+  // AEO & Search
   // ──────────────────────────────────────────────
   {
     slug: 'aeo-the-shift-nobodys-talking-about',
@@ -709,7 +709,7 @@ export const blogPosts: BlogPost[] = [
     },
     date: '2026-03-14',
     author: 'Joshua Semolik',
-    category: 'ai-education',
+    category: 'aeo-search',
     pillar: 'all',
     excerpt: {
       en: '90% of founders said AEO was the biggest revenue opportunity of 2026. Most people still don\'t know what it is. Here\'s what AI Engine Optimization means for your business.',

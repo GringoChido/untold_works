@@ -28,13 +28,11 @@ const routes = [
   '/portfolio/billiard-factory-retail-architecture',
   '/portfolio/noxguard-brand-rebrand',
   // Blog categories
-  '/blog/category/ai-education',
-  '/blog/category/website-ecosystem',
-  '/blog/category/mobile-first',
-  '/blog/category/san-miguel',
-  '/blog/category/case-studies',
-  '/blog/category/industry-guides',
   '/blog/category/build-notes',
+  '/blog/category/aeo-search',
+  '/blog/category/ai-for-business',
+  '/blog/category/creative-technology',
+  '/blog/category/case-studies',
   // Blog posts
   '/blog/ai-tools-every-small-business-should-know-2026',
   '/blog/how-to-use-chatgpt-for-customer-service',
@@ -51,6 +49,7 @@ const routes = [
   '/blog/case-study-ecommerce-brand-migration-shopify-to-custom',
   '/blog/the-professional-services-website-playbook',
   '/blog/retail-and-hospitality-digital-survival-guide',
+  '/blog/aeo-the-shift-nobodys-talking-about',
   '/blog/yo-this-thing-is-broken',
 ];
 

@@ -3,7 +3,7 @@ export type Language = 'en' | 'es';
 
 export type Pillar = 'professional-services' | 'small-business' | 'enterprise' | 'all';
 
-export type BlogCategory = 'ai-education' | 'website-ecosystem' | 'mobile-first' | 'san-miguel' | 'case-studies' | 'industry-guides' | 'build-notes';
+export type BlogCategory = 'build-notes' | 'aeo-search' | 'ai-for-business' | 'creative-technology' | 'case-studies';
 
 export interface ContentStrings {
   [key: string]: {
