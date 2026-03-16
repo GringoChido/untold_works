@@ -80,6 +80,7 @@ const Footer: React.FC = () => {
               </div>
               <div className="flex flex-col space-y-2 lg:text-right pt-2">
                 {[
+                  { label: { en: 'Website Design', es: 'Diseño Web' }, path: '/websites' },
                   { label: { en: 'SEO & AEO', es: 'SEO y AEO' }, path: '/seo-aeo' },
                   { label: { en: 'Social Media', es: 'Redes Sociales' }, path: '/social-media' },
                   { label: { en: 'Ads', es: 'Publicidad' }, path: '/ads' },

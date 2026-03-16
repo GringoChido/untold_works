@@ -665,92 +665,92 @@ export const blogPage = {
 export const seo = {
   home: {
     title: {
-      en: 'AI Agency Mexico | Websites & Automation for Music, Business & Brands — Untold.works',
-      es: 'Agencia de IA en México | Web y Automatización para Música, Negocios y Marcas — Untold.works'
+      en: 'AI-Powered Business Ecosystems | Brand, Website, AI Systems — Untold.works',
+      es: 'Ecosistemas de Negocio con IA | Marca, Web, Sistemas de IA — Untold.works'
     },
     description: {
-      en: 'Workflow automation agency building customer-facing websites, internal dashboards, and n8n automation for musicians, record labels, restaurants, and businesses across Mexico and the US.',
-      es: 'Agencia de automatización de flujos de trabajo. Sitios web, dashboards internos y automatización con n8n para músicos, sellos, restaurantes y negocios en México y EE. UU.'
+      en: 'Boutique AI agency building brand-first business ecosystems — websites, AI workflows, CRM, and dashboards for businesses across Mexico and the US. The first AEO agency in Mexico.',
+      es: 'Agencia boutique de IA que construye ecosistemas de negocio — sitios web, flujos de IA, CRM y dashboards para negocios en México y EE. UU. La primera agencia de AEO en México.'
     }
   },
   solutions: {
     title: {
-      en: 'AI Solutions | Customer-Facing Websites to Internal Dashboards — Untold.works',
-      es: 'Soluciones de IA | Sitios para Clientes y Dashboards Internos — Untold.works'
+      en: 'AI Solutions for Every Business Size | Professional Services, Small Business, Enterprise — Untold.works',
+      es: 'Soluciones de IA para Cada Tamaño de Negocio | Profesionales, Pequeñas Empresas, Empresarial — Untold.works'
     },
     description: {
-      en: 'Full-stack AI solutions: customer-facing websites, social media campaigns, backend dashboards, sales enablement, and n8n workflow automation for music, professional services, and enterprises.',
-      es: 'Soluciones completas de IA: sitios web, campañas de redes sociales, dashboards internos, herramientas de ventas y automatización n8n para música, servicios profesionales y empresas.'
+      en: 'Complete AI-powered ecosystems: brand identity, mobile-first websites, CRM, automation, and dashboards. Solutions for solo professionals, growing teams, and enterprise operations.',
+      es: 'Ecosistemas completos con IA: identidad de marca, sitios web mobile-first, CRM, automatización y dashboards. Soluciones para profesionales, equipos en crecimiento y operaciones empresariales.'
     }
   },
   professionalServices: {
     title: {
-      en: 'AI Websites & Sales Enablement for Law Firms, Therapists, Consultants — Untold.works',
-      es: 'Sitios Web y Herramientas de Ventas con IA para Abogados, Terapeutas, Consultores — Untold.works'
+      en: 'AI Business Systems for Lawyers, Therapists, Consultants & Architects — Untold.works',
+      es: 'Sistemas de Negocio con IA para Abogados, Terapeutas, Consultores y Arquitectos — Untold.works'
     },
     description: {
-      en: 'Customer-facing websites and internal sales enablement tools for law firms, therapists, consultants, and architects. AI-powered lead generation, client intake automation, CRM dashboards, and booking systems.',
-      es: 'Sitios web para clientes y herramientas internas de ventas para despachos, terapeutas, consultores y arquitectos. Generación de leads con IA, automatización de captación, dashboards CRM y reservas.'
+      en: 'Complete business systems for service professionals: brand identity, mobile-first website, CRM, booking, AI workflows, and bilingual content. Full ownership transfer. Based in Mexico, serving the US.',
+      es: 'Sistemas completos para profesionales: identidad de marca, sitio web mobile-first, CRM, reservas, flujos de IA y contenido bilingüe. Transferencia total de propiedad. Con sede en México, servimos a EE. UU.'
     }
   },
   smallBusiness: {
     title: {
-      en: 'AI for Record Labels, Restaurants & Small Business — Untold.works',
-      es: 'IA para Sellos Discográficos, Restaurantes y Pequeños Negocios — Untold.works'
+      en: 'AI Platforms for Restaurants, Retail & Growing Teams — Untold.works',
+      es: 'Plataformas de IA para Restaurantes, Retail y Equipos en Crecimiento — Untold.works'
     },
     description: {
-      en: 'Customer-facing websites and back-office tools for record labels, restaurants, musicians, and small businesses. Social media design and management, creative marketing campaigns, booking systems, and internal dashboards.',
-      es: 'Sitios web para clientes y herramientas de gestión interna para sellos discográficos, restaurantes, músicos y pequeños negocios. Diseño y gestión de redes sociales, campañas creativas, reservas y dashboards.'
+      en: 'AI-powered platforms for small businesses: brand, website, team CRM, marketing automation, and analytics dashboards. Bilingual, mobile-first, and built for teams of 2-50. Mexico and the US.',
+      es: 'Plataformas con IA para pequeños negocios: marca, sitio web, CRM de equipo, automatización de marketing y dashboards. Bilingüe, mobile-first, construido para equipos de 2-50. México y EE. UU.'
     }
   },
   enterprise: {
     title: {
-      en: 'Enterprise AI | Backend Dashboards, Sales Enablement & Logistics Automation — Untold.works',
-      es: 'IA Empresarial | Dashboards Internos, Herramientas de Ventas y Automatización Logística — Untold.works'
+      en: 'Enterprise AI Infrastructure | Multi-Team CRM, Revenue Operations & Automation — Untold.works',
+      es: 'Infraestructura Empresarial de IA | CRM Multi-Equipo, RevOps y Automatización — Untold.works'
     },
     description: {
-      en: 'Customer-facing platforms and backend dashboards for enterprises. N8n workflow automation, sales enablement, revenue operations, logistics automation, warehouse management, and multi-team CRM.',
-      es: 'Plataformas para clientes y dashboards internos para empresas. Automatización de flujos con n8n, herramientas de ventas, RevOps, logística, gestión de almacenes y CRM multi-equipo.'
+      en: 'AI infrastructure for complex operations: enterprise brand systems, multi-team CRM, revenue operations, AI workflow automation, and custom integrations. Built for scale, owned by you.',
+      es: 'Infraestructura de IA para operaciones complejas: sistemas de marca empresarial, CRM multi-equipo, operaciones de ingresos, automatización con IA e integraciones. Construido para escalar, propiedad tuya.'
     }
   },
   portfolio: {
     title: {
-      en: 'Case Studies | Creative Campaigns, Dashboards & AI for Music — Untold.works',
-      es: 'Casos de Éxito | Campañas Creativas, Dashboards e IA para Música — Untold.works'
+      en: 'Portfolio | AI-Powered Business Ecosystems & Brand Builds — Untold.works',
+      es: 'Portafolio | Ecosistemas de Negocio con IA y Construcción de Marca — Untold.works'
     },
     description: {
-      en: 'Creative marketing campaigns, backend dashboards, and AI automation for music labels, artists, and businesses. 300% reach growth, Spotify-WhatsApp pipelines, 98% lead accuracy, and 20% sales lift.',
-      es: 'Campañas de marketing creativas, dashboards internos y automatización con IA para sellos musicales, artistas y negocios. 300% crecimiento, pipelines Spotify-WhatsApp, 98% precisión en leads y 20% ventas.'
+      en: 'Case studies of AI-powered ecosystems built for real businesses. Brand rebuilds, revenue operations, lead automation, and custom dashboards. 300% reach growth, 98% lead accuracy, 20% sales lift.',
+      es: 'Casos de éxito de ecosistemas con IA construidos para negocios reales. Reconstrucción de marca, operaciones de ingresos, automatización de leads y dashboards. 300% crecimiento, 98% precisión, 20% ventas.'
     }
   },
   blog: {
     title: {
-      en: 'AI & Business Blog | Tools, Strategies & Guides for Small Business — Untold.works',
+      en: 'AI & Business Blog | Tools, Strategies & Guides — Untold.works',
       es: 'Blog de IA y Negocios | Herramientas, Estrategias y Guías — Untold.works'
     },
     description: {
-      en: 'Practical guides on AI tools for small business, bilingual website design, business automation, and digital strategy for companies in Mexico and the United States.',
-      es: 'Guías prácticas sobre herramientas de IA para negocios, diseño web bilingüe, automatización y estrategia digital para empresas en México y Estados Unidos.'
+      en: 'Practical guides on AI tools, bilingual website design, AEO, business automation, and digital strategy for businesses in Mexico and the United States.',
+      es: 'Guías prácticas sobre herramientas de IA, diseño web bilingüe, AEO, automatización y estrategia digital para negocios en México y Estados Unidos.'
     }
   },
   about: {
     title: {
-      en: 'About Untold.works | Customer-Facing & Internal AI Systems for Music & Business',
-      es: 'Sobre Untold.works | Sistemas de IA para Clientes e Internos para Música y Negocios'
+      en: 'About Untold.works | Brand-First AI Agency in Mexico',
+      es: 'Sobre Untold.works | Agencia de IA con Enfoque en Marca en México'
     },
     description: {
-      en: 'Bilingual workflow automation agency building customer-facing websites and internal dashboards for musicians, labels, restaurants, and enterprises. N8n automation, creative campaigns, and backend operations — Mexico and the US.',
-      es: 'Agencia bilingüe de automatización de flujos de trabajo. Sitios web y dashboards internos para músicos, sellos, restaurantes y empresas. Automatización n8n, campañas creativas y operaciones — México y EE. UU.'
+      en: 'Storytellers first, technologists second. A boutique AI agency in San Miguel de Allende building brand-first business ecosystems for companies across Mexico and the US. 25 years of creative direction meets AI.',
+      es: 'Narradores primero, tecnólogos después. Agencia boutique de IA en San Miguel de Allende construyendo ecosistemas de negocio para empresas en México y EE. UU. 25 años de dirección creativa y IA.'
     }
   },
   contact: {
     title: {
-      en: 'Contact Untold.works | AI Websites, Dashboards & Creative Campaign Consultation',
-      es: 'Contacto Untold.works | Consulta de Sitios Web, Dashboards y Campañas Creativas con IA'
+      en: 'Contact Untold.works | Start a Conversation About Your Business',
+      es: 'Contacto Untold.works | Inicia una Conversación Sobre Tu Negocio'
     },
     description: {
-      en: 'Get a consultation for customer-facing websites, backend dashboards, social media management, creative marketing campaigns, or sales enablement. Mexico and the US.',
-      es: 'Solicita una consulta sobre sitios web, dashboards internos, gestión de redes sociales, campañas de marketing creativas o herramientas de ventas. México y EE. UU.'
+      en: 'Tell us about your business. We build AI-powered ecosystems — websites, brand identity, CRM, dashboards, SEO, and AEO. Based in San Miguel de Allende, serving Mexico and the US.',
+      es: 'Cuéntanos sobre tu negocio. Construimos ecosistemas con IA — sitios web, marca, CRM, dashboards, SEO y AEO. Con sede en San Miguel de Allende, servimos México y EE. UU.'
     }
   },
   workshops: {

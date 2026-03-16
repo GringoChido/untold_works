@@ -150,6 +150,43 @@ Four Steps to Your AI Infrastructure.
 
 ---
 
+## Website Design & Rebuild Page
+
+### Hero
+**Headline:** Your Website Should Be the Hardest-Working Part of Your Business.
+**Subheadline:** Built with AI. Guided by 25 years of creative direction. Designed to be found by humans and machines alike.
+
+### Why Rebuild in 2026
+AI changed the rules. Google AI Overviews, ChatGPT, Perplexity — your website now needs to speak to humans AND machines. Mobile-first isn't a feature, it's the only option. In Mexico, where 3G connections are still common, speed isn't a luxury — it's survival. Your competitors who rebuild now get the compounding advantage.
+
+### The Hub of Everything
+Your website connects every service: SEO & AEO makes it findable, Social Media drives traffic to it, Paid Ads converts visitors through it, Dashboard reports on everything it generates, and CRM captures leads from it.
+
+### Packages
+- **Website Audit & Strategy** ($1,500): Full site performance, SEO health, AEO readiness, mobile accessibility, competitor analysis, and prioritized rebuild roadmap.
+- **Website Design & Build** ($5,000): Brand identity, custom mobile-first website, bilingual content, SEO foundation, lead capture, training and ownership transfer.
+- **AI-Native Website Rebuild** ($8,000, highlighted): Everything in Design & Build plus AEO optimization, llms.txt, structured data, CRM integration, conversion tracking, and Google Business Profile.
+- **Ongoing Website Management** ($800/mo): Content updates, performance monitoring, SEO/AEO maintenance, security, analytics reporting, and priority support.
+
+### How It Works
+01. Audit — Analyze current site, brand, operations, and competitive landscape.
+02. Design — Brand identity, wireframes, content strategy, bilingual architecture.
+03. Build — AI-native development with SEO and AEO baked in, mobile-first, bilingual, CRM-integrated.
+04. Launch & Train — Deploy, train team, transfer full ownership with 30 days of support.
+
+### Built with AI. Guided by Experience.
+AI builds fast. Experience builds right. 25 years of creative direction, branding, and marketing expertise combined with AI tools. The result: websites that don't just look beautiful — they perform.
+
+### FAQ
+- How long does a website rebuild take? Design & Build: 4-6 weeks. AI-Native Rebuild: 6-8 weeks.
+- Do you work with existing brands or only new ones? Both — we work within existing guidelines or build from scratch.
+- What platform do you build on? Custom: React, Next.js, or Vite. No WordPress templates, no Wix, no Squarespace.
+- Can you rebuild while keeping my current site live? Yes. We build in staging and switch with zero downtime.
+- What makes an AI-native website different? Built for humans AND machines: structured data, llms.txt, FAQ-structured content, answer-format copy.
+- Do I own the website when it's done? Yes. Full code, hosting credentials, documentation, and video training. No lock-in.
+
+---
+
 ## SEO & AEO Page
 
 ### Hero

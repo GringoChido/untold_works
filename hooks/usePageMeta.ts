@@ -162,6 +162,7 @@ function buildBreadcrumbs(
     'social-media': { en: 'Social Media', es: 'Redes Sociales' },
     ads: { en: 'Ads', es: 'Publicidad' },
     dashboard: { en: 'Dashboard', es: 'Dashboard' },
+    websites: { en: 'Website Design', es: 'Diseño Web' },
   };
 
   let accumulated = '';

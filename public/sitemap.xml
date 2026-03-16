@@ -333,6 +333,16 @@
   </url>
 
   <url>
+    <loc>https://untold.works/websites</loc>
+    <lastmod>2026-03-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://untold.works/websites" />
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://untold.works/websites?lang=es" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://untold.works/websites" />
+  </url>
+
+  <url>
     <loc>https://untold.works/seo-aeo</loc>
     <lastmod>2026-03-16</lastmod>
     <changefreq>monthly</changefreq>

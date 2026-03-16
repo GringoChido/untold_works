@@ -21,6 +21,7 @@ Untold.works is a boutique agency that combines brand strategy, web development,
 
 ## Services
 
+- [Website Design & Rebuild](https://untold.works/websites): Custom website design and rebuild for the AI era. Brand-first, mobile-ready, bilingual, SEO and AEO optimized. Built with AI, guided by 25 years of creative direction.
 - [SEO & AEO](https://untold.works/seo-aeo): Search Engine Optimization and AI Engine Optimization. Technical SEO, content strategy, and LLM discoverability so AI systems cite your business.
 - [Social Media](https://untold.works/social-media): Social media strategy, content creation, analytics, and ongoing management for businesses in Mexico and the US.
 - [Paid Advertising](https://untold.works/ads): Google Ads, Meta Ads, and paid media campaigns. Audit, setup, management, and full-stack ad + landing page builds.

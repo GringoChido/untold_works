@@ -245,12 +245,19 @@ const SeoAeo: React.FC = () => {
             {t({ en: 'SEO Got You Ranked. AEO Gets You Recommended.', es: 'SEO Te Posiciona. AEO Te Recomienda.' })}
           </h1>
 
-          <p className="text-xl sm:text-2xl lg:text-4xl font-serif italic text-white/60 max-w-4xl leading-tight border-l-4 border-untold-orange pl-6 sm:pl-10">
+          <p className="text-xl sm:text-2xl lg:text-4xl font-serif italic text-white/60 max-w-4xl leading-tight border-l-4 border-untold-orange pl-6 sm:pl-10 mb-10">
             {t({
               en: 'When someone asks ChatGPT who does what you do in your city, does your name come up? We make sure it does.',
               es: 'Cuando alguien le pregunta a ChatGPT quién hace lo que tú haces en tu ciudad, ¿aparece tu nombre? Nos aseguramos de que sí.'
             })}
           </p>
+
+          <div className="inline-flex items-center space-x-4 border border-untold-orange/30 bg-untold-orange/5 px-6 py-3">
+            <span className="w-2 h-2 rounded-full bg-untold-orange animate-pulse"></span>
+            <span className="font-mono text-[11px] sm:text-[13px] uppercase tracking-[0.3em] font-bold text-untold-orange">
+              {t({ en: 'The First AEO Agency in Mexico', es: 'La Primera Agencia de AEO en México' })}
+            </span>
+          </div>
         </div>
       </section>
 

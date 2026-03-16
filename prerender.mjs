@@ -19,6 +19,7 @@ const routes = [
   '/solutions/professional-services',
   '/solutions/small-business',
   '/solutions/enterprise',
+  '/websites',
   '/seo-aeo',
   '/social-media',
   '/ads',

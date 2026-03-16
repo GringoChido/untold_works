@@ -306,8 +306,8 @@ const SmallBusiness: React.FC = () => {
           </h2>
           <p className="text-xl font-serif italic text-untold-gray mb-12 max-w-2xl mx-auto">
             {t({
-              en: 'Let\u2019s build the AI-powered platform your team needs to operate, grow, and win.',
-              es: 'Construyamos la plataforma impulsada por IA que tu equipo necesita para operar, crecer y ganar.'
+              en: 'No lock-in. No monthly fees for things you own. Let\u2019s build the AI-powered platform your team needs to operate, grow, and win.',
+              es: 'Sin ataduras. Sin cuotas mensuales por cosas que son tuyas. Construyamos la plataforma con IA que tu equipo necesita para operar, crecer y ganar.'
             })}
           </p>
           <Link

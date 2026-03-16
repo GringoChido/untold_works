@@ -15,6 +15,7 @@ const Navbar: React.FC = () => {
   ];
 
   const serviceLinks = [
+    { path: '/websites', label: { en: 'Website Design', es: 'Diseño Web' } },
     { path: '/seo-aeo', label: { en: 'SEO & AEO', es: 'SEO y AEO' } },
     { path: '/social-media', label: { en: 'Social Media', es: 'Redes Sociales' } },
     { path: '/ads', label: { en: 'Ads', es: 'Publicidad' } },

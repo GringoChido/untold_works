@@ -288,8 +288,8 @@ const Enterprise: React.FC = () => {
           </h2>
           <p className="text-xl font-serif italic text-untold-gray mb-12 max-w-2xl mx-auto">
             {t({
-              en: 'Let\u2019s build the AI-powered platform that gives your organization the infrastructure to scale.',
-              es: 'Construyamos la plataforma impulsada por IA que le d\u00e9 a tu organizaci\u00f3n la infraestructura para escalar.',
+              en: 'No lock-in. Full documentation. Complete ownership transfer. Let\u2019s build the AI infrastructure your organization needs to scale.',
+              es: 'Sin ataduras. Documentaci\u00f3n completa. Transferencia total de propiedad. Construyamos la infraestructura de IA que tu organizaci\u00f3n necesita para escalar.',
             })}
           </p>
           <Link

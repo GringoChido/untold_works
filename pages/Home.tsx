@@ -15,7 +15,7 @@ const faqSchema = {
       name: 'What does Untold.works build?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'We build AI-powered business ecosystems: customer-facing websites, internal dashboards, n8n workflow automation, CRM integrations, and bilingual content systems for businesses in Mexico and the United States.',
+        text: 'We build AI-powered business ecosystems: brand identity, mobile-first websites, AI workflow automation, CRM integrations, custom dashboards, and bilingual content systems for businesses in Mexico and the United States.',
       },
     },
     {
@@ -228,7 +228,40 @@ const Home: React.FC = () => {
       </section>
 
       {/* ═══════════════════════════════════════════════════════════
-          SECTION 3b: SEO & AEO CALLOUT
+          SECTION 3b: WEBSITE DESIGN & REBUILD CALLOUT
+      ═══════════════════════════════════════════════════════════ */}
+      <section className="bg-untold-black px-5 sm:px-10 py-12 sm:py-16 border-b border-white/10">
+        <div className="max-w-[1440px] mx-auto">
+          <Link to="/websites" className="group grid lg:grid-cols-12 gap-8 items-center">
+            <div className="lg:col-span-8">
+              <div className="flex items-center space-x-3 mb-4">
+                <span className="w-2 h-2 rounded-full bg-untold-orange animate-pulse"></span>
+                <span className="font-mono text-[10px] uppercase tracking-[0.5em] text-untold-orange font-bold">
+                  {t({ en: 'THE FOUNDATION', es: 'LA BASE' })}
+                </span>
+              </div>
+              <h3 className="font-sans font-black text-2xl sm:text-4xl lg:text-5xl uppercase tracking-tighter mb-3 text-white group-hover:text-untold-orange transition-colors">
+                {t({ en: 'Your Website Should Be the Hardest-Working Part of Your Business.', es: 'Tu Sitio Web Debería Ser la Parte Más Trabajadora de Tu Negocio.' })}
+              </h3>
+              <p className="text-lg font-serif italic text-white/60 max-w-2xl">
+                {t({
+                  en: 'Brand-first. AI-native. Mobile-ready. Bilingual. Built with AI, guided by 25 years of creative direction.',
+                  es: 'Marca primero. AI-nativo. Mobile-ready. Bilingüe. Construido con IA, guiado por 25 años de dirección creativa.'
+                })}
+              </p>
+            </div>
+            <div className="lg:col-span-4 flex lg:justify-end">
+              <span className="inline-flex items-center space-x-4 font-sans font-black text-lg uppercase tracking-tighter text-untold-orange group-hover:translate-x-2 transition-transform">
+                <span>{t({ en: 'Website Design & Rebuild', es: 'Diseño y Reconstrucción Web' })}</span>
+                <span className="text-2xl">→</span>
+              </span>
+            </div>
+          </Link>
+        </div>
+      </section>
+
+      {/* ═══════════════════════════════════════════════════════════
+          SECTION 3c: SEO & AEO CALLOUT
       ═══════════════════════════════════════════════════════════ */}
       <section className="bg-white px-5 sm:px-10 py-12 sm:py-16 border-b border-untold-border">
         <div className="max-w-[1440px] mx-auto">
@@ -237,7 +270,7 @@ const Home: React.FC = () => {
               <div className="flex items-center space-x-3 mb-4">
                 <span className="w-2 h-2 rounded-full bg-untold-orange"></span>
                 <span className="font-mono text-[10px] uppercase tracking-[0.5em] text-untold-orange font-bold">
-                  {t({ en: 'NEW SERVICE', es: 'NUEVO SERVICIO' })}
+                  {t({ en: 'FIRST AEO AGENCY IN MEXICO', es: 'PRIMERA AGENCIA DE AEO EN MÉXICO' })}
                 </span>
               </div>
               <h3 className="font-sans font-black text-2xl sm:text-4xl lg:text-5xl uppercase tracking-tighter mb-3 group-hover:text-untold-orange transition-colors">
@@ -261,7 +294,7 @@ const Home: React.FC = () => {
       </section>
 
       {/* ═══════════════════════════════════════════════════════════
-          SECTION 3c: SOCIAL MEDIA & ADS CALLOUT
+          SECTION 3d: SOCIAL MEDIA & ADS CALLOUT
       ═══════════════════════════════════════════════════════════ */}
       <section className="bg-white px-5 sm:px-10 py-12 sm:py-16 border-b border-untold-border">
         <div className="max-w-[1440px] mx-auto">
@@ -300,7 +333,7 @@ const Home: React.FC = () => {
       </section>
 
       {/* ═══════════════════════════════════════════════════════════
-          SECTION 3d: DASHBOARD CALLOUT
+          SECTION 3e: DASHBOARD CALLOUT
       ═══════════════════════════════════════════════════════════ */}
       <section className="bg-untold-black px-5 sm:px-10 py-12 sm:py-16 border-b border-white/10">
         <div className="max-w-[1440px] mx-auto">
