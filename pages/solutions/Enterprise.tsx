@@ -5,6 +5,7 @@ import { usePageMeta } from '../../hooks/usePageMeta';
 import * as i18n from '../../i18n';
 import QuickLeadForm from '../../components/QuickLeadForm';
 import Breadcrumbs from '../../components/Breadcrumbs';
+import ImagePlaceholder from '../../components/ImagePlaceholder';
 
 const Enterprise: React.FC = () => {
   const { t } = useLanguage();
@@ -147,6 +148,15 @@ const Enterprise: React.FC = () => {
             })}
           </p>
         </div>
+      </section>
+
+      {/* ── Visual ── */}
+      <section className="border-b border-untold-border">
+        <ImagePlaceholder
+          label="Enterprise operations — office, warehouse, or team meeting"
+          aspect="aspect-[21/9]"
+          dimensions="1440 × 617px"
+        />
       </section>
 
       {/* Who This Is For */}

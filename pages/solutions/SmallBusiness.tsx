@@ -5,6 +5,7 @@ import { usePageMeta } from '../../hooks/usePageMeta';
 import * as i18n from '../../i18n';
 import QuickLeadForm from '../../components/QuickLeadForm';
 import Breadcrumbs from '../../components/Breadcrumbs';
+import ImagePlaceholder from '../../components/ImagePlaceholder';
 
 const SmallBusiness: React.FC = () => {
   const { t } = useLanguage();
@@ -183,6 +184,15 @@ const SmallBusiness: React.FC = () => {
             })}
           </p>
         </div>
+      </section>
+
+      {/* ── Visual ── */}
+      <section className="border-b border-untold-border">
+        <ImagePlaceholder
+          label="Small business team — restaurant, retail, or hotel"
+          aspect="aspect-[21/9]"
+          dimensions="1440 × 617px"
+        />
       </section>
 
       {/* ── Who This Is For ── */}

@@ -43,6 +43,34 @@ const AboutPage: React.FC = () => {
         </div>
       </section>
 
+      {/* Founder Photo */}
+      <section className="bg-untold-beige border-b border-untold-border">
+        <div className="max-w-[1440px] mx-auto grid lg:grid-cols-2">
+          <div className="aspect-[4/3] lg:aspect-auto overflow-hidden">
+            <img
+              src="/images/about-photo.webp"
+              alt="Joshua Semolik — Founder of Untold.works, San Miguel de Allende"
+              className="w-full h-full object-cover"
+              loading="eager"
+            />
+          </div>
+          <div className="px-5 sm:px-10 lg:px-16 py-16 sm:py-24 flex flex-col justify-center">
+            <span className="font-mono text-[11px] uppercase tracking-[0.6em] font-bold text-untold-orange block mb-6">
+              {t({ en: 'THE FOUNDER', es: 'EL FUNDADOR' })}
+            </span>
+            <h2 className="font-sans font-black text-3xl sm:text-5xl uppercase tracking-tighter mb-6 leading-[0.85]">
+              Joshua Semolik
+            </h2>
+            <p className="text-lg sm:text-xl font-serif italic text-untold-black/60 leading-relaxed">
+              {t({
+                en: '25 years of creative direction. Based in San Miguel de Allende, Mexico. Building AI-powered business ecosystems for companies across Mexico and the United States.',
+                es: '25 años de dirección creativa. Basado en San Miguel de Allende, México. Construyendo ecosistemas empresariales impulsados por IA para empresas en México y Estados Unidos.'
+              })}
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* Why Mexico / Why San Miguel */}
       <section className="px-5 sm:px-10 py-20 sm:py-32 lg:py-48 bg-untold-beige text-untold-black">
         <div className="max-w-[1440px] mx-auto">

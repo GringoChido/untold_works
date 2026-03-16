@@ -5,6 +5,7 @@ import { usePageMeta } from '../../hooks/usePageMeta';
 import * as i18n from '../../i18n';
 import QuickLeadForm from '../../components/QuickLeadForm';
 import Breadcrumbs from '../../components/Breadcrumbs';
+import ImagePlaceholder from '../../components/ImagePlaceholder';
 
 const SanMiguelDeAllende: React.FC = () => {
   const { t } = useLanguage();
@@ -215,6 +216,15 @@ const SanMiguelDeAllende: React.FC = () => {
             })}
           </p>
         </div>
+      </section>
+
+      {/* ── Location Hero Image ── */}
+      <section className="border-b border-untold-border">
+        <ImagePlaceholder
+          label="San Miguel de Allende — Parroquia or Centro street scene"
+          aspect="aspect-[21/9]"
+          dimensions="1440 × 617px"
+        />
       </section>
 
       {/* ── Services for SMA ── */}

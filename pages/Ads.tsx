@@ -4,6 +4,7 @@ import { useLanguage } from '../App';
 import { usePageMeta } from '../hooks/usePageMeta';
 import QuickLeadForm from '../components/QuickLeadForm';
 import Breadcrumbs from '../components/Breadcrumbs';
+import ImagePlaceholder from '../components/ImagePlaceholder';
 
 const Ads: React.FC = () => {
   const { t } = useLanguage();
@@ -251,6 +252,22 @@ const Ads: React.FC = () => {
               es: 'Google Ads, Meta Ads, LinkedIn Ads — gestionados por personas que entienden tu mercado y hablan el idioma de tus clientes.'
             })}
           </p>
+        </div>
+      </section>
+
+      {/* ── Visual: Ad Campaign Examples ── */}
+      <section className="bg-untold-beige px-5 sm:px-10 py-12 sm:py-16 border-b border-untold-border">
+        <div className="max-w-[1440px] mx-auto grid lg:grid-cols-2 gap-6">
+          <ImagePlaceholder
+            label="Google Ads campaign dashboard"
+            aspect="aspect-[16/10]"
+            dimensions="700 × 438px"
+          />
+          <ImagePlaceholder
+            label="Meta Ads manager — campaign results"
+            aspect="aspect-[16/10]"
+            dimensions="700 × 438px"
+          />
         </div>
       </section>
 

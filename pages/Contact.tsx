@@ -3,6 +3,7 @@ import { useLanguage } from '../App';
 import { usePageMeta } from '../hooks/usePageMeta';
 import * as i18n from '../i18n';
 import ContactForm from '../components/ContactForm';
+import ImagePlaceholder from '../components/ImagePlaceholder';
 
 const ContactPage: React.FC = () => {
   const { t } = useLanguage();
@@ -38,6 +39,16 @@ const ContactPage: React.FC = () => {
             {t(content.subheadline)}
           </p>
         </div>
+      </section>
+
+      {/* Location Image */}
+      <section className="border-b border-white/10">
+        <ImagePlaceholder
+          label="San Miguel de Allende — workspace or street scene"
+          aspect="aspect-[21/9]"
+          variant="dark"
+          dimensions="1440 × 617px"
+        />
       </section>
 
       {/* Main Content */}

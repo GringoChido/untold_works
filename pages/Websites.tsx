@@ -524,43 +524,73 @@ const Websites: React.FC = () => {
           </h2>
 
           <div className="grid lg:grid-cols-3 gap-6">
-            <Link to="/portfolio/noxguard-brand-rebrand" className="border border-untold-border bg-white p-8 hover:border-untold-orange transition-all">
-              <p className="font-sans font-black text-xl uppercase tracking-tighter mb-2">Noxguard</p>
-              <p className="font-serif italic text-untold-gray mb-4">
-                {t({ en: 'Complete brand rebuild + 6 AI systems', es: 'Reconstrucción completa de marca + 6 sistemas de IA' })}
-              </p>
-              <p className="font-mono text-[11px] text-untold-orange font-bold mb-4">
-                {t({ en: '3 Strategic Pillars, 6 AI Systems', es: '3 Pilares Estratégicos, 6 Sistemas de IA' })}
-              </p>
-              <p className="font-sans font-black text-sm uppercase tracking-tighter text-untold-orange">
-                {t({ en: 'View Case Study', es: 'Ver Caso de Estudio' })} &rarr;
-              </p>
+            <Link to="/portfolio/noxguard-brand-rebrand" className="group border border-untold-border bg-white overflow-hidden hover:border-untold-orange transition-all">
+              <div className="aspect-[16/10] overflow-hidden">
+                <img
+                  src="/images/project5-noxguard/truck.webp"
+                  alt="Noxguard brand rebuild — website and identity system"
+                  loading="lazy"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                />
+              </div>
+              <div className="p-8">
+                <p className="font-sans font-black text-xl uppercase tracking-tighter mb-2">Noxguard</p>
+                <p className="font-serif italic text-untold-gray mb-4">
+                  {t({ en: 'Complete brand rebuild + 6 AI systems', es: 'Reconstrucción completa de marca + 6 sistemas de IA' })}
+                </p>
+                <p className="font-mono text-[11px] text-untold-orange font-bold mb-4">
+                  {t({ en: '3 Strategic Pillars, 6 AI Systems', es: '3 Pilares Estratégicos, 6 Sistemas de IA' })}
+                </p>
+                <p className="font-sans font-black text-sm uppercase tracking-tighter text-untold-orange">
+                  {t({ en: 'View Case Study', es: 'Ver Caso de Estudio' })} &rarr;
+                </p>
+              </div>
             </Link>
 
-            <Link to="/portfolio/billiard-factory-retail-architecture" className="border border-untold-border bg-white p-8 hover:border-untold-orange transition-all">
-              <p className="font-sans font-black text-xl uppercase tracking-tighter mb-2">Billiard Factory</p>
-              <p className="font-serif italic text-untold-gray mb-4">
-                {t({ en: 'Unified digital + physical revenue operations', es: 'Operaciones de ingresos digitales + físicas unificadas' })}
-              </p>
-              <p className="font-mono text-[11px] text-untold-orange font-bold mb-4">
-                {t({ en: '20% Sales Lift, +35% Efficiency', es: '20% Aumento en Ventas, +35% Eficiencia' })}
-              </p>
-              <p className="font-sans font-black text-sm uppercase tracking-tighter text-untold-orange">
-                {t({ en: 'View Case Study', es: 'Ver Caso de Estudio' })} &rarr;
-              </p>
+            <Link to="/portfolio/billiard-factory-retail-architecture" className="group border border-untold-border bg-white overflow-hidden hover:border-untold-orange transition-all">
+              <div className="aspect-[16/10] overflow-hidden">
+                <img
+                  src="/images/project4-billiard/image3.webp"
+                  alt="Billiard Factory retail digital architecture"
+                  loading="lazy"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                />
+              </div>
+              <div className="p-8">
+                <p className="font-sans font-black text-xl uppercase tracking-tighter mb-2">Billiard Factory</p>
+                <p className="font-serif italic text-untold-gray mb-4">
+                  {t({ en: 'Unified digital + physical revenue operations', es: 'Operaciones de ingresos digitales + físicas unificadas' })}
+                </p>
+                <p className="font-mono text-[11px] text-untold-orange font-bold mb-4">
+                  {t({ en: '20% Sales Lift, +35% Efficiency', es: '20% Aumento en Ventas, +35% Eficiencia' })}
+                </p>
+                <p className="font-sans font-black text-sm uppercase tracking-tighter text-untold-orange">
+                  {t({ en: 'View Case Study', es: 'Ver Caso de Estudio' })} &rarr;
+                </p>
+              </div>
             </Link>
 
-            <Link to="/portfolio/omi-lead-intake-qualification" className="border border-untold-border bg-white p-8 hover:border-untold-orange transition-all">
-              <p className="font-sans font-black text-xl uppercase tracking-tighter mb-2">OMI Growth</p>
-              <p className="font-serif italic text-untold-gray mb-4">
-                {t({ en: 'AI-powered lead routing & qualification', es: 'Enrutamiento y calificación de leads con IA' })}
-              </p>
-              <p className="font-mono text-[11px] text-untold-orange font-bold mb-4">
-                {t({ en: '98% MQL Accuracy, 4.2x Sales ROI', es: '98% Precisión MQL, 4.2x ROI en Ventas' })}
-              </p>
-              <p className="font-sans font-black text-sm uppercase tracking-tighter text-untold-orange">
-                {t({ en: 'View Case Study', es: 'Ver Caso de Estudio' })} &rarr;
-              </p>
+            <Link to="/portfolio/omi-lead-intake-qualification" className="group border border-untold-border bg-white overflow-hidden hover:border-untold-orange transition-all">
+              <div className="aspect-[16/10] overflow-hidden">
+                <img
+                  src="/images/project3-omi/image1.webp"
+                  alt="OMI lead intake and qualification system"
+                  loading="lazy"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                />
+              </div>
+              <div className="p-8">
+                <p className="font-sans font-black text-xl uppercase tracking-tighter mb-2">OMI Growth</p>
+                <p className="font-serif italic text-untold-gray mb-4">
+                  {t({ en: 'AI-powered lead routing & qualification', es: 'Enrutamiento y calificación de leads con IA' })}
+                </p>
+                <p className="font-mono text-[11px] text-untold-orange font-bold mb-4">
+                  {t({ en: '98% MQL Accuracy, 4.2x Sales ROI', es: '98% Precisión MQL, 4.2x ROI en Ventas' })}
+                </p>
+                <p className="font-sans font-black text-sm uppercase tracking-tighter text-untold-orange">
+                  {t({ en: 'View Case Study', es: 'Ver Caso de Estudio' })} &rarr;
+                </p>
+              </div>
             </Link>
           </div>
         </div>

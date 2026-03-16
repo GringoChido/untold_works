@@ -4,6 +4,7 @@ import { useLanguage } from '../App';
 import { usePageMeta } from '../hooks/usePageMeta';
 import QuickLeadForm from '../components/QuickLeadForm';
 import Breadcrumbs from '../components/Breadcrumbs';
+import ImagePlaceholder from '../components/ImagePlaceholder';
 
 const SeoAeo: React.FC = () => {
   const { t } = useLanguage();
@@ -258,6 +259,22 @@ const SeoAeo: React.FC = () => {
               {t({ en: 'The First AEO Agency in Mexico', es: 'La Primera Agencia de AEO en México' })}
             </span>
           </div>
+        </div>
+      </section>
+
+      {/* ── Visual: Search vs AI Results ── */}
+      <section className="bg-untold-beige px-5 sm:px-10 py-12 sm:py-16 border-b border-untold-border">
+        <div className="max-w-[1440px] mx-auto grid lg:grid-cols-2 gap-6">
+          <ImagePlaceholder
+            label="Google search result — your business ranking"
+            aspect="aspect-[4/3]"
+            dimensions="700 × 525px"
+          />
+          <ImagePlaceholder
+            label="AI answer — ChatGPT recommending your business"
+            aspect="aspect-[4/3]"
+            dimensions="700 × 525px"
+          />
         </div>
       </section>
 

@@ -4,6 +4,7 @@ import { useLanguage } from '../App';
 import { usePageMeta } from '../hooks/usePageMeta';
 import { projects } from '../data/projects';
 import * as i18n from '../i18n';
+import ImagePlaceholder from '../components/ImagePlaceholder';
 
 
 const faqSchema = {
@@ -68,47 +69,61 @@ const Home: React.FC = () => {
       {/* ═══════════════════════════════════════════════════════════
           SECTION 1: HERO
       ═══════════════════════════════════════════════════════════ */}
-      <section className="bg-untold-black text-white px-5 sm:px-10 py-20 sm:py-32 lg:py-56 border-b border-white/10 relative overflow-hidden">
-        <div className="absolute inset-0 opacity-[0.03] pointer-events-none"
-             style={{ backgroundImage: 'linear-gradient(#fff 1px, transparent 1px), linear-gradient(90deg, #fff 1px, transparent 1px)', backgroundSize: '80px 80px' }}></div>
+      <section className="bg-untold-black text-white border-b border-white/10 relative overflow-hidden">
+        <div className="grid lg:grid-cols-2">
+          <div className="px-5 sm:px-10 py-20 sm:py-32 lg:py-56 relative">
+            <div className="absolute inset-0 opacity-[0.03] pointer-events-none"
+                 style={{ backgroundImage: 'linear-gradient(#fff 1px, transparent 1px), linear-gradient(90deg, #fff 1px, transparent 1px)', backgroundSize: '80px 80px' }}></div>
 
-        <div className="max-w-[1440px] mx-auto relative">
-          <div className="flex items-center space-x-4 mb-14">
-            <span className="w-3 h-3 rounded-full bg-untold-orange animate-pulse"></span>
-            <p className="font-mono text-[11px] lg:text-[13px] uppercase tracking-[0.6em] font-bold text-white/40">
-              {t(i18n.hero.eyebrow)}
-            </p>
+            <div className="max-w-[720px] relative">
+              <div className="flex items-center space-x-4 mb-14">
+                <span className="w-3 h-3 rounded-full bg-untold-orange animate-pulse"></span>
+                <p className="font-mono text-[11px] lg:text-[13px] uppercase tracking-[0.6em] font-bold text-white/40">
+                  {t(i18n.hero.eyebrow)}
+                </p>
+              </div>
+
+              <h1 className="font-sans font-black text-[clamp(2.8rem,8vw,100px)] leading-[0.82] mb-12 tracking-tighter uppercase">
+                {t(i18n.hero.headline)}
+              </h1>
+
+              <div className="mb-16 max-w-5xl border-l-4 border-untold-orange pl-6 sm:pl-10 space-y-4">
+                <p className="text-xl sm:text-2xl lg:text-[32px] font-serif italic text-white leading-[1.15] tracking-tight">
+                  {t(i18n.hero.tagline)}
+                </p>
+                <p className="font-mono text-[11px] sm:text-[13px] uppercase tracking-[0.3em] text-white/40 font-bold">
+                  {t(i18n.hero.subheadline)}
+                </p>
+              </div>
+
+              <div className="flex flex-col sm:flex-row items-start gap-6">
+                <Link
+                  to="/portfolio"
+                  className="inline-flex items-center space-x-6 sm:space-x-10 group border border-white/10 px-8 sm:px-16 py-6 sm:py-10 hover:border-untold-orange hover:bg-untold-orange/5 transition-all shadow-[0_40px_100px_rgba(255,77,23,0.15)]"
+                >
+                  <span className="font-sans font-black text-lg sm:text-2xl uppercase tracking-tighter">
+                    {t(i18n.hero.primaryCta)}
+                  </span>
+                  <span className="text-3xl sm:text-5xl text-untold-orange group-hover:translate-x-6 transition-transform duration-500">→</span>
+                </Link>
+                <a
+                  href="#what-we-build"
+                  className="font-mono text-[12px] uppercase tracking-[0.3em] text-white/40 hover:text-untold-orange transition-colors py-6 sm:py-10"
+                >
+                  {t(i18n.hero.secondaryCta)} ↓
+                </a>
+              </div>
+            </div>
           </div>
 
-          <h1 className="font-sans font-black text-[clamp(2.8rem,12vw,160px)] leading-[0.82] mb-12 tracking-tighter uppercase max-w-[1400px]">
-            {t(i18n.hero.headline)}
-          </h1>
-
-          <div className="mb-16 max-w-5xl border-l-4 border-untold-orange pl-6 sm:pl-10 space-y-4">
-            <p className="text-xl sm:text-2xl lg:text-[42px] font-serif italic text-white leading-[1.15] tracking-tight">
-              {t(i18n.hero.tagline)}
-            </p>
-            <p className="font-mono text-[11px] sm:text-[13px] uppercase tracking-[0.3em] text-white/40 font-bold">
-              {t(i18n.hero.subheadline)}
-            </p>
-          </div>
-
-          <div className="flex flex-col sm:flex-row items-start gap-6">
-            <Link
-              to="/portfolio"
-              className="inline-flex items-center space-x-6 sm:space-x-10 group border border-white/10 px-8 sm:px-16 py-6 sm:py-10 hover:border-untold-orange hover:bg-untold-orange/5 transition-all shadow-[0_40px_100px_rgba(255,77,23,0.15)]"
-            >
-              <span className="font-sans font-black text-lg sm:text-2xl uppercase tracking-tighter">
-                {t(i18n.hero.primaryCta)}
-              </span>
-              <span className="text-3xl sm:text-5xl text-untold-orange group-hover:translate-x-6 transition-transform duration-500">→</span>
-            </Link>
-            <a
-              href="#what-we-build"
-              className="font-mono text-[12px] uppercase tracking-[0.3em] text-white/40 hover:text-untold-orange transition-colors py-6 sm:py-10"
-            >
-              {t(i18n.hero.secondaryCta)} ↓
-            </a>
+          {/* Hero Image — replace placeholder */}
+          <div className="hidden lg:block relative">
+            <ImagePlaceholder
+              label="Hero image — project collage or workspace photo"
+              aspect="aspect-auto h-full"
+              variant="dark"
+              dimensions="800 × 900px"
+            />
           </div>
         </div>
       </section>

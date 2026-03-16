@@ -4,6 +4,7 @@ import { useLanguage } from '../App';
 import { usePageMeta } from '../hooks/usePageMeta';
 import QuickLeadForm from '../components/QuickLeadForm';
 import Breadcrumbs from '../components/Breadcrumbs';
+import ImagePlaceholder from '../components/ImagePlaceholder';
 
 const SocialMedia: React.FC = () => {
   const { t } = useLanguage();
@@ -251,6 +252,27 @@ const SocialMedia: React.FC = () => {
               es: 'De la estrategia a la ejecución, construimos una presencia social que convierte seguidores en clientes — en inglés y español.'
             })}
           </p>
+        </div>
+      </section>
+
+      {/* ── Visual: Social Media Examples ── */}
+      <section className="bg-untold-beige px-5 sm:px-10 py-12 sm:py-16 border-b border-untold-border">
+        <div className="max-w-[1440px] mx-auto grid sm:grid-cols-3 gap-6">
+          <ImagePlaceholder
+            label="Instagram feed example"
+            aspect="aspect-square"
+            dimensions="600 × 600px"
+          />
+          <ImagePlaceholder
+            label="Content calendar screenshot"
+            aspect="aspect-square"
+            dimensions="600 × 600px"
+          />
+          <ImagePlaceholder
+            label="Analytics dashboard screenshot"
+            aspect="aspect-square"
+            dimensions="600 × 600px"
+          />
         </div>
       </section>
 
