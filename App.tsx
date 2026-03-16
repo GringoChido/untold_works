@@ -20,6 +20,10 @@ const Enterprise = lazy(() => import('./pages/solutions/Enterprise'));
 const Blog = lazy(() => import('./pages/Blog'));
 const BlogPost = lazy(() => import('./pages/BlogPost'));
 const Privacy = lazy(() => import('./pages/Privacy'));
+const SanMiguelDeAllende = lazy(() => import('./pages/locations/SanMiguelDeAllende'));
+const Queretaro = lazy(() => import('./pages/locations/Queretaro'));
+const MexicoCity = lazy(() => import('./pages/locations/MexicoCity'));
+const UnitedStates = lazy(() => import('./pages/locations/UnitedStates'));
 
 interface LanguageContextType {
   lang: Language;
@@ -78,6 +82,10 @@ const AppLayout: React.FC = () => {
             <Route path="/workshops" element={<WorkshopsPage />} />
             <Route path="/contact" element={<ContactPage />} />
             <Route path="/privacy" element={<Privacy />} />
+            <Route path="/san-miguel-de-allende" element={<SanMiguelDeAllende />} />
+            <Route path="/queretaro" element={<Queretaro />} />
+            <Route path="/mexico-city" element={<MexicoCity />} />
+            <Route path="/united-states" element={<UnitedStates />} />
             <Route path="/analog" element={<StereoPage />} />
             <Route path="/slides" element={<SlidesPage />} />
           </Routes>
