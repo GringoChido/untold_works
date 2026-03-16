@@ -79,6 +79,45 @@ const Solutions: React.FC = () => {
         </div>
       </section>
 
+      {/* Quick-Select Dashboard */}
+      <section className="bg-white px-5 sm:px-10 py-12 sm:py-16 border-b border-untold-border">
+        <div className="max-w-[1440px] mx-auto">
+          <span className="font-mono text-[10px] uppercase tracking-[0.5em] text-untold-orange font-bold block mb-8">
+            {t({ en: 'QUICK SELECT', es: 'SELECCIÓN RÁPIDA' })}
+          </span>
+          <div className="grid lg:grid-cols-3 gap-6">
+            {pillars.map((pillar) => {
+              const pricing: Record<string, { en: string; es: string }> = {
+                'professional-services': { en: 'From $5,000 USD', es: 'Desde $5,000 USD' },
+                'small-business': { en: 'From $10,000 USD', es: 'Desde $10,000 USD' },
+                enterprise: { en: 'Custom Pricing', es: 'Precio Personalizado' },
+              };
+              return (
+                <Link
+                  key={pillar.id}
+                  to={`/solutions/${pillar.id}`}
+                  className="group border border-untold-border bg-untold-beige p-6 sm:p-8 hover:border-untold-orange hover:shadow-lg transition-all"
+                >
+                  <h3 className="font-sans font-black text-xl uppercase tracking-tighter mb-2 group-hover:text-untold-orange transition-colors">
+                    {t(pillar.title)}
+                  </h3>
+                  <p className="font-serif italic text-untold-gray text-sm mb-4">
+                    {t(pillar.description)}
+                  </p>
+                  <p className="font-mono text-[13px] text-untold-orange font-bold mb-4">
+                    {t(pricing[pillar.id])}
+                  </p>
+                  <span className="inline-flex items-center space-x-2 font-sans font-black text-sm uppercase tracking-tighter text-untold-orange group-hover:translate-x-1 transition-transform">
+                    <span>{t({ en: 'View Details', es: 'Ver Detalles' })}</span>
+                    <span>→</span>
+                  </span>
+                </Link>
+              );
+            })}
+          </div>
+        </div>
+      </section>
+
       {/* What We Build — 3 Phases */}
       <section className="px-5 sm:px-10 py-20 sm:py-32 border-b border-untold-border">
         <div className="max-w-[1440px] mx-auto">

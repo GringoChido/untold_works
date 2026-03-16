@@ -8,10 +8,17 @@ const Navbar: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isSolutionsOpen, setIsSolutionsOpen] = useState(false);
 
-  const solutionLinks = [
+  const pillarLinks = [
     { path: '/solutions/professional-services', label: { en: 'Professional Services', es: 'Servicios Profesionales' } },
     { path: '/solutions/small-business', label: { en: 'Small Business', es: 'Pequeña Empresa' } },
     { path: '/solutions/enterprise', label: { en: 'Enterprise', es: 'Empresarial' } },
+  ];
+
+  const serviceLinks = [
+    { path: '/seo-aeo', label: { en: 'SEO & AEO', es: 'SEO y AEO' } },
+    { path: '/social-media', label: { en: 'Social Media', es: 'Redes Sociales' } },
+    { path: '/ads', label: { en: 'Ads', es: 'Publicidad' } },
+    { path: '/dashboard', label: { en: 'Dashboard', es: 'Dashboard' } },
   ];
 
   return (
@@ -39,11 +46,25 @@ const Navbar: React.FC = () => {
                 {isSolutionsOpen && (
                   <div className="absolute top-full left-0 pt-4 z-50">
                     <div className="bg-white border border-untold-border shadow-xl min-w-[260px]">
-                      {solutionLinks.map((item) => (
+                      {pillarLinks.map((item) => (
                         <Link
                           key={item.path}
                           to={item.path}
-                          className="block px-6 py-4 text-[12px] font-mono font-bold uppercase tracking-[0.2em] text-untold-black hover:text-untold-orange hover:bg-untold-beige/50 transition-all border-b border-untold-border last:border-b-0"
+                          className="block px-6 py-4 text-[12px] font-mono font-bold uppercase tracking-[0.2em] text-untold-black hover:text-untold-orange hover:bg-untold-beige/50 transition-all border-b border-untold-border"
+                        >
+                          {t(item.label)}
+                        </Link>
+                      ))}
+                      <div className="px-6 py-2 bg-untold-beige/30 border-b border-untold-border">
+                        <span className="font-mono text-[9px] uppercase tracking-[0.4em] text-untold-gray font-bold">
+                          {t({ en: 'SERVICES', es: 'SERVICIOS' })}
+                        </span>
+                      </div>
+                      {serviceLinks.map((item, idx) => (
+                        <Link
+                          key={item.path}
+                          to={item.path}
+                          className={`block px-6 py-4 text-[12px] font-mono font-bold uppercase tracking-[0.2em] text-untold-black hover:text-untold-orange hover:bg-untold-beige/50 transition-all ${idx < serviceLinks.length - 1 ? 'border-b border-untold-border' : ''}`}
                         >
                           {t(item.label)}
                         </Link>
@@ -139,17 +160,36 @@ const Navbar: React.FC = () => {
                 <span className={`text-untold-orange text-2xl transition-transform ${isSolutionsOpen ? 'rotate-45' : ''}`}>+</span>
               </button>
               {isSolutionsOpen && (
-                <div className="mt-4 ml-4 space-y-3 border-l-2 border-untold-orange/20 pl-6">
-                  {solutionLinks.map((item) => (
-                    <Link
-                      key={item.path}
-                      to={item.path}
-                      className="block text-xl sm:text-2xl font-sans font-black uppercase tracking-tighter text-untold-gray hover:text-untold-orange transition-colors"
-                      onClick={() => setIsMenuOpen(false)}
-                    >
-                      {t(item.label)}
-                    </Link>
-                  ))}
+                <div className="mt-4 ml-4 border-l-2 border-untold-orange/20 pl-6">
+                  <div className="space-y-3">
+                    {pillarLinks.map((item) => (
+                      <Link
+                        key={item.path}
+                        to={item.path}
+                        className="block text-xl sm:text-2xl font-sans font-black uppercase tracking-tighter text-untold-gray hover:text-untold-orange transition-colors"
+                        onClick={() => setIsMenuOpen(false)}
+                      >
+                        {t(item.label)}
+                      </Link>
+                    ))}
+                  </div>
+                  <div className="my-4 border-t border-untold-border pt-3">
+                    <span className="font-mono text-[9px] uppercase tracking-[0.4em] text-untold-gray/60 font-bold block mb-3">
+                      {t({ en: 'SERVICES', es: 'SERVICIOS' })}
+                    </span>
+                    <div className="space-y-3">
+                      {serviceLinks.map((item) => (
+                        <Link
+                          key={item.path}
+                          to={item.path}
+                          className="block text-xl sm:text-2xl font-sans font-black uppercase tracking-tighter text-untold-gray hover:text-untold-orange transition-colors"
+                          onClick={() => setIsMenuOpen(false)}
+                        >
+                          {t(item.label)}
+                        </Link>
+                      ))}
+                    </div>
+                  </div>
                 </div>
               )}
             </div>

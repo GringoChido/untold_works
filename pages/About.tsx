@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { useLanguage } from '../App';
 import { usePageMeta } from '../hooks/usePageMeta';
 import * as i18n from '../i18n';
+import Testimonials from '../components/Testimonials';
 
 const AboutPage: React.FC = () => {
   const { t } = useLanguage();
@@ -108,6 +109,9 @@ const AboutPage: React.FC = () => {
           </div>
         </div>
       </section>
+
+      {/* Testimonials */}
+      <Testimonials variant="dark" />
 
       {/* FAQ */}
       <section className="px-5 sm:px-10 py-20 sm:py-32 bg-untold-beige text-untold-black border-b border-untold-border">

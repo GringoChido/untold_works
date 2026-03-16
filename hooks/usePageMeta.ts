@@ -158,6 +158,10 @@ function buildBreadcrumbs(
     'professional-services': { en: 'Professional Services', es: 'Servicios Profesionales' },
     'small-business': { en: 'Small Business', es: 'Pequeños Negocios' },
     enterprise: { en: 'Enterprise', es: 'Empresarial' },
+    'seo-aeo': { en: 'SEO & AEO', es: 'SEO y AEO' },
+    'social-media': { en: 'Social Media', es: 'Redes Sociales' },
+    ads: { en: 'Ads', es: 'Publicidad' },
+    dashboard: { en: 'Dashboard', es: 'Dashboard' },
   };
 
   let accumulated = '';

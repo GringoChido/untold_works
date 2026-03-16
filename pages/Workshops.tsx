@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { useLanguage } from '../App';
 import { usePageMeta } from '../hooks/usePageMeta';
 import * as i18n from '../i18n';
+import QuickLeadForm from '../components/QuickLeadForm';
 
 const WorkshopsPage: React.FC = () => {
   const { t } = useLanguage();
@@ -199,6 +200,25 @@ const WorkshopsPage: React.FC = () => {
               </details>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* Quick Lead Form */}
+      <section className="bg-untold-black text-white px-5 sm:px-10 py-16 sm:py-24 border-b border-white/10">
+        <div className="max-w-2xl mx-auto">
+          <span className="font-mono text-[10px] uppercase tracking-[0.5em] text-untold-orange font-bold block mb-4">
+            {t({ en: 'REGISTER INTEREST', es: 'REGISTRA TU INTERÉS' })}
+          </span>
+          <h2 className="font-sans font-black text-3xl sm:text-4xl uppercase tracking-tighter mb-4">
+            {t({ en: 'Join the Next Workshop', es: 'Únete al Próximo Taller' })}
+          </h2>
+          <p className="font-serif italic text-white/50 text-lg mb-10">
+            {t({
+              en: 'Fill out the form and we\'ll notify you when the next AI workshop session is scheduled.',
+              es: 'Completa el formulario y te notificaremos cuando se programe la próxima sesión del taller de IA.'
+            })}
+          </p>
+          <QuickLeadForm pillar="Workshops" />
         </div>
       </section>
 

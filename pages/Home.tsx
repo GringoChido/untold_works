@@ -4,7 +4,7 @@ import { useLanguage } from '../App';
 import { usePageMeta } from '../hooks/usePageMeta';
 import { projects } from '../data/projects';
 import * as i18n from '../i18n';
-import Testimonials from '../components/Testimonials';
+
 
 const faqSchema = {
   '@context': 'https://schema.org',
@@ -228,6 +228,111 @@ const Home: React.FC = () => {
       </section>
 
       {/* ═══════════════════════════════════════════════════════════
+          SECTION 3b: SEO & AEO CALLOUT
+      ═══════════════════════════════════════════════════════════ */}
+      <section className="bg-white px-5 sm:px-10 py-12 sm:py-16 border-b border-untold-border">
+        <div className="max-w-[1440px] mx-auto">
+          <Link to="/seo-aeo" className="group grid lg:grid-cols-12 gap-8 items-center">
+            <div className="lg:col-span-8">
+              <div className="flex items-center space-x-3 mb-4">
+                <span className="w-2 h-2 rounded-full bg-untold-orange"></span>
+                <span className="font-mono text-[10px] uppercase tracking-[0.5em] text-untold-orange font-bold">
+                  {t({ en: 'NEW SERVICE', es: 'NUEVO SERVICIO' })}
+                </span>
+              </div>
+              <h3 className="font-sans font-black text-2xl sm:text-4xl lg:text-5xl uppercase tracking-tighter mb-3 group-hover:text-untold-orange transition-colors">
+                {t({ en: 'SEO Got You Ranked. AEO Gets You Recommended.', es: 'SEO Te Posiciona. AEO Te Recomienda.' })}
+              </h3>
+              <p className="text-lg font-serif italic text-untold-gray max-w-2xl">
+                {t({
+                  en: 'Already have a website? Make it findable — on Google AND in AI answers. We optimize for both.',
+                  es: '¿Ya tienes sitio web? Haz que te encuentren — en Google Y en respuestas de IA. Optimizamos para ambos.'
+                })}
+              </p>
+            </div>
+            <div className="lg:col-span-4 flex lg:justify-end">
+              <span className="inline-flex items-center space-x-4 font-sans font-black text-lg uppercase tracking-tighter text-untold-orange group-hover:translate-x-2 transition-transform">
+                <span>{t({ en: 'Explore SEO & AEO', es: 'Explorar SEO y AEO' })}</span>
+                <span className="text-2xl">→</span>
+              </span>
+            </div>
+          </Link>
+        </div>
+      </section>
+
+      {/* ═══════════════════════════════════════════════════════════
+          SECTION 3c: SOCIAL MEDIA & ADS CALLOUT
+      ═══════════════════════════════════════════════════════════ */}
+      <section className="bg-white px-5 sm:px-10 py-12 sm:py-16 border-b border-untold-border">
+        <div className="max-w-[1440px] mx-auto">
+          <div className="grid lg:grid-cols-12 gap-8 items-center">
+            <div className="lg:col-span-8">
+              <div className="flex items-center space-x-3 mb-4">
+                <span className="w-2 h-2 rounded-full bg-untold-orange"></span>
+                <span className="font-mono text-[10px] uppercase tracking-[0.5em] text-untold-orange font-bold">
+                  {t({ en: 'NEW SERVICES', es: 'NUEVOS SERVICIOS' })}
+                </span>
+              </div>
+              <h3 className="font-sans font-black text-2xl sm:text-4xl lg:text-5xl uppercase tracking-tighter mb-3">
+                {t({ en: 'Social Media Strategy & Paid Advertising', es: 'Estrategia de Redes Sociales y Publicidad Pagada' })}
+              </h3>
+              <p className="text-lg font-serif italic text-untold-gray max-w-2xl">
+                {t({
+                  en: 'From organic content to paid campaigns — we manage your presence across every platform. Bilingual, data-driven, results-focused.',
+                  es: 'De contenido orgánico a campañas pagadas — gestionamos tu presencia en cada plataforma. Bilingüe, basado en datos, enfocado en resultados.'
+                })}
+              </p>
+            </div>
+            <div className="lg:col-span-4 flex lg:justify-end">
+              <div className="flex flex-col space-y-3">
+                <Link to="/social-media" className="group inline-flex items-center space-x-4 font-sans font-black text-lg uppercase tracking-tighter text-untold-orange hover:translate-x-2 transition-transform">
+                  <span>{t({ en: 'Social Media', es: 'Redes Sociales' })}</span>
+                  <span className="text-2xl">→</span>
+                </Link>
+                <Link to="/ads" className="group inline-flex items-center space-x-4 font-sans font-black text-lg uppercase tracking-tighter text-untold-orange hover:translate-x-2 transition-transform">
+                  <span>{t({ en: 'Paid Ads', es: 'Publicidad Pagada' })}</span>
+                  <span className="text-2xl">→</span>
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ═══════════════════════════════════════════════════════════
+          SECTION 3d: DASHBOARD CALLOUT
+      ═══════════════════════════════════════════════════════════ */}
+      <section className="bg-untold-black px-5 sm:px-10 py-12 sm:py-16 border-b border-white/10">
+        <div className="max-w-[1440px] mx-auto">
+          <Link to="/dashboard" className="group grid lg:grid-cols-12 gap-8 items-center">
+            <div className="lg:col-span-8">
+              <div className="flex items-center space-x-3 mb-4">
+                <span className="w-2 h-2 rounded-full bg-untold-orange animate-pulse"></span>
+                <span className="font-mono text-[10px] uppercase tracking-[0.5em] text-untold-orange font-bold">
+                  {t({ en: 'YOUR COMMAND CENTER', es: 'TU CENTRO DE MANDO' })}
+                </span>
+              </div>
+              <h3 className="font-sans font-black text-2xl sm:text-4xl lg:text-5xl uppercase tracking-tighter mb-3 text-white group-hover:text-untold-orange transition-colors">
+                {t({ en: 'Your Entire Business. One Dashboard. You Own It.', es: 'Todo Tu Negocio. Un Dashboard. Propiedad Tuya.' })}
+              </h3>
+              <p className="text-lg font-serif italic text-white/60 max-w-2xl">
+                {t({
+                  en: 'Website, social, ads, CRM, leads — stop logging into 12 tools. We build a custom dashboard you own outright. No SaaS fees.',
+                  es: 'Web, redes sociales, publicidad, CRM, leads — deja de entrar a 12 herramientas. Construimos un dashboard personalizado que es tuyo. Sin cuotas SaaS.'
+                })}
+              </p>
+            </div>
+            <div className="lg:col-span-4 flex lg:justify-end">
+              <span className="inline-flex items-center space-x-4 font-sans font-black text-lg uppercase tracking-tighter text-untold-orange group-hover:translate-x-2 transition-transform">
+                <span>{t({ en: 'Explore Dashboard', es: 'Explorar Dashboard' })}</span>
+                <span className="text-2xl">→</span>
+              </span>
+            </div>
+          </Link>
+        </div>
+      </section>
+
+      {/* ═══════════════════════════════════════════════════════════
           SECTION 4: SELECTED WORK
       ═══════════════════════════════════════════════════════════ */}
       <section id="what-we-build" className="px-5 sm:px-10 py-20 sm:py-32 bg-untold-black text-white border-b border-white/5">
@@ -354,12 +459,7 @@ const Home: React.FC = () => {
       </section>
 
       {/* ═══════════════════════════════════════════════════════════
-          SECTION 6: TESTIMONIALS
-      ═══════════════════════════════════════════════════════════ */}
-      <Testimonials variant="light" />
-
-      {/* ═══════════════════════════════════════════════════════════
-          SECTION 6b: FAQ
+          SECTION 6: FAQ
       ═══════════════════════════════════════════════════════════ */}
       <section className="px-5 sm:px-10 py-20 sm:py-32 bg-white border-b border-untold-border">
         <div className="max-w-[900px] mx-auto">

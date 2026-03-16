@@ -332,6 +332,44 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://untold.works/united-states" />
   </url>
 
+  <url>
+    <loc>https://untold.works/seo-aeo</loc>
+    <lastmod>2026-03-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://untold.works/seo-aeo" />
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://untold.works/seo-aeo?lang=es" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://untold.works/seo-aeo" />
+  </url>
+
+  <url>
+    <loc>https://untold.works/social-media</loc>
+    <lastmod>2026-03-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://untold.works/social-media" />
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://untold.works/social-media?lang=es" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://untold.works/social-media" />
+  </url>
+  <url>
+    <loc>https://untold.works/ads</loc>
+    <lastmod>2026-03-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://untold.works/ads" />
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://untold.works/ads?lang=es" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://untold.works/ads" />
+  </url>
+  <url>
+    <loc>https://untold.works/dashboard</loc>
+    <lastmod>2026-03-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://untold.works/dashboard" />
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://untold.works/dashboard?lang=es" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://untold.works/dashboard" />
+  </url>
+
   <!-- New Blog Posts -->
   <url>
     <loc>https://untold.works/blog/whatsapp-ai-for-mexican-businesses-complete-guide</loc>

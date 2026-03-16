@@ -24,6 +24,10 @@ const SanMiguelDeAllende = lazy(() => import('./pages/locations/SanMiguelDeAllen
 const Queretaro = lazy(() => import('./pages/locations/Queretaro'));
 const MexicoCity = lazy(() => import('./pages/locations/MexicoCity'));
 const UnitedStates = lazy(() => import('./pages/locations/UnitedStates'));
+const SeoAeo = lazy(() => import('./pages/SeoAeo'));
+const SocialMedia = lazy(() => import('./pages/SocialMedia'));
+const Ads = lazy(() => import('./pages/Ads'));
+const Dashboard = lazy(() => import('./pages/Dashboard'));
 
 interface LanguageContextType {
   lang: Language;
@@ -86,6 +90,10 @@ const AppLayout: React.FC = () => {
             <Route path="/queretaro" element={<Queretaro />} />
             <Route path="/mexico-city" element={<MexicoCity />} />
             <Route path="/united-states" element={<UnitedStates />} />
+            <Route path="/seo-aeo" element={<SeoAeo />} />
+            <Route path="/social-media" element={<SocialMedia />} />
+            <Route path="/ads" element={<Ads />} />
+            <Route path="/dashboard" element={<Dashboard />} />
             <Route path="/analog" element={<StereoPage />} />
             <Route path="/slides" element={<SlidesPage />} />
           </Routes>
