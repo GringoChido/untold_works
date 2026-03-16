@@ -34,11 +34,11 @@ export const projects: Project[] = [
       { label: { en: 'Capacity Shift', es: 'Cambio de Capacidad' }, value: '10x' }
     ],
     tags: ['AUTOMATION', 'RAG', 'PIPELINE OPS'],
-    heroImage: '/images/project1-spotify/image1.jpg',
+    heroImage: '/images/project1-spotify/image1.webp',
     images: [
-      '/images/project1-spotify/image1.jpg',
+      '/images/project1-spotify/image1.webp',
       '/images/project1-spotify/image2.png',
-      '/images/project1-spotify/image3.png',
+      '/images/project1-spotify/image3.webp',
       '/images/project1-spotify/image4.png'
     ],
     imageAlts: [
@@ -89,12 +89,12 @@ export const projects: Project[] = [
       { label: { en: 'Engagement Signals', es: 'Señales de Engagement' }, value: '500+' }
     ],
     tags: ['GTM AUTOMATION', 'PYTHON', 'CAMPAIGN OPS'],
-    heroImage: '/images/project2-blackradio/image1.jpg',
+    heroImage: '/images/project2-blackradio/image1.webp',
     images: [
-      '/images/project2-blackradio/image1.jpg',
-      '/images/project2-blackradio/image2.png',
+      '/images/project2-blackradio/image1.webp',
+      '/images/project2-blackradio/image2.webp',
       '/images/project2-blackradio/image3.png',
-      '/images/project2-blackradio/image4.png'
+      '/images/project2-blackradio/image4.webp'
     ],
     imageAlts: [
       'Black Radio campaign dashboard',
@@ -137,12 +137,12 @@ export const projects: Project[] = [
       { label: { en: 'Sales ROI', es: 'ROI de Ventas' }, value: '4.2x' }
     ],
     tags: ['AGENTIC AI', 'CRM', 'REVOPS'],
-    heroImage: '/images/project3-omi/image5.png',
+    heroImage: '/images/project3-omi/image5.webp',
     images: [
-      '/images/project3-omi/image1.jpg',
-      '/images/project3-omi/image2.png',
-      '/images/project3-omi/image3.png',
-      '/images/project3-omi/image4.png'
+      '/images/project3-omi/image1.webp',
+      '/images/project3-omi/image2.webp',
+      '/images/project3-omi/image3.webp',
+      '/images/project3-omi/image4.webp'
     ],
     imageAlts: [
       'OMI lead intake qualification flow',
@@ -185,12 +185,12 @@ export const projects: Project[] = [
       { label: { en: 'Efficiency', es: 'Eficiencia' }, value: '+35%' }
     ],
     tags: ['ENTERPRISE', 'REVOPS', 'OMNICHANNEL'],
-    heroImage: '/images/project4-billiard/image5.png',
+    heroImage: '/images/project4-billiard/image5.webp',
     images: [
       '/images/project4-billiard/image1.jpg',
       '/images/project4-billiard/image2.jpg',
-      '/images/project4-billiard/image3.png',
-      '/images/project4-billiard/image4.png'
+      '/images/project4-billiard/image3.webp',
+      '/images/project4-billiard/image4.webp'
     ],
     imageAlts: [
       'Billiard Factory product data architecture',
@@ -235,12 +235,12 @@ export const projects: Project[] = [
       { label: { en: 'AI Systems Built', es: 'Sistemas de IA' }, value: '6' }
     ],
     tags: ['BRAND STRATEGY', 'AI INFRASTRUCTURE', 'SALES ENABLEMENT'],
-    heroImage: '/images/project5-noxguard/truck.png',
+    heroImage: '/images/project5-noxguard/truck.webp',
     images: [
-      '/images/project5-noxguard/worker.png',
-      '/images/project5-noxguard/product.png',
-      '/images/project5-noxguard/mobile-app.png',
-      '/images/project5-noxguard/packaging.png'
+      '/images/project5-noxguard/worker.webp',
+      '/images/project5-noxguard/product.webp',
+      '/images/project5-noxguard/mobile-app.webp',
+      '/images/project5-noxguard/packaging.webp'
     ],
     imageAlts: [
       'Noxguard operations engineer monitoring data systems',

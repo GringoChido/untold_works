@@ -150,7 +150,6 @@ const ProjectDetail: React.FC = () => {
               <img
                 src={project.heroImage}
                 alt={t(project.name)}
-                loading="lazy"
                 className="w-full h-full object-cover"
               />
             </div>

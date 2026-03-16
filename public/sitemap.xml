@@ -123,58 +123,42 @@
     <xhtml:link rel="alternate" hreflang="es-MX" href="https://untold.works/blog?lang=es" />
   </url>
 
-  <!-- Blog Categories -->
+  <!-- Blog Categories (source of truth: data/blogPosts.ts category field) -->
   <url>
-    <loc>https://untold.works/blog/category/ai-education</loc>
-    <lastmod>2026-03-04</lastmod>
+    <loc>https://untold.works/blog/category/ai-for-business</loc>
+    <lastmod>2026-03-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://untold.works/blog/category/ai-education" />
-    <xhtml:link rel="alternate" hreflang="es-MX" href="https://untold.works/blog/category/ai-education?lang=es" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://untold.works/blog/category/ai-for-business" />
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://untold.works/blog/category/ai-for-business?lang=es" />
   </url>
   <url>
-    <loc>https://untold.works/blog/category/website-ecosystem</loc>
-    <lastmod>2026-03-04</lastmod>
+    <loc>https://untold.works/blog/category/creative-technology</loc>
+    <lastmod>2026-03-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://untold.works/blog/category/website-ecosystem" />
-    <xhtml:link rel="alternate" hreflang="es-MX" href="https://untold.works/blog/category/website-ecosystem?lang=es" />
-  </url>
-  <url>
-    <loc>https://untold.works/blog/category/mobile-first</loc>
-    <lastmod>2026-03-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://untold.works/blog/category/mobile-first" />
-    <xhtml:link rel="alternate" hreflang="es-MX" href="https://untold.works/blog/category/mobile-first?lang=es" />
-  </url>
-  <url>
-    <loc>https://untold.works/blog/category/san-miguel</loc>
-    <lastmod>2026-03-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://untold.works/blog/category/san-miguel" />
-    <xhtml:link rel="alternate" hreflang="es-MX" href="https://untold.works/blog/category/san-miguel?lang=es" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://untold.works/blog/category/creative-technology" />
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://untold.works/blog/category/creative-technology?lang=es" />
   </url>
   <url>
     <loc>https://untold.works/blog/category/case-studies</loc>
-    <lastmod>2026-03-04</lastmod>
+    <lastmod>2026-03-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://untold.works/blog/category/case-studies" />
     <xhtml:link rel="alternate" hreflang="es-MX" href="https://untold.works/blog/category/case-studies?lang=es" />
   </url>
   <url>
-    <loc>https://untold.works/blog/category/industry-guides</loc>
-    <lastmod>2026-03-04</lastmod>
+    <loc>https://untold.works/blog/category/aeo-search</loc>
+    <lastmod>2026-03-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://untold.works/blog/category/industry-guides" />
-    <xhtml:link rel="alternate" hreflang="es-MX" href="https://untold.works/blog/category/industry-guides?lang=es" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://untold.works/blog/category/aeo-search" />
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://untold.works/blog/category/aeo-search?lang=es" />
   </url>
   <url>
     <loc>https://untold.works/blog/category/build-notes</loc>
-    <lastmod>2026-03-04</lastmod>
+    <lastmod>2026-03-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://untold.works/blog/category/build-notes" />
@@ -287,8 +271,22 @@
   </url>
 
   <url>
+    <loc>https://untold.works/blog/aeo-the-shift-nobodys-talking-about</loc>
+    <lastmod>2026-03-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
     <loc>https://untold.works/blog/yo-this-thing-is-broken</loc>
     <lastmod>2026-02-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://untold.works/blog/your-creative-eye-became-the-prompt</loc>
+    <lastmod>2026-03-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -342,16 +340,6 @@
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://untold.works/blog/whatsapp-ai-for-mexican-businesses-complete-guide" />
     <xhtml:link rel="alternate" hreflang="es-MX" href="https://untold.works/blog/whatsapp-ai-for-mexican-businesses-complete-guide?lang=es" />
-  </url>
-
-  <!-- Blog Category for AI Business -->
-  <url>
-    <loc>https://untold.works/blog/category/ai-for-business</loc>
-    <lastmod>2026-03-16</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://untold.works/blog/category/ai-for-business" />
-    <xhtml:link rel="alternate" hreflang="es-MX" href="https://untold.works/blog/category/ai-for-business?lang=es" />
   </url>
 
   <!-- Secondary -->

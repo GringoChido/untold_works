@@ -272,7 +272,7 @@ export const blogPosts: BlogPost[] = [
 <p>Hemos construido estos sistemas para restaurantes, hoteles, fabricantes y firmas de servicios profesionales en todo Mexico. Si quieres ver como se veria un sistema de IA en WhatsApp para tu negocio, eso es literalmente lo que hacemos.</p>
 <p class="text-sm text-untold-gray mt-8"><em>Joshua es el fundador de Untold Works, una agencia de tecnologia creativa en San Miguel de Allende, Mexico.</em></p>`,
     },
-    image: '/blog/whatsapp-ai-mexico-guide.jpg',
+    image: '/blog/whatsapp-ai-mexico-guide.webp',
   },
 
   // ──────────────────────────────────────────────

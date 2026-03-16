@@ -141,7 +141,7 @@ const Portfolio: React.FC = () => {
               {/* Cover Image with "In Process" Overlay */}
               <div className="aspect-[16/10] overflow-hidden border-b border-white/10 relative">
                 <img
-                  src="/images/casa-schuck-preview.png"
+                  src="/images/casa-schuck-preview.webp"
                   alt="Casa Schuck Hotel — current website"
                   loading="lazy"
                   className="w-full h-full object-cover object-top opacity-40"

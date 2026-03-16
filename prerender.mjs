@@ -49,6 +49,7 @@ const routes = [
   '/blog/case-study-ecommerce-brand-migration-shopify-to-custom',
   '/blog/the-professional-services-website-playbook',
   '/blog/retail-and-hospitality-digital-survival-guide',
+  '/blog/whatsapp-ai-for-mexican-businesses-complete-guide',
   '/blog/aeo-the-shift-nobodys-talking-about',
   '/blog/yo-this-thing-is-broken',
   '/blog/your-creative-eye-became-the-prompt',
