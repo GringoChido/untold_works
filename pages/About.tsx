@@ -11,7 +11,35 @@ const AboutPage: React.FC = () => {
 
   usePageMeta(
     i18n.seo.about.title,
-    i18n.seo.about.description
+    i18n.seo.about.description,
+    {
+      path: '/about',
+      schema: [
+        {
+          '@context': 'https://schema.org',
+          '@type': 'AboutPage',
+          mainEntity: {
+            '@type': 'Person',
+            name: 'Joshua Semolik',
+            jobTitle: 'Founder & Creative Director',
+            worksFor: { '@type': 'Organization', name: 'Untold.works', '@id': 'https://untold.works/#organization' },
+            url: 'https://untold.works/about',
+            sameAs: ['https://www.linkedin.com/in/semolik/'],
+            knowsAbout: ['AI-powered websites', 'brand identity', 'bilingual web development', 'SEO', 'AEO', 'workflow automation'],
+            description: '25 years of creative direction. Based in San Miguel de Allende, Mexico. Building AI-powered business ecosystems for companies across Mexico and the United States.',
+          },
+        },
+        {
+          '@context': 'https://schema.org',
+          '@type': 'FAQPage',
+          mainEntity: [
+            { '@type': 'Question', name: 'Who runs Untold.works?', acceptedAnswer: { '@type': 'Answer', text: 'Untold.works is run by Joshua Semolik, a creative director with 25 years of experience, based in San Miguel de Allende, Guanajuato, Mexico.' } },
+            { '@type': 'Question', name: 'Can a Mexico-based agency serve US clients effectively?', acceptedAnswer: { '@type': 'Answer', text: 'Yes. Our bilingual team works remotely with businesses across Mexico and the United States. Same timezone, native-level English and Spanish, and deep understanding of both markets.' } },
+            { '@type': 'Question', name: 'Why San Miguel de Allende?', acceptedAnswer: { '@type': 'Answer', text: 'San Miguel de Allende sits at the intersection of US and Mexican business culture. Strong expat community, growing tech ecosystem, and a creative environment that attracts world-class talent.' } },
+          ],
+        },
+      ],
+    }
   );
 
   return (

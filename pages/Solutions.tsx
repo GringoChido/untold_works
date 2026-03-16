@@ -2,7 +2,6 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { useLanguage } from '../App';
 import { usePageMeta } from '../hooks/usePageMeta';
-import * as i18n from '../i18n';
 import Breadcrumbs from '../components/Breadcrumbs';
 import Testimonials from '../components/Testimonials';
 
@@ -11,48 +10,155 @@ const Solutions: React.FC = () => {
 
   usePageMeta(
     {
-      en: 'Solutions | AI Websites, Automation & Business Systems — Untold.works',
-      es: 'Soluciones | Sitios Web con IA, Automatización y Sistemas de Negocio — Untold.works',
+      en: 'Solutions | AI-Powered Business Systems — Untold.works',
+      es: 'Soluciones | Sistemas de Negocio con IA — Untold.works',
     },
     {
-      en: 'AI-native business platforms — brand identity, mobile-first websites, automated workflows, CRM, and bilingual content systems for businesses in Mexico and the US.',
-      es: 'Plataformas de negocio nativas de IA — identidad de marca, sitios web mobile-first, flujos automatizados, CRM y sistemas de contenido bilingüe para negocios en México y EE.UU.',
+      en: 'Three solution tiers for businesses at every stage — from solo professionals to enterprise teams. AI-native platforms with full ownership transfer.',
+      es: 'Tres niveles de solución para negocios en cada etapa — desde profesionales independientes hasta equipos empresariales. Plataformas nativas de IA con transferencia total de propiedad.',
     },
-    { path: '/solutions' }
+    {
+      path: '/solutions',
+      schema: {
+        '@context': 'https://schema.org',
+        '@type': 'FAQPage',
+        mainEntity: [
+          {
+            '@type': 'Question',
+            name: 'How much does an Untold.works project cost?',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Professional Services ecosystems start at $5,000 USD. Small Business platforms range from $10,000–$30,000 USD. Enterprise systems are custom-quoted based on scope and complexity.',
+            },
+          },
+          {
+            '@type': 'Question',
+            name: 'How long does it take to build a business platform?',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Professional Services builds take 4–6 weeks. Small Business platforms take 6–10 weeks. Enterprise systems vary from 8–16 weeks depending on scope.',
+            },
+          },
+          {
+            '@type': 'Question',
+            name: 'Do I own everything Untold.works builds?',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Yes. Full ownership transfer is part of every project — code, data, documentation, and credentials. No lock-in, no recurring fees for access.',
+            },
+          },
+        ],
+      },
+    }
   );
 
-  const pillars = [
+  const solutions = [
     {
       id: 'professional-services',
+      eyebrow: { en: 'SOLO & SMALL TEAMS', es: 'INDIVIDUALES Y EQUIPOS PEQUEÑOS' },
       title: { en: 'Professional Services', es: 'Servicios Profesionales' },
-      description: {
-        en: 'Doctors, lawyers, consultants, architects — complete business systems for anyone who serves clients one-on-one.',
-        es: 'Médicos, abogados, consultores, arquitectos — sistemas completos de negocio para quienes atienden clientes uno a uno.',
+      headline: {
+        en: 'One system to run your entire practice.',
+        es: 'Un sistema para manejar toda tu práctica.',
       },
+      description: {
+        en: 'For professionals who serve clients one-on-one — doctors, lawyers, consultants, architects, therapists, coaches. We replace your patchwork of tools with a single AI-powered platform: brand, website, CRM, booking, marketing, and analytics.',
+        es: 'Para profesionales que atienden clientes uno a uno — médicos, abogados, consultores, arquitectos, terapeutas, coaches. Reemplazamos tu mezcla de herramientas con una sola plataforma impulsada por IA: marca, sitio web, CRM, reservas, marketing y analítica.',
+      },
+      highlights: [
+        { en: 'Brand identity & mobile-first website', es: 'Identidad de marca y sitio web mobile-first' },
+        { en: 'Client CRM & online booking', es: 'CRM de clientes y reservas en línea' },
+        { en: 'Automated follow-ups & reminders', es: 'Seguimientos y recordatorios automáticos' },
+        { en: 'Email marketing & review management', es: 'Email marketing y gestión de reseñas' },
+      ],
+      pricing: { en: 'From $5,000 USD', es: 'Desde $5,000 USD' },
+      timeline: { en: '4–6 weeks', es: '4–6 semanas' },
+      bestFor: { en: '1–5 person firms', es: 'Firmas de 1–5 personas' },
     },
     {
       id: 'small-business',
-      title: { en: 'Small Business', es: 'Pequeños Negocios' },
-      description: {
-        en: 'Restaurants, retail, studios, local services — mobile-first platforms that bring customers through the door.',
-        es: 'Restaurantes, retail, estudios, servicios locales — plataformas mobile-first que atraen clientes a tu puerta.',
+      eyebrow: { en: 'GROWING TEAMS', es: 'EQUIPOS EN CRECIMIENTO' },
+      title: { en: 'Small Business', es: 'Pequeña Empresa' },
+      headline: {
+        en: 'The platform your team needs to stop duct-taping tools together.',
+        es: 'La plataforma que tu equipo necesita para dejar de parchar herramientas.',
       },
+      description: {
+        en: 'For businesses with teams of 2–50 — restaurants, hotels, retail, service companies, event venues. We build an AI-powered operations platform that replaces twenty logins with one ecosystem: brand, website, team CRM, AI workflows, inventory or booking management, and analytics.',
+        es: 'Para negocios con equipos de 2–50 — restaurantes, hoteles, retail, empresas de servicios, espacios para eventos. Construimos una plataforma de operaciones impulsada por IA que reemplaza veinte contraseñas con un ecosistema: marca, sitio web, CRM de equipo, flujos de IA, gestión de inventario o reservas, y analítica.',
+      },
+      highlights: [
+        { en: 'Full brand system & responsive website', es: 'Sistema de marca completo y sitio web responsivo' },
+        { en: 'Team CRM & AI workflow automation', es: 'CRM de equipo y automatización de flujos con IA' },
+        { en: 'Inventory, booking, or scheduling systems', es: 'Sistemas de inventario, reservas o agenda' },
+        { en: 'Multi-user analytics & revenue dashboard', es: 'Analítica multiusuario y panel de ingresos' },
+      ],
+      pricing: { en: 'From $10,000 USD', es: 'Desde $10,000 USD' },
+      timeline: { en: '6–10 weeks', es: '6–10 semanas' },
+      bestFor: { en: 'Teams of 2–50', es: 'Equipos de 2–50' },
     },
     {
       id: 'enterprise',
-      title: { en: 'Enterprise', es: 'Empresa' },
+      eyebrow: { en: 'COMPLEX OPERATIONS', es: 'OPERACIONES COMPLEJAS' },
+      title: { en: 'Enterprise', es: 'Empresarial' },
+      headline: {
+        en: 'AI infrastructure for organizations that have outgrown off-the-shelf solutions.',
+        es: 'Infraestructura de IA para organizaciones que superaron las soluciones genéricas.',
+      },
       description: {
-        en: 'Hotels, multi-location brands, agencies — scalable systems with dashboards, automation, and team workflows.',
-        es: 'Hoteles, marcas multi-ubicación, agencias — sistemas escalables con dashboards, automatización y flujos de equipo.',
+        en: 'For organizations with 20+ employees, multiple departments, or multi-location operations. We architect AI-powered systems that connect sales, marketing, operations, and leadership — with full visibility, phased rollout, and 60 days of post-launch support.',
+        es: 'Para organizaciones con 20+ empleados, múltiples departamentos u operaciones multi-ubicación. Arquitectamos sistemas impulsados por IA que conectan ventas, marketing, operaciones y liderazgo — con visibilidad total, implementación por fases y 60 días de soporte post-lanzamiento.',
+      },
+      highlights: [
+        { en: 'Enterprise brand system & corporate website', es: 'Sistema de marca empresarial y sitio corporativo' },
+        { en: 'Multi-team CRM & AI pipeline management', es: 'CRM multi-equipo y gestión de pipeline con IA' },
+        { en: 'Cross-department workflow automation', es: 'Automatización de flujos entre departamentos' },
+        { en: 'Revenue ops, forecasting & executive dashboards', es: 'RevOps, pronósticos y dashboards ejecutivos' },
+      ],
+      pricing: { en: 'Custom Pricing', es: 'Precio Personalizado' },
+      timeline: { en: '8–16 weeks', es: '8–16 semanas' },
+      bestFor: { en: 'Organizations with 20+ employees', es: 'Organizaciones con 20+ empleados' },
+    },
+  ];
+
+  const process = [
+    {
+      number: '01',
+      title: { en: 'Analyze', es: 'Analizar' },
+      description: {
+        en: 'We audit your operations, tools, and workflows. We map where AI creates the most value.',
+        es: 'Auditamos tus operaciones, herramientas y flujos. Mapeamos dónde la IA crea más valor.',
+      },
+    },
+    {
+      number: '02',
+      title: { en: 'Plan', es: 'Planificar' },
+      description: {
+        en: 'We architect your complete platform — brand, website, AI workflows, SEO, and integrations. You approve everything before we build.',
+        es: 'Arquitectamos tu plataforma completa — marca, sitio web, flujos de IA, SEO e integraciones. Apruebas todo antes de que construyamos.',
+      },
+    },
+    {
+      number: '03',
+      title: { en: 'Build', es: 'Construir' },
+      description: {
+        en: 'We build everything — mobile-ready, bilingual, SEO-optimized, and LLM-discoverable from day one. All tested, all documented.',
+        es: 'Construimos todo — mobile-ready, bilingüe, optimizado para SEO y descubrible por LLMs desde el día uno. Todo probado, todo documentado.',
+      },
+    },
+    {
+      number: '04',
+      title: { en: 'Train & Deliver', es: 'Capacitar y Entregar' },
+      description: {
+        en: 'Video walkthroughs, written docs, live sessions. Then we hand over the keys. Your platform, your data, full ownership.',
+        es: 'Videos paso a paso, documentación escrita, sesiones en vivo. Después entregamos las llaves. Tu plataforma, tus datos, propiedad total.',
       },
     },
   ];
 
-  const phases = i18n.whatWeBuild.phases;
-
   return (
     <div className="bg-untold-beige min-h-screen font-serif text-untold-black">
-      {/* Hero */}
+      {/* ── Hero ── */}
       <section className="bg-untold-black text-white px-5 sm:px-10 py-20 sm:py-32 lg:py-48 border-b border-white/10">
         <div className="max-w-[1440px] mx-auto">
           <div className="mb-8">
@@ -71,208 +177,146 @@ const Solutions: React.FC = () => {
             </p>
           </div>
           <h1 className="font-sans font-black text-[clamp(2.5rem,8vw,120px)] leading-[0.85] mb-8 tracking-tighter uppercase max-w-5xl">
-            {t(i18n.whatWeBuild.headline)}
+            {t({
+              en: 'Choose the Right System for Your Business',
+              es: 'Elige el Sistema Correcto Para Tu Negocio',
+            })}
           </h1>
           <p className="text-xl sm:text-2xl lg:text-4xl font-serif italic text-white/60 max-w-4xl leading-tight">
-            {t(i18n.whatWeBuild.subheadline)}
+            {t({
+              en: 'Three tiers. One philosophy: build it right, hand over the keys, and get out of the way.',
+              es: 'Tres niveles. Una filosofía: construirlo bien, entregar las llaves y no estorbar.',
+            })}
           </p>
         </div>
       </section>
 
-      {/* Quick-Select Dashboard */}
-      <section className="bg-white px-5 sm:px-10 py-12 sm:py-16 border-b border-untold-border">
-        <div className="max-w-[1440px] mx-auto">
-          <span className="font-mono text-[10px] uppercase tracking-[0.5em] text-untold-orange font-bold block mb-8">
-            {t({ en: 'QUICK SELECT', es: 'SELECCIÓN RÁPIDA' })}
-          </span>
-          <div className="grid lg:grid-cols-3 gap-6">
-            {pillars.map((pillar) => {
-              const pricing: Record<string, { en: string; es: string }> = {
-                'professional-services': { en: 'From $5,000 USD', es: 'Desde $5,000 USD' },
-                'small-business': { en: 'From $10,000 USD', es: 'Desde $10,000 USD' },
-                enterprise: { en: 'Custom Pricing', es: 'Precio Personalizado' },
-              };
-              return (
-                <Link
-                  key={pillar.id}
-                  to={`/solutions/${pillar.id}`}
-                  className="group border border-untold-border bg-untold-beige p-6 sm:p-8 hover:border-untold-orange hover:shadow-lg transition-all"
-                >
-                  <h3 className="font-sans font-black text-xl uppercase tracking-tighter mb-2 group-hover:text-untold-orange transition-colors">
-                    {t(pillar.title)}
-                  </h3>
-                  <p className="font-serif italic text-untold-gray text-sm mb-4">
-                    {t(pillar.description)}
-                  </p>
-                  <p className="font-mono text-[13px] text-untold-orange font-bold mb-4">
-                    {t(pricing[pillar.id])}
-                  </p>
-                  <span className="inline-flex items-center space-x-2 font-sans font-black text-sm uppercase tracking-tighter text-untold-orange group-hover:translate-x-1 transition-transform">
-                    <span>{t({ en: 'View Details', es: 'Ver Detalles' })}</span>
-                    <span>→</span>
-                  </span>
-                </Link>
-              );
-            })}
-          </div>
-        </div>
-      </section>
-
-      {/* What We Build — 3 Phases */}
-      <section className="px-5 sm:px-10 py-20 sm:py-32 border-b border-untold-border">
-        <div className="max-w-[1440px] mx-auto">
-          <div className="flex items-center space-x-4 mb-16">
-            <span className="w-2.5 h-2.5 rounded-full bg-untold-orange"></span>
-            <h2 className="font-mono text-[13px] uppercase tracking-[0.6em] font-bold text-untold-black/40">
-              {t({ en: 'OUR APPROACH', es: 'NUESTRO ENFOQUE' })}
+      {/* ── The Promise ── */}
+      <section className="bg-white px-5 sm:px-10 py-16 sm:py-24 border-b border-untold-border">
+        <div className="max-w-[1440px] mx-auto grid lg:grid-cols-2 gap-12 lg:gap-20">
+          <div>
+            <span className="font-mono text-[10px] uppercase tracking-[0.5em] text-untold-orange font-bold block mb-6">
+              {t({ en: 'WHAT YOU GET', es: 'LO QUE RECIBES' })}
+            </span>
+            <h2 className="font-sans font-black text-3xl sm:text-5xl uppercase tracking-tighter mb-6 leading-[0.85]">
+              {t({
+                en: 'An AI-Powered Ecosystem. Not a Website.',
+                es: 'Un Ecosistema Impulsado por IA. No un Sitio Web.',
+              })}
             </h2>
+            <p className="text-lg sm:text-xl font-serif italic text-untold-gray leading-relaxed">
+              {t({
+                en: 'Every solution includes brand identity, a mobile-first website, AI workflow automation, bilingual content, SEO optimization, and full ownership transfer. The difference between tiers is scale — how many people use it, how many systems connect, and how deep the automation goes.',
+                es: 'Cada solución incluye identidad de marca, un sitio web mobile-first, automatización de flujos con IA, contenido bilingüe, optimización SEO y transferencia total de propiedad. La diferencia entre niveles es escala — cuántas personas lo usan, cuántos sistemas se conectan y qué tan profunda es la automatización.',
+              })}
+            </p>
           </div>
-
-          <div className="grid lg:grid-cols-3 gap-px bg-untold-border border border-untold-border">
-            {phases.map((phase, idx) => {
-              const items: { en: string; es: string }[] =
-                'deliverables' in phase && phase.deliverables
-                  ? phase.deliverables
-                  : 'features' in phase && phase.features
-                    ? phase.features
-                    : 'options' in phase && phase.options
-                      ? phase.options
-                      : [];
-
-              return (
-                <div key={idx} className="bg-white p-8 sm:p-10 lg:p-12 flex flex-col">
-                  <span className="font-mono text-[10px] uppercase tracking-[0.5em] text-untold-orange font-bold mb-6">
-                    {t({ en: `PHASE ${String(idx + 1).padStart(2, '0')}`, es: `FASE ${String(idx + 1).padStart(2, '0')}` })}
-                  </span>
-                  <h3 className="font-sans font-black text-2xl sm:text-3xl uppercase tracking-tighter mb-4">
-                    {t(phase.title)}
-                  </h3>
-                  <p className="text-base sm:text-lg font-serif italic text-untold-gray mb-8 leading-relaxed">
-                    {t(phase.description)}
-                  </p>
-                  <ul className="space-y-3 flex-grow">
-                    {items.map((item: { en: string; es: string }, i: number) => (
-                      <li key={i} className="flex items-start space-x-3">
-                        <span className="text-untold-orange mt-1.5 text-sm">+</span>
-                        <span className="text-sm sm:text-base font-serif text-untold-gray">{t(item)}</span>
-                      </li>
-                    ))}
-                  </ul>
-                  {'reassurance' in phase && phase.reassurance && (
-                    <p className="mt-8 pt-6 border-t border-untold-border text-sm font-mono text-untold-orange/70">
-                      {t(phase.reassurance as { en: string; es: string })}
-                    </p>
-                  )}
-                </div>
-              );
-            })}
-          </div>
-        </div>
-      </section>
-
-      {/* How We Work */}
-      <section className="px-5 sm:px-10 py-20 sm:py-32 bg-white border-b border-untold-border">
-        <div className="max-w-[1440px] mx-auto">
-          <div className="flex items-center space-x-4 mb-16">
-            <span className="w-2.5 h-2.5 rounded-full bg-untold-black"></span>
-            <h2 className="font-mono text-[13px] uppercase tracking-[0.6em] font-bold text-untold-black/40">
-              {t({ en: 'OUR PROCESS', es: 'NUESTRO PROCESO' })}
-            </h2>
-          </div>
-
-          <h3 className="font-sans font-black text-4xl sm:text-6xl lg:text-8xl uppercase tracking-tighter mb-6 leading-[0.85]">
-            {t(i18n.howWeWork.headline)}
-          </h3>
-          <p className="text-xl sm:text-2xl font-serif italic text-untold-gray mb-20 max-w-3xl">
-            {t(i18n.howWeWork.subheadline)}
-          </p>
-
-          <div className="border-t border-untold-border">
-            {i18n.howWeWork.stages.map((stage) => (
-              <div
-                key={stage.number}
-                className="grid lg:grid-cols-12 gap-0 border-b border-untold-border group hover:bg-untold-beige transition-all duration-500"
-              >
-                <div className="lg:col-span-4 p-6 sm:p-10 lg:p-14 lg:border-r border-untold-border">
-                  <span className="font-mono text-[11px] font-bold text-untold-orange mb-6 block tracking-[0.4em] uppercase">
-                    {t({ en: `STAGE ${stage.number}`, es: `ETAPA ${stage.number}` })}
-                  </span>
-                  <h4 className="font-sans font-black text-3xl sm:text-4xl lg:text-5xl uppercase tracking-tighter leading-tight group-hover:text-untold-orange transition-colors">
-                    {t(stage.title)}
-                  </h4>
-                  <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-untold-black/30 mt-4">
-                    {t(stage.subtitle)}
-                  </p>
-                </div>
-                <div className="lg:col-span-8 p-6 sm:p-10 lg:p-14 flex flex-col justify-between">
-                  <p className="text-lg sm:text-xl lg:text-2xl font-serif italic text-untold-gray leading-relaxed mb-8">
-                    {t(stage.description)}
-                  </p>
-                  <div className="flex flex-wrap gap-2 pt-6 border-t border-untold-border/50">
-                    {stage.deliverables.map((d, i) => (
-                      <span key={i} className="text-[10px] font-mono uppercase tracking-[0.2em] text-untold-black/40 border border-untold-border px-3 py-1">
-                        {t(d)}
-                      </span>
-                    ))}
-                  </div>
-                </div>
+          <div className="grid grid-cols-2 gap-4">
+            {[
+              { icon: '01', label: { en: 'Brand & Website', es: 'Marca y Sitio Web' }, detail: { en: 'Identity, design, mobile-first build', es: 'Identidad, diseño, construcción mobile-first' } },
+              { icon: '02', label: { en: 'AI Workflows', es: 'Flujos de IA' }, detail: { en: 'Automation that replaces manual work', es: 'Automatización que reemplaza trabajo manual' } },
+              { icon: '03', label: { en: 'SEO & AEO', es: 'SEO y AEO' }, detail: { en: 'Found by search engines and AI systems', es: 'Encontrado por buscadores y sistemas de IA' } },
+              { icon: '04', label: { en: 'Full Ownership', es: 'Propiedad Total' }, detail: { en: 'Your code, your data, your keys', es: 'Tu código, tus datos, tus llaves' } },
+            ].map((item) => (
+              <div key={item.icon} className="border border-untold-border p-5 sm:p-6">
+                <span className="font-mono text-[10px] text-untold-orange font-bold block mb-3">{item.icon}</span>
+                <h3 className="font-sans font-black text-base uppercase tracking-tighter mb-1">
+                  {t(item.label)}
+                </h3>
+                <p className="font-serif italic text-untold-gray text-sm">{t(item.detail)}</p>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Solution Pillars */}
-      <section className="bg-untold-beige px-5 sm:px-10 py-20 sm:py-32 border-b border-untold-border">
+      {/* ── Three Solutions ── */}
+      <section className="px-5 sm:px-10 py-20 sm:py-32 border-b border-untold-border">
         <div className="max-w-[1440px] mx-auto">
           <div className="flex items-center space-x-4 mb-16">
-            <span className="w-2.5 h-2.5 rounded-full bg-untold-black"></span>
+            <span className="w-2.5 h-2.5 rounded-full bg-untold-orange"></span>
             <h2 className="font-mono text-[13px] uppercase tracking-[0.6em] font-bold text-untold-black/40">
               {t({ en: 'CHOOSE YOUR PATH', es: 'ELIGE TU CAMINO' })}
             </h2>
           </div>
 
-          <h3 className="font-sans font-black text-3xl sm:text-5xl lg:text-6xl uppercase tracking-tighter mb-16 max-w-4xl">
-            {t({ en: 'Which Solution Fits Your Business?', es: '¿Cuál Solución Se Adapta a Tu Negocio?' })}
-          </h3>
-
-          <div className="grid lg:grid-cols-3 gap-8">
-            {pillars.map((pillar, idx) => (
+          <div className="space-y-8">
+            {solutions.map((solution, idx) => (
               <Link
-                key={pillar.id}
-                to={`/solutions/${pillar.id}`}
-                className="group border border-untold-border bg-untold-beige p-8 sm:p-10 lg:p-12 flex flex-col hover:border-untold-orange/30 hover:shadow-lg transition-all"
+                key={solution.id}
+                to={`/solutions/${solution.id}`}
+                className="group block border border-untold-border bg-white hover:border-untold-orange/40 hover:shadow-lg transition-all"
               >
-                <span className="font-mono text-[10px] uppercase tracking-[0.5em] text-untold-orange font-bold mb-6">
-                  {String(idx + 1).padStart(2, '0')}
-                </span>
-                <h4 className="font-sans font-black text-2xl sm:text-3xl uppercase tracking-tighter mb-4 group-hover:text-untold-orange transition-colors">
-                  {t(pillar.title)}
-                </h4>
-                <p className="text-base sm:text-lg font-serif italic text-untold-gray leading-relaxed mb-8 flex-grow">
-                  {t(pillar.description)}
-                </p>
-                <span className="font-mono text-[11px] uppercase tracking-[0.3em] text-untold-orange font-bold">
-                  {t({ en: 'Learn More', es: 'Saber Más' })} &rarr;
-                </span>
+                <div className="grid lg:grid-cols-12 gap-0">
+                  {/* Left — Identity */}
+                  <div className="lg:col-span-5 p-8 sm:p-10 lg:p-14 lg:border-r border-untold-border flex flex-col justify-between">
+                    <div>
+                      <span className="font-mono text-[10px] uppercase tracking-[0.5em] text-untold-orange font-bold block mb-4">
+                        {t(solution.eyebrow)}
+                      </span>
+                      <h3 className="font-sans font-black text-3xl sm:text-4xl lg:text-5xl uppercase tracking-tighter mb-4 group-hover:text-untold-orange transition-colors">
+                        {t(solution.title)}
+                      </h3>
+                      <p className="text-lg sm:text-xl font-serif italic text-untold-gray leading-relaxed mb-8">
+                        {t(solution.headline)}
+                      </p>
+                    </div>
+                    <div className="flex flex-wrap gap-4 pt-6 border-t border-untold-border/50">
+                      <div>
+                        <span className="font-mono text-[9px] uppercase tracking-[0.3em] text-untold-black/30 block">{t({ en: 'Starting at', es: 'Desde' })}</span>
+                        <span className="font-sans font-black text-lg tracking-tight">{t(solution.pricing)}</span>
+                      </div>
+                      <div>
+                        <span className="font-mono text-[9px] uppercase tracking-[0.3em] text-untold-black/30 block">{t({ en: 'Timeline', es: 'Plazo' })}</span>
+                        <span className="font-sans font-black text-lg tracking-tight">{t(solution.timeline)}</span>
+                      </div>
+                      <div>
+                        <span className="font-mono text-[9px] uppercase tracking-[0.3em] text-untold-black/30 block">{t({ en: 'Best for', es: 'Ideal para' })}</span>
+                        <span className="font-sans font-black text-lg tracking-tight">{t(solution.bestFor)}</span>
+                      </div>
+                    </div>
+                  </div>
+                  {/* Right — Detail */}
+                  <div className="lg:col-span-7 p-8 sm:p-10 lg:p-14 flex flex-col justify-between">
+                    <div>
+                      <p className="text-base sm:text-lg font-serif text-untold-gray leading-relaxed mb-8">
+                        {t(solution.description)}
+                      </p>
+                      <ul className="grid sm:grid-cols-2 gap-3">
+                        {solution.highlights.map((item, i) => (
+                          <li key={i} className="flex items-start space-x-3">
+                            <span className="text-untold-orange mt-1 text-sm">+</span>
+                            <span className="text-sm sm:text-base font-serif">{t(item)}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                    <div className="mt-8 pt-6 border-t border-untold-border/50 flex justify-end">
+                      <span className="inline-flex items-center space-x-2 font-sans font-black text-sm uppercase tracking-tighter text-untold-orange group-hover:translate-x-2 transition-transform">
+                        <span>{t({ en: 'See Full Details', es: 'Ver Detalles Completos' })}</span>
+                        <span>&rarr;</span>
+                      </span>
+                    </div>
+                  </div>
+                </div>
               </Link>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Comparison Table */}
+      {/* ── Comparison Table ── */}
       <section className="px-5 sm:px-10 py-20 sm:py-32 bg-white border-b border-untold-border">
         <div className="max-w-[1440px] mx-auto">
           <div className="flex items-center space-x-4 mb-16">
             <span className="w-2.5 h-2.5 rounded-full bg-untold-orange"></span>
             <h2 className="font-mono text-[13px] uppercase tracking-[0.6em] font-bold text-untold-black/40">
-              {t({ en: 'COMPARE SOLUTIONS', es: 'COMPARAR SOLUCIONES' })}
+              {t({ en: 'COMPARE', es: 'COMPARAR' })}
             </h2>
           </div>
 
           <h3 className="font-sans font-black text-3xl sm:text-5xl uppercase tracking-tighter mb-16 leading-[0.85]">
-            {t({ en: 'How Do the Three Ecosystems Compare?', es: '¿Cómo Se Comparan los Tres Ecosistemas?' })}
+            {t({ en: 'Side by Side', es: 'Lado a Lado' })}
           </h3>
 
           <div className="overflow-x-auto">
@@ -280,21 +324,26 @@ const Solutions: React.FC = () => {
               <thead>
                 <tr className="border-b-2 border-untold-black">
                   <th className="py-4 pr-6 font-mono text-[11px] uppercase tracking-[0.3em] text-untold-black/40 font-bold w-1/4"></th>
-                  <th className="py-4 px-4 font-sans font-black text-lg uppercase tracking-tighter">{t({ en: 'Professional Services', es: 'Servicios Profesionales' })}</th>
-                  <th className="py-4 px-4 font-sans font-black text-lg uppercase tracking-tighter">{t({ en: 'Small Business', es: 'Pequeños Negocios' })}</th>
-                  <th className="py-4 px-4 font-sans font-black text-lg uppercase tracking-tighter">{t({ en: 'Enterprise', es: 'Empresa' })}</th>
+                  <th className="py-4 px-4 font-sans font-black text-lg uppercase tracking-tighter">{t({ en: 'Professional', es: 'Profesional' })}</th>
+                  <th className="py-4 px-4 font-sans font-black text-lg uppercase tracking-tighter">{t({ en: 'Small Business', es: 'Pequeña Empresa' })}</th>
+                  <th className="py-4 px-4 font-sans font-black text-lg uppercase tracking-tighter">{t({ en: 'Enterprise', es: 'Empresarial' })}</th>
                 </tr>
               </thead>
               <tbody className="font-serif text-base">
                 {[
-                  { label: { en: 'Best for', es: 'Ideal para' }, values: [{ en: 'Solo practitioners, 1-5 person firms', es: 'Profesionales independientes, firmas de 1-5 personas' }, { en: 'Teams of 2-50, growing businesses', es: 'Equipos de 2-50, negocios en crecimiento' }, { en: 'Organizations with 20+ employees', es: 'Organizaciones con 20+ empleados' }] },
+                  { label: { en: 'Best for', es: 'Ideal para' }, values: [{ en: '1–5 person practices', es: 'Prácticas de 1–5 personas' }, { en: 'Teams of 2–50', es: 'Equipos de 2–50' }, { en: '20+ employee organizations', es: 'Organizaciones de 20+ empleados' }] },
                   { label: { en: 'Brand identity', es: 'Identidad de marca' }, values: [{ en: '✓', es: '✓' }, { en: '✓', es: '✓' }, { en: '✓ Enterprise system', es: '✓ Sistema empresarial' }] },
-                  { label: { en: 'AI-powered website', es: 'Sitio web con IA' }, values: [{ en: '✓', es: '✓' }, { en: '✓', es: '✓' }, { en: '✓ Multi-site capable', es: '✓ Multi-sitio' }] },
+                  { label: { en: 'Mobile-first website', es: 'Sitio web mobile-first' }, values: [{ en: '✓', es: '✓' }, { en: '✓', es: '✓' }, { en: '✓ Multi-site capable', es: '✓ Multi-sitio' }] },
+                  { label: { en: 'AI workflows', es: 'Flujos de IA' }, values: [{ en: 'Intake & follow-up', es: 'Admisión y seguimiento' }, { en: 'Operations & marketing', es: 'Operaciones y marketing' }, { en: 'Cross-department', es: 'Entre departamentos' }] },
                   { label: { en: 'CRM', es: 'CRM' }, values: [{ en: 'Client management', es: 'Gestión de clientes' }, { en: 'Team CRM', es: 'CRM de equipo' }, { en: 'Multi-team + pipeline', es: 'Multi-equipo + pipeline' }] },
-                  { label: { en: 'Automation', es: 'Automatización' }, values: [{ en: 'Intake & follow-up', es: 'Admisión y seguimiento' }, { en: 'Marketing + operations', es: 'Marketing + operaciones' }, { en: 'Full process automation', es: 'Automatización completa' }] },
                   { label: { en: 'Booking & scheduling', es: 'Reservas y agenda' }, values: [{ en: '✓', es: '✓' }, { en: '✓', es: '✓' }, { en: '✓ Multi-location', es: '✓ Multi-ubicación' }] },
-                  { label: { en: 'Analytics', es: 'Analítica' }, values: [{ en: 'Revenue dashboard', es: 'Panel de ingresos' }, { en: 'Multi-user reporting', es: 'Reportes multiusuario' }, { en: 'Revenue ops + forecasting', es: 'RevOps + pronósticos' }] },
-                  { label: { en: 'Training & handoff', es: 'Capacitación y entrega' }, values: [{ en: '✓ Full ownership', es: '✓ Propiedad total' }, { en: '✓ Full ownership', es: '✓ Propiedad total' }, { en: '✓ Full ownership', es: '✓ Propiedad total' }] },
+                  { label: { en: 'Analytics', es: 'Analítica' }, values: [{ en: 'Revenue dashboard', es: 'Panel de ingresos' }, { en: 'Multi-user reporting', es: 'Reportes multiusuario' }, { en: 'RevOps + forecasting', es: 'RevOps + pronósticos' }] },
+                  { label: { en: 'Bilingual (EN/ES)', es: 'Bilingüe (EN/ES)' }, values: [{ en: '✓', es: '✓' }, { en: '✓', es: '✓' }, { en: '✓ + additional languages', es: '✓ + idiomas adicionales' }] },
+                  { label: { en: 'SEO & AEO', es: 'SEO y AEO' }, values: [{ en: '✓', es: '✓' }, { en: '✓', es: '✓' }, { en: '✓ Advanced', es: '✓ Avanzado' }] },
+                  { label: { en: 'Post-launch support', es: 'Soporte post-lanzamiento' }, values: [{ en: '30 days', es: '30 días' }, { en: '30 days', es: '30 días' }, { en: '60 days', es: '60 días' }] },
+                  { label: { en: 'Ownership transfer', es: 'Transferencia de propiedad' }, values: [{ en: '✓ Full', es: '✓ Total' }, { en: '✓ Full', es: '✓ Total' }, { en: '✓ Full', es: '✓ Total' }] },
+                  { label: { en: 'Timeline', es: 'Plazo' }, values: [{ en: '4–6 weeks', es: '4–6 semanas' }, { en: '6–10 weeks', es: '6–10 semanas' }, { en: '8–16 weeks', es: '8–16 semanas' }] },
+                  { label: { en: 'Starting price', es: 'Precio inicial' }, values: [{ en: '$5,000 USD', es: '$5,000 USD' }, { en: '$10,000 USD', es: '$10,000 USD' }, { en: 'Custom', es: 'Personalizado' }] },
                 ].map((row, idx) => (
                   <tr key={idx} className="border-b border-untold-border hover:bg-untold-beige/50 transition-colors">
                     <td className="py-4 pr-6 font-sans font-bold text-sm uppercase tracking-tight">{t(row.label)}</td>
@@ -309,28 +358,87 @@ const Solutions: React.FC = () => {
         </div>
       </section>
 
-      {/* FAQ */}
+      {/* ── Our Process (Brief) ── */}
       <section className="px-5 sm:px-10 py-20 sm:py-32 border-b border-untold-border">
+        <div className="max-w-[1440px] mx-auto">
+          <div className="flex items-center space-x-4 mb-16">
+            <span className="w-2.5 h-2.5 rounded-full bg-untold-black"></span>
+            <h2 className="font-mono text-[13px] uppercase tracking-[0.6em] font-bold text-untold-black/40">
+              {t({ en: 'HOW EVERY PROJECT WORKS', es: 'CÓMO FUNCIONA CADA PROYECTO' })}
+            </h2>
+          </div>
+
+          <h3 className="font-sans font-black text-3xl sm:text-5xl lg:text-6xl uppercase tracking-tighter mb-6 leading-[0.85] max-w-4xl">
+            {t({
+              en: 'Four Steps. Same Process. Every Tier.',
+              es: 'Cuatro Pasos. Mismo Proceso. Cada Nivel.',
+            })}
+          </h3>
+          <p className="text-xl font-serif italic text-untold-gray mb-16 max-w-3xl">
+            {t({
+              en: 'Regardless of which solution you choose, every project follows the same proven process — just scaled to your needs.',
+              es: 'Sin importar qué solución elijas, cada proyecto sigue el mismo proceso probado — solo escalado a tus necesidades.',
+            })}
+          </p>
+
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-px bg-untold-border border border-untold-border">
+            {process.map((step) => (
+              <div key={step.number} className="bg-white p-8 sm:p-10">
+                <span className="font-mono text-[10px] uppercase tracking-[0.5em] text-untold-orange font-bold block mb-4">
+                  {t({ en: 'STEP', es: 'PASO' })} {step.number}
+                </span>
+                <h4 className="font-sans font-black text-2xl sm:text-3xl uppercase tracking-tighter mb-4">
+                  {t(step.title)}
+                </h4>
+                <p className="text-base font-serif italic text-untold-gray leading-relaxed">
+                  {t(step.description)}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ── FAQ ── */}
+      <section className="px-5 sm:px-10 py-20 sm:py-32 bg-white border-b border-untold-border">
         <div className="max-w-[900px] mx-auto">
           <div className="flex items-center space-x-4 mb-16">
             <span className="w-2.5 h-2.5 rounded-full bg-untold-orange"></span>
             <h2 className="font-mono text-[13px] uppercase tracking-[0.6em] font-bold text-untold-black/40">
-              {t({ en: 'FREQUENTLY ASKED QUESTIONS', es: 'PREGUNTAS FRECUENTES' })}
+              {t({ en: 'FREQUENTLY ASKED', es: 'PREGUNTAS FRECUENTES' })}
             </h2>
           </div>
 
           <h3 className="font-sans font-black text-3xl sm:text-5xl uppercase tracking-tighter mb-16 leading-[0.85]">
-            {t({ en: 'What Should I Know\nBefore Starting?', es: '¿Qué Debo Saber\nAntes de Empezar?' })}
+            {t({ en: 'Before You Decide', es: 'Antes de Decidir' })}
           </h3>
 
           <div className="space-y-0 border-t border-untold-border">
             {[
-              { q: { en: 'How much does a project cost?', es: '¿Cuánto cuesta un proyecto?' }, a: { en: 'Every project is scoped to your needs. Professional Services ecosystems typically start at $5,000-$15,000. Small Business platforms range from $10,000-$30,000. Enterprise systems are custom-quoted based on complexity. We provide a detailed proposal after our initial conversation.', es: 'Cada proyecto se define según tus necesidades. Los ecosistemas de Servicios Profesionales generalmente comienzan en $5,000-$15,000 USD. Plataformas para Pequeños Negocios van de $10,000-$30,000 USD. Los sistemas Empresariales se cotizan según complejidad. Proporcionamos una propuesta detallada después de nuestra conversación inicial.' } },
-              { q: { en: 'How long does a project take?', es: '¿Cuánto tiempo toma un proyecto?' }, a: { en: 'Most Professional Services builds take 4-6 weeks. Small Business platforms take 6-10 weeks. Enterprise systems vary from 8-16 weeks depending on scope. We work in phases so you can see progress throughout.', es: 'La mayoría de los proyectos de Servicios Profesionales toman 4-6 semanas. Plataformas para Pequeños Negocios toman 6-10 semanas. Sistemas Empresariales varían de 8-16 semanas según el alcance. Trabajamos en fases para que veas el progreso.' } },
-              { q: { en: 'Do I own everything you build?', es: '¿Soy dueño de todo lo que construyen?' }, a: { en: 'Yes. Full ownership transfer is part of every project. You get the code, the data, the documentation, and video training. No lock-in, no recurring fees for access to your own systems.', es: 'Sí. La transferencia completa de propiedad es parte de cada proyecto. Recibes el código, los datos, la documentación y capacitación en video. Sin ataduras, sin cuotas recurrentes.' } },
-              { q: { en: 'Do I need to be technical?', es: '¿Necesito ser técnico?' }, a: { en: 'Not at all. We build systems designed for non-technical business owners. We train you with video walkthroughs and written guides, and provide a 30-day support window after launch.', es: 'Para nada. Construimos sistemas diseñados para dueños de negocio no técnicos. Te capacitamos con videos paso a paso y guías escritas, y proporcionamos soporte de 30 días después del lanzamiento.' } },
-              { q: { en: 'Can you work with businesses outside Mexico?', es: '¿Pueden trabajar con negocios fuera de México?' }, a: { en: 'Absolutely. We serve clients across Mexico and the United States. Our bilingual team works remotely with businesses anywhere in both countries.', es: 'Por supuesto. Atendemos clientes en México y Estados Unidos. Nuestro equipo bilingüe trabaja de forma remota con negocios en cualquier lugar de ambos países.' } },
-              { q: { en: 'What if I already have a website?', es: '¿Qué pasa si ya tengo un sitio web?' }, a: { en: 'We can either rebuild it as part of a complete ecosystem, or integrate new AI systems and automation into your existing setup. We will assess what you have and recommend the best path forward.', es: 'Podemos reconstruirlo como parte de un ecosistema completo, o integrar nuevos sistemas de IA y automatización en tu configuración existente. Evaluamos lo que tienes y recomendamos el mejor camino.' } },
+              {
+                q: { en: 'How do I know which tier is right for me?', es: '¿Cómo sé cuál nivel es el correcto para mí?' },
+                a: { en: 'It comes down to team size and complexity. If you work solo or with a small team and serve clients directly, Professional Services is built for you. If you have a growing team (2–50 people) with operations to manage, Small Business fits. If you have 20+ employees, multiple departments, or need cross-team systems, Enterprise is the right choice. Not sure? Tell us what you do and we\'ll recommend the right path.', es: 'Se reduce al tamaño del equipo y la complejidad. Si trabajas solo o con un equipo pequeño y atiendes clientes directamente, Servicios Profesionales es para ti. Si tienes un equipo en crecimiento (2–50 personas) con operaciones que manejar, Pequeña Empresa se adapta. Si tienes 20+ empleados, múltiples departamentos o necesitas sistemas entre equipos, Empresarial es la elección correcta. ¿No estás seguro? Cuéntanos qué haces y te recomendaremos el camino correcto.' },
+              },
+              {
+                q: { en: 'How much does a project cost?', es: '¿Cuánto cuesta un proyecto?' },
+                a: { en: 'Professional Services starts at $5,000 USD. Small Business platforms range from $10,000–$30,000 USD. Enterprise systems are custom-quoted based on scope. Every project gets a detailed proposal after our first conversation — no surprises.', es: 'Servicios Profesionales comienza en $5,000 USD. Plataformas de Pequeña Empresa van de $10,000–$30,000 USD. Los sistemas Empresariales se cotizan según el alcance. Cada proyecto recibe una propuesta detallada después de nuestra primera conversación — sin sorpresas.' },
+              },
+              {
+                q: { en: 'Do I own everything you build?', es: '¿Soy dueño de todo lo que construyen?' },
+                a: { en: 'Yes. Full ownership transfer is part of every project at every tier. You get the code, the data, the documentation, all credentials, and video training. No lock-in. No recurring fees for access to your own systems.', es: 'Sí. La transferencia total de propiedad es parte de cada proyecto en cada nivel. Recibes el código, los datos, la documentación, todas las credenciales y capacitación en video. Sin ataduras. Sin cuotas recurrentes por acceso a tus propios sistemas.' },
+              },
+              {
+                q: { en: 'Do I need to be technical?', es: '¿Necesito ser técnico?' },
+                a: { en: 'Not at all. We build systems designed for non-technical business owners. We train you and your team with video walkthroughs, written guides, and live sessions. You\'ll know how to use everything before we hand it over.', es: 'Para nada. Construimos sistemas diseñados para dueños de negocio no técnicos. Te capacitamos a ti y a tu equipo con videos, guías escritas y sesiones en vivo. Sabrás usar todo antes de que lo entreguemos.' },
+              },
+              {
+                q: { en: 'What if I already have a website?', es: '¿Qué pasa si ya tengo un sitio web?' },
+                a: { en: 'We can rebuild it as part of a complete ecosystem, or integrate new AI systems into your existing setup. We\'ll assess what you have and recommend the best path forward.', es: 'Podemos reconstruirlo como parte de un ecosistema completo, o integrar nuevos sistemas de IA en tu configuración existente. Evaluaremos lo que tienes y recomendaremos el mejor camino.' },
+              },
+              {
+                q: { en: 'Can you work with businesses outside Mexico?', es: '¿Pueden trabajar con negocios fuera de México?' },
+                a: { en: 'Absolutely. We\'re based in San Miguel de Allende and serve clients across Mexico and the United States. Our bilingual team works remotely with businesses anywhere in both countries.', es: 'Por supuesto. Estamos en San Miguel de Allende y atendemos clientes en México y Estados Unidos. Nuestro equipo bilingüe trabaja de forma remota con negocios en cualquier lugar de ambos países.' },
+              },
             ].map((faq, idx) => (
               <details key={idx} className="border-b border-untold-border group">
                 <summary className="flex items-center justify-between py-6 sm:py-8 cursor-pointer list-none">
@@ -351,7 +459,7 @@ const Solutions: React.FC = () => {
       {/* Testimonials */}
       <Testimonials />
 
-      {/* CTA */}
+      {/* ── CTA ── */}
       <section className="bg-untold-black text-white px-5 sm:px-10 py-24 sm:py-40 text-center">
         <div className="max-w-4xl mx-auto flex flex-col items-center">
           <h2 className="font-sans font-black text-[clamp(2.5rem,10vw,100px)] leading-[0.85] mb-8 tracking-tighter uppercase">

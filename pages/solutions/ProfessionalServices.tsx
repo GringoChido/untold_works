@@ -4,6 +4,7 @@ import { useLanguage } from '../../App';
 import { usePageMeta } from '../../hooks/usePageMeta';
 import * as i18n from '../../i18n';
 import QuickLeadForm from '../../components/QuickLeadForm';
+import Testimonials from '../../components/Testimonials';
 import Breadcrumbs from '../../components/Breadcrumbs';
 import ImagePlaceholder from '../../components/ImagePlaceholder';
 
@@ -15,27 +16,38 @@ const ProfessionalServices: React.FC = () => {
     i18n.seo.professionalServices.description,
     {
       path: '/solutions/professional-services',
-      schema: {
-        '@context': 'https://schema.org',
-        '@type': 'Service',
-        name: 'Professional Services — Business Systems',
-        provider: { '@type': 'Organization', name: 'Untold.works' },
-        description: 'Complete business systems for service professionals including brand identity, website, CRM, booking, marketing, and training.',
-        areaServed: ['Mexico', 'United States'],
-        serviceType: 'Web Development & Business Systems',
-      },
+      schema: [
+        {
+          '@context': 'https://schema.org',
+          '@type': 'Service',
+          name: 'Professional Services — Business Systems',
+          provider: { '@type': 'Organization', name: 'Untold.works' },
+          description: 'Complete business systems for service professionals including brand identity, website, CRM, booking, marketing, and training.',
+          areaServed: ['Mexico', 'United States'],
+          serviceType: 'Web Development & Business Systems',
+        },
+        {
+          '@context': 'https://schema.org',
+          '@type': 'FAQPage',
+          mainEntity: [
+            { '@type': 'Question', name: 'Is this overkill for a solo practitioner?', acceptedAnswer: { '@type': 'Answer', text: 'No. This tier is specifically designed for solo practitioners and small firms (1-5 people). You don\'t need a large team to benefit from automated booking, CRM, and follow-ups. These systems save you 5-10 hours per week.' } },
+            { '@type': 'Question', name: 'How is this different from Squarespace + Calendly + Mailchimp?', acceptedAnswer: { '@type': 'Answer', text: 'Those tools don\'t talk to each other. We build one integrated system where booking, email, CRM, and your website all share the same data — and AI handles the follow-ups automatically.' } },
+            { '@type': 'Question', name: 'What does full ownership actually mean?', acceptedAnswer: { '@type': 'Answer', text: 'You own the code, the design, the data, and every credential. No monthly platform fees, no lock-in. It\'s yours.' } },
+          ],
+        },
+      ],
     }
   );
 
   const audiences = [
     { en: 'Independent consultants', es: 'Consultores independientes' },
-    { en: 'Medical & legal practices', es: 'Consultorios m\u00e9dicos y legales' },
-    { en: 'Architects & designers', es: 'Arquitectos y dise\u00f1adores' },
+    { en: 'Medical & legal practices', es: 'Consultorios médicos y legales' },
+    { en: 'Architects & designers', es: 'Arquitectos y diseñadores' },
     { en: 'Therapists & coaches', es: 'Terapeutas y coaches' },
     { en: 'Real estate agents', es: 'Agentes inmobiliarios' },
-    { en: 'Photographers & artists', es: 'Fot\u00f3grafos y artistas' },
+    { en: 'Photographers & artists', es: 'Fotógrafos y artistas' },
     { en: 'Healers & wellness practitioners', es: 'Sanadores y profesionales del bienestar' },
-    { en: 'Financial advisors', es: 'Asesores financieros' }
+    { en: 'Financial advisors', es: 'Asesores financieros' },
   ];
 
   const packages = [
@@ -44,72 +56,56 @@ const ProfessionalServices: React.FC = () => {
       items: [
         { en: 'Brand identity & visual system', es: 'Identidad de marca y sistema visual' },
         { en: 'Mobile-first website', es: 'Sitio web mobile-first' },
-        { en: 'Bilingual content (EN/ES)', es: 'Contenido biling\u00fce (EN/ES)' },
-        { en: 'SEO optimization', es: 'Optimizaci\u00f3n SEO' }
-      ]
+        { en: 'Bilingual content (EN/ES)', es: 'Contenido bilingüe (EN/ES)' },
+        { en: 'SEO & AEO optimization', es: 'Optimización SEO y AEO' },
+      ],
     },
     {
       title: { en: 'Client Systems', es: 'Sistemas de Clientes' },
       items: [
-        { en: 'Client management (CRM)', es: 'Gesti\u00f3n de clientes (CRM)' },
-        { en: 'Online booking & scheduling', es: 'Reservas y agenda en l\u00ednea' },
-        { en: 'Automated appointment reminders', es: 'Recordatorios autom\u00e1ticos de citas' },
-        { en: 'Client communication workflows', es: 'Flujos de comunicaci\u00f3n con clientes' }
-      ]
+        { en: 'Client management (CRM)', es: 'Gestión de clientes (CRM)' },
+        { en: 'Online booking & scheduling', es: 'Reservas y agenda en línea' },
+        { en: 'Automated appointment reminders', es: 'Recordatorios automáticos de citas' },
+        { en: 'Client communication workflows', es: 'Flujos de comunicación con clientes' },
+      ],
     },
     {
       title: { en: 'Marketing', es: 'Marketing' },
       items: [
-        { en: 'Email marketing setup', es: 'Configuraci\u00f3n de email marketing' },
-        { en: 'Social media integration', es: 'Integraci\u00f3n de redes sociales' },
+        { en: 'Email marketing setup', es: 'Configuración de email marketing' },
+        { en: 'Social media integration', es: 'Integración de redes sociales' },
         { en: 'Google Business Profile', es: 'Perfil de Google Business' },
-        { en: 'Review management', es: 'Gesti\u00f3n de rese\u00f1as' }
-      ]
+        { en: 'Review management', es: 'Gestión de reseñas' },
+      ],
     },
     {
-      title: { en: 'Training & Handoff', es: 'Capacitaci\u00f3n y Entrega' },
+      title: { en: 'Training & Handoff', es: 'Capacitación y Entrega' },
       items: [
-        { en: 'Video training library', es: 'Biblioteca de videos de capacitaci\u00f3n' },
-        { en: 'Written documentation', es: 'Documentaci\u00f3n escrita' },
-        { en: 'Live walkthrough session', es: 'Sesi\u00f3n de recorrido en vivo' },
-        { en: '30-day support window', es: 'Ventana de soporte de 30 d\u00edas' }
-      ]
-    }
+        { en: 'Video training library', es: 'Biblioteca de videos de capacitación' },
+        { en: 'Written documentation', es: 'Documentación escrita' },
+        { en: 'Live walkthrough session', es: 'Sesión de recorrido en vivo' },
+        { en: '30-day support window', es: 'Ventana de soporte de 30 días' },
+      ],
+    },
   ];
 
-  const steps = [
+  const problems = [
     {
-      number: '01',
-      title: { en: 'Analyze', es: 'Analizar' },
-      description: {
-        en: 'We audit your practice, your client journey, and your current tools. We map where AI can cut time, where workflows can be automated, and what your platform needs to do.',
-        es: 'Auditamos tu pr\u00e1ctica, el recorrido de tus clientes y tus herramientas actuales. Mapeamos d\u00f3nde la IA puede reducir tiempo, d\u00f3nde los flujos se pueden automatizar y qu\u00e9 necesita hacer tu plataforma.'
-      }
+      before: { en: 'Scattered tools — Calendly, Mailchimp, Squarespace, Google Sheets', es: 'Herramientas dispersas — Calendly, Mailchimp, Squarespace, Google Sheets' },
+      after: { en: 'One platform that handles everything', es: 'Una plataforma que maneja todo' },
     },
     {
-      number: '02',
-      title: { en: 'Plan', es: 'Planificar' },
-      description: {
-        en: 'We architect your complete platform \u2014 brand, mobile-first website, AI workflows, SEO structure, and bilingual content strategy. You approve the full scope before we build.',
-        es: 'Arquitectamos tu plataforma completa \u2014 marca, sitio web mobile-first, flujos de IA, estructura SEO y estrategia de contenido biling\u00fce. Apruebas todo el alcance antes de que construyamos.'
-      }
+      before: { en: 'Manual follow-ups you forget to send', es: 'Seguimientos manuales que olvidas enviar' },
+      after: { en: 'Automated sequences that never miss', es: 'Secuencias automatizadas que nunca fallan' },
     },
     {
-      number: '03',
-      title: { en: 'Build', es: 'Construir' },
-      description: {
-        en: 'We build your brand identity, mobile-ready website, CRM, booking system, AI workflows, and automations. SEO-optimized and LLM-discoverable from day one. All tested, all documented.',
-        es: 'Construimos tu identidad de marca, sitio web mobile-ready, CRM, sistema de reservas, flujos de IA y automatizaciones. Optimizado para SEO y descubrible por LLMs desde el d\u00eda uno. Todo probado, todo documentado.'
-      }
+      before: { en: 'No online presence beyond a basic website', es: 'Sin presencia en línea más allá de un sitio web básico' },
+      after: { en: 'Brand + website + SEO + AI discoverability', es: 'Marca + sitio web + SEO + descubribilidad por IA' },
     },
     {
-      number: '04',
-      title: { en: 'Train & Deliver', es: 'Capacitar y Entregar' },
-      description: {
-        en: 'We train you on every system we built \u2014 video walkthroughs, written docs, and a live session. Then we hand over all credentials and provide 30 days of support. Your platform, your data, your keys.',
-        es: 'Te capacitamos en cada sistema que construimos \u2014 videos paso a paso, documentaci\u00f3n escrita y una sesi\u00f3n en vivo. Despu\u00e9s entregamos todas las credenciales y proporcionamos 30 d\u00edas de soporte. Tu plataforma, tus datos, tus llaves.'
-      }
-    }
+      before: { en: 'No idea which clients are most valuable', es: 'Sin idea de cuáles clientes son más valiosos' },
+      after: { en: 'Revenue dashboard with client analytics', es: 'Panel de ingresos con analítica de clientes' },
+    },
   ];
 
   return (
@@ -136,21 +132,36 @@ const ProfessionalServices: React.FC = () => {
 
           <h1 className="font-sans font-black text-[clamp(2.5rem,8vw,120px)] leading-[0.85] mb-8 tracking-tighter uppercase max-w-5xl">
             {t({
-              en: 'Complete Business Systems for Service Professionals',
-              es: 'Sistemas Completos de Negocio para Profesionales de Servicio'
+              en: 'One System to Run Your Entire Practice',
+              es: 'Un Sistema Para Manejar Toda Tu Práctica',
             })}
           </h1>
 
           <p className="text-xl sm:text-2xl lg:text-4xl font-serif italic text-white/60 max-w-4xl leading-tight border-l-4 border-untold-orange pl-6 sm:pl-10">
             {t({
-              en: 'Doctors, lawyers, consultants, architects, therapists \u2014 if you serve clients one-on-one, this is built for you.',
-              es: 'M\u00e9dicos, abogados, consultores, arquitectos, terapeutas \u2014 si atiendes clientes uno a uno, esto est\u00e1 hecho para ti.'
+              en: 'Doctors, lawyers, consultants, architects, therapists — if you serve clients one-on-one, this is built for you.',
+              es: 'Médicos, abogados, consultores, arquitectos, terapeutas — si atiendes clientes uno a uno, esto está hecho para ti.',
             })}
           </p>
+
+          <div className="flex flex-wrap gap-6 mt-12 pt-8 border-t border-white/10">
+            <div>
+              <span className="font-mono text-[9px] uppercase tracking-[0.3em] text-white/30 block">{t({ en: 'Starting at', es: 'Desde' })}</span>
+              <span className="font-sans font-black text-xl">{t({ en: '$5,000 USD', es: '$5,000 USD' })}</span>
+            </div>
+            <div>
+              <span className="font-mono text-[9px] uppercase tracking-[0.3em] text-white/30 block">{t({ en: 'Timeline', es: 'Plazo' })}</span>
+              <span className="font-sans font-black text-xl">{t({ en: '4–6 weeks', es: '4–6 semanas' })}</span>
+            </div>
+            <div>
+              <span className="font-mono text-[9px] uppercase tracking-[0.3em] text-white/30 block">{t({ en: 'Best for', es: 'Ideal para' })}</span>
+              <span className="font-sans font-black text-xl">{t({ en: '1–5 person firms', es: 'Firmas de 1–5 personas' })}</span>
+            </div>
+          </div>
         </div>
       </section>
 
-      {/* ── Visual ── */}
+      {/* Visual */}
       <section className="border-b border-untold-border">
         <ImagePlaceholder
           label="Professional at work — consultant, therapist, or attorney"
@@ -165,25 +176,59 @@ const ProfessionalServices: React.FC = () => {
           <div className="flex items-center space-x-4 mb-16">
             <span className="w-2.5 h-2.5 rounded-full bg-untold-black"></span>
             <h2 className="font-mono text-[13px] uppercase tracking-[0.6em] font-bold text-untold-black/40">
-              {t({ en: 'WHO THIS IS FOR', es: 'PARA QUI\u00c9N ES ESTO' })}
+              {t({ en: 'WHO THIS IS FOR', es: 'PARA QUIÉN ES ESTO' })}
             </h2>
           </div>
 
           <h3 className="font-sans font-black text-3xl sm:text-5xl lg:text-6xl uppercase tracking-tighter mb-16 max-w-4xl">
             {t({
               en: 'Built for Professionals Who Serve Clients Directly',
-              es: 'Hecho para Profesionales Que Atienden Clientes Directamente'
+              es: 'Hecho para Profesionales Que Atienden Clientes Directamente',
             })}
           </h3>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
             {audiences.map((audience, idx) => (
               <div
                 key={idx}
                 className="border border-untold-border bg-white p-6 sm:p-8 flex items-start space-x-4 hover:border-untold-orange/30 transition-colors"
               >
                 <span className="text-untold-orange font-sans font-black text-lg mt-0.5">+</span>
-                <span className="text-lg sm:text-xl font-serif">{t(audience)}</span>
+                <span className="text-lg font-serif">{t(audience)}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* The Problem We Solve */}
+      <section className="bg-white px-5 sm:px-10 py-20 sm:py-32 border-b border-untold-border">
+        <div className="max-w-[1440px] mx-auto">
+          <div className="flex items-center space-x-4 mb-16">
+            <span className="w-2.5 h-2.5 rounded-full bg-untold-orange"></span>
+            <h2 className="font-mono text-[13px] uppercase tracking-[0.6em] font-bold text-untold-black/40">
+              {t({ en: 'THE PROBLEM', es: 'EL PROBLEMA' })}
+            </h2>
+          </div>
+
+          <h3 className="font-sans font-black text-3xl sm:text-5xl uppercase tracking-tighter mb-16 max-w-4xl leading-[0.85]">
+            {t({
+              en: 'You\'re Running a Practice on Duct Tape',
+              es: 'Estás Manejando Tu Práctica con Parches',
+            })}
+          </h3>
+
+          <div className="border-t border-untold-border">
+            {problems.map((problem, idx) => (
+              <div key={idx} className="grid lg:grid-cols-2 gap-0 border-b border-untold-border">
+                <div className="p-6 sm:p-8 lg:border-r border-untold-border">
+                  <span className="font-mono text-[9px] uppercase tracking-[0.3em] text-untold-black/30 block mb-2">{t({ en: 'Before', es: 'Antes' })}</span>
+                  <p className="text-lg font-serif text-untold-gray line-through decoration-untold-orange/30">{t(problem.before)}</p>
+                </div>
+                <div className="p-6 sm:p-8 bg-untold-beige/50">
+                  <span className="font-mono text-[9px] uppercase tracking-[0.3em] text-untold-orange block mb-2">{t({ en: 'After', es: 'Después' })}</span>
+                  <p className="text-lg font-serif font-bold">{t(problem.after)}</p>
+                </div>
               </div>
             ))}
           </div>
@@ -191,19 +236,19 @@ const ProfessionalServices: React.FC = () => {
       </section>
 
       {/* What's Included */}
-      <section className="bg-white px-5 sm:px-10 py-20 sm:py-32 border-b border-untold-border">
+      <section className="bg-untold-beige px-5 sm:px-10 py-20 sm:py-32 border-b border-untold-border">
         <div className="max-w-[1440px] mx-auto">
           <div className="flex items-center space-x-4 mb-16">
             <span className="w-2.5 h-2.5 rounded-full bg-untold-orange"></span>
             <h2 className="font-mono text-[13px] uppercase tracking-[0.6em] font-bold text-untold-black/40">
-              {t({ en: "WHAT'S INCLUDED", es: 'QU\u00c9 INCLUYE' })}
+              {t({ en: "WHAT'S INCLUDED", es: 'QUÉ INCLUYE' })}
             </h2>
           </div>
 
           <h3 className="font-sans font-black text-3xl sm:text-5xl lg:text-6xl uppercase tracking-tighter mb-16 max-w-4xl">
             {t({
               en: 'Everything You Need to Run Your Practice',
-              es: 'Todo Lo Que Necesitas Para Manejar Tu Pr\u00e1ctica'
+              es: 'Todo Lo Que Necesitas Para Manejar Tu Práctica',
             })}
           </h3>
 
@@ -230,47 +275,61 @@ const ProfessionalServices: React.FC = () => {
         </div>
       </section>
 
-      {/* How It Works */}
-      <section className="bg-untold-beige px-5 sm:px-10 py-20 sm:py-32 border-b border-untold-border">
-        <div className="max-w-[1440px] mx-auto">
+      {/* ── FAQ ── */}
+      <section className="bg-white px-5 sm:px-10 py-20 sm:py-32 border-b border-untold-border">
+        <div className="max-w-[900px] mx-auto">
           <div className="flex items-center space-x-4 mb-16">
-            <span className="w-2.5 h-2.5 rounded-full bg-untold-black"></span>
+            <span className="w-2.5 h-2.5 rounded-full bg-untold-orange"></span>
             <h2 className="font-mono text-[13px] uppercase tracking-[0.6em] font-bold text-untold-black/40">
-              {t({ en: 'HOW IT WORKS', es: 'C\u00d3MO FUNCIONA' })}
+              {t({ en: 'FREQUENTLY ASKED', es: 'PREGUNTAS FRECUENTES' })}
             </h2>
           </div>
 
-          <h3 className="font-sans font-black text-3xl sm:text-5xl lg:text-6xl uppercase tracking-tighter mb-16 max-w-4xl">
-            {t({
-              en: 'Four Steps to Your AI-Powered Platform',
-              es: 'Cuatro Pasos a Tu Plataforma Impulsada por IA'
-            })}
+          <h3 className="font-sans font-black text-3xl sm:text-5xl uppercase tracking-tighter mb-16 leading-[0.85]">
+            {t({ en: 'Questions Before\nYou Start', es: 'Preguntas Antes\nde Empezar' })}
           </h3>
 
-          <div className="border-t border-untold-border">
-            {steps.map((step) => (
-              <div
-                key={step.number}
-                className="grid lg:grid-cols-12 gap-0 border-b border-untold-border group hover:bg-white transition-all duration-500"
-              >
-                <div className="lg:col-span-4 p-6 sm:p-10 lg:p-14 lg:border-r border-untold-border">
-                  <span className="font-mono text-[11px] font-bold text-untold-orange mb-6 block tracking-[0.4em] uppercase">
-                    {t({ en: `STEP ${step.number}`, es: `PASO ${step.number}` })}
-                  </span>
-                  <h4 className="font-sans font-black text-3xl sm:text-4xl lg:text-5xl uppercase tracking-tighter leading-tight group-hover:text-untold-orange transition-colors">
-                    {t(step.title)}
+          <div className="space-y-0 border-t border-untold-border">
+            {[
+              {
+                q: { en: 'Is this overkill for a solo practitioner?', es: '¿Es demasiado para un profesional independiente?' },
+                a: { en: 'No. This tier is specifically designed for solo practitioners and small firms (1-5 people). You don\'t need a large team to benefit from automated booking, CRM, and follow-ups. These systems save you 5-10 hours per week — time you can spend with clients instead of admin.', es: 'No. Este nivel está diseñado específicamente para profesionales independientes y firmas pequeñas (1-5 personas). No necesitas un equipo grande para beneficiarte de reservas automatizadas, CRM y seguimientos. Estos sistemas te ahorran 5-10 horas por semana — tiempo que puedes dedicar a clientes en vez de administración.' },
+              },
+              {
+                q: { en: 'What if I already have a website I like?', es: '¿Qué pasa si ya tengo un sitio web que me gusta?' },
+                a: { en: 'We can integrate AI systems, CRM, and booking into your existing site — or we can rebuild it as part of the full ecosystem. We\'ll assess what you have and recommend the best path. Either way, you keep full ownership.', es: 'Podemos integrar sistemas de IA, CRM y reservas en tu sitio existente — o podemos reconstruirlo como parte del ecosistema completo. Evaluaremos lo que tienes y recomendaremos el mejor camino. De cualquier manera, mantienes la propiedad total.' },
+              },
+              {
+                q: { en: 'How is this different from Squarespace + Calendly + Mailchimp?', es: '¿En qué se diferencia de Squarespace + Calendly + Mailchimp?' },
+                a: { en: 'Those tools don\'t talk to each other. When a client books through Calendly, Mailchimp doesn\'t know. When someone fills out your contact form, your CRM doesn\'t update. We build one integrated system where booking, email, CRM, and your website all share the same data — and AI handles the follow-ups automatically.', es: 'Esas herramientas no se comunican entre sí. Cuando un cliente reserva por Calendly, Mailchimp no se entera. Cuando alguien llena tu formulario, tu CRM no se actualiza. Nosotros construimos un sistema integrado donde reservas, email, CRM y tu sitio web comparten los mismos datos — y la IA maneja los seguimientos automáticamente.' },
+              },
+              {
+                q: { en: 'Do I need to be technical to manage this after handoff?', es: '¿Necesito ser técnico para manejarlo después de la entrega?' },
+                a: { en: 'Not at all. We build for non-technical professionals. You\'ll get video training, written guides, and a live walkthrough session. Plus 30 days of support after launch for any questions.', es: 'Para nada. Construimos para profesionales no técnicos. Recibirás capacitación en video, guías escritas y una sesión en vivo. Más 30 días de soporte después del lanzamiento para cualquier pregunta.' },
+              },
+              {
+                q: { en: 'What does "full ownership" actually mean?', es: '¿Qué significa realmente "propiedad total"?' },
+                a: { en: 'You own the code, the design, the data, and every credential. We hand over everything — no monthly platform fees, no lock-in, no "you need us to make changes." It\'s yours. If you want to hire someone else to maintain it later, you can.', es: 'Eres dueño del código, el diseño, los datos y cada credencial. Entregamos todo — sin cuotas mensuales de plataforma, sin ataduras, sin "nos necesitas para hacer cambios." Es tuyo. Si quieres contratar a alguien más para mantenerlo después, puedes.' },
+              },
+            ].map((faq, idx) => (
+              <details key={idx} className="border-b border-untold-border group">
+                <summary className="flex items-center justify-between py-6 sm:py-8 cursor-pointer list-none">
+                  <h4 className="font-sans font-black text-lg sm:text-xl uppercase tracking-tighter pr-8 group-open:text-untold-orange transition-colors">
+                    {t(faq.q)}
                   </h4>
-                </div>
-                <div className="lg:col-span-8 p-6 sm:p-10 lg:p-14 flex items-center">
-                  <p className="text-lg sm:text-xl lg:text-2xl font-serif italic text-untold-gray leading-relaxed">
-                    {t(step.description)}
-                  </p>
-                </div>
-              </div>
+                  <span className="text-2xl text-untold-orange shrink-0 group-open:rotate-45 transition-transform">+</span>
+                </summary>
+                <p className="pb-8 text-lg font-serif text-untold-gray leading-relaxed pr-12">
+                  {t(faq.a)}
+                </p>
+              </details>
             ))}
           </div>
         </div>
       </section>
+
+      {/* ── Testimonials ── */}
+      <Testimonials />
 
       {/* Quick Lead Form */}
       <section className="bg-untold-black text-white px-5 sm:px-10 py-20 sm:py-32">
@@ -286,13 +345,13 @@ const ProfessionalServices: React.FC = () => {
               <h3 className="font-sans font-black text-3xl sm:text-5xl uppercase tracking-tighter mb-6">
                 {t({
                   en: 'Tell Us About Your Practice',
-                  es: 'Cu\u00e9ntanos Sobre Tu Pr\u00e1ctica'
+                  es: 'Cuéntanos Sobre Tu Práctica',
                 })}
               </h3>
               <p className="text-lg sm:text-xl font-serif italic text-white/60 leading-relaxed max-w-xl">
                 {t({
-                  en: 'Share your info and we\u2019ll send you a breakdown of what your system could look like. No obligation, no pressure.',
-                  es: 'Comparte tu informaci\u00f3n y te enviaremos un desglose de c\u00f3mo podr\u00eda verse tu sistema. Sin compromiso, sin presi\u00f3n.'
+                  en: 'Share your info and we\'ll send you a breakdown of what your system could look like. No obligation, no pressure.',
+                  es: 'Comparte tu información y te enviaremos un desglose de cómo podría verse tu sistema. Sin compromiso, sin presión.',
                 })}
               </p>
             </div>
@@ -304,27 +363,35 @@ const ProfessionalServices: React.FC = () => {
       {/* CTA */}
       <section className="px-5 sm:px-10 py-24 sm:py-40 text-center bg-untold-beige/40">
         <div className="max-w-4xl mx-auto flex flex-col items-center">
-          <h2 className="font-sans font-black text-[clamp(2.5rem,10vw,120px)] leading-[0.85] mb-8 tracking-tighter uppercase">
+          <h2 className="font-sans font-black text-[clamp(2.5rem,10vw,100px)] leading-[0.85] mb-8 tracking-tighter uppercase">
             {t({
-              en: 'Ready to Build\nYour System?',
-              es: '\u00bfListo Para Construir\nTu Sistema?'
+              en: 'Ready to Replace\nthe Patchwork?',
+              es: '¿Listo Para Reemplazar\nlos Parches?',
             })}
           </h2>
           <p className="text-xl sm:text-2xl font-serif italic text-untold-gray mb-12 max-w-2xl">
             {t({
               en: 'No lock-in. No monthly fees for things you own. You get the keys to everything we build.',
-              es: 'Sin ataduras. Sin cuotas mensuales por lo que es tuyo. Te damos las llaves de todo lo que construimos.'
+              es: 'Sin ataduras. Sin cuotas mensuales por lo que es tuyo. Te damos las llaves de todo lo que construimos.',
             })}
           </p>
-          <Link
-            to="/contact"
-            className="group relative bg-untold-black text-white px-10 sm:px-20 py-6 sm:py-8 font-sans font-black uppercase tracking-tighter text-lg sm:text-xl hover:scale-105 active:scale-95 transition-all duration-500 overflow-hidden"
-          >
-            <span className="relative z-10">
-              {t({ en: 'Start a Conversation', es: 'Iniciar Conversaci\u00f3n' })}
-            </span>
-            <div className="absolute inset-0 bg-untold-orange translate-y-full group-hover:translate-y-0 transition-transform duration-500"></div>
-          </Link>
+          <div className="flex flex-wrap gap-4 justify-center">
+            <Link
+              to="/contact"
+              className="group relative bg-untold-black text-white px-10 sm:px-16 py-6 sm:py-8 font-sans font-black uppercase tracking-tighter text-lg sm:text-xl hover:scale-105 active:scale-95 transition-all duration-500 overflow-hidden"
+            >
+              <span className="relative z-10">
+                {t({ en: 'Start a Conversation', es: 'Iniciar Conversación' })}
+              </span>
+              <div className="absolute inset-0 bg-untold-orange translate-y-full group-hover:translate-y-0 transition-transform duration-500"></div>
+            </Link>
+            <Link
+              to="/solutions"
+              className="border-2 border-untold-black px-10 sm:px-16 py-6 sm:py-8 font-sans font-black uppercase tracking-tighter text-lg sm:text-xl hover:bg-untold-black hover:text-white transition-all duration-300"
+            >
+              {t({ en: 'Compare All Solutions', es: 'Comparar Soluciones' })}
+            </Link>
+          </div>
         </div>
       </section>
     </div>

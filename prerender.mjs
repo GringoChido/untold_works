@@ -28,6 +28,7 @@ const routes = [
   '/queretaro',
   '/mexico-city',
   '/united-states',
+  '/privacy',
   '/analog',
   '/slides',
   // Portfolio projects

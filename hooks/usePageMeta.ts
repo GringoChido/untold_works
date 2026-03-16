@@ -30,22 +30,25 @@ function setLinkTag(rel: string, href: string, attrs?: Record<string, string>) {
   (el as HTMLLinkElement).href = href;
 }
 
-function setJsonLd(id: string, data: Record<string, unknown>) {
-  let el = document.getElementById(id);
-  if (!el) {
-    el = document.createElement('script');
-    el.id = id;
+function setJsonLd(id: string, data: Record<string, unknown> | Record<string, unknown>[]) {
+  // Remove any existing elements with this id prefix
+  document.querySelectorAll(`[id^="${id}"]`).forEach((el) => el.remove());
+
+  const items = Array.isArray(data) ? data : [data];
+  items.forEach((item, i) => {
+    const el = document.createElement('script');
+    el.id = items.length > 1 ? `${id}-${i}` : id;
     el.setAttribute('type', 'application/ld+json');
+    el.textContent = JSON.stringify(item);
     document.head.appendChild(el);
-  }
-  el.textContent = JSON.stringify(data);
+  });
 }
 
 interface PageMetaOptions {
   path?: string;
   ogType?: string;
   ogImage?: string;
-  schema?: Record<string, unknown>;
+  schema?: Record<string, unknown> | Record<string, unknown>[];
   noindex?: boolean;
 }
 

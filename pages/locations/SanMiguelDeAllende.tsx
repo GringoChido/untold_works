@@ -28,7 +28,7 @@ const SanMiguelDeAllende: React.FC = () => {
           name: 'Untold.works — San Miguel de Allende',
           description: 'Bilingual websites, WhatsApp AI automation, and business systems for restaurants, hotels, and professional services in San Miguel de Allende, Mexico.',
           url: 'https://untold.works/san-miguel-de-allende',
-          telephone: '+52-415-100-0000',
+          email: 'info@untold.works',
           address: {
             '@type': 'PostalAddress',
             streetAddress: 'Centro',

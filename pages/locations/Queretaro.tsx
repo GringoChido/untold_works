@@ -28,7 +28,7 @@ const Queretaro: React.FC = () => {
           name: 'Untold.works — Querétaro',
           description: 'Diseño web con IA, automatización WhatsApp, y plataformas empresariales para despachos de abogados, manufactura y servicios profesionales en Querétaro.',
           url: 'https://untold.works/queretaro',
-          telephone: '+52-442-100-0000',
+          email: 'info@untold.works',
           address: {
             '@type': 'PostalAddress',
             addressLocality: 'Querétaro',

@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { useLanguage } from '../App';
 import { usePageMeta } from '../hooks/usePageMeta';
 import QuickLeadForm from '../components/QuickLeadForm';
+import Testimonials from '../components/Testimonials';
 import Breadcrumbs from '../components/Breadcrumbs';
 import ImagePlaceholder from '../components/ImagePlaceholder';
 
@@ -459,6 +460,9 @@ const Ads: React.FC = () => {
           <QuickLeadForm pillar="Ads" />
         </div>
       </section>
+
+      {/* ── Testimonials ── */}
+      <Testimonials />
 
       {/* ── CTA ── */}
       <section className="bg-untold-beige px-5 sm:px-10 py-20 sm:py-32 text-center border-t border-untold-border">

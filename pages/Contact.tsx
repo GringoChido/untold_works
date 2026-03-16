@@ -12,7 +12,19 @@ const ContactPage: React.FC = () => {
 
   usePageMeta(
     i18n.seo.contact.title,
-    i18n.seo.contact.description
+    i18n.seo.contact.description,
+    {
+      path: '/contact',
+      schema: {
+        '@context': 'https://schema.org',
+        '@type': 'FAQPage',
+        mainEntity: [
+          { '@type': 'Question', name: 'How do I contact Untold.works?', acceptedAnswer: { '@type': 'Answer', text: 'Email info@untold.works or fill out the contact form on our website. We typically respond within 24 hours.' } },
+          { '@type': 'Question', name: 'Where is Untold.works located?', acceptedAnswer: { '@type': 'Answer', text: 'We are based in San Miguel de Allende, Guanajuato, Mexico. We serve clients across Mexico and the United States remotely.' } },
+          { '@type': 'Question', name: 'Do you offer free consultations?', acceptedAnswer: { '@type': 'Answer', text: 'Yes. Our initial conversation is free and no-obligation. We discuss your needs and recommend the best path forward before any commitment.' } },
+        ],
+      },
+    }
   );
 
   const handleCopyEmail = () => {

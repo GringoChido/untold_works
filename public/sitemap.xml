@@ -400,4 +400,11 @@
     <xhtml:link rel="alternate" hreflang="es-MX" href="https://untold.works/workshops?lang=es" />
   </url>
 
+  <url>
+    <loc>https://untold.works/privacy</loc>
+    <lastmod>2026-03-16</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
 </urlset>
