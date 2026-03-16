@@ -6,7 +6,6 @@ import * as i18n from '../../i18n';
 import QuickLeadForm from '../../components/QuickLeadForm';
 import Testimonials from '../../components/Testimonials';
 import Breadcrumbs from '../../components/Breadcrumbs';
-import ImagePlaceholder from '../../components/ImagePlaceholder';
 
 const SmallBusiness: React.FC = () => {
   const { t } = useLanguage();
@@ -199,11 +198,14 @@ const SmallBusiness: React.FC = () => {
 
       {/* ── Visual ── */}
       <section className="border-b border-untold-border">
-        <ImagePlaceholder
-          label="Small business team — restaurant, retail, or hotel"
-          aspect="aspect-[21/9]"
-          dimensions="1440 × 617px"
-        />
+        <div className="aspect-[21/9] overflow-hidden">
+          <img
+            src="/images/solutions/small-business.jpg"
+            alt={t({ en: 'Small business team collaborating — restaurant, retail, or hotel operations', es: 'Equipo de pequeña empresa colaborando — operaciones de restaurante, retail u hotel' })}
+            className="w-full h-full object-cover"
+            loading="lazy"
+          />
+        </div>
       </section>
 
       {/* ── Who This Is For ── */}

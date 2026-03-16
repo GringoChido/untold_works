@@ -39,11 +39,12 @@ const Navbar: React.FC = () => {
                 onMouseEnter={() => setIsSolutionsOpen(true)}
                 onMouseLeave={() => setIsSolutionsOpen(false)}
               >
-                <button
-                  className="text-[12px] font-mono font-bold uppercase tracking-[0.3em] text-untold-black hover:text-untold-orange transition-colors duration-300 cursor-pointer"
+                <Link
+                  to="/solutions"
+                  className="text-[12px] font-mono font-bold uppercase tracking-[0.3em] text-untold-black hover:text-untold-orange transition-colors duration-300"
                 >
                   {t(navigation.solutions)}
-                </button>
+                </Link>
                 {isSolutionsOpen && (
                   <div className="absolute top-full left-0 pt-4 z-50">
                     <div className="bg-white border border-untold-border shadow-xl min-w-[260px]">
@@ -153,13 +154,21 @@ const Navbar: React.FC = () => {
           <div className="lg:hidden fixed inset-x-0 top-[80px] sm:top-[96px] h-screen bg-untold-beige z-40 flex flex-col p-6 sm:p-12 space-y-6 sm:space-y-8 animate-in slide-in-from-top duration-300 overflow-y-auto pb-40">
             {/* Solutions expandable */}
             <div>
-              <button
-                onClick={() => setIsSolutionsOpen(!isSolutionsOpen)}
-                className="text-4xl sm:text-6xl font-sans font-black uppercase tracking-tighter hover:text-untold-orange transition-colors w-full text-left flex items-center justify-between"
-              >
-                {t(navigation.solutions)}
-                <span className={`text-untold-orange text-2xl transition-transform ${isSolutionsOpen ? 'rotate-45' : ''}`}>+</span>
-              </button>
+              <div className="flex items-center justify-between w-full">
+                <Link
+                  to="/solutions"
+                  className="text-4xl sm:text-6xl font-sans font-black uppercase tracking-tighter hover:text-untold-orange transition-colors"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  {t(navigation.solutions)}
+                </Link>
+                <button
+                  onClick={() => setIsSolutionsOpen(!isSolutionsOpen)}
+                  className="p-2"
+                >
+                  <span className={`text-untold-orange text-2xl transition-transform inline-block ${isSolutionsOpen ? 'rotate-45' : ''}`}>+</span>
+                </button>
+              </div>
               {isSolutionsOpen && (
                 <div className="mt-4 ml-4 border-l-2 border-untold-orange/20 pl-6">
                   <div className="space-y-3">

@@ -191,6 +191,40 @@ const Solutions: React.FC = () => {
         </div>
       </section>
 
+      {/* ── Services Grid ── */}
+      <section className="bg-white px-5 sm:px-10 py-16 sm:py-24 border-b border-untold-border">
+        <div className="max-w-[1440px] mx-auto">
+          <div className="flex items-center space-x-4 mb-12">
+            <span className="w-2.5 h-2.5 rounded-full bg-untold-orange"></span>
+            <h2 className="font-mono text-[13px] uppercase tracking-[0.6em] font-bold text-untold-black/40">
+              {t({ en: 'SERVICES', es: 'SERVICIOS' })}
+            </h2>
+          </div>
+          <div className="divide-y divide-untold-border border-t border-b border-untold-border">
+            {[
+              { path: '/websites', label: { en: 'Website Design', es: 'Diseño Web' } },
+              { path: '/seo-aeo', label: { en: 'SEO & AEO', es: 'SEO y AEO' } },
+              { path: '/social-media', label: { en: 'Social Media', es: 'Redes Sociales' } },
+              { path: '/ads', label: { en: 'Ads', es: 'Publicidad' } },
+              { path: '/dashboard', label: { en: 'Dashboard', es: 'Dashboard' } },
+            ].map((service) => (
+              <Link
+                key={service.path}
+                to={service.path}
+                className="group flex items-center justify-between py-6 sm:py-8 hover:pl-4 transition-all"
+              >
+                <h3 className="font-sans font-black text-2xl sm:text-3xl lg:text-4xl uppercase tracking-tighter group-hover:text-untold-orange transition-colors">
+                  {t(service.label)}
+                </h3>
+                <span className="text-untold-orange text-xl sm:text-2xl opacity-0 group-hover:opacity-100 group-hover:translate-x-0 -translate-x-4 transition-all">
+                  &rarr;
+                </span>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* ── The Promise ── */}
       <section className="bg-white px-5 sm:px-10 py-16 sm:py-24 border-b border-untold-border">
         <div className="max-w-[1440px] mx-auto grid lg:grid-cols-2 gap-12 lg:gap-20">

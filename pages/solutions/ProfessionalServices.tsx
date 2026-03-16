@@ -6,7 +6,6 @@ import * as i18n from '../../i18n';
 import QuickLeadForm from '../../components/QuickLeadForm';
 import Testimonials from '../../components/Testimonials';
 import Breadcrumbs from '../../components/Breadcrumbs';
-import ImagePlaceholder from '../../components/ImagePlaceholder';
 
 const ProfessionalServices: React.FC = () => {
   const { t } = useLanguage();
@@ -163,11 +162,14 @@ const ProfessionalServices: React.FC = () => {
 
       {/* Visual */}
       <section className="border-b border-untold-border">
-        <ImagePlaceholder
-          label="Professional at work — consultant, therapist, or attorney"
-          aspect="aspect-[21/9]"
-          dimensions="1440 × 617px"
-        />
+        <div className="aspect-[21/9] overflow-hidden">
+          <img
+            src="/images/solutions/professional-services.jpg"
+            alt={t({ en: 'Professional at work — consultant, therapist, or attorney in their practice', es: 'Profesional trabajando — consultor, terapeuta o abogado en su práctica' })}
+            className="w-full h-full object-cover"
+            loading="lazy"
+          />
+        </div>
       </section>
 
       {/* Who This Is For */}

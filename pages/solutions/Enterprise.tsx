@@ -6,7 +6,6 @@ import * as i18n from '../../i18n';
 import QuickLeadForm from '../../components/QuickLeadForm';
 import Testimonials from '../../components/Testimonials';
 import Breadcrumbs from '../../components/Breadcrumbs';
-import ImagePlaceholder from '../../components/ImagePlaceholder';
 
 const Enterprise: React.FC = () => {
   const { t } = useLanguage();
@@ -175,11 +174,14 @@ const Enterprise: React.FC = () => {
 
       {/* Visual */}
       <section className="border-b border-untold-border">
-        <ImagePlaceholder
-          label="Enterprise operations — office, warehouse, or team meeting"
-          aspect="aspect-[21/9]"
-          dimensions="1440 × 617px"
-        />
+        <div className="aspect-[21/9] overflow-hidden">
+          <img
+            src="/images/solutions/enterprise.webp"
+            alt={t({ en: 'Enterprise operations — corporate office, warehouse, or executive team meeting', es: 'Operaciones empresariales — oficina corporativa, almacén o reunión de equipo ejecutivo' })}
+            className="w-full h-full object-cover"
+            loading="lazy"
+          />
+        </div>
       </section>
 
       {/* Who This Is For */}
