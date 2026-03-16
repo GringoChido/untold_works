@@ -26,6 +26,13 @@
   to = "/sitemap.xml"
   status = 200
 
+# Strip trailing slashes — prevents Google "redirect error" warnings
+[[redirects]]
+  from = "/*/"
+  to = "/:splat"
+  status = 301
+  force = true
+
 # SPA fallback - redirect all routes to index.html for React Router
 [[redirects]]
   from = "/*"
