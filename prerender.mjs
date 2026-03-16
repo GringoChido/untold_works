@@ -51,6 +51,7 @@ const routes = [
   '/blog/retail-and-hospitality-digital-survival-guide',
   '/blog/aeo-the-shift-nobodys-talking-about',
   '/blog/yo-this-thing-is-broken',
+  '/blog/your-creative-eye-became-the-prompt',
 ];
 
 async function waitForServer(url, maxAttempts = 30) {
