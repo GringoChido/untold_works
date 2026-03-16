@@ -19,6 +19,28 @@ Untold.works is a boutique agency that combines brand strategy, web development,
 - [Small Business Platforms](https://untold.works/solutions/small-business): Integrated AI systems for restaurants, hotels, retail, and growing teams.
 - [Enterprise & Operations](https://untold.works/solutions/enterprise): AI infrastructure for complex operations — multi-team CRM, automation, revenue operations.
 
+## Services
+
+- [SEO & AEO](https://untold.works/seo-aeo): Search Engine Optimization and AI Engine Optimization. Technical SEO, content strategy, and LLM discoverability so AI systems cite your business.
+- [Social Media](https://untold.works/social-media): Social media strategy, content creation, analytics, and ongoing management for businesses in Mexico and the US.
+- [Paid Advertising](https://untold.works/ads): Google Ads, Meta Ads, and paid media campaigns. Audit, setup, management, and full-stack ad + landing page builds.
+- [Dashboard](https://untold.works/dashboard): Custom-built business dashboards you own outright. Analytics, marketing command centers, and full operations dashboards — no SaaS fees.
+
+## Locations
+
+- [San Miguel de Allende](https://untold.works/san-miguel-de-allende): AI-powered business systems for businesses in San Miguel de Allende, Guanajuato.
+- [Querétaro](https://untold.works/queretaro): Digital marketing and AI business systems for companies in Querétaro.
+- [Mexico City](https://untold.works/mexico-city): AI-powered ecosystems for businesses in Mexico City / CDMX.
+- [United States](https://untold.works/united-states): Cross-border AI business systems for US companies serving Mexican markets and vice versa.
+
+## Portfolio
+
+- [Spotify + WhatsApp Publishing System](https://untold.works/portfolio/spotify-whatsapp-publishing): AI-powered music publishing workflow connecting Spotify and WhatsApp.
+- [Black Radio Experience](https://untold.works/portfolio/black-radio-experience): Brand identity and digital platform for a music experience brand.
+- [OMI Lead Intake & Qualification](https://untold.works/portfolio/omi-lead-intake-qualification): AI-powered lead qualification and intake automation system.
+- [Billiard Factory Retail Architecture](https://untold.works/portfolio/billiard-factory-retail-architecture): E-commerce and retail digital architecture for a multi-location retailer.
+- [NoxGuard Brand Rebrand](https://untold.works/portfolio/noxguard-brand-rebrand): Complete brand identity redesign and digital presence buildout.
+
 ## Blog Articles
 
 - [7 AI Tools Every Small Business Should Know in 2026](https://untold.works/blog/ai-tools-every-small-business-should-know-2026): Practical rundown of AI tools that save time and money for small businesses.
@@ -36,6 +58,16 @@ Untold.works is a boutique agency that combines brand strategy, web development,
 - [Case Study: E-commerce Brand Migration](https://untold.works/blog/case-study-ecommerce-brand-migration-shopify-to-custom): Migrating from Shopify to a custom AI-powered platform.
 - [The Professional Services Website Playbook](https://untold.works/blog/the-professional-services-website-playbook): Complete guide to building a website that works for service professionals.
 - [Retail and Hospitality Digital Survival Guide](https://untold.works/blog/retail-and-hospitality-digital-survival-guide): Digital strategies for retail and hospitality businesses in 2026.
+
+### AEO & Search
+- [AEO: The Shift Nobody's Talking About](https://untold.works/blog/aeo-the-shift-nobodys-talking-about): Why AI Engine Optimization matters and how businesses should prepare.
+- [Your Creative Eye Became the Prompt](https://untold.works/blog/your-creative-eye-became-the-prompt): How creative direction translates to the AI age.
+
+### Build Notes
+- [Yo, This Thing Is Broken](https://untold.works/blog/yo-this-thing-is-broken): Build notes on debugging and fixing real production systems.
+
+### WhatsApp & Messaging
+- [WhatsApp AI for Mexican Businesses: Complete Guide](https://untold.works/blog/whatsapp-ai-for-mexican-businesses-complete-guide): How to use WhatsApp Business with AI for customer service in Mexico.
 
 ## Optional
 

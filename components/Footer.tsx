@@ -78,6 +78,22 @@ const Footer: React.FC = () => {
                   </Link>
                 ))}
               </div>
+              <div className="flex flex-col space-y-2 lg:text-right pt-2">
+                {[
+                  { label: { en: 'SEO & AEO', es: 'SEO y AEO' }, path: '/seo-aeo' },
+                  { label: { en: 'Social Media', es: 'Redes Sociales' }, path: '/social-media' },
+                  { label: { en: 'Ads', es: 'Publicidad' }, path: '/ads' },
+                  { label: { en: 'Dashboard', es: 'Dashboard' }, path: '/dashboard' },
+                ].map((item) => (
+                  <Link
+                    key={item.path}
+                    to={item.path}
+                    className="text-sm font-mono uppercase tracking-[0.3em] text-white/20 hover:text-untold-orange transition-all duration-300"
+                  >
+                    {t(item.label)}
+                  </Link>
+                ))}
+              </div>
               {/* Workshops hidden link */}
               <Link
                 to="/workshops"

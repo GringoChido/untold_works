@@ -150,6 +150,132 @@ Four Steps to Your AI Infrastructure.
 
 ---
 
+## SEO & AEO Page
+
+### Hero
+**Headline:** Your Business Should Be Found by Humans and AI.
+**Subheadline:** Search Engine Optimization + AI Engine Optimization. We build the technical foundation and content strategy so search engines rank you and AI systems cite you.
+
+### The Problem
+Most businesses are invisible to AI. Search engines are evolving — LLMs like ChatGPT, Perplexity, and Google AI Overviews now answer questions directly. If your business isn't structured for both traditional SEO and AI discoverability, you're losing traffic to competitors who are.
+
+### Packages
+- **SEO & AEO Audit** ($1,200): Full technical SEO audit, content gap analysis, AI discoverability assessment, and prioritized action plan.
+- **Content Strategy & Optimization** ($2,500): Keyword strategy, content calendar, on-page optimization, FAQ structures, and schema markup for AI citation.
+- **Technical SEO Build** ($3,500, highlighted): Site speed optimization, Core Web Vitals, structured data, llms.txt, robots.txt, sitemap, hreflang for bilingual sites.
+- **Ongoing SEO & AEO Management** ($1,000/mo): Monthly optimization, content updates, ranking reports, AI citation monitoring, and continuous improvement.
+
+### How It Works
+01. Audit — We analyze your current search visibility, technical health, content structure, and AI discoverability.
+02. Strategize — We build a keyword strategy, content plan, and technical roadmap prioritized by impact.
+03. Build — We implement technical SEO fixes, optimize content, add structured data, and configure AI discoverability.
+04. Monitor & Optimize — Monthly ranking reports, AI citation tracking, content updates, and continuous improvement.
+
+### FAQ
+- What's the difference between SEO and AEO? SEO optimizes for search engine rankings. AEO (AI Engine Optimization) ensures AI systems like ChatGPT and Perplexity can find, understand, and cite your business.
+- How long until I see results? Technical fixes show impact within weeks. Content and ranking improvements typically take 3-6 months of consistent work.
+- Do you work with bilingual sites? Yes — bilingual SEO is our specialty. We optimize for English and Spanish audiences with proper hreflang, separate keyword strategies, and native content.
+- What AI systems do you optimize for? ChatGPT, Perplexity, Google AI Overviews, Claude, and any LLM that crawls the web. We use llms.txt, structured data, and content formatting that AI systems prefer.
+- Do I need ongoing management? SEO is not a one-time project. Search algorithms and AI systems evolve constantly. Ongoing management keeps you competitive.
+
+---
+
+## Social Media Page
+
+### Hero
+**Headline:** Your Social Media Should Work as Hard as You Do.
+**Subheadline:** Strategy, content, analytics, and management — built for businesses that need results, not just posts.
+
+### The Problem
+Most businesses post without a strategy. Social media platforms are where your customers discover you, research you, and decide whether to trust you. Without a clear strategy, consistent content, and proper analytics, you're spending time without seeing returns.
+
+### Packages
+- **Social Media Audit** ($800): Platform analysis, competitor benchmarking, content audit, audience insights, and strategic recommendations.
+- **Content Strategy & Creation** ($2,000): Content calendar, brand voice guidelines, visual templates, caption frameworks, and hashtag strategy.
+- **Analytics & Reporting** ($1,500, highlighted): Custom dashboard setup, KPI tracking, monthly performance reports, and data-driven optimization recommendations.
+- **Ongoing Management** ($1,000/mo): Daily posting, community management, content creation, analytics reporting, and monthly strategy calls.
+
+### How It Works
+01. Audit — We analyze your current social presence, audience, competitors, and content performance.
+02. Strategize — We build a content strategy, posting calendar, and visual direction aligned with your brand.
+03. Execute — We create and publish content, manage your community, and run your social presence.
+04. Optimize — Monthly analytics reviews, strategy adjustments, and continuous improvement.
+
+### FAQ
+- Which platforms do you manage? Instagram, Facebook, LinkedIn, TikTok, and X/Twitter. We recommend platforms based on where your audience actually is.
+- Do you handle both organic and paid social? Yes. Organic content builds brand. Paid amplifies reach. We handle both and ensure they work together.
+- Can you manage bilingual accounts? Absolutely. We create native content in both English and Spanish — not translations, real bilingual content.
+- How much content do you create per month? Depends on the package, but typically 12-20 posts per month across platforms, including stories and reels.
+- Do I approve content before it goes live? Yes. We use a content calendar with approval workflows so nothing publishes without your sign-off.
+
+---
+
+## Paid Advertising Page
+
+### Hero
+**Headline:** Stop Guessing. Start Converting.
+**Subheadline:** Google Ads, Meta Ads, and paid media campaigns built on data, not assumptions. Audit, setup, management, and optimization.
+
+### The Problem
+Businesses waste thousands on ads that don't convert. The problem isn't the platform — it's the strategy. Poor targeting, weak creative, no conversion tracking, and no landing page optimization means money goes in but results don't come out.
+
+### Packages
+- **Ad Account Audit** ($500): Full audit of your ad accounts — targeting, creative, conversion tracking, and wasted spend analysis.
+- **Campaign Setup & Launch** ($2,000): Strategy, creative, targeting, conversion tracking, and launch for one platform.
+- **Ongoing Management** ($1,500/mo, highlighted): Multi-platform management, A/B testing, budget optimization, weekly reports, and monthly strategy calls.
+- **Full-Stack: Ads + Landing Pages** ($5,000): Complete ad ecosystem — campaigns, landing pages, conversion tracking, and funnel optimization.
+
+### How It Works
+01. Audit — We analyze your current ad performance, tracking setup, creative assets, and competitive landscape.
+02. Build — We create campaign strategy, ad creative, targeting audiences, and conversion tracking.
+03. Launch — We launch campaigns with controlled budgets, A/B testing, and real-time monitoring.
+04. Scale — Weekly optimization, budget scaling, creative refresh, and performance reporting.
+
+### FAQ
+- Which platforms do you manage? Google Ads (Search, Display, YouTube, Performance Max), Meta (Facebook, Instagram), LinkedIn, and TikTok.
+- What's the minimum ad budget? We recommend at least $1,500/month in ad spend to generate meaningful data and results.
+- Do you create the ad creative? Yes. We create ad copy, images, and video concepts. For video production, we partner with specialists when needed.
+- Can you run bilingual campaigns? Yes. We run separate campaigns for English and Spanish audiences with native ad copy and culturally relevant creative.
+- How do you report results? Weekly performance snapshots and monthly deep-dive reports with actionable recommendations.
+
+---
+
+## Dashboard Page
+
+### Hero
+**Headline:** Your Entire Business. One Screen.
+**Subheadline:** Custom-built dashboards you own outright. No monthly SaaS fees. No vendor lock-in. Your data, your dashboard, your business.
+
+### The Problem
+Businesses juggle dozens of tools — analytics, CRM, marketing, operations — each with its own login, its own reports, and its own monthly fee. You spend hours compiling data from multiple sources instead of making decisions. And you don't own any of it.
+
+### Tiers
+- **Analytics Dashboard** ($3,000): Website analytics, traffic sources, conversion tracking, and custom KPI visualization — all in one view.
+- **Marketing Command Center** ($6,000, highlighted): Analytics plus social media metrics, ad performance, email campaign data, SEO rankings, and lead pipeline — unified into a single command center.
+- **Full Business Operations Dashboard** ($10,000): Everything above plus CRM data, scheduling, inventory, team performance, financial metrics, and custom integrations.
+- **Ongoing Dashboard Support** ($500/mo): Monthly updates, new data source integrations, performance optimization, and priority support.
+
+### How It Works
+01. Discover — We map your data sources, KPIs, team workflows, and reporting needs.
+02. Architect — We design your dashboard layout, data connections, and visualization strategy.
+03. Build — We build your custom dashboard with real-time data connections, responsive design, and user training.
+04. Deliver & Train — We hand over your dashboard with full documentation, video training, and 30 days of support.
+
+### What Makes This Different
+- **You Own It** — No monthly SaaS subscription. The dashboard is yours. Period.
+- **No Monthly SaaS Fees** — One-time build cost. We hand over the code, the hosting, the data connections.
+- **Custom-Built for Your Business** — Not a template. Not a plugin. Built specifically for how your business operates.
+- **Real-Time Data** — Live connections to your actual data sources. Not exports. Not screenshots. Real-time.
+
+### FAQ
+- Do I really own the dashboard? Yes. Full code ownership, hosting credentials, and documentation. You can modify it, host it anywhere, or hire anyone to maintain it.
+- What data sources can you connect? Google Analytics, social media APIs, CRM systems, ad platforms, email tools, payment processors, custom databases — virtually any system with an API.
+- How is this different from Looker Studio or Tableau? Those are SaaS tools with monthly fees and limitations. We build custom dashboards tailored to your exact needs with no recurring costs.
+- How long does the build take? Analytics dashboards: 2-3 weeks. Marketing command centers: 4-6 weeks. Full operations dashboards: 6-10 weeks.
+- Can the dashboard be expanded later? Absolutely. The architecture is designed for growth. Add new data sources, new views, or new team members at any time.
+
+---
+
 ## About Page
 
 ### Hero
