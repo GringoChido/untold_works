@@ -110,7 +110,7 @@ const SocialMedia: React.FC = () => {
       items: [
         { en: 'Brand voice guide (EN + ES)', es: 'Guía de voz de marca (EN + ES)' },
         { en: 'Content calendar (30 days)', es: 'Calendario de contenido (30 días)' },
-        { en: 'Visual templates & brand kit', es: 'Plantillas visuales y kit de marca' },
+        { en: 'AI-generated photo & video assets + brand kit', es: 'Assets de foto y video generados con IA + kit de marca' },
         { en: '30-day content bank (posts + stories)', es: 'Banco de contenido de 30 días (posts + stories)' },
         { en: 'Caption writing in both languages', es: 'Redacción de captions en ambos idiomas' },
         { en: 'Platform-specific format optimization', es: 'Optimización de formato por plataforma' },
@@ -249,8 +249,8 @@ const SocialMedia: React.FC = () => {
 
           <p className="text-xl sm:text-2xl lg:text-4xl font-serif italic text-white/60 max-w-4xl leading-tight border-l-4 border-untold-orange pl-6 sm:pl-10">
             {t({
-              en: 'From strategy to execution, we build a social presence that converts followers into customers — in English and Spanish.',
-              es: 'De la estrategia a la ejecución, construimos una presencia social que convierte seguidores en clientes — en inglés y español.'
+              en: 'From strategy to execution — content built on real photography and video direction, not stock templates. Bilingual, platform-native, and designed to convert followers into customers.',
+              es: 'De la estrategia a la ejecución — contenido basado en dirección real de fotografía y video, no plantillas genéricas. Bilingüe, nativo de cada plataforma, y diseñado para convertir seguidores en clientes.'
             })}
           </p>
         </div>

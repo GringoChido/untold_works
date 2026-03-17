@@ -166,8 +166,8 @@ export const brandCreativity = {
       es: 'Cada negocio es único. Cada marca tiene una historia que vale la pena contar.'
     },
     {
-      en: 'Before we write a line of code, we understand your brand. Your voice. Your vision. What makes you different.',
-      es: 'Antes de escribir una línea de código, entendemos tu marca. Tu voz. Tu visión. Lo que te hace diferente.'
+      en: 'Every deliverable starts with a prompt — and the prompt starts with your brand. Your voice. Your vision. What makes you different. That foundation determines the quality of everything built on top of it.',
+      es: 'Cada entregable empieza con un prompt — y el prompt empieza con tu marca. Tu voz. Tu visión. Lo que te hace diferente. Esa base determina la calidad de todo lo que se construye encima.'
     },
     {
       en: 'Our foundation is in storytelling and branding — design, photography, video, creative direction. We bring a sharp eye for visual identity and narrative.',
@@ -251,8 +251,8 @@ export const howWeWork = {
         es: 'Lanzar Tu Ecosistema'
       },
       description: {
-        en: 'We build everything — brand identity, mobile-ready website, AI workflows, bilingual content, CRM, automations, and integrations. SEO-optimized and LLM-discoverable from day one. All tested, all documented.',
-        es: 'Construimos todo — identidad de marca, sitio web mobile-ready, flujos de IA, contenido bilingüe, CRM, automatizaciones e integraciones. Optimizado para SEO y descubrible por LLMs desde el día uno. Todo probado, todo documentado.'
+        en: 'We build everything in Claude — brand identity, mobile-ready website, AI workflows, bilingual content, CRM, automations, and integrations. Connected to Salesforce, HubSpot, Google Workspace, or whatever your team already runs. All tested, all documented.',
+        es: 'Construimos todo en Claude — identidad de marca, sitio web mobile-ready, flujos de IA, contenido bilingüe, CRM, automatizaciones e integraciones. Conectado a Salesforce, HubSpot, Google Workspace, o lo que tu equipo ya use. Todo probado, todo documentado.'
       },
       deliverables: [
         { en: 'Brand identity', es: 'Identidad de marca' },
@@ -530,8 +530,8 @@ export const aboutPage = {
   },
   narrative: {
     veteran: {
-      en: 'We started as storytellers and creative directors. Design, photography, video, brand strategy — that\'s our foundation. Over the years, we\'ve added deep technology expertise to our toolkit. Now we build the complete package: the brand, the website, and the systems that power your business.',
-      es: 'Empezamos como narradores y directores creativos. Diseño, fotografía, video, estrategia de marca — esa es nuestra base. Con los años, hemos agregado experiencia profunda en tecnología a nuestro kit de herramientas. Ahora construimos el paquete completo: la marca, el sitio web y los sistemas que impulsan tu negocio.'
+      en: 'We started as storytellers and creative directors. Design, photography, video, brand strategy — that\'s our foundation. Today we build in Claude — Claude Code, Skills, and Agents — connected to the platforms you already use: Salesforce, HubSpot, Google Workspace, your hosting. The complete package: the brand, the website, and the systems that power your business.',
+      es: 'Empezamos como narradores y directores creativos. Diseño, fotografía, video, estrategia de marca — esa es nuestra base. Hoy construimos en Claude — Claude Code, Skills y Agents — conectados a las plataformas que ya usas: Salesforce, HubSpot, Google Workspace, tu hosting. El paquete completo: la marca, el sitio web y los sistemas que impulsan tu negocio.'
     },
     theBridge: {
       en: 'We believe the best technology is invisible. It should feel natural, work on your phone, and never make you feel like you need a computer science degree. That\'s why we lead with brand and creativity, then layer in the right technology to support it.',

@@ -469,8 +469,8 @@ const Websites: React.FC = () => {
             <div className="lg:col-span-5">
               <p className="text-xl sm:text-2xl lg:text-3xl font-serif italic text-white/60 leading-relaxed">
                 {t({
-                  en: 'AI builds fast. Experience builds right. We combine cutting-edge AI tools with decades of creative direction, branding, and marketing expertise. The result: websites that don\'t just look beautiful — they perform.',
-                  es: 'La IA construye rápido. La experiencia construye bien. Combinamos herramientas de IA de vanguardia con décadas de dirección creativa, branding y experiencia en marketing. El resultado: sitios web que no solo se ven hermosos — funcionan.'
+                  en: 'AI builds fast. Experience builds right. We generate photo and video assets with Artlist, but the prompts behind them draw on 25 years of real cinematography — lenses, lighting, angles, frame rates. The result: websites that don\'t just look beautiful — they perform.',
+                  es: 'La IA construye rápido. La experiencia construye bien. Generamos assets de foto y video con Artlist, pero los prompts detrás de ellos se basan en 25 años de cinematografía real — lentes, iluminación, ángulos, frame rates. El resultado: sitios web que no solo se ven hermosos — funcionan.'
                 })}
               </p>
             </div>
@@ -483,7 +483,7 @@ const Websites: React.FC = () => {
                 <div className="grid grid-cols-3 gap-4">
                   {[
                     { en: 'Speed & scale', es: 'Velocidad y escala' },
-                    { en: 'Technical implementation', es: 'Implementación técnica' },
+                    { en: 'Code & integrations (Claude)', es: 'Código e integraciones (Claude)' },
                     { en: 'Data architecture & SEO', es: 'Arquitectura de datos y SEO' },
                   ].map((item, idx) => (
                     <div key={idx} className="border border-white/10 p-4">
@@ -500,7 +500,7 @@ const Websites: React.FC = () => {
                 <div className="grid grid-cols-3 gap-4">
                   {[
                     { en: 'Brand strategy & voice', es: 'Estrategia de marca y voz' },
-                    { en: 'Visual identity & taste', es: 'Identidad visual y gusto' },
+                    { en: 'Photography & video direction', es: 'Dirección de fotografía y video' },
                     { en: 'Emotional resonance', es: 'Resonancia emocional' },
                   ].map((item, idx) => (
                     <div key={idx} className="border border-white/10 p-4">
