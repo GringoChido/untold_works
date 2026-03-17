@@ -123,23 +123,23 @@ const Navbar: React.FC = () => {
 
           {/* Mobile Language Toggle + Hamburger */}
           <div className="lg:hidden flex items-center">
-            <div className="flex items-center space-x-1.5 mr-4">
+            <div className="flex items-center space-x-1 mr-3">
               <button
                 onClick={() => setLang('en')}
-                className={`font-mono text-[11px] font-bold uppercase tracking-widest transition-colors ${lang === 'en' ? 'text-untold-orange' : 'text-untold-black/40'}`}
+                className={`px-2 py-3 min-h-[44px] font-mono text-[11px] font-bold uppercase tracking-widest transition-colors ${lang === 'en' ? 'text-untold-orange' : 'text-untold-black/40'}`}
               >
                 EN
               </button>
               <span className="font-mono text-[11px] text-untold-black/20">|</span>
               <button
                 onClick={() => setLang('es')}
-                className={`font-mono text-[11px] font-bold uppercase tracking-widest transition-colors ${lang === 'es' ? 'text-untold-orange' : 'text-untold-black/40'}`}
+                className={`px-2 py-3 min-h-[44px] font-mono text-[11px] font-bold uppercase tracking-widest transition-colors ${lang === 'es' ? 'text-untold-orange' : 'text-untold-black/40'}`}
               >
                 ES
               </button>
             </div>
             <button
-              className="p-2"
+              className="p-3 min-w-[44px] min-h-[44px] flex flex-col justify-center"
               onClick={() => setIsMenuOpen(!isMenuOpen)}
             >
               <div className={`w-10 h-0.5 bg-black mb-2.5 transition-all ${isMenuOpen ? 'rotate-45 translate-y-3' : ''}`}></div>
@@ -256,7 +256,7 @@ const Navbar: React.FC = () => {
       </nav>
 
       {/* Mobile Sticky CTA */}
-      <div className="lg:hidden fixed bottom-0 left-0 right-0 z-50 bg-untold-black/95 backdrop-blur-md border-t border-white/10 px-5 py-3 safe-area-bottom">
+      <div className="lg:hidden fixed bottom-0 left-0 right-0 z-50 bg-untold-black/95 backdrop-blur-md border-t border-white/10 px-5 py-3 pb-[calc(0.75rem+env(safe-area-inset-bottom))]">
         <Link
           to="/contact"
           className="block w-full bg-untold-orange text-white py-4 font-sans font-black uppercase tracking-tighter text-center text-sm active:scale-[0.98] transition-transform"

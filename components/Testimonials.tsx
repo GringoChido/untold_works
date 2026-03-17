@@ -50,7 +50,7 @@ const Testimonials: React.FC<TestimonialsProps> = ({ variant = 'light' }) => {
           {t({ en: 'What Do Our\nClients Say?', es: '¿Qué Dicen\nNuestros Clientes?' })}
         </h3>
 
-        <div className="grid lg:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {testimonials.map((item, idx) => (
             <div
               key={idx}

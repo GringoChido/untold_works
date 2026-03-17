@@ -81,7 +81,7 @@ const Home: React.FC = () => {
       >
         <div className="max-w-[1440px] mx-auto">
           <div className="max-w-[900px]">
-            <div className="flex items-center space-x-4 mb-14">
+            <div className="flex items-center space-x-4 mb-8 sm:mb-14">
               <span className="w-3 h-3 rounded-full bg-untold-orange animate-pulse"></span>
               <p className="font-mono text-[11px] lg:text-[13px] uppercase tracking-[0.6em] font-bold text-white/50">
                 {t(i18n.hero.eyebrow)}
@@ -379,9 +379,9 @@ const Home: React.FC = () => {
       ═══════════════════════════════════════════════════════════ */}
       <section id="what-we-build" className="px-5 sm:px-10 py-20 sm:py-32 bg-untold-black text-white border-b border-white/5">
         <div className="max-w-[1440px] mx-auto">
-          <div className="flex items-center justify-between mb-16">
+          <div className="flex items-center justify-between mb-16 gap-4 flex-wrap">
             <div className="flex items-center space-x-4">
-              <span className="w-2.5 h-2.5 rounded-full bg-untold-orange"></span>
+              <span className="w-2.5 h-2.5 rounded-full bg-untold-orange shrink-0"></span>
               <h2 className="font-mono text-[13px] uppercase tracking-[0.6em] font-bold text-white/40">
                 {t({ en: 'SELECTED WORK', es: 'TRABAJO SELECCIONADO' })}
               </h2>
@@ -395,7 +395,7 @@ const Home: React.FC = () => {
             </Link>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-px bg-white/10 border border-white/10">
+          <div className="grid sm:grid-cols-2 gap-px bg-white/10 border border-white/10">
             {projects.slice(0, 4).map((project, idx) => (
               <Link
                 key={project.id}

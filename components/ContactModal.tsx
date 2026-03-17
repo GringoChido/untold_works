@@ -41,11 +41,11 @@ const ContactModal: React.FC<ContactModalProps> = ({ onClose }) => {
         className="absolute inset-0 bg-black/80 backdrop-blur-md" 
         onClick={onClose}
       />
-      <div className="relative bg-untold-beige w-full max-w-2xl rounded-none shadow-[0_40px_100px_rgba(0,0,0,0.5)] overflow-hidden border border-untold-border">
-        <div className="p-12 lg:p-20">
+      <div className="relative bg-untold-beige w-full max-w-2xl rounded-none shadow-[0_40px_100px_rgba(0,0,0,0.5)] overflow-hidden border border-untold-border max-h-[90vh] overflow-y-auto">
+        <div className="p-6 sm:p-12 lg:p-20">
           <button 
             onClick={onClose}
-            className="absolute top-10 right-10 w-12 h-12 flex items-center justify-center border-2 border-untold-border text-untold-black hover:bg-black hover:text-white transition-all font-bold"
+            className="absolute top-4 right-4 sm:top-10 sm:right-10 w-11 h-11 flex items-center justify-center border-2 border-untold-border text-untold-black hover:bg-black hover:text-white transition-all font-bold"
           >
             ✕
           </button>
@@ -53,14 +53,14 @@ const ContactModal: React.FC<ContactModalProps> = ({ onClose }) => {
           {status === 'success' ? (
             <div className="py-24 text-center">
               <div className="text-6xl mb-8">✦</div>
-              <h2 className="font-sans font-black text-6xl uppercase tracking-tighter mb-4 leading-none">{t({ en: 'Signal Received.', es: 'Señal Recibida.' })}</h2>
+              <h2 className="font-sans font-black text-4xl sm:text-6xl uppercase tracking-tighter mb-4 leading-none">{t({ en: 'Signal Received.', es: 'Señal Recibida.' })}</h2>
               <p className="font-mono text-xs text-untold-gray uppercase tracking-[0.4em] font-bold">{t({ en: 'Stand by for uplink.', es: 'Espere enlace ascendente.' })}</p>
             </div>
           ) : (
             <>
-              <div className="mb-14">
+              <div className="mb-8 sm:mb-14 mt-8 sm:mt-0">
                 <span className="font-mono text-[11px] uppercase tracking-[0.4em] font-bold text-untold-orange mb-6 block">Communication Module</span>
-                <h2 className="font-sans font-black text-6xl lg:text-7xl mb-6 uppercase tracking-tighter leading-[0.85]">
+                <h2 className="font-sans font-black text-3xl sm:text-5xl lg:text-7xl mb-6 uppercase tracking-tighter leading-[0.85]">
                   {t({ en: 'Start the Conversation', es: 'Iniciar Conversación' })}
                 </h2>
                 <p className="text-untold-black text-xl font-medium leading-relaxed max-w-md">
@@ -72,7 +72,7 @@ const ContactModal: React.FC<ContactModalProps> = ({ onClose }) => {
               </div>
 
               <form onSubmit={handleSubmit} className="space-y-6">
-                <div className="grid grid-cols-2 gap-6">
+                <div className="grid sm:grid-cols-2 gap-6">
                   <div className="space-y-2">
                     <label className="font-mono text-[10px] uppercase font-bold text-gray-400 pl-1 tracking-widest">Given Name</label>
                     <input 

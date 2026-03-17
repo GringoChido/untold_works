@@ -44,7 +44,7 @@ const Footer: React.FC = () => {
           </div>
 
           {/* Right Column: Nav + Newsletter */}
-          <div className="lg:col-span-5 flex flex-col space-y-12 pt-24 lg:pt-0">
+          <div className="lg:col-span-5 flex flex-col space-y-12 pt-0 lg:pt-0">
             {/* Navigation */}
             <div className="flex flex-col space-y-5 lg:text-right">
               <span className="font-mono text-[10px] uppercase tracking-[0.6em] text-white/20 font-bold mb-4">NAV_DIRECTORY</span>
@@ -147,7 +147,7 @@ const Footer: React.FC = () => {
         </div>
 
         {/* Technical Footer Bar */}
-        <div className="mt-40 pt-16 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-12">
+        <div className="mt-16 sm:mt-24 lg:mt-40 pt-10 sm:pt-16 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-6 sm:gap-12">
           <div className="font-mono text-[10px] uppercase tracking-[0.4em] text-white/20 font-bold">
             {t(i18n.footer.location)}
           </div>

@@ -60,7 +60,7 @@ const Portfolio: React.FC = () => {
             <button
               key={filter.key}
               onClick={() => setActivePillar(filter.key)}
-              className={`px-5 py-2 font-mono text-[11px] uppercase tracking-[0.3em] font-bold transition-all border ${
+              className={`px-5 py-3 min-h-[44px] font-mono text-[11px] uppercase tracking-[0.3em] font-bold transition-all border ${
                 activePillar === filter.key
                   ? 'bg-untold-orange text-white border-untold-orange'
                   : 'border-white/10 text-white/40 hover:text-white hover:border-white/30'
@@ -74,7 +74,7 @@ const Portfolio: React.FC = () => {
 
       {/* Grid */}
       <section className="px-5 sm:px-10 py-10">
-        <div className="max-w-[1440px] mx-auto grid lg:grid-cols-2 gap-px bg-white/10 border border-white/10">
+        <div className="max-w-[1440px] mx-auto grid md:grid-cols-2 gap-px bg-white/10 border border-white/10">
           {filtered.map((project, idx) => (
             <Link
               key={project.id}

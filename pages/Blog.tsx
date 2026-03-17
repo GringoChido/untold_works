@@ -147,7 +147,7 @@ const Blog: React.FC = () => {
               <button
                 key={cat.key}
                 onClick={() => handleCategoryClick(cat.key)}
-                className={`px-4 py-2 font-mono text-[10px] uppercase tracking-[0.3em] font-bold transition-all border relative ${
+                className={`px-4 py-3 min-h-[44px] font-mono text-[10px] uppercase tracking-[0.3em] font-bold transition-all border relative ${
                   activeCategory === cat.key
                     ? 'bg-untold-black text-white border-untold-black'
                     : 'border-untold-border text-untold-gray hover:text-untold-black hover:border-untold-black'
@@ -162,7 +162,7 @@ const Blog: React.FC = () => {
             placeholder={t(i18n.blogPage.searchPlaceholder)}
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
-            className="bg-transparent border-b-2 border-untold-border py-2 px-1 text-sm font-serif outline-none focus:border-untold-orange transition-all w-full sm:w-64"
+            className="bg-transparent border-b-2 border-untold-border py-3 px-1 text-base font-serif outline-none focus:border-untold-orange transition-all w-full sm:w-64"
           />
         </div>
       </section>
