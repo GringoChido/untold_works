@@ -44,6 +44,15 @@ const BlogPost: React.FC = () => {
       dateModified: post.dateModified || post.date,
       url: `https://untold.works/blog/${post.slug}`,
       mainEntityOfPage: `https://untold.works/blog/${post.slug}`,
+      speakable: {
+        '@type': 'SpeakableSpecification',
+        cssSelector: ['h1', 'h2', '.prose h2', '.prose h3'],
+      },
+      about: {
+        '@type': 'Thing',
+        name: post.category.replace(/-/g, ' '),
+      },
+      inLanguage: ['en', 'es'],
     };
   }, [post]);
 

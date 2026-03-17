@@ -86,3 +86,4 @@ Allow: /
 # ───────────────────────────────────────────────────────────────
 Sitemap: https://untold.works/sitemap.xml
 LLMs: https://untold.works/llms.txt
+LLMs-full: https://untold.works/llms-full.txt

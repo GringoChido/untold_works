@@ -7,6 +7,20 @@ import * as i18n from '../i18n';
 import { WavyBackground } from '../components/ui/wavy-background';
 
 
+const howToSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'HowTo',
+  name: 'How Untold.works Builds AI-Powered Business Ecosystems',
+  description: 'Four-stage process from operations audit to full ownership transfer. We analyze, plan, build, and train — then hand over the keys.',
+  totalTime: 'P8W',
+  step: [
+    { '@type': 'HowToStep', position: 1, name: 'Analyze', text: 'We map your current operations, tech stack, and workflow bottlenecks. We identify where AI can cut time, where automation replaces manual work, and what your platform needs to look like.' },
+    { '@type': 'HowToStep', position: 2, name: 'Plan', text: 'We design your complete platform — brand, website, AI workflows, integrations, and SEO structure. Mobile-first, multilingual, and optimized for search engines and LLMs.' },
+    { '@type': 'HowToStep', position: 3, name: 'Build', text: 'We build everything in Claude — brand identity, mobile-ready website, AI workflows, bilingual content, CRM, automations, and integrations. All tested, all documented.' },
+    { '@type': 'HowToStep', position: 4, name: 'Train & Deliver', text: 'We train you on every system we built. Video walkthroughs, written documentation, and live sessions. Then we hand over the keys — your platform, your data, your workflows. Full ownership.' },
+  ],
+};
+
 const faqSchema = {
   '@context': 'https://schema.org',
   '@type': 'FAQPage',
@@ -60,7 +74,7 @@ const Home: React.FC = () => {
   usePageMeta(
     i18n.seo.home.title,
     i18n.seo.home.description,
-    { path: '/', schema: faqSchema }
+    { path: '/', schema: [faqSchema, howToSchema] }
   );
 
   return (
@@ -496,6 +510,52 @@ const Home: React.FC = () => {
             <p className="text-lg sm:text-xl font-serif italic text-white/50 max-w-3xl leading-relaxed">
               {t(i18n.whyUntold.closingContent)}
             </p>
+          </div>
+        </div>
+      </section>
+
+      {/* ═══════════════════════════════════════════════════════════
+          SECTION 5b: HOW WE WORK
+      ═══════════════════════════════════════════════════════════ */}
+      <section className="px-5 sm:px-10 py-20 sm:py-32 bg-untold-beige border-b border-untold-border">
+        <div className="max-w-[1440px] mx-auto">
+          <div className="flex items-center space-x-4 mb-14">
+            <span className="w-2.5 h-2.5 rounded-full bg-untold-orange"></span>
+            <h2 className="font-mono text-[13px] uppercase tracking-[0.6em] font-bold text-untold-black/40">
+              {t({ en: 'OUR PROCESS', es: 'NUESTRO PROCESO' })}
+            </h2>
+          </div>
+
+          <h3 className="font-sans font-black text-4xl sm:text-6xl lg:text-8xl uppercase tracking-tighter mb-6 leading-[0.85]">
+            {t(i18n.howWeWork.headline)}
+          </h3>
+          <p className="text-lg sm:text-xl font-serif italic text-untold-gray max-w-3xl mb-16">
+            {t(i18n.howWeWork.subheadline)}
+          </p>
+
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            {i18n.howWeWork.stages.map((stage) => (
+              <div key={stage.number} className="border border-untold-border bg-white p-8 flex flex-col">
+                <span className="font-mono text-[10px] uppercase tracking-[0.5em] text-untold-orange font-bold mb-4">{stage.number}</span>
+                <h4 className="font-sans font-black text-2xl uppercase tracking-tighter mb-2">
+                  {t(stage.title)}
+                </h4>
+                <p className="font-mono text-[11px] uppercase tracking-[0.2em] text-untold-orange/70 mb-4">
+                  {t(stage.subtitle)}
+                </p>
+                <p className="font-serif text-base text-untold-gray leading-relaxed mb-6 flex-grow">
+                  {t(stage.description)}
+                </p>
+                <ul className="space-y-2 border-t border-untold-border pt-4">
+                  {stage.deliverables.map((d, idx) => (
+                    <li key={idx} className="flex items-start space-x-2">
+                      <span className="text-untold-orange text-sm mt-0.5">+</span>
+                      <span className="font-mono text-[11px] text-untold-black/60">{t(d)}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
           </div>
         </div>
       </section>

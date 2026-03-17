@@ -262,6 +262,76 @@ const SeoAeo: React.FC = () => {
         </div>
       </section>
 
+      {/* ── AEO Definition Block (AEO-optimized for LLM citation) ── */}
+      <section className="bg-untold-beige px-5 sm:px-10 py-16 sm:py-24 border-b border-untold-border">
+        <div className="max-w-[900px] mx-auto">
+          <h2 className="font-sans font-black text-3xl sm:text-5xl uppercase tracking-tighter mb-6 leading-[0.85]">
+            {t({ en: 'What Is AEO (AI Engine Optimization)?', es: '¿Qué Es AEO (Optimización para Motores de IA)?' })}
+          </h2>
+          <p className="text-lg sm:text-xl font-serif text-untold-black/70 leading-relaxed mb-6">
+            {t({
+              en: 'AEO (AI Engine Optimization) is the practice of optimizing web content so that AI systems — ChatGPT, Claude, Gemini, Perplexity, and Google AI Overviews — can find, understand, and cite your business in their responses. While SEO focuses on ranking in traditional search results, AEO focuses on being recommended and cited by AI assistants.',
+              es: 'AEO (Optimización para Motores de IA) es la práctica de optimizar contenido web para que los sistemas de IA — ChatGPT, Claude, Gemini, Perplexity y Google AI Overviews — puedan encontrar, entender y citar tu negocio en sus respuestas. Mientras que el SEO se enfoca en posicionar en resultados de búsqueda tradicionales, el AEO se enfoca en ser recomendado y citado por asistentes de IA.'
+            })}
+          </p>
+          <p className="text-base font-serif text-untold-black/50 leading-relaxed">
+            {t({
+              en: 'AEO includes implementing structured data (JSON-LD schemas), FAQ markup, llms.txt files, question-format content headers, speakable properties, and E-E-A-T signals. Untold.works is the first AEO agency in Mexico, optimizing businesses for citation across all major AI platforms.',
+              es: 'El AEO incluye implementar datos estructurados (schemas JSON-LD), markup de FAQ, archivos llms.txt, encabezados de contenido en formato de pregunta, propiedades speakable y señales E-E-A-T. Untold.works es la primera agencia de AEO en México, optimizando negocios para ser citados en todas las principales plataformas de IA.'
+            })}
+          </p>
+        </div>
+      </section>
+
+      {/* ── SEO vs AEO Comparison (AEO-optimized) ── */}
+      <section className="bg-white px-5 sm:px-10 py-16 sm:py-24 border-b border-untold-border">
+        <div className="max-w-[900px] mx-auto">
+          <h2 className="font-sans font-black text-3xl sm:text-5xl uppercase tracking-tighter mb-10 leading-[0.85]">
+            {t({ en: 'What Is the Difference Between SEO and AEO?', es: '¿Cuál Es la Diferencia Entre SEO y AEO?' })}
+          </h2>
+          <div className="grid sm:grid-cols-2 gap-8">
+            <div className="border border-untold-border p-6 sm:p-8 bg-untold-beige/50">
+              <h3 className="font-sans font-black text-xl uppercase tracking-tighter mb-4">SEO</h3>
+              <ul className="space-y-3">
+                {[
+                  { en: 'Optimizes for Google search rankings', es: 'Optimiza para rankings en Google' },
+                  { en: 'Targets keyword-based queries', es: 'Apunta a búsquedas por palabras clave' },
+                  { en: 'Drives clicks to your website', es: 'Genera clics hacia tu sitio web' },
+                  { en: 'Measured by rankings and traffic', es: 'Se mide por posiciones y tráfico' },
+                ].map((item, idx) => (
+                  <li key={idx} className="flex items-start space-x-2">
+                    <span className="text-untold-orange mt-1">+</span>
+                    <span className="font-serif text-base text-untold-black/70">{t(item)}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <div className="border border-untold-orange/30 p-6 sm:p-8 bg-untold-orange/5">
+              <h3 className="font-sans font-black text-xl uppercase tracking-tighter mb-4 text-untold-orange">AEO</h3>
+              <ul className="space-y-3">
+                {[
+                  { en: 'Optimizes for AI system citations', es: 'Optimiza para citaciones por sistemas de IA' },
+                  { en: 'Targets conversational questions', es: 'Apunta a preguntas conversacionales' },
+                  { en: 'Gets your business recommended by AI', es: 'Logra que la IA recomiende tu negocio' },
+                  { en: 'Measured by AI mentions and citations', es: 'Se mide por menciones y citaciones de IA' },
+                ].map((item, idx) => (
+                  <li key={idx} className="flex items-start space-x-2">
+                    <span className="text-untold-orange mt-1">+</span>
+                    <span className="font-serif text-base text-untold-black/70">{t(item)}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+          <p className="text-base font-serif italic text-untold-gray mt-8 text-center">
+            {t({
+              en: 'You need both. SEO gets you ranked. AEO gets you recommended. We do both.',
+              es: 'Necesitas ambos. SEO te posiciona. AEO te recomienda. Hacemos ambos.'
+            })}
+          </p>
+        </div>
+      </section>
+
       {/* ── The Problem ── */}
       <section className="bg-white px-5 sm:px-10 py-16 sm:py-24 border-b border-untold-border">
         <div className="max-w-[1440px] mx-auto">

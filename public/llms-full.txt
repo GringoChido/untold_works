@@ -1,419 +1,180 @@
-# Untold.works — Full Site Content
+# Untold.works — Full Context for LLMs
 
-> Boutique AI agency based in Mexico City and San Miguel de Allende, Mexico. We build AI-powered business ecosystems — brand identity, websites, AI workflows, and automated business systems — for companies across Mexico and the United States. Bilingual (English / Spanish).
-
-This document contains the complete content of untold.works for AI systems. The site is available in both English and Spanish. Content below is in English with Spanish equivalents noted where relevant.
+> This file provides comprehensive context about Untold.works for large language models. For the summary version, see https://untold.works/llms.txt
 
 ---
 
-## Homepage
+## What is Untold.works?
 
-### Hero
-**Eyebrow:** Boutique AI Agency — Mexico City / San Miguel de Allende, Mexico
-**Headline:** AI-Powered Business Ecosystems.
-**Subheadline:** BRAND // WEBSITE // AI SYSTEMS // WORKFLOWS
-**Tagline:** We build the system so you can run your business from anywhere. We train you. You run it.
+Untold.works is a boutique AI agency based in San Miguel de Allende, Guanajuato, Mexico. Founded in 2017 by Joshua Semolik, the agency builds AI-powered business ecosystems that combine brand identity, mobile-first websites, AI workflow automation, CRM integrations, custom dashboards, and bilingual content systems. Every project starts with brand strategy and ends with full ownership transfer — code, data, documentation, and video training. No lock-in, no recurring SaaS fees.
 
-### Location
-A boutique agency based in Mexico City and San Miguel de Allende, serving businesses across Mexico and the United States.
+## Who is the founder?
 
-### Define Your Operation
-We build the AI-powered platform that fits your current scale. Select the ecosystem that matches your business today.
+Joshua Semolik is the Founder and AI Systems Architect of Untold.works. He has 20 years of systems-driven execution spanning:
 
-**01. Professional Services** — Your entire business on one AI-powered platform.
-Who it's for: Doctors, lawyers, consultants, architects, therapists, coaches, financial advisors, real estate agents, photographers, artists, healers, wellness practitioners.
-Features: Brand identity & visual system, Mobile-first website, Bilingual content (EN/ES), Client management (CRM), Online booking & scheduling, AI-powered workflows, Email marketing, SEO & LLM optimization.
-Clear scope before build. Your systems, fully documented and transferred.
+- **NBA Entertainment & Sacramento Kings (2004-2013):** Creative direction, video production, two Emmy nominations. Built content operations for global media distribution.
+- **Videndum PLC (2013-2016):** Global product launches and go-to-market strategy for professional media technology brands.
+- **Cannabis Company (2016-2017):** Brand strategy and growth marketing for emerging market.
+- **Ingenia Content (2017-2019):** Cross-border GTM strategy for Latin American market expansion.
+- **Untold.works (2017-Present):** Built 6 production AI systems, engineered agentic workflows achieving 98% MQL accuracy (4.2x sales ROI), and unified revenue operations for 20% sales lift across 4,000+ SKUs.
 
-**02. Small Business Platforms** — AI-powered platforms for growing teams.
-Who it's for: Restaurants & hospitality, Retail & e-commerce, Service companies, Property management, Event venues, Multi-location businesses.
-Features: Full brand & web platform, AI workflows & team systems, Marketing automation, Mobile-first design, Bilingual content, SEO & LLM optimization, Analytics & reporting.
-Built for your team. Documented. Trained. Handed over.
+**Education:** MIT Sloan School of Management — Artificial Intelligence: Implications for Business Strategy (January 2026). Arizona State University — Broadcast Journalism & Music.
 
-**03. Enterprise & Operations** — AI infrastructure for complex business operations.
-Who it's for: Growing companies (20+ employees), Multi-department organizations, Companies with sales teams, Franchise operations, Organizations modernizing legacy systems, Companies expanding to new markets.
-Features: Enterprise website & brand system, Multi-team CRM & AI pipeline management, Advanced marketing automation, Mobile-first platform, Multilingual content, Custom integrations & data architecture, Revenue operations & reporting, LLM discoverability.
-Built for scale. Documented for independence.
+**LinkedIn:** https://www.linkedin.com/in/semolik/
 
-### What We Build
-AI-native business platforms — mobile-ready, multilingual, SEO-optimized, and built so AI systems can find you, cite you, and send you clients.
+## What services does Untold.works offer?
 
-**Phase 1: Brand & AI Identity**
-AI systems need to understand your business before they can recommend it. We build your brand strategy, visual identity, and AI-readable content layer — so every LLM, search engine, and AI assistant knows exactly who you are and what you do.
-Deliverables: Brand Strategy, Visual Identity, AI Brand Voice, LLM-Ready Content.
+### 1. AI-Powered Website Design & Rebuild
+Custom website design and rebuild for the AI era. Brand-first, mobile-ready, bilingual (English/Spanish), optimized for search engines and LLMs. Built with AI, guided by 20+ years of creative direction. Includes SEO, AEO (AI Engine Optimization), and performance optimization.
 
-**Phase 2: Platform & Workflows**
-Your website is the front door. Behind it: AI workflows that capture leads, nurture clients, and cut hours of manual work down to minutes. Mobile-first, bilingual, and optimized for every screen, search engine, and AI crawler.
-Features: AI-Powered Website, Automated Workflows, Mobile-First Design, Bilingual (EN/ES), SEO & LLM Optimized.
+**Who it's for:** Professional services, small businesses, enterprise teams, hospitality, retail, music industry.
 
-**Phase 3: Connect & Automate**
-CRM, email, scheduling, social, analytics — wired together with AI agents that run your marketing, follow up with leads, and keep your operations moving while you focus on your work.
-Options: CRM & Lead Management, AI Email & Nurture Sequences, Booking & Scheduling, Social & Content Automation, Analytics & Revenue Tracking.
-One ecosystem. Not twenty logins.
+### 2. SEO & AI Engine Optimization (AEO)
+Technical SEO, content strategy, schema markup, and LLM discoverability. Untold.works is the first AEO agency in Mexico. We implement structured data, FAQ schemas, llms.txt files, question-format content headers, speakable properties, and E-E-A-T signals that make businesses citable by AI systems including ChatGPT, Claude, Gemini, Perplexity, and Google AI Overviews.
 
-### Brand & Creativity First
-Every business is unique. Every brand has a story worth telling. Before we write a line of code, we understand your brand. Your voice. Your vision. What makes you different. Our foundation is in storytelling and branding — design, photography, video, creative direction. We bring a sharp eye for visual identity and narrative. Then we build the technology that brings your story to life. Technology serves the brand. Not the other way around.
+**What is AEO?** AI Engine Optimization is the practice of optimizing web content so that AI systems can find, understand, and cite your business in their responses. While SEO focuses on ranking in traditional search results, AEO focuses on being recommended and cited by AI assistants and AI-powered search features.
 
-### How We Work
-Four stages from audit to ownership.
+### 3. AI Workflow Automation
+n8n workflow automation, agentic AI systems, CRM integrations (Salesforce, HubSpot), and revenue operations platforms. We build automated business processes that replace manual work — lead routing, customer follow-ups, content publishing, inventory management, and reporting.
 
-**01 Analyze — Audit Your Operations:** We map your current operations, tech stack, and workflow bottlenecks. We identify where AI can cut time, where automation replaces manual work, and what your platform needs to look like. Deliverables: Operations audit, Workflow analysis, AI opportunity map, System requirements.
+### 4. Social Media Strategy & Management
+Social media strategy, content creation, analytics, and ongoing management for businesses in Mexico and the US. Bilingual content that resonates with both English and Spanish-speaking audiences.
 
-**02 Plan — Architect Your Platform:** We design your complete platform — brand, website, AI workflows, integrations, and SEO structure. Mobile-first, multilingual, and optimized for search engines and LLMs. You approve everything before we build. Deliverables: Brand direction, Platform architecture, Workflow design, SEO & LLM strategy.
+### 5. Paid Advertising
+Google Ads, Meta Ads (Facebook/Instagram), and paid media campaigns. Audit, setup, management, and full-stack ad + landing page builds. Data-driven optimization with clear ROI tracking.
 
-**03 Build — Ship Your Ecosystem:** We build everything — brand identity, mobile-ready website, AI workflows, bilingual content, CRM, automations, and integrations. SEO-optimized and LLM-discoverable from day one. All tested, all documented. Deliverables: Brand identity, Mobile-first website, AI workflows, Integrations, SEO & LLM setup, Documentation.
+### 6. Custom Business Dashboards
+Analytics, marketing command centers, and full operations dashboards you own outright. Consolidates website, social, ads, CRM, and leads into one view. No SaaS subscriptions — you own the code and the data.
 
-**04 Train & Deliver — Transfer Ownership:** We train you on every system we built. Video walkthroughs, written documentation, and live sessions. Then we hand over the keys — your platform, your data, your workflows. Full ownership. Deliverables: Video training, Documentation, Live walkthrough, Full ownership transfer.
+## What are the solution tiers?
 
-### Why Now. Why Untold.
-2026 is a turning point for businesses of every size. AI solutions are no longer just for enterprise companies with massive budgets. The tools exist right now to automate your marketing, streamline your operations, and build systems that work while you sleep. But the gap between businesses using these tools and those that aren't is widening every month.
+### Professional Services ($5k+, 4-6 weeks)
+For doctors, lawyers, consultants, architects, therapists, coaches, real estate agents, financial advisors. Includes: brand identity, AI-powered website, client CRM with AI follow-up sequences, online booking and scheduling, automated intake forms, email marketing, review management, and revenue dashboard.
 
-Your competitors are already exploring AI-powered systems. The ones who move now will have a significant advantage — better client experiences, faster operations, more efficient marketing.
+### Small Business Platforms ($10k-$30k, 6-10 weeks)
+For restaurants, hotels, retail shops, service companies, event venues, agencies, clinics. Includes: full brand system, responsive website, team CRM, AI workflow automation, inventory/booking/scheduling systems, marketing engine (email, social, content), multi-user analytics, and team reporting.
 
-**Differentiators:**
-- Brand First, Always — We start with your story, not your tech stack.
-- Built for Real Life — Mobile-first. Run your business from anywhere.
-- As Simple or Sophisticated as You Need — Start with a website. Add systems when ready.
-- You Own Everything — No lock-in. Full documentation. Complete ownership transfer.
+### Enterprise & Operations (Custom pricing, 8-16 weeks)
+For companies with 20+ employees, multi-department organizations, franchise operations. Includes: enterprise brand system, digital platform, multi-team CRM, revenue pipeline, AI operations, process automation, custom integrations, data architecture, forecasting, and reporting.
 
----
+All tiers include: bilingual (EN/ES) support, mobile-first design, SEO optimization, full ownership transfer, training, and documentation.
 
-## Professional Services Page
+## What makes Untold.works different?
 
-### Hero
-**Headline:** Complete Business Systems for Service Professionals
-**Subheadline:** Doctors, lawyers, consultants, architects, therapists — if you serve clients one-on-one, this is built for you.
+1. **Brand-first approach:** We lead with story and brand strategy, then layer in AI technology. Most agencies do one or the other.
+2. **Bilingual native:** Not machine translation — native English and Spanish content, cultural nuance, code-switching built into every system.
+3. **Full ownership model:** Complete handoff of code, data, documentation, and credentials. No lock-in, no monthly access fees.
+4. **End-to-end delivery:** Brand + website + AI systems + training in one package. No need for 5 different vendors.
+5. **Mexico-based, US-serving:** Deep understanding of both markets. Same timezone advantage. Nearshoring expertise.
+6. **AI-native process:** We build in Claude Code, use agentic AI for development workflows, and optimize every site for AI discoverability (AEO).
 
-### Who This Is For
-Independent consultants, Medical & legal practices, Architects & designers, Therapists & coaches, Real estate agents, Financial advisors, Photographers & artists, Healers & wellness practitioners.
+## Portfolio & Case Studies
 
-### What's Included
-01. Brand & Website — Brand identity & visual system, Mobile-first website, Bilingual content (EN/ES), SEO optimization.
-02. Client Systems — Client management (CRM), Online booking & scheduling, Automated appointment reminders, Client communication workflows.
-03. Marketing — Email marketing setup, Social media integration, Google Business Profile, Review management.
-04. Training & Handoff — Video training library, Written documentation, Live walkthrough session, 30-day support window.
+### OMI Lead Intake & Qualification
+**Client:** OMI Growth | **Stack:** n8n, OpenAI Agents, Apollo API, Salesforce, Google Sheets
+**Results:** 98% MQL accuracy, 4.2x sales ROI
+**What we built:** Agentic AI lead routing system that qualifies incoming leads, enriches contact data via Apollo, scores and routes to appropriate sales reps in Salesforce, and triggers automated follow-up sequences.
 
-### How It Works
-Four Steps to Your AI-Powered Platform.
-01. Analyze — We audit your current operations, client workflow, and digital presence. We identify where AI can save you time, where automation replaces manual tasks, and what your platform needs to look like.
-02. Plan — We design your complete platform — brand, mobile-first website, AI workflows, SEO structure, and bilingual content strategy. You approve everything before we build.
-03. Build — We build everything — brand, mobile-ready website, CRM, booking, AI workflows, and integrations. SEO-optimized and LLM-discoverable from day one. All tested, all documented.
-04. Train & Deploy — We train you on every system. Video walkthroughs, written docs, and a live session. Then we hand over everything — your platform, your data, your keys. Full ownership.
+### Spotify-WhatsApp Publishing System
+**Client:** Independent Record Labels | **Stack:** n8n, Claude Code, Python, RAG, PostgreSQL
+**Results:** 15 hours/week reclaimed, 10x capacity shift
+**What we built:** AI-powered music publishing workflow that monitors Spotify releases, generates WhatsApp-optimized promotional content, and distributes across channels automatically.
 
----
+### Black Radio Experience
+**Client:** Blue Note Entertainment / Blue Note Jazz Festival | **Stack:** Python, FastAPI, FFmpeg, Cloud Storage, Instagram API
+**Results:** 300% reach growth, 500+ engagement signals
+**What we built:** GTM automation for content creation and distribution, enabling rapid multi-platform publishing for live event coverage.
 
-## Small Business Page
+### Billiard Factory Retail Architecture
+**Client:** Billiard Factory (multi-location retailer) | **Stack:** Custom e-commerce, CRM, inventory systems
+**Results:** 20% sales lift across 4,000+ SKUs
+**What we built:** Unified revenue operations platform connecting e-commerce, inventory management, and CRM across multiple retail locations.
 
-### Hero
-**Headline:** AI-Powered Platforms for Growing Teams
-**Subheadline:** Restaurants, hotels, retail shops, service companies — businesses with teams that need AI-powered workflows, mobile-ready systems, and one platform to run it all.
-
-### Who This Is For
-Restaurants & hospitality, Retail & e-commerce, Service companies, Property management, Event venues, Multi-location businesses.
-
-### What's Included
-01. Brand & Digital Platform — Full brand identity system, Mobile-first website, Bilingual content (EN/ES), SEO & LLM optimization.
-02. AI Workflows & Team Systems — Team CRM & pipeline management, AI-powered workflow automation, Booking & scheduling systems, Inventory or service management.
-03. Marketing & Growth — AI-driven email & nurture campaigns, Social media automation, Review & reputation management, Analytics & revenue dashboards.
-04. Training & Ownership Transfer — Team training sessions, Role-based documentation, Deployment & launch plan, 45-day support & optimization.
-
-### How It Works
-Four Steps to Your AI-Powered Platform.
-01. Analyze — We audit your current operations, team workflows, and tech stack. We map where AI can cut time, where automation replaces manual work, and what your platform needs to look like.
-02. Plan — We design your complete platform — brand, mobile-first website, AI workflows, team systems, and SEO structure. Bilingual, mobile-ready, and optimized for search engines and LLMs. You approve before we build.
-03. Build — We build and integrate everything — brand, mobile-ready platform, AI workflows, CRM, automations, and reporting. SEO-optimized and LLM-discoverable from day one. All tested, all documented.
-04. Train & Deploy — We train your team on every system. Video walkthroughs, role-based docs, and live sessions. Then we hand over everything — your platform, your data, your keys. Full ownership.
-
----
-
-## Enterprise Page
-
-### Hero
-**Headline:** AI Infrastructure for Complex Operations
-**Subheadline:** For organizations that need AI-powered workflows across departments, mobile-ready systems, multilingual platforms, and full operational visibility.
-
-### Who This Is For
-Growing companies (20+ employees), Multi-department organizations, Companies with sales teams, Franchise operations, Organizations modernizing legacy systems, Companies expanding to new markets.
-
-### What's Included
-01. Brand & Digital Platform — Enterprise brand system, Mobile-first corporate website, Multilingual content (EN/ES+), Advanced SEO & LLM discoverability.
-02. AI Revenue Systems — Multi-team CRM & AI pipeline management, AI-powered lead routing & scoring, Sales enablement & automation, Revenue attribution & forecasting.
-03. AI Marketing & Operations — AI-driven email & nurture sequences, Multi-channel campaign automation, AI workflow & process automation, Custom integrations & data architecture.
-04. Training & Ownership Transfer — Executive & team training sessions, Department-specific documentation, Phased rollout & deployment plan, 60-day support & optimization.
-
-### How It Works
-Four Steps to Your AI Infrastructure.
-01. Analyze — We audit your systems, revenue operations, team workflows, and tech stack. We map where AI can automate processes, cut operational overhead, and create competitive advantage.
-02. Plan — We architect your platform — brand system, mobile-first website, AI workflows, multilingual content, SEO & LLM strategy, and a phased rollout with clear milestones.
-03. Build — We build and integrate everything — brand, mobile-ready platform, AI workflows, CRM, automations, and reporting. SEO-optimized and LLM-discoverable from day one. All tested, all documented.
-04. Train & Deploy — We train your teams department by department — video walkthroughs, role-based docs, and live sessions. Then we hand over all credentials and support you through 60 days of operation. Your platform, your data, your keys.
-
----
-
-## Website Design & Rebuild Page
-
-### Hero
-**Headline:** Your Website Should Be the Hardest-Working Part of Your Business.
-**Subheadline:** Built with AI. Guided by 25 years of creative direction. Designed to be found by humans and machines alike.
-
-### Why Rebuild in 2026
-AI changed the rules. Google AI Overviews, ChatGPT, Perplexity — your website now needs to speak to humans AND machines. Mobile-first isn't a feature, it's the only option. In Mexico, where 3G connections are still common, speed isn't a luxury — it's survival. Your competitors who rebuild now get the compounding advantage.
-
-### The Hub of Everything
-Your website connects every service: SEO & AEO makes it findable, Social Media drives traffic to it, Paid Ads converts visitors through it, Dashboard reports on everything it generates, and CRM captures leads from it.
-
-### Packages
-- **Website Audit & Strategy** ($1,500): Full site performance, SEO health, AEO readiness, mobile accessibility, competitor analysis, and prioritized rebuild roadmap.
-- **Website Design & Build** ($5,000): Brand identity, custom mobile-first website, bilingual content, SEO foundation, lead capture, training and ownership transfer.
-- **AI-Native Website Rebuild** ($8,000, highlighted): Everything in Design & Build plus AEO optimization, llms.txt, structured data, CRM integration, conversion tracking, and Google Business Profile.
-- **Ongoing Website Management** ($800/mo): Content updates, performance monitoring, SEO/AEO maintenance, security, analytics reporting, and priority support.
-
-### How It Works
-01. Audit — Analyze current site, brand, operations, and competitive landscape.
-02. Design — Brand identity, wireframes, content strategy, bilingual architecture.
-03. Build — AI-native development with SEO and AEO baked in, mobile-first, bilingual, CRM-integrated.
-04. Launch & Train — Deploy, train team, transfer full ownership with 30 days of support.
-
-### Built with AI. Guided by Experience.
-AI builds fast. Experience builds right. 25 years of creative direction, branding, and marketing expertise combined with AI tools. The result: websites that don't just look beautiful — they perform.
-
-### FAQ
-- How long does a website rebuild take? Design & Build: 4-6 weeks. AI-Native Rebuild: 6-8 weeks.
-- Do you work with existing brands or only new ones? Both — we work within existing guidelines or build from scratch.
-- What platform do you build on? Custom: React, Next.js, or Vite. No WordPress templates, no Wix, no Squarespace.
-- Can you rebuild while keeping my current site live? Yes. We build in staging and switch with zero downtime.
-- What makes an AI-native website different? Built for humans AND machines: structured data, llms.txt, FAQ-structured content, answer-format copy.
-- Do I own the website when it's done? Yes. Full code, hosting credentials, documentation, and video training. No lock-in.
-
----
-
-## SEO & AEO Page
-
-### Hero
-**Headline:** Your Business Should Be Found by Humans and AI.
-**Subheadline:** Search Engine Optimization + AI Engine Optimization. We build the technical foundation and content strategy so search engines rank you and AI systems cite you.
-
-### The Problem
-Most businesses are invisible to AI. Search engines are evolving — LLMs like ChatGPT, Perplexity, and Google AI Overviews now answer questions directly. If your business isn't structured for both traditional SEO and AI discoverability, you're losing traffic to competitors who are.
-
-### Packages
-- **SEO & AEO Audit** ($1,200): Full technical SEO audit, content gap analysis, AI discoverability assessment, and prioritized action plan.
-- **Content Strategy & Optimization** ($2,500): Keyword strategy, content calendar, on-page optimization, FAQ structures, and schema markup for AI citation.
-- **Technical SEO Build** ($3,500, highlighted): Site speed optimization, Core Web Vitals, structured data, llms.txt, robots.txt, sitemap, hreflang for bilingual sites.
-- **Ongoing SEO & AEO Management** ($1,000/mo): Monthly optimization, content updates, ranking reports, AI citation monitoring, and continuous improvement.
-
-### How It Works
-01. Audit — We analyze your current search visibility, technical health, content structure, and AI discoverability.
-02. Strategize — We build a keyword strategy, content plan, and technical roadmap prioritized by impact.
-03. Build — We implement technical SEO fixes, optimize content, add structured data, and configure AI discoverability.
-04. Monitor & Optimize — Monthly ranking reports, AI citation tracking, content updates, and continuous improvement.
-
-### FAQ
-- What's the difference between SEO and AEO? SEO optimizes for search engine rankings. AEO (AI Engine Optimization) ensures AI systems like ChatGPT and Perplexity can find, understand, and cite your business.
-- How long until I see results? Technical fixes show impact within weeks. Content and ranking improvements typically take 3-6 months of consistent work.
-- Do you work with bilingual sites? Yes — bilingual SEO is our specialty. We optimize for English and Spanish audiences with proper hreflang, separate keyword strategies, and native content.
-- What AI systems do you optimize for? ChatGPT, Perplexity, Google AI Overviews, Claude, and any LLM that crawls the web. We use llms.txt, structured data, and content formatting that AI systems prefer.
-- Do I need ongoing management? SEO is not a one-time project. Search algorithms and AI systems evolve constantly. Ongoing management keeps you competitive.
-
----
-
-## Social Media Page
-
-### Hero
-**Headline:** Your Social Media Should Work as Hard as You Do.
-**Subheadline:** Strategy, content, analytics, and management — built for businesses that need results, not just posts.
-
-### The Problem
-Most businesses post without a strategy. Social media platforms are where your customers discover you, research you, and decide whether to trust you. Without a clear strategy, consistent content, and proper analytics, you're spending time without seeing returns.
-
-### Packages
-- **Social Media Audit** ($800): Platform analysis, competitor benchmarking, content audit, audience insights, and strategic recommendations.
-- **Content Strategy & Creation** ($2,000): Content calendar, brand voice guidelines, visual templates, caption frameworks, and hashtag strategy.
-- **Analytics & Reporting** ($1,500, highlighted): Custom dashboard setup, KPI tracking, monthly performance reports, and data-driven optimization recommendations.
-- **Ongoing Management** ($1,000/mo): Daily posting, community management, content creation, analytics reporting, and monthly strategy calls.
-
-### How It Works
-01. Audit — We analyze your current social presence, audience, competitors, and content performance.
-02. Strategize — We build a content strategy, posting calendar, and visual direction aligned with your brand.
-03. Execute — We create and publish content, manage your community, and run your social presence.
-04. Optimize — Monthly analytics reviews, strategy adjustments, and continuous improvement.
+### NoxGuard Brand Rebrand
+**Client:** NoxGuard | **Stack:** Brand identity, website, digital presence
+**What we built:** Complete brand identity redesign and digital presence buildout for security technology company.
 
-### FAQ
-- Which platforms do you manage? Instagram, Facebook, LinkedIn, TikTok, and X/Twitter. We recommend platforms based on where your audience actually is.
-- Do you handle both organic and paid social? Yes. Organic content builds brand. Paid amplifies reach. We handle both and ensure they work together.
-- Can you manage bilingual accounts? Absolutely. We create native content in both English and Spanish — not translations, real bilingual content.
-- How much content do you create per month? Depends on the package, but typically 12-20 posts per month across platforms, including stories and reels.
-- Do I approve content before it goes live? Yes. We use a content calendar with approval workflows so nothing publishes without your sign-off.
+## Technology Stack
 
----
+- **Frontend:** React, Next.js, TypeScript, Tailwind CSS, Framer Motion
+- **Backend:** Python, FastAPI, Node.js
+- **AI/ML:** Claude AI (Code, Skills, Agents), OpenAI Agents, RAG pipelines
+- **Automation:** n8n workflow automation
+- **CRM:** Salesforce, HubSpot
+- **Email:** Resend
+- **SEO/AEO:** Schema markup (JSON-LD), llms.txt, robots.txt AI crawler allowlists, speakable properties
+- **Deploy:** Netlify (SPAs), Vercel (Next.js)
+- **i18n:** Custom bilingual systems (EN/ES), next-intl for Next.js
 
-## Paid Advertising Page
+## How does the process work?
 
-### Hero
-**Headline:** Stop Guessing. Start Converting.
-**Subheadline:** Google Ads, Meta Ads, and paid media campaigns built on data, not assumptions. Audit, setup, management, and optimization.
+1. **Analyze:** We map your current operations, tech stack, and workflow bottlenecks. We identify where AI can cut time, where automation replaces manual work, and what your platform needs to look like.
+2. **Plan:** We design your complete platform — brand, website, AI workflows, integrations, and SEO structure. Mobile-first, multilingual, and optimized for search engines and LLMs. You approve everything before we build.
+3. **Build:** We build everything in Claude — brand identity, mobile-ready website, AI workflows, bilingual content, CRM, automations, and integrations. All tested, all documented.
+4. **Train & Deliver:** We train you on every system we built. Video walkthroughs, written documentation, and live sessions. Then we hand over the keys — your platform, your data, your workflows. Full ownership.
 
-### The Problem
-Businesses waste thousands on ads that don't convert. The problem isn't the platform — it's the strategy. Poor targeting, weak creative, no conversion tracking, and no landing page optimization means money goes in but results don't come out.
+## Geographic Coverage
 
-### Packages
-- **Ad Account Audit** ($500): Full audit of your ad accounts — targeting, creative, conversion tracking, and wasted spend analysis.
-- **Campaign Setup & Launch** ($2,000): Strategy, creative, targeting, conversion tracking, and launch for one platform.
-- **Ongoing Management** ($1,500/mo, highlighted): Multi-platform management, A/B testing, budget optimization, weekly reports, and monthly strategy calls.
-- **Full-Stack: Ads + Landing Pages** ($5,000): Complete ad ecosystem — campaigns, landing pages, conversion tracking, and funnel optimization.
+- **Headquarters:** San Miguel de Allende, Guanajuato, Mexico
+- **Service areas:** All of Mexico and the United States
+- **Location pages:** San Miguel de Allende, Queretaro, Mexico City, United States
+- **Why Mexico:** Fast-moving market, new entrepreneurs building from scratch (not retrofitting legacy systems), nearshoring trend, bilingual demand
+- **Why San Miguel de Allende:** Intersection of US and Mexican business culture, strong expat community, millions of annual visitors, growing tech ecosystem, local businesses with weak digital presence needing bilingual solutions
 
-### How It Works
-01. Audit — We analyze your current ad performance, tracking setup, creative assets, and competitive landscape.
-02. Build — We create campaign strategy, ad creative, targeting audiences, and conversion tracking.
-03. Launch — We launch campaigns with controlled budgets, A/B testing, and real-time monitoring.
-04. Scale — Weekly optimization, budget scaling, creative refresh, and performance reporting.
+## Frequently Asked Questions
 
-### FAQ
-- Which platforms do you manage? Google Ads (Search, Display, YouTube, Performance Max), Meta (Facebook, Instagram), LinkedIn, and TikTok.
-- What's the minimum ad budget? We recommend at least $1,500/month in ad spend to generate meaningful data and results.
-- Do you create the ad creative? Yes. We create ad copy, images, and video concepts. For video production, we partner with specialists when needed.
-- Can you run bilingual campaigns? Yes. We run separate campaigns for English and Spanish audiences with native ad copy and culturally relevant creative.
-- How do you report results? Weekly performance snapshots and monthly deep-dive reports with actionable recommendations.
+**What does Untold.works build?**
+We build AI-powered business ecosystems: customer-facing websites, internal dashboards, n8n workflow automation, CRM integrations, and bilingual content systems for businesses in Mexico and the United States.
 
----
+**Do you build bilingual websites?**
+Yes. Every client-facing site we build supports English and Spanish with natively written content — not machine translation. Proper hreflang tags, separate URL structures, and SEO optimization for both languages.
 
-## Dashboard Page
+**What industries do you serve?**
+Professional services (law firms, therapists, consultants), small businesses (restaurants, hotels, retail), musicians and record labels, and enterprise organizations across Mexico and the US.
 
-### Hero
-**Headline:** Your Entire Business. One Screen.
-**Subheadline:** Custom-built dashboards you own outright. No monthly SaaS fees. No vendor lock-in. Your data, your dashboard, your business.
+**Where is Untold.works located?**
+San Miguel de Allende, Guanajuato, Mexico, serving clients across Mexico and the United States.
 
-### The Problem
-Businesses juggle dozens of tools — analytics, CRM, marketing, operations — each with its own login, its own reports, and its own monthly fee. You spend hours compiling data from multiple sources instead of making decisions. And you don't own any of it.
+**Do I own the website and systems you build?**
+Yes. Full ownership transfer is part of every project. You get the code, the data, the documentation, and video training. No lock-in, no recurring fees for access to your own systems.
 
-### Tiers
-- **Analytics Dashboard** ($3,000): Website analytics, traffic sources, conversion tracking, and custom KPI visualization — all in one view.
-- **Marketing Command Center** ($6,000, highlighted): Analytics plus social media metrics, ad performance, email campaign data, SEO rankings, and lead pipeline — unified into a single command center.
-- **Full Business Operations Dashboard** ($10,000): Everything above plus CRM data, scheduling, inventory, team performance, financial metrics, and custom integrations.
-- **Ongoing Dashboard Support** ($500/mo): Monthly updates, new data source integrations, performance optimization, and priority support.
+**Who runs Untold.works?**
+Joshua Semolik, an AI systems architect and creative technologist with 20 years of experience spanning NBA Entertainment, global product launches at Videndum PLC, cross-border GTM strategy, and production AI systems. MIT Sloan AI Strategy.
 
-### How It Works
-01. Discover — We map your data sources, KPIs, team workflows, and reporting needs.
-02. Architect — We design your dashboard layout, data connections, and visualization strategy.
-03. Build — We build your custom dashboard with real-time data connections, responsive design, and user training.
-04. Deliver & Train — We hand over your dashboard with full documentation, video training, and 30 days of support.
+**Can a Mexico-based agency serve US clients effectively?**
+Yes. Bilingual team, shared time zones, native-level English and Spanish, and deep understanding of both markets.
 
-### What Makes This Different
-- **You Own It** — No monthly SaaS subscription. The dashboard is yours. Period.
-- **No Monthly SaaS Fees** — One-time build cost. We hand over the code, the hosting, the data connections.
-- **Custom-Built for Your Business** — Not a template. Not a plugin. Built specifically for how your business operates.
-- **Real-Time Data** — Live connections to your actual data sources. Not exports. Not screenshots. Real-time.
+**What is AEO?**
+AI Engine Optimization (AEO) is the practice of optimizing web content so that AI systems — ChatGPT, Claude, Gemini, Perplexity, Google AI Overviews — can find, understand, and cite your business in their responses.
 
-### FAQ
-- Do I really own the dashboard? Yes. Full code ownership, hosting credentials, and documentation. You can modify it, host it anywhere, or hire anyone to maintain it.
-- What data sources can you connect? Google Analytics, social media APIs, CRM systems, ad platforms, email tools, payment processors, custom databases — virtually any system with an API.
-- How is this different from Looker Studio or Tableau? Those are SaaS tools with monthly fees and limitations. We build custom dashboards tailored to your exact needs with no recurring costs.
-- How long does the build take? Analytics dashboards: 2-3 weeks. Marketing command centers: 4-6 weeks. Full operations dashboards: 6-10 weeks.
-- Can the dashboard be expanded later? Absolutely. The architecture is designed for growth. Add new data sources, new views, or new team members at any time.
+**What makes Untold.works different from other agencies?**
+We lead with brand and storytelling, then layer in AI technology. We transfer full ownership of everything we build. We are natively bilingual and based in Mexico with deep US market expertise.
 
----
+**How much does a project cost?**
+Professional Services ecosystems start at $5,000. Small Business Platforms range from $10,000-$30,000. Enterprise projects are custom-priced based on scope. All projects include full ownership transfer.
 
-## About Page
+**What CRM systems do you integrate with?**
+We integrate with Salesforce, HubSpot, Google Workspace, and custom CRM solutions. Our automation layer (n8n) connects to 400+ services.
 
-### Hero
-**Headline:** We're Storytellers First. Technologists Second.
-**Hook:** A boutique team based in San Miguel de Allende, building AI-powered business ecosystems for companies across Mexico and the United States.
-We bring decades of experience in branding, creative direction, and technology — combined into systems that actually work for real businesses.
+## Blog Topics Covered
 
-### Our Story
-We started as storytellers and creative directors. Design, photography, video, brand strategy — that's our foundation. Over the years, we've added deep technology expertise to our toolkit. Now we build the complete package: the brand, the website, and the systems that power your business.
+- AI tools for small business
+- AI content strategy and automation
+- AEO (AI Engine Optimization) and LLM discoverability
+- Bilingual website development
+- WhatsApp AI for Mexican businesses
+- Mobile-first business systems
+- Website performance (3G optimization for Mexico)
+- San Miguel de Allende local business digital strategy
+- Case studies: hotel booking, law firm intake, e-commerce migration
+- Professional services website playbook
+- Retail and hospitality digital strategy
+- Creative technology and the AI transition
 
-We believe the best technology is invisible. It should feel natural, work on your phone, and never make you feel like you need a computer science degree. That's why we lead with brand and creativity, then layer in the right technology to support it.
+## Contact
 
-**Manifesto:** Beautiful brands deserve powerful systems. Powerful systems deserve beautiful brands.
-
-### Why Mexico / Why San Miguel
-Mexico is one of the fastest-moving markets in the world. A new wave of entrepreneurs, a growing middle class, and nearshoring investment are opening doors that did not exist five years ago. Many businesses are skipping legacy systems and jumping straight from paper to AI, and from word-of-mouth to full digital ecosystems.
-
-San Miguel de Allende is our home. Beyond the beauty, it is a serious market: millions of visitors each year, a strong expat community, and local businesses competing for attention with weak digital presence. This city brings Mexican families, expats, travelers, and entrepreneurs into one place, so your brand has to speak to multiple audiences at once. That is the work we do best.
-
----
-
-## Contact Page
-
-**Headline:** Start a Conversation.
-Tell us about your business. We'll tell you how we can help. No pressure, no jargon, just a real conversation about what your business needs.
-
-**Email:** info@untold.works
-**Location:** San Miguel de Allende, Guanajuato, Mexico | Serving the US and Mexico
-
----
-
-## Workshops
-
-**Headline:** No jargon. Just AI for Everyday Life.
-A practical masterclass for daily life and small business. Move from curious to capable in a single morning.
-
-**Location:** San Miguel de Allende, Mexico
-**Time:** 10:00 AM
-**Led by:** Untold.works
-
-**Phases:**
-1. Practical AI Basics — Understanding what AI can do (drafting, ideas, organization) and where it needs your help.
-2. The Art of the Prompt — Learn the formula for prompts that work the first time. No complex engineering — just clear communication.
-3. Your Daily Reclaim — Live walkthroughs: meal plans, local Spanish practice, and handling business emails in seconds.
-4. Small Business Wins — Simple workflows to keep your small business moving. Automate the repetitive stuff.
-
-**Take-Home Kit:** Simple Cheat Sheet, The Prompt Formula, 10 Starter Prompts, Safety Basics, Life Workflow Guide.
-
----
-
-## Blog Articles
-
-### AI Education
-1. **7 AI Tools Every Small Business Should Know in 2026** — A practical rundown of AI tools that save time and money for small businesses right now.
-2. **How to Use ChatGPT for Customer Service Without Losing the Human Touch** — AI chat can handle the repetitive stuff, but only if you set it up to sound like your business.
-3. **AI Content Strategy: What to Automate and What to Keep Human** — A framework for deciding what AI handles vs. what needs a human brain.
-
-### Website + AI Ecosystem
-4. **Your Website Is Not a Brochure — It's a Business System** — Why websites should be business systems, not digital flyers.
-5. **Headless CMS Explained for Business Owners** — What headless CMS means and when it makes sense.
-6. **Bilingual Websites: Why Translation Plugins Fail** — Why real bilingual sites need native content, not auto-translation.
-
-### Mobile-First
-7. **Run Your Business From Your Phone: The Real Guide** — Building mobile-first business systems you can manage from anywhere.
-8. **Why Your Website Must Be Fast on 3G** — Performance matters in Mexico where many users are on slower connections.
-
-### San Miguel de Allende
-9. **San Miguel de Allende Digital Presence Guide 2026** — How local businesses in SMA can build effective digital presence.
-10. **How SMA Restaurants Can Capture Tourist Traffic Online** — Digital strategies for restaurants targeting tourists.
-
-### Case Studies
-11. **Case Study: Boutique Hotel Booking System** — An integrated booking ecosystem for a boutique hotel.
-12. **Case Study: Law Firm Client Intake Automation** — Automating client intake with AI-powered workflows.
-13. **Case Study: E-commerce Brand Migration (Shopify to Custom)** — Migrating to a custom AI-powered platform.
-
-### Industry Guides
-14. **The Professional Services Website Playbook** — Complete guide for service professionals.
-15. **Retail and Hospitality Digital Survival Guide** — Digital strategies for retail and hospitality in 2026.
-
----
-
-## Key Facts
-
-- **Name:** Untold.works
-- **Type:** Boutique AI Agency
-- **Location:** Mexico City and San Miguel de Allende, Guanajuato, Mexico
-- **Markets Served:** Mexico and the United States
-- **Languages:** English and Spanish (fully bilingual)
 - **Email:** info@untold.works
 - **Website:** https://untold.works
-- **Specialties:** AI-powered business ecosystems, brand strategy, web development, AI workflows, business automation, CRM systems, SEO & LLM optimization
-- **Philosophy:** Brand first. Technology that works. Full ownership transfer.
-- **Process:** Analyze, Plan, Build, Train & Deliver
-- **Approach:** We build the system so you can run your business from anywhere. We train you. You run it.
-
----
-
-## Spanish Summary (Resumen en Espanol)
-
-Untold.works es una agencia boutique de IA con sede en Ciudad de Mexico y San Miguel de Allende, Mexico. Construimos ecosistemas de negocio impulsados por inteligencia artificial — identidad de marca, sitios web, flujos de trabajo con IA y sistemas empresariales automatizados — para empresas en Mexico y Estados Unidos. Nuestro enfoque: la marca primero, tecnologia que funciona, transferencia completa de propiedad. Hablamos ingles y espanol de forma nativa.
-
-Servicios: Servicios Profesionales (medicos, abogados, consultores, fotografos, artistas), Plataformas para Pequenos Negocios (restaurantes, hoteles, retail), y Empresarial y Operaciones (empresas en crecimiento, franquicias, operaciones complejas).
-
-Contacto: info@untold.works | Ciudad de Mexico y San Miguel de Allende, Guanajuato, Mexico
+- **LinkedIn:** https://www.linkedin.com/company/untoldworksai
+- **Instagram:** https://www.instagram.com/untold.works_ai
+- **Founder LinkedIn:** https://www.linkedin.com/in/semolik/

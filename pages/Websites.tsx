@@ -305,6 +305,27 @@ const Websites: React.FC = () => {
         </div>
       </section>
 
+      {/* ── AI-Native Website Definition Block (AEO-optimized) ── */}
+      <section className="bg-untold-beige px-5 sm:px-10 py-16 sm:py-24 border-b border-untold-border">
+        <div className="max-w-[900px] mx-auto">
+          <h2 className="font-sans font-black text-3xl sm:text-5xl uppercase tracking-tighter mb-6 leading-[0.85]">
+            {t({ en: 'What Is an AI-Native Website?', es: '¿Qué Es un Sitio Web AI-Nativo?' })}
+          </h2>
+          <p className="text-lg sm:text-xl font-serif text-untold-black/70 leading-relaxed mb-6">
+            {t({
+              en: 'An AI-native website is built from the ground up for both humans and machines. It includes structured data (JSON-LD schema markup), llms.txt for AI crawlers, FAQ-structured content, answer-format copy, and technical optimizations that help ChatGPT, Perplexity, Google AI Overviews, and other AI systems find and cite your business.',
+              es: 'Un sitio web AI-nativo está construido desde cero para humanos y máquinas. Incluye datos estructurados (schema markup JSON-LD), llms.txt para crawlers de IA, contenido estructurado en FAQ, copy en formato de respuesta y optimizaciones técnicas que ayudan a ChatGPT, Perplexity, Google AI Overviews y otros sistemas de IA a encontrar y citar tu negocio.'
+            })}
+          </p>
+          <p className="text-base font-serif text-untold-black/50 leading-relaxed">
+            {t({
+              en: 'Unlike traditional websites that only serve human visitors, AI-native websites are optimized for SEO (search engine rankings) and AEO (AI engine citations) simultaneously. This means your business gets found on Google AND recommended when someone asks an AI assistant for help.',
+              es: 'A diferencia de los sitios web tradicionales que solo atienden a visitantes humanos, los sitios AI-nativos están optimizados para SEO (posicionamiento en buscadores) y AEO (citaciones por motores de IA) simultáneamente. Esto significa que tu negocio aparece en Google Y es recomendado cuando alguien le pide ayuda a un asistente de IA.'
+            })}
+          </p>
+        </div>
+      </section>
+
       {/* ── Why Rebuild in 2026 ── */}
       <section className="bg-white px-5 sm:px-10 py-16 sm:py-24 border-b border-untold-border">
         <div className="max-w-[1440px] mx-auto">

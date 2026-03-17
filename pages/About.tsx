@@ -62,6 +62,17 @@ const AboutPage: React.FC = () => {
   const founder = content.founder;
   const [showCertificate, setShowCertificate] = useState(false);
 
+  const videoSchemas = creativeWork.map((video) => ({
+    '@context': 'https://schema.org',
+    '@type': 'VideoObject',
+    name: video.title.en,
+    description: `${video.role.en} — ${video.client}`,
+    thumbnailUrl: `https://i.ytimg.com/vi/${video.id}/hqdefault.jpg`,
+    uploadDate: '2024-01-01',
+    embedUrl: `https://www.youtube.com/embed/${video.id}`,
+    contentUrl: `https://www.youtube.com/watch?v=${video.id}`,
+  }));
+
   usePageMeta(
     i18n.seo.about.title,
     i18n.seo.about.description,
@@ -110,6 +121,7 @@ const AboutPage: React.FC = () => {
             { '@type': 'Question', name: 'Why San Miguel de Allende?', acceptedAnswer: { '@type': 'Answer', text: 'San Miguel de Allende sits at the intersection of US and Mexican business culture. Strong expat community, growing tech ecosystem, and a creative environment that attracts world-class talent.' } },
           ],
         },
+        ...videoSchemas,
       ],
     }
   );
