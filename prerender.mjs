@@ -63,6 +63,7 @@ const routes = [
   '/blog/aeo-the-shift-nobodys-talking-about',
   '/blog/yo-this-thing-is-broken',
   '/blog/your-creative-eye-became-the-prompt',
+  '/blog/the-site-is-the-proposal',
 ];
 
 async function waitForServer(url, maxAttempts = 30) {

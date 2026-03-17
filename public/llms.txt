@@ -65,6 +65,7 @@ Untold.works is a boutique agency that combines brand strategy, web development,
 - [Your Creative Eye Became the Prompt](https://untold.works/blog/your-creative-eye-became-the-prompt): How creative direction translates to the AI age.
 
 ### Build Notes
+- [The Site IS the Proposal](https://untold.works/blog/the-site-is-the-proposal): Why building the work is a better sales strategy than writing proposals.
 - [Yo, This Thing Is Broken](https://untold.works/blog/yo-this-thing-is-broken): Build notes on debugging and fixing real production systems.
 
 ### WhatsApp & Messaging
