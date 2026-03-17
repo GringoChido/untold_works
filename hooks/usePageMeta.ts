@@ -111,6 +111,8 @@ export function usePageMeta(
     setMetaTag('name', 'twitter:description', resolvedDesc);
     setMetaTag('name', 'twitter:image', ogImage);
     setMetaTag('name', 'twitter:card', 'summary_large_image');
+    setMetaTag('name', 'twitter:site', '@untoldworks');
+    setMetaTag('name', 'twitter:creator', '@untoldworks');
 
     // ── Robots ──
     if (options?.noindex) {

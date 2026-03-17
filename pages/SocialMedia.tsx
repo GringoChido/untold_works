@@ -5,8 +5,6 @@ import { usePageMeta } from '../hooks/usePageMeta';
 import QuickLeadForm from '../components/QuickLeadForm';
 import Testimonials from '../components/Testimonials';
 import Breadcrumbs from '../components/Breadcrumbs';
-import ImagePlaceholder from '../components/ImagePlaceholder';
-
 const SocialMedia: React.FC = () => {
   const { t } = useLanguage();
 
@@ -259,21 +257,107 @@ const SocialMedia: React.FC = () => {
       {/* ── Visual: Social Media Examples ── */}
       <section className="bg-untold-beige px-5 sm:px-10 py-12 sm:py-16 border-b border-untold-border">
         <div className="max-w-[1440px] mx-auto grid sm:grid-cols-3 gap-6">
-          <ImagePlaceholder
-            label="Instagram feed example"
-            aspect="aspect-square"
-            dimensions="600 × 600px"
-          />
-          <ImagePlaceholder
-            label="Content calendar screenshot"
-            aspect="aspect-square"
-            dimensions="600 × 600px"
-          />
-          <ImagePlaceholder
-            label="Analytics dashboard screenshot"
-            aspect="aspect-square"
-            dimensions="600 × 600px"
-          />
+
+          {/* Mock Instagram Feed */}
+          <div className="aspect-square bg-untold-black rounded-lg overflow-hidden p-4 flex flex-col">
+            <div className="flex items-center space-x-2 mb-3">
+              <div className="w-7 h-7 rounded-full bg-untold-orange flex items-center justify-center text-white text-[9px] font-black">U.</div>
+              <span className="text-white text-[11px] font-bold">untold.works</span>
+              <span className="text-white/30 text-[10px] ml-auto">Instagram</span>
+            </div>
+            <div className="grid grid-cols-3 gap-1 flex-grow">
+              {[
+                'bg-gradient-to-br from-untold-orange/80 to-untold-orange/30',
+                'bg-gradient-to-br from-white/20 to-white/5',
+                'bg-gradient-to-br from-untold-orange/40 to-untold-orange/10',
+                'bg-gradient-to-br from-white/10 to-white/5',
+                'bg-gradient-to-br from-untold-orange/60 to-untold-orange/20',
+                'bg-gradient-to-br from-white/15 to-white/5',
+                'bg-gradient-to-br from-untold-orange/30 to-untold-orange/10',
+                'bg-gradient-to-br from-white/20 to-white/10',
+                'bg-gradient-to-br from-untold-orange/50 to-untold-orange/15',
+              ].map((bg, i) => (
+                <div key={i} className={`${bg} rounded-sm`} />
+              ))}
+            </div>
+            <div className="mt-3 flex items-center justify-between">
+              <span className="text-white/40 text-[10px] font-mono">12 POSTS / MONTH</span>
+              <span className="text-untold-orange text-[10px] font-mono font-bold">EN + ES</span>
+            </div>
+          </div>
+
+          {/* Mock Content Calendar */}
+          <div className="aspect-square bg-white rounded-lg overflow-hidden border border-untold-border p-4 flex flex-col">
+            <div className="flex items-center justify-between mb-3">
+              <span className="font-sans font-black text-[11px] uppercase tracking-tight">March 2026</span>
+              <span className="text-untold-orange text-[10px] font-mono font-bold">CONTENT CALENDAR</span>
+            </div>
+            <div className="grid grid-cols-7 gap-px flex-grow text-[8px] font-mono">
+              {['M','T','W','T','F','S','S'].map((d, i) => (
+                <div key={`h-${i}`} className="text-center text-untold-gray/40 font-bold pb-1">{d}</div>
+              ))}
+              {Array.from({ length: 31 }, (_, i) => {
+                const hasPost = [1,3,5,8,10,12,14,15,17,19,22,24,26,29].includes(i + 1);
+                const isReel = [3,10,17,24].includes(i + 1);
+                const isStory = [5,12,19,26].includes(i + 1);
+                return (
+                  <div
+                    key={i}
+                    className={`flex flex-col items-center justify-center rounded-sm ${
+                      hasPost ? (isReel ? 'bg-untold-orange text-white' : isStory ? 'bg-untold-orange/20 text-untold-orange' : 'bg-untold-black text-white') : 'text-untold-gray/30'
+                    }`}
+                  >
+                    <span className="text-[7px]">{i + 1}</span>
+                    {hasPost && <span className="text-[5px] mt-0.5">{isReel ? 'REEL' : isStory ? 'STORY' : 'POST'}</span>}
+                  </div>
+                );
+              })}
+            </div>
+            <div className="mt-2 flex items-center space-x-3 text-[8px] font-mono">
+              <span className="flex items-center space-x-1"><span className="w-2 h-2 rounded-sm bg-untold-black" /><span>Post</span></span>
+              <span className="flex items-center space-x-1"><span className="w-2 h-2 rounded-sm bg-untold-orange" /><span>Reel</span></span>
+              <span className="flex items-center space-x-1"><span className="w-2 h-2 rounded-sm bg-untold-orange/20" /><span>Story</span></span>
+            </div>
+          </div>
+
+          {/* Mock Analytics Dashboard */}
+          <div className="aspect-square bg-untold-black rounded-lg overflow-hidden p-4 flex flex-col">
+            <div className="flex items-center justify-between mb-3">
+              <span className="text-white text-[11px] font-black uppercase tracking-tight">Analytics</span>
+              <span className="text-untold-orange text-[10px] font-mono font-bold">LIVE</span>
+            </div>
+            <div className="grid grid-cols-2 gap-2 mb-3">
+              {[
+                { label: 'Reach', value: '24.8K', change: '+32%' },
+                { label: 'Engagement', value: '4.7%', change: '+18%' },
+                { label: 'Followers', value: '3,241', change: '+156' },
+                { label: 'Link Clicks', value: '847', change: '+41%' },
+              ].map((stat) => (
+                <div key={stat.label} className="bg-white/5 rounded-sm p-2">
+                  <p className="text-white/40 text-[8px] font-mono uppercase">{stat.label}</p>
+                  <p className="text-white text-sm font-black">{stat.value}</p>
+                  <p className="text-untold-orange text-[9px] font-mono font-bold">{stat.change}</p>
+                </div>
+              ))}
+            </div>
+            <div className="flex-grow bg-white/5 rounded-sm p-2 flex flex-col">
+              <p className="text-white/40 text-[8px] font-mono uppercase mb-2">30-Day Growth</p>
+              <div className="flex-grow flex items-end space-x-1">
+                {[35,42,38,55,48,62,58,72,65,78,82,75,88,92,85,95,90,98,88,105,95,110,102,115,108,120,125,118,130,128].map((h, i) => (
+                  <div
+                    key={i}
+                    className="flex-1 bg-untold-orange/60 rounded-t-sm hover:bg-untold-orange transition-colors"
+                    style={{ height: `${(h / 130) * 100}%` }}
+                  />
+                ))}
+              </div>
+            </div>
+            <div className="mt-2 flex items-center justify-between">
+              <span className="text-white/30 text-[9px] font-mono">Feb 15 — Mar 16</span>
+              <span className="text-untold-orange text-[9px] font-mono font-bold">↑ TRENDING</span>
+            </div>
+          </div>
+
         </div>
       </section>
 
