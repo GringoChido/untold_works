@@ -2,7 +2,7 @@ import { useEffect } from 'react';
 import { useLanguage } from '../App';
 
 const BASE_URL = 'https://untold.works';
-const DEFAULT_OG_IMAGE = `${BASE_URL}/images/og-image.jpg`;
+const DEFAULT_OG_IMAGE = `${BASE_URL}/images/og-image.png`;
 
 type Bilingual = { en: string; es: string };
 
@@ -87,8 +87,8 @@ export function usePageMeta(
     // ── Content language meta ──
     setMetaTag('http-equiv', 'content-language', lang === 'es' ? 'es-MX' : 'en');
 
-    // ── Canonical ──
-    const canonicalUrl = lang === 'es' ? `${url}${url.includes('?') ? '&' : '?'}lang=es` : url;
+    // ── Canonical — always points to the language-neutral (English) URL ──
+    const canonicalUrl = url;
     setLinkTag('canonical', canonicalUrl);
 
     // ── Hreflang — es-MX for Mexico, en for English, x-default fallback ──

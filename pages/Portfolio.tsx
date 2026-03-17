@@ -20,7 +20,8 @@ const Portfolio: React.FC = () => {
 
   usePageMeta(
     i18n.seo.portfolio.title,
-    i18n.seo.portfolio.description
+    i18n.seo.portfolio.description,
+    { path: '/portfolio' }
   );
 
   const filtered = activePillar === 'all'

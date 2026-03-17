@@ -24,6 +24,7 @@ const AboutPage: React.FC = () => {
             jobTitle: 'Founder & Creative Director',
             worksFor: { '@type': 'Organization', name: 'Untold.works', '@id': 'https://untold.works/#organization' },
             url: 'https://untold.works/about',
+            image: 'https://untold.works/images/about-photo.webp',
             sameAs: ['https://www.linkedin.com/in/semolik/'],
             knowsAbout: ['AI-powered websites', 'brand identity', 'bilingual web development', 'SEO', 'AEO', 'workflow automation'],
             description: '25 years of creative direction. Based in San Miguel de Allende, Mexico. Building AI-powered business ecosystems for companies across Mexico and the United States.',

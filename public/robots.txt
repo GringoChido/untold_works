@@ -77,7 +77,12 @@ Allow: /
 User-agent: Ai2Bot-Dolma
 Allow: /
 
+# Google Gemini
+User-agent: Gemini-Bot
+Allow: /
+
 # ───────────────────────────────────────────────────────────────
 # Sitemaps & AI Content
 # ───────────────────────────────────────────────────────────────
 Sitemap: https://untold.works/sitemap.xml
+LLMs: https://untold.works/llms.txt

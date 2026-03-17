@@ -20,7 +20,8 @@ const SlidesPage: React.FC = () => {
 
   usePageMeta(
     'Untold Slides — Photography Meets Music',
-    'Photography meets music. Curated visual collections with dynamic slide presentations built in React.'
+    'Photography meets music. Curated visual collections with dynamic slide presentations built in React.',
+    { noindex: true }
   );
 
   useEffect(() => {

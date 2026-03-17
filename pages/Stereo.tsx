@@ -18,7 +18,8 @@ const StereoPage: React.FC = () => {
 
   usePageMeta(
     i18n.seo.analog.title,
-    i18n.seo.analog.description
+    i18n.seo.analog.description,
+    { noindex: true }
   );
 
   useEffect(() => {
