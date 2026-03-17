@@ -560,6 +560,61 @@ export const aboutPage = {
       es: 'San Miguel de Allende es nuestro hogar. Más allá de la belleza, es un mercado serio: millones de visitantes cada año, una fuerte comunidad de expatriados y negocios locales compitiendo por atención con una débil presencia digital. Esta ciudad reúne a familias mexicanas, expatriados, viajeros y emprendedores en un solo lugar, así que tu marca tiene que hablarle a múltiples audiencias a la vez. Ese es el trabajo que mejor hacemos.'
     }
   },
+  founder: {
+    eyebrow: { en: 'THE FOUNDER', es: 'EL FUNDADOR' },
+    title: { en: 'Founder & Growth Strategy Director', es: 'Fundador y Director de Estrategia de Crecimiento' },
+    bio: {
+      en: '20 years building growth systems, content operations, and go-to-market infrastructure — from NBA global media to AI-powered business platforms.',
+      es: '20 años construyendo sistemas de crecimiento, operaciones de contenido e infraestructura go-to-market — desde medios globales de la NBA hasta plataformas empresariales impulsadas por IA.'
+    },
+    career: [
+      {
+        period: '1999–2010',
+        role: { en: 'Senior Producer → Broadcast Producer', es: 'Productor Senior → Productor de Transmisiones' },
+        org: { en: 'NBA Entertainment → Sacramento Kings', es: 'NBA Entertainment → Sacramento Kings' },
+        detail: { en: '300+ national campaigns. Built the Kings\' first in-house production department. Two Emmy nominations.', es: '300+ campañas nacionales. Creó el primer departamento de producción interno de los Kings. Dos nominaciones al Emmy.' }
+      },
+      {
+        period: '2010–2016',
+        role: { en: 'Global Product Launch & GTM Systems Lead', es: 'Líder Global de Lanzamiento de Producto y Sistemas GTM' },
+        org: { en: 'Videndum PLC', es: 'Videndum PLC' },
+        detail: { en: '60+ product releases per year across multiple teams, regions, and distribution channels.', es: '60+ lanzamientos de producto por año en múltiples equipos, regiones y canales de distribución.' }
+      },
+      {
+        period: '2016–2019',
+        role: { en: 'Senior Brand & Growth Manager', es: 'Gerente Senior de Marca y Crecimiento' },
+        org: { en: 'NorCal Cannabis Company', es: 'NorCal Cannabis Company' },
+        detail: { en: '50+ product portfolio. 150% engagement increase. Regulated market growth strategy.', es: 'Portafolio de 50+ productos. 150% aumento en engagement. Estrategia de crecimiento en mercado regulado.' }
+      },
+      {
+        period: '2020–2023',
+        role: { en: 'Global Marketing & Growth Strategy Lead', es: 'Líder Global de Marketing y Estrategia de Crecimiento' },
+        org: { en: 'Ingenia Agency', es: 'Ingenia Agency' },
+        detail: { en: 'US market entry for LATAM brands. Cross-border GTM systems. Analytics and reporting overhaul.', es: 'Entrada al mercado de EE.UU. para marcas LATAM. Sistemas GTM transfronterizos. Reestructuración de analítica y reportes.' }
+      },
+      {
+        period: '2017–Present',
+        role: { en: 'Founder & Growth Strategy Director', es: 'Fundador y Director de Estrategia de Crecimiento' },
+        org: { en: 'Untold.works', es: 'Untold.works' },
+        detail: { en: 'AI-powered business ecosystems for companies across Mexico and the United States.', es: 'Ecosistemas empresariales impulsados por IA para empresas en México y Estados Unidos.' }
+      }
+    ],
+    linkedinLabel: { en: 'CONNECT ON LINKEDIN', es: 'CONECTAR EN LINKEDIN' },
+    credentialsEyebrow: { en: 'EDUCATION', es: 'EDUCACIÓN' },
+    viewCertificate: { en: 'VIEW CERTIFICATE', es: 'VER CERTIFICADO' },
+    closeCertificate: { en: 'CLOSE', es: 'CERRAR' },
+    credentials: {
+      mit: {
+        institution: { en: 'MIT Sloan School of Management', es: 'MIT Sloan School of Management' },
+        program: { en: 'Artificial Intelligence: Implications for Business Strategy', es: 'Inteligencia Artificial: Implicaciones para Estrategia de Negocios' },
+        date: { en: 'January 2026', es: 'Enero 2026' }
+      },
+      asu: {
+        institution: { en: 'Arizona State University', es: 'Arizona State University' },
+        program: { en: 'Broadcast Journalism / Music', es: 'Periodismo de Transmisiones / Música' }
+      }
+    }
+  },
   closing: {
     headline: {
       en: 'LET\'S BUILD SOMETHING TOGETHER.',

@@ -1,11 +1,44 @@
 
-import React, { useEffect } from 'react';
+import React, { useEffect, useState, useCallback } from 'react';
 import { useParams, Link, Navigate } from 'react-router-dom';
 import { useLanguage } from '../App';
 import { usePageMeta } from '../hooks/usePageMeta';
 import { projects } from '../data/projects';
 import Breadcrumbs from '../components/Breadcrumbs';
 import type { Pillar } from '../types';
+
+const VideoEmbed: React.FC<{ id: string; title: string }> = ({ id, title }) => {
+  const [playing, setPlaying] = useState(false);
+  const play = useCallback(() => setPlaying(true), []);
+
+  if (playing) {
+    return (
+      <iframe
+        src={`https://www.youtube.com/embed/${id}?autoplay=1&rel=0`}
+        title={title}
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowFullScreen
+        className="absolute inset-0 w-full h-full"
+      />
+    );
+  }
+
+  return (
+    <button onClick={play} className="absolute inset-0 w-full h-full group/play cursor-pointer bg-black">
+      <img
+        src={`https://img.youtube.com/vi/${id}/maxresdefault.jpg`}
+        alt={title}
+        className="w-full h-full object-cover opacity-70 group-hover/play:opacity-90 transition-opacity duration-500"
+        loading="lazy"
+      />
+      <div className="absolute inset-0 flex items-center justify-center">
+        <div className="w-16 h-16 rounded-full bg-untold-orange/90 flex items-center justify-center group-hover/play:scale-110 transition-transform">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="white"><path d="M8 5v14l11-7z"/></svg>
+        </div>
+      </div>
+    </button>
+  );
+};
 
 const pillarLinks: Record<Exclude<Pillar, 'all'>, { path: string; label: { en: string; es: string } }> = {
   'professional-services': { path: '/solutions/professional-services', label: { en: 'Professional Services Solutions', es: 'Soluciones para Servicios Profesionales' } },
@@ -66,13 +99,24 @@ const ProjectDetail: React.FC = () => {
     description: t(project.summary),
     author: { '@type': 'Organization', name: 'Untold.works' },
     url: `https://untold.works/portfolio/${project.id}`,
+    ...(project.videos && project.videos.length > 0 && {
+      video: project.videos.map(v => ({
+        '@type': 'VideoObject',
+        name: t(v.title),
+        description: t(v.role),
+        thumbnailUrl: `https://img.youtube.com/vi/${v.id}/maxresdefault.jpg`,
+        contentUrl: `https://www.youtube.com/watch?v=${v.id}`,
+        embedUrl: `https://www.youtube.com/embed/${v.id}`,
+        uploadDate: project.timeline.includes('2024') ? '2024-01-01' : '2025-01-01',
+      })),
+    }),
   };
 
   return (
     <div className="bg-untold-black min-h-screen font-serif text-white">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       {/* Top Metadata Bar - High Contrast Mono */}
-      <header className="px-10 pt-32 pb-16 lg:pt-48 border-b border-white/10">
+      <header className="px-5 sm:px-10 pt-24 sm:pt-32 pb-12 sm:pb-16 lg:pt-48 border-b border-white/10">
         <div className="max-w-[1440px] mx-auto">
           <div className="mb-8">
             <Breadcrumbs
@@ -109,11 +153,11 @@ const ProjectDetail: React.FC = () => {
             </div>
           </div>
           
-          <h1 className="font-sans font-black text-[clamp(3rem,10vw,140px)] leading-[0.8] uppercase tracking-tighter mb-24 max-w-5xl">
+          <h1 className="font-sans font-black text-[clamp(2.2rem,10vw,140px)] leading-[0.8] uppercase tracking-tighter mb-12 sm:mb-24 max-w-5xl">
             {t(project.name)}
           </h1>
 
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-12 pt-16 border-t border-white/5 bg-white/[0.02] p-10">
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-12 pt-8 sm:pt-16 border-t border-white/5 bg-white/[0.02] p-5 sm:p-10">
             <div className="space-y-4">
               <span className="block font-mono text-[10px] uppercase tracking-[0.5em] text-white/30">CLIENT</span>
               <p className="text-lg lg:text-xl font-bold uppercase tracking-tight font-mono text-untold-orange">{t(project.client)}</p>
@@ -158,10 +202,10 @@ const ProjectDetail: React.FC = () => {
       )}
 
       {/* Narrative Grid - Split Layout */}
-      <section className="px-10 py-32 lg:py-56 border-b border-white/5">
-        <div className="max-w-[1440px] mx-auto grid lg:grid-cols-12 gap-24 items-start">
+      <section className="px-5 sm:px-10 py-16 sm:py-32 lg:py-56 border-b border-white/5">
+        <div className="max-w-[1440px] mx-auto grid lg:grid-cols-12 gap-12 sm:gap-24 items-start">
           <div className="lg:col-span-6 sticky top-48">
-            <h2 className="text-4xl lg:text-7xl font-serif italic text-untold-orange leading-[1.05] tracking-tighter mb-16">
+            <h2 className="text-2xl sm:text-4xl lg:text-7xl font-serif italic text-untold-orange leading-[1.05] tracking-tighter mb-8 sm:mb-16">
               {t(project.summary)}
             </h2>
             <div className="flex flex-wrap gap-4 mb-20">
@@ -176,7 +220,7 @@ const ProjectDetail: React.FC = () => {
                 {project.metrics.map((metric, idx) => (
                   <div key={idx} className="group">
                     <span className="block font-mono text-[10px] uppercase tracking-[0.3em] text-white/30 mb-4 group-hover:text-untold-orange transition-colors">{t(metric.label)}</span>
-                    <span className="text-6xl lg:text-8xl font-sans font-black tracking-tighter text-white">{metric.value}</span>
+                    <span className="text-4xl sm:text-6xl lg:text-8xl font-sans font-black tracking-tighter text-white">{metric.value}</span>
                   </div>
                 ))}
               </div>
@@ -194,22 +238,22 @@ const ProjectDetail: React.FC = () => {
             )}
           </div>
 
-          <div className="lg:col-span-6 space-y-32">
+          <div className="lg:col-span-6 space-y-16 sm:space-y-32">
             <div className="group">
               <span className="block font-mono text-[11px] uppercase tracking-[0.5em] text-untold-orange mb-8 font-bold">{t({ en: 'WHAT WAS THE CHALLENGE?', es: '¿CUÁL FUE EL RETO?' })}</span>
-              <p className="text-2xl lg:text-3xl font-medium leading-relaxed text-white/70 group-hover:text-white transition-colors">
+              <p className="text-xl sm:text-2xl lg:text-3xl font-medium leading-relaxed text-white/70 group-hover:text-white transition-colors">
                 {t(project.challenge)}
               </p>
             </div>
             <div className="group">
               <span className="block font-mono text-[11px] uppercase tracking-[0.5em] text-untold-orange mb-8 font-bold">{t({ en: 'WHAT WAS THE GOAL?', es: '¿CUÁL FUE EL OBJETIVO?' })}</span>
-              <p className="text-2xl lg:text-3xl font-medium leading-relaxed text-white/70 group-hover:text-white transition-colors">
+              <p className="text-xl sm:text-2xl lg:text-3xl font-medium leading-relaxed text-white/70 group-hover:text-white transition-colors">
                 {t(project.goal)}
               </p>
             </div>
             <div className="group">
               <span className="block font-mono text-[11px] uppercase tracking-[0.5em] text-untold-orange mb-8 font-bold">{t({ en: 'HOW DID WE SOLVE IT?', es: '¿CÓMO LO RESOLVIMOS?' })}</span>
-              <p className="text-2xl lg:text-3xl font-medium leading-relaxed text-white/70 group-hover:text-white transition-colors">
+              <p className="text-xl sm:text-2xl lg:text-3xl font-medium leading-relaxed text-white/70 group-hover:text-white transition-colors">
                 {t(project.solution)}
               </p>
             </div>
@@ -217,7 +261,7 @@ const ProjectDetail: React.FC = () => {
             {project.codeSnippets && project.codeSnippets.map((snippet, idx) => (
               <div key={idx} className="pt-16 border-t border-white/5">
                 <span className="block font-mono text-[10px] uppercase tracking-[0.5em] text-white/30 mb-8">{snippet.title}</span>
-                <div className="bg-white/5 border border-white/10 p-10 overflow-x-auto">
+                <div className="bg-white/5 border border-white/10 p-4 sm:p-10 overflow-x-auto">
                   <pre className="font-mono text-[13px] leading-relaxed text-untold-orange/80">
                     <code>{snippet.code}</code>
                   </pre>
@@ -229,9 +273,9 @@ const ProjectDetail: React.FC = () => {
       </section>
 
       {/* Artifact Gallery - 4-Column Responsive Grid */}
-      <section className="px-10 py-32 lg:py-48 bg-white/[0.02]">
+      <section className="px-5 sm:px-10 py-16 sm:py-32 lg:py-48 bg-white/[0.02]">
         <div className="max-w-[1440px] mx-auto">
-          <div className="flex items-center space-x-4 mb-24">
+          <div className="flex items-center space-x-4 mb-12 sm:mb-24">
              <span className="w-2.5 h-2.5 rounded-full bg-untold-orange"></span>
              <h2 className="font-mono text-[11px] uppercase tracking-[0.6em] font-bold text-white/40 tracking-widest">SYSTEM_VISUALS_&_ARTIFACTS</h2>
           </div>
@@ -251,31 +295,58 @@ const ProjectDetail: React.FC = () => {
         </div>
       </section>
 
+      {/* Video Section */}
+      {project.videos && project.videos.length > 0 && (
+        <section className="px-5 sm:px-10 py-24 lg:py-32 border-b border-white/5">
+          <div className="max-w-[1440px] mx-auto">
+            <div className="flex items-center space-x-4 mb-16">
+              <span className="w-2.5 h-2.5 rounded-full bg-untold-orange"></span>
+              <h2 className="font-mono text-[11px] uppercase tracking-[0.6em] font-bold text-white/40">
+                {t({ en: 'VIDEO_PRODUCTION', es: 'PRODUCCIÓN_DE_VIDEO' })}
+              </h2>
+            </div>
+            <div className={`grid gap-8 ${project.videos.length === 1 ? 'max-w-4xl' : 'md:grid-cols-2'}`}>
+              {project.videos.map((video) => (
+                <div key={video.id}>
+                  <div className="relative aspect-video border border-white/10 overflow-hidden">
+                    <VideoEmbed id={video.id} title={t(video.title)} />
+                  </div>
+                  <div className="mt-4">
+                    <h3 className="font-sans font-bold text-lg uppercase tracking-tight">{t(video.title)}</h3>
+                    <p className="font-mono text-[11px] uppercase tracking-[0.3em] text-white/40 mt-1">{t(video.role)}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
       {/* Bottom Nav - Next/Previous Toggle */}
-      <section className="px-10 py-32 border-t border-white/5 bg-black">
+      <section className="px-5 sm:px-10 py-16 sm:py-32 border-t border-white/5 bg-black">
         <div className="max-w-[1440px] mx-auto grid md:grid-cols-2 gap-px bg-white/5 border border-white/10">
-           <Link to={`/portfolio/${prevProject.id}`} className="group p-12 lg:p-20 bg-black hover:bg-white/[0.03] transition-all border-r border-white/10">
-              <span className="block font-mono text-[10px] uppercase tracking-[0.5em] text-white/30 mb-10">PREVIOUS_ARTIFACT</span>
-              <div className="flex items-center space-x-8">
-                <span className="text-4xl group-hover:-translate-x-4 transition-transform duration-500 text-untold-orange">←</span>
-                <h3 className="font-sans font-black text-3xl lg:text-5xl uppercase tracking-tighter group-hover:text-untold-orange transition-colors">
+           <Link to={`/portfolio/${prevProject.id}`} className="group p-6 sm:p-12 lg:p-20 bg-black hover:bg-white/[0.03] transition-all border-r border-white/10">
+              <span className="block font-mono text-[10px] uppercase tracking-[0.5em] text-white/30 mb-4 sm:mb-10">PREVIOUS_ARTIFACT</span>
+              <div className="flex items-center space-x-4 sm:space-x-8">
+                <span className="text-2xl sm:text-4xl group-hover:-translate-x-4 transition-transform duration-500 text-untold-orange">←</span>
+                <h3 className="font-sans font-black text-xl sm:text-3xl lg:text-5xl uppercase tracking-tighter group-hover:text-untold-orange transition-colors">
                   {t(prevProject.name)}
                 </h3>
               </div>
            </Link>
-           <Link to={`/portfolio/${nextProject.id}`} className="group p-12 lg:p-20 bg-black hover:bg-white/[0.03] transition-all text-right">
-              <span className="block font-mono text-[10px] uppercase tracking-[0.5em] text-white/30 mb-10">NEXT_ARTIFACT</span>
-              <div className="flex items-center justify-end space-x-8">
-                <h3 className="font-sans font-black text-3xl lg:text-5xl uppercase tracking-tighter group-hover:text-untold-orange transition-colors">
+           <Link to={`/portfolio/${nextProject.id}`} className="group p-6 sm:p-12 lg:p-20 bg-black hover:bg-white/[0.03] transition-all text-right">
+              <span className="block font-mono text-[10px] uppercase tracking-[0.5em] text-white/30 mb-4 sm:mb-10">NEXT_ARTIFACT</span>
+              <div className="flex items-center justify-end space-x-4 sm:space-x-8">
+                <h3 className="font-sans font-black text-xl sm:text-3xl lg:text-5xl uppercase tracking-tighter group-hover:text-untold-orange transition-colors">
                   {t(nextProject.name)}
                 </h3>
-                <span className="text-4xl group-hover:translate-x-4 transition-transform duration-500 text-untold-orange">→</span>
+                <span className="text-2xl sm:text-4xl group-hover:translate-x-4 transition-transform duration-500 text-untold-orange">→</span>
               </div>
            </Link>
         </div>
         
-        <div className="mt-32 text-center">
-          <Link to="/contact" className="inline-block bg-untold-orange text-white px-20 py-10 font-sans font-black uppercase tracking-tighter text-2xl hover:scale-105 transition-all shadow-[0_30px_60px_rgba(255,77,23,0.3)]">
+        <div className="mt-16 sm:mt-32 text-center">
+          <Link to="/contact" className="inline-block bg-untold-orange text-white px-10 sm:px-20 py-6 sm:py-10 font-sans font-black uppercase tracking-tighter text-lg sm:text-2xl hover:scale-105 transition-all shadow-[0_30px_60px_rgba(255,77,23,0.3)]">
             {t({ en: 'BUILD_THIS_SYSTEM', es: 'CONSTRUIR_ESTE_SISTEMA' })}
           </Link>
         </div>

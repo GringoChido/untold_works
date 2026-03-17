@@ -1,13 +1,66 @@
-import React from 'react';
+import React, { useState, useCallback } from 'react';
 import { Link } from 'react-router-dom';
 import { useLanguage } from '../App';
 import { usePageMeta } from '../hooks/usePageMeta';
 import * as i18n from '../i18n';
 import Testimonials from '../components/Testimonials';
 
+const creativeWork = [
+  { id: 'xxGPdk9Yj_U', title: { en: 'R+R=NOW Record Release and Tour', es: 'R+R=NOW Lanzamiento de Disco y Gira' }, client: 'Robert Glasper / Blue Note', role: { en: 'Directed, Shot & Edited', es: 'Dirigido, Filmado y Editado' } },
+  { id: '000xjrlHSnQ', title: { en: 'The 2025 Black Radio Experience Recap', es: 'Resumen de Black Radio Experience 2025' }, client: 'Blue Note Jazz Festival', role: { en: 'Creative Direction & Production', es: 'Dirección Creativa y Producción' } },
+  { id: 'ba3KhYBhMys', title: { en: 'Color of Noize — Derrick Hodge, Angelique Kidjo & Carnegie Hall', es: 'Color of Noize — Derrick Hodge, Angelique Kidjo y Carnegie Hall' }, client: 'Carnegie Hall', role: { en: 'Creative Direction & Production', es: 'Dirección Creativa y Producción' } },
+  { id: 'iQBpjgxBET4', title: { en: 'We Were Here — Massive Brand Launch', es: 'We Were Here — Gran Lanzamiento de Marca' }, client: 'Brand Campaign', role: { en: 'Creative Direction & Production', es: 'Dirección Creativa y Producción' } },
+  { id: 'jQYjpCC3cyQ', title: { en: 'Robert Glasper — Behind the Scenes of Code Derivation', es: 'Robert Glasper — Detrás de Cámaras de Code Derivation' }, client: 'Robert Glasper', role: { en: 'Creative Direction & Production', es: 'Dirección Creativa y Producción' } },
+  { id: 'k7Mh38JEXDM', title: { en: 'OMI Brand Video', es: 'Video de Marca OMI' }, client: 'OMI Growth', role: { en: 'Brand Strategy & Production', es: 'Estrategia de Marca y Producción' } },
+];
+
+const VideoThumbnail: React.FC<{ videoId: string; title: string; client: string; role: string }> = ({ videoId, title, client, role }) => {
+  const [playing, setPlaying] = useState(false);
+  const play = useCallback(() => setPlaying(true), []);
+
+  if (playing) {
+    return (
+      <div className="aspect-video">
+        <iframe
+          src={`https://www.youtube.com/embed/${videoId}?autoplay=1&rel=0`}
+          title={title}
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+          className="w-full h-full"
+        />
+      </div>
+    );
+  }
+
+  return (
+    <div>
+      <button onClick={play} className="relative aspect-video w-full overflow-hidden group cursor-pointer bg-untold-black">
+        <img
+          src={`https://i.ytimg.com/vi/${videoId}/hqdefault.jpg`}
+          alt={title}
+          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 opacity-80 group-hover:opacity-100"
+          loading="lazy"
+        />
+        <div className="absolute inset-0 flex items-center justify-center">
+          <div className="w-14 h-14 rounded-full bg-untold-orange/90 flex items-center justify-center group-hover:scale-110 transition-transform">
+            <svg className="w-6 h-6 text-white ml-1" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+          </div>
+        </div>
+      </button>
+      <div className="mt-4">
+        <p className="font-sans font-black text-sm uppercase tracking-tighter text-white leading-tight">{title}</p>
+        <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-white/40 mt-1">{client}</p>
+        <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-untold-orange mt-1">{role}</p>
+      </div>
+    </div>
+  );
+};
+
 const AboutPage: React.FC = () => {
   const { t } = useLanguage();
   const content = i18n.aboutPage;
+  const founder = content.founder;
+  const [showCertificate, setShowCertificate] = useState(false);
 
   usePageMeta(
     i18n.seo.about.title,
@@ -21,20 +74,37 @@ const AboutPage: React.FC = () => {
           mainEntity: {
             '@type': 'Person',
             name: 'Joshua Semolik',
-            jobTitle: 'Founder & Creative Director',
+            jobTitle: 'Founder & Growth Strategy Director',
             worksFor: { '@type': 'Organization', name: 'Untold.works', '@id': 'https://untold.works/#organization' },
             url: 'https://untold.works/about',
             image: 'https://untold.works/images/about-photo.webp',
             sameAs: ['https://www.linkedin.com/in/semolik/'],
-            knowsAbout: ['AI-powered websites', 'brand identity', 'bilingual web development', 'SEO', 'AEO', 'workflow automation'],
-            description: '25 years of creative direction. Based in San Miguel de Allende, Mexico. Building AI-powered business ecosystems for companies across Mexico and the United States.',
+            alumniOf: [
+              { '@type': 'Organization', name: 'MIT Sloan School of Management', url: 'https://executive.mit.edu/' },
+              { '@type': 'CollegeOrUniversity', name: 'Arizona State University' }
+            ],
+            hasCredential: {
+              '@type': 'EducationalOccupationalCredential',
+              name: 'Artificial Intelligence: Implications for Business Strategy',
+              credentialCategory: 'Certificate',
+              educationalLevel: 'Executive Education',
+              recognizedBy: { '@type': 'Organization', name: 'MIT Sloan School of Management', url: 'https://executive.mit.edu/' },
+              dateCreated: '2026-01'
+            },
+            knowsAbout: [
+              'AI-powered websites', 'brand identity', 'bilingual web development', 'SEO', 'AEO',
+              'workflow automation', 'conversion rate optimization', 'funnel design', 'product positioning',
+              'go-to-market strategy', 'AI business strategy', 'GA4', 'Salesforce', 'HubSpot',
+              'Next.js', 'React', 'TypeScript', 'n8n workflow automation', 'Claude AI'
+            ],
+            description: 'Growth marketing leader with 20 years of experience driving conversion optimization, web strategy, and go-to-market execution across the US and Latin America. MIT Sloan School of Management, AI Strategy.',
           },
         },
         {
           '@context': 'https://schema.org',
           '@type': 'FAQPage',
           mainEntity: [
-            { '@type': 'Question', name: 'Who runs Untold.works?', acceptedAnswer: { '@type': 'Answer', text: 'Untold.works is run by Joshua Semolik, a creative director with 25 years of experience, based in San Miguel de Allende, Guanajuato, Mexico.' } },
+            { '@type': 'Question', name: 'Who runs Untold.works?', acceptedAnswer: { '@type': 'Answer', text: 'Untold.works is led by Joshua Semolik, a growth strategy director with 20 years of experience spanning NBA Entertainment, global product launches at Videndum PLC, and AI-powered business systems. Based in San Miguel de Allende, Guanajuato, Mexico.' } },
             { '@type': 'Question', name: 'Can a Mexico-based agency serve US clients effectively?', acceptedAnswer: { '@type': 'Answer', text: 'Yes. Our bilingual team works remotely with businesses across Mexico and the United States. Same timezone, native-level English and Spanish, and deep understanding of both markets.' } },
             { '@type': 'Question', name: 'Why San Miguel de Allende?', acceptedAnswer: { '@type': 'Answer', text: 'San Miguel de Allende sits at the intersection of US and Mexican business culture. Strong expat community, growing tech ecosystem, and a creative environment that attracts world-class talent.' } },
           ],
@@ -72,7 +142,7 @@ const AboutPage: React.FC = () => {
         </div>
       </section>
 
-      {/* Founder Photo */}
+      {/* Founder */}
       <section className="bg-untold-beige border-b border-untold-border">
         <div className="max-w-[1440px] mx-auto grid lg:grid-cols-2">
           <div className="aspect-[4/3] lg:aspect-auto overflow-hidden">
@@ -85,17 +155,148 @@ const AboutPage: React.FC = () => {
           </div>
           <div className="px-5 sm:px-10 lg:px-16 py-16 sm:py-24 flex flex-col justify-center">
             <span className="font-mono text-[11px] uppercase tracking-[0.6em] font-bold text-untold-orange block mb-6">
-              {t({ en: 'THE FOUNDER', es: 'EL FUNDADOR' })}
+              {t(founder.eyebrow)}
             </span>
-            <h2 className="font-sans font-black text-3xl sm:text-5xl uppercase tracking-tighter mb-6 leading-[0.85]">
+            <h2 className="font-sans font-black text-3xl sm:text-5xl uppercase tracking-tighter mb-3 leading-[0.85]">
               Joshua Semolik
             </h2>
-            <p className="text-lg sm:text-xl font-serif italic text-untold-black/60 leading-relaxed">
-              {t({
-                en: '25 years of creative direction. Based in San Miguel de Allende, Mexico. Building AI-powered business ecosystems for companies across Mexico and the United States.',
-                es: '25 años de dirección creativa. Basado en San Miguel de Allende, México. Construyendo ecosistemas empresariales impulsados por IA para empresas en México y Estados Unidos.'
-              })}
+            <p className="font-mono text-[11px] uppercase tracking-[0.3em] text-untold-black/40 mb-6">
+              {t(founder.title)}
             </p>
+            <p className="text-lg sm:text-xl font-serif italic text-untold-black/60 leading-relaxed mb-8">
+              {t(founder.bio)}
+            </p>
+            <a
+              href="https://www.linkedin.com/in/semolik/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 text-untold-orange hover:text-untold-black transition-colors"
+            >
+              <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+              <span className="font-mono text-[11px] uppercase tracking-[0.3em] font-bold">
+                {t(founder.linkedinLabel)}
+              </span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      {/* Career Timeline */}
+      <section className="px-5 sm:px-10 py-20 sm:py-32 bg-untold-beige text-untold-black border-b border-untold-border">
+        <div className="max-w-[1440px] mx-auto">
+          <div className="flex items-center space-x-4 mb-14">
+            <span className="w-3 h-3 rounded-full bg-untold-orange"></span>
+            <p className="font-mono text-[12px] uppercase tracking-[0.5em] font-bold text-untold-black/40">
+              {t({ en: 'CAREER // TIMELINE', es: 'CARRERA // CRONOLOGÍA' })}
+            </p>
+          </div>
+
+          <div className="max-w-4xl space-y-0">
+            {founder.career.map((entry, idx) => (
+              <div key={idx} className="border-l-2 border-untold-orange/30 pl-6 sm:pl-10 pb-10 last:pb-0 relative">
+                <span className="absolute left-[-5px] top-1.5 w-2 h-2 rounded-full bg-untold-orange"></span>
+                <span className="font-mono text-[11px] uppercase tracking-[0.4em] font-bold text-untold-orange block mb-2">
+                  {entry.period}
+                </span>
+                <p className="font-sans font-black text-base sm:text-lg uppercase tracking-tighter leading-tight mb-1">
+                  {t(entry.role)}
+                </p>
+                <p className="font-mono text-[11px] uppercase tracking-[0.3em] text-untold-black/40 mb-3">
+                  {t(entry.org)}
+                </p>
+                <p className="font-serif text-base text-untold-black/60 leading-relaxed">
+                  {t(entry.detail)}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Creative Direction — Selected Work */}
+      <section className="px-5 sm:px-10 py-20 sm:py-32 border-b border-white/10 bg-untold-black">
+        <div className="max-w-[1440px] mx-auto">
+          <div className="flex items-center space-x-4 mb-14">
+            <span className="w-3 h-3 rounded-full bg-untold-orange animate-pulse"></span>
+            <p className="font-mono text-[12px] uppercase tracking-[0.5em] font-bold text-white/40">
+              {t({ en: 'CREATIVE DIRECTION // SELECTED WORK', es: 'DIRECCIÓN CREATIVA // TRABAJO SELECTO' })}
+            </p>
+          </div>
+
+          <h2 className="font-sans font-black text-3xl sm:text-5xl lg:text-6xl uppercase tracking-tighter leading-[0.85] mb-6 text-white max-w-4xl">
+            {t({ en: 'Before We Built Systems,\nWe Told Stories.', es: 'Antes de Construir Sistemas,\nContamos Historias.' })}
+          </h2>
+          <p className="text-lg sm:text-xl font-serif italic text-white/50 max-w-3xl mb-16 leading-relaxed">
+            {t({ en: 'Video production, creative direction, and brand campaigns for Robert Glasper, Blue Note Jazz Festival, Carnegie Hall, and more.', es: 'Producción de video, dirección creativa y campañas de marca para Robert Glasper, Blue Note Jazz Festival, Carnegie Hall y más.' })}
+          </p>
+
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            {creativeWork.map((video) => (
+              <VideoThumbnail
+                key={video.id}
+                videoId={video.id}
+                title={t(video.title)}
+                client={video.client}
+                role={t(video.role)}
+              />
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Education & Credentials */}
+      <section className="px-5 sm:px-10 py-20 sm:py-32 bg-untold-beige text-untold-black border-b border-untold-border">
+        <div className="max-w-[1440px] mx-auto">
+          <div className="flex items-center space-x-4 mb-14">
+            <span className="w-3 h-3 rounded-full bg-untold-orange"></span>
+            <p className="font-mono text-[12px] uppercase tracking-[0.5em] font-bold text-untold-black/40">
+              {t(founder.credentialsEyebrow)}
+            </p>
+          </div>
+
+          <div className="max-w-4xl space-y-8">
+            {/* MIT Sloan */}
+            <div className="flex flex-col sm:flex-row items-start gap-5 border border-untold-border p-6 sm:p-8 bg-white/50">
+              <img
+                src="/images/mit-badge.svg"
+                alt="MIT Management Executive Education Badge"
+                className="w-16 h-16 shrink-0"
+              />
+              <div className="flex-1">
+                <p className="font-sans font-black text-sm sm:text-base uppercase tracking-tight">
+                  {t(founder.credentials.mit.institution)}
+                </p>
+                <p className="font-serif text-untold-black/60 text-sm sm:text-base mt-1 italic">
+                  {t(founder.credentials.mit.program)}
+                </p>
+                <div className="flex flex-wrap items-center gap-4 mt-3">
+                  <span className="font-mono text-[10px] uppercase tracking-[0.3em] text-untold-gray">
+                    {t(founder.credentials.mit.date)}
+                  </span>
+                  <button
+                    onClick={() => setShowCertificate(true)}
+                    className="font-mono text-[10px] uppercase tracking-[0.3em] text-untold-orange hover:text-untold-black transition-colors font-bold cursor-pointer"
+                  >
+                    {t(founder.viewCertificate)}
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            {/* ASU */}
+            <div className="flex items-start gap-5 border border-untold-border p-6 sm:p-8 bg-white/50">
+              <div className="w-16 h-16 shrink-0 bg-untold-black/5 flex items-center justify-center">
+                <span className="font-sans font-black text-lg text-untold-black/20">ASU</span>
+              </div>
+              <div>
+                <p className="font-sans font-black text-sm sm:text-base uppercase tracking-tight">
+                  {t(founder.credentials.asu.institution)}
+                </p>
+                <p className="font-serif text-untold-black/60 text-sm sm:text-base mt-1 italic">
+                  {t(founder.credentials.asu.program)}
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -115,14 +316,11 @@ const AboutPage: React.FC = () => {
           </h2>
 
           <div className="grid lg:grid-cols-2 gap-16 lg:gap-24">
-            {/* Mexico */}
             <div>
               <p className="text-lg sm:text-xl font-serif text-untold-black/70 leading-relaxed">
                 {t(content.whyMexico.mexicoContent)}
               </p>
             </div>
-
-            {/* San Miguel */}
             <div>
               <p className="text-lg sm:text-xl font-serif text-untold-black/70 leading-relaxed">
                 {t(content.whyMexico.smaContent)}
@@ -186,7 +384,7 @@ const AboutPage: React.FC = () => {
 
           <div className="space-y-0 border-t border-untold-border">
             {[
-              { q: { en: 'Who runs Untold.works?', es: '¿Quién dirige Untold.works?' }, a: { en: 'Untold.works is led by Joshua Semolik, a creative director and technologist with decades of experience in branding, design, and AI systems. The agency combines deep creative expertise with modern technology to build complete business ecosystems.', es: 'Untold.works está dirigido por Joshua Semolik, un director creativo y tecnólogo con décadas de experiencia en branding, diseño y sistemas de IA. La agencia combina experiencia creativa profunda con tecnología moderna para construir ecosistemas empresariales completos.' } },
+              { q: { en: 'Who runs Untold.works?', es: '¿Quién dirige Untold.works?' }, a: { en: 'Untold.works is led by Joshua Semolik, a growth strategy director with 20 years of experience spanning NBA Entertainment, global product launches at Videndum PLC, cross-border GTM strategy, and AI-powered business systems. Based in San Miguel de Allende, Mexico.', es: 'Untold.works está dirigido por Joshua Semolik, un director de estrategia de crecimiento con 20 años de experiencia que abarca NBA Entertainment, lanzamientos de producto globales en Videndum PLC, estrategia GTM transfronteriza y sistemas empresariales con IA. Basado en San Miguel de Allende, México.' } },
               { q: { en: 'Can a Mexico-based agency serve US clients effectively?', es: '¿Puede una agencia en México atender clientes de EE.UU. efectivamente?' }, a: { en: 'Absolutely. We work with clients across both countries. Our bilingual team, shared time zones, and deep understanding of both markets make cross-border collaboration seamless. Many of our clients are US businesses looking to reach Mexican audiences, or Mexican businesses expanding north.', es: 'Absolutamente. Trabajamos con clientes en ambos países. Nuestro equipo bilingüe, husos horarios compartidos y profundo entendimiento de ambos mercados hacen que la colaboración transfronteriza sea fluida. Muchos de nuestros clientes son negocios de EE.UU. que buscan audiencias mexicanas, o negocios mexicanos expandiéndose al norte.' } },
               { q: { en: 'What makes Untold.works different from other agencies?', es: '¿Qué hace diferente a Untold.works de otras agencias?' }, a: { en: 'We lead with brand and storytelling, then layer in AI technology. Most agencies do one or the other. We also transfer full ownership of everything we build — no lock-in, no monthly fees for access to your own systems.', es: 'Lideramos con marca y narrativa, después integramos tecnología de IA. La mayoría de las agencias hacen una cosa u otra. También transferimos propiedad total de todo lo que construimos — sin ataduras, sin cuotas mensuales por acceso a tus propios sistemas.' } },
               { q: { en: 'What industries do you have experience in?', es: '¿En qué industrias tienen experiencia?' }, a: { en: 'Professional services (law firms, consultants, therapists), hospitality (hotels, restaurants), retail, music and entertainment, e-commerce, and enterprise operations. Our portfolio includes projects across all of these sectors.', es: 'Servicios profesionales (despachos, consultores, terapeutas), hospitalidad (hoteles, restaurantes), retail, música y entretenimiento, e-commerce y operaciones empresariales. Nuestro portafolio incluye proyectos en todos estos sectores.' } },
@@ -226,6 +424,28 @@ const AboutPage: React.FC = () => {
           </Link>
         </div>
       </section>
+
+      {/* Certificate Lightbox */}
+      {showCertificate && (
+        <div
+          className="fixed inset-0 z-50 bg-black/90 flex items-center justify-center p-5 cursor-pointer"
+          onClick={() => setShowCertificate(false)}
+        >
+          <div className="relative max-w-4xl w-full" onClick={(e) => e.stopPropagation()}>
+            <button
+              onClick={() => setShowCertificate(false)}
+              className="absolute -top-10 right-0 font-mono text-[11px] uppercase tracking-[0.3em] text-white/60 hover:text-white transition-colors cursor-pointer"
+            >
+              {t(founder.closeCertificate)}
+            </button>
+            <img
+              src="/images/mit-sloan-certificate.png"
+              alt="MIT Sloan School of Management — Artificial Intelligence: Implications for Business Strategy — Joshua Semolik"
+              className="w-full h-auto"
+            />
+          </div>
+        </div>
+      )}
     </div>
   );
 };

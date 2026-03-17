@@ -40,6 +40,11 @@ export interface Project {
     code: string;
     title: string;
   }[];
+  videos?: {
+    id: string;
+    title: { en: string; es: string };
+    role: { en: string; es: string };
+  }[];
 }
 
 export interface WorkflowProof {

@@ -149,6 +149,10 @@ export const projects: Project[] = [
       'CRM routing logic diagram',
       'Lead scoring model dashboard',
       'Salesforce integration output'
+    ],
+    videos: [
+      { id: 'k7Mh38JEXDM', title: { en: 'OMI Brand Video', es: 'Video de Marca OMI' }, role: { en: 'Brand Strategy & Production', es: 'Estrategia de Marca y Producción' } },
+      { id: '7RQBMdye2RM', title: { en: 'OMI Battery Show Recap', es: 'Resumen del Battery Show OMI' }, role: { en: 'Event Coverage & Production', es: 'Cobertura de Eventos y Producción' } }
     ]
   },
   {
