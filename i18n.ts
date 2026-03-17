@@ -562,10 +562,10 @@ export const aboutPage = {
   },
   founder: {
     eyebrow: { en: 'THE FOUNDER', es: 'EL FUNDADOR' },
-    title: { en: 'Founder & Growth Strategy Director', es: 'Fundador y Director de Estrategia de Crecimiento' },
+    title: { en: 'Founder & AI Systems Architect', es: 'Fundador y Arquitecto de Sistemas de IA' },
     bio: {
-      en: '20 years building growth systems, content operations, and go-to-market infrastructure — from NBA global media to AI-powered business platforms.',
-      es: '20 años construyendo sistemas de crecimiento, operaciones de contenido e infraestructura go-to-market — desde medios globales de la NBA hasta plataformas empresariales impulsadas por IA.'
+      en: '20 years of systems-driven execution — from NBA global media and Emmy-nominated productions to AI-powered business platforms. I design the strategy, build the systems, and ship the technology. MIT Sloan AI Strategy.',
+      es: '20 años de ejecución basada en sistemas — desde medios globales de la NBA y producciones nominadas al Emmy hasta plataformas empresariales con IA. Diseño la estrategia, construyo los sistemas y entrego la tecnología. MIT Sloan AI Strategy.'
     },
     career: [
       {
@@ -594,9 +594,9 @@ export const aboutPage = {
       },
       {
         period: '2017–Present',
-        role: { en: 'Founder & Growth Strategy Director', es: 'Fundador y Director de Estrategia de Crecimiento' },
+        role: { en: 'Founder & AI Systems Architect', es: 'Fundador y Arquitecto de Sistemas de IA' },
         org: { en: 'Untold.works', es: 'Untold.works' },
-        detail: { en: 'AI-powered business ecosystems for companies across Mexico and the United States.', es: 'Ecosistemas empresariales impulsados por IA para empresas en México y Estados Unidos.' }
+        detail: { en: 'Built 6 production AI systems, agentic lead routing (98% MQL accuracy, 4.2x ROI), and unified revenue operations (20% sales lift across 4,000+ SKUs) for clients across Mexico and the United States.', es: 'Construí 6 sistemas de IA en producción, enrutamiento agéntico de leads (98% precisión MQL, 4.2x ROI) y operaciones de ingresos unificadas (20% aumento en ventas en más de 4,000 SKUs) para clientes en México y Estados Unidos.' }
       }
     ],
     linkedinLabel: { en: 'CONNECT ON LINKEDIN', es: 'CONECTAR EN LINKEDIN' },

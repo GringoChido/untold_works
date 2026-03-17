@@ -74,7 +74,7 @@ const AboutPage: React.FC = () => {
           mainEntity: {
             '@type': 'Person',
             name: 'Joshua Semolik',
-            jobTitle: 'Founder & Growth Strategy Director',
+            jobTitle: 'Founder & AI Systems Architect',
             worksFor: { '@type': 'Organization', name: 'Untold.works', '@id': 'https://untold.works/#organization' },
             url: 'https://untold.works/about',
             image: 'https://untold.works/images/about-photo.webp',
@@ -92,19 +92,20 @@ const AboutPage: React.FC = () => {
               dateCreated: '2026-01'
             },
             knowsAbout: [
-              'AI-powered websites', 'brand identity', 'bilingual web development', 'SEO', 'AEO',
-              'workflow automation', 'conversion rate optimization', 'funnel design', 'product positioning',
-              'go-to-market strategy', 'AI business strategy', 'GA4', 'Salesforce', 'HubSpot',
-              'Next.js', 'React', 'TypeScript', 'n8n workflow automation', 'Claude AI'
+              'AI systems architecture', 'agentic workflows', 'revenue operations', 'n8n workflow automation',
+              'Claude AI', 'OpenAI Agents', 'RAG pipelines', 'predictive analytics', 'WhatsApp AI',
+              'brand strategy', 'creative technology', 'digital transformation', 'CRM architecture',
+              'Salesforce', 'HubSpot', 'conversion optimization', 'go-to-market strategy',
+              'Next.js', 'React', 'TypeScript', 'Python', 'bilingual web development', 'SEO', 'AEO'
             ],
-            description: 'Growth marketing leader with 20 years of experience driving conversion optimization, web strategy, and go-to-market execution across the US and Latin America. MIT Sloan School of Management, AI Strategy.',
+            description: 'AI systems architect and creative technologist with 20 years of experience building production AI systems, revenue operations platforms, and brand strategy across the US and Latin America. Built 6 AI systems for enterprise clients, engineered agentic workflows achieving 98% MQL accuracy, and unified revenue operations for 20% sales lift across 4,000+ SKUs. MIT Sloan School of Management, AI Strategy.',
           },
         },
         {
           '@context': 'https://schema.org',
           '@type': 'FAQPage',
           mainEntity: [
-            { '@type': 'Question', name: 'Who runs Untold.works?', acceptedAnswer: { '@type': 'Answer', text: 'Untold.works is led by Joshua Semolik, a growth strategy director with 20 years of experience spanning NBA Entertainment, global product launches at Videndum PLC, and AI-powered business systems. Based in San Miguel de Allende, Guanajuato, Mexico.' } },
+            { '@type': 'Question', name: 'Who runs Untold.works?', acceptedAnswer: { '@type': 'Answer', text: 'Untold.works is led by Joshua Semolik, an AI systems architect and creative technologist with 20 years of experience spanning NBA Entertainment, global product launches at Videndum PLC, cross-border GTM strategy, and production AI systems. MIT Sloan AI Strategy. Based in San Miguel de Allende, Guanajuato, Mexico.' } },
             { '@type': 'Question', name: 'Can a Mexico-based agency serve US clients effectively?', acceptedAnswer: { '@type': 'Answer', text: 'Yes. Our bilingual team works remotely with businesses across Mexico and the United States. Same timezone, native-level English and Spanish, and deep understanding of both markets.' } },
             { '@type': 'Question', name: 'Why San Miguel de Allende?', acceptedAnswer: { '@type': 'Answer', text: 'San Miguel de Allende sits at the intersection of US and Mexican business culture. Strong expat community, growing tech ecosystem, and a creative environment that attracts world-class talent.' } },
           ],
@@ -384,7 +385,7 @@ const AboutPage: React.FC = () => {
 
           <div className="space-y-0 border-t border-untold-border">
             {[
-              { q: { en: 'Who runs Untold.works?', es: '¿Quién dirige Untold.works?' }, a: { en: 'Untold.works is led by Joshua Semolik, a growth strategy director with 20 years of experience spanning NBA Entertainment, global product launches at Videndum PLC, cross-border GTM strategy, and AI-powered business systems. Based in San Miguel de Allende, Mexico.', es: 'Untold.works está dirigido por Joshua Semolik, un director de estrategia de crecimiento con 20 años de experiencia que abarca NBA Entertainment, lanzamientos de producto globales en Videndum PLC, estrategia GTM transfronteriza y sistemas empresariales con IA. Basado en San Miguel de Allende, México.' } },
+              { q: { en: 'Who runs Untold.works?', es: '¿Quién dirige Untold.works?' }, a: { en: 'Untold.works is led by Joshua Semolik, an AI systems architect and creative technologist with 20 years of experience spanning NBA Entertainment, global product launches at Videndum PLC, cross-border GTM strategy, and production AI systems. MIT Sloan AI Strategy. Based in San Miguel de Allende, Mexico.', es: 'Untold.works está dirigido por Joshua Semolik, un arquitecto de sistemas de IA y tecnólogo creativo con 20 años de experiencia que abarca NBA Entertainment, lanzamientos de producto globales en Videndum PLC, estrategia GTM transfronteriza y sistemas de IA en producción. MIT Sloan AI Strategy. Basado en San Miguel de Allende, México.' } },
               { q: { en: 'Can a Mexico-based agency serve US clients effectively?', es: '¿Puede una agencia en México atender clientes de EE.UU. efectivamente?' }, a: { en: 'Absolutely. We work with clients across both countries. Our bilingual team, shared time zones, and deep understanding of both markets make cross-border collaboration seamless. Many of our clients are US businesses looking to reach Mexican audiences, or Mexican businesses expanding north.', es: 'Absolutamente. Trabajamos con clientes en ambos países. Nuestro equipo bilingüe, husos horarios compartidos y profundo entendimiento de ambos mercados hacen que la colaboración transfronteriza sea fluida. Muchos de nuestros clientes son negocios de EE.UU. que buscan audiencias mexicanas, o negocios mexicanos expandiéndose al norte.' } },
               { q: { en: 'What makes Untold.works different from other agencies?', es: '¿Qué hace diferente a Untold.works de otras agencias?' }, a: { en: 'We lead with brand and storytelling, then layer in AI technology. Most agencies do one or the other. We also transfer full ownership of everything we build — no lock-in, no monthly fees for access to your own systems.', es: 'Lideramos con marca y narrativa, después integramos tecnología de IA. La mayoría de las agencias hacen una cosa u otra. También transferimos propiedad total de todo lo que construimos — sin ataduras, sin cuotas mensuales por acceso a tus propios sistemas.' } },
               { q: { en: 'What industries do you have experience in?', es: '¿En qué industrias tienen experiencia?' }, a: { en: 'Professional services (law firms, consultants, therapists), hospitality (hotels, restaurants), retail, music and entertainment, e-commerce, and enterprise operations. Our portfolio includes projects across all of these sectors.', es: 'Servicios profesionales (despachos, consultores, terapeutas), hospitalidad (hoteles, restaurantes), retail, música y entretenimiento, e-commerce y operaciones empresariales. Nuestro portafolio incluye proyectos en todos estos sectores.' } },
