@@ -400,12 +400,6 @@ const SocialMedia: React.FC = () => {
                   {t({ en: 'per day wasted on unstrategic manual posting', es: 'al día desperdiciadas en publicaciones manuales sin estrategia' })}
                 </p>
               </div>
-              <div className="border border-untold-border bg-untold-beige p-6 sm:p-8">
-                <p className="font-sans font-black text-5xl sm:text-6xl tracking-tighter text-untold-orange mb-2">0</p>
-                <p className="font-serif italic text-untold-gray">
-                  {t({ en: 'competitors in SMA with analytics-driven social strategy', es: 'competidores en SMA con estrategia social basada en datos' })}
-                </p>
-              </div>
             </div>
           </div>
         </div>

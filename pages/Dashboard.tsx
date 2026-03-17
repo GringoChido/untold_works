@@ -5,7 +5,6 @@ import { usePageMeta } from '../hooks/usePageMeta';
 import QuickLeadForm from '../components/QuickLeadForm';
 import Testimonials from '../components/Testimonials';
 import Breadcrumbs from '../components/Breadcrumbs';
-import ImagePlaceholder from '../components/ImagePlaceholder';
 
 const Dashboard: React.FC = () => {
   const { t } = useLanguage();
@@ -283,20 +282,6 @@ const Dashboard: React.FC = () => {
               en: 'Website analytics, social media, ads, CRM, leads, SEO rankings — not in ten tabs. In one dashboard you own.',
               es: 'Analítica web, redes sociales, publicidad, CRM, leads, rankings SEO — no en diez pestañas. En un dashboard que es tuyo.'
             })}
-          </p>
-        </div>
-      </section>
-
-      {/* ── Dashboard Mockup ── */}
-      <section className="bg-untold-beige px-5 sm:px-10 py-16 sm:py-24 border-b border-untold-border">
-        <div className="max-w-[1440px] mx-auto">
-          <ImagePlaceholder
-            label="Dashboard mockup — screenshot of a real dashboard build"
-            aspect="aspect-[16/8]"
-            dimensions="1440 × 720px"
-          />
-          <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-untold-gray/40 text-center mt-4">
-            {t({ en: 'Example: Marketing Command Center Dashboard', es: 'Ejemplo: Dashboard Centro de Mando de Marketing' })}
           </p>
         </div>
       </section>

@@ -344,12 +344,6 @@ const Websites: React.FC = () => {
                   {t({ en: 'of users judge a business by its website on mobile', es: 'de usuarios juzgan un negocio por su sitio web en móvil' })}
                 </p>
               </div>
-              <div className="border border-untold-border bg-untold-beige p-6 sm:p-8">
-                <p className="font-sans font-black text-5xl sm:text-6xl tracking-tighter text-untold-orange mb-2">0</p>
-                <p className="font-serif italic text-untold-gray">
-                  {t({ en: 'websites in SMA built for both Google AND AI engines', es: 'sitios web en SMA construidos para Google Y motores de IA' })}
-                </p>
-              </div>
             </div>
           </div>
         </div>

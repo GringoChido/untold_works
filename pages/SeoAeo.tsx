@@ -5,7 +5,6 @@ import { usePageMeta } from '../hooks/usePageMeta';
 import QuickLeadForm from '../components/QuickLeadForm';
 import Testimonials from '../components/Testimonials';
 import Breadcrumbs from '../components/Breadcrumbs';
-import ImagePlaceholder from '../components/ImagePlaceholder';
 
 const SeoAeo: React.FC = () => {
   const { t } = useLanguage();
@@ -263,22 +262,6 @@ const SeoAeo: React.FC = () => {
         </div>
       </section>
 
-      {/* ── Visual: Search vs AI Results ── */}
-      <section className="bg-untold-beige px-5 sm:px-10 py-12 sm:py-16 border-b border-untold-border">
-        <div className="max-w-[1440px] mx-auto grid lg:grid-cols-2 gap-6">
-          <ImagePlaceholder
-            label="Google search result — your business ranking"
-            aspect="aspect-[4/3]"
-            dimensions="700 × 525px"
-          />
-          <ImagePlaceholder
-            label="AI answer — ChatGPT recommending your business"
-            aspect="aspect-[4/3]"
-            dimensions="700 × 525px"
-          />
-        </div>
-      </section>
-
       {/* ── The Problem ── */}
       <section className="bg-white px-5 sm:px-10 py-16 sm:py-24 border-b border-untold-border">
         <div className="max-w-[1440px] mx-auto">
@@ -310,12 +293,6 @@ const SeoAeo: React.FC = () => {
                 <p className="font-sans font-black text-5xl sm:text-6xl tracking-tighter text-untold-orange mb-2">40%</p>
                 <p className="font-serif italic text-untold-gray">
                   {t({ en: 'of product searches now start in AI chat', es: 'de búsquedas de productos empiezan en chat de IA' })}
-                </p>
-              </div>
-              <div className="border border-untold-border bg-untold-beige p-6 sm:p-8">
-                <p className="font-sans font-black text-5xl sm:text-6xl tracking-tighter text-untold-orange mb-2">0</p>
-                <p className="font-serif italic text-untold-gray">
-                  {t({ en: 'businesses in SMA optimized for AI discovery', es: 'negocios en SMA optimizados para descubrimiento por IA' })}
                 </p>
               </div>
               <div className="border border-untold-border bg-untold-beige p-6 sm:p-8">

@@ -5,7 +5,6 @@ import { usePageMeta } from '../hooks/usePageMeta';
 import QuickLeadForm from '../components/QuickLeadForm';
 import Testimonials from '../components/Testimonials';
 import Breadcrumbs from '../components/Breadcrumbs';
-import ImagePlaceholder from '../components/ImagePlaceholder';
 
 const Ads: React.FC = () => {
   const { t } = useLanguage();
@@ -256,22 +255,6 @@ const Ads: React.FC = () => {
         </div>
       </section>
 
-      {/* ── Visual: Ad Campaign Examples ── */}
-      <section className="bg-untold-beige px-5 sm:px-10 py-12 sm:py-16 border-b border-untold-border">
-        <div className="max-w-[1440px] mx-auto grid lg:grid-cols-2 gap-6">
-          <ImagePlaceholder
-            label="Google Ads campaign dashboard"
-            aspect="aspect-[16/10]"
-            dimensions="700 × 438px"
-          />
-          <ImagePlaceholder
-            label="Meta Ads manager — campaign results"
-            aspect="aspect-[16/10]"
-            dimensions="700 × 438px"
-          />
-        </div>
-      </section>
-
       {/* ── The Problem ── */}
       <section className="bg-white px-5 sm:px-10 py-16 sm:py-24 border-b border-untold-border">
         <div className="max-w-[1440px] mx-auto">
@@ -309,12 +292,6 @@ const Ads: React.FC = () => {
                 <p className="font-sans font-black text-5xl sm:text-6xl tracking-tighter text-untold-orange mb-2">3x</p>
                 <p className="font-serif italic text-untold-gray">
                   {t({ en: 'ROI difference between DIY and professionally managed campaigns', es: 'diferencia en ROI entre campañas autodirigidas y gestionadas profesionalmente' })}
-                </p>
-              </div>
-              <div className="border border-untold-border bg-untold-beige p-6 sm:p-8">
-                <p className="font-sans font-black text-5xl sm:text-6xl tracking-tighter text-untold-orange mb-2">$0</p>
-                <p className="font-serif italic text-untold-gray">
-                  {t({ en: 'spent by most SMA businesses on properly tracked paid ads', es: 'gastados por la mayoría de negocios en SMA en publicidad pagada con seguimiento adecuado' })}
                 </p>
               </div>
             </div>
