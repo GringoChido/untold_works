@@ -4,27 +4,27 @@ import { useLanguage } from '../App';
 const testimonials = [
   {
     quote: {
-      en: 'Untold.works completely transformed how we operate. The AI-powered booking system alone saved us 15 hours a week — and the brand identity made us look like the premium property we always were.',
-      es: 'Untold.works transformó completamente cómo operamos. Solo el sistema de reservas con IA nos ahorró 15 horas por semana — y la identidad de marca nos hizo ver como la propiedad premium que siempre fuimos.',
+      en: 'Joshua and the team at Untold.works have been pivotal in reshaping NoxGuard\'s growth trajectory. Their comprehensive growth strategy plan, tailored specifically for our needs, has not only given us a fresh, invigorated brand image but also opened up new revenue channels. As we move towards 2024, their innovative approach and consistent implementation keep us ahead in a competitive market. This partnership has been a cornerstone in our journey towards a more dynamic and prosperous future.',
+      es: 'Joshua y el equipo de Untold.works han sido fundamentales para transformar la trayectoria de crecimiento de NoxGuard. Su plan integral de estrategia de crecimiento, diseñado específicamente para nuestras necesidades, no solo nos dio una imagen de marca fresca y renovada, sino que también abrió nuevos canales de ingresos. Su enfoque innovador e implementación consistente nos mantienen adelante en un mercado competitivo. Esta asociación ha sido una piedra angular en nuestro camino hacia un futuro más dinámico y próspero.',
     },
-    name: 'Joaquín Morales',
-    role: { en: 'Owner, Boutique Hotel — San Miguel de Allende', es: 'Propietario, Hotel Boutique — San Miguel de Allende' },
+    name: 'William Berriochoa',
+    role: { en: 'NoxGuard — US / Mexico', es: 'NoxGuard — EE.UU. / México' },
   },
   {
     quote: {
-      en: 'As a solo attorney, I needed systems that worked without a tech team. Joshua built me a complete client acquisition funnel — website, intake forms, CRM, automated follow-ups — and trained me to run it all myself.',
-      es: 'Como abogado independiente, necesitaba sistemas que funcionaran sin un equipo técnico. Joshua me construyó un embudo completo de adquisición de clientes — sitio web, formularios, CRM, seguimientos automatizados — y me capacitó para manejarlo todo yo mismo.',
+      en: 'Working with Joshua at Untold.works has been a transformative experience for Billiard Factory\'s social media presence. His creative approach consistently drives growth and engagement, surpassing our expectations consistently. This partnership has genuinely amplified our digital presence.',
+      es: 'Trabajar con Joshua en Untold.works ha sido una experiencia transformadora para la presencia en redes sociales de Billiard Factory. Su enfoque creativo impulsa consistentemente el crecimiento y la interacción, superando nuestras expectativas de manera constante. Esta asociación ha amplificado genuinamente nuestra presencia digital.',
     },
-    name: 'David Carrillo',
-    role: { en: 'Immigration Attorney — Querétaro / Texas', es: 'Abogado de Inmigración — Querétaro / Texas' },
+    name: 'Ryan Stick',
+    role: { en: 'Billiard Factory', es: 'Billiard Factory' },
   },
   {
     quote: {
-      en: 'We went from spreadsheets and WhatsApp chaos to a real business platform. The bilingual website doubled our US inquiries in the first quarter.',
-      es: 'Pasamos del caos de hojas de cálculo y WhatsApp a una plataforma de negocio real. El sitio web bilingüe duplicó nuestras consultas de EE.UU. en el primer trimestre.',
+      en: 'Working with Joshua has been pivotal in elevating Second Son Productions. His unparalleled creativity and audience engagement strategies have been instrumental. Joshua consistently delivers innovative concepts that captivate our audience and significantly boost ticket sales for our artists. Collaborating with him means transforming great ideas into exceptional results. His contribution to our success is immeasurable, consistently making our events and artists stand out in a crowded industry.',
+      es: 'Trabajar con Joshua ha sido fundamental para elevar Second Son Productions. Su creatividad inigualable y sus estrategias de engagement han sido instrumentales. Joshua entrega consistentemente conceptos innovadores que cautivan a nuestra audiencia e impulsan significativamente las ventas de boletos para nuestros artistas. Colaborar con él significa transformar grandes ideas en resultados excepcionales. Su contribución a nuestro éxito es invaluable, haciendo que nuestros eventos y artistas destaquen en una industria saturada.',
     },
-    name: 'María Elena Vega',
-    role: { en: 'Founder, Interior Design Studio — México City', es: 'Fundadora, Estudio de Diseño de Interiores — Ciudad de México' },
+    name: 'Vincent Bennett',
+    role: { en: 'Second Son Productions', es: 'Second Son Productions' },
   },
 ];
 
@@ -36,8 +36,22 @@ const Testimonials: React.FC<TestimonialsProps> = ({ variant = 'light' }) => {
   const { t } = useLanguage();
   const isDark = variant === 'dark';
 
+  const reviewSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'Organization',
+    name: 'Untold.works',
+    url: 'https://untold.works',
+    review: testimonials.map(item => ({
+      '@type': 'Review',
+      reviewRating: { '@type': 'Rating', ratingValue: '5', bestRating: '5' },
+      author: { '@type': 'Person', name: item.name },
+      reviewBody: item.quote.en,
+    })),
+  };
+
   return (
     <section className={`px-5 sm:px-10 py-20 sm:py-32 ${isDark ? 'bg-untold-black text-white border-b border-white/5' : 'bg-white border-b border-untold-border'}`}>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(reviewSchema) }} />
       <div className="max-w-[1440px] mx-auto">
         <div className="flex items-center space-x-4 mb-16">
           <span className="w-2.5 h-2.5 rounded-full bg-untold-orange"></span>
