@@ -61,6 +61,7 @@ const routes = [
   '/blog/retail-and-hospitality-digital-survival-guide',
   '/blog/whatsapp-ai-for-mexican-businesses-complete-guide',
   '/blog/aeo-the-shift-nobodys-talking-about',
+  '/blog/geo-flip-your-marketing-strategy',
   '/blog/yo-this-thing-is-broken',
   '/blog/your-creative-eye-became-the-prompt',
   '/blog/the-site-is-the-proposal',

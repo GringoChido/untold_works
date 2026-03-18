@@ -873,6 +873,74 @@ export const blogPosts: BlogPost[] = [
     },
     image: '/blog/aeo-shift.jpg',
   },
+  {
+    slug: 'geo-flip-your-marketing-strategy',
+    title: {
+      en: 'GEO: The Thing That\'s About to Flip Your Entire Marketing Strategy',
+      es: 'GEO: Lo Que Esta a Punto de Cambiar Toda Tu Estrategia de Marketing',
+    },
+    date: '2026-03-18',
+    author: 'Joshua Semolik',
+    category: 'aeo-search',
+    pillar: 'all',
+    excerpt: {
+      en: 'If you\'re running a business right now and you\'ve never heard of GEO, you need to stop what you\'re doing and read this. Generative Engine Optimization is about to change everything.',
+      es: 'Si tienes un negocio ahora mismo y nunca has escuchado de GEO, necesitas dejar lo que estas haciendo y leer esto. La Optimizacion para Motores Generativos esta a punto de cambiarlo todo.',
+    },
+    content: {
+      en: `<p>If you're running a business right now and you've never heard of GEO, you need to stop what you're doing and read this.</p>
+<p>GEO stands for Generative Engine Optimization. It's the practice of making sure your brand, your content, and your business show up when someone asks an AI a question. Not Google. AI. ChatGPT, Gemini, Claude, Perplexity, Google's AI Overviews. All of them.</p>
+<p>This is different from SEO. Let me explain why.</p>
+<p>SEO was about ranking. You picked a keyword, you optimized a page, you built backlinks, and you tried to show up on the first page of Google. That game still exists. Google handles 14 billion searches a day. It's not dead.</p>
+<p>But here's what's changing: more than 50% of Google searches now end with an AI overview. The user gets their answer right there. They never click a link. And on platforms like ChatGPT and Perplexity, there are no links to click. The AI reads the internet, picks who to recommend, and gives a conversational answer. Your website either gets mentioned or it doesn't.</p>
+<p>GEO is how you make sure you get mentioned.</p>
+<h2>So Is SEO Dead?</h2>
+<p>No. But it's not enough anymore. Think of it this way: SEO gets you indexed. GEO gets you recommended. You need both, but if you're only doing SEO in 2026, you're playing half the game.</p>
+<p>The shift is subtle but massive. SEO optimized for algorithms that ranked pages. GEO optimizes for AI that recommends solutions. The AI doesn't care about your keyword density. It cares about whether you actually answered the question, whether you sound like a real expert, and whether trusted sources on the internet back up what you're saying.</p>
+<h2>What Actually Matters for GEO</h2>
+<p><strong>Answer real questions, not keywords.</strong> Stop writing content around "best CRM software" and start writing content around "what's the best CRM for a small business that needs a fast setup and simple interface." AI answers questions. If your content is structured as clear questions with direct answers, you're more likely to get cited.</p>
+<p><strong>Sound like a human expert.</strong> AI can tell the difference between a keyword-stuffed article and something written by someone who actually knows what they're talking about. Include real experiences. Share specific opinions. Reference actual results. The more your content sounds like a knowledgeable person talking, the more AI trusts it.</p>
+<p><strong>Show up where AI trains.</strong> This is the part most people miss. AI models don't just read your website. They're trained on Wikipedia, Reddit, Quora, Crunchbase, news publications, review sites. If your business isn't accurately described in those places, AI doesn't know who you are. Getting listed and mentioned on these platforms is the new link building.</p>
+<p><strong>Structure your content so AI can read it.</strong> Clean HTML, not JavaScript-rendered content that bots can't crawl. Clear headings that are actual questions. FAQ sections. Tables for comparisons. Bullet points for key takeaways. Make it as easy as possible for AI to grab your answer and cite you.</p>
+<p><strong>Schema markup.</strong> This is the code that tells AI exactly what your business is, who wrote your content, when it was published, and what it's about. Think of it as labeling your content for machines. Organizational schema for your brand, article schema for your content. If you don't have this, AI is guessing who you are instead of knowing.</p>
+<h2>You Don't Need an Agency for This</h2>
+<p>Here's the part I want to be real about. A year ago, I would have told you to hire an SEO agency. And there are great agencies out there that are already ahead on GEO.</p>
+<p>But I've been building all of this myself using Claude. Literally sitting in Claude Code and Claude conversations, structuring my content, generating schema markup, building FAQ sections, optimizing my site architecture. The same tools I use to build websites are the same tools I use to optimize them.</p>
+<p>You can ask Claude to audit your content for GEO readiness. You can ask it to generate schema markup for your pages. You can ask it to rewrite a blog post so it answers specific questions instead of targeting keywords. You can ask it to create an FAQ section based on what people actually ask about your industry. You can ask it to analyze how your competitors show up in AI answers and figure out what they're doing that you're not.</p>
+<p>I'm not saying agencies are useless. I'm saying the barrier to doing this yourself just dropped to almost zero. If you can describe your business and your customers, you can start optimizing for GEO today. Right now. In a conversation.</p>
+<h2>The Window Is Open</h2>
+<p>This is early. Most businesses haven't even heard of GEO yet. That means there's a real first-mover advantage right now. The businesses that start showing up in AI answers today are building authority that compounds over time. The longer you wait, the harder it gets.</p>
+<p>Early SEO was a land grab. GEO is the same moment. And this time you don't need a team of developers and a $10K monthly retainer to play. You just need to start.</p>
+<p>If you want help thinking through your GEO strategy or need someone to build it out for you, reach out. This is exactly what we do at Untold Works.</p>
+<p class="text-sm text-untold-gray mt-8"><em>Joshua is the founder of Untold Works, a creative technology agency in San Miguel de Allende, Mexico.</em></p>`,
+      es: `<p>Si tienes un negocio ahora mismo y nunca has escuchado de GEO, necesitas dejar lo que estas haciendo y leer esto.</p>
+<p>GEO significa Generative Engine Optimization, o Optimizacion para Motores Generativos. Es la practica de asegurarte de que tu marca, tu contenido y tu negocio aparezcan cuando alguien le hace una pregunta a una IA. No a Google. A la IA. ChatGPT, Gemini, Claude, Perplexity, los AI Overviews de Google. Todos.</p>
+<p>Esto es diferente del SEO. Dejame explicar por que.</p>
+<p>El SEO era sobre posicionarse. Elegias una palabra clave, optimizabas una pagina, construias backlinks e intentabas aparecer en la primera pagina de Google. Ese juego sigue existiendo. Google maneja 14 mil millones de busquedas al dia. No esta muerto.</p>
+<p>Pero esto es lo que esta cambiando: mas del 50% de las busquedas en Google ahora terminan con una respuesta generada por IA. El usuario obtiene su respuesta ahi mismo. Nunca hace clic en un enlace. Y en plataformas como ChatGPT y Perplexity, no hay enlaces donde hacer clic. La IA lee el internet, elige a quien recomendar y da una respuesta conversacional. Tu sitio web es mencionado o no lo es.</p>
+<p>GEO es como te aseguras de que te mencionen.</p>
+<h2>Entonces, el SEO Murio?</h2>
+<p>No. Pero ya no es suficiente. Piensalo asi: el SEO te indexa. El GEO te recomienda. Necesitas ambos, pero si solo estas haciendo SEO en 2026, estas jugando la mitad del juego.</p>
+<p>El cambio es sutil pero masivo. El SEO optimizaba para algoritmos que clasificaban paginas. El GEO optimiza para IA que recomienda soluciones. A la IA no le importa tu densidad de palabras clave. Le importa si realmente respondiste la pregunta, si suenas como un experto real y si fuentes confiables en internet respaldan lo que dices.</p>
+<h2>Que Realmente Importa para GEO</h2>
+<p><strong>Responde preguntas reales, no palabras clave.</strong> Deja de escribir contenido sobre "mejor software CRM" y empieza a escribir contenido sobre "cual es el mejor CRM para un negocio pequeno que necesita configuracion rapida e interfaz simple." La IA responde preguntas. Si tu contenido esta estructurado como preguntas claras con respuestas directas, es mas probable que te citen.</p>
+<p><strong>Suena como un experto humano.</strong> La IA puede notar la diferencia entre un articulo relleno de palabras clave y algo escrito por alguien que realmente sabe de lo que habla. Incluye experiencias reales. Comparte opiniones especificas. Referencia resultados reales. Mientras mas tu contenido suene como una persona conocedora hablando, mas la IA confia en el.</p>
+<p><strong>Aparece donde la IA se entrena.</strong> Esta es la parte que la mayoria se pierde. Los modelos de IA no solo leen tu sitio web. Se entrenan con Wikipedia, Reddit, Quora, Crunchbase, publicaciones de noticias, sitios de resenas. Si tu negocio no esta descrito con precision en esos lugares, la IA no sabe quien eres. Que te listen y mencionen en estas plataformas es la nueva construccion de enlaces.</p>
+<p><strong>Estructura tu contenido para que la IA pueda leerlo.</strong> HTML limpio, no contenido renderizado con JavaScript que los bots no pueden rastrear. Encabezados claros que sean preguntas reales. Secciones de preguntas frecuentes. Tablas para comparaciones. Puntos clave en listas. Hazlo lo mas facil posible para que la IA tome tu respuesta y te cite.</p>
+<p><strong>Schema markup.</strong> Este es el codigo que le dice a la IA exactamente que es tu negocio, quien escribio tu contenido, cuando fue publicado y de que trata. Piensalo como etiquetar tu contenido para maquinas. Schema organizacional para tu marca, schema de articulo para tu contenido. Si no tienes esto, la IA esta adivinando quien eres en lugar de saberlo.</p>
+<h2>No Necesitas una Agencia para Esto</h2>
+<p>Esta es la parte donde quiero ser honesto. Hace un ano, te habria dicho que contrataras una agencia de SEO. Y hay agencias excelentes que ya estan adelantadas en GEO.</p>
+<p>Pero yo he estado construyendo todo esto yo mismo usando Claude. Literalmente sentado en Claude Code y conversaciones con Claude, estructurando mi contenido, generando schema markup, construyendo secciones de FAQ, optimizando la arquitectura de mi sitio. Las mismas herramientas que uso para construir sitios web son las mismas que uso para optimizarlos.</p>
+<p>Puedes pedirle a Claude que audite tu contenido para GEO. Puedes pedirle que genere schema markup para tus paginas. Puedes pedirle que reescriba un post de blog para que responda preguntas especificas en lugar de apuntar a palabras clave. Puedes pedirle que cree una seccion de FAQ basada en lo que la gente realmente pregunta sobre tu industria. Puedes pedirle que analice como aparecen tus competidores en respuestas de IA y descubra que estan haciendo que tu no.</p>
+<p>No estoy diciendo que las agencias son inutiles. Estoy diciendo que la barrera para hacerlo tu mismo bajo a casi cero. Si puedes describir tu negocio y tus clientes, puedes empezar a optimizar para GEO hoy. Ahora mismo. En una conversacion.</p>
+<h2>La Ventana Esta Abierta</h2>
+<p>Esto es temprano. La mayoria de los negocios ni siquiera han escuchado de GEO todavia. Eso significa que hay una ventaja real de primer movimiento ahora mismo. Los negocios que empiezan a aparecer en respuestas de IA hoy estan construyendo autoridad que se acumula con el tiempo. Mientras mas esperes, mas dificil se pone.</p>
+<p>El SEO temprano fue una carrera por territorio. GEO es el mismo momento. Y esta vez no necesitas un equipo de desarrolladores y un pago mensual de $10K para jugar. Solo necesitas empezar.</p>
+<p>Si quieres ayuda para pensar tu estrategia de GEO o necesitas a alguien que la construya por ti, escribenos. Esto es exactamente lo que hacemos en Untold Works.</p>
+<p class="text-sm text-untold-gray mt-8"><em>Joshua es el fundador de Untold Works, una agencia de tecnologia creativa en San Miguel de Allende, Mexico.</em></p>`,
+    },
+    image: '/blog/geo-flip-strategy.jpg',
+  },
 
   // ──────────────────────────────────────────────
   // Build Notes (personal series by Joshua)
