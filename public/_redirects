@@ -1,0 +1,8 @@
+# Static files (llms.txt, robots.txt, sitemap.xml, images, assets)
+# are served automatically by Netlify before these rules apply.
+#
+# Prerendered HTML files (e.g. /blog/some-post/index.html) also
+# take priority over this catch-all rewrite.
+#
+# SPA fallback — only fires when no static file matches the request
+/*    /index.html   200

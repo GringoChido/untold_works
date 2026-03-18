@@ -39,13 +39,25 @@ const Testimonials: React.FC<TestimonialsProps> = ({ variant = 'light' }) => {
   const reviewSchema = {
     '@context': 'https://schema.org',
     '@type': 'Organization',
+    '@id': 'https://untold.works/#organization',
     name: 'Untold.works',
     url: 'https://untold.works',
+    aggregateRating: {
+      '@type': 'AggregateRating',
+      ratingValue: '5',
+      reviewCount: '3',
+      bestRating: '5',
+    },
     review: testimonials.map(item => ({
       '@type': 'Review',
+      itemReviewed: {
+        '@type': 'Organization',
+        '@id': 'https://untold.works/#organization',
+      },
       reviewRating: { '@type': 'Rating', ratingValue: '5', bestRating: '5' },
       author: { '@type': 'Person', name: item.name },
       reviewBody: item.quote.en,
+      datePublished: '2024-01-15',
     })),
   };
 
