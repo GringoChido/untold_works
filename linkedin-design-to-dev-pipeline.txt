@@ -1,0 +1,19 @@
+Google Stitch just made Figma's stock drop 12% in a single day. And nobody is talking about the real story.
+
+Stitch is a free AI design tool from Google Labs. You describe what you want and it generates polished, production-ready UI designs in seconds. Not wireframes. Real designs.
+
+But the part that matters is what happens next.
+
+Google built an MCP server that lets Stitch send those designs directly into Claude Code. So now I describe a design, Stitch generates it, and Claude Code builds the actual site. React, Tailwind, the whole thing. In minutes.
+
+The traditional agency pipeline, designer spends weeks in Figma, developer spends weeks translating it to code, project manager tries to hold it all together, that workflow just got compressed into one afternoon by one person.
+
+I rebuilt a client's entire site in 6 hours last week. This week, the design phase happens before I finish my coffee.
+
+The bottleneck used to be execution. Now it's taste. Vision. Knowing what good looks like.
+
+The tools caught up. The cost dropped to almost zero. The window is open.
+
+https://untold.works/blog/design-to-dev-pipeline-just-died
+
+#AIStrategy #WebDevelopment #GoogleStitch

@@ -15,6 +15,7 @@ const categories: { key: BlogCategory | 'all'; label: { en: string; es: string }
   { key: 'aeo-search', label: { en: 'AEO & Search', es: 'AEO y Busqueda' } },
   { key: 'ai-for-business', label: { en: 'AI for Business', es: 'IA para Negocios' } },
   { key: 'creative-technology', label: { en: 'Creative Technology', es: 'Tecnologia Creativa' } },
+  { key: 'ai-strategy', label: { en: 'AI Strategy', es: 'Estrategia de IA' } },
   { key: 'case-studies', label: { en: 'Case Studies & Guides', es: 'Casos de Estudio y Guias' } },
 ];
 
@@ -34,6 +35,10 @@ const categoryMeta: Record<BlogCategory, { title: { en: string; es: string }; de
   'creative-technology': {
     title: { en: 'Creative Technology | Web Strategy, Mobile-First, Bilingual Sites', es: 'Tecnologia Creativa | Estrategia Web, Mobile-First, Sitios Bilingues' },
     description: { en: 'Modern web architecture, headless CMS, bilingual website strategy, mobile-first design, and AI-powered web ecosystems.', es: 'Arquitectura web moderna, CMS headless, estrategia de sitios bilingues, diseno mobile-first y ecosistemas web con IA.' },
+  },
+  'ai-strategy': {
+    title: { en: 'AI Strategy | How AI Is Reshaping Business and Creative Work', es: 'Estrategia de IA | Como la IA Esta Transformando los Negocios y el Trabajo Creativo' },
+    description: { en: 'AI strategy articles on how emerging tools like Google Stitch and Claude Code are transforming design, development, and business workflows.', es: 'Articulos de estrategia de IA sobre como herramientas emergentes estan transformando el diseno, desarrollo y flujos de trabajo.' },
   },
   'case-studies': {
     title: { en: 'Case Studies & Industry Guides | Real Business Results', es: 'Casos de Estudio y Guias por Industria | Resultados Reales' },

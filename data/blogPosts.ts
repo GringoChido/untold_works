@@ -1129,4 +1129,92 @@ export const blogPosts: BlogPost[] = [
     },
     image: '/blog/the-site-is-the-proposal.jpg',
   },
+
+  // ──────────────────────────────────────────────
+  // AI Strategy
+  // ──────────────────────────────────────────────
+  {
+    slug: 'design-to-dev-pipeline-just-died',
+    title: {
+      en: 'The Design-to-Dev Pipeline Just Died. I Watched It Happen This Week.',
+      es: 'El Pipeline de Diseno a Desarrollo Acaba de Morir. Lo Vi Pasar Esta Semana.',
+    },
+    date: '2026-03-20',
+    author: 'Joshua Semolik',
+    category: 'ai-strategy',
+    pillar: 'all',
+    excerpt: {
+      en: 'Google Stitch made Figma\'s stock drop 12% in a day. When you combine it with Claude Code, the entire design-to-development workflow most agencies run is about to become obsolete.',
+      es: 'Google Stitch hizo que las acciones de Figma cayeran 12% en un dia. Cuando lo combinas con Claude Code, todo el flujo de diseno a desarrollo que manejan las agencias esta a punto de volverse obsoleto.',
+    },
+    content: {
+      en: `<p>Two days ago, Google dropped an update to Stitch that made Figma's stock fall 12%. Let that sit for a second. A free tool from Google Labs, still in beta, erased billions in market cap from one of the most dominant design platforms on the planet. In a single day.</p>
+<p>And almost nobody I know is talking about what it actually means when you combine it with Claude Code.</p>
+<p>Let me explain what just happened and why I think the entire design-to-development workflow most agencies and companies run is about to become obsolete.</p>
+<h2>What Google Stitch Actually Is</h2>
+<p>Stitch is an AI design tool from Google Labs. You describe what you want, a SaaS dashboard, a mobile onboarding flow, a restaurant website, and it generates high-fidelity UI designs in seconds. Not wireframes. Not rough concepts. Polished, professional designs with real layouts, real typography, real color systems.</p>
+<p>You can give it a text prompt. You can upload a sketch. You can literally talk to it with your voice and it builds the design while you describe it. It runs on an infinite canvas, similar to Figma, where you can explore multiple directions at once and have the AI iterate on any of them.</p>
+<p>And it's free. 350 generations a month. Zero dollars.</p>
+<p>For context, a 20-person team on Figma's Organization plan pays over $13,000 a year. Stitch costs nothing.</p>
+<p>But here's the part that changes everything for people like me.</p>
+<h2>Stitch Talks to Claude Code</h2>
+<p>Google built an MCP server for Stitch. That's the protocol that lets AI tools communicate with each other. What it means in practice is that Stitch can send its designs directly into Claude Code. The designs come with a DESIGN.md file, which is basically a blueprint that tells Claude Code exactly what the design system looks like, the colors, the typography, the spacing, the component structure. Everything.</p>
+<p>So the workflow now looks like this: I describe what I want in Stitch. It generates the design. I connect it to Claude Code. Claude Code builds the actual site, in React, Tailwind, Framer Motion, whatever stack I'm working in, using the design as its guide.</p>
+<p>Design to code. In minutes. Not days. Not weeks of back-and-forth between a designer and a developer. Minutes.</p>
+<h2>This Is the Controversial Part</h2>
+<p>I'm going to say something that a lot of agencies don't want to hear: the traditional design-to-development handoff is dead.</p>
+<p>Here's how it used to work. You hire a designer. They spend 2-4 weeks in Figma building mockups. Those mockups go to a developer. The developer spends another 2-4 weeks translating those designs into code. Half the time, the code doesn't match the design. There are revision rounds. There are miscommunications. There's a project manager trying to keep everyone on track. The whole thing costs $30,000 to $80,000 depending on the agency. And it takes 2-3 months.</p>
+<p>I just described every agency workflow in existence. And it's about to get compressed into a single afternoon by one person with Stitch and Claude Code.</p>
+<p>That's not a prediction. That's what I'm already doing. I rebuilt a client's entire website in 6 hours last week. This week, with Stitch in the mix, the design phase that used to take weeks happens before I finish my coffee.</p>
+<h2>The Numbers Don't Lie</h2>
+<p>Figma's stock has dropped 35% this year. That's not because Figma is a bad product. It's because the market is watching what's happening and doing the math. When a free AI tool can generate in seconds what took a designer days, and then pipe that directly into a coding agent that builds the real thing, the pricing model for traditional design tools starts to look very fragile.</p>
+<p>And it's not just Figma. It's every agency that charges separately for design and development as if they're still two distinct phases that require two distinct teams. They're not. Not anymore.</p>
+<h2>What This Means for Small Businesses</h2>
+<p>If you're a small business owner and you've been quoted $15,000 for a website redesign, you need to understand what's happening right now. The tools that build websites just got dramatically cheaper and faster. The agencies that haven't adapted are still charging 2024 prices using 2024 workflows. The ones that have adapted, the ones using tools like Stitch and Claude Code, can deliver better work in a fraction of the time.</p>
+<p>I'm not saying design doesn't matter. It matters more than ever. But the bottleneck used to be execution. How long it takes to turn an idea into a real, working site. That bottleneck just evaporated.</p>
+<p>What matters now is taste. Vision. Knowing what good looks like. The creative eye. The AI handles the production. You handle the direction.</p>
+<h2>This Is the New Stack</h2>
+<p>Google Stitch for design. Claude Code for development. A human with taste and a clear vision driving both of them.</p>
+<p>That's it. That's the entire pipeline. And it's available right now, today, to anyone willing to learn it.</p>
+<p>I've been building this way for months with Claude Code. Adding Stitch to the front end of that process is like adding a turbocharger to an engine that was already fast. The design phase used to be the one part I couldn't fully accelerate. Now I can.</p>
+<p>If you're a creative, a founder, a small business owner, this is the moment. The tools just caught up to the vision. The cost just dropped to almost zero. And the people who move first are going to have an enormous advantage over the people who are still waiting for someone to explain what just happened.</p>
+<p>Don't wait. The window is open.</p>
+<p>If you want to see what a site built this way looks like, check out <a href="https://untold.works">untold.works</a>. And if you want one built for you, reach out. This is what we do.</p>
+<p class="text-sm text-untold-gray mt-8"><em>Joshua is the founder of Untold Works, a creative technology agency in San Miguel de Allende, Mexico.</em></p>`,
+      es: `<p>Hace dos dias, Google lanzo una actualizacion de Stitch que hizo caer las acciones de Figma un 12%. Dejalo asimilar un segundo. Una herramienta gratuita de Google Labs, todavia en beta, borro miles de millones en capitalizacion de mercado de una de las plataformas de diseno mas dominantes del planeta. En un solo dia.</p>
+<p>Y casi nadie que conozco esta hablando de lo que realmente significa cuando lo combinas con Claude Code.</p>
+<p>Dejame explicar lo que acaba de pasar y por que creo que todo el flujo de trabajo de diseno a desarrollo que manejan la mayoria de las agencias y empresas esta a punto de volverse obsoleto.</p>
+<h2>Que Es Realmente Google Stitch</h2>
+<p>Stitch es una herramienta de diseno con IA de Google Labs. Describes lo que quieres, un dashboard SaaS, un flujo de onboarding movil, un sitio web de restaurante, y genera disenos de alta fidelidad en segundos. No wireframes. No conceptos basicos. Disenos pulidos y profesionales con layouts reales, tipografia real, sistemas de color reales.</p>
+<p>Puedes darle un prompt de texto. Puedes subir un boceto. Literalmente puedes hablarle con tu voz y construye el diseno mientras lo describes. Funciona en un canvas infinito, similar a Figma, donde puedes explorar multiples direcciones a la vez y hacer que la IA itere en cualquiera de ellas.</p>
+<p>Y es gratis. 350 generaciones al mes. Cero dolares.</p>
+<p>Para contexto, un equipo de 20 personas en el plan Organization de Figma paga mas de $13,000 dolares al ano. Stitch no cuesta nada.</p>
+<p>Pero aqui esta la parte que lo cambia todo para personas como yo.</p>
+<h2>Stitch Se Comunica con Claude Code</h2>
+<p>Google construyo un servidor MCP para Stitch. Ese es el protocolo que permite que las herramientas de IA se comuniquen entre si. Lo que significa en la practica es que Stitch puede enviar sus disenos directamente a Claude Code. Los disenos vienen con un archivo DESIGN.md, que es basicamente un plano que le dice a Claude Code exactamente como se ve el sistema de diseno, los colores, la tipografia, el espaciado, la estructura de componentes. Todo.</p>
+<p>Entonces el flujo de trabajo ahora se ve asi: describo lo que quiero en Stitch. Genera el diseno. Lo conecto a Claude Code. Claude Code construye el sitio real, en React, Tailwind, Framer Motion, cualquier stack en el que este trabajando, usando el diseno como guia.</p>
+<p>Del diseno al codigo. En minutos. No dias. No semanas de ida y vuelta entre un disenador y un desarrollador. Minutos.</p>
+<h2>Esta Es la Parte Controversial</h2>
+<p>Voy a decir algo que muchas agencias no quieren escuchar: el handoff tradicional de diseno a desarrollo esta muerto.</p>
+<p>Asi es como funcionaba antes. Contratas a un disenador. Pasa 2-4 semanas en Figma construyendo mockups. Esos mockups van a un desarrollador. El desarrollador pasa otras 2-4 semanas traduciendo esos disenos a codigo. La mitad del tiempo, el codigo no coincide con el diseno. Hay rondas de revision. Hay malentendidos. Hay un project manager tratando de mantener a todos en la misma pagina. Todo el proceso cuesta entre $30,000 y $80,000 dependiendo de la agencia. Y toma 2-3 meses.</p>
+<p>Acabo de describir el flujo de trabajo de cada agencia que existe. Y esta a punto de comprimirse en una sola tarde por una persona con Stitch y Claude Code.</p>
+<p>Eso no es una prediccion. Es lo que ya estoy haciendo. Reconstrui el sitio completo de un cliente en 6 horas la semana pasada. Esta semana, con Stitch en la mezcla, la fase de diseno que solia tomar semanas sucede antes de que termine mi cafe.</p>
+<h2>Los Numeros No Mienten</h2>
+<p>Las acciones de Figma han caido un 35% este ano. No es porque Figma sea un mal producto. Es porque el mercado esta observando lo que pasa y haciendo las cuentas. Cuando una herramienta gratuita de IA puede generar en segundos lo que a un disenador le tomaba dias, y luego enviarlo directamente a un agente de codigo que construye la cosa real, el modelo de precios de las herramientas de diseno tradicionales empieza a verse muy fragil.</p>
+<p>Y no es solo Figma. Es cada agencia que cobra por separado diseno y desarrollo como si todavia fueran dos fases distintas que requieren dos equipos distintos. Ya no lo son.</p>
+<h2>Que Significa Esto para Negocios Pequenos</h2>
+<p>Si eres dueno de un negocio pequeno y te han cotizado $15,000 por un rediseno de sitio web, necesitas entender lo que esta pasando ahora mismo. Las herramientas para construir sitios web se volvieron dramaticamente mas baratas y rapidas. Las agencias que no se han adaptado siguen cobrando precios de 2024 usando flujos de trabajo de 2024. Las que si se adaptaron, las que usan herramientas como Stitch y Claude Code, pueden entregar mejor trabajo en una fraccion del tiempo.</p>
+<p>No estoy diciendo que el diseno no importa. Importa mas que nunca. Pero el cuello de botella solia ser la ejecucion. Cuanto tiempo toma convertir una idea en un sitio real y funcional. Ese cuello de botella acaba de evaporarse.</p>
+<p>Lo que importa ahora es el gusto. La vision. Saber como se ve algo bueno. El ojo creativo. La IA maneja la produccion. Tu manejas la direccion.</p>
+<h2>Este Es el Nuevo Stack</h2>
+<p>Google Stitch para diseno. Claude Code para desarrollo. Un humano con gusto y una vision clara manejando ambos.</p>
+<p>Eso es todo. Ese es todo el pipeline. Y esta disponible ahora mismo, hoy, para cualquiera dispuesto a aprenderlo.</p>
+<p>He estado construyendo de esta manera por meses con Claude Code. Agregar Stitch al inicio de ese proceso es como ponerle un turbo a un motor que ya era rapido. La fase de diseno solia ser la unica parte que no podia acelerar completamente. Ahora puedo.</p>
+<p>Si eres creativo, fundador, o dueno de un negocio pequeno, este es el momento. Las herramientas acaban de alcanzar la vision. El costo acaba de caer a casi cero. Y las personas que se muevan primero van a tener una ventaja enorme sobre las que siguen esperando a que alguien les explique lo que acaba de pasar.</p>
+<p>No esperes. La ventana esta abierta.</p>
+<p>Si quieres ver como se ve un sitio construido de esta manera, visita <a href="https://untold.works">untold.works</a>. Y si quieres que te construyamos uno, escribenos. Esto es lo que hacemos.</p>
+<p class="text-sm text-untold-gray mt-8"><em>Joshua es el fundador de Untold Works, una agencia de tecnologia creativa en San Miguel de Allende, Mexico.</em></p>`,
+    },
+    image: '/blog/design-to-dev-pipeline.jpg',
+  },
 ];
