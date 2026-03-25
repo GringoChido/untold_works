@@ -318,5 +318,125 @@ export const projects: Project[] = [
     heroImage: '/images/in-progress/casa-schuck.jpg',
     images: ['/images/in-progress/casa-schuck.jpg'],
     websiteUrl: 'https://csnewsite.netlify.app/en',
+  },
+  {
+    id: 'cl-bailey',
+    name: { en: 'C.L. Bailey & Co.', es: 'C.L. Bailey & Co.' },
+    client: { en: 'C.L. Bailey', es: 'C.L. Bailey' },
+    timeline: 'Q1 2026 - Active',
+    pillar: 'small-business',
+    stack: ['Next.js', 'React', 'TypeScript', 'Tailwind CSS', 'E-Commerce', 'Netlify'],
+    services: [
+      { en: 'Website Build', es: 'Construcción Web' },
+      { en: 'E-Commerce', es: 'E-Commerce' },
+      { en: 'Brand Identity', es: 'Identidad de Marca' }
+    ],
+    summary: {
+      en: 'Full website build for a handcrafted billiards and game room furniture manufacturer. Solid hardwood, lifetime guarantee — built in Tomball, Texas since 1999.',
+      es: 'Construcción completa de sitio web para fabricante de mesas de billar y muebles de sala de juegos artesanales. Madera maciza, garantía de por vida — fabricado en Tomball, Texas desde 1999.'
+    },
+    challenge: { en: 'A 25-year manufacturer with a strong dealer network but no direct-to-consumer digital presence, losing visibility to competitors with modern e-commerce sites.', es: 'Un fabricante de 25 años con una fuerte red de distribuidores pero sin presencia digital directa al consumidor, perdiendo visibilidad ante competidores con sitios de e-commerce modernos.' },
+    goal: { en: 'Build a brand-first e-commerce site that showcases craftsmanship and drives both direct sales and dealer inquiries.', es: 'Construir un sitio de e-commerce centrado en la marca que muestre la artesanía e impulse ventas directas y consultas de distribuidores.' },
+    solution: { en: 'Designed and built a bilingual product catalog with high-quality imagery, dealer locator, and integrated e-commerce — all optimized for search.', es: 'Diseñamos y construimos un catálogo de productos bilingüe con imágenes de alta calidad, localizador de distribuidores y e-commerce integrado — todo optimizado para buscadores.' },
+    tags: ['Website', 'E-Commerce', 'Brand'],
+    heroImage: '/images/in-progress/cl-bailey.jpg',
+    images: ['/images/in-progress/cl-bailey.jpg'],
+    websiteUrl: 'https://clbailey.netlify.app/en',
+  },
+  {
+    id: 'regal-billiards',
+    name: { en: 'Regal Billiards', es: 'Regal Billiards' },
+    client: { en: 'Regal Billiards', es: 'Regal Billiards' },
+    timeline: 'Q1 2026 - Active',
+    pillar: 'small-business',
+    stack: ['Next.js', 'React', 'TypeScript', 'Tailwind CSS', 'Local SEO', 'Netlify'],
+    services: [
+      { en: 'Website Build', es: 'Construcción Web' },
+      { en: 'Local SEO', es: 'SEO Local' },
+      { en: 'Service Pages', es: 'Páginas de Servicio' }
+    ],
+    summary: {
+      en: 'Website and digital presence for Long Island\'s most trusted pool table showroom. Veteran-owned, 40+ years of expert sales, service, and installation.',
+      es: 'Sitio web y presencia digital para el salón de mesas de billar más confiable de Long Island. Propiedad de veterano, más de 40 años de ventas, servicio e instalación experta.'
+    },
+    challenge: { en: 'A veteran-owned showroom with four decades of trust but zero search visibility — losing foot traffic to competitors with any web presence at all.', es: 'Un salón propiedad de veterano con cuatro décadas de confianza pero cero visibilidad en buscadores — perdiendo tráfico ante competidores con cualquier presencia web.' },
+    goal: { en: 'Establish digital presence with local SEO dominance for Long Island pool table searches.', es: 'Establecer presencia digital con dominio de SEO local para búsquedas de mesas de billar en Long Island.' },
+    solution: { en: 'Built a service-focused site with location pages, service area targeting, and schema markup to capture local search intent.', es: 'Construimos un sitio enfocado en servicios con páginas de ubicación, segmentación de área de servicio y marcado schema para capturar intención de búsqueda local.' },
+    tags: ['Website', 'Local SEO', 'Service'],
+    heroImage: '/images/in-progress/regal-billiards.jpg',
+    images: ['/images/in-progress/regal-billiards.jpg'],
+    websiteUrl: 'https://regalbilliards.netlify.app/',
+  },
+  {
+    id: 'lexington-billiards',
+    name: { en: 'Lexington Billiards & Spas', es: 'Lexington Billiards & Spas' },
+    client: { en: 'Lexington Billiards', es: 'Lexington Billiards' },
+    timeline: 'Q1 2026 - Active',
+    pillar: 'small-business',
+    stack: ['Next.js', 'React', 'TypeScript', 'Tailwind CSS', 'Netlify'],
+    services: [
+      { en: 'Website Redesign', es: 'Rediseño Web' },
+      { en: 'Product Catalog', es: 'Catálogo de Productos' },
+      { en: 'Retail Strategy', es: 'Estrategia Retail' }
+    ],
+    summary: {
+      en: 'Complete site redesign for a 50-year family retailer specializing in pool tables, hot tubs, grills, and arcade machines across Central Kentucky.',
+      es: 'Rediseño completo del sitio para un minorista familiar de 50 años especializado en mesas de billar, spas, asadores y máquinas arcade en el centro de Kentucky.'
+    },
+    challenge: { en: 'A 50-year family business with massive local brand equity but a dated website that couldn\'t showcase their full product range or drive online inquiries.', es: 'Un negocio familiar de 50 años con enorme valor de marca local pero un sitio web desactualizado que no podía mostrar su gama completa de productos ni generar consultas en línea.' },
+    goal: { en: 'Modernize the digital experience while preserving the family brand legacy and expanding product discoverability.', es: 'Modernizar la experiencia digital mientras se preserva el legado de la marca familiar y se expande la descubribilidad de productos.' },
+    solution: { en: 'Complete redesign with category-driven product browsing, location pages for multi-store presence, and mobile-first UX.', es: 'Rediseño completo con navegación de productos por categorías, páginas de ubicación para presencia multi-tienda y UX mobile-first.' },
+    tags: ['Website', 'Redesign', 'Retail'],
+    heroImage: '/images/in-progress/lexington-billiards.webp',
+    images: ['/images/in-progress/lexington-billiards.webp'],
+    websiteUrl: 'https://lexington-billiards.netlify.app/',
+  },
+  {
+    id: 'qmillion',
+    name: { en: 'Qmillion', es: 'Qmillion' },
+    client: { en: 'Qmillion', es: 'Qmillion' },
+    timeline: 'Q1 2026 - Active',
+    pillar: 'professional-services',
+    stack: ['Next.js', 'React', 'TypeScript', 'Tailwind CSS', 'Framer Motion', 'Netlify'],
+    services: [
+      { en: 'Portfolio Site', es: 'Sitio de Portafolio' },
+      { en: 'Brand Identity', es: 'Identidad de Marca' },
+      { en: 'Content Strategy', es: 'Estrategia de Contenido' }
+    ],
+    summary: {
+      en: 'Portfolio site for a Grammy Award-winning producer, mixer, and composer working across jazz, hip hop, and soul. Film scoring, audio mixing, and sonic architecture.',
+      es: 'Sitio de portafolio para un productor, mezclador y compositor ganador del Grammy que trabaja en jazz, hip hop y soul. Composición para cine, mezcla de audio y arquitectura sonora.'
+    },
+    challenge: { en: 'A Grammy-winning producer with credits across major artists but no centralized platform to showcase the breadth of work or attract new scoring and mixing clients.', es: 'Un productor ganador del Grammy con créditos en artistas importantes pero sin plataforma centralizada para mostrar la amplitud del trabajo o atraer nuevos clientes de composición y mezcla.' },
+    goal: { en: 'Build a cinematic portfolio that positions Qmillion as a film scoring and sonic architecture specialist, not just a music producer.', es: 'Construir un portafolio cinematográfico que posicione a Qmillion como especialista en composición para cine y arquitectura sonora, no solo un productor musical.' },
+    solution: { en: 'Designed an immersive portfolio with integrated audio previews, discography, and credits archive — all built for visual impact.', es: 'Diseñamos un portafolio inmersivo con previews de audio integrados, discografía y archivo de créditos — todo construido para impacto visual.' },
+    tags: ['Portfolio', 'Artist', 'Music'],
+    heroImage: '/images/in-progress/qmillion.jpg',
+    images: ['/images/in-progress/qmillion.jpg'],
+    websiteUrl: 'https://qmillion.netlify.app/',
+  },
+  {
+    id: 'second-son-productions',
+    name: { en: 'Second Son Productions', es: 'Second Son Productions' },
+    client: { en: 'Second Son Productions', es: 'Second Son Productions' },
+    timeline: 'Q1 2026 - Active',
+    pillar: 'professional-services',
+    stack: ['Next.js', 'React', 'TypeScript', 'Tailwind CSS', 'Netlify'],
+    services: [
+      { en: 'Website Build', es: 'Construcción Web' },
+      { en: 'Brand Strategy', es: 'Estrategia de Marca' },
+      { en: 'Artist Management', es: 'Gestión de Artistas' }
+    ],
+    summary: {
+      en: 'Management and production firm site. Strategic artist management, film & TV scoring, and global event production for Grammy-winning artists reshaping culture.',
+      es: 'Sitio de firma de gestión y producción. Gestión estratégica de artistas, composición para cine y TV, y producción de eventos globales para artistas ganadores del Grammy.'
+    },
+    challenge: { en: 'A powerhouse management firm representing Grammy-winning artists with no website — relying entirely on industry reputation and personal networks.', es: 'Una firma de gestión que representa artistas ganadores del Grammy sin sitio web — dependiendo completamente de reputación en la industria y redes personales.' },
+    goal: { en: 'Create a professional digital presence that reflects the caliber of the roster and attracts new management and production inquiries.', es: 'Crear una presencia digital profesional que refleje el calibre del roster y atraiga nuevas consultas de gestión y producción.' },
+    solution: { en: 'Built a roster-driven site with artist profiles, production credits, and event portfolio — designed to convey authority and cultural impact.', es: 'Construimos un sitio basado en el roster con perfiles de artistas, créditos de producción y portafolio de eventos — diseñado para transmitir autoridad e impacto cultural.' },
+    tags: ['Website', 'Management', 'Production'],
+    heroImage: '/images/in-progress/second-son.jpg',
+    images: ['/images/in-progress/second-son.jpg'],
+    websiteUrl: 'https://secondsonproductions.netlify.app/',
   }
 ];
