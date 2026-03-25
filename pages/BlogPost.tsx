@@ -53,6 +53,7 @@ const BlogPost: React.FC = () => {
         name: post.category.replace(/-/g, ' '),
       },
       inLanguage: ['en', 'es'],
+      keywords: post.tags?.join(', '),
     };
   }, [post]);
 

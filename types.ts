@@ -77,6 +77,7 @@ export interface BlogPost {
   excerpt: { en: string; es: string };
   content: { en: string; es: string };
   image?: string;
+  tags?: string[];
 }
 
 export interface ContactFormData {

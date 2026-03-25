@@ -1217,4 +1217,82 @@ export const blogPosts: BlogPost[] = [
     },
     image: '/blog/design-to-dev-pipeline.jpg',
   },
+  // ──────────────────────────────────────────────
+  // Build Notes
+  // ──────────────────────────────────────────────
+  {
+    slug: 'i-spent-a-year-building-an-agency-with-ai',
+    title: {
+      en: 'I Spent a Year Building an Agency With AI. I Still Don\'t Know What to Call Myself.',
+      es: 'Pasé un Año Construyendo una Agencia con IA. Todavía No Sé Cómo Llamar a Lo Que Hago.',
+    },
+    date: '2026-03-25',
+    author: 'Joshua Semolik',
+    category: 'build-notes',
+    pillar: 'all',
+    excerpt: {
+      en: 'Developer, designer, marketer, media buyer, copywriter — after a year of building Untold.works with AI tooling, traditional job titles don\'t fit anymore. The role is new. We\'re still defining it.',
+      es: 'Desarrollador, diseñador, marketer, media buyer, copywriter — después de un año construyendo Untold.works con herramientas de IA, los títulos de trabajo tradicionales ya no aplican. El rol es nuevo. Todavía lo estamos definiendo.',
+    },
+    content: {
+      en: `<p>A year ago I went all in. I left the safety of a job title that made sense on a resume and started building Untold.works, a digital agency in Mexico serving clients across the US and Latin America. The pitch was simple: I would build websites, run ads, handle SEO, create brands, and ship everything faster than a traditional agency because I was using AI at every layer of the process.</p>
+<p>What I did not anticipate was the identity crisis.</p>
+<h2>The Title Problem</h2>
+<p>People ask me what I do. I never know what to say.</p>
+<p>Developer? I build full-stack web products in Next.js, React, and TypeScript every day. But I also design logos in Canva, write ad copy in two languages, and set up conversion tracking in GTM. No developer I know does that.</p>
+<p>Designer? I create brand systems, choose typefaces, and obsess over spacing. But I also write MCP servers, configure CI/CD pipelines, and deploy to Netlify and Vercel. No designer I know does that either.</p>
+<p>Marketer? I run paid campaigns across Google, Meta, LinkedIn, and TikTok. I do SEO audits and build programmatic landing pages. But I also write the code those pages run on and design the visuals that go on them. That is not a marketer.</p>
+<p>The honest answer is I do all of it. Every day. And the reason that is possible is not because I am some kind of genius. It is because the tools changed.</p>
+<h2>What a Monday Actually Looks Like</h2>
+<p>Here is a real day from last month. I woke up, reviewed a client's GA4 data, adjusted their Google Ads bidding strategy, then opened VS Code and spent two hours building a new service page in Next.js. After lunch I jumped into Canva to design social posts for a product launch, wrote the copy for those posts in English and Spanish, then used Claude Code to automate the client's lead notification workflow. Before closing my laptop I deployed the site update and scheduled the social content.</p>
+<p>That is six different disciplines. It used to require six different people. Or at minimum, a developer, a designer, a media buyer, a copywriter, and a project manager to keep them all from stepping on each other.</p>
+<p>I did it between breakfast and dinner, and I did not rush. The AI tooling I use every day — Claude Code, browser automation, MCP servers, scheduled tasks, Canva's AI features — is not replacing my thinking. It is removing the friction between thinking and doing. The gap between having an idea and shipping it has collapsed.</p>
+<h2>The Roles That Did Not Exist Two Years Ago</h2>
+<p>I have been paying attention to what other people in this space call themselves, and no one has settled on a name yet. That is actually the point. The role is new. Here are the three labels I keep seeing:</p>
+<p><strong>AI-Augmented Creative Technologist.</strong> This one captures the cross-disciplinary reality. You use AI tools as force multipliers across the entire stack, from design to deploy to demand gen. It is accurate but it sounds like something you would see on a conference badge and immediately forget.</p>
+<p><strong>One-Person Agency Operator.</strong> This one resonates with me because it describes the business model, not just the skill set. You deliver what used to take a ten-person team. Dev, design, copy, ads, SEO, prospecting. The economics are different, and the speed is different, because the tools are different.</p>
+<p><strong>Vibe Coder. Vibe Builder.</strong> This term is gaining traction for people who use AI to build at speed across disciplines. It is less formal, more cultural. It captures the energy of the workflow even if it does not explain the substance.</p>
+<p>None of these are perfect. But they are closer to the truth than "web developer" or "digital marketer" or "freelance designer." Those titles describe a single lane. The thing that AI tooling enables is not staying in one lane. It is moving fluidly across all of them, because the cost of switching contexts has dropped to almost zero.</p>
+<h2>What This Means for Untold.works</h2>
+<p>When I started the agency, I positioned it as "we build websites." That was wrong. Not because we do not build websites, but because that framing undersells what actually happens.</p>
+<p>What we do is build your entire digital presence. Website, brand, content, ads, SEO, automation. End to end. And we do it faster than a traditional agency because we work differently. We are not coordinating between five departments. We are one operator moving through the full stack with AI as a force multiplier at every step.</p>
+<p>That is the real pitch for Untold.works. Not "we make websites" but "we build your digital presence end to end, faster than any traditional agency, because we work with AI at every layer."</p>
+<h2>The Uncomfortable Truth</h2>
+<p>The struggle I have been feeling, the "what do I call myself" problem, is not actually a problem. It is a signal. Traditional job titles were designed for an era when tools were specialized and expensive and you spent years mastering one of them. That era is ending.</p>
+<p>The people who will define the next decade of digital work are not specialists. They are builders who move across disciplines, who use AI to collapse the distance between idea and execution, and who ship whole products instead of components.</p>
+<p>If you are reading this and you feel the same tension, if your LinkedIn title does not capture what you actually do, if people ask "so you are a developer?" and the answer is "sort of, but also not really," welcome to the club. The role does not have a clean name yet because we are still building it.</p>
+<p>And honestly, that is the most exciting part.</p>
+<p class="text-sm text-untold-gray mt-8"><em>Joshua is the founder of Untold Works, a creative technology agency in San Miguel de Allende, Mexico.</em></p>`,
+      es: `<p>Hace un año aposté todo. Dejé la seguridad de un título de trabajo que tenía sentido en un currículum y empecé a construir Untold.works, una agencia digital en México que atiende clientes en Estados Unidos y América Latina. La propuesta era simple: construiría sitios web, manejaría publicidad, haría SEO, crearía marcas y entregaría todo más rápido que una agencia tradicional porque usaba IA en cada capa del proceso.</p>
+<p>Lo que no anticipé fue la crisis de identidad.</p>
+<h2>El Problema del Título</h2>
+<p>La gente me pregunta a qué me dedico. Nunca sé qué responder.</p>
+<p>¿Desarrollador? Construyo productos web full-stack en Next.js, React y TypeScript todos los días. Pero también diseño logos en Canva, escribo copy publicitario en dos idiomas y configuro el tracking de conversiones en GTM. Ningún desarrollador que conozco hace eso.</p>
+<p>¿Diseñador? Creo sistemas de marca, elijo tipografías y me obsesiono con el espaciado. Pero también escribo servidores MCP, configuro pipelines de CI/CD y hago deploy en Netlify y Vercel. Ningún diseñador que conozco hace eso tampoco.</p>
+<p>¿Marketer? Manejo campañas de pago en Google, Meta, LinkedIn y TikTok. Hago auditorías de SEO y construyo landing pages programáticas. Pero también escribo el código que corre esas páginas y diseño los visuales que van en ellas. Eso no es un marketer.</p>
+<p>La respuesta honesta es que hago todo. Todos los días. Y la razón por la que es posible no es porque sea un genio. Es porque las herramientas cambiaron.</p>
+<h2>Cómo Se Ve un Lunes Real</h2>
+<p>Este es un día real del mes pasado. Me desperté, revisé los datos de GA4 de un cliente, ajusté su estrategia de pujas en Google Ads, y luego abrí VS Code y pasé dos horas construyendo una nueva página de servicios en Next.js. Después de comer entré a Canva para diseñar posts de redes sociales para un lanzamiento de producto, escribí el copy en inglés y español, y luego usé Claude Code para automatizar el flujo de notificación de leads del cliente. Antes de cerrar la laptop desplegué la actualización del sitio y programé el contenido social.</p>
+<p>Son seis disciplinas diferentes. Antes requerían seis personas diferentes. O como mínimo, un desarrollador, un diseñador, un media buyer, un copywriter y un project manager para que no se pisaran entre sí.</p>
+<p>Lo hice entre el desayuno y la cena, y no me apuré. Las herramientas de IA que uso todos los días — Claude Code, automatización del navegador, servidores MCP, tareas programadas, las funciones de IA de Canva — no reemplazan mi pensamiento. Eliminan la fricción entre pensar y hacer. La distancia entre tener una idea y publicarla se colapsó.</p>
+<h2>Los Roles Que No Existían Hace Dos Años</h2>
+<p>He estado poniendo atención a cómo se llaman a sí mismas otras personas en este espacio, y nadie se ha puesto de acuerdo en un nombre todavía. Ese es precisamente el punto. El rol es nuevo. Estas son las tres etiquetas que sigo viendo:</p>
+<p><strong>AI-Augmented Creative Technologist.</strong> Esta captura la realidad multidisciplinaria. Usas herramientas de IA como multiplicadores de fuerza en todo el stack, desde diseño hasta deploy y generación de demanda. Es precisa pero suena como algo que verías en un gafete de conferencia y olvidarías inmediatamente.</p>
+<p><strong>One-Person Agency Operator.</strong> Esta me resuena porque describe el modelo de negocio, no solo las habilidades. Entregas lo que antes requería un equipo de diez personas. Dev, diseño, copy, ads, SEO, prospección. La economía es diferente, y la velocidad es diferente, porque las herramientas son diferentes.</p>
+<p><strong>Vibe Coder. Vibe Builder.</strong> Este término está ganando tracción entre la gente que usa IA para construir a velocidad a través de disciplinas. Es menos formal, más cultural. Captura la energía del flujo de trabajo aunque no explique la sustancia.</p>
+<p>Ninguno es perfecto. Pero están más cerca de la verdad que "web developer" o "digital marketer" o "freelance designer." Esos títulos describen un solo carril. Lo que las herramientas de IA permiten no es quedarse en un carril. Es moverse fluidamente entre todos, porque el costo de cambiar de contexto cayó a casi cero.</p>
+<h2>Lo Que Esto Significa para Untold.works</h2>
+<p>Cuando empecé la agencia, la posicioné como "hacemos sitios web." Eso estaba mal. No porque no hagamos sitios web, sino porque esa forma de presentarlo subestima lo que realmente pasa.</p>
+<p>Lo que hacemos es construir toda tu presencia digital. Sitio web, marca, contenido, publicidad, SEO, automatización. De punta a punta. Y lo hacemos más rápido que una agencia tradicional porque trabajamos diferente. No estamos coordinando entre cinco departamentos. Somos un operador moviéndose por todo el stack con IA como multiplicador de fuerza en cada paso.</p>
+<p>Ese es el verdadero pitch de Untold.works. No "hacemos sitios web" sino "construimos tu presencia digital de punta a punta, más rápido que cualquier agencia tradicional, porque trabajamos con IA en cada capa."</p>
+<h2>La Verdad Incómoda</h2>
+<p>La tensión que he sentido, el problema de "cómo me llamo," en realidad no es un problema. Es una señal. Los títulos de trabajo tradicionales fueron diseñados para una era en la que las herramientas eran especializadas y caras y pasabas años dominando una sola. Esa era está terminando.</p>
+<p>Las personas que definirán la próxima década del trabajo digital no son especialistas. Son constructores que se mueven entre disciplinas, que usan IA para colapsar la distancia entre idea y ejecución, y que entregan productos completos en vez de componentes.</p>
+<p>Si estás leyendo esto y sientes la misma tensión, si tu título de LinkedIn no captura lo que realmente haces, si la gente te pregunta "¿entonces eres desarrollador?" y la respuesta es "más o menos, pero en realidad no," bienvenido al club. El rol no tiene un nombre limpio todavía porque todavía lo estamos construyendo.</p>
+<p>Y honestamente, esa es la parte más emocionante.</p>
+<p class="text-sm text-untold-gray mt-8"><em>Joshua es el fundador de Untold Works, una agencia de tecnología creativa en San Miguel de Allende, México.</em></p>`,
+    },
+    image: '/blog/ai-native-builder.jpg',
+    tags: ['AI native agency', 'one person agency', 'vibe builder', 'AI augmented creative technologist', 'AI agency founder', 'creative technology'],
+  },
 ];

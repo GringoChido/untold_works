@@ -352,6 +352,16 @@ export const whyUntold = {
         en: 'No lock-in. Full documentation. Complete ownership transfer.',
         es: 'Sin ataduras. Documentación completa. Transferencia total de propiedad.'
       }
+    },
+    {
+      title: {
+        en: 'One Builder. Every Discipline.',
+        es: 'Un Constructor. Cada Disciplina.'
+      },
+      description: {
+        en: 'Brand, dev, ads, SEO, content, deploy — one person with AI tools, not a chain of departments. Faster decisions. Zero telephone game.',
+        es: 'Marca, desarrollo, anuncios, SEO, contenido, deploy — una persona con herramientas de IA, no una cadena de departamentos. Decisiones más rápidas. Sin teléfono descompuesto.'
+      }
     }
   ],
   closingHeadline: {
@@ -614,6 +624,38 @@ export const aboutPage = {
         program: { en: 'Broadcast Journalism / Music', es: 'Periodismo de Transmisiones / Música' }
       }
     }
+  },
+  howWeWorkDifferently: {
+    eyebrow: {
+      en: 'HOW WE WORK // DIFFERENTLY',
+      es: 'CÓMO TRABAJAMOS // DIFERENTE'
+    },
+    headline: {
+      en: 'One Builder.\nEvery Discipline.',
+      es: 'Un Constructor.\nCada Disciplina.'
+    },
+    lead: {
+      en: 'Most agencies hand your project through a chain of departments — strategy to design to dev to QA to marketing. Every handoff loses context. Every layer adds time and cost.',
+      es: 'La mayoría de las agencias pasan tu proyecto por una cadena de departamentos — estrategia a diseño a desarrollo a QA a marketing. Cada traspaso pierde contexto. Cada capa agrega tiempo y costo.'
+    },
+    thesis: {
+      en: 'Untold.works is built differently. One senior builder handles your entire project — brand, website, content, ads, SEO, deployment — using AI as a force multiplier across every discipline. The same person who designs your brand identity also writes the code, launches the ads, and optimizes for search.',
+      es: 'Untold.works funciona diferente. Un constructor senior maneja tu proyecto completo — marca, sitio web, contenido, anuncios, SEO, despliegue — usando IA como multiplicador de fuerza en cada disciplina. La misma persona que diseña tu identidad de marca también escribe el código, lanza los anuncios y optimiza para buscadores.'
+    },
+    points: [
+      {
+        title: { en: 'No Telephone Game', es: 'Sin Teléfono Descompuesto' },
+        description: { en: 'Your brand vision stays intact from strategy to code to launch. One person, one thread, zero lost context.', es: 'Tu visión de marca se mantiene intacta de la estrategia al código al lanzamiento. Una persona, un hilo, cero contexto perdido.' }
+      },
+      {
+        title: { en: 'AI-Amplified, Not AI-Replaced', es: 'Amplificado por IA, No Reemplazado' },
+        description: { en: '25 years of creative direction guides every AI tool we use. The experience decides what to build. The AI helps build it faster.', es: '25 años de dirección creativa guían cada herramienta de IA que usamos. La experiencia decide qué construir. La IA ayuda a construirlo más rápido.' }
+      },
+      {
+        title: { en: 'Ship Weeks, Not Months', es: 'Entregamos en Semanas, No Meses' },
+        description: { en: 'No waiting on department approvals or agency timelines. Decisions happen in real time. Full business systems ship in weeks.', es: 'Sin esperar aprobaciones de departamentos ni calendarios de agencia. Las decisiones suceden en tiempo real. Sistemas de negocio completos se entregan en semanas.' }
+      }
+    ]
   },
   closing: {
     headline: {

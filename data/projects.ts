@@ -252,5 +252,71 @@ export const projects: Project[] = [
       'Noxguard mobile app interface mockup',
       'Noxguard DEF product packaging on pallet'
     ]
+  },
+  {
+    id: 'derrick-hodge',
+    name: { en: 'Derrick Hodge', es: 'Derrick Hodge' },
+    client: { en: 'Derrick Hodge / Blue Note Records', es: 'Derrick Hodge / Blue Note Records' },
+    timeline: 'Q1 2026 - Active',
+    pillar: 'professional-services',
+    stack: ['Next.js', 'React', 'TypeScript', 'Tailwind CSS', 'Framer Motion', 'Netlify'],
+    services: [
+      { en: 'Brand Identity', es: 'Identidad de Marca' },
+      { en: 'Website Design & Dev', es: 'Diseño y Desarrollo Web' },
+      { en: 'Content Strategy', es: 'Estrategia de Contenido' }
+    ],
+    summary: {
+      en: 'Artist site for a Blue Note Recording Artist, composer, and orchestrator bridging hip-hop and classical. Founder of Color of Noize — a 100-musician orchestra.',
+      es: 'Sitio de artista para un artista de Blue Note Records, compositor y orquestador que une el hip-hop y lo clásico. Fundador de Color of Noize — una orquesta de 100 músicos.'
+    },
+    challenge: {
+      en: 'Derrick Hodge is a Grammy-winning artist whose work spans genres, ensembles, and institutions — but had no central digital presence that captured the full scope of his creative output.',
+      es: 'Derrick Hodge es un artista ganador del Grammy cuyo trabajo abarca géneros, ensambles e instituciones — pero no tenía una presencia digital central que capturara el alcance completo de su producción creativa.'
+    },
+    goal: {
+      en: 'Build a brand-first artist platform that positions Hodge as a composer, orchestrator, and cultural architect — not just a bassist.',
+      es: 'Construir una plataforma de artista que posicione a Hodge como compositor, orquestador y arquitecto cultural — no solo un bajista.'
+    },
+    solution: {
+      en: 'Designed and built a cinematic artist site with integrated discography, video archive, and touring presence. Brand identity reflects the intersection of hip-hop precision and orchestral depth.',
+      es: 'Diseñamos y construimos un sitio de artista cinematográfico con discografía integrada, archivo de video y presencia de giras. La identidad de marca refleja la intersección de la precisión del hip-hop y la profundidad orquestal.'
+    },
+    tags: ['Artist Site', 'Music', 'Brand', 'Next.js'],
+    heroImage: '/images/in-progress/derrick-hodge.jpg',
+    images: ['/images/in-progress/derrick-hodge.jpg'],
+    websiteUrl: 'https://derrickhodge.netlify.app/',
+  },
+  {
+    id: 'casa-schuck',
+    name: { en: 'Casa Schuck Hotel', es: 'Hotel Casa Schuck' },
+    client: { en: 'Casa Schuck', es: 'Casa Schuck' },
+    timeline: 'Q1 2026 - Active',
+    pillar: 'small-business',
+    stack: ['Next.js', 'React', 'TypeScript', 'Tailwind CSS', 'Booking Engine', 'Netlify'],
+    services: [
+      { en: 'Website Rebuild', es: 'Reconstrucción Web' },
+      { en: 'Booking System', es: 'Sistema de Reservaciones' },
+      { en: 'Marketing Strategy', es: 'Estrategia de Marketing' }
+    ],
+    summary: {
+      en: 'Complete website rebuild, marketing strategy, and backend booking system for a boutique hacienda bed & breakfast in the heart of San Miguel de Allende.',
+      es: 'Reconstrucción completa de sitio web, estrategia de marketing y sistema de reservaciones para una hacienda boutique bed & breakfast en el corazón de San Miguel de Allende.'
+    },
+    challenge: {
+      en: 'Casa Schuck is a beloved boutique hotel in San Miguel de Allende with strong word-of-mouth but an outdated website that failed to convert direct bookings, losing revenue to OTA commissions.',
+      es: 'Casa Schuck es un querido hotel boutique en San Miguel de Allende con fuerte recomendación de boca en boca pero un sitio web desactualizado que no convertía reservaciones directas, perdiendo ingresos en comisiones de OTAs.'
+    },
+    goal: {
+      en: 'Build a bilingual digital presence that captures the hacienda experience and drives direct bookings away from third-party platforms.',
+      es: 'Construir una presencia digital bilingüe que capture la experiencia de la hacienda y genere reservaciones directas fuera de plataformas de terceros.'
+    },
+    solution: {
+      en: 'Rebuilt the site from scratch with immersive photography, integrated booking engine, bilingual content, and local SEO targeting travelers searching for San Miguel de Allende accommodations.',
+      es: 'Reconstruimos el sitio desde cero con fotografía inmersiva, motor de reservaciones integrado, contenido bilingüe y SEO local dirigido a viajeros buscando alojamiento en San Miguel de Allende.'
+    },
+    tags: ['Hospitality', 'Booking System', 'Bilingual', 'Local SEO'],
+    heroImage: '/images/in-progress/casa-schuck.jpg',
+    images: ['/images/in-progress/casa-schuck.jpg'],
+    websiteUrl: 'https://csnewsite.netlify.app/en',
   }
 ];

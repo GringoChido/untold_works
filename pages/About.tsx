@@ -226,6 +226,48 @@ const AboutPage: React.FC = () => {
         </div>
       </section>
 
+      {/* How We Work Differently */}
+      <section className="px-5 sm:px-10 py-20 sm:py-32 lg:py-48 bg-untold-black text-white border-b border-white/10">
+        <div className="max-w-[1440px] mx-auto">
+          <div className="flex items-center space-x-4 mb-14">
+            <span className="w-3 h-3 rounded-full bg-untold-orange animate-pulse"></span>
+            <p className="font-mono text-[12px] uppercase tracking-[0.5em] font-bold text-white/40">
+              {t(content.howWeWorkDifferently.eyebrow)}
+            </p>
+          </div>
+
+          <div className="grid lg:grid-cols-12 gap-16 lg:gap-24">
+            <div className="lg:col-span-5">
+              <h2 className="font-sans font-black text-4xl sm:text-6xl lg:text-7xl uppercase tracking-tighter leading-[0.85] mb-8 text-white">
+                {t(content.howWeWorkDifferently.headline)}
+              </h2>
+              <p className="text-lg sm:text-xl font-serif text-white/50 leading-relaxed">
+                {t(content.howWeWorkDifferently.lead)}
+              </p>
+            </div>
+
+            <div className="lg:col-span-7">
+              <p className="text-xl sm:text-2xl font-serif text-white/70 leading-relaxed mb-12 border-l-4 border-untold-orange pl-6 sm:pl-10">
+                {t(content.howWeWorkDifferently.thesis)}
+              </p>
+
+              <div className="space-y-8">
+                {content.howWeWorkDifferently.points.map((point, idx) => (
+                  <div key={idx} className="border-l-2 border-untold-orange/30 pl-6 hover:border-untold-orange transition-colors">
+                    <h3 className="font-sans font-black text-lg uppercase tracking-tighter mb-2">
+                      {t(point.title)}
+                    </h3>
+                    <p className="font-serif italic text-white/50 text-base leading-relaxed">
+                      {t(point.description)}
+                    </p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Creative Direction — Selected Work */}
       <section className="px-5 sm:px-10 py-20 sm:py-32 border-b border-white/10 bg-untold-black">
         <div className="max-w-[1440px] mx-auto">
@@ -399,7 +441,7 @@ const AboutPage: React.FC = () => {
             {[
               { q: { en: 'Who runs Untold.works?', es: '¿Quién dirige Untold.works?' }, a: { en: 'Untold.works is led by Joshua Semolik, an AI systems architect and creative technologist with 20 years of experience spanning NBA Entertainment, global product launches at Videndum PLC, cross-border GTM strategy, and production AI systems. MIT Sloan AI Strategy. Based in San Miguel de Allende, Mexico.', es: 'Untold.works está dirigido por Joshua Semolik, un arquitecto de sistemas de IA y tecnólogo creativo con 20 años de experiencia que abarca NBA Entertainment, lanzamientos de producto globales en Videndum PLC, estrategia GTM transfronteriza y sistemas de IA en producción. MIT Sloan AI Strategy. Basado en San Miguel de Allende, México.' } },
               { q: { en: 'Can a Mexico-based agency serve US clients effectively?', es: '¿Puede una agencia en México atender clientes de EE.UU. efectivamente?' }, a: { en: 'Absolutely. We work with clients across both countries. Our bilingual team, shared time zones, and deep understanding of both markets make cross-border collaboration seamless. Many of our clients are US businesses looking to reach Mexican audiences, or Mexican businesses expanding north.', es: 'Absolutamente. Trabajamos con clientes en ambos países. Nuestro equipo bilingüe, husos horarios compartidos y profundo entendimiento de ambos mercados hacen que la colaboración transfronteriza sea fluida. Muchos de nuestros clientes son negocios de EE.UU. que buscan audiencias mexicanas, o negocios mexicanos expandiéndose al norte.' } },
-              { q: { en: 'What makes Untold.works different from other agencies?', es: '¿Qué hace diferente a Untold.works de otras agencias?' }, a: { en: 'We lead with brand and storytelling, then layer in AI technology. Most agencies do one or the other. We also transfer full ownership of everything we build — no lock-in, no monthly fees for access to your own systems.', es: 'Lideramos con marca y narrativa, después integramos tecnología de IA. La mayoría de las agencias hacen una cosa u otra. También transferimos propiedad total de todo lo que construimos — sin ataduras, sin cuotas mensuales por acceso a tus propios sistemas.' } },
+              { q: { en: 'What makes Untold.works different from other agencies?', es: '¿Qué hace diferente a Untold.works de otras agencias?' }, a: { en: 'One senior builder handles your entire project — brand, website, content, ads, SEO, deployment — using AI as a force multiplier. No chain of departments, no lost context between handoffs. We also transfer full ownership of everything we build — no lock-in, no monthly fees.', es: 'Un constructor senior maneja tu proyecto completo — marca, sitio web, contenido, anuncios, SEO, despliegue — usando IA como multiplicador de fuerza. Sin cadena de departamentos, sin contexto perdido entre traspasos. También transferimos propiedad total de todo lo que construimos — sin ataduras, sin cuotas mensuales.' } },
               { q: { en: 'What industries do you have experience in?', es: '¿En qué industrias tienen experiencia?' }, a: { en: 'Professional services (law firms, consultants, therapists), hospitality (hotels, restaurants), retail, music and entertainment, e-commerce, and enterprise operations. Our portfolio includes projects across all of these sectors.', es: 'Servicios profesionales (despachos, consultores, terapeutas), hospitalidad (hoteles, restaurantes), retail, música y entretenimiento, e-commerce y operaciones empresariales. Nuestro portafolio incluye proyectos en todos estos sectores.' } },
               { q: { en: 'Do you work with startups or only established businesses?', es: '¿Trabajan con startups o solo negocios establecidos?' }, a: { en: 'Both. We work with solo practitioners launching their first practice, growing small businesses adding AI systems, and established enterprises modernizing operations. Our solutions scale to match where you are today.', es: 'Ambos. Trabajamos con profesionales independientes lanzando su primera práctica, pequeños negocios en crecimiento agregando sistemas de IA, y empresas establecidas modernizando operaciones. Nuestras soluciones se adaptan a donde estés hoy.' } },
             ].map((faq, idx) => (
