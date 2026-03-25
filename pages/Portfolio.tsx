@@ -4,8 +4,9 @@ import { useLanguage } from '../App';
 import { usePageMeta } from '../hooks/usePageMeta';
 import * as i18n from '../i18n';
 import { projects } from '../data/projects';
+import { inProgressProjects, verticalLabels, verticalOrder } from '../data/in-progress-projects';
 import StereoTeaser from '../components/StereoTeaser';
-import { Pillar } from '../types';
+import { Pillar, ProjectVertical } from '../types';
 
 const pillarFilters: { key: Pillar | 'all'; label: { en: string; es: string } }[] = [
   { key: 'all', label: { en: 'All Projects', es: 'Todos los Proyectos' } },
@@ -73,9 +74,9 @@ const Portfolio: React.FC = () => {
         </div>
       </section>
 
-      {/* Grid */}
+      {/* Completed Projects Grid — compact cards */}
       <section className="px-5 sm:px-10 py-10">
-        <div className="max-w-[1440px] mx-auto grid md:grid-cols-2 gap-px bg-white/10 border border-white/10">
+        <div className="max-w-[1440px] mx-auto grid md:grid-cols-2 lg:grid-cols-3 gap-px bg-white/10 border border-white/10">
           {filtered.map((project, idx) => (
             <Link
               key={project.id}
@@ -83,7 +84,7 @@ const Portfolio: React.FC = () => {
               className="group relative bg-untold-black flex flex-col hover:bg-white/5 transition-all duration-700"
             >
               {/* Cover Image */}
-              <div className="aspect-[16/10] overflow-hidden border-b border-white/10">
+              <div className="aspect-[16/9] overflow-hidden border-b border-white/10">
                 <img
                   src={project.heroImage || project.images[0]}
                   alt={t(project.name)}
@@ -93,41 +94,41 @@ const Portfolio: React.FC = () => {
               </div>
 
               {/* Card Content */}
-              <div className="p-6 sm:p-10 lg:p-14 flex flex-col flex-1">
-                <div className="flex justify-between items-start mb-8">
-                  <span className="font-mono text-[11px] uppercase tracking-[0.5em] text-white/30">PROJECT_00{idx + 1}</span>
-                  <div className="w-10 h-10 border border-white/10 flex items-center justify-center group-hover:bg-untold-orange group-hover:border-untold-orange transition-all duration-500">
-                    <span className="text-lg group-hover:scale-125 transition-transform duration-500">&rarr;</span>
+              <div className="p-5 sm:p-6 lg:p-8 flex flex-col flex-1">
+                <div className="flex justify-between items-start mb-4">
+                  <span className="font-mono text-[10px] uppercase tracking-[0.4em] text-white/30">PROJECT_00{idx + 1}</span>
+                  <div className="w-8 h-8 border border-white/10 flex items-center justify-center group-hover:bg-untold-orange group-hover:border-untold-orange transition-all duration-500">
+                    <span className="text-sm group-hover:scale-125 transition-transform duration-500">&rarr;</span>
                   </div>
                 </div>
 
-                <h2 className="font-sans font-black text-3xl lg:text-5xl leading-[0.95] uppercase tracking-tighter mb-6 transition-colors group-hover:text-untold-orange">
+                <h2 className="font-sans font-black text-xl sm:text-2xl lg:text-3xl leading-[0.95] uppercase tracking-tighter mb-3 transition-colors group-hover:text-untold-orange">
                   {t(project.name)}
                 </h2>
 
-                <p className="text-lg lg:text-xl font-serif text-untold-beige/60 leading-relaxed mb-8">
+                <p className="text-sm lg:text-base font-serif text-untold-beige/60 leading-relaxed mb-5 line-clamp-3">
                   {t(project.summary)}
                 </p>
 
                 {project.metrics && (
-                  <div className="flex gap-8 mb-8 pt-6 border-t border-white/5">
+                  <div className="flex gap-6 mb-5 pt-4 border-t border-white/5">
                     {project.metrics.map((metric, mIdx) => (
                       <div key={mIdx}>
-                        <span className="block font-mono text-[10px] uppercase tracking-[0.3em] text-white/30 mb-2">{t(metric.label)}</span>
-                        <span className="text-2xl lg:text-3xl font-sans font-black tracking-tighter text-untold-orange">{metric.value}</span>
+                        <span className="block font-mono text-[9px] uppercase tracking-[0.3em] text-white/30 mb-1">{t(metric.label)}</span>
+                        <span className="text-xl font-sans font-black tracking-tighter text-untold-orange">{metric.value}</span>
                       </div>
                     ))}
                   </div>
                 )}
 
-                <div className="flex flex-wrap gap-3 mt-auto">
+                <div className="flex flex-wrap gap-2 mt-auto">
                   {project.pillar && (
-                    <span className="border border-untold-orange/30 bg-untold-orange/10 px-4 py-1 font-mono text-[10px] uppercase tracking-[0.2em] text-untold-orange">
+                    <span className="border border-untold-orange/30 bg-untold-orange/10 px-3 py-0.5 font-mono text-[9px] uppercase tracking-[0.2em] text-untold-orange">
                       {project.pillar.replace(/-/g, ' ')}
                     </span>
                   )}
                   {project.tags.map(tag => (
-                    <span key={tag} className="border border-white/10 px-4 py-1.5 font-mono text-[10px] uppercase tracking-[0.3em] text-white/30 group-hover:text-white group-hover:border-white/50 transition-colors">
+                    <span key={tag} className="border border-white/10 px-3 py-1 font-mono text-[9px] uppercase tracking-[0.2em] text-white/30 group-hover:text-white group-hover:border-white/50 transition-colors">
                       {tag}
                     </span>
                   ))}
@@ -136,70 +137,120 @@ const Portfolio: React.FC = () => {
             </Link>
           ))}
 
-          {/* Casa Schuck — In Process */}
-          {(activePillar === 'all' || activePillar === 'small-business') && (
-            <div className="relative bg-untold-black flex flex-col cursor-default border-l border-untold-orange/20">
-              {/* Cover Image with "In Process" Overlay */}
-              <div className="aspect-[16/10] overflow-hidden border-b border-white/10 relative">
-                <img
-                  src="/images/casa-schuck-preview.webp"
-                  alt="Casa Schuck Hotel — current website"
-                  loading="lazy"
-                  className="w-full h-full object-cover object-top opacity-40"
-                />
-                <div className="absolute inset-0 bg-black/50 flex flex-col items-center justify-center">
-                  <div className="flex items-center gap-3 mb-4">
-                    <span className="w-3 h-3 rounded-full bg-untold-orange animate-pulse"></span>
-                    <span className="font-mono text-[11px] uppercase tracking-[0.5em] text-untold-orange font-bold">
-                      {t({ en: 'Currently Building', es: 'En Construcción' })}
-                    </span>
-                  </div>
-                  <h3 className="font-sans font-black text-4xl sm:text-5xl lg:text-7xl uppercase tracking-tighter text-white text-center leading-[0.85]">
-                    {t({ en: 'In\nProcess', es: 'En\nProceso' })}
-                  </h3>
+        </div>
+      </section>
+
+      {/* Currently Building Section */}
+      <section className="px-5 sm:px-10 py-20 sm:py-32 border-t border-untold-orange/20">
+        <div className="max-w-[1440px] mx-auto">
+          {/* Section Header */}
+          <div className="flex items-center gap-4 mb-6">
+            <span className="w-3 h-3 rounded-full bg-untold-orange animate-pulse"></span>
+            <p className="font-mono text-[12px] uppercase tracking-[0.5em] font-bold text-untold-orange">
+              {t({ en: 'CURRENTLY BUILDING', es: 'EN CONSTRUCCIÓN' })}
+            </p>
+          </div>
+          <h2 className="font-sans font-black text-[clamp(2rem,5vw,80px)] leading-[0.85] mb-6 tracking-tighter uppercase">
+            {t({ en: "What's on\nthe Bench", es: 'Lo Que Estamos\nConstruyendo' })}
+          </h2>
+          <p className="text-xl lg:text-2xl font-serif italic text-white/50 max-w-4xl mb-20">
+            {t({
+              en: 'Active client builds across industries — from game room showrooms to Grammy-winning artist platforms.',
+              es: 'Proyectos activos para clientes en múltiples industrias — desde salas de juegos hasta plataformas para artistas ganadores del Grammy.'
+            })}
+          </p>
+
+          {/* Vertical Groups */}
+          {verticalOrder.map((vertical) => {
+            const groupProjects = inProgressProjects.filter((p) => p.vertical === vertical);
+            if (groupProjects.length === 0) return null;
+            return (
+              <div key={vertical} className="mb-16 last:mb-0">
+                {/* Vertical Label */}
+                <div className="flex items-center gap-3 mb-8">
+                  <div className="w-8 h-px bg-untold-orange/50"></div>
+                  <span className="font-mono text-[11px] uppercase tracking-[0.4em] text-white/40 font-bold">
+                    {t(verticalLabels[vertical])}
+                  </span>
+                  <div className="flex-1 h-px bg-white/5"></div>
                 </div>
-              </div>
 
-              {/* Card Content */}
-              <div className="p-6 sm:p-10 lg:p-14 flex flex-col flex-1">
-                <div className="flex justify-between items-start mb-8">
-                  <span className="font-mono text-[11px] uppercase tracking-[0.5em] text-white/30">PROJECT_00{filtered.length + 1}</span>
-                  <div className="flex items-center gap-2">
-                    <span className="w-2 h-2 rounded-full bg-untold-orange animate-pulse"></span>
-                    <span className="font-mono text-[10px] uppercase tracking-[0.3em] text-untold-orange font-bold">
-                      {t({ en: 'Active', es: 'Activo' })}
-                    </span>
-                  </div>
-                </div>
+                {/* Cards Grid */}
+                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-px bg-white/10 border border-white/10">
+                  {groupProjects.map((project) => {
+                    const isExternal = project.websiteUrl.length > 0;
+                    const CardWrapper = isExternal ? 'a' : 'div';
+                    const cardProps = isExternal
+                      ? { href: project.websiteUrl, target: '_blank', rel: 'noopener noreferrer' }
+                      : {};
 
-                <h2 className="font-sans font-black text-3xl lg:text-5xl leading-[0.95] uppercase tracking-tighter mb-6 text-white">
-                  {t({ en: 'Casa Schuck Hotel', es: 'Hotel Casa Schuck' })}
-                </h2>
+                    return (
+                      <CardWrapper
+                        key={project.id}
+                        {...cardProps}
+                        className={`group relative bg-untold-black border-l-2 border-l-untold-orange/30 flex flex-col ${
+                          isExternal ? 'hover:bg-white/5 cursor-pointer' : 'cursor-default'
+                        } transition-all duration-500`}
+                      >
+                        {/* Preview Image */}
+                        {project.previewImage && (
+                          <div className="aspect-[16/9] overflow-hidden border-b border-white/10 relative">
+                            <img
+                              src={project.previewImage}
+                              alt={t(project.name)}
+                              loading="lazy"
+                              className="w-full h-full object-cover opacity-70 group-hover:opacity-100 group-hover:scale-105 transition-all duration-700"
+                            />
+                            <div className="absolute top-3 left-3 flex items-center gap-2 bg-black/60 backdrop-blur-sm px-3 py-1.5 rounded-sm">
+                              <span className="w-2 h-2 rounded-full bg-untold-orange animate-pulse"></span>
+                              <span className="font-mono text-[9px] uppercase tracking-[0.3em] text-untold-orange font-bold">
+                                {t({ en: 'Active Build', es: 'En Construcción' })}
+                              </span>
+                            </div>
+                            {isExternal && (
+                              <div className="absolute top-3 right-3 w-8 h-8 bg-black/60 backdrop-blur-sm border border-white/10 flex items-center justify-center group-hover:bg-untold-orange group-hover:border-untold-orange transition-all duration-500">
+                                <span className="text-sm group-hover:scale-125 transition-transform duration-500">&#x2197;</span>
+                              </div>
+                            )}
+                          </div>
+                        )}
 
-                <p className="text-lg lg:text-xl font-serif text-untold-beige/60 leading-relaxed mb-8 italic">
-                  {t({
-                    en: 'Complete website rebuild, marketing strategy, and backend booking system for a boutique hacienda bed & breakfast in the heart of San Miguel de Allende.',
-                    es: 'Reconstrucción completa de sitio web, estrategia de marketing y sistema de reservaciones para una hacienda boutique bed & breakfast en el corazón de San Miguel de Allende.'
+                        {/* Card Content */}
+                        <div className="p-5 sm:p-6 flex flex-col flex-1">
+                          <h3 className="font-sans font-black text-lg sm:text-xl leading-[0.95] uppercase tracking-tighter mb-3 group-hover:text-untold-orange transition-colors">
+                            {t(project.name)}
+                          </h3>
+
+                          <p className="text-sm font-serif text-untold-beige/50 leading-relaxed mb-5 flex-1 line-clamp-3">
+                            {t(project.description)}
+                          </p>
+
+                          <div className="flex flex-wrap gap-2">
+                            {project.tags.map((tag) => (
+                              <span
+                                key={tag}
+                                className="border border-white/10 px-3 py-1 font-mono text-[9px] uppercase tracking-[0.2em] text-white/30 group-hover:text-white/60 group-hover:border-white/30 transition-colors"
+                              >
+                                {tag}
+                              </span>
+                            ))}
+                          </div>
+
+                          {isExternal && (
+                            <div className="mt-4 pt-4 border-t border-white/5">
+                              <span className="font-mono text-[10px] uppercase tracking-[0.3em] text-white/30 group-hover:text-untold-orange transition-colors">
+                                {t({ en: 'Visit Live Preview', es: 'Ver Vista Previa' })} &rarr;
+                              </span>
+                            </div>
+                          )}
+                        </div>
+                      </CardWrapper>
+                    );
                   })}
-                </p>
-
-                <div className="flex flex-wrap gap-3 mt-auto">
-                  <span className="border border-untold-orange bg-untold-orange/20 px-4 py-1.5 font-mono text-[10px] uppercase tracking-[0.3em] text-untold-orange font-bold">
-                    {t({ en: 'In Process', es: 'En Proceso' })}
-                  </span>
-                  <span className="border border-white/10 px-4 py-1.5 font-mono text-[10px] uppercase tracking-[0.3em] text-white/30">
-                    Website
-                  </span>
-                  <span className="border border-white/10 px-4 py-1.5 font-mono text-[10px] uppercase tracking-[0.3em] text-white/30">
-                    Booking System
-                  </span>
-                  <span className="border border-white/10 px-4 py-1.5 font-mono text-[10px] uppercase tracking-[0.3em] text-white/30">
-                    Marketing
-                  </span>
                 </div>
               </div>
-            </div>
-          )}
+            );
+          })}
         </div>
       </section>
 

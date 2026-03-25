@@ -3,6 +3,18 @@ export type Language = 'en' | 'es';
 
 export type Pillar = 'professional-services' | 'small-business' | 'enterprise' | 'all';
 
+export type ProjectVertical = 'game-room' | 'music' | 'hospitality';
+
+export interface InProgressProject {
+  id: string;
+  name: { en: string; es: string };
+  description: { en: string; es: string };
+  tags: string[];
+  websiteUrl: string;
+  vertical: ProjectVertical;
+  previewImage?: string;
+}
+
 export type BlogCategory = 'build-notes' | 'aeo-search' | 'ai-for-business' | 'ai-strategy' | 'creative-technology' | 'case-studies';
 
 export interface ContentStrings {
