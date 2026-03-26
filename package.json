@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@paper-design/shaders-react": "^0.0.72",
     "clsx": "^2.1.1",
     "framer-motion": "^11.18.1",
     "lucide-react": "^0.473.0",
