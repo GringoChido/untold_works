@@ -24,11 +24,18 @@ const SanMiguelDeAllende = lazy(() => import('./pages/locations/SanMiguelDeAllen
 const Queretaro = lazy(() => import('./pages/locations/Queretaro'));
 const MexicoCity = lazy(() => import('./pages/locations/MexicoCity'));
 const UnitedStates = lazy(() => import('./pages/locations/UnitedStates'));
+const NetworkSystems = lazy(() => import('./pages/NetworkSystems'));
 const SeoAeo = lazy(() => import('./pages/SeoAeo'));
 const SocialMedia = lazy(() => import('./pages/SocialMedia'));
 const Ads = lazy(() => import('./pages/Ads'));
 const Dashboard = lazy(() => import('./pages/Dashboard'));
 const Websites = lazy(() => import('./pages/Websites'));
+const Copywriting = lazy(() => import('./pages/Copywriting'));
+const AiContent = lazy(() => import('./pages/AiContent'));
+const SalesEnablement = lazy(() => import('./pages/SalesEnablement'));
+const MobileApps = lazy(() => import('./pages/MobileApps'));
+const Hosting = lazy(() => import('./pages/Hosting'));
+const ReviewReputation = lazy(() => import('./pages/ReviewReputation'));
 
 interface LanguageContextType {
   lang: Language;
@@ -74,6 +81,7 @@ const AppLayout: React.FC = () => {
         <Suspense fallback={<PageLoader />}>
           <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="/network-systems" element={<NetworkSystems />} />
             <Route path="/solutions" element={<Solutions />} />
             <Route path="/solutions/professional-services" element={<ProfessionalServices />} />
             <Route path="/solutions/small-business" element={<SmallBusiness />} />
@@ -96,6 +104,12 @@ const AppLayout: React.FC = () => {
             <Route path="/social-media" element={<SocialMedia />} />
             <Route path="/ads" element={<Ads />} />
             <Route path="/dashboard" element={<Dashboard />} />
+            <Route path="/copywriting" element={<Copywriting />} />
+            <Route path="/ai-content" element={<AiContent />} />
+            <Route path="/sales-enablement" element={<SalesEnablement />} />
+            <Route path="/mobile-apps" element={<MobileApps />} />
+            <Route path="/hosting" element={<Hosting />} />
+            <Route path="/review-reputation" element={<ReviewReputation />} />
             <Route path="/analog" element={<StereoPage />} />
             <Route path="/slides" element={<SlidesPage />} />
           </Routes>

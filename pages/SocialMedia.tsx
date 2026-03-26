@@ -5,6 +5,7 @@ import { usePageMeta } from '../hooks/usePageMeta';
 import QuickLeadForm from '../components/QuickLeadForm';
 import Testimonials from '../components/Testimonials';
 import Breadcrumbs from '../components/Breadcrumbs';
+import NetworkConnector from '../components/NetworkConnector';
 const SocialMedia: React.FC = () => {
   const { t } = useLanguage();
 
@@ -524,6 +525,21 @@ const SocialMedia: React.FC = () => {
           </div>
         </div>
       </section>
+
+      {/* ── Network Systems Connector ── */}
+      <NetworkConnector
+        capability={{ en: 'Social Media', es: 'Redes Sociales' }}
+        networkDescription={{
+          en: 'For business networks, we coordinate social media across every location. Campaign assets deploy simultaneously, brand voice stays consistent, and each location gets platform-native content without having to create it themselves. One strategy, network-wide execution.',
+          es: 'Para redes de negocios, coordinamos las redes sociales en cada ubicación. Los materiales de campaña se despliegan simultáneamente, la voz de marca permanece consistente y cada ubicación recibe contenido nativo para cada plataforma sin tener que crearlo ellos mismos. Una estrategia, ejecución a nivel de red.',
+        }}
+        relatedCapabilities={[
+          { name: { en: 'Website Design & Rebuild', es: 'Diseño y Reconstrucción Web' }, path: '/websites' },
+          { name: { en: 'SEO, AEO & GEO', es: 'SEO, AEO y GEO' }, path: '/seo-aeo' },
+          { name: { en: 'Paid Advertising', es: 'Publicidad Pagada' }, path: '/ads' },
+          { name: { en: 'Dashboard & Intelligence', es: 'Dashboard e Inteligencia' }, path: '/dashboard' },
+        ]}
+      />
 
       {/* ── Quick Lead Form ── */}
       <section className="bg-untold-black text-white px-5 sm:px-10 py-16 sm:py-24">

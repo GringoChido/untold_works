@@ -33,6 +33,14 @@ const Navbar: React.FC = () => {
           {/* Desktop Links */}
           <div className="hidden lg:flex items-center space-x-16 xl:space-x-20">
             <div className="flex items-center space-x-10 xl:space-x-12">
+              {/* Network Systems — Flagship */}
+              <Link
+                to="/network-systems"
+                className="text-[12px] font-mono font-bold uppercase tracking-[0.3em] text-untold-orange hover:text-untold-black transition-colors duration-300"
+              >
+                {t({ en: 'Network Systems', es: 'Network Systems' })}
+              </Link>
+
               {/* Solutions Dropdown */}
               <div
                 className="relative"
@@ -152,6 +160,15 @@ const Navbar: React.FC = () => {
         {/* Mobile Menu */}
         {isMenuOpen && (
           <div className="lg:hidden fixed inset-x-0 top-[80px] sm:top-[96px] h-screen bg-untold-beige z-40 flex flex-col p-6 sm:p-12 space-y-6 sm:space-y-8 animate-in slide-in-from-top duration-300 overflow-y-auto pb-40">
+            {/* Network Systems — Flagship */}
+            <Link
+              to="/network-systems"
+              className="text-4xl sm:text-6xl font-sans font-black uppercase tracking-tighter text-untold-orange hover:text-untold-black transition-colors"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              {t({ en: 'Network Systems', es: 'Network Systems' })}
+            </Link>
+
             {/* Solutions expandable */}
             <div>
               <div className="flex items-center justify-between w-full">

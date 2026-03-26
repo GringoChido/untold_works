@@ -36,8 +36,8 @@ export const footer = {
 
 export const hero = {
   eyebrow: {
-    en: 'Boutique AI Agency — Mexico City / San Miguel de Allende, Mexico',
-    es: 'Agencia Boutique de IA — Ciudad de México / San Miguel de Allende, México'
+    en: 'AI-Powered Business Systems — Mexico City & United States',
+    es: 'Sistemas de Negocio con IA — Ciudad de México y Estados Unidos'
   },
   headline: {
     en: 'What if Your Business Ran Itself?',
@@ -67,8 +67,8 @@ export const hero = {
 
 export const locationBadge = {
   text: {
-    en: 'A boutique agency based in Mexico City and San Miguel de Allende, serving businesses across Mexico and the United States.',
-    es: 'Una agencia boutique con sede en Ciudad de M\u00e9xico y San Miguel de Allende, atendiendo negocios en M\u00e9xico y Estados Unidos.'
+    en: 'AI-powered business systems for companies across Mexico and the United States. Network systems, websites, dashboards, and digital infrastructure.',
+    es: 'Sistemas de negocio con IA para empresas en México y Estados Unidos. Network systems, sitios web, dashboards e infraestructura digital.'
   }
 };
 
@@ -530,8 +530,8 @@ export const aboutPage = {
       es: '¿Quién Está Detrás de Untold.works?'
     },
     hook: {
-      en: 'A boutique team based in San Miguel de Allende, building AI-powered business ecosystems for companies across Mexico and the United States.',
-      es: 'Un equipo boutique con sede en San Miguel de Allende, construyendo ecosistemas empresariales con IA para empresas en México y Estados Unidos.'
+      en: 'Building AI-powered business systems for companies across Mexico and the United States. From network-wide digital infrastructure to individual business platforms.',
+      es: 'Construyendo sistemas de negocio con IA para empresas en México y Estados Unidos. Desde infraestructura digital para redes hasta plataformas de negocio individuales.'
     },
     regional: {
       en: 'We bring decades of experience in branding, creative direction, and technology — combined into systems that actually work for real businesses.',
@@ -762,12 +762,12 @@ export const blogPage = {
 export const seo = {
   home: {
     title: {
-      en: 'AI-Powered Business Ecosystems | Brand, Website, AI Systems — Untold.works',
-      es: 'Ecosistemas de Negocio con IA | Marca, Web, Sistemas de IA — Untold.works'
+      en: 'AI-Powered Business Systems | Network Systems, Websites, Dashboards — Untold.works',
+      es: 'Sistemas de Negocio con IA | Network Systems, Sitios Web, Dashboards — Untold.works'
     },
     description: {
-      en: 'Boutique AI agency building brand-first business ecosystems — websites, AI workflows, CRM, and dashboards for businesses across Mexico and the US. The first AEO agency in Mexico.',
-      es: 'Agencia boutique de IA que construye ecosistemas de negocio — sitios web, flujos de IA, CRM y dashboards para negocios en México y EE. UU. La primera agencia de AEO en México.'
+      en: 'AI-powered digital systems for business networks and individual companies. Network Systems for manufacturers, franchise groups, and multi-location brands. Websites, SEO/AEO/GEO, dashboards, sales enablement, and mobile apps. Mexico City and United States.',
+      es: 'Sistemas digitales con IA para redes de negocios y empresas individuales. Network Systems para fabricantes, grupos de franquicias y marcas multi-ubicación. Sitios web, SEO/AEO/GEO, dashboards, habilitación de ventas y apps móviles. Ciudad de México y Estados Unidos.'
     }
   },
   solutions: {
@@ -832,12 +832,12 @@ export const seo = {
   },
   about: {
     title: {
-      en: 'About Untold.works | Brand-First AI Agency in Mexico',
-      es: 'Sobre Untold.works | Agencia de IA con Enfoque en Marca en México'
+      en: 'About Untold.works | AI-Powered Business Systems',
+      es: 'Sobre Untold.works | Sistemas de Negocio con IA'
     },
     description: {
-      en: 'Storytellers first, technologists second. A boutique AI agency in San Miguel de Allende building brand-first business ecosystems for companies across Mexico and the US. 25 years of creative direction meets AI.',
-      es: 'Narradores primero, tecnólogos después. Agencia boutique de IA en San Miguel de Allende construyendo ecosistemas de negocio para empresas en México y EE. UU. 25 años de dirección creativa y IA.'
+      en: 'Storytellers first, technologists second. 25 years of creative direction meets AI. Building AI-powered business systems for networks and individual companies across Mexico and the United States.',
+      es: 'Narradores primero, tecnólogos después. 25 años de dirección creativa y IA. Construyendo sistemas de negocio con IA para redes y empresas individuales en México y Estados Unidos.'
     }
   },
   contact: {
@@ -846,8 +846,8 @@ export const seo = {
       es: 'Contacto Untold.works | Inicia una Conversación Sobre Tu Negocio'
     },
     description: {
-      en: 'Tell us about your business. We build AI-powered ecosystems — websites, brand identity, CRM, dashboards, SEO, and AEO. Based in San Miguel de Allende, serving Mexico and the US.',
-      es: 'Cuéntanos sobre tu negocio. Construimos ecosistemas con IA — sitios web, marca, CRM, dashboards, SEO y AEO. Con sede en San Miguel de Allende, servimos México y EE. UU.'
+      en: 'Tell us about your business or network. We build AI-powered systems — websites, dashboards, SEO/AEO/GEO, sales enablement, and mobile apps. Serving Mexico and the United States.',
+      es: 'Cuéntanos sobre tu negocio o red. Construimos sistemas con IA — sitios web, dashboards, SEO/AEO/GEO, habilitación de ventas y apps móviles. Servimos México y Estados Unidos.'
     }
   },
   workshops: {

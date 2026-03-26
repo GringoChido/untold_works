@@ -5,6 +5,7 @@ import { usePageMeta } from '../hooks/usePageMeta';
 import QuickLeadForm from '../components/QuickLeadForm';
 import Testimonials from '../components/Testimonials';
 import Breadcrumbs from '../components/Breadcrumbs';
+import NetworkConnector from '../components/NetworkConnector';
 
 const Websites: React.FC = () => {
   const { t } = useLanguage();
@@ -704,6 +705,21 @@ const Websites: React.FC = () => {
           </div>
         </div>
       </section>
+
+      {/* ── Network Systems Connector ── */}
+      <NetworkConnector
+        capability={{ en: 'Website Design & Rebuild', es: 'Diseño y Reconstrucción Web' }}
+        networkDescription={{
+          en: 'This capability powers our Network Systems offering. We deploy AI-built, brand-first websites across entire business networks — manufacturers, franchise systems, restaurant groups. One system, every location, continuously maintained. Your brand stays consistent at every touchpoint.',
+          es: 'Esta capacidad impulsa nuestra oferta de Network Systems. Desplegamos sitios web construidos con IA en toda la red de negocios — fabricantes, franquicias, grupos restauranteros. Un sistema, cada ubicación, mantenido continuamente. Tu marca permanece consistente en cada punto de contacto.',
+        }}
+        relatedCapabilities={[
+          { name: { en: 'SEO, AEO & GEO', es: 'SEO, AEO y GEO' }, path: '/seo-aeo' },
+          { name: { en: 'Dashboard & Intelligence', es: 'Dashboard e Inteligencia' }, path: '/dashboard' },
+          { name: { en: 'Social Media', es: 'Redes Sociales' }, path: '/social-media' },
+          { name: { en: 'Paid Advertising', es: 'Publicidad Pagada' }, path: '/ads' },
+        ]}
+      />
 
       {/* ── Quick Lead Form ── */}
       <section className="bg-untold-black text-white px-5 sm:px-10 py-16 sm:py-24">

@@ -5,6 +5,7 @@ import { usePageMeta } from '../hooks/usePageMeta';
 import QuickLeadForm from '../components/QuickLeadForm';
 import Testimonials from '../components/Testimonials';
 import Breadcrumbs from '../components/Breadcrumbs';
+import NetworkConnector from '../components/NetworkConnector';
 
 const Dashboard: React.FC = () => {
   const { t } = useLanguage();
@@ -460,6 +461,21 @@ const Dashboard: React.FC = () => {
           </div>
         </div>
       </section>
+
+      {/* ── Network Systems Connector ── */}
+      <NetworkConnector
+        capability={{ en: 'Dashboard & Intelligence', es: 'Dashboard e Inteligencia' }}
+        networkDescription={{
+          en: 'For business networks, we build two-tier dashboards. Each location sees their own performance — traffic, leads, sales. HQ sees the entire network: dealer rankings, market demand, product trends, and network-wide ROI. Full integration with Salesforce, HubSpot, GA4, POS, and every tool in your stack. Plus a custom AI assistant trained on your organization\'s data.',
+          es: 'Para redes de negocios, construimos dashboards de dos niveles. Cada ubicación ve su propio rendimiento — tráfico, leads, ventas. La oficina central ve toda la red: rankings de distribuidores, demanda de mercado, tendencias de productos y ROI de toda la red. Integración completa con Salesforce, HubSpot, GA4, POS y cada herramienta de tu stack. Más un asistente de IA personalizado entrenado con los datos de tu organización.',
+        }}
+        relatedCapabilities={[
+          { name: { en: 'Website Design & Rebuild', es: 'Diseño y Reconstrucción Web' }, path: '/websites' },
+          { name: { en: 'SEO, AEO & GEO', es: 'SEO, AEO y GEO' }, path: '/seo-aeo' },
+          { name: { en: 'Social Media', es: 'Redes Sociales' }, path: '/social-media' },
+          { name: { en: 'Paid Advertising', es: 'Publicidad Pagada' }, path: '/ads' },
+        ]}
+      />
 
       {/* ── Quick Lead Form ── */}
       <section className="bg-untold-black text-white px-5 sm:px-10 py-16 sm:py-24">

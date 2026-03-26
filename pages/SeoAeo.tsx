@@ -5,6 +5,7 @@ import { usePageMeta } from '../hooks/usePageMeta';
 import QuickLeadForm from '../components/QuickLeadForm';
 import Testimonials from '../components/Testimonials';
 import Breadcrumbs from '../components/Breadcrumbs';
+import NetworkConnector from '../components/NetworkConnector';
 
 const SeoAeo: React.FC = () => {
   const { t } = useLanguage();
@@ -495,6 +496,21 @@ const SeoAeo: React.FC = () => {
           </div>
         </div>
       </section>
+
+      {/* ── Network Systems Connector ── */}
+      <NetworkConnector
+        capability={{ en: 'SEO, AEO & GEO', es: 'SEO, AEO y GEO' }}
+        networkDescription={{
+          en: 'At network scale, unified SEO, AEO, and GEO creates a compounding effect. Thirty sites with consistent structured data and coordinated optimization don\'t just perform independently — every site strengthens every other site. Google sees an authoritative network. AI engines see 30x the signal. That\'s the network effect.',
+          es: 'A escala de red, SEO, AEO y GEO unificados crean un efecto compuesto. Treinta sitios con datos estructurados consistentes y optimización coordinada no solo funcionan independientemente — cada sitio fortalece a todos los demás. Google ve una red autoritativa. Los motores de IA ven 30x la señal. Ese es el efecto de red.',
+        }}
+        relatedCapabilities={[
+          { name: { en: 'Website Design & Rebuild', es: 'Diseño y Reconstrucción Web' }, path: '/websites' },
+          { name: { en: 'Dashboard & Intelligence', es: 'Dashboard e Inteligencia' }, path: '/dashboard' },
+          { name: { en: 'Social Media', es: 'Redes Sociales' }, path: '/social-media' },
+          { name: { en: 'Paid Advertising', es: 'Publicidad Pagada' }, path: '/ads' },
+        ]}
+      />
 
       {/* ── Quick Lead Form ── */}
       <section className="bg-untold-black text-white px-5 sm:px-10 py-16 sm:py-24">

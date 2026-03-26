@@ -6,6 +6,7 @@ import * as i18n from '../../i18n';
 import QuickLeadForm from '../../components/QuickLeadForm';
 import Testimonials from '../../components/Testimonials';
 import Breadcrumbs from '../../components/Breadcrumbs';
+import NetworkConnector from '../../components/NetworkConnector';
 
 const Enterprise: React.FC = () => {
   const { t } = useLanguage();
@@ -345,6 +346,21 @@ const Enterprise: React.FC = () => {
           </div>
         </div>
       </section>
+
+      {/* ── Network Systems Connector ── */}
+      <NetworkConnector
+        capability={{ en: 'Enterprise Operations', es: 'Operaciones Empresariales' }}
+        networkDescription={{
+          en: 'Running a franchise, dealer network, or multi-location brand? Our Network Systems offering deploys AI-powered digital infrastructure across your entire network — not just one organization. Same system capabilities, deployed at scale.',
+          es: '¿Operas una franquicia, red de distribuidores o marca multi-ubicación? Nuestra oferta de Network Systems despliega infraestructura digital con IA en toda tu red — no solo una organización. Las mismas capacidades del sistema, desplegadas a escala.',
+        }}
+        variant="light"
+        relatedCapabilities={[
+          { name: { en: 'Website Design & Rebuild', es: 'Diseño y Reconstrucción Web' }, path: '/websites' },
+          { name: { en: 'Dashboard & Intelligence', es: 'Dashboard e Inteligencia' }, path: '/dashboard' },
+          { name: { en: 'SEO, AEO & GEO', es: 'SEO, AEO y GEO' }, path: '/seo-aeo' },
+        ]}
+      />
 
       {/* ── Testimonials ── */}
       <Testimonials />

@@ -149,6 +149,47 @@ const Home: React.FC = () => {
       </section>
 
       {/* ═══════════════════════════════════════════════════════════
+          SECTION 2b: NETWORK SYSTEMS — FLAGSHIP CALLOUT
+      ═══════════════════════════════════════════════════════════ */}
+      <section className="bg-untold-black px-5 sm:px-10 py-16 sm:py-24 lg:py-32 border-b border-white/10">
+        <div className="max-w-[1440px] mx-auto">
+          <Link to="/network-systems" className="group block">
+            <div className="grid lg:grid-cols-12 gap-8 lg:gap-16 items-center">
+              <div className="lg:col-span-8">
+                <div className="flex items-center space-x-3 mb-6">
+                  <span className="w-3 h-3 rounded-full bg-untold-orange animate-pulse"></span>
+                  <span className="font-mono text-[10px] uppercase tracking-[0.5em] text-untold-orange font-bold">
+                    {t({ en: 'FLAGSHIP OFFERING', es: 'OFERTA PRINCIPAL' })}
+                  </span>
+                </div>
+                <h2 className="font-sans font-black text-3xl sm:text-5xl lg:text-7xl uppercase tracking-tighter mb-6 text-white leading-[0.85] group-hover:text-untold-orange transition-colors">
+                  {t({ en: 'Network Systems', es: 'Network Systems' })}
+                </h2>
+                <p className="text-xl sm:text-2xl font-serif italic text-white/60 max-w-2xl mb-6 leading-relaxed">
+                  {t({
+                    en: 'AI-powered digital infrastructure deployed across your entire business network. Manufacturers, restaurant groups, franchise systems, production companies — one system, every location, continuously running.',
+                    es: 'Infraestructura digital con IA desplegada en toda tu red de negocios. Fabricantes, grupos restauranteros, franquicias, productoras — un sistema, cada ubicación, funcionando continuamente.',
+                  })}
+                </p>
+                <p className="text-base font-serif text-white/40 max-w-2xl leading-relaxed">
+                  {t({
+                    en: 'Websites, SEO/AEO/GEO, dashboards, sales enablement, mobile apps, AI content, and system operations — the full agency offering, delivered as a system. What used to require 15 specialists now runs on AI.',
+                    es: 'Sitios web, SEO/AEO/GEO, dashboards, habilitación de ventas, apps móviles, contenido con IA y operación del sistema — la oferta completa de una agencia, entregada como sistema. Lo que antes requería 15 especialistas ahora funciona con IA.',
+                  })}
+                </p>
+              </div>
+              <div className="lg:col-span-4 flex lg:justify-end">
+                <span className="inline-flex items-center space-x-4 font-sans font-black text-lg uppercase tracking-tighter text-untold-orange group-hover:translate-x-4 transition-transform duration-500">
+                  <span>{t({ en: 'Explore Network Systems', es: 'Explorar Network Systems' })}</span>
+                  <span className="text-3xl">→</span>
+                </span>
+              </div>
+            </div>
+          </Link>
+        </div>
+      </section>
+
+      {/* ═══════════════════════════════════════════════════════════
           SECTION 3: DEFINE YOUR OPERATION
       ═══════════════════════════════════════════════════════════ */}
       <section className="px-5 sm:px-10 py-20 sm:py-32 border-b border-untold-border">

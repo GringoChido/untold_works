@@ -4,6 +4,7 @@ import { useLanguage } from '../App';
 import { usePageMeta } from '../hooks/usePageMeta';
 import Breadcrumbs from '../components/Breadcrumbs';
 import Testimonials from '../components/Testimonials';
+import NetworkConnector from '../components/NetworkConnector';
 
 const Solutions: React.FC = () => {
   const { t } = useLanguage();
@@ -489,6 +490,16 @@ const Solutions: React.FC = () => {
           </div>
         </div>
       </section>
+
+      {/* ── Network Systems Connector ── */}
+      <NetworkConnector
+        capability={{ en: 'Business Networks & Multi-Location', es: 'Redes de Negocios y Multi-Ubicación' }}
+        networkDescription={{
+          en: 'These solutions are designed for individual businesses. If you operate a manufacturer-dealer network, franchise system, restaurant group, or any multi-location brand, our Network Systems offering deploys all of these capabilities across your entire network as one unified system.',
+          es: 'Estas soluciones están diseñadas para negocios individuales. Si operas una red de fabricante-distribuidores, franquicias, grupo restaurantero o cualquier marca multi-ubicación, nuestra oferta de Network Systems despliega todas estas capacidades en toda tu red como un sistema unificado.',
+        }}
+        variant="dark"
+      />
 
       {/* Testimonials */}
       <Testimonials />

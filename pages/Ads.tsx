@@ -5,6 +5,7 @@ import { usePageMeta } from '../hooks/usePageMeta';
 import QuickLeadForm from '../components/QuickLeadForm';
 import Testimonials from '../components/Testimonials';
 import Breadcrumbs from '../components/Breadcrumbs';
+import NetworkConnector from '../components/NetworkConnector';
 
 const Ads: React.FC = () => {
   const { t } = useLanguage();
@@ -418,6 +419,21 @@ const Ads: React.FC = () => {
           </div>
         </div>
       </section>
+
+      {/* ── Network Systems Connector ── */}
+      <NetworkConnector
+        capability={{ en: 'Paid Advertising', es: 'Publicidad Pagada' }}
+        networkDescription={{
+          en: 'For business networks, we run coordinated paid media across every market. One strategy, local execution, network-wide budget optimization. Instead of each location running disconnected campaigns, the network acts as one media operation with local relevance.',
+          es: 'Para redes de negocios, ejecutamos medios pagados coordinados en cada mercado. Una estrategia, ejecución local, optimización de presupuesto a nivel de red. En lugar de que cada ubicación ejecute campañas desconectadas, la red actúa como una operación de medios con relevancia local.',
+        }}
+        relatedCapabilities={[
+          { name: { en: 'Website Design & Rebuild', es: 'Diseño y Reconstrucción Web' }, path: '/websites' },
+          { name: { en: 'SEO, AEO & GEO', es: 'SEO, AEO y GEO' }, path: '/seo-aeo' },
+          { name: { en: 'Social Media', es: 'Redes Sociales' }, path: '/social-media' },
+          { name: { en: 'Dashboard & Intelligence', es: 'Dashboard e Inteligencia' }, path: '/dashboard' },
+        ]}
+      />
 
       {/* ── Quick Lead Form ── */}
       <section className="bg-untold-black text-white px-5 sm:px-10 py-16 sm:py-24">
