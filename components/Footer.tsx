@@ -114,6 +114,17 @@ const Footer: React.FC = () => {
               <NewsletterForm />
             </div>
 
+            {/* Location */}
+            <div className="lg:text-right">
+              <span className="font-mono text-[10px] uppercase tracking-[0.6em] text-white/20 font-bold block mb-4">
+                {t({ en: 'LOCATION', es: 'UBICACIÓN' })}
+              </span>
+              <address className="not-italic text-sm font-serif text-white/40 leading-relaxed">
+                San Miguel de Allende, Guanajuato, Mexico<br />
+                <a href="mailto:info@untold.works" className="hover:text-untold-orange transition-colors">info@untold.works</a>
+              </address>
+            </div>
+
             {/* Social */}
             <div className="lg:text-right">
               <span className="font-mono text-[10px] uppercase tracking-[0.6em] text-white/20 font-bold block mb-4">SOCIAL</span>

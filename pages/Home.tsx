@@ -154,9 +154,9 @@ const Home: React.FC = () => {
       <section className="px-5 sm:px-10 py-20 sm:py-32 border-b border-untold-border">
         <div className="max-w-[1440px] mx-auto">
           <div className="text-center mb-16">
-            <h3 className="font-sans font-black text-4xl sm:text-6xl lg:text-8xl uppercase tracking-tighter mb-6 leading-[0.85]">
+            <h2 className="font-sans font-black text-4xl sm:text-6xl lg:text-8xl uppercase tracking-tighter mb-6 leading-[0.85]">
               {t({ en: 'Which AI Ecosystem\nFits Your Business?', es: '¿Cuál Ecosistema de IA\nSe Adapta a Tu Negocio?' })}
-            </h3>
+            </h2>
             <p className="text-lg sm:text-xl font-serif italic text-untold-gray max-w-3xl mx-auto">
               {t({ en: 'We build the AI-powered platform that fits your current scale. Select the ecosystem that matches your business today.', es: 'Construimos la plataforma impulsada por IA que se adapta a tu escala actual. Selecciona el ecosistema que corresponde a tu negocio hoy.' })}
             </p>
@@ -216,9 +216,9 @@ const Home: React.FC = () => {
                 className="group border border-untold-border bg-white p-8 sm:p-10 lg:p-12 flex flex-col hover:border-untold-orange/30 hover:shadow-lg transition-all"
               >
                 <span className="font-mono text-[10px] uppercase tracking-[0.5em] text-untold-orange font-bold mb-6">{pillar.number}</span>
-                <h4 className="font-sans font-black text-2xl sm:text-3xl lg:text-4xl uppercase tracking-tighter mb-3 group-hover:text-untold-orange transition-colors">
+                <h3 className="font-sans font-black text-2xl sm:text-3xl lg:text-4xl uppercase tracking-tighter mb-3 group-hover:text-untold-orange transition-colors">
                   {t(pillar.title)}
-                </h4>
+                </h3>
                 <p className="text-lg font-serif italic text-untold-gray mb-4">
                   {t(pillar.subtitle)}
                 </p>
@@ -263,9 +263,9 @@ const Home: React.FC = () => {
                   {t({ en: 'THE FOUNDATION', es: 'LA BASE' })}
                 </span>
               </div>
-              <h3 className="font-sans font-black text-2xl sm:text-4xl lg:text-5xl uppercase tracking-tighter mb-3 text-white group-hover:text-untold-orange transition-colors">
+              <h2 className="font-sans font-black text-2xl sm:text-4xl lg:text-5xl uppercase tracking-tighter mb-3 text-white group-hover:text-untold-orange transition-colors">
                 {t({ en: 'Your Website Should Be the Hardest-Working Part of Your Business.', es: 'Tu Sitio Web Debería Ser la Parte Más Trabajadora de Tu Negocio.' })}
-              </h3>
+              </h2>
               <p className="text-lg font-serif italic text-white/60 max-w-2xl">
                 {t({
                   en: 'Brand-first. AI-native. Mobile-ready. Bilingual. Built with AI, guided by 25 years of creative direction.',
@@ -296,9 +296,9 @@ const Home: React.FC = () => {
                   {t({ en: 'FIRST AEO AGENCY IN MEXICO', es: 'PRIMERA AGENCIA DE AEO EN MÉXICO' })}
                 </span>
               </div>
-              <h3 className="font-sans font-black text-2xl sm:text-4xl lg:text-5xl uppercase tracking-tighter mb-3 group-hover:text-untold-orange transition-colors">
+              <h2 className="font-sans font-black text-2xl sm:text-4xl lg:text-5xl uppercase tracking-tighter mb-3 group-hover:text-untold-orange transition-colors">
                 {t({ en: 'SEO Got You Ranked. AEO Gets You Recommended.', es: 'SEO Te Posiciona. AEO Te Recomienda.' })}
-              </h3>
+              </h2>
               <p className="text-lg font-serif italic text-untold-gray max-w-2xl">
                 {t({
                   en: 'Already have a website? Make it findable — on Google AND in AI answers. We optimize for both.',
@@ -329,9 +329,9 @@ const Home: React.FC = () => {
                   {t({ en: 'NEW SERVICES', es: 'NUEVOS SERVICIOS' })}
                 </span>
               </div>
-              <h3 className="font-sans font-black text-2xl sm:text-4xl lg:text-5xl uppercase tracking-tighter mb-3">
+              <h2 className="font-sans font-black text-2xl sm:text-4xl lg:text-5xl uppercase tracking-tighter mb-3">
                 {t({ en: 'Social Media Strategy & Paid Advertising', es: 'Estrategia de Redes Sociales y Publicidad Pagada' })}
-              </h3>
+              </h2>
               <p className="text-lg font-serif italic text-untold-gray max-w-2xl">
                 {t({
                   en: 'From organic content to paid campaigns — we manage your presence across every platform. Bilingual, data-driven, results-focused.',
@@ -368,9 +368,9 @@ const Home: React.FC = () => {
                   {t({ en: 'YOUR COMMAND CENTER', es: 'TU CENTRO DE MANDO' })}
                 </span>
               </div>
-              <h3 className="font-sans font-black text-2xl sm:text-4xl lg:text-5xl uppercase tracking-tighter mb-3 text-white group-hover:text-untold-orange transition-colors">
+              <h2 className="font-sans font-black text-2xl sm:text-4xl lg:text-5xl uppercase tracking-tighter mb-3 text-white group-hover:text-untold-orange transition-colors">
                 {t({ en: 'Your Entire Business. One Dashboard. You Own It.', es: 'Todo Tu Negocio. Un Dashboard. Propiedad Tuya.' })}
-              </h3>
+              </h2>
               <p className="text-lg font-serif italic text-white/60 max-w-2xl">
                 {t({
                   en: 'Website, social, ads, CRM, leads — stop logging into 12 tools. We build a custom dashboard you own outright. No SaaS fees.',
@@ -396,9 +396,9 @@ const Home: React.FC = () => {
           <div className="flex items-center justify-between mb-16 gap-4 flex-wrap">
             <div className="flex items-center space-x-4">
               <span className="w-2.5 h-2.5 rounded-full bg-untold-orange shrink-0"></span>
-              <h2 className="font-mono text-[13px] uppercase tracking-[0.6em] font-bold text-white/40">
+              <p className="font-mono text-[13px] uppercase tracking-[0.6em] font-bold text-white/40">
                 {t({ en: 'SELECTED WORK', es: 'TRABAJO SELECCIONADO' })}
-              </h2>
+              </p>
             </div>
             <Link
               to="/portfolio"
@@ -468,23 +468,23 @@ const Home: React.FC = () => {
         <div className="max-w-[1440px] mx-auto">
           <div className="flex items-center space-x-4 mb-20">
             <span className="w-2.5 h-2.5 rounded-full bg-untold-orange"></span>
-            <h2 className="font-mono text-[13px] uppercase tracking-[0.6em] font-bold text-white/40">
+            <p className="font-mono text-[13px] uppercase tracking-[0.6em] font-bold text-white/40">
               {t(i18n.whyUntold.eyebrow)}
-            </h2>
+            </p>
           </div>
 
-          <h3 className="font-sans font-black text-4xl sm:text-6xl lg:text-8xl uppercase tracking-tighter mb-12 leading-[0.85]">
+          <h2 className="font-sans font-black text-4xl sm:text-6xl lg:text-8xl uppercase tracking-tighter mb-12 leading-[0.85]">
             {t(i18n.whyUntold.headline)}
-          </h3>
+          </h2>
 
           <div className="grid lg:grid-cols-12 gap-16 lg:gap-24 mb-24">
             <div className="lg:col-span-7">
               <p className="text-xl sm:text-2xl font-serif text-white/70 leading-relaxed mb-12">
                 {t(i18n.whyUntold.opening)}
               </p>
-              <h4 className="font-sans font-black text-2xl sm:text-3xl uppercase tracking-tighter mb-6 text-untold-orange">
+              <h3 className="font-sans font-black text-2xl sm:text-3xl uppercase tracking-tighter mb-6 text-untold-orange">
                 {t(i18n.whyUntold.dontMissHeadline)}
-              </h4>
+              </h3>
               <p className="text-lg sm:text-xl font-serif text-white/60 leading-relaxed">
                 {t(i18n.whyUntold.dontMissContent)}
               </p>
@@ -493,9 +493,9 @@ const Home: React.FC = () => {
               <div className="space-y-8">
                 {i18n.whyUntold.differentiators.map((diff, idx) => (
                   <div key={idx} className="border-l-2 border-untold-orange/30 pl-6 hover:border-untold-orange transition-colors">
-                    <h5 className="font-sans font-black text-lg uppercase tracking-tighter mb-2">
+                    <h4 className="font-sans font-black text-lg uppercase tracking-tighter mb-2">
                       {t(diff.title)}
-                    </h5>
+                    </h4>
                     <p className="font-serif italic text-white/50 text-base leading-relaxed">
                       {t(diff.description)}
                     </p>
@@ -506,9 +506,9 @@ const Home: React.FC = () => {
           </div>
 
           <div className="border-t border-white/10 pt-16">
-            <h4 className="font-sans font-black text-2xl sm:text-4xl uppercase tracking-tighter mb-6">
+            <h3 className="font-sans font-black text-2xl sm:text-4xl uppercase tracking-tighter mb-6">
               {t(i18n.whyUntold.closingHeadline)}
-            </h4>
+            </h3>
             <p className="text-lg sm:text-xl font-serif italic text-white/50 max-w-3xl leading-relaxed">
               {t(i18n.whyUntold.closingContent)}
             </p>
@@ -523,14 +523,14 @@ const Home: React.FC = () => {
         <div className="max-w-[1440px] mx-auto">
           <div className="flex items-center space-x-4 mb-14">
             <span className="w-2.5 h-2.5 rounded-full bg-untold-orange"></span>
-            <h2 className="font-mono text-[13px] uppercase tracking-[0.6em] font-bold text-untold-black/40">
+            <p className="font-mono text-[13px] uppercase tracking-[0.6em] font-bold text-untold-black/40">
               {t({ en: 'OUR PROCESS', es: 'NUESTRO PROCESO' })}
-            </h2>
+            </p>
           </div>
 
-          <h3 className="font-sans font-black text-4xl sm:text-6xl lg:text-8xl uppercase tracking-tighter mb-6 leading-[0.85]">
+          <h2 className="font-sans font-black text-4xl sm:text-6xl lg:text-8xl uppercase tracking-tighter mb-6 leading-[0.85]">
             {t(i18n.howWeWork.headline)}
-          </h3>
+          </h2>
           <p className="text-lg sm:text-xl font-serif italic text-untold-gray max-w-3xl mb-16">
             {t(i18n.howWeWork.subheadline)}
           </p>
@@ -539,9 +539,9 @@ const Home: React.FC = () => {
             {i18n.howWeWork.stages.map((stage) => (
               <div key={stage.number} className="border border-untold-border bg-white p-8 flex flex-col">
                 <span className="font-mono text-[10px] uppercase tracking-[0.5em] text-untold-orange font-bold mb-4">{stage.number}</span>
-                <h4 className="font-sans font-black text-2xl uppercase tracking-tighter mb-2">
+                <h3 className="font-sans font-black text-2xl uppercase tracking-tighter mb-2">
                   {t(stage.title)}
-                </h4>
+                </h3>
                 <p className="font-mono text-[11px] uppercase tracking-[0.2em] text-untold-orange/70 mb-4">
                   {t(stage.subtitle)}
                 </p>
@@ -569,14 +569,14 @@ const Home: React.FC = () => {
         <div className="max-w-[900px] mx-auto">
           <div className="flex items-center space-x-4 mb-16">
             <span className="w-2.5 h-2.5 rounded-full bg-untold-orange"></span>
-            <h2 className="font-mono text-[13px] uppercase tracking-[0.6em] font-bold text-untold-black/40">
+            <p className="font-mono text-[13px] uppercase tracking-[0.6em] font-bold text-untold-black/40">
               {t({ en: 'FREQUENTLY ASKED QUESTIONS', es: 'PREGUNTAS FRECUENTES' })}
-            </h2>
+            </p>
           </div>
 
-          <h3 className="font-sans font-black text-3xl sm:text-5xl lg:text-6xl uppercase tracking-tighter mb-16 leading-[0.85]">
+          <h2 className="font-sans font-black text-3xl sm:text-5xl lg:text-6xl uppercase tracking-tighter mb-16 leading-[0.85]">
             {t({ en: 'What Do People\nAsk Us?', es: '¿Qué Nos\nPreguntan?' })}
-          </h3>
+          </h2>
 
           <div className="space-y-0 border-t border-untold-border">
             {[

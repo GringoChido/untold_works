@@ -170,8 +170,8 @@ export const blogPosts: BlogPost[] = [
       en: `<p>In Mexico, WhatsApp is not a messaging app. It is the operating system of commerce. It is how people book tables, ask for quotes, confirm appointments, complain about service, and send payment receipts. Over 90 percent of the country uses it daily. If you run a business in Mexico and you are not on WhatsApp, you functionally do not exist.</p>
 <p>And yet, almost nobody is automating it with AI.</p>
 <p>Most Mexican businesses are still running WhatsApp the same way they did five years ago. One person on the team is glued to their phone, answering the same ten questions over and over, copying and pasting prices, forwarding messages to the right department, and losing track of conversations that turn into lost sales. It is exhausting, it does not scale, and it is completely unnecessary in 2026.</p>
-<p>We build WhatsApp AI systems for businesses across Mexico. Restaurants, hotels, professional services, retailers, manufacturers. This is the guide I wish existed when we started. Everything we have learned about what works, what does not, and what most people get wrong.</p>
-<h2>Why WhatsApp AI Hits Different in Mexico</h2>
+<p>We build WhatsApp AI systems for <a href="/solutions/small-business">businesses across Mexico</a>. Restaurants, hotels, professional services, retailers, manufacturers. This is the guide I wish existed when we started. Everything we have learned about what works, what does not, and what most people get wrong.</p>
+<h2>Why Does WhatsApp AI Hit Different in Mexico?</h2>
 <p>WhatsApp automation is not a new concept globally. But Mexico is a unique market for three reasons that make AI-powered WhatsApp dramatically more impactful here than almost anywhere else.</p>
 <p><strong>First, WhatsApp IS the customer journey.</strong> In the US, a customer might discover you on Google, visit your website, fill out a form, and then get an email. In Mexico, the entire journey often happens inside WhatsApp. Discovery, questions, negotiation, payment confirmation, follow-up. All in one thread. That means automating WhatsApp does not just save time on one channel. It automates your entire sales funnel.</p>
 <p><strong>Second, the expectation of instant response is real.</strong> Mexican consumers expect a reply within minutes, not hours. A study by Meta showed that 75 percent of Mexican WhatsApp users expect a business to respond within 15 minutes. If you do not, they message your competitor. AI does not sleep, does not take lunch, and does not forget to check the phone.</p>
@@ -181,21 +181,21 @@ export const blogPosts: BlogPost[] = [
 <p><strong>Level 1: Smart Auto-Replies.</strong> This is the baseline. You set up the WhatsApp Business API with an AI layer that handles FAQs, sends your menu or price list, confirms business hours, and routes complex questions to a human. No coding required for the basics. This alone eliminates 60 to 70 percent of repetitive messages and can be running in under a week. Best for: restaurants, salons, small retail shops.</p>
 <p><strong>Level 2: Conversational AI Agent.</strong> This is where it gets interesting. The AI does not just answer questions, it holds a conversation. It can take a reservation, walk someone through your services, qualify a lead based on their answers, collect information for a quote, and hand off to the right team member with full context. We build these with n8n orchestrating the workflow and Claude or GPT handling the conversation. Best for: hotels, professional services, mid-size businesses with multiple service lines.</p>
 <p><strong>Level 3: Full Business Operations Layer.</strong> This is the system we built for Noxguard, where WhatsApp becomes the interface for ordering, inventory queries, delivery scheduling, and account management. The AI connects to your CRM, your inventory system, your payment processor, and your calendar. Customers can place orders by sending a voice note, check their account balance, or schedule a delivery, all without ever leaving WhatsApp. Best for: manufacturers, distributors, enterprises with repeat customers.</p>
-<h2>Setting Up the WhatsApp Business API in Mexico</h2>
+<h2>How Do You Set Up the WhatsApp Business API in Mexico?</h2>
 <p>Before you build anything, you need access to the WhatsApp Business API. This is different from the WhatsApp Business app you download from the App Store. The API gives you programmatic access, which is what allows AI integration.</p>
 <p>Here is what the process looks like.</p>
 <p><strong>You need a Meta Business account</strong> verified with your Mexican business documents. RFC, proof of address, and your business name matching your official registration. Meta has gotten stricter about verification in LATAM, so make sure everything matches before you apply.</p>
 <p><strong>Choose a Business Solution Provider.</strong> You do not connect to the API directly. You go through a BSP. We have had good results with 360dialog and Twilio for Mexican businesses. Both handle the Mexican phone number provisioning well and have competitive per-message pricing. Expect to pay between 0.03 and 0.08 USD per conversation, depending on who initiates.</p>
 <p><strong>Get a dedicated phone number.</strong> This needs to be a Mexican number that is not already registered on WhatsApp. We recommend getting a new line specifically for the business API. Porting an existing number is possible but adds weeks to the timeline.</p>
 <p><strong>Set up your message templates.</strong> WhatsApp requires pre-approved templates for outbound messages. These go through a review process that typically takes 24 to 48 hours. Write them in the language your customers actually use. If your customers switch between Spanish and English, submit templates in both.</p>
-<h2>Handling Payments Inside WhatsApp</h2>
+<h2>How Do You Handle Payments Inside WhatsApp?</h2>
 <p>This is where Mexico-specific knowledge matters. Your customers are not all paying with credit cards. The payment landscape here is different, and your WhatsApp AI needs to work with it.</p>
 <p><strong>OXXO references.</strong> Millions of Mexicans pay for everything at OXXO. Your AI can generate an OXXO payment reference through Stripe Mexico or Conekta, send it via WhatsApp, and then confirm when payment is received. We have built this for multiple clients and the conversion rate is significantly higher than sending people to a web checkout page.</p>
 <p><strong>SPEI transfers.</strong> For B2B and higher-value transactions, SPEI bank transfers are standard. Your AI can send CLABE details and a payment reference, then automatically reconcile when the transfer hits your account.</p>
 <p><strong>Mercado Pago links.</strong> For consumer transactions, Mercado Pago payment links work well inside WhatsApp. The AI generates a link, sends it in the chat, and the customer pays without leaving the conversation.</p>
 <p><strong>CoDi and payment confirmations.</strong> Some customers will send a screenshot or photo of their payment receipt. Your AI needs to be able to acknowledge receipt photos and flag them for your accounting team, even if it cannot automatically verify the amount.</p>
 <h2>The Bilingual Challenge</h2>
-<p>If your business serves both Mexican and international customers, which in San Miguel, Cancun, CDMX, and most tourist-facing cities means everyone, your WhatsApp AI needs to handle both languages seamlessly.</p>
+<p>If your business serves both Mexican and international customers, which in San Miguel, Cancun, CDMX, and most tourist-facing cities means everyone, your WhatsApp AI needs to handle both languages seamlessly. This is the same challenge we tackle when <a href="/blog/bilingual-websites-why-translation-plugins-fail">building bilingual websites</a>.</p>
 <p>Here is what we have learned the hard way.</p>
 <p><strong>Auto-detect, do not ask.</strong> Do not start conversations with "English or Spanish?" Detect the language from the first message and respond accordingly. Modern LLMs do this naturally, but you need to set it up in your system prompt explicitly. We instruct the AI to mirror the language of the incoming message and maintain that language throughout the conversation unless the customer switches.</p>
 <p><strong>Handle Spanglish.</strong> In border cities and tourist areas, messages regularly mix both languages in the same sentence. "Oye, do you have disponibilidad for Saturday?" Your AI needs to understand this without breaking. We have found that Claude handles code-switching particularly well, but you need to tell it to expect mixed-language input in your system prompt.</p>
@@ -204,12 +204,12 @@ export const blogPosts: BlogPost[] = [
 <h2>Privacy and Compliance</h2>
 <p>Mexico has its own data privacy law, the LFPDPPP (Ley Federal de Proteccion de Datos Personales en Posesion de los Particulares). If your WhatsApp AI collects personal data, which it will, you need to comply.</p>
 <p>The practical requirements: include a privacy notice (aviso de privacidad) that you can send via WhatsApp when collecting data for the first time. Make sure your AI does not store sensitive financial information beyond what is necessary for the transaction. And give customers a clear way to request data deletion. We build a "borrar mis datos" trigger into every system that flags the request for the business to process.</p>
-<h2>What Most People Get Wrong</h2>
+<h2>What Do Most People Get Wrong About WhatsApp AI?</h2>
 <p><strong>They build for text, not voice.</strong> I said it above but it is worth repeating. If your WhatsApp AI cannot process voice notes, you are ignoring how a massive percentage of Mexican customers actually communicate. We use Whisper for transcription, pipe the text through the AI, and respond in text. The customer sends a voice note saying "quiero reservar para el sabado, somos cuatro personas" and gets back a confirmation with date, time, and party size. Seamless.</p>
 <p><strong>They forget about groups.</strong> Mexican businesses use WhatsApp groups constantly. Internal team groups, customer groups, vendor groups. Your AI should know when it is in a group context and behave differently than in a one-on-one conversation. We configure AI to only respond when directly mentioned or when it detects a question aimed at the business, not every message in the group.</p>
 <p><strong>They over-automate.</strong> The biggest mistake is trying to make the AI handle everything. Mexican customers value personal relationships. They want to know there is a real person behind the business. The best WhatsApp AI systems we have built are transparent about being AI, handle the routine stuff fast, and escalate to a human smoothly when the conversation gets personal, complex, or emotional. The goal is not to eliminate human contact. It is to make sure human contact happens where it matters most.</p>
 <p><strong>They ignore the 24-hour window.</strong> WhatsApp Business API has a rule: you can only send free-form messages within 24 hours of the customer's last message. After that, you need to use pre-approved templates. Most businesses do not plan for this. We build re-engagement flows that use templates strategically, like a friendly "your reservation is tomorrow" reminder that reopens the conversation window.</p>
-<h2>What a Real Implementation Looks Like</h2>
+<h2>What Does a Real WhatsApp AI Implementation Look Like?</h2>
 <p>Here is a typical timeline for a Level 2 system, a conversational AI agent for a hotel or restaurant.</p>
 <p><strong>Week 1:</strong> Discovery and setup. We audit your current WhatsApp usage, map out conversation flows, set up the Business API, configure your BSP, and build the initial AI personality based on your brand voice and real customer conversations.</p>
 <p><strong>Week 2:</strong> Build and test. We build the n8n workflows, configure the AI prompts, integrate with your booking system or CRM, set up voice note transcription, and test with internal team members simulating real customer conversations in both languages.</p>
@@ -217,7 +217,7 @@ export const blogPosts: BlogPost[] = [
 <p><strong>Week 4:</strong> Full launch and monitoring. The AI goes live. We monitor daily for the first two weeks, review conversation logs, and adjust. Most systems hit 80 percent automation rate by the end of month one.</p>
 <h2>The Bottom Line</h2>
 <p>WhatsApp is where your customers already are. AI makes it possible to be there for all of them, all the time, in their language, on their terms. The businesses that figure this out now will have a massive advantage over the ones still answering messages manually at 11 PM.</p>
-<p>We have built these systems for restaurants, hotels, manufacturers, and professional services firms across Mexico. If you want to see what a WhatsApp AI system could look like for your business, that is literally what we do.</p>
+<p>We have built these systems for restaurants, hotels, manufacturers, and professional services firms across Mexico. See how we automated client intake for <a href="/blog/case-study-law-firm-client-intake-automation">a law firm</a> or rebuilt a <a href="/blog/case-study-boutique-hotel-booking-system">boutique hotel's booking system</a>. If you want to see what a WhatsApp AI system could look like for your business, <a href="/contact">reach out</a>.</p>
 <p class="text-sm text-untold-gray mt-8"><em>Joshua is the founder of Untold Works, a creative technology agency in San Miguel de Allende, Mexico.</em></p>`,
       es: `<p>En Mexico, WhatsApp no es una app de mensajeria. Es el sistema operativo del comercio. Es como la gente reserva mesas, pide cotizaciones, confirma citas, se queja del servicio y envia comprobantes de pago. Mas del 90 por ciento del pais lo usa diariamente. Si tienes un negocio en Mexico y no estas en WhatsApp, funcionalmente no existes.</p>
 <p>Y aun asi, casi nadie lo esta automatizando con IA.</p>
@@ -294,8 +294,8 @@ export const blogPosts: BlogPost[] = [
     },
     content: {
       en: `<p>Here is the uncomfortable truth about most small business websites: they are expensive digital brochures. They look fine. They list your services. They have a contact form that sends an email to an inbox nobody checks. And they do absolutely nothing else.</p>
-<p>That is a waste. Your website should be the hardest-working employee in your business. It should be capturing leads, qualifying them, booking appointments, and feeding data into the systems you already use. If it is not doing those things, it is costing you money every day.</p>
-<h2>What a Website-as-System Looks Like</h2>
+<p>That is a waste. Your website should be the hardest-working employee in your business. It should be capturing leads, qualifying them, booking appointments, and feeding data into the systems you already use. That's the philosophy behind every <a href="/websites">website we design and build</a>. If it is not doing those things, it is costing you money every day.</p>
+<h2>What Does a Website-as-System Look Like?</h2>
 <p>When we build a site for a client, we start by mapping their business workflows. How do leads come in? Where do they go? Who follows up, and how? What information do you need before a first meeting? Once we understand the flow, we build the site to plug directly into it.</p>
 <h3>Lead Capture That Actually Works</h3>
 <p>Instead of a generic contact form, we build multi-step forms that ask the right questions. By the time someone submits, you know their budget range, timeline, and specific needs. That data goes straight into your CRM, tagged and ready for follow-up.</p>
@@ -304,7 +304,7 @@ export const blogPosts: BlogPost[] = [
 <h3>Real-Time Inventory or Availability</h3>
 <p>For service businesses, showing real-time availability builds trust and reduces friction. For product businesses, syncing inventory prevents the frustration of ordering something that is out of stock.</p>
 <h2>The Stack That Makes It Work</h2>
-<p>We typically build on Next.js with a headless CMS, connected to the client's existing tools via API integrations or Zapier. The site is fast, SEO-optimized, and fully bilingual when needed. But the real value is in the connections: website to CRM, to email platform, to booking system, to analytics. Everything talks to everything.</p>
+<p>We typically build on Next.js with a <a href="/blog/headless-cms-explained-for-business-owners">headless CMS</a>, connected to the client's existing tools via API integrations or Zapier. The site is fast, SEO-optimized, and fully bilingual when needed. But the real value is in the connections: website to CRM, to email platform, to booking system, to analytics. Everything talks to everything. We can also build you a <a href="/dashboard">custom dashboard</a> to see it all in one place.</p>
 <p>If your current website is just sitting there looking pretty, let us turn it into something that actually grows your business.</p>`,
       es: `<p>Aqui va la verdad incomoda sobre la mayoria de los sitios web de negocios: son folletos digitales caros. Se ven bien. Listan tus servicios. Tienen un formulario de contacto que envia un correo a una bandeja que nadie revisa. Y no hacen absolutamente nada mas.</p>
 <p>Eso es un desperdicio. Tu sitio web deberia ser el empleado mas trabajador de tu negocio. Deberia capturar prospectos, calificarlos, agendar citas y alimentar los sistemas que ya usas. Si no esta haciendo eso, te esta costando dinero todos los dias.</p>
@@ -338,9 +338,9 @@ export const blogPosts: BlogPost[] = [
     },
     content: {
       en: `<p>If you have talked to a developer in the last few years, you have probably heard the term "headless CMS" thrown around like it is the most important thing in the world. And then nobody explained what it actually means for your business. Let us fix that.</p>
-<h2>The Simple Version</h2>
+<h2>What Is a Headless CMS in Simple Terms?</h2>
 <p>A traditional CMS like WordPress bundles everything together: your content, your design, and your code all live in one system. A headless CMS separates your content from your website's design. Your content lives in one place, a clean dashboard where you or your team can edit text, upload images, and manage pages. Your website's design and code live somewhere else, built by developers to be as fast and flexible as possible.</p>
-<h2>Why Should You Care?</h2>
+<h2>Why Should Business Owners Care About Headless CMS?</h2>
 <p>Three reasons. First, speed. Headless sites are dramatically faster because they are not weighed down by the bloat of a traditional CMS. Google rewards fast sites with better search rankings, and visitors are far more likely to stay on a site that loads instantly.</p>
 <p>Second, flexibility. Because your content is separate from your design, it can be displayed anywhere: your website, a mobile app, a digital menu board, an email newsletter. You write it once and it shows up everywhere.</p>
 <p>Third, security. Traditional CMS platforms like WordPress are constant targets for hackers because they are so common. A headless architecture has a much smaller attack surface, which means fewer security headaches for you.</p>
@@ -376,15 +376,15 @@ export const blogPosts: BlogPost[] = [
     },
     content: {
       en: `<p>We see it constantly: a business knows it needs a Spanish version of its website, so it installs a translation plugin and calls it done. The result is a site that technically has Spanish words on it but reads like it was written by someone who learned Spanish from a textbook in 1997. Your Spanish-speaking customers notice immediately, and it tells them something about how much you value their business.</p>
-<h2>Why Plugins Fail</h2>
+<h2>Why Do Translation Plugins Fail for Bilingual Websites?</h2>
 <p>Machine translation plugins process your content sentence by sentence, stripping out context, tone, and cultural nuance. They do not understand that your casual, friendly English copy should become casual, friendly Spanish, not stiff, formal Spanish. They cannot adapt idioms. They miss gendered language subtleties. And they definitely cannot handle the regional differences between Mexican Spanish, Central American Spanish, and Iberian Spanish.</p>
 <h2>The Real Cost of Bad Translation</h2>
-<p>A poorly translated website does not just look unprofessional. It actively hurts your conversion rates with Spanish-speaking audiences. If someone lands on your site and the Spanish feels off, they leave. They do not fill out your form. They do not book your service. They find a competitor whose site actually speaks their language.</p>
-<h2>How We Build Bilingual Sites</h2>
-<p>At Untold.works, every bilingual site we build has content written natively in both languages. That means a real person who thinks in Spanish writes the Spanish content, not translating word-for-word but adapting the message to resonate naturally. We build the site architecture to support both languages as first-class citizens: separate URL structures for SEO, proper hreflang tags, and a language switcher that remembers your preference.</p>
+<p>A poorly translated website does not just look unprofessional. It actively hurts your conversion rates with Spanish-speaking audiences. This is why <a href="/websites">proper website design</a> matters from the start. If someone lands on your site and the Spanish feels off, they leave. They do not fill out your form. They do not book your service. They find a competitor whose site actually speaks their language.</p>
+<h2>How Does Untold.works Build Bilingual Websites?</h2>
+<p>At Untold.works, every bilingual site we build has content written natively in both languages. That means a real person who thinks in Spanish writes the Spanish content, not translating word-for-word but adapting the message to resonate naturally. We build the site architecture to support both languages as first-class citizens: separate URL structures for SEO, proper hreflang tags, and a language switcher that remembers your preference. The same bilingual-first approach extends to channels like <a href="/blog/whatsapp-ai-for-mexican-businesses-complete-guide">WhatsApp AI automation</a>.</p>
 <h3>The CMS Side</h3>
 <p>In the content management system, each piece of content has parallel fields for English and Spanish. When your team updates a service description, they see both language fields side by side. This makes it easy to keep both versions in sync and ensures nothing gets missed during updates.</p>
-<p>Bilingual done right is not a feature you bolt on. It is a foundation you build from day one. If you serve Spanish-speaking customers, and in San Miguel de Allende that is nearly everyone, your website needs to reflect that respect from the ground up.</p>`,
+<p>Bilingual done right is not a feature you bolt on. It is a foundation you build from day one. If you serve Spanish-speaking customers, and in San Miguel de Allende that is nearly everyone, your website needs to reflect that respect from the ground up. See how we help <a href="/solutions/small-business">small businesses</a> get this right.</p>`,
       es: `<p>Lo vemos constantemente: un negocio sabe que necesita una version en espanol de su sitio web, entonces instala un plugin de traduccion y lo da por terminado. El resultado es un sitio que tecnicamente tiene palabras en espanol pero se lee como si lo hubiera escrito alguien que aprendio espanol de un libro de texto en 1997. Tus clientes hispanohablantes lo notan de inmediato, y les dice algo sobre cuanto valoras su negocio.</p>
 <h2>Por Que Fallan los Plugins</h2>
 <p>Los plugins de traduccion automatica procesan tu contenido oracion por oracion, eliminando contexto, tono y matices culturales. No entienden que tu texto casual y amigable en ingles deberia convertirse en espanol casual y amigable, no en espanol rigido y formal. No pueden adaptar modismos. Se pierden las sutilezas del lenguaje con genero. Y definitivamente no pueden manejar las diferencias regionales entre el espanol mexicano, centroamericano y el de Espana.</p>
@@ -458,9 +458,9 @@ export const blogPosts: BlogPost[] = [
     },
     content: {
       en: `<p>Here is a stat that should change how you think about your website: in Mexico, a significant portion of mobile users still browse on 3G or unstable 4G connections. In tourist-heavy towns like San Miguel de Allende, visitors from abroad are often on roaming data that is throttled to crawling speeds. If your website is not optimized for these conditions, you are invisible to a huge chunk of your potential customers.</p>
-<h2>What Happens on a Slow Connection</h2>
+<h2>What Happens to Your Website on a Slow 3G Connection?</h2>
 <p>When someone on a slow connection visits a typical WordPress site with a heavy theme, unoptimized images, and a dozen plugins, here is what they experience: a blank white screen for four seconds, then a slow trickle of content loading in the wrong order, then a layout shift that moves the button they were about to tap. Total time to usable: eight to twelve seconds. By then, they have already hit the back button.</p>
-<h2>How We Build for Speed</h2>
+<h2>How Do You Build a Website for Speed on Slow Networks?</h2>
 <p>Every site we build at Untold.works targets a Lighthouse performance score above 90 on simulated 3G connections. Here is how we get there.</p>
 <ul>
 <li><strong>Static generation.</strong> Pages are pre-built at deploy time, not generated on the fly. The server sends a finished HTML file that displays immediately.</li>
@@ -719,7 +719,7 @@ export const blogPosts: BlogPost[] = [
       es: 'Los despachos de servicios profesionales tratan su sitio web como un curriculum. Deberia ser una maquina de adquisicion de clientes. Aqui esta el manual.',
     },
     content: {
-      en: `<p>We have built websites for dozens of professional service firms: law firms, accounting practices, management consultancies, architecture studios. And nearly every one of them starts the conversation the same way: "We need a site that looks credible and lists our services." That is the wrong starting point, and it leads to websites that look polished but do nothing.</p>
+      en: `<p>We have built <a href="/solutions/professional-services">websites for dozens of professional service firms</a>: law firms, accounting practices, management consultancies, architecture studios. And nearly every one of them starts the conversation the same way: "We need a site that looks credible and lists our services." That is the wrong starting point, and it leads to websites that look polished but do nothing.</p>
 <h2>The Problem with Credibility-First Design</h2>
 <p>When a professional service firm designs for credibility, they end up with stock photos of handshakes, generic copy about "decades of experience," and a team page with headshots that all have the same blue background. The site looks like every other firm in their industry. It says "we are professionals" but never answers the visitor's real question: "Can you solve my specific problem?"</p>
 <h2>What Works Instead</h2>
@@ -728,9 +728,9 @@ export const blogPosts: BlogPost[] = [
 <h3>Build Service Pages That Convert</h3>
 <p>Each service page should be a standalone landing page: clear description of what you do, who it is for, what the process looks like, what it costs (even a range), and a clear call to action. Every page should have its own intake form tailored to that service. A visitor who lands on your "estate planning" page should not have to use the same generic contact form as someone looking for corporate litigation.</p>
 <h3>Use Social Proof Strategically</h3>
-<p>Testimonials are powerful, but only when they are specific. "Great lawyer, highly recommend" is useless. "After our landlord dispute, Maria recovered our full deposit plus damages in 6 weeks" tells a story that resonates with someone in a similar situation.</p>
+<p>Testimonials are powerful, but only when they are specific. "Great lawyer, highly recommend" is useless. "After our landlord dispute, Maria recovered our full deposit plus damages in 6 weeks" tells a story that resonates with someone in a similar situation. See how we applied this for <a href="/blog/case-study-law-firm-client-intake-automation">a law firm's client intake system</a>.</p>
 <h2>The Technical Foundation</h2>
-<p>Professional service sites need to load fast, rank well in local search, and work flawlessly on mobile. We build them on modern frameworks with structured data markup for legal or professional schema, local SEO optimization, and integrated scheduling. The result is a site that does not just look credible but actually generates qualified leads on autopilot.</p>`,
+<p>Professional service sites need to load fast, rank well in local search, and work flawlessly on mobile. We <a href="/websites">build them on modern frameworks</a> with structured data markup for legal or professional schema, local SEO optimization, and integrated scheduling. The result is a site that does not just look credible but actually generates qualified leads on autopilot.</p>`,
       es: `<p>Hemos construido sitios web para docenas de firmas de servicios profesionales: despachos de abogados, firmas contables, consultorias de gestion, estudios de arquitectura. Y casi todas comienzan la conversacion de la misma manera: "Necesitamos un sitio que se vea serio y liste nuestros servicios." Ese es el punto de partida equivocado, y lleva a sitios web que se ven pulidos pero no hacen nada.</p>
 <h2>El Problema del Diseno Centrado en Credibilidad</h2>
 <p>Cuando una firma de servicios profesionales disena para credibilidad, termina con fotos de stock de apretones de manos, texto generico sobre "decadas de experiencia," y una pagina de equipo con fotos que todas tienen el mismo fondo azul. El sitio se ve como todas las demas firmas en su industria. Dice "somos profesionales" pero nunca responde la pregunta real del visitante: "Pueden resolver mi problema especifico?"</p>
@@ -840,18 +840,18 @@ export const blogPosts: BlogPost[] = [
     content: {
       en: `<p>90% of founders and marketers said AEO was the biggest revenue opportunity of 2026. And most people still don't know what it is.</p>
 <p>So let me break it down.</p>
-<p>AEO stands for AI Engine Optimization. It's the practice of getting your business mentioned and recommended by AI platforms like ChatGPT, Gemini, Claude, Perplexity, and Google's own AI Overviews.</p>
+<p>AEO stands for AI Engine Optimization. It's the practice of getting your business mentioned and recommended by AI platforms like ChatGPT, Gemini, Claude, Perplexity, and Google's own AI Overviews. It's a core part of what we deliver through our <a href="/seo-aeo">SEO &amp; AEO service</a>.</p>
 <p>Here's why it matters: more than 50% of Google searches now end with an AI overview. 7 billion searches a day are being answered by AI before anyone clicks a link. The way people find businesses is changing fast, and it's not going back.</p>
-<h2>SEO Was About Ranking. AEO Is About Getting Recommended.</h2>
+<h2>What Is the Difference Between SEO and AEO?</h2>
 <p>That's a fundamental difference. AI doesn't show you a list of links. It reads the entire internet and decides who to mention by name. And the way it decides is different from how Google ranked pages.</p>
 <p>AI pulls from trusted sources. Wikipedia. Reddit. Crunchbase. News publications. It looks at whether your content sounds like a real expert or a keyword-stuffed article from 2019. It cares about trust, authority, and whether you actually answer the question someone is asking. In a conversation, not in a list of keywords.</p>
-<h2>Four Things That Matter Right Now</h2>
+<h2>What Are the Four Things That Matter for AEO Right Now?</h2>
 <p><strong>1. Write content around real questions people ask, not keywords.</strong> Structure it conversationally.</p>
 <p><strong>2. Build authority in the places AI trusts.</strong> Get mentioned on Reddit, Wikipedia, reputable publications. That's your new backlink strategy.</p>
-<p><strong>3. Structure your content so AI can actually read it.</strong> Clean HTML, clear headings, FAQ sections, tables. Make it easy to cite.</p>
+<p><strong>3. Structure your content so AI can actually read it.</strong> Clean HTML, clear headings, FAQ sections, tables. Make it easy to cite. This starts with <a href="/websites">how your website is built</a>.</p>
 <p><strong>4. Schema markup.</strong> Tell AI exactly what your business is and what your content means. Organizational schema for your brand, article schema for your content.</p>
 <h2>The Window Is Now</h2>
-<p>AEO isn't replacing SEO. Google still handles 14 billion searches a day. But it's the layer on top that most businesses are completely ignoring. And the window to get ahead is right now.</p>
+<p>AEO isn't replacing SEO. Google still handles 14 billion searches a day. But it's the layer on top that most businesses are completely ignoring. For a deeper dive into this next layer, read about <a href="/blog/geo-flip-your-marketing-strategy">Generative Engine Optimization (GEO)</a>. And the window to get ahead is right now.</p>
 <p>Early SEO in 2009 was a land grab. This is the same moment.</p>
 <p class="text-sm text-untold-gray mt-8"><em>Joshua is the founder of Untold Works, a creative technology agency in San Miguel de Allende, Mexico.</em></p>`,
       es: `<p>El 90% de los fundadores y marketers dijo que AEO era la mayor oportunidad de ingresos de 2026. Y la mayoria aun no sabe que es.</p>
@@ -889,15 +889,15 @@ export const blogPosts: BlogPost[] = [
     },
     content: {
       en: `<p>If you're running a business right now and you've never heard of GEO, you need to stop what you're doing and read this.</p>
-<p>GEO stands for Generative Engine Optimization. It's the practice of making sure your brand, your content, and your business show up when someone asks an AI a question. Not Google. AI. ChatGPT, Gemini, Claude, Perplexity, Google's AI Overviews. All of them.</p>
+<p>GEO stands for Generative Engine Optimization. It's the evolution of what we covered in our post on <a href="/blog/aeo-the-shift-nobodys-talking-about">AEO</a>: the practice of making sure your brand, your content, and your business show up when someone asks an AI a question. Not Google. AI. ChatGPT, Gemini, Claude, Perplexity, Google's AI Overviews. All of them.</p>
 <p>This is different from SEO. Let me explain why.</p>
 <p>SEO was about ranking. You picked a keyword, you optimized a page, you built backlinks, and you tried to show up on the first page of Google. That game still exists. Google handles 14 billion searches a day. It's not dead.</p>
 <p>But here's what's changing: more than 50% of Google searches now end with an AI overview. The user gets their answer right there. They never click a link. And on platforms like ChatGPT and Perplexity, there are no links to click. The AI reads the internet, picks who to recommend, and gives a conversational answer. Your website either gets mentioned or it doesn't.</p>
 <p>GEO is how you make sure you get mentioned.</p>
 <h2>So Is SEO Dead?</h2>
-<p>No. But it's not enough anymore. Think of it this way: SEO gets you indexed. GEO gets you recommended. You need both, but if you're only doing SEO in 2026, you're playing half the game.</p>
+<p>No. But it's not enough anymore. Think of it this way: SEO gets you indexed. GEO gets you recommended. You need both, and that's exactly why we built our <a href="/seo-aeo">SEO &amp; AEO service</a> to cover the full spectrum. If you're only doing SEO in 2026, you're playing half the game.</p>
 <p>The shift is subtle but massive. SEO optimized for algorithms that ranked pages. GEO optimizes for AI that recommends solutions. The AI doesn't care about your keyword density. It cares about whether you actually answered the question, whether you sound like a real expert, and whether trusted sources on the internet back up what you're saying.</p>
-<h2>What Actually Matters for GEO</h2>
+<h2>What Actually Matters for Generative Engine Optimization?</h2>
 <p><strong>Answer real questions, not keywords.</strong> Stop writing content around "best CRM software" and start writing content around "what's the best CRM for a small business that needs a fast setup and simple interface." AI answers questions. If your content is structured as clear questions with direct answers, you're more likely to get cited.</p>
 <p><strong>Sound like a human expert.</strong> AI can tell the difference between a keyword-stuffed article and something written by someone who actually knows what they're talking about. Include real experiences. Share specific opinions. Reference actual results. The more your content sounds like a knowledgeable person talking, the more AI trusts it.</p>
 <p><strong>Show up where AI trains.</strong> This is the part most people miss. AI models don't just read your website. They're trained on Wikipedia, Reddit, Quora, Crunchbase, news publications, review sites. If your business isn't accurately described in those places, AI doesn't know who you are. Getting listed and mentioned on these platforms is the new link building.</p>
@@ -911,7 +911,7 @@ export const blogPosts: BlogPost[] = [
 <h2>The Window Is Open</h2>
 <p>This is early. Most businesses haven't even heard of GEO yet. That means there's a real first-mover advantage right now. The businesses that start showing up in AI answers today are building authority that compounds over time. The longer you wait, the harder it gets.</p>
 <p>Early SEO was a land grab. GEO is the same moment. And this time you don't need a team of developers and a $10K monthly retainer to play. You just need to start.</p>
-<p>If you want help thinking through your GEO strategy or need someone to build it out for you, reach out. This is exactly what we do at Untold Works.</p>
+<p>If you want help thinking through your GEO strategy or need someone to build it out for you, <a href="/contact">reach out</a>. This is exactly what we do at <a href="/about">Untold Works</a>.</p>
 <p class="text-sm text-untold-gray mt-8"><em>Joshua is the founder of Untold Works, a creative technology agency in San Miguel de Allende, Mexico.</em></p>`,
       es: `<p>Si tienes un negocio ahora mismo y nunca has escuchado de GEO, necesitas dejar lo que estas haciendo y leer esto.</p>
 <p>GEO significa Generative Engine Optimization, o Optimizacion para Motores Generativos. Es la practica de asegurarte de que tu marca, tu contenido y tu negocio aparezcan cuando alguien le hace una pregunta a una IA. No a Google. A la IA. ChatGPT, Gemini, Claude, Perplexity, los AI Overviews de Google. Todos.</p>

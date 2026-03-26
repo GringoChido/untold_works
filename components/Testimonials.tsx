@@ -9,6 +9,7 @@ const testimonials = [
     },
     name: 'William Berriochoa',
     role: { en: 'NoxGuard — US / Mexico', es: 'NoxGuard — EE.UU. / México' },
+    datePublished: '2023-11-15',
   },
   {
     quote: {
@@ -17,6 +18,7 @@ const testimonials = [
     },
     name: 'Ryan Stick',
     role: { en: 'Billiard Factory', es: 'Billiard Factory' },
+    datePublished: '2024-03-22',
   },
   {
     quote: {
@@ -25,6 +27,7 @@ const testimonials = [
     },
     name: 'Vincent Bennett',
     role: { en: 'Second Son Productions', es: 'Second Son Productions' },
+    datePublished: '2024-08-10',
   },
 ];
 
@@ -57,7 +60,7 @@ const Testimonials: React.FC<TestimonialsProps> = ({ variant = 'light' }) => {
       reviewRating: { '@type': 'Rating', ratingValue: '5', bestRating: '5' },
       author: { '@type': 'Person', name: item.name },
       reviewBody: item.quote.en,
-      datePublished: '2024-01-15',
+      datePublished: item.datePublished,
     })),
   };
 
@@ -72,9 +75,9 @@ const Testimonials: React.FC<TestimonialsProps> = ({ variant = 'light' }) => {
           </h2>
         </div>
 
-        <h3 className={`font-sans font-black text-3xl sm:text-5xl lg:text-6xl uppercase tracking-tighter mb-16 leading-[0.85] ${isDark ? 'text-white' : 'text-untold-black'}`}>
+        <h2 className={`font-sans font-black text-3xl sm:text-5xl lg:text-6xl uppercase tracking-tighter mb-16 leading-[0.85] ${isDark ? 'text-white' : 'text-untold-black'}`}>
           {t({ en: 'What Do Our\nClients Say?', es: '¿Qué Dicen\nNuestros Clientes?' })}
-        </h3>
+        </h2>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {testimonials.map((item, idx) => (
