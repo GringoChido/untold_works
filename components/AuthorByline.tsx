@@ -16,6 +16,8 @@ const AuthorByline: React.FC<AuthorBylineProps> = ({ name, date, variant = 'dark
       <img
         src="/images/about-photo.webp"
         alt={name}
+        width={56}
+        height={56}
         className="w-14 h-14 rounded-full object-cover"
       />
       <div>

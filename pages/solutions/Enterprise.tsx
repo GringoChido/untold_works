@@ -177,7 +177,11 @@ const Enterprise: React.FC = () => {
         <div className="aspect-[21/9] overflow-hidden">
           <img
             src="/images/solutions/enterprise.webp"
+            srcSet="/images/solutions/enterprise-640w.webp 640w, /images/solutions/enterprise-1024w.webp 1024w, /images/solutions/enterprise.webp 1440w"
+            sizes="(max-width: 768px) 100vw, 50vw"
             alt={t({ en: 'Enterprise operations — corporate office, warehouse, or executive team meeting', es: 'Operaciones empresariales — oficina corporativa, almacén o reunión de equipo ejecutivo' })}
+            width={1440}
+            height={810}
             className="w-full h-full object-cover"
             loading="lazy"
           />

@@ -161,7 +161,11 @@ const AboutPage: React.FC = () => {
           <div className="aspect-[4/3] lg:aspect-auto overflow-hidden">
             <img
               src="/images/about-photo.webp"
+              srcSet="/images/about-photo-640w.webp 640w, /images/about-photo-1024w.webp 1024w, /images/about-photo.webp 1920w"
+              sizes="(max-width: 768px) 100vw, 50vw"
               alt="Joshua Semolik — Founder of Untold.works, San Miguel de Allende"
+              width={1920}
+              height={2286}
               className="w-full h-full object-cover"
               loading="eager"
             />
@@ -315,6 +319,8 @@ const AboutPage: React.FC = () => {
               <img
                 src="/images/mit-badge.svg"
                 alt="MIT Management Executive Education Badge"
+                width={64}
+                height={64}
                 className="w-16 h-16 shrink-0"
               />
               <div className="flex-1">
@@ -496,6 +502,8 @@ const AboutPage: React.FC = () => {
             <img
               src="/images/mit-sloan-certificate.png"
               alt="MIT Sloan School of Management — Artificial Intelligence: Implications for Business Strategy — Joshua Semolik"
+              width={3508}
+              height={2481}
               className="w-full h-auto"
             />
           </div>

@@ -544,7 +544,11 @@ const Websites: React.FC = () => {
               <div className="aspect-[16/10] overflow-hidden">
                 <img
                   src="/images/project5-noxguard/truck.webp"
+                  srcSet="/images/project5-noxguard/truck-640w.webp 640w, /images/project5-noxguard/truck-1024w.webp 1024w, /images/project5-noxguard/truck-1920w.webp 1920w, /images/project5-noxguard/truck.webp 2738w"
+                  sizes="(max-width: 768px) 100vw, 33vw"
                   alt="Noxguard brand rebuild — website and identity system"
+                  width={2738}
+                  height={1338}
                   loading="lazy"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                 />
@@ -567,7 +571,11 @@ const Websites: React.FC = () => {
               <div className="aspect-[16/10] overflow-hidden">
                 <img
                   src="/images/project4-billiard/image3.webp"
+                  srcSet="/images/project4-billiard/image3-640w.webp 640w, /images/project4-billiard/image3-1024w.webp 1024w, /images/project4-billiard/image3-1920w.webp 1920w, /images/project4-billiard/image3.webp 2258w"
+                  sizes="(max-width: 768px) 100vw, 33vw"
                   alt="Billiard Factory retail digital architecture"
+                  width={2258}
+                  height={1222}
                   loading="lazy"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                 />
@@ -590,7 +598,11 @@ const Websites: React.FC = () => {
               <div className="aspect-[16/10] overflow-hidden">
                 <img
                   src="/images/project3-omi/image1.webp"
+                  srcSet="/images/project3-omi/image1-640w.webp 640w, /images/project3-omi/image1-1024w.webp 1024w, /images/project3-omi/image1.webp 1920w"
+                  sizes="(max-width: 768px) 100vw, 33vw"
                   alt="OMI lead intake and qualification system"
+                  width={1920}
+                  height={1280}
                   loading="lazy"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                 />

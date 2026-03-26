@@ -201,7 +201,11 @@ const SmallBusiness: React.FC = () => {
         <div className="aspect-[21/9] overflow-hidden">
           <img
             src="/images/solutions/small-business.jpg"
+            srcSet="/images/solutions/small-business-640w.jpg 640w, /images/solutions/small-business-1024w.jpg 1024w, /images/solutions/small-business.jpg 1600w"
+            sizes="(max-width: 768px) 100vw, 50vw"
             alt={t({ en: 'Small business team collaborating — restaurant, retail, or hotel operations', es: 'Equipo de pequeña empresa colaborando — operaciones de restaurante, retail u hotel' })}
+            width={1600}
+            height={900}
             className="w-full h-full object-cover"
             loading="lazy"
           />

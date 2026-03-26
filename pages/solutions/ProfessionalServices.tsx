@@ -165,7 +165,11 @@ const ProfessionalServices: React.FC = () => {
         <div className="aspect-[21/9] overflow-hidden">
           <img
             src="/images/solutions/professional-services.jpg"
+            srcSet="/images/solutions/professional-services-640w.jpg 640w, /images/solutions/professional-services-1024w.jpg 1024w, /images/solutions/professional-services-1920w.jpg 1920w, /images/solutions/professional-services.jpg 2121w"
+            sizes="(max-width: 768px) 100vw, 50vw"
             alt={t({ en: 'Professional at work — consultant, therapist, or attorney in their practice', es: 'Profesional trabajando — consultor, terapeuta o abogado en su práctica' })}
+            width={2121}
+            height={1414}
             className="w-full h-full object-cover"
             loading="lazy"
           />

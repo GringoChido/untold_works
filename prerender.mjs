@@ -65,6 +65,7 @@ const routes = [
   '/blog/yo-this-thing-is-broken',
   '/blog/your-creative-eye-became-the-prompt',
   '/blog/the-site-is-the-proposal',
+  '/blog/n8n-vs-zapier-for-mexican-businesses',
 ];
 
 async function waitForServer(url, maxAttempts = 30) {
