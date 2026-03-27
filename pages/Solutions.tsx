@@ -122,6 +122,20 @@ const Solutions: React.FC = () => {
     },
   ];
 
+  const capabilities = [
+    { path: '/websites', label: { en: 'Website Design & Rebuild', es: 'Diseño y Reconstrucción Web' }, desc: { en: 'Brand-first, mobile-ready, bilingual', es: 'Marca primero, mobile-ready, bilingüe' } },
+    { path: '/copywriting', label: { en: 'Copywriting & Brand Messaging', es: 'Copywriting y Mensajería de Marca' }, desc: { en: 'One voice, every channel', es: 'Una voz, cada canal' } },
+    { path: '/ai-content', label: { en: 'AI Content Engine', es: 'Motor de Contenido IA' }, desc: { en: 'Continuous automated content', es: 'Contenido automatizado continuo' } },
+    { path: '/seo-aeo', label: { en: 'SEO, AEO & GEO', es: 'SEO, AEO y GEO' }, desc: { en: 'Found by search and AI', es: 'Encontrado por buscadores e IA' } },
+    { path: '/social-media', label: { en: 'Social Media', es: 'Redes Sociales' }, desc: { en: 'Organic strategy & management', es: 'Estrategia orgánica y gestión' } },
+    { path: '/ads', label: { en: 'Paid Advertising', es: 'Publicidad Pagada' }, desc: { en: 'Google, Meta, LinkedIn', es: 'Google, Meta, LinkedIn' } },
+    { path: '/dashboard', label: { en: 'Dashboard & Intelligence', es: 'Dashboard e Inteligencia' }, desc: { en: 'Your entire business, one screen', es: 'Todo tu negocio, una pantalla' } },
+    { path: '/sales-enablement', label: { en: 'Sales Enablement', es: 'Habilitación de Ventas' }, desc: { en: 'Tools that close deals', es: 'Herramientas que cierran ventas' } },
+    { path: '/mobile-apps', label: { en: 'Mobile Applications', es: 'Aplicaciones Móviles' }, desc: { en: 'Customer and team apps', es: 'Apps para clientes y equipo' } },
+    { path: '/hosting', label: { en: 'Hosting & Operations', es: 'Hosting y Operaciones' }, desc: { en: 'Security, uptime, management', es: 'Seguridad, uptime, gestión' } },
+    { path: '/review-reputation', label: { en: 'Review & Reputation', es: 'Reseñas y Reputación' }, desc: { en: 'Automated review management', es: 'Gestión automatizada de reseñas' } },
+  ];
+
   const process = [
     {
       number: '01',
@@ -183,41 +197,124 @@ const Solutions: React.FC = () => {
               es: 'Elige el Sistema Correcto Para Tu Negocio',
             })}
           </h1>
-          <p className="text-xl sm:text-2xl lg:text-4xl font-serif italic text-white/60 max-w-4xl leading-tight">
+          <p className="text-xl sm:text-2xl font-serif italic text-white/60 max-w-3xl leading-relaxed mb-8">
             {t({
-              en: 'Three tiers. One philosophy: build it right, hand over the keys, and get out of the way.',
-              es: 'Tres niveles. Una filosofía: construirlo bien, entregar las llaves y no estorbar.',
+              en: 'We don\'t build websites. We build the AI-powered operating system your business runs on — brand, website, marketing, automation, dashboards, and sales tools — all connected, all yours. Every project follows the same philosophy: build it right, train you on everything, and hand over the keys.',
+              es: 'No construimos sitios web. Construimos el sistema operativo impulsado por IA sobre el que funciona tu negocio — marca, sitio web, marketing, automatización, dashboards y herramientas de venta — todo conectado, todo tuyo. Cada proyecto sigue la misma filosofía: construirlo bien, capacitarte en todo y entregarte las llaves.',
             })}
           </p>
+          <Link
+            to="/network-systems"
+            className="inline-flex items-center space-x-3 font-mono text-[11px] uppercase tracking-[0.3em] text-untold-orange hover:text-white transition-colors font-bold"
+          >
+            <span>{t({ en: 'See the full Network Systems platform', es: 'Ver la plataforma completa de Network Systems' })}</span>
+            <span>→</span>
+          </Link>
         </div>
       </section>
 
-      {/* ── Services Grid ── */}
-      <section className="bg-white px-5 sm:px-10 py-16 sm:py-24 border-b border-untold-border">
+      {/* ── Choose Your Path ── */}
+      <section className="px-5 sm:px-10 py-20 sm:py-32 border-b border-untold-border">
         <div className="max-w-[1440px] mx-auto">
-          <div className="flex items-center space-x-4 mb-12">
+          <div className="flex items-center space-x-4 mb-16">
             <span className="w-2.5 h-2.5 rounded-full bg-untold-orange"></span>
             <h2 className="font-mono text-[13px] uppercase tracking-[0.6em] font-bold text-untold-black/40">
-              {t({ en: 'SERVICES', es: 'SERVICIOS' })}
+              {t({ en: 'CHOOSE YOUR PATH', es: 'ELIGE TU CAMINO' })}
             </h2>
           </div>
-          <div className="divide-y divide-untold-border border-t border-b border-untold-border">
-            {[
-              { path: '/websites', label: { en: 'Website Design', es: 'Diseño Web' } },
-              { path: '/seo-aeo', label: { en: 'SEO & AEO', es: 'SEO y AEO' } },
-              { path: '/social-media', label: { en: 'Social Media', es: 'Redes Sociales' } },
-              { path: '/ads', label: { en: 'Ads', es: 'Publicidad' } },
-              { path: '/dashboard', label: { en: 'Dashboard', es: 'Dashboard' } },
-            ].map((service) => (
+
+          <div className="space-y-8">
+            {solutions.map((solution) => (
               <Link
-                key={service.path}
-                to={service.path}
-                className="group flex items-center justify-between py-6 sm:py-8 hover:pl-4 transition-all"
+                key={solution.id}
+                to={`/solutions/${solution.id}`}
+                className="group block border border-untold-border bg-white hover:border-untold-orange/40 hover:shadow-lg transition-all"
               >
-                <h3 className="font-sans font-black text-2xl sm:text-3xl lg:text-4xl uppercase tracking-tighter group-hover:text-untold-orange transition-colors">
-                  {t(service.label)}
-                </h3>
-                <span className="text-untold-orange text-xl sm:text-2xl opacity-0 group-hover:opacity-100 group-hover:translate-x-0 -translate-x-4 transition-all">
+                <div className="grid lg:grid-cols-12 gap-0">
+                  <div className="lg:col-span-5 p-8 sm:p-10 lg:p-14 lg:border-r border-untold-border flex flex-col justify-between">
+                    <div>
+                      <span className="font-mono text-[10px] uppercase tracking-[0.5em] text-untold-orange font-bold block mb-4">
+                        {t(solution.eyebrow)}
+                      </span>
+                      <h3 className="font-sans font-black text-3xl sm:text-4xl lg:text-5xl uppercase tracking-tighter mb-4 group-hover:text-untold-orange transition-colors">
+                        {t(solution.title)}
+                      </h3>
+                      <p className="text-lg sm:text-xl font-serif italic text-untold-gray leading-relaxed mb-8">
+                        {t(solution.headline)}
+                      </p>
+                    </div>
+                    <div className="flex flex-wrap gap-4 pt-6 border-t border-untold-border/50">
+                      <div>
+                        <span className="font-mono text-[9px] uppercase tracking-[0.3em] text-untold-black/30 block">{t({ en: 'Starting at', es: 'Desde' })}</span>
+                        <span className="font-sans font-black text-lg tracking-tight">{t(solution.pricing)}</span>
+                      </div>
+                      <div>
+                        <span className="font-mono text-[9px] uppercase tracking-[0.3em] text-untold-black/30 block">{t({ en: 'Timeline', es: 'Plazo' })}</span>
+                        <span className="font-sans font-black text-lg tracking-tight">{t(solution.timeline)}</span>
+                      </div>
+                      <div>
+                        <span className="font-mono text-[9px] uppercase tracking-[0.3em] text-untold-black/30 block">{t({ en: 'Best for', es: 'Ideal para' })}</span>
+                        <span className="font-sans font-black text-lg tracking-tight">{t(solution.bestFor)}</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="lg:col-span-7 p-8 sm:p-10 lg:p-14 flex flex-col justify-between">
+                    <div>
+                      <p className="text-base sm:text-lg font-serif text-untold-gray leading-relaxed mb-8">
+                        {t(solution.description)}
+                      </p>
+                      <ul className="grid sm:grid-cols-2 gap-3">
+                        {solution.highlights.map((item, i) => (
+                          <li key={i} className="flex items-start space-x-3">
+                            <span className="text-untold-orange mt-1 text-sm">+</span>
+                            <span className="text-sm sm:text-base font-serif">{t(item)}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                    <div className="mt-8 pt-6 border-t border-untold-border/50 flex justify-end">
+                      <span className="inline-flex items-center space-x-2 font-sans font-black text-sm uppercase tracking-tighter text-untold-orange group-hover:translate-x-2 transition-transform">
+                        <span>{t({ en: 'See Full Details', es: 'Ver Detalles Completos' })}</span>
+                        <span>&rarr;</span>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ── Capabilities ── */}
+      <section className="bg-white px-5 sm:px-10 py-16 sm:py-24 border-b border-untold-border">
+        <div className="max-w-[1440px] mx-auto">
+          <div className="flex items-center space-x-4 mb-6">
+            <span className="w-2.5 h-2.5 rounded-full bg-untold-orange"></span>
+            <h2 className="font-mono text-[13px] uppercase tracking-[0.6em] font-bold text-untold-black/40">
+              {t({ en: 'CAPABILITIES', es: 'CAPACIDADES' })}
+            </h2>
+          </div>
+          <p className="text-lg font-serif italic text-untold-gray mb-12 max-w-3xl">
+            {t({
+              en: 'Every solution draws from the same set of capabilities — combined and scaled to fit your business.',
+              es: 'Cada solución utiliza el mismo conjunto de capacidades — combinadas y escaladas para tu negocio.',
+            })}
+          </p>
+          <div className="divide-y divide-untold-border border-t border-b border-untold-border">
+            {capabilities.map((cap) => (
+              <Link
+                key={cap.path}
+                to={cap.path}
+                className="group flex items-center justify-between py-5 sm:py-6 hover:pl-4 transition-all"
+              >
+                <div className="flex-grow">
+                  <h3 className="font-sans font-black text-xl sm:text-2xl lg:text-3xl uppercase tracking-tighter group-hover:text-untold-orange transition-colors">
+                    {t(cap.label)}
+                  </h3>
+                  <p className="font-serif italic text-untold-gray text-sm mt-1">{t(cap.desc)}</p>
+                </div>
+                <span className="text-untold-orange text-xl sm:text-2xl opacity-0 group-hover:opacity-100 group-hover:translate-x-0 -translate-x-4 transition-all shrink-0 ml-4">
                   &rarr;
                 </span>
               </Link>
@@ -226,7 +323,7 @@ const Solutions: React.FC = () => {
         </div>
       </section>
 
-      {/* ── The Promise ── */}
+      {/* ── What You Get ── */}
       <section className="bg-white px-5 sm:px-10 py-16 sm:py-24 border-b border-untold-border">
         <div className="max-w-[1440px] mx-auto grid lg:grid-cols-2 gap-12 lg:gap-20">
           <div>
@@ -265,81 +362,6 @@ const Solutions: React.FC = () => {
         </div>
       </section>
 
-      {/* ── Three Solutions ── */}
-      <section className="px-5 sm:px-10 py-20 sm:py-32 border-b border-untold-border">
-        <div className="max-w-[1440px] mx-auto">
-          <div className="flex items-center space-x-4 mb-16">
-            <span className="w-2.5 h-2.5 rounded-full bg-untold-orange"></span>
-            <h2 className="font-mono text-[13px] uppercase tracking-[0.6em] font-bold text-untold-black/40">
-              {t({ en: 'CHOOSE YOUR PATH', es: 'ELIGE TU CAMINO' })}
-            </h2>
-          </div>
-
-          <div className="space-y-8">
-            {solutions.map((solution, idx) => (
-              <Link
-                key={solution.id}
-                to={`/solutions/${solution.id}`}
-                className="group block border border-untold-border bg-white hover:border-untold-orange/40 hover:shadow-lg transition-all"
-              >
-                <div className="grid lg:grid-cols-12 gap-0">
-                  {/* Left — Identity */}
-                  <div className="lg:col-span-5 p-8 sm:p-10 lg:p-14 lg:border-r border-untold-border flex flex-col justify-between">
-                    <div>
-                      <span className="font-mono text-[10px] uppercase tracking-[0.5em] text-untold-orange font-bold block mb-4">
-                        {t(solution.eyebrow)}
-                      </span>
-                      <h3 className="font-sans font-black text-3xl sm:text-4xl lg:text-5xl uppercase tracking-tighter mb-4 group-hover:text-untold-orange transition-colors">
-                        {t(solution.title)}
-                      </h3>
-                      <p className="text-lg sm:text-xl font-serif italic text-untold-gray leading-relaxed mb-8">
-                        {t(solution.headline)}
-                      </p>
-                    </div>
-                    <div className="flex flex-wrap gap-4 pt-6 border-t border-untold-border/50">
-                      <div>
-                        <span className="font-mono text-[9px] uppercase tracking-[0.3em] text-untold-black/30 block">{t({ en: 'Starting at', es: 'Desde' })}</span>
-                        <span className="font-sans font-black text-lg tracking-tight">{t(solution.pricing)}</span>
-                      </div>
-                      <div>
-                        <span className="font-mono text-[9px] uppercase tracking-[0.3em] text-untold-black/30 block">{t({ en: 'Timeline', es: 'Plazo' })}</span>
-                        <span className="font-sans font-black text-lg tracking-tight">{t(solution.timeline)}</span>
-                      </div>
-                      <div>
-                        <span className="font-mono text-[9px] uppercase tracking-[0.3em] text-untold-black/30 block">{t({ en: 'Best for', es: 'Ideal para' })}</span>
-                        <span className="font-sans font-black text-lg tracking-tight">{t(solution.bestFor)}</span>
-                      </div>
-                    </div>
-                  </div>
-                  {/* Right — Detail */}
-                  <div className="lg:col-span-7 p-8 sm:p-10 lg:p-14 flex flex-col justify-between">
-                    <div>
-                      <p className="text-base sm:text-lg font-serif text-untold-gray leading-relaxed mb-8">
-                        {t(solution.description)}
-                      </p>
-                      <ul className="grid sm:grid-cols-2 gap-3">
-                        {solution.highlights.map((item, i) => (
-                          <li key={i} className="flex items-start space-x-3">
-                            <span className="text-untold-orange mt-1 text-sm">+</span>
-                            <span className="text-sm sm:text-base font-serif">{t(item)}</span>
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
-                    <div className="mt-8 pt-6 border-t border-untold-border/50 flex justify-end">
-                      <span className="inline-flex items-center space-x-2 font-sans font-black text-sm uppercase tracking-tighter text-untold-orange group-hover:translate-x-2 transition-transform">
-                        <span>{t({ en: 'See Full Details', es: 'Ver Detalles Completos' })}</span>
-                        <span>&rarr;</span>
-                      </span>
-                    </div>
-                  </div>
-                </div>
-              </Link>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* ── Comparison Table ── */}
       <section className="px-5 sm:px-10 py-20 sm:py-32 bg-white border-b border-untold-border">
         <div className="max-w-[1440px] mx-auto">
@@ -371,7 +393,6 @@ const Solutions: React.FC = () => {
                   { label: { en: 'Mobile-first website', es: 'Sitio web mobile-first' }, values: [{ en: '✓', es: '✓' }, { en: '✓', es: '✓' }, { en: '✓ Multi-site capable', es: '✓ Multi-sitio' }] },
                   { label: { en: 'AI workflows', es: 'Flujos de IA' }, values: [{ en: 'Intake & follow-up', es: 'Admisión y seguimiento' }, { en: 'Operations & marketing', es: 'Operaciones y marketing' }, { en: 'Cross-department', es: 'Entre departamentos' }] },
                   { label: { en: 'CRM', es: 'CRM' }, values: [{ en: 'Client management', es: 'Gestión de clientes' }, { en: 'Team CRM', es: 'CRM de equipo' }, { en: 'Multi-team + pipeline', es: 'Multi-equipo + pipeline' }] },
-                  { label: { en: 'Booking & scheduling', es: 'Reservas y agenda' }, values: [{ en: '✓', es: '✓' }, { en: '✓', es: '✓' }, { en: '✓ Multi-location', es: '✓ Multi-ubicación' }] },
                   { label: { en: 'Analytics', es: 'Analítica' }, values: [{ en: 'Revenue dashboard', es: 'Panel de ingresos' }, { en: 'Multi-user reporting', es: 'Reportes multiusuario' }, { en: 'RevOps + forecasting', es: 'RevOps + pronósticos' }] },
                   { label: { en: 'Bilingual (EN/ES)', es: 'Bilingüe (EN/ES)' }, values: [{ en: '✓', es: '✓' }, { en: '✓', es: '✓' }, { en: '✓ + additional languages', es: '✓ + idiomas adicionales' }] },
                   { label: { en: 'SEO & AEO', es: 'SEO y AEO' }, values: [{ en: '✓', es: '✓' }, { en: '✓', es: '✓' }, { en: '✓ Advanced', es: '✓ Avanzado' }] },
@@ -393,7 +414,7 @@ const Solutions: React.FC = () => {
         </div>
       </section>
 
-      {/* ── Our Process (Brief) ── */}
+      {/* ── Our Process ── */}
       <section className="px-5 sm:px-10 py-20 sm:py-32 border-b border-untold-border">
         <div className="max-w-[1440px] mx-auto">
           <div className="flex items-center space-x-4 mb-16">
@@ -498,7 +519,11 @@ const Solutions: React.FC = () => {
           en: 'These solutions are designed for individual businesses. If you operate a manufacturer-dealer network, franchise system, restaurant group, or any multi-location brand, our Network Systems offering deploys all of these capabilities across your entire network as one unified system.',
           es: 'Estas soluciones están diseñadas para negocios individuales. Si operas una red de fabricante-distribuidores, franquicias, grupo restaurantero o cualquier marca multi-ubicación, nuestra oferta de Network Systems despliega todas estas capacidades en toda tu red como un sistema unificado.',
         }}
-        variant="dark"
+        relatedCapabilities={[
+          { name: { en: 'Network Systems', es: 'Network Systems' }, path: '/network-systems' },
+          { name: { en: 'Website Design', es: 'Diseño Web' }, path: '/websites' },
+          { name: { en: 'Dashboard & Intelligence', es: 'Dashboard e Inteligencia' }, path: '/dashboard' },
+        ]}
       />
 
       {/* Testimonials */}

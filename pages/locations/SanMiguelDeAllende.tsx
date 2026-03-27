@@ -2,7 +2,6 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { useLanguage } from '../../App';
 import { usePageMeta } from '../../hooks/usePageMeta';
-import * as i18n from '../../i18n';
 import QuickLeadForm from '../../components/QuickLeadForm';
 import Breadcrumbs from '../../components/Breadcrumbs';
 import ImagePlaceholder from '../../components/ImagePlaceholder';
@@ -193,7 +192,6 @@ const SanMiguelDeAllende: React.FC = () => {
               variant="dark"
               crumbs={[
                 { label: { en: 'Home', es: 'Inicio' }, path: '/' },
-                { label: { en: 'Locations', es: 'Ubicaciones' }, path: '/locations' },
                 { label: { en: 'San Miguel de Allende', es: 'San Miguel de Allende' } },
               ]}
             />

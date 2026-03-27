@@ -605,7 +605,7 @@ export const blogPosts: BlogPost[] = [
 <h3>The Follow-Up System</h3>
 <p>After booking, guests enter an automated email sequence that sends pre-arrival information, local recommendations, and an upsell for spa services or private dining. This turned the booking confirmation into a revenue-generating touchpoint.</p>
 <h2>The Results</h2>
-<div class="bg-gray-50 border-l-4 border-untold-orange p-6 my-8">
+<div class="bg-untold-beige border-l-4 border-untold-orange p-6 my-8">
 <p class="font-semibold text-lg mb-2">Key Metrics (First 60 Days)</p>
 <ul>
 <li><strong>Direct bookings:</strong> 8% → 35% of total reservations (337% increase)</li>
@@ -627,7 +627,7 @@ export const blogPosts: BlogPost[] = [
 <h3>El Sistema de Seguimiento</h3>
 <p>Despues de la reserva, los huespedes entran en una secuencia automatizada de correos que envia informacion previa a la llegada, recomendaciones locales y una oferta de servicios de spa o cena privada. Esto convirtio la confirmacion de reserva en un punto de contacto que genera ingresos.</p>
 <h2>Los Resultados</h2>
-<div class="bg-gray-50 border-l-4 border-untold-orange p-6 my-8">
+<div class="bg-untold-beige border-l-4 border-untold-orange p-6 my-8">
 <p class="font-semibold text-lg mb-2">Metricas Clave (Primeros 60 Dias)</p>
 <ul>
 <li><strong>Reservas directas:</strong> 8% → 35% del total (aumento del 337%)</li>
@@ -667,7 +667,7 @@ export const blogPosts: BlogPost[] = [
 <h3>Document Collection</h3>
 <p>Instead of emailing back and forth asking for documents, the client receives a personalized portal link where they can upload everything the firm needs: IDs, prior filings, contracts. The system tracks what has been received and automatically sends reminders for missing items.</p>
 <h2>The Results</h2>
-<div class="bg-gray-50 border-l-4 border-untold-orange p-6 my-8">
+<div class="bg-untold-beige border-l-4 border-untold-orange p-6 my-8">
 <p class="font-semibold text-lg mb-2">Key Metrics</p>
 <ul>
 <li><strong>Intake processing time:</strong> 45 minutes → 12 minutes per client (73% reduction)</li>
@@ -688,7 +688,7 @@ export const blogPosts: BlogPost[] = [
 <h3>Recopilacion de Documentos</h3>
 <p>En lugar de enviar correos de ida y vuelta pidiendo documentos, el cliente recibe un enlace a un portal personalizado donde puede subir todo lo que el despacho necesita: identificaciones, tramites previos, contratos. El sistema rastrea lo que se ha recibido y envia recordatorios automaticos por los documentos faltantes.</p>
 <h2>Los Resultados</h2>
-<div class="bg-gray-50 border-l-4 border-untold-orange p-6 my-8">
+<div class="bg-untold-beige border-l-4 border-untold-orange p-6 my-8">
 <p class="font-semibold text-lg mb-2">Metricas Clave</p>
 <ul>
 <li><strong>Tiempo de procesamiento:</strong> 45 minutos → 12 minutos por cliente (reduccion del 73%)</li>
@@ -727,7 +727,7 @@ export const blogPosts: BlogPost[] = [
 <h3>The Content Layer</h3>
 <p>Each product page now tells the artisan's story with rich media: video, photography, and narrative text managed through a CMS that the brand's content team can update without developer involvement. This was impossible to achieve within Shopify's theme constraints.</p>
 <h2>The Results</h2>
-<div class="bg-gray-50 border-l-4 border-untold-orange p-6 my-8">
+<div class="bg-untold-beige border-l-4 border-untold-orange p-6 my-8">
 <p class="font-semibold text-lg mb-2">Key Metrics (First 90 Days)</p>
 <ul>
 <li><strong>Mobile conversion rate:</strong> 1.8% → 3.4% (89% increase)</li>
@@ -748,7 +748,7 @@ export const blogPosts: BlogPost[] = [
 <h3>La Capa de Contenido</h3>
 <p>Cada pagina de producto ahora cuenta la historia del artesano con medios ricos: video, fotografia y texto narrativo gestionado a traves de un CMS que el equipo de contenido de la marca puede actualizar sin involucrar a un desarrollador. Esto era imposible de lograr dentro de las restricciones del tema de Shopify.</p>
 <h2>Los Resultados</h2>
-<div class="bg-gray-50 border-l-4 border-untold-orange p-6 my-8">
+<div class="bg-untold-beige border-l-4 border-untold-orange p-6 my-8">
 <p class="font-semibold text-lg mb-2">Metricas Clave (Primeros 90 Dias)</p>
 <ul>
 <li><strong>Tasa de conversion movil:</strong> 1.8% → 3.4% (aumento del 89%)</li>

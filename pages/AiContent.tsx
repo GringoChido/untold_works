@@ -223,49 +223,57 @@ const AiContent: React.FC = () => {
     {
       q: { en: 'Is AI-generated content good for SEO?', es: '¿Es el contenido generado por IA bueno para SEO?' },
       a: {
-        en: 'Yes. Google officially approved AI-generated content in 2024. What matters is quality, relevance, and E-E-A-T (expertise, experience, authoritativeness, trustworthiness). Our engine produces all three by training on your products, voice, and expertise. Thin, generic AI content ranks poorly. Content trained on YOUR unique value proposition ranks well.'
+        en: 'Yes. Google officially approved AI-generated content in 2024. What matters is quality, relevance, and E-E-A-T (expertise, experience, authoritativeness, trustworthiness). Our engine produces all three by training on your products, voice, and expertise. Thin, generic AI content ranks poorly. Content trained on YOUR unique value proposition ranks well.',
+        es: 'Sí. Google aprobó oficialmente el contenido generado por IA en 2024. Lo que importa es la calidad, la relevancia y E-E-A-T (experiencia, conocimiento, autoridad, confiabilidad). Nuestro motor produce los tres al entrenarse con tus productos, tu voz y tu expertise. El contenido genérico de IA posiciona mal. El contenido entrenado con TU propuesta de valor única posiciona bien.'
       }
     },
     {
       q: { en: 'Will Google penalize AI content?', es: '¿Penalizará Google el contenido de IA?' },
       a: {
-        en: 'No. Google penalizes low-quality content regardless of how it was made. They don\'t penalize AI content that\'s useful, original, and demonstrates expertise. Our engine produces original content trained on your business, not scraped generic templates.'
+        en: 'No. Google penalizes low-quality content regardless of how it was made. They don\'t penalize AI content that\'s useful, original, and demonstrates expertise. Our engine produces original content trained on your business, not scraped generic templates.',
+        es: 'No. Google penaliza el contenido de baja calidad sin importar cómo se hizo. No penalizan contenido de IA que sea útil, original y demuestre expertise. Nuestro motor produce contenido original entrenado con tu negocio, no plantillas genéricas copiadas.'
       }
     },
     {
       q: { en: 'How is the content personalized for each location?', es: '¿Cómo se personaliza el contenido para cada ubicación?' },
       a: {
-        en: 'The engine uses location data (local competitors, local seasonality, local product availability, local customer preferences) to generate unique content for each site. A buying guide for Location A is different from Location B because customer needs, local competition, and product mix are different. Every piece is unique and GEO-optimized.'
+        en: 'The engine uses location data (local competitors, local seasonality, local product availability, local customer preferences) to generate unique content for each site. A buying guide for Location A is different from Location B because customer needs, local competition, and product mix are different. Every piece is unique and GEO-optimized.',
+        es: 'El motor usa datos de cada ubicación (competidores locales, estacionalidad, disponibilidad de productos, preferencias del cliente) para generar contenido único por sitio. Una guía de compra para la Ubicación A es diferente a la Ubicación B porque las necesidades del cliente, la competencia local y la mezcla de productos son distintas. Cada pieza es única y optimizada para GEO.'
       }
     },
     {
       q: { en: 'How much content does the engine produce?', es: '¿Cuánto contenido produce el motor?' },
       a: {
-        en: 'Configurable. Typical deployment: 4-8 blog posts per location per month, rotating through content types (buying guides, seasonal, educational, thought leadership, FAQ, industry trends). For a network of 30 locations, that\'s 120-240 unique pieces monthly. All published automatically to the right locations.'
+        en: 'Configurable. Typical deployment: 4-8 blog posts per location per month, rotating through content types (buying guides, seasonal, educational, thought leadership, FAQ, industry trends). For a network of 30 locations, that\'s 120-240 unique pieces monthly. All published automatically to the right locations.',
+        es: 'Configurable. Despliegue típico: 4-8 posts por ubicación al mes, rotando entre tipos de contenido (guías de compra, estacionales, educativos, liderazgo de opinión, FAQ, tendencias de la industria). Para una red de 30 ubicaciones, son 120-240 piezas únicas al mes. Todo se publica automáticamente en las ubicaciones correctas.'
       }
     },
     {
       q: { en: 'Do humans review content before publishing?', es: '¿Los humanos revisan el contenido antes de publicarlo?' },
       a: {
-        en: 'Optional. We can configure the engine to: (1) Generate and publish automatically (fastest), (2) Generate, wait for brand approval, then publish, (3) Generate, publish, then flag for human review. Brands concerned about quality usually run in mode #2 for 60 days to build confidence, then move to #1.'
+        en: 'Optional. We can configure the engine to: (1) Generate and publish automatically (fastest), (2) Generate, wait for brand approval, then publish, (3) Generate, publish, then flag for human review. Brands concerned about quality usually run in mode #2 for 60 days to build confidence, then move to #1.',
+        es: 'Opcional. Podemos configurar el motor para: (1) Generar y publicar automáticamente (lo más rápido), (2) Generar, esperar aprobación de la marca y luego publicar, (3) Generar, publicar y marcar para revisión humana. Las marcas preocupadas por la calidad normalmente arrancan en el modo #2 por 60 días para ganar confianza, y luego pasan al #1.'
       }
     },
     {
       q: { en: 'What\'s the compounding effect of 30 locations × 4 articles/month?', es: '¿Cuál es el efecto compuesto de 30 ubicaciones × 4 artículos/mes?' },
       a: {
-        en: 'Massive. 30 locations × 4 articles/month × 12 months = 1,440 indexed, evergreen SEO assets. Each article builds authority over time, attracts organic traffic, captures leads, and improves your network\'s overall domain authority. After 12 months, your network has a permanent content library worth thousands of hours of manual writing.'
+        en: 'Massive. 30 locations × 4 articles/month × 12 months = 1,440 indexed, evergreen SEO assets. Each article builds authority over time, attracts organic traffic, captures leads, and improves your network\'s overall domain authority. After 12 months, your network has a permanent content library worth thousands of hours of manual writing.',
+        es: 'Enorme. 30 ubicaciones × 4 artículos/mes × 12 meses = 1,440 activos SEO indexados y permanentes. Cada artículo construye autoridad con el tiempo, atrae tráfico orgánico, captura leads y mejora la autoridad de dominio de toda tu red. Después de 12 meses, tu red tiene una biblioteca de contenido permanente que equivale a miles de horas de redacción manual.'
       }
     },
     {
       q: { en: 'Can the engine handle multiple languages?', es: '¿Puede el motor manejar múltiples idiomas?' },
       a: {
-        en: 'Yes. Bilingual content generation (English + Spanish) is native. We train the engine on your brand voice in both languages, so each article is not translated — it\'s originally written in the target language with native fluency.'
+        en: 'Yes. Bilingual content generation (English + Spanish) is native. We train the engine on your brand voice in both languages, so each article is not translated — it\'s originally written in the target language with native fluency.',
+        es: 'Sí. La generación de contenido bilingüe (inglés + español) es nativa. Entrenamos el motor con la voz de tu marca en ambos idiomas, así que cada artículo no se traduce — se escribe originalmente en el idioma destino con fluidez nativa.'
       }
     },
     {
       q: { en: 'How does this differ from generic AI writing services?', es: '¿En qué difiere esto de los servicios genéricos de escritura con IA?' },
       a: {
-        en: 'Generic services produce the same article for everyone. Our engine trains on YOUR products, YOUR customer conversations, YOUR brand voice, YOUR expertise, and YOUR competitive landscape. The output is original, location-specific, and speaks directly to your customers\' actual problems and needs.'
+        en: 'Generic services produce the same article for everyone. Our engine trains on YOUR products, YOUR customer conversations, YOUR brand voice, YOUR expertise, and YOUR competitive landscape. The output is original, location-specific, and speaks directly to your customers\' actual problems and needs.',
+        es: 'Los servicios genéricos producen el mismo artículo para todos. Nuestro motor se entrena con TUS productos, TUS conversaciones con clientes, TU voz de marca, TU expertise y TU panorama competitivo. El resultado es original, específico por ubicación y habla directamente de los problemas y necesidades reales de tus clientes.'
       }
     },
   ];
@@ -344,7 +352,7 @@ const AiContent: React.FC = () => {
             ))}
           </div>
 
-          <div className="mt-12 bg-untold-black text-white p-8 sm:p-12 rounded-lg">
+          <div className="mt-12 bg-untold-black text-white p-8 sm:p-12">
             <h3 className="font-sans font-black text-2xl uppercase tracking-tighter mb-4">
               {t({ en: 'All Trained on YOUR Brand.', es: 'Todo Entrenado en TU Marca.' })}
             </h3>

@@ -48,19 +48,25 @@ const Footer: React.FC = () => {
             {/* Navigation */}
             <div className="flex flex-col space-y-5 lg:text-right">
               <span className="font-mono text-[10px] uppercase tracking-[0.6em] text-white/20 font-bold mb-4">NAV_DIRECTORY</span>
+              <Link
+                to="/network-systems"
+                className="text-2xl sm:text-3xl lg:text-4xl font-sans font-black uppercase tracking-tighter text-untold-orange hover:text-white transition-all duration-300 leading-none"
+              >
+                {t({ en: 'Network Systems', es: 'Network Systems' })}
+              </Link>
               {[
-                { key: 'portfolio', path: '/portfolio' },
-                { key: 'solutions', path: '/solutions' },
-                { key: 'blog', path: '/blog' },
-                { key: 'about', path: '/about' },
-                { key: 'contact', path: '/contact' },
+                { label: i18n.navigation.portfolio, path: '/portfolio' },
+                { label: i18n.navigation.solutions, path: '/solutions' },
+                { label: i18n.navigation.blog, path: '/blog' },
+                { label: i18n.navigation.about, path: '/about' },
+                { label: i18n.navigation.contact, path: '/contact' },
               ].map((item) => (
                 <Link
-                  key={item.key}
+                  key={item.path}
                   to={item.path}
-                  className="text-2xl sm:text-4xl lg:text-5xl font-sans font-black uppercase tracking-tighter text-white/40 hover:text-untold-orange transition-all duration-300 leading-none"
+                  className="text-2xl sm:text-3xl lg:text-4xl font-sans font-black uppercase tracking-tighter text-white/40 hover:text-untold-orange transition-all duration-300 leading-none"
                 >
-                  {t((i18n.navigation as any)[item.key])}
+                  {t(item.label)}
                 </Link>
               ))}
               <div className="flex flex-col space-y-2 lg:text-right pt-2">
@@ -81,10 +87,16 @@ const Footer: React.FC = () => {
               <div className="flex flex-col space-y-2 lg:text-right pt-2">
                 {[
                   { label: { en: 'Website Design', es: 'Diseño Web' }, path: '/websites' },
+                  { label: { en: 'Copywriting', es: 'Redacción de Textos' }, path: '/copywriting' },
+                  { label: { en: 'AI Content', es: 'Contenido IA' }, path: '/ai-content' },
                   { label: { en: 'SEO & AEO', es: 'SEO y AEO' }, path: '/seo-aeo' },
                   { label: { en: 'Social Media', es: 'Redes Sociales' }, path: '/social-media' },
                   { label: { en: 'Ads', es: 'Publicidad' }, path: '/ads' },
                   { label: { en: 'Dashboard', es: 'Dashboard' }, path: '/dashboard' },
+                  { label: { en: 'Sales Enablement', es: 'Habilitación de Ventas' }, path: '/sales-enablement' },
+                  { label: { en: 'Mobile Apps', es: 'Apps Móviles' }, path: '/mobile-apps' },
+                  { label: { en: 'Hosting', es: 'Hosting' }, path: '/hosting' },
+                  { label: { en: 'Review & Reputation', es: 'Reseñas y Reputación' }, path: '/review-reputation' },
                 ].map((item) => (
                   <Link
                     key={item.path}

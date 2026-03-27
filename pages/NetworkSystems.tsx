@@ -199,11 +199,11 @@ const NetworkSystems: React.FC = () => {
       <section className="bg-untold-black px-5 sm:px-10 pt-12 sm:pt-20 pb-20 sm:pb-32 lg:pb-48">
         <div className="max-w-[1440px] mx-auto">
           <Breadcrumbs
-            items={[
+            crumbs={[
               { label: { en: 'Home', es: 'Inicio' }, path: '/' },
               { label: { en: 'Network Systems', es: 'Network Systems' } },
             ]}
-            theme="dark"
+            variant="dark"
           />
 
           <div className="mt-12 sm:mt-20">

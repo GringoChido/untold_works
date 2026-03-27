@@ -168,6 +168,13 @@ function buildBreadcrumbs(
     ads: { en: 'Ads', es: 'Publicidad' },
     dashboard: { en: 'Dashboard', es: 'Dashboard' },
     websites: { en: 'Website Design', es: 'Diseño Web' },
+    copywriting: { en: 'Copywriting', es: 'Redacción de Textos' },
+    'ai-content': { en: 'AI Content', es: 'Contenido IA' },
+    'sales-enablement': { en: 'Sales Enablement', es: 'Habilitación de Ventas' },
+    'mobile-apps': { en: 'Mobile Apps', es: 'Apps Móviles' },
+    hosting: { en: 'Hosting', es: 'Hosting' },
+    'review-reputation': { en: 'Review & Reputation', es: 'Reseñas y Reputación' },
+    'network-systems': { en: 'Network Systems', es: 'Network Systems' },
   };
 
   let accumulated = '';

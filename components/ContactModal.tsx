@@ -27,7 +27,6 @@ const ContactModal: React.FC<ContactModalProps> = ({ onClose }) => {
       timestamp: new Date().toISOString()
     };
 
-    console.log('Sending to GHL API:', JSON.stringify(payload, null, 2));
 
     setTimeout(() => {
       setStatus('success');
@@ -74,7 +73,7 @@ const ContactModal: React.FC<ContactModalProps> = ({ onClose }) => {
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="grid sm:grid-cols-2 gap-6">
                   <div className="space-y-2">
-                    <label className="font-mono text-[10px] uppercase font-bold text-gray-400 pl-1 tracking-widest">Given Name</label>
+                    <label className="font-mono text-[10px] uppercase font-bold text-untold-gray/60 pl-1 tracking-widest">Given Name</label>
                     <input 
                       required
                       className="w-full p-5 bg-white border-2 border-untold-border rounded-none outline-none focus:border-untold-orange transition-all font-serif text-lg font-medium"
@@ -83,7 +82,7 @@ const ContactModal: React.FC<ContactModalProps> = ({ onClose }) => {
                     />
                   </div>
                   <div className="space-y-2">
-                    <label className="font-mono text-[10px] uppercase font-bold text-gray-400 pl-1 tracking-widest">Family Name</label>
+                    <label className="font-mono text-[10px] uppercase font-bold text-untold-gray/60 pl-1 tracking-widest">Family Name</label>
                     <input 
                       required
                       className="w-full p-5 bg-white border-2 border-untold-border rounded-none outline-none focus:border-untold-orange transition-all font-serif text-lg font-medium"
@@ -93,7 +92,7 @@ const ContactModal: React.FC<ContactModalProps> = ({ onClose }) => {
                   </div>
                 </div>
                 <div className="space-y-2">
-                    <label className="font-mono text-[10px] uppercase font-bold text-gray-400 pl-1 tracking-widest">Digital Contact (Email)</label>
+                    <label className="font-mono text-[10px] uppercase font-bold text-untold-gray/60 pl-1 tracking-widest">Digital Contact (Email)</label>
                     <input 
                       required
                       type="email"
@@ -103,7 +102,7 @@ const ContactModal: React.FC<ContactModalProps> = ({ onClose }) => {
                     />
                 </div>
                 <div className="space-y-2">
-                    <label className="font-mono text-[10px] uppercase font-bold text-gray-400 pl-1 tracking-widest">System Context</label>
+                    <label className="font-mono text-[10px] uppercase font-bold text-untold-gray/60 pl-1 tracking-widest">System Context</label>
                     <textarea 
                       required
                       rows={4}

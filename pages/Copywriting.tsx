@@ -288,7 +288,7 @@ const Copywriting: React.FC = () => {
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {contentTypes.map((type, idx) => (
-              <div key={idx} className="bg-white rounded-lg border border-untold-border p-6 sm:p-8 hover:shadow-lg transition-shadow">
+              <div key={idx} className="bg-white border border-untold-border p-6 sm:p-8 hover:shadow-lg transition-shadow">
                 <div className="text-4xl mb-4">{type.icon}</div>
                 <h3 className="font-sans font-black text-lg uppercase tracking-tighter mb-3">
                   {t(type.title)}
@@ -338,7 +338,7 @@ const Copywriting: React.FC = () => {
             ))}
           </div>
 
-          <div className="mt-12 bg-untold-black text-white rounded-lg p-8 sm:p-10 border border-untold-orange/30">
+          <div className="mt-12 bg-untold-black text-white p-8 sm:p-10 border border-untold-orange/30">
             <p className="font-sans text-sm uppercase tracking-[0.3em] text-untold-orange font-bold mb-4">
               {t({ en: 'IN NETWORK SYSTEMS', es: 'EN NETWORK SYSTEMS' })}
             </p>
@@ -364,7 +364,7 @@ const Copywriting: React.FC = () => {
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
             {steps.map((step, idx) => (
-              <div key={idx} className="bg-white rounded-lg border border-untold-border p-6 sm:p-8">
+              <div key={idx} className="bg-white border border-untold-border p-6 sm:p-8">
                 <div className="font-mono text-4xl font-black text-untold-orange mb-4">{step.num}</div>
                 <h3 className="font-sans font-black text-lg uppercase tracking-tighter mb-4">
                   {t(step.title)}
@@ -423,9 +423,9 @@ const Copywriting: React.FC = () => {
           es: 'Para redes de negocios, una voz de marca desplegada en todas partes. Tu sistema de IA aprende tu tono, vocabulario y personalidad, luego genera copy en sitios web, emails, anuncios, redes sociales, descripciones de productos y materiales de venta. Cada ubicación suena como tu marca. Sin duplicación de esfuerzos, consistencia perfecta.',
         }}
         relatedCapabilities={[
-          { label: { en: 'Websites', es: 'Sitios Web' }, path: '/websites' },
-          { label: { en: 'AI Content Engine', es: 'Motor de Contenido IA' }, path: '/ai-content' },
-          { label: { en: 'Social Media', es: 'Redes Sociales' }, path: '/social-media' },
+          { name: { en: 'Websites', es: 'Sitios Web' }, path: '/websites' },
+          { name: { en: 'AI Content Engine', es: 'Motor de Contenido IA' }, path: '/ai-content' },
+          { name: { en: 'Social Media', es: 'Redes Sociales' }, path: '/social-media' },
         ]}
       />
 

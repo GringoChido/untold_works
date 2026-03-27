@@ -260,7 +260,7 @@ const SocialMedia: React.FC = () => {
         <div className="max-w-[1440px] mx-auto grid sm:grid-cols-3 gap-6">
 
           {/* Mock Instagram Feed */}
-          <div className="aspect-square bg-untold-black rounded-lg overflow-hidden p-4 flex flex-col">
+          <div className="aspect-square bg-untold-black overflow-hidden p-4 flex flex-col">
             <div className="flex items-center space-x-2 mb-3">
               <div className="w-7 h-7 rounded-full bg-untold-orange flex items-center justify-center text-white text-[9px] font-black">U.</div>
               <span className="text-white text-[11px] font-bold">untold.works</span>
@@ -288,7 +288,7 @@ const SocialMedia: React.FC = () => {
           </div>
 
           {/* Mock Content Calendar */}
-          <div className="aspect-square bg-white rounded-lg overflow-hidden border border-untold-border p-4 flex flex-col">
+          <div className="aspect-square bg-white overflow-hidden border border-untold-border p-4 flex flex-col">
             <div className="flex items-center justify-between mb-3">
               <span className="font-sans font-black text-[11px] uppercase tracking-tight">March 2026</span>
               <span className="text-untold-orange text-[10px] font-mono font-bold">CONTENT CALENDAR</span>
@@ -322,7 +322,7 @@ const SocialMedia: React.FC = () => {
           </div>
 
           {/* Mock Analytics Dashboard */}
-          <div className="aspect-square bg-untold-black rounded-lg overflow-hidden p-4 flex flex-col">
+          <div className="aspect-square bg-untold-black overflow-hidden p-4 flex flex-col">
             <div className="flex items-center justify-between mb-3">
               <span className="text-white text-[11px] font-black uppercase tracking-tight">Analytics</span>
               <span className="text-untold-orange text-[10px] font-mono font-bold">LIVE</span>

@@ -2,60 +2,6 @@ import { Project } from '../types';
 
 export const projects: Project[] = [
   {
-    id: 'spotify-whatsapp-publishing',
-    name: { en: 'Spotify - WhatsApp Publishing', es: 'Publicación de Spotify - WhatsApp' },
-    client: { en: 'Independent Labels', es: 'Sellos Independientes' },
-    timeline: 'Q1 2024 - Active',
-    pillar: 'small-business',
-    stack: ['n8n', 'Claude Code', 'Python', 'RAG Architecture', 'PostgreSQL'],
-    services: [
-      { en: 'n8n Orchestration', es: 'Orquestación n8n' },
-      { en: 'Claude Code Integration', es: 'Integración de Claude Code' },
-      { en: 'Automated Pipeline Ops', es: 'Ops de Pipeline Automatizado' }
-    ],
-    summary: {
-      en: 'Replaced manual content operations with an AI-driven publishing pipeline. Reclaimed 15 hours per week, scaling capacity 10x.',
-      es: 'Reemplacé operaciones manuales de contenido con un pipeline de publicación impulsado por IA. Recuperé 15 horas semanales, escalando la capacidad 10x.'
-    },
-    challenge: { 
-      en: 'Manual content operations were a massive bottleneck for scale. The team was spending 15+ hours weekly on repetitive data processing and drafting, causing lead-time delays and unsustainable operational overhead.',
-      es: 'Las operaciones de contenido manual eran un cuello de botella masivo para la escala. El equipo dedicaba más de 15 horas semanales al procesamiento repetitivo de datos y redacción, causando retrasos y sobrecarga operativa insostenible.' 
-    },
-    goal: {
-      en: 'Reclaim operational capacity by automating the ingestion-to-publish pipeline while maintaining output quality at scale.',
-      es: 'Recuperar capacidad operativa automatizando el pipeline de ingestión-a-publicación mientras se mantiene la calidad de salida a escala.'
-    },
-    solution: {
-      en: 'I built an agentic RAG-pipeline that ingests Spotify metadata, generates synthesized recommendations via Claude, and routes through a human-in-the-loop approval gate to WhatsApp.',
-      es: 'Construí un pipeline RAG agéntico que ingiere metadatos de Spotify, genera recomendaciones sintetizadas a través de Claude y las enruta a través de una compuerta de aprobación humana hacia WhatsApp.'
-    },
-    metrics: [
-      { label: { en: 'Time Reclaimed', es: 'Tiempo Recuperado' }, value: '15h/wk' },
-      { label: { en: 'Capacity Shift', es: 'Cambio de Capacidad' }, value: '10x' }
-    ],
-    tags: ['AUTOMATION', 'RAG', 'PIPELINE OPS'],
-    heroImage: '/images/project1-spotify/image1.webp',
-    images: [
-      '/images/project1-spotify/image1.webp',
-      '/images/project1-spotify/image2.png',
-      '/images/project1-spotify/image3.webp',
-      '/images/project1-spotify/image4.png'
-    ],
-    imageAlts: [
-      'Spotify-WhatsApp pipeline workflow diagram',
-      'n8n automation flow for content publishing',
-      'Claude RAG pipeline architecture',
-      'WhatsApp message output preview'
-    ],
-    codeSnippets: [
-      {
-        language: 'python',
-        title: 'Metadata Resolution Engine',
-        code: 'def resolve_spotify_metadata(track_id):\n  results = sp.track(track_id)\n  artist_context = rag_store.query(results["artist_name"])\n  return synthesize_prompt(results, artist_context)'
-      }
-    ]
-  },
-  {
     id: 'black-radio-experience',
     name: { en: 'Black Radio Experience', es: 'Black Radio Experience' },
     websiteUrl: 'https://www.bluenotejazz.com/black-radio-experience/',
@@ -438,5 +384,59 @@ export const projects: Project[] = [
     heroImage: '/images/in-progress/second-son.jpg',
     images: ['/images/in-progress/second-son.jpg'],
     websiteUrl: 'https://secondsonproductions.netlify.app/',
+  },
+  {
+    id: 'spotify-whatsapp-publishing',
+    name: { en: 'Spotify - WhatsApp Publishing', es: 'Publicación de Spotify - WhatsApp' },
+    client: { en: 'Independent Labels', es: 'Sellos Independientes' },
+    timeline: 'Q1 2024 - Active',
+    pillar: 'small-business',
+    stack: ['n8n', 'Claude Code', 'Python', 'RAG Architecture', 'PostgreSQL'],
+    services: [
+      { en: 'n8n Orchestration', es: 'Orquestación n8n' },
+      { en: 'Claude Code Integration', es: 'Integración de Claude Code' },
+      { en: 'Automated Pipeline Ops', es: 'Ops de Pipeline Automatizado' }
+    ],
+    summary: {
+      en: 'Replaced manual content operations with an AI-driven publishing pipeline. Reclaimed 15 hours per week, scaling capacity 10x.',
+      es: 'Reemplacé operaciones manuales de contenido con un pipeline de publicación impulsado por IA. Recuperé 15 horas semanales, escalando la capacidad 10x.'
+    },
+    challenge: {
+      en: 'Manual content operations were a massive bottleneck for scale. The team was spending 15+ hours weekly on repetitive data processing and drafting, causing lead-time delays and unsustainable operational overhead.',
+      es: 'Las operaciones de contenido manual eran un cuello de botella masivo para la escala. El equipo dedicaba más de 15 horas semanales al procesamiento repetitivo de datos y redacción, causando retrasos y sobrecarga operativa insostenible.'
+    },
+    goal: {
+      en: 'Reclaim operational capacity by automating the ingestion-to-publish pipeline while maintaining output quality at scale.',
+      es: 'Recuperar capacidad operativa automatizando el pipeline de ingestión-a-publicación mientras se mantiene la calidad de salida a escala.'
+    },
+    solution: {
+      en: 'I built an agentic RAG-pipeline that ingests Spotify metadata, generates synthesized recommendations via Claude, and routes through a human-in-the-loop approval gate to WhatsApp.',
+      es: 'Construí un pipeline RAG agéntico que ingiere metadatos de Spotify, genera recomendaciones sintetizadas a través de Claude y las enruta a través de una compuerta de aprobación humana hacia WhatsApp.'
+    },
+    metrics: [
+      { label: { en: 'Time Reclaimed', es: 'Tiempo Recuperado' }, value: '15h/wk' },
+      { label: { en: 'Capacity Shift', es: 'Cambio de Capacidad' }, value: '10x' }
+    ],
+    tags: ['AUTOMATION', 'RAG', 'PIPELINE OPS'],
+    heroImage: '/images/project1-spotify/image1.webp',
+    images: [
+      '/images/project1-spotify/image1.webp',
+      '/images/project1-spotify/image2.png',
+      '/images/project1-spotify/image3.webp',
+      '/images/project1-spotify/image4.png'
+    ],
+    imageAlts: [
+      'Spotify-WhatsApp pipeline workflow diagram',
+      'n8n automation flow for content publishing',
+      'Claude RAG pipeline architecture',
+      'WhatsApp message output preview'
+    ],
+    codeSnippets: [
+      {
+        language: 'python',
+        title: 'Metadata Resolution Engine',
+        code: 'def resolve_spotify_metadata(track_id):\n  results = sp.track(track_id)\n  artist_context = rag_store.query(results["artist_name"])\n  return synthesize_prompt(results, artist_context)'
+      }
+    ]
   }
 ];

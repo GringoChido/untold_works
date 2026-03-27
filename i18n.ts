@@ -896,8 +896,8 @@ export const workshopSyllabus = {
     es: 'Sin jerga. Solo IA para la Vida Diaria.'
   },
   transformation: {
-    en: 'A practical masterclass for daily life and small business. Move from curious to capable in a single morning. I will show you the exact prompting techniques and workflows that actually save you time.',
-    es: 'Una clase magistral práctica para la vida diaria y pequeños negocios. Pasa de tener curiosidad a ser capaz en una sola mañana. Te mostraré las técnicas de prompting y flujos de trabajo exactos que realmente te ahorran tiempo.'
+    en: 'A practical masterclass for daily life and small business. Move from curious to capable in a single morning. We\'ll show you the exact prompting techniques and workflows that actually save you time.',
+    es: 'Una clase magistral práctica para la vida diaria y pequeños negocios. Pasa de tener curiosidad a ser capaz en una sola mañana. Te mostraremos las técnicas de prompting y flujos de trabajo exactos que realmente te ahorran tiempo.'
   },
   location: { en: 'LOC // SAN_MIGUEL_DE_ALLENDE_MX', es: 'UBIC // SAN_MIGUEL_DE_ALLENDE_MX' },
   time: { en: 'TIME // 10:00_AM', es: 'HORA // 10:00_AM' },
@@ -948,8 +948,8 @@ export const workshopSyllabus = {
   },
   cardTitle: { en: 'PRACTICAL_IMPACT', es: 'IMPACTO_PRÁCTICO' },
   rule: {
-    en: 'Limited seats for direct guidance. I keep these classes small to ensure you leave with a workflow you can use today.',
-    es: 'Asientos limitados para guía directa. Mantengo estas clases pequeñas para asegurar que salgas con un flujo que puedas usar hoy.'
+    en: 'Limited seats for direct guidance. We keep these classes small to ensure you leave with a workflow you can use today.',
+    es: 'Asientos limitados para guía directa. Mantenemos estas clases pequeñas para asegurar que salgas con un flujo que puedas usar hoy.'
   },
   cta: { en: 'RESERVE YOUR SPOT', es: 'RESERVAR LUGAR' }
 };

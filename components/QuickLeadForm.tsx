@@ -2,10 +2,10 @@ import React, { useState } from 'react';
 import { useLanguage } from '../App';
 
 interface QuickLeadFormProps {
-  pillar: string;
+  pillar?: string;
 }
 
-const QuickLeadForm: React.FC<QuickLeadFormProps> = ({ pillar }) => {
+const QuickLeadForm: React.FC<QuickLeadFormProps> = ({ pillar = 'general' }) => {
   const { t } = useLanguage();
   const [status, setStatus] = useState<'idle' | 'submitting' | 'success' | 'error'>('idle');
   const [formData, setFormData] = useState({

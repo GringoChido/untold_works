@@ -266,7 +266,7 @@ const ReviewReputation: React.FC = () => {
 
       {/* ── The Network Advantage ── */}
       <section className="bg-untold-black text-white px-5 sm:px-10 py-16 sm:py-24 border-b border-white/10">
-        <div className="max-w-[1440px] mx-auto max-w-3xl">
+        <div className="max-w-3xl mx-auto">
           <span className="font-mono text-[10px] uppercase tracking-[0.5em] text-untold-orange font-bold block mb-4">
             {t({ en: 'THE NETWORK ADVANTAGE', es: 'LA VENTAJA DE LA RED' })}
           </span>

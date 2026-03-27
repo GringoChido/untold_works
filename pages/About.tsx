@@ -372,7 +372,7 @@ const AboutPage: React.FC = () => {
             </p>
           </div>
 
-          <h2 className="font-sans font-black text-4xl sm:text-6xl lg:text-8xl uppercase tracking-tighter leading-[0.85] mb-20 max-w-6xl">
+          <h2 className="font-sans font-black text-4xl sm:text-6xl lg:text-8xl uppercase tracking-tighter leading-[0.85] mb-20 max-w-[1440px]">
             {t(content.whyMexico.headline)}
           </h2>
 
