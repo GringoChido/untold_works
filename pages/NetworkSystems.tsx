@@ -276,8 +276,8 @@ const NetworkSystems: React.FC = () => {
             <div className="lg:col-span-7">
               <p className="text-xl sm:text-2xl font-serif italic text-white/70 leading-relaxed mb-8">
                 {t({
-                  en: 'Everything on that list is real work. But AI changed what it takes to execute it. One strategic team with AI systems now delivers what used to require a department — at a fraction of the cost, whether you\'re one location or a hundred.',
-                  es: 'Todo en esa lista es trabajo real. Pero la IA cambió lo que se necesita para ejecutarlo. Un equipo estratégico con sistemas de IA ahora entrega lo que antes requería un departamento — a una fracción del costo, ya sea una ubicación o cien.',
+                  en: 'Everything on that list is real work. But AI changed what it takes to execute it. According to McKinsey, businesses that adopt AI-driven marketing see 15–20% revenue increases within 18 months. One strategic team with AI systems now delivers what used to require a department — at a fraction of the cost, whether you\'re one location or a hundred.',
+                  es: 'Todo en esa lista es trabajo real. Pero la IA cambió lo que se necesita para ejecutarlo. Según McKinsey, los negocios que adoptan marketing impulsado por IA ven aumentos de ingresos del 15–20% en 18 meses. Un equipo estratégico con sistemas de IA ahora entrega lo que antes requería un departamento — a una fracción del costo, ya sea una ubicación o cien.',
                 })}
               </p>
 
@@ -306,8 +306,8 @@ const NetworkSystems: React.FC = () => {
                 </p>
                 <p className="text-base font-serif italic text-white/50 leading-relaxed">
                   {t({
-                    en: 'AI search is deciding who gets recommended RIGHT NOW. The businesses that establish their AI presence first — structured data, optimized content, connected systems — will be the ones AI learns to trust and recommend. This window won\'t stay open.',
-                    es: 'La búsqueda con IA está decidiendo quién es recomendado AHORA MISMO. Los negocios que establezcan su presencia de IA primero — datos estructurados, contenido optimizado, sistemas conectados — serán los que la IA aprenda a confiar y recomendar. Esta ventana no estará abierta para siempre.',
+                    en: 'Gartner predicts that by 2026, traditional search traffic will drop 25% as consumers shift to AI assistants. AI search is deciding who gets recommended RIGHT NOW. The businesses that establish their AI presence first — structured data, optimized content, connected systems — will be the ones AI learns to trust and recommend. This window won\'t stay open.',
+                    es: 'Gartner predice que para 2026, el tráfico de búsqueda tradicional caerá 25% a medida que los consumidores cambien a asistentes de IA. La búsqueda con IA está decidiendo quién es recomendado AHORA MISMO. Los negocios que establezcan su presencia de IA primero — datos estructurados, contenido optimizado, sistemas conectados — serán los que la IA aprenda a confiar y recomendar. Esta ventana no estará abierta para siempre.',
                   })}
                 </p>
               </div>

@@ -40,12 +40,12 @@ export const hero = {
     es: 'Sistemas de Negocio con IA — México y Estados Unidos'
   },
   headline: {
-    en: 'Your Entire Business. One AI-Powered System.',
-    es: 'Todo Tu Negocio. Un Solo Sistema con IA.'
+    en: 'Your Business Needs an AI Identity. We Build It.',
+    es: 'Tu Negocio Necesita una Identidad de IA. Nosotros La Construimos.'
   },
   tagline: {
-    en: 'We replace your fragmented tools with a connected ecosystem. From your website to your CRM — an AI-based system that you own, not rent.',
-    es: 'Reemplazamos tus herramientas fragmentadas con un ecosistema conectado. De tu sitio web a tu CRM — un sistema basado en IA que es tuyo, no rentado.'
+    en: 'AI search is already deciding who gets recommended and who gets ignored. We build AI-powered digital systems that scale from a single business to a hundred locations — website, SEO, AEO, GEO, dashboards, sales tools — built for you, owned by you.',
+    es: 'La búsqueda con IA ya decide quién es recomendado y quién es ignorado. Construimos sistemas digitales con IA que escalan de un solo negocio a cien ubicaciones — sitio web, SEO, AEO, GEO, dashboards, herramientas de ventas — construidos para ti, propiedad tuya.',
   },
   subheadline: {
     en: 'DIGITAL PRESENCE // BUSINESS OPERATIONS // INFRASTRUCTURE',

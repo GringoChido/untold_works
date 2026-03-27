@@ -163,6 +163,20 @@ const ProfessionalServices: React.FC = () => {
         </div>
       </section>
 
+      {/* Founder + AI Identity Urgency */}
+      <section className="bg-untold-beige/60 border-b border-untold-border px-5 sm:px-10 py-8 sm:py-10">
+        <div className="max-w-[1440px] mx-auto flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6">
+          <div className="flex items-center gap-4">
+            <img src="/images/about-photo.webp" alt="Joshua Semolik" className="w-12 h-12 rounded-full object-cover border-2 border-untold-orange" loading="lazy" />
+            <div>
+              <p className="font-sans font-black text-sm uppercase tracking-tighter">{t({ en: 'Built by Joshua Semolik', es: 'Construido por Joshua Semolik' })}</p>
+              <p className="font-mono text-[9px] uppercase tracking-[0.2em] text-untold-gray">{t({ en: '2x Emmy Nominated • MIT Sloan AI Strategy • 20 Years in Production', es: '2x Nominado al Emmy • MIT Sloan Estrategia de IA • 20 Años en Producción' })}</p>
+            </div>
+          </div>
+          <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-untold-black/40 max-w-md">{t({ en: 'Every system includes SEO, AEO & GEO — because your AI identity matters whether you\'re a solo practitioner or a 50-location network.', es: 'Cada sistema incluye SEO, AEO y GEO — porque tu identidad de IA importa seas profesional independiente o una red de 50 ubicaciones.' })}</p>
+        </div>
+      </section>
+
       {/* Visual */}
       <section className="border-b border-untold-border">
         <div className="aspect-[21/9] overflow-hidden">
@@ -399,7 +413,7 @@ const ProfessionalServices: React.FC = () => {
             </p>
             <div className="pt-6 border-t border-untold-border">
               <p className="font-sans font-black text-base uppercase tracking-tighter">William Berriochoa</p>
-              <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-untold-gray mt-1">NoxGuard — US / Mexico</p>
+              <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-untold-gray mt-1">CEO, NoxGuard — US / Mexico</p>
             </div>
           </div>
         </div>

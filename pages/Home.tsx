@@ -172,6 +172,27 @@ const Home: React.FC = () => {
       </div>{/* end dark wrapper */}
 
       {/* ═══════════════════════════════════════════════════════════
+          FOUNDER CREDENTIAL STRIP
+      ═══════════════════════════════════════════════════════════ */}
+      <section className="bg-untold-beige/60 border-b border-untold-border px-5 sm:px-10 py-10 sm:py-14">
+        <div className="max-w-[1440px] mx-auto flex flex-col sm:flex-row items-start sm:items-center gap-6 sm:gap-10">
+          <div className="flex items-center gap-4 shrink-0">
+            <img src="/images/about-photo.webp" alt="Joshua Semolik" className="w-14 h-14 rounded-full object-cover border-2 border-untold-orange" loading="lazy" />
+            <div>
+              <p className="font-sans font-black text-sm uppercase tracking-tighter">{t({ en: 'Joshua Semolik', es: 'Joshua Semolik' })}</p>
+              <p className="font-mono text-[9px] uppercase tracking-[0.3em] text-untold-gray">{t({ en: 'Founder & AI Systems Architect', es: 'Fundador y Arquitecto de Sistemas de IA' })}</p>
+            </div>
+          </div>
+          <div className="flex flex-wrap items-center gap-x-6 gap-y-2">
+            <span className="font-mono text-[10px] uppercase tracking-[0.2em] text-untold-black/50 border border-untold-border px-3 py-1.5">{t({ en: '2x Emmy Nominated', es: '2x Nominado al Emmy' })}</span>
+            <span className="font-mono text-[10px] uppercase tracking-[0.2em] text-untold-black/50 border border-untold-border px-3 py-1.5">{t({ en: 'MIT Sloan AI Strategy', es: 'MIT Sloan Estrategia de IA' })}</span>
+            <span className="font-mono text-[10px] uppercase tracking-[0.2em] text-untold-black/50 border border-untold-border px-3 py-1.5">{t({ en: '20 Years in Production', es: '20 Años en Producción' })}</span>
+            <span className="font-mono text-[10px] uppercase tracking-[0.2em] text-untold-black/50 border border-untold-border px-3 py-1.5">{t({ en: 'NBA / Kings • Videndum PLC', es: 'NBA / Kings • Videndum PLC' })}</span>
+          </div>
+        </div>
+      </section>
+
+      {/* ═══════════════════════════════════════════════════════════
           THE SYSTEM — One cohesive story block
       ═══════════════════════════════════════════════════════════ */}
       <section className="bg-white border-b border-untold-border">
@@ -191,8 +212,8 @@ const Home: React.FC = () => {
             </h2>
             <p className="text-xl sm:text-2xl font-serif italic text-untold-gray leading-relaxed max-w-4xl mb-12">
               {t({
-                en: 'Most businesses run on 10+ disconnected tools — a website here, a CRM there, email marketing somewhere else. We replace all of it with one connected AI-powered system. Built for you. Owned by you.',
-                es: 'La mayoría de los negocios operan con 10+ herramientas desconectadas — un sitio aquí, un CRM allá, email marketing en otro lado. Reemplazamos todo con un sistema conectado impulsado por IA. Construido para ti. Propiedad tuya.',
+                en: 'According to Gartner, traditional search traffic will drop 25% by 2026 as consumers shift to AI assistants. Meanwhile, most businesses run on 10+ disconnected tools that AI can\'t read or recommend. We replace all of it with one connected AI-powered system — optimized for search engines AND AI engines. Built for you. Owned by you.',
+                es: 'Según Gartner, el tráfico de búsqueda tradicional caerá 25% para 2026 a medida que los consumidores cambien a asistentes de IA. Mientras tanto, la mayoría de los negocios operan con 10+ herramientas desconectadas que la IA no puede leer ni recomendar. Reemplazamos todo con un sistema conectado impulsado por IA — optimizado para buscadores Y motores de IA. Construido para ti. Propiedad tuya.',
               })}
             </p>
 

@@ -8,7 +8,7 @@ const testimonials = [
       es: 'Joshua y el equipo de Untold.works han sido fundamentales para transformar la trayectoria de crecimiento de NoxGuard. Su plan integral de estrategia de crecimiento, diseñado específicamente para nuestras necesidades, no solo nos dio una imagen de marca fresca y renovada, sino que también abrió nuevos canales de ingresos. Su enfoque innovador e implementación consistente nos mantienen adelante en un mercado competitivo. Esta asociación ha sido una piedra angular en nuestro camino hacia un futuro más dinámico y próspero.',
     },
     name: 'William Berriochoa',
-    role: { en: 'NoxGuard — US / Mexico', es: 'NoxGuard — EE.UU. / México' },
+    role: { en: 'CEO, NoxGuard — US / Mexico', es: 'CEO, NoxGuard — EE.UU. / México' },
     datePublished: '2023-11-15',
   },
   {
@@ -17,7 +17,7 @@ const testimonials = [
       es: 'Trabajar con Joshua en Untold.works ha sido una experiencia transformadora para la presencia en redes sociales de Billiard Factory. Su enfoque creativo impulsa consistentemente el crecimiento y la interacción, superando nuestras expectativas de manera constante. Esta asociación ha amplificado genuinamente nuestra presencia digital.',
     },
     name: 'Ryan Stick',
-    role: { en: 'Billiard Factory', es: 'Billiard Factory' },
+    role: { en: 'Marketing Director, Billiard Factory', es: 'Director de Marketing, Billiard Factory' },
     datePublished: '2024-03-22',
   },
   {
@@ -26,7 +26,7 @@ const testimonials = [
       es: 'Trabajar con Joshua ha sido fundamental para elevar Second Son Productions. Su creatividad inigualable y sus estrategias de engagement han sido instrumentales. Joshua entrega consistentemente conceptos innovadores que cautivan a nuestra audiencia e impulsan significativamente las ventas de boletos para nuestros artistas. Colaborar con él significa transformar grandes ideas en resultados excepcionales. Su contribución a nuestro éxito es invaluable, haciendo que nuestros eventos y artistas destaquen en una industria saturada.',
     },
     name: 'Vincent Bennett',
-    role: { en: 'Second Son Productions', es: 'Second Son Productions' },
+    role: { en: 'Founder, Second Son Productions', es: 'Fundador, Second Son Productions' },
     datePublished: '2024-08-10',
   },
 ];
