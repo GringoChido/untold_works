@@ -175,6 +175,9 @@ function buildBreadcrumbs(
     hosting: { en: 'Hosting', es: 'Hosting' },
     'review-reputation': { en: 'Review & Reputation', es: 'Reseñas y Reputación' },
     'network-systems': { en: 'Network Systems', es: 'Network Systems' },
+    'digital-presence': { en: 'Digital Presence', es: 'Presencia Digital' },
+    'business-operations': { en: 'Business Operations', es: 'Operaciones de Negocio' },
+    infrastructure: { en: 'Infrastructure', es: 'Infraestructura' },
   };
 
   let accumulated = '';

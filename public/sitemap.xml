@@ -451,6 +451,35 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://untold.works/review-reputation" />
   </url>
 
+  <!-- Category Hub Pages -->
+  <url>
+    <loc>https://untold.works/digital-presence</loc>
+    <lastmod>2026-03-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://untold.works/digital-presence" />
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://untold.works/digital-presence?lang=es" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://untold.works/digital-presence" />
+  </url>
+  <url>
+    <loc>https://untold.works/business-operations</loc>
+    <lastmod>2026-03-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://untold.works/business-operations" />
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://untold.works/business-operations?lang=es" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://untold.works/business-operations" />
+  </url>
+  <url>
+    <loc>https://untold.works/infrastructure</loc>
+    <lastmod>2026-03-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://untold.works/infrastructure" />
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://untold.works/infrastructure?lang=es" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://untold.works/infrastructure" />
+  </url>
+
   <!-- New Blog Posts -->
   <url>
     <loc>https://untold.works/blog/whatsapp-ai-for-mexican-businesses-complete-guide</loc>

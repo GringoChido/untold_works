@@ -86,22 +86,14 @@ const Footer: React.FC = () => {
               </div>
               <div className="flex flex-col space-y-2 lg:text-right pt-2">
                 {[
-                  { label: { en: 'Website Design', es: 'Diseño Web' }, path: '/websites' },
-                  { label: { en: 'Copywriting', es: 'Redacción de Textos' }, path: '/copywriting' },
-                  { label: { en: 'AI Content', es: 'Contenido IA' }, path: '/ai-content' },
-                  { label: { en: 'SEO & AEO', es: 'SEO y AEO' }, path: '/seo-aeo' },
-                  { label: { en: 'Social Media', es: 'Redes Sociales' }, path: '/social-media' },
-                  { label: { en: 'Ads', es: 'Publicidad' }, path: '/ads' },
-                  { label: { en: 'Dashboard', es: 'Dashboard' }, path: '/dashboard' },
-                  { label: { en: 'Sales Enablement', es: 'Habilitación de Ventas' }, path: '/sales-enablement' },
-                  { label: { en: 'Mobile Apps', es: 'Apps Móviles' }, path: '/mobile-apps' },
-                  { label: { en: 'Hosting', es: 'Hosting' }, path: '/hosting' },
-                  { label: { en: 'Review & Reputation', es: 'Reseñas y Reputación' }, path: '/review-reputation' },
+                  { label: { en: 'Digital Presence', es: 'Presencia Digital' }, path: '/digital-presence' },
+                  { label: { en: 'Business Operations', es: 'Operaciones de Negocio' }, path: '/business-operations' },
+                  { label: { en: 'Infrastructure', es: 'Infraestructura' }, path: '/infrastructure' },
                 ].map((item) => (
                   <Link
                     key={item.path}
                     to={item.path}
-                    className="text-sm font-mono uppercase tracking-[0.3em] text-white/20 hover:text-untold-orange transition-all duration-300"
+                    className="text-sm font-mono uppercase tracking-[0.3em] text-white/30 hover:text-untold-orange transition-all duration-300"
                   >
                     {t(item.label)}
                   </Link>

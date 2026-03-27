@@ -4,7 +4,6 @@ import { useLanguage } from '../../App';
 import { usePageMeta } from '../../hooks/usePageMeta';
 import * as i18n from '../../i18n';
 import QuickLeadForm from '../../components/QuickLeadForm';
-import Testimonials from '../../components/Testimonials';
 import Breadcrumbs from '../../components/Breadcrumbs';
 import NetworkConnector from '../../components/NetworkConnector';
 
@@ -362,8 +361,30 @@ const Enterprise: React.FC = () => {
         ]}
       />
 
-      {/* ── Testimonials ── */}
-      <Testimonials />
+      {/* ── Proof ── */}
+      <section className="bg-white px-5 sm:px-10 py-20 sm:py-32 border-b border-untold-border">
+        <div className="max-w-[1440px] mx-auto">
+          <div className="flex items-center space-x-4 mb-16">
+            <span className="w-2.5 h-2.5 rounded-full bg-untold-orange"></span>
+            <h2 className="font-mono text-[13px] uppercase tracking-[0.6em] font-bold text-untold-black/40">
+              {t({ en: 'CLIENT RESULT', es: 'RESULTADO DE CLIENTE' })}
+            </h2>
+          </div>
+          <div className="max-w-3xl">
+            <span className="text-untold-orange text-6xl font-serif leading-none block mb-6">&ldquo;</span>
+            <p className="text-xl sm:text-2xl font-serif italic text-untold-gray leading-relaxed mb-8">
+              {t({
+                en: 'Joshua consistently delivers innovative concepts that captivate our audience and significantly boost ticket sales for our artists. Collaborating with him means transforming great ideas into exceptional results. His contribution to our success is immeasurable.',
+                es: 'Joshua entrega consistentemente conceptos innovadores que cautivan a nuestra audiencia e impulsan significativamente las ventas de boletos para nuestros artistas. Colaborar con él significa transformar grandes ideas en resultados excepcionales. Su contribución a nuestro éxito es invaluable.',
+              })}
+            </p>
+            <div className="pt-6 border-t border-untold-border">
+              <p className="font-sans font-black text-base uppercase tracking-tighter">Vincent Bennett</p>
+              <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-untold-gray mt-1">Second Son Productions</p>
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* Quick Lead Form */}
       <section className="bg-untold-black text-white px-5 sm:px-10 py-16 sm:py-24">
@@ -399,28 +420,31 @@ const Enterprise: React.FC = () => {
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="font-sans font-black text-[clamp(2.5rem,10vw,100px)] leading-[0.85] mb-8 tracking-tighter uppercase">
             {t({
-              en: 'Ready to Build Your\nAI Infrastructure?',
-              es: '¿Listo Para Construir Tu\nInfraestructura de IA?',
+              en: 'Your Organization.\nOur Infrastructure.',
+              es: 'Tu Organización.\nNuestra Infraestructura.',
             })}
           </h2>
-          <p className="text-xl font-serif italic text-untold-gray mb-12 max-w-2xl mx-auto">
+          <p className="text-xl font-serif italic text-untold-gray mb-8 max-w-2xl mx-auto">
             {t({
-              en: 'No lock-in. Full documentation. Complete ownership transfer. Let\'s build the AI infrastructure your organization needs to scale.',
-              es: 'Sin ataduras. Documentación completa. Transferencia total de propiedad. Construyamos la infraestructura de IA que tu organización necesita para escalar.',
+              en: 'Full ownership transfer. Department-specific documentation. 60 days of post-launch support. Built to scale with your team.',
+              es: 'Transferencia total de propiedad. Documentación por departamento. 60 días de soporte post-lanzamiento. Construido para escalar con tu equipo.',
             })}
+          </p>
+          <p className="font-mono text-[11px] uppercase tracking-[0.4em] text-untold-orange mb-12">
+            {t({ en: 'Enterprise builds begin with a discovery call', es: 'Las construcciones empresariales comienzan con una llamada de descubrimiento' })}
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
             <Link
               to="/contact"
               className="inline-block bg-untold-orange text-white px-10 sm:px-16 py-5 sm:py-6 font-sans font-black uppercase tracking-tighter text-lg hover:scale-105 active:scale-95 transition-all"
             >
-              {t({ en: 'Start a Conversation', es: 'Iniciar Conversación' })}
+              {t({ en: 'Schedule Discovery Call', es: 'Agendar Llamada de Descubrimiento' })}
             </Link>
             <Link
               to="/solutions"
               className="inline-block border-2 border-untold-black px-10 sm:px-16 py-5 sm:py-6 font-sans font-black uppercase tracking-tighter text-lg hover:bg-untold-black hover:text-white transition-all duration-300"
             >
-              {t({ en: 'Compare All Solutions', es: 'Comparar Soluciones' })}
+              {t({ en: 'Compare All Tiers', es: 'Comparar Niveles' })}
             </Link>
           </div>
         </div>

@@ -4,8 +4,8 @@ import { useLanguage } from '../../App';
 import { usePageMeta } from '../../hooks/usePageMeta';
 import * as i18n from '../../i18n';
 import QuickLeadForm from '../../components/QuickLeadForm';
-import Testimonials from '../../components/Testimonials';
 import Breadcrumbs from '../../components/Breadcrumbs';
+import NetworkConnector from '../../components/NetworkConnector';
 
 const SmallBusiness: React.FC = () => {
   const { t } = useLanguage();
@@ -370,8 +370,44 @@ const SmallBusiness: React.FC = () => {
         </div>
       </section>
 
-      {/* ── Testimonials ── */}
-      <Testimonials />
+      {/* ── Proof ── */}
+      <section className="bg-untold-beige px-5 sm:px-10 py-20 sm:py-32 border-b border-untold-border">
+        <div className="max-w-[1440px] mx-auto">
+          <div className="flex items-center space-x-4 mb-16">
+            <span className="w-2.5 h-2.5 rounded-full bg-untold-orange"></span>
+            <h2 className="font-mono text-[13px] uppercase tracking-[0.6em] font-bold text-untold-black/40">
+              {t({ en: 'CLIENT RESULT', es: 'RESULTADO DE CLIENTE' })}
+            </h2>
+          </div>
+          <div className="max-w-3xl">
+            <span className="text-untold-orange text-6xl font-serif leading-none block mb-6">&ldquo;</span>
+            <p className="text-xl sm:text-2xl font-serif italic text-untold-gray leading-relaxed mb-8">
+              {t({
+                en: 'Working with Joshua at Untold.works has been a transformative experience for Billiard Factory\'s social media presence. His creative approach consistently drives growth and engagement, surpassing our expectations consistently. This partnership has genuinely amplified our digital presence.',
+                es: 'Trabajar con Joshua en Untold.works ha sido una experiencia transformadora para la presencia en redes sociales de Billiard Factory. Su enfoque creativo impulsa consistentemente el crecimiento y la interacción, superando nuestras expectativas de manera constante. Esta asociación ha amplificado genuinamente nuestra presencia digital.',
+              })}
+            </p>
+            <div className="pt-6 border-t border-untold-border">
+              <p className="font-sans font-black text-base uppercase tracking-tighter">Ryan Stick</p>
+              <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-untold-gray mt-1">Billiard Factory</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ── Network Connector ── */}
+      <NetworkConnector
+        capability={{ en: 'Small Business Operations', es: 'Operaciones de Pequeña Empresa' }}
+        networkDescription={{
+          en: 'Running multiple locations or a franchise? Our Network Systems offering deploys this same platform across your entire operation — shared CRM, unified brand, location-specific dashboards.',
+          es: '¿Operas múltiples ubicaciones o una franquicia? Nuestra oferta de Network Systems despliega esta misma plataforma en toda tu operación — CRM compartido, marca unificada, dashboards por ubicación.',
+        }}
+        relatedCapabilities={[
+          { name: { en: 'Dashboard & Intelligence', es: 'Dashboard e Inteligencia' }, path: '/dashboard' },
+          { name: { en: 'AI Content', es: 'Contenido IA' }, path: '/ai-content' },
+          { name: { en: 'Ads', es: 'Publicidad' }, path: '/ads' },
+        ]}
+      />
 
       {/* ── Quick Lead Form ── */}
       <section className="bg-untold-black text-white px-5 sm:px-10 py-16 sm:py-24">
@@ -403,26 +439,29 @@ const SmallBusiness: React.FC = () => {
       <section className="bg-untold-beige px-5 sm:px-10 py-20 sm:py-32 text-center border-t border-untold-border">
         <div className="max-w-4xl mx-auto">
           <h2 className="font-sans font-black text-[clamp(2.5rem,10vw,100px)] leading-[0.85] mb-8 tracking-tighter uppercase">
-            {t({ en: 'Ready to Scale\nYour Business?', es: '¿Listo para Escalar\nTu Negocio?' })}
+            {t({ en: 'One Platform.\nZero Excuses.', es: 'Una Plataforma.\nCero Excusas.' })}
           </h2>
-          <p className="text-xl font-serif italic text-untold-gray mb-12 max-w-2xl mx-auto">
+          <p className="text-xl font-serif italic text-untold-gray mb-8 max-w-2xl mx-auto">
             {t({
-              en: 'No lock-in. No monthly fees for things you own. Let\'s build the platform your team needs to operate, grow, and win.',
-              es: 'Sin ataduras. Sin cuotas mensuales por cosas que son tuyas. Construyamos la plataforma que tu equipo necesita para operar, crecer y ganar.',
+              en: 'Your team gets one login, one dashboard, and one AI-powered system that replaces the tool sprawl. Full ownership — no recurring platform fees.',
+              es: 'Tu equipo obtiene un inicio de sesión, un dashboard y un sistema con IA que reemplaza la maraña de herramientas. Propiedad total — sin cuotas recurrentes de plataforma.',
             })}
+          </p>
+          <p className="font-mono text-[11px] uppercase tracking-[0.4em] text-untold-orange mb-12">
+            {t({ en: 'Typical build: 6-10 weeks from kickoff to launch', es: 'Construcción típica: 6-10 semanas de inicio a lanzamiento' })}
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
             <Link
               to="/contact"
               className="inline-block bg-untold-orange text-white px-10 sm:px-16 py-5 sm:py-6 font-sans font-black uppercase tracking-tighter text-lg hover:scale-105 active:scale-95 transition-all"
             >
-              {t({ en: 'Start a Conversation', es: 'Iniciar Conversación' })}
+              {t({ en: 'Get a Platform Proposal', es: 'Obtén una Propuesta de Plataforma' })}
             </Link>
             <Link
               to="/solutions"
               className="inline-block border-2 border-untold-black px-10 sm:px-16 py-5 sm:py-6 font-sans font-black uppercase tracking-tighter text-lg hover:bg-untold-black hover:text-white transition-all duration-300"
             >
-              {t({ en: 'Compare All Solutions', es: 'Comparar Soluciones' })}
+              {t({ en: 'Compare All Tiers', es: 'Comparar Niveles' })}
             </Link>
           </div>
         </div>

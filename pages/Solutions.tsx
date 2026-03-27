@@ -122,18 +122,36 @@ const Solutions: React.FC = () => {
     },
   ];
 
-  const capabilities = [
-    { path: '/websites', label: { en: 'Website Design & Rebuild', es: 'Diseño y Reconstrucción Web' }, desc: { en: 'Brand-first, mobile-ready, bilingual', es: 'Marca primero, mobile-ready, bilingüe' } },
-    { path: '/copywriting', label: { en: 'Copywriting & Brand Messaging', es: 'Copywriting y Mensajería de Marca' }, desc: { en: 'One voice, every channel', es: 'Una voz, cada canal' } },
-    { path: '/ai-content', label: { en: 'AI Content Engine', es: 'Motor de Contenido IA' }, desc: { en: 'Continuous automated content', es: 'Contenido automatizado continuo' } },
-    { path: '/seo-aeo', label: { en: 'SEO, AEO & GEO', es: 'SEO, AEO y GEO' }, desc: { en: 'Found by search and AI', es: 'Encontrado por buscadores e IA' } },
-    { path: '/social-media', label: { en: 'Social Media', es: 'Redes Sociales' }, desc: { en: 'Organic strategy & management', es: 'Estrategia orgánica y gestión' } },
-    { path: '/ads', label: { en: 'Paid Advertising', es: 'Publicidad Pagada' }, desc: { en: 'Google, Meta, LinkedIn', es: 'Google, Meta, LinkedIn' } },
-    { path: '/dashboard', label: { en: 'Dashboard & Intelligence', es: 'Dashboard e Inteligencia' }, desc: { en: 'Your entire business, one screen', es: 'Todo tu negocio, una pantalla' } },
-    { path: '/sales-enablement', label: { en: 'Sales Enablement', es: 'Habilitación de Ventas' }, desc: { en: 'Tools that close deals', es: 'Herramientas que cierran ventas' } },
-    { path: '/mobile-apps', label: { en: 'Mobile Applications', es: 'Aplicaciones Móviles' }, desc: { en: 'Customer and team apps', es: 'Apps para clientes y equipo' } },
-    { path: '/hosting', label: { en: 'Hosting & Operations', es: 'Hosting y Operaciones' }, desc: { en: 'Security, uptime, management', es: 'Seguridad, uptime, gestión' } },
-    { path: '/review-reputation', label: { en: 'Review & Reputation', es: 'Reseñas y Reputación' }, desc: { en: 'Automated review management', es: 'Gestión automatizada de reseñas' } },
+  const capabilityCategories = [
+    {
+      hub: { en: 'Digital Presence', es: 'Presencia Digital' },
+      hubPath: '/digital-presence',
+      items: [
+        { path: '/websites', label: { en: 'Website Design & Rebuild', es: 'Diseño y Reconstrucción Web' }, desc: { en: 'Brand-first, mobile-ready, bilingual', es: 'Marca primero, mobile-ready, bilingüe' } },
+        { path: '/copywriting', label: { en: 'Copywriting & Brand Messaging', es: 'Copywriting y Mensajería de Marca' }, desc: { en: 'One voice, every channel', es: 'Una voz, cada canal' } },
+        { path: '/seo-aeo', label: { en: 'SEO, AEO & GEO', es: 'SEO, AEO y GEO' }, desc: { en: 'Found by search and AI', es: 'Encontrado por buscadores e IA' } },
+        { path: '/social-media', label: { en: 'Social Media', es: 'Redes Sociales' }, desc: { en: 'Organic strategy & management', es: 'Estrategia orgánica y gestión' } },
+      ],
+    },
+    {
+      hub: { en: 'Business Operations', es: 'Operaciones de Negocio' },
+      hubPath: '/business-operations',
+      items: [
+        { path: '/dashboard', label: { en: 'Dashboard & Intelligence', es: 'Dashboard e Inteligencia' }, desc: { en: 'Your entire business, one screen', es: 'Todo tu negocio, una pantalla' } },
+        { path: '/ai-content', label: { en: 'AI Content Engine', es: 'Motor de Contenido IA' }, desc: { en: 'Continuous automated content', es: 'Contenido automatizado continuo' } },
+        { path: '/sales-enablement', label: { en: 'Sales Enablement', es: 'Habilitación de Ventas' }, desc: { en: 'Tools that close deals', es: 'Herramientas que cierran ventas' } },
+        { path: '/ads', label: { en: 'Paid Advertising', es: 'Publicidad Pagada' }, desc: { en: 'Google, Meta, LinkedIn', es: 'Google, Meta, LinkedIn' } },
+      ],
+    },
+    {
+      hub: { en: 'Infrastructure', es: 'Infraestructura' },
+      hubPath: '/infrastructure',
+      items: [
+        { path: '/hosting', label: { en: 'Hosting & Operations', es: 'Hosting y Operaciones' }, desc: { en: 'Security, uptime, management', es: 'Seguridad, uptime, gestión' } },
+        { path: '/mobile-apps', label: { en: 'Mobile Applications', es: 'Aplicaciones Móviles' }, desc: { en: 'Customer and team apps', es: 'Apps para clientes y equipo' } },
+        { path: '/review-reputation', label: { en: 'Review & Reputation', es: 'Reseñas y Reputación' }, desc: { en: 'Automated review management', es: 'Gestión automatizada de reseñas' } },
+      ],
+    },
   ];
 
   const process = [
@@ -301,23 +319,39 @@ const Solutions: React.FC = () => {
               es: 'Cada solución utiliza el mismo conjunto de capacidades — combinadas y escaladas para tu negocio.',
             })}
           </p>
-          <div className="divide-y divide-untold-border border-t border-b border-untold-border">
-            {capabilities.map((cap) => (
-              <Link
-                key={cap.path}
-                to={cap.path}
-                className="group flex items-center justify-between py-5 sm:py-6 hover:pl-4 transition-all"
-              >
-                <div className="flex-grow">
-                  <h3 className="font-sans font-black text-xl sm:text-2xl lg:text-3xl uppercase tracking-tighter group-hover:text-untold-orange transition-colors">
-                    {t(cap.label)}
+          <div className="space-y-12">
+            {capabilityCategories.map((cat) => (
+              <div key={cat.hubPath}>
+                <Link
+                  to={cat.hubPath}
+                  className="flex items-center space-x-3 mb-4 group"
+                >
+                  <span className="w-2 h-2 rounded-full bg-untold-orange"></span>
+                  <h3 className="font-mono text-[11px] uppercase tracking-[0.5em] font-bold text-untold-black/40 group-hover:text-untold-orange transition-colors">
+                    {t(cat.hub)}
                   </h3>
-                  <p className="font-serif italic text-untold-gray text-sm mt-1">{t(cap.desc)}</p>
+                  <span className="text-untold-orange text-sm opacity-0 group-hover:opacity-100 transition-opacity">&rarr;</span>
+                </Link>
+                <div className="divide-y divide-untold-border border-t border-b border-untold-border">
+                  {cat.items.map((cap) => (
+                    <Link
+                      key={cap.path}
+                      to={cap.path}
+                      className="group/item flex items-center justify-between py-5 sm:py-6 hover:pl-4 transition-all"
+                    >
+                      <div className="flex-grow">
+                        <h4 className="font-sans font-black text-xl sm:text-2xl lg:text-3xl uppercase tracking-tighter group-hover/item:text-untold-orange transition-colors">
+                          {t(cap.label)}
+                        </h4>
+                        <p className="font-serif italic text-untold-gray text-sm mt-1">{t(cap.desc)}</p>
+                      </div>
+                      <span className="text-untold-orange text-xl sm:text-2xl opacity-0 group-hover/item:opacity-100 group-hover/item:translate-x-0 -translate-x-4 transition-all shrink-0 ml-4">
+                        &rarr;
+                      </span>
+                    </Link>
+                  ))}
                 </div>
-                <span className="text-untold-orange text-xl sm:text-2xl opacity-0 group-hover:opacity-100 group-hover:translate-x-0 -translate-x-4 transition-all shrink-0 ml-4">
-                  &rarr;
-                </span>
-              </Link>
+              </div>
             ))}
           </div>
         </div>

@@ -4,8 +4,8 @@ import { useLanguage } from '../../App';
 import { usePageMeta } from '../../hooks/usePageMeta';
 import * as i18n from '../../i18n';
 import QuickLeadForm from '../../components/QuickLeadForm';
-import Testimonials from '../../components/Testimonials';
 import Breadcrumbs from '../../components/Breadcrumbs';
+import NetworkConnector from '../../components/NetworkConnector';
 
 const ProfessionalServices: React.FC = () => {
   const { t } = useLanguage();
@@ -219,8 +219,8 @@ const ProfessionalServices: React.FC = () => {
 
           <h3 className="font-sans font-black text-3xl sm:text-5xl uppercase tracking-tighter mb-16 max-w-4xl leading-[0.85]">
             {t({
-              en: 'You\'re Running a Practice on Duct Tape',
-              es: 'Estás Manejando Tu Práctica con Parches',
+              en: 'You\'re the Expert. Your Systems Should Be Too.',
+              es: 'Eres el Experto. Tus Sistemas También Deberían Serlo.',
             })}
           </h3>
 
@@ -334,8 +334,44 @@ const ProfessionalServices: React.FC = () => {
         </div>
       </section>
 
-      {/* ── Testimonials ── */}
-      <Testimonials />
+      {/* ── Proof ── */}
+      <section className="bg-untold-beige px-5 sm:px-10 py-20 sm:py-32 border-b border-untold-border">
+        <div className="max-w-[1440px] mx-auto">
+          <div className="flex items-center space-x-4 mb-16">
+            <span className="w-2.5 h-2.5 rounded-full bg-untold-orange"></span>
+            <h2 className="font-mono text-[13px] uppercase tracking-[0.6em] font-bold text-untold-black/40">
+              {t({ en: 'CLIENT RESULT', es: 'RESULTADO DE CLIENTE' })}
+            </h2>
+          </div>
+          <div className="max-w-3xl">
+            <span className="text-untold-orange text-6xl font-serif leading-none block mb-6">&ldquo;</span>
+            <p className="text-xl sm:text-2xl font-serif italic text-untold-gray leading-relaxed mb-8">
+              {t({
+                en: 'Their comprehensive growth strategy plan, tailored specifically for our needs, has not only given us a fresh, invigorated brand image but also opened up new revenue channels. This partnership has been a cornerstone in our journey towards a more dynamic and prosperous future.',
+                es: 'Su plan integral de estrategia de crecimiento, diseñado específicamente para nuestras necesidades, no solo nos dio una imagen de marca fresca y renovada, sino que también abrió nuevos canales de ingresos. Esta asociación ha sido una piedra angular en nuestro camino hacia un futuro más dinámico y próspero.',
+              })}
+            </p>
+            <div className="pt-6 border-t border-untold-border">
+              <p className="font-sans font-black text-base uppercase tracking-tighter">William Berriochoa</p>
+              <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-untold-gray mt-1">NoxGuard — US / Mexico</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ── Network Connector ── */}
+      <NetworkConnector
+        capability={{ en: 'Professional Services', es: 'Servicios Profesionales' }}
+        networkDescription={{
+          en: 'Running a consulting firm, medical group, or multi-practitioner practice? Our Network Systems offering deploys these same tools across your entire team — unified brand, shared CRM, coordinated marketing.',
+          es: '¿Diriges una firma de consultoría, grupo médico o práctica multi-profesional? Nuestra oferta de Network Systems despliega estas mismas herramientas en todo tu equipo — marca unificada, CRM compartido, marketing coordinado.',
+        }}
+        relatedCapabilities={[
+          { name: { en: 'Website Design', es: 'Diseño Web' }, path: '/websites' },
+          { name: { en: 'SEO & AEO', es: 'SEO y AEO' }, path: '/seo-aeo' },
+          { name: { en: 'Review & Reputation', es: 'Reseñas y Reputación' }, path: '/review-reputation' },
+        ]}
+      />
 
       {/* Quick Lead Form */}
       <section className="bg-untold-black text-white px-5 sm:px-10 py-20 sm:py-32">
@@ -371,15 +407,18 @@ const ProfessionalServices: React.FC = () => {
         <div className="max-w-4xl mx-auto flex flex-col items-center">
           <h2 className="font-sans font-black text-[clamp(2.5rem,10vw,100px)] leading-[0.85] mb-8 tracking-tighter uppercase">
             {t({
-              en: 'Ready to Replace\nthe Patchwork?',
-              es: '¿Listo Para Reemplazar\nlos Parches?',
+              en: 'Your Practice\nDeserves a System',
+              es: 'Tu Práctica\nMerece un Sistema',
             })}
           </h2>
-          <p className="text-xl sm:text-2xl font-serif italic text-untold-gray mb-12 max-w-2xl">
+          <p className="text-xl sm:text-2xl font-serif italic text-untold-gray mb-8 max-w-2xl">
             {t({
-              en: 'No lock-in. No monthly fees for things you own. You get the keys to everything we build.',
-              es: 'Sin ataduras. Sin cuotas mensuales por lo que es tuyo. Te damos las llaves de todo lo que construimos.',
+              en: 'No lock-in. No monthly platform fees. Full ownership of everything we build — code, data, and credentials.',
+              es: 'Sin ataduras. Sin cuotas mensuales de plataforma. Propiedad total de todo lo que construimos — código, datos y credenciales.',
             })}
+          </p>
+          <p className="font-mono text-[11px] uppercase tracking-[0.4em] text-untold-orange mb-12">
+            {t({ en: 'We take on 3 new professional services clients per month', es: 'Aceptamos 3 nuevos clientes de servicios profesionales por mes' })}
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
             <Link
@@ -387,7 +426,7 @@ const ProfessionalServices: React.FC = () => {
               className="group relative bg-untold-black text-white px-10 sm:px-16 py-6 sm:py-8 font-sans font-black uppercase tracking-tighter text-lg sm:text-xl hover:scale-105 active:scale-95 transition-all duration-500 overflow-hidden"
             >
               <span className="relative z-10">
-                {t({ en: 'Start a Conversation', es: 'Iniciar Conversación' })}
+                {t({ en: 'Get Your System Blueprint', es: 'Obtén Tu Plan de Sistema' })}
               </span>
               <div className="absolute inset-0 bg-untold-orange translate-y-full group-hover:translate-y-0 transition-transform duration-500"></div>
             </Link>
@@ -395,7 +434,7 @@ const ProfessionalServices: React.FC = () => {
               to="/solutions"
               className="border-2 border-untold-black px-10 sm:px-16 py-6 sm:py-8 font-sans font-black uppercase tracking-tighter text-lg sm:text-xl hover:bg-untold-black hover:text-white transition-all duration-300"
             >
-              {t({ en: 'Compare All Solutions', es: 'Comparar Soluciones' })}
+              {t({ en: 'Compare All Tiers', es: 'Comparar Niveles' })}
             </Link>
           </div>
         </div>
