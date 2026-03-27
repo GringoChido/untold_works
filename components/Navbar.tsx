@@ -14,11 +14,6 @@ const Navbar: React.FC = () => {
     { path: '/solutions/enterprise', label: { en: 'Enterprise', es: 'Empresarial' } },
   ];
 
-  const categoryLinks = [
-    { path: '/digital-presence', label: { en: 'Digital Presence', es: 'Presencia Digital' } },
-    { path: '/business-operations', label: { en: 'Business Operations', es: 'Operaciones de Negocio' } },
-    { path: '/infrastructure', label: { en: 'Infrastructure', es: 'Infraestructura' } },
-  ];
 
   return (
     <>
@@ -59,20 +54,6 @@ const Navbar: React.FC = () => {
                           key={item.path}
                           to={item.path}
                           className="block px-6 py-4 text-[12px] font-mono font-bold uppercase tracking-[0.2em] text-untold-black hover:text-untold-orange hover:bg-untold-beige/50 transition-all border-b border-untold-border"
-                        >
-                          {t(item.label)}
-                        </Link>
-                      ))}
-                      <div className="px-6 py-2 bg-untold-beige/30 border-b border-untold-border">
-                        <span className="font-mono text-[9px] uppercase tracking-[0.4em] text-untold-gray font-bold">
-                          {t({ en: 'CAPABILITIES', es: 'CAPACIDADES' })}
-                        </span>
-                      </div>
-                      {categoryLinks.map((item, idx) => (
-                        <Link
-                          key={item.path}
-                          to={item.path}
-                          className={`block px-6 py-4 text-[12px] font-mono font-bold uppercase tracking-[0.2em] text-untold-black hover:text-untold-orange hover:bg-untold-beige/50 transition-all ${idx < categoryLinks.length - 1 ? 'border-b border-untold-border' : ''}`}
                         >
                           {t(item.label)}
                         </Link>
@@ -197,23 +178,6 @@ const Navbar: React.FC = () => {
                         {t(item.label)}
                       </Link>
                     ))}
-                  </div>
-                  <div className="my-4 border-t border-untold-border pt-3">
-                    <span className="font-mono text-[9px] uppercase tracking-[0.4em] text-untold-gray/60 font-bold block mb-3">
-                      {t({ en: 'CAPABILITIES', es: 'CAPACIDADES' })}
-                    </span>
-                    <div className="space-y-3">
-                      {categoryLinks.map((item) => (
-                        <Link
-                          key={item.path}
-                          to={item.path}
-                          className="block text-xl sm:text-2xl font-sans font-black uppercase tracking-tighter text-untold-gray hover:text-untold-orange transition-colors"
-                          onClick={() => setIsMenuOpen(false)}
-                        >
-                          {t(item.label)}
-                        </Link>
-                      ))}
-                    </div>
                   </div>
                 </div>
               )}

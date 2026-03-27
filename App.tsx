@@ -38,9 +38,6 @@ const SalesEnablement = lazy(() => import('./pages/SalesEnablement'));
 const MobileApps = lazy(() => import('./pages/MobileApps'));
 const Hosting = lazy(() => import('./pages/Hosting'));
 const ReviewReputation = lazy(() => import('./pages/ReviewReputation'));
-const DigitalPresence = lazy(() => import('./pages/DigitalPresence'));
-const BusinessOperations = lazy(() => import('./pages/BusinessOperations'));
-const Infrastructure = lazy(() => import('./pages/Infrastructure'));
 const Savings = lazy(() => import('./pages/Savings'));
 
 interface LanguageContextType {
@@ -117,9 +114,9 @@ const AppLayout: React.FC = () => {
             <Route path="/mobile-apps" element={<MobileApps />} />
             <Route path="/hosting" element={<Hosting />} />
             <Route path="/review-reputation" element={<ReviewReputation />} />
-            <Route path="/digital-presence" element={<DigitalPresence />} />
-            <Route path="/business-operations" element={<BusinessOperations />} />
-            <Route path="/infrastructure" element={<Infrastructure />} />
+            <Route path="/digital-presence" element={<Navigate to="/solutions" replace />} />
+            <Route path="/business-operations" element={<Navigate to="/solutions" replace />} />
+            <Route path="/infrastructure" element={<Navigate to="/solutions" replace />} />
             <Route path="/savings" element={<Savings />} />
             <Route path="/analog" element={<StereoPage />} />
             <Route path="/slides" element={<SlidesPage />} />

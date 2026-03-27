@@ -83,21 +83,6 @@ const Footer: React.FC = () => {
                   </Link>
                 ))}
               </div>
-              <div className="flex flex-col space-y-2 lg:text-right pt-2">
-                {[
-                  { label: { en: 'Digital Presence', es: 'Presencia Digital' }, path: '/digital-presence' },
-                  { label: { en: 'Business Operations', es: 'Operaciones de Negocio' }, path: '/business-operations' },
-                  { label: { en: 'Infrastructure', es: 'Infraestructura' }, path: '/infrastructure' },
-                ].map((item) => (
-                  <Link
-                    key={item.path}
-                    to={item.path}
-                    className="text-sm font-mono uppercase tracking-[0.3em] text-white/30 hover:text-untold-orange transition-all duration-300"
-                  >
-                    {t(item.label)}
-                  </Link>
-                ))}
-              </div>
               <Link
                 to="/workshops"
                 className="text-sm font-mono uppercase tracking-[0.3em] text-white/20 hover:text-untold-orange transition-all duration-300"

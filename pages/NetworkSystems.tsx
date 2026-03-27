@@ -10,12 +10,12 @@ const NetworkSystems: React.FC = () => {
 
   usePageMeta(
     {
-      en: 'Network Systems — AI-Powered Digital Infrastructure for Business Networks | Untold.works',
-      es: 'Network Systems — Infraestructura Digital con IA para Redes de Negocios | Untold.works',
+      en: 'Network Systems — AI-Powered Business Systems for Any Size | Untold.works',
+      es: 'Network Systems — Sistemas de Negocio con IA para Cualquier Tamaño | Untold.works',
     },
     {
-      en: 'Deploy AI-powered digital systems across your entire business network. Websites, SEO/AEO/GEO, dashboards, sales enablement, and mobile apps — one system, every location. Manufacturers, restaurant groups, franchise systems, and brand networks.',
-      es: 'Despliega sistemas digitales con IA en toda tu red de negocios. Sitios web, SEO/AEO/GEO, dashboards, habilitación de ventas y apps móviles — un sistema, cada ubicación. Fabricantes, grupos restauranteros, franquicias y redes de marca.',
+      en: 'AI-powered digital systems that scale from one location to one hundred. Websites, SEO/AEO/GEO, dashboards, sales enablement, and mobile apps — built for you, owned by you. Establish your AI identity before your competitors do.',
+      es: 'Sistemas digitales con IA que escalan de una ubicación a cien. Sitios web, SEO/AEO/GEO, dashboards, habilitación de ventas y apps móviles — construidos para ti, propiedad tuya. Establece tu identidad de IA antes que tus competidores.',
     },
     {
       path: '/network-systems',
@@ -23,23 +23,23 @@ const NetworkSystems: React.FC = () => {
         {
           '@context': 'https://schema.org',
           '@type': 'Service',
-          name: 'Network Systems — AI-Powered Digital Infrastructure',
+          name: 'Network Systems — AI-Powered Business Systems',
           provider: { '@type': 'Organization', name: 'Untold.works', url: 'https://untold.works' },
-          description: 'AI-powered digital systems deployed across entire business networks. Unified websites, SEO/AEO/GEO, dashboards, sales enablement, mobile apps, and system operations for manufacturer-dealer networks, franchise systems, restaurant groups, and brand networks.',
+          description: 'AI-powered digital systems that scale from single businesses to 100+ location networks. Unified websites, SEO/AEO/GEO, dashboards, sales enablement, mobile apps, and system operations. Establish your business AI identity with a connected digital ecosystem.',
           areaServed: [
             { '@type': 'Country', name: 'Mexico' },
             { '@type': 'Country', name: 'United States' },
           ],
-          serviceType: ['Network Digital Infrastructure', 'Dealer Network Enablement', 'Multi-Location Digital Systems', 'AI Business Systems'],
+          serviceType: ['AI Business Systems', 'Digital Infrastructure', 'Multi-Location Digital Systems', 'AI Identity Establishment'],
         },
         {
           '@context': 'https://schema.org',
           '@type': 'FAQPage',
           mainEntity: [
-            { '@type': 'Question', name: 'Will my dealers lose SEO rankings when migrating to the new system?', acceptedAnswer: { '@type': 'Answer', text: 'No. We handle full SEO migration with 301 redirects, preserved URL structures, and enhanced technical SEO. Most dealer sites see improved rankings within 60 days because the new system is built with modern SEO, AEO, and GEO best practices. For dormant sites with minimal existing rankings, the new system creates a massive improvement from day one.' } },
             { '@type': 'Question', name: 'Do we own the websites and systems you build?', acceptedAnswer: { '@type': 'Answer', text: 'Yes. Full ownership transfer is part of every engagement. Code, data, content, documentation — it is all yours. No lock-in, no hostage situations. The ongoing system operations fee covers continuous optimization and management, not access to your own assets.' } },
-            { '@type': 'Question', name: 'What if our dealers are not tech-savvy?', acceptedAnswer: { '@type': 'Answer', text: 'The system is designed to run without dealers needing to do anything. They do not manage the site, write content, or configure SEO. The system handles it. Dealers get a simple dashboard showing their leads and performance. That is it.' } },
-            { '@type': 'Question', name: 'How long does it take to deploy across a network?', acceptedAnswer: { '@type': 'Answer', text: 'We pilot with 2-3 locations in 3-4 weeks, then roll out across the full network in phases. Each additional deployment gets faster as the system is already configured for your brand. A 30-location network can be fully deployed in 3-4 months.' } },
+            { '@type': 'Question', name: 'Does this work for a single business or do I need multiple locations?', acceptedAnswer: { '@type': 'Answer', text: 'Network Systems scales to fit. A single business gets the full AI-powered ecosystem — website, SEO/AEO/GEO, dashboards, sales tools, and automation. Multi-location businesses get all of that deployed across every location as one unified system. The architecture is the same. The scale is different.' } },
+            { '@type': 'Question', name: 'What if our team is not tech-savvy?', acceptedAnswer: { '@type': 'Answer', text: 'The system is designed to run without anyone needing to be technical. We handle the technology. You get a simple dashboard showing your leads and performance, and an AI assistant you can ask questions in plain language.' } },
+            { '@type': 'Question', name: 'How long does it take to deploy?', acceptedAnswer: { '@type': 'Answer', text: 'A single business system deploys in 4-8 weeks. For multi-location networks, we pilot with 2-3 locations in 3-4 weeks, then roll out across the full network in phases. A 30-location network can be fully deployed in 3-4 months.' } },
           ],
         },
       ],
@@ -50,127 +50,78 @@ const NetworkSystems: React.FC = () => {
     {
       category: { en: 'BRAND & CREATIVE', es: 'MARCA Y CREATIVIDAD' },
       items: [
-        { en: 'Brand guidelines enforcement across every location', es: 'Aplicación de lineamientos de marca en cada ubicación' },
-        { en: 'Photography and video for each location and product line', es: 'Fotografía y video para cada ubicación y línea de productos' },
-        { en: 'Campaign creative, seasonal assets, and promotional materials', es: 'Creatividad de campaña, materiales estacionales y promocionales' },
-        { en: 'Localized creative variations per market', es: 'Variaciones creativas localizadas por mercado' },
-        { en: 'Copywriting and brand messaging across every touchpoint', es: 'Copywriting y mensajes de marca en cada punto de contacto' },
+        { en: 'Brand guidelines enforcement across every touchpoint', es: 'Aplicación de lineamientos de marca en cada punto de contacto' },
+        { en: 'Photography, video, and campaign creative', es: 'Fotografía, video y creatividad de campaña' },
+        { en: 'Copywriting and brand messaging across every channel', es: 'Copywriting y mensajes de marca en cada canal' },
       ],
     },
     {
       category: { en: 'WEB & DIGITAL INFRASTRUCTURE', es: 'WEB E INFRAESTRUCTURA DIGITAL' },
       items: [
-        { en: 'Individual websites designed, built, hosted, secured, and maintained per location', es: 'Sitios web individuales diseñados, construidos, alojados, asegurados y mantenidos por ubicación' },
+        { en: 'Websites designed, built, hosted, secured, and maintained', es: 'Sitios web diseñados, construidos, alojados, asegurados y mantenidos' },
         { en: 'Mobile optimization, ADA compliance, and performance monitoring', es: 'Optimización móvil, accesibilidad ADA y monitoreo de rendimiento' },
         { en: 'CMS management and continuous content updates', es: 'Gestión de CMS y actualizaciones continuas de contenido' },
-        { en: 'Customer-facing and internal mobile applications', es: 'Aplicaciones móviles para clientes e internas' },
       ],
     },
     {
       category: { en: 'SEO, AEO & GEO', es: 'SEO, AEO Y GEO' },
       items: [
-        { en: 'Local SEO for every location and market', es: 'SEO local para cada ubicación y mercado' },
-        { en: 'AEO optimization so AI assistants recommend your brand', es: 'Optimización AEO para que asistentes de IA recomienden tu marca' },
+        { en: 'Search engine optimization for every market you serve', es: 'Optimización para buscadores en cada mercado que atiendes' },
+        { en: 'AEO so AI assistants recommend your brand', es: 'AEO para que asistentes de IA recomienden tu marca' },
         { en: 'GEO for visibility in generative search results', es: 'GEO para visibilidad en resultados de búsqueda generativa' },
-        { en: 'Google Business Profile management per location', es: 'Gestión de Google Business Profile por ubicación' },
-        { en: 'Review generation and reputation monitoring', es: 'Generación de reseñas y monitoreo de reputación' },
+        { en: 'Google Business Profile management and review generation', es: 'Gestión de Google Business Profile y generación de reseñas' },
       ],
     },
     {
       category: { en: 'CONTENT & SOCIAL', es: 'CONTENIDO Y REDES SOCIALES' },
       items: [
         { en: 'Blog content, thought leadership, and buying guides', es: 'Contenido de blog, liderazgo de pensamiento y guías de compra' },
-        { en: 'Social media across multiple platforms per location', es: 'Redes sociales en múltiples plataformas por ubicación' },
+        { en: 'Social media across multiple platforms', es: 'Redes sociales en múltiples plataformas' },
         { en: 'Email marketing campaigns and automated sequences', es: 'Campañas de email marketing y secuencias automatizadas' },
-        { en: 'Seasonal content calendars and quarterly campaigns', es: 'Calendarios estacionales y campañas trimestrales' },
       ],
     },
     {
       category: { en: 'PAID MEDIA', es: 'MEDIOS PAGADOS' },
       items: [
         { en: 'Campaign strategy and creative per market', es: 'Estrategia de campaña y creatividad por mercado' },
-        { en: 'Audience targeting, retargeting, and budget allocation', es: 'Segmentación, retargeting y asignación de presupuesto' },
-        { en: 'Performance optimization and ROI reporting', es: 'Optimización de rendimiento y reportes de ROI' },
+        { en: 'Audience targeting, retargeting, and budget optimization', es: 'Segmentación, retargeting y optimización de presupuesto' },
+        { en: 'Performance tracking and ROI reporting', es: 'Seguimiento de rendimiento y reportes de ROI' },
       ],
     },
     {
-      category: { en: 'SALES ENABLEMENT', es: 'HABILITACIÓN DE VENTAS' },
+      category: { en: 'SALES & INTELLIGENCE', es: 'VENTAS E INTELIGENCIA' },
       items: [
         { en: 'Product comparison tools and digital catalogs', es: 'Herramientas de comparación y catálogos digitales' },
-        { en: 'Financing calculators and quote request flows', es: 'Calculadoras de financiamiento y flujos de cotización' },
-        { en: 'Competitive battle cards and sales collateral', es: 'Battle cards competitivas y materiales de ventas' },
         { en: 'Lead capture, routing, and CRM integration', es: 'Captura de leads, enrutamiento e integración con CRM' },
-      ],
-    },
-    {
-      category: { en: 'ANALYTICS & INTELLIGENCE', es: 'ANALÍTICA E INTELIGENCIA' },
-      items: [
-        { en: 'Traffic, conversion, and lead tracking per location', es: 'Seguimiento de tráfico, conversiones y leads por ubicación' },
-        { en: 'Network-wide performance dashboards for HQ', es: 'Dashboards de rendimiento de la red para oficina central' },
-        { en: 'Full integration with Salesforce, HubSpot, GA4, POS, and existing tools', es: 'Integración completa con Salesforce, HubSpot, GA4, POS y herramientas existentes' },
-        { en: 'Custom AI assistant trained on your organization data', es: 'Asistente de IA personalizado entrenado con los datos de tu organización' },
-        { en: 'Market demand and product trend analysis', es: 'Análisis de demanda de mercado y tendencias de productos' },
-      ],
-    },
-    {
-      category: { en: 'OPERATIONS & MANAGEMENT', es: 'OPERACIONES Y GESTIÓN' },
-      items: [
-        { en: 'Project management across every account', es: 'Gestión de proyectos en cada cuenta' },
-        { en: 'Quarterly campaign coordination and deployment', es: 'Coordinación y despliegue de campañas trimestrales' },
-        { en: 'Quality control, brand compliance, and reporting', es: 'Control de calidad, cumplimiento de marca y reportes' },
-        { en: 'Hosting, security, uptime, and system maintenance', es: 'Hosting, seguridad, uptime y mantenimiento del sistema' },
-      ],
-    },
-  ];
-
-  const capabilities = [
-    {
-      group: { en: 'DIGITAL PRESENCE', es: 'PRESENCIA DIGITAL' },
-      groupSub: { en: 'Get Found', es: 'Que Te Encuentren' },
-      items: [
-        { name: { en: 'Website Design & Rebuild', es: 'Diseño y Reconstrucción Web' }, link: '/websites', desc: { en: 'AI-built, brand-first, mobile-ready websites deployed across every location in your network.', es: 'Sitios web construidos con IA, marca primero, mobile-ready, desplegados en cada ubicación de tu red.' } },
-        { name: { en: 'Copywriting & Brand Messaging', es: 'Copywriting y Mensajes de Marca' }, link: '/copywriting', desc: { en: 'Website copy, ad copy, email sequences, product descriptions. One brand voice, consistent everywhere.', es: 'Copy web, copy publicitario, secuencias de email, descripciones de productos. Una voz de marca, consistente en todos lados.' } },
-        { name: { en: 'SEO, AEO & GEO', es: 'SEO, AEO y GEO' }, link: '/seo-aeo', desc: { en: 'Search dominance, AI recommendations, and generative search visibility. The compounding network effect.', es: 'Dominio en búsquedas, recomendaciones de IA y visibilidad en búsquedas generativas. El efecto de red compuesto.' } },
-        { name: { en: 'AI Content Engine', es: 'Motor de Contenido con IA' }, link: '/ai-content', desc: { en: 'Continuous automated content — blogs, product spotlights, seasonal guides. Sites never go stale.', es: 'Contenido automatizado continuo — blogs, destacados de productos, guías estacionales. Los sitios nunca se estancan.' } },
-        { name: { en: 'Social Media', es: 'Redes Sociales' }, link: '/social-media', desc: { en: 'Coordinated presence across platforms. Campaign assets pushed to every location simultaneously.', es: 'Presencia coordinada en plataformas. Materiales de campaña distribuidos a cada ubicación simultáneamente.' } },
-        { name: { en: 'Paid Advertising', es: 'Publicidad Pagada' }, link: '/ads', desc: { en: 'Google, Meta, LinkedIn. Coordinated media across markets with network-wide budget optimization.', es: 'Google, Meta, LinkedIn. Medios coordinados en mercados con optimización de presupuesto a nivel de red.' } },
-      ],
-    },
-    {
-      group: { en: 'BUSINESS OPERATIONS', es: 'OPERACIONES DE NEGOCIO' },
-      groupSub: { en: 'Run the Business', es: 'Opera el Negocio' },
-      items: [
-        { name: { en: 'Dashboard & Intelligence', es: 'Dashboard e Inteligencia' }, link: '/dashboard', desc: { en: 'Full integration with Salesforce, HubSpot, GA4, POS — every tool in your stack. Custom internal dashboards with a built-in AI assistant trained on your organization.', es: 'Integración completa con Salesforce, HubSpot, GA4, POS — cada herramienta de tu stack. Dashboards internos personalizados con asistente de IA entrenado en tu organización.' } },
-        { name: { en: 'Sales Enablement', es: 'Habilitación de Ventas' }, link: '/sales-enablement', desc: { en: 'Product sheets, comparison tools, financing calculators, quote flows, battle cards — updated automatically as your product line evolves.', es: 'Fichas de producto, herramientas de comparación, calculadoras de financiamiento, flujos de cotización, battle cards — actualizados automáticamente conforme evoluciona tu línea.' } },
-        { name: { en: 'Mobile Applications', es: 'Aplicaciones Móviles' }, link: '/mobile-apps', desc: { en: 'Customer-facing apps, sales floor tools, management apps. Your network in every pocket.', es: 'Apps para clientes, herramientas para piso de ventas, apps de gestión. Tu red en cada bolsillo.' } },
-      ],
-    },
-    {
-      group: { en: 'INFRASTRUCTURE', es: 'INFRAESTRUCTURA' },
-      groupSub: { en: 'Keep It Running', es: 'Mantenlo Funcionando' },
-      items: [
-        { name: { en: 'Hosting & System Operations', es: 'Hosting y Operación del Sistema' }, link: '/hosting', desc: { en: 'Security, uptime, continuous SEO optimization, content generation, campaign deployment, monitoring. One monthly fee. Everything managed.', es: 'Seguridad, uptime, optimización SEO continua, generación de contenido, despliegue de campañas, monitoreo. Una cuota mensual. Todo gestionado.' } },
-        { name: { en: 'Review & Reputation Management', es: 'Gestión de Reseñas y Reputación' }, link: '/review-reputation', desc: { en: 'Automated review flows, monitoring, and response across Google, Yelp, and industry platforms.', es: 'Flujos automatizados de reseñas, monitoreo y respuesta en Google, Yelp y plataformas de la industria.' } },
+        { en: 'Custom dashboards with AI assistant trained on your data', es: 'Dashboards personalizados con asistente de IA entrenado en tus datos' },
       ],
     },
   ];
 
   const faqs = [
     {
-      q: { en: 'Will my locations lose their existing SEO rankings when we migrate?', es: '¿Mis ubicaciones perderán su posicionamiento SEO al migrar?' },
-      a: { en: 'No. We handle full SEO migration with 301 redirects, preserved URL structures, and enhanced technical SEO. Most sites see improved rankings within 60 days because the new system is built with modern SEO, AEO, and GEO best practices. For dormant sites with minimal existing rankings, the new system creates a massive improvement from day one.', es: 'No. Manejamos la migración SEO completa con redirecciones 301, estructuras de URL preservadas y SEO técnico mejorado. La mayoría de los sitios ven mejoras en su posicionamiento dentro de 60 días porque el nuevo sistema está construido con las mejores prácticas modernas de SEO, AEO y GEO. Para sitios dormidos con poco posicionamiento existente, el nuevo sistema crea una mejora masiva desde el día uno.' },
-    },
-    {
       q: { en: 'Do we own the websites and systems you build?', es: '¿Somos dueños de los sitios web y sistemas que construyen?' },
       a: { en: 'Yes. Full ownership transfer is part of every engagement. Code, data, content, documentation — it\'s all yours. No lock-in, no hostage situations. The ongoing system operations fee covers continuous optimization and management, not access to your own assets.', es: 'Sí. La transferencia total de propiedad es parte de cada proyecto. Código, datos, contenido, documentación — todo es tuyo. Sin candados, sin rehenes. La cuota mensual de operación del sistema cubre optimización y gestión continua, no el acceso a tus propios activos.' },
     },
     {
-      q: { en: 'What if our dealers or locations aren\'t tech-savvy?', es: '¿Qué pasa si nuestros distribuidores no son expertos en tecnología?' },
-      a: { en: 'The system is designed to run without anyone at the location needing to do anything. They don\'t manage the site, write content, or configure SEO. The system handles it. They get a simple dashboard showing their leads and performance — and an AI assistant they can ask questions in plain language. That\'s it.', es: 'El sistema está diseñado para funcionar sin que nadie en la ubicación necesite hacer nada. No gestionan el sitio, no escriben contenido, no configuran SEO. El sistema lo maneja. Reciben un dashboard simple mostrando sus leads y rendimiento — y un asistente de IA al que pueden hacer preguntas en lenguaje normal. Eso es todo.' },
+      q: { en: 'What happens if we cancel?', es: '¿Qué pasa si cancelamos?' },
+      a: { en: 'The sites are yours. The content is yours. The data is yours. Full ownership, always. But the system operations stop — content stops generating, SEO stops compounding, campaigns stop deploying, the AI visibility fades. The value is in the continuous operation, not just the initial build.', es: 'Los sitios son tuyos. El contenido es tuyo. Los datos son tuyos. Propiedad total, siempre. Pero las operaciones del sistema se detienen — el contenido deja de generarse, el SEO deja de componerse, las campañas dejan de desplegarse, la visibilidad de IA se desvanece. El valor está en la operación continua, no solo en la construcción inicial.' },
     },
     {
-      q: { en: 'How long does it take to deploy across our network?', es: '¿Cuánto tiempo toma desplegar en toda nuestra red?' },
-      a: { en: 'We pilot with 2-3 locations in 3-4 weeks. Then roll out across the full network in phases. Each additional deployment gets faster because the system is already configured for your brand. A 30-location network can be fully deployed in 3-4 months.', es: 'Hacemos piloto con 2-3 ubicaciones en 3-4 semanas. Luego desplegamos en toda la red por fases. Cada despliegue adicional es más rápido porque el sistema ya está configurado para tu marca. Una red de 30 ubicaciones puede desplegarse completamente en 3-4 meses.' },
+      q: { en: 'Does this work for a single business, or do I need multiple locations?', es: '¿Funciona para un solo negocio, o necesito múltiples ubicaciones?' },
+      a: { en: 'Network Systems scales to fit. A single business gets the full AI-powered ecosystem — website, SEO/AEO/GEO, dashboards, sales tools, and automation. A 5-location operation gets all of that coordinated across locations. A 50-location network gets the full network effect. The architecture is the same. The scale is different.', es: 'Network Systems se adapta a tu escala. Un solo negocio obtiene el ecosistema completo con IA — sitio web, SEO/AEO/GEO, dashboards, herramientas de ventas y automatización. Una operación de 5 ubicaciones obtiene todo coordinado entre ubicaciones. Una red de 50 ubicaciones obtiene el efecto de red completo. La arquitectura es la misma. La escala es diferente.' },
+    },
+    {
+      q: { en: 'Will my locations lose their existing SEO rankings when we migrate?', es: '¿Mis ubicaciones perderán su posicionamiento SEO al migrar?' },
+      a: { en: 'No. We handle full SEO migration with 301 redirects, preserved URL structures, and enhanced technical SEO. Most sites see improved rankings within 60 days because the new system is built with modern SEO, AEO, and GEO best practices. For dormant sites with minimal existing rankings, the new system creates a massive improvement from day one.', es: 'No. Manejamos la migración SEO completa con redirecciones 301, estructuras de URL preservadas y SEO técnico mejorado. La mayoría de los sitios ven mejoras en su posicionamiento dentro de 60 días porque el nuevo sistema está construido con las mejores prácticas modernas de SEO, AEO y GEO. Para sitios dormidos con poco posicionamiento existente, el nuevo sistema crea una mejora masiva desde el día uno.' },
+    },
+    {
+      q: { en: 'What if our team isn\'t tech-savvy?', es: '¿Qué pasa si nuestro equipo no es experto en tecnología?' },
+      a: { en: 'The system is designed to run without anyone needing to be technical. They don\'t manage the site, write content, or configure SEO. The system handles it. You get a simple dashboard showing your leads and performance — and an AI assistant you can ask questions in plain language. That\'s it.', es: 'El sistema está diseñado para funcionar sin que nadie necesite ser técnico. No gestionan el sitio, no escriben contenido, no configuran SEO. El sistema lo maneja. Recibes un dashboard simple mostrando tus leads y rendimiento — y un asistente de IA al que puedes hacer preguntas en lenguaje normal. Eso es todo.' },
+    },
+    {
+      q: { en: 'How long does it take to deploy?', es: '¿Cuánto tiempo toma desplegarlo?' },
+      a: { en: 'A single business system deploys in 4-8 weeks. For multi-location networks, we pilot with 2-3 locations in 3-4 weeks, then roll out in phases. Each additional deployment gets faster because the system is already configured for your brand. A 30-location network can be fully deployed in 3-4 months.', es: 'Un sistema para un solo negocio se despliega en 4-8 semanas. Para redes multi-ubicación, hacemos piloto con 2-3 ubicaciones en 3-4 semanas, luego desplegamos por fases. Cada despliegue adicional es más rápido porque el sistema ya está configurado para tu marca. Una red de 30 ubicaciones puede desplegarse completamente en 3-4 meses.' },
     },
     {
       q: { en: 'Is AI-generated content good enough to represent our brand?', es: '¿El contenido generado por IA es suficientemente bueno para representar nuestra marca?' },
@@ -178,15 +129,7 @@ const NetworkSystems: React.FC = () => {
     },
     {
       q: { en: 'What if our competitors do the same thing?', es: '¿Qué pasa si nuestros competidores hacen lo mismo?' },
-      a: { en: 'First-mover advantage is real. The network SEO/AEO/GEO effect compounds over time — every month your unified network is live, you\'re building a gap that\'s extremely difficult to close. The brand that moves first creates a digital moat. Every month you wait is a month your competitors could be building theirs.', es: 'La ventaja del primero en moverse es real. El efecto de red en SEO/AEO/GEO se compone con el tiempo — cada mes que tu red unificada está activa, construyes una brecha que es extremadamente difícil de cerrar. La marca que se mueve primero crea un foso digital. Cada mes que esperas es un mes que tus competidores podrían estar construyendo el suyo.' },
-    },
-    {
-      q: { en: 'How does this compare to each location hiring their own agency?', es: '¿Cómo se compara con que cada ubicación contrate su propia agencia?' },
-      a: { en: 'Thirty locations hiring individual agencies means thirty separate strategies, zero coordination, zero network effects, and a combined spend of $90K-$150K per month with nothing connecting them. A unified system costs a fraction of that and every site strengthens every other site. It\'s not just cheaper — it\'s exponentially more effective.', es: 'Treinta ubicaciones contratando agencias individuales significa treinta estrategias separadas, cero coordinación, cero efectos de red y un gasto combinado de $90K-$150K por mes sin nada conectándolos. Un sistema unificado cuesta una fracción de eso y cada sitio fortalece a todos los demás. No solo es más barato — es exponencialmente más efectivo.' },
-    },
-    {
-      q: { en: 'What happens if we cancel?', es: '¿Qué pasa si cancelamos?' },
-      a: { en: 'The sites are yours. The content is yours. The data is yours. Full ownership, always. But the system operations stop — content stops generating, SEO stops compounding, campaigns stop deploying, the AI visibility fades. The value is in the continuous operation, not just the initial build.', es: 'Los sitios son tuyos. El contenido es tuyo. Los datos son tuyos. Propiedad total, siempre. Pero las operaciones del sistema se detienen — el contenido deja de generarse, el SEO deja de componerse, las campañas dejan de desplegarse, la visibilidad de IA se desvanece. El valor está en la operación continua, no solo en la construcción inicial.' },
+      a: { en: 'First-mover advantage is real. The SEO/AEO/GEO effect compounds over time — every month your system is live, you\'re building a gap that\'s extremely difficult to close. The business that moves first creates a digital moat. Every month you wait is a month your competitors could be building theirs.', es: 'La ventaja del primero en moverse es real. El efecto de SEO/AEO/GEO se compone con el tiempo — cada mes que tu sistema está activo, construyes una brecha que es extremadamente difícil de cerrar. El negocio que se mueve primero crea un foso digital. Cada mes que esperas es un mes que tus competidores podrían estar construyendo el suyo.' },
     },
   ];
 
@@ -194,7 +137,7 @@ const NetworkSystems: React.FC = () => {
     <div className="bg-untold-beige font-serif text-untold-black">
 
       {/* ═══════════════════════════════════════════════════════════
-          HERO — Name the Problem
+          HERO — The AI Identity Imperative
       ═══════════════════════════════════════════════════════════ */}
       <section className="bg-untold-black px-5 sm:px-10 pt-12 sm:pt-20 pb-20 sm:pb-32 lg:pb-48">
         <div className="max-w-[1440px] mx-auto">
@@ -210,42 +153,48 @@ const NetworkSystems: React.FC = () => {
             <div className="flex items-center space-x-4 mb-8 sm:mb-12">
               <span className="w-3 h-3 rounded-full bg-untold-orange animate-pulse"></span>
               <p className="font-mono text-[11px] lg:text-[13px] uppercase tracking-[0.6em] font-bold text-white/50">
-                {t({ en: 'FLAGSHIP OFFERING', es: 'OFERTA PRINCIPAL' })}
+                {t({ en: 'AI-POWERED BUSINESS SYSTEMS', es: 'SISTEMAS DE NEGOCIO CON IA' })}
               </p>
             </div>
 
             <h1 className="font-sans font-black text-[clamp(2.2rem,7vw,100px)] leading-[0.85] mb-8 tracking-tighter uppercase text-white">
-              {t({ en: 'Your Network Is Your Most Powerful Asset.', es: 'Tu Red Es Tu Activo Más Poderoso.' })}
+              {t({ en: 'Your Business Needs an AI Identity.', es: 'Tu Negocio Necesita una Identidad de IA.' })}
               <br />
               <span className="text-untold-orange">
-                {t({ en: 'Or Your Biggest Liability.', es: 'O Tu Mayor Vulnerabilidad.' })}
+                {t({ en: 'This Is How You Build It.', es: 'Así Es Como La Construyes.' })}
               </span>
             </h1>
 
             <div className="max-w-3xl">
               <p className="text-xl sm:text-2xl font-serif italic text-white/70 leading-relaxed mb-8">
                 {t({
-                  en: 'You invest in your brand. But at the point of sale — your dealers\' websites, your franchisees\' digital storefronts, your partners\' online presence — your brand disappears. Outdated sites. Broken links. Competitor products alongside yours.',
-                  es: 'Inviertes en tu marca. Pero en el punto de venta — los sitios web de tus distribuidores, los escaparates digitales de tus franquiciatarios, la presencia en línea de tus socios — tu marca desaparece. Sitios desactualizados. Links rotos. Productos de la competencia junto a los tuyos.',
+                  en: 'ChatGPT, Perplexity, Gemini, and AI search are already deciding who gets recommended and who gets ignored. Your website, your content, your structured data, your digital presence — it all feeds the AI that your customers are asking for advice. The businesses that establish their AI identity now will own the next decade. The ones that wait will spend the next decade trying to catch up.',
+                  es: 'ChatGPT, Perplexity, Gemini y la búsqueda con IA ya están decidiendo quién es recomendado y quién es ignorado. Tu sitio web, tu contenido, tus datos estructurados, tu presencia digital — todo alimenta la IA a la que tus clientes le piden consejo. Los negocios que establezcan su identidad de IA ahora dominarán la próxima década. Los que esperen pasarán la próxima década intentando alcanzarlos.',
                 })}
               </p>
               <p className="text-lg font-serif text-white/50 leading-relaxed">
                 {t({
-                  en: 'We deploy AI-powered digital systems across your entire network. One platform. Every location. Continuously running.',
-                  es: 'Desplegamos sistemas digitales con IA en toda tu red. Una plataforma. Cada ubicación. Funcionando continuamente.',
+                  en: 'We build AI-powered digital systems that scale from a single business to a hundred locations. One connected ecosystem — website, SEO, AEO, GEO, dashboards, sales tools, automation — built for you, owned by you.',
+                  es: 'Construimos sistemas digitales con IA que escalan de un solo negocio a cien ubicaciones. Un ecosistema conectado — sitio web, SEO, AEO, GEO, dashboards, herramientas de ventas, automatización — construido para ti, propiedad tuya.',
                 })}
               </p>
             </div>
 
-            <div className="mt-12">
+            <div className="mt-12 flex flex-col sm:flex-row items-start gap-6">
               <Link
                 to="/contact"
                 className="inline-flex items-center space-x-6 sm:space-x-10 group border border-white/20 bg-white/5 backdrop-blur-sm px-8 sm:px-16 py-6 sm:py-8 hover:border-untold-orange hover:bg-untold-orange/10 transition-all"
               >
                 <span className="font-sans font-black text-lg sm:text-xl uppercase tracking-tighter text-white">
-                  {t({ en: 'Let\'s Talk About Your Network', es: 'Hablemos de Tu Red' })}
+                  {t({ en: 'Build Your AI Identity', es: 'Construye Tu Identidad de IA' })}
                 </span>
                 <span className="text-3xl text-untold-orange group-hover:translate-x-4 transition-transform duration-500">→</span>
+              </Link>
+              <Link
+                to="/solutions"
+                className="font-mono text-[12px] uppercase tracking-[0.3em] text-white/40 hover:text-untold-orange transition-colors py-6 sm:py-8"
+              >
+                {t({ en: 'See solution tiers', es: 'Ver niveles de solución' })} →
               </Link>
             </div>
           </div>
@@ -253,7 +202,7 @@ const NetworkSystems: React.FC = () => {
       </section>
 
       {/* ═══════════════════════════════════════════════════════════
-          THE SCOPE — What it actually takes
+          THE REALITY — What a complete digital system actually requires
       ═══════════════════════════════════════════════════════════ */}
       <section className="px-5 sm:px-10 py-20 sm:py-32 border-b border-untold-border">
         <div className="max-w-[1440px] mx-auto">
@@ -265,17 +214,17 @@ const NetworkSystems: React.FC = () => {
           </div>
 
           <h2 className="font-sans font-black text-3xl sm:text-5xl lg:text-7xl uppercase tracking-tighter mb-6 leading-[0.85]">
-            {t({ en: 'Here\'s What It Actually Takes to Digitally Enable a 30-Location Network.', es: 'Esto Es Lo Que Realmente Se Necesita Para Habilitar Digitalmente una Red de 30 Ubicaciones.' })}
+            {t({ en: 'Here\'s What a Real AI-Powered Business System Looks Like.', es: 'Así Se Ve un Sistema de Negocio Real Impulsado por IA.' })}
           </h2>
 
           <p className="text-lg sm:text-xl font-serif italic text-untold-gray max-w-3xl mb-16">
             {t({
-              en: 'A traditional agency would staff this with 12-15 specialists: web developers, designers, SEO analysts, content writers, social media managers, paid media buyers, analytics specialists, project managers, and account directors. Annual cost: $800K – $1.2M.',
-              es: 'Una agencia tradicional asignaría 12-15 especialistas: desarrolladores web, diseñadores, analistas SEO, redactores, community managers, media buyers, especialistas en analítica, project managers y directores de cuenta. Costo anual: $800K – $1.2M.',
+              en: 'Whether you\'re a single location or a fifty-location network, a complete digital ecosystem requires the same categories of work. The difference is scale — not scope. Here\'s what goes into the system we build for you.',
+              es: 'Ya sea que tengas una sola ubicación o una red de cincuenta, un ecosistema digital completo requiere las mismas categorías de trabajo. La diferencia es escala — no alcance. Esto es lo que incluye el sistema que construimos para ti.',
             })}
           </p>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-px bg-untold-border">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-px bg-untold-border">
             {scopeItems.map((group, gIdx) => (
               <div key={gIdx} className="bg-white p-6 sm:p-8">
                 <h3 className="font-mono text-[10px] uppercase tracking-[0.4em] text-untold-orange font-bold mb-5 pb-4 border-b border-untold-border">
@@ -295,13 +244,13 @@ const NetworkSystems: React.FC = () => {
 
           <div className="mt-12 border border-untold-border bg-white p-8 sm:p-12 text-center">
             <p className="font-mono text-[11px] uppercase tracking-[0.4em] text-untold-gray/60 mb-4">
-              {t({ en: 'TRADITIONAL APPROACH', es: 'ENFOQUE TRADICIONAL' })}
+              {t({ en: 'DOING THIS THE OLD WAY', es: 'HACERLO A LA ANTIGUA' })}
             </p>
-            <p className="font-sans font-black text-3xl sm:text-5xl uppercase tracking-tighter text-untold-black mb-3">
-              {t({ en: '12–15 Specialists. $800K+/Year.', es: '12–15 Especialistas. $800K+/Año.' })}
+            <p className="font-sans font-black text-2xl sm:text-4xl uppercase tracking-tighter text-untold-black mb-3">
+              {t({ en: 'An agency would charge $5K–$15K/month for one location. Multiply that across your network.', es: 'Una agencia cobraría $5K–$15K/mes por una ubicación. Multiplícalo por tu red.' })}
             </p>
             <p className="text-lg font-serif italic text-untold-gray">
-              {t({ en: 'No wonder most networks have never done this.', es: 'No es sorpresa que la mayoría de las redes nunca hayan hecho esto.' })}
+              {t({ en: 'No wonder most businesses have never had a real digital system.', es: 'No es sorpresa que la mayoría de los negocios nunca hayan tenido un sistema digital real.' })}
             </p>
           </div>
         </div>
@@ -320,26 +269,24 @@ const NetworkSystems: React.FC = () => {
           </div>
 
           <h2 className="font-sans font-black text-3xl sm:text-5xl lg:text-7xl uppercase tracking-tighter mb-6 leading-[0.85]">
-            {t({ en: 'Now Here\'s How It Actually Gets Done.', es: 'Ahora Así Es Como Se Hace Realidad.' })}
+            {t({ en: 'AI Didn\'t Replace the Strategy.\nIt Replaced the Army.', es: 'La IA No Reemplazó la Estrategia.\nReemplazó al Ejército.' })}
           </h2>
 
           <div className="grid lg:grid-cols-12 gap-12 lg:gap-20">
             <div className="lg:col-span-7">
               <p className="text-xl sm:text-2xl font-serif italic text-white/70 leading-relaxed mb-8">
                 {t({
-                  en: 'Every item on that list is real. Every item used to require a specialist. Here\'s what changed: AI doesn\'t replace the strategy — it replaces the army you needed to execute it.',
-                  es: 'Cada elemento de esa lista es real. Cada uno solía requerir un especialista. Esto es lo que cambió: la IA no reemplaza la estrategia — reemplaza al ejército que necesitabas para ejecutarla.',
+                  en: 'Everything on that list is real work. But AI changed what it takes to execute it. One strategic team with AI systems now delivers what used to require a department — at a fraction of the cost, whether you\'re one location or a hundred.',
+                  es: 'Todo en esa lista es trabajo real. Pero la IA cambió lo que se necesita para ejecutarlo. Un equipo estratégico con sistemas de IA ahora entrega lo que antes requería un departamento — a una fracción del costo, ya sea una ubicación o cien.',
                 })}
               </p>
 
               <div className="space-y-6">
                 {[
-                  { en: 'One system deployment covers every website in the network — not separate builds per location.', es: 'Un solo despliegue del sistema cubre cada sitio web de la red — no construcciones separadas por ubicación.' },
-                  { en: 'AI generates and localizes creative assets, content, and copy across the network continuously.', es: 'La IA genera y localiza activos creativos, contenido y copy a través de la red continuamente.' },
-                  { en: 'SEO, AEO, and GEO run as automated engines, not manual audits.', es: 'SEO, AEO y GEO funcionan como motores automatizados, no auditorías manuales.' },
-                  { en: 'Campaigns deploy from HQ to every location simultaneously.', es: 'Las campañas se despliegan desde oficina central a cada ubicación simultáneamente.' },
-                  { en: 'Dashboards aggregate intelligence across the entire network in real time.', es: 'Los dashboards agregan inteligencia de toda la red en tiempo real.' },
-                  { en: 'One strategic team with AI systems replaces what used to take a department.', es: 'Un equipo estratégico con sistemas de IA reemplaza lo que antes tomaba un departamento.' },
+                  { en: 'AI generates and localizes content, creative assets, and copy continuously — not one piece at a time.', es: 'La IA genera y localiza contenido, activos creativos y copy continuamente — no una pieza a la vez.' },
+                  { en: 'SEO, AEO, and GEO run as automated engines, not manual audits. Your AI identity compounds every month.', es: 'SEO, AEO y GEO funcionan como motores automatizados, no auditorías manuales. Tu identidad de IA se compone cada mes.' },
+                  { en: 'Campaigns deploy to every channel and location simultaneously from one system.', es: 'Las campañas se despliegan en cada canal y ubicación simultáneamente desde un sistema.' },
+                  { en: 'Dashboards aggregate intelligence across your entire operation in real time.', es: 'Los dashboards agregan inteligencia de toda tu operación en tiempo real.' },
                 ].map((point, idx) => (
                   <div key={idx} className="flex items-start space-x-4">
                     <span className="text-untold-orange font-mono text-sm mt-1 shrink-0">→</span>
@@ -352,15 +299,15 @@ const NetworkSystems: React.FC = () => {
             <div className="lg:col-span-5 flex items-center">
               <div className="border border-white/10 bg-white/5 p-8 sm:p-12 w-full">
                 <p className="font-mono text-[10px] uppercase tracking-[0.4em] text-untold-orange font-bold mb-6">
-                  {t({ en: 'THE BOTTOM LINE', es: 'EN RESUMEN' })}
+                  {t({ en: 'THE WINDOW', es: 'LA VENTANA' })}
                 </p>
                 <p className="font-sans font-black text-2xl sm:text-3xl uppercase tracking-tighter leading-[0.9] mb-6">
-                  {t({ en: 'The Scope Hasn\'t Changed. What Changed Is What It Takes to Execute It.', es: 'El Alcance No Cambió. Lo Que Cambió Es Lo Que Se Necesita Para Ejecutarlo.' })}
+                  {t({ en: 'Right Now, Most Businesses Have Zero AI Identity. That\'s Your Advantage.', es: 'Ahora Mismo, La Mayoría de los Negocios Tienen Cero Identidad de IA. Esa Es Tu Ventaja.' })}
                 </p>
                 <p className="text-base font-serif italic text-white/50 leading-relaxed">
                   {t({
-                    en: 'For the first time, it\'s economically viable to digitally enable your entire network. Not one location at a time. All of them.',
-                    es: 'Por primera vez, es económicamente viable habilitar digitalmente toda tu red. No una ubicación a la vez. Todas.',
+                    en: 'AI search is deciding who gets recommended RIGHT NOW. The businesses that establish their AI presence first — structured data, optimized content, connected systems — will be the ones AI learns to trust and recommend. This window won\'t stay open.',
+                    es: 'La búsqueda con IA está decidiendo quién es recomendado AHORA MISMO. Los negocios que establezcan su presencia de IA primero — datos estructurados, contenido optimizado, sistemas conectados — serán los que la IA aprenda a confiar y recomendar. Esta ventana no estará abierta para siempre.',
                   })}
                 </p>
               </div>
@@ -370,196 +317,7 @@ const NetworkSystems: React.FC = () => {
       </section>
 
       {/* ═══════════════════════════════════════════════════════════
-          THE NETWORK EFFECT — Why unified is exponentially better
-      ═══════════════════════════════════════════════════════════ */}
-      <section className="px-5 sm:px-10 py-20 sm:py-32 border-b border-untold-border">
-        <div className="max-w-[1440px] mx-auto">
-          <div className="flex items-center space-x-4 mb-8">
-            <span className="w-2.5 h-2.5 rounded-full bg-untold-orange"></span>
-            <p className="font-mono text-[11px] uppercase tracking-[0.5em] text-untold-orange font-bold">
-              {t({ en: 'THE NETWORK EFFECT', es: 'EL EFECTO DE RED' })}
-            </p>
-          </div>
-
-          <h2 className="font-sans font-black text-3xl sm:text-5xl lg:text-7xl uppercase tracking-tighter mb-6 leading-[0.85]">
-            {t({ en: 'Thirty Disconnected Websites Are Just Thirty Disconnected Websites.', es: 'Treinta Sitios Web Desconectados Son Solo Treinta Sitios Web Desconectados.' })}
-          </h2>
-
-          <p className="text-xl sm:text-2xl font-serif italic text-untold-gray max-w-4xl mb-16 leading-relaxed">
-            {t({
-              en: 'Thirty sites running on one unified system with coordinated SEO, AEO, and GEO? That\'s a network effect. Every site strengthens every other site. Your brand doesn\'t just show up in one market — it dominates every market where you have a presence.',
-              es: 'Treinta sitios corriendo en un sistema unificado con SEO, AEO y GEO coordinados? Eso es un efecto de red. Cada sitio fortalece a todos los demás. Tu marca no solo aparece en un mercado — domina cada mercado donde tienes presencia.',
-            })}
-          </p>
-
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
-            {[
-              {
-                title: { en: 'Search Dominance', es: 'Dominio en Búsquedas' },
-                desc: { en: 'Google sees 30 well-structured, interlinked sites with consistent brand data and treats your network as an authoritative ecosystem. Each site boosts every other site\'s rankings.', es: 'Google ve 30 sitios bien estructurados, interconectados, con datos de marca consistentes y trata tu red como un ecosistema autoritativo. Cada sitio impulsa el posicionamiento de todos los demás.' },
-              },
-              {
-                title: { en: 'AI Visibility', es: 'Visibilidad en IA' },
-                desc: { en: 'When someone asks ChatGPT or Perplexity about your products, 30 sites with consistent structured data is 30x the signal of one site alone. You\'re training the AI to recommend you.', es: 'Cuando alguien pregunta a ChatGPT o Perplexity sobre tus productos, 30 sitios con datos estructurados consistentes son 30x la señal de un solo sitio. Estás entrenando a la IA para que te recomiende.' },
-              },
-              {
-                title: { en: 'Market Coverage', es: 'Cobertura de Mercado' },
-                desc: { en: 'One site competes in one market. A unified network competes in every market simultaneously — all coordinated, all reinforcing each other.', es: 'Un sitio compite en un mercado. Una red unificada compite en cada mercado simultáneamente — todos coordinados, todos reforzándose mutuamente.' },
-              },
-              {
-                title: { en: 'Compounding Returns', es: 'Retornos Compuestos' },
-                desc: { en: 'Every piece of content, every product update, every campaign deploys across the entire network. One action, thirty results. The longer it runs, the stronger it gets.', es: 'Cada pieza de contenido, cada actualización de producto, cada campaña se despliega en toda la red. Una acción, treinta resultados. Mientras más tiempo funciona, más fuerte se vuelve.' },
-              },
-            ].map((card, idx) => (
-              <div key={idx} className="border border-untold-border bg-white p-8 flex flex-col">
-                <span className="font-mono text-[10px] uppercase tracking-[0.5em] text-untold-orange font-bold mb-4">
-                  {String(idx + 1).padStart(2, '0')}
-                </span>
-                <h3 className="font-sans font-black text-xl sm:text-2xl uppercase tracking-tighter mb-3">
-                  {t(card.title)}
-                </h3>
-                <p className="text-base font-serif text-untold-gray leading-relaxed">
-                  {t(card.desc)}
-                </p>
-              </div>
-            ))}
-          </div>
-
-          <div className="mt-12 border-l-4 border-untold-orange pl-6 sm:pl-10 max-w-3xl">
-            <p className="text-xl sm:text-2xl font-serif italic text-untold-gray leading-relaxed">
-              {t({
-                en: 'Your competitors\' locations are running disconnected, outdated sites. That\'s your window. A unified network isn\'t just better — it\'s the kind of advantage that\'s nearly impossible to catch once you have it.',
-                es: 'Las ubicaciones de tus competidores están corriendo sitios desconectados y desactualizados. Esa es tu ventana. Una red unificada no es solo mejor — es el tipo de ventaja que es casi imposible de alcanzar una vez que la tienes.',
-              })}
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* ═══════════════════════════════════════════════════════════
-          THE SYSTEM — Twelve Capabilities
-      ═══════════════════════════════════════════════════════════ */}
-      <section className="bg-untold-black px-5 sm:px-10 py-20 sm:py-32 text-white border-b border-white/10">
-        <div className="max-w-[1440px] mx-auto">
-          <div className="flex items-center space-x-4 mb-8">
-            <span className="w-2.5 h-2.5 rounded-full bg-untold-orange"></span>
-            <p className="font-mono text-[11px] uppercase tracking-[0.5em] text-untold-orange font-bold">
-              {t({ en: 'THE SYSTEM', es: 'EL SISTEMA' })}
-            </p>
-          </div>
-
-          <h2 className="font-sans font-black text-3xl sm:text-5xl lg:text-7xl uppercase tracking-tighter mb-6 leading-[0.85]">
-            {t({ en: 'A Full Agency Offering.\nDelivered as a System.', es: 'Una Oferta de Agencia Completa.\nEntregada como Sistema.' })}
-          </h2>
-
-          <p className="text-xl font-serif italic text-white/60 max-w-3xl mb-16">
-            {t({
-              en: 'Everything a top-tier agency would deliver — without the headcount, the overhead, or the six-figure monthly retainer. One integrated system. Twelve capabilities. Every location.',
-              es: 'Todo lo que una agencia de primer nivel entregaría — sin la nómina, los gastos generales o el retainer mensual de seis cifras. Un sistema integrado. Doce capacidades. Cada ubicación.',
-            })}
-          </p>
-
-          {capabilities.map((group, gIdx) => (
-            <div key={gIdx} className={gIdx > 0 ? 'mt-16' : ''}>
-              <div className="flex items-center space-x-4 mb-8 pb-4 border-b border-white/10">
-                <h3 className="font-sans font-black text-xl sm:text-2xl uppercase tracking-tighter">
-                  {t(group.group)}
-                </h3>
-                <span className="font-mono text-[10px] uppercase tracking-[0.3em] text-white/30">
-                  {t(group.groupSub)}
-                </span>
-              </div>
-
-              <div className={`grid ${group.items.length > 3 ? 'sm:grid-cols-2 lg:grid-cols-3' : group.items.length === 3 ? 'sm:grid-cols-3' : 'sm:grid-cols-2'} gap-px bg-white/10`}>
-                {group.items.map((item, iIdx) => {
-                  const inner = (
-                    <div className="bg-untold-black p-6 sm:p-8 flex flex-col h-full group">
-                      <h4 className="font-sans font-black text-lg uppercase tracking-tighter mb-3 group-hover:text-untold-orange transition-colors">
-                        {t(item.name)}
-                      </h4>
-                      <p className="text-sm font-serif text-white/50 leading-relaxed flex-grow">
-                        {t(item.desc)}
-                      </p>
-                      {item.link && (
-                        <span className="mt-4 inline-flex items-center space-x-2 font-mono text-[10px] uppercase tracking-[0.3em] text-untold-orange">
-                          <span>{t({ en: 'Learn more', es: 'Más info' })}</span>
-                          <span>→</span>
-                        </span>
-                      )}
-                    </div>
-                  );
-
-                  return item.link ? (
-                    <Link key={iIdx} to={item.link} className="block">
-                      {inner}
-                    </Link>
-                  ) : (
-                    <div key={iIdx}>{inner}</div>
-                  );
-                })}
-              </div>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      {/* ═══════════════════════════════════════════════════════════
-          PROCESS — How Deployment Works
-      ═══════════════════════════════════════════════════════════ */}
-      <section className="px-5 sm:px-10 py-20 sm:py-32 border-b border-untold-border">
-        <div className="max-w-[1440px] mx-auto">
-          <div className="flex items-center space-x-4 mb-8">
-            <span className="w-2.5 h-2.5 rounded-full bg-untold-orange"></span>
-            <p className="font-mono text-[11px] uppercase tracking-[0.5em] text-untold-orange font-bold">
-              {t({ en: 'THE PROCESS', es: 'EL PROCESO' })}
-            </p>
-          </div>
-
-          <h2 className="font-sans font-black text-3xl sm:text-5xl lg:text-7xl uppercase tracking-tighter mb-16 leading-[0.85]">
-            {t({ en: 'How We Deploy.', es: 'Cómo Desplegamos.' })}
-          </h2>
-
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
-            {[
-              {
-                phase: '01',
-                title: { en: 'Audit', es: 'Auditoría' },
-                desc: { en: 'We map your network\'s current digital presence, identify gaps, and design the system architecture. Brand assets, product data, and location details are gathered.', es: 'Mapeamos la presencia digital actual de tu red, identificamos brechas y diseñamos la arquitectura del sistema. Se recopilan activos de marca, datos de productos y detalles de ubicaciones.' },
-              },
-              {
-                phase: '02',
-                title: { en: 'Pilot', es: 'Piloto' },
-                desc: { en: 'We deploy the full system to 2-3 locations. You see the before and after. Your network sees the results. This is where the concept becomes undeniable.', es: 'Desplegamos el sistema completo en 2-3 ubicaciones. Ves el antes y después. Tu red ve los resultados. Aquí es donde el concepto se vuelve innegable.' },
-              },
-              {
-                phase: '03',
-                title: { en: 'Rollout', es: 'Despliegue' },
-                desc: { en: 'We deploy across the full network in phases. Each wave gets faster as the system is dialed in. The network dashboard comes online showing network-wide performance.', es: 'Desplegamos en toda la red por fases. Cada ola es más rápida conforme el sistema se afina. El dashboard de red se activa mostrando rendimiento de toda la red.' },
-              },
-              {
-                phase: '04',
-                title: { en: 'Optimize', es: 'Optimizar' },
-                desc: { en: 'The system runs continuously. Data compounds. The network effect builds. Quarterly campaigns deploy. We monitor, optimize, and report on the entire network.', es: 'El sistema funciona continuamente. Los datos se componen. El efecto de red crece. Las campañas trimestrales se despliegan. Monitoreamos, optimizamos y reportamos de toda la red.' },
-              },
-            ].map((step) => (
-              <div key={step.phase} className="border border-untold-border bg-white p-8 flex flex-col">
-                <span className="font-mono text-[10px] uppercase tracking-[0.5em] text-untold-orange font-bold mb-4">
-                  {t({ en: 'PHASE', es: 'FASE' })} {step.phase}
-                </span>
-                <h3 className="font-sans font-black text-2xl uppercase tracking-tighter mb-3">
-                  {t(step.title)}
-                </h3>
-                <p className="text-base font-serif text-untold-gray leading-relaxed">
-                  {t(step.desc)}
-                </p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* ═══════════════════════════════════════════════════════════
-          CASE STUDY — C.L. Bailey
+          CASE STUDY — C.L. Bailey (moved up for proof after reframe)
       ═══════════════════════════════════════════════════════════ */}
       <section className="bg-untold-black px-5 sm:px-10 py-20 sm:py-32 text-white border-b border-white/10">
         <div className="max-w-[1440px] mx-auto">
@@ -644,7 +402,214 @@ const NetworkSystems: React.FC = () => {
       </section>
 
       {/* ═══════════════════════════════════════════════════════════
-          FAQ
+          THE NETWORK EFFECT — Why unified compounds
+      ═══════════════════════════════════════════════════════════ */}
+      <section className="px-5 sm:px-10 py-20 sm:py-32 border-b border-untold-border">
+        <div className="max-w-[1440px] mx-auto">
+          <div className="flex items-center space-x-4 mb-8">
+            <span className="w-2.5 h-2.5 rounded-full bg-untold-orange"></span>
+            <p className="font-mono text-[11px] uppercase tracking-[0.5em] text-untold-orange font-bold">
+              {t({ en: 'THE NETWORK EFFECT', es: 'EL EFECTO DE RED' })}
+            </p>
+          </div>
+
+          <h2 className="font-sans font-black text-3xl sm:text-5xl lg:text-7xl uppercase tracking-tighter mb-6 leading-[0.85]">
+            {t({ en: 'One System Gets Stronger Over Time. Disconnected Tools Don\'t.', es: 'Un Sistema Se Fortalece Con el Tiempo. Herramientas Desconectadas No.' })}
+          </h2>
+
+          <p className="text-xl sm:text-2xl font-serif italic text-untold-gray max-w-4xl mb-16 leading-relaxed">
+            {t({
+              en: 'A single business running on one connected system builds compounding advantages — every piece of content strengthens your SEO, every customer interaction trains your AI, every month the system gets smarter. For multi-location networks, this effect multiplies exponentially. Every site strengthens every other site.',
+              es: 'Un solo negocio corriendo en un sistema conectado construye ventajas compuestas — cada pieza de contenido fortalece tu SEO, cada interacción con clientes entrena tu IA, cada mes el sistema se vuelve más inteligente. Para redes multi-ubicación, este efecto se multiplica exponencialmente. Cada sitio fortalece a todos los demás.',
+            })}
+          </p>
+
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            {[
+              {
+                title: { en: 'Search Dominance', es: 'Dominio en Búsquedas' },
+                desc: { en: 'A well-structured site with consistent brand data, fresh content, and proper technical SEO builds authority that compounds month over month. Multiple locations multiply this effect.', es: 'Un sitio bien estructurado con datos de marca consistentes, contenido fresco y SEO técnico adecuado construye autoridad que se compone mes a mes. Múltiples ubicaciones multiplican este efecto.' },
+              },
+              {
+                title: { en: 'AI Visibility', es: 'Visibilidad en IA' },
+                desc: { en: 'When someone asks ChatGPT or Perplexity about your products, consistent structured data across your digital presence is the signal that gets you recommended. This is your AI identity.', es: 'Cuando alguien pregunta a ChatGPT o Perplexity sobre tus productos, datos estructurados consistentes en tu presencia digital son la señal que te hace ser recomendado. Esta es tu identidad de IA.' },
+              },
+              {
+                title: { en: 'Market Coverage', es: 'Cobertura de Mercado' },
+                desc: { en: 'One connected system lets you compete in every market you serve — all coordinated, all reinforcing each other, all managed from one place.', es: 'Un sistema conectado te permite competir en cada mercado que atiendes — todos coordinados, todos reforzándose mutuamente, todos gestionados desde un solo lugar.' },
+              },
+              {
+                title: { en: 'Compounding Returns', es: 'Retornos Compuestos' },
+                desc: { en: 'Every content update, product change, and campaign deploys across your entire operation. One action, maximum impact. The longer it runs, the stronger it gets.', es: 'Cada actualización de contenido, cambio de producto y campaña se despliega en toda tu operación. Una acción, máximo impacto. Mientras más tiempo funciona, más fuerte se vuelve.' },
+              },
+            ].map((card, idx) => (
+              <div key={idx} className="border border-untold-border bg-white p-8 flex flex-col">
+                <span className="font-mono text-[10px] uppercase tracking-[0.5em] text-untold-orange font-bold mb-4">
+                  {String(idx + 1).padStart(2, '0')}
+                </span>
+                <h3 className="font-sans font-black text-xl sm:text-2xl uppercase tracking-tighter mb-3">
+                  {t(card.title)}
+                </h3>
+                <p className="text-base font-serif text-untold-gray leading-relaxed">
+                  {t(card.desc)}
+                </p>
+              </div>
+            ))}
+          </div>
+
+          <div className="mt-12 border-l-4 border-untold-orange pl-6 sm:pl-10 max-w-3xl">
+            <p className="text-xl sm:text-2xl font-serif italic text-untold-gray leading-relaxed">
+              {t({
+                en: 'Your competitors are running disconnected, outdated tools — or nothing at all. That\'s your window. A connected AI-powered system isn\'t just better — it\'s the kind of advantage that\'s nearly impossible to catch once you have it.',
+                es: 'Tus competidores están corriendo herramientas desconectadas y desactualizadas — o nada en absoluto. Esa es tu ventana. Un sistema conectado impulsado por IA no es solo mejor — es el tipo de ventaja que es casi imposible de alcanzar una vez que la tienes.',
+              })}
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* ═══════════════════════════════════════════════════════════
+          WHAT'S INSIDE — Streamlined 3-pillar overview
+      ═══════════════════════════════════════════════════════════ */}
+      <section className="bg-untold-black px-5 sm:px-10 py-20 sm:py-32 text-white border-b border-white/10">
+        <div className="max-w-[1440px] mx-auto">
+          <div className="flex items-center space-x-4 mb-8">
+            <span className="w-2.5 h-2.5 rounded-full bg-untold-orange"></span>
+            <p className="font-mono text-[11px] uppercase tracking-[0.5em] text-untold-orange font-bold">
+              {t({ en: 'WHAT\'S INSIDE', es: 'QUÉ INCLUYE' })}
+            </p>
+          </div>
+
+          <h2 className="font-sans font-black text-3xl sm:text-5xl lg:text-7xl uppercase tracking-tighter mb-6 leading-[0.85]">
+            {t({ en: 'Three Pillars.\nOne Connected System.', es: 'Tres Pilares.\nUn Sistema Conectado.' })}
+          </h2>
+
+          <p className="text-xl font-serif italic text-white/60 max-w-3xl mb-16">
+            {t({
+              en: 'Every system we build draws from three integrated capability sets. They work independently. They work better together.',
+              es: 'Cada sistema que construimos se basa en tres conjuntos de capacidades integradas. Funcionan independientemente. Funcionan mejor juntos.',
+            })}
+          </p>
+
+          <div className="grid lg:grid-cols-3 gap-px bg-white/10">
+            {[
+              {
+                pillar: { en: 'DIGITAL PRESENCE', es: 'PRESENCIA DIGITAL' },
+                sub: { en: 'Get Found', es: 'Que Te Encuentren' },
+                items: [
+                  { name: { en: 'Website Design & Rebuild', es: 'Diseño y Reconstrucción Web' }, link: '/websites' },
+                  { name: { en: 'Copywriting & Brand Messaging', es: 'Copywriting y Mensajes de Marca' }, link: '/copywriting' },
+                  { name: { en: 'SEO, AEO & GEO', es: 'SEO, AEO y GEO' }, link: '/seo-aeo' },
+                  { name: { en: 'AI Content Engine', es: 'Motor de Contenido con IA' }, link: '/ai-content' },
+                  { name: { en: 'Social Media', es: 'Redes Sociales' }, link: '/social-media' },
+                  { name: { en: 'Paid Advertising', es: 'Publicidad Pagada' }, link: '/ads' },
+                ],
+              },
+              {
+                pillar: { en: 'BUSINESS OPERATIONS', es: 'OPERACIONES DE NEGOCIO' },
+                sub: { en: 'Run the Business', es: 'Opera el Negocio' },
+                items: [
+                  { name: { en: 'Dashboard & Intelligence', es: 'Dashboard e Inteligencia' }, link: '/dashboard' },
+                  { name: { en: 'Sales Enablement', es: 'Habilitación de Ventas' }, link: '/sales-enablement' },
+                  { name: { en: 'Mobile Applications', es: 'Aplicaciones Móviles' }, link: '/mobile-apps' },
+                ],
+              },
+              {
+                pillar: { en: 'INFRASTRUCTURE', es: 'INFRAESTRUCTURA' },
+                sub: { en: 'Keep It Running', es: 'Mantenlo Funcionando' },
+                items: [
+                  { name: { en: 'Hosting & System Operations', es: 'Hosting y Operación del Sistema' }, link: '/hosting' },
+                  { name: { en: 'Review & Reputation Management', es: 'Gestión de Reseñas y Reputación' }, link: '/review-reputation' },
+                ],
+              },
+            ].map((group, gIdx) => (
+              <div key={gIdx} className="bg-untold-black p-8 sm:p-10">
+                <div className="flex items-center space-x-4 mb-6 pb-4 border-b border-white/10">
+                  <h3 className="font-sans font-black text-lg sm:text-xl uppercase tracking-tighter">
+                    {t(group.pillar)}
+                  </h3>
+                  <span className="font-mono text-[10px] uppercase tracking-[0.3em] text-white/30">
+                    {t(group.sub)}
+                  </span>
+                </div>
+                <ul className="space-y-4">
+                  {group.items.map((item, iIdx) => (
+                    <li key={iIdx}>
+                      <Link
+                        to={item.link}
+                        className="group flex items-center justify-between"
+                      >
+                        <span className="font-serif text-white/60 group-hover:text-untold-orange transition-colors">
+                          {t(item.name)}
+                        </span>
+                        <span className="text-untold-orange text-sm opacity-0 group-hover:opacity-100 transition-opacity">→</span>
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ═══════════════════════════════════════════════════════════
+          THE PROCESS — How Deployment Works
+      ═══════════════════════════════════════════════════════════ */}
+      <section className="px-5 sm:px-10 py-20 sm:py-32 border-b border-untold-border">
+        <div className="max-w-[1440px] mx-auto">
+          <div className="flex items-center space-x-4 mb-8">
+            <span className="w-2.5 h-2.5 rounded-full bg-untold-orange"></span>
+            <p className="font-mono text-[11px] uppercase tracking-[0.5em] text-untold-orange font-bold">
+              {t({ en: 'THE PROCESS', es: 'EL PROCESO' })}
+            </p>
+          </div>
+
+          <h2 className="font-sans font-black text-3xl sm:text-5xl lg:text-7xl uppercase tracking-tighter mb-16 leading-[0.85]">
+            {t({ en: 'How We Deploy.', es: 'Cómo Desplegamos.' })}
+          </h2>
+
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            {[
+              {
+                phase: '01',
+                title: { en: 'Audit', es: 'Auditoría' },
+                desc: { en: 'We map your current digital presence, identify gaps, and design the system architecture. Brand assets, product data, and business details are gathered.', es: 'Mapeamos tu presencia digital actual, identificamos brechas y diseñamos la arquitectura del sistema. Se recopilan activos de marca, datos de productos y detalles del negocio.' },
+              },
+              {
+                phase: '02',
+                title: { en: 'Build', es: 'Construir' },
+                desc: { en: 'We build the full system — website, AI workflows, SEO/AEO/GEO, dashboards, integrations. For networks, we pilot with 2-3 locations first. You see the before and after.', es: 'Construimos el sistema completo — sitio web, flujos de IA, SEO/AEO/GEO, dashboards, integraciones. Para redes, hacemos piloto con 2-3 ubicaciones primero. Ves el antes y después.' },
+              },
+              {
+                phase: '03',
+                title: { en: 'Deploy', es: 'Desplegar' },
+                desc: { en: 'Single businesses go live. Networks roll out in phases — each wave faster as the system is dialed in. Your dashboard comes online showing real-time performance.', es: 'Los negocios individuales se lanzan. Las redes se despliegan por fases — cada ola más rápida conforme el sistema se afina. Tu dashboard se activa mostrando rendimiento en tiempo real.' },
+              },
+              {
+                phase: '04',
+                title: { en: 'Optimize', es: 'Optimizar' },
+                desc: { en: 'The system runs continuously. Your AI identity compounds. SEO builds. Content generates. Campaigns deploy. We monitor, optimize, and report — the system gets stronger every month.', es: 'El sistema funciona continuamente. Tu identidad de IA se compone. El SEO crece. El contenido se genera. Las campañas se despliegan. Monitoreamos, optimizamos y reportamos — el sistema se fortalece cada mes.' },
+              },
+            ].map((step) => (
+              <div key={step.phase} className="border border-untold-border bg-white p-8 flex flex-col">
+                <span className="font-mono text-[10px] uppercase tracking-[0.5em] text-untold-orange font-bold mb-4">
+                  {t({ en: 'PHASE', es: 'FASE' })} {step.phase}
+                </span>
+                <h3 className="font-sans font-black text-2xl uppercase tracking-tighter mb-3">
+                  {t(step.title)}
+                </h3>
+                <p className="text-base font-serif text-untold-gray leading-relaxed">
+                  {t(step.desc)}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ═══════════════════════════════════════════════════════════
+          FAQ — Objection Handling
       ═══════════════════════════════════════════════════════════ */}
       <section className="px-5 sm:px-10 py-20 sm:py-32 border-b border-untold-border">
         <div className="max-w-[1440px] mx-auto">
@@ -692,12 +657,12 @@ const NetworkSystems: React.FC = () => {
       <section className="bg-untold-black px-5 sm:px-10 py-20 sm:py-32 text-white">
         <div className="max-w-[1440px] mx-auto text-center">
           <h2 className="font-sans font-black text-3xl sm:text-5xl lg:text-7xl uppercase tracking-tighter mb-6 leading-[0.85]">
-            {t({ en: 'Your Network Is Waiting.', es: 'Tu Red Está Esperando.' })}
+            {t({ en: 'Your AI Identity Starts Now.', es: 'Tu Identidad de IA Empieza Ahora.' })}
           </h2>
           <p className="text-xl font-serif italic text-white/60 max-w-2xl mx-auto mb-12">
             {t({
-              en: 'Every month your network runs on fragmented, outdated sites, you\'re losing ground to competitors who might move first. Let\'s talk about what a unified system looks like for your network.',
-              es: 'Cada mes que tu red funciona con sitios fragmentados y desactualizados, pierdes terreno ante competidores que podrían moverse primero. Hablemos de cómo se ve un sistema unificado para tu red.',
+              en: 'Every month without a connected AI-powered system is a month your competitors could be building theirs. Whether you\'re one location or a hundred — let\'s talk about what your system looks like.',
+              es: 'Cada mes sin un sistema conectado impulsado por IA es un mes que tus competidores podrían estar construyendo el suyo. Ya sea una ubicación o cien — hablemos de cómo se ve tu sistema.',
             })}
           </p>
           <Link
@@ -705,7 +670,7 @@ const NetworkSystems: React.FC = () => {
             className="inline-flex items-center space-x-6 sm:space-x-10 group border border-white/20 bg-white/5 px-8 sm:px-16 py-6 sm:py-8 hover:border-untold-orange hover:bg-untold-orange/10 transition-all"
           >
             <span className="font-sans font-black text-lg sm:text-xl uppercase tracking-tighter">
-              {t({ en: 'Let\'s Talk About Your Network', es: 'Hablemos de Tu Red' })}
+              {t({ en: 'Let\'s Build Your System', es: 'Construyamos Tu Sistema' })}
             </span>
             <span className="text-3xl text-untold-orange group-hover:translate-x-4 transition-transform duration-500">→</span>
           </Link>

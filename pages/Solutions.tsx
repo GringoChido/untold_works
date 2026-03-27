@@ -122,76 +122,9 @@ const Solutions: React.FC = () => {
     },
   ];
 
-  const capabilityCategories = [
-    {
-      hub: { en: 'Digital Presence', es: 'Presencia Digital' },
-      hubPath: '/digital-presence',
-      items: [
-        { path: '/websites', label: { en: 'Website Design & Rebuild', es: 'Diseño y Reconstrucción Web' }, desc: { en: 'Brand-first, mobile-ready, bilingual', es: 'Marca primero, mobile-ready, bilingüe' } },
-        { path: '/copywriting', label: { en: 'Copywriting & Brand Messaging', es: 'Copywriting y Mensajería de Marca' }, desc: { en: 'One voice, every channel', es: 'Una voz, cada canal' } },
-        { path: '/seo-aeo', label: { en: 'SEO, AEO & GEO', es: 'SEO, AEO y GEO' }, desc: { en: 'Found by search and AI', es: 'Encontrado por buscadores e IA' } },
-        { path: '/social-media', label: { en: 'Social Media', es: 'Redes Sociales' }, desc: { en: 'Organic strategy & management', es: 'Estrategia orgánica y gestión' } },
-      ],
-    },
-    {
-      hub: { en: 'Business Operations', es: 'Operaciones de Negocio' },
-      hubPath: '/business-operations',
-      items: [
-        { path: '/dashboard', label: { en: 'Dashboard & Intelligence', es: 'Dashboard e Inteligencia' }, desc: { en: 'Your entire business, one screen', es: 'Todo tu negocio, una pantalla' } },
-        { path: '/ai-content', label: { en: 'AI Content Engine', es: 'Motor de Contenido IA' }, desc: { en: 'Continuous automated content', es: 'Contenido automatizado continuo' } },
-        { path: '/sales-enablement', label: { en: 'Sales Enablement', es: 'Habilitación de Ventas' }, desc: { en: 'Tools that close deals', es: 'Herramientas que cierran ventas' } },
-        { path: '/ads', label: { en: 'Paid Advertising', es: 'Publicidad Pagada' }, desc: { en: 'Google, Meta, LinkedIn', es: 'Google, Meta, LinkedIn' } },
-      ],
-    },
-    {
-      hub: { en: 'Infrastructure', es: 'Infraestructura' },
-      hubPath: '/infrastructure',
-      items: [
-        { path: '/hosting', label: { en: 'Hosting & Operations', es: 'Hosting y Operaciones' }, desc: { en: 'Security, uptime, management', es: 'Seguridad, uptime, gestión' } },
-        { path: '/mobile-apps', label: { en: 'Mobile Applications', es: 'Aplicaciones Móviles' }, desc: { en: 'Customer and team apps', es: 'Apps para clientes y equipo' } },
-        { path: '/review-reputation', label: { en: 'Review & Reputation', es: 'Reseñas y Reputación' }, desc: { en: 'Automated review management', es: 'Gestión automatizada de reseñas' } },
-      ],
-    },
-  ];
-
-  const process = [
-    {
-      number: '01',
-      title: { en: 'Analyze', es: 'Analizar' },
-      description: {
-        en: 'We audit your operations, tools, and workflows. We map where AI creates the most value.',
-        es: 'Auditamos tus operaciones, herramientas y flujos. Mapeamos dónde la IA crea más valor.',
-      },
-    },
-    {
-      number: '02',
-      title: { en: 'Plan', es: 'Planificar' },
-      description: {
-        en: 'We architect your complete platform — brand, website, AI workflows, SEO, and integrations. You approve everything before we build.',
-        es: 'Arquitectamos tu plataforma completa — marca, sitio web, flujos de IA, SEO e integraciones. Apruebas todo antes de que construyamos.',
-      },
-    },
-    {
-      number: '03',
-      title: { en: 'Build', es: 'Construir' },
-      description: {
-        en: 'We build everything — mobile-ready, bilingual, SEO-optimized, and LLM-discoverable from day one. All tested, all documented.',
-        es: 'Construimos todo — mobile-ready, bilingüe, optimizado para SEO y descubrible por LLMs desde el día uno. Todo probado, todo documentado.',
-      },
-    },
-    {
-      number: '04',
-      title: { en: 'Train & Deliver', es: 'Capacitar y Entregar' },
-      description: {
-        en: 'Video walkthroughs, written docs, live sessions. Then we hand over the keys. Your platform, your data, full ownership.',
-        es: 'Videos paso a paso, documentación escrita, sesiones en vivo. Después entregamos las llaves. Tu plataforma, tus datos, propiedad total.',
-      },
-    },
-  ];
-
   return (
     <div className="bg-untold-beige min-h-screen font-serif text-untold-black">
-      {/* ── Hero ── */}
+      {/* ── 1. Hero ── */}
       <section className="bg-untold-black text-white px-5 sm:px-10 py-20 sm:py-32 lg:py-48 border-b border-white/10">
         <div className="max-w-[1440px] mx-auto">
           <div className="mb-8">
@@ -215,23 +148,55 @@ const Solutions: React.FC = () => {
               es: 'Elige el Sistema Correcto Para Tu Negocio',
             })}
           </h1>
-          <p className="text-xl sm:text-2xl font-serif italic text-white/60 max-w-3xl leading-relaxed mb-8">
+          <p className="text-xl sm:text-2xl font-serif italic text-white/60 max-w-3xl leading-relaxed">
             {t({
-              en: 'We don\'t build websites. We build the AI-powered operating system your business runs on — brand, website, marketing, automation, dashboards, and sales tools — all connected, all yours. Every project follows the same philosophy: build it right, train you on everything, and hand over the keys.',
-              es: 'No construimos sitios web. Construimos el sistema operativo impulsado por IA sobre el que funciona tu negocio — marca, sitio web, marketing, automatización, dashboards y herramientas de venta — todo conectado, todo tuyo. Cada proyecto sigue la misma filosofía: construirlo bien, capacitarte en todo y entregarte las llaves.',
+              en: 'We build the AI-powered operating system your business runs on — brand, website, marketing, automation, dashboards, and sales tools — all connected, all yours.',
+              es: 'Construimos el sistema operativo impulsado por IA sobre el que funciona tu negocio — marca, sitio web, marketing, automatización, dashboards y herramientas de venta — todo conectado, todo tuyo.',
             })}
           </p>
-          <Link
-            to="/network-systems"
-            className="inline-flex items-center space-x-3 font-mono text-[11px] uppercase tracking-[0.3em] text-untold-orange hover:text-white transition-colors font-bold"
-          >
-            <span>{t({ en: 'See the full Network Systems platform', es: 'Ver la plataforma completa de Network Systems' })}</span>
-            <span>→</span>
-          </Link>
         </div>
       </section>
 
-      {/* ── Choose Your Path ── */}
+      {/* ── 2. What Every Project Includes ── */}
+      <section className="bg-white px-5 sm:px-10 py-16 sm:py-24 border-b border-untold-border">
+        <div className="max-w-[1440px] mx-auto grid lg:grid-cols-2 gap-12 lg:gap-20">
+          <div>
+            <span className="font-mono text-[10px] uppercase tracking-[0.5em] text-untold-orange font-bold block mb-6">
+              {t({ en: 'WHAT EVERY PROJECT INCLUDES', es: 'LO QUE INCLUYE CADA PROYECTO' })}
+            </span>
+            <h2 className="font-sans font-black text-3xl sm:text-5xl uppercase tracking-tighter mb-6 leading-[0.85]">
+              {t({
+                en: 'An AI-Powered Ecosystem. Not a Website.',
+                es: 'Un Ecosistema Impulsado por IA. No un Sitio Web.',
+              })}
+            </h2>
+            <p className="text-lg sm:text-xl font-serif italic text-untold-gray leading-relaxed">
+              {t({
+                en: 'Every solution includes brand identity, a mobile-first website, AI workflow automation, bilingual content, SEO optimization, and full ownership transfer. The difference between tiers is scale — how many people use it, how many systems connect, and how deep the automation goes.',
+                es: 'Cada solución incluye identidad de marca, un sitio web mobile-first, automatización de flujos con IA, contenido bilingüe, optimización SEO y transferencia total de propiedad. La diferencia entre niveles es escala — cuántas personas lo usan, cuántos sistemas se conectan y qué tan profunda es la automatización.',
+              })}
+            </p>
+          </div>
+          <div className="grid grid-cols-2 gap-4">
+            {[
+              { icon: '01', label: { en: 'Brand & Website', es: 'Marca y Sitio Web' }, detail: { en: 'Identity, design, mobile-first build', es: 'Identidad, diseño, construcción mobile-first' } },
+              { icon: '02', label: { en: 'AI Workflows', es: 'Flujos de IA' }, detail: { en: 'Automation that replaces manual work', es: 'Automatización que reemplaza trabajo manual' } },
+              { icon: '03', label: { en: 'SEO & AEO', es: 'SEO y AEO' }, detail: { en: 'Found by search engines and AI systems', es: 'Encontrado por buscadores y sistemas de IA' } },
+              { icon: '04', label: { en: 'Full Ownership', es: 'Propiedad Total' }, detail: { en: 'Your code, your data, your keys', es: 'Tu código, tus datos, tus llaves' } },
+            ].map((item) => (
+              <div key={item.icon} className="border border-untold-border p-5 sm:p-6">
+                <span className="font-mono text-[10px] text-untold-orange font-bold block mb-3">{item.icon}</span>
+                <h3 className="font-sans font-black text-base uppercase tracking-tighter mb-1">
+                  {t(item.label)}
+                </h3>
+                <p className="font-serif italic text-untold-gray text-sm">{t(item.detail)}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ── 3. Choose Your Path ── */}
       <section className="px-5 sm:px-10 py-20 sm:py-32 border-b border-untold-border">
         <div className="max-w-[1440px] mx-auto">
           <div className="flex items-center space-x-4 mb-16">
@@ -304,99 +269,7 @@ const Solutions: React.FC = () => {
         </div>
       </section>
 
-      {/* ── Capabilities ── */}
-      <section className="bg-white px-5 sm:px-10 py-16 sm:py-24 border-b border-untold-border">
-        <div className="max-w-[1440px] mx-auto">
-          <div className="flex items-center space-x-4 mb-6">
-            <span className="w-2.5 h-2.5 rounded-full bg-untold-orange"></span>
-            <h2 className="font-mono text-[13px] uppercase tracking-[0.6em] font-bold text-untold-black/40">
-              {t({ en: 'CAPABILITIES', es: 'CAPACIDADES' })}
-            </h2>
-          </div>
-          <p className="text-lg font-serif italic text-untold-gray mb-12 max-w-3xl">
-            {t({
-              en: 'Every solution draws from the same set of capabilities — combined and scaled to fit your business.',
-              es: 'Cada solución utiliza el mismo conjunto de capacidades — combinadas y escaladas para tu negocio.',
-            })}
-          </p>
-          <div className="space-y-12">
-            {capabilityCategories.map((cat) => (
-              <div key={cat.hubPath}>
-                <Link
-                  to={cat.hubPath}
-                  className="flex items-center space-x-3 mb-4 group"
-                >
-                  <span className="w-2 h-2 rounded-full bg-untold-orange"></span>
-                  <h3 className="font-mono text-[11px] uppercase tracking-[0.5em] font-bold text-untold-black/40 group-hover:text-untold-orange transition-colors">
-                    {t(cat.hub)}
-                  </h3>
-                  <span className="text-untold-orange text-sm opacity-0 group-hover:opacity-100 transition-opacity">&rarr;</span>
-                </Link>
-                <div className="divide-y divide-untold-border border-t border-b border-untold-border">
-                  {cat.items.map((cap) => (
-                    <Link
-                      key={cap.path}
-                      to={cap.path}
-                      className="group/item flex items-center justify-between py-5 sm:py-6 hover:pl-4 transition-all"
-                    >
-                      <div className="flex-grow">
-                        <h4 className="font-sans font-black text-xl sm:text-2xl lg:text-3xl uppercase tracking-tighter group-hover/item:text-untold-orange transition-colors">
-                          {t(cap.label)}
-                        </h4>
-                        <p className="font-serif italic text-untold-gray text-sm mt-1">{t(cap.desc)}</p>
-                      </div>
-                      <span className="text-untold-orange text-xl sm:text-2xl opacity-0 group-hover/item:opacity-100 group-hover/item:translate-x-0 -translate-x-4 transition-all shrink-0 ml-4">
-                        &rarr;
-                      </span>
-                    </Link>
-                  ))}
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* ── What You Get ── */}
-      <section className="bg-white px-5 sm:px-10 py-16 sm:py-24 border-b border-untold-border">
-        <div className="max-w-[1440px] mx-auto grid lg:grid-cols-2 gap-12 lg:gap-20">
-          <div>
-            <span className="font-mono text-[10px] uppercase tracking-[0.5em] text-untold-orange font-bold block mb-6">
-              {t({ en: 'WHAT YOU GET', es: 'LO QUE RECIBES' })}
-            </span>
-            <h2 className="font-sans font-black text-3xl sm:text-5xl uppercase tracking-tighter mb-6 leading-[0.85]">
-              {t({
-                en: 'An AI-Powered Ecosystem. Not a Website.',
-                es: 'Un Ecosistema Impulsado por IA. No un Sitio Web.',
-              })}
-            </h2>
-            <p className="text-lg sm:text-xl font-serif italic text-untold-gray leading-relaxed">
-              {t({
-                en: 'Every solution includes brand identity, a mobile-first website, AI workflow automation, bilingual content, SEO optimization, and full ownership transfer. The difference between tiers is scale — how many people use it, how many systems connect, and how deep the automation goes.',
-                es: 'Cada solución incluye identidad de marca, un sitio web mobile-first, automatización de flujos con IA, contenido bilingüe, optimización SEO y transferencia total de propiedad. La diferencia entre niveles es escala — cuántas personas lo usan, cuántos sistemas se conectan y qué tan profunda es la automatización.',
-              })}
-            </p>
-          </div>
-          <div className="grid grid-cols-2 gap-4">
-            {[
-              { icon: '01', label: { en: 'Brand & Website', es: 'Marca y Sitio Web' }, detail: { en: 'Identity, design, mobile-first build', es: 'Identidad, diseño, construcción mobile-first' } },
-              { icon: '02', label: { en: 'AI Workflows', es: 'Flujos de IA' }, detail: { en: 'Automation that replaces manual work', es: 'Automatización que reemplaza trabajo manual' } },
-              { icon: '03', label: { en: 'SEO & AEO', es: 'SEO y AEO' }, detail: { en: 'Found by search engines and AI systems', es: 'Encontrado por buscadores y sistemas de IA' } },
-              { icon: '04', label: { en: 'Full Ownership', es: 'Propiedad Total' }, detail: { en: 'Your code, your data, your keys', es: 'Tu código, tus datos, tus llaves' } },
-            ].map((item) => (
-              <div key={item.icon} className="border border-untold-border p-5 sm:p-6">
-                <span className="font-mono text-[10px] text-untold-orange font-bold block mb-3">{item.icon}</span>
-                <h3 className="font-sans font-black text-base uppercase tracking-tighter mb-1">
-                  {t(item.label)}
-                </h3>
-                <p className="font-serif italic text-untold-gray text-sm">{t(item.detail)}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* ── Comparison Table ── */}
+      {/* ── 4. Side by Side ── */}
       <section className="px-5 sm:px-10 py-20 sm:py-32 bg-white border-b border-untold-border">
         <div className="max-w-[1440px] mx-auto">
           <div className="flex items-center space-x-4 mb-16">
@@ -448,48 +321,10 @@ const Solutions: React.FC = () => {
         </div>
       </section>
 
-      {/* ── Our Process ── */}
-      <section className="px-5 sm:px-10 py-20 sm:py-32 border-b border-untold-border">
-        <div className="max-w-[1440px] mx-auto">
-          <div className="flex items-center space-x-4 mb-16">
-            <span className="w-2.5 h-2.5 rounded-full bg-untold-black"></span>
-            <h2 className="font-mono text-[13px] uppercase tracking-[0.6em] font-bold text-untold-black/40">
-              {t({ en: 'HOW EVERY PROJECT WORKS', es: 'CÓMO FUNCIONA CADA PROYECTO' })}
-            </h2>
-          </div>
+      {/* ── 5. Testimonials ── */}
+      <Testimonials />
 
-          <h3 className="font-sans font-black text-3xl sm:text-5xl lg:text-6xl uppercase tracking-tighter mb-6 leading-[0.85] max-w-4xl">
-            {t({
-              en: 'Four Steps. Same Process. Every Tier.',
-              es: 'Cuatro Pasos. Mismo Proceso. Cada Nivel.',
-            })}
-          </h3>
-          <p className="text-xl font-serif italic text-untold-gray mb-16 max-w-3xl">
-            {t({
-              en: 'Regardless of which solution you choose, every project follows the same proven process — just scaled to your needs.',
-              es: 'Sin importar qué solución elijas, cada proyecto sigue el mismo proceso probado — solo escalado a tus necesidades.',
-            })}
-          </p>
-
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-px bg-untold-border border border-untold-border">
-            {process.map((step) => (
-              <div key={step.number} className="bg-white p-8 sm:p-10">
-                <span className="font-mono text-[10px] uppercase tracking-[0.5em] text-untold-orange font-bold block mb-4">
-                  {t({ en: 'STEP', es: 'PASO' })} {step.number}
-                </span>
-                <h4 className="font-sans font-black text-2xl sm:text-3xl uppercase tracking-tighter mb-4">
-                  {t(step.title)}
-                </h4>
-                <p className="text-base font-serif italic text-untold-gray leading-relaxed">
-                  {t(step.description)}
-                </p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* ── FAQ ── */}
+      {/* ── 6. FAQ ── */}
       <section className="px-5 sm:px-10 py-20 sm:py-32 bg-white border-b border-untold-border">
         <div className="max-w-[900px] mx-auto">
           <div className="flex items-center space-x-4 mb-16">
@@ -546,7 +381,7 @@ const Solutions: React.FC = () => {
         </div>
       </section>
 
-      {/* ── Network Systems Connector ── */}
+      {/* ── 7. Network Systems Connector ── */}
       <NetworkConnector
         capability={{ en: 'Business Networks & Multi-Location', es: 'Redes de Negocios y Multi-Ubicación' }}
         networkDescription={{
@@ -560,10 +395,7 @@ const Solutions: React.FC = () => {
         ]}
       />
 
-      {/* Testimonials */}
-      <Testimonials />
-
-      {/* ── CTA ── */}
+      {/* ── 8. CTA ── */}
       <section className="bg-untold-black text-white px-5 sm:px-10 py-24 sm:py-40 text-center">
         <div className="max-w-4xl mx-auto flex flex-col items-center">
           <h2 className="font-sans font-black text-[clamp(2.5rem,10vw,100px)] leading-[0.85] mb-8 tracking-tighter uppercase">

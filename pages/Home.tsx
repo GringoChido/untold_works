@@ -113,7 +113,7 @@ const Home: React.FC = () => {
       ═══════════════════════════════════════════════════════════ */}
       <WavyBackground
         containerClassName="w-full !bg-untold-black"
-        className="w-full px-5 sm:px-10 py-24 sm:py-40 lg:py-52"
+        className="w-full px-5 sm:px-10 pt-24 sm:pt-40 lg:pt-52 pb-12 sm:pb-16"
         backgroundFill="#0A0A0A"
         colors={['#FF4D17', '#FF6B3D', '#1A1A1A', '#FF4D17', '#333333']}
         waveWidth={60}
@@ -172,13 +172,13 @@ const Home: React.FC = () => {
       </div>{/* end dark wrapper */}
 
       {/* ═══════════════════════════════════════════════════════════
-          NETWORK SYSTEMS — What It Is, How It Works, How It Connects
+          THE SYSTEM — One cohesive story block
       ═══════════════════════════════════════════════════════════ */}
-      <section className="bg-white px-5 sm:px-10 py-20 sm:py-32 lg:py-40 border-b border-untold-border">
-        <div className="max-w-[1440px] mx-auto">
+      <section className="bg-white border-b border-untold-border">
+        <div className="max-w-[1440px] mx-auto px-5 sm:px-10">
 
-          {/* Header */}
-          <div className="mb-16 sm:mb-24">
+          {/* ── Chapter 1: The Promise ── */}
+          <div className="pt-20 sm:pt-32 lg:pt-40 pb-16 sm:pb-24">
             <div className="flex items-center space-x-3 mb-8">
               <span className="w-3 h-3 rounded-full bg-untold-orange animate-pulse" />
               <span className="font-mono text-[10px] uppercase tracking-[0.5em] text-untold-orange font-bold">
@@ -186,227 +186,210 @@ const Home: React.FC = () => {
               </span>
             </div>
 
-            <div className="grid lg:grid-cols-12 gap-12 lg:gap-20 items-end">
-              <div className="lg:col-span-7">
-                <h2 className="font-sans font-black text-4xl sm:text-6xl lg:text-8xl uppercase tracking-tighter mb-6 leading-[0.85]">
-                  {t({ en: 'Everything Your Business Needs. One Build.', es: 'Todo Lo Que Tu Negocio Necesita. Una Construcción.' })}
-                </h2>
-                <p className="text-xl sm:text-2xl font-serif italic text-untold-gray leading-relaxed">
-                  {t({
-                    en: 'Brand, website, AI workflows, CRM, marketing, dashboards — we build the entire system. You own it. We train you. Then you run it.',
-                    es: 'Marca, sitio web, flujos de IA, CRM, marketing, dashboards — construimos el sistema completo. Tú eres dueño. Te capacitamos. Luego tú lo operas.',
-                  })}
+            <h2 className="font-sans font-black text-4xl sm:text-6xl lg:text-8xl uppercase tracking-tighter mb-8 leading-[0.85] max-w-5xl">
+              {t({ en: 'Everything Your Business Needs. One Build.', es: 'Todo Lo Que Tu Negocio Necesita. Una Construcción.' })}
+            </h2>
+            <p className="text-xl sm:text-2xl font-serif italic text-untold-gray leading-relaxed max-w-4xl mb-12">
+              {t({
+                en: 'Most businesses run on 10+ disconnected tools — a website here, a CRM there, email marketing somewhere else. We replace all of it with one connected AI-powered system. Built for you. Owned by you.',
+                es: 'La mayoría de los negocios operan con 10+ herramientas desconectadas — un sitio aquí, un CRM allá, email marketing en otro lado. Reemplazamos todo con un sistema conectado impulsado por IA. Construido para ti. Propiedad tuya.',
+              })}
+            </p>
+
+            {/* Save / Time / Make — the value trifecta */}
+            <div className="grid sm:grid-cols-3 gap-px bg-untold-border border border-untold-border">
+              <div className="bg-white p-6 sm:p-8">
+                <span className="font-sans font-black text-3xl sm:text-4xl text-emerald-500 tracking-tighter block mb-2">$9K+</span>
+                <span className="font-mono text-[10px] uppercase tracking-[0.4em] text-emerald-500 font-bold block mb-3">{t({ en: 'Saved Per Year', es: 'Ahorrados Al Año' })}</span>
+                <p className="font-serif text-sm text-untold-gray leading-relaxed">
+                  {t({ en: 'Replace SaaS subscriptions with systems you own outright. No monthly fees for your own tools.', es: 'Reemplaza suscripciones SaaS con sistemas tuyos. Sin cuotas mensuales por tus herramientas.' })}
                 </p>
               </div>
-              <div className="lg:col-span-5 flex lg:justify-end">
-                <Link
-                  to="/network-systems"
-                  className="group inline-flex items-center space-x-4 font-sans font-black text-lg uppercase tracking-tighter text-untold-orange hover:text-untold-black transition-colors"
-                >
-                  <span>{t({ en: 'Explore Network Systems', es: 'Explorar Network Systems' })}</span>
-                  <span className="text-3xl group-hover:translate-x-4 transition-transform duration-500">→</span>
-                </Link>
+              <div className="bg-white p-6 sm:p-8">
+                <span className="font-sans font-black text-3xl sm:text-4xl text-untold-orange tracking-tighter block mb-2">10+</span>
+                <span className="font-mono text-[10px] uppercase tracking-[0.4em] text-untold-orange font-bold block mb-3">{t({ en: 'Hours Saved Weekly', es: 'Horas Ahorradas/Semana' })}</span>
+                <p className="font-serif text-sm text-untold-gray leading-relaxed">
+                  {t({ en: 'AI workflows handle content, follow-ups, scheduling, and reporting. You focus on your business.', es: 'Flujos de IA manejan contenido, seguimientos, agendas y reportes. Tú te enfocas en tu negocio.' })}
+                </p>
+              </div>
+              <div className="bg-white p-6 sm:p-8">
+                <span className="font-sans font-black text-3xl sm:text-4xl text-untold-black tracking-tighter block mb-2">24/7</span>
+                <span className="font-mono text-[10px] uppercase tracking-[0.4em] text-untold-black/60 font-bold block mb-3">{t({ en: 'Revenue Engine', es: 'Motor de Ingresos' })}</span>
+                <p className="font-serif text-sm text-untold-gray leading-relaxed">
+                  {t({ en: 'AI-powered marketing, automated lead routing, and systems that generate revenue while you sleep.', es: 'Marketing con IA, enrutamiento de leads y sistemas que generan ingresos mientras duermes.' })}
+                </p>
               </div>
             </div>
           </div>
 
-          {/* How It Works — 3 steps */}
-          <div className="grid lg:grid-cols-3 gap-px bg-untold-border border border-untold-border mb-16 sm:mb-24">
-            <div className="bg-white p-8 sm:p-10 lg:p-12">
-              <span className="font-mono text-[10px] uppercase tracking-[0.5em] text-untold-orange font-bold mb-4 block">01</span>
-              <h3 className="font-sans font-black text-xl sm:text-2xl uppercase tracking-tighter mb-3">
-                {t({ en: 'We Analyze', es: 'Analizamos' })}
-              </h3>
-              <p className="font-serif italic text-untold-gray text-base leading-relaxed">
-                {t({ en: 'We map your current tools, workflows, and bottlenecks. We find where AI saves you time, where automation replaces manual work, and what your system needs to look like.', es: 'Mapeamos tus herramientas, flujos y cuellos de botella actuales. Encontramos dónde la IA te ahorra tiempo, dónde la automatización reemplaza trabajo manual, y cómo debe verse tu sistema.' })}
-              </p>
-            </div>
-            <div className="bg-white p-8 sm:p-10 lg:p-12">
-              <span className="font-mono text-[10px] uppercase tracking-[0.5em] text-untold-orange font-bold mb-4 block">02</span>
-              <h3 className="font-sans font-black text-xl sm:text-2xl uppercase tracking-tighter mb-3">
-                {t({ en: 'We Build', es: 'Construimos' })}
-              </h3>
-              <p className="font-serif italic text-untold-gray text-base leading-relaxed">
-                {t({ en: 'Brand identity, mobile-first website, AI workflows, CRM, automations, dashboards, and integrations — all connected, all documented, all yours.', es: 'Identidad de marca, sitio web mobile-first, flujos de IA, CRM, automatizaciones, dashboards e integraciones — todo conectado, documentado y tuyo.' })}
-              </p>
-            </div>
-            <div className="bg-white p-8 sm:p-10 lg:p-12">
-              <span className="font-mono text-[10px] uppercase tracking-[0.5em] text-untold-orange font-bold mb-4 block">03</span>
-              <h3 className="font-sans font-black text-xl sm:text-2xl uppercase tracking-tighter mb-3">
-                {t({ en: 'You Own It', es: 'Tú Lo Operas' })}
-              </h3>
-              <p className="font-serif italic text-untold-gray text-base leading-relaxed">
-                {t({ en: 'We train you on every system we built. Video walkthroughs, live sessions, full documentation. Then we hand over the keys — your platform, your data, your business.', es: 'Te capacitamos en cada sistema que construimos. Videos, sesiones en vivo, documentación completa. Luego te entregamos las llaves — tu plataforma, tus datos, tu negocio.' })}
-              </p>
+          {/* ── Chapter 2: How We Build It ── */}
+          <div className="border-t border-untold-border pt-16 sm:pt-24 pb-16 sm:pb-24">
+            <p className="font-mono text-[10px] uppercase tracking-[0.5em] text-untold-black/30 font-bold mb-12">
+              {t({ en: 'HOW WE BUILD YOUR SYSTEM', es: 'CÓMO CONSTRUIMOS TU SISTEMA' })}
+            </p>
+
+            <div className="grid lg:grid-cols-3 gap-12 lg:gap-16">
+              <div>
+                <span className="font-mono text-[10px] uppercase tracking-[0.5em] text-untold-orange font-bold mb-3 block">01</span>
+                <h3 className="font-sans font-black text-xl sm:text-2xl uppercase tracking-tighter mb-3">
+                  {t({ en: 'We Analyze', es: 'Analizamos' })}
+                </h3>
+                <p className="font-serif text-untold-gray text-base leading-relaxed">
+                  {t({ en: 'We map your current tools, workflows, and bottlenecks. We find where AI saves you time, where automation replaces manual work, and what your system needs to look like.', es: 'Mapeamos tus herramientas, flujos y cuellos de botella actuales. Encontramos dónde la IA te ahorra tiempo, dónde la automatización reemplaza trabajo manual, y cómo debe verse tu sistema.' })}
+                </p>
+              </div>
+              <div>
+                <span className="font-mono text-[10px] uppercase tracking-[0.5em] text-untold-orange font-bold mb-3 block">02</span>
+                <h3 className="font-sans font-black text-xl sm:text-2xl uppercase tracking-tighter mb-3">
+                  {t({ en: 'We Build', es: 'Construimos' })}
+                </h3>
+                <p className="font-serif text-untold-gray text-base leading-relaxed">
+                  {t({ en: 'Brand identity, mobile-first website, AI workflows, CRM, automations, dashboards, and integrations — all connected, all documented, all yours.', es: 'Identidad de marca, sitio web mobile-first, flujos de IA, CRM, automatizaciones, dashboards e integraciones — todo conectado, documentado y tuyo.' })}
+                </p>
+              </div>
+              <div>
+                <span className="font-mono text-[10px] uppercase tracking-[0.5em] text-untold-orange font-bold mb-3 block">03</span>
+                <h3 className="font-sans font-black text-xl sm:text-2xl uppercase tracking-tighter mb-3">
+                  {t({ en: 'You Own It', es: 'Tú Lo Operas' })}
+                </h3>
+                <p className="font-serif text-untold-gray text-base leading-relaxed">
+                  {t({ en: 'We train you on every system we built. Video walkthroughs, live sessions, full documentation. Then we hand over the keys — your platform, your data, your business.', es: 'Te capacitamos en cada sistema que construimos. Videos, sesiones en vivo, documentación completa. Luego te entregamos las llaves — tu plataforma, tus datos, tu negocio.' })}
+                </p>
+              </div>
             </div>
           </div>
 
-          {/* How It Connects — Save / Make / Own */}
-          <div className="grid lg:grid-cols-3 gap-8 lg:gap-12">
-            <div className="border-l-2 border-emerald-500/40 pl-6 hover:border-emerald-500 transition-colors">
-              <span className="font-mono text-[10px] uppercase tracking-[0.5em] text-emerald-500 font-bold block mb-3">
-                {t({ en: 'SAVE MONEY', es: 'AHORRA DINERO' })}
-              </span>
-              <p className="font-serif text-untold-gray text-base leading-relaxed">
-                {t({ en: 'Replace $9,000+/year in SaaS subscriptions with systems you own outright. No monthly fees for your own tools.', es: 'Reemplaza $9,000+/año en suscripciones SaaS con sistemas que son tuyos. Sin cuotas mensuales por tus propias herramientas.' })}
-              </p>
-            </div>
-            <div className="border-l-2 border-untold-orange/40 pl-6 hover:border-untold-orange transition-colors">
-              <span className="font-mono text-[10px] uppercase tracking-[0.5em] text-untold-orange font-bold block mb-3">
-                {t({ en: 'SAVE TIME', es: 'AHORRA TIEMPO' })}
-              </span>
-              <p className="font-serif text-untold-gray text-base leading-relaxed">
-                {t({ en: 'Recover 10+ hours/week with AI workflows that handle content, follow-ups, scheduling, and reporting automatically.', es: 'Recupera 10+ horas/semana con flujos de IA que manejan contenido, seguimientos, agendas y reportes automáticamente.' })}
-              </p>
-            </div>
-            <div className="border-l-2 border-untold-black/20 pl-6 hover:border-untold-black transition-colors">
-              <span className="font-mono text-[10px] uppercase tracking-[0.5em] text-untold-black/60 font-bold block mb-3">
-                {t({ en: 'MAKE MONEY', es: 'GENERA INGRESOS' })}
-              </span>
-              <p className="font-serif text-untold-gray text-base leading-relaxed">
-                {t({ en: 'Increase leads and conversions with AI-powered marketing, automated lead routing, and systems that work while you sleep.', es: 'Aumenta leads y conversiones con marketing potenciado por IA, enrutamiento automatizado y sistemas que trabajan mientras duermes.' })}
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* ═══════════════════════════════════════════════════════════
-          WHAT WE BUILD INTO EVERY SYSTEM — Capabilities
-      ═══════════════════════════════════════════════════════════ */}
-      <section className="bg-untold-beige px-5 sm:px-10 py-20 sm:py-32 lg:py-40 border-b border-untold-border">
-        <div className="max-w-[1440px] mx-auto">
-          <div className="flex items-center space-x-3 mb-12">
-            <span className="w-2.5 h-2.5 rounded-full bg-untold-orange" />
-            <p className="font-mono text-[10px] uppercase tracking-[0.5em] text-untold-black/30 font-bold">
+          {/* ── Chapter 3: What's Inside ── */}
+          <div className="border-t border-untold-border pt-16 sm:pt-24 pb-16 sm:pb-24">
+            <p className="font-mono text-[10px] uppercase tracking-[0.5em] text-untold-black/30 font-bold mb-12">
               {t({ en: 'WHAT WE BUILD INTO EVERY SYSTEM', es: 'LO QUE CONSTRUIMOS EN CADA SISTEMA' })}
             </p>
-          </div>
 
-          <div className="grid lg:grid-cols-3 gap-12 lg:gap-16">
-            {/* Digital Presence */}
-            <div>
-              <div className="border-l-2 border-untold-orange pl-5 mb-6">
-                <h4 className="font-sans font-black text-lg uppercase tracking-tighter">
-                  {t({ en: 'Digital Presence', es: 'Presencia Digital' })}
-                </h4>
-                <span className="font-mono text-[9px] uppercase tracking-[0.3em] text-untold-black/30">
-                  {t({ en: 'Get Found', es: 'Que Te Encuentren' })}
-                </span>
+            <div className="grid lg:grid-cols-3 gap-12 lg:gap-16">
+              <div>
+                <div className="border-l-2 border-untold-orange pl-5 mb-6">
+                  <h4 className="font-sans font-black text-lg uppercase tracking-tighter">
+                    {t({ en: 'Digital Presence', es: 'Presencia Digital' })}
+                  </h4>
+                  <span className="font-mono text-[9px] uppercase tracking-[0.3em] text-untold-black/30">
+                    {t({ en: 'Get Found', es: 'Que Te Encuentren' })}
+                  </span>
+                </div>
+                <ul className="space-y-3">
+                  {[
+                    { en: 'Website Design & Rebuild', es: 'Diseño y Reconstrucción Web' },
+                    { en: 'SEO, AEO & GEO', es: 'SEO, AEO y GEO' },
+                    { en: 'Copywriting & Brand Messaging', es: 'Copywriting y Mensajes de Marca' },
+                    { en: 'AI Content Engine', es: 'Motor de Contenido con IA' },
+                    { en: 'Social Media', es: 'Redes Sociales' },
+                    { en: 'Paid Advertising', es: 'Publicidad Pagada' },
+                  ].map((item, idx) => (
+                    <li key={idx} className="flex items-start space-x-2">
+                      <span className="text-untold-orange mt-0.5 text-xs">+</span>
+                      <span className="font-serif text-sm text-untold-gray">{t(item)}</span>
+                    </li>
+                  ))}
+                </ul>
               </div>
-              <ul className="space-y-3">
-                {[
-                  { en: 'Website Design & Rebuild', es: 'Diseño y Reconstrucción Web' },
-                  { en: 'SEO, AEO & GEO', es: 'SEO, AEO y GEO' },
-                  { en: 'Copywriting & Brand Messaging', es: 'Copywriting y Mensajes de Marca' },
-                  { en: 'AI Content Engine', es: 'Motor de Contenido con IA' },
-                  { en: 'Social Media', es: 'Redes Sociales' },
-                  { en: 'Paid Advertising', es: 'Publicidad Pagada' },
-                ].map((item, idx) => (
-                  <li key={idx} className="flex items-start space-x-2">
-                    <span className="text-untold-orange mt-0.5 text-xs">+</span>
-                    <span className="font-serif text-sm text-untold-gray">{t(item)}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
 
-            {/* Business Operations */}
-            <div>
-              <div className="border-l-2 border-untold-orange pl-5 mb-6">
-                <h4 className="font-sans font-black text-lg uppercase tracking-tighter">
-                  {t({ en: 'Business Operations', es: 'Operaciones de Negocio' })}
-                </h4>
-                <span className="font-mono text-[9px] uppercase tracking-[0.3em] text-untold-black/30">
-                  {t({ en: 'Run the Business', es: 'Opera el Negocio' })}
-                </span>
+              <div>
+                <div className="border-l-2 border-untold-orange pl-5 mb-6">
+                  <h4 className="font-sans font-black text-lg uppercase tracking-tighter">
+                    {t({ en: 'Business Operations', es: 'Operaciones de Negocio' })}
+                  </h4>
+                  <span className="font-mono text-[9px] uppercase tracking-[0.3em] text-untold-black/30">
+                    {t({ en: 'Run the Business', es: 'Opera el Negocio' })}
+                  </span>
+                </div>
+                <ul className="space-y-3">
+                  {[
+                    { en: 'Dashboard & Intelligence', es: 'Dashboard e Inteligencia' },
+                    { en: 'CRM & Client Management', es: 'CRM y Gestión de Clientes' },
+                    { en: 'AI Workflow Automation', es: 'Automatización de Flujos con IA' },
+                    { en: 'Sales Enablement', es: 'Habilitación de Ventas' },
+                    { en: 'Mobile Applications', es: 'Aplicaciones Móviles' },
+                  ].map((item, idx) => (
+                    <li key={idx} className="flex items-start space-x-2">
+                      <span className="text-untold-orange mt-0.5 text-xs">+</span>
+                      <span className="font-serif text-sm text-untold-gray">{t(item)}</span>
+                    </li>
+                  ))}
+                </ul>
               </div>
-              <ul className="space-y-3">
-                {[
-                  { en: 'Dashboard & Intelligence', es: 'Dashboard e Inteligencia' },
-                  { en: 'CRM & Client Management', es: 'CRM y Gestión de Clientes' },
-                  { en: 'AI Workflow Automation', es: 'Automatización de Flujos con IA' },
-                  { en: 'Sales Enablement', es: 'Habilitación de Ventas' },
-                  { en: 'Mobile Applications', es: 'Aplicaciones Móviles' },
-                ].map((item, idx) => (
-                  <li key={idx} className="flex items-start space-x-2">
-                    <span className="text-untold-orange mt-0.5 text-xs">+</span>
-                    <span className="font-serif text-sm text-untold-gray">{t(item)}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
 
-            {/* Infrastructure */}
-            <div>
-              <div className="border-l-2 border-untold-orange pl-5 mb-6">
-                <h4 className="font-sans font-black text-lg uppercase tracking-tighter">
-                  {t({ en: 'Infrastructure', es: 'Infraestructura' })}
-                </h4>
-                <span className="font-mono text-[9px] uppercase tracking-[0.3em] text-untold-black/30">
-                  {t({ en: 'Keep It Running', es: 'Mantenlo Funcionando' })}
-                </span>
+              <div>
+                <div className="border-l-2 border-untold-orange pl-5 mb-6">
+                  <h4 className="font-sans font-black text-lg uppercase tracking-tighter">
+                    {t({ en: 'Infrastructure', es: 'Infraestructura' })}
+                  </h4>
+                  <span className="font-mono text-[9px] uppercase tracking-[0.3em] text-untold-black/30">
+                    {t({ en: 'Keep It Running', es: 'Mantenlo Funcionando' })}
+                  </span>
+                </div>
+                <ul className="space-y-3">
+                  {[
+                    { en: 'Hosting & System Operations', es: 'Hosting y Operación del Sistema' },
+                    { en: 'Review & Reputation Management', es: 'Gestión de Reseñas y Reputación' },
+                    { en: 'Training & Ownership Transfer', es: 'Capacitación y Transferencia de Propiedad' },
+                    { en: 'Documentation & Support', es: 'Documentación y Soporte' },
+                  ].map((item, idx) => (
+                    <li key={idx} className="flex items-start space-x-2">
+                      <span className="text-untold-orange mt-0.5 text-xs">+</span>
+                      <span className="font-serif text-sm text-untold-gray">{t(item)}</span>
+                    </li>
+                  ))}
+                </ul>
               </div>
-              <ul className="space-y-3">
-                {[
-                  { en: 'Hosting & System Operations', es: 'Hosting y Operación del Sistema' },
-                  { en: 'Review & Reputation Management', es: 'Gestión de Reseñas y Reputación' },
-                  { en: 'Training & Ownership Transfer', es: 'Capacitación y Transferencia de Propiedad' },
-                  { en: 'Documentation & Support', es: 'Documentación y Soporte' },
-                ].map((item, idx) => (
-                  <li key={idx} className="flex items-start space-x-2">
-                    <span className="text-untold-orange mt-0.5 text-xs">+</span>
-                    <span className="font-serif text-sm text-untold-gray">{t(item)}</span>
-                  </li>
-                ))}
-              </ul>
             </div>
           </div>
-        </div>
-      </section>
 
-      {/* ═══════════════════════════════════════════════════════════
-          WHAT TYPE OF BUSINESS ARE YOU?
-      ═══════════════════════════════════════════════════════════ */}
-      <section className="bg-white px-5 sm:px-10 py-20 sm:py-32 lg:py-40 border-b border-untold-border">
-        <div className="max-w-[1440px] mx-auto">
-          <div className="flex items-center space-x-3 mb-8">
-            <span className="w-3 h-3 rounded-full bg-untold-orange animate-pulse" />
-            <span className="font-mono text-[10px] uppercase tracking-[0.5em] text-untold-orange font-bold">
-              {t({ en: 'SOLUTIONS BY BUSINESS TYPE', es: 'SOLUCIONES POR TIPO DE NEGOCIO' })}
-            </span>
-          </div>
+          {/* ── Chapter 4: Who It's For ── */}
+          <div className="border-t border-untold-border pt-16 sm:pt-24 pb-20 sm:pb-32 lg:pb-40">
+            <p className="font-mono text-[10px] uppercase tracking-[0.5em] text-untold-black/30 font-bold mb-6">
+              {t({ en: 'WHO WE BUILD FOR', es: 'PARA QUIÉN CONSTRUIMOS' })}
+            </p>
+            <h3 className="font-sans font-black text-3xl sm:text-5xl lg:text-6xl uppercase tracking-tighter mb-12 sm:mb-16 leading-[0.85]">
+              {t({ en: 'What Type of Business Are You?', es: '¿Qué Tipo de Negocio Eres?' })}
+            </h3>
 
-          <h2 className="font-sans font-black text-4xl sm:text-6xl lg:text-8xl uppercase tracking-tighter mb-16 sm:mb-24 leading-[0.85]">
-            {t({ en: 'What Type of Business Are You?', es: '¿Qué Tipo de Negocio Eres?' })}
-          </h2>
+            <div className="grid lg:grid-cols-3 gap-px bg-untold-border border border-untold-border mb-12">
+              {paths.map((path) => (
+                <Link
+                  key={path.id}
+                  to={`/solutions/${path.id}`}
+                  className="group bg-white p-8 sm:p-10 lg:p-12 flex flex-col hover:bg-untold-beige/50 transition-colors"
+                >
+                  <span className="font-mono text-[10px] uppercase tracking-[0.5em] text-untold-orange font-bold mb-4">
+                    {path.number}
+                  </span>
+                  <h4 className="font-sans font-black text-2xl sm:text-3xl uppercase tracking-tighter mb-2 group-hover:text-untold-orange transition-colors">
+                    {t(path.title)}
+                  </h4>
+                  <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-untold-black/30 mb-4">
+                    {t(path.who)}
+                  </p>
+                  <p className="font-serif italic text-untold-gray text-base leading-relaxed mb-8 flex-grow">
+                    {t(path.line)}
+                  </p>
+                  <span className="inline-flex items-center space-x-3 font-sans font-black text-sm uppercase tracking-tighter text-untold-orange group-hover:translate-x-2 transition-transform">
+                    <span>{t({ en: 'Explore', es: 'Explorar' })}</span>
+                    <span className="text-xl">→</span>
+                  </span>
+                </Link>
+              ))}
+            </div>
 
-          <div className="grid lg:grid-cols-3 gap-px bg-untold-border border border-untold-border">
-            {paths.map((path) => (
+            <div className="flex justify-center">
               <Link
-                key={path.id}
-                to={`/solutions/${path.id}`}
-                className="group bg-white p-8 sm:p-10 lg:p-12 flex flex-col hover:bg-untold-beige/50 transition-colors"
+                to="/network-systems"
+                className="group inline-flex items-center space-x-4 font-sans font-black text-lg uppercase tracking-tighter text-untold-orange hover:text-untold-black transition-colors"
               >
-                <span className="font-mono text-[10px] uppercase tracking-[0.5em] text-untold-orange font-bold mb-4">
-                  {path.number}
-                </span>
-                <h3 className="font-sans font-black text-2xl sm:text-3xl uppercase tracking-tighter mb-2 group-hover:text-untold-orange transition-colors">
-                  {t(path.title)}
-                </h3>
-                <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-untold-black/30 mb-4">
-                  {t(path.who)}
-                </p>
-                <p className="font-serif italic text-untold-gray text-base leading-relaxed mb-8 flex-grow">
-                  {t(path.line)}
-                </p>
-                <span className="inline-flex items-center space-x-3 font-sans font-black text-sm uppercase tracking-tighter text-untold-orange group-hover:translate-x-2 transition-transform">
-                  <span>{t({ en: 'Explore', es: 'Explorar' })}</span>
-                  <span className="text-xl">→</span>
-                </span>
+                <span>{t({ en: 'Explore the Full System', es: 'Explorar el Sistema Completo' })}</span>
+                <span className="text-3xl group-hover:translate-x-4 transition-transform duration-500">→</span>
               </Link>
-            ))}
+            </div>
           </div>
+
         </div>
       </section>
 
