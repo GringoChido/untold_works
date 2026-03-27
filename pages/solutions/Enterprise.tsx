@@ -23,7 +23,7 @@ const Enterprise: React.FC = () => {
           '@context': 'https://schema.org',
           '@type': 'Service',
           name: 'Enterprise Team Solutions',
-          provider: { '@type': 'Organization', name: 'Untold.works' },
+          provider: { '@type': 'Organization', '@id': 'https://untold.works/#organization', name: 'Untold.works' },
           description: 'AI infrastructure for complex business operations. AI-powered workflows, mobile-ready platforms, multilingual content, and full operational visibility across departments.',
           areaServed: ['Mexico', 'United States'],
           serviceType: 'Enterprise Web Development & Business Systems',

@@ -60,6 +60,16 @@ const Blog: React.FC = () => {
 
   usePageMeta(meta.title, meta.description, {
     path: validCategory ? `/blog/category/${validCategory}` : '/blog',
+    schema: {
+      '@context': 'https://schema.org',
+      '@type': 'CollectionPage',
+      name: 'Untold.works Blog',
+      description: 'Insights on AI business systems, creative technology, AEO, and digital strategy from Untold.works.',
+      url: 'https://untold.works/blog',
+      publisher: { '@type': 'Organization', '@id': 'https://untold.works/#organization' },
+      author: { '@type': 'Person', '@id': 'https://untold.works/#founder' },
+      inLanguage: ['en', 'es'],
+    },
   });
 
   const allSorted = useMemo(() =>

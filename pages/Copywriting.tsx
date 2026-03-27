@@ -30,6 +30,7 @@ const Copywriting: React.FC = () => {
           url: 'https://untold.works/copywriting',
           provider: {
             '@type': 'Organization',
+            '@id': 'https://untold.works/#organization',
             name: 'Untold.works',
             url: 'https://untold.works',
           },

@@ -24,7 +24,7 @@ const NetworkSystems: React.FC = () => {
           '@context': 'https://schema.org',
           '@type': 'Service',
           name: 'Network Systems — AI-Powered Business Systems',
-          provider: { '@type': 'Organization', name: 'Untold.works', url: 'https://untold.works' },
+          provider: { '@type': 'Organization', '@id': 'https://untold.works/#organization', name: 'Untold.works', url: 'https://untold.works' },
           description: 'AI-powered digital systems that scale from single businesses to 100+ location networks. Unified websites, SEO/AEO/GEO, dashboards, sales enablement, mobile apps, and system operations. Establish your business AI identity with a connected digital ecosystem.',
           areaServed: [
             { '@type': 'Country', name: 'Mexico' },
@@ -402,209 +402,195 @@ const NetworkSystems: React.FC = () => {
       </section>
 
       {/* ═══════════════════════════════════════════════════════════
-          THE NETWORK EFFECT — Why unified compounds
+          THE SYSTEM — One cohesive story: what you get → why it compounds → how we build it
       ═══════════════════════════════════════════════════════════ */}
-      <section className="px-5 sm:px-10 py-20 sm:py-32 border-b border-untold-border">
+      <section className="border-b border-untold-border">
         <div className="max-w-[1440px] mx-auto">
-          <div className="flex items-center space-x-4 mb-8">
-            <span className="w-2.5 h-2.5 rounded-full bg-untold-orange"></span>
-            <p className="font-mono text-[11px] uppercase tracking-[0.5em] text-untold-orange font-bold">
-              {t({ en: 'THE NETWORK EFFECT', es: 'EL EFECTO DE RED' })}
-            </p>
-          </div>
 
-          <h2 className="font-sans font-black text-3xl sm:text-5xl lg:text-7xl uppercase tracking-tighter mb-6 leading-[0.85]">
-            {t({ en: 'One System Gets Stronger Over Time. Disconnected Tools Don\'t.', es: 'Un Sistema Se Fortalece Con el Tiempo. Herramientas Desconectadas No.' })}
-          </h2>
+          {/* ── Beat 1: The Machine — what you get ── */}
+          <div className="px-5 sm:px-10 pt-20 sm:pt-32 pb-16 sm:pb-24">
+            <div className="flex items-center space-x-4 mb-8">
+              <span className="w-2.5 h-2.5 rounded-full bg-untold-orange"></span>
+              <p className="font-mono text-[11px] uppercase tracking-[0.5em] text-untold-orange font-bold">
+                {t({ en: 'THE SYSTEM', es: 'EL SISTEMA' })}
+              </p>
+            </div>
 
-          <p className="text-xl sm:text-2xl font-serif italic text-untold-gray max-w-4xl mb-16 leading-relaxed">
-            {t({
-              en: 'A single business running on one connected system builds compounding advantages — every piece of content strengthens your SEO, every customer interaction trains your AI, every month the system gets smarter. For multi-location networks, this effect multiplies exponentially. Every site strengthens every other site.',
-              es: 'Un solo negocio corriendo en un sistema conectado construye ventajas compuestas — cada pieza de contenido fortalece tu SEO, cada interacción con clientes entrena tu IA, cada mes el sistema se vuelve más inteligente. Para redes multi-ubicación, este efecto se multiplica exponencialmente. Cada sitio fortalece a todos los demás.',
-            })}
-          </p>
+            <h2 className="font-sans font-black text-3xl sm:text-5xl lg:text-7xl uppercase tracking-tighter mb-6 leading-[0.85]">
+              {t({ en: 'Here\'s the Machine We Build for You.', es: 'Esta Es la Máquina Que Construimos Para Ti.' })}
+            </h2>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
-            {[
-              {
-                title: { en: 'Search Dominance', es: 'Dominio en Búsquedas' },
-                desc: { en: 'A well-structured site with consistent brand data, fresh content, and proper technical SEO builds authority that compounds month over month. Multiple locations multiply this effect.', es: 'Un sitio bien estructurado con datos de marca consistentes, contenido fresco y SEO técnico adecuado construye autoridad que se compone mes a mes. Múltiples ubicaciones multiplican este efecto.' },
-              },
-              {
-                title: { en: 'AI Visibility', es: 'Visibilidad en IA' },
-                desc: { en: 'When someone asks ChatGPT or Perplexity about your products, consistent structured data across your digital presence is the signal that gets you recommended. This is your AI identity.', es: 'Cuando alguien pregunta a ChatGPT o Perplexity sobre tus productos, datos estructurados consistentes en tu presencia digital son la señal que te hace ser recomendado. Esta es tu identidad de IA.' },
-              },
-              {
-                title: { en: 'Market Coverage', es: 'Cobertura de Mercado' },
-                desc: { en: 'One connected system lets you compete in every market you serve — all coordinated, all reinforcing each other, all managed from one place.', es: 'Un sistema conectado te permite competir en cada mercado que atiendes — todos coordinados, todos reforzándose mutuamente, todos gestionados desde un solo lugar.' },
-              },
-              {
-                title: { en: 'Compounding Returns', es: 'Retornos Compuestos' },
-                desc: { en: 'Every content update, product change, and campaign deploys across your entire operation. One action, maximum impact. The longer it runs, the stronger it gets.', es: 'Cada actualización de contenido, cambio de producto y campaña se despliega en toda tu operación. Una acción, máximo impacto. Mientras más tiempo funciona, más fuerte se vuelve.' },
-              },
-            ].map((card, idx) => (
-              <div key={idx} className="border border-untold-border bg-white p-8 flex flex-col">
-                <span className="font-mono text-[10px] uppercase tracking-[0.5em] text-untold-orange font-bold mb-4">
-                  {String(idx + 1).padStart(2, '0')}
-                </span>
-                <h3 className="font-sans font-black text-xl sm:text-2xl uppercase tracking-tighter mb-3">
-                  {t(card.title)}
-                </h3>
-                <p className="text-base font-serif text-untold-gray leading-relaxed">
-                  {t(card.desc)}
-                </p>
-              </div>
-            ))}
-          </div>
-
-          <div className="mt-12 border-l-4 border-untold-orange pl-6 sm:pl-10 max-w-3xl">
-            <p className="text-xl sm:text-2xl font-serif italic text-untold-gray leading-relaxed">
+            <p className="text-xl sm:text-2xl font-serif italic text-untold-gray max-w-3xl mb-16 leading-relaxed">
               {t({
-                en: 'Your competitors are running disconnected, outdated tools — or nothing at all. That\'s your window. A connected AI-powered system isn\'t just better — it\'s the kind of advantage that\'s nearly impossible to catch once you have it.',
-                es: 'Tus competidores están corriendo herramientas desconectadas y desactualizadas — o nada en absoluto. Esa es tu ventana. Un sistema conectado impulsado por IA no es solo mejor — es el tipo de ventaja que es casi imposible de alcanzar una vez que la tienes.',
+                en: 'Three integrated pillars. Each one solves a different part of your business. Together, they form a system that no collection of disconnected tools can match.',
+                es: 'Tres pilares integrados. Cada uno resuelve una parte diferente de tu negocio. Juntos, forman un sistema que ninguna colección de herramientas desconectadas puede igualar.',
               })}
             </p>
-          </div>
-        </div>
-      </section>
 
-      {/* ═══════════════════════════════════════════════════════════
-          WHAT'S INSIDE — Streamlined 3-pillar overview
-      ═══════════════════════════════════════════════════════════ */}
-      <section className="bg-untold-black px-5 sm:px-10 py-20 sm:py-32 text-white border-b border-white/10">
-        <div className="max-w-[1440px] mx-auto">
-          <div className="flex items-center space-x-4 mb-8">
-            <span className="w-2.5 h-2.5 rounded-full bg-untold-orange"></span>
-            <p className="font-mono text-[11px] uppercase tracking-[0.5em] text-untold-orange font-bold">
-              {t({ en: 'WHAT\'S INSIDE', es: 'QUÉ INCLUYE' })}
-            </p>
-          </div>
-
-          <h2 className="font-sans font-black text-3xl sm:text-5xl lg:text-7xl uppercase tracking-tighter mb-6 leading-[0.85]">
-            {t({ en: 'Three Pillars.\nOne Connected System.', es: 'Tres Pilares.\nUn Sistema Conectado.' })}
-          </h2>
-
-          <p className="text-xl font-serif italic text-white/60 max-w-3xl mb-16">
-            {t({
-              en: 'Every system we build draws from three integrated capability sets. They work independently. They work better together.',
-              es: 'Cada sistema que construimos se basa en tres conjuntos de capacidades integradas. Funcionan independientemente. Funcionan mejor juntos.',
-            })}
-          </p>
-
-          <div className="grid lg:grid-cols-3 gap-px bg-white/10">
-            {[
-              {
-                pillar: { en: 'DIGITAL PRESENCE', es: 'PRESENCIA DIGITAL' },
-                sub: { en: 'Get Found', es: 'Que Te Encuentren' },
-                items: [
-                  { name: { en: 'Website Design & Rebuild', es: 'Diseño y Reconstrucción Web' }, link: '/websites' },
-                  { name: { en: 'Copywriting & Brand Messaging', es: 'Copywriting y Mensajes de Marca' }, link: '/copywriting' },
-                  { name: { en: 'SEO, AEO & GEO', es: 'SEO, AEO y GEO' }, link: '/seo-aeo' },
-                  { name: { en: 'AI Content Engine', es: 'Motor de Contenido con IA' }, link: '/ai-content' },
-                  { name: { en: 'Social Media', es: 'Redes Sociales' }, link: '/social-media' },
-                  { name: { en: 'Paid Advertising', es: 'Publicidad Pagada' }, link: '/ads' },
-                ],
-              },
-              {
-                pillar: { en: 'BUSINESS OPERATIONS', es: 'OPERACIONES DE NEGOCIO' },
-                sub: { en: 'Run the Business', es: 'Opera el Negocio' },
-                items: [
-                  { name: { en: 'Dashboard & Intelligence', es: 'Dashboard e Inteligencia' }, link: '/dashboard' },
-                  { name: { en: 'Sales Enablement', es: 'Habilitación de Ventas' }, link: '/sales-enablement' },
-                  { name: { en: 'Mobile Applications', es: 'Aplicaciones Móviles' }, link: '/mobile-apps' },
-                ],
-              },
-              {
-                pillar: { en: 'INFRASTRUCTURE', es: 'INFRAESTRUCTURA' },
-                sub: { en: 'Keep It Running', es: 'Mantenlo Funcionando' },
-                items: [
-                  { name: { en: 'Hosting & System Operations', es: 'Hosting y Operación del Sistema' }, link: '/hosting' },
-                  { name: { en: 'Review & Reputation Management', es: 'Gestión de Reseñas y Reputación' }, link: '/review-reputation' },
-                ],
-              },
-            ].map((group, gIdx) => (
-              <div key={gIdx} className="bg-untold-black p-8 sm:p-10">
-                <div className="flex items-center space-x-4 mb-6 pb-4 border-b border-white/10">
-                  <h3 className="font-sans font-black text-lg sm:text-xl uppercase tracking-tighter">
-                    {t(group.pillar)}
-                  </h3>
-                  <span className="font-mono text-[10px] uppercase tracking-[0.3em] text-white/30">
-                    {t(group.sub)}
-                  </span>
+            <div className="grid lg:grid-cols-3 gap-px bg-untold-border border border-untold-border">
+              {[
+                {
+                  pillar: { en: 'DIGITAL PRESENCE', es: 'PRESENCIA DIGITAL' },
+                  sub: { en: 'Get Found', es: 'Que Te Encuentren' },
+                  items: [
+                    { en: 'Website Design & Rebuild', es: 'Diseño y Reconstrucción Web' },
+                    { en: 'Copywriting & Brand Messaging', es: 'Copywriting y Mensajes de Marca' },
+                    { en: 'SEO, AEO & GEO', es: 'SEO, AEO y GEO' },
+                    { en: 'AI Content Engine', es: 'Motor de Contenido con IA' },
+                    { en: 'Social Media', es: 'Redes Sociales' },
+                    { en: 'Paid Advertising', es: 'Publicidad Pagada' },
+                  ],
+                },
+                {
+                  pillar: { en: 'BUSINESS OPERATIONS', es: 'OPERACIONES DE NEGOCIO' },
+                  sub: { en: 'Run the Business', es: 'Opera el Negocio' },
+                  items: [
+                    { en: 'Dashboard & Intelligence', es: 'Dashboard e Inteligencia' },
+                    { en: 'Sales Enablement', es: 'Habilitación de Ventas' },
+                    { en: 'Mobile Applications', es: 'Aplicaciones Móviles' },
+                  ],
+                },
+                {
+                  pillar: { en: 'INFRASTRUCTURE', es: 'INFRAESTRUCTURA' },
+                  sub: { en: 'Keep It Running', es: 'Mantenlo Funcionando' },
+                  items: [
+                    { en: 'Hosting & System Operations', es: 'Hosting y Operación del Sistema' },
+                    { en: 'Review & Reputation Management', es: 'Gestión de Reseñas y Reputación' },
+                  ],
+                },
+              ].map((group, gIdx) => (
+                <div key={gIdx} className="bg-white p-6 sm:p-8">
+                  <div className="flex items-center space-x-3 mb-5 pb-4 border-b border-untold-border">
+                    <h3 className="font-sans font-black text-base sm:text-lg uppercase tracking-tighter">
+                      {t(group.pillar)}
+                    </h3>
+                    <span className="font-mono text-[9px] uppercase tracking-[0.3em] text-untold-black/30">
+                      {t(group.sub)}
+                    </span>
+                  </div>
+                  <ul className="space-y-3">
+                    {group.items.map((item, iIdx) => (
+                      <li key={iIdx} className="flex items-center space-x-2">
+                        <span className="text-untold-orange text-xs shrink-0">+</span>
+                        <span className="font-serif text-sm text-untold-gray">{t(item)}</span>
+                      </li>
+                    ))}
+                  </ul>
                 </div>
-                <ul className="space-y-4">
-                  {group.items.map((item, iIdx) => (
-                    <li key={iIdx}>
-                      <Link
-                        to={item.link}
-                        className="group flex items-center justify-between"
-                      >
-                        <span className="font-serif text-white/60 group-hover:text-untold-orange transition-colors">
-                          {t(item.name)}
-                        </span>
-                        <span className="text-untold-orange text-sm opacity-0 group-hover:opacity-100 transition-opacity">→</span>
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
-        </div>
-      </section>
 
-      {/* ═══════════════════════════════════════════════════════════
-          THE PROCESS — How Deployment Works
-      ═══════════════════════════════════════════════════════════ */}
-      <section className="px-5 sm:px-10 py-20 sm:py-32 border-b border-untold-border">
-        <div className="max-w-[1440px] mx-auto">
-          <div className="flex items-center space-x-4 mb-8">
-            <span className="w-2.5 h-2.5 rounded-full bg-untold-orange"></span>
-            <p className="font-mono text-[11px] uppercase tracking-[0.5em] text-untold-orange font-bold">
-              {t({ en: 'THE PROCESS', es: 'EL PROCESO' })}
+          {/* ── Beat 2: The Compound Effect — why it gets stronger ── */}
+          <div className="px-5 sm:px-10 py-16 sm:py-24 border-t border-untold-border bg-untold-beige/30">
+            <p className="font-mono text-[10px] uppercase tracking-[0.5em] text-untold-black/30 font-bold mb-6">
+              {t({ en: 'BUT HERE\'S THE REAL POWER', es: 'PERO AQUÍ ESTÁ EL VERDADERO PODER' })}
             </p>
+
+            <h3 className="font-sans font-black text-3xl sm:text-5xl uppercase tracking-tighter mb-8 leading-[0.85] max-w-4xl">
+              {t({ en: 'These Three Pillars Don\'t Just Work. They Feed Each Other.', es: 'Estos Tres Pilares No Solo Funcionan. Se Alimentan Entre Sí.' })}
+            </h3>
+
+            <div className="max-w-3xl mb-12">
+              <p className="text-lg sm:text-xl font-serif italic text-untold-gray leading-relaxed">
+                {t({
+                  en: 'Your content strengthens your SEO. Your SEO trains the AI to recommend you. Your dashboards show you what\'s working so you can double down. Your campaigns deploy across every channel from one system. Every month, the machine gets smarter — and the gap between you and your competitors gets wider.',
+                  es: 'Tu contenido fortalece tu SEO. Tu SEO entrena a la IA para que te recomiende. Tus dashboards te muestran qué funciona para que puedas duplicar esfuerzos. Tus campañas se despliegan en cada canal desde un sistema. Cada mes, la máquina se vuelve más inteligente — y la brecha entre tú y tus competidores se hace más grande.',
+                })}
+              </p>
+            </div>
+
+            <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+              {[
+                {
+                  title: { en: 'Search Dominance', es: 'Dominio en Búsquedas' },
+                  desc: { en: 'Fresh content + proper technical SEO = authority that compounds month over month. Multiple locations multiply it.', es: 'Contenido fresco + SEO técnico adecuado = autoridad que se compone mes a mes. Múltiples ubicaciones lo multiplican.' },
+                },
+                {
+                  title: { en: 'AI Visibility', es: 'Visibilidad en IA' },
+                  desc: { en: 'Consistent structured data across your presence is how ChatGPT and Perplexity decide to recommend you. This is your AI identity.', es: 'Datos estructurados consistentes son cómo ChatGPT y Perplexity deciden recomendarte. Esta es tu identidad de IA.' },
+                },
+                {
+                  title: { en: 'Market Coverage', es: 'Cobertura de Mercado' },
+                  desc: { en: 'Compete in every market you serve — all coordinated, all reinforcing, all managed from one place.', es: 'Compite en cada mercado que atiendes — todos coordinados, todos reforzándose, gestionados desde un solo lugar.' },
+                },
+                {
+                  title: { en: 'Compounding Returns', es: 'Retornos Compuestos' },
+                  desc: { en: 'One action deploys across your entire operation. The longer it runs, the stronger it gets.', es: 'Una acción se despliega en toda tu operación. Mientras más tiempo funciona, más fuerte se vuelve.' },
+                },
+              ].map((card, idx) => (
+                <div key={idx} className="border-l-2 border-untold-orange pl-5">
+                  <h4 className="font-sans font-black text-base uppercase tracking-tighter mb-2">
+                    {t(card.title)}
+                  </h4>
+                  <p className="text-sm font-serif text-untold-gray leading-relaxed">
+                    {t(card.desc)}
+                  </p>
+                </div>
+              ))}
+            </div>
           </div>
 
-          <h2 className="font-sans font-black text-3xl sm:text-5xl lg:text-7xl uppercase tracking-tighter mb-16 leading-[0.85]">
-            {t({ en: 'How We Deploy.', es: 'Cómo Desplegamos.' })}
-          </h2>
+          {/* ── Beat 3: The Path — how we make it happen ── */}
+          <div className="px-5 sm:px-10 py-16 sm:py-24 border-t border-untold-border">
+            <p className="font-mono text-[10px] uppercase tracking-[0.5em] text-untold-black/30 font-bold mb-6">
+              {t({ en: 'HOW WE MAKE IT HAPPEN', es: 'CÓMO LO HACEMOS REALIDAD' })}
+            </p>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
-            {[
-              {
-                phase: '01',
-                title: { en: 'Audit', es: 'Auditoría' },
-                desc: { en: 'We map your current digital presence, identify gaps, and design the system architecture. Brand assets, product data, and business details are gathered.', es: 'Mapeamos tu presencia digital actual, identificamos brechas y diseñamos la arquitectura del sistema. Se recopilan activos de marca, datos de productos y detalles del negocio.' },
-              },
-              {
-                phase: '02',
-                title: { en: 'Build', es: 'Construir' },
-                desc: { en: 'We build the full system — website, AI workflows, SEO/AEO/GEO, dashboards, integrations. For networks, we pilot with 2-3 locations first. You see the before and after.', es: 'Construimos el sistema completo — sitio web, flujos de IA, SEO/AEO/GEO, dashboards, integraciones. Para redes, hacemos piloto con 2-3 ubicaciones primero. Ves el antes y después.' },
-              },
-              {
-                phase: '03',
-                title: { en: 'Deploy', es: 'Desplegar' },
-                desc: { en: 'Single businesses go live. Networks roll out in phases — each wave faster as the system is dialed in. Your dashboard comes online showing real-time performance.', es: 'Los negocios individuales se lanzan. Las redes se despliegan por fases — cada ola más rápida conforme el sistema se afina. Tu dashboard se activa mostrando rendimiento en tiempo real.' },
-              },
-              {
-                phase: '04',
-                title: { en: 'Optimize', es: 'Optimizar' },
-                desc: { en: 'The system runs continuously. Your AI identity compounds. SEO builds. Content generates. Campaigns deploy. We monitor, optimize, and report — the system gets stronger every month.', es: 'El sistema funciona continuamente. Tu identidad de IA se compone. El SEO crece. El contenido se genera. Las campañas se despliegan. Monitoreamos, optimizamos y reportamos — el sistema se fortalece cada mes.' },
-              },
-            ].map((step) => (
-              <div key={step.phase} className="border border-untold-border bg-white p-8 flex flex-col">
-                <span className="font-mono text-[10px] uppercase tracking-[0.5em] text-untold-orange font-bold mb-4">
-                  {t({ en: 'PHASE', es: 'FASE' })} {step.phase}
+            <h3 className="font-sans font-black text-3xl sm:text-5xl uppercase tracking-tighter mb-12 leading-[0.85] max-w-4xl">
+              {t({ en: 'Four Phases. Clear Path. You Own Everything.', es: 'Cuatro Fases. Camino Claro. Tú Eres Dueño de Todo.' })}
+            </h3>
+
+            <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-px bg-untold-border border border-untold-border">
+              {[
+                {
+                  phase: '01',
+                  title: { en: 'Audit', es: 'Auditoría' },
+                  desc: { en: 'We map your current digital presence, identify gaps, and design the system architecture.', es: 'Mapeamos tu presencia digital actual, identificamos brechas y diseñamos la arquitectura del sistema.' },
+                },
+                {
+                  phase: '02',
+                  title: { en: 'Build', es: 'Construir' },
+                  desc: { en: 'We build the full system — website, AI workflows, SEO/AEO/GEO, dashboards, integrations. All connected. All documented.', es: 'Construimos el sistema completo — sitio web, flujos de IA, SEO/AEO/GEO, dashboards, integraciones. Todo conectado. Todo documentado.' },
+                },
+                {
+                  phase: '03',
+                  title: { en: 'Deploy', es: 'Desplegar' },
+                  desc: { en: 'Single businesses go live. Networks roll out in phases. Your dashboard comes online with real-time performance.', es: 'Los negocios individuales se lanzan. Las redes se despliegan por fases. Tu dashboard se activa con rendimiento en tiempo real.' },
+                },
+                {
+                  phase: '04',
+                  title: { en: 'Optimize', es: 'Optimizar' },
+                  desc: { en: 'The system runs continuously. AI identity compounds. SEO builds. Content generates. We monitor and optimize — the system gets stronger every month.', es: 'El sistema funciona continuamente. La identidad de IA se compone. El SEO crece. El contenido se genera. Monitoreamos y optimizamos — el sistema se fortalece cada mes.' },
+                },
+              ].map((step) => (
+                <div key={step.phase} className="bg-white p-6 sm:p-8 flex flex-col">
+                  <span className="font-mono text-[10px] uppercase tracking-[0.5em] text-untold-orange font-bold mb-3">
+                    {t({ en: 'PHASE', es: 'FASE' })} {step.phase}
+                  </span>
+                  <h4 className="font-sans font-black text-xl uppercase tracking-tighter mb-2">
+                    {t(step.title)}
+                  </h4>
+                  <p className="text-sm font-serif text-untold-gray leading-relaxed">
+                    {t(step.desc)}
+                  </p>
+                </div>
+              ))}
+            </div>
+
+            <div className="mt-12 flex justify-center">
+              <Link
+                to="/contact"
+                className="group inline-flex items-center space-x-6 bg-untold-black text-white px-10 sm:px-16 py-6 sm:py-8 hover:bg-untold-orange transition-colors"
+              >
+                <span className="font-sans font-black text-lg sm:text-xl uppercase tracking-tighter">
+                  {t({ en: 'Start With Phase One', es: 'Empieza Con la Fase Uno' })}
                 </span>
-                <h3 className="font-sans font-black text-2xl uppercase tracking-tighter mb-3">
-                  {t(step.title)}
-                </h3>
-                <p className="text-base font-serif text-untold-gray leading-relaxed">
-                  {t(step.desc)}
-                </p>
-              </div>
-            ))}
+                <span className="text-2xl group-hover:translate-x-2 transition-transform">→</span>
+              </Link>
+            </div>
           </div>
+
         </div>
       </section>
 

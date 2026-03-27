@@ -30,6 +30,7 @@ const AiContent: React.FC = () => {
           url: 'https://untold.works/ai-content',
           provider: {
             '@type': 'Organization',
+            '@id': 'https://untold.works/#organization',
             name: 'Untold.works',
             url: 'https://untold.works',
           },

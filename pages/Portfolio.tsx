@@ -21,7 +21,17 @@ const Portfolio: React.FC = () => {
   usePageMeta(
     i18n.seo.portfolio.title,
     i18n.seo.portfolio.description,
-    { path: '/portfolio' }
+    {
+      path: '/portfolio',
+      schema: {
+        '@context': 'https://schema.org',
+        '@type': 'CollectionPage',
+        name: 'Untold.works Portfolio',
+        description: 'AI-powered business ecosystems built for real businesses across Mexico and the United States.',
+        url: 'https://untold.works/portfolio',
+        publisher: { '@type': 'Organization', '@id': 'https://untold.works/#organization' },
+      },
+    }
   );
 
   const filtered = activePillar === 'all'

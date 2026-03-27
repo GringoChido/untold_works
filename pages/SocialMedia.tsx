@@ -29,6 +29,7 @@ const SocialMedia: React.FC = () => {
           url: 'https://untold.works/social-media',
           provider: {
             '@type': 'Organization',
+            '@id': 'https://untold.works/#organization',
             name: 'Untold.works',
             url: 'https://untold.works',
           },

@@ -23,7 +23,7 @@ const SmallBusiness: React.FC = () => {
           '@context': 'https://schema.org',
           '@type': 'Service',
           name: 'Small Business Platforms',
-          provider: { '@type': 'Organization', name: 'Untold.works' },
+          provider: { '@type': 'Organization', '@id': 'https://untold.works/#organization', name: 'Untold.works' },
           description: 'AI-powered business platforms for growing teams. Mobile-first websites, AI workflows, bilingual content, SEO optimization, team CRM, and full ownership transfer.',
           areaServed: ['Mexico', 'United States'],
           serviceType: 'Web Development & Business Systems',

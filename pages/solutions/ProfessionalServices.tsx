@@ -23,7 +23,7 @@ const ProfessionalServices: React.FC = () => {
           '@context': 'https://schema.org',
           '@type': 'Service',
           name: 'Professional Services — Business Systems',
-          provider: { '@type': 'Organization', name: 'Untold.works' },
+          provider: { '@type': 'Organization', '@id': 'https://untold.works/#organization', name: 'Untold.works' },
           description: 'Complete business systems for service professionals including brand identity, website, CRM, booking, marketing, and training.',
           areaServed: ['Mexico', 'United States'],
           serviceType: 'Web Development & Business Systems',
@@ -320,8 +320,8 @@ const ProfessionalServices: React.FC = () => {
           en: '5–10 hours/week saved on admin tasks through automated booking, reminders, and follow-ups.',
           es: '5–10 horas/semana ahorradas en tareas admin con reservas, recordatorios y seguimientos automáticos.',
         }}
-        proofLink="/solutions/professional-services"
-        proofLabel={{ en: 'See how it works', es: 'Ver cómo funciona' }}
+        proofLink="/contact"
+        proofLabel={{ en: 'Get your blueprint', es: 'Obtén tu plan' }}
       />
 
       {/* ── Proof Strip ── */}

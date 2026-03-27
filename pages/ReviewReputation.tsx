@@ -30,6 +30,7 @@ const ReviewReputation: React.FC = () => {
           url: 'https://untold.works/review-reputation',
           provider: {
             '@type': 'Organization',
+            '@id': 'https://untold.works/#organization',
             name: 'Untold.works',
             url: 'https://untold.works',
           },

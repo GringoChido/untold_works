@@ -36,8 +36,8 @@ export const footer = {
 
 export const hero = {
   eyebrow: {
-    en: 'AI-Powered Business Systems — Mexico City & United States',
-    es: 'Sistemas de Negocio con IA — Ciudad de México y Estados Unidos'
+    en: 'AI-Powered Business Systems — Mexico & United States',
+    es: 'Sistemas de Negocio con IA — México y Estados Unidos'
   },
   headline: {
     en: 'Your Entire Business. One AI-Powered System.',
@@ -251,8 +251,8 @@ export const howWeWork = {
         es: 'Lanzar Tu Ecosistema'
       },
       description: {
-        en: 'We build everything in Claude — brand identity, mobile-ready website, AI workflows, bilingual content, CRM, automations, and integrations. Connected to Salesforce, HubSpot, Google Workspace, or whatever your team already runs. All tested, all documented.',
-        es: 'Construimos todo en Claude — identidad de marca, sitio web mobile-ready, flujos de IA, contenido bilingüe, CRM, automatizaciones e integraciones. Conectado a Salesforce, HubSpot, Google Workspace, o lo que tu equipo ya use. Todo probado, todo documentado.'
+        en: 'We build everything with AI — brand identity, mobile-ready website, AI workflows, bilingual content, CRM, automations, and integrations. Connected to Salesforce, HubSpot, Google Workspace, or whatever your team already runs. All tested, all documented.',
+        es: 'Construimos todo con IA — identidad de marca, sitio web mobile-ready, flujos de IA, contenido bilingüe, CRM, automatizaciones e integraciones. Conectado a Salesforce, HubSpot, Google Workspace, o lo que tu equipo ya use. Todo probado, todo documentado.'
       },
       deliverables: [
         { en: 'Brand identity', es: 'Identidad de marca' },
@@ -589,8 +589,8 @@ export const aboutPage = {
   },
   narrative: {
     veteran: {
-      en: 'We started as storytellers and creative directors. Design, photography, video, brand strategy — that\'s our foundation. Today we build in Claude — Claude Code, Skills, and Agents — connected to the platforms you already use: Salesforce, HubSpot, Google Workspace, your hosting. The complete package: the brand, the website, and the systems that power your business.',
-      es: 'Empezamos como narradores y directores creativos. Diseño, fotografía, video, estrategia de marca — esa es nuestra base. Hoy construimos en Claude — Claude Code, Skills y Agents — conectados a las plataformas que ya usas: Salesforce, HubSpot, Google Workspace, tu hosting. El paquete completo: la marca, el sitio web y los sistemas que impulsan tu negocio.'
+      en: 'We started as storytellers and creative directors. Design, photography, video, brand strategy — that\'s our foundation. Today we build with AI-native tools — connected to the platforms you already use: Salesforce, HubSpot, Google Workspace, your hosting. The complete package: the brand, the website, and the systems that power your business.',
+      es: 'Empezamos como narradores y directores creativos. Diseño, fotografía, video, estrategia de marca — esa es nuestra base. Hoy construimos con herramientas nativas de IA — conectadas a las plataformas que ya usas: Salesforce, HubSpot, Google Workspace, tu hosting. El paquete completo: la marca, el sitio web y los sistemas que impulsan tu negocio.'
     },
     theBridge: {
       en: 'We believe the best technology is invisible. It should feel natural, work on your phone, and never make you feel like you need a computer science degree. That\'s why we lead with brand and creativity, then layer in the right technology to support it.',
@@ -815,8 +815,8 @@ export const seo = {
       es: 'Sistemas de Negocio con IA | Network Systems, Sitios Web, Dashboards — Untold.works'
     },
     description: {
-      en: 'AI-powered digital systems for business networks and individual companies. Network Systems for manufacturers, franchise groups, and multi-location brands. Websites, SEO/AEO/GEO, dashboards, sales enablement, and mobile apps. Mexico City and United States.',
-      es: 'Sistemas digitales con IA para redes de negocios y empresas individuales. Network Systems para fabricantes, grupos de franquicias y marcas multi-ubicación. Sitios web, SEO/AEO/GEO, dashboards, habilitación de ventas y apps móviles. Ciudad de México y Estados Unidos.'
+      en: 'AI-powered digital systems for business networks and individual companies. Network Systems for manufacturers, franchise groups, and multi-location brands. Websites, SEO/AEO/GEO, dashboards, sales enablement, and mobile apps. Mexico and United States.',
+      es: 'Sistemas digitales con IA para redes de negocios y empresas individuales. Network Systems para fabricantes, grupos de franquicias y marcas multi-ubicación. Sitios web, SEO/AEO/GEO, dashboards, habilitación de ventas y apps móviles. México y Estados Unidos.'
     }
   },
   solutions: {

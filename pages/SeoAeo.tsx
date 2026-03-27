@@ -30,6 +30,7 @@ const SeoAeo: React.FC = () => {
           url: 'https://untold.works/seo-aeo',
           provider: {
             '@type': 'Organization',
+            '@id': 'https://untold.works/#organization',
             name: 'Untold.works',
             url: 'https://untold.works',
           },

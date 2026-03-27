@@ -71,8 +71,8 @@ const Footer: React.FC = () => {
               <div className="flex flex-col space-y-2 lg:text-right pt-2">
                 {[
                   { label: { en: 'Professional Services', es: 'Servicios Profesionales' }, path: '/solutions/professional-services' },
-                  { label: { en: 'Small Business', es: 'Pequeños Negocios' }, path: '/solutions/small-business' },
-                  { label: { en: 'Enterprise', es: 'Empresa' }, path: '/solutions/enterprise' },
+                  { label: { en: 'Small Business', es: 'Pequeña Empresa' }, path: '/solutions/small-business' },
+                  { label: { en: 'Enterprise', es: 'Empresarial' }, path: '/solutions/enterprise' },
                 ].map((item) => (
                   <Link
                     key={item.path}

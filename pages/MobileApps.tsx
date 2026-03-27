@@ -30,6 +30,7 @@ const MobileApps: React.FC = () => {
           url: 'https://untold.works/mobile-apps',
           provider: {
             '@type': 'Organization',
+            '@id': 'https://untold.works/#organization',
             name: 'Untold.works',
             url: 'https://untold.works',
           },

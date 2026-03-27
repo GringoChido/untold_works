@@ -80,8 +80,8 @@ const ExitIntentPopup: React.FC = () => {
 
         <p className="font-serif text-base text-white/50 leading-relaxed mb-8">
           {t({
-            en: 'The average business spends $9,000/year on SaaS subscriptions. We build systems you own for a one-time investment.',
-            es: 'El negocio promedio gasta $9,000/año en suscripciones SaaS. Construimos sistemas que son tuyos por una inversión única.',
+            en: 'The average business spends $12,000/year on SaaS subscriptions. We build systems you own for a one-time investment.',
+            es: 'El negocio promedio gasta $12,000/año en suscripciones SaaS. Construimos sistemas que son tuyos por una inversión única.',
           })}
         </p>
 
@@ -98,8 +98,8 @@ const ExitIntentPopup: React.FC = () => {
             className="font-mono text-[10px] uppercase tracking-[0.3em] text-white/20 hover:text-white/40 transition-colors py-2"
           >
             {t({
-              en: 'No thanks, I like paying subscriptions',
-              es: 'No gracias, prefiero pagar suscripciones',
+              en: 'Not right now',
+              es: 'Ahora no',
             })}
           </button>
         </div>

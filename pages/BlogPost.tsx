@@ -12,7 +12,7 @@ import type { Pillar } from '../types';
 
 const pillarLinks: Record<Exclude<Pillar, 'all'>, { path: string; label: { en: string; es: string } }> = {
   'professional-services': { path: '/solutions/professional-services', label: { en: 'Explore Professional Services Solutions', es: 'Explorar Soluciones para Servicios Profesionales' } },
-  'small-business': { path: '/solutions/small-business', label: { en: 'Explore Small Business Solutions', es: 'Explorar Soluciones para Pequenos Negocios' } },
+  'small-business': { path: '/solutions/small-business', label: { en: 'Explore Small Business Solutions', es: 'Explorar Soluciones para Pequeña Empresa' } },
   enterprise: { path: '/solutions/enterprise', label: { en: 'Explore Enterprise Solutions', es: 'Explorar Soluciones Empresariales' } },
 };
 
@@ -35,7 +35,7 @@ const BlogPost: React.FC = () => {
       headline: post.title.en,
       description: post.excerpt.en,
       image: post.image ? `https://untold.works${post.image}` : undefined,
-      author: { '@type': 'Person', name: post.author, jobTitle: 'Founder, Untold.works', url: 'https://www.linkedin.com/in/semolik/' },
+      author: { '@type': 'Person', '@id': 'https://untold.works/#founder', name: post.author, jobTitle: 'Founder & AI Systems Architect', url: 'https://untold.works/about', sameAs: ['https://www.linkedin.com/in/semolik/'] },
       publisher: {
         '@type': 'Organization',
         '@id': 'https://untold.works/#organization',
