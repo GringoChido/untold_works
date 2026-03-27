@@ -172,27 +172,6 @@ const Home: React.FC = () => {
       </div>{/* end dark wrapper */}
 
       {/* ═══════════════════════════════════════════════════════════
-          FOUNDER CREDENTIAL STRIP
-      ═══════════════════════════════════════════════════════════ */}
-      <section className="bg-untold-beige/60 border-b border-untold-border px-5 sm:px-10 py-10 sm:py-14">
-        <div className="max-w-[1440px] mx-auto flex flex-col sm:flex-row items-start sm:items-center gap-6 sm:gap-10">
-          <div className="flex items-center gap-4 shrink-0">
-            <img src="/images/about-photo.webp" alt="Joshua Semolik" className="w-14 h-14 rounded-full object-cover border-2 border-untold-orange" loading="lazy" />
-            <div>
-              <p className="font-sans font-black text-sm uppercase tracking-tighter">{t({ en: 'Joshua Semolik', es: 'Joshua Semolik' })}</p>
-              <p className="font-mono text-[9px] uppercase tracking-[0.3em] text-untold-gray">{t({ en: 'Founder & AI Systems Architect', es: 'Fundador y Arquitecto de Sistemas de IA' })}</p>
-            </div>
-          </div>
-          <div className="flex flex-wrap items-center gap-x-6 gap-y-2">
-            <span className="font-mono text-[10px] uppercase tracking-[0.2em] text-untold-black/50 border border-untold-border px-3 py-1.5">{t({ en: '2x Emmy Nominated', es: '2x Nominado al Emmy' })}</span>
-            <span className="font-mono text-[10px] uppercase tracking-[0.2em] text-untold-black/50 border border-untold-border px-3 py-1.5">{t({ en: 'MIT Sloan AI Strategy', es: 'MIT Sloan Estrategia de IA' })}</span>
-            <span className="font-mono text-[10px] uppercase tracking-[0.2em] text-untold-black/50 border border-untold-border px-3 py-1.5">{t({ en: '20 Years in Production', es: '20 Años en Producción' })}</span>
-            <span className="font-mono text-[10px] uppercase tracking-[0.2em] text-untold-black/50 border border-untold-border px-3 py-1.5">{t({ en: 'NBA / Kings • Videndum PLC', es: 'NBA / Kings • Videndum PLC' })}</span>
-          </div>
-        </div>
-      </section>
-
-      {/* ═══════════════════════════════════════════════════════════
           THE SYSTEM — One cohesive story block
       ═══════════════════════════════════════════════════════════ */}
       <section className="bg-white border-b border-untold-border">

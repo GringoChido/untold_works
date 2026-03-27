@@ -163,19 +163,20 @@ const ProfessionalServices: React.FC = () => {
         </div>
       </section>
 
-      {/* Founder + AI Identity Urgency */}
-      <section className="bg-untold-beige/60 border-b border-untold-border px-5 sm:px-10 py-8 sm:py-10">
-        <div className="max-w-[1440px] mx-auto flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6">
-          <div className="flex items-center gap-4">
-            <img src="/images/about-photo.webp" alt="Joshua Semolik" className="w-12 h-12 rounded-full object-cover border-2 border-untold-orange" loading="lazy" />
-            <div>
-              <p className="font-sans font-black text-sm uppercase tracking-tighter">{t({ en: 'Built by Joshua Semolik', es: 'Construido por Joshua Semolik' })}</p>
-              <p className="font-mono text-[9px] uppercase tracking-[0.2em] text-untold-gray">{t({ en: '2x Emmy Nominated • MIT Sloan AI Strategy • 20 Years in Production', es: '2x Nominado al Emmy • MIT Sloan Estrategia de IA • 20 Años en Producción' })}</p>
-            </div>
-          </div>
-          <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-untold-black/40 max-w-md">{t({ en: 'Every system includes SEO, AEO & GEO — because your AI identity matters whether you\'re a solo practitioner or a 50-location network.', es: 'Cada sistema incluye SEO, AEO y GEO — porque tu identidad de IA importa seas profesional independiente o una red de 50 ubicaciones.' })}</p>
-        </div>
-      </section>
+      {/* ── Part of Network Systems ── */}
+      <NetworkConnector
+        capability={{ en: 'Professional Services', es: 'Servicios Profesionales' }}
+        networkDescription={{
+          en: 'Running a consulting firm, medical group, or multi-practitioner practice? Our Network Systems offering deploys these same tools across your entire team — unified brand, shared CRM, coordinated marketing.',
+          es: '¿Diriges una firma de consultoría, grupo médico o práctica multi-profesional? Nuestra oferta de Network Systems despliega estas mismas herramientas en todo tu equipo — marca unificada, CRM compartido, marketing coordinado.',
+        }}
+        variant="light"
+        relatedCapabilities={[
+          { name: { en: 'Website Design', es: 'Diseño Web' }, path: '/websites' },
+          { name: { en: 'SEO & AEO', es: 'SEO y AEO' }, path: '/seo-aeo' },
+          { name: { en: 'Review & Reputation', es: 'Reseñas y Reputación' }, path: '/review-reputation' },
+        ]}
+      />
 
       {/* Visual */}
       <section className="border-b border-untold-border">
@@ -418,20 +419,6 @@ const ProfessionalServices: React.FC = () => {
           </div>
         </div>
       </section>
-
-      {/* ── Network Connector ── */}
-      <NetworkConnector
-        capability={{ en: 'Professional Services', es: 'Servicios Profesionales' }}
-        networkDescription={{
-          en: 'Running a consulting firm, medical group, or multi-practitioner practice? Our Network Systems offering deploys these same tools across your entire team — unified brand, shared CRM, coordinated marketing.',
-          es: '¿Diriges una firma de consultoría, grupo médico o práctica multi-profesional? Nuestra oferta de Network Systems despliega estas mismas herramientas en todo tu equipo — marca unificada, CRM compartido, marketing coordinado.',
-        }}
-        relatedCapabilities={[
-          { name: { en: 'Website Design', es: 'Diseño Web' }, path: '/websites' },
-          { name: { en: 'SEO & AEO', es: 'SEO y AEO' }, path: '/seo-aeo' },
-          { name: { en: 'Review & Reputation', es: 'Reseñas y Reputación' }, path: '/review-reputation' },
-        ]}
-      />
 
       {/* Quick Lead Form */}
       <section className="bg-untold-black text-white px-5 sm:px-10 py-20 sm:py-32">
