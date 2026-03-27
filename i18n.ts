@@ -40,16 +40,16 @@ export const hero = {
     es: 'Sistemas de Negocio con IA — Ciudad de México y Estados Unidos'
   },
   headline: {
-    en: 'What if Your Business Ran Itself?',
-    es: '¿Y Si Tu Negocio Se Manejara Solo?'
+    en: 'Your Entire Business. One AI-Powered System.',
+    es: 'Todo Tu Negocio. Un Solo Sistema con IA.'
   },
   tagline: {
-    en: 'We build the system so you can run your business from anywhere. We train you. You own it.',
-    es: 'Construimos el sistema para que manejes tu negocio desde cualquier lugar. Te capacitamos. Tú lo operas.'
+    en: 'We replace your fragmented tools with a connected ecosystem. From your website to your CRM — an AI-based system that you own, not rent.',
+    es: 'Reemplazamos tus herramientas fragmentadas con un ecosistema conectado. De tu sitio web a tu CRM — un sistema basado en IA que es tuyo, no rentado.'
   },
   subheadline: {
-    en: 'BRAND // WEBSITE // AI SYSTEMS // WORKFLOWS',
-    es: 'MARCA // SITIO WEB // SISTEMAS DE IA // FLUJOS DE TRABAJO'
+    en: 'DIGITAL PRESENCE // BUSINESS OPERATIONS // INFRASTRUCTURE',
+    es: 'PRESENCIA DIGITAL // OPERACIONES DE NEGOCIO // INFRAESTRUCTURA'
   },
   primaryCta: {
     en: 'Explore Our Solutions',
