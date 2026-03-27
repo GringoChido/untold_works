@@ -4,6 +4,7 @@ import { usePageMeta } from '../hooks/usePageMeta';
 import * as i18n from '../i18n';
 import ContactForm from '../components/ContactForm';
 import HeroDitheringCTA from '../components/HeroDitheringCTA';
+import ProofStrip from '../components/ProofStrip';
 
 const ContactPage: React.FC = () => {
   const { t } = useLanguage();
@@ -52,6 +53,21 @@ const ContactPage: React.FC = () => {
           </p>
         </div>
       </section>
+
+      {/* Money Narrative */}
+      <section className="border-b border-white/10 bg-untold-black px-5 sm:px-10 py-12 sm:py-16">
+        <div className="max-w-[1440px] mx-auto text-center">
+          <p className="font-sans font-black text-xl sm:text-2xl lg:text-3xl uppercase tracking-tighter text-white leading-snug max-w-3xl mx-auto">
+            {t({
+              en: 'Most businesses we work with save $6,000–$250,000/year. Let\'s find your number.',
+              es: 'La mayoría de los negocios con los que trabajamos ahorran $6,000–$250,000/año. Encontremos tu número.',
+            })}
+          </p>
+        </div>
+      </section>
+
+      {/* Proof Strip */}
+      <ProofStrip />
 
       {/* CTA Banner */}
       <section className="border-b border-white/10 bg-untold-black">

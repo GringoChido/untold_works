@@ -3,6 +3,8 @@ import { BrowserRouter as Router, Routes, Route, Navigate, useLocation } from 'r
 import { Language } from './types';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
+import StickyBar from './components/StickyBar';
+import ExitIntentPopup from './components/ExitIntentPopup';
 import Home from './pages/Home';
 import WorkshopsPage from './pages/Workshops';
 import Portfolio from './pages/Portfolio';
@@ -39,6 +41,7 @@ const ReviewReputation = lazy(() => import('./pages/ReviewReputation'));
 const DigitalPresence = lazy(() => import('./pages/DigitalPresence'));
 const BusinessOperations = lazy(() => import('./pages/BusinessOperations'));
 const Infrastructure = lazy(() => import('./pages/Infrastructure'));
+const Savings = lazy(() => import('./pages/Savings'));
 
 interface LanguageContextType {
   lang: Language;
@@ -79,6 +82,7 @@ const AppLayout: React.FC = () => {
 
   return (
     <div className="min-h-screen flex flex-col selection:bg-untold-orange selection:text-white overflow-x-hidden">
+      {!isStandalone && <StickyBar />}
       {!isStandalone && <Navbar />}
       <main className="flex-grow">
         <Suspense fallback={<PageLoader />}>
@@ -116,12 +120,14 @@ const AppLayout: React.FC = () => {
             <Route path="/digital-presence" element={<DigitalPresence />} />
             <Route path="/business-operations" element={<BusinessOperations />} />
             <Route path="/infrastructure" element={<Infrastructure />} />
+            <Route path="/savings" element={<Savings />} />
             <Route path="/analog" element={<StereoPage />} />
             <Route path="/slides" element={<SlidesPage />} />
           </Routes>
         </Suspense>
       </main>
       {!isStandalone && <Footer />}
+      {!isStandalone && <ExitIntentPopup />}
     </div>
   );
 };

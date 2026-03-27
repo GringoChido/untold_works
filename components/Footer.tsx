@@ -2,7 +2,6 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { useLanguage } from '../App';
 import * as i18n from '../i18n';
-import NewsletterForm from './NewsletterForm';
 
 const Footer: React.FC = () => {
   const { t } = useLanguage();
@@ -50,7 +49,7 @@ const Footer: React.FC = () => {
               <span className="font-mono text-[10px] uppercase tracking-[0.6em] text-white/20 font-bold mb-4">NAV_DIRECTORY</span>
               <Link
                 to="/network-systems"
-                className="text-2xl sm:text-3xl lg:text-4xl font-sans font-black uppercase tracking-tighter text-untold-orange hover:text-white transition-all duration-300 leading-none"
+                className="text-2xl sm:text-3xl lg:text-4xl font-sans font-black uppercase tracking-tighter text-untold-orange hover:text-white transition-all duration-300 leading-none whitespace-nowrap"
               >
                 {t({ en: 'Network Systems', es: 'Network Systems' })}
               </Link>
@@ -107,26 +106,12 @@ const Footer: React.FC = () => {
               </Link>
             </div>
 
-            {/* Newsletter */}
+            {/* Contact */}
             <div className="lg:text-right">
               <span className="font-mono text-[10px] uppercase tracking-[0.6em] text-white/20 font-bold block mb-4">
-                {t({ en: 'NEWSLETTER', es: 'BOLETÍN' })}
+                {t({ en: 'CONTACT', es: 'CONTACTO' })}
               </span>
-              <p className="text-sm font-serif italic text-white/40 mb-4">
-                {t({ en: 'AI tools, case studies, and guides for your business.', es: 'Herramientas de IA, casos de estudio y guías para tu negocio.' })}
-              </p>
-              <NewsletterForm />
-            </div>
-
-            {/* Location */}
-            <div className="lg:text-right">
-              <span className="font-mono text-[10px] uppercase tracking-[0.6em] text-white/20 font-bold block mb-4">
-                {t({ en: 'LOCATION', es: 'UBICACIÓN' })}
-              </span>
-              <address className="not-italic text-sm font-serif text-white/40 leading-relaxed">
-                San Miguel de Allende, Guanajuato, Mexico<br />
-                <a href="mailto:info@untold.works" className="hover:text-untold-orange transition-colors">info@untold.works</a>
-              </address>
+              <a href="mailto:info@untold.works" className="text-sm font-serif text-white/40 hover:text-untold-orange transition-colors">info@untold.works</a>
             </div>
 
             {/* Social */}

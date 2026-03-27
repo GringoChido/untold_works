@@ -5,6 +5,8 @@ import { usePageMeta } from '../hooks/usePageMeta';
 import { blogPosts } from '../data/blogPosts';
 import Breadcrumbs from '../components/Breadcrumbs';
 import AuthorByline from '../components/AuthorByline';
+import BlogMoneyCTA from '../components/BlogMoneyCTA';
+import ProofStrip from '../components/ProofStrip';
 import * as i18n from '../i18n';
 import type { Pillar } from '../types';
 
@@ -124,6 +126,9 @@ const BlogPost: React.FC = () => {
             dangerouslySetInnerHTML={{ __html: t(post.content) }}
           />
           <AuthorByline name={post.author} date={post.date} variant="light" />
+          <div className="mt-12">
+            <BlogMoneyCTA />
+          </div>
         </div>
       </section>
 
@@ -173,6 +178,8 @@ const BlogPost: React.FC = () => {
           </div>
         </section>
       )}
+
+      <ProofStrip />
 
       {/* CTA */}
       <section className="bg-untold-black text-white px-5 sm:px-10 py-16 sm:py-24 text-center">

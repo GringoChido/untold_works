@@ -6,6 +6,9 @@ import * as i18n from '../../i18n';
 import QuickLeadForm from '../../components/QuickLeadForm';
 import Breadcrumbs from '../../components/Breadcrumbs';
 import NetworkConnector from '../../components/NetworkConnector';
+import ProofStrip from '../../components/ProofStrip';
+import CostComparison from '../../components/CostComparison';
+import ResultCard from '../../components/ResultCard';
 
 const SmallBusiness: React.FC = () => {
   const { t } = useLanguage();
@@ -316,6 +319,46 @@ const SmallBusiness: React.FC = () => {
           </div>
         </div>
       </section>
+
+      {/* ── What You're Spending Now ── */}
+      <CostComparison
+        tier={{ en: 'Small Business', es: 'Pequeña Empresa' }}
+        tools={[
+          { name: { en: 'Shopify / Square Online', es: 'Shopify / Square Online' }, cost: { en: '$79–$299/mo', es: '$79–$299/mes' } },
+          { name: { en: 'HubSpot (Starter)', es: 'HubSpot (Starter)' }, cost: { en: '$50–$200/mo', es: '$50–$200/mes' } },
+          { name: { en: 'Mailchimp / Klaviyo', es: 'Mailchimp / Klaviyo' }, cost: { en: '$50–$150/mo', es: '$50–$150/mes' } },
+          { name: { en: 'Hootsuite / Buffer', es: 'Hootsuite / Buffer' }, cost: { en: '$50–$100/mo', es: '$50–$100/mes' } },
+          { name: { en: 'Analytics / Dashboarding', es: 'Analítica / Dashboarding' }, cost: { en: '$0–$150/mo', es: '$0–$150/mes' } },
+          { name: { en: 'Zapier (Team)', es: 'Zapier (Team)' }, cost: { en: '$70–$100/mo', es: '$70–$100/mes' } },
+          { name: { en: 'Booking system', es: 'Sistema de reservas' }, cost: { en: '$50–$250/mo', es: '$50–$250/mes' } },
+        ]}
+        monthlyTotal={{ en: '$350–$1,250', es: '$350–$1,250' }}
+        annualTotal={{ en: '$4,200–$15,000', es: '$4,200–$15,000' }}
+        investment={{ en: '$10,000', es: '$10,000' }}
+        bottomLine={{
+          en: 'Most businesses break even in year one. By year three, you\'ve saved $15,000–$35,000.',
+          es: 'La mayoría de los negocios recuperan su inversión en el primer año. Para el tercer año, has ahorrado $15,000–$35,000.',
+        }}
+      />
+
+      {/* ── How We Make You Money ── */}
+      <ResultCard
+        headline={{
+          en: 'When Your Systems Talk to Each Other, Revenue Goes Up.',
+          es: 'Cuando Tus Sistemas Se Comunican, Los Ingresos Suben.',
+        }}
+        stat="20%"
+        statLabel={{ en: 'sales lift — Billiard Factory', es: 'aumento en ventas — Billiard Factory' }}
+        supporting={{
+          en: '+35% operational efficiency across 4,000+ SKUs. One integrated system replaced scattered tools and manual processes.',
+          es: '+35% eficiencia operativa en más de 4,000 SKUs. Un sistema integrado reemplazó herramientas dispersas y procesos manuales.',
+        }}
+        proofLink="/portfolio/billiard-factory-retail-architecture"
+        proofLabel={{ en: 'Read the Billiard Factory case study', es: 'Leer el caso de Billiard Factory' }}
+      />
+
+      {/* ── Proof Strip ── */}
+      <ProofStrip variant="light" />
 
       {/* ── FAQ ── */}
       <section className="bg-white px-5 sm:px-10 py-20 sm:py-32 border-b border-untold-border">

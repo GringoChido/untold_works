@@ -39,6 +39,7 @@ const routes = [
   '/mexico-city',
   '/united-states',
   '/privacy',
+  '/savings',
   '/analog',
   '/slides',
   // Portfolio projects

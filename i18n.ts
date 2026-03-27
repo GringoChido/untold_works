@@ -44,7 +44,7 @@ export const hero = {
     es: '¿Y Si Tu Negocio Se Manejara Solo?'
   },
   tagline: {
-    en: 'We build the system so you can run your business from anywhere. We train you. You run it.',
+    en: 'We build the system so you can run your business from anywhere. We train you. You own it.',
     es: 'Construimos el sistema para que manejes tu negocio desde cualquier lugar. Te capacitamos. Tú lo operas.'
   },
   subheadline: {
@@ -52,12 +52,12 @@ export const hero = {
     es: 'MARCA // SITIO WEB // SISTEMAS DE IA // FLUJOS DE TRABAJO'
   },
   primaryCta: {
-    en: 'Check out the Portfolio',
-    es: 'Ver el Portafolio'
+    en: 'Explore Our Solutions',
+    es: 'Explorar Nuestras Soluciones'
   },
   secondaryCta: {
-    en: 'See what we build',
-    es: 'Mira lo que construimos'
+    en: 'Start a conversation',
+    es: 'Iniciar conversación'
   }
 };
 
@@ -380,12 +380,61 @@ export const whyUntold = {
 
 export const finalCta = {
   headline: {
-    en: 'Ready to tell your story?',
-    es: '¿Listo para contar tu historia?'
+    en: 'Stop Renting.\nStart Owning.',
+    es: 'Deja de Rentar.\nEmpieza a Ser Dueño.'
   },
   cta: {
-    en: 'Start a conversation',
-    es: 'Iniciar conversación'
+    en: 'See What You\'d Save',
+    es: 'Mira Lo Que Ahorrarías'
+  }
+};
+
+// ────────────────────────────────────────────────────────────────
+// MONEY STORY CAMPAIGN
+// ────────────────────────────────────────────────────────────────
+
+export const moneyStory = {
+  headline: {
+    en: 'Own the System.\nKeep the Money.',
+    es: 'Sé Dueño del Sistema.\nQuédate con el Dinero.'
+  },
+  subheadline: {
+    en: 'Stop paying monthly for tools you\'ll never own. We build the system once — you keep it forever.',
+    es: 'Deja de pagar mensualidades por herramientas que nunca serán tuyas. Construimos el sistema una vez — lo conservas para siempre.'
+  },
+  cards: [
+    {
+      tier: { en: 'Professional Services', es: 'Servicios Profesionales' },
+      spend: { en: '$2,400/yr on tools', es: '$2,400/año en herramientas' },
+      replace: { en: '$5,000 one-time', es: '$5,000 una vez' },
+      cta: { en: 'Replace 6 tools with 1 system', es: 'Reemplaza 6 herramientas con 1 sistema' },
+      link: '/solutions/professional-services',
+    },
+    {
+      tier: { en: 'Small Business', es: 'Pequeña Empresa' },
+      spend: { en: '$9,000/yr on tools', es: '$9,000/año en herramientas' },
+      replace: { en: '$10,000 one-time', es: '$10,000 una vez' },
+      cta: { en: 'See the 20% sales lift case study', es: 'Ver el caso de 20% en ventas' },
+      link: '/solutions/small-business',
+    },
+    {
+      tier: { en: 'Enterprise', es: 'Empresarial' },
+      spend: { en: '$500K+/yr on ops', es: '$500K+/año en operaciones' },
+      replace: { en: 'Custom one-time build', es: 'Construcción personalizada' },
+      cta: { en: 'See how we replace $800K in costs', es: 'Mira cómo reemplazamos $800K en costos' },
+      link: '/solutions/enterprise',
+    },
+  ],
+};
+
+export const stickyBar = {
+  message: {
+    en: 'The average business wastes $12,000/year on tools they don\'t own. We fix that.',
+    es: 'El negocio promedio desperdicia $12,000/año en herramientas que no le pertenecen. Nosotros lo arreglamos.'
+  },
+  cta: {
+    en: 'See how',
+    es: 'Mira cómo'
   }
 };
 

@@ -6,6 +6,9 @@ import * as i18n from '../../i18n';
 import QuickLeadForm from '../../components/QuickLeadForm';
 import Breadcrumbs from '../../components/Breadcrumbs';
 import NetworkConnector from '../../components/NetworkConnector';
+import ProofStrip from '../../components/ProofStrip';
+import CostComparison from '../../components/CostComparison';
+import ResultCard from '../../components/ResultCard';
 
 const Enterprise: React.FC = () => {
   const { t } = useLanguage();
@@ -292,6 +295,45 @@ const Enterprise: React.FC = () => {
           </div>
         </div>
       </section>
+
+      {/* ── What You're Spending Now ── */}
+      <CostComparison
+        tier={{ en: 'Enterprise', es: 'Empresarial' }}
+        tools={[
+          { name: { en: 'HubSpot / Salesforce (Enterprise)', es: 'HubSpot / Salesforce (Enterprise)' }, cost: { en: '$60K–$180K/yr', es: '$60K–$180K/año' } },
+          { name: { en: 'Marketing team (3–5 people)', es: 'Equipo de marketing (3–5 personas)' }, cost: { en: '$180K–$400K/yr', es: '$180K–$400K/año' } },
+          { name: { en: 'Agency retainers', es: 'Retainers de agencia' }, cost: { en: '$60K–$180K/yr', es: '$60K–$180K/año' } },
+          { name: { en: 'Dev team / maintenance', es: 'Equipo dev / mantenimiento' }, cost: { en: '$80K–$200K/yr', es: '$80K–$200K/año' } },
+          { name: { en: 'Dashboarding / BI tools', es: 'Dashboarding / herramientas BI' }, cost: { en: '$12K–$60K/yr', es: '$12K–$60K/año' } },
+          { name: { en: 'Integration middleware', es: 'Middleware de integración' }, cost: { en: '$10K–$50K/yr', es: '$10K–$50K/año' } },
+        ]}
+        monthlyTotal={{ en: '$33K–$89K', es: '$33K–$89K' }}
+        annualTotal={{ en: '$400K–$1,070K', es: '$400K–$1,070K' }}
+        investment={{ en: 'Custom', es: 'Personalizado' }}
+        bottomLine={{
+          en: 'We build the system that replaces most of this. You own it. Even a 30% reduction = $250K+ back every year. The savings compound.',
+          es: 'Construimos el sistema que reemplaza la mayoría de esto. Tú eres dueño. Incluso una reducción del 30% = $250K+ de regreso cada año. Los ahorros se acumulan.',
+        }}
+      />
+
+      {/* ── How We Make You Money ── */}
+      <ResultCard
+        headline={{
+          en: 'These Aren\'t Experiments. They\'re Revenue Engines.',
+          es: 'Estos No Son Experimentos. Son Motores de Ingresos.',
+        }}
+        stat="4.2x"
+        statLabel={{ en: 'sales ROI — OMI agentic lead routing', es: 'ROI de ventas — enrutamiento agéntico OMI' }}
+        supporting={{
+          en: '98% MQL accuracy. 6 production AI systems built for Noxguard. Real enterprise deployments with measurable revenue impact.',
+          es: '98% de precisión MQL. 6 sistemas de IA en producción construidos para Noxguard. Despliegues empresariales reales con impacto medible en ingresos.',
+        }}
+        proofLink="/portfolio/omi-lead-intake-qualification"
+        proofLabel={{ en: 'Read the OMI case study', es: 'Leer el caso de OMI' }}
+      />
+
+      {/* ── Proof Strip ── */}
+      <ProofStrip variant="light" />
 
       {/* ── FAQ ── */}
       <section className="bg-white px-5 sm:px-10 py-20 sm:py-32 border-b border-untold-border">

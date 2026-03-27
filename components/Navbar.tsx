@@ -29,12 +29,12 @@ const Navbar: React.FC = () => {
           </Link>
 
           {/* Desktop Links */}
-          <div className="hidden lg:flex items-center space-x-16 xl:space-x-20">
-            <div className="flex items-center space-x-10 xl:space-x-12">
+          <div className="hidden lg:flex items-center space-x-8 xl:space-x-16">
+            <div className="flex items-center space-x-6 xl:space-x-10">
               {/* Network Systems — Flagship */}
               <Link
                 to="/network-systems"
-                className="text-[12px] font-mono font-bold uppercase tracking-[0.3em] text-untold-orange hover:text-untold-black transition-colors duration-300"
+                className="text-[11px] xl:text-[12px] font-mono font-bold uppercase tracking-[0.2em] xl:tracking-[0.3em] text-untold-orange hover:text-untold-black transition-colors duration-300 whitespace-nowrap"
               >
                 {t({ en: 'Network Systems', es: 'Network Systems' })}
               </Link>
@@ -108,7 +108,7 @@ const Navbar: React.FC = () => {
               </Link>
             </div>
 
-            <div className="flex items-center space-x-12">
+            <div className="flex items-center space-x-6 xl:space-x-10">
               <div className="h-6 w-[2px] bg-untold-border/40"></div>
 
               <button

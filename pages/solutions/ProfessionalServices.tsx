@@ -6,6 +6,9 @@ import * as i18n from '../../i18n';
 import QuickLeadForm from '../../components/QuickLeadForm';
 import Breadcrumbs from '../../components/Breadcrumbs';
 import NetworkConnector from '../../components/NetworkConnector';
+import ProofStrip from '../../components/ProofStrip';
+import CostComparison from '../../components/CostComparison';
+import ResultCard from '../../components/ResultCard';
 
 const ProfessionalServices: React.FC = () => {
   const { t } = useLanguage();
@@ -280,6 +283,49 @@ const ProfessionalServices: React.FC = () => {
           </div>
         </div>
       </section>
+
+      {/* ── What You're Spending Now ── */}
+      <CostComparison
+        tier={{ en: 'Professional Services', es: 'Servicios Profesionales' }}
+        tools={[
+          { name: { en: 'Squarespace / Wix', es: 'Squarespace / Wix' }, cost: { en: '$25–$45/mo', es: '$25–$45/mes' } },
+          { name: { en: 'Calendly (Pro)', es: 'Calendly (Pro)' }, cost: { en: '$12–$20/mo', es: '$12–$20/mes' } },
+          { name: { en: 'Mailchimp (Standard)', es: 'Mailchimp (Standard)' }, cost: { en: '$20–$60/mo', es: '$20–$60/mes' } },
+          { name: { en: 'HoneyBook / Dubsado', es: 'HoneyBook / Dubsado' }, cost: { en: '$40–$80/mo', es: '$40–$80/mes' } },
+          { name: { en: 'Google Workspace', es: 'Google Workspace' }, cost: { en: '$14/mo', es: '$14/mes' } },
+          { name: { en: 'Zapier (Starter)', es: 'Zapier (Starter)' }, cost: { en: '$20–$30/mo', es: '$20–$30/mes' } },
+        ]}
+        monthlyTotal={{ en: '$130–$250', es: '$130–$250' }}
+        annualTotal={{ en: '$1,560–$3,000', es: '$1,560–$3,000' }}
+        investment={{ en: '$5,000', es: '$5,000' }}
+        bottomLine={{
+          en: 'Breakeven in under 2 years. Then it\'s pure savings — $1,500–$3,000 back in your pocket every year.',
+          es: 'Punto de equilibrio en menos de 2 años. Después son ahorros puros — $1,500–$3,000 de regreso cada año.',
+        }}
+      />
+
+      {/* ── How We Make You Money ── */}
+      <ResultCard
+        headline={{
+          en: 'More Billable Hours. Fewer No-Shows. Zero Admin Overhead.',
+          es: 'Más Horas Facturables. Menos Ausencias. Cero Carga Administrativa.',
+        }}
+        stat="10+"
+        statLabel={{ en: 'billable hours recovered per week', es: 'horas facturables recuperadas por semana' }}
+        math={{
+          en: 'At $150/hour, that\'s $6,000/month in recovered capacity.',
+          es: 'A $150/hora, son $6,000/mes en capacidad recuperada.',
+        }}
+        supporting={{
+          en: '5–10 hours/week saved on admin tasks through automated booking, reminders, and follow-ups.',
+          es: '5–10 horas/semana ahorradas en tareas admin con reservas, recordatorios y seguimientos automáticos.',
+        }}
+        proofLink="/solutions/professional-services"
+        proofLabel={{ en: 'See how it works', es: 'Ver cómo funciona' }}
+      />
+
+      {/* ── Proof Strip ── */}
+      <ProofStrip variant="light" />
 
       {/* ── FAQ ── */}
       <section className="bg-white px-5 sm:px-10 py-20 sm:py-32 border-b border-untold-border">

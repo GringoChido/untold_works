@@ -5,6 +5,8 @@ import { usePageMeta } from '../hooks/usePageMeta';
 import { projects } from '../data/projects';
 import * as i18n from '../i18n';
 import { WavyBackground } from '../components/ui/wavy-background';
+import ProofStrip from '../components/ProofStrip';
+import MoneyStorySection from '../components/MoneyStorySection';
 
 
 const howToSchema = {
@@ -104,6 +106,9 @@ const Home: React.FC = () => {
   return (
     <div className="bg-untold-beige font-serif text-untold-black">
 
+      {/* Dark wrapper — prevents beige gap between dark sections */}
+      <div className="bg-untold-black">
+
       {/* ═══════════════════════════════════════════════════════════
           HERO
       ═══════════════════════════════════════════════════════════ */}
@@ -141,7 +146,7 @@ const Home: React.FC = () => {
 
             <div className="flex flex-col sm:flex-row items-start gap-6">
               <Link
-                to="/portfolio"
+                to="/solutions"
                 className="inline-flex items-center space-x-6 sm:space-x-10 group border border-white/20 bg-black/30 backdrop-blur-sm px-8 sm:px-16 py-6 sm:py-10 hover:border-untold-orange hover:bg-untold-orange/10 transition-all shadow-[0_40px_100px_rgba(255,77,23,0.15)]"
               >
                 <span className="font-sans font-black text-lg sm:text-2xl uppercase tracking-tighter text-white">
@@ -149,89 +154,272 @@ const Home: React.FC = () => {
                 </span>
                 <span className="text-3xl sm:text-5xl text-untold-orange group-hover:translate-x-6 transition-transform duration-500">→</span>
               </Link>
-              <a
-                href="#selected-work"
+              <Link
+                to="/contact"
                 className="font-mono text-[12px] uppercase tracking-[0.3em] text-white/50 hover:text-untold-orange transition-colors py-6 sm:py-10"
               >
-                {t(i18n.hero.secondaryCta)} ↓
-              </a>
+                {t(i18n.hero.secondaryCta)} →
+              </Link>
             </div>
           </div>
         </div>
       </WavyBackground>
 
       {/* ═══════════════════════════════════════════════════════════
-          NETWORK SYSTEMS — One System. Three Paths.
-          The key metaphor: Network Systems is the platform.
-          Each business type is the door it opens.
+          PROOF STRIP — Client Results
       ═══════════════════════════════════════════════════════════ */}
-      <section className="bg-untold-black px-5 sm:px-10 py-20 sm:py-32 lg:py-40 border-b border-white/10">
+      <ProofStrip />
+
+      {/* ═══════════════════════════════════════════════════════════
+          WHY NOW. WHY UNTOLD. + SAVE & MAKE MONEY
+      ═══════════════════════════════════════════════════════════ */}
+      <section className="bg-untold-black text-white px-5 sm:px-10 py-20 sm:py-32 lg:py-40 border-b border-white/10">
         <div className="max-w-[1440px] mx-auto">
 
-          {/* The Key — Network Systems intro */}
-          <div className="mb-20 sm:mb-28">
+          {/* Header */}
+          <div className="flex items-center space-x-4 mb-16">
+            <span className="w-2.5 h-2.5 rounded-full bg-untold-orange animate-pulse" />
+            <p className="font-mono text-[13px] uppercase tracking-[0.6em] font-bold text-white/40">
+              {t(i18n.whyUntold.eyebrow)}
+            </p>
+          </div>
+
+          <h2 className="font-sans font-black text-4xl sm:text-6xl lg:text-8xl uppercase tracking-tighter mb-8 leading-[0.85]">
+            {t(i18n.whyUntold.headline)}
+          </h2>
+
+          <p className="text-xl sm:text-2xl font-serif text-white/70 leading-relaxed max-w-4xl mb-20">
+            {t(i18n.whyUntold.opening)}
+          </p>
+
+          {/* Two-column: SAVE + MAKE */}
+          <div className="grid lg:grid-cols-2 gap-px bg-white/10 border border-white/10 mb-20">
+            {/* SAVE */}
+            <div className="bg-untold-black p-8 sm:p-12">
+              <span className="font-mono text-[10px] uppercase tracking-[0.5em] text-emerald-500 font-bold block mb-6">
+                {t({ en: 'SAVE', es: 'AHORRA' })}
+              </span>
+              <h3 className="font-sans font-black text-2xl sm:text-3xl uppercase tracking-tighter mb-6">
+                {t({ en: 'Stop Renting Your Tools', es: 'Deja de Rentar Tus Herramientas' })}
+              </h3>
+              <ul className="space-y-4">
+                {[
+                  { en: 'Eliminate SaaS subscriptions — $0/month forever', es: 'Elimina suscripciones SaaS — $0/mes para siempre' },
+                  { en: 'Cut the tool stack that costs $9,000+/year', es: 'Elimina el stack que cuesta $9,000+/año' },
+                  { en: 'Remove agency retainers you don\'t need', es: 'Elimina retainers de agencia que no necesitas' },
+                  { en: 'Own your systems — stop renting access to your own data', es: 'Sé dueño de tus sistemas — deja de rentar acceso a tus propios datos' },
+                ].map((item, idx) => (
+                  <li key={idx} className="flex items-start space-x-3">
+                    <span className="text-emerald-500 mt-1 text-sm font-bold">+</span>
+                    <span className="font-serif text-white/60 text-base leading-relaxed">{t(item)}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            {/* MAKE */}
+            <div className="bg-untold-black p-8 sm:p-12">
+              <span className="font-mono text-[10px] uppercase tracking-[0.5em] text-untold-orange font-bold block mb-6">
+                {t({ en: 'MAKE', es: 'GANA' })}
+              </span>
+              <h3 className="font-sans font-black text-2xl sm:text-3xl uppercase tracking-tighter mb-6">
+                {t({ en: 'Turn Systems Into Revenue', es: 'Convierte Sistemas en Ingresos' })}
+              </h3>
+              <ul className="space-y-4">
+                {[
+                  { en: 'Increase leads and conversions with AI-powered follow-ups', es: 'Aumenta leads y conversiones con seguimientos con IA' },
+                  { en: 'Recover 10+ billable hours/week from automated operations', es: 'Recupera 10+ horas facturables/semana con operaciones automatizadas' },
+                  { en: 'Improve close rates with automated lead routing', es: 'Mejora tasas de cierre con enrutamiento automatizado de leads' },
+                  { en: 'Scale revenue without scaling headcount', es: 'Escala ingresos sin escalar personal' },
+                ].map((item, idx) => (
+                  <li key={idx} className="flex items-start space-x-3">
+                    <span className="text-untold-orange mt-1 text-sm font-bold">+</span>
+                    <span className="font-serif text-white/60 text-base leading-relaxed">{t(item)}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+
+          {/* Differentiators */}
+          <div className="grid sm:grid-cols-2 lg:grid-cols-5 gap-6 mb-20">
+            {i18n.whyUntold.differentiators.map((diff, idx) => (
+              <div key={idx} className="border-l-2 border-untold-orange/30 pl-5 hover:border-untold-orange transition-colors">
+                <h4 className="font-sans font-black text-base uppercase tracking-tighter mb-2">
+                  {t(diff.title)}
+                </h4>
+                <p className="font-serif italic text-white/40 text-sm leading-relaxed">
+                  {t(diff.description)}
+                </p>
+              </div>
+            ))}
+          </div>
+
+          {/* Closing */}
+          <div className="border-t border-white/10 pt-12">
+            <h3 className="font-sans font-black text-2xl sm:text-4xl uppercase tracking-tighter mb-4">
+              {t(i18n.whyUntold.closingHeadline)}
+            </h3>
+            <p className="text-lg sm:text-xl font-serif italic text-white/50 max-w-3xl leading-relaxed">
+              {t(i18n.whyUntold.closingContent)}
+            </p>
+          </div>
+        </div>
+      </section>
+
+      </div>{/* end dark wrapper */}
+
+      {/* ═══════════════════════════════════════════════════════════
+          ONE SYSTEM. THREE PATHS. + CAPABILITIES
+      ═══════════════════════════════════════════════════════════ */}
+      <section className="bg-white px-5 sm:px-10 py-20 sm:py-32 lg:py-40 border-b border-untold-border">
+        <div className="max-w-[1440px] mx-auto">
+
+          {/* Header */}
+          <div className="mb-16 sm:mb-24">
             <div className="flex items-center space-x-3 mb-8">
-              <span className="w-3 h-3 rounded-full bg-untold-orange animate-pulse"></span>
+              <span className="w-3 h-3 rounded-full bg-untold-orange animate-pulse" />
               <span className="font-mono text-[10px] uppercase tracking-[0.5em] text-untold-orange font-bold">
-                {t({ en: 'FLAGSHIP OFFERING', es: 'OFERTA PRINCIPAL' })}
+                {t({ en: 'ONE SYSTEM. THREE PATHS.', es: 'UN SISTEMA. TRES CAMINOS.' })}
               </span>
             </div>
 
             <div className="grid lg:grid-cols-12 gap-12 lg:gap-20 items-end">
               <div className="lg:col-span-7">
-                <h2 className="font-sans font-black text-4xl sm:text-6xl lg:text-8xl uppercase tracking-tighter mb-6 text-white leading-[0.85]">
-                  {t({ en: 'Network Systems', es: 'Network Systems' })}
+                <h2 className="font-sans font-black text-4xl sm:text-6xl lg:text-8xl uppercase tracking-tighter mb-6 leading-[0.85]">
+                  {t({ en: 'Everything Your Business Needs. One Build.', es: 'Todo Lo Que Tu Negocio Necesita. Una Construcción.' })}
                 </h2>
-                <p className="text-xl sm:text-2xl font-serif italic text-white/60 leading-relaxed">
+                <p className="text-xl sm:text-2xl font-serif italic text-untold-gray leading-relaxed">
                   {t({
-                    en: 'One AI-powered platform that runs your entire digital operation. Websites, marketing, dashboards, sales tools, content — deployed everywhere, managed from one place.',
-                    es: 'Una plataforma impulsada por IA que gestiona toda tu operación digital. Sitios web, marketing, dashboards, herramientas de venta, contenido — desplegado en todas partes, gestionado desde un solo lugar.',
+                    en: 'Brand, website, AI workflows, CRM, marketing, dashboards — we build the entire system. You own it. We train you. Then you run it.',
+                    es: 'Marca, sitio web, flujos de IA, CRM, marketing, dashboards — construimos el sistema completo. Tú eres dueño. Te capacitamos. Luego tú lo operas.',
                   })}
                 </p>
               </div>
               <div className="lg:col-span-5 flex lg:justify-end">
                 <Link
                   to="/network-systems"
-                  className="group inline-flex items-center space-x-4 font-sans font-black text-lg uppercase tracking-tighter text-untold-orange hover:text-white transition-colors"
+                  className="group inline-flex items-center space-x-4 font-sans font-black text-lg uppercase tracking-tighter text-untold-orange hover:text-untold-black transition-colors"
                 >
-                  <span>{t({ en: 'Explore the Full System', es: 'Explorar el Sistema Completo' })}</span>
+                  <span>{t({ en: 'Explore Network Systems', es: 'Explorar Network Systems' })}</span>
                   <span className="text-3xl group-hover:translate-x-4 transition-transform duration-500">→</span>
                 </Link>
               </div>
             </div>
           </div>
 
-          {/* The Rooms — Three business paths */}
-          <div className="border-t border-white/10 pt-16 sm:pt-20">
-            <p className="font-mono text-[10px] uppercase tracking-[0.5em] text-white/30 font-bold mb-12">
-              {t({ en: 'ONE SYSTEM. THREE PATHS.', es: 'UN SISTEMA. TRES CAMINOS.' })}
+          {/* Three pillar cards — value-focused */}
+          <div className="grid lg:grid-cols-3 gap-px bg-untold-border border border-untold-border mb-16 sm:mb-24">
+            {paths.map((path) => (
+              <Link
+                key={path.id}
+                to={`/solutions/${path.id}`}
+                className="group bg-white p-8 sm:p-10 lg:p-12 flex flex-col hover:bg-untold-beige/50 transition-colors"
+              >
+                <span className="font-mono text-[10px] uppercase tracking-[0.5em] text-untold-orange font-bold mb-4">
+                  {path.number}
+                </span>
+                <h3 className="font-sans font-black text-2xl sm:text-3xl uppercase tracking-tighter mb-2 group-hover:text-untold-orange transition-colors">
+                  {t(path.title)}
+                </h3>
+                <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-untold-black/30 mb-4">
+                  {t(path.who)}
+                </p>
+                <p className="font-serif italic text-untold-gray text-base leading-relaxed mb-8 flex-grow">
+                  {t(path.line)}
+                </p>
+                <span className="inline-flex items-center space-x-3 font-sans font-black text-sm uppercase tracking-tighter text-untold-orange group-hover:translate-x-2 transition-transform">
+                  <span>{t({ en: 'Explore', es: 'Explorar' })}</span>
+                  <span className="text-xl">→</span>
+                </span>
+              </Link>
+            ))}
+          </div>
+
+          {/* Capabilities — 3 layers */}
+          <div className="border-t border-untold-border pt-16">
+            <p className="font-mono text-[10px] uppercase tracking-[0.5em] text-untold-black/30 font-bold mb-12">
+              {t({ en: 'WHAT WE BUILD INTO EVERY SYSTEM', es: 'LO QUE CONSTRUIMOS EN CADA SISTEMA' })}
             </p>
 
-            <div className="grid lg:grid-cols-3 gap-px bg-white/10">
-              {paths.map((path) => (
-                <Link
-                  key={path.id}
-                  to={`/solutions/${path.id}`}
-                  className="group bg-untold-black p-8 sm:p-10 lg:p-12 flex flex-col hover:bg-white/[0.03] transition-all"
-                >
-                  <span className="font-mono text-[48px] sm:text-[64px] font-black text-white/[0.06] leading-none mb-6">
-                    {path.number}
+            <div className="grid lg:grid-cols-3 gap-12 lg:gap-16">
+              {/* Digital Presence */}
+              <div>
+                <div className="border-l-2 border-untold-orange pl-5 mb-6">
+                  <h4 className="font-sans font-black text-lg uppercase tracking-tighter">
+                    {t({ en: 'Digital Presence', es: 'Presencia Digital' })}
+                  </h4>
+                  <span className="font-mono text-[9px] uppercase tracking-[0.3em] text-untold-black/30">
+                    {t({ en: 'Get Found', es: 'Que Te Encuentren' })}
                   </span>
-                  <h3 className="font-sans font-black text-2xl sm:text-3xl uppercase tracking-tighter mb-3 text-white group-hover:text-untold-orange transition-colors">
-                    {t(path.title)}
-                  </h3>
-                  <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-untold-orange/60 mb-6">
-                    {t(path.who)}
-                  </p>
-                  <p className="font-serif italic text-white/40 text-base leading-relaxed mb-8 flex-grow">
-                    {t(path.line)}
-                  </p>
-                  <span className="inline-flex items-center space-x-3 font-sans font-black text-sm uppercase tracking-tighter text-untold-orange group-hover:translate-x-2 transition-transform">
-                    <span>{t({ en: 'Explore', es: 'Explorar' })}</span>
-                    <span className="text-xl">→</span>
+                </div>
+                <ul className="space-y-3">
+                  {[
+                    { en: 'Website Design & Rebuild', es: 'Diseño y Reconstrucción Web' },
+                    { en: 'SEO, AEO & GEO', es: 'SEO, AEO y GEO' },
+                    { en: 'Copywriting & Brand Messaging', es: 'Copywriting y Mensajes de Marca' },
+                    { en: 'AI Content Engine', es: 'Motor de Contenido con IA' },
+                    { en: 'Social Media', es: 'Redes Sociales' },
+                    { en: 'Paid Advertising', es: 'Publicidad Pagada' },
+                  ].map((item, idx) => (
+                    <li key={idx} className="flex items-start space-x-2">
+                      <span className="text-untold-orange mt-0.5 text-xs">+</span>
+                      <span className="font-serif text-sm text-untold-gray">{t(item)}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+
+              {/* Business Operations */}
+              <div>
+                <div className="border-l-2 border-untold-orange pl-5 mb-6">
+                  <h4 className="font-sans font-black text-lg uppercase tracking-tighter">
+                    {t({ en: 'Business Operations', es: 'Operaciones de Negocio' })}
+                  </h4>
+                  <span className="font-mono text-[9px] uppercase tracking-[0.3em] text-untold-black/30">
+                    {t({ en: 'Run the Business', es: 'Opera el Negocio' })}
                   </span>
-                </Link>
-              ))}
+                </div>
+                <ul className="space-y-3">
+                  {[
+                    { en: 'Dashboard & Intelligence', es: 'Dashboard e Inteligencia' },
+                    { en: 'CRM & Client Management', es: 'CRM y Gestión de Clientes' },
+                    { en: 'AI Workflow Automation', es: 'Automatización de Flujos con IA' },
+                    { en: 'Sales Enablement', es: 'Habilitación de Ventas' },
+                    { en: 'Mobile Applications', es: 'Aplicaciones Móviles' },
+                  ].map((item, idx) => (
+                    <li key={idx} className="flex items-start space-x-2">
+                      <span className="text-untold-orange mt-0.5 text-xs">+</span>
+                      <span className="font-serif text-sm text-untold-gray">{t(item)}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+
+              {/* Infrastructure */}
+              <div>
+                <div className="border-l-2 border-untold-orange pl-5 mb-6">
+                  <h4 className="font-sans font-black text-lg uppercase tracking-tighter">
+                    {t({ en: 'Infrastructure', es: 'Infraestructura' })}
+                  </h4>
+                  <span className="font-mono text-[9px] uppercase tracking-[0.3em] text-untold-black/30">
+                    {t({ en: 'Keep It Running', es: 'Mantenlo Funcionando' })}
+                  </span>
+                </div>
+                <ul className="space-y-3">
+                  {[
+                    { en: 'Hosting & System Operations', es: 'Hosting y Operación del Sistema' },
+                    { en: 'Review & Reputation Management', es: 'Gestión de Reseñas y Reputación' },
+                    { en: 'Training & Ownership Transfer', es: 'Capacitación y Transferencia de Propiedad' },
+                    { en: 'Documentation & Support', es: 'Documentación y Soporte' },
+                  ].map((item, idx) => (
+                    <li key={idx} className="flex items-start space-x-2">
+                      <span className="text-untold-orange mt-0.5 text-xs">+</span>
+                      <span className="font-serif text-sm text-untold-gray">{t(item)}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
             </div>
           </div>
         </div>
@@ -310,60 +498,7 @@ const Home: React.FC = () => {
         </div>
       </section>
 
-      {/* ═══════════════════════════════════════════════════════════
-          WHY UNTOLD
-      ═══════════════════════════════════════════════════════════ */}
-      <section className="px-5 sm:px-10 py-20 sm:py-32 lg:py-48 bg-untold-black text-white border-b border-white/5">
-        <div className="max-w-[1440px] mx-auto">
-          <div className="flex items-center space-x-4 mb-20">
-            <span className="w-2.5 h-2.5 rounded-full bg-untold-orange"></span>
-            <p className="font-mono text-[13px] uppercase tracking-[0.6em] font-bold text-white/40">
-              {t(i18n.whyUntold.eyebrow)}
-            </p>
-          </div>
-
-          <h2 className="font-sans font-black text-4xl sm:text-6xl lg:text-8xl uppercase tracking-tighter mb-12 leading-[0.85]">
-            {t(i18n.whyUntold.headline)}
-          </h2>
-
-          <div className="grid lg:grid-cols-12 gap-16 lg:gap-24 mb-24">
-            <div className="lg:col-span-7">
-              <p className="text-xl sm:text-2xl font-serif text-white/70 leading-relaxed mb-12">
-                {t(i18n.whyUntold.opening)}
-              </p>
-              <h3 className="font-sans font-black text-2xl sm:text-3xl uppercase tracking-tighter mb-6 text-untold-orange">
-                {t(i18n.whyUntold.dontMissHeadline)}
-              </h3>
-              <p className="text-lg sm:text-xl font-serif text-white/60 leading-relaxed">
-                {t(i18n.whyUntold.dontMissContent)}
-              </p>
-            </div>
-            <div className="lg:col-span-5">
-              <div className="space-y-8">
-                {i18n.whyUntold.differentiators.map((diff, idx) => (
-                  <div key={idx} className="border-l-2 border-untold-orange/30 pl-6 hover:border-untold-orange transition-colors">
-                    <h4 className="font-sans font-black text-lg uppercase tracking-tighter mb-2">
-                      {t(diff.title)}
-                    </h4>
-                    <p className="font-serif italic text-white/50 text-base leading-relaxed">
-                      {t(diff.description)}
-                    </p>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
-
-          <div className="border-t border-white/10 pt-16">
-            <h3 className="font-sans font-black text-2xl sm:text-4xl uppercase tracking-tighter mb-6">
-              {t(i18n.whyUntold.closingHeadline)}
-            </h3>
-            <p className="text-lg sm:text-xl font-serif italic text-white/50 max-w-3xl leading-relaxed">
-              {t(i18n.whyUntold.closingContent)}
-            </p>
-          </div>
-        </div>
-      </section>
+      {/* WHY UNTOLD removed — merged into combined section above */}
 
       {/* ═══════════════════════════════════════════════════════════
           FAQ
@@ -425,16 +560,24 @@ const Home: React.FC = () => {
       ═══════════════════════════════════════════════════════════ */}
       <section className="px-5 sm:px-10 py-24 sm:py-48 lg:py-72 text-center bg-untold-beige/40">
         <div className="max-w-[1440px] mx-auto flex flex-col items-center">
-          <h2 className="font-sans font-black text-[clamp(3rem,14vw,180px)] leading-[0.8] mb-10 sm:mb-16 tracking-tighter uppercase text-center">
+          <h2 className="font-sans font-black text-[clamp(3rem,14vw,180px)] leading-[0.8] mb-10 sm:mb-16 tracking-tighter uppercase text-center whitespace-pre-line">
             {t(i18n.finalCta.headline)}
           </h2>
-          <Link
-            to="/contact"
-            className="group relative bg-untold-black text-white px-10 sm:px-24 py-6 sm:py-10 text-lg sm:text-2xl font-sans font-black uppercase tracking-tighter hover:scale-105 active:scale-95 transition-all duration-700 shadow-[0_40px_100px_rgba(0,0,0,0.1)] overflow-hidden"
-          >
-            <span className="relative z-10">{t(i18n.finalCta.cta)}</span>
-            <div className="absolute inset-0 bg-untold-orange translate-y-full group-hover:translate-y-0 transition-transform duration-700"></div>
-          </Link>
+          <div className="flex flex-col sm:flex-row gap-4 items-center">
+            <Link
+              to="/savings"
+              className="group relative bg-untold-black text-white px-10 sm:px-24 py-6 sm:py-10 text-lg sm:text-2xl font-sans font-black uppercase tracking-tighter hover:scale-105 active:scale-95 transition-all duration-700 shadow-[0_40px_100px_rgba(0,0,0,0.1)] overflow-hidden"
+            >
+              <span className="relative z-10">{t(i18n.finalCta.cta)} →</span>
+              <div className="absolute inset-0 bg-untold-orange translate-y-full group-hover:translate-y-0 transition-transform duration-700"></div>
+            </Link>
+            <Link
+              to="/contact"
+              className="font-mono text-[12px] uppercase tracking-[0.3em] text-untold-black/40 hover:text-untold-orange transition-colors py-6 sm:py-10"
+            >
+              {t({ en: 'Start a conversation', es: 'Iniciar conversación' })} →
+            </Link>
+          </div>
         </div>
       </section>
 

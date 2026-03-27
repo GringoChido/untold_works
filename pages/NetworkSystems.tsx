@@ -587,16 +587,19 @@ const NetworkSystems: React.FC = () => {
                 name: { en: 'C.L. Bailey', es: 'C.L. Bailey' },
                 role: { en: 'Manufacturer — Hub Site', es: 'Fabricante — Sitio Central' },
                 url: 'https://clbailey.com',
+                image: '/images/in-progress/cl-bailey.jpg',
               },
               {
                 name: { en: 'Lexington Billiards', es: 'Lexington Billiards' },
                 role: { en: 'Dealer — Network Deployment', es: 'Distribuidor — Despliegue de Red' },
                 url: 'https://lexington-billiards.netlify.app',
+                image: '/images/in-progress/lexington-billiards.webp',
               },
               {
                 name: { en: 'Regal Billiards', es: 'Regal Billiards' },
                 role: { en: 'Dealer — Network Deployment', es: 'Distribuidor — Despliegue de Red' },
                 url: 'https://regalbilliards.netlify.app',
+                image: '/images/in-progress/regal-billiards.jpg',
               },
             ].map((site, idx) => (
               <a
@@ -604,17 +607,27 @@ const NetworkSystems: React.FC = () => {
                 href={site.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-untold-black p-6 sm:p-8 group hover:bg-white/5 transition-colors"
+                className="bg-untold-black group hover:bg-white/5 transition-colors overflow-hidden"
               >
-                <span className="font-mono text-[10px] uppercase tracking-[0.4em] text-white/30 block mb-3">
-                  {t(site.role)}
-                </span>
-                <h3 className="font-sans font-black text-xl sm:text-2xl uppercase tracking-tighter group-hover:text-untold-orange transition-colors mb-2">
-                  {t(site.name)}
-                </h3>
-                <span className="font-mono text-[11px] text-untold-orange">
-                  {t({ en: 'View site →', es: 'Ver sitio →' })}
-                </span>
+                <div className="aspect-[16/10] overflow-hidden">
+                  <img
+                    src={site.image}
+                    alt={t(site.name)}
+                    loading="lazy"
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 opacity-80 group-hover:opacity-100"
+                  />
+                </div>
+                <div className="p-6 sm:p-8">
+                  <span className="font-mono text-[10px] uppercase tracking-[0.4em] text-white/30 block mb-3">
+                    {t(site.role)}
+                  </span>
+                  <h3 className="font-sans font-black text-xl sm:text-2xl uppercase tracking-tighter group-hover:text-untold-orange transition-colors mb-2">
+                    {t(site.name)}
+                  </h3>
+                  <span className="font-mono text-[11px] text-untold-orange">
+                    {t({ en: 'View site →', es: 'Ver sitio →' })}
+                  </span>
+                </div>
               </a>
             ))}
           </div>
