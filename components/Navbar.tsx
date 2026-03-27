@@ -34,7 +34,7 @@ const Navbar: React.FC = () => {
               {/* Network Systems — Flagship */}
               <Link
                 to="/network-systems"
-                className="text-[11px] xl:text-[12px] font-mono font-bold uppercase tracking-[0.2em] xl:tracking-[0.3em] text-untold-orange hover:text-untold-black transition-colors duration-300 whitespace-nowrap"
+                className="text-[12px] font-mono font-bold uppercase tracking-[0.3em] text-untold-orange hover:text-untold-black transition-colors duration-300 whitespace-nowrap"
               >
                 {t({ en: 'Network Systems', es: 'Network Systems' })}
               </Link>
