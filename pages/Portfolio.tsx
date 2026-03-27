@@ -39,7 +39,7 @@ const Portfolio: React.FC = () => {
               {t({ en: 'SELECTED PROJECTS', es: 'PROYECTOS SELECCIONADOS' })}
             </p>
           </div>
-          <h1 className="font-sans font-black text-[clamp(3rem,8vw,120px)] leading-[0.8] mb-16 tracking-tighter uppercase">
+          <h1 className="font-sans font-black text-[clamp(2.2rem,8vw,120px)] leading-[0.8] mb-16 tracking-tighter uppercase">
             {t({
               en: 'What Has\nUntold.works Built?',
               es: '¿Qué Ha Construido\nUntold.works?'

@@ -44,7 +44,7 @@ const ContactPage: React.FC = () => {
               {t(content.eyebrow)}
             </p>
           </div>
-          <h1 className="font-sans font-black text-[clamp(3.5rem,10vw,140px)] leading-[0.8] mb-12 tracking-tighter uppercase max-w-5xl">
+          <h1 className="font-sans font-black text-[clamp(2.2rem,8vw,140px)] leading-[0.8] mb-12 tracking-tighter uppercase max-w-5xl">
             {t(content.headline)}
           </h1>
           <p className="text-2xl lg:text-4xl font-serif italic text-white/60 max-w-4xl border-l-4 border-untold-orange pl-6 sm:pl-10 leading-tight">

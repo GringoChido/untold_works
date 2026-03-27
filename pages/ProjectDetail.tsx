@@ -216,7 +216,7 @@ const ProjectDetail: React.FC = () => {
               ))}
             </div>
             {project.metrics && (
-              <div className="grid grid-cols-2 gap-12 pt-16 border-t border-white/10">
+              <div className="grid grid-cols-2 gap-6 sm:gap-12 pt-16 border-t border-white/10">
                 {project.metrics.map((metric, idx) => (
                   <div key={idx} className="group">
                     <span className="block font-mono text-[10px] uppercase tracking-[0.3em] text-white/30 mb-4 group-hover:text-untold-orange transition-colors">{t(metric.label)}</span>

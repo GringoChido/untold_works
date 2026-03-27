@@ -78,7 +78,7 @@ const AppLayout: React.FC = () => {
   const isStandalone = pathname === '/analog' || pathname === '/slides';
 
   return (
-    <div className="min-h-screen flex flex-col selection:bg-untold-orange selection:text-white">
+    <div className="min-h-screen flex flex-col selection:bg-untold-orange selection:text-white overflow-x-hidden">
       {!isStandalone && <Navbar />}
       <main className="flex-grow">
         <Suspense fallback={<PageLoader />}>

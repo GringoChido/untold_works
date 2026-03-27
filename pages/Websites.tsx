@@ -496,7 +496,7 @@ const Websites: React.FC = () => {
                 <p className="font-mono text-[10px] uppercase tracking-[0.5em] text-untold-orange font-bold mb-4">
                   {t({ en: 'AI HANDLES', es: 'LA IA SE ENCARGA DE' })}
                 </p>
-                <div className="grid grid-cols-3 gap-4">
+                <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
                   {[
                     { en: 'Speed & scale', es: 'Velocidad y escala' },
                     { en: 'Code & integrations (Claude)', es: 'Código e integraciones (Claude)' },
@@ -513,7 +513,7 @@ const Websites: React.FC = () => {
                 <p className="font-mono text-[10px] uppercase tracking-[0.5em] text-untold-orange font-bold mb-4">
                   {t({ en: 'THE CREATIVE EYE', es: 'EL OJO CREATIVO' })}
                 </p>
-                <div className="grid grid-cols-3 gap-4">
+                <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
                   {[
                     { en: 'Brand strategy & voice', es: 'Estrategia de marca y voz' },
                     { en: 'Photography & video direction', es: 'Dirección de fotografía y video' },
