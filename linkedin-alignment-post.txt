@@ -1,0 +1,24 @@
+I keep having the same conversation with companies who think they need better software.
+
+They don't. They have an alignment problem.
+
+Here's what I actually see when I start digging:
+
+Product data in six spreadsheets across three departments. Sales in Monterrey working off a price list from four months ago. Marketing promoting a product that ops quietly killed last week. A partner sent 12 leads last month and nobody followed up on 9 of them. Not because they didn't care. Because nobody knew they existed.
+
+You can drop a $200K platform on top of that and all you get is an expensive mess.
+
+The problem isn't the tools. It's that nobody designed how information moves between people, teams, locations, and partners.
+
+Here's what usually happened. The founder used to be the alignment layer. They knew everything, talked to everyone, caught the gaps. But then the company grew. Five people became fifty. One location became seven. The habits that worked stopped working. So everyone started buying tools to fill the void.
+
+Sales picked one thing. Ops picked another. Marketing ended up with three tools and two of them do the same job. Now you've got more software and less alignment than before. I've seen companies running 15+ tools and still losing leads, shipping wrong specs, and spending hours every week on reporting that should take minutes.
+
+Alignment isn't a product you buy. It's a system you design. It answers questions like: Where does the truth live? How does communication actually flow? How do leads move from first contact to close? What can everyone see without waiting two weeks for someone to build an Excel report?
+
+When those things are designed intentionally, the business works as one. When they're not, it doesn't matter how good the software is.
+
+Wrote the whole thing out here:
+https://untold.works/blog/alignment-problem-not-software-problem
+
+#OperationsStrategy #BusinessAlignment #DistributedBusiness

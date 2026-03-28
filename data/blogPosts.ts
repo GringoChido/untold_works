@@ -1441,4 +1441,93 @@ export const blogPosts: BlogPost[] = [
     },
     image: '/blog/n8n-vs-zapier-comparison.jpg',
   },
+  // ──────────────────────────────────────────────
+  // AI Strategy
+  // ──────────────────────────────────────────────
+  {
+    slug: 'alignment-problem-not-software-problem',
+    title: {
+      en: 'Most Companies Don\'t Have a Software Problem. They Have an Alignment Problem.',
+      es: 'La Mayoría de las Empresas No Tienen un Problema de Software. Tienen un Problema de Alineación.',
+    },
+    date: '2026-03-27',
+    author: 'Joshua Semolik',
+    category: 'ai-strategy',
+    pillar: 'all',
+    excerpt: {
+      en: 'You don\'t need better software. You need your information to actually flow between the people, teams, and partners who depend on it. That\'s an alignment problem.',
+      es: 'No necesitas mejor software. Necesitas que tu información fluya entre las personas, equipos y socios que dependen de ella. Eso es un problema de alineación.',
+    },
+    content: {
+      en: `<p>I keep having the same conversation. A company reaches out because they need "better software." They've got a list. New CRM. Better project management tool. Maybe a custom dashboard. They've already done the research, compared pricing tiers, read the G2 reviews. They're ready to buy.</p>
+<p>And almost every time, the software isn't the problem.</p>
+
+<h2>The Real Pattern</h2>
+<p>Here's what I actually see when I start digging. Product data lives in six different spreadsheets across three departments. The sales team in Monterrey is working off a price list from four months ago. Marketing just launched a campaign for a product that ops quietly discontinued last week. The partner in Guadalajara sent 12 leads last month and nobody followed up on 9 of them. Not because they didn't care. Because nobody knew they existed.</p>
+<p>None of that gets fixed by buying new software. You could drop a $200K platform on top of that mess and you'd just have an expensive mess.</p>
+<p>That's an alignment problem. It's about how information moves between people, teams, locations, and partners. Or, more accurately, how it doesn't move.</p>
+
+<h2>Why This Keeps Happening</h2>
+<p>Companies grow fast. When you go from 5 people to 50, or from one location to seven, the communication habits that used to work just stop working. The founder used to be the alignment layer. They knew everything, talked to everyone, caught the gaps. At scale, that breaks. So people start buying tools to fill the void.</p>
+<p>But the tools don't talk to each other. Each department picks its own. Sales uses one thing. Ops uses another. Marketing has three tools and two of them do the same job. Now you've got more software and less alignment than before.</p>
+<p>I've seen companies running 15+ tools and still losing leads, shipping wrong specs, and spending hours every week on reporting that should take minutes. The tools aren't broken. The information flow is.</p>
+
+<h2>What Alignment Actually Looks Like</h2>
+<p>Alignment isn't a product you buy. It's a system you design. It answers four questions:</p>
+<p><strong>Where does the truth live?</strong> Every piece of product data, every price list, every spec sheet needs a single source. Not a folder someone shares sometimes. An actual system that everyone pulls from and that updates everywhere when it changes.</p>
+<p><strong>How does communication flow?</strong> Not "we use Slack" or "we have WhatsApp groups." I mean, when a lead comes in, what happens? When a product changes, who gets told and in what order? When a partner needs support, where does that request go and how fast does it get answered? That's a designed flow, not a default one.</p>
+<p><strong>How do leads move?</strong> From first contact to closed deal, what's the path? Who owns each step? How long should each step take? And when something falls through the cracks, how does the system catch it before a human has to notice?</p>
+<p><strong>What can everyone see?</strong> Can sales see what marketing is doing? Can partners see their own pipeline? Can leadership see performance across the network without waiting two weeks for someone to build a report in Excel?</p>
+<p>When those four things are designed intentionally, the business works as one. When they're not, it doesn't matter how good the software is.</p>
+
+<h2>This Is What We Build at Untold Works</h2>
+<p>I didn't start Untold Works to sell software subscriptions or license another platform. I started it because I kept watching companies throw money at tools while the real problem sat right underneath. The information wasn't flowing. The teams weren't aligned. The systems weren't designed, they were accumulated.</p>
+<p>We build alignment infrastructure. Product information systems. Communication systems. Lead routing. Sales visibility. All of it designed around how your business actually operates, not how a software vendor thinks it should.</p>
+<p>We build it on tools you already have when possible. We hand you the keys when it's done. Full documentation, video training, complete ownership. No lock-in. No recurring fees. No "call us if you want to change anything."</p>
+<p>Because the goal isn't to make you dependent on us. The goal is to make your business work as one.</p>
+
+<h2>The Question to Ask Yourself</h2>
+<p>If you're thinking about buying new software right now, pause for a second. Ask yourself: is the problem really that we don't have the right tool? Or is the problem that our information doesn't flow the way it should?</p>
+<p>If a lead comes in and nobody follows up for a week, that's not a CRM problem. That's a routing problem. If your partners are working off outdated product info, that's not a database problem. That's a distribution problem. If reporting takes two weeks, that's not a dashboard problem. That's a visibility problem.</p>
+<p>These are alignment problems. And they need alignment solutions.</p>
+<p>If that sounds like what you're dealing with, that's exactly what we do. Check out how we approach it at <a href="/">untold.works</a>, or just <a href="/contact">reach out</a>. We'll tell you what we actually think, even if the answer is "you don't need us."</p>
+
+<p><em>Joshua is the founder of Untold Works, a creative technology agency in San Miguel de Allende, Mexico.</em></p>`,
+      es: `<p>Sigo teniendo la misma conversación. Una empresa nos contacta porque necesita "mejor software." Tienen una lista. Nuevo CRM. Mejor herramienta de gestión de proyectos. Quizás un dashboard personalizado. Ya investigaron, compararon precios, leyeron las reseñas en G2. Están listos para comprar.</p>
+<p>Y casi siempre, el software no es el problema.</p>
+
+<h2>El Patrón Real</h2>
+<p>Esto es lo que realmente veo cuando empiezo a investigar. Los datos de producto viven en seis hojas de cálculo diferentes en tres departamentos. El equipo de ventas en Monterrey trabaja con una lista de precios de hace cuatro meses. Marketing acaba de lanzar una campaña para un producto que operaciones descontinuó la semana pasada sin avisar. El socio en Guadalajara envió 12 prospectos el mes pasado y nadie le dio seguimiento a 9 de ellos. No porque no les importara. Porque nadie sabía que existían.</p>
+<p>Nada de eso se arregla comprando nuevo software. Podrías invertir $200K en una plataforma sobre ese desorden y solo tendrías un desorden caro.</p>
+<p>Eso es un problema de alineación. Se trata de cómo la información se mueve entre personas, equipos, ubicaciones y socios. O, más exactamente, cómo no se mueve.</p>
+
+<h2>Por Qué Esto Sigue Pasando</h2>
+<p>Las empresas crecen rápido. Cuando pasas de 5 personas a 50, o de una ubicación a siete, los hábitos de comunicación que funcionaban simplemente dejan de funcionar. El fundador solía ser la capa de alineación. Sabía todo, hablaba con todos, detectaba las brechas. A escala, eso se rompe. Entonces la gente empieza a comprar herramientas para llenar el vacío.</p>
+<p>Pero las herramientas no se comunican entre sí. Cada departamento elige la suya. Ventas usa una cosa. Operaciones usa otra. Marketing tiene tres herramientas y dos hacen lo mismo. Ahora tienes más software y menos alineación que antes.</p>
+<p>He visto empresas usando más de 15 herramientas y aún perdiendo prospectos, enviando especificaciones incorrectas, y gastando horas cada semana en reportes que deberían tomar minutos. Las herramientas no están rotas. El flujo de información sí.</p>
+
+<h2>Cómo Se Ve la Alineación en la Práctica</h2>
+<p>La alineación no es un producto que compras. Es un sistema que diseñas. Responde cuatro preguntas:</p>
+<p><strong>¿Dónde vive la verdad?</strong> Cada dato de producto, cada lista de precios, cada ficha técnica necesita una fuente única. No una carpeta que alguien comparte de vez en cuando. Un sistema real del que todos obtienen información y que se actualiza en todas partes cuando cambia.</p>
+<p><strong>¿Cómo fluye la comunicación?</strong> No "usamos Slack" o "tenemos grupos de WhatsApp." Me refiero a: cuando llega un prospecto, ¿qué pasa? Cuando un producto cambia, ¿a quién se le avisa y en qué orden? Cuando un socio necesita soporte, ¿a dónde va esa solicitud y qué tan rápido se responde? Eso es un flujo diseñado, no uno por defecto.</p>
+<p><strong>¿Cómo se mueven los prospectos?</strong> Desde el primer contacto hasta el cierre, ¿cuál es el camino? ¿Quién es responsable de cada paso? ¿Cuánto debería tomar cada paso? Y cuando algo se cae entre las grietas, ¿cómo lo detecta el sistema antes de que un humano tenga que darse cuenta?</p>
+<p><strong>¿Qué puede ver cada quien?</strong> ¿Ventas puede ver lo que hace marketing? ¿Los socios pueden ver su propio pipeline? ¿El liderazgo puede ver el rendimiento en toda la red sin esperar dos semanas a que alguien arme un reporte en Excel?</p>
+<p>Cuando esas cuatro cosas se diseñan intencionalmente, el negocio opera como uno solo. Cuando no, no importa qué tan bueno sea el software.</p>
+
+<h2>Esto Es Lo Que Construimos en Untold Works</h2>
+<p>No fundé Untold Works para vender suscripciones de software ni licenciar otra plataforma. Lo fundé porque seguía viendo empresas gastar dinero en herramientas mientras el verdadero problema estaba justo debajo. La información no fluía. Los equipos no estaban alineados. Los sistemas no estaban diseñados, estaban acumulados.</p>
+<p>Construimos infraestructura de alineación. Sistemas de información de producto. Sistemas de comunicación. Enrutamiento de prospectos. Visibilidad de ventas. Todo diseñado alrededor de cómo tu negocio realmente opera, no cómo un vendedor de software cree que debería.</p>
+<p>Lo construimos sobre las herramientas que ya tienes cuando es posible. Te entregamos las llaves cuando terminamos. Documentación completa, capacitación en video, propiedad total. Sin dependencia. Sin cuotas recurrentes. Sin "llámanos si quieres cambiar algo."</p>
+<p>Porque el objetivo no es hacerte dependiente de nosotros. El objetivo es que tu negocio funcione como uno solo.</p>
+
+<h2>La Pregunta Que Debes Hacerte</h2>
+<p>Si estás pensando en comprar nuevo software ahora mismo, detente un segundo. Pregúntate: ¿el problema realmente es que no tenemos la herramienta correcta? ¿O el problema es que nuestra información no fluye como debería?</p>
+<p>Si llega un prospecto y nadie le da seguimiento en una semana, eso no es un problema de CRM. Es un problema de enrutamiento. Si tus socios trabajan con información de producto desactualizada, eso no es un problema de base de datos. Es un problema de distribución. Si los reportes toman dos semanas, eso no es un problema de dashboard. Es un problema de visibilidad.</p>
+<p>Estos son problemas de alineación. Y necesitan soluciones de alineación.</p>
+<p>Si eso suena a lo que estás enfrentando, eso es exactamente lo que hacemos. Mira cómo lo abordamos en <a href="/">untold.works</a>, o simplemente <a href="/contact">contáctanos</a>. Te diremos lo que realmente pensamos, incluso si la respuesta es "no nos necesitas."</p>
+
+<p><em>Joshua es el fundador de Untold Works, una agencia de tecnología creativa en San Miguel de Allende, México.</em></p>`,
+    },
+    image: '/blog/alignment-problem-not-software.jpg',
+  },
 ];
