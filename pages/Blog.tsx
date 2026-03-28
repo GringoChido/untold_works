@@ -98,7 +98,7 @@ const Blog: React.FC = () => {
 
   const groupedByCategory = useMemo(() => {
     const groups: { key: BlogCategory; label: { en: string; es: string }; posts: typeof blogPosts }[] = [];
-    const catOrder: BlogCategory[] = ['build-notes', 'aeo-search', 'ai-for-business', 'creative-technology', 'case-studies'];
+    const catOrder: BlogCategory[] = ['build-notes', 'aeo-search', 'ai-for-business', 'creative-technology', 'ai-strategy', 'case-studies'];
 
     for (const cat of catOrder) {
       const catPosts = filtered.filter(p => p.category === cat);
