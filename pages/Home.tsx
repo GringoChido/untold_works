@@ -96,13 +96,13 @@ const Home: React.FC = () => {
           loop
           playsInline
           poster="/video/hero-home-poster.webp"
-          className="absolute inset-0 w-full h-full object-cover opacity-40"
+          className="absolute inset-0 w-full h-full object-cover opacity-60"
         >
           <source src="/video/hero-home-1080p.webm" type="video/webm" />
           <source src="/video/hero-home-1080p.mp4" type="video/mp4" />
         </video>
         {/* Dark overlay */}
-        <div className="absolute inset-0 bg-black/50" />
+        <div className="absolute inset-0 bg-black/30" />
         {/* Content */}
         <div className="relative w-full px-5 sm:px-10 pt-24 sm:pt-40 lg:pt-52 pb-12 sm:pb-16">
         <div className="max-w-[1440px] mx-auto w-full">
@@ -236,15 +236,21 @@ const Home: React.FC = () => {
               ))}
             </div>
 
-            <div className="flex flex-col justify-center space-y-8">
-              <div className="border-l-4 border-untold-orange pl-6 sm:pl-10">
+            <div className="relative flex flex-col justify-center space-y-8">
+              <img
+                src="/images/whatsapp-logo.png"
+                alt=""
+                aria-hidden="true"
+                className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[340px] sm:w-[440px] lg:w-[520px] opacity-[0.12] pointer-events-none select-none"
+              />
+              <div className="relative border-l-4 border-untold-orange pl-6 sm:pl-10">
                 <p className="font-serif italic text-xl sm:text-2xl text-untold-black leading-[1.15] tracking-tight">
                   {t(i18n.informationFlow.principle)}
                 </p>
               </div>
               <Link
                 to="/mexico"
-                className="inline-flex items-center space-x-4 group self-start"
+                className="relative inline-flex items-center space-x-4 group self-start"
               >
                 <span className="font-sans font-black text-base sm:text-lg uppercase tracking-tighter text-untold-orange group-hover:text-untold-black transition-colors">
                   {t({ en: 'See How This Works in Mexico', es: 'Cómo Funciona Esto en México' })}

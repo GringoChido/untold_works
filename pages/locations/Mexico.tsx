@@ -104,44 +104,44 @@ const Mexico: React.FC = () => {
   return (
     <div className="bg-untold-beige font-serif text-untold-black">
 
-      {/* ── Hero ── */}
-      <section className="bg-untold-black text-white px-5 sm:px-10 py-20 sm:py-32 lg:py-48 border-b border-white/10">
-        <div className="max-w-[1440px] mx-auto">
-          <div className="mb-8">
-            <Breadcrumbs
-              variant="dark"
-              crumbs={[
-                { label: { en: 'Home', es: 'Inicio' }, path: '/' },
-                { label: { en: 'Mexico', es: 'México' } },
-              ]}
-            />
-          </div>
-          <div className="flex items-center space-x-4 mb-14">
-            <span className="w-3 h-3 rounded-full bg-untold-orange animate-pulse"></span>
-            <p className="font-mono text-[11px] lg:text-[13px] uppercase tracking-[0.6em] font-bold text-white/40">
-              {t(i18n.mexicoPage.hero.eyebrow)}
+      {/* ── Hero with Video Background ── */}
+      <section className="relative bg-untold-black text-white overflow-hidden border-b border-white/10">
+        <video
+          autoPlay
+          muted
+          loop
+          playsInline
+          className="absolute inset-0 w-full h-full object-cover opacity-60"
+        >
+          <source src="/video/mexico-hero.mp4" type="video/mp4" />
+        </video>
+        <div className="absolute inset-0 bg-black/30" />
+        <div className="relative px-5 sm:px-10 py-20 sm:py-32 lg:py-48">
+          <div className="max-w-[1440px] mx-auto">
+            <div className="mb-8">
+              <Breadcrumbs
+                variant="dark"
+                crumbs={[
+                  { label: { en: 'Home', es: 'Inicio' }, path: '/' },
+                  { label: { en: 'Mexico', es: 'México' } },
+                ]}
+              />
+            </div>
+            <div className="flex items-center space-x-4 mb-14">
+              <span className="w-3 h-3 rounded-full bg-untold-orange animate-pulse"></span>
+              <p className="font-mono text-[11px] lg:text-[13px] uppercase tracking-[0.6em] font-bold text-white/40">
+                {t(i18n.mexicoPage.hero.eyebrow)}
+              </p>
+            </div>
+
+            <h1 className="font-sans font-black text-[clamp(2.2rem,7vw,100px)] leading-[0.85] mb-8 tracking-tighter uppercase max-w-5xl drop-shadow-[0_2px_20px_rgba(0,0,0,0.5)]">
+              {t(i18n.mexicoPage.hero.headline)}
+            </h1>
+
+            <p className="text-lg sm:text-xl lg:text-2xl font-serif italic text-white/60 max-w-4xl leading-relaxed border-l-4 border-untold-orange pl-6 sm:pl-10 drop-shadow-[0_1px_10px_rgba(0,0,0,0.4)]">
+              {t(i18n.mexicoPage.hero.tagline)}
             </p>
           </div>
-
-          <h1 className="font-sans font-black text-[clamp(2.2rem,7vw,100px)] leading-[0.85] mb-8 tracking-tighter uppercase max-w-5xl">
-            {t(i18n.mexicoPage.hero.headline)}
-          </h1>
-
-          <p className="text-lg sm:text-xl lg:text-2xl font-serif italic text-white/60 max-w-4xl leading-relaxed border-l-4 border-untold-orange pl-6 sm:pl-10">
-            {t(i18n.mexicoPage.hero.tagline)}
-          </p>
-        </div>
-      </section>
-
-      {/* ── Hero Image ── */}
-      <section className="border-b border-untold-border">
-        <div className="w-full aspect-[21/9] overflow-hidden">
-          <img
-            src="/images/mexico-hero.jpg"
-            alt={t({ en: 'Business operations across Mexico', es: 'Operaciones de negocio en México' })}
-            className="w-full h-full object-cover"
-            loading="eager"
-          />
         </div>
       </section>
 

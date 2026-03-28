@@ -139,7 +139,18 @@ const NetworkSystems: React.FC = () => {
       {/* ═══════════════════════════════════════════════════════════
           HERO — The AI Identity Imperative
       ═══════════════════════════════════════════════════════════ */}
-      <section className="bg-untold-black px-5 sm:px-10 pt-12 sm:pt-20 pb-20 sm:pb-32 lg:pb-48">
+      <section className="relative bg-untold-black overflow-hidden">
+        <video
+          autoPlay
+          muted
+          loop
+          playsInline
+          className="absolute inset-0 w-full h-full object-cover opacity-60"
+        >
+          <source src="/video/network-systems-hero.mp4" type="video/mp4" />
+        </video>
+        <div className="absolute inset-0 bg-black/30" />
+        <div className="relative px-5 sm:px-10 pt-12 sm:pt-20 pb-20 sm:pb-32 lg:pb-48">
         <div className="max-w-[1440px] mx-auto">
           <Breadcrumbs
             crumbs={[
@@ -198,6 +209,7 @@ const NetworkSystems: React.FC = () => {
               </Link>
             </div>
           </div>
+        </div>
         </div>
       </section>
 
