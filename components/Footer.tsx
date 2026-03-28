@@ -49,7 +49,7 @@ const Footer: React.FC = () => {
               <span className="font-mono text-[10px] uppercase tracking-[0.6em] text-white/20 font-bold mb-4">NAV_DIRECTORY</span>
               <Link
                 to="/network-systems"
-                className="text-2xl sm:text-3xl lg:text-4xl font-sans font-black uppercase tracking-tighter text-untold-orange hover:text-white transition-all duration-300 leading-none whitespace-nowrap"
+                className="text-2xl sm:text-3xl lg:text-4xl font-sans font-black uppercase tracking-tighter text-untold-orange hover:text-white transition-all duration-300 leading-none"
               >
                 {t({ en: 'Network Systems', es: 'Network Systems' })}
               </Link>

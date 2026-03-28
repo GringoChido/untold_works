@@ -12,8 +12,8 @@ const SalesEnablement: React.FC = () => {
 
   usePageMeta(
     {
-      en: 'Sales Enablement — Digital Sales Tools for Dealer Networks | Untold.works',
-      es: 'Habilitación de Ventas — Herramientas Digitales de Ventas para Redes de Distribuidores | Untold.works'
+      en: 'Sales Enablement — Digital Tools for Dealer Networks | Untold.works',
+      es: 'Habilitación de Ventas — Herramientas Digitales para Distribuidores | Untold.works'
     },
     {
       en: 'Deploy digital sales tools across your dealer network. Product configurators, comparison tools, financing calculators, quote flows, and battle cards — updated automatically from headquarters.',
@@ -351,7 +351,7 @@ const SalesEnablement: React.FC = () => {
                   </span>
                 </button>
                 {openFaq === idx && (
-                  <div className="pb-8 pr-12">
+                  <div className="pb-8 pr-0 sm:pr-12">
                     <p className="text-base font-serif text-untold-gray leading-relaxed">
                       {t(faq.a)}
                     </p>

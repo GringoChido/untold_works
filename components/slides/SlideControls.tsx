@@ -62,7 +62,7 @@ const SlideControls: React.FC<Props> = ({
             {/* Music toggle */}
             <button
               onClick={onToggleMusic}
-              className={`${btnBase} transition-colors flex-shrink-0`}
+              className={`${btnBase} transition-colors flex-shrink-0 min-w-[44px] min-h-[44px] flex items-center justify-center`}
               title={musicPlaying ? 'Mute music' : 'Play music'}
             >
               {musicPlaying ? (
@@ -92,7 +92,7 @@ const SlideControls: React.FC<Props> = ({
 
           {/* Center — playback controls */}
           <div className="flex items-center gap-2 sm:gap-4">
-            <button onClick={onPrev} className={`${btnBase} transition-colors p-2`} title="Previous">
+            <button onClick={onPrev} className={`${btnBase} transition-colors min-w-[44px] min-h-[44px] flex items-center justify-center`} title="Previous">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
                 <path d="M6 6h2v12H6zm3.5 6l8.5 6V6z" />
               </svg>
@@ -100,7 +100,7 @@ const SlideControls: React.FC<Props> = ({
 
             <button
               onClick={onTogglePlay}
-              className={`${btnBase} transition-colors p-2 sm:p-3 border ${isLight ? 'border-neutral-300' : 'border-white/20'} rounded-full`}
+              className={`${btnBase} transition-colors min-w-[44px] min-h-[44px] flex items-center justify-center border ${isLight ? 'border-neutral-300' : 'border-white/20'} rounded-full`}
               title={playing ? 'Pause slideshow' : 'Play slideshow'}
             >
               {playing ? (
@@ -115,7 +115,7 @@ const SlideControls: React.FC<Props> = ({
               )}
             </button>
 
-            <button onClick={onNext} className={`${btnBase} transition-colors p-2`} title="Next">
+            <button onClick={onNext} className={`${btnBase} transition-colors min-w-[44px] min-h-[44px] flex items-center justify-center`} title="Next">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
                 <path d="M6 18l8.5-6L6 6v12zM16 6v12h2V6h-2z" />
               </svg>
@@ -146,7 +146,7 @@ const SlideControls: React.FC<Props> = ({
             {/* Close */}
             <button
               onClick={onClose}
-              className={`${btnBase} transition-colors p-2`}
+              className={`${btnBase} transition-colors min-w-[44px] min-h-[44px] flex items-center justify-center`}
               title="Close (Esc)"
             >
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">

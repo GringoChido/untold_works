@@ -12,8 +12,8 @@ const ReviewReputation: React.FC = () => {
 
   usePageMeta(
     {
-      en: 'Review & Reputation Management — Automated Review Generation | Untold.works',
-      es: 'Gestión de Reseñas y Reputación — Generación Automatizada de Reseñas | Untold.works'
+      en: 'Review & Reputation Management — Automated Reviews | Untold.works',
+      es: 'Gestión de Reseñas y Reputación — Reviews Automatizados | Untold.works'
     },
     {
       en: 'Automated review generation, cross-platform monitoring, AI-powered response drafting, and reputation scoring across every location in your network. Google, Yelp, and industry platforms.',
@@ -334,7 +334,7 @@ const ReviewReputation: React.FC = () => {
                   </span>
                 </button>
                 {openFaq === idx && (
-                  <div className="pb-8 pr-12">
+                  <div className="pb-8 pr-0 sm:pr-12">
                     <p className="text-base font-serif text-untold-gray leading-relaxed">
                       {t(faq.a)}
                     </p>

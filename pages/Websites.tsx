@@ -12,12 +12,12 @@ const Websites: React.FC = () => {
 
   usePageMeta(
     {
-      en: 'Website Design & Rebuild — AI-Native Websites for 2026 | Untold.works',
-      es: 'Diseño y Reconstrucción Web — Sitios Web AI-Nativos para 2026 | Untold.works'
+      en: 'AI-Native Website Design & Rebuild | Untold.works',
+      es: 'Diseño y Reconstrucción Web AI-Nativo | Untold.works'
     },
     {
-      en: 'Custom website design and rebuild for businesses in Mexico and the US. Brand-first, mobile-ready, bilingual, SEO and AEO optimized. Built with AI, guided by 25 years of creative direction. The first AEO agency in Mexico.',
-      es: 'Diseño y reconstrucción web personalizada para negocios en México y EE.UU. Marca primero, mobile-ready, bilingüe, optimizado para SEO y AEO. Construido con IA, guiado por 25 años de dirección creativa. La primera agencia de AEO en México.'
+      en: 'Custom website design for businesses in Mexico and the US. Brand-first, mobile-ready, bilingual, SEO and AEO optimized. Built with AI, guided by 25 years of creative direction.',
+      es: 'Diseño web personalizado para negocios en México y EE.UU. Marca primero, mobile-ready, bilingüe, SEO y AEO optimizado. Construido con IA, guiado por 25 años de dirección creativa.'
     },
     {
       path: '/websites',

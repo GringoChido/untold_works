@@ -11,12 +11,12 @@ const SocialMedia: React.FC = () => {
 
   usePageMeta(
     {
-      en: 'Social Media Management & Strategy — Content, Analytics & Growth | Untold.works',
-      es: 'Gestión y Estrategia de Redes Sociales — Contenido, Analítica y Crecimiento | Untold.works'
+      en: 'Social Media Management & Content Strategy | Untold.works',
+      es: 'Gestión de Redes Sociales y Estrategia de Contenido | Untold.works'
     },
     {
-      en: 'Social media strategy, content creation, analytics, and platform management for businesses in Mexico and the US. Instagram, Facebook, LinkedIn, and TikTok. Bilingual social media that drives real business results.',
-      es: 'Estrategia de redes sociales, creación de contenido, analítica y gestión de plataformas para negocios en México y EE.UU. Instagram, Facebook, LinkedIn y TikTok. Redes sociales bilingües que generan resultados reales.'
+      en: 'Social media strategy, content creation, and management for businesses in Mexico and the US. Instagram, Facebook, LinkedIn, and TikTok. Bilingual content that drives real results.',
+      es: 'Estrategia de redes sociales, creación de contenido y gestión para negocios en México y EE.UU. Instagram, Facebook, LinkedIn y TikTok. Contenido bilingüe que genera resultados reales.'
     },
     {
       path: '/social-media',

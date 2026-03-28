@@ -12,12 +12,12 @@ const Ads: React.FC = () => {
 
   usePageMeta(
     {
-      en: 'Paid Advertising — Google Ads, Meta Ads & LinkedIn Ads | Untold.works',
-      es: 'Publicidad Pagada — Google Ads, Meta Ads y LinkedIn Ads | Untold.works'
+      en: 'Google Ads, Meta Ads & LinkedIn Ads Management | Untold.works',
+      es: 'Google Ads, Meta Ads y LinkedIn Ads | Untold.works'
     },
     {
-      en: 'Paid advertising management for businesses in Mexico and the US. Google Ads, Facebook Ads, Instagram Ads, and LinkedIn Ads. Bilingual campaigns, conversion tracking, and ROI-focused management.',
-      es: 'Gestión de publicidad pagada para negocios en México y EE.UU. Google Ads, Facebook Ads, Instagram Ads y LinkedIn Ads. Campañas bilingües, seguimiento de conversiones y gestión enfocada en ROI.'
+      en: 'Paid advertising management for businesses in Mexico and the US. Google Ads, Facebook Ads, and LinkedIn Ads. Bilingual campaigns, conversion tracking, and ROI-focused management.',
+      es: 'Gestión de publicidad pagada para negocios en México y EE.UU. Google Ads, Facebook Ads y LinkedIn Ads. Campañas bilingües, seguimiento de conversiones y gestión enfocada en ROI.'
     },
     {
       path: '/ads',

@@ -235,9 +235,9 @@ const SmallBusiness: React.FC = () => {
         <div className="max-w-[1440px] mx-auto">
           <div className="flex items-center space-x-4 mb-16">
             <span className="w-2.5 h-2.5 rounded-full bg-untold-black"></span>
-            <h2 className="font-mono text-[13px] uppercase tracking-[0.6em] font-bold text-untold-black/40">
+            <p className="font-mono text-[13px] uppercase tracking-[0.6em] font-bold text-untold-black/40">
               {t({ en: 'WHO THIS IS FOR', es: 'PARA QUIÉN ES ESTO' })}
-            </h2>
+            </p>
           </div>
 
           <h3 className="font-sans font-black text-3xl sm:text-5xl uppercase tracking-tighter mb-12">
@@ -267,9 +267,9 @@ const SmallBusiness: React.FC = () => {
         <div className="max-w-[1440px] mx-auto">
           <div className="flex items-center space-x-4 mb-16">
             <span className="w-2.5 h-2.5 rounded-full bg-untold-orange"></span>
-            <h2 className="font-mono text-[13px] uppercase tracking-[0.6em] font-bold text-untold-black/40">
+            <p className="font-mono text-[13px] uppercase tracking-[0.6em] font-bold text-untold-black/40">
               {t({ en: 'THE PROBLEM', es: 'EL PROBLEMA' })}
-            </h2>
+            </p>
           </div>
 
           <h3 className="font-sans font-black text-3xl sm:text-5xl uppercase tracking-tighter mb-16 max-w-4xl leading-[0.85]">
@@ -301,9 +301,9 @@ const SmallBusiness: React.FC = () => {
         <div className="max-w-[1440px] mx-auto">
           <div className="flex items-center space-x-4 mb-16">
             <span className="w-2.5 h-2.5 rounded-full bg-untold-orange"></span>
-            <h2 className="font-mono text-[13px] uppercase tracking-[0.6em] font-bold text-untold-black/40">
+            <p className="font-mono text-[13px] uppercase tracking-[0.6em] font-bold text-untold-black/40">
               {t({ en: "WHAT'S INCLUDED", es: 'QUÉ INCLUYE' })}
-            </h2>
+            </p>
           </div>
           <h3 className="font-sans font-black text-3xl sm:text-5xl uppercase tracking-tighter mb-12">
             {t({ en: 'Your AI-Powered Business Platform', es: 'Tu Plataforma de Negocio Impulsada por IA' })}
@@ -380,9 +380,9 @@ const SmallBusiness: React.FC = () => {
         <div className="max-w-[900px] mx-auto">
           <div className="flex items-center space-x-4 mb-16">
             <span className="w-2.5 h-2.5 rounded-full bg-untold-orange"></span>
-            <h2 className="font-mono text-[13px] uppercase tracking-[0.6em] font-bold text-untold-black/40">
+            <p className="font-mono text-[13px] uppercase tracking-[0.6em] font-bold text-untold-black/40">
               {t({ en: 'FREQUENTLY ASKED', es: 'PREGUNTAS FRECUENTES' })}
-            </h2>
+            </p>
           </div>
 
           <h3 className="font-sans font-black text-3xl sm:text-5xl uppercase tracking-tighter mb-16 leading-[0.85]">
@@ -419,7 +419,7 @@ const SmallBusiness: React.FC = () => {
                   </h4>
                   <span className="text-2xl text-untold-orange shrink-0 group-open:rotate-45 transition-transform">+</span>
                 </summary>
-                <p className="pb-8 text-lg font-serif text-untold-gray leading-relaxed pr-12">
+                <p className="pb-8 text-lg font-serif text-untold-gray leading-relaxed pr-0 sm:pr-12">
                   {t(faq.a)}
                 </p>
               </details>
@@ -433,9 +433,9 @@ const SmallBusiness: React.FC = () => {
         <div className="max-w-[1440px] mx-auto">
           <div className="flex items-center space-x-4 mb-16">
             <span className="w-2.5 h-2.5 rounded-full bg-untold-orange"></span>
-            <h2 className="font-mono text-[13px] uppercase tracking-[0.6em] font-bold text-untold-black/40">
+            <p className="font-mono text-[13px] uppercase tracking-[0.6em] font-bold text-untold-black/40">
               {t({ en: 'CLIENT RESULT', es: 'RESULTADO DE CLIENTE' })}
-            </h2>
+            </p>
           </div>
           <div className="max-w-3xl">
             <span className="text-untold-orange text-6xl font-serif leading-none block mb-6">&ldquo;</span>
@@ -460,9 +460,9 @@ const SmallBusiness: React.FC = () => {
             <div>
               <div className="flex items-center space-x-4 mb-10">
                 <span className="w-2.5 h-2.5 rounded-full bg-untold-orange"></span>
-                <h2 className="font-mono text-[13px] uppercase tracking-[0.6em] font-bold text-white/40">
+                <p className="font-mono text-[13px] uppercase tracking-[0.6em] font-bold text-white/40">
                   {t({ en: 'GET STARTED', es: 'COMENZAR' })}
-                </h2>
+                </p>
               </div>
               <h3 className="font-sans font-black text-3xl sm:text-5xl uppercase tracking-tighter mb-6">
                 {t({ en: 'Tell Us About Your Business', es: 'Cuéntanos Sobre Tu Negocio' })}

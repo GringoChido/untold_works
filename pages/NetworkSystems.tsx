@@ -10,12 +10,12 @@ const NetworkSystems: React.FC = () => {
 
   usePageMeta(
     {
-      en: 'Network Systems — AI-Powered Business Systems for Any Size | Untold.works',
-      es: 'Network Systems — Sistemas de Negocio con IA para Cualquier Tamaño | Untold.works',
+      en: 'Network Systems — AI Business Systems for Any Scale | Untold.works',
+      es: 'Network Systems — Sistemas de Negocio con IA a Cualquier Escala | Untold.works',
     },
     {
-      en: 'AI-powered digital systems that scale from one location to one hundred. Websites, SEO/AEO/GEO, dashboards, sales enablement, and mobile apps — built for you, owned by you. Establish your AI identity before your competitors do.',
-      es: 'Sistemas digitales con IA que escalan de una ubicación a cien. Sitios web, SEO/AEO/GEO, dashboards, habilitación de ventas y apps móviles — construidos para ti, propiedad tuya. Establece tu identidad de IA antes que tus competidores.',
+      en: 'AI-powered digital systems that scale from one location to one hundred. Websites, SEO/AEO, dashboards, sales enablement, and mobile apps — built for you, owned by you.',
+      es: 'Sistemas digitales con IA que escalan de una ubicación a cien. Sitios web, SEO/AEO, dashboards, habilitación de ventas y apps móviles — construidos para ti, propiedad tuya.',
     },
     {
       path: '/network-systems',
@@ -625,7 +625,7 @@ const NetworkSystems: React.FC = () => {
                   </span>
                 </button>
                 {openFaq === idx && (
-                  <div className="pb-8 pr-12">
+                  <div className="pb-8 pr-0 sm:pr-12">
                     <p className="text-base font-serif text-untold-gray leading-relaxed">
                       {t(faq.a)}
                     </p>

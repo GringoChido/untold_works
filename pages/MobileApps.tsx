@@ -12,8 +12,8 @@ const MobileApps: React.FC = () => {
 
   usePageMeta(
     {
-      en: 'Mobile Applications — Customer & Internal Apps for Business Networks | Untold.works',
-      es: 'Aplicaciones Móviles — Apps para Clientes e Internas para Redes de Negocios | Untold.works'
+      en: 'Mobile Applications for Business Networks | Untold.works',
+      es: 'Aplicaciones Móviles para Redes de Negocios | Untold.works'
     },
     {
       en: 'Deploy customer-facing and internal mobile apps across your entire network. Product catalogs, sales floor tools, management dashboards. One app framework, every location.',
@@ -334,7 +334,7 @@ const MobileApps: React.FC = () => {
                   </span>
                 </button>
                 {openFaq === idx && (
-                  <div className="pb-8 pr-12">
+                  <div className="pb-8 pr-0 sm:pr-12">
                     <p className="text-base font-serif text-untold-gray leading-relaxed">
                       {t(faq.a)}
                     </p>

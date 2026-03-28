@@ -58,7 +58,7 @@ const ExitIntentPopup: React.FC = () => {
       <div className="relative bg-untold-black text-white max-w-lg w-full p-8 sm:p-12 border border-white/10 shadow-2xl">
         <button
           onClick={dismiss}
-          className="absolute top-4 right-4 text-white/30 hover:text-white transition-colors text-2xl leading-none"
+          className="absolute top-2 right-2 w-11 h-11 flex items-center justify-center text-white/30 hover:text-white transition-colors text-2xl leading-none"
           aria-label="Close"
         >
           ×

@@ -201,9 +201,9 @@ const Solutions: React.FC = () => {
         <div className="max-w-[1440px] mx-auto">
           <div className="flex items-center space-x-4 mb-16">
             <span className="w-2.5 h-2.5 rounded-full bg-untold-orange"></span>
-            <h2 className="font-mono text-[13px] uppercase tracking-[0.6em] font-bold text-untold-black/40">
+            <p className="font-mono text-[13px] uppercase tracking-[0.6em] font-bold text-untold-black/40">
               {t({ en: 'CHOOSE YOUR PATH', es: 'ELIGE TU CAMINO' })}
-            </h2>
+            </p>
           </div>
 
           <div className="space-y-8">
@@ -274,9 +274,9 @@ const Solutions: React.FC = () => {
         <div className="max-w-[1440px] mx-auto">
           <div className="flex items-center space-x-4 mb-16">
             <span className="w-2.5 h-2.5 rounded-full bg-untold-orange"></span>
-            <h2 className="font-mono text-[13px] uppercase tracking-[0.6em] font-bold text-untold-black/40">
+            <p className="font-mono text-[13px] uppercase tracking-[0.6em] font-bold text-untold-black/40">
               {t({ en: 'COMPARE', es: 'COMPARAR' })}
-            </h2>
+            </p>
           </div>
 
           <h3 className="font-sans font-black text-3xl sm:text-5xl uppercase tracking-tighter mb-16 leading-[0.85]">
@@ -329,9 +329,9 @@ const Solutions: React.FC = () => {
         <div className="max-w-[900px] mx-auto">
           <div className="flex items-center space-x-4 mb-16">
             <span className="w-2.5 h-2.5 rounded-full bg-untold-orange"></span>
-            <h2 className="font-mono text-[13px] uppercase tracking-[0.6em] font-bold text-untold-black/40">
+            <p className="font-mono text-[13px] uppercase tracking-[0.6em] font-bold text-untold-black/40">
               {t({ en: 'FREQUENTLY ASKED', es: 'PREGUNTAS FRECUENTES' })}
-            </h2>
+            </p>
           </div>
 
           <h3 className="font-sans font-black text-3xl sm:text-5xl uppercase tracking-tighter mb-16 leading-[0.85]">
@@ -372,7 +372,7 @@ const Solutions: React.FC = () => {
                   </h4>
                   <span className="text-2xl text-untold-orange shrink-0 group-open:rotate-45 transition-transform">+</span>
                 </summary>
-                <p className="pb-8 text-lg font-serif text-untold-gray leading-relaxed pr-12">
+                <p className="pb-8 text-lg font-serif text-untold-gray leading-relaxed pr-0 sm:pr-12">
                   {t(faq.a)}
                 </p>
               </details>

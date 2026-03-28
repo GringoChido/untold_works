@@ -12,12 +12,12 @@ const AiContent: React.FC = () => {
 
   usePageMeta(
     {
-      en: 'AI Content Engine — Automated Blog Posts, Guides & Buying Content | Untold.works',
-      es: 'Motor de Contenido IA — Publicaciones de Blog Automatizadas, Guías y Contenido de Compra | Untold.works'
+      en: 'AI Content Engine — Automated Blog Posts & Guides | Untold.works',
+      es: 'Motor de Contenido IA — Blog Automatizado y Guías | Untold.works'
     },
     {
-      en: 'AI-powered content engine that generates continuous blog posts, buying guides, industry insights, and location-specific content trained on your brand. One engine, every location, every month. AEO-optimized and Google-approved.',
-      es: 'Motor de contenido impulsado por IA que genera continuamente publicaciones de blog, guías de compra, información de la industria y contenido específico de ubicación entrenado en tu marca. Un motor, cada ubicación, cada mes. Optimizado para AEO y aprobado por Google.'
+      en: 'AI-powered content engine generating continuous blog posts, buying guides, and location-specific content trained on your brand. One engine, every location, every month. AEO-optimized.',
+      es: 'Motor de contenido con IA que genera publicaciones de blog, guías de compra y contenido por ubicación entrenado en tu marca. Un motor, cada ubicación, cada mes. Optimizado para AEO.'
     },
     {
       path: '/ai-content',

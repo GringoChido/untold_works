@@ -12,12 +12,12 @@ const Dashboard: React.FC = () => {
 
   usePageMeta(
     {
-      en: 'Custom Business Dashboard — Your Entire Business, One Screen | Untold.works',
-      es: 'Dashboard Empresarial Personalizado — Todo Tu Negocio, Una Pantalla | Untold.works'
+      en: 'Custom Business Dashboard — Your Business, One Screen | Untold.works',
+      es: 'Dashboard Empresarial — Todo Tu Negocio, Una Pantalla | Untold.works'
     },
     {
-      en: 'Custom-built business dashboards you own. Website analytics, social media, ads, CRM, leads, and SEO — all in one screen. No monthly SaaS fees. Built for businesses in Mexico and the US.',
-      es: 'Dashboards empresariales personalizados que son tuyos. Analítica web, redes sociales, publicidad, CRM, leads y SEO — todo en una pantalla. Sin cuotas mensuales de SaaS. Construido para negocios en México y EE.UU.'
+      en: 'Custom-built business dashboards you own. Analytics, social media, ads, CRM, leads, and SEO — all in one screen. No SaaS fees. Built for businesses in Mexico and the US.',
+      es: 'Dashboards empresariales personalizados que son tuyos. Analítica, redes sociales, publicidad, CRM, leads y SEO — en una pantalla. Sin cuotas SaaS. Para negocios en México y EE.UU.'
     },
     {
       path: '/dashboard',

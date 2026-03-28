@@ -277,7 +277,7 @@ const ProjectDetail: React.FC = () => {
         <div className="max-w-[1440px] mx-auto">
           <div className="flex items-center space-x-4 mb-12 sm:mb-24">
              <span className="w-2.5 h-2.5 rounded-full bg-untold-orange"></span>
-             <h2 className="font-mono text-[11px] uppercase tracking-[0.6em] font-bold text-white/40 tracking-widest">SYSTEM_VISUALS_&_ARTIFACTS</h2>
+             <p className="font-mono text-[11px] uppercase tracking-[0.6em] font-bold text-white/40 tracking-widest">SYSTEM_VISUALS_&_ARTIFACTS</p>
           </div>
           
           <div className="grid md:grid-cols-2 gap-8">
@@ -301,9 +301,9 @@ const ProjectDetail: React.FC = () => {
           <div className="max-w-[1440px] mx-auto">
             <div className="flex items-center space-x-4 mb-16">
               <span className="w-2.5 h-2.5 rounded-full bg-untold-orange"></span>
-              <h2 className="font-mono text-[11px] uppercase tracking-[0.6em] font-bold text-white/40">
+              <p className="font-mono text-[11px] uppercase tracking-[0.6em] font-bold text-white/40">
                 {t({ en: 'VIDEO_PRODUCTION', es: 'PRODUCCIÓN_DE_VIDEO' })}
-              </h2>
+              </p>
             </div>
             <div className={`grid gap-8 ${project.videos.length === 1 ? 'max-w-4xl' : 'md:grid-cols-2'}`}>
               {project.videos.map((video) => (

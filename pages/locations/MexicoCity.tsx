@@ -11,8 +11,8 @@ const MexicoCity: React.FC = () => {
 
   usePageMeta(
     {
-      en: 'AI Agency CDMX | Web Design & Automation for Startups & Enterprise — Untold.works',
-      es: 'Agencia de IA CDMX | Diseño Web y Automatización para Startups y Empresas — Untold.works'
+      en: 'AI Agency CDMX | Web Design & Automation | Untold.works',
+      es: 'Agencia de IA CDMX | Diseño Web y Automatización | Untold.works'
     },
     {
       en: 'AI-native websites, automation platforms, and bilingual business systems for startups, enterprises, and professional services in Mexico City. Remote-first agency serving CDMX with Silicon Valley quality.',

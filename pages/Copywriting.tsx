@@ -12,12 +12,12 @@ const Copywriting: React.FC = () => {
 
   usePageMeta(
     {
-      en: 'Copywriting & Brand Messaging — AI-Powered Content Strategy | Untold.works',
-      es: 'Copywriting y Mensajería de Marca — Estrategia de Contenido con IA | Untold.works'
+      en: 'Copywriting & Brand Messaging — AI-Powered Strategy | Untold.works',
+      es: 'Copywriting y Mensajería de Marca con IA | Untold.works'
     },
     {
-      en: 'Brand voice strategy, copywriting, and messaging for websites, ads, emails, and sales collateral. AI-generated first drafts, human strategy, one voice across your entire network. Perfect for multi-location businesses.',
-      es: 'Estrategia de voz de marca, copywriting y mensajería para sitios web, anuncios, correos y materiales de ventas. Borradores generados con IA, estrategia humana, una sola voz en toda tu red. Perfecto para negocios con múltiples ubicaciones.'
+      en: 'Brand voice strategy, copywriting, and messaging for websites, ads, emails, and sales collateral. AI-generated drafts, human strategy, one voice across your network.',
+      es: 'Estrategia de voz de marca, copywriting y mensajería para sitios web, anuncios, correos y materiales de ventas. Borradores con IA, estrategia humana, una sola voz en tu red.'
     },
     {
       path: '/copywriting',
@@ -404,7 +404,7 @@ const Copywriting: React.FC = () => {
                   </span>
                 </button>
                 {openFaq === idx && (
-                  <div className="pb-8 pr-12">
+                  <div className="pb-8 pr-0 sm:pr-12">
                     <p className="text-base font-serif text-untold-gray leading-relaxed">
                       {t(faq.a)}
                     </p>

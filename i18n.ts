@@ -1033,64 +1033,64 @@ export const seo = {
       es: 'Sistemas de Alineación Operativa para Negocios Distribuidos | Untold.works'
     },
     description: {
-      en: 'Untold builds operational alignment systems for distributed businesses. Product information, communication, lead routing, and sales visibility — organized so companies and their partners work as one. Mexico and United States.',
-      es: 'Untold construye sistemas de alineación operativa para negocios distribuidos. Información de producto, comunicación, enrutamiento de leads y visibilidad de ventas — organizados para que empresas y socios operen como uno. México y Estados Unidos.'
+      en: 'Alignment systems for distributed businesses. Product info, lead routing, and sales visibility so teams and partners work from one source of truth. Mexico & US.',
+      es: 'Sistemas de alineación para negocios distribuidos. Información de producto, enrutamiento de leads y visibilidad de ventas para que equipos y socios trabajen desde una sola fuente. México y EE. UU.'
     }
   },
   solutions: {
     title: {
-      en: 'AI Solutions for Every Business Size | Professional Services, Small Business, Enterprise — Untold.works',
-      es: 'Soluciones de IA para Cada Tamaño de Negocio | Profesionales, Pequeñas Empresas, Empresarial — Untold.works'
+      en: 'Business Solutions for Every Size | Untold.works',
+      es: 'Soluciones de Negocio para Cada Tamaño | Untold.works'
     },
     description: {
-      en: 'Complete AI-powered ecosystems: brand identity, mobile-first websites, CRM, automation, and dashboards. Solutions for solo professionals, growing teams, and enterprise operations.',
-      es: 'Ecosistemas completos con IA: identidad de marca, sitios web mobile-first, CRM, automatización y dashboards. Soluciones para profesionales, equipos en crecimiento y operaciones empresariales.'
+      en: 'AI-powered ecosystems: brand identity, mobile-first websites, CRM, and automation. Solutions for solo professionals, growing teams, and enterprise operations.',
+      es: 'Ecosistemas con IA: identidad de marca, sitios web mobile-first, CRM, automatización y dashboards. Soluciones para profesionales, equipos en crecimiento y operaciones empresariales.'
     }
   },
   professionalServices: {
     title: {
-      en: 'AI Business Systems for Lawyers, Therapists, Consultants & Architects — Untold.works',
-      es: 'Sistemas de Negocio con IA para Abogados, Terapeutas, Consultores y Arquitectos — Untold.works'
+      en: 'AI Business Systems for Lawyers, Consultants & Architects | Untold.works',
+      es: 'Sistemas con IA para Abogados, Consultores y Arquitectos | Untold.works'
     },
     description: {
-      en: 'Complete business systems for service professionals: brand identity, mobile-first website, CRM, booking, AI workflows, and bilingual content. Full ownership transfer. Based in Mexico, serving the US.',
-      es: 'Sistemas completos para profesionales: identidad de marca, sitio web mobile-first, CRM, reservas, flujos de IA y contenido bilingüe. Transferencia total de propiedad. Con sede en México, servimos a EE. UU.'
+      en: 'Business systems for service professionals: brand, mobile-first website, CRM, booking, AI workflows, and bilingual content. Full ownership. Mexico & US.',
+      es: 'Sistemas completos para profesionales: identidad de marca, sitio web mobile-first, CRM, reservas, flujos de IA y contenido bilingüe. Propiedad total. México y EE. UU.'
     }
   },
   smallBusiness: {
     title: {
-      en: 'AI Platforms for Restaurants, Retail & Growing Teams — Untold.works',
-      es: 'Plataformas de IA para Restaurantes, Retail y Equipos en Crecimiento — Untold.works'
+      en: 'AI Platforms for Restaurants, Retail & Small Teams | Untold.works',
+      es: 'Plataformas con IA para Restaurantes, Retail y Equipos | Untold.works'
     },
     description: {
-      en: 'AI-powered platforms for small businesses: brand, website, team CRM, marketing automation, and analytics dashboards. Bilingual, mobile-first, and built for teams of 2-50. Mexico and the US.',
-      es: 'Plataformas con IA para pequeños negocios: marca, sitio web, CRM de equipo, automatización de marketing y dashboards. Bilingüe, mobile-first, construido para equipos de 2-50. México y EE. UU.'
+      en: 'AI platforms for small businesses: brand, website, CRM, marketing automation, dashboards. Bilingual, mobile-first, built for teams of 2–50. Mexico & US.',
+      es: 'Plataformas con IA para pequeños negocios: marca, sitio web, CRM, automatización de marketing y dashboards. Bilingüe, mobile-first, para equipos de 2–50. México y EE. UU.'
     }
   },
   enterprise: {
     title: {
-      en: 'Enterprise AI Infrastructure | Multi-Team CRM, Revenue Operations & Automation — Untold.works',
-      es: 'Infraestructura Empresarial de IA | CRM Multi-Equipo, RevOps y Automatización — Untold.works'
+      en: 'Enterprise AI Infrastructure | CRM, RevOps & Automation | Untold.works',
+      es: 'Infraestructura Empresarial de IA | CRM, RevOps y Automatización | Untold.works'
     },
     description: {
-      en: 'AI infrastructure for complex operations: enterprise brand systems, multi-team CRM, revenue operations, AI workflow automation, and custom integrations. Built for scale, owned by you.',
-      es: 'Infraestructura de IA para operaciones complejas: sistemas de marca empresarial, CRM multi-equipo, operaciones de ingresos, automatización con IA e integraciones. Construido para escalar, propiedad tuya.'
+      en: 'AI infrastructure for complex operations: multi-team CRM, revenue operations, workflow automation, and custom integrations. Built for scale, fully owned by you.',
+      es: 'Infraestructura de IA para operaciones complejas: CRM multi-equipo, operaciones de ingresos, automatización de flujos e integraciones personalizadas. Construido para escalar, propiedad tuya.'
     }
   },
   portfolio: {
     title: {
-      en: 'Portfolio | AI-Powered Business Ecosystems & Brand Builds — Untold.works',
-      es: 'Portafolio | Ecosistemas de Negocio con IA y Construcción de Marca — Untold.works'
+      en: 'Portfolio | AI Business Ecosystems & Brand Builds | Untold.works',
+      es: 'Portafolio | Ecosistemas de IA y Construcción de Marca | Untold.works'
     },
     description: {
-      en: 'Case studies of AI-powered ecosystems built for real businesses. Brand rebuilds, revenue operations, lead automation, and custom dashboards. 300% reach growth, 98% lead accuracy, 20% sales lift.',
-      es: 'Casos de éxito de ecosistemas con IA construidos para negocios reales. Reconstrucción de marca, operaciones de ingresos, automatización de leads y dashboards. 300% crecimiento, 98% precisión, 20% ventas.'
+      en: 'Case studies of AI systems for real businesses. Brand rebuilds, revenue operations, lead automation, and dashboards. 300% growth, 98% accuracy, 20% sales lift.',
+      es: 'Casos de éxito de sistemas con IA para negocios reales. Reconstrucción de marca, operaciones de ingresos, automatización de leads y dashboards. 300% crecimiento, 98% precisión, 20% ventas.'
     }
   },
   blog: {
     title: {
-      en: 'AI & Business Blog | Tools, Strategies & Guides — Untold.works',
-      es: 'Blog de IA y Negocios | Herramientas, Estrategias y Guías — Untold.works'
+      en: 'AI & Business Blog | Tools, Strategies & Guides | Untold.works',
+      es: 'Blog de IA y Negocios | Herramientas, Estrategias y Guías | Untold.works'
     },
     description: {
       en: 'Practical guides on AI tools, bilingual website design, AEO, business automation, and digital strategy for businesses in Mexico and the United States.',
@@ -1099,28 +1099,28 @@ export const seo = {
   },
   about: {
     title: {
-      en: 'About Untold.works | AI-Powered Business Systems',
-      es: 'Sobre Untold.works | Sistemas de Negocio con IA'
+      en: 'About Untold.works | AI Systems for Distributed Business',
+      es: 'Sobre Untold.works | Sistemas de IA para Negocios Distribuidos'
     },
     description: {
-      en: 'Storytellers first, technologists second. 25 years of creative direction meets AI. Building AI-powered business systems for networks and individual companies across Mexico and the United States.',
-      es: 'Narradores primero, tecnólogos después. 25 años de dirección creativa y IA. Construyendo sistemas de negocio con IA para redes y empresas individuales en México y Estados Unidos.'
+      en: 'Storytellers first, technologists second. 25 years of creative direction plus AI architecture. Alignment systems for business networks in Mexico and the US.',
+      es: 'Narradores primero, tecnólogos después. 25 años de dirección creativa y arquitectura de sistemas de IA. Construyendo sistemas de alineación para redes en México y Estados Unidos.'
     }
   },
   contact: {
     title: {
-      en: 'Contact Untold.works | Start a Conversation About Your Business',
-      es: 'Contacto Untold.works | Inicia una Conversación Sobre Tu Negocio'
+      en: 'Contact Untold.works | Start a Conversation',
+      es: 'Contacto Untold.works | Inicia una Conversación'
     },
     description: {
-      en: 'Tell us about your business or network. We build AI-powered systems — websites, dashboards, SEO/AEO/GEO, sales enablement, and mobile apps. Serving Mexico and the United States.',
-      es: 'Cuéntanos sobre tu negocio o red. Construimos sistemas con IA — sitios web, dashboards, SEO/AEO/GEO, habilitación de ventas y apps móviles. Servimos México y Estados Unidos.'
+      en: 'Tell us about your business or network. We build alignment systems — websites, dashboards, SEO/AEO, and sales enablement. Serving Mexico and the United States.',
+      es: 'Cuéntanos sobre tu negocio o red. Construimos sistemas de alineación — sitios web, dashboards, SEO/AEO, habilitación de ventas y automatización. México y Estados Unidos.'
     }
   },
   workshops: {
     title: {
-      en: 'AI Workshops San Miguel de Allende | Practical AI Training for Business — Untold.works',
-      es: 'Talleres de IA en San Miguel de Allende | Capacitación Práctica para Negocios — Untold.works'
+      en: 'AI Workshops San Miguel de Allende | Untold.works',
+      es: 'Talleres de IA San Miguel de Allende | Untold.works'
     },
     description: {
       en: 'Hands-on AI workshops in San Miguel de Allende. Learn ChatGPT, automation tools, and AI content strategy for your business. No jargon, real results.',
@@ -1129,8 +1129,8 @@ export const seo = {
   },
   analog: {
     title: {
-      en: 'UNTOLD ANALOG — Untold.works',
-      es: 'UNTOLD ANALOG — Untold.works'
+      en: 'Untold Analog — Music Experience | Untold.works',
+      es: 'Untold Analog — Experiencia Musical | Untold.works'
     },
     description: {
       en: 'A curated music experience by Untold.works. Vinyl, jazz, soul, and lo-fi — the soundtrack to good work.',

@@ -395,29 +395,29 @@ const AboutPage: React.FC = () => {
       <section className="px-5 sm:px-10 py-20 sm:py-32 lg:py-48 border-b border-white/10 bg-white/[0.01]">
         <div className="max-w-[1440px] mx-auto grid lg:grid-cols-12 gap-16 sm:gap-24 items-start">
           <div className="lg:col-span-4">
-            <div className="sticky top-48">
+            <div className="lg:sticky lg:top-32">
               <span className="font-mono text-[11px] uppercase tracking-[0.6em] font-bold text-white/30 block mb-10">THE_STORY // LOG_01</span>
               <h2 className="font-sans font-black text-4xl lg:text-6xl uppercase tracking-tighter text-untold-orange leading-none">
                 {t({ en: 'Creative Foundation.\nTechnical Execution.', es: 'Base Creativa.\nEjecución Técnica.' })}
               </h2>
             </div>
           </div>
-          <div className="lg:col-span-8 space-y-24 lg:pl-16">
+          <div className="lg:col-span-8 space-y-12 sm:space-y-24 lg:pl-16">
             <div className="group">
               <p className="text-xl sm:text-3xl lg:text-5xl font-serif text-white/70 leading-[1.25] tracking-tight hover:text-white transition-colors">
                 {t(content.narrative.veteran)}
               </p>
             </div>
 
-            <div className="pt-24 border-t border-white/5 group">
-              <span className="font-mono text-[11px] uppercase tracking-[0.6em] font-bold text-white/30 block mb-10">THE_PHILOSOPHY // LOG_02</span>
+            <div className="pt-12 sm:pt-24 border-t border-white/5 group">
+              <span className="font-mono text-[11px] uppercase tracking-[0.6em] font-bold text-white/30 block mb-6 sm:mb-10">THE_PHILOSOPHY // LOG_02</span>
               <p className="text-xl sm:text-3xl lg:text-5xl font-serif text-white/70 leading-[1.25] tracking-tight">
                 {t(content.narrative.theBridge)}
               </p>
             </div>
 
-            <div className="pt-24 border-t border-white/5 group">
-              <span className="font-mono text-[11px] uppercase tracking-[0.6em] font-bold text-untold-orange block mb-10">THE_MANIFESTO // LOG_03</span>
+            <div className="pt-12 sm:pt-24 border-t border-white/5 group">
+              <span className="font-mono text-[11px] uppercase tracking-[0.6em] font-bold text-untold-orange block mb-6 sm:mb-10">THE_MANIFESTO // LOG_03</span>
               <p className="text-xl sm:text-3xl lg:text-5xl font-serif italic text-white/90 leading-[1.15] tracking-tight">
                 "{t(content.narrative.manifesto)}"
               </p>
@@ -434,9 +434,9 @@ const AboutPage: React.FC = () => {
         <div className="max-w-[900px] mx-auto">
           <div className="flex items-center space-x-4 mb-16">
             <span className="w-2.5 h-2.5 rounded-full bg-untold-orange"></span>
-            <h2 className="font-mono text-[13px] uppercase tracking-[0.6em] font-bold text-untold-black/40">
+            <p className="font-mono text-[13px] uppercase tracking-[0.6em] font-bold text-untold-black/40">
               {t({ en: 'FREQUENTLY ASKED QUESTIONS', es: 'PREGUNTAS FRECUENTES' })}
-            </h2>
+            </p>
           </div>
 
           <h3 className="font-sans font-black text-3xl sm:text-5xl uppercase tracking-tighter mb-16 leading-[0.85]">
@@ -458,7 +458,7 @@ const AboutPage: React.FC = () => {
                   </h4>
                   <span className="text-2xl text-untold-orange shrink-0 group-open:rotate-45 transition-transform">+</span>
                 </summary>
-                <p className="pb-8 text-lg font-serif text-untold-gray leading-relaxed pr-12">
+                <p className="pb-8 text-lg font-serif text-untold-gray leading-relaxed pr-0 sm:pr-12">
                   {t(faq.a)}
                 </p>
               </details>
@@ -474,7 +474,7 @@ const AboutPage: React.FC = () => {
           <h2 className="font-sans font-black text-3xl sm:text-6xl lg:text-[110px] mb-12 uppercase tracking-tighter leading-none text-white">
             {t(content.closing.headline)}
           </h2>
-          <p className="text-2xl lg:text-[2.2rem] font-serif italic mb-24 max-w-4xl mx-auto text-white/50 leading-relaxed">
+          <p className="text-2xl lg:text-[2.2rem] font-serif italic mb-12 sm:mb-24 max-w-4xl mx-auto text-white/50 leading-relaxed">
             {t(content.closing.subtext)}
           </p>
           <Link

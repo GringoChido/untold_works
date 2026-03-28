@@ -103,12 +103,12 @@ const WorkshopsPage: React.FC = () => {
         <div className="max-w-[1440px] mx-auto">
           <div className="flex items-center space-x-4 mb-24">
              <span className="w-2.5 h-2.5 rounded-full bg-untold-orange"></span>
-             <h2 className="font-mono text-[11px] uppercase tracking-[0.6em] font-bold text-white/30 uppercase">LEARNING_LOG // EVERYDAY_PHASES</h2>
+             <p className="font-mono text-[11px] uppercase tracking-[0.6em] font-bold text-white/30 uppercase">LEARNING_LOG // EVERYDAY_PHASES</p>
           </div>
           
           <div className="grid md:grid-cols-2 gap-px bg-white/10 border border-white/10">
             {syllabus.phases.map((phase) => (
-              <div key={phase.id} className="bg-untold-black p-6 sm:p-12 lg:p-16 flex flex-col group hover:bg-white/[0.03] transition-colors min-h-[450px]">
+              <div key={phase.id} className="bg-untold-black p-6 sm:p-12 lg:p-16 flex flex-col group hover:bg-white/[0.03] transition-colors md:min-h-[450px]">
                 <div className="flex justify-between items-start mb-12">
                   <span className="font-mono text-[11px] uppercase tracking-[0.5em] text-untold-orange font-bold">PHASE_{phase.id}</span>
                   <div className="w-8 h-px bg-white/10 group-hover:w-16 group-hover:bg-untold-orange transition-all"></div>
@@ -138,7 +138,7 @@ const WorkshopsPage: React.FC = () => {
           <div className="lg:col-span-6 space-y-12">
             <div className="flex items-center space-x-4">
                <span className="w-2.5 h-2.5 rounded-full bg-untold-orange"></span>
-               <h2 className="font-mono text-[11px] uppercase tracking-[0.6em] font-bold text-white/30 uppercase">{t(syllabus.kit.title)}</h2>
+               <p className="font-mono text-[11px] uppercase tracking-[0.6em] font-bold text-white/30 uppercase">{t(syllabus.kit.title)}</p>
             </div>
             <h3 className="font-sans font-black text-4xl sm:text-6xl lg:text-8xl uppercase tracking-tighter text-white leading-[0.85]">
               {t({ en: 'Tools For\nReal Life\nImpact.', es: 'Herramientas\nPara Impacto\nReal.' })}
@@ -170,9 +170,9 @@ const WorkshopsPage: React.FC = () => {
         <div className="max-w-[900px] mx-auto">
           <div className="flex items-center space-x-4 mb-16">
             <span className="w-2.5 h-2.5 rounded-full bg-untold-orange"></span>
-            <h2 className="font-mono text-[13px] uppercase tracking-[0.6em] font-bold text-white/30">
+            <p className="font-mono text-[13px] uppercase tracking-[0.6em] font-bold text-white/30">
               {t({ en: 'FREQUENTLY ASKED QUESTIONS', es: 'PREGUNTAS FRECUENTES' })}
-            </h2>
+            </p>
           </div>
 
           <h3 className="font-sans font-black text-3xl sm:text-5xl uppercase tracking-tighter mb-16 leading-[0.85]">
@@ -194,7 +194,7 @@ const WorkshopsPage: React.FC = () => {
                   </h4>
                   <span className="text-2xl text-untold-orange shrink-0 group-open:rotate-45 transition-transform">+</span>
                 </summary>
-                <p className="pb-8 text-lg font-serif text-white/60 leading-relaxed pr-12">
+                <p className="pb-8 text-lg font-serif text-white/60 leading-relaxed pr-0 sm:pr-12">
                   {t(faq.a)}
                 </p>
               </details>

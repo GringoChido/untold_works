@@ -60,7 +60,7 @@ const StickyBar: React.FC = () => {
             </Link>
             <button
               onClick={handleDismiss}
-              className="text-white/30 hover:text-white transition-colors text-lg leading-none"
+              className="w-11 h-11 flex items-center justify-center text-white/30 hover:text-white transition-colors text-lg leading-none shrink-0"
               aria-label={t({ en: 'Dismiss', es: 'Cerrar' })}
             >
               ×

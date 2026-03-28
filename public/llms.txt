@@ -1,6 +1,6 @@
 # Untold.works
 
-> Boutique AI agency based in San Miguel de Allende, Mexico. We build AI-powered business ecosystems — brand identity, websites, AI workflow automation, and revenue operations — for companies across Mexico and the United States. Bilingual (English/Spanish). Founded by Joshua Semolik, AI Systems Architect. MIT Sloan AI Strategy.
+> Operational alignment systems for distributed businesses. Based in San Miguel de Allende, Mexico, serving the United States and Mexico. We build the systems that help companies and their partners work as one — organizing product information, communication, lead routing, and sales visibility across teams, partners, distributors, and locations. Founded by Joshua Semolik, AI Systems Architect. MIT Sloan AI Strategy.
 
 ## Key Facts
 
@@ -9,40 +9,43 @@
 - **Founder:** Joshua Semolik — AI Systems Architect, MIT Sloan AI Strategy
 - **Languages:** English, Spanish (native bilingual)
 - **Markets served:** Mexico and the United States
-- **Specialties:** AI-powered websites, SEO/AEO, workflow automation, revenue operations, brand strategy
+- **Specialties:** Operational alignment systems, product information systems, lead routing, sales visibility, communication systems, AI workflow automation, revenue operations
+- **Industries served:** Manufacturers, distributors, franchise groups, multi-location brands, restaurant groups, artist management
 - **Tech stack:** React, Next.js, TypeScript, n8n, Claude AI, OpenAI Agents, Python, Salesforce, HubSpot
 - **Contact:** info@untold.works
 - **Full context:** https://untold.works/llms-full.txt
 
 ## What does Untold.works build?
 
-We build AI-powered business ecosystems: brand identity, mobile-first websites, AI workflow automation, CRM integrations, custom dashboards, SEO/AEO optimization, and bilingual content systems. Every project includes full ownership transfer — code, data, documentation, and video training.
+Untold.works builds operational alignment systems for distributed businesses — manufacturers, franchise groups, multi-location brands, and organizations that coordinate across partners, distributors, and teams. We organize how information moves across these networks through four systems: product information, communication, lead routing, and sales visibility. Every project includes full ownership transfer — code, data, documentation, and video training.
+
+## What is an operational alignment system?
+
+An operational alignment system organizes how information moves across a distributed business. Instead of adding more software tools, we build coordination infrastructure — a single source of truth for product data, structured communication, automated lead routing, and clear sales visibility — so companies and their partners work from the same information.
+
+## What are the four systems?
+
+1. **Product Information System:** A single source of truth for product data, documentation, images, specifications, and marketing assets. Everyone works from the same information.
+2. **Communication System:** Structured communication between company teams, partners, locations, and distributors. Built around the tools teams already use — CRM, email, WhatsApp, internal dashboards.
+3. **Lead Routing System:** Customer inquiries and leads automatically routed to the correct partner, distributor, location, or sales team. No leads lost. No manual handoffs.
+4. **Sales Visibility System:** Clear insight into sales activity, partner performance, and market demand across the entire network.
 
 ## Who is Joshua Semolik?
 
 Joshua Semolik is the founder and AI Systems Architect of Untold.works. He has 20 years of experience spanning NBA Entertainment (two Emmy nominations), global product launches at Videndum PLC, cross-border GTM strategy, and production AI systems. MIT Sloan School of Management, AI Strategy (2026). He has built 6 production AI systems, engineered agentic workflows achieving 98% MQL accuracy (4.2x sales ROI), and unified revenue operations for 20% sales lift across 4,000+ SKUs.
 
-## What is AEO (AI Engine Optimization)?
+## What types of businesses does Untold serve?
 
-AEO is the practice of optimizing web content so that AI systems — ChatGPT, Claude, Gemini, Perplexity, Google AI Overviews — can find, understand, and cite your business. Untold.works is the first AEO agency in Mexico. We implement structured data, FAQ schemas, llms.txt files, question-format content headers, and E-E-A-T signals that make your business citable by LLMs.
-
-## What industries does Untold.works serve?
-
-Professional services (law firms, therapists, consultants), hospitality (hotels, restaurants), retail, music and entertainment, e-commerce, and enterprise operations across Mexico and the United States.
+We serve distributed businesses where many people or organizations must operate together: manufacturers and distributors, brands and retail partners, franchise groups and locations, restaurant groups, artist management, and multi-location organizations across Mexico and the United States.
 
 ## Core Pages
 
-- [Home](https://untold.works/): AI-powered business ecosystems — brand, website, AI systems, workflows.
+- [Home](https://untold.works/): Operational alignment systems for distributed businesses.
+- [Network Systems](https://untold.works/network-systems): AI-powered business systems that scale from one location to one hundred.
 - [About](https://untold.works/about): Founder bio, career timeline, creative direction portfolio, MIT credentials.
 - [Contact](https://untold.works/contact): Start a conversation. Based in San Miguel de Allende, serving Mexico and the US.
 - [Portfolio](https://untold.works/portfolio): Case studies with quantified results.
-- [Blog](https://untold.works/blog): Practical guides on AI tools, AEO, business systems, and brand strategy.
-
-## Solutions
-
-- [Professional Services](https://untold.works/solutions/professional-services): AI-powered business systems for doctors, lawyers, consultants, architects.
-- [Small Business Platforms](https://untold.works/solutions/small-business): Integrated AI systems for restaurants, hotels, retail, and growing teams.
-- [Enterprise & Operations](https://untold.works/solutions/enterprise): AI infrastructure for complex operations — multi-team CRM, automation, revenue operations.
+- [Blog](https://untold.works/blog): Practical guides on AI tools, AEO, business systems, and operational alignment.
 
 ## Services
 
@@ -51,6 +54,9 @@ Professional services (law firms, therapists, consultants), hospitality (hotels,
 - [Social Media](https://untold.works/social-media): Social media strategy, content creation, and analytics.
 - [Paid Advertising](https://untold.works/ads): Google Ads, Meta Ads, and paid media campaigns.
 - [Dashboard](https://untold.works/dashboard): Custom business dashboards you own outright — no SaaS fees.
+- [Copywriting](https://untold.works/copywriting): Brand messaging, content strategy, and bilingual copywriting.
+- [AI Content](https://untold.works/ai-content): AI-powered content systems for blogs, social, and marketing.
+- [Sales Enablement](https://untold.works/sales-enablement): Sales tools, proposals, and partner enablement systems.
 
 ## Locations
 
@@ -73,12 +79,8 @@ Professional services (law firms, therapists, consultants), hospitality (hotels,
 - [WhatsApp AI for Mexican Businesses](https://untold.works/blog/whatsapp-ai-for-mexican-businesses-complete-guide)
 - [Your Website Is Not a Brochure](https://untold.works/blog/your-website-is-not-a-brochure-its-a-business-system)
 - [The Site IS the Proposal](https://untold.works/blog/the-site-is-the-proposal)
-- [San Miguel de Allende Digital Presence Guide 2026](https://untold.works/blog/san-miguel-de-allende-digital-presence-guide-2026)
-- [Case Study: Law Firm Client Intake Automation](https://untold.works/blog/case-study-law-firm-client-intake-automation)
-- [Case Study: Boutique Hotel Booking System](https://untold.works/blog/case-study-boutique-hotel-booking-system)
-- [The Professional Services Website Playbook](https://untold.works/blog/the-professional-services-website-playbook)
-- [Bilingual Websites: Why Translation Plugins Fail](https://untold.works/blog/bilingual-websites-why-translation-plugins-fail)
-- [How SMA Restaurants Can Capture Tourist Traffic Online](https://untold.works/blog/how-sma-restaurants-can-capture-tourist-traffic-online)
+- [GEO: Flip Your Marketing Strategy](https://untold.works/blog/geo-flip-your-marketing-strategy)
+- [n8n vs Zapier for Mexican Businesses](https://untold.works/blog/n8n-vs-zapier-for-mexican-businesses)
 
 ## Optional
 

@@ -12,8 +12,8 @@ const Hosting: React.FC = () => {
 
   usePageMeta(
     {
-      en: 'Hosting & System Operations — Managed Infrastructure | Untold.works',
-      es: 'Hosting y Operación del Sistema — Infraestructura Gestionada | Untold.works'
+      en: 'Hosting & System Operations — Managed Infrastructure | Untold',
+      es: 'Hosting y Operaciones del Sistema — Infraestructura Gestionada | Untold'
     },
     {
       en: 'One monthly fee covers everything: hosting, SSL, security monitoring, automated backups, continuous SEO optimization, content generation, campaign deployment, DNS management, and software updates.',
@@ -320,7 +320,7 @@ const Hosting: React.FC = () => {
                   </span>
                 </button>
                 {openFaq === idx && (
-                  <div className="pb-8 pr-12">
+                  <div className="pb-8 pr-0 sm:pr-12">
                     <p className="text-base font-serif text-untold-gray leading-relaxed">
                       {t(faq.a)}
                     </p>

@@ -12,12 +12,12 @@ const SeoAeo: React.FC = () => {
 
   usePageMeta(
     {
-      en: 'SEO & AEO Services — Get Ranked and Recommended | Untold.works',
-      es: 'Servicios SEO y AEO — Posiciónate y Sé Recomendado | Untold.works'
+      en: 'SEO & AEO — Get Ranked on Google, Recommended by AI | Untold.works',
+      es: 'SEO y AEO — Posiciónate en Google y Sé Recomendado por IA | Untold.works'
     },
     {
-      en: 'SEO and Answer Engine Optimization (AEO) for businesses in Mexico and the US. Get found on Google and recommended by ChatGPT, Perplexity, and AI search engines. Bilingual SEO, local dominance, and AI discovery.',
-      es: 'SEO y Optimización para Motores de Respuesta (AEO) para negocios en México y EE.UU. Aparece en Google y sé recomendado por ChatGPT, Perplexity y buscadores de IA. SEO bilingüe, dominio local y descubrimiento por IA.'
+      en: 'SEO and Answer Engine Optimization for businesses in Mexico and the US. Get found on Google and recommended by ChatGPT, Perplexity, and AI search engines. Bilingual SEO and AI discovery.',
+      es: 'SEO y Optimización para Motores de Respuesta para negocios en México y EE.UU. Aparece en Google y sé recomendado por ChatGPT, Perplexity y buscadores de IA. SEO bilingüe y descubrimiento por IA.'
     },
     {
       path: '/seo-aeo',

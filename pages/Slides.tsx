@@ -94,9 +94,9 @@ const SlidesPage: React.FC = () => {
         <div className="max-w-[1440px] mx-auto">
           <div className="flex items-center space-x-4 mb-20">
             <span className="w-2.5 h-2.5 rounded-full bg-untold-orange"></span>
-            <h2 className="font-mono text-[13px] uppercase tracking-[0.6em] font-bold text-white/40">
+            <p className="font-mono text-[13px] uppercase tracking-[0.6em] font-bold text-white/40">
               COLLECTIONS // CHOOSE_A_WORLD
-            </h2>
+            </p>
           </div>
 
           <CollectionPicker
@@ -111,9 +111,9 @@ const SlidesPage: React.FC = () => {
         <div className="max-w-[1440px] mx-auto">
           <div className="flex items-center space-x-4 mb-20">
             <span className="w-2.5 h-2.5 rounded-full bg-untold-orange"></span>
-            <h2 className="font-mono text-[13px] uppercase tracking-[0.6em] font-bold text-white/40">
+            <p className="font-mono text-[13px] uppercase tracking-[0.6em] font-bold text-white/40">
               LINER_NOTES // THE_BUILD
-            </h2>
+            </p>
           </div>
 
           <div className="grid lg:grid-cols-12 gap-16 sm:gap-24 items-start">

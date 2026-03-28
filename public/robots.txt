@@ -1,6 +1,6 @@
 # ═══════════════════════════════════════════════════════════════
 # Untold.works — robots.txt
-# Boutique AI Agency — San Miguel de Allende, Mexico
+# Operational Alignment Systems — San Miguel de Allende, Mexico
 # ═══════════════════════════════════════════════════════════════
 
 # Default: Allow all crawlers

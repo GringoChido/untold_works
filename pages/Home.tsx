@@ -447,12 +447,12 @@ const Home: React.FC = () => {
             ].map((faq, idx) => (
               <details key={idx} className="border-b border-untold-border group">
                 <summary className="flex items-center justify-between py-6 sm:py-8 cursor-pointer list-none">
-                  <h4 className="font-sans font-black text-lg sm:text-xl uppercase tracking-tighter pr-8 group-open:text-untold-orange transition-colors">
+                  <h3 className="font-sans font-black text-lg sm:text-xl uppercase tracking-tighter pr-8 group-open:text-untold-orange transition-colors">
                     {t(faq.q)}
-                  </h4>
+                  </h3>
                   <span className="text-2xl text-untold-orange shrink-0 group-open:rotate-45 transition-transform">+</span>
                 </summary>
-                <p className="pb-8 text-lg font-serif text-untold-gray leading-relaxed pr-12">
+                <p className="pb-8 text-lg font-serif text-untold-gray leading-relaxed pr-0 sm:pr-12">
                   {t(faq.a)}
                 </p>
               </details>

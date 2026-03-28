@@ -68,8 +68,8 @@ const Savings: React.FC = () => {
   const [tools, setTools] = useState<Tool[]>(tiers[0].tools.map(tool => ({ ...tool })));
 
   usePageMeta(
-    { en: 'What You\'d Save — Untold.works', es: 'Lo Que Ahorrarías — Untold.works' },
-    { en: 'See how much you\'re spending on SaaS tools and what you\'d save by switching to a system you own.', es: 'Descubre cuánto gastas en herramientas SaaS y lo que ahorrarías con un sistema propio.' },
+    { en: 'SaaS Cost Calculator — What You\'d Save Owning Your Systems | Untold.works', es: 'Calculadora de Costos SaaS — Lo Que Ahorrarías con Sistemas Propios | Untold.works' },
+    { en: 'Calculate how much you spend on SaaS tools vs. owning your systems outright. See the ROI of switching to a one-time custom build. No recurring fees.', es: 'Calcula cuánto gastas en herramientas SaaS versus ser dueño de tus sistemas. Ve el ROI de cambiar a un proyecto personalizado. Sin cuotas recurrentes.' },
     { path: '/savings' }
   );
 

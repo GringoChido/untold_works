@@ -72,7 +72,7 @@ const ContactForm: React.FC = () => {
   }
 
   return (
-    <form onSubmit={handleSubmit} className="bg-white/[0.02] border border-white/10 p-8 sm:p-12 lg:p-16 space-y-8">
+    <form onSubmit={handleSubmit} className="bg-white/[0.02] border border-white/10 p-5 sm:p-12 lg:p-16 space-y-8">
       <input type="hidden" name="form-name" value="contact" />
       <p className="hidden"><input name="bot-field" /></p>
 
