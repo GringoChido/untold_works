@@ -6,7 +6,7 @@ import { projects } from '../data/projects';
 import * as i18n from '../i18n';
 import { WavyBackground } from '../components/ui/wavy-background';
 import ProofStrip from '../components/ProofStrip';
-import AlignmentDiagram from '../components/AlignmentDiagram';
+
 
 
 const howToSchema = {
@@ -216,7 +216,7 @@ const Home: React.FC = () => {
             {t(i18n.distributedBusinesses.headline)}
           </h2>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-5 gap-px bg-untold-border border border-untold-border mb-12">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-px bg-untold-border border border-untold-border mb-12">
             {i18n.distributedBusinesses.examples.map((example, idx) => (
               <div key={idx} className="bg-white p-6 sm:p-8">
                 <span className="font-mono text-[10px] uppercase tracking-[0.5em] text-untold-orange font-bold block mb-3">
@@ -270,14 +270,45 @@ const Home: React.FC = () => {
       </section>
 
       {/* ═══════════════════════════════════════════════════════════
-          6. SYSTEM DIAGRAM
+          6. HOW WE DEPLOY — The Process
       ═══════════════════════════════════════════════════════════ */}
       <section className="bg-white border-b border-untold-border">
         <div className="max-w-[1440px] mx-auto px-5 sm:px-10 py-20 sm:py-32">
-          <p className="font-mono text-[10px] uppercase tracking-[0.5em] text-untold-black/30 font-bold mb-12 text-center">
-            {t({ en: 'HOW THE SYSTEM WORKS', es: 'CÓMO FUNCIONA EL SISTEMA' })}
-          </p>
-          <AlignmentDiagram />
+          <div className="flex items-center space-x-3 mb-8">
+            <span className="w-3 h-3 rounded-full bg-untold-orange animate-pulse" />
+            <span className="font-mono text-[10px] uppercase tracking-[0.5em] text-untold-orange font-bold">
+              {t(i18n.processSection.eyebrow)}
+            </span>
+          </div>
+
+          <h2 className="font-sans font-black text-3xl sm:text-5xl lg:text-6xl uppercase tracking-tighter mb-16 leading-[0.85] max-w-4xl">
+            {t(i18n.processSection.headline)}
+          </h2>
+
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-px bg-untold-border border border-untold-border mb-16">
+            {i18n.processSection.steps.map((step) => (
+              <div key={step.number} className="bg-white p-6 sm:p-8 flex flex-col">
+                <span className="font-mono text-[10px] uppercase tracking-[0.5em] text-untold-orange font-bold mb-4 block">
+                  {step.number}
+                </span>
+                <h3 className="font-sans font-black text-xl sm:text-2xl uppercase tracking-tighter mb-3">
+                  {t(step.title)}
+                </h3>
+                <p className="font-serif text-base text-untold-gray leading-relaxed mb-6 flex-grow">
+                  {t(step.description)}
+                </p>
+                <span className="font-mono text-[10px] uppercase tracking-[0.3em] text-untold-orange font-bold">
+                  {t(step.deliverable)}
+                </span>
+              </div>
+            ))}
+          </div>
+
+          <div className="border-l-4 border-untold-orange pl-6 sm:pl-10 max-w-3xl">
+            <p className="font-serif italic text-xl sm:text-2xl text-untold-black leading-[1.15] tracking-tight">
+              {t(i18n.processSection.closing)}
+            </p>
+          </div>
         </div>
       </section>
 

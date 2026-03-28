@@ -471,7 +471,8 @@ export const distributedBusinesses = {
     { en: 'Brands and retail partners', es: 'Marcas y socios de retail' },
     { en: 'Restaurant groups and locations', es: 'Grupos restauranteros y ubicaciones' },
     { en: 'Artist management and artists', es: 'Managements de artistas y artistas' },
-    { en: 'Multi-location organizations', es: 'Organizaciones multi-ubicación' }
+    { en: 'Multi-location organizations', es: 'Organizaciones multi-ubicación' },
+    { en: 'Franchise and licensing networks', es: 'Redes de franquicias y licencias' }
   ],
   body: {
     en: 'Untold organizes how information flows across these networks.',
@@ -526,6 +527,57 @@ export const fourSystems = {
       }
     }
   ]
+};
+
+// ────────────────────────────────────────────────────────────────
+// THE PROCESS (Homepage Section — How We Deploy)
+// ────────────────────────────────────────────────────────────────
+
+export const processSection = {
+  eyebrow: { en: 'THE PROCESS', es: 'EL PROCESO' },
+  headline: { en: 'Map. Design. Build. Transfer.', es: 'Mapear. Diseñar. Construir. Transferir.' },
+  steps: [
+    {
+      number: '01',
+      title: { en: 'Map', es: 'Mapear' },
+      description: {
+        en: 'We map how information currently moves between your company, partners, distributors, locations, and teams. We identify where alignment breaks down and where coordination is manual.',
+        es: 'Mapeamos cómo fluye la información entre tu empresa, socios, distribuidores, ubicaciones y equipos. Identificamos dónde se quiebra la alineación y dónde la coordinación es manual.'
+      },
+      deliverable: { en: '→ Information flow audit', es: '→ Auditoría de flujo de información' }
+    },
+    {
+      number: '02',
+      title: { en: 'Design', es: 'Diseñar' },
+      description: {
+        en: 'We design the four coordination systems — product information, communication, lead routing, and sales visibility — around the tools your teams already use.',
+        es: 'Diseñamos los cuatro sistemas de coordinación — información de producto, comunicación, enrutamiento de leads y visibilidad de ventas — alrededor de las herramientas que tus equipos ya usan.'
+      },
+      deliverable: { en: '→ System architecture document', es: '→ Documento de arquitectura del sistema' }
+    },
+    {
+      number: '03',
+      title: { en: 'Build', es: 'Construir' },
+      description: {
+        en: 'We build the systems, connect the integrations, and automate the coordination workflows. Everything tested, everything documented, everything built to be understood.',
+        es: 'Construimos los sistemas, conectamos las integraciones y automatizamos los flujos de coordinación. Todo probado, todo documentado, todo construido para ser entendido.'
+      },
+      deliverable: { en: '→ Working infrastructure', es: '→ Infraestructura funcional' }
+    },
+    {
+      number: '04',
+      title: { en: 'Transfer', es: 'Transferir' },
+      description: {
+        en: 'We train your teams on every system. Video walkthroughs, documentation, and live sessions. Then we hand over the keys. Full ownership, no lock-in.',
+        es: 'Capacitamos a tus equipos en cada sistema. Videos explicativos, documentación y sesiones en vivo. Después entregamos las llaves. Propiedad total, sin ataduras.'
+      },
+      deliverable: { en: '→ Full ownership + training', es: '→ Propiedad total + capacitación' }
+    }
+  ],
+  closing: {
+    en: 'Most engagements deploy in 4–8 weeks. You own everything we build.',
+    es: 'La mayoría de los proyectos se despliegan en 4–8 semanas. Eres dueño de todo lo que construimos.'
+  }
 };
 
 // ────────────────────────────────────────────────────────────────
