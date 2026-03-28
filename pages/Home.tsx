@@ -4,7 +4,7 @@ import { useLanguage } from '../App';
 import { usePageMeta } from '../hooks/usePageMeta';
 import { projects } from '../data/projects';
 import * as i18n from '../i18n';
-import { WavyBackground } from '../components/ui/wavy-background';
+
 import ProofStrip from '../components/ProofStrip';
 
 
@@ -88,16 +88,23 @@ const Home: React.FC = () => {
       {/* ═══════════════════════════════════════════════════════════
           1. HERO — Headline + Supporting Line
       ═══════════════════════════════════════════════════════════ */}
-      <WavyBackground
-        containerClassName="w-full !bg-untold-black"
-        className="w-full px-5 sm:px-10 pt-24 sm:pt-40 lg:pt-52 pb-12 sm:pb-16"
-        backgroundFill="#0A0A0A"
-        colors={['#FF4D17', '#FF6B3D', '#1A1A1A', '#FF4D17', '#333333']}
-        waveWidth={60}
-        blur={12}
-        speed="slow"
-        waveOpacity={0.4}
-      >
+      <section className="relative w-full bg-untold-black overflow-hidden">
+        {/* Background Video */}
+        <video
+          autoPlay
+          muted
+          loop
+          playsInline
+          poster="/video/hero-home-poster.webp"
+          className="absolute inset-0 w-full h-full object-cover opacity-40"
+        >
+          <source src="/video/hero-home-1080p.webm" type="video/webm" />
+          <source src="/video/hero-home-1080p.mp4" type="video/mp4" />
+        </video>
+        {/* Dark overlay */}
+        <div className="absolute inset-0 bg-black/50" />
+        {/* Content */}
+        <div className="relative w-full px-5 sm:px-10 pt-24 sm:pt-40 lg:pt-52 pb-12 sm:pb-16">
         <div className="max-w-[1440px] mx-auto w-full">
           <div className="max-w-[900px]">
             <div className="flex items-center space-x-4 mb-8 sm:mb-14">
@@ -139,7 +146,8 @@ const Home: React.FC = () => {
             </div>
           </div>
         </div>
-      </WavyBackground>
+        </div>
+      </section>
 
       {/* Proof Strip */}
       <ProofStrip />
