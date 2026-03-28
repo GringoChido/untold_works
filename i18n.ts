@@ -19,12 +19,12 @@ export const navigation = {
 
 export const footer = {
   campaign: {
-    en: 'untold.works // AI-POWERED BUSINESS ECOSYSTEMS',
-    es: 'untold.works // ECOSISTEMAS EMPRESARIALES CON IA'
+    en: 'untold.works // OPERATIONAL ALIGNMENT SYSTEMS',
+    es: 'untold.works // SISTEMAS DE ALINEACIÓN OPERATIVA'
   },
   narrative: {
-    en: 'We build modern websites and AI-powered business systems for businesses across Mexico and the United States. Brand first. Technology that works.',
-    es: 'Construimos sitios web modernos y sistemas empresariales con IA para negocios en México y Estados Unidos. La marca primero. Tecnología que funciona.'
+    en: 'We build operational alignment systems for distributed businesses across Mexico and the United States. When companies and partners need to work as one, we organize how information moves.',
+    es: 'Construimos sistemas de alineación operativa para negocios distribuidos en México y Estados Unidos. Cuando empresas y socios necesitan operar como uno, organizamos cómo fluye la información.'
   },
   version: { en: 'CAMPAIGN_ID // 2026.WORKS', es: 'CAMPAIGN_ID // 2026.WORKS' },
   location: { en: 'LOC // SAN_MIGUEL_DE_ALLENDE_MX_USA', es: 'LOC // SAN_MIGUEL_DE_ALLENDE_MX_USA' }
@@ -36,24 +36,24 @@ export const footer = {
 
 export const hero = {
   eyebrow: {
-    en: 'AI-Powered Business Systems — Mexico & United States',
-    es: 'Sistemas de Negocio con IA — México y Estados Unidos'
+    en: 'Operational Alignment Systems — Mexico & United States',
+    es: 'Sistemas de Alineación Operativa — México y Estados Unidos'
   },
   headline: {
-    en: 'Your Business Needs an AI Identity. We Build It.',
-    es: 'Tu Negocio Necesita una Identidad de IA. Nosotros La Construimos.'
+    en: 'We Build the Systems That Help Companies and Their Partners Work as One.',
+    es: 'Construimos los Sistemas Que Ayudan a Empresas y Sus Socios a Operar Como Uno.'
   },
   tagline: {
-    en: 'AI search is already deciding who gets recommended and who gets ignored. We build AI-powered digital systems that scale from a single business to a hundred locations — website, SEO, AEO, GEO, dashboards, sales tools — built for you, owned by you.',
-    es: 'La búsqueda con IA ya decide quién es recomendado y quién es ignorado. Construimos sistemas digitales con IA que escalan de un solo negocio a cien ubicaciones — sitio web, SEO, AEO, GEO, dashboards, herramientas de ventas — construidos para ti, propiedad tuya.',
+    en: 'We organize product information, communication, sales data, and leads so distributed businesses stay aligned across teams, partners, locations, and distributors.',
+    es: 'Organizamos información de producto, comunicación, datos de ventas y leads para que los negocios distribuidos se mantengan alineados entre equipos, socios, ubicaciones y distribuidores.',
   },
   subheadline: {
-    en: 'DIGITAL PRESENCE // BUSINESS OPERATIONS // INFRASTRUCTURE',
-    es: 'PRESENCIA DIGITAL // OPERACIONES DE NEGOCIO // INFRAESTRUCTURA'
+    en: 'PRODUCT INFORMATION // COMMUNICATION // LEAD ROUTING // SALES VISIBILITY',
+    es: 'INFORMACIÓN DE PRODUCTO // COMUNICACIÓN // ENRUTAMIENTO DE LEADS // VISIBILIDAD DE VENTAS'
   },
   primaryCta: {
-    en: 'Explore Our Solutions',
-    es: 'Explorar Nuestras Soluciones'
+    en: 'See How It Works',
+    es: 'Cómo Funciona'
   },
   secondaryCta: {
     en: 'Start a conversation',
@@ -67,8 +67,8 @@ export const hero = {
 
 export const locationBadge = {
   text: {
-    en: 'AI-powered business systems for companies across Mexico and the United States. Network systems, websites, dashboards, and digital infrastructure.',
-    es: 'Sistemas de negocio con IA para empresas en México y Estados Unidos. Network systems, sitios web, dashboards e infraestructura digital.'
+    en: 'Operational alignment systems for distributed businesses across Mexico and the United States. Product information, communication, lead routing, and sales visibility.',
+    es: 'Sistemas de alineación operativa para negocios distribuidos en México y Estados Unidos. Información de producto, comunicación, enrutamiento de leads y visibilidad de ventas.'
   }
 };
 
@@ -380,13 +380,231 @@ export const whyUntold = {
 
 export const finalCta = {
   headline: {
-    en: 'Stop Renting.\nStart Owning.',
-    es: 'Deja de Rentar.\nEmpieza a Ser Dueño.'
+    en: 'Let\'s Align\nYour Business.',
+    es: 'Alineemos\nTu Negocio.'
   },
   cta: {
-    en: 'See What You\'d Save',
-    es: 'Mira Lo Que Ahorrarías'
+    en: 'Start a Conversation',
+    es: 'Iniciar Conversación'
   }
+};
+
+// ────────────────────────────────────────────────────────────────
+// ALIGNMENT INSIGHT (Homepage Section — below hero)
+// ────────────────────────────────────────────────────────────────
+
+export const alignmentInsight = {
+  headline: {
+    en: 'Most Companies Don\'t Have a Software Problem.',
+    es: 'La Mayoría de las Empresas No Tienen un Problema de Software.'
+  },
+  punchline: {
+    en: 'They have an alignment problem.',
+    es: 'Tienen un problema de alineación.'
+  },
+  body: {
+    en: 'Untold solves alignment problems.',
+    es: 'Untold resuelve problemas de alineación.'
+  }
+};
+
+// ────────────────────────────────────────────────────────────────
+// THE ALIGNMENT BREAKDOWN (Homepage Section)
+// ────────────────────────────────────────────────────────────────
+
+export const alignmentBreakdown = {
+  headline: {
+    en: 'The Alignment Breakdown',
+    es: 'El Quiebre de Alineación'
+  },
+  subheadline: {
+    en: 'Most growing businesses aren\'t failing because of technology. They struggle because their information is scattered across people, tools, and locations.',
+    es: 'La mayoría de los negocios en crecimiento no fallan por la tecnología. Luchan porque su información está dispersa entre personas, herramientas y ubicaciones.'
+  },
+  problems: [
+    {
+      en: 'Product information lives in spreadsheets, folders, and emails.',
+      es: 'La información de producto vive en hojas de cálculo, carpetas y correos.'
+    },
+    {
+      en: 'Partners and distributors are working with outdated information.',
+      es: 'Socios y distribuidores trabajan con información desactualizada.'
+    },
+    {
+      en: 'Sales teams don\'t know what marketing is publishing.',
+      es: 'Los equipos de ventas no saben qué está publicando marketing.'
+    },
+    {
+      en: 'Leads arrive but no one knows which partner should receive them.',
+      es: 'Llegan leads pero nadie sabe qué socio debería recibirlos.'
+    },
+    {
+      en: 'Reporting takes weeks because data lives in different systems.',
+      es: 'Los reportes tardan semanas porque los datos viven en sistemas distintos.'
+    },
+    {
+      en: 'Teams rely on manual coordination to keep operations moving.',
+      es: 'Los equipos dependen de coordinación manual para mantener las operaciones.'
+    }
+  ],
+  transition: {
+    en: 'Alignment doesn\'t come from adding more software. It comes from organizing how information moves across the business.',
+    es: 'La alineación no viene de agregar más software. Viene de organizar cómo fluye la información en el negocio.'
+  }
+};
+
+// ────────────────────────────────────────────────────────────────
+// DISTRIBUTED BUSINESSES (Homepage Section)
+// ────────────────────────────────────────────────────────────────
+
+export const distributedBusinesses = {
+  eyebrow: {
+    en: 'WHO THIS IS FOR',
+    es: 'PARA QUIÉN ES ESTO'
+  },
+  headline: {
+    en: 'Built for Businesses Where Many People Must Operate Together.',
+    es: 'Construido para Negocios Donde Muchas Personas Deben Operar Juntas.'
+  },
+  examples: [
+    { en: 'Manufacturers and distributors', es: 'Fabricantes y distribuidores' },
+    { en: 'Brands and retail partners', es: 'Marcas y socios de retail' },
+    { en: 'Restaurant groups and locations', es: 'Grupos restauranteros y ubicaciones' },
+    { en: 'Artist management and artists', es: 'Managements de artistas y artistas' },
+    { en: 'Multi-location organizations', es: 'Organizaciones multi-ubicación' }
+  ],
+  body: {
+    en: 'Untold organizes how information flows across these networks.',
+    es: 'Untold organiza cómo fluye la información en estas redes.'
+  }
+};
+
+// ────────────────────────────────────────────────────────────────
+// THE FOUR SYSTEMS (Homepage Section)
+// ────────────────────────────────────────────────────────────────
+
+export const fourSystems = {
+  eyebrow: {
+    en: 'THE UNTOLD SYSTEM',
+    es: 'EL SISTEMA UNTOLD'
+  },
+  headline: {
+    en: 'Four Systems That Keep Distributed Businesses Aligned.',
+    es: 'Cuatro Sistemas Que Mantienen Alineados a los Negocios Distribuidos.'
+  },
+  systems: [
+    {
+      number: '01',
+      title: { en: 'Product Information System', es: 'Sistema de Información de Producto' },
+      description: {
+        en: 'A single source of truth for product data, documentation, images, specifications, and marketing assets. Everyone works from the same information.',
+        es: 'Una fuente única de verdad para datos de producto, documentación, imágenes, especificaciones y materiales de marketing. Todos trabajan con la misma información.'
+      }
+    },
+    {
+      number: '02',
+      title: { en: 'Communication System', es: 'Sistema de Comunicación' },
+      description: {
+        en: 'Structured communication between company teams, partners, locations, and distributors. Built around the tools your teams already use — CRM, email, WhatsApp, internal dashboards.',
+        es: 'Comunicación estructurada entre equipos, socios, ubicaciones y distribuidores. Construido alrededor de las herramientas que tus equipos ya usan — CRM, email, WhatsApp, dashboards internos.'
+      }
+    },
+    {
+      number: '03',
+      title: { en: 'Lead Routing System', es: 'Sistema de Enrutamiento de Leads' },
+      description: {
+        en: 'Customer inquiries and leads automatically routed to the correct partner, distributor, location, or sales team. No leads lost. No manual handoffs.',
+        es: 'Consultas de clientes y leads enrutados automáticamente al socio, distribuidor, ubicación o equipo de ventas correcto. Sin leads perdidos. Sin traspasos manuales.'
+      }
+    },
+    {
+      number: '04',
+      title: { en: 'Sales Visibility System', es: 'Sistema de Visibilidad de Ventas' },
+      description: {
+        en: 'Clear insight into sales activity, partner performance, and market demand. See what\'s happening across the entire network — not just your own reports.',
+        es: 'Visibilidad clara de la actividad de ventas, desempeño de socios y demanda del mercado. Ve lo que sucede en toda la red — no solo en tus propios reportes.'
+      }
+    }
+  ]
+};
+
+// ────────────────────────────────────────────────────────────────
+// AI POSITIONING (Homepage Section)
+// ────────────────────────────────────────────────────────────────
+
+export const aiPositioning = {
+  eyebrow: {
+    en: 'AI-READY INFRASTRUCTURE',
+    es: 'INFRAESTRUCTURA LISTA PARA IA'
+  },
+  headline: {
+    en: 'Automation Organizes. AI Amplifies.',
+    es: 'La Automatización Organiza. La IA Amplifica.'
+  },
+  body: [
+    {
+      en: 'Automation organizes how information moves between systems, teams, and partners.',
+      es: 'La automatización organiza cómo se mueve la información entre sistemas, equipos y socios.'
+    },
+    {
+      en: 'AI improves reporting, discoverability, and decision-making across the network.',
+      es: 'La IA mejora los reportes, la descubribilidad y la toma de decisiones en toda la red.'
+    },
+    {
+      en: 'Together, they reduce the manual coordination that slows distributed businesses down.',
+      es: 'Juntos, reducen la coordinación manual que frena a los negocios distribuidos.'
+    }
+  ],
+  principle: {
+    en: 'AI strengthens aligned systems. It is not a replacement for them.',
+    es: 'La IA fortalece los sistemas alineados. No es un reemplazo para ellos.'
+  }
+};
+
+// ────────────────────────────────────────────────────────────────
+// OWNERSHIP PHILOSOPHY (Homepage Section)
+// ────────────────────────────────────────────────────────────────
+
+export const ownershipPhilosophy = {
+  eyebrow: {
+    en: 'OWNERSHIP',
+    es: 'PROPIEDAD'
+  },
+  headline: {
+    en: 'Systems You Understand. Systems You Control.',
+    es: 'Sistemas Que Entiendes. Sistemas Que Controlas.'
+  },
+  body: [
+    {
+      en: 'Many businesses pay for complex software they barely use. Instead of adding more tools, companies often need better systems.',
+      es: 'Muchas empresas pagan por software complejo que apenas usan. En lugar de agregar más herramientas, las empresas a menudo necesitan mejores sistemas.'
+    },
+    {
+      en: 'Untold builds systems businesses understand and control. Full documentation, video training, and complete ownership transfer.',
+      es: 'Untold construye sistemas que las empresas entienden y controlan. Documentación completa, capacitación en video y transferencia total de propiedad.'
+    }
+  ]
+};
+
+// ────────────────────────────────────────────────────────────────
+// DIAGRAM LABELS (Homepage SVG)
+// ────────────────────────────────────────────────────────────────
+
+export const diagramLabels = {
+  center: { en: 'Company', es: 'Empresa' },
+  nodes: [
+    { en: 'Partners', es: 'Socios' },
+    { en: 'Distributors', es: 'Distribuidores' },
+    { en: 'Locations', es: 'Ubicaciones' },
+    { en: 'Teams', es: 'Equipos' }
+  ],
+  layers: [
+    { en: 'Product Information', es: 'Info de Producto' },
+    { en: 'Communication', es: 'Comunicación' },
+    { en: 'Lead Routing', es: 'Enrutamiento' },
+    { en: 'Sales Visibility', es: 'Visibilidad' }
+  ],
+  behind: { en: 'Automation & AI', es: 'Automatización e IA' }
 };
 
 // ────────────────────────────────────────────────────────────────
@@ -429,12 +647,12 @@ export const moneyStory = {
 
 export const stickyBar = {
   message: {
-    en: 'The average business wastes $12,000/year on tools they don\'t own. We fix that.',
-    es: 'El negocio promedio desperdicia $12,000/año en herramientas que no le pertenecen. Nosotros lo arreglamos.'
+    en: 'Most companies don\'t have a software problem. They have an alignment problem.',
+    es: 'La mayoría de las empresas no tienen un problema de software. Tienen un problema de alineación.'
   },
   cta: {
-    en: 'See how',
-    es: 'Mira cómo'
+    en: 'We solve it',
+    es: 'Lo resolvemos'
   }
 };
 
@@ -811,12 +1029,12 @@ export const blogPage = {
 export const seo = {
   home: {
     title: {
-      en: 'AI-Powered Business Systems | Network Systems, Websites, Dashboards — Untold.works',
-      es: 'Sistemas de Negocio con IA | Network Systems, Sitios Web, Dashboards — Untold.works'
+      en: 'Operational Alignment Systems for Distributed Businesses | Untold.works',
+      es: 'Sistemas de Alineación Operativa para Negocios Distribuidos | Untold.works'
     },
     description: {
-      en: 'AI-powered digital systems for business networks and individual companies. Network Systems for manufacturers, franchise groups, and multi-location brands. Websites, SEO/AEO/GEO, dashboards, sales enablement, and mobile apps. Mexico and United States.',
-      es: 'Sistemas digitales con IA para redes de negocios y empresas individuales. Network Systems para fabricantes, grupos de franquicias y marcas multi-ubicación. Sitios web, SEO/AEO/GEO, dashboards, habilitación de ventas y apps móviles. México y Estados Unidos.'
+      en: 'Untold builds operational alignment systems for distributed businesses. Product information, communication, lead routing, and sales visibility — organized so companies and their partners work as one. Mexico and United States.',
+      es: 'Untold construye sistemas de alineación operativa para negocios distribuidos. Información de producto, comunicación, enrutamiento de leads y visibilidad de ventas — organizados para que empresas y socios operen como uno. México y Estados Unidos.'
     }
   },
   solutions: {
