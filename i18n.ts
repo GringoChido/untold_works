@@ -1272,3 +1272,214 @@ export const workshopSyllabus = {
   },
   cta: { en: 'RESERVE YOUR SPOT', es: 'RESERVAR LUGAR' }
 };
+
+// ────────────────────────────────────────────────────────────────
+// INFORMATION FLOW (Homepage Section — between Alignment Breakdown and Distributed Businesses)
+// ────────────────────────────────────────────────────────────────
+
+export const informationFlow = {
+  eyebrow: {
+    en: 'HOW INFORMATION MOVES',
+    es: 'CÓMO SE MUEVE LA INFORMACIÓN'
+  },
+  headline: {
+    en: 'Your Business Already Runs on Communication.',
+    es: 'Tu Negocio Ya Opera a Través de la Comunicación.'
+  },
+  paragraphs: [
+    {
+      en: 'Orders confirmed through messages. Suppliers coordinated through chat. Customers asking questions through WhatsApp. Teams making decisions through email and calls.',
+      es: 'Pedidos confirmados por mensaje. Proveedores coordinados por chat. Clientes preguntando por WhatsApp. Equipos tomando decisiones por correo y llamadas.'
+    },
+    {
+      en: 'All of that communication already contains the operational information that moves your business forward.',
+      es: 'Toda esa comunicación ya contiene la información operativa que mueve tu negocio.'
+    },
+    {
+      en: 'Untold organizes how that information flows across the business. Communication stays where teams already work. We rebuild the systems behind it so that information becomes structured, visible, and actionable.',
+      es: 'Untold organiza cómo fluye esa información en el negocio. La comunicación se queda donde los equipos ya trabajan. Nosotros reconstruimos los sistemas detrás para que la información sea estructurada, visible y accionable.'
+    }
+  ],
+  principle: {
+    en: 'Instead of forcing companies to adopt unfamiliar tools, Untold connects the tools teams already rely on.',
+    es: 'En lugar de forzar a las empresas a adoptar herramientas desconocidas, Untold conecta las herramientas en las que los equipos ya confían.'
+  }
+};
+
+// ────────────────────────────────────────────────────────────────
+// MOBILE-FIRST CONTEXT (Solutions Page)
+// ────────────────────────────────────────────────────────────────
+
+export const mobileFirstContext = {
+  eyebrow: {
+    en: 'BUILT FOR HOW TEAMS ACTUALLY WORK',
+    es: 'CONSTRUIDO PARA CÓMO REALMENTE TRABAJAN LOS EQUIPOS'
+  },
+  headline: {
+    en: 'Communication Is the Operating System.',
+    es: 'La Comunicación Es el Sistema Operativo.'
+  },
+  body: {
+    en: 'In many markets — especially Mexico — businesses operate through mobile communication. WhatsApp coordinates suppliers, confirms orders, and handles customer service. Email threads carry decisions. Group chats move projects forward. Instead of forcing teams to abandon these habits, Untold integrates them into structured operational workflows. The tools stay familiar. The information behind them becomes organized.',
+    es: 'En muchos mercados — especialmente México — los negocios operan a través de comunicación móvil. WhatsApp coordina proveedores, confirma pedidos y atiende clientes. Los hilos de correo llevan decisiones. Los chats grupales mueven proyectos. En lugar de forzar a los equipos a abandonar estos hábitos, Untold los integra en flujos operativos estructurados. Las herramientas se mantienen familiares. La información detrás de ellas se organiza.'
+  },
+  signals: [
+    {
+      en: 'Orders confirmed through WhatsApp messages',
+      es: 'Pedidos confirmados por mensajes de WhatsApp'
+    },
+    {
+      en: 'Suppliers coordinated through group chats',
+      es: 'Proveedores coordinados por chats grupales'
+    },
+    {
+      en: 'Customer service handled from a phone',
+      es: 'Atención al cliente manejada desde el teléfono'
+    },
+    {
+      en: 'Team decisions made through email threads',
+      es: 'Decisiones de equipo tomadas por hilos de correo'
+    }
+  ]
+};
+
+// ────────────────────────────────────────────────────────────────
+// MEXICO PAGE
+// ────────────────────────────────────────────────────────────────
+
+export const mexicoPage = {
+  seo: {
+    title: {
+      en: 'Operational Systems for Mobile-First Businesses in Mexico | Untold.works',
+      es: 'Sistemas Operativos para Negocios Mobile-First en México | Untold.works'
+    },
+    description: {
+      en: 'Untold builds structured business systems around WhatsApp, mobile communication, and the tools Mexican businesses already use. Operational visibility for teams across Mexico.',
+      es: 'Untold construye sistemas empresariales estructurados alrededor de WhatsApp, comunicación móvil y las herramientas que los negocios mexicanos ya usan. Visibilidad operativa para equipos en todo México.'
+    }
+  },
+  hero: {
+    eyebrow: {
+      en: 'MEXICO — MOBILE-FIRST OPERATIONS',
+      es: 'MÉXICO — OPERACIONES MOBILE-FIRST'
+    },
+    headline: {
+      en: 'Operational Systems for Mobile-First Businesses',
+      es: 'Sistemas Operativos para Negocios Mobile-First'
+    },
+    tagline: {
+      en: 'In Mexico, business moves through phones. Orders, coordination, customer service, decisions — much of it happens through WhatsApp, calls, and messages. Untold builds structured systems around those communication habits so information becomes visible across the business.',
+      es: 'En México, los negocios se mueven por el teléfono. Pedidos, coordinación, atención al cliente, decisiones — gran parte sucede por WhatsApp, llamadas y mensajes. Untold construye sistemas estructurados alrededor de esos hábitos de comunicación para que la información sea visible en todo el negocio.'
+    }
+  },
+  mobileOps: {
+    eyebrow: {
+      en: 'WHAT MOBILE-FIRST OPERATIONS LOOK LIKE',
+      es: 'CÓMO SE VEN LAS OPERACIONES MOBILE-FIRST'
+    },
+    headline: {
+      en: 'These Are Not Side Conversations. This Is How the Business Runs.',
+      es: 'No Son Conversaciones Secundarias. Así Opera el Negocio.'
+    },
+    examples: [
+      {
+        title: { en: 'Orders and confirmations', es: 'Pedidos y confirmaciones' },
+        desc: {
+          en: 'A supplier sends a WhatsApp message confirming inventory. A restaurant owner replies with a voice note adjusting the order. The transaction is real — but the data lives only in the chat.',
+          es: 'Un proveedor envía un mensaje de WhatsApp confirmando inventario. El dueño del restaurante responde con una nota de voz ajustando el pedido. La transacción es real — pero los datos solo viven en el chat.'
+        }
+      },
+      {
+        title: { en: 'Supplier coordination', es: 'Coordinación con proveedores' },
+        desc: {
+          en: 'Group chats between a business and its suppliers carry pricing updates, delivery schedules, and change requests. The coordination works, but nothing is logged, searchable, or visible to the rest of the team.',
+          es: 'Los chats grupales entre un negocio y sus proveedores llevan actualizaciones de precios, horarios de entrega y cambios. La coordinación funciona, pero nada se registra, es buscable ni visible para el resto del equipo.'
+        }
+      },
+      {
+        title: { en: 'Customer communication', es: 'Comunicación con clientes' },
+        desc: {
+          en: 'Customers message a business on WhatsApp to ask about availability, pricing, or appointments. The business replies manually. Every answer is one-to-one, every follow-up is memory-dependent.',
+          es: 'Los clientes mandan mensaje por WhatsApp para preguntar sobre disponibilidad, precios o citas. El negocio responde manualmente. Cada respuesta es uno a uno, cada seguimiento depende de la memoria.'
+        }
+      },
+      {
+        title: { en: 'Team direction', es: 'Dirección del equipo' },
+        desc: {
+          en: 'A manager shares updates, assigns tasks, and makes decisions through phone calls, voice notes, and group messages. The team follows through — but there is no shared record of what was decided or who is responsible.',
+          es: 'Un gerente comparte actualizaciones, asigna tareas y toma decisiones por llamadas, notas de voz y mensajes grupales. El equipo cumple — pero no hay un registro compartido de lo que se decidió o quién es responsable.'
+        }
+      }
+    ]
+  },
+  howItWorks: {
+    eyebrow: {
+      en: 'HOW UNTOLD WORKS IN THIS ENVIRONMENT',
+      es: 'CÓMO TRABAJA UNTOLD EN ESTE ENTORNO'
+    },
+    headline: {
+      en: 'We Don\'t Remove Communication Habits. We Build Systems Around Them.',
+      es: 'No Eliminamos los Hábitos de Comunicación. Construimos Sistemas Alrededor de Ellos.'
+    },
+    body: {
+      en: 'Untold captures the signals that already flow through communication channels and connects them to structured operational systems. The result is better visibility without changing how teams prefer to work.',
+      es: 'Untold captura las señales que ya fluyen por los canales de comunicación y las conecta a sistemas operativos estructurados. El resultado es mejor visibilidad sin cambiar cómo los equipos prefieren trabajar.'
+    },
+    steps: [
+      {
+        label: { en: 'Capture communication signals', es: 'Capturar señales de comunicación' },
+        desc: { en: 'Messages, confirmations, and requests that carry real operational meaning.', es: 'Mensajes, confirmaciones y solicitudes que llevan significado operativo real.' }
+      },
+      {
+        label: { en: 'Structure the information', es: 'Estructurar la información' },
+        desc: { en: 'Turn conversations into organized data — orders, tasks, contacts, timelines.', es: 'Convertir conversaciones en datos organizados — pedidos, tareas, contactos, cronogramas.' }
+      },
+      {
+        label: { en: 'Connect to operational systems', es: 'Conectar a sistemas operativos' },
+        desc: { en: 'Route structured data to CRM, inventory, scheduling, or reporting tools.', es: 'Dirigir datos estructurados a CRM, inventario, agenda o herramientas de reportes.' }
+      },
+      {
+        label: { en: 'Create visibility across the business', es: 'Crear visibilidad en todo el negocio' },
+        desc: { en: 'Leadership, partners, and teams see the same information — without chasing chat threads.', es: 'Liderazgo, socios y equipos ven la misma información — sin perseguir hilos de chat.' }
+      }
+    ]
+  },
+  blogSection: {
+    eyebrow: {
+      en: 'WRITING ABOUT MEXICO AND MOBILE-FIRST OPERATIONS',
+      es: 'ESCRITOS SOBRE MÉXICO Y OPERACIONES MOBILE-FIRST'
+    },
+    headline: {
+      en: 'Insights for Mobile-First Businesses',
+      es: 'Insights para Negocios Mobile-First'
+    },
+    intro: {
+      en: 'These posts explore how businesses operate in mobile-first environments, especially across Mexico, and how communication tools shape real business workflows.',
+      es: 'Estos artículos exploran cómo operan los negocios en entornos mobile-first, especialmente en México, y cómo las herramientas de comunicación dan forma a los flujos reales de trabajo.'
+    }
+  },
+  cta: {
+    headline: {
+      en: 'Ready to Organize How Your Business Communicates?',
+      es: '¿Listo para Organizar Cómo Se Comunica Tu Negocio?'
+    },
+    body: {
+      en: 'Tell us how your team works today — the tools, the channels, the habits. We\'ll show you how to turn that communication into structured business visibility.',
+      es: 'Cuéntanos cómo trabaja tu equipo hoy — las herramientas, los canales, los hábitos. Te mostraremos cómo convertir esa comunicación en visibilidad estructurada para el negocio.'
+    }
+  },
+  locations: {
+    eyebrow: {
+      en: 'WE SERVE BUSINESSES ACROSS MEXICO',
+      es: 'ATENDEMOS NEGOCIOS EN TODO MÉXICO'
+    },
+    headline: {
+      en: 'Local Expertise. National Reach.',
+      es: 'Experiencia Local. Alcance Nacional.'
+    },
+    body: {
+      en: 'Based in San Miguel de Allende, serving businesses across Mexico and the United States.',
+      es: 'Con sede en San Miguel de Allende, atendiendo negocios en México y Estados Unidos.'
+    }
+  }
+};

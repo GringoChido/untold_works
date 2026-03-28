@@ -175,6 +175,7 @@ function buildBreadcrumbs(
     hosting: { en: 'Hosting', es: 'Hosting' },
     'review-reputation': { en: 'Review & Reputation', es: 'Reseñas y Reputación' },
     'network-systems': { en: 'Network Systems', es: 'Network Systems' },
+    mexico: { en: 'Mexico', es: 'México' },
   };
 
   let accumulated = '';

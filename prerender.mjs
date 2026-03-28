@@ -35,6 +35,7 @@ const routes = [
   '/queretaro',
   '/mexico-city',
   '/united-states',
+  '/mexico',
   '/privacy',
   '/savings',
   '/analog',

@@ -26,6 +26,7 @@ const SanMiguelDeAllende = lazy(() => import('./pages/locations/SanMiguelDeAllen
 const Queretaro = lazy(() => import('./pages/locations/Queretaro'));
 const MexicoCity = lazy(() => import('./pages/locations/MexicoCity'));
 const UnitedStates = lazy(() => import('./pages/locations/UnitedStates'));
+const Mexico = lazy(() => import('./pages/locations/Mexico'));
 const NetworkSystems = lazy(() => import('./pages/NetworkSystems'));
 const SeoAeo = lazy(() => import('./pages/SeoAeo'));
 const SocialMedia = lazy(() => import('./pages/SocialMedia'));
@@ -103,6 +104,7 @@ const AppLayout: React.FC = () => {
             <Route path="/queretaro" element={<Queretaro />} />
             <Route path="/mexico-city" element={<MexicoCity />} />
             <Route path="/united-states" element={<UnitedStates />} />
+            <Route path="/mexico" element={<Mexico />} />
             <Route path="/websites" element={<Websites />} />
             <Route path="/seo-aeo" element={<SeoAeo />} />
             <Route path="/social-media" element={<SocialMedia />} />

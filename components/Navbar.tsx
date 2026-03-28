@@ -9,6 +9,7 @@ const Navbar: React.FC = () => {
   const [isSolutionsOpen, setIsSolutionsOpen] = useState(false);
 
   const pillarLinks = [
+    { path: '/mexico', label: { en: 'Mexico — Mobile-First Operations', es: 'México — Operaciones Mobile-First' } },
     { path: '/solutions/professional-services', label: { en: 'Professional Services', es: 'Servicios Profesionales' } },
     { path: '/solutions/small-business', label: { en: 'Small Business', es: 'Pequeña Empresa' } },
     { path: '/solutions/enterprise', label: { en: 'Enterprise', es: 'Empresarial' } },

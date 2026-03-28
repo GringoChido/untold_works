@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { useLanguage } from '../App';
 import { usePageMeta } from '../hooks/usePageMeta';
+import * as i18n from '../i18n';
 import Breadcrumbs from '../components/Breadcrumbs';
 import Testimonials from '../components/Testimonials';
 import NetworkConnector from '../components/NetworkConnector';
@@ -192,6 +193,37 @@ const Solutions: React.FC = () => {
                 <p className="font-serif italic text-untold-gray text-sm">{t(item.detail)}</p>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ── 2b. Mobile-First Communication Context ── */}
+      <section className="bg-untold-beige/40 px-5 sm:px-10 py-16 sm:py-24 border-b border-untold-border">
+        <div className="max-w-[1440px] mx-auto">
+          <div className="grid lg:grid-cols-2 gap-12 lg:gap-20">
+            <div>
+              <span className="font-mono text-[10px] uppercase tracking-[0.5em] text-untold-orange font-bold block mb-6">
+                {t(i18n.mobileFirstContext.eyebrow)}
+              </span>
+              <h2 className="font-sans font-black text-3xl sm:text-5xl uppercase tracking-tighter mb-6 leading-[0.85]">
+                {t(i18n.mobileFirstContext.headline)}
+              </h2>
+              <p className="text-lg sm:text-xl font-serif italic text-untold-gray leading-relaxed">
+                {t(i18n.mobileFirstContext.body)}
+              </p>
+            </div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              {i18n.mobileFirstContext.signals.map((signal, idx) => (
+                <div key={idx} className="border border-untold-border bg-white p-5 sm:p-6">
+                  <span className="font-mono text-[10px] text-untold-orange font-bold block mb-3">
+                    {String(idx + 1).padStart(2, '0')}
+                  </span>
+                  <p className="font-sans font-black text-sm uppercase tracking-tighter leading-tight">
+                    {t(signal)}
+                  </p>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </section>

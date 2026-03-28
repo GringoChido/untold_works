@@ -204,6 +204,51 @@ const Home: React.FC = () => {
       </section>
 
       {/* ═══════════════════════════════════════════════════════════
+          3b. INFORMATION FLOW — How communication becomes structure
+      ═══════════════════════════════════════════════════════════ */}
+      <section className="bg-white border-b border-untold-border">
+        <div className="max-w-[1440px] mx-auto px-5 sm:px-10 py-20 sm:py-32">
+          <div className="flex items-center space-x-3 mb-8">
+            <span className="w-3 h-3 rounded-full bg-untold-orange animate-pulse" />
+            <span className="font-mono text-[10px] uppercase tracking-[0.5em] text-untold-orange font-bold">
+              {t(i18n.informationFlow.eyebrow)}
+            </span>
+          </div>
+
+          <h2 className="font-sans font-black text-3xl sm:text-5xl lg:text-6xl uppercase tracking-tighter mb-12 leading-[0.85] max-w-5xl">
+            {t(i18n.informationFlow.headline)}
+          </h2>
+
+          <div className="grid lg:grid-cols-2 gap-12 lg:gap-20">
+            <div className="space-y-6 max-w-xl">
+              {i18n.informationFlow.paragraphs.map((paragraph, idx) => (
+                <p key={idx} className="font-serif text-lg sm:text-xl text-untold-gray leading-relaxed">
+                  {t(paragraph)}
+                </p>
+              ))}
+            </div>
+
+            <div className="flex flex-col justify-center space-y-8">
+              <div className="border-l-4 border-untold-orange pl-6 sm:pl-10">
+                <p className="font-serif italic text-xl sm:text-2xl text-untold-black leading-[1.15] tracking-tight">
+                  {t(i18n.informationFlow.principle)}
+                </p>
+              </div>
+              <Link
+                to="/mexico"
+                className="inline-flex items-center space-x-4 group self-start"
+              >
+                <span className="font-sans font-black text-base sm:text-lg uppercase tracking-tighter text-untold-orange group-hover:text-untold-black transition-colors">
+                  {t({ en: 'See How This Works in Mexico', es: 'Cómo Funciona Esto en México' })}
+                </span>
+                <span className="text-xl text-untold-orange group-hover:translate-x-2 transition-transform">→</span>
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ═══════════════════════════════════════════════════════════
           4. DISTRIBUTED BUSINESSES — Who this is for
       ═══════════════════════════════════════════════════════════ */}
       <section className="bg-white border-b border-untold-border">
