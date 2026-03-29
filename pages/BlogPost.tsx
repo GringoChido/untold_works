@@ -179,6 +179,37 @@ const BlogPost: React.FC = () => {
         </section>
       )}
 
+      {/* Blog-to-Conversion CTA */}
+      <section className="px-5 sm:px-10 py-0">
+        <div className="max-w-[900px] mx-auto">
+          <div className="mt-16 border-t border-untold-border pt-12">
+            <div className="bg-untold-black text-white p-8 sm:p-12">
+              <span className="font-mono text-[10px] uppercase tracking-[0.5em] text-untold-orange font-bold block mb-4">
+                {t({ en: 'WHAT WE BUILD', es: 'LO QUE CONSTRUIMOS' })}
+              </span>
+              <h3 className="font-sans font-black text-2xl sm:text-3xl uppercase tracking-tighter mb-4 leading-[0.9]">
+                {t({ en: 'This Is Exactly What Our Network Systems Solve.', es: 'Esto Es Exactamente Lo Que Nuestros Network Systems Resuelven.' })}
+              </h3>
+              <p className="font-serif text-white/60 text-base leading-relaxed mb-8 max-w-2xl">
+                {t({
+                  en: 'We build operational alignment systems that organize product information, communication, lead routing, and sales visibility — so businesses and their partners work as one.',
+                  es: 'Construimos sistemas de alineación operativa que organizan información de producto, comunicación, enrutamiento de leads y visibilidad de ventas — para que negocios y sus socios operen como uno.'
+                })}
+              </p>
+              <Link
+                to="/contact"
+                className="inline-flex items-center space-x-4 group border border-white/20 px-8 py-5 hover:border-untold-orange hover:bg-untold-orange/10 transition-all"
+              >
+                <span className="font-sans font-black text-base uppercase tracking-tighter">
+                  {t({ en: 'Start a Conversation', es: 'Iniciar Conversación' })}
+                </span>
+                <span className="text-2xl text-untold-orange group-hover:translate-x-2 transition-transform">&rarr;</span>
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <ProofStrip />
 
       {/* CTA */}

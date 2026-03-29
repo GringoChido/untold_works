@@ -91,32 +91,70 @@ const Footer: React.FC = () => {
               </Link>
             </div>
 
-            {/* Service Pages */}
-            <div className="flex flex-col lg:text-right">
-              <span className="font-mono text-[10px] uppercase tracking-[0.6em] text-white/20 font-bold mb-2">
-                {t({ en: 'SERVICES', es: 'SERVICIOS' })}
-              </span>
-              {[
-                { label: { en: 'Websites', es: 'Sitios Web' }, path: '/websites' },
-                { label: { en: 'SEO & AEO', es: 'SEO y AEO' }, path: '/seo-aeo' },
-                { label: { en: 'Social Media', es: 'Redes Sociales' }, path: '/social-media' },
-                { label: { en: 'Ads', es: 'Publicidad' }, path: '/ads' },
-                { label: { en: 'Dashboard', es: 'Dashboard' }, path: '/dashboard' },
-                { label: { en: 'Copywriting', es: 'Redacción' }, path: '/copywriting' },
-                { label: { en: 'AI Content', es: 'Contenido IA' }, path: '/ai-content' },
-                { label: { en: 'Sales Enablement', es: 'Habilitación de Ventas' }, path: '/sales-enablement' },
-                { label: { en: 'Mobile Apps', es: 'Apps Móviles' }, path: '/mobile-apps' },
-                { label: { en: 'Hosting', es: 'Hosting' }, path: '/hosting' },
-                { label: { en: 'Reviews', es: 'Reseñas' }, path: '/review-reputation' },
-              ].map((item) => (
-                <Link
-                  key={item.path}
-                  to={item.path}
-                  className="text-sm font-mono uppercase tracking-[0.3em] text-white/20 hover:text-untold-orange transition-all duration-300 py-2 min-h-[44px] flex items-center lg:justify-end"
-                >
-                  {t(item.label)}
-                </Link>
-              ))}
+            {/* Service Pages — Grouped by Network System Pillar */}
+            <div className="flex flex-col lg:text-right space-y-6">
+              {/* Digital Presence */}
+              <div>
+                <span className="font-mono text-[10px] uppercase tracking-[0.6em] text-untold-orange/60 font-bold block mb-2">
+                  {t({ en: 'DIGITAL PRESENCE', es: 'PRESENCIA DIGITAL' })}
+                </span>
+                {[
+                  { label: { en: 'Websites', es: 'Sitios Web' }, path: '/websites' },
+                  { label: { en: 'SEO & AEO', es: 'SEO y AEO' }, path: '/seo-aeo' },
+                  { label: { en: 'Social Media', es: 'Redes Sociales' }, path: '/social-media' },
+                  { label: { en: 'Ads', es: 'Publicidad' }, path: '/ads' },
+                  { label: { en: 'Copywriting', es: 'Redacción' }, path: '/copywriting' },
+                  { label: { en: 'AI Content', es: 'Contenido IA' }, path: '/ai-content' },
+                ].map((item) => (
+                  <Link
+                    key={item.path}
+                    to={item.path}
+                    className="text-sm font-mono uppercase tracking-[0.3em] text-white/20 hover:text-untold-orange transition-all duration-300 py-1.5 min-h-[44px] flex items-center lg:justify-end"
+                  >
+                    {t(item.label)}
+                  </Link>
+                ))}
+              </div>
+
+              {/* Communication & Sales */}
+              <div>
+                <span className="font-mono text-[10px] uppercase tracking-[0.6em] text-untold-orange/60 font-bold block mb-2">
+                  {t({ en: 'COMMUNICATION & SALES', es: 'COMUNICACIÓN Y VENTAS' })}
+                </span>
+                {[
+                  { label: { en: 'WhatsApp Systems', es: 'Sistemas WhatsApp' }, path: '/whatsapp' },
+                  { label: { en: 'Sales Enablement', es: 'Habilitación de Ventas' }, path: '/sales-enablement' },
+                  { label: { en: 'Reviews', es: 'Reseñas' }, path: '/review-reputation' },
+                ].map((item) => (
+                  <Link
+                    key={item.path}
+                    to={item.path}
+                    className="text-sm font-mono uppercase tracking-[0.3em] text-white/20 hover:text-untold-orange transition-all duration-300 py-1.5 min-h-[44px] flex items-center lg:justify-end"
+                  >
+                    {t(item.label)}
+                  </Link>
+                ))}
+              </div>
+
+              {/* Infrastructure */}
+              <div>
+                <span className="font-mono text-[10px] uppercase tracking-[0.6em] text-untold-orange/60 font-bold block mb-2">
+                  {t({ en: 'INFRASTRUCTURE', es: 'INFRAESTRUCTURA' })}
+                </span>
+                {[
+                  { label: { en: 'Dashboard', es: 'Dashboard' }, path: '/dashboard' },
+                  { label: { en: 'Mobile Apps', es: 'Apps Móviles' }, path: '/mobile-apps' },
+                  { label: { en: 'Hosting', es: 'Hosting' }, path: '/hosting' },
+                ].map((item) => (
+                  <Link
+                    key={item.path}
+                    to={item.path}
+                    className="text-sm font-mono uppercase tracking-[0.3em] text-white/20 hover:text-untold-orange transition-all duration-300 py-1.5 min-h-[44px] flex items-center lg:justify-end"
+                  >
+                    {t(item.label)}
+                  </Link>
+                ))}
+              </div>
             </div>
 
             {/* Contact */}

@@ -32,7 +32,7 @@ const faqSchema = {
       name: 'What does Untold.works build?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'We build operational alignment systems for distributed businesses — manufacturers, franchise groups, multi-location brands, and organizations that coordinate across partners, distributors, and teams. Our systems organize product information, communication, lead routing, and sales visibility.',
+        text: 'We build operational alignment systems for businesses where information must flow between many stakeholders — manufacturers, franchise groups, multi-location brands, showrooms with trade networks, and professional services with referral partners. Our systems organize product information, communication, lead routing, and sales visibility.',
       },
     },
     {
@@ -48,7 +48,7 @@ const faqSchema = {
       name: 'What types of businesses does Untold serve?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'We serve distributed businesses where many people or organizations must operate together: manufacturers and distributors, brands and retail partners, restaurant groups and locations, artist management, and multi-location organizations across Mexico and the United States.',
+        text: 'We serve businesses where information needs to flow between multiple stakeholders: manufacturers and distributors, brands and retail partners, showrooms with trade accounts, restaurant groups, professional services with referral networks, and multi-location organizations across Mexico and the United States.',
       },
     },
     {
@@ -504,7 +504,7 @@ const Home: React.FC = () => {
             {[
               {
                 q: { en: 'What does Untold.works build?', es: '¿Qué construye Untold.works?' },
-                a: { en: 'We build operational alignment systems for distributed businesses — manufacturers, franchise groups, multi-location brands, and organizations that coordinate across partners, distributors, and teams. Our systems organize product information, communication, lead routing, and sales visibility.', es: 'Construimos sistemas de alineación operativa para negocios distribuidos — fabricantes, grupos de franquicia, marcas multi-ubicación y organizaciones que coordinan entre socios, distribuidores y equipos. Nuestros sistemas organizan información de producto, comunicación, enrutamiento de leads y visibilidad de ventas.' },
+                a: { en: 'We build operational alignment systems for businesses where information must flow between many stakeholders — manufacturers, franchise groups, multi-location brands, showrooms with trade networks, and professional services with referral partners. Our systems organize product information, communication, lead routing, and sales visibility.', es: 'Construimos sistemas de alineación operativa para negocios donde la información debe fluir entre muchos stakeholders — fabricantes, grupos de franquicia, marcas multi-ubicación, showrooms con redes de trade y servicios profesionales con socios de referidos. Nuestros sistemas organizan información de producto, comunicación, enrutamiento de leads y visibilidad de ventas.' },
               },
               {
                 q: { en: 'What is an operational alignment system?', es: '¿Qué es un sistema de alineación operativa?' },
@@ -512,7 +512,7 @@ const Home: React.FC = () => {
               },
               {
                 q: { en: 'What types of businesses does Untold serve?', es: '¿Qué tipos de negocios atiende Untold?' },
-                a: { en: 'We serve distributed businesses where many people or organizations must operate together: manufacturers and distributors, brands and retail partners, restaurant groups, artist management, and multi-location organizations across Mexico and the United States.', es: 'Atendemos negocios distribuidos donde muchas personas u organizaciones deben operar juntas: fabricantes y distribuidores, marcas y socios de retail, grupos restauranteros, managements de artistas y organizaciones multi-ubicación en México y Estados Unidos.' },
+                a: { en: 'We serve businesses where information needs to flow between multiple stakeholders: manufacturers and distributors, brands and retail partners, showrooms with trade accounts, restaurant groups, professional services with referral networks, and multi-location organizations across Mexico and the United States.', es: 'Atendemos negocios donde la información necesita fluir entre múltiples stakeholders: fabricantes y distribuidores, marcas y socios de retail, showrooms con cuentas de trade, grupos restauranteros, servicios profesionales con redes de referidos y organizaciones multi-ubicación en México y Estados Unidos.' },
               },
               {
                 q: { en: 'Where is Untold.works located?', es: '¿Dónde se ubica Untold.works?' },

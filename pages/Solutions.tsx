@@ -75,6 +75,7 @@ const Solutions: React.FC = () => {
         { en: 'Email marketing & review management', es: 'Email marketing y gestión de reseñas' },
       ],
       pricing: { en: 'From $5,000 USD', es: 'Desde $5,000 USD' },
+      pricingClarifier: { en: 'Brand + website + basic CRM. Ideal for solo practitioners and new businesses.', es: 'Marca + sitio web + CRM básico. Ideal para profesionistas independientes y negocios nuevos.' },
       timeline: { en: '4–6 weeks', es: '4–6 semanas' },
       bestFor: { en: '1–5 person firms', es: 'Firmas de 1–5 personas' },
     },
@@ -97,6 +98,7 @@ const Solutions: React.FC = () => {
         { en: 'Multi-user analytics & revenue dashboard', es: 'Analítica multiusuario y panel de ingresos' },
       ],
       pricing: { en: 'From $10,000 USD', es: 'Desde $10,000 USD' },
+      pricingClarifier: { en: 'Full Network Systems deployment. Scope scales with number of AI workflows, integrations, and team size.', es: 'Despliegue completo de Network Systems. El alcance escala con el número de flujos de IA, integraciones y tamaño de equipo.' },
       timeline: { en: '6–10 weeks', es: '6–10 semanas' },
       bestFor: { en: 'Teams of 2–50', es: 'Equipos de 2–50' },
     },
@@ -119,6 +121,7 @@ const Solutions: React.FC = () => {
         { en: 'Revenue ops, forecasting & executive dashboards', es: 'RevOps, pronósticos y dashboards ejecutivos' },
       ],
       pricing: { en: 'Custom Pricing', es: 'Precio Personalizado' },
+      pricingClarifier: { en: 'Multi-department, multi-location, or complex integration requirements. Custom architecture and ongoing optimization.', es: 'Multi-departamento, multi-ubicación, o requerimientos de integración complejos. Arquitectura personalizada y optimización continua.' },
       timeline: { en: '8–16 weeks', es: '8–16 semanas' },
       bestFor: { en: 'Organizations with 20+ employees', es: 'Organizaciones con 20+ empleados' },
     },
@@ -265,6 +268,9 @@ const Solutions: React.FC = () => {
                       <div>
                         <span className="font-mono text-[9px] uppercase tracking-[0.3em] text-untold-black/30 block">{t({ en: 'Starting at', es: 'Desde' })}</span>
                         <span className="font-sans font-black text-lg tracking-tight">{t(solution.pricing)}</span>
+                        {solution.pricingClarifier && (
+                          <span className="font-serif italic text-untold-gray text-xs block mt-1">{t(solution.pricingClarifier)}</span>
+                        )}
                       </div>
                       <div>
                         <span className="font-mono text-[9px] uppercase tracking-[0.3em] text-untold-black/30 block">{t({ en: 'Timeline', es: 'Plazo' })}</span>

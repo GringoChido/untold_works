@@ -359,8 +359,8 @@ export const whyUntold = {
         es: 'Un Constructor. Cada Disciplina.'
       },
       description: {
-        en: 'Brand, dev, ads, SEO, content, deploy — one person with AI tools, not a chain of departments. Faster decisions. Zero telephone game.',
-        es: 'Marca, desarrollo, anuncios, SEO, contenido, deploy — una persona con herramientas de IA, no una cadena de departamentos. Decisiones más rápidas. Sin teléfono descompuesto.'
+        en: 'Brand, dev, ads, SEO, content, deploy — one senior architect with the same AI systems we build for clients. Faster decisions. Zero telephone game. The infrastructure that runs your business also runs ours.',
+        es: 'Marca, desarrollo, anuncios, SEO, contenido, deploy — un arquitecto senior con los mismos sistemas de IA que construimos para clientes. Decisiones más rápidas. Sin teléfono descompuesto. La infraestructura que opera tu negocio también opera el nuestro.'
       }
     }
   ],
@@ -463,20 +463,20 @@ export const distributedBusinesses = {
     es: 'PARA QUIÉN ES ESTO'
   },
   headline: {
-    en: 'Built for Businesses Where Many People Must Operate Together.',
-    es: 'Construido para Negocios Donde Muchas Personas Deben Operar Juntas.'
+    en: 'Built for Businesses Where Information Must Flow Between Many Stakeholders.',
+    es: 'Construido para Negocios Donde la Información Debe Fluir Entre Muchos Stakeholders.'
   },
   examples: [
     { en: 'Manufacturers and distributors', es: 'Fabricantes y distribuidores' },
     { en: 'Brands and retail partners', es: 'Marcas y socios de retail' },
+    { en: 'Showrooms with trade accounts and import suppliers', es: 'Showrooms con cuentas de trade y proveedores de importación' },
     { en: 'Restaurant groups and locations', es: 'Grupos restauranteros y ubicaciones' },
-    { en: 'Artist management and artists', es: 'Managements de artistas y artistas' },
-    { en: 'Multi-location organizations', es: 'Organizaciones multi-ubicación' },
-    { en: 'Franchise and licensing networks', es: 'Redes de franquicias y licencias' }
+    { en: 'Professional services with referral networks', es: 'Servicios profesionales con redes de referidos' },
+    { en: 'Multi-location organizations', es: 'Organizaciones multi-ubicación' }
   ],
   body: {
-    en: 'Untold organizes how information flows across these networks.',
-    es: 'Untold organiza cómo fluye la información en estas redes.'
+    en: 'Whether you coordinate across 50 locations or between a sales team, trade accounts, and international suppliers — if information needs to flow between people, Untold organizes how it moves.',
+    es: 'Ya sea que coordines entre 50 ubicaciones o entre un equipo de ventas, cuentas de trade y proveedores internacionales — si la información necesita fluir entre personas, Untold organiza cómo se mueve.'
   }
 };
 
@@ -490,40 +490,40 @@ export const fourSystems = {
     es: 'EL SISTEMA UNTOLD'
   },
   headline: {
-    en: 'Four Systems That Keep Distributed Businesses Aligned.',
-    es: 'Cuatro Sistemas Que Mantienen Alineados a los Negocios Distribuidos.'
+    en: 'Four Systems That Keep Businesses Aligned.',
+    es: 'Cuatro Sistemas Que Mantienen Alineados a los Negocios.'
   },
   systems: [
     {
       number: '01',
       title: { en: 'Product Information System', es: 'Sistema de Información de Producto' },
       description: {
-        en: 'A single source of truth for product data, documentation, images, specifications, and marketing assets. Everyone works from the same information.',
-        es: 'Una fuente única de verdad para datos de producto, documentación, imágenes, especificaciones y materiales de marketing. Todos trabajan con la misma información.'
+        en: 'A single source of truth for product data, documentation, images, specifications, and marketing assets. AI-powered content generation keeps product descriptions, catalogs, and marketing materials current across every channel automatically.',
+        es: 'Una fuente única de verdad para datos de producto, documentación, imágenes, especificaciones y materiales de marketing. La generación de contenido con IA mantiene descripciones de producto, catálogos y materiales de marketing actualizados en cada canal automáticamente.'
       }
     },
     {
       number: '02',
       title: { en: 'Communication System', es: 'Sistema de Comunicación' },
       description: {
-        en: 'Structured communication between company teams, partners, locations, and distributors. Built around the tools your teams already use — CRM, email, WhatsApp, internal dashboards.',
-        es: 'Comunicación estructurada entre equipos, socios, ubicaciones y distribuidores. Construido alrededor de las herramientas que tus equipos ya usan — CRM, email, WhatsApp, dashboards internos.'
+        en: 'Structured communication between company teams, partners, locations, and distributors. Built around the tools your teams already use — CRM, email, WhatsApp, internal dashboards. AI-powered WhatsApp qualification and automated follow-up sequences ensure no conversation goes cold.',
+        es: 'Comunicación estructurada entre equipos, socios, ubicaciones y distribuidores. Construido alrededor de las herramientas que tus equipos ya usan — CRM, email, WhatsApp, dashboards internos. Calificación con IA por WhatsApp y secuencias de seguimiento automatizadas aseguran que ninguna conversación se enfríe.'
       }
     },
     {
       number: '03',
       title: { en: 'Lead Routing System', es: 'Sistema de Enrutamiento de Leads' },
       description: {
-        en: 'Customer inquiries and leads automatically routed to the correct partner, distributor, location, or sales team. No leads lost. No manual handoffs.',
-        es: 'Consultas de clientes y leads enrutados automáticamente al socio, distribuidor, ubicación o equipo de ventas correcto. Sin leads perdidos. Sin traspasos manuales.'
+        en: 'Customer inquiries and leads automatically routed to the correct partner, distributor, location, or sales team. AI agents qualify leads in real-time using BANT framework, enrich with firmographic data, and route with full context — so reps only talk to prospects ready to buy.',
+        es: 'Consultas de clientes y leads enrutados automáticamente al socio, distribuidor, ubicación o equipo de ventas correcto. Agentes de IA califican leads en tiempo real usando el marco BANT, enriquecen con datos firmográficos y enrutan con contexto completo — para que los representantes solo hablen con prospectos listos para comprar.'
       }
     },
     {
       number: '04',
       title: { en: 'Sales Visibility System', es: 'Sistema de Visibilidad de Ventas' },
       description: {
-        en: 'Clear insight into sales activity, partner performance, and market demand. See what\'s happening across the entire network — not just your own reports.',
-        es: 'Visibilidad clara de la actividad de ventas, desempeño de socios y demanda del mercado. Ve lo que sucede en toda la red — no solo en tus propios reportes.'
+        en: 'Clear insight into sales activity, partner performance, and market demand across the entire network. AI-driven forecasting and anomaly detection surface opportunities and risks before they become problems.',
+        es: 'Visibilidad clara de la actividad de ventas, desempeño de socios y demanda del mercado en toda la red. Pronósticos con IA y detección de anomalías revelan oportunidades y riesgos antes de que se conviertan en problemas.'
       }
     }
   ]

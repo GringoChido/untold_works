@@ -47,6 +47,11 @@ export interface Project {
   heroImage?: string;
   websiteUrl?: string;
   pillar?: Pillar;
+  testimonial?: {
+    quote: { en: string; es: string };
+    name: string;
+    title: { en: string; es: string };
+  };
   codeSnippets?: {
     language: string;
     code: string;

@@ -66,17 +66,17 @@ export const projects: Project[] = [
       en: 'Built an intelligent lead routing system that qualifies inbound leads automatically. Measured 98% MQL accuracy and 4.2x sales ROI.',
       es: 'Construí un sistema inteligente de enrutamiento que califica leads entrantes automáticamente. Precisión MQL medida del 98% y ROI de ventas de 4.2x.'
     },
-    challenge: { 
-      en: 'Lead leakage and poor MQL accuracy were creating massive sales inefficiencies. High-volume intake meant sales reps were wasting 40% of their time on unqualified prospects.', 
-      es: 'La fuga de leads y la baja precisión en MQL estaban creando ineficiencias masivas en ventas. El alto volumen significaba que los representantes perdían el 40% de su tiempo.' 
+    challenge: {
+      en: 'OMI Growth was processing hundreds of inbound leads monthly, but their sales team was spending 40% of their time on unqualified prospects. Lead data arrived from multiple channels — web forms, trade shows, partner referrals — with no consistent qualification framework. By the time a rep determined a lead was unqualified, they\'d already invested 30-45 minutes in research and outreach. High-value leads were getting the same treatment as tire-kickers, and response times were suffering across the board.',
+      es: 'OMI Growth procesaba cientos de leads entrantes mensualmente, pero su equipo de ventas gastaba el 40% de su tiempo en prospectos no calificados. Los datos de leads llegaban de múltiples canales — formularios web, ferias comerciales, referidos de socios — sin un marco de calificación consistente. Para cuando un representante determinaba que un lead no estaba calificado, ya había invertido 30-45 minutos en investigación y alcance. Los leads de alto valor recibían el mismo tratamiento que los curiosos, y los tiempos de respuesta sufrían en todos los frentes.'
     },
     goal: {
-      en: 'Automate high-precision lead qualification to ensure sales teams only interact with high-intent, verified prospects.',
-      es: 'Automatizar la calificación de leads de alta precisión para asegurar que los equipos de ventas solo interactúen con prospectos verificados de alta intención.'
+      en: 'Automate lead qualification so that sales reps only interact with verified, high-intent prospects. Reduce time-to-response for qualified leads. Build an intelligent routing system that matches leads to the right rep based on industry, deal size, and product fit.',
+      es: 'Automatizar la calificación de leads para que los representantes de ventas solo interactúen con prospectos verificados y de alta intención. Reducir el tiempo de respuesta para leads calificados. Construir un sistema de enrutamiento inteligente que empate leads con el representante correcto basado en industria, tamaño de trato y ajuste de producto.'
     },
     solution: {
-      en: 'I deployed agentic lead generation flows using n8n and OpenAI that analyze lead intent, query firmographics in real-time, and execute precision CRM routing.',
-      es: 'Desplegué flujos agénticos de generación de leads usando n8n y OpenAI que analizan la intención, consultan datos demográficos en tiempo real y ejecutan enrutamiento de precisión en CRM.'
+      en: 'I deployed an agentic lead qualification pipeline using n8n and OpenAI that processes every inbound lead in real-time. The system analyzes intent signals from the inquiry, queries Apollo for firmographic data (company size, industry, revenue), scores leads using a custom BANT framework, and routes qualified leads directly to the right rep in Salesforce — complete with a pre-built briefing that includes company context, likely use case, and recommended talking points. Unqualified leads get automated nurture sequences instead of rep time. The system measured 98% MQL accuracy, meaning reps almost never waste time on bad leads. Sales ROI improved 4.2x because reps are now spending their time exclusively on prospects who are ready to buy.',
+      es: 'Desplegué un pipeline agéntico de calificación de leads usando n8n y OpenAI que procesa cada lead entrante en tiempo real. El sistema analiza señales de intención de la consulta, busca datos firmográficos en Apollo (tamaño de empresa, industria, ingresos), califica leads usando un marco BANT personalizado, y enruta leads calificados directamente al representante correcto en Salesforce — completo con un briefing pre-construido que incluye contexto de la empresa, caso de uso probable y puntos de conversación recomendados. Los leads no calificados reciben secuencias de nurture automatizadas en lugar de tiempo del representante. El sistema midió 98% de precisión MQL, lo que significa que los representantes casi nunca pierden tiempo en leads malos. El ROI de ventas mejoró 4.2x porque los representantes ahora dedican su tiempo exclusivamente a prospectos listos para comprar.'
     },
     metrics: [
       { label: { en: 'MQL Accuracy', es: 'Precisión MQL' }, value: '98%' },
@@ -118,17 +118,17 @@ export const projects: Project[] = [
       en: 'Unified revenue data across physical and digital sales channels. Measured a 20% sales lift across 4,000+ SKUs with 35% operational efficiency gain.',
       es: 'Unifiqué datos de ingresos en canales de ventas físicos y digitales. Aumento medido del 20% en ventas en más de 4,000 SKUs con ganancia de eficiencia operativa del 35%.'
     },
-    challenge: { 
-      en: 'Operational silos and fragmented data across physical and digital sales channels were preventing unified inventory control, accurate attribution, and effective omnichannel revenue operations.',
-      es: 'Los silos operativos y los datos fragmentados en canales de ventas físicos y digitales impedían el control de inventario unificado, la atribución precisa y operaciones de ingresos omnicanal efectivas.' 
+    challenge: {
+      en: 'Billiard Factory had grown to 4,000+ SKUs across physical showrooms and digital channels, but their product data lived in silos. The ERP said one thing, the website said another, and showroom staff were making pricing decisions from outdated spreadsheets. Revenue attribution was guesswork — they couldn\'t tell which channels were actually driving sales, and inventory decisions were reactive instead of strategic. Manual coordination between systems was consuming 15+ hours per week across their operations team.',
+      es: 'Billiard Factory había crecido a más de 4,000 SKUs en showrooms físicos y canales digitales, pero sus datos de producto vivían en silos. El ERP decía una cosa, el sitio web otra, y el personal del showroom tomaba decisiones de precios con hojas de cálculo desactualizadas. La atribución de ingresos era pura suposición — no podían saber qué canales realmente impulsaban las ventas, y las decisiones de inventario eran reactivas en lugar de estratégicas. La coordinación manual entre sistemas consumía más de 15 horas semanales del equipo de operaciones.'
     },
     goal: {
-      en: 'Unify the product data architecture and revenue attribution to drive measurable ROI across all sales channels.',
-      es: 'Unificar la arquitectura de datos de productos y la atribución de ingresos para impulsar un ROI medible en todos los canales de venta.'
+      en: 'Build a unified product data architecture that feeds every sales channel from a single source of truth. Enable real-time revenue attribution across physical and digital touchpoints. Eliminate manual data reconciliation and give the leadership team a clear picture of what\'s selling, where, and why.',
+      es: 'Construir una arquitectura de datos de producto unificada que alimente cada canal de ventas desde una fuente única de verdad. Habilitar la atribución de ingresos en tiempo real en puntos de contacto físicos y digitales. Eliminar la reconciliación manual de datos y dar al equipo de liderazgo una imagen clara de qué se vende, dónde y por qué.'
     },
     solution: {
-      en: 'I architected a unified product data engine and cross-channel revenue model, integrating ERP with n8n automation and driving stock-based demand signals across all GTM channels.',
-      es: 'Arquitecturé un motor de datos de productos unificado y un modelo de ingresos multicanal, integrando el ERP con automatización n8n e impulsando señales de demanda basadas en inventario en todos los canales GTM.'
+      en: 'I architected a unified product data engine that connects their ERP to Shopify Plus through n8n automation workflows. Every SKU — pricing, inventory levels, specifications, and imagery — now syncs in real-time across all channels. I built a cross-channel revenue attribution model that tracks customer journeys from first touch through purchase, regardless of whether the sale closes online or in-showroom. The operations team went from 15+ hours of manual reconciliation per week to near-zero. The unified data layer also enabled demand-signal forecasting — the system now identifies which products are trending before they sell out, enabling proactive inventory decisions instead of reactive restocking.',
+      es: 'Arquitecturé un motor de datos de producto unificado que conecta su ERP con Shopify Plus a través de flujos de automatización n8n. Cada SKU — precios, niveles de inventario, especificaciones e imágenes — ahora se sincroniza en tiempo real en todos los canales. Construí un modelo de atribución de ingresos multicanal que rastrea el recorrido del cliente desde el primer contacto hasta la compra, sin importar si la venta se cierra en línea o en el showroom. El equipo de operaciones pasó de más de 15 horas de reconciliación manual por semana a casi cero. La capa de datos unificada también habilitó pronósticos de señales de demanda — el sistema ahora identifica qué productos son tendencia antes de que se agoten, permitiendo decisiones de inventario proactivas en lugar de reabastecimiento reactivo.'
     },
     metrics: [
       { label: { en: 'Sales Lift', es: 'Aumento de Ventas' }, value: '20%' },
