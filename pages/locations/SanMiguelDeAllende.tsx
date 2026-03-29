@@ -4,7 +4,6 @@ import { useLanguage } from '../../App';
 import { usePageMeta } from '../../hooks/usePageMeta';
 import QuickLeadForm from '../../components/QuickLeadForm';
 import Breadcrumbs from '../../components/Breadcrumbs';
-import ImagePlaceholder from '../../components/ImagePlaceholder';
 
 const SanMiguelDeAllende: React.FC = () => {
   const { t } = useLanguage();
@@ -218,11 +217,23 @@ const SanMiguelDeAllende: React.FC = () => {
 
       {/* ── Location Hero Image ── */}
       <section className="border-b border-untold-border">
-        <ImagePlaceholder
-          label="San Miguel de Allende — Parroquia or Centro street scene"
-          aspect="aspect-[21/9]"
-          dimensions="1440 × 617px"
-        />
+        <picture>
+          <source
+            type="image/webp"
+            srcSet="/images/locations/sma-hero-768w.webp 768w, /images/locations/sma-hero-1440w.webp 1440w, /images/locations/sma-hero.webp 2880w"
+            sizes="100vw"
+          />
+          <img
+            src="/images/locations/sma-hero-1440w.jpg"
+            srcSet="/images/locations/sma-hero-768w.jpg 768w, /images/locations/sma-hero-1440w.jpg 1440w, /images/locations/sma-hero.jpg 2880w"
+            sizes="100vw"
+            alt="Colorful colonial street in San Miguel de Allende with warm red and yellow buildings"
+            className="w-full aspect-[21/9] object-cover"
+            loading="eager"
+            width="2880"
+            height="1234"
+          />
+        </picture>
       </section>
 
       {/* ── Services for SMA ── */}

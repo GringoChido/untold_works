@@ -4,7 +4,6 @@ import { useLanguage } from '../../App';
 import { usePageMeta } from '../../hooks/usePageMeta';
 import QuickLeadForm from '../../components/QuickLeadForm';
 import Breadcrumbs from '../../components/Breadcrumbs';
-import ImagePlaceholder from '../../components/ImagePlaceholder';
 
 const UnitedStates: React.FC = () => {
   const { t } = useLanguage();
@@ -185,11 +184,23 @@ const UnitedStates: React.FC = () => {
 
       {/* ── Location Hero Image ── */}
       <section className="border-b border-untold-border">
-        <ImagePlaceholder
-          label="Cross-border visual — US/Mexico bridge or skyline"
-          aspect="aspect-[21/9]"
-          dimensions="1440 × 617px"
-        />
+        <picture>
+          <source
+            type="image/webp"
+            srcSet="/images/locations/us-hero-768w.webp 768w, /images/locations/us-hero-1440w.webp 1440w, /images/locations/us-hero.webp 2880w"
+            sizes="100vw"
+          />
+          <img
+            src="/images/locations/us-hero-1440w.jpg"
+            srcSet="/images/locations/us-hero-768w.jpg 768w, /images/locations/us-hero-1440w.jpg 1440w, /images/locations/us-hero.jpg 2880w"
+            sizes="100vw"
+            alt="Chicago skyline at dusk with Lake Michigan reflecting city lights"
+            className="w-full aspect-[21/9] object-cover"
+            loading="eager"
+            width="2880"
+            height="1234"
+          />
+        </picture>
       </section>
 
       {/* ── Services for US ── */}

@@ -4,7 +4,6 @@ import { useLanguage } from '../../App';
 import { usePageMeta } from '../../hooks/usePageMeta';
 import QuickLeadForm from '../../components/QuickLeadForm';
 import Breadcrumbs from '../../components/Breadcrumbs';
-import ImagePlaceholder from '../../components/ImagePlaceholder';
 
 const MexicoCity: React.FC = () => {
   const { t } = useLanguage();
@@ -192,11 +191,23 @@ const MexicoCity: React.FC = () => {
 
       {/* ── Location Hero Image ── */}
       <section className="border-b border-untold-border">
-        <ImagePlaceholder
-          label="Mexico City — Reforma skyline or Condesa/Roma street"
-          aspect="aspect-[21/9]"
-          dimensions="1440 × 617px"
-        />
+        <picture>
+          <source
+            type="image/webp"
+            srcSet="/images/locations/cdmx-hero-768w.webp 768w, /images/locations/cdmx-hero-1440w.webp 1440w, /images/locations/cdmx-hero.webp 2880w"
+            sizes="100vw"
+          />
+          <img
+            src="/images/locations/cdmx-hero-1440w.jpg"
+            srcSet="/images/locations/cdmx-hero-768w.jpg 768w, /images/locations/cdmx-hero-1440w.jpg 1440w, /images/locations/cdmx-hero.jpg 2880w"
+            sizes="100vw"
+            alt="Aerial view of Palacio de Bellas Artes with its iconic gold dome in Mexico City"
+            className="w-full aspect-[21/9] object-cover"
+            loading="eager"
+            width="2880"
+            height="1234"
+          />
+        </picture>
       </section>
 
       {/* ── Services for CDMX ── */}

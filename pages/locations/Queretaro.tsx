@@ -4,7 +4,6 @@ import { useLanguage } from '../../App';
 import { usePageMeta } from '../../hooks/usePageMeta';
 import QuickLeadForm from '../../components/QuickLeadForm';
 import Breadcrumbs from '../../components/Breadcrumbs';
-import ImagePlaceholder from '../../components/ImagePlaceholder';
 
 const Queretaro: React.FC = () => {
   const { t } = useLanguage();
@@ -218,11 +217,23 @@ const Queretaro: React.FC = () => {
 
       {/* ── Location Hero Image ── */}
       <section className="border-b border-untold-border">
-        <ImagePlaceholder
-          label="Querétaro — aqueduct or Centro Histórico"
-          aspect="aspect-[21/9]"
-          dimensions="1440 × 617px"
-        />
+        <picture>
+          <source
+            type="image/webp"
+            srcSet="/images/locations/qro-hero-768w.webp 768w, /images/locations/qro-hero-1440w.webp 1440w, /images/locations/qro-hero.webp 2880w"
+            sizes="100vw"
+          />
+          <img
+            src="/images/locations/qro-hero-1440w.jpg"
+            srcSet="/images/locations/qro-hero-768w.jpg 768w, /images/locations/qro-hero-1440w.jpg 1440w, /images/locations/qro-hero.jpg 2880w"
+            sizes="100vw"
+            alt="Aerial panoramic view of the historic aqueduct arches spanning the Querétaro cityscape"
+            className="w-full aspect-[21/9] object-cover"
+            loading="eager"
+            width="2880"
+            height="1234"
+          />
+        </picture>
       </section>
 
       {/* ── Services for Querétaro ── */}
