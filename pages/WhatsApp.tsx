@@ -12,8 +12,8 @@ const WhatsApp: React.FC = () => {
 
   usePageMeta(
     {
-      en: 'WhatsApp Business Systems — AI-Powered Communication for Mexico | Untold.works',
-      es: 'Sistemas WhatsApp Business — Comunicación con IA para México | Untold.works'
+      en: 'WhatsApp Business Systems — AI Communication | Untold.works',
+      es: 'Sistemas WhatsApp Business — Comunicación IA | Untold.works'
     },
     {
       en: 'WhatsApp Business API integration with AI-powered lead qualification, shared team inboxes, automated follow-ups, and CRM integration. Built for businesses in Mexico and the United States.',

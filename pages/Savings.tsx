@@ -70,7 +70,19 @@ const Savings: React.FC = () => {
   usePageMeta(
     { en: 'SaaS Cost Calculator — What You\'d Save Owning Your Systems | Untold.works', es: 'Calculadora de Costos SaaS — Lo Que Ahorrarías con Sistemas Propios | Untold.works' },
     { en: 'Calculate how much you spend on SaaS tools vs. owning your systems outright. See the ROI of switching to a one-time custom build. No recurring fees.', es: 'Calcula cuánto gastas en herramientas SaaS versus ser dueño de tus sistemas. Ve el ROI de cambiar a un proyecto personalizado. Sin cuotas recurrentes.' },
-    { path: '/savings' }
+    {
+      path: '/savings',
+      schema: {
+        '@context': 'https://schema.org',
+        '@type': 'WebApplication',
+        name: 'SaaS Cost Calculator — Untold.works',
+        description: 'Interactive calculator comparing SaaS subscription costs vs. one-time custom-built systems. Estimate monthly spend and see ROI of switching to owned infrastructure.',
+        url: 'https://untold.works/savings',
+        applicationCategory: 'BusinessApplication',
+        operatingSystem: 'Web',
+        provider: { '@type': 'Organization', '@id': 'https://untold.works/#organization', name: 'Untold.works' },
+      },
+    }
   );
 
   const handleTierChange = (idx: number) => {

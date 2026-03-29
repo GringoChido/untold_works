@@ -28,7 +28,7 @@ const Navbar: React.FC = () => {
 
   return (
     <>
-      <nav ref={navRef} className="sticky top-0 z-50 bg-untold-beige/95 backdrop-blur-md border-b border-untold-border px-5 sm:px-10 lg:px-14 py-6 sm:py-8 lg:py-10">
+      <nav ref={navRef} aria-label="Main navigation" className="sticky top-0 z-50 bg-untold-beige/95 backdrop-blur-md border-b border-untold-border px-5 sm:px-10 lg:px-14 py-6 sm:py-8 lg:py-10">
         <div className="max-w-[1540px] mx-auto flex justify-between items-center">
           <Link to="/" className="text-[32px] font-sans font-black tracking-tighter leading-none group flex items-center shrink-0 whitespace-nowrap">
             untold<span className="text-untold-orange group-hover:text-black transition-colors duration-300">.works</span>
@@ -124,6 +124,7 @@ const Navbar: React.FC = () => {
             <div className="flex items-center space-x-1 mr-3">
               <button
                 onClick={() => setLang('en')}
+                aria-label="Switch to English"
                 className={`px-2 py-3 min-h-[44px] font-mono text-[11px] font-bold uppercase tracking-widest transition-colors ${lang === 'en' ? 'text-untold-orange' : 'text-untold-black/40'}`}
               >
                 EN
@@ -131,6 +132,7 @@ const Navbar: React.FC = () => {
               <span className="font-mono text-[11px] text-untold-black/20">|</span>
               <button
                 onClick={() => setLang('es')}
+                aria-label="Cambiar a Español"
                 className={`px-2 py-3 min-h-[44px] font-mono text-[11px] font-bold uppercase tracking-widest transition-colors ${lang === 'es' ? 'text-untold-orange' : 'text-untold-black/40'}`}
               >
                 ES
@@ -139,6 +141,9 @@ const Navbar: React.FC = () => {
             <button
               className="p-3 min-w-[44px] min-h-[44px] flex flex-col justify-center"
               onClick={() => setIsMenuOpen(!isMenuOpen)}
+              aria-label={isMenuOpen ? 'Close menu' : 'Open menu'}
+              aria-expanded={isMenuOpen}
+              aria-controls="mobile-menu"
             >
               <div className={`w-10 h-0.5 bg-black mb-2.5 transition-all ${isMenuOpen ? 'rotate-45 translate-y-3' : ''}`}></div>
               <div className={`w-10 h-0.5 bg-black mb-2.5 transition-all ${isMenuOpen ? 'opacity-0' : ''}`}></div>
@@ -151,7 +156,7 @@ const Navbar: React.FC = () => {
 
       {/* Mobile Menu — outside nav to avoid backdrop-filter stacking context breaking fixed positioning */}
       {isMenuOpen && (
-        <div className="lg:hidden fixed inset-0 bg-untold-beige z-[45] flex flex-col p-6 sm:p-12 space-y-6 sm:space-y-8 overflow-y-auto pb-40" style={{ top: navHeight }}>
+        <div id="mobile-menu" className="lg:hidden fixed inset-0 bg-untold-beige z-[45] flex flex-col p-6 sm:p-12 space-y-6 sm:space-y-8 overflow-y-auto pb-40" style={{ top: navHeight }}>
           {/* Network Systems — Flagship */}
           <Link
             to="/network-systems"

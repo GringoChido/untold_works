@@ -30,6 +30,7 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://untold.works/solutions/professional-services" />
     <xhtml:link rel="alternate" hreflang="es-MX" href="https://untold.works/solutions/professional-services?lang=es" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://untold.works/solutions/professional-services" />
   </url>
 
   <url>
@@ -39,6 +40,7 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://untold.works/solutions/small-business" />
     <xhtml:link rel="alternate" hreflang="es-MX" href="https://untold.works/solutions/small-business?lang=es" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://untold.works/solutions/small-business" />
   </url>
 
   <url>
@@ -48,6 +50,7 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://untold.works/solutions/enterprise" />
     <xhtml:link rel="alternate" hreflang="es-MX" href="https://untold.works/solutions/enterprise?lang=es" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://untold.works/solutions/enterprise" />
   </url>
 
   <url>
