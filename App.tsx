@@ -37,6 +37,7 @@ const Copywriting = lazy(() => import('./pages/Copywriting'));
 const AiContent = lazy(() => import('./pages/AiContent'));
 const SalesEnablement = lazy(() => import('./pages/SalesEnablement'));
 const WhatsApp = lazy(() => import('./pages/WhatsApp'));
+const Partners = lazy(() => import('./pages/Partners'));
 const MobileApps = lazy(() => import('./pages/MobileApps'));
 const Hosting = lazy(() => import('./pages/Hosting'));
 const ReviewReputation = lazy(() => import('./pages/ReviewReputation'));
@@ -115,6 +116,7 @@ const AppLayout: React.FC = () => {
             <Route path="/ai-content" element={<AiContent />} />
             <Route path="/sales-enablement" element={<SalesEnablement />} />
             <Route path="/whatsapp" element={<WhatsApp />} />
+            <Route path="/partners" element={<Partners />} />
             <Route path="/mobile-apps" element={<MobileApps />} />
             <Route path="/hosting" element={<Hosting />} />
             <Route path="/review-reputation" element={<ReviewReputation />} />

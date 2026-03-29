@@ -89,6 +89,12 @@ const Footer: React.FC = () => {
               >
                 {t(i18n.navigation.workshops)}
               </Link>
+              <Link
+                to="/partners"
+                className="text-sm font-mono uppercase tracking-[0.3em] text-white/20 hover:text-untold-orange transition-all duration-300 py-2 min-h-[44px] flex items-center lg:justify-end"
+              >
+                {t({ en: 'Partners', es: 'Socios' })}
+              </Link>
             </div>
 
             {/* Service Pages — Grouped by Network System Pillar */}
