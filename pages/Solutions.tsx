@@ -6,6 +6,7 @@ import * as i18n from '../i18n';
 import Breadcrumbs from '../components/Breadcrumbs';
 import Testimonials from '../components/Testimonials';
 import NetworkConnector from '../components/NetworkConnector';
+import ShaderBackground from '../components/ui/shader-background';
 
 const Solutions: React.FC = () => {
   const { t } = useLanguage();
@@ -126,7 +127,8 @@ const Solutions: React.FC = () => {
   return (
     <div className="bg-untold-beige min-h-screen font-serif text-untold-black">
       {/* ── 1. Hero ── */}
-      <section className="bg-untold-black text-white px-5 sm:px-10 py-20 sm:py-32 lg:py-48 border-b border-white/10">
+      <ShaderBackground className="bg-untold-black text-white border-b border-white/10" opacity={0.5}>
+        <div className="px-5 sm:px-10 py-20 sm:py-32 lg:py-48">
         <div className="max-w-[1440px] mx-auto">
           <div className="mb-8">
             <Breadcrumbs
@@ -156,7 +158,8 @@ const Solutions: React.FC = () => {
             })}
           </p>
         </div>
-      </section>
+        </div>
+      </ShaderBackground>
 
       {/* ── 2. What Every Project Includes ── */}
       <section className="bg-white px-5 sm:px-10 py-16 sm:py-24 border-b border-untold-border">

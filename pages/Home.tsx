@@ -6,7 +6,7 @@ import { projects } from '../data/projects';
 import * as i18n from '../i18n';
 
 import ProofStrip from '../components/ProofStrip';
-
+import BeamsBackground from '../components/ui/beams-background';
 
 
 const howToSchema = {
@@ -88,23 +88,8 @@ const Home: React.FC = () => {
       {/* ═══════════════════════════════════════════════════════════
           1. HERO — Headline + Supporting Line
       ═══════════════════════════════════════════════════════════ */}
-      <section className="relative w-full bg-untold-black overflow-hidden">
-        {/* Background Video */}
-        <video
-          autoPlay
-          muted
-          loop
-          playsInline
-          poster="/video/hero-home-poster.webp"
-          className="absolute inset-0 w-full h-full object-cover opacity-60"
-        >
-          <source src="/video/hero-home-1080p.webm" type="video/webm" />
-          <source src="/video/hero-home-1080p.mp4" type="video/mp4" />
-        </video>
-        {/* Dark overlay */}
-        <div className="absolute inset-0 bg-black/30" />
-        {/* Content */}
-        <div className="relative w-full px-5 sm:px-10 pt-24 sm:pt-40 lg:pt-52 pb-12 sm:pb-16">
+      <BeamsBackground className="w-full" intensity="medium">
+        <div className="w-full px-5 sm:px-10 pt-24 sm:pt-40 lg:pt-52 pb-12 sm:pb-16">
         <div className="max-w-[1440px] mx-auto w-full">
           <div className="max-w-[900px]">
             <div className="flex items-center space-x-4 mb-8 sm:mb-14">
@@ -147,7 +132,7 @@ const Home: React.FC = () => {
           </div>
         </div>
         </div>
-      </section>
+      </BeamsBackground>
 
       {/* Proof Strip */}
       <ProofStrip />

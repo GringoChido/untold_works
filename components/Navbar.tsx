@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { useLanguage } from '../App';
 import { navigation } from '../i18n';
@@ -7,9 +7,14 @@ const Navbar: React.FC = () => {
   const { lang, setLang, t } = useLanguage();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isSolutionsOpen, setIsSolutionsOpen] = useState(false);
+  const navRef = useRef<HTMLElement>(null);
+  const [navHeight, setNavHeight] = useState(0);
 
   useEffect(() => {
     document.body.style.overflow = isMenuOpen ? 'hidden' : '';
+    if (isMenuOpen && navRef.current) {
+      setNavHeight(navRef.current.getBoundingClientRect().height);
+    }
     return () => { document.body.style.overflow = ''; };
   }, [isMenuOpen]);
 
@@ -23,7 +28,7 @@ const Navbar: React.FC = () => {
 
   return (
     <>
-      <nav className="sticky top-0 z-50 bg-untold-beige/95 backdrop-blur-md border-b border-untold-border px-5 sm:px-10 lg:px-14 py-6 sm:py-8 lg:py-10">
+      <nav ref={navRef} className="sticky top-0 z-50 bg-untold-beige/95 backdrop-blur-md border-b border-untold-border px-5 sm:px-10 lg:px-14 py-6 sm:py-8 lg:py-10">
         <div className="max-w-[1540px] mx-auto flex justify-between items-center">
           <Link to="/" className="text-[32px] font-sans font-black tracking-tighter leading-none group flex items-center shrink-0 whitespace-nowrap">
             untold<span className="text-untold-orange group-hover:text-black transition-colors duration-300">.works</span>
@@ -142,103 +147,104 @@ const Navbar: React.FC = () => {
           </div>
         </div>
 
-        {/* Mobile Menu */}
-        {isMenuOpen && (
-          <div className="lg:hidden fixed inset-x-0 top-[80px] sm:top-[96px] bottom-0 bg-untold-beige z-40 flex flex-col p-6 sm:p-12 space-y-6 sm:space-y-8 animate-in slide-in-from-top duration-300 overflow-y-auto pb-40">
-            {/* Network Systems — Flagship */}
-            <Link
-              to="/network-systems"
-              className="text-4xl sm:text-6xl font-sans font-black uppercase tracking-tighter text-untold-orange hover:text-untold-black transition-colors"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              {t({ en: 'Network Systems', es: 'Network Systems' })}
-            </Link>
+      </nav>
 
-            {/* Solutions expandable */}
-            <div>
-              <div className="flex items-center justify-between w-full">
-                <Link
-                  to="/solutions"
-                  className="text-4xl sm:text-6xl font-sans font-black uppercase tracking-tighter hover:text-untold-orange transition-colors"
-                  onClick={() => setIsMenuOpen(false)}
-                >
-                  {t(navigation.solutions)}
-                </Link>
-                <button
-                  onClick={() => setIsSolutionsOpen(!isSolutionsOpen)}
-                  className="w-11 h-11 flex items-center justify-center"
-                >
-                  <span className={`text-untold-orange text-2xl transition-transform inline-block ${isSolutionsOpen ? 'rotate-45' : ''}`}>+</span>
-                </button>
-              </div>
-              {isSolutionsOpen && (
-                <div className="mt-4 ml-4 border-l-2 border-untold-orange/20 pl-6">
-                  <div className="space-y-3">
-                    {pillarLinks.map((item) => (
-                      <Link
-                        key={item.path}
-                        to={item.path}
-                        className="block text-xl sm:text-2xl font-sans font-black uppercase tracking-tighter text-untold-gray hover:text-untold-orange transition-colors"
-                        onClick={() => setIsMenuOpen(false)}
-                      >
-                        {t(item.label)}
-                      </Link>
-                    ))}
-                  </div>
-                </div>
-              )}
+      {/* Mobile Menu — outside nav to avoid backdrop-filter stacking context breaking fixed positioning */}
+      {isMenuOpen && (
+        <div className="lg:hidden fixed inset-0 bg-untold-beige z-[45] flex flex-col p-6 sm:p-12 space-y-6 sm:space-y-8 overflow-y-auto pb-40" style={{ top: navHeight }}>
+          {/* Network Systems — Flagship */}
+          <Link
+            to="/network-systems"
+            className="text-4xl sm:text-6xl font-sans font-black uppercase tracking-tighter text-untold-orange hover:text-untold-black transition-colors"
+            onClick={() => setIsMenuOpen(false)}
+          >
+            {t({ en: 'Network Systems', es: 'Network Systems' })}
+          </Link>
+
+          {/* Solutions expandable */}
+          <div>
+            <div className="flex items-center justify-between w-full">
+              <Link
+                to="/solutions"
+                className="text-4xl sm:text-6xl font-sans font-black uppercase tracking-tighter hover:text-untold-orange transition-colors"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                {t(navigation.solutions)}
+              </Link>
+              <button
+                onClick={() => setIsSolutionsOpen(!isSolutionsOpen)}
+                className="w-11 h-11 flex items-center justify-center"
+              >
+                <span className={`text-untold-orange text-2xl transition-transform inline-block ${isSolutionsOpen ? 'rotate-45' : ''}`}>+</span>
+              </button>
             </div>
+            {isSolutionsOpen && (
+              <div className="mt-4 ml-4 border-l-2 border-untold-orange/20 pl-6">
+                <div className="space-y-3">
+                  {pillarLinks.map((item) => (
+                    <Link
+                      key={item.path}
+                      to={item.path}
+                      className="block text-xl sm:text-2xl font-sans font-black uppercase tracking-tighter text-untold-gray hover:text-untold-orange transition-colors"
+                      onClick={() => setIsMenuOpen(false)}
+                    >
+                      {t(item.label)}
+                    </Link>
+                  ))}
+                </div>
+              </div>
+            )}
+          </div>
 
-            <Link
-              to="/portfolio"
-              className="text-4xl sm:text-6xl font-sans font-black uppercase tracking-tighter hover:text-untold-orange transition-colors"
-              onClick={() => setIsMenuOpen(false)}
+          <Link
+            to="/portfolio"
+            className="text-4xl sm:text-6xl font-sans font-black uppercase tracking-tighter hover:text-untold-orange transition-colors"
+            onClick={() => setIsMenuOpen(false)}
+          >
+            {t(navigation.portfolio)}
+          </Link>
+          <Link
+            to="/blog"
+            className="text-4xl sm:text-6xl font-sans font-black uppercase tracking-tighter hover:text-untold-orange transition-colors"
+            onClick={() => setIsMenuOpen(false)}
+          >
+            {t(navigation.blog)}
+          </Link>
+          <Link
+            to="/about"
+            className="text-4xl sm:text-6xl font-sans font-black uppercase tracking-tighter hover:text-untold-orange transition-colors"
+            onClick={() => setIsMenuOpen(false)}
+          >
+            {t(navigation.about)}
+          </Link>
+          <Link
+            to="/contact"
+            className="text-4xl sm:text-6xl font-sans font-black uppercase tracking-tighter hover:text-untold-orange transition-colors"
+            onClick={() => setIsMenuOpen(false)}
+          >
+            {t(navigation.contact)}
+          </Link>
+
+          <div className="pt-8 sm:pt-10 flex flex-col space-y-6 sm:space-y-8 border-t border-untold-border">
+            <button
+              onClick={() => {
+                setLang(lang === 'en' ? 'es' : 'en');
+                setIsMenuOpen(false);
+              }}
+              className="text-left font-mono text-sm font-bold uppercase tracking-widest text-untold-gray hover:text-untold-orange"
             >
-              {t(navigation.portfolio)}
-            </Link>
-            <Link
-              to="/blog"
-              className="text-4xl sm:text-6xl font-sans font-black uppercase tracking-tighter hover:text-untold-orange transition-colors"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              {t(navigation.blog)}
-            </Link>
-            <Link
-              to="/about"
-              className="text-4xl sm:text-6xl font-sans font-black uppercase tracking-tighter hover:text-untold-orange transition-colors"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              {t(navigation.about)}
-            </Link>
+              → {lang === 'en' ? 'Switch to Spanish' : 'Cambiar a Inglés'}
+            </button>
             <Link
               to="/contact"
-              className="text-4xl sm:text-6xl font-sans font-black uppercase tracking-tighter hover:text-untold-orange transition-colors"
               onClick={() => setIsMenuOpen(false)}
+              className="bg-untold-black text-white px-8 sm:px-10 py-5 sm:py-8 rounded-none font-sans font-black uppercase tracking-widest text-lg sm:text-2xl hover:bg-untold-orange transition-colors text-center"
             >
-              {t(navigation.contact)}
+              {t(navigation.cta)}
             </Link>
-
-            <div className="pt-8 sm:pt-10 flex flex-col space-y-6 sm:space-y-8 border-t border-untold-border">
-              <button
-                onClick={() => {
-                  setLang(lang === 'en' ? 'es' : 'en');
-                  setIsMenuOpen(false);
-                }}
-                className="text-left font-mono text-sm font-bold uppercase tracking-widest text-untold-gray hover:text-untold-orange"
-              >
-                → {lang === 'en' ? 'Switch to Spanish' : 'Cambiar a Inglés'}
-              </button>
-              <Link
-                to="/contact"
-                onClick={() => setIsMenuOpen(false)}
-                className="bg-untold-black text-white px-8 sm:px-10 py-5 sm:py-8 rounded-none font-sans font-black uppercase tracking-widest text-lg sm:text-2xl hover:bg-untold-orange transition-colors text-center"
-              >
-                {t(navigation.cta)}
-              </Link>
-            </div>
           </div>
-        )}
-      </nav>
+        </div>
+      )}
 
       {/* Mobile Sticky CTA */}
       <div className="lg:hidden fixed bottom-0 left-0 right-0 z-50 bg-untold-black/95 backdrop-blur-md border-t border-white/10 px-5 py-3 pb-[calc(0.75rem+env(safe-area-inset-bottom))]">

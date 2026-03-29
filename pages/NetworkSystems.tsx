@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { useLanguage } from '../App';
 import { usePageMeta } from '../hooks/usePageMeta';
 import Breadcrumbs from '../components/Breadcrumbs';
+import DottedSurface from '../components/ui/dotted-surface';
 
 const NetworkSystems: React.FC = () => {
   const { t } = useLanguage();
@@ -139,20 +140,8 @@ const NetworkSystems: React.FC = () => {
       {/* ═══════════════════════════════════════════════════════════
           HERO — The AI Identity Imperative
       ═══════════════════════════════════════════════════════════ */}
-      <section className="relative bg-untold-black overflow-hidden">
-        <video
-          autoPlay
-          muted
-          loop
-          playsInline
-          poster="/video/network-systems-poster.jpg"
-          className="absolute inset-0 w-full h-full object-cover opacity-60"
-        >
-          <source src="/video/network-systems-hero.webm" type="video/webm" />
-          <source src="/video/network-systems-hero.mp4" type="video/mp4" />
-        </video>
-        <div className="absolute inset-0 bg-black/30" />
-        <div className="relative px-5 sm:px-10 pt-12 sm:pt-20 pb-20 sm:pb-32 lg:pb-48">
+      <DottedSurface className="bg-untold-black" opacity={0.6}>
+        <div className="px-5 sm:px-10 pt-12 sm:pt-20 pb-20 sm:pb-32 lg:pb-48">
         <div className="max-w-[1440px] mx-auto">
           <Breadcrumbs
             crumbs={[
@@ -213,7 +202,7 @@ const NetworkSystems: React.FC = () => {
           </div>
         </div>
         </div>
-      </section>
+      </DottedSurface>
 
       {/* ═══════════════════════════════════════════════════════════
           THE REALITY — What a complete digital system actually requires

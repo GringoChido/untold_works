@@ -8,6 +8,7 @@ import { blogPosts } from '../data/blogPosts';
 import { BlogCategory } from '../types';
 import Breadcrumbs from '../components/Breadcrumbs';
 import NewsletterForm from '../components/NewsletterForm';
+import ShaderBackground from '../components/ui/shader-background';
 
 const categories: { key: BlogCategory | 'all'; label: { en: string; es: string } }[] = [
   { key: 'all', label: { en: 'All', es: 'Todos' } },
@@ -120,7 +121,8 @@ const Blog: React.FC = () => {
   return (
     <div className="bg-untold-beige min-h-screen font-serif text-untold-black">
       {/* Hero */}
-      <section className="bg-untold-black text-white px-5 sm:px-10 py-20 sm:py-32 lg:py-48 border-b border-white/10">
+      <ShaderBackground className="bg-untold-black text-white border-b border-white/10" opacity={0.4}>
+        <div className="px-5 sm:px-10 py-20 sm:py-32 lg:py-48">
         <div className="max-w-[1440px] mx-auto">
           <div className="mb-8">
             <Breadcrumbs
@@ -152,7 +154,8 @@ const Blog: React.FC = () => {
             {t(i18n.blogPage.subheadline)}
           </p>
         </div>
-      </section>
+        </div>
+      </ShaderBackground>
 
       {/* Filters + Search */}
       <section className="px-5 sm:px-10 py-6 border-b border-untold-border bg-white sticky top-[80px] sm:top-[96px] z-30">

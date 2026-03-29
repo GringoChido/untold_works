@@ -5,6 +5,7 @@ import * as i18n from '../i18n';
 import ContactForm from '../components/ContactForm';
 import HeroDitheringCTA from '../components/HeroDitheringCTA';
 import ProofStrip from '../components/ProofStrip';
+import BeamsBackground from '../components/ui/beams-background';
 
 const ContactPage: React.FC = () => {
   const { t } = useLanguage();
@@ -37,7 +38,8 @@ const ContactPage: React.FC = () => {
   return (
     <div className="bg-untold-black min-h-screen font-serif text-white selection:bg-untold-orange selection:text-white">
       {/* Hero Header */}
-      <section className="px-5 sm:px-10 pt-20 sm:pt-32 pb-24 lg:pt-56 lg:pb-32 border-b border-white/10">
+      <BeamsBackground className="border-b border-white/10" intensity="subtle">
+        <div className="px-5 sm:px-10 pt-20 sm:pt-32 pb-24 lg:pt-56 lg:pb-32">
         <div className="max-w-[1440px] mx-auto">
           <div className="flex items-center space-x-4 mb-14">
             <span className="w-3 h-3 rounded-full bg-untold-orange animate-pulse"></span>
@@ -52,7 +54,8 @@ const ContactPage: React.FC = () => {
             {t(content.subheadline)}
           </p>
         </div>
-      </section>
+        </div>
+      </BeamsBackground>
 
       {/* Money Narrative */}
       <section className="border-b border-white/10 bg-untold-black px-5 sm:px-10 py-12 sm:py-16">

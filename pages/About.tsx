@@ -4,6 +4,7 @@ import { useLanguage } from '../App';
 import { usePageMeta } from '../hooks/usePageMeta';
 import * as i18n from '../i18n';
 import Testimonials from '../components/Testimonials';
+import BeamsBackground from '../components/ui/beams-background';
 
 const creativeWork = [
   { id: 'xxGPdk9Yj_U', title: { en: 'R+R=NOW Record Release and Tour', es: 'R+R=NOW Lanzamiento de Disco y Gira' }, client: 'Robert Glasper / Blue Note', role: { en: 'Directed, Shot & Edited', es: 'Dirigido, Filmado y Editado' } },
@@ -129,11 +130,9 @@ const AboutPage: React.FC = () => {
   return (
     <div className="bg-untold-black min-h-screen font-serif text-white selection:bg-untold-orange selection:text-white">
       {/* Hero */}
-      <section className="px-5 sm:px-10 pt-20 sm:pt-32 pb-24 sm:pb-40 lg:pt-56 lg:pb-64 border-b border-white/10 relative overflow-hidden">
-        <div className="absolute inset-0 opacity-[0.03] pointer-events-none"
-             style={{ backgroundImage: 'linear-gradient(#fff 1px, transparent 1px), linear-gradient(90deg, #fff 1px, transparent 1px)', backgroundSize: '80px 80px' }}></div>
-
-        <div className="max-w-[1440px] mx-auto relative">
+      <BeamsBackground className="border-b border-white/10" intensity="subtle">
+        <div className="px-5 sm:px-10 pt-20 sm:pt-32 pb-24 sm:pb-40 lg:pt-56 lg:pb-64">
+        <div className="max-w-[1440px] mx-auto">
           <div className="flex items-center space-x-4 mb-14">
             <span className="w-3 h-3 rounded-full bg-untold-orange animate-pulse"></span>
             <p className="font-mono text-[12px] uppercase tracking-[0.5em] font-bold text-white/40">
@@ -153,7 +152,8 @@ const AboutPage: React.FC = () => {
             </p>
           </div>
         </div>
-      </section>
+        </div>
+      </BeamsBackground>
 
       {/* Founder */}
       <section className="bg-untold-beige border-b border-untold-border">

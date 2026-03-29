@@ -6,6 +6,7 @@ import { blogPosts } from '../../data/blogPosts';
 import * as i18n from '../../i18n';
 import QuickLeadForm from '../../components/QuickLeadForm';
 import Breadcrumbs from '../../components/Breadcrumbs';
+import DottedSurface from '../../components/ui/dotted-surface';
 
 const MEXICO_BLOG_SLUGS = [
   'whatsapp-ai-for-mexican-businesses-complete-guide',
@@ -104,21 +105,9 @@ const Mexico: React.FC = () => {
   return (
     <div className="bg-untold-beige font-serif text-untold-black">
 
-      {/* ── Hero with Video Background ── */}
-      <section className="relative bg-untold-black text-white overflow-hidden border-b border-white/10">
-        <video
-          autoPlay
-          muted
-          loop
-          playsInline
-          poster="/video/mexico-hero-poster.jpg"
-          className="absolute inset-0 w-full h-full object-cover opacity-60"
-        >
-          <source src="/video/mexico-hero.webm" type="video/webm" />
-          <source src="/video/mexico-hero.mp4" type="video/mp4" />
-        </video>
-        <div className="absolute inset-0 bg-black/30" />
-        <div className="relative px-5 sm:px-10 py-20 sm:py-32 lg:py-48">
+      {/* ── Hero with Animated Gradient ── */}
+      <DottedSurface className="bg-untold-black text-white border-b border-white/10" opacity={0.5}>
+        <div className="px-5 sm:px-10 py-20 sm:py-32 lg:py-48">
           <div className="max-w-[1440px] mx-auto">
             <div className="mb-8">
               <Breadcrumbs
@@ -145,7 +134,7 @@ const Mexico: React.FC = () => {
             </p>
           </div>
         </div>
-      </section>
+      </DottedSurface>
 
       {/* ── What Mobile-First Operations Look Like ── */}
       <section className="bg-white px-5 sm:px-10 py-16 sm:py-24 border-b border-untold-border">

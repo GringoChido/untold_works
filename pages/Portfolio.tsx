@@ -6,6 +6,7 @@ import * as i18n from '../i18n';
 import { projects } from '../data/projects';
 import StereoTeaser from '../components/StereoTeaser';
 import { Pillar } from '../types';
+import ShaderBackground from '../components/ui/shader-background';
 
 const pillarFilters: { key: Pillar | 'all'; label: { en: string; es: string } }[] = [
   { key: 'all', label: { en: 'All Projects', es: 'Todos los Proyectos' } },
@@ -41,7 +42,8 @@ const Portfolio: React.FC = () => {
   return (
     <div className="bg-untold-black text-white min-h-screen font-serif">
       {/* Header */}
-      <section className="px-5 sm:px-10 py-20 sm:py-32 lg:py-48 border-b border-white/5">
+      <ShaderBackground className="border-b border-white/5" opacity={0.35}>
+        <div className="px-5 sm:px-10 py-20 sm:py-32 lg:py-48">
         <div className="max-w-[1440px] mx-auto">
           <div className="flex items-center space-x-4 mb-10">
             <span className="w-3 h-3 rounded-full bg-untold-orange"></span>
@@ -62,7 +64,8 @@ const Portfolio: React.FC = () => {
             })}
           </p>
         </div>
-      </section>
+        </div>
+      </ShaderBackground>
 
       {/* Pillar Filters */}
       <section className="px-5 sm:px-10 py-6 border-b border-white/5">
