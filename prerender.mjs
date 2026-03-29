@@ -31,6 +31,8 @@ const routes = [
   '/mobile-apps',
   '/hosting',
   '/review-reputation',
+  '/whatsapp',
+  '/partners',
   '/san-miguel-de-allende',
   '/queretaro',
   '/mexico-city',

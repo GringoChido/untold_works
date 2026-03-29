@@ -81,6 +81,12 @@ Brand voice development, website copy, campaign messaging, and bilingual content
 ### Sales Enablement
 Sales tools, partner enablement systems, proposal generation, and competitive positioning. Built to help distributed sales teams close faster with consistent messaging.
 
+### WhatsApp Business Systems
+AI-powered WhatsApp Business API automation for businesses in Mexico and the United States. Lead capture, multilingual routing (English/Spanish), cross-border communication, appointment booking, and automated follow-ups. Built on the official WhatsApp Business API — not the consumer app. Integrates with CRM (Salesforce, HubSpot), n8n automation, and AI agents for intelligent conversation routing.
+
+### Referral & Strategic Partners
+Untold.works partners with agencies, consultants, accountants, IT providers, and business coaches who see operational gaps in their clients' businesses. Two tracks: Referral Partners (introduce clients, earn 10% of project value) and Strategic Partners (co-build solutions together). No portal, no tiers, no complexity.
+
 ## What makes Untold.works different?
 
 1. **Alignment over software:** We do not sell software licenses. We build coordination systems that organize how information already moves through your business.

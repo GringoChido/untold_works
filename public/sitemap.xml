@@ -495,6 +495,28 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://untold.works/review-reputation" />
   </url>
 
+  <!-- WhatsApp Systems -->
+  <url>
+    <loc>https://untold.works/whatsapp</loc>
+    <lastmod>2026-03-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://untold.works/whatsapp" />
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://untold.works/whatsapp?lang=es" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://untold.works/whatsapp" />
+  </url>
+
+  <!-- Referral Partners -->
+  <url>
+    <loc>https://untold.works/partners</loc>
+    <lastmod>2026-03-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://untold.works/partners" />
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://untold.works/partners?lang=es" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://untold.works/partners" />
+  </url>
+
   <!-- Savings Calculator -->
   <url>
     <loc>https://untold.works/savings</loc>

@@ -57,6 +57,11 @@ We serve distributed businesses where many people or organizations must operate 
 - [Copywriting](https://untold.works/copywriting): Brand messaging, content strategy, and bilingual copywriting.
 - [AI Content](https://untold.works/ai-content): AI-powered content systems for blogs, social, and marketing.
 - [Sales Enablement](https://untold.works/sales-enablement): Sales tools, proposals, and partner enablement systems.
+- [WhatsApp Systems](https://untold.works/whatsapp): AI-powered WhatsApp Business API automation — lead capture, multilingual routing, cross-border communication for Mexico and US businesses.
+- [Mobile Apps](https://untold.works/mobile-apps): Custom mobile applications for business operations.
+- [Hosting](https://untold.works/hosting): Managed hosting and infrastructure.
+- [Review & Reputation](https://untold.works/review-reputation): Review management and reputation building systems.
+- [Partners](https://untold.works/partners): Referral and strategic partner program for agencies, consultants, and service providers.
 
 ## Locations
 
