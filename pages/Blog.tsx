@@ -155,7 +155,7 @@ const Blog: React.FC = () => {
       </section>
 
       {/* Filters + Search */}
-      <section className="px-5 sm:px-10 py-6 border-b border-untold-border bg-white sticky top-0 z-30">
+      <section className="px-5 sm:px-10 py-6 border-b border-untold-border bg-white sticky top-[80px] sm:top-[96px] z-30">
         <div className="max-w-[1440px] mx-auto flex flex-col sm:flex-row gap-4 items-start sm:items-center justify-between">
           <div className="flex flex-wrap gap-2">
             {categories.map((cat) => (

@@ -1081,8 +1081,8 @@ export const blogPage = {
 export const seo = {
   home: {
     title: {
-      en: 'Operational Alignment Systems for Distributed Businesses | Untold.works',
-      es: 'Sistemas de Alineación Operativa para Negocios Distribuidos | Untold.works'
+      en: 'Alignment Systems for Distributed Businesses | Untold.works',
+      es: 'Sistemas de Alineación para Negocios Distribuidos | Untold.works'
     },
     description: {
       en: 'Alignment systems for distributed businesses. Product info, lead routing, and sales visibility so teams and partners work from one source of truth. Mexico & US.',
@@ -1101,8 +1101,8 @@ export const seo = {
   },
   professionalServices: {
     title: {
-      en: 'AI Business Systems for Lawyers, Consultants & Architects | Untold.works',
-      es: 'Sistemas con IA para Abogados, Consultores y Arquitectos | Untold.works'
+      en: 'AI Systems for Lawyers, Consultants & Architects | Untold.works',
+      es: 'Sistemas IA para Abogados, Consultores y Arquitectos | Untold.works'
     },
     description: {
       en: 'Business systems for service professionals: brand, mobile-first website, CRM, booking, AI workflows, and bilingual content. Full ownership. Mexico & US.',
@@ -1121,8 +1121,8 @@ export const seo = {
   },
   enterprise: {
     title: {
-      en: 'Enterprise AI Infrastructure | CRM, RevOps & Automation | Untold.works',
-      es: 'Infraestructura Empresarial de IA | CRM, RevOps y Automatización | Untold.works'
+      en: 'Enterprise AI | CRM, RevOps & Automation | Untold.works',
+      es: 'IA Empresarial | CRM, RevOps y Automatización | Untold.works'
     },
     description: {
       en: 'AI infrastructure for complex operations: multi-team CRM, revenue operations, workflow automation, and custom integrations. Built for scale, fully owned by you.',

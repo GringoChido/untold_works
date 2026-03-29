@@ -11,3 +11,27 @@
     scrollbar-width: none;
   }
 }
+
+@layer base {
+  /* Prevent horizontal overflow site-wide */
+  html, body {
+    overflow-x: hidden;
+  }
+
+  /* Prose mobile fixes: make tables scrollable, images responsive */
+  .prose table {
+    display: block;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .prose img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .prose pre {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+}

@@ -52,7 +52,11 @@ const routes = [
   '/blog/category/ai-for-business',
   '/blog/category/creative-technology',
   '/blog/category/case-studies',
+  '/blog/category/ai-strategy',
   // Blog posts
+  '/blog/alignment-problem-not-software-problem',
+  '/blog/i-spent-a-year-building-an-agency-with-ai',
+  '/blog/design-to-dev-pipeline-just-died',
   '/blog/ai-tools-every-small-business-should-know-2026',
   '/blog/how-to-use-chatgpt-for-customer-service',
   '/blog/ai-content-strategy-what-to-automate-what-to-keep-human',

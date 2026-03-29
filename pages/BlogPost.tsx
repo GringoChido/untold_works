@@ -32,8 +32,8 @@ const BlogPost: React.FC = () => {
     return {
       '@context': 'https://schema.org',
       '@type': 'Article',
-      headline: post.title.en,
-      description: post.excerpt.en,
+      headline: t(post.title),
+      description: t(post.excerpt),
       image: post.image ? `https://untold.works${post.image}` : undefined,
       author: { '@type': 'Person', '@id': 'https://untold.works/#founder', name: post.author, jobTitle: 'Founder & AI Systems Architect', url: 'https://untold.works/about', sameAs: ['https://www.linkedin.com/in/semolik/'] },
       publisher: {
@@ -119,7 +119,7 @@ const BlogPost: React.FC = () => {
       <section className="px-5 sm:px-10 py-16 sm:py-24">
         <div className="max-w-[900px] mx-auto">
           <div
-            className="prose prose-lg prose-untold"
+            className="prose prose-lg prose-untold max-w-none overflow-x-auto"
             style={{
               lineHeight: '1.8',
             }}

@@ -12,8 +12,8 @@ const SeoAeo: React.FC = () => {
 
   usePageMeta(
     {
-      en: 'SEO & AEO — Get Ranked on Google, Recommended by AI | Untold.works',
-      es: 'SEO y AEO — Posiciónate en Google y Sé Recomendado por IA | Untold.works'
+      en: 'SEO & AEO — Ranked on Google, Cited by AI | Untold.works',
+      es: 'SEO y AEO — En Google y Citado por IA | Untold.works'
     },
     {
       en: 'SEO and Answer Engine Optimization for businesses in Mexico and the US. Get found on Google and recommended by ChatGPT, Perplexity, and AI search engines. Bilingual SEO and AI discovery.',

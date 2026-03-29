@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { useLanguage } from '../App';
 import { navigation } from '../i18n';
@@ -7,6 +7,11 @@ const Navbar: React.FC = () => {
   const { lang, setLang, t } = useLanguage();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isSolutionsOpen, setIsSolutionsOpen] = useState(false);
+
+  useEffect(() => {
+    document.body.style.overflow = isMenuOpen ? 'hidden' : '';
+    return () => { document.body.style.overflow = ''; };
+  }, [isMenuOpen]);
 
   const pillarLinks = [
     { path: '/mexico', label: { en: 'Mexico — Mobile-First Operations', es: 'México — Operaciones Mobile-First' } },
@@ -139,7 +144,7 @@ const Navbar: React.FC = () => {
 
         {/* Mobile Menu */}
         {isMenuOpen && (
-          <div className="lg:hidden fixed inset-x-0 top-[80px] sm:top-[96px] h-screen bg-untold-beige z-40 flex flex-col p-6 sm:p-12 space-y-6 sm:space-y-8 animate-in slide-in-from-top duration-300 overflow-y-auto pb-40">
+          <div className="lg:hidden fixed inset-x-0 top-[80px] sm:top-[96px] bottom-0 bg-untold-beige z-40 flex flex-col p-6 sm:p-12 space-y-6 sm:space-y-8 animate-in slide-in-from-top duration-300 overflow-y-auto pb-40">
             {/* Network Systems — Flagship */}
             <Link
               to="/network-systems"
@@ -161,7 +166,7 @@ const Navbar: React.FC = () => {
                 </Link>
                 <button
                   onClick={() => setIsSolutionsOpen(!isSolutionsOpen)}
-                  className="p-2"
+                  className="w-11 h-11 flex items-center justify-center"
                 >
                   <span className={`text-untold-orange text-2xl transition-transform inline-block ${isSolutionsOpen ? 'rotate-45' : ''}`}>+</span>
                 </button>

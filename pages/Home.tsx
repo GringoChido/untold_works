@@ -238,9 +238,12 @@ const Home: React.FC = () => {
 
             <div className="relative flex flex-col justify-center space-y-8">
               <img
-                src="/images/whatsapp-logo.png"
+                src="/images/whatsapp-logo-520.png"
                 alt=""
                 aria-hidden="true"
+                width={520}
+                height={520}
+                loading="lazy"
                 className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[340px] sm:w-[440px] lg:w-[520px] opacity-[0.12] pointer-events-none select-none"
               />
               <div className="relative border-l-4 border-untold-orange pl-6 sm:pl-10">

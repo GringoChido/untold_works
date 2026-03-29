@@ -14,10 +14,11 @@ const AuthorByline: React.FC<AuthorBylineProps> = ({ name, date, variant = 'dark
   return (
     <div className={`flex items-center gap-5 py-6 border-t ${isDark ? 'border-white/10' : 'border-untold-border'}`}>
       <img
-        src="/images/about-photo.webp"
+        src="/images/about-photo-640w.webp"
         alt={name}
         width={56}
         height={56}
+        loading="lazy"
         className="w-14 h-14 rounded-full object-cover"
       />
       <div>

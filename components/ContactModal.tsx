@@ -40,8 +40,8 @@ const ContactModal: React.FC<ContactModalProps> = ({ onClose }) => {
         className="absolute inset-0 bg-black/80 backdrop-blur-md" 
         onClick={onClose}
       />
-      <div className="relative bg-untold-beige w-full max-w-2xl rounded-none shadow-[0_40px_100px_rgba(0,0,0,0.5)] overflow-hidden border border-untold-border max-h-[90vh] overflow-y-auto">
-        <div className="p-6 sm:p-12 lg:p-20">
+      <div className="relative bg-untold-beige w-full max-w-2xl rounded-none shadow-[0_40px_100px_rgba(0,0,0,0.5)] overflow-hidden border border-untold-border max-h-[90dvh] overflow-y-auto">
+        <div className="p-5 sm:p-12 lg:p-20">
           <button 
             onClick={onClose}
             className="absolute top-4 right-4 sm:top-10 sm:right-10 w-11 h-11 flex items-center justify-center border-2 border-untold-border text-untold-black hover:bg-black hover:text-white transition-all font-bold"

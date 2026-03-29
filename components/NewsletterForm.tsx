@@ -40,7 +40,7 @@ const NewsletterForm: React.FC = () => {
   }
 
   return (
-    <form onSubmit={handleSubmit} className="flex gap-3">
+    <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-3">
       <input type="hidden" name="form-name" value="newsletter" />
       <p className="hidden"><input name="bot-field" /></p>
       <input
@@ -54,7 +54,7 @@ const NewsletterForm: React.FC = () => {
       <button
         type="submit"
         disabled={status === 'submitting'}
-        className="bg-untold-orange text-white px-6 py-3 font-sans font-black uppercase tracking-tighter text-sm hover:bg-white hover:text-untold-black transition-all disabled:opacity-50 shrink-0"
+        className="bg-untold-orange text-white px-6 py-4 sm:py-3 min-h-[44px] font-sans font-black uppercase tracking-tighter text-sm hover:bg-white hover:text-untold-black transition-all disabled:opacity-50 shrink-0"
       >
         {status === 'submitting'
           ? '...'

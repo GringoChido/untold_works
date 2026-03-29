@@ -111,8 +111,10 @@ const Mexico: React.FC = () => {
           muted
           loop
           playsInline
+          poster="/video/mexico-hero-poster.jpg"
           className="absolute inset-0 w-full h-full object-cover opacity-60"
         >
+          <source src="/video/mexico-hero.webm" type="video/webm" />
           <source src="/video/mexico-hero.mp4" type="video/mp4" />
         </video>
         <div className="absolute inset-0 bg-black/30" />

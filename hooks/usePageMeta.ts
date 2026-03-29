@@ -102,6 +102,9 @@ export function usePageMeta(
     setMetaTag('property', 'og:url', canonicalUrl);
     setMetaTag('property', 'og:type', ogType);
     setMetaTag('property', 'og:image', ogImage);
+    setMetaTag('property', 'og:image:alt', resolvedTitle);
+    setMetaTag('property', 'og:image:width', '1200');
+    setMetaTag('property', 'og:image:height', '630');
     setMetaTag('property', 'og:site_name', 'Untold.works');
     setMetaTag('property', 'og:locale', lang === 'es' ? 'es_MX' : 'en_US');
     setMetaTag('property', 'og:locale:alternate', lang === 'es' ? 'en_US' : 'es_MX');

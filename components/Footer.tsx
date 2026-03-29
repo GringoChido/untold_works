@@ -68,7 +68,7 @@ const Footer: React.FC = () => {
                   {t(item.label)}
                 </Link>
               ))}
-              <div className="flex flex-col space-y-2 lg:text-right pt-2">
+              <div className="flex flex-col lg:text-right pt-2">
                 {[
                   { label: { en: 'Professional Services', es: 'Servicios Profesionales' }, path: '/solutions/professional-services' },
                   { label: { en: 'Small Business', es: 'Pequeña Empresa' }, path: '/solutions/small-business' },
@@ -77,7 +77,7 @@ const Footer: React.FC = () => {
                   <Link
                     key={item.path}
                     to={item.path}
-                    className="text-sm font-mono uppercase tracking-[0.3em] text-white/20 hover:text-untold-orange transition-all duration-300"
+                    className="text-sm font-mono uppercase tracking-[0.3em] text-white/20 hover:text-untold-orange transition-all duration-300 py-2 min-h-[44px] flex items-center lg:justify-end"
                   >
                     {t(item.label)}
                   </Link>
@@ -85,10 +85,38 @@ const Footer: React.FC = () => {
               </div>
               <Link
                 to="/workshops"
-                className="text-sm font-mono uppercase tracking-[0.3em] text-white/20 hover:text-untold-orange transition-all duration-300"
+                className="text-sm font-mono uppercase tracking-[0.3em] text-white/20 hover:text-untold-orange transition-all duration-300 py-2 min-h-[44px] flex items-center lg:justify-end"
               >
                 {t(i18n.navigation.workshops)}
               </Link>
+            </div>
+
+            {/* Service Pages */}
+            <div className="flex flex-col lg:text-right">
+              <span className="font-mono text-[10px] uppercase tracking-[0.6em] text-white/20 font-bold mb-2">
+                {t({ en: 'SERVICES', es: 'SERVICIOS' })}
+              </span>
+              {[
+                { label: { en: 'Websites', es: 'Sitios Web' }, path: '/websites' },
+                { label: { en: 'SEO & AEO', es: 'SEO y AEO' }, path: '/seo-aeo' },
+                { label: { en: 'Social Media', es: 'Redes Sociales' }, path: '/social-media' },
+                { label: { en: 'Ads', es: 'Publicidad' }, path: '/ads' },
+                { label: { en: 'Dashboard', es: 'Dashboard' }, path: '/dashboard' },
+                { label: { en: 'Copywriting', es: 'Redacción' }, path: '/copywriting' },
+                { label: { en: 'AI Content', es: 'Contenido IA' }, path: '/ai-content' },
+                { label: { en: 'Sales Enablement', es: 'Habilitación de Ventas' }, path: '/sales-enablement' },
+                { label: { en: 'Mobile Apps', es: 'Apps Móviles' }, path: '/mobile-apps' },
+                { label: { en: 'Hosting', es: 'Hosting' }, path: '/hosting' },
+                { label: { en: 'Reviews', es: 'Reseñas' }, path: '/review-reputation' },
+              ].map((item) => (
+                <Link
+                  key={item.path}
+                  to={item.path}
+                  className="text-sm font-mono uppercase tracking-[0.3em] text-white/20 hover:text-untold-orange transition-all duration-300 py-2 min-h-[44px] flex items-center lg:justify-end"
+                >
+                  {t(item.label)}
+                </Link>
+              ))}
             </div>
 
             {/* Contact */}
@@ -96,18 +124,18 @@ const Footer: React.FC = () => {
               <span className="font-mono text-[10px] uppercase tracking-[0.6em] text-white/20 font-bold block mb-4">
                 {t({ en: 'CONTACT', es: 'CONTACTO' })}
               </span>
-              <a href="mailto:info@untold.works" className="text-sm font-serif text-white/40 hover:text-untold-orange transition-colors">info@untold.works</a>
+              <a href="mailto:info@untold.works" className="text-sm font-serif text-white/40 hover:text-untold-orange transition-colors inline-flex items-center py-2 min-h-[44px]">info@untold.works</a>
             </div>
 
             {/* Social */}
             <div className="lg:text-right">
               <span className="font-mono text-[10px] uppercase tracking-[0.6em] text-white/20 font-bold block mb-4">SOCIAL</span>
-              <div className="flex space-x-5 lg:justify-end items-center">
+              <div className="flex space-x-1 lg:justify-end items-center">
                 <a
                   href="https://www.linkedin.com/company/untoldworksai"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-white/40 hover:text-untold-orange transition-colors duration-300"
+                  className="w-11 h-11 flex items-center justify-center text-white/40 hover:text-untold-orange transition-colors duration-300"
                   aria-label="Untold.works LinkedIn"
                 >
                   <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
@@ -118,7 +146,7 @@ const Footer: React.FC = () => {
                   href="https://www.linkedin.com/in/semolik/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-white/40 hover:text-untold-orange transition-colors duration-300 flex items-center gap-1.5"
+                  className="w-11 h-11 flex items-center justify-center gap-1.5 text-white/40 hover:text-untold-orange transition-colors duration-300"
                   aria-label="Joshua Semolik LinkedIn"
                 >
                   <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
@@ -130,7 +158,7 @@ const Footer: React.FC = () => {
                   href="https://www.instagram.com/untold.works_ai"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-white/40 hover:text-untold-orange transition-colors duration-300"
+                  className="w-11 h-11 flex items-center justify-center text-white/40 hover:text-untold-orange transition-colors duration-300"
                   aria-label="Instagram"
                 >
                   <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">

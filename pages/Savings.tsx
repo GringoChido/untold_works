@@ -163,20 +163,20 @@ const Savings: React.FC = () => {
                 {tools.map((tool, idx) => (
                   <label
                     key={idx}
-                    className="flex items-center justify-between py-4 border-b border-untold-border cursor-pointer group"
+                    className="flex items-center justify-between gap-3 py-4 border-b border-untold-border cursor-pointer group"
                   >
-                    <div className="flex items-center gap-3">
+                    <div className="flex items-center gap-3 min-w-0">
                       <input
                         type="checkbox"
                         checked={tool.checked}
                         onChange={() => toggleTool(idx)}
-                        className="w-4 h-4 accent-untold-orange"
+                        className="w-4 h-4 accent-untold-orange shrink-0"
                       />
-                      <span className={`font-serif text-base ${tool.checked ? 'text-untold-black' : 'text-untold-black/30 line-through'}`}>
+                      <span className={`font-serif text-base truncate ${tool.checked ? 'text-untold-black' : 'text-untold-black/30 line-through'}`}>
                         {tool.name}
                       </span>
                     </div>
-                    <span className={`font-mono text-sm ${tool.checked ? 'text-red-600/60' : 'text-untold-black/20'}`}>
+                    <span className={`font-mono text-sm shrink-0 ${tool.checked ? 'text-red-600/60' : 'text-untold-black/20'}`}>
                       ${tool.monthlyLow}–${tool.monthlyHigh}/mo
                     </span>
                   </label>

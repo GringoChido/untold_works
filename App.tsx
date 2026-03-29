@@ -6,15 +6,15 @@ import Footer from './components/Footer';
 import StickyBar from './components/StickyBar';
 import ExitIntentPopup from './components/ExitIntentPopup';
 import Home from './pages/Home';
-import WorkshopsPage from './pages/Workshops';
-import Portfolio from './pages/Portfolio';
-import ProjectDetail from './pages/ProjectDetail';
-import AboutPage from './pages/About';
-import ContactPage from './pages/Contact';
-import StereoPage from './pages/Stereo';
-import SlidesPage from './pages/Slides';
 
 // Lazy-loaded pages
+const WorkshopsPage = lazy(() => import('./pages/Workshops'));
+const Portfolio = lazy(() => import('./pages/Portfolio'));
+const ProjectDetail = lazy(() => import('./pages/ProjectDetail'));
+const AboutPage = lazy(() => import('./pages/About'));
+const ContactPage = lazy(() => import('./pages/Contact'));
+const StereoPage = lazy(() => import('./pages/Stereo'));
+const SlidesPage = lazy(() => import('./pages/Slides'));
 const Solutions = lazy(() => import('./pages/Solutions'));
 const ProfessionalServices = lazy(() => import('./pages/solutions/ProfessionalServices'));
 const SmallBusiness = lazy(() => import('./pages/solutions/SmallBusiness'));

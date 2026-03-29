@@ -10,8 +10,8 @@ const NetworkSystems: React.FC = () => {
 
   usePageMeta(
     {
-      en: 'Network Systems — AI Business Systems for Any Scale | Untold.works',
-      es: 'Network Systems — Sistemas de Negocio con IA a Cualquier Escala | Untold.works',
+      en: 'AI Business Systems for Any Scale | Untold.works',
+      es: 'Sistemas de Negocio con IA a Cualquier Escala | Untold.works',
     },
     {
       en: 'AI-powered digital systems that scale from one location to one hundred. Websites, SEO/AEO, dashboards, sales enablement, and mobile apps — built for you, owned by you.',
@@ -145,8 +145,10 @@ const NetworkSystems: React.FC = () => {
           muted
           loop
           playsInline
+          poster="/video/network-systems-poster.jpg"
           className="absolute inset-0 w-full h-full object-cover opacity-60"
         >
+          <source src="/video/network-systems-hero.webm" type="video/webm" />
           <source src="/video/network-systems-hero.mp4" type="video/mp4" />
         </video>
         <div className="absolute inset-0 bg-black/30" />
