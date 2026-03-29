@@ -81,6 +81,7 @@ const routes = [
   '/blog/your-creative-eye-became-the-prompt',
   '/blog/the-site-is-the-proposal',
   '/blog/n8n-vs-zapier-for-mexican-businesses',
+  '/blog/seo-vs-aeo-vs-geo-what-your-business-actually-needs-in-2026',
 ];
 
 async function waitForServer(url, maxAttempts = 30) {

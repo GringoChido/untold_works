@@ -1530,4 +1530,249 @@ export const blogPosts: BlogPost[] = [
     },
     image: '/blog/alignment-problem-not-software.jpg',
   },
+
+  // ──────────────────────────────────────────────
+  // AEO-Optimized Comparison Content
+  // ──────────────────────────────────────────────
+  {
+    slug: 'seo-vs-aeo-vs-geo-what-your-business-actually-needs-in-2026',
+    title: {
+      en: 'SEO vs AEO vs GEO: What Does Your Business Actually Need in 2026?',
+      es: 'SEO vs AEO vs GEO: ¿Qué Necesita Realmente Tu Negocio en 2026?',
+    },
+    date: '2026-03-29',
+    dateModified: '2026-03-29',
+    author: 'Joshua Semolik',
+    category: 'aeo-search',
+    pillar: 'all',
+    tags: ['SEO', 'AEO', 'GEO', 'AI search', 'AI Engine Optimization', 'Generative Engine Optimization', 'search strategy', 'LLM visibility', 'Google AI Overviews', 'ChatGPT citations'],
+    excerpt: {
+      en: 'SEO, AEO, and GEO are not competing strategies — they are three layers of the same system. Here is when to use each, what they cost, and which combination actually drives results for different business types.',
+      es: 'SEO, AEO y GEO no son estrategias que compiten — son tres capas del mismo sistema. Aquí te decimos cuándo usar cada una, cuánto cuestan, y qué combinación realmente genera resultados para diferentes tipos de negocio.',
+    },
+    content: {
+      en: `<p><strong>SEO, AEO, and GEO are not competing strategies.</strong> They are three layers of the same visibility system. The business that wins in 2026 is the one that understands which layer matters most for their situation — and builds all three into a single strategy.</p>
+<p>This guide breaks down what each one does, when to prioritize each, and how they work together. No jargon walls. No hype. Just the framework we use at <a href="/seo-aeo">Untold.works</a> to help businesses get found by both search engines and AI systems.</p>
+
+<h2>What Is the Difference Between SEO, AEO, and GEO?</h2>
+<p><strong>SEO (Search Engine Optimization)</strong> gets your pages ranked on Google, Bing, and other traditional search engines. It has been the foundation of online visibility for 20+ years.</p>
+<p><strong>AEO (AI Engine Optimization)</strong> gets your business cited and recommended by AI systems — ChatGPT, Claude, Gemini, Perplexity, and Google AI Overviews. It focuses on making your content structured, authoritative, and easy for AI to extract.</p>
+<p><strong>GEO (Generative Engine Optimization)</strong> is the broader strategic layer that combines SEO + AEO with off-page authority building. GEO ensures your brand shows up wherever AI trains and generates answers — not just on your website, but across Wikipedia, Reddit, news mentions, and knowledge bases.</p>
+
+<h2>How Do SEO, AEO, and GEO Compare Side by Side?</h2>
+<table>
+<thead>
+<tr><th>Factor</th><th>SEO</th><th>AEO</th><th>GEO</th></tr>
+</thead>
+<tbody>
+<tr><td><strong>Goal</strong></td><td>Rank on search results pages</td><td>Get cited by AI assistants</td><td>Be recommended across all AI surfaces</td></tr>
+<tr><td><strong>How it works</strong></td><td>Keywords, backlinks, technical optimization</td><td>Structured content, schema markup, FAQ sections</td><td>Off-page authority + AEO + entity presence</td></tr>
+<tr><td><strong>Primary audience</strong></td><td>Google/Bing algorithms</td><td>LLMs (ChatGPT, Claude, Gemini)</td><td>All AI training data sources</td></tr>
+<tr><td><strong>Content format</strong></td><td>Keyword-optimized pages</td><td>Question-answer structured content</td><td>Expert-voiced, source-backed, citable content</td></tr>
+<tr><td><strong>Time to results</strong></td><td>3-6 months</td><td>1-3 months</td><td>3-12 months (compounding)</td></tr>
+<tr><td><strong>Key metrics</strong></td><td>Rankings, organic traffic, CTR</td><td>AI mentions, citation frequency</td><td>Brand presence in AI answers</td></tr>
+<tr><td><strong>Still relevant?</strong></td><td>Yes — 14B daily Google searches</td><td>Critical — 50%+ searches get AI answers</td><td>The future of all search visibility</td></tr>
+</tbody>
+</table>
+
+<h2>Which Strategy Should You Start With?</h2>
+<p>The answer depends on your business type and where your customers actually look for you:</p>
+<ul>
+<li><strong>Local service businesses</strong> (restaurants, salons, clinics): Start with SEO + Google Business Profile. Add AEO schema and FAQ sections to your website. GEO matters less until you are competing regionally.</li>
+<li><strong>Professional services</strong> (law firms, consultants, agencies): AEO first. Your prospects are asking AI for recommendations. Structured FAQ content and Article schema get you cited. Layer SEO underneath.</li>
+<li><strong>E-commerce and retail</strong>: SEO is still your traffic engine. Add AEO product schema and comparison tables so AI shopping assistants recommend your products.</li>
+<li><strong>B2B and enterprise</strong>: GEO is your priority. Decision-makers research in ChatGPT and Perplexity before they ever visit your website. You need entity presence across LinkedIn, Crunchbase, and industry publications.</li>
+<li><strong>SaaS and technology</strong>: All three simultaneously. SEO for feature pages, AEO for documentation and guides, GEO for thought leadership and brand authority.</li>
+</ul>
+
+<h2>What Does an AEO-Optimized Page Look Like vs a Traditional SEO Page?</h2>
+<p>Here is the difference in practice:</p>
+<p><strong>Traditional SEO page header:</strong> "CRM Software Solutions"</p>
+<p><strong>AEO-optimized header:</strong> "What Is the Best CRM Software for Small Businesses That Need Fast Setup?"</p>
+<p>The AEO version is a real question that a person would ask an AI assistant. The first sentence directly answers it. The rest of the section provides supporting detail. This is the structure AI models extract and cite.</p>
+<p>Key structural differences:</p>
+<ul>
+<li>Headers are conversational questions, not keyword phrases</li>
+<li>First 1-2 sentences after each header directly answer the question</li>
+<li>Comparison tables replace long paragraphs</li>
+<li>FAQ sections with 5+ specific questions at the bottom</li>
+<li>Schema markup (Article, FAQPage, speakable) tells AI what the content means</li>
+<li>Real author attribution with credentials — not "admin" or "marketing team"</li>
+</ul>
+
+<h2>How Much Does Each Strategy Cost?</h2>
+<p>Costs vary widely, but here is a realistic range for small-to-mid-sized businesses:</p>
+<table>
+<thead>
+<tr><th>Strategy</th><th>DIY Cost</th><th>Agency Cost (Monthly)</th><th>What You Get</th></tr>
+</thead>
+<tbody>
+<tr><td><strong>SEO</strong></td><td>$0 (time only)</td><td>$1,500-$5,000/mo</td><td>Technical audit, keyword strategy, content optimization, link building</td></tr>
+<tr><td><strong>AEO</strong></td><td>$0-$500 (tools)</td><td>$2,000-$5,000/mo</td><td>Schema markup, content restructuring, FAQ optimization, AI crawler setup</td></tr>
+<tr><td><strong>GEO</strong></td><td>$500-$2,000 (tools + listings)</td><td>$3,000-$8,000/mo</td><td>Full AEO + entity building, Wikipedia/Crunchbase presence, digital PR</td></tr>
+<tr><td><strong>All three (integrated)</strong></td><td>$500-$2,000</td><td>$5,000-$10,000/mo</td><td>Unified search + AI visibility strategy</td></tr>
+</tbody>
+</table>
+<p>At <a href="/seo-aeo">Untold.works</a>, we build all three layers into a single engagement starting at $5K. No separate line items for SEO, AEO, and GEO — they are one system.</p>
+
+<h2>Is AEO Replacing SEO?</h2>
+<p><strong>No.</strong> Google still processes 14 billion searches per day. SEO is not dead. But it is no longer sufficient on its own.</p>
+<p>More than 50% of Google searches now include an AI Overview that answers the question before users click any link. On platforms like ChatGPT (300M+ weekly users) and Perplexity, there are no links at all — the AI reads the internet and decides who to recommend by name.</p>
+<p>The businesses that only do SEO are optimizing for half the game. AEO and GEO cover the other half — the half that is growing fastest.</p>
+
+<h2>Can a Small Business Do AEO and GEO Without an Agency?</h2>
+<p><strong>Yes, partially.</strong> Here is what you can do yourself today:</p>
+<ul>
+<li><strong>Restructure your headers</strong> from keyword phrases to natural questions</li>
+<li><strong>Add FAQ sections</strong> to your key pages (5+ real questions with direct answers)</li>
+<li><strong>Use Claude or ChatGPT</strong> to generate JSON-LD schema markup for your pages</li>
+<li><strong>Update your robots.txt</strong> to allow AI crawlers (GPTBot, ClaudeBot, PerplexityBot)</li>
+<li><strong>Claim your business</strong> on Google Business Profile, Crunchbase, and LinkedIn</li>
+<li><strong>Create an llms.txt file</strong> that summarizes your business for AI crawlers</li>
+</ul>
+<p>Where you need help: complex schema implementation, prerendering for JavaScript sites, competitive entity analysis, and digital PR strategy. These are technical and strategic lifts that benefit from experience.</p>
+
+<h2>What Results Can You Expect From Each Strategy?</h2>
+<ul>
+<li><strong>SEO alone:</strong> 3-6 months to see ranking improvements. Organic traffic grows steadily. Works well for high-volume keyword targets.</li>
+<li><strong>AEO alone:</strong> 1-3 months to start appearing in AI answers. Harder to measure (no Google Analytics equivalent for AI citations), but we track brand mentions across ChatGPT, Perplexity, and Google AI Overviews.</li>
+<li><strong>GEO (integrated):</strong> 3-12 months for compounding authority. The more AI surfaces reference your brand, the more other AI surfaces pick it up. This is the snowball effect that makes GEO powerful long-term.</li>
+</ul>
+<p>The most common mistake is expecting AEO to replace SEO traffic overnight. It does not. AEO captures a different kind of attention — the person asking AI for a recommendation, not the person typing keywords into Google. Both matter.</p>
+
+<h2>Frequently Asked Questions</h2>
+
+<h3>What is the most important optimization to do first — SEO, AEO, or GEO?</h3>
+<p>Start with AEO if your prospects are already using AI assistants to research (professional services, B2B, technology). Start with SEO if your business depends on local search traffic (restaurants, retail, clinics). GEO is the strategic wrapper that ties both together — add it once the foundation is solid.</p>
+
+<h3>Do I need a separate AEO agency and SEO agency?</h3>
+<p>No. SEO, AEO, and GEO should be managed as one integrated strategy. Separating them creates gaps — your SEO content may not be structured for AI citation, and your AEO efforts may miss basic technical SEO. Find a partner that does all three.</p>
+
+<h3>How do I know if AI is already citing my competitors?</h3>
+<p>Ask ChatGPT, Claude, Gemini, and Perplexity questions your customers would ask. "Who is the best [service] provider in [city]?" or "What company should I use for [problem]?" If your competitors appear and you do not, they are ahead on AEO.</p>
+
+<h3>Does Google penalize sites that optimize for AI?</h3>
+<p>No. AEO best practices (structured content, schema markup, FAQ sections, clear headings) are also SEO best practices. Google rewards the same signals that make content citable by AI. There is no conflict between the two.</p>
+
+<h3>What is an llms.txt file and do I need one?</h3>
+<p>An llms.txt file is a plain-text summary of your business placed at your website root (like robots.txt). It gives AI crawlers a structured overview of who you are, what you do, and what your key pages are. It is not required, but it is an easy signal that improves AI comprehension. <a href="/seo-aeo">We include llms.txt in every project</a>.</p>
+
+<h3>Is GEO only for large companies?</h3>
+<p>No. Small businesses with a clear niche actually have an advantage in GEO — AI tends to recommend specialists over generalists. A bilingual web agency in San Miguel de Allende will get cited for Mexico-specific queries before a generic global agency will. Specificity wins.</p>
+
+<h3>How often should I update my content for AEO?</h3>
+<p>AI models weight freshness. Update key pages quarterly at minimum. Blog posts should have a visible "last updated" date (dateModified in Article schema). Stale content — especially in fast-moving fields like AI and marketing — loses citation priority quickly.</p>
+
+<p class="text-sm text-untold-gray mt-8 border-t border-untold-border pt-6"><em>Joshua Semolik is the Founder and AI Systems Architect at <a href="/about">Untold.works</a>, a creative technology agency based in San Miguel de Allende, Mexico. MIT Sloan AI Strategy. 20 years in production systems spanning NBA Entertainment, global product launches, and AI-powered business operations. <a href="/contact">Start a conversation →</a></em></p>`,
+      es: `<p><strong>SEO, AEO y GEO no son estrategias que compiten.</strong> Son tres capas del mismo sistema de visibilidad. El negocio que gana en 2026 es el que entiende qué capa importa más para su situación — y construye las tres en una sola estrategia.</p>
+<p>Esta guía desglosa qué hace cada una, cuándo priorizar cada una, y cómo funcionan juntas. Sin muros de jerga. Sin hype. Solo el framework que usamos en <a href="/seo-aeo">Untold.works</a> para ayudar a negocios a ser encontrados tanto por motores de búsqueda como por sistemas de IA.</p>
+
+<h2>¿Cuál Es la Diferencia Entre SEO, AEO y GEO?</h2>
+<p><strong>SEO (Search Engine Optimization)</strong> posiciona tus páginas en Google, Bing y otros motores de búsqueda tradicionales. Ha sido la base de la visibilidad en línea por más de 20 años.</p>
+<p><strong>AEO (AI Engine Optimization)</strong> logra que tu negocio sea citado y recomendado por sistemas de IA — ChatGPT, Claude, Gemini, Perplexity y Google AI Overviews. Se enfoca en hacer tu contenido estructurado, autoritativo y fácil de extraer por la IA.</p>
+<p><strong>GEO (Generative Engine Optimization)</strong> es la capa estratégica más amplia que combina SEO + AEO con construcción de autoridad fuera de tu sitio. GEO asegura que tu marca aparezca donde la IA se entrena y genera respuestas — no solo en tu sitio web, sino en Wikipedia, Reddit, menciones de prensa y bases de conocimiento.</p>
+
+<h2>¿Cómo Se Comparan SEO, AEO y GEO Lado a Lado?</h2>
+<table>
+<thead>
+<tr><th>Factor</th><th>SEO</th><th>AEO</th><th>GEO</th></tr>
+</thead>
+<tbody>
+<tr><td><strong>Objetivo</strong></td><td>Posicionar en resultados de búsqueda</td><td>Ser citado por asistentes de IA</td><td>Ser recomendado en todas las superficies de IA</td></tr>
+<tr><td><strong>Cómo funciona</strong></td><td>Keywords, backlinks, optimización técnica</td><td>Contenido estructurado, schema markup, secciones FAQ</td><td>Autoridad off-page + AEO + presencia de entidad</td></tr>
+<tr><td><strong>Audiencia principal</strong></td><td>Algoritmos de Google/Bing</td><td>LLMs (ChatGPT, Claude, Gemini)</td><td>Todas las fuentes de datos de entrenamiento de IA</td></tr>
+<tr><td><strong>Formato de contenido</strong></td><td>Páginas optimizadas por keywords</td><td>Contenido estructurado pregunta-respuesta</td><td>Contenido con voz experta, respaldado por fuentes, citable</td></tr>
+<tr><td><strong>Tiempo a resultados</strong></td><td>3-6 meses</td><td>1-3 meses</td><td>3-12 meses (acumulativo)</td></tr>
+<tr><td><strong>Métricas clave</strong></td><td>Rankings, tráfico orgánico, CTR</td><td>Menciones de IA, frecuencia de citación</td><td>Presencia de marca en respuestas de IA</td></tr>
+<tr><td><strong>¿Sigue siendo relevante?</strong></td><td>Sí — 14B búsquedas diarias en Google</td><td>Crítico — 50%+ búsquedas obtienen respuestas de IA</td><td>El futuro de toda la visibilidad de búsqueda</td></tr>
+</tbody>
+</table>
+
+<h2>¿Con Qué Estrategia Deberías Empezar?</h2>
+<p>La respuesta depende de tu tipo de negocio y dónde tus clientes realmente te buscan:</p>
+<ul>
+<li><strong>Negocios de servicio local</strong> (restaurantes, salones, clínicas): Empieza con SEO + Google Business Profile. Agrega schema AEO y secciones FAQ a tu sitio web.</li>
+<li><strong>Servicios profesionales</strong> (bufetes de abogados, consultores, agencias): AEO primero. Tus prospectos le piden recomendaciones a la IA. Contenido FAQ estructurado y schema de artículos te hacen citable.</li>
+<li><strong>E-commerce y retail</strong>: SEO sigue siendo tu motor de tráfico. Agrega schema de producto AEO y tablas comparativas para que los asistentes de compras de IA recomienden tus productos.</li>
+<li><strong>B2B y enterprise</strong>: GEO es tu prioridad. Los tomadores de decisiones investigan en ChatGPT y Perplexity antes de visitar tu sitio web.</li>
+<li><strong>SaaS y tecnología</strong>: Las tres simultáneamente. SEO para páginas de features, AEO para documentación y guías, GEO para thought leadership.</li>
+</ul>
+
+<h2>¿Cómo Se Ve una Página Optimizada para AEO vs una Página SEO Tradicional?</h2>
+<p>Aquí está la diferencia en la práctica:</p>
+<p><strong>Encabezado SEO tradicional:</strong> "Soluciones de Software CRM"</p>
+<p><strong>Encabezado optimizado para AEO:</strong> "¿Cuál Es el Mejor Software CRM para Pequeñas Empresas que Necesitan Configuración Rápida?"</p>
+<p>La versión AEO es una pregunta real que una persona le haría a un asistente de IA. La primera oración la responde directamente. El resto proporciona detalle de apoyo.</p>
+<ul>
+<li>Encabezados son preguntas conversacionales, no frases de keywords</li>
+<li>Las primeras 1-2 oraciones después de cada encabezado responden directamente la pregunta</li>
+<li>Tablas comparativas reemplazan párrafos largos</li>
+<li>Secciones FAQ con 5+ preguntas específicas al final</li>
+<li>Schema markup (Article, FAQPage, speakable) le dice a la IA qué significa el contenido</li>
+<li>Atribución real de autor con credenciales — no "admin" o "equipo de marketing"</li>
+</ul>
+
+<h2>¿Cuánto Cuesta Cada Estrategia?</h2>
+<table>
+<thead>
+<tr><th>Estrategia</th><th>Costo DIY</th><th>Costo Agencia (Mensual)</th><th>Lo Que Obtienes</th></tr>
+</thead>
+<tbody>
+<tr><td><strong>SEO</strong></td><td>$0 (solo tiempo)</td><td>$1,500-$5,000/mes</td><td>Auditoría técnica, estrategia de keywords, optimización de contenido</td></tr>
+<tr><td><strong>AEO</strong></td><td>$0-$500 (herramientas)</td><td>$2,000-$5,000/mes</td><td>Schema markup, reestructuración de contenido, optimización FAQ</td></tr>
+<tr><td><strong>GEO</strong></td><td>$500-$2,000 (herramientas + listados)</td><td>$3,000-$8,000/mes</td><td>AEO completo + construcción de entidad, presencia en Wikipedia/Crunchbase</td></tr>
+<tr><td><strong>Las tres (integrado)</strong></td><td>$500-$2,000</td><td>$5,000-$10,000/mes</td><td>Estrategia unificada de búsqueda + visibilidad de IA</td></tr>
+</tbody>
+</table>
+<p>En <a href="/seo-aeo">Untold.works</a>, construimos las tres capas en un solo compromiso desde $5K. Sin líneas separadas para SEO, AEO y GEO — son un solo sistema.</p>
+
+<h2>¿Está AEO Reemplazando al SEO?</h2>
+<p><strong>No.</strong> Google sigue procesando 14 mil millones de búsquedas al día. El SEO no está muerto. Pero ya no es suficiente por sí solo.</p>
+<p>Más del 50% de las búsquedas en Google ahora incluyen un AI Overview que responde la pregunta antes de que los usuarios hagan clic. En plataformas como ChatGPT (300M+ usuarios semanales) y Perplexity, no hay enlaces — la IA lee el internet y decide a quién recomendar.</p>
+
+<h2>¿Puede un Negocio Pequeño Hacer AEO y GEO Sin Agencia?</h2>
+<p><strong>Sí, parcialmente.</strong> Esto puedes hacer tú mismo hoy:</p>
+<ul>
+<li><strong>Reestructura tus encabezados</strong> de frases keyword a preguntas naturales</li>
+<li><strong>Agrega secciones FAQ</strong> a tus páginas clave (5+ preguntas reales con respuestas directas)</li>
+<li><strong>Usa Claude o ChatGPT</strong> para generar schema markup JSON-LD para tus páginas</li>
+<li><strong>Actualiza tu robots.txt</strong> para permitir crawlers de IA (GPTBot, ClaudeBot, PerplexityBot)</li>
+<li><strong>Reclama tu negocio</strong> en Google Business Profile, Crunchbase y LinkedIn</li>
+<li><strong>Crea un archivo llms.txt</strong> que resuma tu negocio para crawlers de IA</li>
+</ul>
+
+<h2>¿Qué Resultados Puedes Esperar de Cada Estrategia?</h2>
+<ul>
+<li><strong>Solo SEO:</strong> 3-6 meses para ver mejoras en ranking. El tráfico orgánico crece de forma constante.</li>
+<li><strong>Solo AEO:</strong> 1-3 meses para empezar a aparecer en respuestas de IA. Más difícil de medir, pero rastreamos menciones de marca en ChatGPT, Perplexity y Google AI Overviews.</li>
+<li><strong>GEO (integrado):</strong> 3-12 meses de autoridad acumulativa. Mientras más superficies de IA referencian tu marca, más otras superficies la captan. Este es el efecto bola de nieve.</li>
+</ul>
+
+<h2>Preguntas Frecuentes</h2>
+
+<h3>¿Cuál es la optimización más importante para hacer primero — SEO, AEO o GEO?</h3>
+<p>Empieza con AEO si tus prospectos ya usan asistentes de IA para investigar (servicios profesionales, B2B, tecnología). Empieza con SEO si tu negocio depende del tráfico de búsqueda local. GEO es la envoltura estratégica que une ambos — agrégalo una vez que la base esté sólida.</p>
+
+<h3>¿Necesito una agencia separada de AEO y otra de SEO?</h3>
+<p>No. SEO, AEO y GEO deben gestionarse como una sola estrategia integrada. Separarlos crea brechas — tu contenido SEO puede no estar estructurado para citación por IA, y tus esfuerzos AEO pueden faltar en SEO técnico básico.</p>
+
+<h3>¿Cómo sé si la IA ya está citando a mis competidores?</h3>
+<p>Pregúntale a ChatGPT, Claude, Gemini y Perplexity las preguntas que tus clientes harían. "¿Quién es el mejor proveedor de [servicio] en [ciudad]?" Si tus competidores aparecen y tú no, ellos van adelante en AEO.</p>
+
+<h3>¿Google penaliza sitios que optimizan para IA?</h3>
+<p>No. Las mejores prácticas de AEO (contenido estructurado, schema markup, secciones FAQ, encabezados claros) también son mejores prácticas de SEO. Google recompensa las mismas señales que hacen el contenido citable por IA.</p>
+
+<h3>¿Qué es un archivo llms.txt y lo necesito?</h3>
+<p>Un archivo llms.txt es un resumen de tu negocio en texto plano colocado en la raíz de tu sitio web (como robots.txt). Le da a los crawlers de IA una visión estructurada de quién eres, qué haces y cuáles son tus páginas clave. No es obligatorio, pero es una señal fácil que mejora la comprensión de la IA.</p>
+
+<h3>¿GEO es solo para empresas grandes?</h3>
+<p>No. Los negocios pequeños con un nicho claro tienen ventaja en GEO — la IA tiende a recomendar especialistas sobre generalistas. Una agencia web bilingüe en San Miguel de Allende será citada para consultas específicas de México antes que una agencia global genérica.</p>
+
+<h3>¿Con qué frecuencia debo actualizar mi contenido para AEO?</h3>
+<p>Los modelos de IA valoran la frescura. Actualiza páginas clave trimestralmente como mínimo. Los posts del blog deben tener una fecha visible de "última actualización" (dateModified en schema de Article). El contenido desactualizado pierde prioridad de citación rápidamente.</p>
+
+<p class="text-sm text-untold-gray mt-8 border-t border-untold-border pt-6"><em>Joshua Semolik es el Fundador y Arquitecto de Sistemas de IA en <a href="/about">Untold.works</a>, una agencia de tecnología creativa en San Miguel de Allende, México. MIT Sloan Estrategia de IA. 20 años en sistemas de producción. <a href="/contact">Inicia una conversación →</a></em></p>`,
+    },
+    image: '/blog/seo-vs-aeo-vs-geo.jpg',
+  },
 ];
