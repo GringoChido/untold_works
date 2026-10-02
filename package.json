@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc --noEmit && node scripts/write-static.mjs && vite build && npx puppeteer browsers install chrome && node prerender.mjs",
+    "build": "tsc --noEmit && node scripts/write-static.mjs && vite build && node prerender.mjs",
     "preview": "serve dist -l 4175",
     "images": "node scripts/build-images.mjs",
     "verify": "node scripts/verify-cards.mjs"

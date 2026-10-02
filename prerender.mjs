@@ -1,8 +1,24 @@
-import { spawn } from 'child_process';
+import { execSync, spawn } from 'child_process';
+import { accessSync, constants, existsSync, mkdirSync } from 'fs';
 import { mkdir, writeFile } from 'fs/promises';
 import { dirname, join } from 'path';
-import puppeteer from 'puppeteer';
 import { routes } from './scripts/routes.mjs';
+
+// Netlify points PUPPETEER_CACHE_DIR at its build cache. Locally that path is not writable,
+// so fall back to Puppeteer's default cache. This has to happen before Puppeteer is imported.
+const cacheDir = process.env.PUPPETEER_CACHE_DIR;
+if (cacheDir) {
+  try {
+    mkdirSync(cacheDir, { recursive: true });
+    accessSync(cacheDir, constants.W_OK);
+  } catch {
+    delete process.env.PUPPETEER_CACHE_DIR;
+  }
+}
+const puppeteer = (await import('puppeteer')).default;
+if (!existsSync(puppeteer.executablePath())) {
+  execSync('npx puppeteer browsers install chrome', { stdio: 'inherit', env: process.env });
+}
 
 const DIST_DIR = join(import.meta.dirname, 'dist');
 const PORT = 4173;
