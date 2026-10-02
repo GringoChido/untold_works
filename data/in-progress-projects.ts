@@ -3,18 +3,6 @@ import { InProgressProject, ProjectVertical } from '../types';
 export const inProgressProjects: InProgressProject[] = [
   // ── Game Room & Billiards ──
   {
-    id: 'cl-bailey',
-    name: { en: 'C.L. Bailey & Co.', es: 'C.L. Bailey & Co.' },
-    description: {
-      en: 'Full website build for a handcrafted billiards and game room furniture manufacturer. Solid hardwood, lifetime guarantee — built in Tomball, Texas since 1999.',
-      es: 'Construcción completa de sitio web para fabricante de mesas de billar y muebles de sala de juegos artesanales. Madera maciza, garantía de por vida — fabricado en Tomball, Texas desde 1999.'
-    },
-    tags: ['Website', 'E-Commerce', 'Brand'],
-    websiteUrl: 'https://clbailey.netlify.app/en',
-    vertical: 'game-room',
-    previewImage: '/images/in-progress/cl-bailey.jpg',
-  },
-  {
     id: 'regal-billiards',
     name: { en: 'Regal Billiards', es: 'Regal Billiards' },
     description: {

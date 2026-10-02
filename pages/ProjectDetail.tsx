@@ -47,25 +47,13 @@ const pillarLinks: Record<Exclude<Pillar, 'all'>, { path: string; label: { en: s
 };
 
 const projectMeta: Record<string, { title: string; description: string }> = {
-  'spotify-whatsapp-publishing': {
-    title: 'AI for Music Labels | Spotify-WhatsApp Publishing Automation — Untold.works',
-    description: 'AI-powered music content automation for independent labels. Spotify-to-WhatsApp publishing pipeline reclaiming 15 hours/week with n8n, Claude Code, and RAG architecture.',
-  },
-  'black-radio-experience': {
-    title: 'AI for Music Marketing | Blue Note 300% Audience Growth — Untold.works',
-    description: 'AI-powered campaign automation for Blue Note Entertainment. 300% audience reach growth and 500+ engagement signals via automated cross-platform music marketing pipeline.',
-  },
   'omi-lead-intake-qualification': {
-    title: 'AI Lead Qualification Case Study | 98% MQL Accuracy — Untold.works',
-    description: 'AI-powered lead intake and routing system achieving 98% MQL accuracy and 4.2x sales ROI. Built with n8n automation, OpenAI agents, and Salesforce CRM integration.',
-  },
-  'billiard-factory-retail-architecture': {
-    title: 'Omnichannel Revenue Operations Case Study | 20% Sales Lift — Untold.works',
-    description: 'Unified omnichannel RevOps for 4,000+ SKU retail operation. 20% sales lift and 35% efficiency gain via Shopify Plus, ERP integration, and n8n AI automation.',
+    title: 'AI Lead Qualification Case Study | OMI Growth — Untold.works',
+    description: 'AI-powered lead intake and routing system for OMI Growth. Built with n8n automation, OpenAI agents, and Salesforce CRM integration.',
   },
   'noxguard-brand-rebrand': {
-    title: 'Enterprise AI Transformation Case Study | Brand + 6 AI Systems — Untold.works',
-    description: 'End-to-end AI transformation for Mexico\'s leading DEF manufacturer. Brand strategy, 6 AI systems including route optimization, predictive inventory, WhatsApp ordering, and ESG reporting.',
+    title: 'Brand, Strategy & AI Roadmap Case Study | Noxguard — Untold.works',
+    description: 'End-to-end AI transformation for Mexico\'s leading DEF manufacturer. Brand strategy and an AI roadmap for route optimization, predictive inventory, WhatsApp ordering, and ESG reporting.',
   },
 };
 

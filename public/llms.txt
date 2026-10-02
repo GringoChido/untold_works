@@ -4,7 +4,7 @@
 
 ## Key Facts
 
-- **Founded:** 2017
+- **Founded:** 2024
 - **Location:** San Miguel de Allende, Guanajuato, Mexico
 - **Founder:** Joshua Semolik — AI Systems Architect, MIT Sloan AI Strategy
 - **Languages:** English, Spanish (native bilingual)
@@ -32,7 +32,7 @@ An operational alignment system organizes how information moves across a distrib
 
 ## Who is Joshua Semolik?
 
-Joshua Semolik is the founder and AI Systems Architect of Untold.works. He has 20 years of experience spanning NBA Entertainment (two Emmy nominations), global product launches at Videndum PLC, cross-border GTM strategy, and production AI systems. MIT Sloan School of Management, AI Strategy (2026). He has built 6 production AI systems, engineered agentic workflows achieving 98% MQL accuracy (4.2x sales ROI), and unified revenue operations for 20% sales lift across 4,000+ SKUs.
+Joshua Semolik is the founder and AI Systems Architect of Untold.works. He has almost three decades of experience spanning NBA Entertainment (two Emmy nominations), global product launches at Videndum PLC, cross-border GTM strategy, and production AI systems. MIT Sloan School of Management, AI Strategy (2026).
 
 ## What types of businesses does Untold serve?
 
@@ -44,7 +44,7 @@ We serve distributed businesses where many people or organizations must operate 
 - [Network Systems](https://untold.works/network-systems): AI-powered business systems that scale from one location to one hundred.
 - [About](https://untold.works/about): Founder bio, career timeline, creative direction portfolio, MIT credentials.
 - [Contact](https://untold.works/contact): Start a conversation. Based in San Miguel de Allende, serving Mexico and the US.
-- [Portfolio](https://untold.works/portfolio): Case studies with quantified results.
+- [Portfolio](https://untold.works/portfolio): Selected client projects.
 - [Blog](https://untold.works/blog): Practical guides on AI tools, AEO, business systems, and operational alignment.
 
 ## Services
@@ -72,10 +72,7 @@ We serve distributed businesses where many people or organizations must operate 
 
 ## Portfolio Highlights
 
-- **OMI Lead Intake & Routing:** 98% MQL accuracy, 4.2x sales ROI — agentic AI lead qualification with n8n, OpenAI Agents, Salesforce.
-- **Spotify-WhatsApp Publishing:** 15h/wk reclaimed, 10x capacity — AI music publishing pipeline with Claude, Python, RAG.
-- **Black Radio Experience:** 300% reach growth — GTM automation for Blue Note Jazz Festival.
-- **Billiard Factory Retail Architecture:** 20% sales lift across 4,000+ SKUs — unified revenue operations.
+- **OMI Lead Intake & Routing:** agentic AI lead qualification with n8n, OpenAI Agents, Salesforce.
 
 ## Blog (Selected)
 

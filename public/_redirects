@@ -5,4 +5,10 @@
 # take priority over this catch-all rewrite.
 #
 # SPA fallback — only fires when no static file matches the request
+# Project pages removed Oct 2026
+/portfolio/black-radio-experience                /portfolio   301
+/portfolio/billiard-factory-retail-architecture  /portfolio   301
+/portfolio/spotify-whatsapp-publishing           /portfolio   301
+/portfolio/cl-bailey                             /portfolio   301
+
 /*    /index.html   200

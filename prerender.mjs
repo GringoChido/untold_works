@@ -43,10 +43,7 @@ const routes = [
   '/analog',
   '/slides',
   // Portfolio projects
-  '/portfolio/spotify-whatsapp-publishing',
-  '/portfolio/black-radio-experience',
   '/portfolio/omi-lead-intake-qualification',
-  '/portfolio/billiard-factory-retail-architecture',
   '/portfolio/noxguard-brand-rebrand',
   // Blog categories
   '/blog/category/build-notes',

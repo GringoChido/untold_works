@@ -684,7 +684,7 @@ export const moneyStory = {
       tier: { en: 'Small Business', es: 'Pequeña Empresa' },
       spend: { en: '$9,000/yr on tools', es: '$9,000/año en herramientas' },
       replace: { en: '$10,000 one-time', es: '$10,000 una vez' },
-      cta: { en: 'See the 20% sales lift case study', es: 'Ver el caso de 20% en ventas' },
+      cta: { en: 'See the solution', es: 'Ver la solución' },
       link: '/solutions/small-business',
     },
     {
@@ -893,15 +893,15 @@ export const aboutPage = {
     eyebrow: { en: 'THE FOUNDER', es: 'EL FUNDADOR' },
     title: { en: 'Founder & AI Systems Architect', es: 'Fundador y Arquitecto de Sistemas de IA' },
     bio: {
-      en: '20 years of systems-driven execution — from NBA global media and Emmy-nominated productions to AI-powered business platforms. I design the strategy, build the systems, and ship the technology. MIT Sloan AI Strategy.',
-      es: '20 años de ejecución basada en sistemas — desde medios globales de la NBA y producciones nominadas al Emmy hasta plataformas empresariales con IA. Diseño la estrategia, construyo los sistemas y entrego la tecnología. MIT Sloan AI Strategy.'
+      en: 'Almost three decades of systems-driven execution — from NBA global media and Emmy-nominated productions to AI-powered business platforms. I design the strategy, build the systems, and ship the technology. MIT Sloan AI Strategy.',
+      es: 'Casi tres décadas de ejecución basada en sistemas — desde medios globales de la NBA y producciones nominadas al Emmy hasta plataformas empresariales con IA. Diseño la estrategia, construyo los sistemas y entrego la tecnología. MIT Sloan AI Strategy.'
     },
     career: [
       {
         period: '1999–2010',
         role: { en: 'Senior Producer → Broadcast Producer', es: 'Productor Senior → Productor de Transmisiones' },
         org: { en: 'NBA Entertainment → Sacramento Kings', es: 'NBA Entertainment → Sacramento Kings' },
-        detail: { en: '300+ national campaigns. Built the Kings\' first in-house production department. Two Emmy nominations.', es: '300+ campañas nacionales. Creó el primer departamento de producción interno de los Kings. Dos nominaciones al Emmy.' }
+        detail: { en: '300+ national campaigns. Two Emmy nominations.', es: '300+ campañas nacionales. Dos nominaciones al Emmy.' }
       },
       {
         period: '2010–2016',
@@ -922,10 +922,10 @@ export const aboutPage = {
         detail: { en: 'US market entry for LATAM brands. Cross-border GTM systems. Analytics and reporting overhaul.', es: 'Entrada al mercado de EE.UU. para marcas LATAM. Sistemas GTM transfronterizos. Reestructuración de analítica y reportes.' }
       },
       {
-        period: '2017–Present',
+        period: '2024–Present',
         role: { en: 'Founder & AI Systems Architect', es: 'Fundador y Arquitecto de Sistemas de IA' },
         org: { en: 'Untold.works', es: 'Untold.works' },
-        detail: { en: 'Built 6 production AI systems, agentic lead routing (98% MQL accuracy, 4.2x ROI), and unified revenue operations (20% sales lift across 4,000+ SKUs) for clients across Mexico and the United States.', es: 'Construí 6 sistemas de IA en producción, enrutamiento agéntico de leads (98% precisión MQL, 4.2x ROI) y operaciones de ingresos unificadas (20% aumento en ventas en más de 4,000 SKUs) para clientes en México y Estados Unidos.' }
+        detail: { en: 'Brand, web, and AI builds for clients across Mexico and the United States.', es: 'Proyectos de marca, web e IA para clientes en México y Estados Unidos.' }
       }
     ],
     linkedinLabel: { en: 'CONNECT ON LINKEDIN', es: 'CONECTAR EN LINKEDIN' },
@@ -1135,8 +1135,8 @@ export const seo = {
       es: 'Portafolio | Ecosistemas de IA y Construcción de Marca | Untold.works'
     },
     description: {
-      en: 'Case studies of AI systems for real businesses. Brand rebuilds, revenue operations, lead automation, and dashboards. 300% growth, 98% accuracy, 20% sales lift.',
-      es: 'Casos de éxito de sistemas con IA para negocios reales. Reconstrucción de marca, operaciones de ingresos, automatización de leads y dashboards. 300% crecimiento, 98% precisión, 20% ventas.'
+      en: 'Case studies of AI systems for real businesses. Brand rebuilds, revenue operations, lead automation, and dashboards.',
+      es: 'Casos de éxito de sistemas con IA para negocios reales. Reconstrucción de marca, operaciones de ingresos, automatización de leads y dashboards.'
     }
   },
   blog: {

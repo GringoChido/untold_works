@@ -1,210 +1,89 @@
-# Untold.works — Full Context for LLMs
+# Untold.works
 
-> This file provides comprehensive context about Untold.works for large language models. For the summary version, see https://untold.works/llms.txt
+> Operational alignment systems for distributed businesses. Based in San Miguel de Allende, Mexico, serving the United States and Mexico. We build the systems that help companies and their partners work as one — organizing product information, communication, lead routing, and sales visibility across teams, partners, distributors, and locations. Founded by Joshua Semolik, AI Systems Architect. MIT Sloan AI Strategy.
 
----
+## Key Facts
 
-## What is Untold.works?
+- **Founded:** 2024
+- **Location:** San Miguel de Allende, Guanajuato, Mexico
+- **Founder:** Joshua Semolik — AI Systems Architect, MIT Sloan AI Strategy
+- **Languages:** English, Spanish (native bilingual)
+- **Markets served:** Mexico and the United States
+- **Specialties:** Operational alignment systems, product information systems, lead routing, sales visibility, communication systems, AI workflow automation, revenue operations
+- **Industries served:** Manufacturers, distributors, franchise groups, multi-location brands, restaurant groups, artist management
+- **Tech stack:** React, Next.js, TypeScript, n8n, Claude AI, OpenAI Agents, Python, Salesforce, HubSpot
+- **Contact:** info@untold.works
+- **Full context:** https://untold.works/llms-full.txt
 
-Untold.works builds operational alignment systems for distributed businesses — manufacturers, franchise groups, multi-location brands, and organizations that coordinate across partners, distributors, and teams. Based in San Miguel de Allende, Guanajuato, Mexico, serving clients across Mexico and the United States. Founded in 2017 by Joshua Semolik.
+## What does Untold.works build?
 
-We organize how information moves across distributed networks through four systems: product information, communication, lead routing, and sales visibility. Every project includes full ownership transfer — code, data, documentation, and video training. No lock-in, no recurring SaaS fees.
+Untold.works builds operational alignment systems for distributed businesses — manufacturers, franchise groups, multi-location brands, and organizations that coordinate across partners, distributors, and teams. We organize how information moves across these networks through four systems: product information, communication, lead routing, and sales visibility. Every project includes full ownership transfer — code, data, documentation, and video training.
 
 ## What is an operational alignment system?
 
-An operational alignment system organizes how information moves across a distributed business. Most growing businesses are not failing because of technology — they struggle because their information is scattered across people, tools, and locations. Instead of adding more software tools, we build coordination infrastructure — a single source of truth for product data, structured communication, automated lead routing, and clear sales visibility — so companies and their partners work from the same information.
+An operational alignment system organizes how information moves across a distributed business. Instead of adding more software tools, we build coordination infrastructure — a single source of truth for product data, structured communication, automated lead routing, and clear sales visibility — so companies and their partners work from the same information.
 
 ## What are the four systems?
 
-### 1. Product Information System
-A single source of truth for product data, documentation, images, specifications, and marketing assets. Everyone — company teams, partners, distributors, locations — works from the same information. No more outdated catalogs, scattered spreadsheets, or emailed PDFs.
+1. **Product Information System:** A single source of truth for product data, documentation, images, specifications, and marketing assets. Everyone works from the same information.
+2. **Communication System:** Structured communication between company teams, partners, locations, and distributors. Built around the tools teams already use — CRM, email, WhatsApp, internal dashboards.
+3. **Lead Routing System:** Customer inquiries and leads automatically routed to the correct partner, distributor, location, or sales team. No leads lost. No manual handoffs.
+4. **Sales Visibility System:** Clear insight into sales activity, partner performance, and market demand across the entire network.
 
-### 2. Communication System
-Structured communication between company teams, partners, locations, and distributors. Built around the tools your teams already use — CRM, email, WhatsApp, internal dashboards. Replaces the chain of emails and phone calls with organized, trackable coordination.
+## Who is Joshua Semolik?
 
-### 3. Lead Routing System
-Customer inquiries and leads automatically routed to the correct partner, distributor, location, or sales team. No leads lost. No manual handoffs. Every inquiry reaches the right person with full context.
-
-### 4. Sales Visibility System
-Clear insight into sales activity, partner performance, and market demand. See what is happening across the entire network — not just your own reports. Dashboards, analytics, and reporting that give leadership a complete picture.
-
-## Who is the founder?
-
-Joshua Semolik is the Founder and AI Systems Architect of Untold.works. He has 20 years of systems-driven execution spanning:
-
-- **NBA Entertainment & Sacramento Kings (2004-2013):** Creative direction, video production, two Emmy nominations. Built content operations for global media distribution.
-- **Videndum PLC (2013-2016):** Global product launches and go-to-market strategy for professional media technology brands.
-- **Cannabis Company (2016-2017):** Brand strategy and growth marketing for emerging market.
-- **Ingenia Content (2017-2019):** Cross-border GTM strategy for Latin American market expansion.
-- **Untold.works (2017-Present):** Built 6 production AI systems, engineered agentic workflows achieving 98% MQL accuracy (4.2x sales ROI), and unified revenue operations for 20% sales lift across 4,000+ SKUs.
-
-**Education:** MIT Sloan School of Management — Artificial Intelligence: Implications for Business Strategy (January 2026). Arizona State University — Broadcast Journalism & Music.
-
-**LinkedIn:** https://www.linkedin.com/in/semolik/
+Joshua Semolik is the founder and AI Systems Architect of Untold.works. He has almost three decades of experience spanning NBA Entertainment (two Emmy nominations), global product launches at Videndum PLC, cross-border GTM strategy, and production AI systems. MIT Sloan School of Management, AI Strategy (2026).
 
 ## What types of businesses does Untold serve?
 
-We serve distributed businesses where many people or organizations must operate together:
+We serve distributed businesses where many people or organizations must operate together: manufacturers and distributors, brands and retail partners, franchise groups and locations, restaurant groups, artist management, and multi-location organizations across Mexico and the United States.
 
-- **Manufacturers and distributors** — product data, dealer networks, sales territory management
-- **Brands and retail partners** — brand consistency, partner enablement, co-marketing
-- **Franchise groups and locations** — multi-location coordination, centralized reporting
-- **Restaurant groups** — menu management, location operations, centralized marketing
-- **Artist management** — coordinating between managers, labels, venues, and media
-- **Multi-location organizations** — any business that needs teams, partners, or locations aligned
+## Core Pages
 
-We serve clients across Mexico and the United States, with headquarters in San Miguel de Allende, Guanajuato, Mexico.
+- [Home](https://untold.works/): Operational alignment systems for distributed businesses.
+- [Network Systems](https://untold.works/network-systems): AI-powered business systems that scale from one location to one hundred.
+- [About](https://untold.works/about): Founder bio, career timeline, creative direction portfolio, MIT credentials.
+- [Contact](https://untold.works/contact): Start a conversation. Based in San Miguel de Allende, serving Mexico and the US.
+- [Portfolio](https://untold.works/portfolio): Selected client projects.
+- [Blog](https://untold.works/blog): Practical guides on AI tools, AEO, business systems, and operational alignment.
 
-## What additional services does Untold.works offer?
+## Services
 
-### AI-Powered Website Design & Rebuild
-Custom website design and rebuild for the AI era. Brand-first, mobile-ready, bilingual (English/Spanish), optimized for search engines and LLMs. Built with AI, guided by 20+ years of creative direction. Includes SEO, AEO (AI Engine Optimization), and performance optimization.
+- [Website Design & Rebuild](https://untold.works/websites): Brand-first, AI-native, mobile-ready, bilingual websites optimized for SEO and AEO.
+- [SEO & AEO](https://untold.works/seo-aeo): Search Engine Optimization and AI Engine Optimization. Technical SEO, content strategy, and LLM discoverability.
+- [Social Media](https://untold.works/social-media): Social media strategy, content creation, and analytics.
+- [Paid Advertising](https://untold.works/ads): Google Ads, Meta Ads, and paid media campaigns.
+- [Dashboard](https://untold.works/dashboard): Custom business dashboards you own outright — no SaaS fees.
+- [Copywriting](https://untold.works/copywriting): Brand messaging, content strategy, and bilingual copywriting.
+- [AI Content](https://untold.works/ai-content): AI-powered content systems for blogs, social, and marketing.
+- [Sales Enablement](https://untold.works/sales-enablement): Sales tools, proposals, and partner enablement systems.
+- [WhatsApp Systems](https://untold.works/whatsapp): AI-powered WhatsApp Business API automation — lead capture, multilingual routing, cross-border communication for Mexico and US businesses.
+- [Mobile Apps](https://untold.works/mobile-apps): Custom mobile applications for business operations.
+- [Hosting](https://untold.works/hosting): Managed hosting and infrastructure.
+- [Review & Reputation](https://untold.works/review-reputation): Review management and reputation building systems.
+- [Partners](https://untold.works/partners): Referral and strategic partner program for agencies, consultants, and service providers.
 
-### SEO & AI Engine Optimization (AEO)
-Technical SEO, content strategy, schema markup, and LLM discoverability. Untold.works is the first AEO agency in Mexico. We implement structured data, FAQ schemas, llms.txt files, question-format content headers, speakable properties, and E-E-A-T signals that make businesses citable by AI systems including ChatGPT, Claude, Gemini, Perplexity, and Google AI Overviews.
+## Locations
 
-### AI Workflow Automation
-n8n workflow automation, agentic AI systems, CRM integrations (Salesforce, HubSpot), and revenue operations platforms. We build automated business processes that replace manual work — lead routing, customer follow-ups, content publishing, inventory management, and reporting.
+- [San Miguel de Allende](https://untold.works/san-miguel-de-allende)
+- [Queretaro](https://untold.works/queretaro)
+- [Mexico City](https://untold.works/mexico-city)
+- [United States](https://untold.works/united-states)
 
-### Social Media Strategy & Management
-Social media strategy, content creation, analytics, and ongoing management for businesses in Mexico and the US. Bilingual content that resonates with both English and Spanish-speaking audiences.
+## Portfolio Highlights
 
-### Paid Advertising
-Google Ads, Meta Ads (Facebook/Instagram), and paid media campaigns. Audit, setup, management, and full-stack ad + landing page builds. Data-driven optimization with clear ROI tracking.
+- **OMI Lead Intake & Routing:** agentic AI lead qualification with n8n, OpenAI Agents, Salesforce.
 
-### Custom Business Dashboards
-Analytics, marketing command centers, and full operations dashboards you own outright. Consolidates website, social, ads, CRM, and leads into one view. No SaaS subscriptions — you own the code and the data.
+## Blog (Selected)
 
-### Copywriting & Brand Messaging
-Brand voice development, website copy, campaign messaging, and bilingual content strategy. Every word aligned with your brand positioning and optimized for AI discoverability.
+- [7 AI Tools Every Small Business Should Know in 2026](https://untold.works/blog/ai-tools-every-small-business-should-know-2026)
+- [AEO: The Shift Nobody's Talking About](https://untold.works/blog/aeo-the-shift-nobodys-talking-about)
+- [WhatsApp AI for Mexican Businesses](https://untold.works/blog/whatsapp-ai-for-mexican-businesses-complete-guide)
+- [Your Website Is Not a Brochure](https://untold.works/blog/your-website-is-not-a-brochure-its-a-business-system)
+- [The Site IS the Proposal](https://untold.works/blog/the-site-is-the-proposal)
+- [GEO: Flip Your Marketing Strategy](https://untold.works/blog/geo-flip-your-marketing-strategy)
+- [n8n vs Zapier for Mexican Businesses](https://untold.works/blog/n8n-vs-zapier-for-mexican-businesses)
 
-### Sales Enablement
-Sales tools, partner enablement systems, proposal generation, and competitive positioning. Built to help distributed sales teams close faster with consistent messaging.
+## Optional
 
-### WhatsApp Business Systems
-AI-powered WhatsApp Business API automation for businesses in Mexico and the United States. Lead capture, multilingual routing (English/Spanish), cross-border communication, appointment booking, and automated follow-ups. Built on the official WhatsApp Business API — not the consumer app. Integrates with CRM (Salesforce, HubSpot), n8n automation, and AI agents for intelligent conversation routing.
-
-### Referral & Strategic Partners
-Untold.works partners with agencies, consultants, accountants, IT providers, and business coaches who see operational gaps in their clients' businesses. Two tracks: Referral Partners (introduce clients, earn 10% of project value) and Strategic Partners (co-build solutions together). No portal, no tiers, no complexity.
-
-## What makes Untold.works different?
-
-1. **Alignment over software:** We do not sell software licenses. We build coordination systems that organize how information already moves through your business.
-2. **Bilingual native:** Not machine translation — native English and Spanish content, cultural nuance, code-switching built into every system.
-3. **Full ownership model:** Complete handoff of code, data, documentation, and credentials. No lock-in, no monthly access fees.
-4. **Four-system framework:** Product information, communication, lead routing, sales visibility — a proven model for distributed business coordination.
-5. **Mexico-based, US-serving:** Deep understanding of both markets. Same timezone advantage. Nearshoring expertise.
-6. **AI-native process:** We build in Claude Code, use agentic AI for development workflows, and optimize every site for AI discoverability (AEO/GEO).
-
-## Portfolio & Case Studies
-
-### OMI Lead Intake & Qualification
-**Client:** OMI Growth | **Stack:** n8n, OpenAI Agents, Apollo API, Salesforce, Google Sheets
-**Results:** 98% MQL accuracy, 4.2x sales ROI
-**What we built:** Agentic AI lead routing system that qualifies incoming leads, enriches contact data via Apollo, scores and routes to appropriate sales reps in Salesforce, and triggers automated follow-up sequences.
-
-### Spotify-WhatsApp Publishing System
-**Client:** Independent Record Labels | **Stack:** n8n, Claude Code, Python, RAG, PostgreSQL
-**Results:** 15 hours/week reclaimed, 10x capacity shift
-**What we built:** AI-powered music publishing workflow that monitors Spotify releases, generates WhatsApp-optimized promotional content, and distributes across channels automatically.
-
-### Black Radio Experience
-**Client:** Blue Note Entertainment / Blue Note Jazz Festival | **Stack:** Python, FastAPI, FFmpeg, Cloud Storage, Instagram API
-**Results:** 300% reach growth, 500+ engagement signals
-**What we built:** GTM automation for content creation and distribution, enabling rapid multi-platform publishing for live event coverage.
-
-### Billiard Factory Retail Architecture
-**Client:** Billiard Factory (multi-location retailer) | **Stack:** Custom e-commerce, CRM, inventory systems
-**Results:** 20% sales lift across 4,000+ SKUs
-**What we built:** Unified revenue operations platform connecting e-commerce, inventory management, and CRM across multiple retail locations.
-
-### NoxGuard Brand Rebrand
-**Client:** NoxGuard | **Stack:** Brand identity, website, digital presence
-**What we built:** Complete brand identity redesign and digital presence buildout for security technology company.
-
-## Technology Stack
-
-- **Frontend:** React, Next.js, TypeScript, Tailwind CSS, Framer Motion
-- **Backend:** Python, FastAPI, Node.js
-- **AI/ML:** Claude AI (Code, Skills, Agents), OpenAI Agents, RAG pipelines
-- **Automation:** n8n workflow automation
-- **CRM:** Salesforce, HubSpot
-- **Email:** Resend
-- **SEO/AEO:** Schema markup (JSON-LD), llms.txt, robots.txt AI crawler allowlists, speakable properties
-- **Deploy:** Netlify (SPAs), Vercel (Next.js)
-- **i18n:** Custom bilingual systems (EN/ES), next-intl for Next.js
-
-## How does the process work?
-
-1. **Map:** We map how information currently moves between your company, partners, distributors, locations, and teams. We identify where alignment breaks down.
-2. **Design:** We design the four coordination systems — product information, communication, lead routing, and sales visibility — around the tools your teams already use.
-3. **Build:** We build the systems, connect the integrations, and automate the coordination workflows. All tested, all documented.
-4. **Transfer:** We train your teams on every system. Video walkthroughs, documentation, and live sessions. Then we hand over the keys. Full ownership.
-
-## Geographic Coverage
-
-- **Headquarters:** San Miguel de Allende, Guanajuato, Mexico
-- **Service areas:** All of Mexico and the United States
-- **Location pages:** San Miguel de Allende, Queretaro, Mexico City, United States
-- **Why Mexico:** Fast-moving market, new entrepreneurs building from scratch (not retrofitting legacy systems), nearshoring trend, bilingual demand
-- **Why San Miguel de Allende:** Intersection of US and Mexican business culture, strong expat community, millions of annual visitors, growing tech ecosystem, local businesses with weak digital presence needing bilingual solutions
-
-## Frequently Asked Questions
-
-**What does Untold.works build?**
-We build operational alignment systems for distributed businesses — manufacturers, franchise groups, multi-location brands, and organizations that coordinate across partners, distributors, and teams. Our systems organize product information, communication, lead routing, and sales visibility.
-
-**What is an operational alignment system?**
-It organizes how information moves across a distributed business. Instead of adding more software tools, we build coordination infrastructure — a single source of truth for product data, structured communication, automated lead routing, and clear sales visibility — so companies and their partners work from the same information.
-
-**What types of businesses does Untold serve?**
-Distributed businesses where many people or organizations must operate together: manufacturers and distributors, brands and retail partners, franchise groups and locations, restaurant groups, artist management, and multi-location organizations across Mexico and the United States.
-
-**Do you build bilingual websites?**
-Yes. Every client-facing site we build supports English and Spanish with natively written content — not machine translation. Proper hreflang tags, separate URL structures, and SEO optimization for both languages.
-
-**Where is Untold.works located?**
-San Miguel de Allende, Guanajuato, Mexico, serving clients across Mexico and the United States.
-
-**Do I own the systems you build?**
-Yes. Full ownership transfer is part of every project. You get the systems, the data, the documentation, and video training. No lock-in, no recurring fees for access to your own infrastructure.
-
-**Who runs Untold.works?**
-Joshua Semolik, an AI systems architect and creative technologist with 20 years of experience spanning NBA Entertainment, global product launches at Videndum PLC, cross-border GTM strategy, and production AI systems. MIT Sloan AI Strategy.
-
-**Can a Mexico-based agency serve US clients effectively?**
-Yes. Bilingual team, shared time zones, native-level English and Spanish, and deep understanding of both markets.
-
-**What is AEO?**
-AI Engine Optimization (AEO) is the practice of optimizing web content so that AI systems — ChatGPT, Claude, Gemini, Perplexity, Google AI Overviews — can find, understand, and cite your business in their responses.
-
-**What makes Untold.works different from other agencies?**
-We build coordination systems, not software platforms. We organize how information already moves through your business — product data, communication, leads, sales visibility. We transfer full ownership of everything we build. We are natively bilingual and based in Mexico with deep US market expertise.
-
-**How much does a project cost?**
-Alignment system projects are scoped based on the number of locations, partners, and systems involved. Contact us to discuss your specific situation.
-
-**What CRM systems do you integrate with?**
-We integrate with Salesforce, HubSpot, Google Workspace, and custom CRM solutions. Our automation layer (n8n) connects to 400+ services.
-
-## Blog Topics Covered
-
-- Operational alignment for distributed businesses
-- AI tools for small business
-- AI content strategy and automation
-- AEO (AI Engine Optimization) and LLM discoverability
-- GEO (Generative Engine Optimization)
-- Bilingual website development
-- WhatsApp AI for Mexican businesses
-- Mobile-first business systems
-- San Miguel de Allende local business digital strategy
-- Case studies: hotel booking, law firm intake, e-commerce migration
-- n8n vs Zapier for business automation
-
-## Contact
-
-- **Email:** info@untold.works
-- **Website:** https://untold.works
-- **LinkedIn:** https://www.linkedin.com/company/untoldworksai
-- **Instagram:** https://www.instagram.com/untold.works_ai
-- **Founder LinkedIn:** https://www.linkedin.com/in/semolik/
+- [UNTOLD ANALOG](https://untold.works/analog): A curated music experience — vinyl, jazz, soul, and lo-fi.

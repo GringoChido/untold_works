@@ -2,54 +2,6 @@ import { Project } from '../types';
 
 export const projects: Project[] = [
   {
-    id: 'black-radio-experience',
-    name: { en: 'Black Radio Experience', es: 'Black Radio Experience' },
-    websiteUrl: 'https://www.bluenotejazz.com/black-radio-experience/',
-    client: { en: 'Blue Note Entertainment', es: 'Blue Note Entertainment' },
-    timeline: '2023 - 2024',
-    pillar: 'small-business',
-    stack: ['Python', 'FastAPI', 'FFmpeg', 'Cloud Storage', 'Instagram Graph API'],
-    services: [
-      { en: 'Social Pipeline', es: 'Pipeline Social' },
-      { en: 'Launch Orchestration', es: 'Orquestación de Lanzamiento' },
-      { en: 'GTM Governance', es: 'Gobernanza GTM' }
-    ],
-    summary: {
-      en: 'Automated GTM campaign packaging and cross-platform distribution. Grew measurable audience reach by 300% with 500+ engagement signals processed.',
-      es: 'Automaticé el empaquetado de campañas GTM y la distribución multiplataforma. Crecimiento medible de alcance del 300% con más de 500 señales de engagement procesadas.'
-    },
-    challenge: { 
-      en: 'Maintaining brand-consistent campaign execution required unsustainable manual hours for content packaging, scheduling, and cross-platform GTM distribution.',
-      es: 'Mantener una ejecución de campañas consistente con la marca requería horas manuales insostenibles para el empaquetado de contenido, programación y distribución GTM multiplataforma.' 
-    },
-    goal: {
-      en: 'Eliminate manual friction in campaign delivery while scaling audience reach and measurable engagement signals across borders.',
-      es: 'Eliminar la fricción manual en la entrega de campañas mientras se escala el alcance de audiencia y las señales de engagement medibles a través de las fronteras.'
-    },
-    solution: {
-      en: 'I engineered a Python-driven GTM pipeline that pre-builds campaign assets, automates cross-platform packaging, and handles multi-channel scheduling with zero manual intervention.',
-      es: 'Diseñé un pipeline GTM impulsado por Python que pre-construye activos de campaña, automatiza el empaquetado multiplataforma y gestiona la programación multicanal sin intervención manual.'
-    },
-    metrics: [
-      { label: { en: 'Reach Growth', es: 'Crecimiento Alcance' }, value: '300%' },
-      { label: { en: 'Engagement Signals', es: 'Señales de Engagement' }, value: '500+' }
-    ],
-    tags: ['GTM AUTOMATION', 'PYTHON', 'CAMPAIGN OPS'],
-    heroImage: '/images/project2-blackradio/image1.webp',
-    images: [
-      '/images/project2-blackradio/image1.webp',
-      '/images/project2-blackradio/image2.webp',
-      '/images/project2-blackradio/image3.png',
-      '/images/project2-blackradio/image4.webp'
-    ],
-    imageAlts: [
-      'Black Radio campaign dashboard',
-      'Cross-platform distribution pipeline',
-      'Engagement signal analytics',
-      'GTM automation workflow'
-    ]
-  },
-  {
     id: 'omi-lead-intake-qualification',
     name: { en: 'OMI Intake & Routing', es: 'Ingestión y Enrutamiento OMI' },
     websiteUrl: 'https://omi1.com/',
@@ -63,8 +15,8 @@ export const projects: Project[] = [
       { en: 'Attribution Modeling', es: 'Modelado de Atribución' }
     ],
     summary: {
-      en: 'Built an intelligent lead routing system that qualifies inbound leads automatically. Measured 98% MQL accuracy and 4.2x sales ROI.',
-      es: 'Construí un sistema inteligente de enrutamiento que califica leads entrantes automáticamente. Precisión MQL medida del 98% y ROI de ventas de 4.2x.'
+      en: 'Built an intelligent lead routing system that qualifies inbound leads automatically.',
+      es: 'Construí un sistema inteligente de enrutamiento que califica leads entrantes automáticamente.'
     },
     challenge: {
       en: 'OMI Growth was processing hundreds of inbound leads monthly, but their sales team was spending 40% of their time on unqualified prospects. Lead data arrived from multiple channels — web forms, trade shows, partner referrals — with no consistent qualification framework. By the time a rep determined a lead was unqualified, they\'d already invested 30-45 minutes in research and outreach. High-value leads were getting the same treatment as tire-kickers, and response times were suffering across the board.',
@@ -75,13 +27,9 @@ export const projects: Project[] = [
       es: 'Automatizar la calificación de leads para que los representantes de ventas solo interactúen con prospectos verificados y de alta intención. Reducir el tiempo de respuesta para leads calificados. Construir un sistema de enrutamiento inteligente que empate leads con el representante correcto basado en industria, tamaño de trato y ajuste de producto.'
     },
     solution: {
-      en: 'I deployed an agentic lead qualification pipeline using n8n and OpenAI that processes every inbound lead in real-time. The system analyzes intent signals from the inquiry, queries Apollo for firmographic data (company size, industry, revenue), scores leads using a custom BANT framework, and routes qualified leads directly to the right rep in Salesforce — complete with a pre-built briefing that includes company context, likely use case, and recommended talking points. Unqualified leads get automated nurture sequences instead of rep time. The system measured 98% MQL accuracy, meaning reps almost never waste time on bad leads. Sales ROI improved 4.2x because reps are now spending their time exclusively on prospects who are ready to buy.',
-      es: 'Desplegué un pipeline agéntico de calificación de leads usando n8n y OpenAI que procesa cada lead entrante en tiempo real. El sistema analiza señales de intención de la consulta, busca datos firmográficos en Apollo (tamaño de empresa, industria, ingresos), califica leads usando un marco BANT personalizado, y enruta leads calificados directamente al representante correcto en Salesforce — completo con un briefing pre-construido que incluye contexto de la empresa, caso de uso probable y puntos de conversación recomendados. Los leads no calificados reciben secuencias de nurture automatizadas en lugar de tiempo del representante. El sistema midió 98% de precisión MQL, lo que significa que los representantes casi nunca pierden tiempo en leads malos. El ROI de ventas mejoró 4.2x porque los representantes ahora dedican su tiempo exclusivamente a prospectos listos para comprar.'
+      en: 'I deployed an agentic lead qualification pipeline using n8n and OpenAI that processes every inbound lead in real-time. The system analyzes intent signals from the inquiry, queries Apollo for firmographic data (company size, industry, revenue), scores leads using a custom BANT framework, and routes qualified leads directly to the right rep in Salesforce — complete with a pre-built briefing that includes company context, likely use case, and recommended talking points. Unqualified leads get automated nurture sequences instead of rep time.',
+      es: 'Desplegué un pipeline agéntico de calificación de leads usando n8n y OpenAI que procesa cada lead entrante en tiempo real. El sistema analiza señales de intención de la consulta, busca datos firmográficos en Apollo (tamaño de empresa, industria, ingresos), califica leads usando un marco BANT personalizado, y enruta leads calificados directamente al representante correcto en Salesforce — completo con un briefing pre-construido que incluye contexto de la empresa, caso de uso probable y puntos de conversación recomendados. Los leads no calificados reciben secuencias de nurture automatizadas en lugar de tiempo del representante.'
     },
-    metrics: [
-      { label: { en: 'MQL Accuracy', es: 'Precisión MQL' }, value: '98%' },
-      { label: { en: 'Sales ROI', es: 'ROI de Ventas' }, value: '4.2x' }
-    ],
     tags: ['AGENTIC AI', 'CRM', 'REVOPS'],
     heroImage: '/images/project3-omi/image5.webp',
     images: [
@@ -102,56 +50,8 @@ export const projects: Project[] = [
     ]
   },
   {
-    id: 'billiard-factory-retail-architecture',
-    name: { en: 'Billiard Factory Revenue Operations', es: 'Operaciones de Ingresos de Billiard Factory' },
-    websiteUrl: 'https://billiardfactory.com/',
-    client: { en: 'Billiard Factory', es: 'Billiard Factory' },
-    timeline: 'Enterprise Scale - 2024',
-    pillar: 'enterprise',
-    stack: ['Shopify Plus', 'ERP Integration', 'n8n', 'Python', 'Webflow'],
-    services: [
-      { en: 'Revenue Architecture', es: 'Arquitectura de Ingresos' },
-      { en: 'Unit Economics', es: 'Economía de Unidad' },
-      { en: 'GTM Governance', es: 'Gobernanza GTM' }
-    ],
-    summary: {
-      en: 'Unified revenue data across physical and digital sales channels. Measured a 20% sales lift across 4,000+ SKUs with 35% operational efficiency gain.',
-      es: 'Unifiqué datos de ingresos en canales de ventas físicos y digitales. Aumento medido del 20% en ventas en más de 4,000 SKUs con ganancia de eficiencia operativa del 35%.'
-    },
-    challenge: {
-      en: 'Billiard Factory had grown to 4,000+ SKUs across physical showrooms and digital channels, but their product data lived in silos. The ERP said one thing, the website said another, and showroom staff were making pricing decisions from outdated spreadsheets. Revenue attribution was guesswork — they couldn\'t tell which channels were actually driving sales, and inventory decisions were reactive instead of strategic. Manual coordination between systems was consuming 15+ hours per week across their operations team.',
-      es: 'Billiard Factory había crecido a más de 4,000 SKUs en showrooms físicos y canales digitales, pero sus datos de producto vivían en silos. El ERP decía una cosa, el sitio web otra, y el personal del showroom tomaba decisiones de precios con hojas de cálculo desactualizadas. La atribución de ingresos era pura suposición — no podían saber qué canales realmente impulsaban las ventas, y las decisiones de inventario eran reactivas en lugar de estratégicas. La coordinación manual entre sistemas consumía más de 15 horas semanales del equipo de operaciones.'
-    },
-    goal: {
-      en: 'Build a unified product data architecture that feeds every sales channel from a single source of truth. Enable real-time revenue attribution across physical and digital touchpoints. Eliminate manual data reconciliation and give the leadership team a clear picture of what\'s selling, where, and why.',
-      es: 'Construir una arquitectura de datos de producto unificada que alimente cada canal de ventas desde una fuente única de verdad. Habilitar la atribución de ingresos en tiempo real en puntos de contacto físicos y digitales. Eliminar la reconciliación manual de datos y dar al equipo de liderazgo una imagen clara de qué se vende, dónde y por qué.'
-    },
-    solution: {
-      en: 'I architected a unified product data engine that connects their ERP to Shopify Plus through n8n automation workflows. Every SKU — pricing, inventory levels, specifications, and imagery — now syncs in real-time across all channels. I built a cross-channel revenue attribution model that tracks customer journeys from first touch through purchase, regardless of whether the sale closes online or in-showroom. The operations team went from 15+ hours of manual reconciliation per week to near-zero. The unified data layer also enabled demand-signal forecasting — the system now identifies which products are trending before they sell out, enabling proactive inventory decisions instead of reactive restocking.',
-      es: 'Arquitecturé un motor de datos de producto unificado que conecta su ERP con Shopify Plus a través de flujos de automatización n8n. Cada SKU — precios, niveles de inventario, especificaciones e imágenes — ahora se sincroniza en tiempo real en todos los canales. Construí un modelo de atribución de ingresos multicanal que rastrea el recorrido del cliente desde el primer contacto hasta la compra, sin importar si la venta se cierra en línea o en el showroom. El equipo de operaciones pasó de más de 15 horas de reconciliación manual por semana a casi cero. La capa de datos unificada también habilitó pronósticos de señales de demanda — el sistema ahora identifica qué productos son tendencia antes de que se agoten, permitiendo decisiones de inventario proactivas en lugar de reabastecimiento reactivo.'
-    },
-    metrics: [
-      { label: { en: 'Sales Lift', es: 'Aumento de Ventas' }, value: '20%' },
-      { label: { en: 'Efficiency', es: 'Eficiencia' }, value: '+35%' }
-    ],
-    tags: ['ENTERPRISE', 'REVOPS', 'OMNICHANNEL'],
-    heroImage: '/images/project4-billiard/image5.webp',
-    images: [
-      '/images/project4-billiard/image1.jpg',
-      '/images/project4-billiard/image2.jpg',
-      '/images/project4-billiard/image3.webp',
-      '/images/project4-billiard/image4.webp'
-    ],
-    imageAlts: [
-      'Billiard Factory product data architecture',
-      'Omnichannel revenue dashboard',
-      'ERP integration pipeline',
-      'Cross-channel SKU management'
-    ]
-  },
-  {
     id: 'noxguard-brand-rebrand',
-    name: { en: 'Noxguard — Brand, Strategy & AI Build', es: 'Noxguard — Marca, Estrategia y Construcción de IA' },
+    name: { en: 'Noxguard — Brand, Strategy & AI Roadmap', es: 'Noxguard — Marca, Estrategia y Hoja de Ruta de IA' },
     websiteUrl: 'https://www.noxguard.com/',
     client: { en: 'Noxguard (Transliquid Technologies)', es: 'Noxguard (Transliquid Technologies)' },
     timeline: '2024 - 2025',
@@ -165,8 +65,8 @@ export const projects: Project[] = [
       { en: 'Customer-Facing AI Products', es: 'Productos de IA Orientados al Cliente' }
     ],
     summary: {
-      en: 'End-to-end transformation for Mexico\'s leading automotive urea manufacturer. Rebuilt the brand from mission to visual identity, reorganized business strategy around three revenue pillars, engineered a complete sales enablement suite, and built six AI systems — three for internal operations (route optimization, predictive inventory, regulatory monitoring) and three customer-facing (WhatsApp ordering, consumption forecasting, ESG reporting).',
-      es: 'Transformación integral para el principal fabricante de urea automotriz en México. Reconstruimos la marca desde la misión hasta la identidad visual, reorganizamos la estrategia de negocio en tres pilares de ingresos, diseñamos una suite completa de habilitación de ventas y construimos seis sistemas de IA — tres para operaciones internas (optimización de rutas, inventario predictivo, monitoreo regulatorio) y tres orientados al cliente (pedidos por WhatsApp, pronóstico de consumo, reportes ESG).'
+      en: 'End-to-end transformation for Mexico\'s leading automotive urea manufacturer. Rebuilt the brand from mission to visual identity, reorganized business strategy around three revenue pillars, engineered a complete sales enablement suite, and mapped an AI roadmap for internal operations (route optimization, predictive inventory, regulatory monitoring) and customer-facing use (WhatsApp ordering, consumption forecasting, ESG reporting).',
+      es: 'Transformación integral para el principal fabricante de urea automotriz en México. Reconstruimos la marca desde la misión hasta la identidad visual, reorganizamos la estrategia de negocio en tres pilares de ingresos, diseñamos una suite completa de habilitación de ventas y trazamos una hoja de ruta de IA para operaciones internas (optimización de rutas, inventario predictivo, monitoreo regulatorio) y orientados al cliente (pedidos por WhatsApp, pronóstico de consumo, reportes ESG).'
     },
     challenge: {
       en: 'Noxguard had 15+ years as Mexico\'s leading DEF manufacturer, but the business had outgrown its infrastructure. Brand identity was disconnected from market positioning. Sales reps had no digital tools. Distribution ran on spreadsheets with no demand forecasting. Fleet customers had no self-service ordering or ESG reporting capabilities. The entire operation needed to be rebuilt for scale.',
@@ -177,13 +77,9 @@ export const projects: Project[] = [
       es: 'Transformar Noxguard en cada capa — marca, estrategia de negocio, infraestructura de ventas y tecnología — para posicionarlos como el socio definitivo de transporte limpio en Norteamérica.'
     },
     solution: {
-      en: 'Rebuilt the brand identity with a new mission, vision, and core values centered on chemical integrity, regional agility, and data transparency. Reorganized the business around three strategic revenue pillars: Compliance First (NOM-044 positioning), Total Cost of Ownership (SCR system protection), and Cross-Border Synergy (Texas-Mexico supply chain advantage). Built a sales enablement suite — Fleet Carbon Audit Tool, AI-indexed technical knowledge base, and automated case study generator. Engineered three internal AI systems: route optimization for distribution, predictive inventory tied to regional demand cycles, and a regulatory monitoring bot for Mexican environmental law. Deployed three customer-facing AI products: WhatsApp Smart Dispatch for voice-note DEF ordering, a consumption forecasting API for bulk tank monitoring, and an emissions reporting portal for one-click ESG compliance.',
-      es: 'Reconstruimos la identidad de marca con nueva misión, visión y valores centrados en integridad química, agilidad regional y transparencia de datos. Reorganizamos el negocio en tres pilares estratégicos de ingresos: Cumplimiento Primero (posicionamiento NOM-044), Costo Total de Propiedad (protección del sistema SCR) y Sinergia Transfronteriza (ventaja de cadena de suministro Texas-México). Construimos una suite de habilitación de ventas — herramienta de auditoría de carbono de flotas, base de conocimiento técnico indexada por IA y generador automatizado de casos de estudio. Diseñamos tres sistemas de IA internos: optimización de rutas de distribución, inventario predictivo vinculado a ciclos de demanda regional y bot de monitoreo regulatorio para legislación ambiental mexicana. Desplegamos tres productos de IA orientados al cliente: WhatsApp Smart Dispatch para pedidos de DEF por nota de voz, API de pronóstico de consumo para monitoreo de tanques a granel y portal de reportes de emisiones para cumplimiento ESG con un clic.'
+      en: 'Rebuilt the brand identity with a new mission, vision, and core values centered on chemical integrity, regional agility, and data transparency. Reorganized the business around three strategic revenue pillars: Compliance First (NOM-044 positioning), Total Cost of Ownership (SCR system protection), and Cross-Border Synergy (Texas-Mexico supply chain advantage). Built a sales enablement suite — Fleet Carbon Audit Tool, AI-indexed technical knowledge base, and automated case study generator. Mapped three internal AI systems: route optimization for distribution, predictive inventory tied to regional demand cycles, and a regulatory monitoring bot for Mexican environmental law. Specified three customer-facing AI products: WhatsApp Smart Dispatch for voice-note DEF ordering, a consumption forecasting API for bulk tank monitoring, and an emissions reporting portal for one-click ESG compliance.',
+      es: 'Reconstruimos la identidad de marca con nueva misión, visión y valores centrados en integridad química, agilidad regional y transparencia de datos. Reorganizamos el negocio en tres pilares estratégicos de ingresos: Cumplimiento Primero (posicionamiento NOM-044), Costo Total de Propiedad (protección del sistema SCR) y Sinergia Transfronteriza (ventaja de cadena de suministro Texas-México). Construimos una suite de habilitación de ventas — herramienta de auditoría de carbono de flotas, base de conocimiento técnico indexada por IA y generador automatizado de casos de estudio. Diseñamos tres sistemas de IA internos: optimización de rutas de distribución, inventario predictivo vinculado a ciclos de demanda regional y bot de monitoreo regulatorio para legislación ambiental mexicana. Especificamos tres productos de IA orientados al cliente: WhatsApp Smart Dispatch para pedidos de DEF por nota de voz, API de pronóstico de consumo para monitoreo de tanques a granel y portal de reportes de emisiones para cumplimiento ESG con un clic.'
     },
-    metrics: [
-      { label: { en: 'Strategic Pillars', es: 'Pilares Estratégicos' }, value: '3' },
-      { label: { en: 'AI Systems Built', es: 'Sistemas de IA' }, value: '6' }
-    ],
     tags: ['BRAND STRATEGY', 'AI INFRASTRUCTURE', 'SALES ENABLEMENT'],
     heroImage: '/images/project5-noxguard/truck.webp',
     images: [
@@ -264,30 +160,6 @@ export const projects: Project[] = [
     heroImage: '/images/in-progress/casa-schuck.jpg',
     images: ['/images/in-progress/casa-schuck.jpg'],
     websiteUrl: 'https://csnewsite.netlify.app/en',
-  },
-  {
-    id: 'cl-bailey',
-    name: { en: 'C.L. Bailey & Co.', es: 'C.L. Bailey & Co.' },
-    client: { en: 'C.L. Bailey', es: 'C.L. Bailey' },
-    timeline: 'Q1 2026 - Active',
-    pillar: 'small-business',
-    stack: ['Next.js', 'React', 'TypeScript', 'Tailwind CSS', 'E-Commerce', 'Netlify'],
-    services: [
-      { en: 'Website Build', es: 'Construcción Web' },
-      { en: 'E-Commerce', es: 'E-Commerce' },
-      { en: 'Brand Identity', es: 'Identidad de Marca' }
-    ],
-    summary: {
-      en: 'Full website build for a handcrafted billiards and game room furniture manufacturer. Solid hardwood, lifetime guarantee — built in Tomball, Texas since 1999.',
-      es: 'Construcción completa de sitio web para fabricante de mesas de billar y muebles de sala de juegos artesanales. Madera maciza, garantía de por vida — fabricado en Tomball, Texas desde 1999.'
-    },
-    challenge: { en: 'A 25-year manufacturer with a strong dealer network but no direct-to-consumer digital presence, losing visibility to competitors with modern e-commerce sites.', es: 'Un fabricante de 25 años con una fuerte red de distribuidores pero sin presencia digital directa al consumidor, perdiendo visibilidad ante competidores con sitios de e-commerce modernos.' },
-    goal: { en: 'Build a brand-first e-commerce site that showcases craftsmanship and drives both direct sales and dealer inquiries.', es: 'Construir un sitio de e-commerce centrado en la marca que muestre la artesanía e impulse ventas directas y consultas de distribuidores.' },
-    solution: { en: 'Designed and built a bilingual product catalog with high-quality imagery, dealer locator, and integrated e-commerce — all optimized for search.', es: 'Diseñamos y construimos un catálogo de productos bilingüe con imágenes de alta calidad, localizador de distribuidores y e-commerce integrado — todo optimizado para buscadores.' },
-    tags: ['Website', 'E-Commerce', 'Brand'],
-    heroImage: '/images/in-progress/cl-bailey.jpg',
-    images: ['/images/in-progress/cl-bailey.jpg'],
-    websiteUrl: 'https://clbailey.netlify.app/en',
   },
   {
     id: 'regal-billiards',
@@ -385,58 +257,4 @@ export const projects: Project[] = [
     images: ['/images/in-progress/second-son.jpg'],
     websiteUrl: 'https://secondsonproductions.netlify.app/',
   },
-  {
-    id: 'spotify-whatsapp-publishing',
-    name: { en: 'Spotify - WhatsApp Publishing', es: 'Publicación de Spotify - WhatsApp' },
-    client: { en: 'Independent Labels', es: 'Sellos Independientes' },
-    timeline: 'Q1 2024 - Active',
-    pillar: 'small-business',
-    stack: ['n8n', 'Claude Code', 'Python', 'RAG Architecture', 'PostgreSQL'],
-    services: [
-      { en: 'n8n Orchestration', es: 'Orquestación n8n' },
-      { en: 'Claude Code Integration', es: 'Integración de Claude Code' },
-      { en: 'Automated Pipeline Ops', es: 'Ops de Pipeline Automatizado' }
-    ],
-    summary: {
-      en: 'Replaced manual content operations with an AI-driven publishing pipeline. Reclaimed 15 hours per week, scaling capacity 10x.',
-      es: 'Reemplacé operaciones manuales de contenido con un pipeline de publicación impulsado por IA. Recuperé 15 horas semanales, escalando la capacidad 10x.'
-    },
-    challenge: {
-      en: 'Manual content operations were a massive bottleneck for scale. The team was spending 15+ hours weekly on repetitive data processing and drafting, causing lead-time delays and unsustainable operational overhead.',
-      es: 'Las operaciones de contenido manual eran un cuello de botella masivo para la escala. El equipo dedicaba más de 15 horas semanales al procesamiento repetitivo de datos y redacción, causando retrasos y sobrecarga operativa insostenible.'
-    },
-    goal: {
-      en: 'Reclaim operational capacity by automating the ingestion-to-publish pipeline while maintaining output quality at scale.',
-      es: 'Recuperar capacidad operativa automatizando el pipeline de ingestión-a-publicación mientras se mantiene la calidad de salida a escala.'
-    },
-    solution: {
-      en: 'I built an agentic RAG-pipeline that ingests Spotify metadata, generates synthesized recommendations via Claude, and routes through a human-in-the-loop approval gate to WhatsApp.',
-      es: 'Construí un pipeline RAG agéntico que ingiere metadatos de Spotify, genera recomendaciones sintetizadas a través de Claude y las enruta a través de una compuerta de aprobación humana hacia WhatsApp.'
-    },
-    metrics: [
-      { label: { en: 'Time Reclaimed', es: 'Tiempo Recuperado' }, value: '15h/wk' },
-      { label: { en: 'Capacity Shift', es: 'Cambio de Capacidad' }, value: '10x' }
-    ],
-    tags: ['AUTOMATION', 'RAG', 'PIPELINE OPS'],
-    heroImage: '/images/project1-spotify/image1.webp',
-    images: [
-      '/images/project1-spotify/image1.webp',
-      '/images/project1-spotify/image2.png',
-      '/images/project1-spotify/image3.webp',
-      '/images/project1-spotify/image4.png'
-    ],
-    imageAlts: [
-      'Spotify-WhatsApp pipeline workflow diagram',
-      'n8n automation flow for content publishing',
-      'Claude RAG pipeline architecture',
-      'WhatsApp message output preview'
-    ],
-    codeSnippets: [
-      {
-        language: 'python',
-        title: 'Metadata Resolution Engine',
-        code: 'def resolve_spotify_metadata(track_id):\n  results = sp.track(track_id)\n  artist_context = rag_store.query(results["artist_name"])\n  return synthesize_prompt(results, artist_context)'
-      }
-    ]
-  }
 ];

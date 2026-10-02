@@ -331,22 +331,6 @@ const Enterprise: React.FC = () => {
         }}
       />
 
-      {/* ── How We Make You Money ── */}
-      <ResultCard
-        headline={{
-          en: 'These Aren\'t Experiments. They\'re Revenue Engines.',
-          es: 'Estos No Son Experimentos. Son Motores de Ingresos.',
-        }}
-        stat="4.2x"
-        statLabel={{ en: 'sales ROI — OMI agentic lead routing', es: 'ROI de ventas — enrutamiento agéntico OMI' }}
-        supporting={{
-          en: '98% MQL accuracy. 6 production AI systems built for Noxguard. Real enterprise deployments with measurable revenue impact.',
-          es: '98% de precisión MQL. 6 sistemas de IA en producción construidos para Noxguard. Despliegues empresariales reales con impacto medible en ingresos.',
-        }}
-        proofLink="/portfolio/omi-lead-intake-qualification"
-        proofLabel={{ en: 'Read the OMI case study', es: 'Leer el caso de OMI' }}
-      />
-
       {/* ── Proof Strip ── */}
       <ProofStrip variant="light" />
 

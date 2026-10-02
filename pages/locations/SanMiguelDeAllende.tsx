@@ -175,9 +175,8 @@ const SanMiguelDeAllende: React.FC = () => {
   ];
 
   const caseStudies = [
-    { id: 'spotify-whatsapp-publishing', label: { en: 'Music Publishing + WhatsApp', es: 'Música + WhatsApp' } },
-    { id: 'black-radio-experience', label: { en: 'Radio Station Platform', es: 'Plataforma de Radio' } },
-    { id: 'billiard-factory-retail-architecture', label: { en: 'Artisan Retail', es: 'Retail Artesanal' } }
+    { id: 'omi-lead-intake-qualification', label: { en: 'Lead System', es: 'Sistema de Leads' } },
+    { id: 'noxguard-brand-rebrand', label: { en: 'Enterprise Branding', es: 'Marca Empresarial' } }
   ];
 
   return (

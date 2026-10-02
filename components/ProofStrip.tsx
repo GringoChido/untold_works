@@ -9,32 +9,7 @@ interface ProofItem {
   link: string;
 }
 
-const proofData: ProofItem[] = [
-  {
-    metric: '20%',
-    label: { en: 'sales lift', es: 'aumento en ventas' },
-    client: { en: 'Billiard Factory', es: 'Billiard Factory' },
-    link: '/portfolio/billiard-factory-retail-architecture',
-  },
-  {
-    metric: '4.2x',
-    label: { en: 'sales ROI', es: 'ROI de ventas' },
-    client: { en: 'OMI', es: 'OMI' },
-    link: '/portfolio/omi-lead-intake-qualification',
-  },
-  {
-    metric: '15',
-    label: { en: 'hrs/week saved', es: 'hrs/semana ahorradas' },
-    client: { en: 'Automation', es: 'Automatización' },
-    link: '/solutions/professional-services',
-  },
-  {
-    metric: '300%',
-    label: { en: 'reach growth', es: 'crecimiento de alcance' },
-    client: { en: 'Black Radio', es: 'Black Radio' },
-    link: '/portfolio/black-radio-experience',
-  },
-];
+const proofData: ProofItem[] = [];
 
 const parseMetric = (metric: string): { num: number; suffix: string; prefix: string } => {
   const match = metric.match(/^([^0-9]*)([0-9.]+)(.*)$/);
@@ -92,6 +67,7 @@ interface ProofStripProps {
 }
 
 const ProofStrip: React.FC<ProofStripProps> = ({ variant = 'dark', compact = false }) => {
+  if (proofData.length === 0) return null;
   const { t } = useLanguage();
   const ref = useRef<HTMLDivElement>(null);
   const [isVisible, setIsVisible] = useState(false);

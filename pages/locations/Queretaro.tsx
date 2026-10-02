@@ -176,7 +176,6 @@ const Queretaro: React.FC = () => {
 
   const caseStudies = [
     { id: 'omi-lead-intake-qualification', label: { en: 'Lead Intake System', es: 'Sistema de Captación de Leads' } },
-    { id: 'spotify-whatsapp-publishing', label: { en: 'WhatsApp Automation', es: 'Automatización WhatsApp' } },
     { id: 'noxguard-brand-rebrand', label: { en: 'Professional Brand', es: 'Marca Profesional' } }
   ];
 

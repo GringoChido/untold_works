@@ -142,14 +142,13 @@ const MexicoCity: React.FC = () => {
     {
       title: { en: 'Remote-First Quality', es: 'Calidad Remote-First' },
       desc: {
-        en: 'We\'re based in San Miguel but operate globally. We serve CDMX businesses remotely with the same quality as any in-person agency — but 30% faster and 40% cheaper.',
-        es: 'Estamos basados en San Miguel pero operamos globalmente. Servimos negocios de CDMX de forma remota con la misma calidad de cualquier agencia presencial — pero 30% más rápido y 40% más barato.'
+        en: 'We\'re based in San Miguel but operate globally. We serve CDMX businesses remotely with the same quality as any in-person agency.',
+        es: 'Estamos basados en San Miguel pero operamos globalmente. Servimos negocios de CDMX de forma remota con la misma calidad de cualquier agencia presencial.'
       }
     }
   ];
 
   const caseStudies = [
-    { id: 'spotify-whatsapp-publishing', label: { en: 'Music + Automation', es: 'Música + Automatización' } },
     { id: 'omi-lead-intake-qualification', label: { en: 'Lead System', es: 'Sistema de Leads' } },
     { id: 'noxguard-brand-rebrand', label: { en: 'Enterprise Branding', es: 'Marca Empresarial' } }
   ];

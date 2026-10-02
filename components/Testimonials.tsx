@@ -13,15 +13,6 @@ const testimonials = [
   },
   {
     quote: {
-      en: 'Working with Joshua at Untold.works has been a transformative experience for Billiard Factory\'s social media presence. His creative approach consistently drives growth and engagement, surpassing our expectations consistently. This partnership has genuinely amplified our digital presence.',
-      es: 'Trabajar con Joshua en Untold.works ha sido una experiencia transformadora para la presencia en redes sociales de Billiard Factory. Su enfoque creativo impulsa consistentemente el crecimiento y la interacción, superando nuestras expectativas de manera constante. Esta asociación ha amplificado genuinamente nuestra presencia digital.',
-    },
-    name: 'Ryan Stick',
-    role: { en: 'Marketing Director, Billiard Factory', es: 'Director de Marketing, Billiard Factory' },
-    datePublished: '2024-03-22',
-  },
-  {
-    quote: {
       en: 'Working with Joshua has been pivotal in elevating Second Son Productions. His unparalleled creativity and audience engagement strategies have been instrumental. Joshua consistently delivers innovative concepts that captivate our audience and significantly boost ticket sales for our artists. Collaborating with him means transforming great ideas into exceptional results. His contribution to our success is immeasurable, consistently making our events and artists stand out in a crowded industry.',
       es: 'Trabajar con Joshua ha sido fundamental para elevar Second Son Productions. Su creatividad inigualable y sus estrategias de engagement han sido instrumentales. Joshua entrega consistentemente conceptos innovadores que cautivan a nuestra audiencia e impulsan significativamente las ventas de boletos para nuestros artistas. Colaborar con él significa transformar grandes ideas en resultados excepcionales. Su contribución a nuestro éxito es invaluable, haciendo que nuestros eventos y artistas destaquen en una industria saturada.',
     },

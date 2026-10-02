@@ -433,7 +433,7 @@ const Home: React.FC = () => {
           </div>
 
           <div className="grid sm:grid-cols-2 gap-px bg-white/10 border border-white/10">
-            {['noxguard-brand-rebrand', 'billiard-factory-retail-architecture', 'derrick-hodge', 'casa-schuck']
+            {['noxguard-brand-rebrand', 'second-son-productions', 'derrick-hodge', 'casa-schuck']
               .map(id => projects.find(p => p.id === id)!)
               .map((project, idx) => (
               <Link

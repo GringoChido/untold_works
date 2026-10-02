@@ -142,9 +142,8 @@ const UnitedStates: React.FC = () => {
   ];
 
   const caseStudies = [
-    { id: 'spotify-whatsapp-publishing', label: { en: 'Publishing + WhatsApp', es: 'Publicación + WhatsApp' } },
-    { id: 'black-radio-experience', label: { en: 'Media Platform', es: 'Plataforma de Medios' } },
-    { id: 'billiard-factory-retail-architecture', label: { en: 'Bilingual Retail', es: 'Retail Bilingüe' } }
+    { id: 'omi-lead-intake-qualification', label: { en: 'Lead System', es: 'Sistema de Leads' } },
+    { id: 'noxguard-brand-rebrand', label: { en: 'Enterprise Branding', es: 'Marca Empresarial' } }
   ];
 
   return (

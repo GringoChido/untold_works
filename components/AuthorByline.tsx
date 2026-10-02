@@ -34,7 +34,7 @@ const AuthorByline: React.FC<AuthorBylineProps> = ({ name, date, variant = 'dark
           {t({ en: 'Founder & AI Systems Architect, Untold.works', es: 'Fundador y Arquitecto de Sistemas de IA, Untold.works' })}
         </p>
         <p className={`font-mono text-[9px] uppercase tracking-[0.2em] mt-0.5 ${isDark ? 'text-white/25' : 'text-untold-gray/50'}`}>
-          {t({ en: 'MIT Sloan AI Strategy · 20 Years in Production AI Systems', es: 'MIT Sloan Estrategia de IA · 20 Años en Sistemas de IA en Producción' })}
+          {t({ en: 'MIT Sloan AI Strategy', es: 'MIT Sloan Estrategia de IA' })}
         </p>
         <p className={`font-mono text-[10px] uppercase tracking-[0.3em] mt-1 ${isDark ? 'text-white/30' : 'text-untold-gray/60'}`}>
           {date}

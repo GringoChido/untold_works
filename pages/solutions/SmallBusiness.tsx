@@ -356,22 +356,6 @@ const SmallBusiness: React.FC = () => {
         }}
       />
 
-      {/* ── How We Make You Money ── */}
-      <ResultCard
-        headline={{
-          en: 'When Your Systems Talk to Each Other, Revenue Goes Up.',
-          es: 'Cuando Tus Sistemas Se Comunican, Los Ingresos Suben.',
-        }}
-        stat="20%"
-        statLabel={{ en: 'sales lift — Billiard Factory', es: 'aumento en ventas — Billiard Factory' }}
-        supporting={{
-          en: '+35% operational efficiency across 4,000+ SKUs. One integrated system replaced scattered tools and manual processes.',
-          es: '+35% eficiencia operativa en más de 4,000 SKUs. Un sistema integrado reemplazó herramientas dispersas y procesos manuales.',
-        }}
-        proofLink="/portfolio/billiard-factory-retail-architecture"
-        proofLabel={{ en: 'Read the Billiard Factory case study', es: 'Leer el caso de Billiard Factory' }}
-      />
-
       {/* ── Proof Strip ── */}
       <ProofStrip variant="light" />
 
@@ -424,31 +408,6 @@ const SmallBusiness: React.FC = () => {
                 </p>
               </details>
             ))}
-          </div>
-        </div>
-      </section>
-
-      {/* ── Proof ── */}
-      <section className="bg-untold-beige px-5 sm:px-10 py-20 sm:py-32 border-b border-untold-border">
-        <div className="max-w-[1440px] mx-auto">
-          <div className="flex items-center space-x-4 mb-16">
-            <span className="w-2.5 h-2.5 rounded-full bg-untold-orange"></span>
-            <p className="font-mono text-[13px] uppercase tracking-[0.6em] font-bold text-untold-black/40">
-              {t({ en: 'CLIENT RESULT', es: 'RESULTADO DE CLIENTE' })}
-            </p>
-          </div>
-          <div className="max-w-3xl">
-            <span className="text-untold-orange text-6xl font-serif leading-none block mb-6">&ldquo;</span>
-            <p className="text-xl sm:text-2xl font-serif italic text-untold-gray leading-relaxed mb-8">
-              {t({
-                en: 'Working with Joshua at Untold.works has been a transformative experience for Billiard Factory\'s social media presence. His creative approach consistently drives growth and engagement, surpassing our expectations consistently. This partnership has genuinely amplified our digital presence.',
-                es: 'Trabajar con Joshua en Untold.works ha sido una experiencia transformadora para la presencia en redes sociales de Billiard Factory. Su enfoque creativo impulsa consistentemente el crecimiento y la interacción, superando nuestras expectativas de manera constante. Esta asociación ha amplificado genuinamente nuestra presencia digital.',
-              })}
-            </p>
-            <div className="pt-6 border-t border-untold-border">
-              <p className="font-sans font-black text-base uppercase tracking-tighter">Ryan Stick</p>
-              <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-untold-gray mt-1">Marketing Director, Billiard Factory</p>
-            </div>
           </div>
         </div>
       </section>
