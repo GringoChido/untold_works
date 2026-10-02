@@ -6,7 +6,15 @@
   PUPPETEER_CACHE_DIR = "/opt/build/cache/puppeteer"
 
 # Redirects, including the 301 map from the old site, live in public/_redirects.
-# The preview password lives in netlify/edge-functions/auth.ts (SITE_PASSWORD env var).
+# Edge functions run in this order: the preview password (SITE_PASSWORD), then the 404 -> / catch-all.
+
+[[edge_functions]]
+  path = "/*"
+  function = "auth"
+
+[[edge_functions]]
+  path = "/*"
+  function = "not-found"
 
 [[headers]]
   for = "/*"

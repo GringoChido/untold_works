@@ -1,5 +1,5 @@
 // Basic auth for the preview. Any username, the password from SITE_PASSWORD.
-// Fails closed: with no SITE_PASSWORD set, nothing is served.
+// Fails closed: with no SITE_PASSWORD set, nothing is served. Declared in netlify.toml.
 
 declare const Netlify: { env: { get(name: string): string | undefined } };
 
@@ -24,5 +24,3 @@ export default async (request: Request, context: Context) => {
     },
   });
 };
-
-export const config = { path: '/*' };

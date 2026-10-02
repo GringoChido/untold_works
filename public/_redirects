@@ -17,5 +17,15 @@
 /blog                                      /                    301
 /llms-full.txt                             /llms.txt            301
 
-# Anything without a match goes home. Real files and prerendered pages take priority.
-/*                                         /                    301
+# Trailing-slash variants of the new routes
+/platforms/                                /platforms           301
+/brand-and-product/                        /brand-and-product   301
+/websites/                                 /websites            301
+/campaigns/                                /campaigns           301
+/work/landing-pages/                       /work/landing-pages  301
+/work/robert-glasper-blue-note/            /work/robert-glasper-blue-note 301
+/work/elena-pinderhughes/                  /work/elena-pinderhughes 301
+/about/                                    /about               301
+
+# Anything else without a match goes home: see netlify/edge-functions/not-found.ts.
+# Netlify ignores a `/* / 301` rule here as a redirect loop.

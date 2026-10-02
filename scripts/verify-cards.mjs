@@ -20,7 +20,8 @@ const decode = (html) =>
     .replace(/&nbsp;/g, ' ')
     .replace(/\s+/g, ' ');
 
-const pageText = async (route) => decode(await readFile(join(DIST, route === '/' ? '' : route, 'index.html'), 'utf-8'));
+const pageFile = (route) => (route === '/' ? join(DIST, 'index.html') : join(DIST, `${route}.html`));
+const pageText = async (route) => decode(await readFile(pageFile(route), 'utf-8'));
 
 const expectIn = (text, needle, where) => {
   if (!text.includes(needle)) fail(`${where}: missing "${needle}"`);
@@ -57,7 +58,7 @@ for (const category of categories) {
       v.nodes.forEach((node) => expectIn(text, node.replace(/ \(.*\)$/, ''), `${category.slug} / ${project.name}`));
     }
     if (v.type === 'image') {
-      const html = await readFile(join(DIST, category.slug, 'index.html'), 'utf-8');
+      const html = await readFile(pageFile(`/${category.slug}`), 'utf-8');
       if (!html.includes(`alt="${v.alt.replace(/"/g, '&quot;').replace(/'/g, '&#x27;')}"`) && !html.includes(`alt="${v.alt}"`)) {
         fail(`${category.slug} / ${project.name}: alt text missing`);
       }

@@ -44,7 +44,8 @@ async function renderRoute(browser, route) {
     await page.waitForSelector('#root main', { timeout: 10_000 });
     await new Promise((r) => setTimeout(r, 400));
     const html = await page.content();
-    const outPath = route === '/' ? join(DIST_DIR, 'index.html') : join(DIST_DIR, route, 'index.html');
+    // /platforms -> dist/platforms.html: Netlify serves it at /platforms with no trailing-slash redirect.
+    const outPath = route === '/' ? join(DIST_DIR, 'index.html') : join(DIST_DIR, `${route}.html`);
     await mkdir(dirname(outPath), { recursive: true });
     await writeFile(outPath, html, 'utf-8');
     console.log(`  ✓ ${route}`);
