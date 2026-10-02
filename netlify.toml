@@ -5,17 +5,9 @@
 [build.environment]
   PUPPETEER_CACHE_DIR = "/opt/build/cache/puppeteer"
 
-# ───────────────────────────────────────────────────────────────
-# SPA fallback is handled by public/_redirects file.
-# In _redirects, static files (including prerendered HTML)
-# take priority over rewrite rules automatically.
-# ───────────────────────────────────────────────────────────────
+# Redirects, including the 301 map from the old site, live in public/_redirects.
+# The preview password lives in netlify/edge-functions/auth.ts (SITE_PASSWORD env var).
 
-# ───────────────────────────────────────────────────────────────
-# Global headers
-# ───────────────────────────────────────────────────────────────
-
-# Security + AI crawling headers for all pages
 [[headers]]
   for = "/*"
   [headers.values]
@@ -24,67 +16,24 @@
     Referrer-Policy = "strict-origin-when-cross-origin"
     Permissions-Policy = "camera=(), microphone=(), geolocation=()"
     Strict-Transport-Security = "max-age=31536000; includeSubDomains; preload"
-    Content-Security-Policy = "default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self' https:; frame-src https://www.youtube.com https://player.vimeo.com"
-    X-Robots-Tag = "all"
+    Content-Security-Policy = "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self'; frame-ancestors 'none'; base-uri 'self'; form-action 'self'"
 
-# ───────────────────────────────────────────────────────────────
-# AI / LLM content files
-# ───────────────────────────────────────────────────────────────
-
-[[headers]]
-  for = "/llms.txt"
-  [headers.values]
-    Content-Type = "text/plain; charset=utf-8"
-    Cache-Control = "public, max-age=3600"
-    Access-Control-Allow-Origin = "*"
-    X-Robots-Tag = "all"
-
-[[headers]]
-  for = "/llms-full.txt"
-  [headers.values]
-    Content-Type = "text/plain; charset=utf-8"
-    Cache-Control = "public, max-age=3600"
-    Access-Control-Allow-Origin = "*"
-    X-Robots-Tag = "all"
-
-[[headers]]
-  for = "/robots.txt"
-  [headers.values]
-    Content-Type = "text/plain; charset=utf-8"
-    Cache-Control = "public, max-age=3600"
-    Access-Control-Allow-Origin = "*"
-
-[[headers]]
-  for = "/sitemap.xml"
-  [headers.values]
-    Content-Type = "application/xml; charset=utf-8"
-    Cache-Control = "public, max-age=3600"
-    Access-Control-Allow-Origin = "*"
-
-# ───────────────────────────────────────────────────────────────
-# Static asset caching
-# ───────────────────────────────────────────────────────────────
-
-# Cache static assets
 [[headers]]
   for = "/assets/*"
   [headers.values]
     Cache-Control = "public, max-age=31536000, immutable"
 
-# Cache fonts
-[[headers]]
-  for = "*.woff2"
-  [headers.values]
-    Cache-Control = "public, max-age=31536000, immutable"
-
-# Cache images
 [[headers]]
   for = "/images/*"
   [headers.values]
-    Cache-Control = "public, max-age=86400"
+    Cache-Control = "public, max-age=604800"
 
-# Cache videos
 [[headers]]
-  for = "/video/*"
+  for = "/sitemap.xml"
   [headers.values]
-    Cache-Control = "public, max-age=31536000, immutable"
+    Content-Type = "application/xml; charset=utf-8"
+
+[[headers]]
+  for = "/llms.txt"
+  [headers.values]
+    Content-Type = "text/plain; charset=utf-8"

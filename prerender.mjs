@@ -1,87 +1,15 @@
-import { execSync, spawn } from 'child_process';
+import { spawn } from 'child_process';
 import { mkdir, writeFile } from 'fs/promises';
 import { dirname, join } from 'path';
 import puppeteer from 'puppeteer';
+import { routes } from './scripts/routes.mjs';
 
 const DIST_DIR = join(import.meta.dirname, 'dist');
 const PORT = 4173;
 const BASE_URL = `http://localhost:${PORT}`;
-const CONCURRENCY = 4;
+const CONCURRENCY = 3;
 
-const routes = [
-  '/',
-  '/about',
-  '/contact',
-  '/portfolio',
-  '/blog',
-  '/workshops',
-  '/solutions',
-  '/solutions/professional-services',
-  '/solutions/small-business',
-  '/solutions/enterprise',
-  '/websites',
-  '/seo-aeo',
-  '/social-media',
-  '/ads',
-  '/dashboard',
-  '/network-systems',
-  '/copywriting',
-  '/ai-content',
-  '/sales-enablement',
-  '/mobile-apps',
-  '/hosting',
-  '/review-reputation',
-  '/whatsapp',
-  '/partners',
-  '/san-miguel-de-allende',
-  '/queretaro',
-  '/mexico-city',
-  '/united-states',
-  '/mexico',
-  '/privacy',
-  '/savings',
-  '/analog',
-  '/slides',
-  // Portfolio projects
-  '/portfolio/omi-lead-intake-qualification',
-  '/portfolio/noxguard-brand-rebrand',
-  // Blog categories
-  '/blog/category/build-notes',
-  '/blog/category/aeo-search',
-  '/blog/category/ai-for-business',
-  '/blog/category/creative-technology',
-  '/blog/category/case-studies',
-  '/blog/category/ai-strategy',
-  // Blog posts
-  '/blog/alignment-problem-not-software-problem',
-  '/blog/i-spent-a-year-building-an-agency-with-ai',
-  '/blog/design-to-dev-pipeline-just-died',
-  '/blog/ai-tools-every-small-business-should-know-2026',
-  '/blog/how-to-use-chatgpt-for-customer-service',
-  '/blog/ai-content-strategy-what-to-automate-what-to-keep-human',
-  '/blog/your-website-is-not-a-brochure-its-a-business-system',
-  '/blog/headless-cms-explained-for-business-owners',
-  '/blog/bilingual-websites-why-translation-plugins-fail',
-  '/blog/run-your-business-from-your-phone-the-real-guide',
-  '/blog/why-your-website-must-be-fast-on-3g',
-  '/blog/san-miguel-de-allende-digital-presence-guide-2026',
-  '/blog/how-sma-restaurants-can-capture-tourist-traffic-online',
-  '/blog/case-study-boutique-hotel-booking-system',
-  '/blog/case-study-law-firm-client-intake-automation',
-  '/blog/case-study-ecommerce-brand-migration-shopify-to-custom',
-  '/blog/the-professional-services-website-playbook',
-  '/blog/retail-and-hospitality-digital-survival-guide',
-  '/blog/whatsapp-ai-for-mexican-businesses-complete-guide',
-  '/blog/aeo-the-shift-nobodys-talking-about',
-  '/blog/geo-flip-your-marketing-strategy',
-  '/blog/yo-this-thing-is-broken',
-  '/blog/your-creative-eye-became-the-prompt',
-  '/blog/the-site-is-the-proposal',
-  '/blog/n8n-vs-zapier-for-mexican-businesses',
-  '/blog/seo-vs-aeo-vs-geo-what-your-business-actually-needs-in-2026',
-];
-
-async function waitForServer(url, maxAttempts = 30) {
+async function waitForServer(url, maxAttempts = 40) {
   for (let i = 0; i < maxAttempts; i++) {
     try {
       const res = await fetch(url);
@@ -89,72 +17,54 @@ async function waitForServer(url, maxAttempts = 30) {
     } catch {}
     await new Promise((r) => setTimeout(r, 500));
   }
-  throw new Error(`Server at ${url} did not start within ${maxAttempts * 500}ms`);
+  throw new Error(`Server at ${url} did not start`);
 }
 
 async function renderRoute(browser, route) {
   const page = await browser.newPage();
-  const url = `${BASE_URL}${route}`;
-
+  await page.setViewport({ width: 1440, height: 900 });
   try {
-    await page.goto(url, { waitUntil: 'networkidle0', timeout: 30_000 });
-    await page.waitForSelector('#root > *', { timeout: 10_000 });
-    // Small delay for any post-mount effects (meta tags, dynamic content)
-    await new Promise((r) => setTimeout(r, 500));
-
+    await page.goto(`${BASE_URL}${route}`, { waitUntil: 'networkidle0', timeout: 45_000 });
+    await page.waitForSelector('#root main', { timeout: 10_000 });
+    await new Promise((r) => setTimeout(r, 400));
     const html = await page.content();
-
-    // Determine output path
-    const outPath =
-      route === '/'
-        ? join(DIST_DIR, 'index.html')
-        : join(DIST_DIR, route, 'index.html');
-
+    const outPath = route === '/' ? join(DIST_DIR, 'index.html') : join(DIST_DIR, route, 'index.html');
     await mkdir(dirname(outPath), { recursive: true });
     await writeFile(outPath, html, 'utf-8');
-
     console.log(`  ✓ ${route}`);
+    return true;
   } catch (err) {
-    console.error(`  ✗ ${route} — ${err.message}`);
+    console.error(`  ✗ ${route}: ${err.message}`);
+    return false;
   } finally {
     await page.close();
   }
 }
 
-async function processInBatches(browser, items, batchSize) {
-  for (let i = 0; i < items.length; i += batchSize) {
-    const batch = items.slice(i, i + batchSize);
-    await Promise.all(batch.map((route) => renderRoute(browser, route)));
-  }
-}
-
 async function main() {
-  console.log(`\nPrerendering ${routes.length} routes...\n`);
-
-  // Start vite preview server (detached so we can kill the entire process tree)
-  const server = spawn('npx', ['vite', 'preview', '--port', String(PORT)], {
+  console.log(`\nPrerendering ${routes.length} routes\n`);
+  const server = spawn('npx', ['vite', 'preview', '--port', String(PORT), '--strictPort'], {
     cwd: import.meta.dirname,
     stdio: 'pipe',
     detached: true,
   });
-
+  let failed = 0;
   try {
     await waitForServer(BASE_URL);
-    console.log(`Preview server running at ${BASE_URL}\n`);
-
-    const browser = await puppeteer.launch({
-      headless: true,
-      args: ['--no-sandbox', '--disable-setuid-sandbox'],
-    });
-
-    await processInBatches(browser, routes, CONCURRENCY);
-
+    const browser = await puppeteer.launch({ headless: true, args: ['--no-sandbox', '--disable-setuid-sandbox'] });
+    for (let i = 0; i < routes.length; i += CONCURRENCY) {
+      const batch = routes.slice(i, i + CONCURRENCY);
+      const results = await Promise.all(batch.map((route) => renderRoute(browser, route)));
+      failed += results.filter((ok) => !ok).length;
+    }
     await browser.close();
-    console.log(`\nDone — ${routes.length} pages prerendered to dist/\n`);
   } finally {
-    // Kill the entire process group (npx + vite) so Node can exit cleanly
-    try { process.kill(-server.pid, 'SIGTERM'); } catch {}
+    try {
+      process.kill(-server.pid, 'SIGTERM');
+    } catch {}
   }
+  if (failed) throw new Error(`${failed} route(s) failed to prerender`);
+  console.log(`\nDone, ${routes.length} pages prerendered to dist/\n`);
 }
 
 main()

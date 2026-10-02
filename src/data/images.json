@@ -1,0 +1,467 @@
+{
+ "black-radio-experience-crowd.jpg": {
+  "base": "black-radio-experience-crowd",
+  "width": 1440,
+  "height": 900,
+  "widths": [
+   480,
+   800,
+   1200,
+   1440
+  ]
+ },
+ "brand-hub.jpg": {
+  "base": "brand-hub",
+  "width": 1600,
+  "height": 1000,
+  "widths": [
+   480,
+   800,
+   1200,
+   1600
+  ]
+ },
+ "casa-schuck.jpg": {
+  "base": "casa-schuck",
+  "width": 1440,
+  "height": 900,
+  "widths": [
+   480,
+   800,
+   1200,
+   1440
+  ]
+ },
+ "clb-brand-bible.jpg": {
+  "base": "clb-brand-bible",
+  "width": 1600,
+  "height": 1000,
+  "widths": [
+   480,
+   800,
+   1200,
+   1600
+  ]
+ },
+ "clb-factory-event-page.jpg": {
+  "base": "clb-factory-event-page",
+  "width": 1600,
+  "height": 1000,
+  "widths": [
+   480,
+   800,
+   1200,
+   1600
+  ]
+ },
+ "clbailey-concierge.jpg": {
+  "base": "clbailey-concierge",
+  "width": 1600,
+  "height": 860,
+  "widths": [
+   480,
+   800,
+   1200,
+   1600
+  ]
+ },
+ "color-of-noize.jpg": {
+  "base": "color-of-noize",
+  "width": 1440,
+  "height": 900,
+  "widths": [
+   480,
+   800,
+   1200,
+   1440
+  ]
+ },
+ "custom-built-workshop.jpg": {
+  "base": "custom-built-workshop",
+  "width": 1280,
+  "height": 720,
+  "widths": [
+   480,
+   800,
+   1200,
+   1280
+  ]
+ },
+ "derrick-hodge-site.jpg": {
+  "base": "derrick-hodge-site",
+  "width": 1440,
+  "height": 900,
+  "widths": [
+   480,
+   800,
+   1200,
+   1440
+  ]
+ },
+ "designers-page.jpg": {
+  "base": "designers-page",
+  "width": 960,
+  "height": 600,
+  "widths": [
+   480,
+   800,
+   960
+  ]
+ },
+ "elena-home.jpg": {
+  "base": "elena-home",
+  "width": 1600,
+  "height": 1000,
+  "widths": [
+   480,
+   800,
+   1200,
+   1600
+  ]
+ },
+ "financing-page.jpg": {
+  "base": "financing-page",
+  "width": 960,
+  "height": 600,
+  "widths": [
+   480,
+   800,
+   960
+  ]
+ },
+ "grfp-home.jpg": {
+  "base": "grfp-home",
+  "width": 1600,
+  "height": 1000,
+  "widths": [
+   480,
+   800,
+   1200,
+   1600
+  ]
+ },
+ "hf-capture.jpg": {
+  "base": "hf-capture",
+  "width": 1440,
+  "height": 945,
+  "widths": [
+   480,
+   800,
+   1200,
+   1440
+  ]
+ },
+ "hf-climb.jpg": {
+  "base": "hf-climb",
+  "width": 1440,
+  "height": 756,
+  "widths": [
+   480,
+   800,
+   1200,
+   1440
+  ]
+ },
+ "hf-film.jpg": {
+  "base": "hf-film",
+  "width": 1440,
+  "height": 602,
+  "widths": [
+   480,
+   800,
+   1200,
+   1440
+  ]
+ },
+ "hf-filmstill.jpg": {
+  "base": "hf-filmstill",
+  "width": 1400,
+  "height": 788,
+  "widths": [
+   480,
+   800,
+   1200,
+   1400
+  ]
+ },
+ "hf-foosball.jpg": {
+  "base": "hf-foosball",
+  "width": 1000,
+  "height": 1241,
+  "widths": [
+   480,
+   800,
+   1000
+  ]
+ },
+ "hf-hero.jpg": {
+  "base": "hf-hero",
+  "width": 1440,
+  "height": 900,
+  "widths": [
+   480,
+   800,
+   1200,
+   1440
+  ]
+ },
+ "hf-ladder.jpg": {
+  "base": "hf-ladder",
+  "width": 1440,
+  "height": 844,
+  "widths": [
+   480,
+   800,
+   1200,
+   1440
+  ]
+ },
+ "hf-shuffleboard.jpg": {
+  "base": "hf-shuffleboard",
+  "width": 1000,
+  "height": 1241,
+  "widths": [
+   480,
+   800,
+   1000
+  ]
+ },
+ "home-field-shot.jpg": {
+  "base": "home-field-shot",
+  "width": 1400,
+  "height": 875,
+  "widths": [
+   480,
+   800,
+   1200,
+   1400
+  ]
+ },
+ "kibok-home.jpg": {
+  "base": "kibok-home",
+  "width": 1600,
+  "height": 1000,
+  "widths": [
+   480,
+   800,
+   1200,
+   1600
+  ]
+ },
+ "labor-day-page.jpg": {
+  "base": "labor-day-page",
+  "width": 960,
+  "height": 600,
+  "widths": [
+   480,
+   800,
+   960
+  ]
+ },
+ "lalah-made-in-chicago.jpg": {
+  "base": "lalah-made-in-chicago",
+  "width": 1600,
+  "height": 1000,
+  "widths": [
+   480,
+   800,
+   1200,
+   1600
+  ]
+ },
+ "lexington-billiards.jpg": {
+  "base": "lexington-billiards",
+  "width": 1440,
+  "height": 900,
+  "widths": [
+   480,
+   800,
+   1200,
+   1440
+  ]
+ },
+ "noxguard-truck.jpg": {
+  "base": "noxguard-truck",
+  "width": 1440,
+  "height": 900,
+  "widths": [
+   480,
+   800,
+   1200,
+   1440
+  ]
+ },
+ "omi.jpg": {
+  "base": "omi",
+  "width": 1440,
+  "height": 900,
+  "widths": [
+   480,
+   800,
+   1200,
+   1440
+  ]
+ },
+ "qmillion.jpg": {
+  "base": "qmillion",
+  "width": 1440,
+  "height": 900,
+  "widths": [
+   480,
+   800,
+   1200,
+   1440
+  ]
+ },
+ "regal-billiards.jpg": {
+  "base": "regal-billiards",
+  "width": 1440,
+  "height": 900,
+  "widths": [
+   480,
+   800,
+   1200,
+   1440
+  ]
+ },
+ "rivero-studio.jpg": {
+  "base": "rivero-studio",
+  "width": 1440,
+  "height": 900,
+  "widths": [
+   480,
+   800,
+   1200,
+   1440
+  ]
+ },
+ "robert-glasper-portrait.jpg": {
+  "base": "robert-glasper-portrait",
+  "width": 1000,
+  "height": 1250,
+  "widths": [
+   480,
+   800,
+   1000
+  ]
+ },
+ "robtober-blue-note-nyc.jpg": {
+  "base": "robtober-blue-note-nyc",
+  "width": 1440,
+  "height": 900,
+  "widths": [
+   480,
+   800,
+   1200,
+   1440
+  ]
+ },
+ "savor-chef-series.jpg": {
+  "base": "savor-chef-series",
+  "width": 1440,
+  "height": 900,
+  "widths": [
+   480,
+   800,
+   1200,
+   1440
+  ]
+ },
+ "savor-site.jpg": {
+  "base": "savor-site",
+  "width": 1440,
+  "height": 900,
+  "widths": [
+   480,
+   800,
+   1200,
+   1440
+  ]
+ },
+ "second-son-roster.jpg": {
+  "base": "second-son-roster",
+  "width": 1440,
+  "height": 900,
+  "widths": [
+   480,
+   800,
+   1200,
+   1440
+  ]
+ },
+ "spring-stuebner-plot.svg": {
+  "svg": true
+ },
+ "strip-cl-bailey-factory-event.jpg": {
+  "base": "strip-cl-bailey-factory-event",
+  "width": 320,
+  "height": 1942,
+  "widths": [
+   160,
+   320
+  ]
+ },
+ "strip-custom.jpg": {
+  "base": "strip-custom",
+  "width": 320,
+  "height": 1835,
+  "widths": [
+   160,
+   320
+  ]
+ },
+ "strip-designers.jpg": {
+  "base": "strip-designers",
+  "width": 320,
+  "height": 2090,
+  "widths": [
+   160,
+   320
+  ]
+ },
+ "strip-financing.jpg": {
+  "base": "strip-financing",
+  "width": 320,
+  "height": 1045,
+  "widths": [
+   160,
+   320
+  ]
+ },
+ "strip-home-field.jpg": {
+  "base": "strip-home-field",
+  "width": 320,
+  "height": 1818,
+  "widths": [
+   160,
+   320
+  ]
+ },
+ "strip-labor-day-sale.jpg": {
+  "base": "strip-labor-day-sale",
+  "width": 320,
+  "height": 1484,
+  "widths": [
+   160,
+   320
+  ]
+ },
+ "strip-new-arrivals.jpg": {
+  "base": "strip-new-arrivals",
+  "width": 320,
+  "height": 1923,
+  "widths": [
+   160,
+   320
+  ]
+ },
+ "strip-sitewide-sale.jpg": {
+  "base": "strip-sitewide-sale",
+  "width": 320,
+  "height": 867,
+  "widths": [
+   160,
+   320
+  ]
+ }
+}

@@ -1,89 +1,86 @@
 # Untold.works
 
-> Operational alignment systems for distributed businesses. Based in San Miguel de Allende, Mexico, serving the United States and Mexico. We build the systems that help companies and their partners work as one — organizing product information, communication, lead routing, and sales visibility across teams, partners, distributors, and locations. Founded by Joshua Semolik, AI Systems Architect. MIT Sloan AI Strategy.
+> The portfolio of Joshua Semolik. I work where product, strategy and storytelling meet, and I build the system that keeps the story running.
 
-## Key Facts
+Joshua Semolik: almost three decades in brand, product and marketing. Storytelling first, AI as the crew. Brand, product and marketing since 1999. Built with AI since 2024. Today Creative Director at Billiard Factory. Based in Houston, working in English and Spanish.
 
-- **Founded:** 2024
-- **Location:** San Miguel de Allende, Guanajuato, Mexico
-- **Founder:** Joshua Semolik — AI Systems Architect, MIT Sloan AI Strategy
-- **Languages:** English, Spanish (native bilingual)
-- **Markets served:** Mexico and the United States
-- **Specialties:** Operational alignment systems, product information systems, lead routing, sales visibility, communication systems, AI workflow automation, revenue operations
-- **Industries served:** Manufacturers, distributors, franchise groups, multi-location brands, restaurant groups, artist management
-- **Tech stack:** React, Next.js, TypeScript, n8n, Claude AI, OpenAI Agents, Python, Salesforce, HubSpot
-- **Contact:** info@untold.works
-- **Full context:** https://untold.works/llms-full.txt
+## Pages
 
-## What does Untold.works build?
+- [Home](https://untold.works/): Storytelling is the craft. AI is the crew. The four categories of work and the support system behind a story.
+- [Platforms](https://untold.works/platforms): The systems a company runs on so the story keeps going out: the plan, the publishing, the operations, and one place where every team works.
+- [Brand and product](https://untold.works/brand-and-product): The rules that keep a company sounding like itself, and the things people buy, down to the room they buy them in.
+- [Websites](https://untold.works/websites): Sites for artists, retailers, a food tech company, a trade showroom, a hotel and a café, each one built around the story it has to tell.
+- [Campaigns](https://untold.works/campaigns): Seasons, events, films and the pages that catch the lead, planned on one calendar and shipped through the engine.
+- [Landing pages](https://untold.works/work/landing-pages): Ten campaign pages for Billiard Factory, each one taken from the idea to the lead.
+- [Robert Glasper and Blue Note](https://untold.works/work/robert-glasper-blue-note): Eight years telling the story around one artist: his records, his residency, his clubs and his festival.
+- [Elena Pinderhughes](https://untold.works/work/elena-pinderhughes): The debut album site for I Hope You Feel It Too.
+- [About](https://untold.works/about): Bio, clients since 2024, career 1999 to 2023, earlier film work, education.
 
-Untold.works builds operational alignment systems for distributed businesses — manufacturers, franchise groups, multi-location brands, and organizations that coordinate across partners, distributors, and teams. We organize how information moves across these networks through four systems: product information, communication, lead routing, and sales visibility. Every project includes full ownership transfer — code, data, documentation, and video training.
+## Work
 
-## What is an operational alignment system?
+### 01. Platforms (7 projects)
 
-An operational alignment system organizes how information moves across a distributed business. Instead of adding more software tools, we build coordination infrastructure — a single source of truth for product data, structured communication, automated lead routing, and clear sales visibility — so companies and their partners work from the same information.
+The engine behind the story. The systems a company runs on so the story keeps going out: the plan, the publishing, the operations, and one place where every team works.
 
-## What are the four systems?
+- Engine Room. Client: Billiard Factory; What it is: Marketing and operations platform; Specs: 38 pages · 57 functions · 1,830 tests; Built with: Claude Code.
+- Content Factory. Client: Billiard Factory; Runs: A post and a story every day; Credit: Designed and directed; Built by: Brady Stick.
+- C.L. Bailey portal and concierge. Client: C.L. Bailey; Dealer portal: About 70 dealers; Site: Bilingual, AI concierge, dealer locator; Status: Live ↗ (https://clbailey.com).
+- Off STORIS. Client: Billiard Factory · 12 showrooms; Storefront: Shopify, began Oct 1, 2026; ERP: XoroERP, signed Sep 30, 2026; Status: In progress.
+- OMI lead intake. Client: OMI Growth; What it is: Lead intake and routing; Connected to: The CRM; Years: 2024–2025.
+- Casa Schuck ops dashboard. Client: Casa Schuck; What it is: Hotel operations dashboard; Status: Full demo, no live data yet.
+- Sante Peptides. Client: Sante Peptides; Stack: Anthropic SDK · Postgres · auth; Languages: English and Spanish; Date: May 2026.
 
-1. **Product Information System:** A single source of truth for product data, documentation, images, specifications, and marketing assets. Everyone works from the same information.
-2. **Communication System:** Structured communication between company teams, partners, locations, and distributors. Built around the tools teams already use — CRM, email, WhatsApp, internal dashboards.
-3. **Lead Routing System:** Customer inquiries and leads automatically routed to the correct partner, distributor, location, or sales team. No leads lost. No manual handoffs.
-4. **Sales Visibility System:** Clear insight into sales activity, partner performance, and market demand across the entire network.
+### 02. Brand and product (5 projects)
 
-## Who is Joshua Semolik?
+The story you can hold. The rules that keep a company sounding like itself, and the things people buy, down to the room they buy them in.
 
-Joshua Semolik is the founder and AI Systems Architect of Untold.works. He has almost three decades of experience spanning NBA Entertainment (two Emmy nominations), global product launches at Videndum PLC, cross-border GTM strategy, and production AI systems. MIT Sloan School of Management, AI Strategy (2026).
+- Spring Stuebner store. Client: Billiard Factory; Stations: 34, coded from the SketchUp model; Styling: Five tiers, every station specified; Opens: Fall 2026.
+- Brand Hub. Client: Billiard Factory; What it is: Brand guidelines in 15 sections; One source: Re-skins every property; Status: Live ↗ (https://hub.billiardfactory.com).
+- C.L. Bailey Brand Bible. Client: C.L. Bailey; What it is: Eleven modules, one standard; Built for: The dealer network; Status: Live ↗ (https://clbailey-brand-bible.netlify.app).
+- Tierra cue line. Client: Billiard Factory; Role: Designed; What it is: Three cues, one build; Status: Approved for production.
+- Noxguard. Client: Noxguard; What it is: Brand rebuild, three revenue pillars; Plus: Sales enablement and an AI roadmap; Years: 2024–2025.
 
-## What types of businesses does Untold serve?
+### 03. Websites (14 projects)
 
-We serve distributed businesses where many people or organizations must operate together: manufacturers and distributors, brands and retail partners, franchise groups and locations, restaurant groups, artist management, and multi-location organizations across Mexico and the United States.
+Where people find it. Sites for artists, retailers, a food tech company, a trade showroom, a hotel and a café, each one built around the story it has to tell.
 
-## Core Pages
+- Lalah Hathaway. Made in Chicago: Sep 5–21, 2026; Built around: One music-room photograph; Status: Live ↗ (https://lalahhathaway.com).
+- Elena Pinderhughes. Debut album site: 2026; Album: I Hope You Feel It Too; Status: Live ↗ (https://elenapinderhughes.com). Project page: https://untold.works/work/elena-pinderhughes
+- Ki'bok Coffee. Café site: Mar–Apr 2026; Languages: EN · ES · JA; Status: Live ↗ (https://kibokcoffeesma.com).
+- Savor. Client: Savor, food tech; Role: Website, content and storytelling; Hired through: IDW Studio; Status: Live ↗ (https://www.savor.it).
+- Game Room Furniture Partners. Trade showroom: Dallas Market Center; Catalog: 386 products; Status: Live ↗ (https://gameroomfurniturepartners.com).
+- Rivero Studio. Artist platform: May 2026; Stack: Astro · Storyblok · Stripe · Supabase · Cal.com · Mux; Status: Live ↗ (https://riverostudio.com).
+- Casa Schuck. Hotel site: Feb–Jun 2026; Pages: 13, English and Spanish; Status: View ↗ (https://csnewsite.netlify.app/en).
+- Derrick Hodge. Artist site: Feb–Mar 2026; Artist: Blue Note composer and orchestrator; Status: View ↗ (https://derrickhodge.netlify.app).
+- Qmillion. Producer and mixer site: Mar 2026; Status: View ↗ (https://qmillion.netlify.app).
+- Second Son Productions. Roster site: Feb–Mar 2026; Inside: Artist pages, Bandsintown tour dates; Status: Built.
+- Regal Billiards. Retail site: Mar 24–25, 2026; For: A C.L. Bailey dealer; Status: Built.
+- Lexington Billiards and Spas. Retail site: Mar 12–30, 2026; Plus: A search and AI-search visibility audit; Status: Built.
+- Voztre. Client: FoodTech AI; What it is: Bilingual landing page with lead capture; Date: Apr 2026.
+- Village Tenders. Client: Village Tenders; What it is: A proposal built as a live site; Date: Apr–May 2026.
 
-- [Home](https://untold.works/): Operational alignment systems for distributed businesses.
-- [Network Systems](https://untold.works/network-systems): AI-powered business systems that scale from one location to one hundred.
-- [About](https://untold.works/about): Founder bio, career timeline, creative direction portfolio, MIT credentials.
-- [Contact](https://untold.works/contact): Start a conversation. Based in San Miguel de Allende, serving Mexico and the US.
-- [Portfolio](https://untold.works/portfolio): Selected client projects.
-- [Blog](https://untold.works/blog): Practical guides on AI tools, AEO, business systems, and operational alignment.
+### 04. Campaigns (14 projects)
 
-## Services
+Where it gets told. Seasons, events, films and the pages that catch the lead, planned on one calendar and shipped through the engine.
 
-- [Website Design & Rebuild](https://untold.works/websites): Brand-first, AI-native, mobile-ready, bilingual websites optimized for SEO and AEO.
-- [SEO & AEO](https://untold.works/seo-aeo): Search Engine Optimization and AI Engine Optimization. Technical SEO, content strategy, and LLM discoverability.
-- [Social Media](https://untold.works/social-media): Social media strategy, content creation, and analytics.
-- [Paid Advertising](https://untold.works/ads): Google Ads, Meta Ads, and paid media campaigns.
-- [Dashboard](https://untold.works/dashboard): Custom business dashboards you own outright — no SaaS fees.
-- [Copywriting](https://untold.works/copywriting): Brand messaging, content strategy, and bilingual copywriting.
-- [AI Content](https://untold.works/ai-content): AI-powered content systems for blogs, social, and marketing.
-- [Sales Enablement](https://untold.works/sales-enablement): Sales tools, proposals, and partner enablement systems.
-- [WhatsApp Systems](https://untold.works/whatsapp): AI-powered WhatsApp Business API automation — lead capture, multilingual routing, cross-border communication for Mexico and US businesses.
-- [Mobile Apps](https://untold.works/mobile-apps): Custom mobile applications for business operations.
-- [Hosting](https://untold.works/hosting): Managed hosting and infrastructure.
-- [Review & Reputation](https://untold.works/review-reputation): Review management and reputation building systems.
-- [Partners](https://untold.works/partners): Referral and strategic partner program for agencies, consultants, and service providers.
+- Home Field. Runs: Sep 14–Oct 11, 2026; Line: This year, everyone comes to you.; Made in: Higgsfield; Shipped through: Engine Room, Content Factory.
+- C.L. Bailey Factory Event. Runs: Oct 16–31, 2026; Offer: 10% off C.L. Bailey and Velocity; Lanes: The Table Is Open · The Long Game · On The Floor.
+- Savor Chef Series. Kitchens: Atelier Crenn · SingleThread · ONE65 · Jane the Bakery; Role: Content and storytelling, close with the client; Hired through: IDW Studio; Watch: Case study ↗ (https://idw.studio/cs/savor).
+- Preferred Customer Event. Event: Thu Oct 15, 2026; Where: 12 showrooms and online; Social: A countdown, six days out to Today.
+- Landing pages. Pages: Ten, eight live; Lead capture: GoHighLevel · Klaviyo; Built with: Claude Code · Higgsfield; Inside: Open the project →. Project page: https://untold.works/work/landing-pages
+- Messes Happen. Client: Billiard Factory · Allstate Protection Plans; Role: Produced and cut, music added; Made with: Higgsfield · Claude Design · HyperFrames; Airs: Oct 2026.
+- Season Opener. Runs: Aug 5–15, 2026; Role: Brief and creative direction; Shipped through: Engine Room.
+- Labor Day Sale. Live: Aug 17, 2026; Offer: Up to $1,000 off sitewide; Role: Creative direction; Page: Brady Stick, SEO copy by Zorica.
+- Product films. Films: Custom Built · New Arrivals · Shuffleboard; Client: Billiard Factory; Runs on: billiardfactory.com.
 
-## Locations
+Music, Robert Glasper and Blue Note:
 
-- [San Miguel de Allende](https://untold.works/san-miguel-de-allende)
-- [Queretaro](https://untold.works/queretaro)
-- [Mexico City](https://untold.works/mexico-city)
-- [United States](https://untold.works/united-states)
+- Robert Glasper album releases. Artist: Robert Glasper; Releases: Black Radio III Supreme · Let Go · Code Derivation · Keys to the City; Role: Part of the release team. Project page: https://untold.works/work/robert-glasper-blue-note
+- Robtober. What it is: Glasper's annual October residency; Where: Blue Note New York; Role: Content, five years.
+- Blue Note Los Angeles. Opened: Aug 14, 2025, Hollywood; Grand opening: Robert Glasper; Role: Launch and opening content.
+- Black Radio Experience. Festival: Blue Note Jazz Festival, Napa; Curated by: Robert Glasper; Role: Content Director, four years.
+- Color of Noize. Artist: Derrick Hodge; Orchestra: Color of Noize; Role: Tour content.
 
-## Portfolio Highlights
+## Credits
 
-- **OMI Lead Intake & Routing:** agentic AI lead qualification with n8n, OpenAI Agents, Salesforce.
-
-## Blog (Selected)
-
-- [7 AI Tools Every Small Business Should Know in 2026](https://untold.works/blog/ai-tools-every-small-business-should-know-2026)
-- [AEO: The Shift Nobody's Talking About](https://untold.works/blog/aeo-the-shift-nobodys-talking-about)
-- [WhatsApp AI for Mexican Businesses](https://untold.works/blog/whatsapp-ai-for-mexican-businesses-complete-guide)
-- [Your Website Is Not a Brochure](https://untold.works/blog/your-website-is-not-a-brochure-its-a-business-system)
-- [The Site IS the Proposal](https://untold.works/blog/the-site-is-the-proposal)
-- [GEO: Flip Your Marketing Strategy](https://untold.works/blog/geo-flip-your-marketing-strategy)
-- [n8n vs Zapier for Mexican Businesses](https://untold.works/blog/n8n-vs-zapier-for-mexican-businesses)
-
-## Optional
-
-- [UNTOLD ANALOG](https://untold.works/analog): A curated music experience — vinyl, jazz, soul, and lo-fi.
+Content Factory was designed and directed by Joshua Semolik and built by Brady Stick. The Labor Day page was built by Brady Stick on Joshua's template, with SEO copy by Zorica. Landing-page ports by Brady Stick. Savor work was hired through IDW Studio. This site was built with Claude.

@@ -1,4 +1,3 @@
-
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 
@@ -9,15 +8,9 @@ export default defineConfig({
     emptyOutDir: true,
     rollupOptions: {
       output: {
-        manualChunks: {
-          vendor: ['react', 'react-dom', 'react-router-dom'],
-          motion: ['framer-motion'],
-        },
+        manualChunks: { vendor: ['react', 'react-dom', 'react-router-dom'] },
       },
     },
   },
-  server: {
-    port: parseInt(process.env.PORT || '3000'),
-    open: true,
-  }
+  server: { port: 3000 },
 });

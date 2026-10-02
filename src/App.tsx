@@ -1,0 +1,50 @@
+import { useLayoutEffect } from 'react';
+import { BrowserRouter, Navigate, Route, Routes, useLocation } from 'react-router-dom';
+import { PageFillProvider } from './components/PageFill';
+import { About } from './pages/About';
+import { Category } from './pages/Category';
+import { Home } from './pages/Home';
+import { ElenaPinderhughes } from './pages/work/ElenaPinderhughes';
+import { GlasperBlueNote } from './pages/work/GlasperBlueNote';
+import { LandingPages } from './pages/work/LandingPages';
+
+const ScrollManager = () => {
+  const { pathname, hash } = useLocation();
+  useLayoutEffect(() => {
+    if (hash) {
+      const target = document.getElementById(hash.slice(1));
+      if (target) {
+        target.scrollIntoView({ block: 'start' });
+        return;
+      }
+    }
+    window.scrollTo(0, 0);
+  }, [pathname, hash]);
+  return null;
+};
+
+export const App = () => (
+  <BrowserRouter>
+    <PageFillProvider>
+      <ScrollManager />
+      <a
+        href="#main"
+        className="lbl sr-only bg-ink text-vermilion focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[70] focus:px-4 focus:py-3"
+      >
+        Skip to content
+      </a>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/platforms" element={<Category slug="platforms" />} />
+        <Route path="/brand-and-product" element={<Category slug="brand-and-product" />} />
+        <Route path="/websites" element={<Category slug="websites" />} />
+        <Route path="/campaigns" element={<Category slug="campaigns" />} />
+        <Route path="/work/landing-pages" element={<LandingPages />} />
+        <Route path="/work/robert-glasper-blue-note" element={<GlasperBlueNote />} />
+        <Route path="/work/elena-pinderhughes" element={<ElenaPinderhughes />} />
+        <Route path="/about" element={<About />} />
+        <Route path="*" element={<Navigate to="/" replace />} />
+      </Routes>
+    </PageFillProvider>
+  </BrowserRouter>
+);

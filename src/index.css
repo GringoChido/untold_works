@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    background: #f5f3ef;
+    color: #141210;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+  body {
+    margin: 0;
+    overflow-x: hidden;
+  }
+  a {
+    color: inherit;
+  }
+  :focus-visible {
+    outline: 3px solid #ff4d17;
+    outline-offset: 3px;
+  }
+  ::selection {
+    background: #ff4d17;
+    color: #141210;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      transition-duration: 0.01ms !important;
+      animation-duration: 0.01ms !important;
+    }
+  }
+}
+
+@layer components {
+  /* The four cuts of Archivo, see design/System.html */
+  .display {
+    @apply wdth-125 font-black leading-[0.86] tracking-[-0.035em];
+  }
+  .name {
+    @apply wdth-100 font-extrabold leading-[0.92] tracking-[-0.03em];
+  }
+  .lbl {
+    @apply wdth-62 text-[15px] font-semibold uppercase tracking-[0.12em];
+  }
+  .voice {
+    @apply wdth-100 font-light italic;
+  }
+
+  /* Fact rows: label left, value right, 1.5px rules in the text color */
+  .rows {
+    @apply wdth-62 flex flex-col text-[16px] font-semibold uppercase leading-[1.15] tracking-[0.05em];
+  }
+  .rows > div {
+    @apply flex justify-between gap-3 border-t-rule border-current py-[11px];
+  }
+  .rows > div:last-child {
+    @apply border-b-rule;
+  }
+  .rows > div > :last-child {
+    @apply text-right;
+  }
+
+  /* House bar: ink strip, vermilion condensed caps */
+  .bar {
+    @apply wdth-62 flex items-center justify-between gap-4 bg-ink px-6 py-[11px] text-[14px] font-semibold uppercase tracking-[0.12em] text-vermilion;
+  }
+
+  .house-underline {
+    text-decoration: underline;
+    text-decoration-color: #ff4d17;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 4px;
+  }
+
+  /* Boxes in the diagrams */
+  .node {
+    @apply wdth-62 flex flex-col items-center justify-center gap-0.5 border-rule border-current px-2 py-[7px] text-center text-[12px] font-semibold uppercase leading-[1.1] tracking-[0.06em];
+  }
+}

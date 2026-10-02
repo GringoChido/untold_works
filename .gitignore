@@ -1,6 +1,18 @@
 node_modules/
 dist/
+.netlify/
 .DS_Store
 *.local
 .env
 .env.*
+
+# Never commit video or working documents
+*.mp4
+*.webm
+*.mov
+*.pdf
+*.xlsx
+CLAUDE-CODE-PROMPT-*.md
+
+# Keep the example env file
+!.env.example
