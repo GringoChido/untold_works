@@ -30,7 +30,12 @@ const images = [
   ['assets/music/glasper-r-r-now-still.jpg', 'glasper-r-r-now-still', 'glasper-r-r-now-still.jpg'],
   ['assets/grfp/grfp-home-live.png', 'grfp-home-live', 'grfp-home-live.png'],
   ['assets/home/untold-human-direction-tablet.png', 'untold-human-direction-tablet', 'untold-human-direction-tablet.png'],
-  ['assets/home/untold-downtown-hero-phone.png', 'untold-downtown-hero-phone', 'untold-downtown-hero-phone.png'],
+  ['assets/home/untold-downtown-hero-clear-street.png', 'untold-downtown-hero-clear-street', 'untold-downtown-hero-clear-street.png'],
+  ['assets/bf-web/bf-fall-opener.webp', 'bf-fall-opener', 'bf-fall-opener.webp'],
+  ['assets/bf-web/bf-fall-tunbridge.webp', 'bf-fall-tunbridge', 'bf-fall-tunbridge.webp'],
+  ['assets/bf-web/bf-fall-light.webp', 'bf-fall-light', 'bf-fall-light.webp'],
+  ['assets/bf-web/bf-fall-rug.webp', 'bf-fall-rug', 'bf-fall-rug.webp'],
+  ['assets/bf-web/bf-fall-wall.webp', 'bf-fall-wall', 'bf-fall-wall.webp'],
   ['assets/home/untold-idea-form.png', 'untold-idea-form', 'untold-idea-form.png'],
   ['assets/home/savor-butter.webp', 'savor-butter', 'savor-butter.webp'],
   ['assets/home/bf-mercer-room.jpg', 'bf-mercer-room', 'bf-mercer-room.jpg'],
@@ -120,11 +125,11 @@ for (const [file, base, manifestKey] of images) {
 // The narrow hero uses the same framing as the desktop image's mobile crop,
 // without downloading the parts that are outside the mobile viewport.
 for (const width of [480, 700]) {
-  await sharp(join(root, 'assets/home/untold-downtown-hero-phone.png'))
+  await sharp(join(root, 'assets/home/untold-downtown-hero-clear-street.png'))
     .extract({ left: 603, top: 0, width: 700, height: 941 })
     .resize({ width })
     .webp({ quality: 77, effort: 5 })
-    .toFile(join(destination, `untold-downtown-hero-phone-mobile-${width}.webp`));
+    .toFile(join(destination, `untold-downtown-hero-clear-street-mobile-${width}.webp`));
 }
 const sorted = Object.fromEntries(Object.entries(manifest).sort(([a], [b]) => a.localeCompare(b)));
 await writeFile(manifestPath, JSON.stringify(sorted, null, 1) + '\n');

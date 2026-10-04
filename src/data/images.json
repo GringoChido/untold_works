@@ -1,4 +1,56 @@
 {
+ "bf-fall-light.webp": {
+  "base": "bf-fall-light",
+  "width": 1100,
+  "height": 1375,
+  "widths": [
+   480,
+   800,
+   1100
+  ]
+ },
+ "bf-fall-opener.webp": {
+  "base": "bf-fall-opener",
+  "width": 1600,
+  "height": 679,
+  "widths": [
+   480,
+   800,
+   1200,
+   1600
+  ]
+ },
+ "bf-fall-rug.webp": {
+  "base": "bf-fall-rug",
+  "width": 1100,
+  "height": 1375,
+  "widths": [
+   480,
+   800,
+   1100
+  ]
+ },
+ "bf-fall-tunbridge.webp": {
+  "base": "bf-fall-tunbridge",
+  "width": 1600,
+  "height": 893,
+  "widths": [
+   480,
+   800,
+   1200,
+   1600
+  ]
+ },
+ "bf-fall-wall.webp": {
+  "base": "bf-fall-wall",
+  "width": 1100,
+  "height": 1375,
+  "widths": [
+   480,
+   800,
+   1100
+  ]
+ },
  "bf-mercer-room.jpg": {
   "base": "bf-mercer-room",
   "width": 2400,
@@ -977,8 +1029,8 @@
    1671
   ]
  },
- "untold-downtown-hero-phone.png": {
-  "base": "untold-downtown-hero-phone",
+ "untold-downtown-hero-clear-street.png": {
+  "base": "untold-downtown-hero-clear-street",
   "width": 1672,
   "height": 941,
   "widths": [

@@ -98,23 +98,25 @@ export const caseCopySystems = {
     ],
   },
   'brand-and-product/spring-gallery': {
-    value: "The 34-station plan gives the physical redesign a shared reference. The 27 published room stories let shoppers explore coordinated tables and furnishings online now, then connect those choices to a showroom visit or purchase path.",
+    value: "The 34-station plan gives the physical redesign a shared reference. The 27 published room stories and four new décor categories let shoppers consider a complete setting, then move to its products or a showroom visit.",
     headline: 'A room system you can shop.',
-    lead: 'A 34-station redesign of Billiard Factory’s Spring showroom connects to 27 live, shoppable room stories.',
+    lead: 'A 34-station redesign of Billiard Factory’s Spring showroom connects to 27 live, shoppable room stories and a broader room-finishing assortment.',
     storyTitle: 'From station plan to storefront.',
-    story: 'The existing Spring showroom is open. Its working redesign maps 34 stations and places a visual mockup at every code. The live Collections experience turns 27 station concepts into room stories with linked tables, cloth, lighting, rugs, art and wall treatments. Joshua leads the showroom visual direction and station decisions with Brady Stick as a co-creative partner; Brady and the Billiard Factory web team brought the room stories online. The new physical room installations and formal relaunch continue.',
+    story: 'The existing Spring showroom is open. Its working redesign maps 34 stations and places a visual mockup at every code. The live Collections experience turns 27 station concepts into room stories with linked tables, cloth, lighting, rugs, art and wall treatments. Rugs, lighting, artwork and wallpaper now have their own storefront categories, so a shopper can build around a table rather than browse equipment in isolation. Joshua leads the showroom visual direction and station decisions with Brady Stick as a co-creative partner; Brady and the Billiard Factory web team brought the room stories online. The new physical room installations and formal relaunch continue.',
     focus: [
       { label: 'Showroom system', text: '34 station codes mapped from the store’s SketchUp model.' },
       { label: 'Live commerce', text: '27 published Shop the Room stories based on Spring station concepts.' },
+      { label: 'Expanded assortment', text: 'Rugs, lighting, artwork and wallpaper have live category paths.' },
       { label: 'Customer path', text: 'Explore a complete room, shop its pieces or visit the Gallery.' },
       { label: 'Status', text: 'Spring store and online collections live; showroom redesign ongoing.' },
     ],
     details: [
-      { eyebrow: 'The retail idea', title: 'A table becomes a complete room.', body: 'The published Gallery presents tables, seating, cloth, lighting, rugs, artwork and walls as styled room stories across Billiard Factory’s assortment. Each collection has its own name, palette, product links and reason to visit the Spring floor. The room scenes are digital renderings of the design direction.' },
+      { eyebrow: 'The retail idea', title: 'A table becomes a complete room.', body: 'The published Gallery presents tables, seating, cloth, lighting, rugs, artwork and walls as styled room stories across Billiard Factory’s assortment. Each collection has its own name, palette and product links. Showing the pieces together helps customers assess fit and style while discovering more of the catalog; the room scenes are digital renderings of the design direction.' },
       { eyebrow: 'The working system', title: 'Station codes connect plan to purchase.', body: 'The dashboard maps 34 coded stations from the floor model and contains a placed visualization for every station. Published collection pages carry those codes online. The dashboard continues to track floor decisions, materials and launch refinements as the new showroom design is built out.' },
     ],
     gallery: [
       { src: 'spring-gallery-collections-live.jpg', alt: 'Screenshot of the live Billiard Factory Collections page with the Shop the Room heading and Station 1D room story', caption: 'Live Collections hub / station-coded room stories', layout: 'wide' },
+      { src: 'bf-fall-opener.webp', alt: 'AI-assisted fall room scene from the live Billiard Factory storefront, with pool table, pendant lighting, artwork and rug', caption: 'Fall storefront / room-led seasonal merchandising', layout: 'wide' },
       { src: 'spring-stuebner-plot.svg', alt: 'Working Spring Gallery floor plan with 34 coded stations', caption: 'Working floor plan / 34 coded stations', layout: 'wide' },
     ],
     links: [

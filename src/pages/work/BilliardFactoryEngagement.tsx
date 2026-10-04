@@ -77,10 +77,16 @@ const campaignExamples = [
   { name: 'Labor Day', image: 'labor-day-page.jpg', alt: 'Live Labor Day offer page for Billiard Factory', line: 'Creative direction and template for a live offer page, built by Brady Stick with SEO copy by Zorica.', to: '/work/labor-day-sale' },
 ] as const;
 
+const roomFinishes = [
+  { name: 'Lighting', image: 'bf-fall-light.webp', alt: 'AI-assisted Billiard Factory room visualization with a chandelier over a pool table', detail: 'Pendant and chandelier options change how the table and seating read as one space.', href: 'https://billiardfactory.com/lighting', linkLabel: 'Shop lighting' },
+  { name: 'Rugs', image: 'bf-fall-rug.webp', alt: 'AI-assisted Billiard Factory room visualization with a patterned rug beneath a pool table', detail: 'A rug helps customers judge scale, color and the space needed around the table.', href: 'https://billiardfactory.com/rugs', linkLabel: 'Shop rugs' },
+  { name: 'Art & walls', image: 'bf-fall-wall.webp', alt: 'AI-assisted Billiard Factory room visualization with artwork and wallpaper behind a pool table', detail: 'Artwork and wallpaper complete the setting and create another route into the assortment.', href: 'https://billiardfactory.com/artwork', linkLabel: 'Shop artwork' },
+] as const;
+
 export const BilliardFactoryEngagement = () => {
   usePageMeta({
     title: 'Billiard Factory + C.L. Bailey, Untold.works',
-    description: 'Joshua Semolik’s AI-assisted work across Billiard Factory’s retail and trade showrooms, Game Room Furniture Partners, C.L. Bailey, commerce, campaigns and creative systems.',
+    description: 'Joshua Semolik’s AI-assisted work across Billiard Factory’s seasonal storefront, shoppable rooms, new rugs, lighting, artwork and wallpaper categories, commerce and campaigns.',
     path: '/work/billiard-factory-and-c-l-bailey',
   });
 
@@ -95,9 +101,10 @@ export const BilliardFactoryEngagement = () => {
           </div>
           <div className="border-t border-current pt-5">
             <p className="name m-0 text-[clamp(28px,3vw,44px)] leading-[1.04]">Connect room design, shopping and the sales conversation.</p>
-            <p className="m-0 mt-6 text-[19px] leading-[1.5]">Joshua leads retail concept and visual direction across the storefront, Spring Gallery, campaigns and C.L. Bailey. In roughly three months, the team brought a new front end and 27 shoppable room stories online. AI made room and campaign options reviewable early; product checks and human decisions governed what went live.</p>
+            <p className="m-0 mt-6 text-[19px] leading-[1.5]">Joshua leads retail concept and visual direction across the storefront, Spring Gallery, campaigns and C.L. Bailey. In roughly three months, the team brought a new front end and 27 shoppable room stories online. The fall refresh added a seasonal editorial layer and four décor categories, letting a customer consider the table as part of a complete room. AI made the options reviewable early; product checks and human decisions governed publication.</p>
             <nav className="mt-7 flex flex-wrap gap-x-7 gap-y-2" aria-label="Explore the Billiard Factory engagement">
               <a href="#retail-experience" className="text-link min-h-[44px]">Retail experience <span aria-hidden="true">↓</span></a>
+              <a href="#seasonal-storefront" className="text-link min-h-[44px]">Seasonal storefront <span aria-hidden="true">↓</span></a>
               <a href="#campaign-work" className="text-link min-h-[44px]">Campaign work <span aria-hidden="true">↓</span></a>
               <a href="#marketing-engine" className="text-link min-h-[44px]">Marketing Engine <span aria-hidden="true">↓</span></a>
             </nav>
@@ -172,6 +179,59 @@ export const BilliardFactoryEngagement = () => {
               <figcaption className="lbl border-b border-current py-4 text-[13px]">Live Collections hub / station-coded digital rooms</figcaption>
             </figure>
           </div>
+        </section>
+
+        <section id="seasonal-storefront" className="scroll-mt-8 border-t border-current pb-24 pt-10 md:pb-28" aria-labelledby="seasonal-title">
+          <LabelRow left="The fall storefront" right="Live online · October 2026" />
+          <div className="grid gap-x-16 gap-y-8 pt-7 md:grid-cols-[minmax(0,0.85fr)_minmax(0,1.15fr)]">
+            <h2 id="seasonal-title" className="name m-0 max-w-[600px] text-[clamp(40px,4.4vw,66px)] leading-[0.98]">Sell the setting around the game.</h2>
+            <p className="voice m-0 max-w-[740px] text-[clamp(23px,2.5vw,33px)] leading-[1.3]">The fall storefront moves Billiard Factory beyond an equipment-led catalog. Tables now appear with the light, rug, art and wall treatment that make a room feel lived in.</p>
+          </div>
+          <figure className="m-0 mt-10">
+            <Img src="bf-fall-opener.webp" alt="AI-assisted fall room visualization from the live Billiard Factory storefront: burgundy-cloth pool table with pendant lighting, artwork and a rust rug" sizes="(min-width: 1440px) 1312px, 100vw" className="block aspect-[4/3] w-full object-cover md:aspect-auto" />
+            <figcaption className="lbl border-b border-current py-4 text-[13px]">Live fall storefront / an AI-assisted visualization using catalog products, not a finished showroom photograph</figcaption>
+          </figure>
+          <div className="grid gap-x-16 gap-y-8 pt-10 md:grid-cols-[minmax(0,0.85fr)_minmax(0,1.15fr)]">
+            <p className="lbl m-0">Four new ways to finish a room</p>
+            <div>
+              <p className="m-0 mt-5 max-w-[700px] text-[18px] leading-[1.55]">Rugs, lighting, artwork and wallpaper became four new décor categories in the site navigation. The seasonal opening scene, product hotspots, shoppable room stories, new-arrival rail and supporting film give a customer ways to move from inspiration to a verified product page. Showing pieces together makes scale and style easier to assess and exposes more of the assortment in a single visit; sales impact has not yet been measured here.</p>
+              <p className="m-0 mt-4 max-w-[700px] text-[18px] leading-[1.55]">The fall experience is organized through one seasonal content system, so the team can change room imagery, featured products and campaign messages for another season without redesigning the storefront each time. Motion brings the rooms to life, while media loads as it comes into view and supports reduced-motion preferences. Joshua helped direct the retail concept and visual language; Brady Stick and the Billiard Factory web team implemented the storefront.</p>
+              <div className="mt-8 flex flex-wrap gap-x-7 gap-y-4">
+                <ExternalLink href="https://billiardfactory.com/collections">Explore the live rooms</ExternalLink>
+                <ExternalLink href="https://billiardfactory.com/wallpaper">See the wallpaper category</ExternalLink>
+              </div>
+            </div>
+          </div>
+          <div className="mt-10 grid gap-8 md:grid-cols-3" aria-label="New room-finishing categories">
+            {roomFinishes.map((finish) => (
+              <figure key={finish.name} className="m-0 min-w-0 border-t border-current pt-4">
+                <Img src={finish.image} alt={finish.alt} sizes="(min-width: 768px) 30vw, 100vw" className="block aspect-[4/5] w-full object-cover" />
+                <figcaption className="pt-5">
+                  <h3 className="name m-0 text-[30px] leading-[1.05]">{finish.name}</h3>
+                  <p className="m-0 mt-3 text-[16px] leading-[1.5]">{finish.detail}</p>
+                  <div className="mt-5"><ExternalLink href={finish.href}>{finish.linkLabel}</ExternalLink></div>
+                </figcaption>
+              </figure>
+            ))}
+          </div>
+          <div className="mt-16 grid gap-x-16 gap-y-8 border-t border-current pt-10 md:grid-cols-[minmax(0,0.85fr)_minmax(0,1.15fr)]">
+            <div>
+              <p className="lbl m-0 mb-5">Distinct brand worlds</p>
+              <h3 className="name m-0 max-w-[570px] text-[clamp(35px,3.8vw,54px)] leading-[1.02]">Help a shopper choose the right kind of table.</h3>
+            </div>
+            <div>
+              <p className="m-0 max-w-[690px] text-[18px] leading-[1.55]">The brand pages no longer treat every maker as the same product list. C.L. Bailey uses a warm, furniture-led presentation, with Tunbridge shown in 3D and cloth options close to the product story. Velocity uses a sharper match-play language and a 3D Velocity Pro. Level Best, Olhausen and Brunswick have their own visual worlds. The difference helps shoppers understand why each brand belongs in a particular room or style of play.</p>
+              <p className="m-0 mt-4 max-w-[690px] text-[17px] leading-[1.55]">This is a team-built site. Joshua’s contribution is retail and creative direction across the room-led experience; the Billiard Factory web team translated those choices into the live pages and interactions.</p>
+              <div className="mt-7 flex flex-wrap gap-x-7 gap-y-4">
+                <ExternalLink href="https://billiardfactory.com/cl-bailey-pool-tables">See C.L. Bailey</ExternalLink>
+                <ExternalLink href="https://billiardfactory.com/velocity-products">See Velocity</ExternalLink>
+              </div>
+            </div>
+          </div>
+          <figure className="m-0 mt-10">
+            <Img src="bf-fall-tunbridge.webp" alt="AI-assisted fall visual of the C.L. Bailey Tunbridge table and coordinated furnishings from the live storefront" sizes="(min-width: 1440px) 1312px, 100vw" className="block h-auto w-full" />
+            <figcaption className="lbl border-b border-current py-4 text-[13px]">Tunbridge / C.L. Bailey product setting in the live seasonal experience</figcaption>
+          </figure>
         </section>
 
         <section className="grid gap-8 border-t border-current pb-24 pt-10 md:grid-cols-[minmax(0,0.85fr)_minmax(0,1.15fr)] md:gap-16 md:pb-28" aria-labelledby="trade-title">

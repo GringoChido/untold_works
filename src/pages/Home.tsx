@@ -11,14 +11,14 @@ import { CONTACT_HREF, CONTACT_LABEL, EMAIL } from '../site';
 import { tones, type HomeScene } from '../theme';
 
 const paths = [
-  { number: '01', name: 'Billiard Factory', detail: 'Retail redesign, 27 live shoppable rooms and a Shopify Plus transition', to: '#billiard-factory' },
+  { number: '01', name: 'Billiard Factory', detail: 'Seasonal storefront, 27 shoppable rooms, four new décor categories and a commerce transition', to: '#billiard-factory' },
   { number: '02', name: 'Second Son Productions', detail: 'Release films, live-event content and artist sites that extend the music', to: '#second-son' },
   { number: '03', name: 'Other Projects', detail: 'Websites and tools built around specific audience decisions', to: '#other-projects' },
 ] as const;
 
 const bfParts = [
   { name: 'Shopify Plus transition', detail: 'The current checkout remains live while headless Shopify and Xorosoft’s XoroERP are phased in.', to: '/work/off-storis' },
-  { name: 'Showroom & new categories', detail: '27 live room stories let shoppers explore tables with coordinated furnishings.', to: '/work/spring-stuebner-store' },
+  { name: 'Rooms & new categories', detail: '27 shoppable rooms connect tables with new rugs, lighting, artwork and wallpaper.', to: '/work/spring-stuebner-store' },
   { name: 'Game Room Furniture Partners', detail: 'A 421-item trade catalog helps designers plan rooms before a showroom visit.', to: '/work/game-room-furniture-partners' },
   { name: 'Landing pages & CRM', detail: 'Offer pages capture tagged inquiries in GoHighLevel for sales follow-up.', to: '/work/landing-pages' },
   { name: 'Content Factory', detail: 'AI-assisted posts move through product checks, approval and scheduling.', to: '/work/content-factory' },
@@ -87,8 +87,8 @@ export const Home = () => {
         <section data-home-scene="intro" className="studio-hero" aria-labelledby="home-title">
           <div className="studio-hero-scene">
             <picture>
-              <source media="(max-width: 550px)" type="image/webp" srcSet="/images/untold-downtown-hero-phone-mobile-480.webp 480w, /images/untold-downtown-hero-phone-mobile-700.webp 700w" sizes="100vw" />
-              <Img src="untold-downtown-hero-phone.png" alt="Imagined downtown New York scene of a man showing a woman his phone as they walk together on the sidewalk" sizes="(max-width: 1459px) 1460px, 100vw" eager fetchPriority="high" className="studio-hero-scene-image" />
+              <source media="(max-width: 550px)" type="image/webp" srcSet="/images/untold-downtown-hero-clear-street-mobile-480.webp 480w, /images/untold-downtown-hero-clear-street-mobile-700.webp 700w" sizes="100vw" />
+              <Img src="untold-downtown-hero-clear-street.png" alt="Imagined downtown New York scene of a man showing a woman his phone as they walk together on the sidewalk, with pedestrians receding into the distance" sizes="(max-width: 1459px) 1460px, 100vw" eager fetchPriority="high" className="studio-hero-scene-image" />
             </picture>
             <div className="studio-hero-overlay">
               <div>
@@ -135,28 +135,29 @@ export const Home = () => {
           <div className="mt-10 grid items-start gap-8 md:mt-14 md:grid-cols-[minmax(0,1fr)_minmax(0,0.9fr)] md:gap-16">
             <div className="flex flex-col items-start gap-7">
               <h2 id="bf-home-title" className="display m-0 max-w-[780px] text-[clamp(50px,5.7vw,86px)]">Billiard Factory</h2>
-              <p className="chapter-statement m-0 max-w-[680px] text-[clamp(29px,3vw,43px)] leading-[1.1]">A showroom, storefront and campaign system built to work together.</p>
+              <p className="chapter-statement m-0 max-w-[680px] text-[clamp(29px,3vw,43px)] leading-[1.1]">From selling a table to helping people imagine the whole room.</p>
             </div>
             <div className="flex flex-col items-start gap-7">
-              <p className="m-0 max-w-[670px] text-[19px] leading-[1.5]">A roughly three-month push put a new storefront and 27 shoppable room stories online, built from a 34-station showroom plan. Those rooms give shoppers a way to see a complete setting and move toward a product decision. A transition to headless Shopify Plus and Xorosoft’s XoroERP is underway. Engine Room connects campaign briefs, assets, owners and schedules; GoHighLevel passes tagged inquiries to sales. The work also spans C.L. Bailey’s dealer tools; a franchise model is in consultant review.</p>
+              <p className="m-0 max-w-[670px] text-[19px] leading-[1.5]">A roughly three-month push put a seasonal storefront and 27 shoppable room stories online, built from a 34-station showroom plan. Four new décor categories—rugs, lighting, artwork and wallpaper—let shoppers build a setting around the table. The same system connects distinct brand presentations, campaign assets and sales handoffs. Headless Shopify Plus and Xorosoft’s XoroERP are being phased in; the physical showroom redesign continues, and a franchise model is in consultant review.</p>
               <Link to="/work/billiard-factory-and-c-l-bailey" className="text-link">Explore the full ecosystem <span aria-hidden="true">↗</span></Link>
             </div>
           </div>
           <section className="home-retail-feature" aria-labelledby="home-retail-title">
-            <Link to="/work/spring-stuebner-store" className="home-retail-image-link" aria-label="Explore the Billiard Factory retail showroom and shoppable rooms">
-              <Img src="spring-gallery-skylar-live.jpg" alt="Live Billiard Factory room story showing a pool table in a fully furnished room" sizes="(min-width: 768px) 58vw, 100vw" className="home-retail-image" />
-              <span>Live room story / Billiard Factory <span aria-hidden="true">↗</span></span>
+            <Link to="/work/billiard-factory-and-c-l-bailey#seasonal-storefront" className="home-retail-image-link" aria-label="Explore the Billiard Factory seasonal storefront and room-led retail work">
+              <Img src="bf-fall-opener.webp" alt="AI-assisted fall room visualization from the live Billiard Factory storefront, with a pool table, pendant lighting, artwork and rug" sizes="(min-width: 768px) 58vw, 100vw" className="home-retail-image" />
+              <span>Fall storefront / Billiard Factory <span aria-hidden="true">↗</span></span>
             </Link>
             <div className="home-retail-copy">
               <p className="lbl m-0">Retail in practice / Storefront to checkout</p>
-              <h3 id="home-retail-title" className="name m-0">Make the room shoppable. Make the store ready to grow.</h3>
-              <p className="m-0 text-[17px] leading-[1.5]">The redesigned showroom became 27 live room stories online. Each one brings furniture and tables together so a shopper can explore a complete space, then continue into the storefront.</p>
+              <h3 id="home-retail-title" className="name m-0">A table is the start of the room.</h3>
+              <p className="m-0 text-[17px] leading-[1.5]">The fall storefront pairs tables with lighting, rugs, artwork and wallpaper. Twenty-seven digital room stories show those pieces together and link shoppers to the products. Seasonal content gives the team a repeatable way to refresh the offer and creative.</p>
               <div className="home-retail-status">
                 <strong>Shopify Plus</strong>
                 <span>Headless commerce migration underway. The existing eSTORIS checkout stays live during the transition.</span>
               </div>
               <div className="flex flex-col items-start gap-3">
-                <Link to="/work/spring-stuebner-store" className="text-link">Explore the retail redesign <span aria-hidden="true">↗</span></Link>
+                <Link to="/work/billiard-factory-and-c-l-bailey#seasonal-storefront" className="text-link">Explore the seasonal storefront <span aria-hidden="true">↗</span></Link>
+                <Link to="/work/spring-stuebner-store" className="text-link">Explore the room system <span aria-hidden="true">↗</span></Link>
                 <Link to="/work/off-storis" className="text-link">Explore the Shopify transition <span aria-hidden="true">↗</span></Link>
               </div>
             </div>
