@@ -2,18 +2,20 @@ import { execSync, spawn } from 'child_process';
 import { accessSync, constants, existsSync, mkdirSync } from 'fs';
 import { mkdir, writeFile } from 'fs/promises';
 import { dirname, join } from 'path';
+import { tmpdir } from 'os';
 import { routes } from './scripts/routes.mjs';
 
-// Netlify points PUPPETEER_CACHE_DIR at its build cache. Locally that path is not writable,
-// so fall back to Puppeteer's default cache. This has to happen before Puppeteer is imported.
-const cacheDir = process.env.PUPPETEER_CACHE_DIR;
-if (cacheDir) {
-  try {
-    mkdirSync(cacheDir, { recursive: true });
-    accessSync(cacheDir, constants.W_OK);
-  } catch {
-    delete process.env.PUPPETEER_CACHE_DIR;
-  }
+// Netlify's build cache may be unavailable when the CLI runs locally. Use a
+// writable temporary cache rather than Puppeteer's default home cache.
+const cacheDir = process.env.PUPPETEER_CACHE_DIR || join(tmpdir(), 'untold-puppeteer');
+try {
+  mkdirSync(cacheDir, { recursive: true });
+  accessSync(cacheDir, constants.W_OK);
+  process.env.PUPPETEER_CACHE_DIR = cacheDir;
+} catch {
+  const fallbackCache = join(tmpdir(), 'untold-puppeteer');
+  mkdirSync(fallbackCache, { recursive: true });
+  process.env.PUPPETEER_CACHE_DIR = fallbackCache;
 }
 const puppeteer = (await import('puppeteer')).default;
 if (!existsSync(await puppeteer.executablePath())) {
