@@ -31,15 +31,15 @@ const clients: Credit[] = [
   { role: 'Retail sites', name: 'Regal Billiards, Lexington Billiards and Spas' },
   { role: 'Hotel site and ops dashboard', name: 'Casa Schuck' },
   { role: 'Lead intake', name: 'OMI Growth' },
-  { role: 'Rebrand, website, photo/video campaign and marketing systems through Ingenia', name: 'Noxguard' },
+  { role: 'Untold.works project: rebrand, website, photo/video campaign and marketing systems', name: 'Noxguard' },
 ];
 
 const music: Credit[] = [
   { role: 'Release team for four records', name: 'Robert Glasper' },
   { role: 'Robtober content, five years', name: 'Robert Glasper, Blue Note New York' },
   { role: 'Launch and opening content', name: 'Blue Note Los Angeles' },
-  { role: 'Content Director, four years', name: 'Black Radio Experience' },
-  { role: 'Color of Noize tour content and artist site', name: 'Derrick Hodge' },
+  { role: 'Content Director, four years', name: 'Blue Note Jazz Festival, Napa / Black Radio Experience' },
+  { role: 'Color of Noize tour content and artist site preview', name: 'Derrick Hodge' },
   { role: 'AI-built Made in Chicago artist site', name: 'Lalah Hathaway' },
   { role: 'Debut album site, I Hope You Feel It Too', name: 'Elena Pinderhughes' },
 ];
@@ -61,7 +61,7 @@ const career: Credit[] = [
       </>
     ),
   },
-  { role: 'Two Emmy nominations', name: 'NBA Entertainment, Sacramento Kings' },
+  { role: 'Two Emmy nominations', name: 'Sacramento Kings' },
   {
     role: 'Global product launch and GTM systems lead',
     name: (
@@ -79,7 +79,7 @@ const career: Credit[] = [
     ),
   },
   {
-    role: 'Founder, brand and AI systems',
+    role: 'Founder and Principal, independent practice',
     name: (
       <>
         Untold.works, Mexico City <Year>Jan 2017–present</Year>
@@ -216,7 +216,7 @@ export const About = () => {
           </div>
           <div className="mt-9 grid items-start gap-7 border-t border-current pt-6 md:grid-cols-3 md:gap-10">
               <p className="m-0 text-[18px] leading-[1.55]">
-                I took MIT Sloan’s AI Strategy executive education course in 2025. It gave me the moment of clarity I had been looking for: AI could change how work is organized, with an impact I think of in terms of the assembly line. Since that course, a day has not gone by without me working with AI, testing what it can do and putting it into practice.
+                I took MIT Sloan’s executive education course, Artificial Intelligence: Implications for Business Strategy, in 2025. It gave me the moment of clarity I had been looking for: AI could change how work is organized, with an impact I think of in terms of the assembly line. Since that course, a day has not gone by without me working with AI, testing what it can do and putting it into practice.
               </p>
               <p className="m-0 text-[18px] leading-[1.55]">
                 That practice now runs from campaign planning and retail systems to websites, photography and film. Higgsfield is my primary AI image and video tool. Years behind the lens shape how I direct it: lighting, framing, composition and pacing still matter. I use ChatGPT across models to think through problems, and Claude Code to turn ideas into working sites and tools.
@@ -265,7 +265,7 @@ export const About = () => {
           <LabelRow left={<span id="about-path-title">The path here</span>} right="1997–present" />
           <p className="max-w-[900px] text-[19px] leading-[1.55]">
             In summer 1997, I interned for Howard Stern at KROCK Studios in New York City. My broadcast production career began in 1999
-            with NBA Entertainment and later the Sacramento Kings, with two Emmy nominations along the way. I later led global product
+            with NBA Entertainment and later the Sacramento Kings, where my work received two Emmy nominations. I later led global product
             launches at Lowepro, supporting the creative and marketing pitches for the JOBY and Acme Made acquisitions before working
             across both brands. Lowepro was later acquired by DayMen; I stayed through May 2016.
           </p>
@@ -275,8 +275,8 @@ export const About = () => {
           </p>
           <p className="max-w-[900px] text-[19px] leading-[1.55]">
             Jazz and R&B have been a through line. My work with Robert Glasper spans album releases, five years of Robtober content and
-            content for the launch and opening of Blue Note Los Angeles. I served as Content Director for the Black Radio Experience for four
-            years. I also built the Made in Chicago site for Lalah Hathaway with AI around supplied media, and an artist site for Derrick Hodge, alongside content for Hodge’s
+            content for the launch and opening of Blue Note Los Angeles. I served as Content Director for four years across Blue Note’s Napa
+            Valley festival, including its move into the Black Radio Experience. I also built the Made in Chicago site for Lalah Hathaway with AI around supplied media, and an artist site preview for Derrick Hodge, alongside content for Hodge’s
             Color of Noize tour. The eye and judgment I built behind the lens now shape how I work with AI across creative production and the
             systems around it.
           </p>

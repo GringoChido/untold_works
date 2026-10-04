@@ -18,8 +18,8 @@
     "visual": {
      "type": "image",
      "src": "noxguard-packaging.webp",
-     "alt": "Noxguard branded DEF cartons stacked on a pallet",
-     "tag": "Agency collaboration",
+     "alt": "Packaging mockup of Noxguard branded DEF cartons stacked on a pallet",
+     "tag": "Untold.works project · Packaging concept",
      "fit": "cover"
     },
     "facts": [
@@ -32,8 +32,8 @@
       "value": "Brand identity, site and campaign"
      },
      {
-      "label": "Team",
-      "value": "Ingenia strategy, design and build"
+      "label": "Practice",
+      "value": "Untold.works project"
      },
      {
       "label": "Joshua",
@@ -574,8 +574,8 @@
     "visual": {
      "type": "image",
      "src": "derrick-hodge-site.jpg",
-     "alt": "The Derrick Hodge artist site home page",
-     "tag": "Artist site",
+     "alt": "The Derrick Hodge artist site preview home page",
+     "tag": "Artist site preview",
      "fit": "cover"
     },
     "facts": [
@@ -589,7 +589,11 @@
      },
      {
       "label": "Status",
-      "value": "View ↗",
+      "value": "Project preview"
+     },
+     {
+      "label": "Preview",
+      "value": "Explore the build ↗",
       "href": "https://derrickhodge.netlify.app"
      }
     ],
@@ -602,8 +606,8 @@
     "visual": {
      "type": "image",
      "src": "qmillion.jpg",
-     "alt": "The Qmillion producer and mixer site",
-     "tag": "qmillion.netlify.app",
+     "alt": "The Qmillion producer and mixer site preview",
+     "tag": "Project preview",
      "fit": "cover"
     },
     "facts": [
@@ -613,7 +617,11 @@
      },
      {
       "label": "Status",
-      "value": "View ↗",
+      "value": "Project preview"
+     },
+     {
+      "label": "Preview",
+      "value": "Explore the build ↗",
       "href": "https://qmillion.netlify.app"
      }
     ],

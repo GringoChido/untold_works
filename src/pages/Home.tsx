@@ -75,8 +75,8 @@ const useHomeScene = () => {
 export const Home = () => {
   const scene = useHomeScene();
   usePageMeta({
-    title: 'Untold.works — AI Transformation & Creative Direction',
-    description: 'AI transformation and creative direction by Joshua Semolik. Hands-on building across websites, creative production, retail and business systems, with team adoption at the center.',
+    title: 'Joshua Semolik — AI Transformation Leader | Untold.works',
+    description: 'Joshua Semolik, AI Transformation Leader across brand, retail, commerce and creative systems. Hands-on building, creative direction and team adoption through Untold.works.',
     path: '/',
   });
 
@@ -92,14 +92,14 @@ export const Home = () => {
             </picture>
             <div className="studio-hero-overlay">
               <div>
-                <p className="home-eyebrow">Untold.works <span aria-hidden="true">/</span> AI · Retail · Commerce · Culture</p>
+                <p className="home-eyebrow">Joshua Semolik <span aria-hidden="true">/</span> AI Transformation Leader</p>
                 <h1 id="home-title" className="display studio-hero-title">AI transformation.<br /><span>Creative direction.</span></h1>
               </div>
               <a href="#work" className="text-link">Explore the work <span aria-hidden="true">↓</span></a>
             </div>
           </div>
           <div className="studio-hero-intro">
-            <p>Untold.works is Joshua Semolik’s working studio for AI-led creative and operational change. We build retail experiences, commerce paths, images, films, sites and tools, then connect them to the briefs, approvals, publishing and sales workflows that let a team use them.</p>
+            <p>Untold.works is Joshua Semolik’s working studio for AI-led creative and operational change across brand, retail, commerce and creative systems. We build retail experiences, commerce paths, images, films, sites and tools, then connect them to the briefs, approvals, publishing and sales workflows that let a team use them.</p>
           </div>
         </section>
 

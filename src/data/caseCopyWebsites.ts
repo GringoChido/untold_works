@@ -74,9 +74,9 @@ export const caseCopyWebsites = {
   'websites/derrick-hodge': {
     value: "The site shows Hodge’s composition, orchestration and live projects alongside his albums. That gives collaborators and audiences a fuller account of his practice and a path to the work relevant to them.",
     headline: 'A body of work bigger than a discography.',
-    lead: 'An artist site for Derrick Hodge, connecting his recordings to composition, orchestration, film work and Color of Noize.',
+    lead: 'An artist site preview for Derrick Hodge, connecting his recordings to composition, orchestration, film work and Color of Noize.',
     storyTitle: 'Give the full practice one place to live.',
-    story: 'The February–March 2026 build opens with Hodge as composer, orchestrator and artist. From there, visitors can move into selected work, the three Blue Note solo albums and a dedicated Color of Noize chapter.',
+    story: 'The February–March 2026 preview build opens with Hodge as composer, orchestrator and artist. From there, visitors can move into selected work, the three Blue Note solo albums and a dedicated Color of Noize chapter.',
     focus: [
       { label: 'Artist', text: 'Derrick Hodge, Blue Note recording artist.' },
       { label: 'Inside', text: 'Work archive · albums · Color of Noize · about · contact.' },
@@ -90,9 +90,9 @@ export const caseCopyWebsites = {
   'websites/qmillion': {
     value: "Credits organized by role and genre, with music visitors can hear, let potential collaborators evaluate the work rather than relying on a client list. Service and contact routes then turn that evaluation into an inquiry.",
     headline: 'A producer’s credits made navigable.',
-    lead: 'A portfolio for Qmillion that brings mixing, production and composition into one place, with a listening-led discography.',
+    lead: 'A portfolio preview for Qmillion that brings mixing, production and composition into one place, with a listening-led discography.',
     storyTitle: 'Make credits searchable by role and genre.',
-    story: 'The March 2026 site gives Qmillion distinct spaces for his story, services, discography, press and inquiries. The discography makes credits visible by role and genre, with featured releases visitors can hear on the page.',
+    story: 'The March 2026 preview build gives Qmillion distinct spaces for his story, services, discography, press and inquiries. The discography makes credits visible by role and genre, with featured releases visitors can hear on the page.',
     focus: [
       { label: 'Format', text: 'Producer and mixer portfolio.' },
       { label: 'Practice', text: 'Mixing · production · composition.' },

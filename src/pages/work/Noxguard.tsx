@@ -11,7 +11,7 @@ const scope = [
   {
     number: '01',
     name: 'Brand',
-    detail: 'I led the rebrand across packaged and bulk product touchpoints within Ingenia’s wider team.',
+    detail: 'Through Untold.works, I led the rebrand across packaged and bulk product touchpoints.',
   },
   {
     number: '02',
@@ -31,8 +31,8 @@ const scope = [
 ];
 
 const gallery = [
-  { src: 'noxguard-packaging.webp', alt: 'Noxguard DEF cartons with the brand mark across the packaging', caption: 'Packaging', width: 782, height: 750 },
-  { src: 'noxguard-product.webp', alt: 'Noxguard automotive urea container with the new label', caption: 'Product', width: 1260, height: 680 },
+  { src: 'noxguard-packaging.webp', alt: 'Packaging mockup of Noxguard DEF cartons with the brand mark', caption: 'Packaging concept', width: 782, height: 750 },
+  { src: 'noxguard-product.webp', alt: 'Label mockup on a Noxguard automotive urea container', caption: 'Product label concept', width: 1260, height: 680 },
   { src: 'noxguard-worker.webp', alt: 'Noxguard team member in a branded shirt and hard hat', caption: 'People', width: 1024, height: 1092 },
 ];
 
@@ -40,7 +40,7 @@ export const Noxguard = () => {
   usePageMeta({
     title: 'Noxguard, Untold.works',
     description:
-      'Joshua Semolik led delivery of Noxguard’s rebrand, website, photo and video campaign, and marketing-system reorganization within Ingenia’s team.',
+      'An Untold.works project: Joshua Semolik delivered Noxguard’s rebrand, website, photo and video campaign, and process work supporting its marketing systems.',
     path: '/work/noxguard',
   });
 
@@ -52,7 +52,7 @@ export const Noxguard = () => {
           <div className="flex min-w-0 flex-col justify-between gap-10 px-6 py-10 md:px-12 md:py-12">
             <div className="flex flex-wrap items-center gap-3.5">
               <span className="lbl">01 · Brand and product</span>
-              <Chip className="border-rule border-cream text-[14px] tracking-[0.08em]">Agency collaboration</Chip>
+              <Chip className="border-rule border-cream text-[14px] tracking-[0.08em]">Untold.works project</Chip>
             </div>
             <div className="flex flex-col gap-6">
               <h1 id="noxguard-title" className="display break-words text-[clamp(34px,4.4vw,68px)] leading-[0.92]">
@@ -62,7 +62,7 @@ export const Noxguard = () => {
                 A rebrand that had to work from the pallet to the sales conversation.
               </p>
               <p className="max-w-[620px] text-[19px] leading-[1.5]">
-                I delivered the Noxguard rebrand, website, photo and video campaign, and business reorganization supporting its marketing systems. I did that work within Ingenia’s wider agency team, which is credited for the overall strategy, design and build.
+                Through Untold.works, I delivered the Noxguard rebrand, website, photo and video campaign, and process work supporting its marketing systems. The work connected a consistent public identity with the way the team produced and used its marketing assets.
               </p>
             </div>
             <div className="lbl border-t-rule border-cream/50 pt-3 text-[14px] text-cream/80">
@@ -72,13 +72,13 @@ export const Noxguard = () => {
           <figure className="relative m-0 flex min-h-[340px] items-center bg-[#ededed] md:min-h-0">
             <Img
               src="noxguard-truck.jpg"
-              alt="Noxguard branded DEF truck and trailer on a light background"
+              alt="Fleet-livery mockup of a Noxguard DEF truck and trailer"
               sizes="(min-width: 768px) 55vw, 100vw"
               eager
               className="block h-auto w-full object-contain"
             />
             <figcaption className="lbl absolute bottom-0 left-0 bg-ink px-4 py-3 text-[13px] text-cream">
-              Noxguard · brand in the field
+              Noxguard · fleet-livery concept
             </figcaption>
           </figure>
         </section>
@@ -115,13 +115,13 @@ export const Noxguard = () => {
               working system: it has to be recognizable in a warehouse, on the road and during a product conversation, as well as online.
             </p>
             <p className="m-0">
-              Packaging, labels and fleet livery made the product identifiable in the field. The website and photo and video campaign gave buyers a closer look at the people and operation behind it. I led delivery of these connected pieces within Ingenia’s team; no sales or awareness lift is claimed here.
+              Packaging, label and fleet-livery concepts were designed to make the product identifiable in the field. The website and photo and video campaign gave buyers a closer look at the people and operation behind it. I delivered these connected pieces through Untold.works, linking the public brand to repeatable marketing processes.
             </p>
           </div>
         </section>
 
         <section className="flex flex-col gap-7 pb-20 md:pb-24" aria-label="Noxguard brand gallery">
-          <LabelRow left="The identity in use" right="Packaging · Product · People" />
+          <LabelRow left="The identity study" right="Packaging and label concepts · People" />
           <div className="grid gap-6 md:grid-cols-3">
             {gallery.map((image) => (
               <figure key={image.src} className="m-0 flex flex-col gap-3">
@@ -133,7 +133,7 @@ export const Noxguard = () => {
                     height={image.height}
                     loading="lazy"
                     decoding="async"
-                    className={`block h-full w-full ${image.caption === 'Product' ? 'object-contain bg-[#001322]' : 'object-cover'}`}
+                    className={`block h-full w-full ${image.caption === 'Product label concept' ? 'object-contain bg-[#001322]' : 'object-cover'}`}
                   />
                 </div>
                 <figcaption className="lbl border-t-rule border-ink pt-3 text-[14px]">{`Noxguard / ${image.caption}`}</figcaption>

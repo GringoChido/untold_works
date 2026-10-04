@@ -14,7 +14,7 @@ Joshua Semolik is an AI Transformation Leader working across brand, retail, comm
 - [Landing pages](https://untold.works/work/landing-pages): Joshua learned GoHighLevel and connected Billiard Factory's sales team to the CRM before building ten campaign pages designed to connect creative, capture and sales follow-up.
 - [Billiard Factory + C.L. Bailey](https://untold.works/work/billiard-factory-and-c-l-bailey): AI-assisted retail and commerce work across the new Billiard Factory front end, 27 live digital room stories, campaigns, CRM, creative systems and C.L. Bailey. The existing checkout still uses eSTORIS; Shopify and XoroERP migration and franchise planning continue. Brady Stick and the BF web team implemented the digital Gallery.
 - [Savor](https://untold.works/work/savor): Website and content storytelling through IDW Studio; IDW led the wider Chef Series production and post work.
-- [Noxguard](https://untold.works/work/noxguard): Agency brand and marketing collaboration within the Ingenia team; Ingenia credits its agency with strategy, design and build.
+- [Noxguard](https://untold.works/work/noxguard): An Untold.works project: Joshua delivered the rebrand, website, photo and video campaign, and process work supporting the marketing systems.
 - [Second Son Productions and related music work](https://untold.works/work/robert-glasper-blue-note): Work with an artist management company and related teams across artist sites, Robert Glasper releases and films, Robtober content, separate Blue Note venue and festival roles, and independent Elena Pinderhughes and Qmillion collaborations.
 - [Game Room Furniture Partners](https://untold.works/work/game-room-furniture-partners): Billiard Factory’s trade-only showroom at Dallas Market Center, focused on interior designers. Part of the Billiard Factory engagement.
 - [Other Projects](https://untold.works/work/other-projects): Savor, Noxguard and further independent or agency collaborations, with live and demo status distinguished.
@@ -28,7 +28,7 @@ Joshua Semolik is an AI Transformation Leader working across brand, retail, comm
 
 Visual systems for products and places. I use identity, product and showroom design to make choices easier for teams and customers. At Billiard Factory, a 34-station floor plan connects to 27 live room stories; AI mockups help the team review rooms before physical installation.
 
-- Noxguard. Client: Noxguard; Program: Brand identity, site and campaign; Team: Ingenia strategy, design and build; Joshua: Rebrand, site, photo/video and marketing systems. Project page: https://untold.works/work/noxguard
+- Noxguard. Client: Noxguard; Program: Brand identity, site and campaign; Practice: Untold.works project; Joshua: Rebrand, site, photo/video and marketing systems. Project page: https://untold.works/work/noxguard
 - Spring Gallery. Client: Billiard Factory; Showroom: 34-station design system; Online: 27 live shoppable room stories; Status: Gallery open; redesign progressing. Project page: https://untold.works/work/spring-stuebner-store
 - Brand Hub. Client: Billiard Factory; What it is: Living brand guidelines and creative hub; One source: Design tokens and guidance for builds; Status: Live ↗ (https://billiard-factory-brand-hub.netlify.app). Project page: https://untold.works/work/brand-hub
 - C.L. Bailey Brand Bible. Client: C.L. Bailey; What it is: Eleven modules, one standard; Built for: The dealer network; Status: Live ↗ (https://clbailey-brand-bible.netlify.app). Project page: https://untold.works/work/c-l-bailey-brand-bible
@@ -55,8 +55,8 @@ Destinations with a clear next step. I build artist, retail and service sites ar
 - Savor. Client: Savor, food tech; Role: Website, content and storytelling; Hired through: IDW Studio; Status: Live ↗ (https://www.savor.it). Project page: https://untold.works/work/savor
 - Game Room Furniture Partners. Part of: Billiard Factory; Audience: Trade only · Interior designers; Trade showroom: Dallas Market Center; Catalog: 421 items · October 2026; Status: Live ↗ (https://gameroomfurniturepartners.com). Project page: https://untold.works/work/game-room-furniture-partners
 - Casa Schuck. Hotel site: Feb–Jun 2026; Pages: 13, English and Spanish; Status: View ↗ (https://csnewsite.netlify.app/en). Project page: https://untold.works/work/casa-schuck
-- Derrick Hodge. Artist site: Feb–Mar 2026; Artist: Blue Note composer and orchestrator; Status: View ↗ (https://derrickhodge.netlify.app). Project page: https://untold.works/work/derrick-hodge
-- Qmillion. Producer and mixer site: Mar 2026; Status: View ↗ (https://qmillion.netlify.app). Project page: https://untold.works/work/qmillion
+- Derrick Hodge. Artist site: Feb–Mar 2026; Artist: Blue Note composer and orchestrator; Status: Project preview; Preview: Explore the build ↗ (https://derrickhodge.netlify.app). Project page: https://untold.works/work/derrick-hodge
+- Qmillion. Producer and mixer site: Mar 2026; Status: Project preview; Preview: Explore the build ↗ (https://qmillion.netlify.app). Project page: https://untold.works/work/qmillion
 - Second Son Productions. Roster site: Feb–Mar 2026; Inside: Artist pages, Bandsintown tour dates; Status: Preview build; Preview: Explore the build ↗ (https://secondsonproductions.netlify.app/). Project page: https://untold.works/work/second-son-productions
 - Regal Billiards. Retail site: Mar 24–25, 2026; For: A C.L. Bailey dealer; Status: Built. Project page: https://untold.works/work/regal-billiards
 - Lexington Billiards and Spas. Retail site: Mar 12–30, 2026; Plus: A search and AI-search visibility audit; Status: Built. Project page: https://untold.works/work/lexington-billiards-and-spas

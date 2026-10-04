@@ -57,6 +57,7 @@ export const ProjectDetail = () => {
   const next = projectEntries[(index + 1) % projectEntries.length];
   const nextTarget = copy.next ?? { label: next.project.name, to: next.project.projectPage };
   const live = project.facts.find((fact) => fact.href && isExternal(fact.href));
+  const destinationLabel = live?.label === 'Preview' ? 'View preview ↗' : live?.value.startsWith('Live') ? 'View live work ↗' : 'View project ↗';
 
   return (
     <Layout tone={toneForCategory(category.slug)}>
@@ -83,7 +84,7 @@ export const ProjectDetail = () => {
               <span>{`${project.name} / ${category.name}${project.visual.tag ? ` / ${project.visual.tag}` : ''}`}</span>
               {copy.visualCredit && <span>{copy.visualCredit}</span>}
             </span>
-            {live && <a href={live.href} target="_blank" rel="noopener noreferrer" className="underline underline-offset-4">{live.label === 'Preview' ? 'View preview ↗' : 'View live work ↗'}</a>}
+            {live && <a href={live.href} target="_blank" rel="noopener noreferrer" className="underline underline-offset-4">{destinationLabel}</a>}
           </figcaption>
         </figure>
 

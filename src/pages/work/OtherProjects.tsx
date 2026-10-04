@@ -13,9 +13,9 @@ const featured = [
     name: 'Noxguard',
     to: '/work/noxguard',
     image: 'noxguard-packaging.webp',
-    alt: 'Noxguard branded cartons on a pallet',
-    label: 'Agency collaboration',
-    description: 'Joshua led rebrand, site, photo/video and marketing-system delivery within Ingenia’s wider team.',
+    alt: 'Packaging mockup of Noxguard branded cartons on a pallet',
+    label: 'Untold.works project',
+    description: 'Through Untold.works, Joshua delivered the rebrand, website, photo and video campaign, and process work supporting Noxguard’s marketing systems.',
   },
 ] as const;
 
