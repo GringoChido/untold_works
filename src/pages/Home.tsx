@@ -132,15 +132,11 @@ export const Home = () => {
         <section id="billiard-factory" data-home-scene="brand-and-product" className="scroll-mt-5 border-b border-current py-16 md:py-24" aria-labelledby="bf-home-title">
           <div className="lbl mb-9 flex flex-wrap justify-between gap-4"><span>01 / Billiard Factory</span><span>Retail · Commerce · Campaigns · AI systems</span></div>
           <ShowroomFilm />
-          <div className="mt-10 grid items-start gap-8 md:mt-14 md:grid-cols-[minmax(0,1fr)_minmax(0,0.9fr)] md:gap-16">
-            <div className="flex flex-col items-start gap-7">
-              <h2 id="bf-home-title" className="display m-0 max-w-[780px] text-[clamp(50px,5.7vw,86px)]">Billiard Factory</h2>
-              <p className="chapter-statement m-0 max-w-[680px] text-[clamp(29px,3vw,43px)] leading-[1.1]">From selling a table to helping people imagine the whole room.</p>
-            </div>
-            <div className="flex flex-col items-start gap-7">
-              <p className="m-0 max-w-[670px] text-[19px] leading-[1.5]">A roughly three-month push put a seasonal storefront and 27 shoppable room stories online, built from a 34-station showroom plan. Four new décor categories—rugs, lighting, artwork and wallpaper—let shoppers build a setting around the table. The same system connects distinct brand presentations, campaign assets and sales handoffs. Headless Shopify Plus and Xorosoft’s XoroERP are being phased in; the physical showroom redesign continues, and a franchise model is in consultant review.</p>
-              <Link to="/work/billiard-factory-and-c-l-bailey" className="text-link">Explore the full ecosystem <span aria-hidden="true">↗</span></Link>
-            </div>
+          <div className="mt-10 md:mt-14">
+            <h2 id="bf-home-title" className="display m-0 max-w-[950px] text-[clamp(50px,5.7vw,86px)]">Billiard Factory</h2>
+            <p className="chapter-statement m-0 mt-5 max-w-[1050px] text-[clamp(29px,3vw,43px)] leading-[1.1]">From selling a table to helping people imagine the whole room.</p>
+            <p className="m-0 mt-7 max-w-[1120px] border-t border-current pt-6 text-[19px] leading-[1.5]">A roughly three-month push put a seasonal storefront and 27 shoppable room stories online, built from a 34-station showroom plan. Four new décor categories—rugs, lighting, artwork and wallpaper—let shoppers build a setting around the table. The same system connects distinct brand presentations, campaign assets and sales handoffs. Headless Shopify Plus and Xorosoft’s XoroERP are being phased in; the physical showroom redesign continues, and a franchise model is in consultant review.</p>
+            <Link to="/work/billiard-factory-and-c-l-bailey" className="text-link mt-6 inline-flex">Explore the full ecosystem <span aria-hidden="true">↗</span></Link>
           </div>
           <section className="home-retail-feature" aria-labelledby="home-retail-title">
             <Link to="/work/billiard-factory-and-c-l-bailey#seasonal-storefront" className="home-retail-image-link" aria-label="Explore the Billiard Factory seasonal storefront and room-led retail work">

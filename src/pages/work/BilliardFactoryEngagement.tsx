@@ -19,9 +19,9 @@ const ExternalLink = ({ href, children }: { href: string; children: string }) =>
 );
 
 const Detail = ({ label, children }: { label: string; children: string }) => (
-  <div className="grid gap-2 border-t border-current py-4 sm:grid-cols-[minmax(130px,0.55fr)_minmax(0,1.45fr)] sm:gap-8">
+  <div className="flex flex-col gap-3 border-t border-current py-5">
     <dt className="lbl text-[13px]">{label}</dt>
-    <dd className="m-0 text-[17px] leading-[1.45]">{children}</dd>
+    <dd className="m-0 max-w-[590px] text-[17px] leading-[1.5]">{children}</dd>
   </div>
 );
 
@@ -94,21 +94,20 @@ export const BilliardFactoryEngagement = () => {
     <Layout tone={tones['brand-and-product']}>
       <Header crumbs={[{ label: 'Work', to: '/' }, { label: 'Billiard Factory + C.L. Bailey' }]} />
       <main id="main" className="flex flex-col">
-        <section className="grid gap-9 pb-14 pt-14 md:grid-cols-[minmax(0,1.15fr)_minmax(290px,0.85fr)] md:items-end md:gap-16 md:pb-20 md:pt-24" aria-labelledby="engagement-title">
-          <div>
-            <p className="lbl m-0 mb-6 text-[13px]">Featured engagement / AI-assisted retail transformation</p>
-            <h1 id="engagement-title" className="display m-0 max-w-[950px] text-[clamp(52px,7.2vw,105px)] leading-[0.92]">Billiard Factory + C.L. Bailey</h1>
+        <section className="pb-12 pt-12 md:pb-16 md:pt-16" aria-labelledby="engagement-title">
+          <p className="lbl m-0 mb-6 text-[13px]">Featured engagement / AI-assisted retail transformation</p>
+          <h1 id="engagement-title" className="display m-0 max-w-[1150px] text-[clamp(52px,7vw,100px)] leading-[0.92]">Billiard Factory + C.L. Bailey</h1>
+          <p className="name m-0 mt-9 max-w-[950px] border-t border-current pt-6 text-[clamp(28px,3vw,42px)] leading-[1.04]">Connect room design, shopping and the sales conversation.</p>
+          <div className="mt-7 grid items-start gap-5 md:grid-cols-2 md:gap-14">
+            <p className="m-0 text-[19px] leading-[1.5]">Joshua leads retail concept and visual direction across the storefront, Spring Gallery, campaigns and C.L. Bailey. In roughly three months, the team brought a new front end and 27 shoppable room stories online.</p>
+            <p className="m-0 text-[19px] leading-[1.5]">The fall refresh added a seasonal editorial layer and four décor categories, letting a customer consider the table as part of a complete room. AI made the options reviewable early; product checks and human decisions governed publication.</p>
           </div>
-          <div className="border-t border-current pt-5">
-            <p className="name m-0 text-[clamp(28px,3vw,44px)] leading-[1.04]">Connect room design, shopping and the sales conversation.</p>
-            <p className="m-0 mt-6 text-[19px] leading-[1.5]">Joshua leads retail concept and visual direction across the storefront, Spring Gallery, campaigns and C.L. Bailey. In roughly three months, the team brought a new front end and 27 shoppable room stories online. The fall refresh added a seasonal editorial layer and four décor categories, letting a customer consider the table as part of a complete room. AI made the options reviewable early; product checks and human decisions governed publication.</p>
-            <nav className="mt-7 flex flex-wrap gap-x-7 gap-y-2" aria-label="Explore the Billiard Factory engagement">
-              <a href="#retail-experience" className="text-link min-h-[44px]">Retail experience <span aria-hidden="true">↓</span></a>
-              <a href="#seasonal-storefront" className="text-link min-h-[44px]">Seasonal storefront <span aria-hidden="true">↓</span></a>
-              <a href="#campaign-work" className="text-link min-h-[44px]">Campaign work <span aria-hidden="true">↓</span></a>
-              <a href="#marketing-engine" className="text-link min-h-[44px]">Marketing Engine <span aria-hidden="true">↓</span></a>
-            </nav>
-          </div>
+          <nav className="mt-7 flex flex-wrap gap-x-7 gap-y-2" aria-label="Explore the Billiard Factory engagement">
+            <a href="#retail-experience" className="text-link min-h-[44px]">Retail experience <span aria-hidden="true">↓</span></a>
+            <a href="#seasonal-storefront" className="text-link min-h-[44px]">Seasonal storefront <span aria-hidden="true">↓</span></a>
+            <a href="#campaign-work" className="text-link min-h-[44px]">Campaign work <span aria-hidden="true">↓</span></a>
+            <a href="#marketing-engine" className="text-link min-h-[44px]">Marketing Engine <span aria-hidden="true">↓</span></a>
+          </nav>
         </section>
 
         <figure className="m-0">
@@ -121,32 +120,28 @@ export const BilliardFactoryEngagement = () => {
           </figcaption>
         </figure>
 
-        <section className="grid gap-x-20 gap-y-10 pb-24 pt-20 md:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)] md:pb-28" aria-labelledby="scope-title">
-          <div>
-            <LabelRow left="The engagement" right="Connected work" />
-            <h2 id="scope-title" className="name m-0 max-w-[560px] pt-7 text-[clamp(38px,4.3vw,64px)] leading-[0.98]">Connect the showroom plan to what shoppers can buy.</h2>
-          </div>
-          <div>
+        <section className="pb-16 pt-16 md:pb-20 md:pt-20" aria-labelledby="scope-title">
+          <LabelRow left="The engagement" right="Connected work" />
+          <div className="grid items-start gap-8 pt-7 md:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)] md:gap-14">
+            <h2 id="scope-title" className="name m-0 max-w-[560px] text-[clamp(38px,4.3vw,64px)] leading-[0.98]">Connect the showroom plan to what shoppers can buy.</h2>
             <p className="voice m-0 max-w-[740px] text-[clamp(23px,2.5vw,34px)] leading-[1.28]">The 34-station Spring plan gives the showroom team a shared map. Twenty-seven published collections turn those stations into digital rooms with linked tables, rugs, lighting, art and wall treatments. A shopper can inspect a complete look, then shop its pieces or visit the store.</p>
-            <dl className="m-0 mt-10 border-b border-current">
-              <Detail label="Joshua’s role">Marketing Engine platform design and build with Claude Code; retail concept and showroom visual direction; station decisions; campaign and product direction; and connecting the sales team to GoHighLevel.</Detail>
-              <Detail label="Collaboration">Brady Stick was a co-creative partner on Spring and, with the Billiard Factory web team, implemented the digital Gallery. Joshua designed and directed Content Factory; Brady built it. Campaign pages also involved Brady and SEO copy by Zorica where credited.</Detail>
-              <Detail label="Built with AI">Claude helped structure and build the web and internal systems; Higgsfield supported room mockups and campaign media. Product checks and human review sit between generation and publication.</Detail>
-              <Detail label="What is live">The new Billiard Factory front end, the existing Spring store, its 27 digital room stories, Game Room Furniture Partners’ trade showroom site, C.L. Bailey’s public site and live campaign pages. The physical Spring redesign, commerce migration and franchise planning continue.</Detail>
-            </dl>
           </div>
+          <dl className="m-0 mt-10 grid gap-x-12 border-b border-current md:grid-cols-2">
+            <Detail label="Joshua’s role">Marketing Engine platform design and build with Claude Code; retail concept and showroom visual direction; station decisions; campaign and product direction; and connecting the sales team to GoHighLevel.</Detail>
+            <Detail label="Collaboration">Brady Stick was a co-creative partner on Spring and, with the Billiard Factory web team, implemented the digital Gallery. Joshua designed and directed Content Factory; Brady built it. Campaign pages also involved Brady and SEO copy by Zorica where credited.</Detail>
+            <Detail label="Built with AI">Claude helped structure and build the web and internal systems; Higgsfield supported room mockups and campaign media. Product checks and human review sit between generation and publication.</Detail>
+            <Detail label="What is live">The new Billiard Factory front end, the existing Spring store, its 27 digital room stories, Game Room Furniture Partners’ trade showroom site, C.L. Bailey’s public site and live campaign pages. The physical Spring redesign, commerce migration and franchise planning continue.</Detail>
+          </dl>
         </section>
 
-        <section className="pb-24 md:pb-28" aria-labelledby="method-title">
+        <section className="pb-16 md:pb-20" aria-labelledby="method-title">
           <LabelRow left="The build method" right="Direction · generation · verification · delivery" />
-          <div className="grid gap-x-16 gap-y-8 pt-7 md:grid-cols-[minmax(0,0.85fr)_minmax(0,1.15fr)]">
+          <div className="grid items-start gap-x-14 gap-y-8 pt-7 md:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)]">
             <h2 id="method-title" className="name m-0 max-w-[570px] text-[clamp(38px,4.3vw,64px)] leading-[0.98]">Review room and campaign ideas before committing to production.</h2>
-            <div>
-              <p className="voice m-0 max-w-[730px] text-[clamp(23px,2.5vw,33px)] leading-[1.3]">Joshua sets the retail idea and creative rules, uses AI to make the options tangible, then works with the team to check product truth and ship the chosen direction.</p>
-              <p className="m-0 mt-5 max-w-[700px] text-[18px] leading-[1.55]">The Spring station plot turns floor decisions into a brief for Higgsfield room mockups. Claude Code helped build web experiences and the internal Engine Room. Content Factory carries product and brand references through media generation, approval and scheduling. This makes proposed rooms and assets concrete enough for product, web and showroom teams to check before publishing.</p>
-            </div>
+            <p className="voice m-0 max-w-[730px] text-[clamp(23px,2.5vw,33px)] leading-[1.3]">Joshua sets the retail idea and creative rules, uses AI to make the options tangible, then works with the team to check product truth and ship the chosen direction.</p>
           </div>
-          <ol className="m-0 mt-12 grid list-none gap-4 p-0 sm:grid-cols-2 lg:grid-cols-4" aria-label="AI-assisted retail workflow">
+          <p className="m-0 mt-8 max-w-[1030px] border-t border-current pt-6 text-[18px] leading-[1.55]">The Spring station plot turns floor decisions into a brief for Higgsfield room mockups. Claude Code helped build web experiences and the internal Engine Room. Content Factory carries product and brand references through media generation, approval and scheduling. This makes proposed rooms and assets concrete enough for product, web and showroom teams to check before publishing.</p>
+          <ol className="m-0 mt-10 grid list-none gap-4 p-0 sm:grid-cols-2 lg:grid-cols-4" aria-label="AI-assisted retail workflow">
             {[
               { number: '01', title: 'Direct', detail: 'Set the room concept, station decisions, product mix and campaign rules.' },
               { number: '02', title: 'Make', detail: 'Use Higgsfield for room and campaign visuals; use Claude to help build pages and systems.' },
@@ -191,11 +186,13 @@ export const BilliardFactoryEngagement = () => {
             <Img src="bf-fall-opener.webp" alt="AI-assisted fall room visualization from the live Billiard Factory storefront: burgundy-cloth pool table with pendant lighting, artwork and a rust rug" sizes="(min-width: 1440px) 1312px, 100vw" className="block aspect-[4/3] w-full object-cover md:aspect-auto" />
             <figcaption className="lbl border-b border-current py-4 text-[13px]">Live fall storefront / an AI-assisted visualization using catalog products, not a finished showroom photograph</figcaption>
           </figure>
-          <div className="grid gap-x-16 gap-y-8 pt-10 md:grid-cols-[minmax(0,0.85fr)_minmax(0,1.15fr)]">
-            <p className="lbl m-0">Four new ways to finish a room</p>
+          <div className="grid items-start gap-x-14 gap-y-8 pt-10 md:grid-cols-2">
             <div>
-              <p className="m-0 mt-5 max-w-[700px] text-[18px] leading-[1.55]">Rugs, lighting, artwork and wallpaper became four new décor categories in the site navigation. The seasonal opening scene, product hotspots, shoppable room stories, new-arrival rail and supporting film give a customer ways to move from inspiration to a verified product page. Showing pieces together makes scale and style easier to assess and exposes more of the assortment in a single visit; sales impact has not yet been measured here.</p>
-              <p className="m-0 mt-4 max-w-[700px] text-[18px] leading-[1.55]">The fall experience is organized through one seasonal content system, so the team can change room imagery, featured products and campaign messages for another season without redesigning the storefront each time. Motion brings the rooms to life, while media loads as it comes into view and supports reduced-motion preferences. Joshua helped direct the retail concept and visual language; Brady Stick and the Billiard Factory web team implemented the storefront.</p>
+              <h3 className="name m-0 max-w-[560px] text-[clamp(30px,3vw,43px)] leading-[1.04]">Four new ways to finish a room.</h3>
+              <p className="m-0 mt-5 max-w-[620px] text-[18px] leading-[1.55]">Rugs, lighting, artwork and wallpaper became four new décor categories in the site navigation. The seasonal opening scene, product hotspots, shoppable room stories, new-arrival rail and supporting film give a customer ways to move from inspiration to a verified product page. Showing pieces together makes scale and style easier to assess and exposes more of the assortment in a single visit; sales impact has not yet been measured here.</p>
+            </div>
+            <div>
+              <p className="m-0 max-w-[620px] text-[18px] leading-[1.55]">The fall experience is organized through one seasonal content system, so the team can change room imagery, featured products and campaign messages for another season without redesigning the storefront each time. Motion brings the rooms to life, while media loads as it comes into view and supports reduced-motion preferences. Joshua helped direct the retail concept and visual language; Brady Stick and the Billiard Factory web team implemented the storefront.</p>
               <div className="mt-8 flex flex-wrap gap-x-7 gap-y-4">
                 <ExternalLink href="https://billiardfactory.com/collections">Explore the live rooms</ExternalLink>
                 <ExternalLink href="https://billiardfactory.com/wallpaper">See the wallpaper category</ExternalLink>
@@ -214,14 +211,14 @@ export const BilliardFactoryEngagement = () => {
               </figure>
             ))}
           </div>
-          <div className="mt-16 grid gap-x-16 gap-y-8 border-t border-current pt-10 md:grid-cols-[minmax(0,0.85fr)_minmax(0,1.15fr)]">
+          <div className="mt-16 grid items-start gap-x-14 gap-y-8 border-t border-current pt-10 md:grid-cols-2">
             <div>
               <p className="lbl m-0 mb-5">Distinct brand worlds</p>
               <h3 className="name m-0 max-w-[570px] text-[clamp(35px,3.8vw,54px)] leading-[1.02]">Help a shopper choose the right kind of table.</h3>
+              <p className="m-0 mt-5 max-w-[550px] text-[17px] leading-[1.55]">Joshua’s contribution is retail and creative direction across the room-led experience. The Billiard Factory web team translated those choices into the live pages and interactions.</p>
             </div>
             <div>
               <p className="m-0 max-w-[690px] text-[18px] leading-[1.55]">The brand pages no longer treat every maker as the same product list. C.L. Bailey uses a warm, furniture-led presentation, with Tunbridge shown in 3D and cloth options close to the product story. Velocity uses a sharper match-play language and a 3D Velocity Pro. Level Best, Olhausen and Brunswick have their own visual worlds. The difference helps shoppers understand why each brand belongs in a particular room or style of play.</p>
-              <p className="m-0 mt-4 max-w-[690px] text-[17px] leading-[1.55]">This is a team-built site. Joshua’s contribution is retail and creative direction across the room-led experience; the Billiard Factory web team translated those choices into the live pages and interactions.</p>
               <div className="mt-7 flex flex-wrap gap-x-7 gap-y-4">
                 <ExternalLink href="https://billiardfactory.com/cl-bailey-pool-tables">See C.L. Bailey</ExternalLink>
                 <ExternalLink href="https://billiardfactory.com/velocity-products">See Velocity</ExternalLink>
@@ -315,18 +312,15 @@ export const BilliardFactoryEngagement = () => {
           </div>
         </section>
 
-        <section id="marketing-engine" className="flex scroll-mt-8 flex-col gap-8 pb-24 md:pb-28" aria-labelledby="system-title">
+        <section id="marketing-engine" className="flex scroll-mt-8 flex-col gap-8 pb-16 md:pb-20" aria-labelledby="system-title">
           <LabelRow left="05 / The marketing engine" right="Built with AI · Used by the team" />
-          <div className="grid gap-x-16 gap-y-10 md:grid-cols-[minmax(0,0.85fr)_minmax(0,1.15fr)]">
+          <div className="grid items-start gap-x-14 gap-y-8 md:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)]">
             <h2 id="system-title" className="name m-0 max-w-[550px] text-[clamp(40px,4.4vw,66px)] leading-[0.98]">I built the system the campaigns run through.</h2>
-            <div>
-              <p className="voice m-0 max-w-[740px] text-[clamp(23px,2.5vw,33px)] leading-[1.3]">Joshua designed and built Engine Room with Claude Code. Its Marketing Engine links a rolling calendar to briefs, assets, owners, review status and channel schedules. In the Home Field working plan, 131 recorded deliverables sit in one campaign context, making missing files and next handoffs visible to the team.</p>
-              <p className="m-0 mt-5 max-w-[700px] text-[18px] leading-[1.55]">Higgsfield-made images and films, social assets and landing pages use that same brief. Teammates can open linked assets from the campaign record. Content Factory handles social review, scheduling and publishing, and its records appear back in Engine Room. Joshua designed and directed Content Factory; Brady Stick built it.</p>
-              <div className="mt-8 flex flex-wrap gap-x-7 gap-y-4">
-                <CaseLink to="/work/engine-room">Explore Engine Room</CaseLink>
-                <CaseLink to="/work/content-factory">Explore Content Factory</CaseLink>
-              </div>
-            </div>
+            <p className="voice m-0 max-w-[740px] text-[clamp(23px,2.5vw,33px)] leading-[1.3]">Joshua designed and built Engine Room with Claude Code. Its Marketing Engine links a rolling calendar to briefs, assets, owners, review status and channel schedules. In the Home Field working plan, 131 recorded deliverables sit in one campaign context, making missing files and next handoffs visible to the team.</p>
+          </div>
+          <div className="grid items-start gap-x-14 gap-y-5 border-t border-current pt-6 md:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)]">
+            <p className="m-0 max-w-[580px] text-[18px] leading-[1.55]">Higgsfield-made images and films, social assets and landing pages use that same brief. Teammates can open linked assets from the campaign record. Content Factory handles social review, scheduling and publishing, and its records appear back in Engine Room. Joshua designed and directed Content Factory; Brady Stick built it.</p>
+            <div className="flex flex-wrap items-start gap-x-7 gap-y-4 md:justify-end"><CaseLink to="/work/engine-room">Explore Engine Room</CaseLink><CaseLink to="/work/content-factory">Explore Content Factory</CaseLink></div>
           </div>
           <figure className="m-0">
             <Link to="/work/engine-room" className="block" aria-label="Explore the Marketing Engine case study">

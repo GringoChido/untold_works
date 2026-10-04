@@ -106,17 +106,15 @@ export const Noxguard = () => {
           </ol>
         </section>
 
-        <section className="grid gap-8 border-y-rule border-ink py-16 md:grid-cols-[minmax(0,0.7fr)_minmax(0,1.3fr)] md:gap-16 md:py-20" aria-labelledby="noxguard-context-title">
-          <div className="flex flex-col gap-3">
-            <span className="lbl text-[14px]">The brand in the field</span>
-            <h2 id="noxguard-context-title" className="name text-[clamp(30px,3.5vw,48px)] leading-[1]">A technical product, many points of contact.</h2>
-          </div>
-          <div className="flex max-w-[760px] flex-col gap-5 text-[19px] leading-[1.55]">
-            <p>
+        <section className="border-y-rule border-ink py-16 md:py-20" aria-labelledby="noxguard-context-title">
+          <span className="lbl text-[14px]">The brand in the field</span>
+          <h2 id="noxguard-context-title" className="name mt-4 max-w-[900px] text-[clamp(30px,3.5vw,48px)] leading-[1]">A technical product, many points of contact.</h2>
+          <div className="mt-8 grid items-start gap-7 border-t border-current pt-6 text-[19px] leading-[1.55] md:grid-cols-2 md:gap-14">
+            <p className="m-0">
               Noxguard supplies diesel exhaust fluid to distributors and fleet customers in packaged and bulk forms. That makes the brand a
               working system: it has to be recognizable in a warehouse, on the road and during a product conversation, as well as online.
             </p>
-            <p>
+            <p className="m-0">
               Packaging, labels and fleet livery made the product identifiable in the field. The website and photo and video campaign gave buyers a closer look at the people and operation behind it. I led delivery of these connected pieces within Ingenia’s team; no sales or awareness lift is claimed here.
             </p>
           </div>

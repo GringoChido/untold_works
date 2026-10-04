@@ -62,17 +62,17 @@ export const ProjectDetail = () => {
     <Layout tone={toneForCategory(category.slug)}>
       <Header crumbs={[{ label: 'Work', to: '/' }, parent, { label: project.name }]} />
       <main id="main" className="flex flex-col">
-        <section className="grid gap-8 pb-11 pt-12 md:grid-cols-[minmax(0,1.35fr)_minmax(280px,0.65fr)] md:items-end md:gap-16 md:pb-16 md:pt-20" aria-labelledby="project-title">
-          <div className="flex flex-col gap-5">
-            <p className="lbl m-0 text-[13px]">{`${category.index} / ${category.name} · ${String(project.order).padStart(2, '0')}`}</p>
-            <h1 id="project-title" className="display m-0 max-w-[900px] break-words text-[clamp(49px,6.6vw,103px)] leading-[0.92]">
-              {copy.headline}
-            </h1>
-          </div>
-          <div className="flex max-w-[440px] flex-col gap-5 border-t border-current pt-5">
+        <section className="pb-11 pt-12 md:pb-16 md:pt-16" aria-labelledby="project-title">
+          <p className="lbl m-0 text-[13px]">{`${category.index} / ${category.name} · ${String(project.order).padStart(2, '0')}`}</p>
+          <h1 id="project-title" className="display m-0 mt-5 max-w-[1180px] break-words text-[clamp(49px,6.3vw,96px)] leading-[0.92]">
+            {copy.headline}
+          </h1>
+          <div className="mt-9 grid items-start gap-4 border-t border-current pt-5 md:grid-cols-[minmax(180px,0.38fr)_minmax(0,1fr)] md:gap-10">
             <span className="name text-[clamp(22px,2.1vw,30px)] leading-[1.05]">{project.name}</span>
-            <p className="voice m-0 text-[clamp(22px,2.2vw,30px)] leading-[1.28]">{copy.lead}</p>
-            {copy.films && copy.films.length > 0 && <a href="#project-films" className="text-link self-start">{copy.films.length > 1 ? 'Watch the films' : 'Watch the film'} <span aria-hidden="true">↓</span></a>}
+            <div className="flex max-w-[850px] flex-col items-start gap-5">
+              <p className="voice m-0 text-[clamp(22px,2.2vw,30px)] leading-[1.28]">{copy.lead}</p>
+              {copy.films && copy.films.length > 0 && <a href="#project-films" className="text-link self-start">{copy.films.length > 1 ? 'Watch the films' : 'Watch the film'} <span aria-hidden="true">↓</span></a>}
+            </div>
           </div>
         </section>
 
@@ -87,19 +87,17 @@ export const ProjectDetail = () => {
           </figcaption>
         </figure>
 
-        <section className="grid gap-x-16 gap-y-9 pb-20 pt-20 md:grid-cols-[minmax(0,0.85fr)_minmax(0,1.15fr)] md:pb-28 md:pt-28" aria-labelledby="project-story-title">
-          <div className="flex flex-col gap-7">
-            <LabelRow left="The work" right={project.visual.tag ?? 'Selected project'} />
-            <h2 id="project-story-title" className="name m-0 max-w-[540px] text-[clamp(38px,4.2vw,64px)] leading-[0.98]">
+        <section className="pb-20 pt-20 md:pb-24 md:pt-24" aria-labelledby="project-story-title">
+          <LabelRow left="The work" right={project.visual.tag ?? 'Selected project'} />
+          <div className="pt-7">
+            <h2 id="project-story-title" className="name m-0 max-w-[930px] text-[clamp(38px,4.2vw,64px)] leading-[0.98]">
               {copy.storyTitle}
             </h2>
+            <p className="voice m-0 mt-7 max-w-[1120px] text-[clamp(22px,2.1vw,30px)] leading-[1.36]">{copy.story}</p>
           </div>
-          <div className="flex max-w-[690px] flex-col gap-8 md:pt-14">
-            <p className="voice m-0 text-[clamp(24px,2.6vw,36px)] leading-[1.27]">{copy.story}</p>
-            <div className="border-t border-current pt-5">
-              <span className="lbl text-[12px]">Why this work matters</span>
-              <p className="m-0 mt-4 text-[19px] leading-[1.5]">{copy.value}</p>
-            </div>
+          <div className="mt-9 border-t border-current pt-5">
+            <span className="lbl text-[12px]">Why this work matters</span>
+            <p className="m-0 mt-4 max-w-[1040px] text-[19px] leading-[1.5]">{copy.value}</p>
           </div>
         </section>
 

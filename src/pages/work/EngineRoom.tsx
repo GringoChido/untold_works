@@ -75,19 +75,19 @@ export const EngineRoom = () => {
     <Layout tone={tones.platforms}>
       <Header crumbs={[{ label: 'Work', to: '/#work' }, { label: 'Billiard Factory', to: '/work/billiard-factory-and-c-l-bailey' }, { label: 'Engine Room' }]} />
       <main id="main" className="flex flex-col">
-        <section className="grid gap-9 pb-14 pt-14 md:grid-cols-[minmax(0,1.15fr)_minmax(280px,0.85fr)] md:items-end md:gap-16 md:pb-20 md:pt-20" aria-labelledby="engine-room-title">
-          <div>
-            <p className="lbl m-0 mb-7 text-[13px]">Engine Room / Billiard Factory</p>
-            <h1 id="engine-room-title" className="display m-0 text-[clamp(49px,6.5vw,100px)] leading-[0.95]">A marketing engine.<br />Built with AI.</h1>
-          </div>
-          <div className="flex flex-col gap-6 border-t border-current pt-5">
-            <p className="voice m-0 text-[clamp(23px,2.3vw,32px)] leading-[1.3]">I designed and built Engine Room with Claude Code so a campaign’s brief, assets, owners, dates and channel work can be found in one place.</p>
+        <section className="pb-12 pt-12 md:pb-16 md:pt-16" aria-labelledby="engine-room-title">
+          <p className="lbl m-0 mb-6 text-[13px]">Engine Room / Billiard Factory</p>
+          <h1 id="engine-room-title" className="display m-0 max-w-[1100px] text-[clamp(49px,6.5vw,96px)] leading-[0.95]">A marketing engine.<br />Built with AI.</h1>
+          <div className="mt-9 grid items-start gap-8 border-t border-current pt-6 md:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)] md:gap-14">
+            <p className="voice m-0 max-w-[570px] text-[clamp(23px,2.3vw,32px)] leading-[1.3]">I designed and built Engine Room with Claude Code so a campaign’s brief, assets, owners, dates and channel work can be found in one place.</p>
+            <div className="flex flex-col gap-6">
             <p className="m-0 text-[17px] leading-[1.55]">Teams can plan the film, posts, email and landing page against the same offer and deadline. Linked files and status indicators show what is ready, what is missing and who owns the next step.</p>
             <nav className="flex flex-wrap gap-x-7 gap-y-2" aria-label="Explore the Engine Room case">
               <a href="#workflow" className="text-link min-h-[44px]">The workflow <span aria-hidden="true">↓</span></a>
               <a href="#home-field" className="text-link min-h-[44px]">Home Field <span aria-hidden="true">↓</span></a>
               <a href="#ai-campaign-film" className="text-link min-h-[44px]">AI campaign film <span aria-hidden="true">↓</span></a>
             </nav>
+            </div>
           </div>
         </section>
 
@@ -181,9 +181,13 @@ export const EngineRoom = () => {
           <div><CaseLink to="/work/c-l-bailey-factory-event">Explore the upcoming Factory Event</CaseLink></div>
         </section>
 
-        <section className="grid gap-8 border-t border-current pb-24 pt-8 md:grid-cols-2 md:gap-16 md:pb-32" aria-labelledby="build-title">
-          <div><LabelRow left="My role" right="Strategy · Design · Build" /><h2 id="build-title" className="name mb-0 mt-7 text-[clamp(38px,4.3vw,64px)] leading-[0.98]">Give the next campaign a working starting point.</h2></div>
-          <div className="flex flex-col gap-6"><p className="voice m-0 text-[24px] leading-[1.35]">I designed and built Engine Room with Claude Code around the team’s recurring tasks: plan a campaign, make assets, review them, schedule channels and track what shipped.</p><p className="m-0 text-[18px] leading-[1.55]">Supabase persists the records; linked assets keep the output attached to its brief. Reusable kits prefill the shape of future campaigns, so the team can spend its time on the new idea and offer while retaining clear owners, dates and review steps.</p><div className="flex flex-wrap gap-x-8 gap-y-4"><CaseLink to="/work/billiard-factory-and-c-l-bailey">See the wider Billiard Factory transformation</CaseLink><CaseLink to="/about">About my AI practice</CaseLink></div></div>
+        <section className="border-t border-current pb-20 pt-8 md:pb-24" aria-labelledby="build-title">
+          <LabelRow left="My role" right="Strategy · Design · Build" />
+          <div className="grid items-start gap-8 pt-7 md:grid-cols-2 md:gap-14">
+            <h2 id="build-title" className="name m-0 max-w-[580px] text-[clamp(38px,4.3vw,64px)] leading-[0.98]">Give the next campaign a working starting point.</h2>
+            <p className="voice m-0 max-w-[650px] text-[24px] leading-[1.35]">I designed and built Engine Room with Claude Code around the team’s recurring tasks: plan a campaign, make assets, review them, schedule channels and track what shipped.</p>
+          </div>
+          <div className="mt-8 flex flex-col gap-6 border-t border-current pt-5"><p className="m-0 max-w-[1000px] text-[18px] leading-[1.55]">Supabase persists the records; linked assets keep the output attached to its brief. Reusable kits prefill the shape of future campaigns, so the team can spend its time on the new idea and offer while retaining clear owners, dates and review steps.</p><div className="flex flex-wrap gap-x-8 gap-y-4"><CaseLink to="/work/billiard-factory-and-c-l-bailey">See the wider Billiard Factory transformation</CaseLink><CaseLink to="/about">About my AI practice</CaseLink></div></div>
         </section>
       </main>
       <HouseBar back={{ label: '← Billiard Factory', to: '/work/billiard-factory-and-c-l-bailey' }} next={{ label: 'Next: Home Field →', to: '/work/home-field' }} />

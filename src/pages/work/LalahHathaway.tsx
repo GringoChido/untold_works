@@ -21,18 +21,16 @@ export const LalahHathaway = () => {
     <Layout tone={tones.websites}>
       <Header crumbs={[{ label: 'Work', to: '/' }, { label: 'Websites', to: '/websites' }, { label: 'Lalah Hathaway' }]} />
       <main id="main" className="flex flex-col">
-        <section className="grid gap-8 pb-11 pt-12 md:grid-cols-[minmax(0,1.35fr)_minmax(280px,0.65fr)] md:items-end md:gap-16 md:pb-16 md:pt-20" aria-labelledby="lalah-title">
-          <div className="flex flex-col gap-5">
-            <p className="lbl m-0 text-[13px]">03 / Websites · Built with AI</p>
-            <h1 id="lalah-title" className="display m-0 max-w-[860px] text-[clamp(54px,7.2vw,112px)] leading-[0.9]">
-              One room.<br />A whole world.
-            </h1>
-          </div>
-          <div className="flex max-w-[430px] flex-col gap-5 border-t border-current pt-5">
-            <p className="voice m-0 text-[clamp(23px,2.25vw,31px)] leading-[1.25]">
+        <section className="pb-11 pt-12 md:pb-16 md:pt-16" aria-labelledby="lalah-title">
+          <p className="lbl m-0 text-[13px]">03 / Websites · Built with AI</p>
+          <h1 id="lalah-title" className="display m-0 mt-5 max-w-[1050px] text-[clamp(54px,7.2vw,108px)] leading-[0.9]">
+            One room.<br />A whole world.
+          </h1>
+          <div className="mt-9 grid items-start gap-4 border-t border-current pt-5 md:grid-cols-[minmax(180px,0.38fr)_minmax(0,1fr)] md:gap-10">
+            <span className="lbl text-[13px]">Lalah Hathaway / Made in Chicago / 2026</span>
+            <p className="voice m-0 max-w-[850px] text-[clamp(23px,2.25vw,31px)] leading-[1.25]">
               I built an interactive artist site with AI around supplied photography, video and music, giving seven parts of Lalah’s work one discoverable destination.
             </p>
-            <span className="lbl text-[13px]">Lalah Hathaway / Made in Chicago / 2026</span>
           </div>
         </section>
 
@@ -54,38 +52,34 @@ export const LalahHathaway = () => {
           </figcaption>
         </figure>
 
-        <section className="grid gap-x-16 gap-y-9 pb-20 pt-20 md:grid-cols-[minmax(0,0.85fr)_minmax(0,1.15fr)] md:pb-28 md:pt-28" aria-labelledby="lalah-story-title">
-          <div className="flex flex-col gap-7">
-            <LabelRow left="The build" right="Image · Video · Music" />
+        <section className="pb-20 pt-20 md:pb-24 md:pt-24" aria-labelledby="lalah-story-title">
+          <LabelRow left="The build" right="Image · Video · Music" />
+          <div className="grid items-start gap-x-14 gap-y-8 pt-7 md:grid-cols-[minmax(0,0.85fr)_minmax(0,1.15fr)]">
             <h2 id="lalah-story-title" className="name m-0 max-w-[540px] text-[clamp(39px,4.3vw,66px)] leading-[0.98]">
               The room is the navigation.
             </h2>
-          </div>
-          <div className="flex flex-col gap-7 md:pt-14">
             <p className="voice m-0 max-w-[690px] text-[clamp(25px,2.7vw,37px)] leading-[1.24]">
               I started with the main image, video content and music, then used AI to build the interactive Made in Chicago experience around them.
             </p>
-            <p className="m-0 max-w-[650px] text-[19px] leading-[1.55]">
-              Seven objects open music, videos, tour, merch, biography, socials and contact. Fans can move from the visual world to listening, a show, a purchase or a direct connection without leaving the artist’s own site.
-            </p>
           </div>
+          <p className="m-0 mt-8 max-w-[980px] border-t border-current pt-5 text-[19px] leading-[1.55]">
+            Seven objects open music, videos, tour, merch, biography, socials and contact. Fans can move from the visual world to listening, a show, a purchase or a direct connection without leaving the artist’s own site.
+          </p>
         </section>
 
-        <section className="grid gap-x-16 gap-y-8 border-t border-current pb-20 pt-8 md:grid-cols-[minmax(0,0.85fr)_minmax(0,1.15fr)] md:pb-28" aria-labelledby="lalah-direction-title">
-          <div>
-            <LabelRow left="Creative direction" right="The supplied image stays central" />
-            <h2 id="lalah-direction-title" className="name mt-8 max-w-[540px] text-[clamp(36px,4vw,60px)] leading-[0.98]">
+        <section className="border-t border-current pb-20 pt-8 md:pb-24" aria-labelledby="lalah-direction-title">
+          <LabelRow left="Creative direction" right="The supplied image stays central" />
+          <div className="grid items-start gap-x-14 gap-y-8 pt-7 md:grid-cols-[minmax(0,0.85fr)_minmax(0,1.15fr)]">
+            <h2 id="lalah-direction-title" className="name m-0 max-w-[540px] text-[clamp(36px,4vw,60px)] leading-[0.98]">
               The photograph became the interface.
             </h2>
-          </div>
-          <div className="flex flex-col gap-6 md:pt-16">
             <p className="m-0 max-w-[660px] text-[19px] leading-[1.55]">
               The room is the supplied main image, kept intact. I built the title in layers of type and the original photo pixels, then mapped interactive areas to objects already in the scene. Subtle pointer movement adds depth without replacing the room.
             </p>
-            <p className="m-0 max-w-[660px] text-[19px] leading-[1.55]">
-              Album actions open a Listen and Story panel with official music links. The video starts only when a visitor chooses to play it. Closing the panel returns keyboard focus to the action that opened it.
-            </p>
           </div>
+          <p className="m-0 mt-8 max-w-[980px] border-t border-current pt-5 text-[19px] leading-[1.55]">
+            Album actions open a Listen and Story panel with official music links. The video starts only when a visitor chooses to play it. Closing the panel returns keyboard focus to the action that opened it.
+          </p>
         </section>
 
         <section className="flex flex-col gap-10 pb-24 md:pb-32" aria-labelledby="lalah-interaction-title">

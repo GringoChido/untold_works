@@ -212,18 +212,18 @@ export const About = () => {
           <LabelRow left="Applied AI / The turning point" right="MIT Sloan · 2025" />
           <div className="about-ai-turning-point-grid">
             <div className="about-ai-year" aria-hidden="true">2025<span>MIT Sloan</span></div>
-            <div className="flex flex-col gap-6">
-              <h2 id="about-practice-title" className="name m-0 text-[clamp(36px,4.4vw,62px)] leading-[0.98]">The class changed how I work.</h2>
-              <p className="m-0 text-[19px] leading-[1.55]">
+            <h2 id="about-practice-title" className="name m-0 max-w-[820px] text-[clamp(36px,4.4vw,62px)] leading-[0.98]">The class changed how I work.</h2>
+          </div>
+          <div className="mt-9 grid items-start gap-7 border-t border-current pt-6 md:grid-cols-3 md:gap-10">
+              <p className="m-0 text-[18px] leading-[1.55]">
                 I took MIT Sloan’s AI Strategy executive education course in 2025. It gave me the moment of clarity I had been looking for: AI could change how work is organized, with an impact I think of in terms of the assembly line. Since that course, a day has not gone by without me working with AI, testing what it can do and putting it into practice.
               </p>
-              <p className="m-0 text-[19px] leading-[1.55]">
+              <p className="m-0 text-[18px] leading-[1.55]">
                 That practice now runs from campaign planning and retail systems to websites, photography and film. Higgsfield is my primary AI image and video tool. Years behind the lens shape how I direct it: lighting, framing, composition and pacing still matter. I use ChatGPT across models to think through problems, and Claude Code to turn ideas into working sites and tools.
               </p>
-              <p className="m-0 text-[19px] leading-[1.55]">
+              <p className="m-0 text-[18px] leading-[1.55]">
                 I also teach skeptical colleagues with tasks they already need to finish: preparing campaign assets, reviewing product details and finding the next handoff. We document what works, keep approvals visible and give the team a repeatable process.
               </p>
-            </div>
           </div>
         </section>
         <section id="toolkit" className="about-toolkit scroll-mt-6 pb-20" aria-labelledby="about-toolkit-title">
