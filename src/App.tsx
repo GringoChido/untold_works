@@ -18,12 +18,29 @@ import { Savor } from './pages/work/Savor';
 const ScrollManager = () => {
   const { pathname, hash } = useLocation();
   useLayoutEffect(() => {
+    // Keep the browser's saved scroll position from overriding deep links on refresh.
+    window.history.scrollRestoration = 'manual';
     if (hash) {
-      const target = document.getElementById(hash.slice(1));
-      if (target) {
-        target.scrollIntoView({ block: 'start' });
-        return;
-      }
+      let cancelled = false;
+      const scrollToTarget = () => {
+        if (cancelled) return;
+        document.getElementById(hash.slice(1))?.scrollIntoView({ block: 'start' });
+      };
+      scrollToTarget();
+      const frame = window.requestAnimationFrame(scrollToTarget);
+      const settle = window.setTimeout(scrollToTarget, 300);
+      const stop = () => { cancelled = true; };
+      window.addEventListener('wheel', stop, { once: true, passive: true });
+      window.addEventListener('touchstart', stop, { once: true, passive: true });
+      window.addEventListener('keydown', stop, { once: true });
+      return () => {
+        cancelled = true;
+        window.cancelAnimationFrame(frame);
+        window.clearTimeout(settle);
+        window.removeEventListener('wheel', stop);
+        window.removeEventListener('touchstart', stop);
+        window.removeEventListener('keydown', stop);
+      };
     }
     window.scrollTo(0, 0);
   }, [pathname, hash]);
