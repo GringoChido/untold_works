@@ -1,22 +1,32 @@
-// Renders public/images/og.png (1200x630) with the site's own type and colors.
+// Renders the social preview in the same quiet editorial system as the site.
 import puppeteer from 'puppeteer';
 import { join } from 'path';
 
 const out = join(import.meta.dirname, '..', 'public/images/og.png');
-const html = `<!doctype html><html><head><meta charset="utf-8">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,100..900;1,62..125,100..900&display=swap">
-<style>
-body{margin:0;width:1200px;height:630px;background:#F5F3EF;color:#141210;font-family:Archivo,sans-serif;position:relative;overflow:hidden}
-.rail{position:absolute;top:0;right:0;bottom:0;width:56px;background:#FF4D17}
-.wrap{position:absolute;left:72px;top:0;bottom:72px;right:128px;display:flex;flex-direction:column;justify-content:center;gap:30px}
-.lbl{font-stretch:62%;font-weight:600;font-size:24px;letter-spacing:.12em;text-transform:uppercase}
-.mast{font-weight:900;font-stretch:125%;font-size:112px;line-height:.86;letter-spacing:-.035em}
-.voice{font-style:italic;font-weight:300;font-size:42px;line-height:1.15}
-.bar{position:absolute;left:0;right:56px;bottom:0;background:#141210;color:#FF4D17;display:flex;justify-content:space-between;padding:20px 72px;font-stretch:62%;font-weight:600;font-size:22px;letter-spacing:.12em;text-transform:uppercase}
-</style></head><body>
-<div class="wrap"><span class="lbl">The portfolio of Joshua Semolik</span><div class="mast">Untold.works</div><div class="voice">Storytelling is the craft. AI is the crew.</div></div>
-<div class="bar"><span>Untold.works</span><span>I call the shot before I take it.</span></div>
-<div class="rail"></div></body></html>`;
+const html = [
+  '<!doctype html><html><head><meta charset="utf-8">',
+  '<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600&display=swap">',
+  '<style>',
+  'body{margin:0;width:1200px;height:630px;background:#20231f;color:#f2efe9;font-family:Archivo,Arial,sans-serif;overflow:hidden}',
+  '.top{position:absolute;left:64px;right:64px;top:39px;display:flex;justify-content:space-between;align-items:baseline}',
+  '.brand{font-size:31px;font-weight:600;letter-spacing:-.055em}',
+  '.meta{font-size:14px;font-weight:500}',
+  '.rule{position:absolute;left:64px;right:64px;top:90px;border-top:1px solid #b9c5b5}',
+  '.label{position:absolute;left:64px;top:153px;font-size:14px;font-weight:600;letter-spacing:.14em;text-transform:uppercase}',
+  '.label b{color:#b85a3b;margin:0 13px}',
+  '.title{position:absolute;left:64px;top:211px;font-size:88px;font-weight:600;line-height:1.02;letter-spacing:-.065em}',
+  '.title em{font-style:normal;font-size:88px;font-weight:400;letter-spacing:-.065em}',
+  '.bottom{position:absolute;left:0;right:0;bottom:0;height:112px;background:#2d332b;border-top:1px solid #b9c5b5}',
+  '.bottom-inner{margin:0 64px;height:100%;display:flex;align-items:center;justify-content:space-between;font-size:16px;font-weight:500}',
+  '.categories{font-size:13px;letter-spacing:.04em}',
+  '</style></head><body>',
+  '<div class="top"><span class="brand">untold.works</span><span class="meta">AI transformation & creative direction</span></div>',
+  '<div class="rule"></div>',
+  '<div class="label">Untold.works <b>/</b> Brand · Culture · Commerce</div>',
+  '<div class="title">AI transformation.<br><em>Creative direction.</em></div>',
+  '<div class="bottom"><div class="bottom-inner"><span>Billiard Factory &nbsp;·&nbsp; Second Son Productions &nbsp;·&nbsp; Other Projects</span><span class="categories">Applied AI</span></div></div>',
+  '</body></html>',
+].join('');
 
 const browser = await puppeteer.launch({ headless: true, args: ['--no-sandbox'] });
 const page = await browser.newPage();
@@ -25,4 +35,4 @@ await page.setContent(html, { waitUntil: 'networkidle0' });
 await page.evaluate(() => document.fonts.ready);
 await page.screenshot({ path: out, clip: { x: 0, y: 0, width: 1200, height: 630 } });
 await browser.close();
-console.log(`wrote ${out}`);
+console.log('wrote ' + out);

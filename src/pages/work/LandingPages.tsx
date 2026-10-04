@@ -1,9 +1,9 @@
 import type { ReactNode } from 'react';
+import { Link } from 'react-router-dom';
 import { Chip } from '../../components/Chip';
 import { HouseBar } from '../../components/HouseBar';
 import { Img } from '../../components/Img';
 import { LabelRow } from '../../components/LabelRow';
-import { Rail } from '../../components/Rail';
 import { Stamp } from '../../components/Stamp';
 import { usePageMeta } from '../../hooks/usePageMeta';
 
@@ -54,7 +54,7 @@ const season = [
   { date: 'Sep 14 – Oct 11', name: 'Home Field', status: 'Live' },
   { date: 'Oct 15', name: 'Preferred Customer Event', status: 'In progress' },
   { date: 'Oct 16 – 31', name: 'C.L. Bailey Factory Event', status: 'Built' },
-  { date: 'Feb 7', name: 'Big Game', status: 'Planned' },
+  { date: 'Feb 2027', name: 'Big Game', status: 'Planned' },
 ];
 
 const statusChip: Record<string, string> = {
@@ -86,17 +86,24 @@ const blocks = [
   ['08', 'Capture', 'We’ll give you a $150 ball set'],
 ];
 
+const funnel = [
+  { name: 'Campaign', job: 'Give someone a reason to arrive.' },
+  { name: 'Landing page', job: 'Make the offer and next step clear.' },
+  { name: 'Lead capture', job: 'Collect the inquiry.' },
+  { name: 'GoHighLevel', job: 'Keep the lead in the sales CRM.' },
+  { name: 'Sales follow-up', job: 'Continue the conversation.' },
+];
+
 export const LandingPages = () => {
   usePageMeta({
     title: 'Landing pages, Untold.works',
     description:
-      'Ten campaign pages for Billiard Factory, each one taken from the idea to the lead. Eight live on billiardfactory.com, lead capture through GoHighLevel and Klaviyo, built with Claude Code and Higgsfield.',
+      'Ten Billiard Factory campaign pages in a program that connects creative to sales. Joshua connected the sales team to GoHighLevel first; capture and next steps vary by page.',
     path: '/work/landing-pages',
   });
 
   return (
-    <div className="flex min-h-dvh flex-col bg-cream pr-rail text-ink">
-      <Rail text="Campaigns, Landing pages" />
+    <div className="flex min-h-dvh flex-col bg-cream text-ink">
       <main id="main" className="mx-auto flex w-full max-w-[1440px] flex-col">
         {/* The spread */}
         <section className="grid bg-teal text-cream md:min-h-[900px] md:grid-cols-2" aria-label="Landing pages">
@@ -110,7 +117,7 @@ export const LandingPages = () => {
             </div>
             <div className="flex flex-col gap-[18px]">
               <h1 className="name break-words text-[clamp(40px,6vw,84px)] leading-[0.9] tracking-[-0.035em]">Landing pages</h1>
-              <p className="voice text-[26px] leading-[1.3]">Ten campaign pages for Billiard Factory, each one taken from the idea to the lead.</p>
+              <p className="voice text-[26px] leading-[1.3]">Ten Billiard Factory campaign pages connect an offer or product story to a specific next step, including CRM capture where appropriate.</p>
             </div>
             <div className="wdth-62 flex flex-col text-[16px] font-semibold uppercase leading-[1.1] tracking-[0.05em] md:text-[18px]">
               <Fact label="Client">Billiard Factory</Fact>
@@ -120,7 +127,8 @@ export const LandingPages = () => {
                   Eight on billiardfactory.com ↗
                 </a>
               </Fact>
-              <Fact label="Lead capture">GoHighLevel · Klaviyo</Fact>
+              <Fact label="CRM foundation">GoHighLevel · sales team connected</Fact>
+              <Fact label="Page capture">Forms and next steps vary</Fact>
               <Fact label="Stack">HTML · Netlify · Cloudflare Worker</Fact>
               <Fact label="Built with">Claude Code · Higgsfield</Fact>
               <Fact label="With" last>
@@ -159,15 +167,43 @@ export const LandingPages = () => {
           </div>
         </section>
 
+        {/* The sequence that connects the pages to sales */}
+        <section className="flex flex-col gap-9 border-b border-ink px-5 py-16 md:px-16 md:py-24" aria-labelledby="funnel-headline">
+          <LabelRow left="The sales path" right="CRM first · pages next" />
+          <div className="grid gap-x-16 gap-y-7 md:grid-cols-[minmax(0,0.8fr)_minmax(0,1.2fr)]">
+            <h2 id="funnel-headline" className="name m-0 max-w-[530px] text-[clamp(38px,4.4vw,64px)] leading-[0.98]">The CRM came first.</h2>
+            <div className="flex max-w-[730px] flex-col gap-5">
+              <p className="voice m-0 text-[clamp(23px,2.3vw,31px)] leading-[1.32]">
+                I learned GoHighLevel and connected Billiard Factory’s sales team to the CRM before building the campaign pages and the broader marketing system.
+              </p>
+              <p className="m-0 text-[18px] leading-[1.55]">
+                Each page gets a next action suited to its purpose: shop an offer, find a showroom, ask an expert or submit a lead form. Where GoHighLevel captures the inquiry, campaign tags and contact details give the sales team a usable follow-up record.
+              </p>
+            </div>
+          </div>
+          <ol className="grid gap-3 sm:grid-cols-2 lg:grid-cols-5" aria-label="A campaign lead's path to sales follow-up">
+            {funnel.map((stage, index) => (
+              <li key={stage.name} className="flex min-h-[160px] flex-col gap-4 border-t border-ink bg-ink/5 px-4 py-4">
+                <span className="lbl text-[13px]">{`${String(index + 1).padStart(2, '0')} / 05`}</span>
+                <strong className="name text-[27px] leading-[1.05]">{stage.name}</strong>
+                <span className="mt-auto text-[15px] leading-[1.35]">{stage.job}</span>
+              </li>
+            ))}
+          </ol>
+          <p className="m-0 max-w-[900px] text-[16px] leading-[1.5]">
+            Home Field, Sitewide Sale and Labor Day share one GoHighLevel capture form. Custom Built uses a separate Ask an Expert form. The Home Field breakdown below follows that campaign’s own route.
+          </p>
+        </section>
+
         {/* How a page gets made */}
         <section className="flex flex-col px-5 py-16 md:px-16 md:py-24" aria-labelledby="how-headline">
           <LabelRow left="How a page gets made" right="Worked example · /home-field" />
           <div className="flex max-w-[980px] flex-col gap-4 pb-12 pt-7">
             <h2 id="how-headline" className="name text-[clamp(36px,4.2vw,56px)] leading-[0.95]">
-              From the idea to the lead, in six steps.
+              From the idea to the handoff, in six steps.
             </h2>
             <p className="voice text-[24px] leading-[1.35]">
-              Home Field ran sitewide from September 14 to October 11, 2026. This is the one page, start to finish.
+              Home Field runs sitewide from September 14 to October 11, 2026. This is the one page, start to finish.
             </p>
           </div>
 
@@ -257,22 +293,12 @@ export const LandingPages = () => {
                   <Arrow>→</Arrow>
                   <Node small="the page itself">Netlify</Node>
                 </div>
-                <div className="grid grid-cols-[minmax(0,1fr)_28px_minmax(0,1fr)_28px_minmax(0,1fr)]">
-                  <span />
-                  <span />
-                  <span />
-                  <span />
-                  <Arrow>↓</Arrow>
-                </div>
-                <div className="grid grid-cols-[minmax(0,1fr)_28px_minmax(0,1fr)_28px_minmax(0,1fr)]">
-                  <Node small="GoHighLevel · Klaviyo">Lead</Node>
-                  <Arrow>←</Arrow>
-                  <Node small="chat, calls, analytics">Tag Manager</Node>
-                  <Arrow>←</Arrow>
+                <div className="mt-4 grid gap-3 border-t border-cream/35 pt-4 sm:grid-cols-2">
                   <Node small="header and footer">Store chrome</Node>
+                  <Node small="chat, calls, analytics">Tag Manager</Node>
                 </div>
                 <div className="mt-1.5 flex justify-between gap-4 border-t border-cream/35 pt-3">
-                  <Cap>Eight live routes</Cap>
+                  <Cap>Eight campaign routes</Cap>
                   <Cap>The URL never changes</Cap>
                 </div>
               </div>
@@ -291,10 +317,9 @@ export const LandingPages = () => {
             name="The lead"
             aside={<Shot src="hf-capture.jpg" alt="The capture block: We’ll give you a $150 ball set, beside the GoHighLevel form" sizes="(min-width: 768px) 40vw, 100vw" />}
           >
-            <Pull>The capture is the page’s actual job.</Pull>
+            <Pull>The lead has to reach a person.</Pull>
             <Body>
-              A GoHighLevel form trades a $150 ball set for a name, phone and email. The page hands its utm tags to the CRM, and the thank-you
-              state fires one lead event to Meta and Google.
+              A GoHighLevel form offers a $150 ball set in exchange for a name, phone and email. The lead enters the CRM, where the connected sales team can follow up. The page reads campaign tags and includes a thank-you conversion hook.
             </Body>
             <div className="rows text-[15px]">
               <div>
@@ -302,8 +327,12 @@ export const LandingPages = () => {
                 <span>GoHighLevel</span>
               </div>
               <div>
-                <span>On submit</span>
-                <span>Meta Lead · GA4 generate_lead</span>
+                <span>After capture</span>
+                <span>GoHighLevel CRM · sales follow-up</span>
+              </div>
+              <div>
+                <span>Page tracking</span>
+                <span>Campaign-tag reader · thank-you hook</span>
               </div>
               <div>
                 <span>Same form</span>
@@ -340,7 +369,7 @@ export const LandingPages = () => {
 
         {/* Every page */}
         <section className="flex flex-col gap-8 px-5 py-16 md:px-16 md:py-24" aria-labelledby="every-headline">
-          <LabelRow left={<span id="every-headline">Every page</span>} right="Ten pages · eight live" />
+          <LabelRow left={<span id="every-headline">Every page</span>} right="Ten-page program · Live and upcoming" />
           <ol className="grid grid-cols-2 items-start gap-x-3.5 gap-y-7 sm:grid-cols-4 lg:grid-cols-8">
             {strips.map((strip) => (
               <li key={strip.path} className="flex flex-col gap-3">
@@ -362,8 +391,13 @@ export const LandingPages = () => {
             <Cap className="whitespace-nowrap text-[14px]">Full pages, top to bottom</Cap>
           </div>
         </section>
+        <section className="flex flex-col gap-5 border-t border-ink px-5 py-12 md:px-16" aria-labelledby="engine-link-title">
+          <h2 id="engine-link-title" className="name m-0 text-[clamp(30px,4vw,48px)] leading-[1.05]">Keep the customer destination attached to its campaign.</h2>
+          <p className="m-0 max-w-[800px] text-[19px] leading-[1.5]">In Engine Room, a page belongs to the same campaign record as its brief, assets, owners and channel schedule. That helps the team see what each page promises, when it runs and where customer interest goes next.</p>
+          <Link to="/work/engine-room" className="text-link self-start">Explore the Marketing Engine <span aria-hidden="true">→</span></Link>
+        </section>
       </main>
-      <HouseBar wide back={{ label: '← Campaigns', to: '/campaigns' }} next={{ label: 'Next: Home Field →', to: '/campaigns#home-field' }} />
+      <HouseBar wide back={{ label: '← Campaigns', to: '/campaigns' }} next={{ label: 'Next: Home Field →', to: '/work/home-field' }} />
     </div>
   );
 };

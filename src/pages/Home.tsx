@@ -1,199 +1,242 @@
+import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Card } from '../components/Card';
-import { Chip } from '../components/Chip';
 import { Footer } from '../components/Footer';
 import { Header } from '../components/Header';
-import { LabelRow } from '../components/LabelRow';
+import { Img } from '../components/Img';
 import { Layout } from '../components/Layout';
-import { categoryBySlug, layerChipClasses, type CardColor, type Visual } from '../data/categories';
+import { ShowroomFilm } from '../components/ShowroomFilm';
+import { PortfolioFilm } from '../components/PortfolioFilm';
 import { usePageMeta } from '../hooks/usePageMeta';
-import { FEATURE_SCALE } from '../site';
+import { CONTACT_HREF, CONTACT_LABEL, EMAIL } from '../site';
+import { tones, type HomeScene } from '../theme';
 
-type HomeCard = { slug: string; index: string; name: string; color: CardColor; caption: string; visual: Visual; rows: string[] };
+const paths = [
+  { number: '01', name: 'Billiard Factory', detail: 'Retail redesign, 27 live shoppable rooms and a Shopify Plus transition', to: '#billiard-factory' },
+  { number: '02', name: 'Second Son Productions', detail: 'Release films, live-event content and artist sites that extend the music', to: '#second-son' },
+  { number: '03', name: 'Other Projects', detail: 'Websites and tools built around specific audience decisions', to: '#other-projects' },
+] as const;
 
-const cards: HomeCard[] = [
-  {
-    slug: 'platforms',
-    index: '01',
-    name: 'Platforms',
-    color: 'ink',
-    caption: 'The engine behind the story.',
-    visual: {
-      type: 'engine-room-diagram',
-      nodes: ['Campaign calendar', 'Deliverable kits', 'Approval queue', 'Klaviyo email', 'Content Factory (built by Brady)', 'Facebook, Instagram'],
-      tag: 'Billiard Factory',
-    },
-    rows: ['Marketing and operations platforms', 'Publishing engines', 'Dealer portals and AI concierge', 'Commerce and ERP'],
-  },
-  {
-    slug: 'brand-and-product',
-    index: '02',
-    name: 'Brand and product',
-    color: 'ochre',
-    caption: 'The story you can hold.',
-    visual: {
-      type: 'image',
-      src: 'spring-stuebner-plot.svg',
-      alt: 'The Spring Stuebner store plan, 34 coded stations',
-      tag: 'Spring Stuebner store plan',
-      fit: 'contain',
-    },
-    rows: ['Retail store concepts', 'Brand systems and guidelines', 'Product design'],
-  },
-  {
-    slug: 'websites',
-    index: '03',
-    name: 'Websites',
-    color: 'burgundy',
-    caption: 'Where people find it.',
-    visual: { type: 'image', src: 'elena-home.jpg', alt: 'The home page of elenapinderhughes.com', tag: 'elenapinderhughes.com', fit: 'cover' },
-    rows: ['Artist sites', 'Trade and retail sites', 'Hospitality sites'],
-  },
-  {
-    slug: 'campaigns',
-    index: '04',
-    name: 'Campaigns',
-    color: 'teal',
-    caption: 'Where it gets told.',
-    visual: {
-      type: 'image',
-      src: 'clb-factory-event-page.jpg',
-      alt: 'The C.L. Bailey Factory Event landing page, a subway billboard in the hero',
-      tag: 'C.L. Bailey Factory Event',
-      fit: 'cover',
-    },
-    rows: ['Seasonal campaigns and events', 'Album releases and live music', 'Landing pages and lead capture', 'Film and social'],
-  },
-];
+const bfParts = [
+  { name: 'Shopify Plus transition', detail: 'The current checkout remains live while headless Shopify and Xorosoft’s XoroERP are phased in.', to: '/work/off-storis' },
+  { name: 'Showroom & new categories', detail: '27 live room stories let shoppers explore tables with coordinated furnishings.', to: '/work/spring-stuebner-store' },
+  { name: 'Game Room Furniture Partners', detail: 'A 421-item trade catalog helps designers plan rooms before a showroom visit.', to: '/work/game-room-furniture-partners' },
+  { name: 'Landing pages & CRM', detail: 'Offer pages capture tagged inquiries in GoHighLevel for sales follow-up.', to: '/work/landing-pages' },
+  { name: 'Content Factory', detail: 'AI-assisted posts move through product checks, approval and scheduling.', to: '/work/content-factory' },
+  { name: 'C.L. Bailey', detail: 'A bilingual AI concierge answers product questions and routes buyers to dealers.', to: '/work/c-l-bailey-portal-and-concierge' },
+] as const;
 
-type Layer = { n: string; name: string; line: string; category: string | null };
+const connectedWork = [
+  { number: '01', kind: 'The platform', name: 'Marketing Engine', image: 'marketing-engine-overview.png', alt: 'Billiard Factory’s Marketing Engine with campaign planning and calendar controls', fit: 'contain', detail: 'Plan the campaign, find its files and see owners, dates and scheduled work in one place.', to: '/work/engine-room', action: 'Explore the platform', note: 'Inside Engine Room' },
+  { number: '02', kind: 'The campaign', name: 'Home Field', image: 'home-field-shot.jpg', alt: 'An AI-created Home Field campaign scene of a player lining up a pool shot', fit: 'cover', detail: 'AI-made rooms and film lead to a live offer page, scheduled social and CRM capture.', to: '/work/home-field', action: 'Explore the campaign', note: 'September 14–October 11, 2026' },
+  { number: '03', kind: 'The film', name: 'C.L. Bailey Factory Event', image: 'cl-bailey-factory-event-still.jpg', alt: 'A city billboard scene from the C.L. Bailey campaign film, created entirely with AI', fit: 'cover', detail: 'An AI-made film and interactive page give three product lines one campaign destination.', to: '/work/c-l-bailey-factory-event', action: 'Watch the film & explore', note: 'Prepared for October 16–31, 2026' },
+] as const;
 
-const layers: Layer[] = [
-  { n: '01', name: 'The story', line: 'What people see, hear and share.', category: 'campaigns' },
-  { n: '02', name: 'Channels', line: 'Every place the story lives, on screen and in the store.', category: 'websites' },
-  { n: '03', name: 'Publishing', line: 'The calendar and the engine that keep it going out every day.', category: 'platforms' },
-  { n: '04', name: 'Brand', line: 'The rules that keep it sounding like one company.', category: 'brand-and-product' },
-  { n: '05', name: 'Product and place', line: 'The things people buy, and the rooms they buy them in.', category: 'brand-and-product' },
-  { n: '06', name: 'Operations', line: 'The commerce, inventory and CRM underneath every sale.', category: 'platforms' },
-  { n: '07', name: 'Command', line: 'One place where every team plans, reviews and ships.', category: 'platforms' },
-  { n: '08', name: 'Scale', line: 'Turns on at launch.', category: null },
-];
+const musicParts = [
+  { name: 'Robert Glasper', detail: 'Four release-team records, two release films and five years of Robtober content.', to: '/work/robert-glasper-album-releases' },
+  { name: 'Artist sites', detail: 'Artist sites organize recordings, stories, live dates and a route to connect.', to: '/work/second-son-productions' },
+  { name: 'Black Radio Experience', detail: 'Four years of content direction across the Napa festival’s changing identity.', to: '/work/black-radio-experience' },
+  { name: 'Blue Note Los Angeles', detail: 'Content that introduced the new Hollywood room and its opening artist.', to: '/work/blue-note-los-angeles' },
+] as const;
 
-const LayerRow = ({ layer, dimmed = false }: { layer: Layer; dimmed?: boolean }) => {
-  const category = layer.category ? categoryBySlug(layer.category) : null;
-  const dim = dimmed ? 'opacity-60' : '';
-  return (
-    <li className="grid grid-cols-[40px_minmax(0,1fr)] items-center gap-x-6 gap-y-2 border-t border-cream/35 py-4 md:grid-cols-[56px_230px_minmax(0,1fr)_200px]">
-      <span className={`lbl text-[14px] ${dim}`}>{layer.n}</span>
-      <span className={`name text-[26px] leading-none tracking-[-0.02em] ${dim}`}>{layer.name}</span>
-      <span className={`voice col-start-2 text-[21px] leading-[1.3] md:col-auto ${dim}`}>{layer.line}</span>
-      <span className="col-start-2 justify-self-start md:col-auto md:justify-self-end">
-        {category ? (
-          <Link to={`/${category.slug}`} className="no-underline">
-            <Chip className={layerChipClasses[category.color]}>{category.name}</Chip>
-          </Link>
-        ) : (
-          <Chip className="border-rule border-dashed border-vermilion text-vermilion">Flagged off</Chip>
-        )}
-      </span>
-    </li>
-  );
+const process = [
+  { number: '01', name: 'Find the direction.', detail: 'Define the audience, buying or operating problem, decision owner and next action before production starts.' },
+  { number: '02', name: 'Explore the possibilities.', detail: 'Use AI to turn a brief into reviewable images, copy, prototypes or film treatments while changes are still inexpensive.' },
+  { number: '03', name: 'Build it into the work.', detail: 'Build the page, asset library or internal tool; connect it to publishing, commerce or CRM so the work has a delivery path.' },
+  { number: '04', name: 'Help people make it their own.', detail: 'Teach the people using the system, keep product checks and approvals visible, and turn repeatable tasks into shared workflows.' },
+] as const;
+
+const useHomeScene = () => {
+  const [scene, setScene] = useState<HomeScene>('intro');
+  useEffect(() => {
+    const sections = Array.from(document.querySelectorAll<HTMLElement>('[data-home-scene]'));
+    let frame = 0;
+    const update = () => {
+      frame = 0;
+      const readingLine = window.innerHeight * 0.42;
+      let current: HomeScene = 'intro';
+      for (const section of sections) {
+        if (section.getBoundingClientRect().top <= readingLine) current = section.dataset.homeScene as HomeScene;
+      }
+      setScene(current);
+    };
+    const schedule = () => { if (!frame) frame = window.requestAnimationFrame(update); };
+    update();
+    window.addEventListener('scroll', schedule, { passive: true });
+    window.addEventListener('resize', schedule);
+    return () => {
+      window.removeEventListener('scroll', schedule);
+      window.removeEventListener('resize', schedule);
+      if (frame) window.cancelAnimationFrame(frame);
+    };
+  }, []);
+  return scene;
 };
 
 export const Home = () => {
+  const scene = useHomeScene();
   usePageMeta({
-    title: 'Untold.works, the portfolio of Joshua Semolik',
-    description:
-      'The portfolio of Joshua Semolik. I work where product, strategy and storytelling meet, and I build the system that keeps the story running. Platforms, brand and product, websites and campaigns, with AI as the crew.',
+    title: 'Untold.works — AI Transformation & Creative Direction',
+    description: 'AI transformation and creative direction by Joshua Semolik. Hands-on building across websites, creative production, retail and business systems, with team adoption at the center.',
     path: '/',
   });
 
   return (
-    <Layout rail={`Untold.works, the portfolio of Joshua Semolik`}>
+    <Layout tone={tones[scene]} className="home-canvas">
       <Header />
       <main id="main" className="flex flex-col">
-        <section className="flex flex-col gap-10 pb-[72px] pt-16 md:pt-24" aria-labelledby="headline">
-          <h1 id="headline" className="grid grid-cols-1 items-end gap-x-12 gap-y-7 md:grid-cols-[auto_auto] md:justify-between">
-            <span className="flex flex-col gap-3.5">
-              <span className="display text-[clamp(36px,8.2vw,118px)] leading-[0.84] md:whitespace-nowrap">Storytelling</span>
-              <span className="voice text-[clamp(22px,2.5vw,36px)] leading-[1.1]">is the craft.</span>
-            </span>
-            <span className="flex flex-col gap-3.5">
-              <span className="display text-[clamp(36px,8.2vw,118px)] leading-[0.84] md:whitespace-nowrap">AI</span>
-              <span className="voice text-[clamp(22px,2.5vw,36px)] leading-[1.1]">is the crew.</span>
-            </span>
-          </h1>
-          <p className="voice max-w-[900px] text-[clamp(20px,2vw,28px)] leading-[1.35]">
-            I work where product, strategy and storytelling meet, and I build the system that keeps the story running.
-          </p>
-          <div className="lbl flex flex-wrap justify-between gap-6 border-t-rule border-ink pt-3.5 text-[17px]">
-            <span>Brand, product and marketing since 1999</span>
-            <span>Built with AI since 2024</span>
-          </div>
-        </section>
-
-        <section id="work" className="flex scroll-mt-6 flex-col gap-6 pb-[104px]" aria-label="Work">
-          <LabelRow left="Work" right="01–04" />
-          <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
-            {cards.map((card, i) => (
-              <Card
-                key={card.slug}
-                size="home"
-                index={card.index}
-                name={card.name}
-                color={card.color}
-                caption={card.caption}
-                visual={card.visual}
-                rows={card.rows}
-                to={`/${card.slug}`}
-                barRight={`Open ${card.name} →`}
-                eager={i < 2}
-              />
-            ))}
-          </div>
-        </section>
-
-        <section id="system" className="pb-[104px]" aria-labelledby="system-headline">
-          <div className="flex flex-col gap-7 bg-ink px-6 pb-10 pt-12 text-cream md:px-12">
-            <LabelRow left="The support system" right="How the four fit together" className="border-cream/50" />
-            <div className="flex max-w-[1000px] flex-col gap-[18px]">
-              <h2 id="system-headline" className="name text-[clamp(36px,4.4vw,60px)] leading-[0.98]">
-                A story is only as good as the system behind it.
-              </h2>
-              <p className="voice text-[clamp(19px,1.9vw,24px)] leading-[1.4]">
-                Before a company can tell its story, it needs the plan, the brand, the product, the publishing, the channels and the
-                operations underneath. At Billiard Factory we built all of it. I designed it and directed the build, with AI as the crew and
-                the team in the loop.
-              </p>
-            </div>
-            <div className="flex flex-col">
-              <div className="lbl py-2.5 text-[13px] text-cream/70">Seen by the customer ↑</div>
-              <ol className="flex flex-col border-b border-cream/35">
-                {layers.slice(0, 7).map((layer) => (
-                  <LayerRow key={layer.n} layer={layer} />
-                ))}
-                <LayerRow layer={layers[7]} dimmed={!FEATURE_SCALE} />
-              </ol>
-              <div className="lbl py-2.5 text-[13px] text-cream/70">Never seen, always running ↓</div>
+        <section data-home-scene="intro" className="studio-hero" aria-labelledby="home-title">
+          <div className="studio-hero-scene">
+            <picture>
+              <source media="(max-width: 550px)" type="image/webp" srcSet="/images/untold-downtown-hero-phone-mobile-480.webp 480w, /images/untold-downtown-hero-phone-mobile-700.webp 700w" sizes="100vw" />
+              <Img src="untold-downtown-hero-phone.png" alt="Imagined downtown New York scene of a man showing a woman his phone as they walk together on the sidewalk" sizes="(max-width: 1459px) 1460px, 100vw" eager fetchPriority="high" className="studio-hero-scene-image" />
+            </picture>
+            <div className="studio-hero-overlay">
+              <div>
+                <p className="home-eyebrow">Untold.works <span aria-hidden="true">/</span> AI · Retail · Commerce · Culture</p>
+                <h1 id="home-title" className="display studio-hero-title">AI transformation.<br /><span>Creative direction.</span></h1>
+              </div>
+              <a href="#work" className="text-link">Explore the work <span aria-hidden="true">↓</span></a>
             </div>
           </div>
+          <div className="studio-hero-intro">
+            <p>Untold.works is Joshua Semolik’s working studio for AI-led creative and operational change. We build retail experiences, commerce paths, images, films, sites and tools, then connect them to the briefs, approvals, publishing and sales workflows that let a team use them.</p>
+          </div>
         </section>
 
-        <section id="how" className="flex flex-col gap-7 pb-[104px]" aria-labelledby="how-headline">
-          <LabelRow left="How it gets made" right="Claude · ChatGPT · Gemini · Higgsfield" />
-          <div className="flex max-w-[1000px] flex-col gap-6 pt-2">
-            <h2 id="how-headline" className="name text-[clamp(36px,4.6vw,64px)] leading-[0.98]">
-              The tools keep changing. The story doesn’t.
-            </h2>
-            <p className="voice text-[clamp(20px,2vw,26px)] leading-[1.4]">
-              For almost three decades I was the creative waiting on a developer. Not anymore. I started telling stories in broadcast in
-              1999 and have switched tools every few years since. AI is the biggest switch yet: Claude, ChatGPT, Gemini and Higgsfield now
-              write the code, render the rooms and ship the pages. None of them know why anyone should care. That part is still the job, and
-              the team stays in the loop the whole way.
-            </p>
-            <Link to="/about" className="lbl house-underline self-start">
-              About, clients and career →
+        <section id="ai" data-home-scene="intro" className="home-ai scroll-mt-5" aria-labelledby="home-ai-title">
+          <div className="home-ai-overline"><span>How the work gets made</span><span>Build · Create · Teach</span></div>
+          <div className="home-ai-grid">
+            <div className="home-ai-copy">
+              <h2 id="home-ai-title">Human direction.<br />AI in the making.</h2>
+              <p>Claude Code helps turn a brief into working websites and internal tools; Higgsfield helps develop images and films. Creative direction and product references shape the output, while review and teaching help a team use it safely in daily work.</p>
+              <Link to="/work/engine-room" className="text-link mt-7">See the Marketing Engine built with AI <span aria-hidden="true">↗</span></Link>
+              <Link to="/about#toolkit" className="text-link mt-4">See the tools behind the work <span aria-hidden="true">↗</span></Link>
+            </div>
+            <Img src="untold-human-direction-tablet.png" alt="Imagined Lower East Side scene of a woman sharing a digital project on a tablet with a man outside a studio" sizes="(min-width: 851px) 55vw, 100vw" className="studio-process-image" />
+          </div>
+          <ol className="studio-process-list">
+            {process.map((step) => <li key={step.number}><span className="studio-process-number" aria-hidden="true">{step.number}</span><div><h3>{step.name}</h3><p>{step.detail}</p></div></li>)}
+          </ol>
+        </section>
+
+        <div id="work" data-home-scene="intro" className="scroll-mt-5 border-b border-current py-16 md:py-20">
+          <div className="flex flex-wrap items-start justify-between gap-7">
+            <div><p className="lbl m-0">Selected work / Three areas of practice</p><h2 className="name m-0 mt-5 text-[clamp(37px,4.5vw,64px)]">Where the work gets used.</h2></div>
+            <p className="m-0 max-w-[530px] text-[18px] leading-[1.5]">Retail systems that connect planning to sales. Music work that extends releases and live events. Focused sites and tools built around what an audience needs to do next.</p>
+          </div>
+          <nav aria-label="Three bodies of work" className="mt-11 grid gap-0 border-b border-current md:grid-cols-3">
+            {paths.map((item) => <a key={item.number} href={item.to} className="flex flex-col justify-between gap-9 border-t border-current py-5 pr-6 no-underline md:mr-6"><span className="lbl">{item.number + ' / 03'}</span><span><strong className="name block text-[clamp(27px,2.8vw,40px)] leading-[1.04]">{item.name}</strong><span className="mt-3 block text-[15px] leading-[1.4]">{item.detail}</span></span><span aria-hidden="true">↓</span></a>)}
+          </nav>
+        </div>
+
+        <section id="billiard-factory" data-home-scene="brand-and-product" className="scroll-mt-5 border-b border-current py-16 md:py-24" aria-labelledby="bf-home-title">
+          <div className="lbl mb-9 flex flex-wrap justify-between gap-4"><span>01 / Billiard Factory</span><span>Retail · Commerce · Campaigns · AI systems</span></div>
+          <ShowroomFilm />
+          <div className="mt-10 grid items-start gap-8 md:mt-14 md:grid-cols-[minmax(0,1fr)_minmax(0,0.9fr)] md:gap-16">
+            <div className="flex flex-col items-start gap-7">
+              <h2 id="bf-home-title" className="display m-0 max-w-[780px] text-[clamp(50px,5.7vw,86px)]">Billiard Factory</h2>
+              <p className="chapter-statement m-0 max-w-[680px] text-[clamp(29px,3vw,43px)] leading-[1.1]">A showroom, storefront and campaign system built to work together.</p>
+            </div>
+            <div className="flex flex-col items-start gap-7">
+              <p className="m-0 max-w-[670px] text-[19px] leading-[1.5]">A roughly three-month push put a new storefront and 27 shoppable room stories online, built from a 34-station showroom plan. Those rooms give shoppers a way to see a complete setting and move toward a product decision. A transition to headless Shopify Plus and Xorosoft’s XoroERP is underway. Engine Room connects campaign briefs, assets, owners and schedules; GoHighLevel passes tagged inquiries to sales. The work also spans C.L. Bailey’s dealer tools; a franchise model is in consultant review.</p>
+              <Link to="/work/billiard-factory-and-c-l-bailey" className="text-link">Explore the full ecosystem <span aria-hidden="true">↗</span></Link>
+            </div>
+          </div>
+          <section className="home-retail-feature" aria-labelledby="home-retail-title">
+            <Link to="/work/spring-stuebner-store" className="home-retail-image-link" aria-label="Explore the Billiard Factory retail showroom and shoppable rooms">
+              <Img src="spring-gallery-skylar-live.jpg" alt="Live Billiard Factory room story showing a pool table in a fully furnished room" sizes="(min-width: 768px) 58vw, 100vw" className="home-retail-image" />
+              <span>Live room story / Billiard Factory <span aria-hidden="true">↗</span></span>
             </Link>
+            <div className="home-retail-copy">
+              <p className="lbl m-0">Retail in practice / Storefront to checkout</p>
+              <h3 id="home-retail-title" className="name m-0">Make the room shoppable. Make the store ready to grow.</h3>
+              <p className="m-0 text-[17px] leading-[1.5]">The redesigned showroom became 27 live room stories online. Each one brings furniture and tables together so a shopper can explore a complete space, then continue into the storefront.</p>
+              <div className="home-retail-status">
+                <strong>Shopify Plus</strong>
+                <span>Headless commerce migration underway. The existing eSTORIS checkout stays live during the transition.</span>
+              </div>
+              <div className="flex flex-col items-start gap-3">
+                <Link to="/work/spring-stuebner-store" className="text-link">Explore the retail redesign <span aria-hidden="true">↗</span></Link>
+                <Link to="/work/off-storis" className="text-link">Explore the Shopify transition <span aria-hidden="true">↗</span></Link>
+              </div>
+            </div>
+          </section>
+          <section id="connected-work" className="mt-14 scroll-mt-6 border-t border-current pt-6 md:mt-20" aria-labelledby="connected-work-title">
+            <div className="mb-8 grid items-end gap-5 md:grid-cols-2 md:gap-12">
+              <div><p className="lbl m-0 mb-4">Billiard Factory / Applied AI in practice</p><h3 id="connected-work-title" className="name m-0 text-[clamp(32px,3.5vw,50px)] leading-[1.02]">The platform, the campaign, the film.</h3></div>
+              <p className="m-0 max-w-[520px] text-[17px] leading-[1.5]">Engine Room plans and tracks the work. Home Field carries one brief into assets, publishing and lead capture. The Factory Event shows how the next AI-created campaign uses the same structure.</p>
+            </div>
+            <div className="grid gap-x-7 gap-y-10 md:grid-cols-3">
+              {connectedWork.map((item) => (
+                <Link key={item.to} to={item.to} className="group flex min-w-0 flex-col border-b border-current pb-6 no-underline">
+                  <div className="lbl flex items-baseline justify-between gap-3 border-t border-current py-3 text-[12px]"><span>{item.number + ' / ' + item.kind}</span><span aria-hidden="true">↗</span></div>
+                  <div className="flex aspect-[16/10] items-center overflow-hidden bg-cream">
+                    <Img src={item.image} alt={item.alt} sizes="(min-width: 768px) 31vw, 100vw" className={`block h-full w-full ${item.fit === 'contain' ? 'object-contain' : 'object-cover'}`} />
+                  </div>
+                  <h4 className="name m-0 mt-5 text-[clamp(27px,2.6vw,37px)] leading-[1.06] group-hover:underline group-hover:underline-offset-4">{item.name}</h4>
+                  <p className="m-0 mt-4 text-[16px] leading-[1.5]">{item.detail}</p>
+                  <span className="mt-auto pt-6 text-[12px] leading-[1.4]">{item.note}</span>
+                  <span className="mt-4 text-[14px] font-semibold underline underline-offset-4">{item.action} <span aria-hidden="true">↗</span></span>
+                </Link>
+              ))}
+            </div>
+          </section>
+          <div className="mt-12 grid gap-x-9 border-b border-current sm:grid-cols-2 lg:grid-cols-3" aria-label="Billiard Factory project layers">
+            {bfParts.map((item) => <Link key={item.to} to={item.to} className="flex flex-col gap-3 border-t border-current py-6 pr-6 no-underline"><span className="name flex justify-between gap-3 text-[24px] leading-[1.12]"><strong className="font-[inherit]">{item.name}</strong><span aria-hidden="true">↗</span></span><span className="text-[15px] leading-[1.45]">{item.detail}</span></Link>)}
+          </div>
+        </section>
+
+        <section id="second-son" data-home-scene="campaigns" className="scroll-mt-5 border-b border-current py-16 md:py-24" aria-labelledby="music-home-title">
+          <div className="lbl mb-9 flex flex-wrap justify-between gap-4"><span>02 / Second Son Productions</span><span>Artist sites · Film · Social · Live music</span></div>
+          <div className="grid items-start gap-10 md:grid-cols-[minmax(0,0.9fr)_minmax(0,1fr)] md:gap-16">
+            <PortfolioFilm id="glasper-film" src="/video/robert-glasper-birthday.mp4" mobileSrc="/video/robert-glasper-birthday-mobile.mp4" poster="/images/robert-glasper-birthday-poster.jpg" width={1920} height={1080} label="Robert Glasper birthday celebration at Blue Note Los Angeles" controlLabel="Robert Glasper birthday film" caption="Robert Glasper / Birthday celebration at Blue Note Los Angeles" nativeControls autoPlayWhenVisible={false} />
+            <div className="flex flex-col items-start gap-7">
+              <h2 id="music-home-title" className="display m-0 text-[clamp(47px,5.2vw,80px)]">Second Son Productions</h2>
+              <p className="chapter-statement m-0 text-[clamp(29px,3vw,43px)] leading-[1.1]">Content that travels beyond a release or a night on stage.</p>
+              <p className="m-0 max-w-[690px] text-[19px] leading-[1.5]">With Second Son Productions, I have worked across four Robert Glasper releases, five years of Robtober content, festival and club openings, and artist sites. Film and photography give each project material to announce, document and share; newer AI-built sites give audiences a place to explore after the moment passes.</p>
+              <Link to="/work/robert-glasper-blue-note" className="text-link">Explore the music work <span aria-hidden="true">↗</span></Link>
+            </div>
+          </div>
+          <div className="mt-12 grid gap-x-9 border-b border-current sm:grid-cols-2 lg:grid-cols-4" aria-label="Music projects">
+            {musicParts.map((item) => <Link key={item.to} to={item.to} className="flex flex-col gap-3 border-t border-current py-6 pr-6 no-underline"><span className="name flex justify-between gap-3 text-[23px] leading-[1.12]"><strong className="font-[inherit]">{item.name}</strong><span aria-hidden="true">↗</span></span><span className="text-[15px] leading-[1.45]">{item.detail}</span></Link>)}
+          </div>
+        </section>
+
+        <section id="other-projects" data-home-scene="websites" className="scroll-mt-5 border-b border-current py-16 md:py-24" aria-labelledby="other-home-title">
+          <div className="lbl mb-9 flex flex-wrap justify-between gap-4"><span>03 / Other Projects</span><span>Independent · Agency · Focused builds</span></div>
+          <div className="grid items-start gap-10 md:grid-cols-[minmax(0,1fr)_minmax(0,0.9fr)] md:gap-16">
+            <div className="flex flex-col items-start gap-7">
+              <h2 id="other-home-title" className="display m-0 text-[clamp(50px,5.7vw,86px)]">Other Projects</h2>
+              <p className="chapter-statement m-0 text-[clamp(29px,3vw,43px)] leading-[1.1]">Different clients, specific problems to solve.</p>
+              <p className="m-0 max-w-[660px] text-[19px] leading-[1.5]">For Savor, website and chef content explain fats made from carbon through familiar food. Other work includes multilingual café and hotel sites, product explanations and lead capture. Each build gives its audience a specific way to learn, choose or respond.</p>
+              <Link to="/work/other-projects" className="text-link">Explore other projects <span aria-hidden="true">↗</span></Link>
+            </div>
+            <div>
+              <div className="savor-feature">
+                <PortfolioFilm id="savor-film" src="/video/savor-food.mp4" mobileSrc="/video/savor-food-mobile.mp4" poster="/images/savor-film-poster.jpg" width={1280} height={720} label="Savor food film showing pastry making, butter and cooking" controlLabel="Savor film" caption="Savor / From idea to the kitchen" sourceHref="https://www.savor.it/" sourceLabel="Film from Savor" />
+                <Link to="/work/savor" className="savor-feature-copy" aria-label="Explore Savor: website and storytelling for a new way to make butter"><span className="lbl">Featured collaboration / Savor</span><h3>A new way to make butter.<br />A story people can taste.</h3><span className="savor-feature-link">Explore Savor <span aria-hidden="true">↗</span></span></Link>
+              </div>
+              <p className="lbl m-0 border-b border-current py-4 text-[12px] leading-[1.5]">Website &amp; storytelling / through IDW Studio</p>
+            </div>
+          </div>
+          <div className="mt-12 grid gap-x-9 border-b border-current sm:grid-cols-2" aria-label="Other selected projects">
+            <Link to="/work/savor" className="flex justify-between gap-4 border-t border-current py-6 pr-6 text-[19px] font-semibold no-underline">Savor <span aria-hidden="true">↗</span></Link>
+            <Link to="/work/noxguard" className="flex justify-between gap-4 border-t border-current py-6 pr-6 text-[19px] font-semibold no-underline">Noxguard <span aria-hidden="true">↗</span></Link>
+          </div>
+        </section>
+
+        <section data-home-scene="close" className="home-close" aria-labelledby="home-close-title">
+          <p className="home-eyebrow">Work with Untold.works</p>
+          <div className="home-close-grid">
+            <h2 id="home-close-title">Put AI into work people can use.</h2>
+            <div>
+              <p>We can define the use case, build the creative or tool, connect it to the team’s workflow and teach people to use it. The goal is work that can be reviewed, shipped and repeated.</p>
+              <p className="home-close-credits">AI transformation across brand, retail, commerce and creative systems.</p>
+              <div className="home-close-actions">
+                <Link to="/about" className="text-link">About the studio <span aria-hidden="true">↗</span></Link>
+                <a href={CONTACT_HREF} target={EMAIL ? undefined : '_blank'} rel={EMAIL ? undefined : 'noopener noreferrer'} className="text-link">{'Connect on ' + CONTACT_LABEL}<span aria-hidden="true">↗</span></a>
+              </div>
+            </div>
           </div>
         </section>
       </main>

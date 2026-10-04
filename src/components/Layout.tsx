@@ -1,9 +1,10 @@
 import type { ReactNode } from 'react';
-import { Rail } from './Rail';
+import { tones, type Tone } from '../theme';
 
-export const Layout = ({ rail, children }: { rail: string; children: ReactNode }) => (
-  <div className="flex min-h-dvh flex-col bg-cream pr-rail text-ink">
-    <Rail text={rail} />
-    <div className="mx-auto flex w-full max-w-[1320px] grow flex-col px-5 md:px-16">{children}</div>
+export const Layout = ({ children, tone = tones.intro, className = '' }: { children: ReactNode; tone?: Tone; className?: string }) => (
+  <div
+    className={['site-shell', 'flex min-h-dvh flex-col', tone.className, className].filter(Boolean).join(' ')}
+  >
+    <div className="mx-auto flex w-full max-w-[1440px] grow flex-col px-5 md:px-10 xl:px-16">{children}</div>
   </div>
 );

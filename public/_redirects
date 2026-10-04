@@ -1,9 +1,24 @@
 # Old routes from the site before October 2026, each to the nearest new route.
-/portfolio/noxguard-brand-rebrand          /brand-and-product   301
-/portfolio/omi-lead-intake-qualification   /platforms           301
-/portfolio/*                               /                    301
+/portfolio/noxguard-brand-rebrand          /work/noxguard        301
+/portfolio/omi-lead-intake-qualification   /work/omi-lead-intake 301
+/portfolio/black-radio-experience         /work/black-radio-experience 301
+/portfolio/billiard-factory-retail-architecture /work/billiard-factory-and-c-l-bailey 301
 /portfolio                                 /                    301
 /network-systems                           /platforms           301
+/seo-aeo                                   /websites            301
+/social-media                              /campaigns           301
+/ads                                       /campaigns           301
+/dashboard                                 /platforms           301
+/copywriting                               /campaigns           301
+/ai-content                                /campaigns           301
+/sales-enablement                          /platforms           301
+/mobile-apps                               /platforms           301
+/hosting                                   /platforms           301
+/review-reputation                         /campaigns           301
+/whatsapp                                  /platforms           301
+/partners                                  /about               301
+/savings                                   /about               301
+/workshops                                 /about               301
 /solutions/*                               /platforms           301
 /solutions                                 /platforms           301
 /locations/*                               /about               301
@@ -13,8 +28,6 @@
 /united-states                             /about               301
 /mexico                                    /about               301
 /contact                                   /about               301
-/blog/*                                    /                    301
-/blog                                      /                    301
 /llms-full.txt                             /llms.txt            301
 
 # Trailing-slash variants of the new routes
@@ -27,5 +40,4 @@
 /work/elena-pinderhughes/                  /work/elena-pinderhughes 301
 /about/                                    /about               301
 
-# Anything else without a match goes home: see netlify/edge-functions/not-found.ts.
-# Netlify ignores a `/* / 301` rule here as a redirect loop.
+# Unknown paths return the custom 404 page.

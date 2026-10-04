@@ -1,0 +1,64 @@
+{
+  "provider": "Higgsfield",
+  "selectedModel": "bytedance_image_upscale",
+  "resolution": "2k",
+  "blackRadioExperience": {
+    "jobId": "5d665e8e-6c0c-452a-a7b7-25ccf5df9770",
+    "source": "/Users/joshuasemolik/Desktop/ef45e804-aea2-436f-a629-976c2c9c58ac.jpg",
+    "asset": "black-radio-experience-stage-clean.png",
+    "prompt": "Faithfully upscale the original photograph. Preserve exact composition, framing, people, equipment and readable signage. Only reduce compression and gently sharpen; do not invent details or change the event.",
+    "review": "Dedicated upscale selected after visual comparison with original. Initial generative reconstruction was rejected because it changed crowd and stage details."
+  },
+  "robtober": {
+    "jobId": "7988c2bd-db67-4b53-b0d6-7f28fd4da327",
+    "source": "/Users/joshuasemolik/Desktop/Screenshot 2026-10-03 at 10.12.43 p.m..png",
+    "asset": "robtober-2026-poster-clean.png",
+    "prompt": "Faithfully upscale this exact event poster screenshot. Preserve every word, artist name, date, logo, portrait, color and grid position. Improve edge clarity and reduce screenshot blur only. Do not redesign or reconstruct any text.",
+    "review": "All episode dates and names checked. Small Blue Note logo and Episode 9 border restored directly from the original to correct upscale artifacts. Screenshot rim trimmed.",
+    "postprocessing": {
+      "tool": "sharp",
+      "originalResize": {
+        "width": 2160,
+        "height": 2688,
+        "fit": "fill",
+        "kernel": "lanczos3"
+      },
+      "originalPixelRegionsRestored": [
+        {
+          "left": 332,
+          "top": 37,
+          "width": 49,
+          "height": 70
+        },
+        {
+          "left": 417,
+          "top": 452,
+          "width": 13,
+          "height": 64
+        }
+      ],
+      "finalCrop": {
+        "left": 0,
+        "top": 14,
+        "width": 2146,
+        "height": 2674
+      }
+    }
+  },
+  "unselectedInitialAttempts": {
+    "provider": "Higgsfield",
+    "model": "gpt_image_2_5",
+    "quality": "high",
+    "resolution": "2k",
+    "blackRadioExperience": {
+      "jobId": "97a2ee85-e532-4236-87ac-1b1063446666",
+      "source": "/Users/joshuasemolik/Desktop/ef45e804-aea2-436f-a629-976c2c9c58ac.jpg",
+      "prompt": "Conservative photographic restoration of the provided actual Black Radio Experience festival photograph for a professional portfolio. This is an edit of the exact photograph, NOT a new scene. Preserve full original landscape composition, the entire crowd, stage structure, rigging, screens, performers, tree line, dusk sky and all signage pixel-faithfully in position. Lift deep shadows modestly so the setting and crowd read, gently clarify the warm stage lighting and amber banner lettering, reduce JPEG compression/noise and mildly sharpen real edges. Retain natural nighttime contrast and photographic texture. The signage MUST remain exactly THE BLACK RADIO EXPERIENCE and Blue Note JAZZ FESTIVAL with original logo typography/placement; do not redraw, replace, misspell or add text. Do not invent people, facial features, lights, logos, venue details, or additional detail. No HDR glow, oversaturation, dramatic recoloring, crop, perspective change or AI-looking reconstruction. Return only the cleaned photograph, at the source aspect ratio."
+    },
+    "robtober": {
+      "jobId": "b4208b7a-7063-4c3a-9959-81e585de0d6c",
+      "source": "/Users/joshuasemolik/Desktop/Screenshot 2026-10-03 at 10.12.43 p.m..png",
+      "prompt": "Faithful restoration/upscale of this exact supplied Robtober 2026 event-poster screen grab. Output a clean full poster in portrait 4:5 at high resolution. Preserve the design, original typography, all line breaks, grid geometry, Robert Glasper's black-and-white portrait, small head silhouette/logo, bat icons, orange/pale-blue/cream/charcoal color blocks, deliberate distressed ROBTOBER masthead. Remove only the tiny outer white screenshot rim. Sharpen typography edges and eliminate screenshot compression/blur without changing any wording or adding graphics. No redesign, no replacement fonts, no invented content, no cropping of text or portrait.\nExact content to preserve in its existing cells:\nROBTOBER; Blue Note NEW YORK; NYC 2026; SEASON 8.\nEPISODE 1: OCT. 1, 2, 3, 4; THU, FRI, SAT, SUN; ROBERT GLASPER.\nEPISODE 2: OCT. 7, 8, 9, 10; WED, THU, FRI, SAT; ROBERT GLASPER X TERRACE MARTIN; SPECIAL GUEST PHOELIX.\nEPISODE 3: OCT. 11 – SUN; ROBERT GLASPER X LALAH HATHAWAY DUO.\nEPISODE 4: OCT. 14 – WED; BLUE NOTE; 45TH ANNIVERSARY HOSTED BY ROBERT GLASPER.\nEPISODE 5: OCT. 15, 16, 17, 18; THU, FRI, SAT, SUN; ROBERT GLASPER OG ACOUSTIC PIANO TRIO.\nEPISODE 6: OCT. 21 – WED; ROBERT GLASPER X QUESTLOVE; SPECIAL GUEST BILAL.\nEPISODE 7: OCT. 22, 23; THU, FRI; ROBERT GLASPER X WYCLEF PRESENTS Q THEORY.\nEPISODE 8: OCT. 24, 25; SAT, SUN; ROBERT GLASPER X KEM PRESENTS ALKEMY.\nEPISODE 9: OCT. 28, 29, 30; WED, THU, FRI; ROBERT GLASPER FEATURING DERRICK HODGE & CHRIS DAVE.\nEPISODE 10: OCT. 31 – SAT; HALLOWEEN.\nEPISODE 11 – FINALE: NOV. 1 – SUN; ROBERT GLASPER FEATURING DERRICK HODGE & CHRIS DAVE.\nBLUENOTEJAZZ.COM.\nTreat the reference image as authoritative for precise visual layout and exact glyph styling. Return the complete cleaned poster only."
+    }
+  }
+}

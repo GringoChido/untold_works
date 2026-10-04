@@ -16,7 +16,7 @@ if (cacheDir) {
   }
 }
 const puppeteer = (await import('puppeteer')).default;
-if (!existsSync(puppeteer.executablePath())) {
+if (!existsSync(await puppeteer.executablePath())) {
   execSync('npx puppeteer browsers install chrome', { stdio: 'inherit', env: process.env });
 }
 
@@ -39,10 +39,27 @@ async function waitForServer(url, maxAttempts = 40) {
 async function renderRoute(browser, route) {
   const page = await browser.newPage();
   await page.setViewport({ width: 1440, height: 900 });
+  // Keep media in its initial poster state in the HTML that React hydrates.
+  await page.evaluateOnNewDocument(() => { window.__UNTOLD_PRERENDER__ = true; });
   try {
     await page.goto(`${BASE_URL}${route}`, { waitUntil: 'networkidle0', timeout: 45_000 });
     await page.waitForSelector('#root main', { timeout: 10_000 });
     await new Promise((r) => setTimeout(r, 400));
+    // page.content() serializes adjacent React text nodes as one text run. Hydration
+    // needs the same comment separators that renderToString would emit between them.
+    await page.evaluate(() => {
+      const root = document.getElementById('root');
+      if (!root) return;
+      for (const parent of [root, ...root.querySelectorAll('*')]) {
+        for (let node = parent.firstChild; node;) {
+          const next = node.nextSibling;
+          if (node.nodeType === Node.TEXT_NODE && next?.nodeType === Node.TEXT_NODE) {
+            parent.insertBefore(document.createComment(' '), next);
+          }
+          node = next;
+        }
+      }
+    });
     const html = await page.content();
     // /platforms -> dist/platforms.html: Netlify serves it at /platforms with no trailing-slash redirect.
     const outPath = route === '/' ? join(DIST_DIR, 'index.html') : join(DIST_DIR, `${route}.html`);

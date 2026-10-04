@@ -1,4 +1,28 @@
 {
+ "bf-mercer-room.jpg": {
+  "base": "bf-mercer-room",
+  "width": 2400,
+  "height": 1340,
+  "widths": [
+   480,
+   800,
+   1200,
+   1600,
+   2400
+  ]
+ },
+ "bf-viking-room.jpg": {
+  "base": "bf-viking-room",
+  "width": 2400,
+  "height": 1340,
+  "widths": [
+   480,
+   800,
+   1200,
+   1600,
+   2400
+  ]
+ },
  "black-radio-experience-crowd.jpg": {
   "base": "black-radio-experience-crowd",
   "width": 1440,
@@ -8,6 +32,113 @@
    800,
    1200,
    1440
+  ]
+ },
+ "black-radio-experience-stage-clean.png": {
+  "base": "black-radio-experience-stage-clean",
+  "width": 3456,
+  "height": 2160,
+  "widths": [
+   480,
+   800,
+   1200,
+   1600,
+   2400
+  ]
+ },
+ "blue-note-la-band.jpg": {
+  "base": "blue-note-la-band",
+  "width": 3500,
+  "height": 2625,
+  "widths": [
+   480,
+   800,
+   1200,
+   1600,
+   2400
+  ]
+ },
+ "blue-note-la-concept.png": {
+  "base": "blue-note-la-concept",
+  "width": 1344,
+  "height": 752,
+  "widths": [
+   480,
+   800,
+   1200,
+   1344
+  ]
+ },
+ "blue-note-la-glasper.jpg": {
+  "base": "blue-note-la-glasper",
+  "width": 3500,
+  "height": 2625,
+  "widths": [
+   480,
+   800,
+   1200,
+   1600,
+   2400
+  ]
+ },
+ "blue-note-la-keys.jpg": {
+  "base": "blue-note-la-keys",
+  "width": 3500,
+  "height": 2625,
+  "widths": [
+   480,
+   800,
+   1200,
+   1600,
+   2400
+  ]
+ },
+ "blue-note-la-lounge.jpg": {
+  "base": "blue-note-la-lounge",
+  "width": 3500,
+  "height": 2336,
+  "widths": [
+   480,
+   800,
+   1200,
+   1600,
+   2400
+  ]
+ },
+ "blue-note-london-arrivals.jpg": {
+  "base": "blue-note-london-arrivals",
+  "width": 5304,
+  "height": 3536,
+  "widths": [
+   480,
+   800,
+   1200,
+   1600,
+   2400
+  ]
+ },
+ "blue-note-london-marquee.jpg": {
+  "base": "blue-note-london-marquee",
+  "width": 5327,
+  "height": 3552,
+  "widths": [
+   480,
+   800,
+   1200,
+   1600,
+   2400
+  ]
+ },
+ "blue-note-london-opening.jpg": {
+  "base": "blue-note-london-opening",
+  "width": 5360,
+  "height": 3574,
+  "widths": [
+   480,
+   800,
+   1200,
+   1600,
+   2400
   ]
  },
  "brand-hub.jpg": {
@@ -21,6 +152,17 @@
    1600
   ]
  },
+ "casa-schuck-dashboard-demo.png": {
+  "base": "casa-schuck-dashboard-demo",
+  "width": 1440,
+  "height": 900,
+  "widths": [
+   480,
+   800,
+   1200,
+   1440
+  ]
+ },
  "casa-schuck.jpg": {
   "base": "casa-schuck",
   "width": 1440,
@@ -30,6 +172,30 @@
    800,
    1200,
    1440
+  ]
+ },
+ "chief-adjuah-live.jpg": {
+  "base": "chief-adjuah-live",
+  "width": 5472,
+  "height": 3648,
+  "widths": [
+   480,
+   800,
+   1200,
+   1600,
+   2400
+  ]
+ },
+ "cl-bailey-factory-event-still.jpg": {
+  "base": "cl-bailey-factory-event-still",
+  "width": 1920,
+  "height": 1080,
+  "widths": [
+   480,
+   800,
+   1200,
+   1600,
+   1920
   ]
  },
  "clb-brand-bible.jpg": {
@@ -54,6 +220,38 @@
    1600
   ]
  },
+ "clb-ooh-celebration-la.png": {
+  "base": "clb-ooh-celebration-la",
+  "width": 1542,
+  "height": 1020,
+  "widths": [
+   480,
+   800,
+   1200,
+   1542
+  ]
+ },
+ "clb-ooh-newspaper.png": {
+  "base": "clb-ooh-newspaper",
+  "width": 1024,
+  "height": 1536,
+  "widths": [
+   480,
+   800,
+   1024
+  ]
+ },
+ "clb-ooh-train-pair.png": {
+  "base": "clb-ooh-train-pair",
+  "width": 1508,
+  "height": 1043,
+  "widths": [
+   480,
+   800,
+   1200,
+   1508
+  ]
+ },
  "clbailey-concierge.jpg": {
   "base": "clbailey-concierge",
   "width": 1600,
@@ -74,6 +272,17 @@
    800,
    1200,
    1440
+  ]
+ },
+ "content-factory-concept.png": {
+  "base": "content-factory-concept",
+  "width": 1344,
+  "height": 752,
+  "widths": [
+   480,
+   800,
+   1200,
+   1344
   ]
  },
  "custom-built-workshop.jpg": {
@@ -119,6 +328,28 @@
    1600
   ]
  },
+ "engine-room-studio-artwork.png": {
+  "base": "engine-room-studio-artwork",
+  "width": 1440,
+  "height": 900,
+  "widths": [
+   480,
+   800,
+   1200,
+   1440
+  ]
+ },
+ "engine-room-studio.png": {
+  "base": "engine-room-studio",
+  "width": 1440,
+  "height": 1400,
+  "widths": [
+   480,
+   800,
+   1200,
+   1440
+  ]
+ },
  "financing-page.jpg": {
   "base": "financing-page",
   "width": 960,
@@ -127,6 +358,78 @@
    480,
    800,
    960
+  ]
+ },
+ "glasper-blue-note-london.jpg": {
+  "base": "glasper-blue-note-london",
+  "width": 1024,
+  "height": 682,
+  "widths": [
+   480,
+   800,
+   1024
+  ]
+ },
+ "glasper-code-derivation-cover.png": {
+  "base": "glasper-code-derivation-cover",
+  "width": 500,
+  "height": 500,
+  "widths": [
+   480,
+   500
+  ]
+ },
+ "glasper-let-go-cover.png": {
+  "base": "glasper-let-go-cover",
+  "width": 500,
+  "height": 500,
+  "widths": [
+   480,
+   500
+  ]
+ },
+ "glasper-london-portrait.jpg": {
+  "base": "glasper-london-portrait",
+  "width": 3080,
+  "height": 4620,
+  "widths": [
+   480,
+   800,
+   1200,
+   1600,
+   2400
+  ]
+ },
+ "glasper-r-r-now-still.jpg": {
+  "base": "glasper-r-r-now-still",
+  "width": 1280,
+  "height": 720,
+  "widths": [
+   480,
+   800,
+   1200,
+   1280
+  ]
+ },
+ "glasper-selected-cover-art.png": {
+  "base": "glasper-selected-cover-art",
+  "width": 1200,
+  "height": 750,
+  "widths": [
+   480,
+   800,
+   1200
+  ]
+ },
+ "grfp-home-live.png": {
+  "base": "grfp-home-live",
+  "width": 1440,
+  "height": 900,
+  "widths": [
+   480,
+   800,
+   1200,
+   1440
   ]
  },
  "grfp-home.jpg": {
@@ -280,6 +583,73 @@
    1440
   ]
  },
+ "marketing-engine-calendar.png": {
+  "base": "marketing-engine-calendar",
+  "width": 1564,
+  "height": 843,
+  "widths": [
+   480,
+   800,
+   1200,
+   1564
+  ]
+ },
+ "marketing-engine-home-field-assets.png": {
+  "base": "marketing-engine-home-field-assets",
+  "width": 1564,
+  "height": 899,
+  "widths": [
+   480,
+   800,
+   1200,
+   1564
+  ]
+ },
+ "marketing-engine-home-field-briefs.png": {
+  "base": "marketing-engine-home-field-briefs",
+  "width": 1564,
+  "height": 899,
+  "widths": [
+   480,
+   800,
+   1200,
+   1564
+  ]
+ },
+ "marketing-engine-home-field-social.png": {
+  "base": "marketing-engine-home-field-social",
+  "width": 1564,
+  "height": 899,
+  "widths": [
+   480,
+   800,
+   1200,
+   1564
+  ]
+ },
+ "marketing-engine-overview.png": {
+  "base": "marketing-engine-overview",
+  "width": 1564,
+  "height": 843,
+  "widths": [
+   480,
+   800,
+   1200,
+   1564
+  ]
+ },
+ "messes-happen-production-frame.png": {
+  "base": "messes-happen-production-frame",
+  "width": 1920,
+  "height": 1080,
+  "widths": [
+   480,
+   800,
+   1200,
+   1600,
+   1920
+  ]
+ },
  "noxguard-truck.jpg": {
   "base": "noxguard-truck",
   "width": 1440,
@@ -291,6 +661,17 @@
    1440
   ]
  },
+ "off-storis-concept.png": {
+  "base": "off-storis-concept",
+  "width": 1344,
+  "height": 752,
+  "widths": [
+   480,
+   800,
+   1200,
+   1344
+  ]
+ },
  "omi.jpg": {
   "base": "omi",
   "width": 1440,
@@ -300,6 +681,16 @@
    800,
    1200,
    1440
+  ]
+ },
+ "preferred-customer-event.png": {
+  "base": "preferred-customer-event",
+  "width": 1200,
+  "height": 628,
+  "widths": [
+   480,
+   800,
+   1200
   ]
  },
  "qmillion.jpg": {
@@ -324,15 +715,15 @@
    1440
   ]
  },
- "rivero-studio.jpg": {
-  "base": "rivero-studio",
-  "width": 1440,
-  "height": 900,
+ "release-films-concept.png": {
+  "base": "release-films-concept",
+  "width": 1344,
+  "height": 752,
   "widths": [
    480,
    800,
    1200,
-   1440
+   1344
   ]
  },
  "robert-glasper-portrait.jpg": {
@@ -343,6 +734,18 @@
    480,
    800,
    1000
+  ]
+ },
+ "robtober-2026-poster-clean.png": {
+  "base": "robtober-2026-poster-clean",
+  "width": 2146,
+  "height": 2674,
+  "widths": [
+   480,
+   800,
+   1200,
+   1600,
+   2146
   ]
  },
  "robtober-blue-note-nyc.jpg": {
@@ -356,6 +759,17 @@
    1440
   ]
  },
+ "savor-butter.webp": {
+  "base": "savor-butter",
+  "width": 1600,
+  "height": 1066,
+  "widths": [
+   480,
+   800,
+   1200,
+   1600
+  ]
+ },
  "savor-chef-series.jpg": {
   "base": "savor-chef-series",
   "width": 1440,
@@ -365,6 +779,16 @@
    800,
    1200,
    1440
+  ]
+ },
+ "savor-plated-dish.webp": {
+  "base": "savor-plated-dish",
+  "width": 1200,
+  "height": 675,
+  "widths": [
+   480,
+   800,
+   1200
   ]
  },
  "savor-site.jpg": {
@@ -378,6 +802,17 @@
    1440
   ]
  },
+ "season-opener-artwork.png": {
+  "base": "season-opener-artwork",
+  "width": 1600,
+  "height": 1000,
+  "widths": [
+   480,
+   800,
+   1200,
+   1600
+  ]
+ },
  "second-son-roster.jpg": {
   "base": "second-son-roster",
   "width": 1440,
@@ -387,6 +822,30 @@
    800,
    1200,
    1440
+  ]
+ },
+ "spring-gallery-collections-live.jpg": {
+  "base": "spring-gallery-collections-live",
+  "width": 1648,
+  "height": 936,
+  "widths": [
+   480,
+   800,
+   1200,
+   1600,
+   1648
+  ]
+ },
+ "spring-gallery-skylar-live.jpg": {
+  "base": "spring-gallery-skylar-live",
+  "width": 1648,
+  "height": 936,
+  "widths": [
+   480,
+   800,
+   1200,
+   1600,
+   1648
   ]
  },
  "spring-stuebner-plot.svg": {
@@ -462,6 +921,140 @@
   "widths": [
    160,
    320
+  ]
+ },
+ "tierra-brasa.png": {
+  "base": "tierra-brasa",
+  "width": 1122,
+  "height": 1402,
+  "widths": [
+   480,
+   800,
+   1122
+  ]
+ },
+ "tierra-cascabel.png": {
+  "base": "tierra-cascabel",
+  "width": 1122,
+  "height": 1402,
+  "widths": [
+   480,
+   800,
+   1122
+  ]
+ },
+ "tierra-cauce.png": {
+  "base": "tierra-cauce",
+  "width": 1122,
+  "height": 1402,
+  "widths": [
+   480,
+   800,
+   1122
+  ]
+ },
+ "tierra-cover.png": {
+  "base": "tierra-cover",
+  "width": 1672,
+  "height": 941,
+  "widths": [
+   480,
+   800,
+   1200,
+   1600,
+   1672
+  ]
+ },
+ "tierra-line.png": {
+  "base": "tierra-line",
+  "width": 1671,
+  "height": 941,
+  "widths": [
+   480,
+   800,
+   1200,
+   1600,
+   1671
+  ]
+ },
+ "untold-downtown-hero-phone.png": {
+  "base": "untold-downtown-hero-phone",
+  "width": 1672,
+  "height": 941,
+  "widths": [
+   480,
+   800,
+   1200,
+   1600,
+   1672
+  ]
+ },
+ "untold-downtown-hero.png": {
+  "base": "untold-downtown-hero",
+  "width": 1672,
+  "height": 941,
+  "widths": [
+   480,
+   800,
+   1200,
+   1600,
+   1672
+  ]
+ },
+ "untold-human-direction-tablet.png": {
+  "base": "untold-human-direction-tablet",
+  "width": 1536,
+  "height": 1024,
+  "widths": [
+   480,
+   800,
+   1200,
+   1536
+  ]
+ },
+ "untold-human-direction.png": {
+  "base": "untold-human-direction",
+  "width": 1536,
+  "height": 1024,
+  "widths": [
+   480,
+   800,
+   1200,
+   1536
+  ]
+ },
+ "untold-idea-form.png": {
+  "base": "untold-idea-form",
+  "width": 1942,
+  "height": 809,
+  "widths": [
+   480,
+   800,
+   1200,
+   1600,
+   1942
+  ]
+ },
+ "village-tenders-concept.png": {
+  "base": "village-tenders-concept",
+  "width": 1344,
+  "height": 752,
+  "widths": [
+   480,
+   800,
+   1200,
+   1344
+  ]
+ },
+ "voztre-concept.png": {
+  "base": "voztre-concept",
+  "width": 1344,
+  "height": 752,
+  "widths": [
+   480,
+   800,
+   1200,
+   1344
   ]
  }
 }

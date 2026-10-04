@@ -1,0 +1,73 @@
+[
+  {
+    "source": "/Users/joshuasemolik/Desktop/untitled folder 2/260923_BLUE_NOTE_ROBERT_GLASPER_RobJones_@hirobjones_@khromacollective-0X6A5485.jpg",
+    "asset": "glasper-london-portrait.jpg",
+    "credit": "Rob Jones / @hirobjones / @khromacollective",
+    "eventDate": "2026-09-23"
+  },
+  {
+    "source": "/Users/joshuasemolik/Desktop/untitled folder 2/260923_BLUE_NOTE_ROBERT_GLASPER_RobJones_@hirobjones_@khromacollective-0X6A5138.jpg",
+    "asset": "blue-note-london-arrivals.jpg",
+    "credit": "Rob Jones / @hirobjones / @khromacollective",
+    "eventDate": "2026-09-23"
+  },
+  {
+    "source": "/Users/joshuasemolik/Desktop/untitled folder 2/260923_BLUE_NOTE_ROBERT_GLASPER_RobJones_@hirobjones_@khromacollective-0X6A5120.jpg",
+    "asset": "blue-note-london-marquee.jpg",
+    "credit": "Rob Jones / @hirobjones / @khromacollective",
+    "eventDate": "2026-09-23"
+  },
+  {
+    "source": "/Users/joshuasemolik/Desktop/untitled folder 2/260923_BLUE_NOTE_ROBERT_GLASPER_RobJones_@hirobjones_@khromacollective-0X6A5595.jpg",
+    "asset": "blue-note-london-opening.jpg",
+    "credit": "Rob Jones / @hirobjones / @khromacollective",
+    "eventDate": "2026-09-23"
+  },
+  {
+    "source": "/Users/joshuasemolik/Desktop/untitled folder 2/RGBNLA-DSCF8526.jpg",
+    "asset": "blue-note-la-band.jpg",
+    "credit": "Todd Cooper / @toddcoop",
+    "eventDate": "2025-08-14"
+  },
+  {
+    "source": "/Users/joshuasemolik/Desktop/untitled folder 2/RGBNLA-DSCF8647.jpg",
+    "asset": "blue-note-la-keys.jpg",
+    "credit": "Todd Cooper / @toddcoop",
+    "eventDate": "2025-08-14"
+  },
+  {
+    "source": "/Users/joshuasemolik/Desktop/untitled folder 2/RGBNLA-L1202266.jpg",
+    "asset": "blue-note-la-lounge.jpg",
+    "credit": "Todd Cooper / @toddcoop",
+    "eventDate": "2025-08-14"
+  },
+  {
+    "source": "/Users/joshuasemolik/Desktop/untitled folder 2/RGBNLA-DSCF8371.jpg",
+    "asset": "blue-note-la-glasper.jpg",
+    "credit": "Todd Cooper / @toddcoop",
+    "eventDate": "2025-08-14"
+  },
+  {
+    "source": "/Users/joshuasemolik/Desktop/untitled folder 2/Chief Adjuah _jazz24(c)Frédérique Ménard-Aubin-696.jpg",
+    "asset": "chief-adjuah-live.jpg",
+    "credit": "Frédérique Ménard-Aubin",
+    "captureDate": "2024-07-01",
+    "context": "Chief Adjuah live performance; venue unverified. Roster relationship and ongoing collaboration confirmed by Joshua."
+  },
+  {
+    "source": "/Users/joshuasemolik/Desktop/ef45e804-aea2-436f-a629-976c2c9c58ac.jpg",
+    "original": "black-radio-experience-stage-original.jpg",
+    "asset": "black-radio-experience-stage-clean.png",
+    "credit": null,
+    "processing": "Higgsfield dedicated image upscale; see 2026-event-cleanup-prompts.json",
+    "context": "Supplied by Joshua to replace the faces-only crowd visual. Festival stage and signage visible. Photographer and event year not established."
+  },
+  {
+    "source": "/Users/joshuasemolik/Desktop/Screenshot 2026-10-03 at 10.12.43 p.m..png",
+    "original": "robtober-2026-poster-original.png",
+    "asset": "robtober-2026-poster-clean.png",
+    "credit": null,
+    "processing": "Higgsfield dedicated image upscale with original-source logo/border restoration and screenshot-rim trim; see 2026-event-cleanup-prompts.json",
+    "context": "Robtober NYC 2026, Season 8. October 1–November 1; 11 episodes. Year confirmed by Joshua; dates and season from supplied poster. Designer not established; not credited to Joshua."
+  }
+]

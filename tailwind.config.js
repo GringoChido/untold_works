@@ -7,9 +7,9 @@ export default {
     colors: {
       transparent: 'transparent',
       current: 'currentColor',
-      cream: '#F5F3EF',
-      ink: '#141210',
-      vermilion: '#FF4D17',
+      cream: '#F2EFE9',
+      ink: '#20231F',
+      vermilion: '#B85A3B',
       sage: '#8B9E82',
       ochre: '#D8B47F',
       teal: '#2A5C5F',

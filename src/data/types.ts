@@ -16,7 +16,7 @@ export type Project = {
   color: CardColor;
   visual: Visual;
   facts: Fact[];
-  projectPage: string | null;
+  projectPage: string;
 };
 
 export type Category = {

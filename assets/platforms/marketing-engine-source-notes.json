@@ -1,0 +1,84 @@
+{
+  "reviewDate": "2026-10-03",
+  "purpose": "Evidence for the local, unpublished Untold.works portfolio draft",
+  "sources": {
+    "calendar": "https://bfspringdashboard.netlify.app/marketing/",
+    "homeField": "https://bfspringdashboard.netlify.app/marketing/campaign.html?id=fallsitewide",
+    "factoryEvent": "https://bfspringdashboard.netlify.app/marketing/campaign.html?id=clbailey",
+    "factoryEventLandingPage": "https://bf-landing-pages.netlify.app/cl-bailey-factory-event/",
+    "localSource": "/Users/joshuasemolik/Desktop/bf-spring-dashboard"
+  },
+  "method": "Read-only signed-in Chrome inspection, public landing-page and film inspection, and local source review. No campaign, schedule, approval, or publishing record changed.",
+  "screenshots": [
+    "marketing-engine-calendar.png",
+    "marketing-engine-overview.png",
+    "marketing-engine-home-field-assets.png",
+    "marketing-engine-home-field-briefs.png",
+    "marketing-engine-home-field-social.png"
+  ],
+  "homeField": {
+    "campaignId": "fallsitewide",
+    "tier": "B",
+    "window": "September 14–October 11, 2026 (campaign header, brief, and Organic filter)",
+    "plannedDeliverables": 131,
+    "linkedAssets": 95,
+    "authoredEmailGalleryCount": 28,
+    "subcampaigns": [
+      "Designer Program",
+      "Custom Built",
+      "This Season’s Roster",
+      "Something’s Taking Shape",
+      "Preferred Customer Invitation"
+    ],
+    "evergreen": [
+      "Sitewide Savings",
+      "Editorial"
+    ],
+    "channelAreas": [
+      "Paid",
+      "Organic",
+      "Email",
+      "Production",
+      "SEO / AEO / Blogs"
+    ],
+    "websiteArea": "Landing pages, banners, homepage changes and customer links",
+    "scopeNotes": [
+      "Asset count establishes linked files, not creative approval or readiness.",
+      "Organic counts include published and scheduled Content Factory records; some records are matched by campaign-window dates, so counts are not presented as direct campaign outcomes.",
+      "Calendar badge says ends Oct 12 while campaign header and Organic window end Oct 11. Portfolio retains the campaign-specific September14–October11 window.",
+      "SEO bench holds dateless ideas until promoted."
+    ]
+  },
+  "factoryEvent": {
+    "tier": "B",
+    "window": "October16–31,2026",
+    "plannedDeliverables": 41,
+    "assetLinks": 0,
+    "status": "Upcoming; film, external ImageKit artwork, and public preview page exist, while campaign rows still need links and workflow updates.",
+    "mainBrief": "The Table Is Open",
+    "supportingBriefs": [
+      "The Long Game",
+      "On The Floor"
+    ],
+    "offer": "10% off C.L. Bailey and Velocity in showrooms and online",
+    "offerNotes": "Public preview says shelf price; internal brief still has price-base hold. Portfolio uses only confirmed 10% language, without dollar prices or stacking."
+  },
+  "implementationEvidence": [
+    "dashboard/marketing/campaign.html",
+    "dashboard/marketing/campaign-page.js",
+    "dashboard/marketing/campaign-sections.js",
+    "dashboard/marketing/campaign-logic.js",
+    "dashboard/data/campaign-kits.json",
+    "dashboard/data/campaign-tiers.json",
+    "netlify/shared/campaign-store.js",
+    "netlify/functions/campaign-tasks.js",
+    "netlify/functions/cf-organic.js",
+    "netlify/shared/klaviyo-schedule.js"
+  ],
+  "credits": {
+    "engineRoom": "Joshua Semolik: platform design/build with Claude Code; campaign direction, confirmed by user.",
+    "contentFactory": "Designed/directed by Joshua Semolik; implemented by Brady Stick (existing verified credit retained).",
+    "campaignFilm": "Joshua confirms the full C.L. Bailey campaign film was made with AI."
+  },
+  "claimsBoundary": "Describe connected campaign operations and authored creative. Do not infer revenue gains, time savings, every-channel automatic publishing, completed physical ad placements, or a launched October16 event."
+}

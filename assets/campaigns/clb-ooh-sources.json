@@ -1,0 +1,71 @@
+{
+  "retrievedAtUTC": "2026-10-04T03:34:41.451705+00:00",
+  "assets": [
+    {
+      "asset": "/Users/joshuasemolik/Desktop/_PROJECTS/untold-works-live/.claude/worktrees/portfolio-2026-build-0cb72b/assets/campaigns/clb-ooh-trestle-street.png",
+      "originalFilename": "03-Product-Trestle-street_ZZcs9-VEtW.png",
+      "source": "https://ik.imagekit.io/billiardfactory/estoris/Pushes/CL%20Bailey%20Factory%20Event%20/FACTORY%20EVENT%20/CLB-Factory-Event-OOH-Mockups/png/03-Product-Trestle-street_ZZcs9-VEtW.png",
+      "bytes": 334662,
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "description": "C.L. Bailey Factory Event advertising concept/mockup. Not evidence of purchased physical media placement."
+    },
+    {
+      "asset": "/Users/joshuasemolik/Desktop/_PROJECTS/untold-works-live/.claude/worktrees/portfolio-2026-build-0cb72b/assets/campaigns/clb-ooh-celebration-la.png",
+      "originalFilename": "08-Lifestyle-Celebration-LA_dgCvGO9Sky.png",
+      "source": "https://ik.imagekit.io/billiardfactory/estoris/Pushes/CL%20Bailey%20Factory%20Event%20/FACTORY%20EVENT%20/CLB-Factory-Event-OOH-Mockups/png/08-Lifestyle-Celebration-LA_dgCvGO9Sky.png",
+      "bytes": 294048,
+      "dimensions": [
+        1542,
+        1020
+      ],
+      "description": "C.L. Bailey Factory Event advertising concept/mockup. Not evidence of purchased physical media placement."
+    },
+    {
+      "asset": "/Users/joshuasemolik/Desktop/_PROJECTS/untold-works-live/.claude/worktrees/portfolio-2026-build-0cb72b/assets/campaigns/clb-ooh-train-pair.png",
+      "originalFilename": "14-New-Placement-Train-pair_37xmramBlO.png",
+      "source": "https://ik.imagekit.io/billiardfactory/estoris/Pushes/CL%20Bailey%20Factory%20Event%20/FACTORY%20EVENT%20/CLB-Factory-Event-OOH-Mockups/png/14-New-Placement-Train-pair_37xmramBlO.png",
+      "bytes": 337526,
+      "dimensions": [
+        1508,
+        1043
+      ],
+      "description": "C.L. Bailey Factory Event advertising concept/mockup. Not evidence of purchased physical media placement."
+    },
+    {
+      "asset": "/Users/joshuasemolik/Desktop/_PROJECTS/untold-works-live/.claude/worktrees/portfolio-2026-build-0cb72b/assets/campaigns/clb-ooh-newspaper.png",
+      "originalFilename": "17-New-Placement-Newspaper_3yNzIWTnk.png",
+      "source": "https://ik.imagekit.io/billiardfactory/estoris/Pushes/CL%20Bailey%20Factory%20Event%20/FACTORY%20EVENT%20/CLB-Factory-Event-OOH-Mockups/png/17-New-Placement-Newspaper_3yNzIWTnk.png",
+      "bytes": 300836,
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "description": "C.L. Bailey Factory Event advertising concept/mockup. Not evidence of purchased physical media placement."
+    }
+  ],
+  "recommendedGallery": [
+    {
+      "asset": "clb-ooh-celebration-la.png",
+      "caption": "Lifestyle billboard / Campaign mockup",
+      "reason": "Contrasts the product-only film-poster billboard with a warm game-room scene and large-format placement."
+    },
+    {
+      "asset": "clb-ooh-train-pair.png",
+      "caption": "Transit takeover / Campaign mockup",
+      "reason": "Shows repeated campaign artwork across two scales within a subway carriage."
+    },
+    {
+      "asset": "clb-ooh-newspaper.png",
+      "caption": "Print placement / Campaign mockup",
+      "reason": "Adds intimate handheld scale and a portrait composition; preserve the complete newspaper ad."
+    }
+  ],
+  "alternateGallery": {
+    "asset": "clb-ooh-trestle-street.png",
+    "caption": "Street billboard / Campaign mockup",
+    "reason": "Strong clear product-and-offer artwork, but similar setting to the selected film poster."
+  }
+}

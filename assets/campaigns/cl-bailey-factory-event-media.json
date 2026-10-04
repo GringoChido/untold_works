@@ -1,0 +1,118 @@
+{
+  "sourcePage": "https://bf-landing-pages.netlify.app/cl-bailey-factory-event/",
+  "sourceVideo": "https://ik.imagekit.io/billiardfactory/estoris/Pushes/CL%20Bailey%20Factory%20Event%20/hf_20260923_033640_7e0b086e-beb9-4969-9753-3f7614d45daa_6xF2RFQ0d.mp4?updatedAt=1790286024157",
+  "retrievedAtUTC": "2026-10-04T03:34:03.105905+00:00",
+  "aiCreationAttribution": "Joshua explicitly confirmed that the whole film was made with AI. Generated outdoor/subway advertising scenes are creative film imagery, not evidence of purchased physical media placements.",
+  "treatment": "Complete original sequence retained, 1551 video frames at 24fps. No time trims, crops, reordering or creative edits. Encoded H.264 yuv420p with faststart at 1280x720 CRF22 and 768x432 CRF24, original AAC stereo audio copied without re-encoding.",
+  "poster": {
+    "path": "public/images/cl-bailey-factory-event-poster.jpg",
+    "sourceStill": "assets/campaigns/cl-bailey-factory-event-still.jpg",
+    "timeSeconds": 10,
+    "description": "A city intersection and C.L. Bailey Factory Event wall advertisement showing the 10% offer, pool table and October 16\u201331 dates."
+  },
+  "pageEvidence": {
+    "offer": "10% off C.L. Bailey and Velocity, taken off the shelf price. No code.",
+    "dates": "October 16\u201331",
+    "channels": "Every showroom and online",
+    "scope": "Pool tables, shuffleboards, combos, seating, and accessories.",
+    "lanes": [
+      "The Table Is Open",
+      "The Long Game",
+      "On The Floor"
+    ],
+    "framing": "You keep putting it off. So it started showing up everywhere. Sound on.",
+    "limitations": "Source source-code comments say do not infer stacking with sitewide savings or invent crossed-out before/after prices. Product construction and structural lifetime guarantee language expressly exclude Addison, Mercer, Harlow and Velocity Series. Footer says prices and availability vary by showroom."
+  },
+  "videoVerification": [
+    {
+      "path": "assets/campaigns/cl-bailey-factory-event-source.mp4",
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 1920,
+          "height": 1080,
+          "r_frame_rate": "24/1",
+          "duration": "64.625000",
+          "nb_frames": "1551"
+        },
+        {
+          "codec_name": "aac",
+          "codec_type": "audio",
+          "sample_rate": "48000",
+          "channels": 2,
+          "r_frame_rate": "0/0",
+          "duration": "64.625000",
+          "nb_frames": "3033"
+        }
+      ],
+      "format": {
+        "duration": "64.625000",
+        "size": "120688822"
+      },
+      "audio_packet_hash": "SHA256=ab48b6e1340409cbe2352ac4c50d0b4fb181ff9044a5ba66d4dadfd8675ca1c8"
+    },
+    {
+      "path": "public/video/cl-bailey-factory-event.mp4",
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 1280,
+          "height": 720,
+          "r_frame_rate": "24/1",
+          "duration": "64.625000",
+          "nb_frames": "1551"
+        },
+        {
+          "codec_name": "aac",
+          "codec_type": "audio",
+          "sample_rate": "48000",
+          "channels": 2,
+          "r_frame_rate": "0/0",
+          "duration": "64.640000",
+          "nb_frames": "3030"
+        }
+      ],
+      "format": {
+        "duration": "64.640000",
+        "size": "13284279"
+      },
+      "audio_packet_hash": "SHA256=ab48b6e1340409cbe2352ac4c50d0b4fb181ff9044a5ba66d4dadfd8675ca1c8"
+    },
+    {
+      "path": "public/video/cl-bailey-factory-event-mobile.mp4",
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 768,
+          "height": 432,
+          "r_frame_rate": "24/1",
+          "duration": "64.625000",
+          "nb_frames": "1551"
+        },
+        {
+          "codec_name": "aac",
+          "codec_type": "audio",
+          "sample_rate": "48000",
+          "channels": 2,
+          "r_frame_rate": "0/0",
+          "duration": "64.640000",
+          "nb_frames": "3030"
+        }
+      ],
+      "format": {
+        "duration": "64.640000",
+        "size": "6380051"
+      },
+      "audio_packet_hash": "SHA256=ab48b6e1340409cbe2352ac4c50d0b4fb181ff9044a5ba66d4dadfd8675ca1c8"
+    }
+  ]
+}

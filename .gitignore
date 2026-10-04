@@ -1,5 +1,5 @@
 node_modules/
-dist/
+/dist
 .netlify/
 .DS_Store
 *.local
@@ -10,6 +10,7 @@ dist/
 *.mp4
 *.webm
 *.mov
+!public/video/*.mp4
 *.pdf
 *.xlsx
 CLAUDE-CODE-PROMPT-*.md

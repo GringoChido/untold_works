@@ -5,12 +5,8 @@
 [build.environment]
   PUPPETEER_CACHE_DIR = "/opt/build/cache/puppeteer"
 
-# Redirects, including the 301 map from the old site, live in public/_redirects.
-# The 404 -> / catch-all lives in an edge function; Netlify drops a `/* / 301` redirect rule as a loop.
-
-[[edge_functions]]
-  path = "/*"
-  function = "not-found"
+# Redirects for known old URLs live in public/_redirects.
+# Unknown URLs use public/404.html and retain their 404 status.
 
 [[headers]]
   for = "/*"

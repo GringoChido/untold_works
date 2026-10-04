@@ -1,32 +1,88 @@
 [
  {
-  "slug": "platforms",
+  "slug": "brand-and-product",
   "index": "01",
-  "name": "Platforms",
-  "color": "ink",
-  "caption": "The engine behind the story.",
-  "intro": "The systems a company runs on so the story keeps going out: the plan, the publishing, the operations, and one place where every team works.",
+  "name": "Brand and product",
+  "color": "ochre",
+  "caption": "Visual systems for products and places.",
+  "intro": "I use identity, product and showroom design to make choices easier for teams and customers. At Billiard Factory, a 34-station floor plan connects to 27 live room stories; AI mockups help the team review rooms before physical installation.",
   "layers": [
-   "Publishing",
-   "Operations",
-   "Command"
+   "Brand",
+   "Product and place"
   ],
   "projects": [
    {
     "order": 1,
-    "name": "Engine Room",
-    "color": "ink",
+    "name": "Noxguard",
+    "color": "teal",
     "visual": {
-     "type": "engine-room-diagram",
-     "nodes": [
-      "Campaign calendar",
-      "Deliverable kits",
-      "Approval queue",
-      "Klaviyo email",
-      "Content Factory (built by Brady)",
-      "Facebook, Instagram"
-     ],
-     "tag": null
+     "type": "image",
+     "src": "noxguard-packaging.webp",
+     "alt": "Noxguard branded DEF cartons stacked on a pallet",
+     "tag": "Agency collaboration",
+     "fit": "cover"
+    },
+    "facts": [
+     {
+      "label": "Client",
+      "value": "Noxguard"
+     },
+     {
+      "label": "Program",
+      "value": "Brand identity, site and campaign"
+     },
+     {
+      "label": "Team",
+      "value": "Ingenia strategy, design and build"
+     },
+     {
+      "label": "Joshua",
+      "value": "Rebrand, site, photo/video and marketing systems"
+     }
+    ],
+    "projectPage": "/work/noxguard"
+   },
+   {
+    "order": 2,
+    "name": "Spring Gallery",
+    "color": "ochre",
+    "visual": {
+     "type": "image",
+     "src": "spring-gallery-skylar-live.jpg",
+     "alt": "The live Skylar Pit Lane collection page showing a rendered room and shoppable product hotspots",
+     "tag": "Live page · rendered room",
+     "fit": "cover"
+    },
+    "facts": [
+     {
+      "label": "Client",
+      "value": "Billiard Factory"
+     },
+     {
+      "label": "Showroom",
+      "value": "34-station design system"
+     },
+     {
+      "label": "Online",
+      "value": "27 live shoppable room stories"
+     },
+     {
+      "label": "Status",
+      "value": "Gallery open; redesign progressing"
+     }
+    ],
+    "projectPage": "/work/spring-stuebner-store"
+   },
+   {
+    "order": 3,
+    "name": "Brand Hub",
+    "color": "sage",
+    "visual": {
+     "type": "image",
+     "src": "brand-hub.jpg",
+     "alt": "The Billiard Factory Brand Hub home page",
+     "tag": "Brand guidelines",
+     "fit": "cover"
     },
     "facts": [
      {
@@ -35,32 +91,62 @@
      },
      {
       "label": "What it is",
-      "value": "Marketing and operations platform"
+      "value": "Living brand guidelines and creative hub"
      },
      {
-      "label": "Specs",
-      "value": "38 pages · 57 functions · 1,830 tests"
+      "label": "One source",
+      "value": "Design tokens and guidance for builds"
      },
      {
-      "label": "Built with",
-      "value": "Claude Code"
+      "label": "Status",
+      "value": "Live ↗",
+      "href": "https://billiard-factory-brand-hub.netlify.app"
      }
     ],
-    "projectPage": null
+    "projectPage": "/work/brand-hub"
    },
    {
-    "order": 2,
-    "name": "Content Factory",
-    "color": "teal",
+    "order": 4,
+    "name": "C.L. Bailey Brand Bible",
+    "color": "ink",
     "visual": {
-     "type": "flow",
-     "nodes": [
-      "Higgsfield",
-      "ImageKit",
-      "Approval email",
-      "Facebook, Instagram"
-     ],
-     "tag": "Publisher"
+     "type": "image",
+     "src": "clb-brand-bible.jpg",
+     "alt": "The C.L. Bailey Guidelines Engine home page",
+     "tag": "Guidelines Engine",
+     "fit": "cover"
+    },
+    "facts": [
+     {
+      "label": "Client",
+      "value": "C.L. Bailey"
+     },
+     {
+      "label": "What it is",
+      "value": "Eleven modules, one standard"
+     },
+     {
+      "label": "Built for",
+      "value": "The dealer network"
+     },
+     {
+      "label": "Status",
+      "value": "Live ↗",
+      "href": "https://clbailey-brand-bible.netlify.app"
+     }
+    ],
+    "projectPage": "/work/c-l-bailey-brand-bible"
+   },
+   {
+    "order": 5,
+    "name": "Tierra cue line",
+    "color": "burgundy",
+    "visual": {
+     "type": "image",
+     "src": "tierra-cover.png",
+     "alt": "Concept renders of the Cascabel, Brasa and Cauce cue butts against terracotta",
+     "tag": "Concept renders",
+     "fit": "cover"
     },
     "facts": [
      {
@@ -68,7 +154,118 @@
       "value": "Billiard Factory"
      },
      {
-      "label": "Runs",
+      "label": "Role",
+      "value": "Designed"
+     },
+     {
+      "label": "What it is",
+      "value": "Three cues, one build"
+     },
+     {
+      "label": "Status",
+      "value": "Direction approved; factory artwork in progress"
+     }
+    ],
+    "projectPage": "/work/tierra-cue-line"
+   }
+  ],
+  "music": []
+ },
+ {
+  "slug": "platforms",
+  "index": "02",
+  "name": "Platforms",
+  "color": "ink",
+  "caption": "Tools that coordinate the work.",
+  "intro": "I design and build AI-assisted tools for campaign planning, content production, customer questions and dealer access. Engine Room links briefs, assets, owners and channel schedules; campaign forms route inquiries to the sales CRM.",
+  "layers": [
+   "Customer AI",
+   "Lead capture & CRM",
+   "Creative workflows",
+   "Operations"
+  ],
+  "projects": [
+   {
+    "order": 1,
+    "name": "C.L. Bailey portal and concierge",
+    "color": "ochre",
+    "visual": {
+     "type": "image",
+     "src": "clbailey-concierge.jpg",
+     "alt": "The clbailey.com home page with the AI showroom concierge open",
+     "tag": "AI showroom concierge",
+     "fit": "cover"
+    },
+    "facts": [
+     {
+      "label": "Client",
+      "value": "C.L. Bailey"
+     },
+     {
+      "label": "Dealer portal",
+      "value": "Authenticated assets; ops screens demo"
+     },
+     {
+      "label": "Site",
+      "value": "Bilingual, AI concierge, dealer locator"
+     },
+     {
+      "label": "Public site",
+      "value": "Live ↗",
+      "href": "https://clbailey.com"
+     }
+    ],
+    "projectPage": "/work/c-l-bailey-portal-and-concierge"
+   },
+   {
+    "order": 2,
+    "name": "Engine Room",
+    "color": "ink",
+    "visual": {
+     "type": "image",
+     "src": "marketing-engine-calendar.png",
+     "alt": "Working Marketing Engine campaign calendar connecting Home Field, the C.L. Bailey Factory Event and the seasonal retail program",
+     "tag": "Marketing platform · Built with AI",
+     "fit": "contain"
+    },
+    "facts": [
+     {
+      "label": "Client",
+      "value": "Billiard Factory"
+     },
+     {
+      "label": "Role",
+      "value": "Platform design, build and campaign direction"
+     },
+     {
+      "label": "Connects",
+      "value": "Briefs, assets, review, schedules and channels"
+     },
+     {
+      "label": "Built with",
+      "value": "Claude Code"
+     }
+    ],
+    "projectPage": "/work/engine-room"
+   },
+   {
+    "order": 3,
+    "name": "Content Factory",
+    "color": "teal",
+    "visual": {
+     "type": "image",
+     "src": "content-factory-concept.png",
+     "alt": "Concept visualization of billiards photography contact sheets moving through a physical review and publishing workflow",
+     "tag": "Concept visualization",
+     "fit": "cover"
+    },
+    "facts": [
+     {
+      "label": "Client",
+      "value": "Billiard Factory"
+     },
+     {
+      "label": "Target cadence",
       "value": "A post and a story every day"
      },
      {
@@ -80,69 +277,38 @@
       "value": "Brady Stick"
      }
     ],
-    "projectPage": null
-   },
-   {
-    "order": 3,
-    "name": "C.L. Bailey portal and concierge",
-    "color": "ochre",
-    "visual": {
-     "type": "image",
-     "src": "clbailey-concierge.jpg",
-     "alt": "The clbailey.com home page with the AI showroom concierge open",
-     "tag": "clbailey.com",
-     "fit": "cover"
-    },
-    "facts": [
-     {
-      "label": "Client",
-      "value": "C.L. Bailey"
-     },
-     {
-      "label": "Dealer portal",
-      "value": "About 70 dealers"
-     },
-     {
-      "label": "Site",
-      "value": "Bilingual, AI concierge, dealer locator"
-     },
-     {
-      "label": "Status",
-      "value": "Live ↗",
-      "href": "https://clbailey.com"
-     }
-    ],
-    "projectPage": null
+    "projectPage": "/work/content-factory"
    },
    {
     "order": 4,
     "name": "Off STORIS",
     "color": "burgundy",
     "visual": {
-     "type": "type",
-     "big": "Off STORIS.",
-     "small": "Onto Shopify and XoroERP, one module at a time.",
-     "tag": "Re-platform"
+     "type": "image",
+     "src": "off-storis-concept.png",
+     "alt": "Concept visualization of paper inventory ledgers transitioning into connected modular commerce blocks",
+     "tag": "Concept visualization",
+     "fit": "cover"
     },
     "facts": [
      {
       "label": "Client",
-      "value": "Billiard Factory · 12 showrooms"
+      "value": "Billiard Factory"
      },
      {
-      "label": "Storefront",
-      "value": "Shopify, began Oct 1, 2026"
+      "label": "Shopify Plus",
+      "value": "Signed Oct 1, 2026; migration underway"
      },
      {
       "label": "ERP",
-      "value": "XoroERP, signed Sep 30, 2026"
+      "value": "Xorosoft XoroERP, signed Sep 30, 2026"
      },
      {
       "label": "Status",
       "value": "In progress"
      }
     ],
-    "projectPage": null
+    "projectPage": "/work/off-storis"
    },
    {
     "order": 5,
@@ -173,17 +339,18 @@
       "value": "2024–2025"
      }
     ],
-    "projectPage": null
+    "projectPage": "/work/omi-lead-intake"
    },
    {
     "order": 6,
     "name": "Casa Schuck ops dashboard",
     "color": "sage",
     "visual": {
-     "type": "type",
-     "big": "Ops dashboard",
-     "small": "Rooms, bookings and the day, in one view.",
-     "tag": "Casa Schuck"
+     "type": "image",
+     "src": "casa-schuck-dashboard-demo.png",
+     "alt": "Casa Schuck Command Center demo showing sample occupancy, room status and activity data",
+     "tag": "Demo · sample data",
+     "fit": "cover"
     },
     "facts": [
      {
@@ -199,208 +366,7 @@
       "value": "Full demo, no live data yet"
      }
     ],
-    "projectPage": null
-   },
-   {
-    "order": 7,
-    "name": "Sante Peptides",
-    "color": "ink",
-    "visual": {
-     "type": "type",
-     "big": "Sante",
-     "small": "A full-stack build in two languages.",
-     "tag": "Full stack"
-    },
-    "facts": [
-     {
-      "label": "Client",
-      "value": "Sante Peptides"
-     },
-     {
-      "label": "Stack",
-      "value": "Anthropic SDK · Postgres · auth"
-     },
-     {
-      "label": "Languages",
-      "value": "English and Spanish"
-     },
-     {
-      "label": "Date",
-      "value": "May 2026"
-     }
-    ],
-    "projectPage": null
-   }
-  ],
-  "music": []
- },
- {
-  "slug": "brand-and-product",
-  "index": "02",
-  "name": "Brand and product",
-  "color": "ochre",
-  "caption": "The story you can hold.",
-  "intro": "The rules that keep a company sounding like itself, and the things people buy, down to the room they buy them in.",
-  "layers": [
-   "Brand",
-   "Product and place"
-  ],
-  "projects": [
-   {
-    "order": 1,
-    "name": "Spring Stuebner store",
-    "color": "ochre",
-    "visual": {
-     "type": "image",
-     "src": "spring-stuebner-plot.svg",
-     "alt": "The Spring Stuebner store plan, 34 coded stations",
-     "tag": "Store plan",
-     "fit": "contain"
-    },
-    "facts": [
-     {
-      "label": "Client",
-      "value": "Billiard Factory"
-     },
-     {
-      "label": "Stations",
-      "value": "34, coded from the SketchUp model"
-     },
-     {
-      "label": "Styling",
-      "value": "Five tiers, every station specified"
-     },
-     {
-      "label": "Opens",
-      "value": "Fall 2026"
-     }
-    ],
-    "projectPage": null
-   },
-   {
-    "order": 2,
-    "name": "Brand Hub",
-    "color": "sage",
-    "visual": {
-     "type": "image",
-     "src": "brand-hub.jpg",
-     "alt": "The Billiard Factory Brand Hub home page",
-     "tag": "hub.billiardfactory.com",
-     "fit": "cover"
-    },
-    "facts": [
-     {
-      "label": "Client",
-      "value": "Billiard Factory"
-     },
-     {
-      "label": "What it is",
-      "value": "Brand guidelines in 15 sections"
-     },
-     {
-      "label": "One source",
-      "value": "Re-skins every property"
-     },
-     {
-      "label": "Status",
-      "value": "Live ↗",
-      "href": "https://hub.billiardfactory.com"
-     }
-    ],
-    "projectPage": null
-   },
-   {
-    "order": 3,
-    "name": "C.L. Bailey Brand Bible",
-    "color": "ink",
-    "visual": {
-     "type": "image",
-     "src": "clb-brand-bible.jpg",
-     "alt": "The C.L. Bailey Guidelines Engine home page",
-     "tag": "Guidelines Engine",
-     "fit": "cover"
-    },
-    "facts": [
-     {
-      "label": "Client",
-      "value": "C.L. Bailey"
-     },
-     {
-      "label": "What it is",
-      "value": "Eleven modules, one standard"
-     },
-     {
-      "label": "Built for",
-      "value": "The dealer network"
-     },
-     {
-      "label": "Status",
-      "value": "Live ↗",
-      "href": "https://clbailey-brand-bible.netlify.app"
-     }
-    ],
-    "projectPage": null
-   },
-   {
-    "order": 4,
-    "name": "Tierra cue line",
-    "color": "burgundy",
-    "visual": {
-     "type": "type",
-     "big": "Tierra",
-     "small": "Three cues, one build.",
-     "tag": "Product design"
-    },
-    "facts": [
-     {
-      "label": "Client",
-      "value": "Billiard Factory"
-     },
-     {
-      "label": "Role",
-      "value": "Designed"
-     },
-     {
-      "label": "What it is",
-      "value": "Three cues, one build"
-     },
-     {
-      "label": "Status",
-      "value": "Approved for production"
-     }
-    ],
-    "projectPage": null
-   },
-   {
-    "order": 5,
-    "name": "Noxguard",
-    "color": "teal",
-    "visual": {
-     "type": "image",
-     "src": "noxguard-truck.jpg",
-     "alt": "A Noxguard DEF tractor-trailer in the new brand",
-     "tag": "Brand rebuild",
-     "fit": "cover"
-    },
-    "facts": [
-     {
-      "label": "Client",
-      "value": "Noxguard"
-     },
-     {
-      "label": "What it is",
-      "value": "Brand rebuild, three revenue pillars"
-     },
-     {
-      "label": "Plus",
-      "value": "Sales enablement and an AI roadmap"
-     },
-     {
-      "label": "Years",
-      "value": "2024–2025"
-     }
-    ],
-    "projectPage": null
+    "projectPage": "/work/casa-schuck-ops-dashboard"
    }
   ],
   "music": []
@@ -410,8 +376,8 @@
   "index": "03",
   "name": "Websites",
   "color": "burgundy",
-  "caption": "Where people find it.",
-  "intro": "Sites for artists, retailers, a food tech company, a trade showroom, a hotel and a café, each one built around the story it has to tell.",
+  "caption": "Destinations with a clear next step.",
+  "intro": "I build artist, retail and service sites around what visitors need to decide: compare a product, find a show, understand a process or make an inquiry. AI helps me build and test these experiences; the site still has to serve its audience.",
   "layers": [
    "Channels"
   ],
@@ -423,18 +389,22 @@
     "visual": {
      "type": "image",
      "src": "lalah-made-in-chicago.jpg",
-     "alt": "The Made in Chicago site for Lalah Hathaway",
-     "tag": "lalahhathaway.com",
+     "alt": "The Made in Chicago artist website for Lalah Hathaway, set in a music room lined with records",
+     "tag": "Built with AI",
      "fit": "cover"
     },
     "facts": [
      {
-      "label": "Made in Chicago",
-      "value": "Sep 5–21, 2026"
+      "label": "Approach",
+      "value": "Site designed and built with AI"
      },
      {
-      "label": "Built around",
-      "value": "One music-room photograph"
+      "label": "Starting materials",
+      "value": "Main image · videos · music"
+     },
+     {
+      "label": "Experience",
+      "value": "Seven interactive room objects"
      },
      {
       "label": "Status",
@@ -442,7 +412,7 @@
       "href": "https://lalahhathaway.com"
      }
     ],
-    "projectPage": null
+    "projectPage": "/work/lalah-hathaway"
    },
    {
     "order": 2,
@@ -470,7 +440,7 @@
       "href": "https://elenapinderhughes.com"
      }
     ],
-    "projectPage": "Project.dc.html"
+    "projectPage": "/work/elena-pinderhughes"
    },
    {
     "order": 3,
@@ -498,7 +468,7 @@
       "href": "https://kibokcoffeesma.com"
      }
     ],
-    "projectPage": null
+    "projectPage": "/work/kibok-coffee"
    },
    {
     "order": 4,
@@ -530,7 +500,7 @@
       "href": "https://www.savor.it"
      }
     ],
-    "projectPage": null
+    "projectPage": "/work/savor"
    },
    {
     "order": 5,
@@ -538,19 +508,28 @@
     "color": "ink",
     "visual": {
      "type": "image",
-     "src": "grfp-home.jpg",
-     "alt": "The Game Room Furniture Partners home page",
+     "src": "grfp-home-live.png",
+     "alt": "Game Room Furniture Partners’ live website, identifying it as a Billiard Factory company and a trade-only showroom at Dallas Market Center",
      "tag": "Trade only",
      "fit": "cover"
     },
     "facts": [
+     {
+      "label": "Part of",
+      "value": "Billiard Factory",
+      "href": "/work/billiard-factory-and-c-l-bailey"
+     },
+     {
+      "label": "Audience",
+      "value": "Trade only · Interior designers"
+     },
      {
       "label": "Trade showroom",
       "value": "Dallas Market Center"
      },
      {
       "label": "Catalog",
-      "value": "386 products"
+      "value": "421 items · October 2026"
      },
      {
       "label": "Status",
@@ -558,38 +537,10 @@
       "href": "https://gameroomfurniturepartners.com"
      }
     ],
-    "projectPage": null
+    "projectPage": "/work/game-room-furniture-partners"
    },
    {
     "order": 6,
-    "name": "Rivero Studio",
-    "color": "sage",
-    "visual": {
-     "type": "image",
-     "src": "rivero-studio.jpg",
-     "alt": "The Marlene Rivero Studio home page, a watercolor of a flowering cactus",
-     "tag": "riverostudio.com",
-     "fit": "cover"
-    },
-    "facts": [
-     {
-      "label": "Artist platform",
-      "value": "May 2026"
-     },
-     {
-      "label": "Stack",
-      "value": "Astro · Storyblok · Stripe · Supabase · Cal.com · Mux"
-     },
-     {
-      "label": "Status",
-      "value": "Live ↗",
-      "href": "https://riverostudio.com"
-     }
-    ],
-    "projectPage": null
-   },
-   {
-    "order": 7,
     "name": "Casa Schuck",
     "color": "teal",
     "visual": {
@@ -614,10 +565,10 @@
       "href": "https://csnewsite.netlify.app/en"
      }
     ],
-    "projectPage": null
+    "projectPage": "/work/casa-schuck"
    },
    {
-    "order": 8,
+    "order": 7,
     "name": "Derrick Hodge",
     "color": "burgundy",
     "visual": {
@@ -642,10 +593,10 @@
       "href": "https://derrickhodge.netlify.app"
      }
     ],
-    "projectPage": null
+    "projectPage": "/work/derrick-hodge"
    },
    {
-    "order": 9,
+    "order": 8,
     "name": "Qmillion",
     "color": "ink",
     "visual": {
@@ -666,17 +617,17 @@
       "href": "https://qmillion.netlify.app"
      }
     ],
-    "projectPage": null
+    "projectPage": "/work/qmillion"
    },
    {
-    "order": 10,
+    "order": 9,
     "name": "Second Son Productions",
     "color": "ink",
     "visual": {
      "type": "image",
      "src": "second-son-roster.jpg",
      "alt": "The Second Son Productions roster page",
-     "tag": "The roster",
+     "tag": "Project preview",
      "fit": "cover"
     },
     "facts": [
@@ -690,13 +641,18 @@
      },
      {
       "label": "Status",
-      "value": "Built"
+      "value": "Preview build"
+     },
+     {
+      "label": "Preview",
+      "value": "Explore the build ↗",
+      "href": "https://secondsonproductions.netlify.app/"
      }
     ],
-    "projectPage": null
+    "projectPage": "/work/second-son-productions"
    },
    {
-    "order": 11,
+    "order": 10,
     "name": "Regal Billiards",
     "color": "ochre",
     "visual": {
@@ -720,10 +676,10 @@
       "value": "Built"
      }
     ],
-    "projectPage": null
+    "projectPage": "/work/regal-billiards"
    },
    {
-    "order": 12,
+    "order": 11,
     "name": "Lexington Billiards and Spas",
     "color": "sage",
     "visual": {
@@ -747,17 +703,18 @@
       "value": "Built"
      }
     ],
-    "projectPage": null
+    "projectPage": "/work/lexington-billiards-and-spas"
    },
    {
-    "order": 13,
+    "order": 12,
     "name": "Voztre",
     "color": "teal",
     "visual": {
-     "type": "type",
-     "big": "Voztre",
-     "small": "A bilingual landing page that captures the lead.",
-     "tag": "FoodTech AI"
+     "type": "image",
+     "src": "voztre-concept.png",
+     "alt": "Concept visualization of a restaurant host stand with a telephone connected to a reservation book by a line of light",
+     "tag": "Concept visualization",
+     "fit": "cover"
     },
     "facts": [
      {
@@ -773,17 +730,18 @@
       "value": "Apr 2026"
      }
     ],
-    "projectPage": null
+    "projectPage": "/work/voztre"
    },
    {
-    "order": 14,
+    "order": 13,
     "name": "Village Tenders",
     "color": "ochre",
     "visual": {
-     "type": "type",
-     "big": "Village Tenders",
-     "small": "A proposal delivered as a live site, not a deck.",
-     "tag": "Proposal"
+     "type": "image",
+     "src": "village-tenders-concept.png",
+     "alt": "Concept visualization of a paper proposal folded into three browsable architectural doorways",
+     "tag": "Concept visualization",
+     "fit": "cover"
     },
     "facts": [
      {
@@ -799,7 +757,7 @@
       "value": "Apr–May 2026"
      }
     ],
-    "projectPage": null
+    "projectPage": "/work/village-tenders"
    }
   ],
   "music": []
@@ -809,8 +767,8 @@
   "index": "04",
   "name": "Campaigns",
   "color": "teal",
-  "caption": "Where it gets told.",
-  "intro": "Seasons, events, films and the pages that catch the lead, planned on one calendar and shipped through the engine.",
+  "caption": "Creative tied to an action.",
+  "intro": "AI helps me create campaign images and films, then carry the same idea into social, email, a page and a measurable handoff such as a lead form. Earlier music and live-event work grounds my direction in real people, performances and audiences.",
   "layers": [
    "The story"
   ],
@@ -844,7 +802,7 @@
       "value": "Engine Room, Content Factory"
      }
     ],
-    "projectPage": null
+    "projectPage": "/work/home-field"
    },
    {
     "order": 2,
@@ -852,14 +810,14 @@
     "color": "teal",
     "visual": {
      "type": "image",
-     "src": "clb-factory-event-page.jpg",
-     "alt": "The C.L. Bailey Factory Event landing page, a subway billboard in the hero",
-     "tag": "Factory Event",
+     "src": "cl-bailey-factory-event-still.jpg",
+     "alt": "An AI-created city billboard scene from the C.L. Bailey Factory Event campaign film",
+     "tag": "AI campaign · Upcoming October 2026",
      "fit": "cover"
     },
     "facts": [
      {
-      "label": "Runs",
+      "label": "Planned",
       "value": "Oct 16–31, 2026"
      },
      {
@@ -869,9 +827,13 @@
      {
       "label": "Lanes",
       "value": "The Table Is Open · The Long Game · On The Floor"
+     },
+     {
+      "label": "Creative",
+      "value": "AI film, campaign artwork and landing page"
      }
     ],
-    "projectPage": null
+    "projectPage": "/work/c-l-bailey-factory-event"
    },
    {
     "order": 3,
@@ -903,17 +865,18 @@
       "href": "https://idw.studio/cs/savor"
      }
     ],
-    "projectPage": null
+    "projectPage": "/work/savor-chef-series"
    },
    {
     "order": 4,
     "name": "Preferred Customer Event",
     "color": "burgundy",
     "visual": {
-     "type": "type",
-     "big": "We pay the sales tax.",
-     "small": "Thursday, October 15.",
-     "tag": "The offer"
+     "type": "image",
+     "src": "preferred-customer-event.png",
+     "alt": "Preferred Customer Event campaign artwork with the October 15 ball and sales tax offer",
+     "tag": "Campaign artwork",
+     "fit": "contain"
     },
     "facts": [
      {
@@ -922,14 +885,14 @@
      },
      {
       "label": "Where",
-      "value": "12 showrooms and online"
+      "value": "12 showrooms · in store only"
      },
      {
       "label": "Social",
-      "value": "A countdown, six days out to Today"
+      "value": "Planned countdown, six days out to Today"
      }
     ],
-    "projectPage": null
+    "projectPage": "/work/preferred-customer-event"
    },
    {
     "order": 5,
@@ -955,8 +918,8 @@
       "value": "Ten, eight live"
      },
      {
-      "label": "Lead capture",
-      "value": "GoHighLevel · Klaviyo"
+      "label": "CRM foundation",
+      "value": "GoHighLevel · sales team connected"
      },
      {
       "label": "Built with",
@@ -965,20 +928,21 @@
      {
       "label": "Inside",
       "value": "Open the project →",
-      "href": "LandingPages.dc.html"
+      "href": "/work/landing-pages"
      }
     ],
-    "projectPage": "LandingPages.dc.html"
+    "projectPage": "/work/landing-pages"
    },
    {
     "order": 6,
     "name": "Messes Happen",
     "color": "sage",
     "visual": {
-     "type": "type",
-     "big": "Messes Happen.",
-     "small": "A TV spot for Allstate Protection Plans.",
-     "tag": "TV spot"
+     "type": "image",
+     "src": "messes-happen-production-frame.png",
+     "alt": "Production frame from the Messes Happen TV spot footage with two people beside a pool table",
+     "tag": "Production frame",
+     "fit": "cover"
     },
     "facts": [
      {
@@ -994,21 +958,22 @@
       "value": "Higgsfield · Claude Design · HyperFrames"
      },
      {
-      "label": "Airs",
+      "label": "Scheduled to air",
       "value": "Oct 2026"
      }
     ],
-    "projectPage": null
+    "projectPage": "/work/messes-happen"
    },
    {
     "order": 7,
     "name": "Season Opener",
     "color": "ink",
     "visual": {
-     "type": "type",
-     "big": "The season starts at home.",
-     "small": "August, before the first kickoff.",
-     "tag": "Campaign"
+     "type": "image",
+     "src": "season-opener-artwork.png",
+     "alt": "Original Season Opener campaign banner shown in full within a dark green frame",
+     "tag": "Campaign artwork",
+     "fit": "cover"
     },
     "facts": [
      {
@@ -1024,7 +989,7 @@
       "value": "Engine Room"
      }
     ],
-    "projectPage": null
+    "projectPage": "/work/season-opener"
    },
    {
     "order": 8,
@@ -1055,7 +1020,7 @@
       "value": "Brady Stick, SEO copy by Zorica"
      }
     ],
-    "projectPage": null
+    "projectPage": "/work/labor-day-sale"
    },
    {
     "order": 9,
@@ -1082,7 +1047,7 @@
       "value": "billiardfactory.com"
      }
     ],
-    "projectPage": null
+    "projectPage": "/work/product-films"
    }
   ],
   "music": [
@@ -1091,14 +1056,11 @@
     "name": "Robert Glasper album releases",
     "color": "teal",
     "visual": {
-     "type": "vinyl",
-     "discs": [
-      "Black Radio III Supreme Edition (2022, tri-color 3LP)",
-      "Let Go (2024, silver)",
-      "Code Derivation (2025, gold)",
-      "Keys to the City Volume One (2025, translucent blue)"
-     ],
-     "tag": "Limited vinyl editions"
+     "type": "image",
+     "src": "glasper-selected-cover-art.png",
+     "alt": "Selected release artwork for Robert Glasper’s Let Go and Code Derivation, shown side by side",
+     "tag": "Selected release artwork",
+     "fit": "cover"
     },
     "facts": [
      {
@@ -1114,18 +1076,41 @@
       "value": "Part of the release team"
      }
     ],
-    "projectPage": "GlasperBlueNote.dc.html"
+    "projectPage": "/work/robert-glasper-album-releases"
    },
    {
     "order": 2,
+    "name": "Art Science and R+R=NOW release films",
+    "color": "burgundy",
+    "visual": {
+     "type": "image",
+     "src": "glasper-r-r-now-still.jpg",
+     "alt": "Frame from the Robert Glasper R+R=NOW record-release and tour film",
+     "tag": "R+R=NOW / Film frame",
+     "fit": "cover"
+    },
+    "facts": [
+     {
+      "label": "Films",
+      "value": "Art Science · R+R=NOW"
+     },
+     {
+      "label": "Role",
+      "value": "Directed, shot and edited"
+     }
+    ],
+    "projectPage": "/work/art-science-and-r-r-now-release-films"
+   },
+   {
+    "order": 3,
     "name": "Robtober",
     "color": "ink",
     "visual": {
      "type": "image",
-     "src": "robtober-blue-note-nyc.jpg",
-     "alt": "Robert Glasper and band on stage at Blue Note New York during Robtober",
-     "tag": "Blue Note New York",
-     "fit": "cover"
+     "src": "robtober-2026-poster-clean.png",
+     "alt": "Robtober NYC 2026 Season 8 event poster announcing October 1 through November 1 and 11 episodes at Blue Note New York",
+     "tag": "Robtober 2026 / Season 8",
+     "fit": "contain"
     },
     "facts": [
      {
@@ -1137,21 +1122,30 @@
       "value": "Blue Note New York"
      },
      {
+      "label": "2026 season",
+      "value": "Season 8 · 11 episodes"
+     },
+     {
+      "label": "Dates",
+      "value": "October 1–November 1, 2026"
+     },
+     {
       "label": "Role",
       "value": "Content, five years"
      }
     ],
-    "projectPage": null
+    "projectPage": "/work/robtober"
    },
    {
-    "order": 3,
+    "order": 4,
     "name": "Blue Note Los Angeles",
     "color": "burgundy",
     "visual": {
-     "type": "type",
-     "big": "Blue Note Los Angeles",
-     "small": "Opened August 14, 2025, on Sunset Boulevard.",
-     "tag": "Launch"
+     "type": "image",
+     "src": "blue-note-la-band.jpg",
+     "alt": "Robert Glasper and band performing beneath red and blue curtains at Blue Note Los Angeles",
+     "tag": "Opening night / August 2025",
+     "fit": "cover"
     },
     "facts": [
      {
@@ -1167,18 +1161,18 @@
       "value": "Launch and opening content"
      }
     ],
-    "projectPage": null
+    "projectPage": "/work/blue-note-los-angeles"
    },
    {
-    "order": 4,
+    "order": 5,
     "name": "Black Radio Experience",
     "color": "sage",
     "visual": {
      "type": "image",
-     "src": "black-radio-experience-crowd.jpg",
-     "alt": "The crowd at the Black Radio Experience in Napa Valley",
+     "src": "black-radio-experience-stage-clean.png",
+     "alt": "The Black Radio Experience stage with festival signage above the performers and audience",
      "tag": "Napa Valley",
-     "fit": "cover"
+     "fit": "contain"
     },
     "facts": [
      {
@@ -1194,10 +1188,10 @@
       "value": "Content Director, four years"
      }
     ],
-    "projectPage": null
+    "projectPage": "/work/black-radio-experience"
    },
    {
-    "order": 5,
+    "order": 6,
     "name": "Color of Noize",
     "color": "ochre",
     "visual": {
@@ -1221,7 +1215,7 @@
       "value": "Tour content"
      }
     ],
-    "projectPage": null
+    "projectPage": "/work/color-of-noize"
    }
   ]
  }

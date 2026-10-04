@@ -1,0 +1,77 @@
+{
+  "brand-and-product": {
+    "featured": [
+      "/work/spring-stuebner-store"
+    ],
+    "engagements": [
+      {
+        "name": "Billiard Factory + C.L. Bailey",
+        "to": "/work/billiard-factory-and-c-l-bailey",
+        "detail": "A 34-station Spring plan connects to 27 published room stories and a physical redesign still in progress."
+      }
+    ]
+  },
+  "platforms": {
+    "featured": [
+      "/work/c-l-bailey-portal-and-concierge",
+      "/work/engine-room",
+      "/work/content-factory"
+    ],
+    "engagements": [
+      {
+        "name": "Billiard Factory + C.L. Bailey",
+        "to": "/work/billiard-factory-and-c-l-bailey",
+        "detail": "Customer and dealer tools, a shared campaign plan and CRM paths for sales follow-up."
+      }
+    ]
+  },
+  "websites": {
+    "featured": [
+      "/work/savor",
+      "/work/lalah-hathaway",
+      "/work/second-son-productions"
+    ],
+    "engagements": [
+      {
+        "name": "Second Son Productions & related music work",
+        "to": "/work/robert-glasper-blue-note",
+        "detail": "Artist sites connect releases and live dates to a place fans can explore."
+      },
+      {
+        "name": "Savor",
+        "to": "/work/savor",
+        "detail": "A new food process explained through products, culinary use and chef content."
+      },
+      {
+        "name": "Billiard Factory + C.L. Bailey",
+        "to": "/work/billiard-factory-and-c-l-bailey",
+        "detail": "Retail browsing, dealer specification and commerce paths for distinct audiences."
+      }
+    ]
+  },
+  "campaigns": {
+    "featured": [
+      "/work/robtober",
+      "/work/home-field",
+      "/work/black-radio-experience",
+      "/work/savor-chef-series"
+    ],
+    "engagements": [
+      {
+        "name": "Second Son Productions & related music work",
+        "to": "/work/robert-glasper-blue-note",
+        "detail": "Release films, residency content and festival direction for distinct audience moments."
+      },
+      {
+        "name": "Billiard Factory + C.L. Bailey",
+        "to": "/work/billiard-factory-and-c-l-bailey",
+        "detail": "Retail campaigns link creative assets, publishing, live pages and CRM capture."
+      },
+      {
+        "name": "Savor",
+        "to": "/work/savor",
+        "detail": "Chef-led demonstrations make an unfamiliar ingredient tangible."
+      }
+    ]
+  }
+}

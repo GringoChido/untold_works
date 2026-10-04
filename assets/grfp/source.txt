@@ -1,0 +1,16 @@
+Source: https://gameroomfurniturepartners.com/
+Captured: October 3, 2026
+File: grfp-home-live.png
+Method: Unaltered 1440 x 900 browser viewport screenshot of the live website.
+
+Positioning checked against the live homepage:
+- A Billiard Factory company.
+- Trade-only showroom for interior designers.
+- Dallas Market Center, Suite 1D102.
+- Custom pool table process includes measurement, drawings, materials,
+  delivery and installation.
+
+Catalog source: https://gameroomfurniturepartners.com/products/
+Checked: October 3, 2026
+The live catalog lists 421 items, 19 collections and 16 categories.
+Trade pricing and specifications are handled through the showroom contact.

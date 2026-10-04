@@ -1,5 +1,5 @@
 import raw from './projects.json';
-import type { CardColor, Category } from './types';
+import type { CardColor, Category, Project } from './types';
 
 export type { CardColor, Category, Fact, Project, Visual } from './types';
 
@@ -12,11 +12,16 @@ export const categoryBySlug = (slug: string): Category => {
   return found;
 };
 
-/** Platforms → Brand and product → Websites → Campaigns → Platforms. */
+/** Brand and product → Platforms → Websites → Campaigns → Brand and product. */
 export const nextCategory = (category: Category): Category =>
   categories[(categories.indexOf(category) + 1) % categories.length];
 
 export const projectCount = (category: Category): number => category.projects.length + category.music.length;
+
+export type ProjectEntry = { category: Category; project: Project };
+export const projectEntries: ProjectEntry[] = categories.flatMap((category) =>
+  [...category.music, ...category.projects].map((project) => ({ category, project })),
+);
 
 /** The full-screen fill when a card opens. */
 export const fillClasses: Record<CardColor, string> = {
@@ -40,9 +45,12 @@ const projectPages: Record<string, string> = {
   'LandingPages.dc.html': '/work/landing-pages',
   'GlasperBlueNote.dc.html': '/work/robert-glasper-blue-note',
   'Project.dc.html': '/work/elena-pinderhughes',
+  'LalahHathaway.dc.html': '/work/lalah-hathaway',
+  'Noxguard.dc.html': '/work/noxguard',
 };
 
-export const projectRoute = (ref: string | null): string | null => (ref ? (projectPages[ref] ?? null) : null);
+export const projectRoute = (ref: string | null): string | null =>
+  ref ? (ref.startsWith('/') ? ref : (projectPages[ref] ?? null)) : null;
 
 export const isExternal = (href: string): boolean => /^https?:\/\//.test(href);
 
