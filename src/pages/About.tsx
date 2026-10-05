@@ -260,6 +260,7 @@ export const About = () => {
               </dl>
             </div>
           </div>
+          <Link to="/photography-and-video" className="text-link mt-8">See photography &amp; video in practice <span aria-hidden="true">↗</span></Link>
         </section>
         <section className="flex max-w-[1000px] flex-col gap-7 pb-20" aria-labelledby="about-path-title">
           <LabelRow left={<span id="about-path-title">The path here</span>} right="1997–present" />

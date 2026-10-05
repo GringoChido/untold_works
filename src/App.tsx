@@ -4,6 +4,7 @@ import { PageFillProvider } from './components/PageFill';
 import { About } from './pages/About';
 import { Category } from './pages/Category';
 import { Home } from './pages/Home';
+import { PhotographyAndVideo } from './pages/PhotographyAndVideo';
 import { ElenaPinderhughes } from './pages/work/ElenaPinderhughes';
 import { EngineRoom } from './pages/work/EngineRoom';
 import { GlasperBlueNote } from './pages/work/GlasperBlueNote';
@@ -73,6 +74,7 @@ export const App = () => (
         <Route path="/work/lalah-hathaway" element={<LalahHathaway />} />
         <Route path="/work/elena-pinderhughes" element={<ElenaPinderhughes />} />
         <Route path="/work/:slug" element={<ProjectDetail />} />
+        <Route path="/photography-and-video" element={<PhotographyAndVideo />} />
         <Route path="/about" element={<About />} />
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>

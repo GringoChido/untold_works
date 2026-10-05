@@ -19,5 +19,6 @@ export const routes = [
   // This editorial overview groups several music projects; each card also has its own page.
   '/work/robert-glasper-blue-note',
   '/work/other-projects',
+  '/photography-and-video',
   '/about',
 ];

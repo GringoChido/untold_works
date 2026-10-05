@@ -45,39 +45,6 @@ const process = [
   { number: '04', name: 'Help people make it their own.', detail: 'Teach the people using the system, keep product checks and approvals visible, and turn repeatable tasks into shared workflows.' },
 ] as const;
 
-const directionFilms = [
-  {
-    id: 'home-velocity-brady',
-    kind: 'Velocity Pro / Product film',
-    title: 'At the table with Brady.',
-    detail: 'Brady presents the Velocity Pro through an on-camera product demonstration.',
-    src: '/video/velocity-pro-brady.mp4',
-    mobileSrc: '/video/velocity-pro-brady-mobile.mp4',
-    poster: '/images/velocity-pro-brady-poster.webp',
-    width: 1280,
-    height: 720,
-    label: 'At the Table with Brady: Velocity Pro product demonstration',
-    controlLabel: 'Velocity Pro product film with Brady',
-    duration: '1:35',
-    portrait: false,
-  },
-  {
-    id: 'home-velocity-ball-launch',
-    kind: 'Velocity / Product concept film',
-    title: 'A reveal at a different scale.',
-    detail: 'Oversized billiard balls turn a shipping-container reveal into an imagined product world.',
-    src: '/video/velocity-ball-launch.mp4',
-    mobileSrc: '/video/velocity-ball-launch-mobile.mp4',
-    poster: '/images/velocity-ball-launch-poster.webp',
-    width: 720,
-    height: 1280,
-    label: 'Velocity billiard ball-set launch film with oversized balls rolling from a branded shipping container',
-    controlLabel: 'Velocity ball-set launch film',
-    duration: '0:28',
-    portrait: true,
-  },
-] as const;
-
 const useHomeScene = () => {
   const [scene, setScene] = useState<HomeScene>('intro');
   useEffect(() => {
@@ -139,30 +106,17 @@ export const Home = () => {
         <section id="ai" data-home-scene="intro" className="home-ai scroll-mt-5" aria-labelledby="home-ai-title">
           <div className="home-ai-overline"><span>How the work gets made</span><span>Build · Create · Teach</span></div>
           <div className="home-ai-grid home-direction-intro">
-            <Img src="angelica-street-walking.png" alt="A man walking past a yellow Angelica grocery storefront on a sunny city street" sizes="(min-width: 851px) 55vw, 100vw" className="home-direction-street" />
+            <Link to="/photography-and-video" className="home-direction-image-link" aria-label="Explore the photography and video collection">
+              <Img src="angelica-street-walking.png" alt="A man walking past a yellow Angelica grocery storefront on a sunny city street" sizes="(min-width: 851px) 55vw, 100vw" className="home-direction-street" />
+            </Link>
             <div className="home-ai-copy">
               <h2 id="home-ai-title">Human direction.<br />AI in the making.</h2>
-              <p>Human direction shapes the brief, the performance, the image and the edit. Brady’s on-camera Velocity Pro film and the ball-set reveal below show different ways to bring a product story to life. AI expands what I can make; creative judgment, product references and review shape what gets used.</p>
+              <p>Human direction shapes the brief, the performance, the image and the edit. AI helps me explore images and films, build websites and connect creative work to marketing systems. Creative judgment, product references and review shape what gets used.</p>
               <Link to="/work/engine-room" className="text-link mt-7">See the Marketing Engine built with AI <span aria-hidden="true">↗</span></Link>
+              <Link to="/photography-and-video" className="text-link mt-4">Explore photography &amp; video <span aria-hidden="true">↗</span></Link>
               <Link to="/about#toolkit" className="text-link mt-4">See the tools behind the work <span aria-hidden="true">↗</span></Link>
             </div>
           </div>
-          <section className="home-direction-examples" aria-labelledby="home-direction-films-title">
-            <div className="home-direction-films-heading">
-              <h3 id="home-direction-films-title" className="lbl m-0">Direction in motion</h3>
-              <span className="lbl">Performance · Product · Imagination</span>
-            </div>
-            <div className="home-direction-films">
-              {directionFilms.map((film) => (
-                <article key={film.id} className={`home-direction-example${film.portrait ? ' home-direction-example--portrait' : ''}`} aria-labelledby={`${film.id}-title`}>
-                  <div className="home-direction-film-meta"><span>{film.kind}</span><span>{film.duration}</span></div>
-                  <PortfolioFilm id={film.id} src={film.src} mobileSrc={film.mobileSrc} poster={film.poster} width={film.width} height={film.height} label={film.label} controlLabel={film.controlLabel} caption={film.portrait ? 'Velocity / Ball-set reveal' : 'Velocity Pro / On-camera talent: Brady'} nativeControls autoPlayWhenVisible={false} className="home-direction-player" />
-                  <h4 id={`${film.id}-title`} className="name m-0">{film.title}</h4>
-                  <p>{film.detail}</p>
-                </article>
-              ))}
-            </div>
-          </section>
           <ol className="studio-process-list">
             {process.map((step) => <li key={step.number}><span className="studio-process-number" aria-hidden="true">{step.number}</span><div><h3>{step.name}</h3><p>{step.detail}</p></div></li>)}
           </ol>

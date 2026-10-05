@@ -46,6 +46,7 @@ ${categories.map((c) => `- [${c.name}](${SITE}/${c.slug}): ${c.intro}`).join('\n
 - [Other Projects](${SITE}/work/other-projects): Savor, Noxguard and further independent or agency collaborations, with live and demo status distinguished.
 - [Elena Pinderhughes](${SITE}/work/elena-pinderhughes): The debut album site for I Hope You Feel It Too.
 - [Lalah Hathaway](${SITE}/work/lalah-hathaway): An interactive website for Made in Chicago, built with AI from a supplied main image, video content and music. Seven room objects open its sections.
+- [Photography & video](${SITE}/photography-and-video): Selected images and films, creative direction and process, including Brady's on-camera Velocity Pro demonstration and the Velocity ball-set concept reveal.
 - [About](${SITE}/about): AI transformation leadership, daily building, team adoption and teaching, creative production with Higgsfield, MIT Sloan executive education, career and project credits.
 
 ## Work
