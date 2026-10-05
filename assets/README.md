@@ -29,11 +29,17 @@ Run `npm run images:projects` after changing these sources to rebuild the two co
 
 The dedicated `/art-of-prompting` page is linked from the homepage's Human Direction section. The colorful walking frame stays on the homepage. C.L. Bailey leads the page as a large AI-created film, followed by a general prompting workflow, an illustrative interactive prompt, image studies and the two supporting Velocity films. The former `/photography-and-video` address redirects to the new title. The example prompt is illustrative, and the separate media examples are not presented as a literal sequence of outputs from that prompt.
 
+The process now uses the Industrial Bar Cart's product reference, an excerpt from its documented room direction and its AI lifestyle image. The interactive example also uses a bar cart. The gallery shows Aberdeen stools, an Astra home bar, an industrial shelf and Home Field foosball. Joshua asked for broader furniture and project imagery rather than adding more pool tables; follow that direction for future process examples. These furniture assets come from the supplied BF web source, retain their full frames, and are recorded in `prompting/furniture-sources.json`. Rebuild their responsive assets with `node scripts/build-prompting-images.mjs`. No furniture film or unverified chain of revisions is implied.
+
 - `public/images/cl-bailey-waterfront-poster.jpg`: the waterfront skyline, skateboarder and billboard moment Joshua selected for the featured film on this page. Extracted from the film at 15.791667 seconds without browser controls or cropping. The campaign and Marketing Engine pages retain their existing film poster. See `campaigns/cl-bailey-factory-event-media.json`.
 
 - `public/video/velocity-pro-brady.mp4` and `velocity-pro-brady-mobile.mp4`: the verified final 95.253-second “At the Table with Brady” Velocity Pro product film from the Billiard Factory product-page source. Full composition and original soundtrack retained at 1280 and 768 pixels wide. Poster: Brady beside the table at seven seconds. See `films/velocity-pro-brady-source.json`.
 - `public/video/velocity-ball-launch.mp4` and `velocity-ball-launch-mobile.mp4`: the complete portrait-format `Velocity-Live-Pacing-Review.mp4` supplied by Joshua on October 4. The 27.835-second shipping-container and oversized-ball reveal retains its original 9:16 framing, scene timing and soundtrack at 720 and 486 pixels wide. Poster: yellow ball emerging at 3.5 seconds. Presented as a product concept film without attributing a specific generation tool. See `films/velocity-ball-launch-source.json`.
 - Both films play on request with sound and native seeking/fullscreen controls, and use `preload="none"`.
+
+### Work Together — October 4, 2026
+
+The `/work-together` consulting and collaboration page is linked from primary navigation, the homepage closing block, About, The Art of Prompting and the footer. It uses Joshua's supplied phone number, +1 (917) 665-1221, and `joshua@untold.works`, confirmed through his connected Gmail profile. The domain already routes mail to Google and the mailbox has recent incoming mail. Contact links use email and telephone links; there is no website form or mail-delivery service. The phone number is contact information and does not imply a New York studio location. `/consulting` redirects to the page and `/contact` goes to its contact section.
 
 ### Earlier image selections retained as source material
 

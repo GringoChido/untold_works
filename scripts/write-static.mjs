@@ -48,6 +48,7 @@ ${categories.map((c) => `- [${c.name}](${SITE}/${c.slug}): ${c.intro}`).join('\n
 - [Lalah Hathaway](${SITE}/work/lalah-hathaway): An interactive website for Made in Chicago, built with AI from a supplied main image, video content and music. Seven room objects open its sections.
 - [The art of prompting](${SITE}/art-of-prompting): An evolving practice of turning ideas and product references into precise prompts, still images, lifestyle scenes, motion, edits and campaign assets. The AI-created C.L. Bailey Factory Event film leads, with an interactive illustrative prompt and supporting work.
 - [About](${SITE}/about): AI transformation leadership, daily building, team adoption and teaching, creative production with Higgsfield, MIT Sloan executive education, career and project credits.
+- [Work Together](${SITE}/work-together): Consulting and collaboration with Joshua Semolik across creative direction and AI production, websites and digital experiences, marketing systems and team adoption. Email joshua@untold.works or call +1 (917) 665-1221 to discuss a project.
 
 ## Work
 ${categories

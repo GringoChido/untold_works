@@ -5,7 +5,6 @@ import { Header } from '../components/Header';
 import { LabelRow } from '../components/LabelRow';
 import { Layout } from '../components/Layout';
 import { usePageMeta } from '../hooks/usePageMeta';
-import { CONTACT_HREF, EMAIL } from '../site';
 
 type Credit = { role: string; name: ReactNode };
 
@@ -204,9 +203,9 @@ export const About = () => {
             <li><Link to="/work/robert-glasper-blue-note"><strong>Second Son Productions & related music work</strong><span>Artist sites, Robert Glasper releases and distinct Blue Note content roles.</span><span aria-hidden="true">↗</span></Link></li>
             <li><Link to="/work/savor"><strong>Savor</strong><span>Website and content storytelling through IDW Studio.</span><span aria-hidden="true">↗</span></Link></li>
           </ul>
-          <a href={CONTACT_HREF} target={EMAIL ? undefined : '_blank'} rel={EMAIL ? undefined : 'noopener noreferrer'} className="text-link mt-8">
-            {EMAIL ? 'Discuss a role or project' : 'Discuss a role or project on LinkedIn'}<span aria-hidden="true">↗</span>
-          </a>
+          <Link to="/work-together" className="text-link mt-8">
+            Work with Joshua <span aria-hidden="true">↗</span>
+          </Link>
         </section>
         <section className="about-ai-turning-point pb-20" aria-labelledby="about-practice-title">
           <LabelRow left="Applied AI / The turning point" right="MIT Sloan · 2025" />

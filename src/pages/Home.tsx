@@ -7,7 +7,6 @@ import { Layout } from '../components/Layout';
 import { ShowroomFilm } from '../components/ShowroomFilm';
 import { PortfolioFilm } from '../components/PortfolioFilm';
 import { usePageMeta } from '../hooks/usePageMeta';
-import { CONTACT_HREF, CONTACT_LABEL, EMAIL } from '../site';
 import { tones, type HomeScene } from '../theme';
 
 const paths = [
@@ -239,13 +238,13 @@ export const Home = () => {
         <section data-home-scene="close" className="home-close" aria-labelledby="home-close-title">
           <p className="home-eyebrow">Work with Untold.works</p>
           <div className="home-close-grid">
-            <h2 id="home-close-title">Put AI into work people can use.</h2>
+            <h2 id="home-close-title">Have an idea that needs direction?</h2>
             <div>
-              <p>We can define the use case, build the creative or tool, connect it to the team’s workflow and teach people to use it. The goal is work that can be reviewed, shipped and repeated.</p>
+              <p>Let’s talk about the creative, the experience and the way it gets made. I can help shape the direction, build a defined project or work alongside your team as it brings AI into daily work.</p>
               <p className="home-close-credits">AI transformation across brand, retail, commerce and creative systems.</p>
               <div className="home-close-actions">
                 <Link to="/about" className="text-link">About the studio <span aria-hidden="true">↗</span></Link>
-                <a href={CONTACT_HREF} target={EMAIL ? undefined : '_blank'} rel={EMAIL ? undefined : 'noopener noreferrer'} className="text-link">{'Connect on ' + CONTACT_LABEL}<span aria-hidden="true">↗</span></a>
+                <Link to="/work-together" className="text-link">Discuss a project <span aria-hidden="true">↗</span></Link>
               </div>
             </div>
           </div>

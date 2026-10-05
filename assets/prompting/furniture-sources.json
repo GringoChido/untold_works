@@ -1,0 +1,122 @@
+{
+  "received": "2026-10-04",
+  "purpose": "Non-pool-table furniture examples for The Art of Prompting process section and image studies.",
+  "sources": [
+    {
+      "file": "prompting-bar-cart-reference.jpg",
+      "source_project": "/Users/joshuasemolik/Desktop/_PROJECTS/bf-web",
+      "source_file": "src/assets/img/studio/industrial-bar-cart/as-referenced/hero.jpg",
+      "sha256": "b71c41e8873f3b5851359a60123ec4ead24a62e212ceb3a9dc8242f5e7d96ce1",
+      "width": 1400,
+      "height": 1400,
+      "product_slug": "industrial-bar-cart",
+      "source_angle": "hero",
+      "role": "Product studio reference",
+      "description": "An Industrial Bar Cart on a plain studio background",
+      "visual_review": "Full frame inspected; no pool tables appear.",
+      "provenance_files": [
+        "data/studio/grid-provenance.json",
+        "data/studio/bespoke-rooms.json",
+        "tools/studio/furniture-lifestyle-prompt.mjs"
+      ]
+    },
+    {
+      "file": "prompting-bar-cart-lifestyle.jpg",
+      "source_project": "/Users/joshuasemolik/Desktop/_PROJECTS/bf-web",
+      "source_file": "src/assets/img/studio/industrial-bar-cart/as-referenced/lifestyle.jpg",
+      "sha256": "0c40ab75896d2d534618c78dbaaaed0b8c4eccd6310bfcde4c679c06bbb9a8c9",
+      "width": 1400,
+      "height": 1400,
+      "product_slug": "industrial-bar-cart",
+      "source_angle": "lifestyle",
+      "role": "AI lifestyle study",
+      "description": "A stocked Industrial Bar Cart beside black leather seating in a room with pale marble, tall windows and herringbone oak flooring",
+      "visual_review": "Full frame inspected; no pool tables appear.",
+      "provenance_files": [
+        "data/studio/grid-provenance.json",
+        "data/studio/bespoke-rooms.json",
+        "tools/studio/furniture-lifestyle-prompt.mjs"
+      ],
+      "documented_room_direction": "A Joseph Dirand room, cool and monochrome: pale grey veined marble panels on one wall, smooth grey plaster elsewhere, a herringbone oak floor, tall steel-framed windows with plain flat linen panels. A low black leather sofa with a folded throw, a pair of chrome-and-leather chairs, a charcoal wool rug, a single large black-and-white photographic print, a slim steel floor lamp switched on, a tall sculptural plant in a concrete pot, a doorway to a lit room. The cart is drawn up at the end of the sofa, on its castors, where a trolley actually lives."
+    },
+    {
+      "file": "prompting-aberdeen-kitchen.jpg",
+      "source_project": "/Users/joshuasemolik/Desktop/_PROJECTS/bf-web",
+      "source_file": "src/assets/img/studio/aberdeen-backless-stool/as-referenced/lifestyle.jpg",
+      "sha256": "49aa6d610ff18321ee13933f8ed9f58380c7d1cbdbacce1050196f79d6171dd7",
+      "width": 1400,
+      "height": 1400,
+      "product_slug": "aberdeen-backless-stool",
+      "source_angle": "lifestyle",
+      "role": "AI lifestyle study",
+      "description": "Three pale upholstered Aberdeen backless stools at a bright coastal kitchen island",
+      "visual_review": "Full frame inspected; no pool tables appear.",
+      "provenance_files": [
+        "data/studio/grid-provenance.json",
+        "data/studio/bespoke-rooms.json",
+        "tools/studio/furniture-lifestyle-prompt.mjs"
+      ],
+      "documented_room_direction": "A Nate Berkus coastal kitchen: whitewashed timber boarding on the walls, a long island faced in pale tongue-and-groove with a thick honed limestone top, wide bleached oak boards, a big window with plain linen showing flat sea light. Open shelving with stacked ceramics, a vintage brass pendant switched on above the island, a woven rug underfoot, a large moody sea photograph on the end wall, a fig in a woven basket, a bowl of lemons and a folded newspaper on the counter."
+    },
+    {
+      "file": "prompting-astra-bar.jpg",
+      "source_project": "/Users/joshuasemolik/Desktop/_PROJECTS/bf-web",
+      "source_file": "src/assets/img/studio/astra-home-bar/as-referenced/lifestyle.jpg",
+      "sha256": "0445ec989fe7af2c42180fc174298a9a65fbdef05035dc06396ae2a06850c143",
+      "width": 1400,
+      "height": 1400,
+      "product_slug": "astra-home-bar",
+      "source_angle": "lifestyle",
+      "role": "AI lifestyle study",
+      "description": "An Astra home bar in a dark paneled room with brass pendants, checkerboard flooring and green velvet seating",
+      "visual_review": "Full frame inspected; no pool tables appear.",
+      "provenance_files": [
+        "data/studio/grid-provenance.json",
+        "data/studio/bespoke-rooms.json",
+        "tools/studio/furniture-lifestyle-prompt.mjs"
+      ],
+      "documented_room_direction": "A Ken Fulk supper club: black-and-white marble chequerboard floor, dark stained panelling to the ceiling, brass dome pendants hung low. An oxblood velvet banquette, a deep-green velvet armchair, a worn Persian rug, a salon-hung wall of framed prints, cut-glass decanters and tumblers on a marble side table, a brass library lamp switched on, a palm in a brass cachepot, a doorway to a warmly lit room. Bold and theatrical — the dark cherry bar with its corbels and chrome foot rail belongs here completely, as glamour rather than as reconstruction."
+    },
+    {
+      "file": "prompting-industrial-shelf.jpg",
+      "source_project": "/Users/joshuasemolik/Desktop/_PROJECTS/bf-web",
+      "source_file": "src/assets/img/studio/industrial-bar-shelf/as-referenced/lifestyle.jpg",
+      "sha256": "22d8f656d089d90d194402b79545e89940e0f470068ef9ebb71bc7dc4d5614d1",
+      "width": 1400,
+      "height": 1400,
+      "product_slug": "industrial-bar-shelf",
+      "source_angle": "lifestyle",
+      "role": "AI lifestyle study",
+      "description": "A stocked wall-mounted Industrial Bar Shelf in a concrete and timber living room opening to greenery",
+      "visual_review": "Full frame inspected; no pool tables appear.",
+      "provenance_files": [
+        "data/studio/grid-provenance.json",
+        "data/studio/bespoke-rooms.json",
+        "tools/studio/furniture-lifestyle-prompt.mjs"
+      ],
+      "documented_room_direction": "A Marcio Kogan room: board-formed concrete on one wall, wide horizontal timber slats on the other, a floor of large honey-toned stone, a sliding glass wall onto a green terrace with dense planting. A long low modular sofa in warm grey, a pair of leather-and-timber lounge chairs, a woven rug, a timber credenza with ceramics and a lamp switched on, a large canvas in earth tones, books stacked on a low table, strong horizontal late light. The shelf is mounted on the concrete wall above the credenza."
+    }
+  ],
+  "matched_example": {
+    "product_slug": "industrial-bar-cart",
+    "reference_file": "prompting-bar-cart-reference.jpg",
+    "lifestyle_file": "prompting-bar-cart-lifestyle.jpg",
+    "documented_direction_source": "data/studio/bespoke-rooms.json:143",
+    "room_brief_excerpt": "Cool and monochrome: pale grey veined marble panels, smooth grey plaster, a herringbone oak floor and tall steel-framed windows. A low black leather sofa, chrome-and-leather chairs, a charcoal wool rug, a photographic print and a slim floor lamp. The cart is drawn up at the end of the sofa, on its castors, where a trolley actually lives.",
+    "prompt_constraints_excerpt": "Preserve the cart’s finish, hardware, proportions and construction. Place it beside a sofa or armchair. Show the whole cart from top shelf to castors. Stock it lightly with bottles, cut-glass tumblers and an ice bucket. Use a three-quarter view at standing eye level with natural directional daylight.",
+    "prompt_constraints_source": "tools/studio/furniture-lifestyle-prompt.mjs",
+    "claims_limit": "The repository documents matching studio and lifestyle images and written direction. No video continuation or exact generation/revision history for this furniture example has been verified.",
+    "attribution_note": "Designer names in original internal room briefs describe visual direction only and must not be used in public captions or imply a collaboration."
+  },
+  "derivatives": {
+    "format": "WebP",
+    "quality": 85,
+    "widths": [
+      480,
+      768,
+      1200,
+      1400
+    ],
+    "framing": "Full source frame; no crop; no enlargement."
+  }
+}

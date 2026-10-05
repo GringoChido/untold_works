@@ -5,6 +5,7 @@ import { About } from './pages/About';
 import { Category } from './pages/Category';
 import { Home } from './pages/Home';
 import { ArtOfPrompting } from './pages/ArtOfPrompting';
+import { WorkTogether } from './pages/WorkTogether';
 import { ElenaPinderhughes } from './pages/work/ElenaPinderhughes';
 import { EngineRoom } from './pages/work/EngineRoom';
 import { GlasperBlueNote } from './pages/work/GlasperBlueNote';
@@ -81,6 +82,9 @@ export const App = () => (
         <Route path="/work/:slug" element={<ProjectDetail />} />
         <Route path="/art-of-prompting" element={<ArtOfPrompting />} />
         <Route path="/photography-and-video" element={<LegacyCreativeCollection />} />
+        <Route path="/work-together" element={<WorkTogether />} />
+        <Route path="/consulting" element={<Navigate to="/work-together" replace />} />
+        <Route path="/contact" element={<Navigate to="/work-together#contact" replace />} />
         <Route path="/about" element={<About />} />
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>

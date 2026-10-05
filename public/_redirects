@@ -27,7 +27,11 @@
 /mexico-city                               /about               301
 /united-states                             /about               301
 /mexico                                    /about               301
-/contact                                   /about               301
+/contact                                   /work-together#contact 301
+/contact/                                  /work-together#contact 301
+/consulting                                /work-together       301
+/consulting/                               /work-together       301
+/work-together/                            /work-together       301
 /llms-full.txt                             /llms.txt            301
 
 # The creative practice page now leads with the art of prompting.

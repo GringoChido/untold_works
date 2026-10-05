@@ -757,6 +757,61 @@
    1200
   ]
  },
+ "prompting-aberdeen-kitchen.jpg": {
+  "base": "prompting-aberdeen-kitchen",
+  "width": 1400,
+  "height": 1400,
+  "widths": [
+   480,
+   768,
+   1200,
+   1400
+  ]
+ },
+ "prompting-astra-bar.jpg": {
+  "base": "prompting-astra-bar",
+  "width": 1400,
+  "height": 1400,
+  "widths": [
+   480,
+   768,
+   1200,
+   1400
+  ]
+ },
+ "prompting-bar-cart-lifestyle.jpg": {
+  "base": "prompting-bar-cart-lifestyle",
+  "width": 1400,
+  "height": 1400,
+  "widths": [
+   480,
+   768,
+   1200,
+   1400
+  ]
+ },
+ "prompting-bar-cart-reference.jpg": {
+  "base": "prompting-bar-cart-reference",
+  "width": 1400,
+  "height": 1400,
+  "widths": [
+   480,
+   768,
+   1200,
+   1400
+  ]
+ },
+ "prompting-industrial-shelf.jpg": {
+  "base": "prompting-industrial-shelf",
+  "width": 1400,
+  "height": 1400,
+  "widths": [
+   480,
+   768,
+   1200,
+   1400
+  ]
+ },
  "qmillion.jpg": {
   "base": "qmillion",
   "width": 1440,

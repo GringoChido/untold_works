@@ -1,0 +1,352 @@
+.work-together-main {
+  display: flex;
+  flex-direction: column;
+}
+
+.work-together-hero {
+  padding: clamp(40px, 5vw, 72px) 0 84px;
+}
+
+.work-together-eyebrow {
+  margin: 0 0 25px;
+}
+
+.work-together-title {
+  margin: 0;
+  max-width: 1140px;
+  font-size: clamp(68px, 9.2vw, 132px);
+}
+
+.work-together-hero-bottom {
+  display: grid;
+  grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
+  gap: 32px 70px;
+  margin-top: 48px;
+  padding-top: 25px;
+  border-top: 1px solid currentColor;
+}
+
+.work-together-name {
+  margin: 0 0 16px;
+  font-size: 24px;
+  line-height: 1.2;
+  font-weight: 600;
+  letter-spacing: -0.025em;
+}
+
+.work-together-role {
+  margin: 0;
+  line-height: 1.6;
+}
+
+.work-together-hero-copy p {
+  margin: 0 0 20px;
+  font-size: clamp(19px, 1.75vw, 24px);
+  line-height: 1.5;
+}
+
+.work-together-hero-copy p + p {
+  font-size: 18px;
+}
+
+.work-together-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 18px 28px;
+  margin-top: 30px;
+}
+
+.work-together-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  min-height: 54px;
+  padding: 15px 20px;
+  background: #e8dba5;
+  color: #20231f;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.4;
+  text-decoration: none;
+}
+
+.work-together-button:hover {
+  background: #f2e8c1;
+}
+
+.work-together-section {
+  padding-bottom: 88px;
+  scroll-margin-top: 24px;
+}
+
+.work-together-section-title {
+  margin: 28px 0 40px;
+  max-width: 1000px;
+  font-size: clamp(39px, 4.6vw, 66px);
+  line-height: 1.02;
+}
+
+.work-together-scope-list {
+  border-bottom: 1px solid currentColor;
+}
+
+.work-together-scope {
+  display: grid;
+  grid-template-columns: 45px minmax(0, 0.95fr) minmax(0, 1.05fr);
+  gap: 18px 30px;
+  border-top: 1px solid currentColor;
+  padding: 30px 0 38px;
+}
+
+.work-together-number {
+  padding-top: 5px;
+}
+
+.work-together-scope-title {
+  max-width: 420px;
+  margin: 0;
+  font-size: clamp(31px, 3.2vw, 44px);
+  line-height: 1.04;
+}
+
+.work-together-scope-copy p {
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.55;
+}
+
+.work-together-examples {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 9px 20px;
+  margin: 25px 0 27px;
+  padding: 0;
+  list-style: none;
+}
+
+.work-together-examples li {
+  border-left: 2px solid #e8dba5;
+  padding-left: 11px;
+  font-size: 14px;
+  line-height: 1.45;
+}
+
+.work-together-proof-links {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.work-together-proof-links .text-link {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.work-together-engagement {
+  max-width: 950px;
+  margin: 35px 0 0;
+  font-size: clamp(23px, 2.4vw, 31px);
+  line-height: 1.4;
+}
+
+.work-together-first-steps {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 35px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.work-together-first-steps li {
+  border-top: 1px solid currentColor;
+  padding-top: 21px;
+}
+
+.work-together-first-steps h3 {
+  margin: 30px 0 18px;
+  max-width: 330px;
+  font-size: 30px;
+  line-height: 1.05;
+}
+
+.work-together-first-steps p {
+  margin: 0;
+  font-size: 17px;
+  line-height: 1.55;
+}
+
+.work-together-contact {
+  padding-bottom: 95px;
+}
+
+.work-together-contact-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+  gap: 40px 80px;
+  padding-top: 34px;
+}
+
+.work-together-contact .work-together-section-title {
+  margin: 0 0 26px;
+}
+
+.work-together-contact-intro {
+  max-width: 470px;
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.55;
+}
+
+.work-together-contact-details {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 25px;
+  min-width: 0;
+}
+
+.work-together-contact-line {
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+  width: 100%;
+  padding-bottom: 20px;
+  border-bottom: 1px solid currentColor;
+}
+
+.work-together-email,
+.work-together-phone {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+  font-weight: 500;
+  letter-spacing: -0.035em;
+  line-height: 1.2;
+  text-decoration: none;
+}
+
+.work-together-email {
+  font-size: clamp(25px, 3vw, 43px);
+}
+
+.work-together-phone {
+  font-size: clamp(25px, 2.5vw, 35px);
+}
+
+.work-together-email:hover,
+.work-together-phone:hover {
+  color: #e8dba5;
+}
+
+.work-together-about-link {
+  font-size: 14px;
+}
+
+@media (max-width: 900px) {
+  .work-together-hero-bottom,
+  .work-together-contact-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .work-together-hero-copy {
+    max-width: 700px;
+  }
+
+  .work-together-identity {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 15px 45px;
+  }
+
+  .work-together-name {
+    margin-bottom: 0;
+  }
+
+  .work-together-scope {
+    grid-template-columns: 35px minmax(0, 1fr);
+  }
+
+  .work-together-scope-copy {
+    grid-column: 2;
+    max-width: 680px;
+  }
+
+  .work-together-contact-details {
+    max-width: 650px;
+  }
+}
+
+@media (max-width: 599px) {
+  .work-together-hero {
+    padding: 36px 0 64px;
+  }
+
+  .work-together-title {
+    font-size: clamp(51px, 13.6vw, 80px);
+  }
+
+  .work-together-hero-bottom {
+    margin-top: 35px;
+    gap: 28px;
+  }
+
+  .work-together-hero-copy p {
+    font-size: 19px;
+  }
+
+  .work-together-section {
+    padding-bottom: 64px;
+  }
+
+  .work-together-section-title {
+    font-size: 36px;
+    margin-bottom: 30px;
+  }
+
+  .work-together-scope {
+    grid-template-columns: 24px minmax(0, 1fr);
+    column-gap: 15px;
+    padding: 25px 0 30px;
+  }
+
+  .work-together-scope-title {
+    font-size: 30px;
+  }
+
+  .work-together-scope-copy p {
+    font-size: 17px;
+  }
+
+  .work-together-examples {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 11px;
+  }
+
+  .work-together-first-steps {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 27px;
+  }
+
+  .work-together-first-steps h3 {
+    margin-top: 20px;
+  }
+
+  .work-together-contact-grid {
+    gap: 35px;
+    padding-top: 28px;
+  }
+
+  .work-together-contact {
+    padding-bottom: 64px;
+  }
+
+  .work-together-email {
+    font-size: clamp(24px, 6.6vw, 36px);
+  }
+}

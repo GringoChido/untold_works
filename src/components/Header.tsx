@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom';
-import { CONTACT_HREF, CONTACT_LABEL, EMAIL } from '../site';
 
 type Crumb = { label: string; to?: string };
 
@@ -28,7 +27,7 @@ export const Header = ({ crumbs }: { crumbs?: Crumb[] }) => (
         <span className="site-meta hidden text-[12px] md:inline">Independent creative studio · Applied AI</span>
       )}
     </div>
-    <nav aria-label="Primary" className="site-nav flex items-center gap-6 text-[13px] font-medium md:gap-8 md:text-[14px]">
+    <nav aria-label="Primary" className="site-nav flex flex-wrap items-center gap-x-6 gap-y-3 text-[13px] font-medium md:gap-x-8 md:text-[14px]">
       <Link to="/#work" className="no-underline">
         Work
       </Link>
@@ -38,9 +37,9 @@ export const Header = ({ crumbs }: { crumbs?: Crumb[] }) => (
       <Link to="/about" className="no-underline">
         About
       </Link>
-      <a href={CONTACT_HREF} target={EMAIL ? undefined : '_blank'} rel={EMAIL ? undefined : 'noopener noreferrer'} className="inline-flex items-baseline gap-1 no-underline">
-        {CONTACT_LABEL}<span aria-hidden="true">↗</span>
-      </a>
+      <Link to="/work-together" className="no-underline">
+        Work Together
+      </Link>
     </nav>
   </header>
 );

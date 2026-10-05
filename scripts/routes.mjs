@@ -20,5 +20,6 @@ export const routes = [
   '/work/robert-glasper-blue-note',
   '/work/other-projects',
   '/art-of-prompting',
+  '/work-together',
   '/about',
 ];

@@ -50,48 +50,48 @@ const supportingFilms = [
 
 const images = [
   {
-    id: 'mercer',
-    src: 'bf-mercer-room.jpg',
-    alt: 'AI room visualization with a pale wood pool table, black lounge chair and sculptural light in warm afternoon sun',
-    kind: 'Billiard Factory / AI room study',
-    title: 'Mercer / Quiet hours.',
-    detail: 'An imagined room brings table, artwork, lighting and materials into one composition.',
+    id: 'aberdeen',
+    src: 'prompting-aberdeen-kitchen.jpg',
+    alt: 'Three pale upholstered Aberdeen stools beside a kitchen island, with white timber walls, brass lighting and soft daylight',
+    kind: 'Furniture / AI lifestyle study',
+    title: 'Aberdeen / Morning light.',
+    detail: 'Upholstery, pale oak and daylight give a stool a setting around everyday use.',
     portrait: false,
-    to: '/work/spring-stuebner-store',
-    action: 'Explore the shoppable rooms',
+    to: '/work/billiard-factory-and-c-l-bailey',
+    action: 'Explore the furniture work',
   },
   {
-    id: 'viking',
-    src: 'bf-viking-room.jpg',
-    alt: 'AI room visualization of a dining table set for brunch, with patterned wallpaper, exposed wood beams and a chandelier',
-    kind: 'Billiard Factory / AI room study',
-    title: 'Viking / Sunday brunch.',
-    detail: 'A dining scene explores another way a game room can fit into daily life.',
+    id: 'astra',
+    src: 'prompting-astra-bar.jpg',
+    alt: 'A wood Astra home bar in a richly layered room with dark paneling, brass pendants, green seating and a checkerboard floor',
+    kind: 'Furniture / AI lifestyle study',
+    title: 'Astra / After hours.',
+    detail: 'Wood, brass, velvet and warm light build the atmosphere around a home bar.',
     portrait: false,
-    to: '/work/spring-stuebner-store',
-    action: 'Explore the shoppable rooms',
+    to: '/work/billiard-factory-and-c-l-bailey',
+    action: 'Explore the furniture work',
+  },
+  {
+    id: 'shelf',
+    src: 'prompting-industrial-shelf.jpg',
+    alt: 'An industrial wall shelf in a warm living room with concrete, timber, lounge seating and a green terrace beyond',
+    kind: 'Furniture / AI lifestyle study',
+    title: 'A shelf in the life of a room.',
+    detail: 'Placement, materials and the surrounding furniture make a product feel at home.',
+    portrait: false,
+    to: '/work/billiard-factory-and-c-l-bailey',
+    action: 'Explore the furniture work',
   },
   {
     id: 'home-field',
-    src: 'home-field-shot.jpg',
-    alt: 'AI-created Home Field campaign scene of a player in a cap lining up a shot across a green pool table',
+    src: 'hf-foosball.jpg',
+    alt: 'Two people playing foosball on a sunlit deck beside a home',
     kind: 'Home Field / AI campaign image',
-    title: 'A moment around the table.',
-    detail: 'Made with Higgsfield for Home Field: a campaign idea carried into a photographic scene.',
+    title: 'A game in the afternoon.',
+    detail: 'A Home Field lifestyle scene brings people, a product and an everyday moment together.',
     portrait: false,
     to: '/work/home-field',
     action: 'Explore Home Field',
-  },
-  {
-    id: 'lighting',
-    src: 'bf-fall-light.webp',
-    alt: 'AI-assisted seasonal product visualization of a warm rectangular chandelier over a wood pool table beside a blue dusk window',
-    kind: 'Billiard Factory / AI-assisted product image',
-    title: 'The light sets the room.',
-    detail: 'Seasonal storefront imagery gives lighting and the pool table a shared setting.',
-    portrait: true,
-    to: '/work/billiard-factory-and-c-l-bailey',
-    action: 'See the seasonal storefront work',
   },
 ] as const;
 
@@ -113,7 +113,7 @@ const campaignScenes = [
 const connections = [
   { to: '/about#toolkit', title: 'The tools behind the practice.', detail: 'How I use Higgsfield, ChatGPT and Claude Code to develop ideas and build the work around them.' },
   { to: '/work/engine-room', title: 'Carry it into the campaign.', detail: 'The Marketing Engine connects the brief, creative assets, review and delivery.' },
-  { to: '/work/billiard-factory-and-c-l-bailey', title: 'See it in use.', detail: 'Explore the wider Billiard Factory brand, retail and commerce work.' },
+  { to: '/work-together', title: 'Bring your idea into the work.', detail: 'Discuss a campaign, an image, a film or a creative workflow for your team.' },
 ] as const;
 
 export const ArtOfPrompting = () => {
@@ -158,6 +158,22 @@ export const ArtOfPrompting = () => {
           <div className="prompting-practice-intro">
             <h2 id="prompting-process-title" className="name">From an idea to an image.<br />Then into motion.</h2>
             <div><p>A product image can become a lifestyle scene. That scene can become a moving sequence, then a finished film and a set of campaign assets. This is a growing record of that practice and what I’m learning along the way.</p><p>The prompt changes as I review the work. Each pass makes the product, the scene and the story more specific.</p></div>
+          </div>
+          <div className="prompting-furniture-study" aria-label="Industrial Bar Cart: product reference, written scene direction and AI lifestyle image">
+            <figure>
+              <Img src="prompting-bar-cart-reference.jpg" alt="Industrial Bar Cart product reference with three wood shelves, metal pipe uprights, bottle cradles and casters on a plain background" sizes="(max-width: 899px) 100vw, 35vw" />
+              <figcaption><span className="lbl">Product reference</span><strong>Industrial Bar Cart</strong></figcaption>
+            </figure>
+            <div className="prompting-furniture-direction">
+              <p className="lbl">Written scene direction</p>
+              <blockquote>“Pale grey veined marble panels on one wall, smooth grey plaster elsewhere, a herringbone oak floor, tall steel-framed windows.”</blockquote>
+              <p>The room brief places the cart at the end of a black leather sofa, where it can be used. Materials, light and placement give the product a setting.</p>
+              <span className="prompting-furniture-source">Excerpt from the furniture study’s room brief.</span>
+            </div>
+            <figure>
+              <Img src="prompting-bar-cart-lifestyle.jpg" alt="The Industrial Bar Cart stocked with bottles and glasses beside a black leather sofa in an AI-created marble and plaster living room" sizes="(max-width: 899px) 100vw, 35vw" />
+              <figcaption><span className="lbl">AI lifestyle image</span><strong>A place in the room</strong></figcaption>
+            </figure>
           </div>
           <ol className="creative-collection-process prompting-process">
             {process.map((step) => <li key={step.number} className="creative-collection-step"><span className="lbl">{step.number}</span><h3 className="name">{step.title}</h3><p>{step.detail}</p><span className="prompting-step-output">{step.output}</span></li>)}
