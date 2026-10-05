@@ -30,6 +30,11 @@
 /contact                                   /about               301
 /llms-full.txt                             /llms.txt            301
 
+# The creative practice page now leads with the art of prompting.
+/photography-and-video                      /art-of-prompting     301
+/photography-and-video/                     /art-of-prompting     301
+/art-of-prompting/                          /art-of-prompting     301
+
 # Trailing-slash variants of the new routes
 /platforms/                                /platforms           301
 /brand-and-product/                        /brand-and-product   301

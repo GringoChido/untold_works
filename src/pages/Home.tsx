@@ -106,14 +106,14 @@ export const Home = () => {
         <section id="ai" data-home-scene="intro" className="home-ai scroll-mt-5" aria-labelledby="home-ai-title">
           <div className="home-ai-overline"><span>How the work gets made</span><span>Build · Create · Teach</span></div>
           <div className="home-ai-grid home-direction-intro">
-            <Link to="/photography-and-video" className="home-direction-image-link" aria-label="Explore the photography and video collection">
+            <Link to="/art-of-prompting" className="home-direction-image-link" aria-label="Explore the art of prompting">
               <Img src="angelica-street-walking.png" alt="A man walking past a yellow Angelica grocery storefront on a sunny city street" sizes="(min-width: 851px) 55vw, 100vw" className="home-direction-street" />
             </Link>
             <div className="home-ai-copy">
               <h2 id="home-ai-title">Human direction.<br />AI in the making.</h2>
               <p>Human direction shapes the brief, the performance, the image and the edit. AI helps me explore images and films, build websites and connect creative work to marketing systems. Creative judgment, product references and review shape what gets used.</p>
               <Link to="/work/engine-room" className="text-link mt-7">See the Marketing Engine built with AI <span aria-hidden="true">↗</span></Link>
-              <Link to="/photography-and-video" className="text-link mt-4">Explore photography &amp; video <span aria-hidden="true">↗</span></Link>
+              <Link to="/art-of-prompting" className="text-link mt-4">Explore the art of prompting <span aria-hidden="true">↗</span></Link>
               <Link to="/about#toolkit" className="text-link mt-4">See the tools behind the work <span aria-hidden="true">↗</span></Link>
             </div>
           </div>

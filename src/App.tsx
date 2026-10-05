@@ -4,7 +4,7 @@ import { PageFillProvider } from './components/PageFill';
 import { About } from './pages/About';
 import { Category } from './pages/Category';
 import { Home } from './pages/Home';
-import { PhotographyAndVideo } from './pages/PhotographyAndVideo';
+import { ArtOfPrompting } from './pages/ArtOfPrompting';
 import { ElenaPinderhughes } from './pages/work/ElenaPinderhughes';
 import { EngineRoom } from './pages/work/EngineRoom';
 import { GlasperBlueNote } from './pages/work/GlasperBlueNote';
@@ -15,6 +15,11 @@ import { OtherProjects } from './pages/work/OtherProjects';
 import { ProjectDetail } from './pages/work/ProjectDetail';
 import { BilliardFactoryEngagement } from './pages/work/BilliardFactoryEngagement';
 import { Savor } from './pages/work/Savor';
+
+const LegacyCreativeCollection = () => {
+  const { hash, search } = useLocation();
+  return <Navigate to={{ pathname: '/art-of-prompting', hash, search }} replace />;
+};
 
 const ScrollManager = () => {
   const { pathname, hash } = useLocation();
@@ -74,7 +79,8 @@ export const App = () => (
         <Route path="/work/lalah-hathaway" element={<LalahHathaway />} />
         <Route path="/work/elena-pinderhughes" element={<ElenaPinderhughes />} />
         <Route path="/work/:slug" element={<ProjectDetail />} />
-        <Route path="/photography-and-video" element={<PhotographyAndVideo />} />
+        <Route path="/art-of-prompting" element={<ArtOfPrompting />} />
+        <Route path="/photography-and-video" element={<LegacyCreativeCollection />} />
         <Route path="/about" element={<About />} />
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>

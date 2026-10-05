@@ -121,22 +121,25 @@ if (pathPositions.some((at) => at < 0) || pathPositions.some((at, index) => inde
 if (homeHtml.indexOf('id="ai"') >= homeHtml.indexOf('id="work"')) fail('home: applied AI should be part of the introduction');
 const homeAi = homeHtml.slice(homeHtml.indexOf('id="ai"'), homeHtml.indexOf('id="work"'));
 expectIn(homeAi, 'angelica-street-walking', 'home Human Direction image');
-expectIn(homeAi, 'href="/photography-and-video"', 'home Human Direction collection link');
-if (/velocity-(?:pro-brady|ball-launch)(?:-mobile)?\.mp4/.test(homeHtml)) fail('home: Velocity films should live on the photography and video page');
+expectIn(homeAi, 'href="/art-of-prompting"', 'home Human Direction collection link');
+if (/velocity-(?:pro-brady|ball-launch)(?:-mobile)?\.mp4/.test(homeHtml)) fail('home: Velocity films should live on the art of prompting page');
 
 // The collection is reachable from the homepage and retains both films as full,
 // user-controlled playback rather than introducing ambient, silent previews.
-const creativeHtml = await pageHtml('/photography-and-video');
-if (/Film unavailable|Film could not load/.test(decode(creativeHtml))) fail('photography and video: a transient media error was saved into the prerendered page');
-for (const film of ['velocity-pro-brady', 'velocity-ball-launch']) {
-  const player = [...creativeHtml.matchAll(/<video\b([^>]*)>([\s\S]*?)<\/video>/g)].find((match) => match[2].includes(`/video/${film}.mp4`));
+const creativeHtml = await pageHtml('/art-of-prompting');
+if (/Film unavailable|Film could not load/.test(decode(creativeHtml))) fail('art of prompting: a transient media error was saved into the prerendered page');
+expectIn(decode(creativeHtml), 'The art of prompting.', 'creative practice page title');
+const creativePlayers = [...creativeHtml.matchAll(/<video\b([^>]*)>([\s\S]*?)<\/video>/g)];
+if (!creativePlayers[0]?.[2].includes('/video/cl-bailey-factory-event.mp4')) fail('art of prompting: C.L. Bailey must be the opening film');
+for (const film of ['cl-bailey-factory-event', 'velocity-pro-brady', 'velocity-ball-launch']) {
+  const player = creativePlayers.find((match) => match[2].includes(`/video/${film}.mp4`));
   if (!player) {
-    fail('photography and video: missing film ' + film);
+    fail('art of prompting: missing film ' + film);
     continue;
   }
-  expectIn(player[2], `/video/${film}-mobile.mp4`, 'photography and video responsive film ' + film);
-  if (!/(?:^|\s)controls(?:\s|=|$)/.test(player[1])) fail('photography and video: native controls missing for ' + film);
-  if (/(?:^|\s)(?:autoplay|muted|loop)(?:\s|=|$)/.test(player[1])) fail('photography and video: ' + film + ' must play on request with sound');
+  expectIn(player[2], `/video/${film}-mobile.mp4`, 'art of prompting responsive film ' + film);
+  if (!/(?:^|\s)controls(?:\s|=|$)/.test(player[1])) fail('art of prompting: native controls missing for ' + film);
+  if (/(?:^|\s)(?:autoplay|muted|loop)(?:\s|=|$)/.test(player[1])) fail('art of prompting: ' + film + ' must play on request with sound');
 }
 
 const bf = await pageText('/work/billiard-factory-and-c-l-bailey');
@@ -200,13 +203,13 @@ for (const file of await walk(DIST)) {
 
 const sitemap = await readFile(join(DIST, 'sitemap.xml'), 'utf-8');
 if (/\/(blog|portfolio|solutions|network-systems)\b/.test(sitemap)) fail('old routes in sitemap');
-for (const route of [...projectRoutes, '/work/billiard-factory-and-c-l-bailey', '/work/robert-glasper-blue-note', '/work/other-projects', '/photography-and-video']) {
+for (const route of [...projectRoutes, '/work/billiard-factory-and-c-l-bailey', '/work/robert-glasper-blue-note', '/work/other-projects', '/art-of-prompting']) {
   if (!sitemap.includes(route)) fail(route + ': missing from sitemap');
 }
-expectIn(await readFile(join(DIST, 'llms.txt'), 'utf-8'), 'https://untold.works/photography-and-video', 'llms photography and video collection');
+expectIn(await readFile(join(DIST, 'llms.txt'), 'utf-8'), 'https://untold.works/art-of-prompting', 'llms art of prompting page');
 
 if (failures.length) {
   console.error('\n' + failures.length + ' problem(s):\n' + failures.map((failure) => '  ✗ ' + failure).join('\n'));
   process.exit(1);
 }
-console.log('✓ ' + projectRoutes.size + ' project routes remain reachable; Human Direction links to its photography and video collection; approved films retain native playback; no banned claims or WebGL');
+console.log('✓ ' + projectRoutes.size + ' project routes remain reachable; Human Direction links to the art of prompting; approved films retain native playback; no banned claims or WebGL');

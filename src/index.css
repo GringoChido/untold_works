@@ -880,38 +880,6 @@
   padding-bottom: clamp(60px, 7vw, 100px);
 }
 
-.creative-collection-hero {
-  padding: clamp(44px, 5vw, 76px) 0 clamp(36px, 5vw, 66px);
-}
-
-.creative-collection-title {
-  max-width: 1080px;
-  margin: 24px 0 0;
-  font-size: clamp(58px, 8vw, 116px);
-}
-
-.creative-collection-intro {
-  display: grid;
-  grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
-  gap: clamp(24px, 6vw, 90px);
-  margin-top: clamp(30px, 4vw, 52px);
-}
-
-.creative-collection-statement {
-  max-width: 680px;
-  margin: 0;
-  font-size: clamp(28px, 3.2vw, 46px);
-  line-height: 1.14;
-  letter-spacing: -0.035em;
-}
-
-.creative-collection-summary > p {
-  margin: 0;
-  max-width: 580px;
-  font-size: 18px;
-  line-height: 1.5;
-}
-
 .creative-collection-nav {
   display: flex;
   flex-wrap: wrap;
@@ -929,8 +897,6 @@
   margin-top: clamp(42px, 6vw, 80px);
   scroll-margin-top: 28px;
 }
-
-.creative-collection-hero + .creative-collection-section { margin-top: 0; }
 
 .creative-collection-section-head {
   display: flex;
@@ -1099,7 +1065,6 @@
 }
 
 @media (max-width: 850px) {
-  .creative-collection-intro,
   .creative-collection-films { grid-template-columns: minmax(0, 1fr); }
   .creative-collection-player video { height: auto; }
   .creative-collection-film--portrait .creative-collection-player video { max-height: 720px; }
@@ -1111,10 +1076,198 @@
 @media (max-width: 599px) {
   .creative-collection-images,
   .creative-collection-process { grid-template-columns: minmax(0, 1fr); }
-  .creative-collection-title { font-size: clamp(50px, 13vw, 76px); }
   .creative-collection-section-head { padding-bottom: 26px; }
   .creative-collection-films { gap: 36px; }
   .creative-collection-step { padding-bottom: 20px; }
+}
+
+.prompting-hero {
+  padding: clamp(34px, 3.6vw, 52px) 0 38px;
+}
+
+.prompting-eyebrow { margin: 0; }
+
+.prompting-hero-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.3fr) minmax(0, 0.9fr);
+  align-items: end;
+  gap: clamp(28px, 4vw, 64px);
+  margin-top: 24px;
+}
+
+.prompting-title {
+  margin: 0;
+  font-size: clamp(62px, 7.2vw, 104px);
+}
+
+.prompting-hero-copy > p {
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.prompting-feature { scroll-margin-top: 24px; }
+
+.prompting-feature-player video {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  background: #171a17;
+}
+
+.prompting-feature-copy {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+  gap: clamp(28px, 5vw, 72px);
+  margin-top: 32px;
+}
+
+.prompting-feature-copy .lbl { margin: 0 0 16px; }
+
+.prompting-feature-copy h2 {
+  margin: 0;
+  font-size: clamp(34px, 4vw, 58px);
+  line-height: 1.05;
+}
+
+.prompting-feature-copy > div > p:not(.lbl) {
+  max-width: 690px;
+  margin: 0 0 16px;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.prompting-scenes {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+  margin-top: 36px;
+}
+
+.prompting-scenes figure { min-width: 0; margin: 0; }
+
+.prompting-scenes img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 10;
+  object-fit: contain;
+  background: #171a17;
+}
+
+.prompting-scenes figcaption {
+  border-bottom: 1px solid currentColor;
+  padding: 14px 0;
+  line-height: 1.5;
+}
+
+.prompting-practice-intro {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
+  gap: clamp(28px, 5vw, 72px);
+  border-top: 1px solid currentColor;
+  padding: 28px 0 36px;
+}
+
+.prompting-practice-intro h2 {
+  margin: 0;
+  font-size: clamp(34px, 4.2vw, 60px);
+  line-height: 1.08;
+}
+
+.prompting-practice-intro p {
+  margin: 0 0 18px;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.prompting-process { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.prompting-process .creative-collection-step { display: flex; flex-direction: column; }
+.prompting-process h3 { font-size: 30px; }
+
+.prompting-step-output {
+  display: block;
+  margin-top: auto;
+  padding-top: 24px;
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  opacity: 0.7;
+}
+
+.prompting-anatomy-intro {
+  max-width: 790px;
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.prompting-anatomy-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 26px 0;
+}
+
+.prompting-anatomy-tabs button {
+  border: 1px solid currentColor;
+  background: transparent;
+  color: inherit;
+  padding: 12px 22px;
+  font: inherit;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.prompting-anatomy-tabs button[aria-pressed="true"] {
+  background: #e8dba5;
+  border-color: #e8dba5;
+  color: #20231f;
+}
+
+.prompting-anatomy-tabs button:hover { border-color: #e8dba5; }
+
+.prompting-anatomy-example {
+  display: grid;
+  grid-template-columns: minmax(0, 1.5fr) minmax(0, 0.8fr);
+  align-items: start;
+  gap: 24px clamp(28px, 4vw, 58px);
+  border-top: 1px solid currentColor;
+  border-bottom: 1px solid currentColor;
+  padding: 26px 0;
+}
+
+.prompting-anatomy-example > .lbl { grid-column: 1 / -1; margin: 0; }
+
+.prompting-anatomy-quote { margin: 0; font-size: 20px; line-height: 1.55; }
+.prompting-anatomy-quote p { margin: 0; }
+.prompting-anatomy-quote mark { background: #e8dba5; color: #20231f; padding: 1px 3px; }
+.prompting-anatomy-note p { margin: 0 0 14px; font-size: 16px; line-height: 1.5; }
+.prompting-anatomy-note strong { font-size: 25px; font-weight: 500; line-height: 1.15; letter-spacing: -0.03em; }
+.prompting-anatomy-disclaimer { margin: 16px 0 0; font-size: 13px; line-height: 1.5; opacity: 0.7; }
+
+@media (max-width: 850px) {
+  .prompting-hero-grid,
+  .prompting-feature-copy,
+  .prompting-practice-intro,
+  .prompting-anatomy-example { grid-template-columns: minmax(0, 1fr); }
+  .prompting-process { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .prompting-hero-copy { max-width: 650px; }
+}
+
+@media (max-width: 599px) {
+  .prompting-title { font-size: clamp(51px, 13vw, 68px); }
+  .prompting-hero-grid { margin-top: 20px; gap: 24px; }
+  .prompting-hero { padding-bottom: 30px; }
+  .prompting-scenes,
+  .prompting-process { grid-template-columns: minmax(0, 1fr); }
+  .prompting-anatomy-tabs { gap: 10px; }
+  .prompting-anatomy-tabs button { padding: 11px 17px; }
+  .prompting-anatomy-quote { font-size: 18px; }
 }
 
 .home-ai-list {

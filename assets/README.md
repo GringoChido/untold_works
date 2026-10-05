@@ -25,9 +25,9 @@ Run `npm run images:projects` after changing these sources to rebuild the two co
 - `home/savor-butter.webp`: product/kitchen photograph from the [Savor homepage](https://www.savor.it/), [source image](https://cdn.sanity.io/images/jqzja4ip/production/29cecd77efbdc0e3e5def3c30ae7a368de55281a-2880x1920.png). Retained from the earlier homepage selection; the active homepage uses the food film above. Untold.works does not claim photography authorship.
 - The Blue Note London photograph below is retained as an earlier homepage selection.
 
-### Photography and video collection — October 4, 2026
+### The art of prompting — October 4, 2026
 
-The dedicated `/photography-and-video` page is linked from the homepage's Human Direction section. The colorful walking frame stays on the homepage; the two Velocity films below have moved into this collection.
+The dedicated `/art-of-prompting` page is linked from the homepage's Human Direction section. The colorful walking frame stays on the homepage. C.L. Bailey leads the page as a large AI-created film, followed by a general prompting workflow, an illustrative interactive prompt, image studies and the two supporting Velocity films. The former `/photography-and-video` address redirects to the new title. The example prompt is illustrative, and the separate media examples are not presented as a literal sequence of outputs from that prompt.
 
 - `public/video/velocity-pro-brady.mp4` and `velocity-pro-brady-mobile.mp4`: the verified final 95.253-second “At the Table with Brady” Velocity Pro product film from the Billiard Factory product-page source. Full composition and original soundtrack retained at 1280 and 768 pixels wide. Poster: Brady beside the table at seven seconds. See `films/velocity-pro-brady-source.json`.
 - `public/video/velocity-ball-launch.mp4` and `velocity-ball-launch-mobile.mp4`: the complete portrait-format `Velocity-Live-Pacing-Review.mp4` supplied by Joshua on October 4. The 27.835-second shipping-container and oversized-ball reveal retains its original 9:16 framing, scene timing and soundtrack at 720 and 486 pixels wide. Poster: yellow ball emerging at 3.5 seconds. Presented as a product concept film without attributing a specific generation tool. See `films/velocity-ball-launch-source.json`.
