@@ -1,4 +1,16 @@
 {
+ "angelica-street-walking.png": {
+  "base": "angelica-street-walking",
+  "width": 2102,
+  "height": 1090,
+  "widths": [
+   480,
+   800,
+   1200,
+   1600,
+   2102
+  ]
+ },
  "bf-fall-light.webp": {
   "base": "bf-fall-light",
   "width": 1100,
@@ -776,6 +788,17 @@
    800,
    1200,
    1344
+  ]
+ },
+ "robert-glasper-blue-note-at-sea-john-abbott.jpg": {
+  "base": "robert-glasper-blue-note-at-sea-john-abbott",
+  "width": 3000,
+  "height": 2000,
+  "widths": [
+   480,
+   800,
+   1200,
+   1600
   ]
  },
  "robert-glasper-portrait.jpg": {

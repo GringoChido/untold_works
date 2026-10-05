@@ -78,7 +78,11 @@ export const ProjectDetail = () => {
         </section>
 
         <figure className="m-0">
-          <ProjectVisual project={project} poster={copy.visualLayout === 'poster'} />
+          {project.visual.type === 'image' && project.visual.src === 'shopify-commerce.svg' ? (
+            <a href="https://www.shopify.com/" target="_blank" rel="noopener noreferrer" aria-label="Visit Shopify, the commerce platform featured in this migration">
+              <ProjectVisual project={project} poster={copy.visualLayout === 'poster'} />
+            </a>
+          ) : <ProjectVisual project={project} poster={copy.visualLayout === 'poster'} />}
           <figcaption className="lbl flex flex-wrap items-center justify-between gap-4 border-b border-current py-4 text-[13px]">
             <span className="flex flex-col gap-2">
               <span>{`${project.name} / ${category.name}${project.visual.tag ? ` / ${project.visual.tag}` : ''}`}</span>

@@ -285,9 +285,9 @@
     "color": "burgundy",
     "visual": {
      "type": "image",
-     "src": "off-storis-concept.png",
-     "alt": "Concept visualization of paper inventory ledgers transitioning into connected modular commerce blocks",
-     "tag": "Concept visualization",
+     "src": "shopify-commerce.svg",
+     "alt": "Official Shopify logo above Billiard Factory room photography, introducing a commerce transition that is in progress",
+     "tag": "Commerce transition",
      "fit": "cover"
     },
     "facts": [

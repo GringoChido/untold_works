@@ -11,9 +11,9 @@ import { CONTACT_HREF, CONTACT_LABEL, EMAIL } from '../site';
 import { tones, type HomeScene } from '../theme';
 
 const paths = [
-  { number: '01', name: 'Billiard Factory', detail: 'Seasonal storefront, 27 shoppable rooms, four new décor categories and a commerce transition', to: '#billiard-factory' },
-  { number: '02', name: 'Second Son Productions', detail: 'Release films, live-event content and artist sites that extend the music', to: '#second-son' },
-  { number: '03', name: 'Other Projects', detail: 'Websites and tools built around specific audience decisions', to: '#other-projects' },
+  { number: '01', name: 'Billiard Factory', image: 'hf-shuffleboard.jpg', alt: 'Two people leaning over a shuffleboard table in a bright loft', imageClass: '', credit: null, detail: 'Seasonal storefront, 27 shoppable rooms, four new décor categories and a commerce transition', to: '#billiard-factory' },
+  { number: '02', name: 'Second Son Productions', image: 'robert-glasper-blue-note-at-sea-john-abbott.jpg', alt: 'Robert Glasper playing piano under blue and magenta stage lights', imageClass: '', credit: { text: 'Photo: John Abbott / Jazz Cruises', href: 'https://www.wbgo.org/music/2023-09-25/robert-glasper-on-robtober-his-monthlong-residency-at-the-blue-note' }, detail: 'Release films, live-event content and artist sites that extend the music', to: '#second-son' },
+  { number: '03', name: 'Other Projects', image: 'noxguard-packaging.webp', alt: 'Noxguard DEF packaging concept with branded cartons stacked on a pallet', imageClass: 'home-practice-image--noxguard', credit: null, detail: 'Websites and tools built around specific audience decisions', to: '#other-projects' },
 ] as const;
 
 const bfParts = [
@@ -124,8 +124,19 @@ export const Home = () => {
             <div><p className="lbl m-0">Selected work / Three areas of practice</p><h2 className="name m-0 mt-5 text-[clamp(37px,4.5vw,64px)]">Where the work gets used.</h2></div>
             <p className="m-0 max-w-[530px] text-[18px] leading-[1.5]">Retail systems that connect planning to sales. Music work that extends releases and live events. Focused sites and tools built around what an audience needs to do next.</p>
           </div>
-          <nav aria-label="Three bodies of work" className="mt-11 grid gap-0 border-b border-current md:grid-cols-3">
-            {paths.map((item) => <a key={item.number} href={item.to} className="flex flex-col justify-between gap-9 border-t border-current py-5 pr-6 no-underline md:mr-6"><span className="lbl">{item.number + ' / 03'}</span><span><strong className="name block text-[clamp(27px,2.8vw,40px)] leading-[1.04]">{item.name}</strong><span className="mt-3 block text-[15px] leading-[1.4]">{item.detail}</span></span><span aria-hidden="true">↓</span></a>)}
+          <nav aria-label="Three bodies of work" className="home-practice-nav">
+            {paths.map((item) => (
+              <div key={item.number} className="home-practice-card">
+                <a href={item.to} className="home-practice-link">
+                  <span className="home-practice-meta">{item.number + ' / 03'}</span>
+                  <Img src={item.image} alt={item.alt} sizes="(min-width: 768px) 31vw, 100vw" className={`home-practice-image ${item.imageClass}`.trim()} />
+                  <strong className="home-practice-title">{item.name}</strong>
+                  <span className="home-practice-detail">{item.detail}</span>
+                  <span className="home-practice-arrow" aria-hidden="true">↓</span>
+                </a>
+                <p className="home-practice-credit" aria-hidden={item.credit ? undefined : true}>{item.credit && <a href={item.credit.href} target="_blank" rel="noreferrer">{item.credit.text} <span aria-hidden="true">↗</span></a>}</p>
+              </div>
+            ))}
           </nav>
         </div>
 
@@ -184,6 +195,9 @@ export const Home = () => {
         </section>
 
         <section id="second-son" data-home-scene="campaigns" className="scroll-mt-5 border-b border-current py-16 md:py-24" aria-labelledby="music-home-title">
+          <figure className="home-music-interlude">
+            <Img src="angelica-street-walking.png" alt="A man walking past a yellow Angelica grocery storefront on a sunny city street" sizes="(min-width: 1600px) 1520px, 100vw" className="home-music-interlude-image" />
+          </figure>
           <div className="lbl mb-9 flex flex-wrap justify-between gap-4"><span>02 / Second Son Productions</span><span>Artist sites · Film · Social · Live music</span></div>
           <div className="grid items-start gap-10 md:grid-cols-[minmax(0,0.9fr)_minmax(0,1fr)] md:gap-16">
             <PortfolioFilm id="glasper-film" src="/video/robert-glasper-birthday.mp4" mobileSrc="/video/robert-glasper-birthday-mobile.mp4" poster="/images/robert-glasper-birthday-poster.jpg" width={1920} height={1080} label="Robert Glasper birthday celebration at Blue Note Los Angeles" controlLabel="Robert Glasper birthday film" caption="Robert Glasper / Birthday celebration at Blue Note Los Angeles" nativeControls autoPlayWhenVisible={false} />

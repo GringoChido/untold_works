@@ -1,0 +1,19 @@
+{
+  "retrieved": "2026-10-04",
+  "brandPage": "https://www.shopify.com/brand-assets",
+  "sourceUrl": "https://cdn.shopify.com/shopifycloud/brochure/assets/brand-assets/shopify-logo-inverted-primary-logo-bdc6ddd67862d9bb1f8c559e1bb50dd233112ac57b29cac2edcf17ed2e1fe6fa.svg",
+  "sha256": "bdc6ddd67862d9bb1f8c559e1bb50dd233112ac57b29cac2edcf17ed2e1fe6fa",
+  "original": "assets/brand/shopify-logo-inverted.svg",
+  "publicCopy": "public/images/shopify-logo-inverted.svg",
+  "composition": "public/images/shopify-commerce.svg",
+  "size": {
+    "width": 1600,
+    "height": 1000
+  },
+  "photographs": [
+    "bf-fall-opener-800.webp",
+    "bf-fall-tunbridge-800.webp",
+    "bf-fall-rug-800.webp"
+  ],
+  "migrationStatus": "in progress"
+}
