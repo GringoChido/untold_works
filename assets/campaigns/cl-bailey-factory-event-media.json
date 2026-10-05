@@ -10,6 +10,12 @@
     "timeSeconds": 10,
     "description": "A city intersection and C.L. Bailey Factory Event wall advertisement showing the 10% offer, pool table and October 16\u201331 dates."
   },
+  "artOfPromptingPoster": {
+    "path": "public/images/cl-bailey-waterfront-poster.jpg",
+    "sourceVideo": "public/video/cl-bailey-factory-event.mp4",
+    "timeSeconds": 15.791667,
+    "description": "The waterfront skyline, skateboarder and C.L. Bailey Factory Event billboard selected by Joshua in his October 4, 2026 screen grab. Extracted directly from the complete film at its native 1280x720 resolution, with no browser controls or crop."
+  },
   "pageEvidence": {
     "offer": "10% off C.L. Bailey and Velocity, taken off the shelf price. No code.",
     "dates": "October 16\u201331",
