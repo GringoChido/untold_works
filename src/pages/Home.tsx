@@ -45,6 +45,39 @@ const process = [
   { number: '04', name: 'Help people make it their own.', detail: 'Teach the people using the system, keep product checks and approvals visible, and turn repeatable tasks into shared workflows.' },
 ] as const;
 
+const directionFilms = [
+  {
+    id: 'home-velocity-brady',
+    kind: 'Velocity Pro / Product film',
+    title: 'At the table with Brady.',
+    detail: 'Brady presents the Velocity Pro through an on-camera product demonstration.',
+    src: '/video/velocity-pro-brady.mp4',
+    mobileSrc: '/video/velocity-pro-brady-mobile.mp4',
+    poster: '/images/velocity-pro-brady-poster.webp',
+    width: 1280,
+    height: 720,
+    label: 'At the Table with Brady: Velocity Pro product demonstration',
+    controlLabel: 'Velocity Pro product film with Brady',
+    duration: '1:35',
+    portrait: false,
+  },
+  {
+    id: 'home-velocity-ball-launch',
+    kind: 'Velocity / Product concept film',
+    title: 'A reveal at a different scale.',
+    detail: 'Oversized billiard balls turn a shipping-container reveal into an imagined product world.',
+    src: '/video/velocity-ball-launch.mp4',
+    mobileSrc: '/video/velocity-ball-launch-mobile.mp4',
+    poster: '/images/velocity-ball-launch-poster.webp',
+    width: 720,
+    height: 1280,
+    label: 'Velocity billiard ball-set launch film with oversized balls rolling from a branded shipping container',
+    controlLabel: 'Velocity ball-set launch film',
+    duration: '0:28',
+    portrait: true,
+  },
+] as const;
+
 const useHomeScene = () => {
   const [scene, setScene] = useState<HomeScene>('intro');
   useEffect(() => {
@@ -105,15 +138,31 @@ export const Home = () => {
 
         <section id="ai" data-home-scene="intro" className="home-ai scroll-mt-5" aria-labelledby="home-ai-title">
           <div className="home-ai-overline"><span>How the work gets made</span><span>Build · Create · Teach</span></div>
-          <div className="home-ai-grid">
+          <div className="home-ai-grid home-direction-intro">
+            <Img src="angelica-street-walking.png" alt="A man walking past a yellow Angelica grocery storefront on a sunny city street" sizes="(min-width: 851px) 55vw, 100vw" className="home-direction-street" />
             <div className="home-ai-copy">
               <h2 id="home-ai-title">Human direction.<br />AI in the making.</h2>
-              <p>Claude Code helps turn a brief into working websites and internal tools; Higgsfield helps develop images and films. Creative direction and product references shape the output, while review and teaching help a team use it safely in daily work.</p>
+              <p>Human direction shapes the brief, the performance, the image and the edit. Brady’s on-camera Velocity Pro film and the ball-set reveal below show different ways to bring a product story to life. AI expands what I can make; creative judgment, product references and review shape what gets used.</p>
               <Link to="/work/engine-room" className="text-link mt-7">See the Marketing Engine built with AI <span aria-hidden="true">↗</span></Link>
               <Link to="/about#toolkit" className="text-link mt-4">See the tools behind the work <span aria-hidden="true">↗</span></Link>
             </div>
-            <Img src="untold-human-direction-tablet.png" alt="Imagined Lower East Side scene of a woman sharing a digital project on a tablet with a man outside a studio" sizes="(min-width: 851px) 55vw, 100vw" className="studio-process-image" />
           </div>
+          <section className="home-direction-examples" aria-labelledby="home-direction-films-title">
+            <div className="home-direction-films-heading">
+              <h3 id="home-direction-films-title" className="lbl m-0">Direction in motion</h3>
+              <span className="lbl">Performance · Product · Imagination</span>
+            </div>
+            <div className="home-direction-films">
+              {directionFilms.map((film) => (
+                <article key={film.id} className={`home-direction-example${film.portrait ? ' home-direction-example--portrait' : ''}`} aria-labelledby={`${film.id}-title`}>
+                  <div className="home-direction-film-meta"><span>{film.kind}</span><span>{film.duration}</span></div>
+                  <PortfolioFilm id={film.id} src={film.src} mobileSrc={film.mobileSrc} poster={film.poster} width={film.width} height={film.height} label={film.label} controlLabel={film.controlLabel} caption={film.portrait ? 'Velocity / Ball-set reveal' : 'Velocity Pro / On-camera talent: Brady'} nativeControls autoPlayWhenVisible={false} className="home-direction-player" />
+                  <h4 id={`${film.id}-title`} className="name m-0">{film.title}</h4>
+                  <p>{film.detail}</p>
+                </article>
+              ))}
+            </div>
+          </section>
           <ol className="studio-process-list">
             {process.map((step) => <li key={step.number}><span className="studio-process-number" aria-hidden="true">{step.number}</span><div><h3>{step.name}</h3><p>{step.detail}</p></div></li>)}
           </ol>
@@ -195,9 +244,6 @@ export const Home = () => {
         </section>
 
         <section id="second-son" data-home-scene="campaigns" className="scroll-mt-5 border-b border-current py-16 md:py-24" aria-labelledby="music-home-title">
-          <figure className="home-music-interlude">
-            <Img src="angelica-street-walking.png" alt="A man walking past a yellow Angelica grocery storefront on a sunny city street" sizes="(min-width: 1600px) 1520px, 100vw" className="home-music-interlude-image" />
-          </figure>
           <div className="lbl mb-9 flex flex-wrap justify-between gap-4"><span>02 / Second Son Productions</span><span>Artist sites · Film · Social · Live music</span></div>
           <div className="grid items-start gap-10 md:grid-cols-[minmax(0,0.9fr)_minmax(0,1fr)] md:gap-16">
             <PortfolioFilm id="glasper-film" src="/video/robert-glasper-birthday.mp4" mobileSrc="/video/robert-glasper-birthday-mobile.mp4" poster="/images/robert-glasper-birthday-poster.jpg" width={1920} height={1080} label="Robert Glasper birthday celebration at Blue Note Los Angeles" controlLabel="Robert Glasper birthday film" caption="Robert Glasper / Birthday celebration at Blue Note Los Angeles" nativeControls autoPlayWhenVisible={false} />

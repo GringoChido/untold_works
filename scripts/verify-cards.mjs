@@ -161,7 +161,7 @@ const walk = async (dir) => {
   return out;
 };
 // Homepage and case films selected from the user's supplied and verified sources.
-const approvedVideos = new Set(['cl-bailey-factory-event.mp4', 'cl-bailey-factory-event-mobile.mp4', 'bf-storefront.mp4', 'bf-storefront-mobile.mp4', 'glasper-r-r-now.mp4', 'glasper-r-r-now-mobile.mp4', 'robert-glasper-birthday.mp4', 'robert-glasper-birthday-mobile.mp4', 'black-radio-experience-recap.mp4', 'black-radio-experience-recap-mobile.mp4', 'savor-food.mp4', 'savor-food-mobile.mp4'].map((name) => join(DIST, 'video', name)));
+const approvedVideos = new Set(['cl-bailey-factory-event.mp4', 'cl-bailey-factory-event-mobile.mp4', 'bf-storefront.mp4', 'bf-storefront-mobile.mp4', 'glasper-r-r-now.mp4', 'glasper-r-r-now-mobile.mp4', 'robert-glasper-birthday.mp4', 'robert-glasper-birthday-mobile.mp4', 'black-radio-experience-recap.mp4', 'black-radio-experience-recap-mobile.mp4', 'savor-food.mp4', 'savor-food-mobile.mp4', 'velocity-pro-brady.mp4', 'velocity-pro-brady-mobile.mp4', 'velocity-ball-launch.mp4', 'velocity-ball-launch-mobile.mp4'].map((name) => join(DIST, 'video', name)));
 const approvedHtml = new Set([...routes.map((route) => pageFile(route)), join(DIST, '404.html')]);
 for (const file of await walk(DIST)) {
   if (file.endsWith('.html') && !approvedHtml.has(file)) fail('unexpected HTML page in dist: ' + file.replace(DIST, 'dist'));

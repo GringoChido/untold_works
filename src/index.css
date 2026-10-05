@@ -790,16 +790,6 @@
   line-height: 1.5;
 }
 
-.home-music-interlude {
-  margin: 0 0 clamp(34px, 5vw, 72px);
-}
-
-.home-music-interlude-image {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-
 @media (max-width: 767px) {
   .home-practice-nav {
     grid-template-columns: minmax(0, 1fr);
@@ -851,6 +841,89 @@
   font-size: clamp(19px, 1.8vw, 24px);
   line-height: 1.4;
   letter-spacing: -0.02em;
+}
+
+.home-ai .home-direction-intro {
+  grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr);
+  align-items: center;
+}
+
+.home-direction-street {
+  display: block;
+  width: 100%;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+  object-position: 44% 50%;
+}
+
+.home-direction-intro .home-ai-copy > .text-link {
+  display: flex;
+  width: fit-content;
+}
+
+.home-direction-examples {
+  margin-top: clamp(36px, 5vw, 70px);
+}
+
+.home-direction-films-heading {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 10px 24px;
+  border-top: 1px solid currentColor;
+  padding: 16px 0 24px;
+}
+
+.home-direction-films {
+  display: grid;
+  grid-template-columns: minmax(0, 1.6fr) minmax(0, 1fr);
+  gap: clamp(24px, 3vw, 44px);
+}
+
+.home-direction-example { min-width: 0; }
+
+.home-direction-film-meta {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+  padding-bottom: 14px;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+
+.home-direction-player video {
+  width: 100%;
+  height: clamp(340px, 36vw, 490px);
+  object-fit: contain;
+  background: #171a17;
+}
+
+.home-direction-example h4 {
+  margin-top: 23px;
+  font-size: clamp(27px, 2.8vw, 38px);
+  line-height: 1.08;
+}
+
+.home-direction-example > p {
+  max-width: 620px;
+  margin: 13px 0 0;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+@media (max-width: 850px) {
+  .home-ai .home-direction-intro { grid-template-columns: minmax(0, 1fr); }
+  .home-direction-street { aspect-ratio: 16 / 10; }
+  .home-direction-films { grid-template-columns: minmax(0, 1fr); gap: 36px; }
+  .home-direction-player video { height: auto; }
+  .home-direction-example--portrait .home-direction-player video {
+    max-height: 640px;
+    background: #171a17;
+  }
 }
 
 .home-ai-list {

@@ -1,0 +1,62 @@
+{
+  "title": "Velocity Pro product film \u2014 At the Table, Episode 01",
+  "sourceFile": "/Users/joshuasemolik/Desktop/_PROJECTS/bf-web/src/assets/video/velocity-pro/velocity-pro-1080.mp4",
+  "sourceSha256": "a0fcfd2282553943721c1f541c7b2e300652c7b7188ba3acb382ee5d3c992688",
+  "sourceDurationSeconds": 95.253,
+  "sourceVideo": {
+    "codec": "h264",
+    "width": 1920,
+    "height": 1080,
+    "framesPerSecond": 24
+  },
+  "sourceAudio": {
+    "codec": "aac"
+  },
+  "onCameraTalent": "Brady",
+  "identityCredit": "Brady, identified by the user as the on-camera talent. The source site\u2019s At the Table series data names Brady as the host, and its product-film notes identify the poster frame as Brady beside the table.",
+  "sourcePage": "https://billiardfactory.com/velocity-pro-pool-table",
+  "sourcePageEvidence": "The public primary product page was located through web search. Local BF web source (src/_data/productData.js, lines 1234\u20131252) assigns this exact film to the Velocity Pro PDP.",
+  "publicFilmPlaybackVerified": false,
+  "publicPlaybackVerificationNote": "Direct requests to the public video endpoint returned HTTP 403; local source playback, frames, streams and duration were verified.",
+  "sourceRepo": "/Users/joshuasemolik/Desktop/_PROJECTS/bf-web",
+  "sourceRepoCommit": "2e17b332453d9d0bf0cd23ea145c70d958fe86d1",
+  "sourceRevisionEvidence": "Sep 23, 2026 commit: Velocity Pro PDP: the re-cut At the Table film, on its own. Commit body identifies a new Updated Final ImageKit master, with newly transcribed captions and 1080p/720p web encodes.",
+  "excludedAlternatives": [
+    "Velocity-Live-Pacing-Review.mp4 is the separate 27.835-second non-human film identified by the user.",
+    "BFAS_SC01A/B_VelocityPro_4K.mov are Allstate TV production footage.",
+    "at-the-table-velocity-pro-pocket-update-reverse-v3_g2zetRBNE.mp4 is a distinct 105.5-second cut."
+  ],
+  "outputs": [
+    {
+      "file": "public/video/velocity-pro-brady.mp4",
+      "width": 1280,
+      "videoCodec": "h264",
+      "pixelFormat": "yuv420p",
+      "audio": "original AAC stream copied",
+      "fastStart": true
+    },
+    {
+      "file": "public/video/velocity-pro-brady-mobile.mp4",
+      "width": 768,
+      "videoCodec": "h264",
+      "pixelFormat": "yuv420p",
+      "audio": "original AAC stream copied",
+      "fastStart": true
+    }
+  ],
+  "poster": {
+    "file": "public/images/velocity-pro-brady-poster.webp",
+    "sourceFile": "/Users/joshuasemolik/Desktop/_PROJECTS/bf-web/src/assets/video/velocity-pro/velocity-pro-poster.jpg",
+    "sourceFrameSeconds": 7,
+    "width": 1280
+  },
+  "framing": "Original complete 16:9 frame preserved; no creative edit, cuts, retiming, text or audio changes.",
+  "prepared": "2026-10-04",
+  "verified": {
+    "fullDurationPreserved": true,
+    "originalAudioPacketsMatch": true,
+    "h264Yuv420p": true,
+    "moovBeforeMdat": true,
+    "sourceSha256Unchanged": true
+  }
+}

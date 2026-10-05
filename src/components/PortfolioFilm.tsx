@@ -73,7 +73,7 @@ export const PortfolioFilm = ({ id, src, mobileSrc, poster, width, height, label
 
   return (
     <figure className={`showroom-film ${className}`}>
-      <video ref={videoRef} id={id} width={width} height={height} style={{ aspectRatio: `${width} / ${height}` }} muted={autoPlayWhenVisible} loop={autoPlayWhenVisible} playsInline controls={nativeControls} preload="none" poster={poster} aria-label={label} onPlay={() => { userPaused.current = false; setPlaying(true); }} onPause={() => { if (nativeControls && !automaticPause.current) userPaused.current = true; automaticPause.current = false; setPlaying(false); }} onCanPlay={() => setFailed(false)} onError={() => { if (!('__UNTOLD_PRERENDER__' in window)) setFailed(true); }}>
+      <video ref={videoRef} id={id} width={width} height={height} style={{ aspectRatio: `${width} / ${height}` }} muted={autoPlayWhenVisible} loop={autoPlayWhenVisible} playsInline controls={nativeControls} preload="none" poster={poster} aria-label={label} onPlay={() => { userPaused.current = false; setPlaying(true); }} onPause={() => { if (nativeControls && !automaticPause.current) userPaused.current = true; automaticPause.current = false; setPlaying(false); }} onCanPlay={() => setFailed(false)} onError={(event) => { if (event.currentTarget.error && !('__UNTOLD_PRERENDER__' in window)) setFailed(true); }}>
         {mobileSrc && <source src={mobileSrc} type="video/mp4" media="(max-width: 767px)" />}
         <source src={src} type="video/mp4" />
       </video>

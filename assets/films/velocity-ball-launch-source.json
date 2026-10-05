@@ -1,0 +1,219 @@
+{
+  "source": {
+    "filename": "Velocity-Live-Pacing-Review.mp4",
+    "path": "/Users/joshuasemolik/Desktop/Velocity-Live-Pacing-Review.mp4",
+    "providedBy": "user",
+    "sha256": "17279e5386ba392de59e610e1c4c687121c07fa3c5f8d0c480c86d36be7ebb26",
+    "durationSeconds": 27.834635,
+    "width": 1080,
+    "height": 1920,
+    "displayAspectRatio": "9:16",
+    "nominalFrameRate": "24/1",
+    "frameCount": 668,
+    "probe": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "index": 0,
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 1080,
+          "height": 1920,
+          "pix_fmt": "yuv420p",
+          "r_frame_rate": "24/1",
+          "avg_frame_rate": "513024/21377",
+          "start_time": "0.000000",
+          "duration": "27.834635",
+          "bit_rate": "11846178",
+          "nb_frames": "668"
+        },
+        {
+          "index": 1,
+          "codec_name": "aac",
+          "codec_type": "audio",
+          "sample_rate": "48000",
+          "channels": 2,
+          "r_frame_rate": "0/0",
+          "avg_frame_rate": "0/0",
+          "start_time": "0.000000",
+          "duration": "27.833000",
+          "bit_rate": "197556",
+          "nb_frames": "1306"
+        }
+      ],
+      "format": {
+        "duration": "27.834635",
+        "size": "41925426"
+      }
+    }
+  },
+  "caption": "Product concept film",
+  "description": "Velocity / Billiard Factory — a product reveal at a different scale.",
+  "preparation": {
+    "date": "2026-10-04",
+    "purpose": "Technical encodes for homepage embedding",
+    "videoCodec": "H.264",
+    "pixelFormat": "yuv420p",
+    "frameRate": 24,
+    "crf": 22,
+    "preset": "medium",
+    "audioCodec": "AAC",
+    "audioBitrate": "128k",
+    "faststart": true,
+    "framing": "Full original 9:16 frame retained",
+    "timeline": "All 668 original video frames retained; no cuts or generated changes. Sound retained and transcoded to AAC.",
+    "durationNote": "Source container duration is 27.834635 seconds. Encoded container duration is 27.840000 seconds because of frame and AAC packet timing; full frame count and sound are retained.",
+    "productionProvenance": "Production tools and authorship are unspecified."
+  },
+  "outputs": [
+    {
+      "path": "public/video/velocity-ball-launch.mp4",
+      "width": 720,
+      "height": 1280,
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "index": 0,
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 720,
+            "height": 1280,
+            "sample_aspect_ratio": "1:1",
+            "display_aspect_ratio": "9:16",
+            "pix_fmt": "yuv420p",
+            "r_frame_rate": "24/1",
+            "avg_frame_rate": "24/1",
+            "start_time": "0.000000",
+            "duration": "27.833008",
+            "bit_rate": "1564644",
+            "nb_frames": "668"
+          },
+          {
+            "index": 1,
+            "codec_name": "aac",
+            "codec_type": "audio",
+            "sample_rate": "48000",
+            "channels": 2,
+            "r_frame_rate": "0/0",
+            "avg_frame_rate": "0/0",
+            "start_time": "0.000000",
+            "duration": "27.840000",
+            "bit_rate": "129812",
+            "nb_frames": "1306"
+          }
+        ],
+        "format": {
+          "duration": "27.840000",
+          "size": "5916499"
+        }
+      },
+      "mp4": {
+        "atoms": [
+          {
+            "type": "ftyp",
+            "offset": 0,
+            "size": 32
+          },
+          {
+            "type": "moov",
+            "offset": 32,
+            "size": 20701
+          },
+          {
+            "type": "free",
+            "offset": 20733,
+            "size": 8
+          },
+          {
+            "type": "mdat",
+            "offset": 20741,
+            "size": 5895758
+          }
+        ],
+        "faststart": true
+      }
+    },
+    {
+      "path": "public/video/velocity-ball-launch-mobile.mp4",
+      "width": 486,
+      "height": 864,
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "index": 0,
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 486,
+            "height": 864,
+            "sample_aspect_ratio": "1:1",
+            "display_aspect_ratio": "9:16",
+            "pix_fmt": "yuv420p",
+            "r_frame_rate": "24/1",
+            "avg_frame_rate": "24/1",
+            "start_time": "0.000000",
+            "duration": "27.833008",
+            "bit_rate": "832115",
+            "nb_frames": "668"
+          },
+          {
+            "index": 1,
+            "codec_name": "aac",
+            "codec_type": "audio",
+            "sample_rate": "48000",
+            "channels": 2,
+            "r_frame_rate": "0/0",
+            "avg_frame_rate": "0/0",
+            "start_time": "0.000000",
+            "duration": "27.840000",
+            "bit_rate": "129812",
+            "nb_frames": "1306"
+          }
+        ],
+        "format": {
+          "duration": "27.840000",
+          "size": "3367857"
+        }
+      },
+      "mp4": {
+        "atoms": [
+          {
+            "type": "ftyp",
+            "offset": 0,
+            "size": 32
+          },
+          {
+            "type": "moov",
+            "offset": 32,
+            "size": 20647
+          },
+          {
+            "type": "free",
+            "offset": 20679,
+            "size": 8
+          },
+          {
+            "type": "mdat",
+            "offset": 20687,
+            "size": 3347170
+          }
+        ],
+        "faststart": true
+      }
+    }
+  ],
+  "poster": {
+    "path": "public/images/velocity-ball-launch-poster.webp",
+    "timestampSeconds": 3.5,
+    "width": 720,
+    "height": 1280,
+    "displayAspectRatio": "9:16",
+    "format": "WebP",
+    "quality": 86,
+    "framing": "Full original frame retained"
+  }
+}
