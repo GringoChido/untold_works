@@ -1,21 +1,24 @@
 import { useLayoutEffect } from 'react';
 import { BrowserRouter, Navigate, Route, Routes, useLocation } from 'react-router-dom';
-import { PageFillProvider } from './components/PageFill';
-import { About } from './pages/About';
-import { Category } from './pages/Category';
-import { Home } from './pages/Home';
-import { ArtOfPrompting } from './pages/ArtOfPrompting';
-import { WorkTogether } from './pages/WorkTogether';
-import { ElenaPinderhughes } from './pages/work/ElenaPinderhughes';
-import { EngineRoom } from './pages/work/EngineRoom';
-import { GlasperBlueNote } from './pages/work/GlasperBlueNote';
-import { LalahHathaway } from './pages/work/LalahHathaway';
-import { LandingPages } from './pages/work/LandingPages';
-import { Noxguard } from './pages/work/Noxguard';
-import { OtherProjects } from './pages/work/OtherProjects';
-import { ProjectDetail } from './pages/work/ProjectDetail';
-import { BilliardFactoryEngagement } from './pages/work/BilliardFactoryEngagement';
-import { Savor } from './pages/work/Savor';
+
+import { pageComponent } from './pageLoader';
+const About = pageComponent('About');
+const Category = pageComponent('Category');
+const Home = pageComponent('Home');
+const ArtOfPrompting = pageComponent('ArtOfPrompting');
+const WorkTogether = pageComponent('WorkTogether');
+const ForYourBusiness = pageComponent('ForYourBusiness');
+const NotFound = pageComponent('NotFound');
+const ElenaPinderhughes = pageComponent('ElenaPinderhughes');
+const EngineRoom = pageComponent('EngineRoom');
+const GlasperBlueNote = pageComponent('GlasperBlueNote');
+const LalahHathaway = pageComponent('LalahHathaway');
+const LandingPages = pageComponent('LandingPages');
+const Noxguard = pageComponent('Noxguard');
+const OtherProjects = pageComponent('OtherProjects');
+const ProjectDetail = pageComponent('ProjectDetail');
+const BilliardFactoryEngagement = pageComponent('BilliardFactoryEngagement');
+const Savor = pageComponent('Savor');
 
 const LegacyCreativeCollection = () => {
   const { hash, search } = useLocation();
@@ -30,18 +33,24 @@ const ScrollManager = () => {
     if (hash) {
       let cancelled = false;
       const scrollToTarget = () => {
-        if (cancelled) return;
-        document.getElementById(hash.slice(1))?.scrollIntoView({ block: 'start' });
+        if (cancelled) return false;
+        const target = document.getElementById(decodeURIComponent(hash.slice(1)));
+        target?.scrollIntoView({ block: 'start' });
+        return Boolean(target);
       };
-      scrollToTarget();
+      // A page chunk may arrive after navigation. Wait for its target to appear
+      // instead of losing deep links on a slow connection.
+      const observer = new MutationObserver(() => { if (scrollToTarget()) observer.disconnect(); });
+      if (!scrollToTarget()) observer.observe(document.getElementById('root')!, { childList: true, subtree: true });
       const frame = window.requestAnimationFrame(scrollToTarget);
       const settle = window.setTimeout(scrollToTarget, 300);
-      const stop = () => { cancelled = true; };
+      const stop = () => { cancelled = true; observer.disconnect(); };
       window.addEventListener('wheel', stop, { once: true, passive: true });
       window.addEventListener('touchstart', stop, { once: true, passive: true });
       window.addEventListener('keydown', stop, { once: true });
       return () => {
         cancelled = true;
+        observer.disconnect();
         window.cancelAnimationFrame(frame);
         window.clearTimeout(settle);
         window.removeEventListener('wheel', stop);
@@ -56,7 +65,6 @@ const ScrollManager = () => {
 
 export const App = () => (
   <BrowserRouter>
-    <PageFillProvider>
       <ScrollManager />
       <a
         href="#main"
@@ -83,11 +91,11 @@ export const App = () => (
         <Route path="/art-of-prompting" element={<ArtOfPrompting />} />
         <Route path="/photography-and-video" element={<LegacyCreativeCollection />} />
         <Route path="/work-together" element={<WorkTogether />} />
+        <Route path="/for-your-business" element={<ForYourBusiness />} />
         <Route path="/consulting" element={<Navigate to="/work-together" replace />} />
         <Route path="/contact" element={<Navigate to="/work-together#contact" replace />} />
         <Route path="/about" element={<About />} />
-        <Route path="*" element={<Navigate to="/" replace />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
-    </PageFillProvider>
   </BrowserRouter>
 );

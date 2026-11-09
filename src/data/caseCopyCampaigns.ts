@@ -8,7 +8,7 @@ export const caseCopyCampaigns = {
     parent: { label: 'Billiard Factory', to: '/work/billiard-factory-and-c-l-bailey' },
     next: { label: 'C.L. Bailey Factory Event', to: '/work/c-l-bailey-factory-event' },
     headline: 'Make the room the destination.',
-    lead: 'A fall campaign with one invitation—“This year, everyone comes to you”—carried from AI-made rooms and film into a working lead page.',
+    lead: 'A fall campaign with one invitation, “This year, everyone comes to you,” carried from AI-made rooms and film into a working lead page.',
     storyTitle: 'One idea, across the whole page.',
     story: 'Home Field runs September 14–October 11, 2026. I made its lived-in game rooms, stills and film in Higgsfield, then carried that direction into the page and social work. The page pairs the campaign story with Billiard Factory’s standing savings ladder and a GoHighLevel lead form, giving the connected sales team a path to follow up.',
     focus: [
@@ -77,7 +77,7 @@ export const caseCopyCampaigns = {
     details: [
       { eyebrow: 'The format', title: 'Proof through preparation.', body: 'Each episode follows a chef’s own process, from interviews and kitchen footage to close views of demanding preparations such as laminated pastry, ganache and sabayon. The food gives the ingredient a tangible test.' },
       { eyebrow: 'The series', title: 'Four kitchens, four voices.', body: 'The published series features Juan Contreras at Atelier Crenn, Kyle and Katina Connaughton at SingleThread, Clement Goyffon at ONE65, and Amanda Michael and Drake Jones at Jane the Bakery.' },
-      { eyebrow: 'The wider campaign', title: 'Built to travel beyond an episode.', body: 'IDW’s case study also documents short social cuts, motion graphics and a color treatment for the wider series. My credited role here is content and storytelling within that studio-led work.' },
+      { eyebrow: 'The wider campaign', title: 'Built to travel beyond an episode.', body: 'IDW’s case study also documents short social cuts, motion graphics and a color treatment for the wider series. I worked on the content and storytelling with IDW Studio.' },
     ],
     links: [{ label: 'See IDW Studio’s Savor case ↗', href: 'https://idw.studio/cs/savor' }],
   },
@@ -135,16 +135,16 @@ export const caseCopyCampaigns = {
     headline: 'Show the savings tiers and route leads to sales.',
     lead: 'A sitewide Labor Day campaign with a clear savings ladder, a lead capture and precise credit for the page team.',
     storyTitle: 'Offer, capture and team roles.',
-    story: 'The Labor Day Sale page went live August 17, 2026, with up to $1,000 off sitewide. I provided the creative direction and template. Brady Stick built the page on that template, and Zorica wrote the SEO copy. The result carries the offer from an immediate headline into clear ways to buy online, visit a showroom or enter the sales CRM through its lead form.',
+    story: 'The Labor Day Sale page went live August 17, 2026, with up to $1,000 off sitewide. I set the creative direction and designed the template. The team built the page and wrote the search copy. The result carries the offer from an immediate headline into clear ways to buy online, visit a showroom or enter the sales CRM through its lead form.',
     focus: [
       { label: 'Live', text: 'August 17, 2026.' },
       { label: 'Offer', text: 'Up to $1,000 off sitewide.' },
-      { label: 'Credit', text: 'My creative direction and template; page by Brady Stick; SEO by Zorica.' },
+      { label: 'Credit', text: 'I directed the creative and supplied the template. The team handled the build and search copy.' },
     ],
     details: [
       { eyebrow: 'The offer', title: 'A ladder people can read.', body: 'Five visible savings tiers rise to $1,000, and the page says the discount applies automatically at checkout. The offer is framed alongside direct links to shop pool tables, avoiding a coupon-code step.' },
       { eyebrow: 'The lead', title: 'An additional reason to raise a hand.', body: 'A $150 ball-set offer leads to the same GoHighLevel capture used on the Sitewide Sale and Home Field pages. It sits high on the page after the savings ladder, with the rest of the page providing reassurance about showrooms, financing and room fit. The connected sales team can follow up in the CRM.' },
-      { eyebrow: 'The team', title: 'Direction, build and search copy.', body: 'I supplied the campaign direction and page template. Brady Stick implemented the landing page; Zorica supplied the SEO copy, including the supporting sections that help shoppers choose how to buy.' },
+      { eyebrow: 'The team', title: 'Direction, build and search copy.', body: 'I supplied the campaign direction and page template. The team built the landing page and wrote the search copy, including the sections that help shoppers choose how to buy.' },
     ],
     links: [{ label: 'See the Labor Day page ↗', href: 'https://billiardfactory.com/labor-day-sale' }],
   },
@@ -188,7 +188,7 @@ export const caseCopyCampaigns = {
   'campaigns/art-science-and-r-r-now-release-films': {
     value: "A short release film can translate the sound and energy of a record into something audiences and promoters can share. I carried direction, camera and edit through both pieces, giving each project a coherent visual introduction.",
     films: [rRNowFilm],
-    visualCredit: 'Film frame / Directed, filmed and edited by Joshua Semolik.',
+    visualCredit: 'Film frame / I directed, filmed and edited the release film.',
     headline: 'Release films I directed, shot and edited.',
     lead: 'Two release films from my earlier camera-led work with Robert Glasper: Art Science and R+R=NOW.',
     storyTitle: 'A camera role from start to finish.',
@@ -199,7 +199,7 @@ export const caseCopyCampaigns = {
       { label: 'Format', text: 'Record release and tour films.' },
     ],
     details: [
-      { eyebrow: 'Art Science', title: 'The Robert Glasper Experiment.', body: 'The Art Science piece is a concise release film for the Experiment. My role covered direction, camera and edit—the full path from what to shoot to what the final sequence communicates.' },
+      { eyebrow: 'Art Science', title: 'The Robert Glasper Experiment.', body: 'The Art Science piece is a concise release film for the Experiment. My role covered direction, camera and edit, covering the full path from what to shoot to what the final sequence communicates.' },
       { eyebrow: 'R+R=NOW', title: 'A release built to move.', body: 'The R+R=NOW film connects a record release and tour in one short piece. I again directed, shot and edited, carrying the live energy of the project into its public announcement.' },
     ],
     links: [

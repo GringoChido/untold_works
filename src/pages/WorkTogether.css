@@ -64,8 +64,8 @@
   gap: 24px;
   min-height: 54px;
   padding: 15px 20px;
-  background: #e8dba5;
-  color: #20231f;
+  background: var(--orange);
+  color: var(--ink);
   font-size: 15px;
   font-weight: 600;
   line-height: 1.4;
@@ -73,12 +73,45 @@
 }
 
 .work-together-button:hover {
-  background: #f2e8c1;
+  background: color-mix(in srgb, var(--orange) 76%, var(--paper));
 }
 
 .work-together-section {
   padding-bottom: 88px;
   scroll-margin-top: 24px;
+}
+
+.work-together-business {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 26px 50px;
+  margin-bottom: 88px;
+  border-top: 1px solid currentColor;
+  border-bottom: 1px solid currentColor;
+  padding: 30px 0;
+}
+
+.work-together-business > div {
+  flex: 1 1 420px;
+  max-width: 780px;
+}
+
+.work-together-business .lbl {
+  margin: 0 0 18px;
+}
+
+.work-together-business h2 {
+  margin: 0 0 16px;
+  font-size: clamp(32px, 3.5vw, 45px);
+}
+
+.work-together-business p:last-child {
+  margin: 0;
+  max-width: 650px;
+  font-size: 18px;
+  line-height: 1.55;
 }
 
 .work-together-section-title {
@@ -127,7 +160,7 @@
 }
 
 .work-together-examples li {
-  border-left: 2px solid #e8dba5;
+  border-left: 2px solid var(--orange);
   padding-left: 11px;
   font-size: 14px;
   line-height: 1.45;
@@ -240,7 +273,7 @@
 
 .work-together-email:hover,
 .work-together-phone:hover {
-  color: #e8dba5;
+  color: var(--orange-text);
 }
 
 .work-together-about-link {

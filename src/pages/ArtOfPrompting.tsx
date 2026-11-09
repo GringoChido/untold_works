@@ -7,27 +7,8 @@ import { PromptAnatomy } from '../components/PromptAnatomy';
 import { PortfolioFilm } from '../components/PortfolioFilm';
 import { clBaileyFactoryFilm } from '../data/campaignMedia';
 import { usePageMeta } from '../hooks/usePageMeta';
-import { tones } from '../theme';
 
 const supportingFilms = [
-  {
-    id: 'creative-velocity-brady',
-    kind: 'Velocity Pro / On-camera performance',
-    title: 'At the table with Brady.',
-    detail: 'A real on-camera performance brings the product to life. Work with talent, product demonstration and editing informs the decisions I now write into a prompt.',
-    src: '/video/velocity-pro-brady.mp4',
-    mobileSrc: '/video/velocity-pro-brady-mobile.mp4',
-    poster: '/images/velocity-pro-brady-poster.webp',
-    width: 1280,
-    height: 720,
-    label: 'At the Table with Brady: Velocity Pro product demonstration',
-    controlLabel: 'Velocity Pro product film with Brady',
-    caption: 'Velocity Pro / On-camera talent: Brady',
-    duration: '1:35',
-    format: 'landscape',
-    to: '/work/billiard-factory-and-c-l-bailey',
-    action: 'See the Billiard Factory work',
-  },
   {
     id: 'creative-velocity-ball-launch',
     kind: 'Velocity / Product concept film',
@@ -118,13 +99,13 @@ const connections = [
 
 export const ArtOfPrompting = () => {
   usePageMeta({
-    title: 'The Art of Prompting — Images and Motion | Untold.works',
-    description: 'Joshua Semolik’s evolving practice of turning ideas into precise prompts, product images, lifestyle scenes, motion, finished films and campaign assets.',
+    title: 'The Art of Prompting | Images and Motion | Untold.works',
+    description: 'How I take an idea from product references and prompts through images, motion, film and finished campaign assets.',
     path: '/art-of-prompting',
   });
 
   return (
-    <Layout tone={tones.close}>
+    <Layout>
       <Header crumbs={[{ label: 'Applied AI', to: '/#ai' }, { label: 'The art of prompting' }]} />
       <main id="main" className="creative-collection prompting-page">
         <section className="prompting-hero" aria-labelledby="prompting-title">
@@ -132,7 +113,7 @@ export const ArtOfPrompting = () => {
           <div className="prompting-hero-grid">
             <h1 id="prompting-title" className="display prompting-title">The art<br />of prompting.</h1>
             <div className="prompting-hero-copy">
-              <p>I’m learning to bring my experience in photography, film and creative direction into the prompt. Light, framing, materials, performance and pacing become things I describe, test and refine. The more precise the direction, the closer the work gets to the idea.</p>
+              <p>I’m Joshua Semolik. This is my process for creating AI images and video: start with the idea and real product references, write precise prompts, review the images, develop motion, then edit and adapt the finished work. My experience in photography, film and creative direction shapes the lighting, framing, materials, performance and pacing.</p>
               <nav className="creative-collection-nav" aria-label="Explore the art of prompting">
                 <a href="#films" className="text-link">The film <span aria-hidden="true">↓</span></a>
                 <a href="#process" className="text-link">The process <span aria-hidden="true">↓</span></a>
@@ -193,10 +174,22 @@ export const ArtOfPrompting = () => {
         </section>
 
         <section id="more-films" className="creative-collection-section" aria-labelledby="prompting-more-films-title">
-          <div className="creative-collection-section-head"><div><p className="lbl">More ways to tell the story</p><h2 id="prompting-more-films-title" className="name">Performance. Product. Possibility.</h2></div><p>On-camera product storytelling and an imagined launch bring different kinds of creative judgment to the work.</p></div>
+          <div className="creative-collection-section-head"><div><p className="lbl">More ways to tell the story</p><h2 id="prompting-more-films-title" className="name">The Velocity launch film.</h2></div><p>I used scale and motion to imagine a launch for a new set of billiard balls.</p></div>
           <div className="creative-collection-films">
             {supportingFilms.map((film) => <article key={film.id} className={`creative-collection-film${film.format === 'portrait' ? ' creative-collection-film--portrait' : ''}`} aria-labelledby={`${film.id}-title`}><div className="creative-collection-meta"><span className="lbl">{film.kind}</span><span>{film.duration}</span></div><PortfolioFilm id={film.id} src={film.src} mobileSrc={film.mobileSrc} poster={film.poster} width={film.width} height={film.height} label={film.label} controlLabel={film.controlLabel} caption={film.caption} nativeControls autoPlayWhenVisible={false} className="creative-collection-player" /><h3 id={`${film.id}-title`} className="name creative-collection-item-title">{film.title}</h3><p className="creative-collection-item-detail">{film.detail}</p><Link to={film.to} className="text-link creative-collection-item-link">{film.action}<span aria-hidden="true">↗</span></Link></article>)}
           </div>
+        </section>
+
+        <section className="answer-section" aria-labelledby="prompting-questions-title">
+          <p className="lbl">Inside the process</p>
+          <h2 id="prompting-questions-title" className="name answer-section-title">The decisions behind the image.</h2>
+          <div className="answer-grid">
+            <div><h3>What makes an AI product prompt useful?</h3><p>A useful prompt starts with the actual product and the intended use. I specify the proportions, materials, setting, camera position and light, then compare the result with the reference. The <a href="#process">bar-cart study</a> shows that progression from product reference to lifestyle scene.</p></div>
+            <div><h3>How does a still image become a film?</h3><p>I use selected images to develop the sequence, camera movement and action. Generated takes are reviewed for product accuracy and continuity, then edited with sound and pacing. The C.L. Bailey film above shows how one premise carries through several settings.</p></div>
+            <div><h3>Where does human judgment matter?</h3><p>In the brief, the reference selection, the product checks and the edit. AI gives me material to assess and refine. I decide which takes serve the story and whether an image represents the product well enough to use.</p></div>
+            <div><h3>How is the finished work reused?</h3><p>An approved image or film can become a page feature, a shorter social cut or a different crop. Each version needs a destination and a review step. <Link to="/work/engine-room">The Marketing Engine</Link> connects those assets with the brief, owners and publishing schedule.</p></div>
+          </div>
+          <p className="mt-8 text-[15px]"><Link to="/about" className="underline underline-offset-4">More about my creative process</Link></p>
         </section>
 
         <section className="creative-collection-section" aria-labelledby="prompting-delivery-title">

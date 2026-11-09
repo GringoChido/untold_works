@@ -2,3 +2,4 @@ User-agent: *
 Allow: /
 
 Sitemap: https://untold.works/sitemap.xml
+Sitemap: https://untold.works/video-sitemap.xml

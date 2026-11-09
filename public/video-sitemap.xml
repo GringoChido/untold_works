@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+  <url><loc>https://untold.works/art-of-prompting</loc>
+    <video:video>
+      <video:thumbnail_loc>https://untold.works/images/cl-bailey-waterfront-poster.jpg</video:thumbnail_loc>
+      <video:title>C.L. Bailey Factory Event AI campaign film</video:title>
+      <video:description>An AI-created campaign film moving through city streets, a newspaper, a train journey and the game room. The advertising scenes are creative visualizations.</video:description>
+      <video:content_loc>https://untold.works/video/cl-bailey-factory-event.mp4</video:content_loc>
+    </video:video>
+    <video:video>
+      <video:thumbnail_loc>https://untold.works/images/velocity-ball-launch-poster.webp</video:thumbnail_loc>
+      <video:title>Velocity ball-set reveal</video:title>
+      <video:description>An imagined product launch with oversized billiard balls rolling from a branded shipping container, exploring scale, anticipation and movement.</video:description>
+      <video:content_loc>https://untold.works/video/velocity-ball-launch.mp4</video:content_loc>
+    </video:video>
+  </url>
+</urlset>

@@ -21,5 +21,6 @@ export const routes = [
   '/work/other-projects',
   '/art-of-prompting',
   '/work-together',
+  '/for-your-business',
   '/about',
 ];

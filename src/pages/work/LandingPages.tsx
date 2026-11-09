@@ -6,13 +6,14 @@ import { Img } from '../../components/Img';
 import { LabelRow } from '../../components/LabelRow';
 import { Stamp } from '../../components/Stamp';
 import { usePageMeta } from '../../hooks/usePageMeta';
+import { Header } from '../../components/Header';
 
 const Cap = ({ children, className = '' }: { children: ReactNode; className?: string }) => (
   <span className={`wdth-62 text-[13px] font-semibold uppercase leading-[1.35] tracking-[0.1em] ${className}`}>{children}</span>
 );
 
 const Fact = ({ label, children, last = false }: { label: string; children: ReactNode; last?: boolean }) => (
-  <div className={`flex justify-between gap-4 border-t-rule border-cream py-3 ${last ? 'border-b-rule' : ''}`}>
+  <div className={`flex justify-between gap-4 border-t-rule border-current py-3 ${last ? 'border-b-rule' : ''}`}>
     <span>{label}</span>
     <span className="text-right">{children}</span>
   </div>
@@ -58,19 +59,19 @@ const season = [
 ];
 
 const statusChip: Record<string, string> = {
-  Live: 'bg-cream text-ink',
-  'In progress': 'border-rule border-cream',
-  Built: 'border-rule border-cream',
-  Planned: 'border-rule border-cream/50 text-cream/75',
+  Live: 'bg-ink text-cream',
+  'In progress': 'border-rule border-ink',
+  Built: 'border-rule border-ink',
+  Planned: 'border-rule border-ink/50 text-ink/75',
 };
 
 const strips = [
-  { n: '01', path: '/new-arrivals', credit: 'By me · ported by Brady Stick', status: 'Live · Aug 2026', src: 'strip-new-arrivals.jpg', alt: 'The New Arrivals page, full length' },
-  { n: '02', path: '/designers', credit: 'By me · ported by Brady Stick', status: 'Live · Aug 2026', src: 'strip-designers.jpg', alt: 'The Designer Program page, full length' },
-  { n: '03', path: '/sitewide-sale', credit: 'By me · ported by Brady Stick', status: 'Live · Aug 2026', src: 'strip-sitewide-sale.jpg', alt: 'The Sitewide Sale page, full length' },
-  { n: '04', path: '/labor-day-sale', credit: 'Brady Stick, on my template · SEO copy by Zorica', status: 'Live · Aug 2026', src: 'strip-labor-day-sale.jpg', alt: 'The Labor Day Sale page, full length' },
-  { n: '05', path: '/custom', credit: 'By me · ported by Brady Stick', status: 'Live · Sep 2026', src: 'strip-custom.jpg', alt: 'The Custom Built page, full length' },
-  { n: '06', path: '/home-field', credit: 'By me · ported by Brady Stick', status: 'Live · Sep 2026', src: 'strip-home-field.jpg', alt: 'The Home Field page, full length' },
+  { n: '01', path: '/new-arrivals', credit: 'My original page · adapted by the team', status: 'Live · Aug 2026', src: 'strip-new-arrivals.jpg', alt: 'The New Arrivals page, full length' },
+  { n: '02', path: '/designers', credit: 'My original page · adapted by the team', status: 'Live · Aug 2026', src: 'strip-designers.jpg', alt: 'The Designer Program page, full length' },
+  { n: '03', path: '/sitewide-sale', credit: 'My original page · adapted by the team', status: 'Live · Aug 2026', src: 'strip-sitewide-sale.jpg', alt: 'The Sitewide Sale page, full length' },
+  { n: '04', path: '/labor-day-sale', credit: 'My template · build and search copy by the team', status: 'Live · Aug 2026', src: 'strip-labor-day-sale.jpg', alt: 'The Labor Day Sale page, full length' },
+  { n: '05', path: '/custom', credit: 'My original page · adapted by the team', status: 'Live · Sep 2026', src: 'strip-custom.jpg', alt: 'The Custom Built page, full length' },
+  { n: '06', path: '/home-field', credit: 'My original page · adapted by the team', status: 'Live · Sep 2026', src: 'strip-home-field.jpg', alt: 'The Home Field page, full length' },
   { n: '07', path: '/financing', credit: 'By me', status: 'Live · Sep 2026', src: 'strip-financing.jpg', alt: 'The financing page, full length' },
   { n: '08', path: '/cl-bailey-factory-event', credit: 'By me', status: 'Opens Oct 16', src: 'strip-cl-bailey-factory-event.jpg', alt: 'The C.L. Bailey Factory Event page, full length' },
 ];
@@ -98,20 +99,21 @@ export const LandingPages = () => {
   usePageMeta({
     title: 'Landing pages, Untold.works',
     description:
-      'Ten Billiard Factory campaign pages in a program that connects creative to sales. Joshua connected the sales team to GoHighLevel first; capture and next steps vary by page.',
+      'Ten Billiard Factory campaign pages in a program that connects creative to sales. I connected the sales team to GoHighLevel first, then built the pages around what customers needed to do next.',
     path: '/work/landing-pages',
   });
 
   return (
     <div className="flex min-h-dvh flex-col bg-cream text-ink">
+      <div className="mx-auto w-full max-w-[1440px] px-5 md:px-14"><Header crumbs={[{ label: 'Campaigns', to: '/campaigns' }, { label: 'Landing pages' }]} /></div>
       <main id="main" className="mx-auto flex w-full max-w-[1440px] flex-col">
         {/* The spread */}
-        <section className="grid bg-teal text-cream md:min-h-[900px] md:grid-cols-2" aria-label="Landing pages">
+        <section className="grid bg-cream text-ink md:min-h-[900px] md:grid-cols-2" aria-label="Landing pages">
           <div className="flex min-w-0 flex-col justify-between gap-7 px-5 py-10 md:px-14">
             <div className="flex items-start justify-between gap-4">
               <div className="flex flex-wrap items-center gap-3.5">
                 <span className="lbl">04 · Campaigns</span>
-                <Chip className="border-rule border-cream text-[14px] tracking-[0.08em]">Campaign</Chip>
+                <Chip className="border-rule border-current text-[14px] tracking-[0.08em]">Campaign</Chip>
               </div>
               <Stamp big="Live" small="2026" />
             </div>
@@ -132,7 +134,7 @@ export const LandingPages = () => {
               <Fact label="Stack">HTML · Netlify · Cloudflare Worker</Fact>
               <Fact label="Built with">Claude Code · Higgsfield</Fact>
               <Fact label="With" last>
-                Brady Stick · Zorica
+                The team
               </Fact>
             </div>
           </div>
@@ -347,11 +349,11 @@ export const LandingPages = () => {
         </section>
 
         {/* The season */}
-        <section className="flex flex-col gap-10 bg-ink px-5 py-16 text-cream md:px-16 md:py-[72px]" aria-labelledby="season-headline">
-          <LabelRow left={<span id="season-headline">The season</span>} right="One arc, page to page" className="border-cream/50" />
+        <section className="flex flex-col gap-10 bg-cream px-5 py-16 text-ink md:px-16 md:py-[72px]" aria-labelledby="season-headline">
+          <LabelRow left={<span id="season-headline">The season</span>} right="One arc, page to page" className="border-ink/50" />
           <ol className="grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-2 lg:grid-cols-5">
             {season.map((item) => (
-              <li key={item.name} className="flex flex-col gap-3 border-t-rule border-cream pt-4">
+              <li key={item.name} className="flex flex-col gap-3 border-t-rule border-ink pt-4">
                 <span className="lbl">{item.date}</span>
                 <span className="name text-[30px] leading-none tracking-[-0.02em]">{item.name}</span>
                 <Chip className={`self-start ${statusChip[item.status]}`}>{item.status}</Chip>
@@ -362,7 +364,7 @@ export const LandingPages = () => {
             Each page hands off to the next. Home Field ends October 11, the Preferred Customer Event is October 15, and the C.L. Bailey
             Factory Event opens the next morning.
           </p>
-          <Cap className="border-t border-cream/35 pt-3.5 text-[14px]">
+          <Cap className="border-t border-ink/35 pt-3.5 text-[14px]">
             Always on · New Arrivals · Designer Program · Custom Built · Financing · In-store financing kiosk · Sitewide Sale
           </Cap>
         </section>
@@ -385,7 +387,7 @@ export const LandingPages = () => {
           </ol>
           <div className="flex flex-wrap justify-between gap-x-10 gap-y-2 border-t border-ink pt-3.5">
             <Cap className="text-[14px]">
-              Not pictured · /financing-splash, the in-store financing kiosk, built by Brady Stick · /preferred-customer-event, in progress for
+              Not pictured · /financing-splash, the in-store financing kiosk, built by the team · /preferred-customer-event, in progress for
               Oct 15
             </Cap>
             <Cap className="whitespace-nowrap text-[14px]">Full pages, top to bottom</Cap>

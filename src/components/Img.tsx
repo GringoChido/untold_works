@@ -3,6 +3,11 @@ import manifest from '../data/images.json';
 
 type Entry = { base: string; width: number; height: number; widths: number[] } | { svg: true };
 const images = manifest as Record<string, Entry>;
+const intrinsic: Record<string, { width: number; height: number }> = {
+  'noxguard-packaging.webp': { width: 782, height: 750 },
+  'spring-stuebner-plot.svg': { width: 1284, height: 940 },
+  'shopify-commerce.svg': { width: 1600, height: 1000 },
+};
 
 type Props = {
   src: string;
@@ -19,7 +24,7 @@ export const Img = ({ src, alt, sizes = '100vw', className, style, eager = false
   const entry = images[src];
   const loading = eager ? 'eager' : 'lazy';
   if (!entry || 'svg' in entry) {
-    return <img src={`/images/${src}`} alt={alt} className={className} style={style} loading={loading} decoding="async" fetchPriority={fetchPriority} />;
+    return <img src={`/images/${src}`} width={intrinsic[src]?.width} height={intrinsic[src]?.height} alt={alt} className={className} style={style} loading={loading} decoding="async" fetchPriority={fetchPriority} />;
   }
   const { base, width, height, widths } = entry;
   const fallback = widths.includes(800) ? 800 : widths[widths.length - 1];

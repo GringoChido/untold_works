@@ -36,7 +36,7 @@
       "value": "Untold.works project"
      },
      {
-      "label": "Joshua",
+      "label": "My role",
       "value": "Rebrand, site, photo/video and marketing systems"
      }
     ],
@@ -274,7 +274,7 @@
      },
      {
       "label": "Built by",
-      "value": "Brady Stick"
+      "value": "The team"
      }
     ],
     "projectPage": "/work/content-factory"
@@ -286,7 +286,7 @@
     "visual": {
      "type": "image",
      "src": "shopify-commerce.svg",
-     "alt": "Official Shopify logo above Billiard Factory room photography, introducing a commerce transition that is in progress",
+     "alt": "Shopify logo above Billiard Factory room photography, introducing the ecommerce transformation",
      "tag": "Commerce transition",
      "fit": "cover"
     },
@@ -297,7 +297,7 @@
      },
      {
       "label": "Shopify Plus",
-      "value": "Signed Oct 1, 2026; migration underway"
+      "value": "October 16, 2026 checkout launch documented"
      },
      {
       "label": "ERP",
@@ -305,7 +305,7 @@
      },
      {
       "label": "Status",
-      "value": "In progress"
+      "value": "Checkout launched; ERP transition continues"
      }
     ],
     "projectPage": "/work/off-storis"
@@ -395,20 +395,20 @@
     },
     "facts": [
      {
-      "label": "Approach",
-      "value": "Site designed and built with AI"
+      "label": "My role",
+      "value": "Creative development · Design · Build"
      },
      {
-      "label": "Starting materials",
-      "value": "Main image · videos · music"
+      "label": "Connected work",
+      "value": "Artist website · Newsletter · Merchandise operations"
      },
      {
-      "label": "Experience",
-      "value": "Seven interactive room objects"
+      "label": "Audience migration",
+      "value": "3,233 subscribed contacts imported"
      },
      {
       "label": "Status",
-      "value": "Live ↗",
+      "value": "Website live; public merch checkout awaiting launch",
       "href": "https://lalahhathaway.com"
      }
     ],
@@ -1025,7 +1025,7 @@
      },
      {
       "label": "Page",
-      "value": "Brady Stick, SEO copy by Zorica"
+      "value": "Build and search copy by the team"
      }
     ],
     "projectPage": "/work/labor-day-sale"

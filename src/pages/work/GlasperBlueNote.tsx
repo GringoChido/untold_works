@@ -8,7 +8,6 @@ import { HouseBar } from '../../components/HouseBar';
 import { Img } from '../../components/Img';
 import { LabelRow } from '../../components/LabelRow';
 import { Layout } from '../../components/Layout';
-import { FillLink } from '../../components/PageFill';
 import { Frame } from '../../components/visuals/Frame';
 import { Tag } from '../../components/visuals/Tag';
 import { categoryBySlug } from '../../data/categories';
@@ -16,7 +15,7 @@ import { blackRadioRecap, rRNowFilm } from '../../data/musicMedia';
 import { usePageMeta } from '../../hooks/usePageMeta';
 
 const Fact = ({ label, children, last = false }: { label: string; children: ReactNode; last?: boolean }) => (
-  <div className={`flex justify-between gap-4 border-t-rule border-cream py-[11px] ${last ? 'border-b-rule' : ''}`}>
+  <div className={`flex justify-between gap-4 border-t-rule border-current py-[11px] ${last ? 'border-b-rule' : ''}`}>
     <span>{label}</span>
     <span className="text-right">{children}</span>
   </div>
@@ -56,7 +55,7 @@ const londonPhotos = [
 
 const companyAndRosterSites = [
   { name: 'Second Son Productions', line: 'Company and artist site build · project preview', to: '/work/second-son-productions' },
-  { name: 'Lalah Hathaway', line: 'Live Made in Chicago artist site, built with AI from supplied media', to: '/work/lalah-hathaway' },
+  { name: 'Lalah Hathaway', line: 'Live artist experience, newsletter migration and merchandise operations; public checkout awaiting launch', to: '/work/lalah-hathaway' },
   { name: 'Derrick Hodge', line: 'Artist site preview and Color of Noize tour content', to: '/work/derrick-hodge' },
 ];
 
@@ -69,10 +68,10 @@ const SiteLinks = ({ sites }: { sites: typeof companyAndRosterSites }) => (
   <ul className="border-b-rule border-ink">
     {sites.map((site) => (
       <li key={site.name}>
-        <FillLink to={site.to} color="burgundy" className="flex flex-col gap-2 border-t-rule border-ink py-[18px] no-underline">
+        <Link to={site.to} className="flex flex-col gap-2 border-t-rule border-ink py-[18px] no-underline">
           <span className="name text-[26px] leading-none tracking-[-0.02em]">{site.name}</span>
           <span className="voice text-[18px] leading-[1.3]">{site.line}</span>
-        </FillLink>
+        </Link>
       </li>
     ))}
   </ul>
@@ -82,7 +81,7 @@ export const GlasperBlueNote = () => {
   usePageMeta({
     title: 'Second Son Productions and related music work, Untold.works',
     description:
-      'Joshua Semolik’s music work with Second Son Productions and artists including Robert Glasper, Lalah Hathaway, Derrick Hodge and Chief Adjuah, with related Blue Note venue and festival projects. Each project has its own role and client credit.',
+      'My work with Second Son Productions and artists including Robert Glasper, Lalah Hathaway, Derrick Hodge and Chief Adjuah, alongside related Blue Note projects.',
     path: '/work/robert-glasper-blue-note',
   });
   const albumVisual = categoryBySlug('campaigns').music[0].visual;
@@ -92,12 +91,12 @@ export const GlasperBlueNote = () => {
       <Header crumbs={[{ label: 'Selected work', to: '/' }, { label: 'Music work' }]} />
       <main id="main" className="flex flex-col">
         {/* The spread */}
-        <section className="mt-10 grid bg-ink text-cream md:min-h-[860px] md:grid-cols-[minmax(0,1.1fr)_minmax(0,0.9fr)]" aria-labelledby="music-work-title">
+        <section className="mt-10 grid bg-cream text-ink md:min-h-[860px] md:grid-cols-[minmax(0,1.1fr)_minmax(0,0.9fr)]" aria-labelledby="music-work-title">
           <div className="flex min-w-0 flex-col justify-between gap-7 px-6 py-10 md:px-12">
             <div className="flex items-start justify-between gap-4">
               <div className="flex flex-wrap items-center gap-3.5">
                 <span className="lbl">Selected engagement</span>
-                <Chip className="border-rule border-cream text-[14px] tracking-[0.08em]">Music</Chip>
+                <Chip className="border-rule border-current text-[14px] tracking-[0.08em]">Music</Chip>
               </div>
               <span className="lbl text-right text-[13px]">Artist sites · releases · live music</span>
             </div>
@@ -124,7 +123,7 @@ export const GlasperBlueNote = () => {
               eager
               className="absolute inset-0 block h-full w-full object-cover object-[50%_30%]"
             />
-            <p className="absolute inset-x-0 bottom-0 m-0 bg-gradient-to-t from-ink/90 to-transparent px-6 pb-5 pt-16 text-[12px] leading-[1.5]">Blue Note London · September 23, 2026<br />Photography: Rob Jones / @hirobjones / @khromacollective</p>
+            <p className="absolute inset-x-0 bottom-0 m-0 bg-gradient-to-t from-ink/90 to-transparent text-cream px-6 pb-5 pt-16 text-[12px] leading-[1.5]">Blue Note London · September 23, 2026<br />Photography: Rob Jones / @hirobjones / @khromacollective</p>
           </div>
         </section>
 
@@ -164,7 +163,7 @@ export const GlasperBlueNote = () => {
           <LabelRow left={<span id="music-films-headline">Music / films and content production</span>} right="Selected public work" />
           <div className="grid gap-x-14 gap-y-6 md:grid-cols-[minmax(0,1.15fr)_minmax(0,0.85fr)]">
             <h2 className="name max-w-[780px] text-[clamp(36px,4.4vw,62px)] leading-[0.98]">Content for releases, residencies and live events.</h2>
-            <p className="voice max-w-[560px] text-[22px] leading-[1.4]">I develop concepts with release teams and labels, manage shoots and produce material artists can use to introduce a record, announce a show and document what happened on stage. The films below show specific examples and my credited role in each.</p>
+            <p className="voice max-w-[560px] text-[22px] leading-[1.4]">I develop concepts with release teams and labels, manage shoots and produce material artists can use to introduce a record, announce a show and document what happened on stage.</p>
           </div>
           <CaseFilm {...blackRadioRecap} />
           <div className="flex flex-wrap gap-x-8 gap-y-3 text-[16px] font-semibold">
@@ -178,6 +177,8 @@ export const GlasperBlueNote = () => {
                   <div className="relative aspect-video overflow-hidden bg-ink">
                     <img
                       src={`https://i.ytimg.com/vi/${film.videoId}/hqdefault.jpg`}
+                      width={480}
+                      height={360}
                       alt={`Video still from ${film.title}`}
                       loading="lazy"
                       decoding="async"
@@ -211,15 +212,15 @@ export const GlasperBlueNote = () => {
         </section>
 
         {/* The rooms */}
-        <section className="flex flex-col gap-8 bg-ink px-6 pb-16 pt-14 text-cream md:px-12" aria-labelledby="rooms-headline">
-          <LabelRow left={<span id="rooms-headline">Blue Note / rooms and festival</span>} right="New York · Los Angeles · Napa Valley" className="border-cream/50" />
+        <section className="flex flex-col gap-8 bg-cream px-6 pb-16 pt-14 text-ink md:px-12" aria-labelledby="rooms-headline">
+          <LabelRow left={<span id="rooms-headline">Blue Note / rooms and festival</span>} right="New York · Los Angeles · Napa Valley" className="border-ink/50" />
           <p className="voice max-w-[930px] text-[22px] leading-[1.4]">These were separate projects with Robert Glasper and Blue Note. Blue Note presents the Napa festival, with Glasper at its musical center.</p>
           <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
             <div className="flex flex-col gap-4">
               <div className="overflow-hidden bg-ink">
                 <Img src="robtober-2026-poster-clean.png" alt="Robtober NYC 2026 Season 8 event poster announcing October 1 through November 1 and 11 episodes" sizes="(min-width: 768px) 30vw, 100vw" className="block h-auto w-full object-contain" />
               </div>
-              <p className="lbl m-0 text-[12px] leading-[1.3] text-cream/70">Blue Note New York / Season 8 event artwork</p>
+              <p className="lbl m-0 text-[12px] leading-[1.3] text-ink/70">Blue Note New York / Season 8 event artwork</p>
               <h2 className="name text-[32px] leading-none tracking-[-0.02em]">Robtober 2026</h2>
               <p className="text-[18px] leading-[1.5]">
                 Season 8 runs October 1–November 1 with 11 episodes. My ongoing work with Glasper includes content across five years of the residency.
@@ -227,11 +228,11 @@ export const GlasperBlueNote = () => {
               <Link to="/work/robtober" className="text-link mt-auto">Explore Robtober <span aria-hidden="true">↗</span></Link>
             </div>
             <div className="flex flex-col gap-4">
-              <div className="relative aspect-[16/10] overflow-hidden bg-burgundy">
+              <div className="relative aspect-[16/10] overflow-hidden bg-ink">
                 <Img src="blue-note-la-glasper.jpg" alt="Robert Glasper on stage at Blue Note Los Angeles on opening night" sizes="(min-width: 768px) 30vw, 100vw" className="block h-full w-full object-cover" />
                 <Tag inverse>Opening night</Tag>
               </div>
-              <p className="lbl m-0 text-[12px] leading-[1.3] text-cream/70">Photography: Todd Cooper / @toddcoop</p>
+              <p className="lbl m-0 text-[12px] leading-[1.3] text-ink/70">Photography: Todd Cooper / @toddcoop</p>
               <h2 className="name text-[32px] leading-none tracking-[-0.02em]">Blue Note Los Angeles</h2>
               <p className="text-[18px] leading-[1.5]">
                 I worked on launch and opening content for the club. Glasper headlined its August 2025 grand opening.
@@ -242,7 +243,7 @@ export const GlasperBlueNote = () => {
               <div className="relative aspect-[16/10] overflow-hidden bg-ink">
                 <Img src="black-radio-experience-stage-clean.png" alt="The Black Radio Experience stage with festival signage above the performers and audience" sizes="(min-width: 768px) 30vw, 100vw" className="block h-full w-full object-contain" />
               </div>
-              <p className="lbl m-0 text-[12px] leading-[1.3] text-cream/70">Black Radio Experience / Napa Valley</p>
+              <p className="lbl m-0 text-[12px] leading-[1.3] text-ink/70">Black Radio Experience / Napa Valley</p>
               <h2 className="name text-[32px] leading-none tracking-[-0.02em]">Black Radio Experience</h2>
               <p className="text-[18px] leading-[1.5]">
                 I served as Content Director for four years of Blue Note’s Napa Valley festival, curated by Glasper. It became the Black Radio Experience in 2024.
@@ -290,7 +291,7 @@ export const GlasperBlueNote = () => {
           <div className="grid gap-x-16 gap-y-8 md:grid-cols-[minmax(0,1fr)_minmax(0,1fr)]">
             <h2 className="name max-w-[680px] text-[clamp(34px,3.6vw,52px)] leading-[0.98]">Artist sites built around each artist’s work.</h2>
             <div className="flex max-w-[650px] flex-col gap-5">
-              <p className="voice m-0 text-[22px] leading-[1.4]">Today, I use AI to build around artists’ own photography, film and music. Lalah Hathaway’s Made in Chicago site turns a supplied photograph into seven navigational objects leading to listening, video, touring, merchandise and contact.</p>
+              <p className="voice m-0 text-[22px] leading-[1.4]">Today, I use AI to build around artists’ own photography, film and music. For Lalah Hathaway’s Made in Chicago, I connected an immersive artist website to newsletter migration and custom merchandise operations. The artist site is live; public merchandise checkout awaits launch.</p>
               <p className="m-0 text-[17px] leading-[1.5]">The Second Son company site and the artist projects below each have their own scope. Elena Pinderhughes and Qmillion are presented as separate artist collaborations.</p>
             </div>
           </div>

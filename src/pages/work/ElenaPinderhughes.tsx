@@ -1,5 +1,6 @@
 import type { ReactNode } from 'react';
 import { Chip } from '../../components/Chip';
+import { Header } from '../../components/Header';
 import { HouseBar } from '../../components/HouseBar';
 import { Img } from '../../components/Img';
 import { Stamp } from '../../components/Stamp';
@@ -10,7 +11,7 @@ const STACK: string | null = null;
 const AI_TOOLS: string | null = null;
 
 const Row = ({ label, children, last = false }: { label: string; children: ReactNode; last?: boolean }) => (
-  <div className={`flex justify-between gap-4 border-t-rule border-cream py-3 ${last ? 'border-b-rule' : ''}`}>
+  <div className={`flex justify-between gap-4 border-t-rule border-current py-3 ${last ? 'border-b-rule' : ''}`}>
     <span>{label}</span>
     <span className="text-right">{children}</span>
   </div>
@@ -24,14 +25,15 @@ export const ElenaPinderhughes = () => {
   });
 
   return (
-    <div className="flex min-h-dvh flex-col bg-burgundy text-cream">
+    <div className="flex min-h-dvh flex-col bg-cream text-ink">
+      <div className="px-5 md:px-14"><Header crumbs={[{ label: 'Websites', to: '/websites' }, { label: 'Elena Pinderhughes' }]} /></div>
       <main id="main" className="grow">
         <section className="grid md:min-h-[860px] md:grid-cols-2" aria-labelledby="elena-title">
           <div className="flex min-w-0 flex-col justify-between gap-8 px-5 py-10 md:px-14">
             <div className="flex items-start justify-between gap-4">
               <div className="flex flex-wrap items-center gap-3.5">
                 <span className="lbl">03 · Websites</span>
-                <Chip className="border-rule border-cream text-[14px] tracking-[0.08em]">Web</Chip>
+                <Chip className="border-rule border-current text-[14px] tracking-[0.08em]">Web</Chip>
               </div>
               <Stamp big="Live" small="2026" />
             </div>

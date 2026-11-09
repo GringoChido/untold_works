@@ -21,7 +21,7 @@ type Props = { discs: string[]; tag: string | null; size?: 'card' | 'page' };
 export const VinylVisual = ({ discs, tag, size = 'card' }: Props) => (
   <div
     className={`relative flex flex-col justify-center overflow-hidden border-rule border-current ${
-      size === 'page' ? 'bg-teal px-7 pb-14 pt-7 text-cream' : 'aspect-auto px-4 pb-11 pt-4 md:aspect-[16/10]'
+      size === 'page' ? 'bg-ink px-7 pb-14 pt-7 text-cream' : 'aspect-auto px-4 pb-11 pt-4 md:aspect-[16/10]'
     }`}
   >
     <ul className="grid grid-cols-4 items-start gap-2.5" aria-label="Vinyl editions">

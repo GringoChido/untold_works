@@ -9,5 +9,5 @@ export const ShowroomFilm = () => <PortfolioFilm
   height={464}
   label="Billiard Factory storefront film showing the entrance and exterior sign"
   controlLabel="storefront film"
-  caption="Billiard Factory / A new chapter for the whole business"
+  caption={null}
 />;

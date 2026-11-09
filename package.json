@@ -5,11 +5,12 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc --noEmit && node scripts/write-static.mjs && vite build && node prerender.mjs",
+    "build": "tsc --noEmit && node scripts/write-static.mjs && vite build && node prerender.mjs && node scripts/verify-seo.mjs",
     "preview": "serve dist -l 4175",
     "images": "node scripts/build-images.mjs",
     "images:projects": "node scripts/build-project-images.mjs",
-    "verify": "node scripts/verify-cards.mjs"
+    "verify": "node scripts/verify-cards.mjs",
+    "verify:seo": "node scripts/verify-seo.mjs"
   },
   "dependencies": {
     "react": "^19.0.0",

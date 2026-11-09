@@ -1,6 +1,6 @@
 export const SITE_URL = 'https://untold.works';
 export const SITE_NAME = 'Untold.works';
-export const TAGLINE = 'AI transformation & creative direction';
+export const TAGLINE = 'Creative leadership & brand storytelling';
 
 export const EMAIL = 'joshua@untold.works';
 export const PHONE_DISPLAY = '+1 (917) 665-1221';
@@ -12,3 +12,6 @@ export const CONTACT_LABEL = EMAIL ? 'Email' : 'LinkedIn';
 
 /** Layer 08, Scale, stays off until launch. Set VITE_FEATURE_SCALE=true to show it. */
 export const FEATURE_SCALE = import.meta.env.VITE_FEATURE_SCALE === 'true';
+
+export const ROLE_CONTACT_HREF = `mailto:${EMAIL}?subject=${encodeURIComponent('Senior leadership opportunity')}`;
+export const RESUME_HREF = '/Joshua-Semolik-Resume.pdf';

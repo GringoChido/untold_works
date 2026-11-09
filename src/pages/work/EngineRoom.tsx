@@ -9,7 +9,6 @@ import { LabelRow } from '../../components/LabelRow';
 import { Layout } from '../../components/Layout';
 import { clBaileyFactoryFilm } from '../../data/campaignMedia';
 import { usePageMeta } from '../../hooks/usePageMeta';
-import { tones } from '../../theme';
 
 const workflow = [
   {
@@ -40,7 +39,7 @@ const workflow = [
     id: 'deliver', label: 'Deliver', title: 'Connect the channels to the same campaign.',
     body: 'Paid, Organic, Email, Website, Production and SEO share the campaign context. Social creative is reviewed, scheduled and published through Content Factory; Engine Room shows those scheduled and published records beside the brief and assets. Campaign pages give customers the next step.',
     evidence: 'The Organic view shows Content Factory records within the Home Field campaign context.',
-    image: 'marketing-engine-home-field-social.png', alt: 'Home Field Organic view showing published and scheduled Content Factory social records',
+    image: 'home-field-social-posts.webp', alt: 'Home Field Organic view showing published and scheduled Content Factory social records',
   },
 ] as const;
 
@@ -66,13 +65,13 @@ export const EngineRoom = () => {
   const step = workflow[activeStep];
 
   usePageMeta({
-    title: 'Engine Room — A Marketing Engine Built with AI | Untold.works',
-    description: 'Joshua Semolik designed and built Billiard Factory’s Engine Room with Claude Code: a marketing ecosystem connecting campaign strategy, briefs, creative assets, review, scheduling and channel delivery.',
+    title: 'Engine Room | A Marketing Engine Built with AI | Untold.works',
+    description: 'Built Billiard Factory’s Engine Room with Claude Code so the team could plan campaigns, review assets and track delivery.',
     path: '/work/engine-room',
   });
 
   return (
-    <Layout tone={tones.platforms}>
+    <Layout>
       <Header crumbs={[{ label: 'Work', to: '/#work' }, { label: 'Billiard Factory', to: '/work/billiard-factory-and-c-l-bailey' }, { label: 'Engine Room' }]} />
       <main id="main" className="flex flex-col">
         <section className="pb-12 pt-12 md:pb-16 md:pt-16" aria-labelledby="engine-room-title">
@@ -93,7 +92,7 @@ export const EngineRoom = () => {
 
         <figure className="m-0 min-w-0">
           <Img src="marketing-engine-overview.png" alt="The Marketing Engine overview in Billiard Factory’s working platform" sizes="(min-width: 1440px) 1312px, 100vw" eager className="block h-auto w-full bg-ink object-contain" />
-          <figcaption className="lbl flex flex-wrap justify-between gap-3 border-b border-current py-4 text-[12px]"><span>Working platform / October 2026</span><span>Designed and built by Joshua Semolik with Claude Code</span></figcaption>
+          <figcaption className="lbl flex flex-wrap justify-between gap-3 border-b border-current py-4 text-[12px]"><span>Working platform / October 2026</span><span>Designed and built with Claude Code</span></figcaption>
         </figure>
 
         <section id="workflow" className="flex scroll-mt-8 flex-col gap-8 py-20 md:py-28" aria-labelledby="workflow-title">
@@ -162,11 +161,11 @@ export const EngineRoom = () => {
             {channels.map((channel) => <li key={channel.name} className="flex flex-col gap-4 border-t border-current bg-ink/5 p-5"><h3 className="name m-0 text-[29px] leading-none">{channel.name}</h3><p className="m-0 text-[16px] leading-[1.5]">{channel.detail}</p></li>)}
           </ul>
           <figure className="m-0 min-w-0">
-            <Img src="marketing-engine-home-field-social.png" alt="Home Field Organic lane with published and scheduled records from Content Factory" sizes="(min-width: 1440px) 1312px, 100vw" className="block h-auto w-full bg-ink object-contain" />
+            <Img src="home-field-social-posts.webp" alt="Home Field Organic lane with published and scheduled records from Content Factory" sizes="(min-width: 1440px) 1312px, 100vw" className="block h-auto w-full bg-ink object-contain" />
             <figcaption className="lbl border-b border-current py-4 text-[12px]">Working platform / October 2026 / Organic channel records</figcaption>
           </figure>
           <div className="grid gap-7 md:grid-cols-2 md:gap-16">
-            <div><h3 className="name m-0 text-[32px] leading-[1.05]">Engine Room coordinates. Content Factory publishes.</h3><p className="mb-0 mt-5 text-[18px] leading-[1.55]">The Organic view shows published and scheduled Content Factory records beside the campaign plan. That lets the team see what actually went out without losing the brief and assets behind it. I designed and directed Content Factory; Brady Stick built it. Posts still require human approval.</p><p className="mb-0 mt-6"><CaseLink to="/work/content-factory">Explore Content Factory</CaseLink></p></div>
+            <div><h3 className="name m-0 text-[32px] leading-[1.05]">Engine Room coordinates. Content Factory publishes.</h3><p className="mb-0 mt-5 text-[18px] leading-[1.55]">The Organic view shows published and scheduled Content Factory records beside the campaign plan. That lets the team see what actually went out without losing the brief and assets behind it. I designed and directed Content Factory. The team built it. Posts still require human approval.</p><p className="mb-0 mt-6"><CaseLink to="/work/content-factory">Explore Content Factory</CaseLink></p></div>
             <div><h3 className="name m-0 text-[32px] leading-[1.05]">The page carries the next conversation.</h3><p className="mb-0 mt-5 text-[18px] leading-[1.55]">Home Field’s live landing page connects the campaign story to a GoHighLevel lead form. I connected the sales team to the CRM before building this campaign system, so interest has a path to sales follow-up.</p><p className="mb-0 mt-6"><CaseLink to="/work/landing-pages">Explore the customer handoff</CaseLink></p></div>
           </div>
         </section>
@@ -175,7 +174,7 @@ export const EngineRoom = () => {
           <LabelRow left="Upcoming campaign / C.L. Bailey Factory Event" right="Prepared for October 16–31, 2026" />
           <div className="grid gap-7 md:grid-cols-2 md:gap-16">
             <h2 id="factory-event-title" className="name m-0 text-[clamp(38px,4.3vw,64px)] leading-[0.98]">A new campaign uses the same structure.</h2>
-            <div className="flex flex-col gap-5"><p className="m-0 text-[19px] leading-[1.55]">The upcoming Factory Event brings a 10% offer on C.L. Bailey and Velocity into showrooms and online. Its creative, film and campaign destination are being prepared for the October 16 opening.</p><p className="m-0 text-[16px] leading-[1.5]">“The Table Is Open,” “The Long Game” and “On The Floor” are the page’s editorial lanes. Outdoor advertising scenes are creative concepts.</p></div>
+            <div className="flex flex-col gap-5"><p className="m-0 text-[19px] leading-[1.55]">The October 16–31 Factory Event campaign brings a 10% offer on C.L. Bailey and Velocity into showrooms and online. Its creative, film and campaign destination were prepared for the October 16 opening.</p><p className="m-0 text-[16px] leading-[1.5]">“The Table Is Open,” “The Long Game” and “On The Floor” are the page’s editorial lanes. Outdoor advertising scenes are creative concepts.</p></div>
           </div>
           <CaseFilm {...clBaileyFactoryFilm} id="engine-room-factory-event-film" />
           <div><CaseLink to="/work/c-l-bailey-factory-event">Explore the upcoming Factory Event</CaseLink></div>

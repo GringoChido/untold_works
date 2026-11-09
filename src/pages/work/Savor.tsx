@@ -6,7 +6,6 @@ import { Img } from '../../components/Img';
 import { LabelRow } from '../../components/LabelRow';
 import { Layout } from '../../components/Layout';
 import { usePageMeta } from '../../hooks/usePageMeta';
-import { tones } from '../../theme';
 
 export const Savor = () => {
   usePageMeta({
@@ -16,7 +15,7 @@ export const Savor = () => {
   });
 
   return (
-    <Layout tone={tones.websites}>
+    <Layout>
       <Header crumbs={[{ label: 'Work', to: '/' }, { label: 'Savor' }]} />
       <main id="main" className="flex flex-col">
         <section className="grid items-end gap-10 pb-16 pt-16 md:grid-cols-[minmax(0,1fr)_minmax(280px,0.75fr)] md:gap-20 md:pb-20 md:pt-24" aria-labelledby="savor-title">
@@ -26,7 +25,7 @@ export const Savor = () => {
             <p className="chapter-statement m-0 mt-8 max-w-[790px] text-[clamp(32px,4vw,56px)] leading-[1.08]">Explain unfamiliar food technology through familiar food.</p>
           </div>
           <div className="border-t border-current pt-6">
-            <p className="m-0 text-[21px] leading-[1.45]">Joshua contributed website and content storytelling for Savor through IDW Studio. The site starts with foods people know, then explains the company’s process and applications so visitors can evaluate an unfamiliar ingredient.</p>
+            <p className="m-0 text-[21px] leading-[1.45]">Worked with IDW Studio on Savor’s website and the story behind its ingredients. The site starts with foods people know, then explains the company’s process and applications so visitors can evaluate an unfamiliar ingredient.</p>
           </div>
         </section>
 
@@ -44,10 +43,10 @@ export const Savor = () => {
           </div>
           <div className="flex flex-col gap-6">
             <p className="voice m-0 max-w-[700px] text-[clamp(24px,2.6vw,35px)] leading-[1.28]">The site moves from what Savor makes to how it works, where it can be used and why the company exists.</p>
-            <p className="m-0 max-w-[690px] text-[18px] leading-[1.55]">A visitor can begin with a culinary use, then explore process, mission and evidence at their own pace. Joshua’s credited scope is website, content and storytelling through IDW Studio.</p>
+            <p className="m-0 max-w-[690px] text-[18px] leading-[1.55]">A visitor can begin with a culinary use, then explore process, mission and evidence at their own pace.</p>
             <dl className="m-0 border-b border-current">
               <div className="grid gap-2 border-t border-current py-4 sm:grid-cols-[150px_minmax(0,1fr)]"><dt className="lbl">Client</dt><dd className="m-0">Savor</dd></div>
-              <div className="grid gap-2 border-t border-current py-4 sm:grid-cols-[150px_minmax(0,1fr)]"><dt className="lbl">Joshua’s role</dt><dd className="m-0">Website and content storytelling</dd></div>
+              <div className="grid gap-2 border-t border-current py-4 sm:grid-cols-[150px_minmax(0,1fr)]"><dt className="lbl">My role</dt><dd className="m-0">Website and content storytelling</dd></div>
               <div className="grid gap-2 border-t border-current py-4 sm:grid-cols-[150px_minmax(0,1fr)]"><dt className="lbl">Engagement</dt><dd className="m-0">Through IDW Studio</dd></div>
               <div className="grid gap-2 border-t border-current py-4 sm:grid-cols-[150px_minmax(0,1fr)]"><dt className="lbl">Status</dt><dd className="m-0">Live website</dd></div>
             </dl>
@@ -62,7 +61,7 @@ export const Savor = () => {
           <div className="flex flex-col items-start gap-7">
             <LabelRow left="The wider story" right="Chef Series" />
             <h2 id="chef-title" className="name m-0 text-[clamp(38px,4.3vw,62px)]">Let the kitchen show the product.</h2>
-            <p className="m-0 max-w-[650px] text-[19px] leading-[1.5]">The published series shows chefs using Savor in working kitchens at Atelier Crenn, SingleThread, ONE65 and Jane the Bakery. Preparations make the ingredient visible in real culinary work. Joshua contributed content and storytelling; IDW led the broader brief, production, social edits and post work.</p>
+            <p className="m-0 max-w-[650px] text-[19px] leading-[1.5]">The published series shows chefs using Savor in working kitchens at Atelier Crenn, SingleThread, ONE65 and Jane the Bakery. I contributed content and storytelling. IDW led the brief, production and edits.</p>
             <Link to="/work/savor-chef-series" className="text-link">Explore the Chef Series work <span aria-hidden="true">↗</span></Link>
             <a href="https://idw.studio/cs/savor" target="_blank" rel="noopener noreferrer" className="text-link">See IDW Studio’s case <span aria-hidden="true">↗</span></a>
           </div>

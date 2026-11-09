@@ -19,9 +19,9 @@ export const caseCopyWebsites = {
   'websites/savor': {
     value: "The site connects a novel production process to familiar food and culinary use. That sequence gives visitors a way to understand what Savor makes before deciding whether to explore the science or contact the company.",
     headline: 'Explain fats made from carbon through familiar food.',
-    lead: 'Website, content and storytelling for Savor, a food technology company making fats through a new production process. Joshua was hired through IDW Studio.',
+    lead: 'Worked with IDW Studio on the website and storytelling for Savor, a food technology company that makes fats from carbon.',
     storyTitle: 'The product needed a story people could follow.',
-    story: 'Savor makes an unfamiliar process relevant through familiar food. The website moves from the promise of its fats to how they are made, what they can become and why the company exists. Joshua’s assignment brought website work together with content and storytelling through IDW Studio.',
+    story: 'Savor makes an unfamiliar process relevant through familiar food. The website moves from the promise of its fats to how they are made, what they can become and why the company exists.',
     focus: [
       { label: 'Scope', text: 'Website · content · storytelling.' },
       { label: 'Client', text: 'Savor, food technology.' },

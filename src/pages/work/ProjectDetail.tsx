@@ -1,4 +1,6 @@
-import { Navigate, useLocation } from 'react-router-dom';
+import { Link } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
+import { NotFound } from '../NotFound';
 import { CaseFilm } from '../../components/CaseFilm';
 import { Footer } from '../../components/Footer';
 import { Header } from '../../components/Header';
@@ -6,12 +8,10 @@ import { HouseBar } from '../../components/HouseBar';
 import { Img } from '../../components/Img';
 import { LabelRow } from '../../components/LabelRow';
 import { Layout } from '../../components/Layout';
-import { FillLink } from '../../components/PageFill';
 import { Visual } from '../../components/visuals/Visual';
 import { caseCopy } from '../../data/caseCopy';
 import { cardClasses, factHref, isExternal, projectEntries, slugify, type Project } from '../../data/categories';
 import { usePageMeta } from '../../hooks/usePageMeta';
-import { toneForCategory } from '../../theme';
 
 const ProjectVisual = ({ project, poster = false }: { project: Project; poster?: boolean }) => {
   const visual = project.visual;
@@ -45,12 +45,13 @@ export const ProjectDetail = () => {
   const copy = entry && caseCopy[`${entry.category.slug}/${slugify(entry.project.name)}`];
 
   usePageMeta({
-    title: entry ? `${entry.project.name}, Untold.works` : 'Work, Untold.works',
-    description: copy?.lead ?? 'Selected work by Joshua Semolik.',
+    title: entry ? `${entry.project.name}, Untold.works` : 'Page not found | Untold.works',
+    description: copy?.lead ?? 'This page could not be found. Explore my work or get in touch.',
     path: pathname,
+    noindex: !entry || !copy,
   });
 
-  if (!entry || !copy) return <Navigate to="/" replace />;
+  if (!entry || !copy) return <NotFound />;
 
   const { category, project } = entry;
   const parent = copy.parent ?? { label: category.name, to: `/${category.slug}` };
@@ -60,7 +61,7 @@ export const ProjectDetail = () => {
   const destinationLabel = live?.label === 'Preview' ? 'View preview ↗' : live?.value.startsWith('Live') ? 'View live work ↗' : 'View project ↗';
 
   return (
-    <Layout tone={toneForCategory(category.slug)}>
+    <Layout>
       <Header crumbs={[{ label: 'Work', to: '/' }, parent, { label: project.name }]} />
       <main id="main" className="flex flex-col">
         <section className="pb-11 pt-12 md:pb-16 md:pt-16" aria-labelledby="project-title">
@@ -174,7 +175,7 @@ export const ProjectDetail = () => {
                   {fact.href ? (
                     isExternal(fact.href) ?
                       <a href={fact.href} target="_blank" rel="noopener noreferrer" className="underline underline-offset-4">{fact.value}</a> :
-                      <FillLink to={factHref(fact.href)} color={project.color} className="underline underline-offset-4">{fact.value}</FillLink>
+                      <Link to={factHref(fact.href)} className="underline underline-offset-4">{fact.value}</Link>
                   ) : fact.value}
                 </dd>
               </div>
@@ -191,9 +192,9 @@ export const ProjectDetail = () => {
                   <span>{link.label.replace(/\s*↗$/, '')}</span><span aria-hidden="true">↗</span>
                 </a>
               ) : (
-                <FillLink key={link.href} to={link.href} color={project.color} className="name flex items-baseline justify-between gap-6 border-b border-current py-6 text-[clamp(24px,2.5vw,36px)] leading-[1.08] no-underline">
+                <Link key={link.href} to={link.href} className="name flex items-baseline justify-between gap-6 border-b border-current py-6 text-[clamp(24px,2.5vw,36px)] leading-[1.08] no-underline">
                   <span>{link.label}</span><span aria-hidden="true">→</span>
-                </FillLink>
+                </Link>
               ))}
             </div>
           </section>

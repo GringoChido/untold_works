@@ -9,7 +9,6 @@ import { LabelRow } from '../components/LabelRow';
 import { Layout } from '../components/Layout';
 import { categoryBySlug, nextCategory, type Project } from '../data/categories';
 import { usePageMeta } from '../hooks/usePageMeta';
-import { toneForCategory } from '../theme';
 
 const pad = (n: number): string => String(n).padStart(2, '0');
 type Editorial = { featured: string[]; engagements: { name: string; to: string; detail: string }[] };
@@ -21,7 +20,7 @@ const projectValue: Record<string, string> = {
   '/work/engine-room': 'One campaign record makes briefs, files, owners, schedules and social status visible to the team.',
   '/work/content-factory': 'AI-assisted posts move through product checks and human approval before scheduled publishing.',
   '/work/savor': 'Familiar food and chef content help explain a new process for making fats.',
-  '/work/lalah-hathaway': 'Seven objects in one photograph lead fans to music, video, tour, merch and contact.',
+  '/work/lalah-hathaway': 'An immersive artist experience, newsletter migration and custom merchandise operations, with public checkout awaiting launch.',
   '/work/second-son-productions': 'Seven artist pages give each project its own story and live-event path.',
   '/work/robtober': 'Five years of content documents a residency that changes collaborators night by night.',
   '/work/home-field': 'AI-made rooms and film connect to a live offer page, scheduled social and sales capture.',
@@ -60,7 +59,7 @@ export const Category = ({ slug }: { slug: string }) => {
   usePageMeta({ title: category.name + ', Untold.works', description: category.intro, path: '/' + category.slug });
 
   return (
-    <Layout tone={toneForCategory(category.slug)}>
+    <Layout>
       <Header crumbs={[{ label: 'Work', to: '/' }, { label: category.name }]} />
       <main id="main" className="flex flex-col">
         <CategoryHero category={category} />

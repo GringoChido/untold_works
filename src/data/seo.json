@@ -1,0 +1,614 @@
+{
+  "/": {
+    "title": "Untold.works | Creative & AI Consulting",
+    "description": "Work with me on your brand story, digital experience or next launch. I use AI to help your team take an idea through delivery.",
+    "type": "WebPage",
+    "image": {
+      "src": "/images/untold-downtown-hero-clear-street-1200.webp",
+      "alt": "An imagined downtown New York street scene from Untold.works",
+      "width": 1200,
+      "height": 675,
+      "type": "image/webp"
+    }
+  },
+  "/brand-and-product": {
+    "title": "Brand Strategy, Product & Retail Design | Untold.works",
+    "description": "Selected brand identities, product designs and retail concepts. Explore Billiard Factory’s showroom, Noxguard’s rebrand and C.L. Bailey’s brand systems.",
+    "type": "CollectionPage",
+    "image": {
+      "src": "/images/spring-gallery-skylar-live-1200.webp",
+      "alt": "The live Skylar Pit Lane collection page showing a rendered room and shoppable product hotspots",
+      "width": 1200,
+      "height": 682,
+      "type": "image/webp"
+    }
+  },
+  "/platforms": {
+    "title": "AI Tools & Marketing Systems | Untold.works",
+    "description": "AI-assisted tools for campaign planning, content production, CRM and dealer access. See how I approached Engine Room, Content Factory and other tools for teams.",
+    "type": "CollectionPage",
+    "image": {
+      "src": "/images/clbailey-concierge-1200.webp",
+      "alt": "The clbailey.com home page with the AI showroom concierge open",
+      "width": 1200,
+      "height": 645,
+      "type": "image/webp"
+    }
+  },
+  "/websites": {
+    "title": "Artist, Retail & Business Website Projects | Untold.works",
+    "description": "Explore my website work for artists, retailers and businesses, from multilingual sites to online stores.",
+    "type": "CollectionPage",
+    "image": {
+      "src": "/images/lalah-made-in-chicago-1200.webp",
+      "alt": "The Made in Chicago artist website for Lalah Hathaway, set in a music room lined with records",
+      "width": 1200,
+      "height": 750,
+      "type": "image/webp"
+    }
+  },
+  "/campaigns": {
+    "title": "Creative Campaigns, Films & Content | Untold.works",
+    "description": "Creative direction across AI campaigns, music films and live-event content. Work for Billiard Factory, Robert Glasper, Blue Note and Savor.",
+    "type": "CollectionPage",
+    "image": {
+      "src": "/images/robtober-2026-poster-clean-1200.webp",
+      "alt": "Robtober NYC 2026 Season 8 event poster announcing October 1 through November 1 and 11 episodes at Blue Note New York",
+      "width": 1200,
+      "height": 1495,
+      "type": "image/webp"
+    }
+  },
+  "/work/noxguard": {
+    "title": "Noxguard Rebrand, Website & Campaign | Untold.works",
+    "description": "Led Noxguard’s rebrand, website and photo and video campaign, and helped the team organize its marketing work.",
+    "type": "WebPage",
+    "image": {
+      "src": "/images/noxguard-truck-1200.webp",
+      "alt": "Fleet-livery mockup of a Noxguard DEF truck and trailer",
+      "width": 1200,
+      "height": 750,
+      "type": "image/webp"
+    }
+  },
+  "/work/spring-stuebner-store": {
+    "title": "Billiard Factory Showroom & Shoppable Rooms | Untold.works",
+    "description": "A 34-station redesign of Billiard Factory’s Spring showroom connects to 27 live, shoppable room stories and a broader room-finishing assortment.",
+    "type": "WebPage",
+    "image": {
+      "src": "/images/spring-gallery-skylar-live-1200.webp",
+      "alt": "The live Skylar Pit Lane collection page showing a rendered room and shoppable product hotspots",
+      "width": 1200,
+      "height": 682,
+      "type": "image/webp"
+    }
+  },
+  "/work/brand-hub": {
+    "title": "Billiard Factory Brand Hub | Untold.works",
+    "description": "Billiard Factory’s Brand Hub turns guidelines into a working reference for creative, digital and physical work.",
+    "type": "WebPage",
+    "image": {
+      "src": "/images/brand-hub-1200.webp",
+      "alt": "The Billiard Factory Brand Hub home page",
+      "width": 1200,
+      "height": 750,
+      "type": "image/webp"
+    }
+  },
+  "/work/c-l-bailey-brand-bible": {
+    "title": "C.L. Bailey Brand Bible & Guidelines | Untold.works",
+    "description": "The C.L. Bailey Brand Bible and Guidelines Engine give a dealer-only brand a shared language across web, sales materials and physical spaces.",
+    "type": "WebPage",
+    "image": {
+      "src": "/images/clb-brand-bible-1200.webp",
+      "alt": "The C.L. Bailey Guidelines Engine home page",
+      "width": 1200,
+      "height": 750,
+      "type": "image/webp"
+    }
+  },
+  "/work/tierra-cue-line": {
+    "title": "Tierra Cue Line: Product & Brand Design | Untold.works",
+    "description": "Tierra is a Billiard Factory cue line with three distinct designs sharing a single butt, grip and dark carbon shaft.",
+    "type": "WebPage",
+    "image": {
+      "src": "/images/tierra-cover-1200.webp",
+      "alt": "Concept renders of the Cascabel, Brasa and Cauce cue butts against terracotta",
+      "width": 1200,
+      "height": 675,
+      "type": "image/webp"
+    }
+  },
+  "/work/c-l-bailey-portal-and-concierge": {
+    "title": "C.L. Bailey AI Concierge & Dealer Portal | Untold.works",
+    "description": "A bilingual digital showroom for C.L. Bailey, with an AI concierge and dealer locator for customers and a separate portal for authorized dealers.",
+    "type": "WebPage",
+    "image": {
+      "src": "/images/clbailey-concierge-1200.webp",
+      "alt": "The clbailey.com home page with the AI showroom concierge open",
+      "width": 1200,
+      "height": 645,
+      "type": "image/webp"
+    }
+  },
+  "/work/engine-room": {
+    "title": "Engine Room: AI-Built Marketing Platform | Untold.works",
+    "description": "Built Billiard Factory’s Engine Room with AI to connect campaign briefs, creative assets, review, scheduling and delivery.",
+    "type": "WebPage",
+    "image": {
+      "src": "/images/marketing-engine-overview-1200.webp",
+      "alt": "The Marketing Engine overview in Billiard Factory’s working platform",
+      "width": 1200,
+      "height": 647,
+      "type": "image/webp"
+    }
+  },
+  "/work/content-factory": {
+    "title": "Content Factory: AI Publishing Workflow | Untold.works",
+    "description": "Content Factory is an AI-assisted publishing workflow for Billiard Factory and C.L. Bailey, designed around a daily post and story cadence.",
+    "type": "WebPage",
+    "image": {
+      "src": "/images/content-factory-concept-1200.webp",
+      "alt": "Concept visualization of billiards photography contact sheets moving through a physical review and publishing workflow",
+      "width": 1200,
+      "height": 671,
+      "type": "image/webp"
+    }
+  },
+  "/work/off-storis": {
+    "title": "Billiard Factory Ecommerce & Shopify Transition | Untold.works",
+    "description": "Led Billiard Factory’s website rebuild and the move to Shopify, from product discovery through checkout.",
+    "type": "WebPage",
+    "image": {
+      "src": "/images/og.png",
+      "alt": "Untold.works: creative leadership and brand storytelling",
+      "width": 1200,
+      "height": 630,
+      "type": "image/png"
+    }
+  },
+  "/work/omi-lead-intake": {
+    "title": "OMI Growth Lead Intake & CRM Routing | Untold.works",
+    "description": "Lead intake and routing for OMI Growth, connected to its CRM.",
+    "type": "WebPage",
+    "image": {
+      "src": "/images/omi-1200.webp",
+      "alt": "OMI Mexico expansion artwork",
+      "width": 1200,
+      "height": 750,
+      "type": "image/webp"
+    }
+  },
+  "/work/casa-schuck-ops-dashboard": {
+    "title": "Casa Schuck Hotel Dashboard Demo | Untold.works",
+    "description": "A working dashboard demo for Casa Schuck, bringing the hotel’s rooms, arrivals, reservations and daily signals into one interface.",
+    "type": "WebPage",
+    "image": {
+      "src": "/images/casa-schuck-dashboard-demo-1200.webp",
+      "alt": "Casa Schuck Command Center demo showing sample occupancy, room status and activity data",
+      "width": 1200,
+      "height": 750,
+      "type": "image/webp"
+    }
+  },
+  "/work/lalah-hathaway": {
+    "title": "Lalah Hathaway: Artist Experience & Commerce | Untold.works",
+    "description": "Made in Chicago: an immersive artist website, newsletter migration and custom merchandise operations. Artist site live; public merchandise checkout awaiting launch.",
+    "type": "WebPage",
+    "image": {
+      "src": "/images/lalah-made-in-chicago-1200.webp",
+      "alt": "The Made in Chicago website: Lalah Hathaway in a room lined with records, with the album title and interactive room navigation",
+      "width": 1200,
+      "height": 750,
+      "type": "image/webp"
+    }
+  },
+  "/work/elena-pinderhughes": {
+    "title": "Elena Pinderhughes Debut Album Website | Untold.works",
+    "description": "A website for Elena Pinderhughes’ debut album, I Hope You Feel It Too, connecting music, credits, story and contact. Built by Untold.works.",
+    "type": "WebPage",
+    "image": {
+      "src": "/images/elena-home-1200.webp",
+      "alt": "The home page of elenapinderhughes.com",
+      "width": 1200,
+      "height": 750,
+      "type": "image/webp"
+    }
+  },
+  "/work/kibok-coffee": {
+    "title": "Ki’bok Coffee Multilingual Website | Untold.works",
+    "description": "A digital home for Ki'bok Coffee in San Miguel de Allende, with English, Spanish and Japanese paths through the menu, beans, story and visit information.",
+    "type": "WebPage",
+    "image": {
+      "src": "/images/kibok-home-1200.webp",
+      "alt": "The Ki'bok Coffee SMA home page",
+      "width": 1200,
+      "height": 750,
+      "type": "image/webp"
+    }
+  },
+  "/work/savor": {
+    "title": "Savor Website & Content Storytelling | Untold.works",
+    "description": "Website and content storytelling for Savor through IDW Studio, including work alongside its Chef Series team.",
+    "type": "WebPage",
+    "image": {
+      "src": "/images/savor-site-1200.webp",
+      "alt": "The live Savor home page introducing fats made from carbon",
+      "width": 1200,
+      "height": 750,
+      "type": "image/webp"
+    }
+  },
+  "/work/game-room-furniture-partners": {
+    "title": "Game Room Furniture Partners Trade Website | Untold.works",
+    "description": "A trade website for Billiard Factory’s Game Room Furniture Partners at Dallas Market Center, connecting designers with collections and showroom visits.",
+    "type": "WebPage",
+    "image": {
+      "src": "/images/grfp-home-live-1200.webp",
+      "alt": "Game Room Furniture Partners’ live website, identifying it as a Billiard Factory company and a trade-only showroom at Dallas Market Center",
+      "width": 1200,
+      "height": 750,
+      "type": "image/webp"
+    }
+  },
+  "/work/casa-schuck": {
+    "title": "Casa Schuck Bilingual Hotel Website | Untold.works",
+    "description": "Thirteen English and Spanish site pages for Casa Schuck, a boutique hotel in San Miguel de Allende, built between February and June 2026.",
+    "type": "WebPage",
+    "image": {
+      "src": "/images/casa-schuck-1200.webp",
+      "alt": "The Casa Schuck hotel site home page",
+      "width": 1200,
+      "height": 750,
+      "type": "image/webp"
+    }
+  },
+  "/work/derrick-hodge": {
+    "title": "Derrick Hodge Artist Website Preview | Untold.works",
+    "description": "An artist site preview for Derrick Hodge, connecting his recordings to composition, orchestration, film work and Color of Noize.",
+    "type": "WebPage",
+    "image": {
+      "src": "/images/derrick-hodge-site-1200.webp",
+      "alt": "The Derrick Hodge artist site preview home page",
+      "width": 1200,
+      "height": 750,
+      "type": "image/webp"
+    }
+  },
+  "/work/qmillion": {
+    "title": "Qmillion Music Portfolio Preview | Untold.works",
+    "description": "A portfolio preview for Qmillion that brings mixing, production and composition into one place, with a listening-led discography.",
+    "type": "WebPage",
+    "image": {
+      "src": "/images/qmillion-1200.webp",
+      "alt": "The Qmillion producer and mixer site preview",
+      "width": 1200,
+      "height": 750,
+      "type": "image/webp"
+    }
+  },
+  "/work/second-son-productions": {
+    "title": "Second Son Productions Website Preview | Untold.works",
+    "description": "A February–March 2026 site preview for Second Son Productions with dedicated artist pages, production context and tour-date lookups through Bandsintown.",
+    "type": "WebPage",
+    "image": {
+      "src": "/images/second-son-roster-1200.webp",
+      "alt": "The Second Son Productions roster page",
+      "width": 1200,
+      "height": 750,
+      "type": "image/webp"
+    }
+  },
+  "/work/regal-billiards": {
+    "title": "Regal Billiards Bilingual Retail Website | Untold.works",
+    "description": "A bilingual retail site for Regal Billiards, a C.L. Bailey dealer, built March 24–25, 2026.",
+    "type": "WebPage",
+    "image": {
+      "src": "/images/regal-billiards-1200.webp",
+      "alt": "A pool table in a loft, the Regal Billiards site hero",
+      "width": 1200,
+      "height": 750,
+      "type": "image/webp"
+    }
+  },
+  "/work/lexington-billiards-and-spas": {
+    "title": "Lexington Billiards & Spas Retail Website | Untold.works",
+    "description": "A website for Lexington Billiards & Spas that brings pool tables, hot tubs, grills, arcade machines and services into one browseable system.",
+    "type": "WebPage",
+    "image": {
+      "src": "/images/lexington-billiards-1200.webp",
+      "alt": "A family around a backyard grill, the Lexington site hero",
+      "width": 1200,
+      "height": 750,
+      "type": "image/webp"
+    }
+  },
+  "/work/voztre": {
+    "title": "Voztre Restaurant AI Landing Page | Untold.works",
+    "description": "A bilingual landing page with lead capture for Voztre, FoodTech AI’s phone and messaging assistant for restaurant operations.",
+    "type": "WebPage",
+    "image": {
+      "src": "/images/voztre-concept-1200.webp",
+      "alt": "Concept visualization of a restaurant host stand with a telephone connected to a reservation book by a line of light",
+      "width": 1200,
+      "height": 671,
+      "type": "image/webp"
+    }
+  },
+  "/work/village-tenders": {
+    "title": "Village Tenders Interactive Proposal | Untold.works",
+    "description": "A Village Tenders proposal delivered in April–May 2026 as a live website instead of a presentation deck.",
+    "type": "WebPage",
+    "image": {
+      "src": "/images/village-tenders-concept-1200.webp",
+      "alt": "Concept visualization of a paper proposal folded into three browsable architectural doorways",
+      "width": 1200,
+      "height": 671,
+      "type": "image/webp"
+    }
+  },
+  "/work/robert-glasper-album-releases": {
+    "title": "Robert Glasper Album Release Work | Untold.works",
+    "description": "Release-team work for four Robert Glasper records, spanning the Black Radio series, a meditative record, a jazz-and-hip-hop exchange and live Blue Note recordings.",
+    "type": "WebPage",
+    "image": {
+      "src": "/images/glasper-selected-cover-art-1200.webp",
+      "alt": "Selected release artwork for Robert Glasper’s Let Go and Code Derivation, shown side by side",
+      "width": 1200,
+      "height": 750,
+      "type": "image/webp"
+    }
+  },
+  "/work/art-science-and-r-r-now-release-films": {
+    "title": "Robert Glasper: Art Science & R+R=NOW Films | Untold.works",
+    "description": "Two release films from my earlier camera-led work with Robert Glasper: Art Science and R+R=NOW.",
+    "type": "WebPage",
+    "image": {
+      "src": "/images/glasper-r-r-now-still-1200.webp",
+      "alt": "Frame from the Robert Glasper R+R=NOW record-release and tour film",
+      "width": 1200,
+      "height": 675,
+      "type": "image/webp"
+    }
+  },
+  "/work/robtober": {
+    "title": "Robtober: Robert Glasper at Blue Note NYC | Untold.works",
+    "description": "Robert Glasper’s 2026 residency at Blue Note New York, within my ongoing collaboration and five years of Robtober content work.",
+    "type": "WebPage",
+    "image": {
+      "src": "/images/robtober-2026-poster-clean-1200.webp",
+      "alt": "Robtober NYC 2026 Season 8 event poster announcing October 1 through November 1 and 11 episodes at Blue Note New York",
+      "width": 1200,
+      "height": 1495,
+      "type": "image/webp"
+    }
+  },
+  "/work/blue-note-los-angeles": {
+    "title": "Blue Note Los Angeles Opening Content | Untold.works",
+    "description": "Launch and opening content for Blue Note Los Angeles as the club opened its Sunset Boulevard room with Robert Glasper.",
+    "type": "WebPage",
+    "image": {
+      "src": "/images/blue-note-la-band-1200.webp",
+      "alt": "Robert Glasper and band performing beneath red and blue curtains at Blue Note Los Angeles",
+      "width": 1200,
+      "height": 900,
+      "type": "image/webp"
+    }
+  },
+  "/work/black-radio-experience": {
+    "title": "Black Radio Experience Content Direction | Untold.works",
+    "description": "Four years of content direction for the Napa Valley festival curated by Robert Glasper, through its move into the Black Radio Experience.",
+    "type": "WebPage",
+    "image": {
+      "src": "/images/black-radio-experience-stage-clean-1200.webp",
+      "alt": "The Black Radio Experience stage with festival signage above the performers and audience",
+      "width": 1200,
+      "height": 750,
+      "type": "image/webp"
+    }
+  },
+  "/work/color-of-noize": {
+    "title": "Derrick Hodge: Color of Noize Tour Content | Untold.works",
+    "description": "Tour content for Derrick Hodge’s Color of Noize project, where a Blue Note album and band idea expanded onto the orchestral stage.",
+    "type": "WebPage",
+    "image": {
+      "src": "/images/color-of-noize-1200.webp",
+      "alt": "Derrick Hodge conducting the Color of Noize orchestra on stage",
+      "width": 1200,
+      "height": 750,
+      "type": "image/webp"
+    }
+  },
+  "/work/home-field": {
+    "title": "Billiard Factory Home Field AI Campaign | Untold.works",
+    "description": "A fall campaign with one invitation, “This year, everyone comes to you,” carried from AI-made rooms and film into a working lead page.",
+    "type": "WebPage",
+    "image": {
+      "src": "/images/home-field-shot-1200.webp",
+      "alt": "A player lines up a shot in the Home Field campaign",
+      "width": 1200,
+      "height": 750,
+      "type": "image/webp"
+    }
+  },
+  "/work/c-l-bailey-factory-event": {
+    "title": "C.L. Bailey Factory Event AI Campaign Film | Untold.works",
+    "description": "An AI-created campaign film, a library of advertising concepts and an interactive landing page for the upcoming C.L. Bailey Factory Event.",
+    "type": "WebPage",
+    "image": {
+      "src": "/images/cl-bailey-factory-event-still-1200.webp",
+      "alt": "An AI-created city billboard scene from the C.L. Bailey Factory Event campaign film",
+      "width": 1200,
+      "height": 675,
+      "type": "image/webp"
+    }
+  },
+  "/work/savor-chef-series": {
+    "title": "Savor Chef Series Content & Storytelling | Untold.works",
+    "description": "Content and storytelling within IDW Studio’s chef series for Savor, showing a new food ingredient through the people who use it.",
+    "type": "WebPage",
+    "image": {
+      "src": "/images/savor-chef-series-1200.webp",
+      "alt": "Three frames from the Savor chef series: croissants, Clement Goyffon at ONE65, a plated dish",
+      "width": 1200,
+      "height": 750,
+      "type": "image/webp"
+    }
+  },
+  "/work/preferred-customer-event": {
+    "title": "Billiard Factory Preferred Customer Event | Untold.works",
+    "description": "An October 15 customer event planned for twelve Billiard Factory showrooms, with the date turned into the visual idea.",
+    "type": "WebPage",
+    "image": {
+      "src": "/images/preferred-customer-event-1200.webp",
+      "alt": "Preferred Customer Event campaign artwork with the October 15 ball and sales tax offer",
+      "width": 1200,
+      "height": 628,
+      "type": "image/webp"
+    }
+  },
+  "/work/landing-pages": {
+    "title": "Billiard Factory Landing Pages & CRM | Untold.works",
+    "description": "Ten Billiard Factory campaign pages connecting creative, lead capture and sales follow-up, with GoHighLevel CRM setup and clear production credits.",
+    "type": "WebPage",
+    "image": {
+      "src": "/images/clb-factory-event-page-1200.webp",
+      "alt": "The C.L. Bailey Factory Event landing page, hero and offer",
+      "width": 1200,
+      "height": 750,
+      "type": "image/webp"
+    }
+  },
+  "/work/messes-happen": {
+    "title": "Messes Happen: Billiard Factory TV Spot | Untold.works",
+    "description": "A Billiard Factory TV spot for Allstate Protection Plans, produced and cut as a finished moving-image piece with music.",
+    "type": "WebPage",
+    "image": {
+      "src": "/images/messes-happen-production-frame-1200.webp",
+      "alt": "Production frame from the Messes Happen TV spot footage with two people beside a pool table",
+      "width": 1200,
+      "height": 675,
+      "type": "image/webp"
+    }
+  },
+  "/work/season-opener": {
+    "title": "Billiard Factory Season Opener Campaign | Untold.works",
+    "description": "The Billiard Factory campaign that set the first August beat of the season, from brief and creative direction into Engine Room delivery.",
+    "type": "WebPage",
+    "image": {
+      "src": "/images/season-opener-artwork-1200.webp",
+      "alt": "Original Season Opener campaign banner shown in full within a dark green frame",
+      "width": 1200,
+      "height": 750,
+      "type": "image/webp"
+    }
+  },
+  "/work/labor-day-sale": {
+    "title": "Billiard Factory Labor Day Campaign | Untold.works",
+    "description": "A sitewide Labor Day campaign with a clear savings ladder, a lead capture and precise credit for the page team.",
+    "type": "WebPage",
+    "image": {
+      "src": "/images/labor-day-page-800.webp",
+      "alt": "The Labor Day Sale landing page",
+      "width": 800,
+      "height": 500,
+      "type": "image/webp"
+    }
+  },
+  "/work/product-films": {
+    "title": "Billiard Factory Product Films | Untold.works",
+    "description": "Three product-led films for Billiard Factory, placed where shoppers can move from seeing a product to exploring it.",
+    "type": "WebPage",
+    "image": {
+      "src": "/images/custom-built-workshop-1200.webp",
+      "alt": "A finished X-base table in the workshop, from the Custom Built film",
+      "width": 1200,
+      "height": 675,
+      "type": "image/webp"
+    }
+  },
+  "/work/billiard-factory-and-c-l-bailey": {
+    "title": "Billiard Factory + C.L. Bailey | Untold.works",
+    "description": "Explore my work for Billiard Factory and C.L. Bailey, from shoppable rooms and dealer tools to a Shopify launch and the Stick family gift guides.",
+    "type": "WebPage",
+    "image": {
+      "src": "/images/bf-storefront-poster.jpg",
+      "alt": "Frame from the Billiard Factory storefront film showing the entrance and exterior sign",
+      "width": 1280,
+      "height": 464,
+      "type": "image/jpeg"
+    }
+  },
+  "/work/robert-glasper-blue-note": {
+    "title": "Second Son, Robert Glasper & Blue Note Work | Untold.works",
+    "description": "Explore my work with Second Son Productions and Robert Glasper across release films, artist sites, Robtober and related Blue Note projects.",
+    "type": "WebPage",
+    "image": {
+      "src": "/images/glasper-london-portrait-1200.webp",
+      "alt": "Robert Glasper in denim and a cap against a blue curtain at Blue Note London",
+      "width": 1200,
+      "height": 1800,
+      "type": "image/webp"
+    }
+  },
+  "/work/other-projects": {
+    "title": "Selected Brand & Digital Projects | Untold.works",
+    "description": "Creative direction and hands-on AI application builds across independent assignments and agency collaborations, from brand storytelling to working digital tools.",
+    "type": "CollectionPage",
+    "image": {
+      "src": "/images/savor-site-1200.webp",
+      "alt": "The live Savor website introducing fats made from carbon",
+      "width": 1200,
+      "height": 750,
+      "type": "image/webp"
+    }
+  },
+  "/art-of-prompting": {
+    "title": "AI Image & Video Process: The Art of Prompting | Untold.works",
+    "description": "See how I use product references, prompts, motion and editing to turn an idea into finished campaign imagery and films.",
+    "type": "WebPage",
+    "image": {
+      "src": "/images/cl-bailey-waterfront-poster.jpg",
+      "alt": "C.L. Bailey Factory Event AI campaign film",
+      "width": 1280,
+      "height": 720,
+      "type": "image/jpeg"
+    }
+  },
+  "/work-together": {
+    "title": "Work with Untold | Creative & AI Consulting",
+    "description": "Tell me about your project, timing and budget. We’ll decide together what to build first.",
+    "type": "ContactPage",
+    "image": {
+      "src": "/images/about/joshua-thinking-1200.webp",
+      "alt": "Joshua Semolik, creative leader and brand storyteller",
+      "width": 1200,
+      "height": 1500,
+      "type": "image/webp"
+    }
+  },
+  "/for-your-business": {
+    "title": "Creative & AI Consulting | Untold.works",
+    "description": "Creative direction, digital experiences and practical AI for your business, from the first working idea through launch and ongoing improvements.",
+    "type": "WebPage",
+    "image": {
+      "src": "/images/prompting-bar-cart-lifestyle-1200.webp",
+      "alt": "AI-created lifestyle study based on an Industrial Bar Cart product reference",
+      "width": 1200,
+      "height": 1200,
+      "type": "image/webp"
+    }
+  },
+  "/about": {
+    "title": "About Joshua Semolik | Creative & AI Consulting at Untold.works",
+    "description": "I founded Untold.works to bring my background in photography, film and marketing to creative direction, hands-on builds and applied AI.",
+    "type": "ProfilePage",
+    "image": {
+      "src": "/images/about/joshua-thinking-1200.webp",
+      "alt": "Joshua Semolik smiling with his hand on his chin against a white background",
+      "width": 1200,
+      "height": 1500,
+      "type": "image/webp"
+    }
+  }
+}

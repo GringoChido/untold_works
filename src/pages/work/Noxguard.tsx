@@ -40,7 +40,7 @@ export const Noxguard = () => {
   usePageMeta({
     title: 'Noxguard, Untold.works',
     description:
-      'An Untold.works project: Joshua Semolik delivered Noxguard’s rebrand, website, photo and video campaign, and process work supporting its marketing systems.',
+      'Led Noxguard’s rebrand, website and photo and video campaign, and helped the team organize its marketing work.',
     path: '/work/noxguard',
   });
 
@@ -48,11 +48,11 @@ export const Noxguard = () => {
     <Layout>
       <Header crumbs={[{ label: 'Work', to: '/' }, { label: 'Brand and product', to: '/brand-and-product' }, { label: 'Noxguard' }]} />
       <main id="main" className="flex flex-col">
-        <section className="mt-10 grid bg-ink text-cream md:min-h-[620px] md:grid-cols-[minmax(0,0.85fr)_minmax(0,1.15fr)]" aria-labelledby="noxguard-title">
+        <section className="mt-10 grid bg-cream text-ink md:min-h-[620px] md:grid-cols-[minmax(0,0.85fr)_minmax(0,1.15fr)]" aria-labelledby="noxguard-title">
           <div className="flex min-w-0 flex-col justify-between gap-10 px-6 py-10 md:px-12 md:py-12">
             <div className="flex flex-wrap items-center gap-3.5">
               <span className="lbl">01 · Brand and product</span>
-              <Chip className="border-rule border-cream text-[14px] tracking-[0.08em]">Untold.works project</Chip>
+              <Chip className="border-rule border-ink text-[14px] tracking-[0.08em]">Untold.works project</Chip>
             </div>
             <div className="flex flex-col gap-6">
               <h1 id="noxguard-title" className="display break-words text-[clamp(34px,4.4vw,68px)] leading-[0.92]">
@@ -65,7 +65,7 @@ export const Noxguard = () => {
                 Through Untold.works, I delivered the Noxguard rebrand, website, photo and video campaign, and process work supporting its marketing systems. The work connected a consistent public identity with the way the team produced and used its marketing assets.
               </p>
             </div>
-            <div className="lbl border-t-rule border-cream/50 pt-3 text-[14px] text-cream/80">
+            <div className="lbl border-t-rule border-ink/50 pt-3 text-[14px] text-ink/80">
               Brand · Digital · Campaign · Systems
             </div>
           </div>

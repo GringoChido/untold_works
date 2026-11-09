@@ -6,7 +6,6 @@ import { Img } from '../../components/Img';
 import { LabelRow } from '../../components/LabelRow';
 import { Layout } from '../../components/Layout';
 import { usePageMeta } from '../../hooks/usePageMeta';
-import { tones } from '../../theme';
 
 const featured = [
   {
@@ -15,7 +14,7 @@ const featured = [
     image: 'noxguard-packaging.webp',
     alt: 'Packaging mockup of Noxguard branded cartons on a pallet',
     label: 'Untold.works project',
-    description: 'Through Untold.works, Joshua delivered the rebrand, website, photo and video campaign, and process work supporting Noxguard’s marketing systems.',
+    description: 'Led the Noxguard rebrand, built the website and delivered the photo and video campaign. The work also covered how the team manages its marketing.',
   },
 ] as const;
 
@@ -34,12 +33,12 @@ const archives = [
 
 export const OtherProjects = () => {
   usePageMeta({
-    title: 'Other Projects — Joshua Semolik | Untold.works',
+    title: 'Other Projects | Joshua Semolik | Untold.works',
     description: 'Creative direction and hands-on AI application builds across independent assignments and agency collaborations, from brand storytelling to working digital tools.',
     path: '/work/other-projects',
   });
   return (
-    <Layout tone={tones.websites}>
+    <Layout>
       <Header crumbs={[{ label: 'Selected work', to: '/#work' }, { label: 'Other projects' }]} />
       <main id="main" className="flex flex-col">
         <section className="grid gap-8 border-b border-current pb-16 pt-16 md:grid-cols-[minmax(0,1fr)_minmax(280px,0.6fr)] md:items-end md:gap-16 md:pb-20 md:pt-24" aria-labelledby="other-title">
@@ -61,7 +60,7 @@ export const OtherProjects = () => {
             <LabelRow left="Featured agency collaboration" right="Site · Content" />
             <h2 id="savor-feature-title" className="name m-0 text-[clamp(42px,4.6vw,68px)]">Savor</h2>
             <p className="chapter-statement m-0 text-[clamp(28px,3vw,42px)] leading-[1.12]">Explain fats made from carbon through familiar food.</p>
-            <p className="m-0 max-w-[640px] text-[19px] leading-[1.5]">Website and chef content help explain Savor’s unfamiliar production process through foods and kitchens people recognize. Joshua contributed storytelling through IDW Studio; the broader Chef Series production was IDW-led.</p>
+            <p className="m-0 max-w-[640px] text-[19px] leading-[1.5]">Website and chef content help explain Savor’s unfamiliar production process through foods and kitchens people recognize. I worked on the story with IDW Studio, who led the Chef Series production.</p>
             <Link to="/work/savor" className="text-link">Explore the Savor case <span aria-hidden="true">↗</span></Link>
           </div>
         </section>
@@ -109,7 +108,7 @@ export const OtherProjects = () => {
           </div>
         </section>
       </main>
-      <HouseBar back={{ label: '← Selected work', to: '/#work' }} next={{ label: 'Next: About Joshua →', to: '/about' }} />
+      <HouseBar back={{ label: '← Selected work', to: '/#work' }} next={{ label: 'Next: About me →', to: '/about' }} />
       <Footer />
     </Layout>
   );

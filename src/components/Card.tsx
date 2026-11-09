@@ -1,6 +1,6 @@
+import { Link } from 'react-router-dom';
 import type { ReactNode } from 'react';
 import { factHref, isExternal, slugify, type CardColor, type Fact, type Visual as VisualData } from '../data/categories';
-import { FillLink } from './PageFill';
 import { Visual } from './visuals/Visual';
 
 type Props = {
@@ -20,7 +20,7 @@ type Props = {
 
 const hostOf = (href: string): string => new URL(href).hostname.replace(/^www\./, '');
 
-const FactValue = ({ fact, color }: { fact: Fact; color: CardColor }) => {
+const FactValue = ({ fact }: { fact: Fact }) => {
   if (!fact.href) return <span>{fact.value}</span>;
   if (isExternal(fact.href)) {
     return (
@@ -29,11 +29,11 @@ const FactValue = ({ fact, color }: { fact: Fact; color: CardColor }) => {
       </a>
     );
   }
-  return <FillLink to={factHref(fact.href)} color={color} className="underline underline-offset-4">{fact.value}</FillLink>;
+  return <Link to={factHref(fact.href)} className="underline underline-offset-4">{fact.value}</Link>;
 };
 
 /** The category index stays uniform so each project's own imagery can lead. */
-export const Card = ({ index, name, color, visual, barRight, caption, facts, rows, to, nameTo, size = 'grid', eager }: Props) => {
+export const Card = ({ index, name, visual, barRight, caption, facts, rows, to, nameTo, size = 'grid', eager }: Props) => {
   const home = size === 'home';
   const sizes = home ? '(min-width: 900px) 45vw, 100vw' : '(min-width: 768px) 48vw, 100vw';
   const titleClass = name.length > 24 ? 'text-[29px]' : 'text-[34px]';
@@ -45,13 +45,13 @@ export const Card = ({ index, name, color, visual, barRight, caption, facts, row
         <span className="lbl">Selected work</span>
       </div>
       {nameTo ? (
-        <FillLink to={nameTo} color={color} aria-label={`Open ${name} project`} className="block no-underline">
+        <Link to={nameTo} aria-label={`Open ${name} project`} className="block no-underline">
           <Visual visual={visual} sizes={sizes} size={size} eager={eager} />
-        </FillLink>
+        </Link>
       ) : <Visual visual={visual} sizes={sizes} size={size} eager={eager} />}
       <div className="flex flex-col gap-2">
         <h2 className={['name', 'm-0', 'leading-[1.02]', titleClass].join(' ')}>
-          {nameTo ? <FillLink to={nameTo} color={color} className="no-underline">{name}</FillLink> : name}
+          {nameTo ? <Link to={nameTo} className="no-underline">{name}</Link> : name}
         </h2>
         {caption && <p className="voice m-0 text-[20px] leading-[1.3]">{caption}</p>}
       </div>
@@ -61,7 +61,7 @@ export const Card = ({ index, name, color, visual, barRight, caption, facts, row
           {facts?.map((fact) => (
             <div key={fact.label}>
               <span>{fact.label}</span>
-              <FactValue fact={fact} color={color} />
+              <FactValue fact={fact} />
             </div>
           ))}
         </div>
@@ -72,13 +72,13 @@ export const Card = ({ index, name, color, visual, barRight, caption, facts, row
   const end = (
     <div className="catalog-card-end flex items-center justify-between gap-5 border-t border-ink/35 px-5 py-4 text-[13px] font-medium md:px-6">
       <span>untold.works</span>
-      <span>{nameTo ? <FillLink to={nameTo} color={color} className="underline underline-offset-4">Open project ↗</FillLink> : barRight}</span>
+      <span>{nameTo ? <Link to={nameTo} className="underline underline-offset-4">Open project ↗</Link> : barRight}</span>
     </div>
   );
 
   return (
     <article id={slugify(name)} className="catalog-card flex scroll-mt-6 flex-col bg-cream text-ink">
-      {to ? <FillLink to={to} color={color} className="flex grow flex-col no-underline">{body}{end}</FillLink> : <>{body}{end}</>}
+      {to ? <Link to={to} className="flex grow flex-col no-underline">{body}{end}</Link> : <>{body}{end}</>}
     </article>
   );
 };

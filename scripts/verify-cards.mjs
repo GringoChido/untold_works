@@ -95,34 +95,16 @@ for (const category of categories) {
   }
 }
 
-// Home introduces the studio and its process, then three bodies of work.
+// Hiring, equal career lanes and recognizable proof precede process copy.
 const homeHtml = await pageHtml('/');
 const home = decode(homeHtml);
-if (/Film unavailable|Film could not load/.test(home)) fail('home: a transient media error was saved into the prerendered page');
-[
-  'Creative direction.',
-  'AI transformation.',
-  'Untold.works is Joshua Semolik’s working studio',
-  'Human direction.',
-  'AI in the making.',
-  'Billiard Factory',
-  'Second Son Productions',
-  'Other Projects',
-  'a franchise model is in consultant review',
-  'About the studio',
-].forEach((phrase) => expectIn(home, phrase, 'home'));
-const leadRoutes = ['/work/billiard-factory-and-c-l-bailey', '/work/robert-glasper-blue-note', '/work/other-projects'];
-const leadPositions = leadRoutes.map((route) => homeHtml.indexOf('href="' + route + '"'));
-if (leadPositions.some((at) => at < 0) || leadPositions.some((at, index) => index > 0 && at <= leadPositions[index - 1])) {
-  fail('home: lead engagement links are missing or out of order');
-}
-const pathPositions = ['#billiard-factory', '#second-son', '#other-projects'].map((route) => homeHtml.indexOf('href="' + route + '"'));
-if (pathPositions.some((at) => at < 0) || pathPositions.some((at, index) => index > 0 && at <= pathPositions[index - 1])) fail('home: three body-of-work anchors missing or out of order');
-if (homeHtml.indexOf('id="ai"') >= homeHtml.indexOf('id="work"')) fail('home: applied AI should be part of the introduction');
-const homeAi = homeHtml.slice(homeHtml.indexOf('id="ai"'), homeHtml.indexOf('id="work"'));
-expectIn(homeAi, 'angelica-street-walking', 'home Human Direction image');
-expectIn(homeAi, 'href="/art-of-prompting"', 'home Human Direction collection link');
-if (/velocity-(?:pro-brady|ball-launch)(?:-mobile)?\.mp4/.test(homeHtml)) fail('home: Velocity films should live on the art of prompting page');
+if (/Film unavailable|Film could not load/.test(home)) fail('home: transient media error');
+['Available for senior leadership', 'Billiard Factory', 'Robert Glasper', 'Blue Note', 'Lalah Hathaway', 'Shopify', 'Paid media', 'CTV', 'nationwide and remotely', 'Download resume'].forEach((phrase) => expectIn(home, phrase, 'home'));
+for (const route of ['/work/billiard-factory-and-c-l-bailey', '/work/robert-glasper-blue-note', '/work/lalah-hathaway', '/work/engine-room', '/work/other-projects', '/Joshua-Semolik-Resume.pdf']) expectIn(homeHtml, 'href="' + route + '"', 'homepage proof and resume');
+if (homeHtml.indexOf('id="work"') >= homeHtml.indexOf('id="ai"')) fail('home: selected work must precede process');
+expectIn(homeHtml, 'href="/art-of-prompting"', 'home creative production link');
+const hiring = await pageHtml('/work-together');
+for (const needle of ['Senior leadership opportunity', '/Joshua-Semolik-Resume.pdf', 'Music, entertainment', 'Brand storytelling, commerce']) expectIn(decodeURIComponent(hiring), needle, 'hiring page');
 
 // The collection is reachable from the homepage and retains both films as full,
 // user-controlled playback rather than introducing ambient, silent previews.
@@ -131,7 +113,7 @@ if (/Film unavailable|Film could not load/.test(decode(creativeHtml))) fail('art
 expectIn(decode(creativeHtml), 'The art of prompting.', 'creative practice page title');
 const creativePlayers = [...creativeHtml.matchAll(/<video\b([^>]*)>([\s\S]*?)<\/video>/g)];
 if (!creativePlayers[0]?.[2].includes('/video/cl-bailey-factory-event.mp4')) fail('art of prompting: C.L. Bailey must be the opening film');
-for (const film of ['cl-bailey-factory-event', 'velocity-pro-brady', 'velocity-ball-launch']) {
+for (const film of ['cl-bailey-factory-event', 'velocity-ball-launch']) {
   const player = creativePlayers.find((match) => match[2].includes(`/video/${film}.mp4`));
   if (!player) {
     fail('art of prompting: missing film ' + film);
@@ -144,7 +126,7 @@ for (const film of ['cl-bailey-factory-event', 'velocity-pro-brady', 'velocity-b
 
 const bf = await pageText('/work/billiard-factory-and-c-l-bailey');
 ['Game Room Furniture Partners', 'trade-only showroom', 'interior designers'].forEach((phrase) => expectIn(bf, phrase, 'Billiard Factory trade showroom'));
-['27 room stories', '34 coded stations', 'physical redesign', 'Brady Stick', 'GoHighLevel', 'headless Shopify Plus', 'checkout still runs through eSTORIS', 'franchise planning with consultants'].forEach((phrase) => expectIn(bf, phrase, 'Billiard Factory engagement'));
+['27 room stories', '34 coded stations', 'physical redesign', 'The team brought the Gallery online', 'GoHighLevel', 'headless Shopify Plus', 'checkout launch on October 16, 2026', 'franchise planning with consultants'].forEach((phrase) => expectIn(bf, phrase, 'Billiard Factory engagement'));
 const music = await pageText('/work/robert-glasper-blue-note');
 ['Second Son Productions', 'Other artist collaborations', 'Blue Note London', 'Rob Jones', 'Todd Cooper', 'Code Derivation', 'Black Radio Experience'].forEach((phrase) => expectIn(music, phrase, 'music engagement'));
 const other = await pageText('/work/other-projects');
@@ -155,7 +137,7 @@ const grfp = await pageHtml('/work/game-room-furniture-partners');
 expectIn(grfp, 'href="/work/billiard-factory-and-c-l-bailey"', 'trade showroom parent link');
 const homeBfStart = homeHtml.indexOf('id="billiard-factory"');
 const homeMusicStart = homeHtml.indexOf('id="second-son"');
-expectIn(homeHtml.slice(homeBfStart, homeMusicStart), 'href="/work/game-room-furniture-partners"', 'homepage Billiard Factory work');
+expectIn(homeHtml.slice(homeBfStart, homeMusicStart), 'href="/work/off-storis"', 'homepage ecommerce story');
 if (homeHtml.slice(homeHtml.indexOf('id="other-projects"')).includes('/work/game-room-furniture-partners')) fail('home: trade showroom is incorrectly listed under other projects');
 for (const category of categories) {
   const otherHtml = await pageHtml('/work/other-projects');
@@ -164,7 +146,7 @@ for (const category of categories) {
 const savor = await pageText('/work/savor');
 ['IDW Studio', 'website and content storytelling', 'Chef Series'].forEach((phrase) => expectIn(savor, phrase, 'Savor case'));
 const lalah = await pageText('/work/lalah-hathaway');
-['main image, video content and music', 'Seven destinations', 'Hover and keyboard focus'].forEach((phrase) => expectIn(lalah, phrase, 'Lalah case'));
+['original media, room concept and creative feedback', 'historically subscribed contacts', 'public vinyl and T-shirt checkout remains closed'].forEach((phrase) => expectIn(lalah, phrase, 'Lalah case'));
 
 // Keep previously rejected claims and unrelated media dependencies out of the release.
 const banned = [
@@ -183,7 +165,7 @@ const walk = async (dir) => {
   return out;
 };
 // Homepage and case films selected from the user's supplied and verified sources.
-const approvedVideos = new Set(['cl-bailey-factory-event.mp4', 'cl-bailey-factory-event-mobile.mp4', 'bf-storefront.mp4', 'bf-storefront-mobile.mp4', 'glasper-r-r-now.mp4', 'glasper-r-r-now-mobile.mp4', 'robert-glasper-birthday.mp4', 'robert-glasper-birthday-mobile.mp4', 'black-radio-experience-recap.mp4', 'black-radio-experience-recap-mobile.mp4', 'savor-food.mp4', 'savor-food-mobile.mp4', 'velocity-pro-brady.mp4', 'velocity-pro-brady-mobile.mp4', 'velocity-ball-launch.mp4', 'velocity-ball-launch-mobile.mp4'].map((name) => join(DIST, 'video', name)));
+const approvedVideos = new Set(['cl-bailey-factory-event.mp4', 'cl-bailey-factory-event-mobile.mp4', 'bf-storefront.mp4', 'bf-storefront-mobile.mp4', 'glasper-r-r-now.mp4', 'glasper-r-r-now-mobile.mp4', 'robert-glasper-birthday.mp4', 'robert-glasper-birthday-mobile.mp4', 'black-radio-experience-recap.mp4', 'black-radio-experience-recap-mobile.mp4', 'savor-food.mp4', 'savor-food-mobile.mp4', 'velocity-ball-launch.mp4', 'velocity-ball-launch-mobile.mp4'].map((name) => join(DIST, 'video', name)));
 const approvedHtml = new Set([...routes.map((route) => pageFile(route)), join(DIST, '404.html')]);
 for (const file of await walk(DIST)) {
   if (file.endsWith('.html') && !approvedHtml.has(file)) fail('unexpected HTML page in dist: ' + file.replace(DIST, 'dist'));

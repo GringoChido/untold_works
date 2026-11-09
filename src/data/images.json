@@ -392,28 +392,6 @@
    1600
   ]
  },
- "engine-room-studio-artwork.png": {
-  "base": "engine-room-studio-artwork",
-  "width": 1440,
-  "height": 900,
-  "widths": [
-   480,
-   800,
-   1200,
-   1440
-  ]
- },
- "engine-room-studio.png": {
-  "base": "engine-room-studio",
-  "width": 1440,
-  "height": 1400,
-  "widths": [
-   480,
-   800,
-   1200,
-   1440
-  ]
- },
  "financing-page.jpg": {
   "base": "financing-page",
   "width": 960,
@@ -671,17 +649,6 @@
  },
  "marketing-engine-home-field-briefs.png": {
   "base": "marketing-engine-home-field-briefs",
-  "width": 1564,
-  "height": 899,
-  "widths": [
-   480,
-   800,
-   1200,
-   1564
-  ]
- },
- "marketing-engine-home-field-social.png": {
-  "base": "marketing-engine-home-field-social",
   "width": 1564,
   "height": 899,
   "widths": [
@@ -1185,6 +1152,28 @@
    800,
    1200,
    1344
+  ]
+ },
+ "engine-room-cover-2026.png": {
+  "base": "engine-room-cover-2026",
+  "width": 1586,
+  "height": 992,
+  "widths": [
+   480,
+   800,
+   1200,
+   1586
+  ]
+ },
+ "home-field-social-posts.webp": {
+  "base": "home-field-social-posts",
+  "width": 1224,
+  "height": 759,
+  "widths": [
+   480,
+   800,
+   1200,
+   1224
   ]
  }
 }

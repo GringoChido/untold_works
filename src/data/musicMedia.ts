@@ -19,7 +19,7 @@ export const rRNowFilm: CaseFilmProps = {
   width: 1920,
   height: 1080,
   title: 'Robert Glasper / R+R=NOW',
-  caption: '27-second silent preview. Directed, filmed and edited by Joshua Semolik.',
+  caption: 'I directed, filmed and edited the release film. This silent preview runs 27 seconds.',
   sourceHref: 'https://www.youtube.com/watch?v=xxGPdk9Yj_U',
   sourceLabel: 'Watch the full film with sound on YouTube',
 };

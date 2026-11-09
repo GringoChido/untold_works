@@ -1,4 +1,3 @@
-import { useState, type ReactNode } from 'react';
 import { Link } from 'react-router-dom';
 import { Footer } from '../components/Footer';
 import { Header } from '../components/Header';
@@ -6,141 +5,64 @@ import { LabelRow } from '../components/LabelRow';
 import { Layout } from '../components/Layout';
 import { usePageMeta } from '../hooks/usePageMeta';
 
-type Credit = { role: string; name: ReactNode };
-
-const portraits = [
-  { id: 'directed', label: 'Directed portrait', note: 'Higgsfield AI edit from the original photograph', alt: 'Joshua Semolik smiling in a warmly lit, cinematic studio portrait' },
-  { id: 'original', label: 'The original', note: 'Original studio photograph', alt: 'Joshua Semolik smiling in the original white studio portrait' },
-  { id: 'thinking', label: 'In thought', note: 'A candid moment from the studio session', alt: 'Joshua Semolik smiling with one hand near his chin' },
-  { id: 'gesture', label: 'In motion', note: 'A candid moment from the studio session', alt: 'Joshua Semolik smiling and gesturing with one hand' },
+const toolkit = [
+  {
+    group: 'AI & development',
+    tools: [
+      ['ChatGPT', 'Explore ideas and turn a rough brief into creative directions to review.'],
+      ['Claude Cowork', 'Organize research, briefs and working files.'],
+      ['Claude Code & Codex', 'Build and refine websites, dashboards and internal tools.'],
+    ],
+  },
+  {
+    group: 'Creative production',
+    tools: [
+      ['Higgsfield', 'Develop imagery and motion from product references and art direction.'],
+      ['Adobe Creative Cloud', 'Prepare brand assets and campaign artwork for delivery.'],
+      ['Adobe Premiere Pro', 'Edit release films, event footage and campaign cutdowns.'],
+    ],
+  },
+  {
+    group: 'Retail & spatial design',
+    tools: [
+      ['SketchUp', 'Explore showroom layouts and product groupings in 3D.'],
+      ['AutoCAD', 'Draft floor plans for teams reviewing a retail footprint.'],
+    ],
+  },
+  {
+    group: 'Commerce & operations',
+    tools: [
+      ['Shopify Plus', 'Connect a headless storefront to the catalog, product options and checkout.'],
+      ['Xorosoft', 'Coordinate the migration and implementation of the selected ERP system.'],
+      ['Google Merchant Center', 'Keep product imagery, options and pricing connected to shopping listings.'],
+      ['GoHighLevel', 'Route tagged inquiries to the sales team for follow-up.'],
+    ],
+  },
+  {
+    group: 'Campaigns & measurement',
+    tools: [
+      ['Klaviyo', 'Connect email and SMS signups to the customer journey.'],
+      ['Meta & Vibe', 'Prepare creative for social campaigns and manage streaming TV placements through Vibe.'],
+      ['Google Analytics 4 & Tag Manager', 'Track customer actions and review campaign performance.'],
+      ['Google Search Console', 'Check indexing and search visibility after launch.'],
+    ],
+  },
+  {
+    group: 'Web delivery & integrations',
+    tools: [
+      ['GitHub, Cloudflare & Netlify', 'Manage site changes, connect domains and publish updates.'],
+      ['Supabase', 'Store the records that power dashboards and internal tools.'],
+      ['ImageKit', 'Deliver images sized for the page and device.'],
+      ['Resend', 'Send transactional emails from websites and internal tools.'],
+    ],
+  },
 ] as const;
 
-const portraitSource = (id: string) => `/images/about/joshua-${id}`;
-
-const Year = ({ children }: { children: string }) => (
-  <span className="wdth-62 text-[15px] font-semibold not-italic tracking-[0.08em]">{children}</span>
-);
-
-const clients: Credit[] = [
-  { role: 'Brand and concept direction, campaigns and marketing systems', name: 'Billiard Factory' },
-  { role: 'Site, dealer portal, Brand Bible', name: 'C.L. Bailey' },
-  { role: 'Website for Billiard Factory’s trade-only showroom, focused on designers', name: 'Game Room Furniture Partners' },
-  { role: 'Website, content and storytelling, through IDW Studio', name: 'Savor' },
-  { role: 'Café site', name: "Ki'bok Coffee SMA" },
-  { role: 'Retail sites', name: 'Regal Billiards, Lexington Billiards and Spas' },
-  { role: 'Hotel site and ops dashboard', name: 'Casa Schuck' },
-  { role: 'Lead intake', name: 'OMI Growth' },
-  { role: 'Untold.works project: rebrand, website, photo/video campaign and marketing systems', name: 'Noxguard' },
-];
-
-const music: Credit[] = [
-  { role: 'Release team for four records', name: 'Robert Glasper' },
-  { role: 'Robtober content, five years', name: 'Robert Glasper, Blue Note New York' },
-  { role: 'Launch and opening content', name: 'Blue Note Los Angeles' },
-  { role: 'Content Director, four years', name: 'Blue Note Jazz Festival, Napa / Black Radio Experience' },
-  { role: 'Color of Noize tour content and artist site preview', name: 'Derrick Hodge' },
-  { role: 'AI-built Made in Chicago artist site', name: 'Lalah Hathaway' },
-  { role: 'Debut album site, I Hope You Feel It Too', name: 'Elena Pinderhughes' },
-];
-
-const career: Credit[] = [
-  {
-    role: 'Intern',
-    name: (
-      <>
-        Howard Stern, KROCK Studios, New York City <Year>Summer 1997</Year>
-      </>
-    ),
-  },
-  {
-    role: 'Senior and broadcast producer',
-    name: (
-      <>
-        NBA Entertainment, Sacramento Kings <Year>1999–2010</Year>
-      </>
-    ),
-  },
-  { role: 'Two Emmy nominations', name: 'Sacramento Kings' },
-  {
-    role: 'Global product launch and GTM systems lead',
-    name: (
-      <>
-        Lowepro, later DayMen <Year>2010–May 2016</Year>
-      </>
-    ),
-  },
-  {
-    role: 'Senior brand and growth manager',
-    name: (
-      <>
-        NorCal Cannabis <Year>Jun 2016–2019</Year>
-      </>
-    ),
-  },
-  {
-    role: 'Founder and Principal, independent practice',
-    name: (
-      <>
-        Untold.works, Mexico City <Year>Jan 2017–present</Year>
-      </>
-    ),
-  },
-  {
-    role: 'Global marketing and growth strategy lead',
-    name: (
-      <>
-        Ingenia Agency <Year>2020–2023</Year>
-      </>
-    ),
-  },
-  {
-    role: 'Head of Brand and Concept, contract',
-    name: (
-      <>
-        Billiard Factory <Year>Jan 2025–present</Year>
-      </>
-    ),
-  },
-];
-
-const film: Credit[] = [
-  { role: 'Directed, shot and edited the release films', name: 'Robert Glasper Experiment, Art Science and R+R=NOW' },
-  { role: 'Employee portrait campaign films', name: 'Hewlett Packard' },
-];
-
-const education: Credit[] = [
-  {
-    role: 'AI Strategy, executive education',
-    name: (
-      <>
-        MIT Sloan <Year>2025</Year>
-      </>
-    ),
-  },
-  { role: 'Education', name: 'Arizona State University' },
-];
-
-/** End-credits layout: role on the right-aligned left column in condensed caps, name on the right in italic. */
-const Roll = ({ id, title, note, credits }: { id: string; title: string; note?: string; credits: Credit[] }) => (
-  <section className="flex flex-col gap-7 pb-[88px]" aria-labelledby={id}>
-    <LabelRow left={<span id={id}>{title}</span>} right={note ?? ''} />
-    <dl className="flex flex-col gap-[22px] pt-3">
-      {credits.map((credit) => (
-        <div key={credit.role} className="grid gap-x-10 gap-y-1 md:grid-cols-2 md:items-baseline">
-          <dt className="wdth-62 text-[17px] font-semibold uppercase tracking-[0.06em] md:text-right">{credit.role}</dt>
-          <dd className="voice m-0 text-[24px] leading-[1.25]">{credit.name}</dd>
-        </div>
-      ))}
-    </dl>
-  </section>
-);
-
 export const About = () => {
-  const [activePortrait, setActivePortrait] = useState<(typeof portraits)[number]>(portraits[0]);
   usePageMeta({
-    title: 'Joshua Semolik — AI Transformation Leader | Untold.works',
+    title: 'About Joshua Semolik | Creative & AI Consulting at Untold.works',
     description:
-      'Joshua Semolik is an AI Transformation Leader building across brand, retail, commerce and creative systems. Daily AI practice, creative direction and team adoption through Untold.works.',
+      'I founded Untold.works to bring my background in photography, film and marketing to creative direction, hands-on builds and applied AI.',
     path: '/about',
   });
 
@@ -149,51 +71,35 @@ export const About = () => {
       <Header crumbs={[{ label: 'About' }]} />
       <main id="main" className="flex flex-col">
         <section className="about-opening" aria-labelledby="about-name">
-          <div className="about-opening-copy">
-            <span className="lbl">About / The person behind the work</span>
-            <h1 id="about-name" className="display about-opening-name">Joshua<br />Semolik<span className="about-name-period">.</span></h1>
-            <p className="lbl about-opening-title">AI Transformation Leader<br />Brand, Retail, Commerce &amp; Creative Systems</p>
-            <p className="about-opening-statement">I build AI-powered creative and operating systems teams can actually use.</p>
-            <p className="about-opening-summary">
-              I build with AI every day—across websites, creative production, retail experiences and the systems teams use to deliver
-              them. I combine creative direction with hands-on building and help people bring these tools into their own work. Recent
-              projects include Billiard Factory’s shoppable showroom and Shopify Plus transition, C.L. Bailey’s dealer tools, and Lalah
-              Hathaway’s artist site.
-            </p>
+          <div className="about-identity">
+            <h1 id="about-name" className="display about-opening-name">Joshua Semolik<span className="about-name-period">.</span></h1>
+            <p className="lbl about-opening-title">Founder, Untold.works · Creative &amp; AI consulting</p>
           </div>
-          <div className="about-portrait" aria-label="Joshua Semolik portrait study">
-            <figure className="about-portrait-figure">
-              <div className="about-portrait-image-wrap">
-                <img
-                  key={activePortrait.id}
-                  className="about-portrait-image"
-                  src={`${portraitSource(activePortrait.id)}-800.webp`}
-                  srcSet={`${portraitSource(activePortrait.id)}-480.webp 480w, ${portraitSource(activePortrait.id)}-800.webp 800w, ${portraitSource(activePortrait.id)}-1200.webp 1200w`}
-                  sizes="(max-width: 900px) 90vw, 42vw"
-                  width="800"
-                  height="1000"
-                  alt={activePortrait.alt}
-                  fetchPriority="high"
-                />
-                <span className="about-portrait-stamp" aria-hidden="true">JS / {String(portraits.indexOf(activePortrait) + 1).padStart(2, '0')}</span>
-              </div>
-              <figcaption className="about-portrait-caption"><span>{activePortrait.label}</span><span>{activePortrait.note}</span></figcaption>
-            </figure>
-            <div className="about-portrait-selector" role="group" aria-label="Choose a portrait from the studio study">
-              {portraits.map((portrait, index) => (
-                <button
-                  className="about-portrait-option"
-                  type="button"
-                  key={portrait.id}
-                  aria-label={`Show ${portrait.label.toLowerCase()}`}
-                  aria-pressed={activePortrait.id === portrait.id}
-                  onClick={() => setActivePortrait(portrait)}
-                >
-                  <img src={`${portraitSource(portrait.id)}-480.webp`} width="72" height="90" alt="" loading="lazy" />
-                  <span>{String(index + 1).padStart(2, '0')}</span>
-                </button>
-              ))}
-            </div>
+          <div className="about-opening-copy">
+            <p className="about-opening-statement">Show me the idea you’re still trying to explain.</p>
+            <p className="about-opening-summary">I came to consulting through photography, film and marketing. Years behind a camera taught me to ask what someone should notice first. I bring that same eye to the way a fan discovers an album, a buyer walks through a showroom or a team pitches a new idea.</p>
+            <p className="about-opening-summary">I like to make a first version we can look at together. I use AI to sketch the room, test the campaign or build a working tool, so you can decide what’s worth your time and budget. I can build it myself or direct your team, then stay involved through launch and the changes that follow.</p>
+            <Link to="/work-together" className="text-link about-project-link">Talk with me about your project <span aria-hidden="true">↗</span></Link>
+          </div>
+          <div className="about-portrait">
+            <img
+              className="about-portrait-image"
+              src="/images/about/joshua-thinking-800.webp"
+              srcSet="/images/about/joshua-thinking-480.webp 480w, /images/about/joshua-thinking-800.webp 800w, /images/about/joshua-thinking-1200.webp 1200w"
+              sizes="(max-width: 700px) 27vw, (max-width: 1200px) 34vw, 440px"
+              width="800"
+              height="1000"
+              alt="Joshua Semolik smiling with his hand on his chin against a white background"
+              fetchPriority="high"
+            />
+          </div>
+        </section>
+        <section className="answer-section" aria-labelledby="leadership-questions-title">
+          <LabelRow left="Working together" right="Inside the business" />
+          <h2 id="leadership-questions-title" className="name answer-section-title">What your team can use.</h2>
+          <div className="answer-grid">
+            <div><h3>A place to run the campaign</h3><p>When a launch has a dozen moving parts, the team needs to see which assets are approved and who has the next step. I built <Link to="/work/engine-room">Engine Room</Link> so the marketing team could find the brief, the files and the publishing schedule in one place.</p></div>
+            <div><h3>A way to tell the product story</h3><p>A dealer preparing a pitch needs the right image and a clear explanation of the product. For C.L. Bailey, I built a <Link to="/work/c-l-bailey-portal-and-concierge">dealer portal</Link> for the materials and a brand guide that shows partners how to use them.</p></div>
           </div>
         </section>
         <section className="pb-20" aria-labelledby="selected-work-title">
@@ -204,7 +110,7 @@ export const About = () => {
             <li><Link to="/work/savor"><strong>Savor</strong><span>Website and content storytelling through IDW Studio.</span><span aria-hidden="true">↗</span></Link></li>
           </ul>
           <Link to="/work-together" className="text-link mt-8">
-            Work with Joshua <span aria-hidden="true">↗</span>
+            Work with me <span aria-hidden="true">↗</span>
           </Link>
         </section>
         <section className="about-ai-turning-point pb-20" aria-labelledby="about-practice-title">
@@ -218,7 +124,7 @@ export const About = () => {
                 I took MIT Sloan’s executive education course, Artificial Intelligence: Implications for Business Strategy, in 2025. It gave me the moment of clarity I had been looking for: AI could change how work is organized, with an impact I think of in terms of the assembly line. Since that course, a day has not gone by without me working with AI, testing what it can do and putting it into practice.
               </p>
               <p className="m-0 text-[18px] leading-[1.55]">
-                That practice now runs from campaign planning and retail systems to websites, photography and film. Higgsfield is my primary AI image and video tool. Years behind the lens shape how I direct it: lighting, framing, composition and pacing still matter. I use ChatGPT across models to think through problems, and Claude Code to turn ideas into working sites and tools.
+                That practice now runs from campaign planning and retail systems to websites, photography and film. Higgsfield is my primary AI image and video tool. Years behind the lens shape how I direct it: lighting, framing, composition and pacing still matter. I use ChatGPT across models to think through problems, and Claude Code and Codex to turn ideas into working sites and tools.
               </p>
               <p className="m-0 text-[18px] leading-[1.55]">
                 I also teach skeptical colleagues with tasks they already need to finish: preparing campaign assets, reviewing product details and finding the next handoff. We document what works, keep approvals visible and give the team a repeatable process.
@@ -226,66 +132,25 @@ export const About = () => {
           </div>
         </section>
         <section id="toolkit" className="about-toolkit scroll-mt-6 pb-20" aria-labelledby="about-toolkit-title">
-          <LabelRow left="Working toolkit" right="From idea to a live system" />
+          <LabelRow left="Tools & platforms" right="My working toolkit" />
           <div className="about-toolkit-intro">
             <h2 id="about-toolkit-title" className="name m-0 text-[clamp(34px,4.2vw,58px)] leading-[1.02]">The tools behind the work.</h2>
-            <p className="m-0 text-[18px] leading-[1.5]">I use these platforms to build the creative, connect it to commerce and customer operations, and give teams a way to publish and maintain it.</p>
+            <p className="m-0 text-[18px] leading-[1.5]">The tools I use to create and build, alongside the platforms I coordinate with client teams.</p>
           </div>
           <div className="about-toolkit-grid">
-            <div className="about-toolkit-group">
-              <p className="lbl">01 / Think and create</p>
-              <dl>
-                <div><dt>ChatGPT</dt><dd>Work across models for research, planning, writing and problem solving.</dd></div>
-                <div><dt>Higgsfield</dt><dd>Direct AI photography and video with the judgment I developed behind the lens.</dd></div>
-                <div><dt>Claude Code</dt><dd>Build and revise websites, campaign tools and internal systems.</dd></div>
-              </dl>
-            </div>
-            <div className="about-toolkit-group">
-              <p className="lbl">02 / Sell and operate</p>
-              <dl>
-                <div><dt>Shopify Plus</dt><dd>Headless commerce transition underway for Billiard Factory’s live storefront.</dd></div>
-                <div><dt>Xorosoft / XoroERP</dt><dd>Working on Billiard Factory’s phased move to an operational system for inventory and orders.</dd></div>
-                <div><dt>GoHighLevel</dt><dd>Capture tagged campaign inquiries and route them to sales follow-up.</dd></div>
-                <div><dt>HubSpot</dt><dd>Additional CRM experience.</dd></div>
-              </dl>
-            </div>
-            <div className="about-toolkit-group">
-              <p className="lbl">03 / Build and ship</p>
-              <dl>
-                <div><dt>GitHub</dt><dd>Daily source control and collaboration across site and system builds.</dd></div>
-                <div><dt>Cloudflare</dt><dd>Workers and routing for connected web experiences.</dd></div>
-                <div><dt>Netlify</dt><dd>Previews and delivery for websites and campaign pages.</dd></div>
-                <div><dt>Supabase + ImageKit</dt><dd>Working records and organized media for campaign operations.</dd></div>
-              </dl>
-            </div>
+            {toolkit.map(({ group, tools }, index) => (
+              <div key={group} className="about-toolkit-group">
+                <h3 className="lbl">{String(index + 1).padStart(2, '0')} / {group}</h3>
+                <dl>
+                  {tools.map(([name, purpose]) => (
+                    <div key={name}><dt>{name}</dt><dd>{purpose}</dd></div>
+                  ))}
+                </dl>
+              </div>
+            ))}
           </div>
           <Link to="/art-of-prompting" className="text-link mt-8">Explore the art of prompting <span aria-hidden="true">↗</span></Link>
         </section>
-        <section className="flex max-w-[1000px] flex-col gap-7 pb-20" aria-labelledby="about-path-title">
-          <LabelRow left={<span id="about-path-title">The path here</span>} right="1997–present" />
-          <p className="max-w-[900px] text-[19px] leading-[1.55]">
-            In summer 1997, I interned for Howard Stern at KROCK Studios in New York City. My broadcast production career began in 1999
-            with NBA Entertainment and later the Sacramento Kings, where my work received two Emmy nominations. I later led global product
-            launches at Lowepro, supporting the creative and marketing pitches for the JOBY and Acme Made acquisitions before working
-            across both brands. Lowepro was later acquired by DayMen; I stayed through May 2016.
-          </p>
-          <p className="max-w-[900px] text-[19px] leading-[1.55]">
-            I then moved into brand and growth at NorCal Cannabis and founded Untold.works in January 2017. The studio is based in Mexico
-            City. I later led strategy at Ingenia Agency and began expanding Untold’s AI practice in 2024. The MIT Sloan course in 2025 made that direction central to my daily work. I have led brand and concept work at Billiard Factory since January 2025. I work in English and Spanish.
-          </p>
-          <p className="max-w-[900px] text-[19px] leading-[1.55]">
-            Jazz and R&B have been a through line. My work with Robert Glasper spans album releases, five years of Robtober content and
-            content for the launch and opening of Blue Note Los Angeles. I served as Content Director for four years across Blue Note’s Napa
-            Valley festival, including its move into the Black Radio Experience. I also built the Made in Chicago site for Lalah Hathaway with AI around supplied media, and an artist site preview for Derrick Hodge, alongside content for Hodge’s
-            Color of Noize tour. The eye and judgment I built behind the lens now shape how I work with AI across creative production and the
-            systems around it.
-          </p>
-        </section>
-        <Roll id="music" title="Music and artists" note="Selected work" credits={music} />
-        <Roll id="clients" title="Clients" note="Selected work" credits={clients} />
-        <Roll id="career" title="Career" note="1997–present" credits={career} />
-        <Roll id="film" title="Earlier film work" note="Before 2024" credits={film} />
-        <Roll id="education" title="Education" credits={education} />
       </main>
       <div className="mt-auto" />
       <Footer />

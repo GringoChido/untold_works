@@ -23,21 +23,12 @@ export const projectEntries: ProjectEntry[] = categories.flatMap((category) =>
   [...category.music, ...category.projects].map((project) => ({ category, project })),
 );
 
-/** The full-screen fill when a card opens. */
-export const fillClasses: Record<CardColor, string> = {
-  sage: 'bg-sage',
-  ochre: 'bg-ochre',
-  teal: 'bg-teal',
-  burgundy: 'bg-burgundy',
-  ink: 'bg-ink',
-};
-
-/** A card's background and its text color. Sage and ochre take ink; teal, burgundy and ink take cream. */
+/** Keep project artwork legible on paper or ink. */
 export const cardClasses: Record<CardColor, string> = {
-  sage: 'bg-sage text-ink',
-  ochre: 'bg-ochre text-ink',
-  teal: 'bg-teal text-cream',
-  burgundy: 'bg-burgundy text-cream',
+  sage: 'bg-cream text-ink',
+  ochre: 'bg-cream text-ink',
+  teal: 'bg-ink text-cream',
+  burgundy: 'bg-ink text-cream',
   ink: 'bg-ink text-cream',
 };
 
@@ -65,9 +56,9 @@ export const slugify = (text: string): string =>
     .replace(/^-|-$/g, '');
 
 export const layerChipClasses: Record<CardColor, string> = {
-  sage: 'bg-sage text-ink',
-  ochre: 'bg-ochre text-ink',
-  teal: 'bg-teal text-cream',
-  burgundy: 'bg-burgundy text-cream',
+  sage: 'bg-cream text-ink',
+  ochre: 'bg-cream text-ink',
+  teal: 'bg-ink text-cream',
+  burgundy: 'bg-ink text-cream',
   ink: 'border-rule border-cream text-cream',
 };

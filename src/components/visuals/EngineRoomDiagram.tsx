@@ -8,7 +8,7 @@ const Arrow = ({ children }: { children: string }) => (
   </span>
 );
 
-/** Campaign calendar → Deliverable kits → Approval queue ↓, then Klaviyo email ← Content Factory (built by Brady) ← Facebook, Instagram. */
+/** Campaign calendar → Deliverable kits → Approval queue ↓, then Klaviyo email ← Content Factory (built by the team) ← Facebook, Instagram. */
 export const EngineRoomDiagram = ({ nodes, tag, size = 'grid' }: Props) => {
   const [calendar, kits, approval, klaviyo, factory, social] = nodes;
   const match = factory.match(/^(.*?) \((.*)\)$/);
