@@ -27,8 +27,7 @@ const clientNeeds = [
   },
   {
     title: '“The holiday sale is booked. All we have is a product list.”',
-    body: 'For Billiard Factory, I turned a product list into eight gift lists picked by the family behind the store.',
-    guideUrl: 'https://bf-landing-pages.netlify.app/black-friday/',
+    body: 'I can build a shoppable gift guide around who your customers are buying for, then work with your team on the ads and social posts that bring people to it.',
     link: 'See Billiard Factory’s holiday guides',
     to: '/work/billiard-factory-and-c-l-bailey#holiday-gift-guides',
   },
@@ -86,22 +85,10 @@ export const Home = () => {
             <p>I’ll build a first version you can see and try. From there, I can work alongside you or lead your team through launch. I use AI where it saves us time or puts something new within reach, like making a campaign film from product photos.</p>
           </div>
           <div className="home-start-grid">
-            {clientNeeds.map(({ title, body, link, to, guideUrl }) => (
+            {clientNeeds.map(({ title, body, link, to }) => (
               <article key={to} className="home-start-card">
                 <h3>{title}</h3>
                 <p>{body}</p>
-                {guideUrl && (
-                  <div id="holiday-gift-guide" className="home-gift-preview">
-                    <PortfolioFilm
-                      id="home-gift-list-film" src="/video/bf-gift-list.mp4" poster="/images/bf-gift-list-poster.webp"
-                      width={1920} height={1080} label="Who’s on your list? Billiard Factory’s animated gift checklist"
-                      controlLabel="gift guide preview" caption={null}
-                    />
-                    <a className="home-gift-guide-link" href={guideUrl} aria-label="Open Billiard Factory’s Black Friday gift guide">
-                      <span>Open the gift guide ↗</span>
-                    </a>
-                  </div>
-                )}
                 <Link to={to} className="home-start-link">{link} <span aria-hidden="true">↗</span></Link>
               </article>
             ))}
@@ -170,6 +157,19 @@ export const Home = () => {
               sourceLabel="Explore the campaign"
             />
           </div>
+          <section id="holiday-gift-guide" className="home-photo-story home-gift-feature" aria-labelledby="home-gift-title">
+            <PortfolioFilm
+              id="home-gift-list-film" src="/video/bf-gift-list.mp4" poster="/images/bf-gift-list-poster.webp"
+              width={1920} height={1080} label="Billiard Factory’s animated holiday gift checklist"
+              controlLabel="gift guide preview" caption="Billiard Factory · Gift guide preview"
+            />
+            <div className="home-photo-story-copy">
+              <p className="lbl">Holiday &amp; Black Friday</p>
+              <h3 id="home-gift-title" className="name">Who’s on your list?</h3>
+              <p>I turned Billiard Factory’s product list into eight gift lists, each with picks from the family behind the store.</p>
+              <Link to="/work/billiard-factory-and-c-l-bailey#holiday-gift-guides" className="text-link">Explore the gift guide project <span aria-hidden="true">↗</span></Link>
+            </div>
+          </section>
           <section id="noxguard" className="home-noxguard" aria-label="Noxguard brand gallery">
             <NoxguardGallery />
             <Link to="/work/noxguard" className="text-link">Explore the Noxguard rebrand <span aria-hidden="true">↗</span></Link>

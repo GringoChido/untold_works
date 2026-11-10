@@ -2093,11 +2093,6 @@
   text-wrap: balance;
 }
 .home-start-card p { margin: 0 0 14px; max-width: 40ch; font-size: 17px; line-height: 1.45; }
-.home-gift-preview { position: relative; width: 100%; margin-bottom: 8px; }
-.home-gift-preview figcaption { justify-content: flex-end; border: 0; padding: 0; }
-.home-gift-preview button { position: relative; z-index: 1; min-height: 36px; }
-.home-gift-guide-link { position: absolute; inset: 0; display: flex; align-items: flex-end; color: inherit; }
-.home-gift-guide-link span { display: inline-flex; align-items: center; min-height: 36px; font-size: 14px; text-decoration: underline; text-underline-offset: 3px; }
 .home-start-link {
   margin-top: auto;
   padding: 4px 0;
@@ -2140,6 +2135,9 @@
   font-size: clamp(17px, 1.4vw, 20px);
   line-height: 1.5;
 }
+.home-gift-feature { position: relative; }
+.home-gift-feature .text-link::after { content: ""; position: absolute; inset: 0; }
+.home-gift-feature button { position: relative; z-index: 1; }
 .home-noxguard {
   margin-top: clamp(24px, 3vw, 40px);
   padding-top: 18px;
