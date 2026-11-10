@@ -57,8 +57,8 @@ export const caseCopySystems = {
     value: 'The customer experience connects room inspiration and product discovery to the choices, prices and delivery requirements of a real retail order.',
     headline: 'Connect brand, product discovery and ecommerce.',
     lead: 'Buying a pool table involves more than choosing a finish. I led the storefront rebuild so shoppers could select the table, add the right accessories and arrange delivery in one order.',
-    storyTitle: 'A staged transition from legacy checkout to Shopify.',
-    story: 'The team launched Shopify checkout on October 16, 2026. Customers still browse Billiard Factory’s custom storefront. Behind it, Shopify keeps each configuration together through checkout. I’m coordinating the next stage, the Xorosoft ERP migration.',
+    storyTitle: 'One order for the table, the extras and the installation.',
+    story: 'When a shopper picks premium felt, the cart keeps that upgrade with the table it belongs to. They can choose curbside delivery or have the table installed, then review the order in Shopify. The team launched the new checkout on October 16, 2026. I’m coordinating the next stage, the Xorosoft ERP migration.',
     focus: [
       { label: 'My role', text: 'Direction of the website rebuild and Shopify transition, spanning brand, customer experience and ecommerce.' },
       { label: 'Implementation', text: 'The team built the storefront, integrated Shopify and brought the catalog online.' },
@@ -67,7 +67,7 @@ export const caseCopySystems = {
     ],
     details: [
       { eyebrow: 'Product configuration', title: 'Keep the customer’s choices together.', body: 'Size, finish and other product options map to Shopify variants. Priced extras such as felt upgrades, accessories and protection plans stay associated with their table. Configuration images and readable order details connect what the shopper sees to what the business needs to fulfill.' },
-      { eyebrow: 'Retail operations', title: 'Delivery is part of the purchase.', body: 'The implementation accounts for bulky products, mixed carts, regional delivery rules and white-glove installation charged per table. Delivery choices carry from the cart into checkout so the purchase reflects how the product will reach the customer.' },
+      { eyebrow: 'Retail operations', title: 'Delivery is part of the purchase.', body: 'A shopper can order a pool table and a box of chalk together. They choose curbside drop-off or white-glove installation. Shopify prices installation per table for the delivery region, and the chalk ships with the table without a separate shipping charge.' },
       { eyebrow: 'Creative and commerce', title: 'Carry the advertised configuration into the product page.', body: 'Configuration links connect campaign imagery and product finishes to matching selections on the storefront. Product feeds, stable identifiers and canonical URLs help maintain continuity across advertising, discovery and purchase.' },
       { eyebrow: 'Continuing work', title: 'Checkout launch is one stage of the transition.', body: 'Staff still enter Shopify orders into STORIS by hand. Connecting those systems and automating order entry are part of the ongoing operational work.' },
     ],

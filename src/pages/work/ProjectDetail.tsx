@@ -1,4 +1,5 @@
 import { Link, useLocation } from 'react-router-dom';
+import { ShopifyShowcase } from './ShopifyShowcase';
 import { NotFound } from '../NotFound';
 import { CaseFilm } from '../../components/CaseFilm';
 import { Footer } from '../../components/Footer';
@@ -63,31 +64,31 @@ export const ProjectDetail = () => {
     <Layout>
       <Header crumbs={[{ label: 'Work', to: '/' }, parent, { label: project.name }]} />
       <main id="main" className="flex flex-col">
-        <section className="pb-8 pt-10 md:pb-10 md:pt-14" aria-labelledby="project-title">
-          <p className="lbl m-0 text-[13px]">{project.name}</p>
-          <h1 id="project-title" className="display m-0 mt-5 max-w-[1180px] break-words text-[clamp(49px,6.3vw,96px)] leading-[0.92]">
-            {copy.headline}
-          </h1>
-          <div className="mt-6 flex max-w-[890px] flex-col items-start gap-4">
-            <p className="voice m-0 text-[clamp(21px,2vw,28px)] leading-[1.32]">{copy.lead}</p>
-            {copy.films?.length ? <a href="#project-films" className="text-link">{copy.films.length > 1 ? 'Watch the films' : 'Watch the film'} <span aria-hidden="true">↓</span></a> : null}
-          </div>
-        </section>
+        {project.projectPage === '/work/off-storis' ? <ShopifyShowcase /> : (
+          <>
+            <section className="pb-8 pt-10 md:pb-10 md:pt-14" aria-labelledby="project-title">
+              <p className="lbl m-0 text-[13px]">{project.name}</p>
+              <h1 id="project-title" className="display m-0 mt-5 max-w-[1180px] break-words text-[clamp(49px,6.3vw,96px)] leading-[0.92]">
+                {copy.headline}
+              </h1>
+              <div className="mt-6 flex max-w-[890px] flex-col items-start gap-4">
+                <p className="voice m-0 text-[clamp(21px,2vw,28px)] leading-[1.32]">{copy.lead}</p>
+                {copy.films?.length ? <a href="#project-films" className="text-link">{copy.films.length > 1 ? 'Watch the films' : 'Watch the film'} <span aria-hidden="true">↓</span></a> : null}
+              </div>
+            </section>
 
-        <figure className="m-0">
-          {project.visual.type === 'image' && project.visual.src === 'shopify-commerce.svg' ? (
-            <a href="https://www.shopify.com/" target="_blank" rel="noopener noreferrer" aria-label="Visit Shopify, the commerce platform featured in this migration">
+            <figure className="m-0">
               <ProjectVisual project={project} poster={copy.visualLayout === 'poster'} />
-            </a>
-          ) : <ProjectVisual project={project} poster={copy.visualLayout === 'poster'} />}
-          <figcaption className="lbl flex flex-wrap items-center justify-between gap-4 border-b border-current py-4 text-[13px]">
-            <span className="flex flex-col gap-2">
-              <span>{`${project.name} / ${category.name}${project.visual.tag ? ` / ${project.visual.tag}` : ''}`}</span>
-              {copy.visualCredit && <span>{copy.visualCredit}</span>}
-            </span>
-            {live && <a href={live.href} target="_blank" rel="noopener noreferrer" className="underline underline-offset-4">{destinationLabel}</a>}
-          </figcaption>
-        </figure>
+              <figcaption className="lbl flex flex-wrap items-center justify-between gap-4 border-b border-current py-4 text-[13px]">
+                <span className="flex flex-col gap-2">
+                  <span>{`${project.name} / ${category.name}${project.visual.tag ? ` / ${project.visual.tag}` : ''}`}</span>
+                  {copy.visualCredit && <span>{copy.visualCredit}</span>}
+                </span>
+                {live && <a href={live.href} target="_blank" rel="noopener noreferrer" className="underline underline-offset-4">{destinationLabel}</a>}
+              </figcaption>
+            </figure>
+          </>
+        )}
 
         <section className="py-10 md:py-14" aria-labelledby="project-story-title">
 

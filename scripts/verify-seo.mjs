@@ -69,6 +69,10 @@ for (const [route, page] of pages) {
   for (const link of page.anchors) {
     if (link.origin !== origin) continue;
     const path = link.pathname;
+    if (path.startsWith('/images/') && path.endsWith('.webp')) {
+      assets.add(path);
+      continue;
+    }
     if (path === '/Joshua-Semolik-Resume.pdf') {
       const pdf = await readFile(join(dist, path));
       assert(pdf.subarray(0, 5).toString() === '%PDF-', `${route}: resume download must be a real PDF`);

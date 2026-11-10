@@ -2173,59 +2173,30 @@
 .home-toolkit-strip dt { font-weight: 600; }
 .home-toolkit-strip dd { margin: 3px 0 0; }
 .home-invitation {
-  --inset: clamp(28px, 4.5vw, 68px);
-  display: grid;
-  grid-template-columns: minmax(0, 1.35fr) minmax(0, 1fr);
-  grid-template-areas: "title photo" "contact photo";
-  margin-block: clamp(32px, 5vw, 72px);
-  background: var(--ink);
-  color: var(--paper);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px 32px;
+  margin-block: 24px 32px;
+  padding-inline-start: clamp(14px, 2vw, 24px);
+  border-inline-start: 3px solid var(--orange);
 }
 .home-invitation h2 {
-  grid-area: title;
-  align-self: end;
-  padding: var(--inset) var(--inset) 0;
-  font-size: clamp(58px, 7.4vw, 110px);
-  line-height: .94;
+  font-size: clamp(25px, 2.5vw, 36px);
+  line-height: 1.1;
 }
-.home-invitation-photo {
-  grid-area: photo;
-  display: grid;
-  place-items: center;
-  padding: 32px;
-  background: var(--orange);
+.home-invitation p {
+  margin: 6px 0 0;
+  font-size: 16px;
+  line-height: 1.45;
 }
-.home-invitation-photo figure {
-  width: min(80%, 340px);
-  margin: 0;
-  padding: 9px 9px 0;
-  background: var(--paper);
-  color: var(--ink);
-  transform: rotate(3deg);
-  box-shadow: 4px 7px 0 rgb(33 30 27 / 22%);
-}
-.home-invitation-photo img {
-  display: block;
-  width: 100%;
-  aspect-ratio: 1.15;
-  object-fit: cover;
-  object-position: center 12%;
-}
-.home-invitation-photo figcaption { padding: 9px 2px 11px; font-size: 14px; }
-.home-invitation-contact { grid-area: contact; padding: 24px var(--inset) var(--inset); }
-.home-invitation-contact p { max-width: 38ch; font-size: clamp(17px, 1.4vw, 20px); line-height: 1.45; }
-.home-invitation-contact a {
+.home-invitation > a {
   display: inline-flex;
   align-items: center;
-  gap: 24px;
-  margin-top: 26px;
-  padding: 12px 18px;
-  background: var(--orange);
-  color: var(--ink);
-  font-weight: 600;
-  text-decoration: none;
+  gap: 8px;
+  min-height: 44px;
 }
-.home-invitation-contact a:hover, .home-invitation-contact a:focus-visible { background: var(--paper); }
 @media (max-width: 900px) {
   .home-toolkit-strip { grid-template-columns: auto minmax(0, 1fr); }
   .home-toolkit-strip > a { grid-column: 2; justify-self: start; }
@@ -2239,19 +2210,7 @@
   .home-toolkit-strip dl > div { display: grid; grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr); gap: 12px; }
   .home-toolkit-strip dd { margin: 0; }
   .home-toolkit-strip > a { grid-column: auto; }
-  .home-invitation {
-    --inset: clamp(16px, 4vw, 28px);
-    grid-template-columns: minmax(0, 1.45fr) minmax(0, 1fr);
-    grid-template-areas: "title photo" "contact contact";
-    padding: var(--inset);
-    gap: 24px 10px;
-  }
-  .home-invitation h2 { align-self: center; padding: 0; font-size: clamp(32px, 8.2vw, 56px); }
-  .home-invitation-photo { padding: 0; background: transparent; }
-  .home-invitation-photo figure { width: 92%; padding: 4px 4px 0; }
-  .home-invitation-photo figcaption { padding: 4px 0; font-size: 11px; }
-  .home-invitation-contact { padding: 18px 0 0; border-top: 1px solid var(--hairline); }
-  .home-invitation-contact a { margin-top: 18px; }
+
 }
 @media (max-width: 767px) {
   .hiring-home .studio-hero-scene { height: auto; min-height: 0; }

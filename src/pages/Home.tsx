@@ -18,7 +18,7 @@ const clientNeeds = [
   },
   {
     title: '“Can we give the client something to click through?”',
-    body: 'I’ll turn your website pitch into a working page. The client can open a link, try the idea and give you feedback before funding the full build.',
+    body: 'I’ll turn your pitch for a digital experience into a working prototype. The client can open a link, try the idea and give you feedback before funding the full build.',
     link: 'See the Village Tenders pitch',
     to: '/work/village-tenders',
   },
@@ -138,9 +138,9 @@ export const Home = () => {
         <section id="ai" className="home-process scroll-mt-5" aria-labelledby="home-ai-title">
           <div className="home-process-spread">
             <div className="home-process-copy">
-              <p className="lbl">Working together</p>
-              <h2 id="home-ai-title" className="name hiring-section-title">See a first version before you commit to the rest.</h2>
-              <p>Bring me the brief and your budget. I’ll give you a first version you can react to, then build it with your team through launch.</p>
+              <p className="lbl">Capabilities</p>
+              <h2 id="home-ai-title" className="name hiring-section-title">Applied AI &amp; Creative Production</h2>
+              <p>Creative Direction · AI Product Imagery · Campaign Films · End-to-End Production</p>
               <p>For C.L. Bailey, the brief was a 10% offer. The idea was a man who keeps putting off buying a pool table. Then it starts finding him everywhere, from his morning paper to his train ride home.</p>
               <Link to="/work-together#where-i-can-help" className="text-link">Ways to work together ↗</Link>
             </div>
@@ -173,7 +173,7 @@ export const Home = () => {
             </div>
             <dl aria-labelledby="home-toolkit">
               <div><dt>Creative production</dt><dd>Adobe Creative Cloud, Higgsfield</dd></div>
-              <div><dt>Websites &amp; commerce</dt><dd>Claude Code, Shopify</dd></div>
+              <div><dt>Digital experiences &amp; commerce</dt><dd>Claude Code, Shopify</dd></div>
               <div><dt>Retail spaces</dt><dd>SketchUp, AutoCAD</dd></div>
             </dl>
             <Link to="/art-of-prompting" className="text-link">See how I use AI ↗</Link>
@@ -181,17 +181,11 @@ export const Home = () => {
         </section>
 
         <section id="contact" className="home-invitation" aria-labelledby="home-close-title">
-          <h2 id="home-close-title" className="name">What’s on<br />your desk?</h2>
-          <div className="home-invitation-photo">
-            <figure>
-              <img src="/images/about/joshua-thinking-800.webp" srcSet="/images/about/joshua-thinking-480.webp 480w, /images/about/joshua-thinking-800.webp 800w, /images/about/joshua-thinking-1200.webp 1200w" sizes="(max-width: 700px) 31vw, 30vw" alt="Joshua Semolik" width="480" height="600" loading="lazy" decoding="async" />
-              <figcaption>Joshua Semolik</figcaption>
-            </figure>
+          <div>
+            <h2 id="home-close-title" className="name">Tell me what you’re working on.</h2>
+            <p>Send me a brief, a link or a few lines about the project.</p>
           </div>
-          <div className="home-invitation-contact">
-            <p>Send me the deck, the link or a few lines about what you want to change. We can start there.</p>
-            <a href={PROJECT_CONTACT_HREF}>{EMAIL} <span aria-hidden="true">↗</span></a>
-          </div>
+          <a className="text-link" href={PROJECT_CONTACT_HREF}>{EMAIL} <span aria-hidden="true">↗</span></a>
         </section>
       </main>
       <Footer />
