@@ -56,30 +56,25 @@ export const Home = () => {
   usePageMeta({ title: 'Untold.works | Independent Creative Agency & Applied AI', description: 'Untold.works helps brands launch products, build digital experiences and equip sales teams. Bring us a pitch, a launch date or a process your team has outgrown.', path: '/' });
 
   return (
-    <Layout className="home-canvas hiring-home">
+    <Layout className="home-canvas hiring-home print-home">
       <Header />
       <main id="main">
-        <section className="studio-hero" aria-labelledby="home-title">
-          <div className="studio-hero-scene">
-            <picture>
-              <source media="(max-width: 900px)" type="image/webp" srcSet="/images/untold-city-crossing-mobile-480.webp 480w, /images/untold-city-crossing-mobile-800.webp 800w, /images/untold-city-crossing-mobile-1200.webp 1200w" sizes="100vw" />
-              <Img src="untold-city-crossing.png" alt="A man stands still and smiles at his iPhone as commuters blur past him on a city street" sizes="100vw" eager fetchPriority="high" className="studio-hero-scene-image" />
-            </picture>
-            <div className="studio-hero-overlay">
-              <div>
-                <p className="home-eyebrow">Independent creative agency · Applied AI</p>
-                <h1 id="home-title" className="display studio-hero-title">Bring us <br />the brief.</h1>
-                <p className="home-hero-pitch">We help brands launch products and make them easier to sell. We shape the pitch buyers see, design digital experiences customers can shop, and build tools your sales team can use in the room.</p>
-              </div>
-              <div className="hiring-actions">
-                <a href={PROJECT_CONTACT_HREF} className="hiring-button">Talk to us about your project <span aria-hidden="true">↗</span></a>
-                <a href="#work" className="text-link">See the work <span aria-hidden="true">↓</span></a>
-              </div>
-            </div>
-          </div>
+        <section className="print-hero" aria-labelledby="home-title">
+          <div className="print-hero-meta"><span>Independent creative &amp; AI studio</span><Link to="/about">Joshua Semolik ↗</Link></div>
+          <h1 id="home-title" className="print-wordmark" aria-label="Untold.works">
+            <svg viewBox="0 0 1000 340" role="img" aria-hidden="true" focusable="false">
+              <text x="0" y="259" textLength="1000" lengthAdjust="spacingAndGlyphs" className="print-untold">UNTOLD</text>
+              <text x="999" y="334" textAnchor="end" className="print-works">.works</text>
+            </svg>
+          </h1>
+          <div className="print-hero-bottom"><p>Creative direction.<br />Brand storytelling. Applied AI.</p><a className="print-button" href="#work">Explore the work <span aria-hidden="true">↗</span></a></div>
+          <div className="print-hero-colophon" aria-hidden="true"><span>Ideas into experiences.</span><span>Independent by design.</span><span>Scroll to explore ↓</span></div>
         </section>
 
+        <div className="print-discipline-strip" aria-label="Creative disciplines"><span>Brand</span><i aria-hidden="true">✳</i><span>Commerce</span><i aria-hidden="true">✳</i><span>Culture</span><i aria-hidden="true">✳</i><span>Applied AI</span></div>
+
         <section id="where-to-start" className="home-start scroll-mt-5" aria-labelledby="home-start-title">
+          <p className="print-section-marker">01 / A place to start</p>
           <h2 id="home-start-title" className="name hiring-section-title">What do you need to make happen?</h2>
           <div className="home-start-intro">
             <p>A product sample, a launch date or a process your team has outgrown is enough to start. Together we’ll decide what’s worth building within your budget.</p>
@@ -88,10 +83,11 @@ export const Home = () => {
         </section>
 
         <section id="work" className="hiring-work scroll-mt-5" aria-labelledby="selected-work-title">
-          <p className="lbl">Selected work</p>
+          <p className="print-section-marker">02 / Selected work</p>
           <h2 id="selected-work-title" className="name hiring-section-title">A floor plan. An album photo.<br />Two places to start.</h2>
           <div className="hiring-lanes">
             <article id="billiard-factory" className="hiring-lane scroll-mt-5">
+              <div className="print-case-meta"><span>01 / Brand &amp; commerce</span><span>Ongoing engagement ↗</span></div>
               <div className="hiring-storefront">
                 <ShowroomFilm />
                 <Link to="/work/billiard-factory-and-c-l-bailey" className="absolute inset-0" aria-label="Explore the Billiard Factory showroom project" />
@@ -104,6 +100,7 @@ export const Home = () => {
               </div>
             </article>
             <article id="second-son" className="hiring-lane scroll-mt-5">
+              <div className="print-case-meta"><span>02 / Music &amp; culture</span><span>Artist experience ↗</span></div>
               <Link to="/work/lalah-hathaway" className="hiring-image-link">
                 <Img src="lalah-made-in-chicago-live.png" alt="Lalah Hathaway in a listening room lined with records, the opening image for Made in Chicago" sizes="(min-width: 768px) 46vw, 100vw" className="hiring-work-image" />
               </Link>
@@ -117,6 +114,7 @@ export const Home = () => {
         <CollaboratorLogos />
 
         <section className="home-needs" aria-labelledby="home-needs-title">
+          <p className="print-section-marker">03 / From the brief</p>
           <h2 id="home-needs-title" className="name hiring-section-title">Ways we can help</h2>
           <div className="home-start-grid">
             {clientNeeds.map(({ title, body, link, to }) => (
@@ -167,9 +165,10 @@ export const Home = () => {
         </nav>
 
         <section id="ai" className="home-process scroll-mt-5" aria-labelledby="home-ai-title">
+          <div className="print-ai-masthead" aria-hidden="true"><span>HUMAN LED.</span><span>AI ENABLED.</span></div>
           <div className="home-process-spread">
             <div className="home-process-copy">
-              <p className="lbl">Capabilities</p>
+              <p className="print-section-marker">04 / The creative practice</p>
               <h2 id="home-ai-title" className="name hiring-section-title">Applied AI &amp; Creative Production</h2>
               <p>Creative Direction · AI Product Imagery · Campaign Films · End-to-End Production</p>
               <p>For C.L. Bailey, the brief was a 10% offer. The idea was a man who keeps putting off buying a pool table. Then it starts finding him everywhere, from his morning paper to his train ride home.</p>
@@ -225,9 +224,9 @@ export const Home = () => {
           </div>
         </section>
 
-        <section id="contact" className="home-invitation" aria-labelledby="home-close-title">
+        <section id="contact" className="home-invitation print-contact" aria-labelledby="home-close-title">
           <div>
-            <h2 id="home-close-title" className="name">Tell us what you’re working on.</h2>
+            <p className="print-section-marker">05 / Your next project</p><h2 id="home-close-title" className="name">What’s<br />next<span className="print-ivory">?</span></h2>
             <p>Send us a brief, a link or a few lines about the project.</p>
           </div>
           <a className="text-link" href={PROJECT_CONTACT_HREF}>{EMAIL} <span aria-hidden="true">↗</span></a>

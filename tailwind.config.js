@@ -7,11 +7,11 @@ export default {
     colors: {
       transparent: 'transparent',
       current: 'currentColor',
-      cream: '#F5F2EA',
-      ink: '#211E1B',
-      vermilion: '#FF5526',
-      ember: '#A53616',
-      panel: '#211E1B',
+      cream: '#F2EBDD',
+      ink: '#23231F',
+      vermilion: '#C96E48',
+      ember: '#954126',
+      panel: '#23231F',
     },
     fontFamily: {
       sans: ['Archivo', 'Helvetica', 'Arial', 'sans-serif'],

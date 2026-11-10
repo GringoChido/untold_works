@@ -1,0 +1,109 @@
+/* Matte Analog, November 2026. Shared identity, quiet project surfaces. */
+:root { --paper: #f2ebdd; --ink: #23231f; --orange: #c96e48; --orange-text: #954126; --print-rule: rgb(35 35 31 / 28%); }
+html { scroll-behavior: smooth; }
+body::after { content: ''; pointer-events: none; position: fixed; inset: 0; z-index: 60; opacity: .055; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Cpath fill='%23000' filter='url(%23n)' opacity='.9' d='M0 0h180v180H0z'/%3E%3C/svg%3E"); }
+.site-shell { background: var(--paper); }
+.site-header { border-bottom-color: var(--print-rule); }
+.brand-mark { font-weight: 900; }
+.site-nav a { position: relative; }
+.site-nav a::after { content: ''; position: absolute; bottom: 3px; left: 0; width: 0; height: 2px; background: var(--orange-text); transition: width .2s; }
+.site-nav a:hover::after, .site-nav a:focus-visible::after { width: 100%; }
+.name, .display { font-stretch: 76%; font-weight: 800; }
+.site-footer { margin-top: 32px; border-top: 2px solid var(--ink); }
+.site-footer > div:first-child > span:first-child { font-size: 28px; font-weight: 900; letter-spacing: -.05em; }
+.print-home { --print-gutter: clamp(20px, 4.45vw, 64px); }
+.print-home .site-header { position: relative; isolation: isolate; padding-block: 16px; }
+.print-home .site-header::before { content: ''; position: absolute; z-index: -1; inset: 0; width: 100vw; margin-left: calc(50% - 50vw); background: var(--orange); }
+.print-home .site-header { border-bottom: 1px solid var(--print-rule); }
+.print-home .site-header .site-meta { display: none; }
+.print-hero { position: relative; isolation: isolate; padding: 22px 0 0; }
+.print-hero::before { content: ''; position: absolute; inset: 0; z-index: -1; width: 100vw; margin-left: calc(50% - 50vw); background: var(--orange); }
+.print-hero-meta, .print-hero-colophon, .print-case-meta, .print-section-marker { font-size: 11px; font-weight: 650; letter-spacing: .07em; text-transform: uppercase; }
+.print-hero-meta { display: flex; justify-content: space-between; gap: 20px; }
+.print-hero-meta a { text-decoration: none; }
+.print-wordmark { margin: 18px -3px 28px; line-height: 1; }
+.print-wordmark svg { display: block; width: 100%; height: auto; overflow: visible; }
+.print-untold { fill: var(--ink); font-family: Archivo, 'Arial Black', sans-serif; font-weight: 900; font-stretch: 62%; font-size: 345px; }
+.print-works { fill: var(--paper); font-family: Archivo, sans-serif; font-weight: 750; font-size: 79px; letter-spacing: -4px; }
+.print-hero-bottom { display: flex; align-items: flex-end; justify-content: space-between; gap: 24px; padding-bottom: 35px; }
+.print-hero-bottom > p { font-size: clamp(18px, 2.25vw, 32px); line-height: 1.12; font-weight: 700; letter-spacing: -.045em; }
+.print-button { display: inline-flex; align-items: center; justify-content: space-between; gap: 40px; padding: 14px 18px; border: 2px solid var(--ink); font-size: 15px; font-weight: 650; text-decoration: none; transition: background .2s, color .2s; }
+.print-button:hover { background: var(--ink); color: var(--paper); }
+.print-button span { font-size: 24px; line-height: 1; }
+.print-hero-colophon { display: flex; justify-content: space-between; gap: 16px; border-top: 1px solid var(--print-rule); padding-block: 12px; font-size: 9px; }
+.print-discipline-strip { display: flex; align-items: center; justify-content: space-between; padding: 24px 0; border-bottom: 2px solid var(--ink); gap: 14px; font-weight: 750; font-size: clamp(14px, 2vw, 26px); letter-spacing: -.04em; }
+.print-discipline-strip i { font-size: 26px; font-style: normal; color: var(--orange-text); }
+.print-home .home-start { display: grid; grid-template-columns: 1.2fr 1fr; gap: 12px 9%; padding-block: clamp(60px, 8vw, 110px); }
+.print-home .home-start > .print-section-marker { grid-column: 1 / -1; margin-bottom: 18px; }
+.print-home .home-start .hiring-section-title { font-size: clamp(42px, 5.2vw, 76px); max-width: 12ch; margin: 0; letter-spacing: -.055em; }
+.print-home .home-start-intro { display: flex; flex-direction: column; justify-content: space-between; gap: 22px; padding: 0; font-size: 17px; }
+.print-home .home-start-intro p { font-size: 17px; max-width: 42ch; }
+.print-home .hiring-work { border-top: 2px solid var(--ink); padding-top: 20px; padding-bottom: 65px; border-bottom: 0; }
+.print-home .hiring-work > .hiring-section-title { font-size: clamp(43px, 6.2vw, 88px); margin: 30px 0 50px; }
+.print-home .hiring-lanes { grid-template-columns: 1.24fr 1fr; gap: 6%; align-items: start; }
+.print-home .hiring-lane:nth-child(2) { margin-top: 145px; }
+.print-case-meta { display: flex; justify-content: space-between; gap: 12px; margin-bottom: 12px; font-size: 9px; }
+.print-home .hiring-case-title { font-size: clamp(32px, 3.5vw, 52px); margin-top: 22px; }
+.print-home .hiring-lane > p { font-size: 16px; line-height: 1.65; }
+.print-home .hiring-image-link, .print-home .home-project-card { overflow: hidden; }
+.print-home .hiring-image-link img, .print-home .home-project-card img { transition: transform .5s cubic-bezier(.2,.8,.2,1); }
+.print-home .hiring-image-link:hover img, .print-home .home-project-card:hover img { transform: scale(1.025); }
+.print-home .collaborator-logos { border-block: 1px solid var(--print-rule); padding-block: 28px; }
+.print-home .home-needs { padding-block: 70px; }
+.print-home .home-needs > .hiring-section-title { font-size: clamp(42px, 5vw, 72px); margin-top: 22px; }
+.print-home .home-start-grid { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 0 6%; counter-reset: needs; }
+.print-home .home-start-card { position: relative; border-top: 1px solid var(--ink); padding: 28px 0 30px 48px; background: transparent; counter-increment: needs; }
+.print-home .home-start-card::before { content: '0' counter(needs); position: absolute; left: 0; top: 29px; font-size: 12px; font-weight: 700; color: var(--orange-text); }
+.print-home .home-start-card h3 { font-size: clamp(22px, 2.2vw, 30px); letter-spacing: -.04em; line-height: 1.15; font-weight: 700; }
+.print-home .home-start-card p { font-size: 15px; line-height: 1.65; }
+.print-home .home-related { padding-bottom: 70px; }
+.print-home .home-process { position: relative; isolation: isolate; padding-block: 50px 65px; color: var(--paper); }
+.print-home .home-process::before { content: ''; position: absolute; z-index: -1; inset: 0; width: 100vw; margin-left: calc(50% - 50vw); background: var(--ink); }
+.print-ai-masthead { display: flex; flex-direction: column; font-size: clamp(45px, 9.4vw, 132px); font-weight: 900; font-stretch: 62%; line-height: .91; letter-spacing: -.055em; padding-bottom: 48px; }
+.print-ai-masthead > :last-child { text-align: right; color: var(--orange); }
+.print-home .home-process-spread { border-top: 1px solid rgb(242 235 221 / 30%); padding-top: 26px; }
+.print-home .home-process-copy .hiring-section-title { font-size: clamp(35px, 4vw, 55px); }
+.print-home .home-process .text-link { color: var(--paper); }
+.print-home .home-process :focus-visible { outline-color: var(--paper); }
+.print-home .home-photo-story { border-color: rgb(242 235 221 / 30%); }
+.print-home .home-photo-story-copy h3 { font-size: clamp(36px, 4.5vw, 64px); }
+.print-home .home-toolkit-strip { border-color: rgb(242 235 221 / 30%); }
+.print-home .home-toolkit-strip dl > div { border-color: rgb(242 235 221 / 30%); }
+.print-home .print-contact { position: relative; isolation: isolate; display: grid; grid-template-columns: 1fr 1fr; align-items: end; padding-block: 50px 65px; margin-top: 0; border: 0; }
+.print-contact::before { content: ''; position: absolute; z-index: -1; inset: 0; width: 100vw; margin-left: calc(50% - 50vw); background: var(--orange); }
+.print-home .print-contact h2 { font-weight: 900; font-stretch: 62%; font-size: clamp(90px, 14vw, 200px); line-height: .8; letter-spacing: -.065em; margin: 32px 0; }
+.print-ivory { color: var(--paper); }
+.print-home .print-contact > a { justify-self: end; font-size: clamp(16px, 2vw, 28px); border-bottom: 2px solid var(--ink); padding-block: 15px; }
+.print-home .site-footer { margin-top: 0; padding-top: 28px; border-top: 0; }
+@media (min-width: 1600px) { .print-hero { padding-top: 30px; } .print-wordmark { margin-block: 25px 35px; } }
+@media (max-width: 700px) {
+ .print-home .site-header { gap: 10px; padding-block: 12px; }
+ .print-home .site-nav { gap: 16px; font-size: 11px; }
+ .print-home .brand-mark { font-size: 23px; }
+ .print-hero-meta { font-size: 8px; letter-spacing: .03em; }
+ .print-wordmark { margin-block: 28px; }
+ .print-hero-bottom { align-items: start; flex-direction: column; gap: 22px; padding-bottom: 25px; }
+ .print-hero-bottom > p { font-size: 24px; }
+ .print-button { font-size: 13px; padding: 11px 15px; }
+ .print-hero-colophon { font-size: 7px; letter-spacing: .02em; }
+ .print-hero-colophon > :nth-child(2) { display: none; }
+ .print-discipline-strip { gap: 8px; padding-block: 20px; font-size: 14px; }
+ .print-discipline-strip i { font-size: 15px; }
+ .print-home .home-start { grid-template-columns: 1fr; gap: 28px; padding-block: 50px; }
+ .print-home .home-start > .print-section-marker { margin: 0; }
+ .print-home .home-start .hiring-section-title { max-width: 14ch; font-size: 49px; }
+ .print-home .hiring-work > .hiring-section-title { font-size: 44px; margin-block: 25px 35px; }
+ .print-home .hiring-lanes { grid-template-columns: 1fr; gap: 45px; }
+ .print-home .hiring-lane:nth-child(2) { margin-top: 0; }
+ .print-case-meta { font-size: 8px; }
+ .print-home .home-start-grid { grid-template-columns: 1fr; }
+ .print-home .home-needs { padding-block: 45px; }
+ .print-home .home-start-card { padding-left: 35px; }
+ .print-home .home-related { padding-bottom: 45px; }
+ .print-ai-masthead { font-size: 13.7vw; padding-bottom: 32px; }
+ .print-home .home-process { padding-top: 35px; }
+ .print-home .print-contact { grid-template-columns: 1fr; gap: 20px; padding-block: 38px; }
+ .print-home .print-contact h2 { font-size: 132px; }
+ .print-home .print-contact > a { justify-self: start; }
+}
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } .print-home .hiring-image-link img, .print-home .home-project-card img { transition: none; } }
