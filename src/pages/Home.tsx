@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import { HomeFieldFilm } from '../components/HomeFieldFilm';
 import { CaseFilm } from '../components/CaseFilm';
 import { clBaileyFactoryFilm } from '../data/campaignMedia';
 import { Footer } from '../components/Footer';
@@ -155,16 +156,13 @@ export const Home = () => {
             />
           </div>
           <div id="home-field-stills" className="home-photo-story">
+            <HomeFieldFilm featured />
             <div className="home-photo-story-copy">
               <p className="lbl">Billiard Factory · Home Field</p>
-              <h3 className="name">A Western in one shot.</h3>
-              <p>A hat brim hides the player’s eyes. Down at cue level, you can see exactly where he’s aiming. For Home Field, I used AI to frame each game differently, right down to the overhead view of foosball on a sunlit deck.</p>
+              <h3 className="name">Behind the film.</h3>
+              <p>For Home Field, I used AI to take the viewer from one pool room to the next. In this shot, the stained-glass lamp, the jukebox and the license plates give the room its character.</p>
+              <Link to="/work/home-field" className="text-link">Explore the Home Field campaign ↗</Link>
             </div>
-            <figure>
-              <Img src="hf-filmstill.jpg" alt="A player in a cowboy hat sights along his cue, lit by a single amber light" sizes="(min-width: 701px) 38vw, 68vw" />
-              <Img src="hf-foosball.jpg" alt="Two players at a foosball table seen from above, casting long shadows across a deck" sizes="(min-width: 701px) 17vw, 30vw" />
-              <figcaption>AI film still and campaign image from <Link to="/work/home-field" className="text-link">Home Field ↗</Link></figcaption>
-            </figure>
           </div>
           <div className="home-toolkit-strip">
             <div>
