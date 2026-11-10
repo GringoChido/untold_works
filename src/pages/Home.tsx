@@ -1,5 +1,6 @@
 import { NoxguardGallery } from '../components/NoxguardGallery';
 import { Link } from 'react-router-dom';
+import { PortfolioFilm } from '../components/PortfolioFilm';
 import { HomeFieldFilm } from '../components/HomeFieldFilm';
 import { CaseFilm } from '../components/CaseFilm';
 import { clBaileyFactoryFilm } from '../data/campaignMedia';
@@ -26,7 +27,8 @@ const clientNeeds = [
   },
   {
     title: '“The holiday sale is booked. All we have is a product list.”',
-    body: 'I can build a shoppable gift guide around who your customers are buying for, then work with your team on the ads and social posts that bring people to it.',
+    body: 'For Billiard Factory, I turned a product list into eight gift lists picked by the family behind the store.',
+    guideUrl: 'https://bf-landing-pages.netlify.app/black-friday/',
     link: 'See Billiard Factory’s holiday guides',
     to: '/work/billiard-factory-and-c-l-bailey#holiday-gift-guides',
   },
@@ -84,10 +86,22 @@ export const Home = () => {
             <p>I’ll build a first version you can see and try. From there, I can work alongside you or lead your team through launch. I use AI where it saves us time or puts something new within reach, like making a campaign film from product photos.</p>
           </div>
           <div className="home-start-grid">
-            {clientNeeds.map(({ title, body, link, to }) => (
+            {clientNeeds.map(({ title, body, link, to, guideUrl }) => (
               <article key={to} className="home-start-card">
                 <h3>{title}</h3>
                 <p>{body}</p>
+                {guideUrl && (
+                  <div id="holiday-gift-guide" className="home-gift-preview">
+                    <PortfolioFilm
+                      id="home-gift-list-film" src="/video/bf-gift-list.mp4" poster="/images/bf-gift-list-poster.webp"
+                      width={1920} height={1080} label="Who’s on your list? Billiard Factory’s animated gift checklist"
+                      controlLabel="gift guide preview" caption={null}
+                    />
+                    <a className="home-gift-guide-link" href={guideUrl} aria-label="Open Billiard Factory’s Black Friday gift guide">
+                      <span>Open the gift guide ↗</span>
+                    </a>
+                  </div>
+                )}
                 <Link to={to} className="home-start-link">{link} <span aria-hidden="true">↗</span></Link>
               </article>
             ))}
