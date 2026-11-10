@@ -2135,6 +2135,41 @@
   font-size: clamp(17px, 1.4vw, 20px);
   line-height: 1.5;
 }
+.home-noxguard {
+  display: grid;
+  grid-template-columns: 44fr 56fr;
+  width: 100vw;
+  margin: clamp(32px, 4vw, 58px) 0 0 calc(50% - 50vw);
+  background: #041420;
+  color: var(--paper);
+}
+.home-noxguard-cartons {
+  display: block;
+  width: 100%;
+  height: clamp(350px, 35vw, 570px);
+  object-fit: contain;
+  background: #efefef;
+}
+.home-noxguard-label {
+  display: grid;
+  align-items: center;
+  isolation: isolate;
+}
+.home-noxguard-label > img,
+.home-noxguard-copy { grid-area: 1 / 1; }
+.home-noxguard-label > img { width: 100%; }
+.home-noxguard-copy {
+  justify-self: end;
+  width: 45%;
+  padding-right: clamp(16px, 3vw, 50px);
+}
+.home-noxguard-copy h3 { margin: 10px 0 18px; font-size: clamp(26px, 3vw, 48px); line-height: 1.04; }
+.home-noxguard-copy .text-link { color: inherit; }
+@media (max-width: 700px) {
+  .home-noxguard { grid-template-columns: 1fr; }
+  .home-noxguard-cartons { height: min(76vw, 350px); }
+  .home-noxguard-copy h3 { font-size: clamp(22px, 5.8vw, 32px); }
+}
 .home-photo-story {
   display: grid;
   grid-template-columns: minmax(0, 1.2fr) minmax(0, .8fr);

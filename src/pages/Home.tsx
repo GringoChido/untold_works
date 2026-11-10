@@ -155,6 +155,17 @@ export const Home = () => {
               sourceLabel="Explore the campaign"
             />
           </div>
+          <section id="noxguard" className="home-noxguard" aria-labelledby="home-noxguard-title">
+            <img className="home-noxguard-cartons" src="/images/noxguard-packaging.webp" width="782" height="750" loading="lazy" alt="Noxguard diesel exhaust fluid cartons stacked on a pallet" />
+            <div className="home-noxguard-label">
+              <img src="/images/noxguard-product.webp" width="1260" height="680" loading="lazy" alt="Noxguard product label on a white automotive urea jug" />
+              <div className="home-noxguard-copy">
+                <p className="lbl">Noxguard</p>
+                <h3 id="home-noxguard-title" className="name">Packaging &amp; label concepts.</h3>
+                <Link to="/work/noxguard" className="text-link">Explore the rebrand <span aria-hidden="true">↗</span></Link>
+              </div>
+            </div>
+          </section>
           <div id="home-field-stills" className="home-photo-story">
             <HomeFieldFilm featured />
             <div className="home-photo-story-copy">
