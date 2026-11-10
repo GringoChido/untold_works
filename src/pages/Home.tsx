@@ -1,3 +1,4 @@
+import { CollaboratorLogos } from '../components/CollaboratorLogos';
 import { NoxguardGallery } from '../components/NoxguardGallery';
 import { Link } from 'react-router-dom';
 import { PortfolioFilm } from '../components/PortfolioFilm';
@@ -112,6 +113,8 @@ export const Home = () => {
             </article>
           </div>
         </section>
+
+        <CollaboratorLogos />
 
         <section className="home-needs" aria-labelledby="home-needs-title">
           <h2 id="home-needs-title" className="name hiring-section-title">Ways we can help</h2>
