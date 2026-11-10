@@ -117,7 +117,7 @@ export const BilliardFactoryEngagement = () => {
               <p>I also managed the campaign on Vibe. I used data I’d collected from earlier campaigns to decide where the spot would run.</p>
             </div>
             <PortfolioFilm
-              id="bf-holiday-tv-film" src="/video/bf-holiday-tv.mp4" poster="/images/bf-holiday-tv-poster.webp"
+              id="bf-holiday-tv-film" src="/video/bf-holiday-tv.mp4" poster="/images/bf-holiday-tv-title.webp"
               width={1280} height={720} label="Billiard Factory Holiday Gift Guide streaming TV spot"
               controlLabel="holiday TV spot" caption="Holiday Gift Guide · 30-second TV spot"
               nativeControls autoPlayWhenVisible={false}
