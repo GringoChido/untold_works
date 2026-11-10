@@ -62,13 +62,13 @@ export const Home = () => {
         <section className="studio-hero" aria-labelledby="home-title">
           <div className="studio-hero-scene">
             <picture>
-              <source media="(max-width: 550px)" type="image/webp" srcSet="/images/untold-downtown-hero-clear-street-mobile-480.webp 480w, /images/untold-downtown-hero-clear-street-mobile-700.webp 700w" sizes="100vw" />
-              <Img src="untold-downtown-hero-clear-street.png" alt="Two people sharing something on a phone as they walk down a New York street" sizes="100vw" eager fetchPriority="high" className="studio-hero-scene-image" />
+              <source media="(max-width: 900px)" type="image/webp" srcSet="/images/untold-city-crossing-mobile-480.webp 480w, /images/untold-city-crossing-mobile-800.webp 800w, /images/untold-city-crossing-mobile-1200.webp 1200w" sizes="100vw" />
+              <Img src="untold-city-crossing.png" alt="A man stands still and smiles at his iPhone as commuters blur past him on a city street" sizes="100vw" eager fetchPriority="high" className="studio-hero-scene-image" />
             </picture>
             <div className="studio-hero-overlay">
               <div>
                 <p className="home-eyebrow">Independent creative agency · Applied AI</p>
-                <h1 id="home-title" className="display studio-hero-title">Bring us<br />the brief.</h1>
+                <h1 id="home-title" className="display studio-hero-title">Bring us <br />the brief.</h1>
                 <p className="home-hero-pitch">We help brands launch products and make them easier to sell. We shape the pitch buyers see, design digital experiences customers can shop, and build tools your sales team can use in the room.</p>
               </div>
               <div className="hiring-actions">

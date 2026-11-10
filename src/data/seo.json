@@ -4,10 +4,10 @@
     "description": "Untold.works helps brands launch products, build digital experiences and equip sales teams. Bring us a pitch, a launch date or a process your team has outgrown.",
     "type": "WebPage",
     "image": {
-      "src": "/images/untold-downtown-hero-clear-street-1200.webp",
-      "alt": "An imagined downtown New York street scene from Untold.works",
+      "src": "/images/untold-city-crossing-1200.webp",
+      "alt": "AI-generated street scene of a smiling businessman reading his iPhone as commuters blur past",
       "width": 1200,
-      "height": 675,
+      "height": 511,
       "type": "image/webp"
     }
   },

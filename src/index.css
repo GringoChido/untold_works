@@ -2010,7 +2010,8 @@
 @media (max-width: 700px) { .answer-grid { grid-template-columns: 1fr; gap: 30px; } .answer-section { padding: 36px 0 56px; } }
 
 /* Hiring-first portfolio: balanced proof, compact copy and clear next actions. */
-.hiring-home .studio-hero-scene { height: min(640px, 72svh); min-height: 440px; }
+.hiring-home .studio-hero-scene-image { object-position: 63% 18%; }
+.hiring-home .studio-hero-scene { height: min(calc(100svh - 94px), 850px); min-height: 440px; }
 .hiring-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 18px 28px; margin-top: 24px; }
 .hiring-button { display: inline-flex; align-items: center; gap: 28px; padding: 14px 20px; border: 1px solid currentColor; text-decoration: none; font-weight: 600; }
 .hiring-button:hover { text-decoration: underline; text-underline-offset: 4px; }
@@ -2264,9 +2265,12 @@
   .home-toolkit-strip > a { grid-column: auto; }
 
 }
-@media (max-width: 767px) {
+@media (max-width: 900px) {
   .hiring-home .studio-hero-scene { height: auto; min-height: 0; }
-  .hiring-home .studio-hero-overlay { min-height: clamp(495px, 70svh, 630px); gap: 24px; }
-  .hiring-home .studio-hero-title { margin-top: 24px; }
-  .hiring-home .studio-hero-scene::after { background: linear-gradient(90deg, rgb(13 16 20 / 75%), rgb(13 16 20 / 42%) 75%), linear-gradient(0deg, rgb(13 16 20 / 35%), transparent); }
+  .hiring-home .studio-hero-scene picture { display: block; }
+  .hiring-home .studio-hero-scene-image { position: static; height: auto; max-height: 380px; object-position: center 38%; }
+  .hiring-home .studio-hero-scene::after { content: none; }
+  .hiring-home .studio-hero-overlay { height: auto; padding-block: 24px 30px; }
+  .hiring-home .studio-hero-title { margin-top: 16px; }
+  .hiring-home .studio-hero-title br { display: none; }
 }

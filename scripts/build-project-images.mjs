@@ -30,6 +30,7 @@ const images = [
   ['assets/music/glasper-r-r-now-still.jpg', 'glasper-r-r-now-still', 'glasper-r-r-now-still.jpg'],
   ['assets/grfp/grfp-home-live.png', 'grfp-home-live', 'grfp-home-live.png'],
   ['assets/home/untold-human-direction-tablet.png', 'untold-human-direction-tablet', 'untold-human-direction-tablet.png'],
+  ['assets/home/untold-city-crossing.png', 'untold-city-crossing', 'untold-city-crossing.png'],
   ['assets/home/untold-downtown-hero-clear-street.png', 'untold-downtown-hero-clear-street', 'untold-downtown-hero-clear-street.png'],
   ['assets/bf-web/bf-fall-opener.webp', 'bf-fall-opener', 'bf-fall-opener.webp'],
   ['assets/bf-web/bf-fall-tunbridge.webp', 'bf-fall-tunbridge', 'bf-fall-tunbridge.webp'],
@@ -130,6 +131,15 @@ for (const width of [480, 700]) {
     .resize({ width })
     .webp({ quality: 77, effort: 5 })
     .toFile(join(destination, `untold-downtown-hero-clear-street-mobile-${width}.webp`));
+}
+// Frame the man and his phone between the passing commuters on narrow layouts.
+for (const width of [480, 800, 1200]) {
+  const source = sharp(join(root, 'assets/home/untold-city-crossing.png'));
+  const { height } = await source.metadata();
+  await source.extract({ left: 625, top: 0, width: 1200, height })
+    .resize({ width })
+    .webp({ quality: 82, effort: 5 })
+    .toFile(join(destination, `untold-city-crossing-mobile-${width}.webp`));
 }
 const sorted = Object.fromEntries(Object.entries(manifest).sort(([a], [b]) => a.localeCompare(b)));
 await writeFile(manifestPath, JSON.stringify(sorted, null, 1) + '\n');
