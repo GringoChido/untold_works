@@ -1,3 +1,4 @@
+import { NoxguardGallery } from '../../components/NoxguardGallery';
 import { Chip } from '../../components/Chip';
 import { Footer } from '../../components/Footer';
 import { Header } from '../../components/Header';
@@ -28,12 +29,6 @@ const scope = [
     name: 'Marketing systems',
     detail: 'I reorganized business and marketing processes so the team could support campaigns and the new brand consistently.',
   },
-];
-
-const gallery = [
-  { src: 'noxguard-packaging.webp', alt: 'Packaging mockup of Noxguard DEF cartons with the brand mark', caption: 'Packaging concept', width: 782, height: 750 },
-  { src: 'noxguard-product.webp', alt: 'Label mockup on a Noxguard automotive urea container', caption: 'Product label concept', width: 1260, height: 680 },
-  { src: 'noxguard-worker.webp', alt: 'Noxguard team member in a branded shirt and hard hat', caption: 'People', width: 1024, height: 1092 },
 ];
 
 export const Noxguard = () => {
@@ -122,24 +117,7 @@ export const Noxguard = () => {
 
         <section className="flex flex-col gap-7 pb-20 md:pb-24" aria-label="Noxguard brand gallery">
           <LabelRow left="The identity study" right="Packaging and label concepts · People" />
-          <div className="grid gap-6 md:grid-cols-3">
-            {gallery.map((image) => (
-              <figure key={image.src} className="m-0 flex flex-col gap-3">
-                <div className="aspect-square overflow-hidden bg-[#ededed]">
-                  <img
-                    src={`/images/${image.src}`}
-                    alt={image.alt}
-                    width={image.width}
-                    height={image.height}
-                    loading="lazy"
-                    decoding="async"
-                    className={`block h-full w-full ${image.caption === 'Product label concept' ? 'object-contain bg-[#001322]' : 'object-cover'}`}
-                  />
-                </div>
-                <figcaption className="lbl border-t-rule border-ink pt-3 text-[14px]">{`Noxguard / ${image.caption}`}</figcaption>
-              </figure>
-            ))}
-          </div>
+          <NoxguardGallery />
         </section>
       </main>
       <HouseBar back={{ label: '← Brand', to: '/brand-and-product' }} next={{ label: 'Platforms →', to: '/platforms' }} />
