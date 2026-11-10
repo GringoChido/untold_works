@@ -5,27 +5,21 @@ import { Img } from '../components/Img';
 import { Layout } from '../components/Layout';
 import { PromptAnatomy } from '../components/PromptAnatomy';
 import { PortfolioFilm } from '../components/PortfolioFilm';
-import { clBaileyFactoryFilm } from '../data/campaignMedia';
+import { clBaileyFactoryFilm, velocityLaunchFilm } from '../data/campaignMedia';
 import { usePageMeta } from '../hooks/usePageMeta';
 
 const supportingFilms = [
   {
     id: 'creative-velocity-ball-launch',
-    kind: 'Velocity / Product concept film',
+    kind: 'Velocity / AI-generated product launch film',
     title: 'A reveal at a different scale.',
-    detail: 'An imagined launch explores scale, anticipation and movement. Oversized billiard balls turn an everyday product into the center of a much larger scene.',
-    src: '/video/velocity-ball-launch.mp4',
-    mobileSrc: '/video/velocity-ball-launch-mobile.mp4',
-    poster: '/images/velocity-ball-launch-poster.webp',
-    width: 720,
-    height: 1280,
-    label: 'Velocity billiard ball-set launch film with oversized balls rolling from a branded shipping container',
-    controlLabel: 'Velocity ball-set launch film',
+    detail: 'I let the shipping container establish the scale. When the doors open, the first billiard ball fills the frame.',
+    ...velocityLaunchFilm,
     caption: 'Velocity / Ball-set reveal',
     duration: '0:28',
     format: 'portrait',
-    to: '/work/billiard-factory-and-c-l-bailey',
-    action: 'See the Billiard Factory work',
+    to: '/work/billiard-factory-and-c-l-bailey#velocity-launch',
+    action: 'Explore the Velocity launch',
   },
 ] as const;
 
@@ -174,7 +168,7 @@ export const ArtOfPrompting = () => {
         </section>
 
         <section id="more-films" className="creative-collection-section" aria-labelledby="prompting-more-films-title">
-          <div className="creative-collection-section-head"><div><p className="lbl">More ways to tell the story</p><h2 id="prompting-more-films-title" className="name">The Velocity launch film.</h2></div><p>I used scale and motion to imagine a launch for a new set of billiard balls.</p></div>
+          <div className="creative-collection-section-head"><div><p className="lbl">More ways to tell the story</p><h2 id="prompting-more-films-title" className="name">The Velocity launch film.</h2></div><p>I created this film entirely with AI for the launch of Billiard Factory’s Velocity Premium Billiard Ball Set.</p></div>
           <div className="creative-collection-films">
             {supportingFilms.map((film) => <article key={film.id} className={`creative-collection-film${film.format === 'portrait' ? ' creative-collection-film--portrait' : ''}`} aria-labelledby={`${film.id}-title`}><div className="creative-collection-meta"><span className="lbl">{film.kind}</span><span>{film.duration}</span></div><PortfolioFilm id={film.id} src={film.src} mobileSrc={film.mobileSrc} poster={film.poster} width={film.width} height={film.height} label={film.label} controlLabel={film.controlLabel} caption={film.caption} nativeControls autoPlayWhenVisible={false} className="creative-collection-player" /><h3 id={`${film.id}-title`} className="name creative-collection-item-title">{film.title}</h3><p className="creative-collection-item-detail">{film.detail}</p><Link to={film.to} className="text-link creative-collection-item-link">{film.action}<span aria-hidden="true">↗</span></Link></article>)}
           </div>

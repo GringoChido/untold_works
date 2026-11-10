@@ -106,7 +106,10 @@ export const Home = () => {
               </div>
               <h3 className="name hiring-case-title"><Link to="/work/billiard-factory-and-c-l-bailey">Billiard Factory ↗</Link></h3>
               <p>Customers wanted to picture a table in their own home. I designed the showroom around complete rooms. With the team, I turned 27 of those rooms into collections customers can shop online.</p>
-              <Link to="/work/off-storis" className="text-link self-start">Inside the Shopify rebuild <span aria-hidden="true">↗</span></Link>
+              <div className="flex flex-wrap items-baseline gap-x-6 gap-y-2">
+                <Link to="/work/off-storis" className="text-link">Inside the Shopify rebuild <span aria-hidden="true">↗</span></Link>
+                <Link to="/work/billiard-factory-and-c-l-bailey#velocity-launch" className="text-link">Watch the Velocity launch <span aria-hidden="true">↗</span></Link>
+              </div>
             </article>
             <article id="second-son" className="hiring-lane scroll-mt-5">
               <Link to="/work/lalah-hathaway" className="hiring-image-link">

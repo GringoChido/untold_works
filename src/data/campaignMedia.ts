@@ -10,3 +10,13 @@ export const clBaileyFactoryFilm: CaseFilmProps = {
   title: 'C.L. Bailey Factory Event / AI campaign film',
   caption: 'A complete 64-second campaign film, created with AI. Prepared for the October 16–31, 2026 event; the advertising scenes are creative visualizations.',
 };
+
+export const velocityLaunchFilm = {
+  src: '/video/velocity-ball-launch.mp4',
+  mobileSrc: '/video/velocity-ball-launch-mobile.mp4',
+  poster: '/images/velocity-ball-launch-poster.webp',
+  width: 720,
+  height: 1280,
+  label: 'Velocity billiard ball-set launch film with oversized balls rolling from a branded shipping container',
+  controlLabel: 'Velocity ball-set launch film',
+};

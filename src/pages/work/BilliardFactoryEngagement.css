@@ -45,6 +45,23 @@
 .bf-story .bf-shopify-logo { width: 112px; height: auto; }
 .bf-commerce-copy .bf-note, .bf-story .bf-channel-note, .bf-related p { font-size: 15px; }
 .bf-commerce-copy .bf-note { margin-top: 12px; }
+.bf-launch {
+  display: grid;
+  grid-template-columns: minmax(230px, 360px) minmax(0, 52ch);
+  align-items: center;
+  justify-content: center;
+  gap: clamp(24px, 6vw, 88px);
+  margin-top: var(--bf-space);
+  border-top: 1px solid var(--bf-rule);
+  padding-top: clamp(26px, 4vw, 56px);
+}
+.bf-launch-copy h2 { margin: 12px 0 18px; }
+.bf-launch-copy .text-link { margin-top: 20px; }
+@media (max-width: 720px) {
+  .bf-launch { grid-template-columns: minmax(0, 1fr); }
+  .bf-launch-copy { grid-row: 1; }
+  .bf-launch figure { width: min(100%, 340px); justify-self: center; }
+}
 .bf-guide-spread { display: grid; grid-template-columns: minmax(0, 1.34fr) repeat(2, minmax(0, 1fr)); gap: clamp(10px, 1.5vw, 22px); align-items: start; }
 .bf-guide-photo img, .bf-guide img { width: 100%; height: auto; }
 .bf-guide { text-decoration: none; }

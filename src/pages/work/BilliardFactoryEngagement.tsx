@@ -4,6 +4,8 @@ import { Header } from '../../components/Header';
 import { HouseBar } from '../../components/HouseBar';
 import { Img } from '../../components/Img';
 import { Layout } from '../../components/Layout';
+import { PortfolioFilm } from '../../components/PortfolioFilm';
+import { velocityLaunchFilm } from '../../data/campaignMedia';
 import { ShowroomFilm } from '../../components/ShowroomFilm';
 import { usePageMeta } from '../../hooks/usePageMeta';
 import './BilliardFactoryEngagement.css';
@@ -54,6 +56,7 @@ export const BilliardFactoryEngagement = () => {
         <nav className="bf-nav" aria-label="Explore the Billiard Factory case">
           <a href="#retail-experience">Showroom design</a>
           <a href="#commerce-title">Shopify storefront</a>
+          <a href="#velocity-launch">Velocity product launch</a>
           <a href="#holiday-gift-guides">Holiday &amp; Black Friday</a>
           <a href="#dealer-title">Dealer &amp; team tools</a>
         </nav>
@@ -78,6 +81,22 @@ export const BilliardFactoryEngagement = () => {
             <p>Buying a pool table means choosing a size, finish and delivery option. I led the move to headless Shopify Plus across a storefront with more than 1,200 product pages. A four-question finder explains which tables fit, and the team connected those choices to checkout.</p>
             <p className="bf-note">Shopify checkout launched October 16, 2026. I’m now coordinating the Xorosoft ERP migration.</p>
             <CaseLink to="/work/off-storis">Inside the Shopify rebuild</CaseLink>
+          </div>
+        </section>
+
+        <section id="velocity-launch" className="bf-launch" aria-labelledby="velocity-title">
+          <PortfolioFilm
+            {...velocityLaunchFilm}
+            id="bf-velocity-film"
+            caption="Watch the launch film · 0:28"
+            nativeControls
+            autoPlayWhenVisible={false}
+          />
+          <div className="bf-launch-copy">
+            <p className="lbl">Product Launch · AI Film</p>
+            <h2 id="velocity-title">Launching the Velocity ball set</h2>
+            <p>I created the entire launch film for Billiard Factory’s Velocity Premium Billiard Ball Set using AI. A branded shipping container opens and oversized billiard balls roll out one by one. I wanted a product you can hold in one hand to make an entrance you couldn’t miss.</p>
+            <a href="https://billiardfactory.com/velocity-ball-set" className="text-link">See the ball set <span aria-hidden="true">↗</span></a>
           </div>
         </section>
 
