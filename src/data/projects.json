@@ -419,7 +419,7 @@
     "color": "sage",
     "visual": {
      "type": "image",
-     "src": "lalah-made-in-chicago.jpg",
+     "src": "lalah-made-in-chicago-live.png",
      "alt": "The Made in Chicago artist website for Lalah Hathaway, set in a music room lined with records",
      "tag": "Built with AI",
      "fit": "cover"
@@ -800,13 +800,13 @@
    },
    {
     "order": 14,
-    "name": "Coca-Cola FEMSA corporate website",
+    "name": "Coca-Cola FEMSA",
     "color": "ink",
     "visual": {
      "type": "image",
      "src": "coca-cola-femsa-laptop.png",
      "alt": "A laptop on a wooden desk showing the Coca-Cola FEMSA corporate website and its product portfolio page",
-     "tag": "Corporate website",
+     "tag": "Corporate communications",
      "fit": "cover"
     },
     "facts": [
@@ -820,7 +820,7 @@
      },
      {
       "label": "Scope",
-      "value": "Corporate website redesign and rebuild"
+      "value": "Audience navigation, content management and team training"
      },
      {
       "label": "Platform",

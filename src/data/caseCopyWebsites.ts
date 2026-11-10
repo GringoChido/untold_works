@@ -185,24 +185,19 @@ export const caseCopyWebsites = {
       { eyebrow: 'Deliverable', title: 'An address instead of an attachment.', body: 'The documented deliverable was a single HTML proposal deployed to the web. It was ready to open and explore in a browser.' },
     ],
   },
-  'websites/coca-cola-femsa-corporate-website': {
-    value: 'A simpler structure helps each audience find its content, and a CMS the internal team can run keeps the site current after launch.',
-    headline: 'One corporate site. Three audiences served.',
-    lead: 'I led the redesign and rebuild of Coca-Cola FEMSA’s corporate website for the agency Ingenia, from discovery workshops through launch and team training.',
-    gallery: [{ src: 'coca-cola-femsa-card.png', alt: 'Diagram: media, shareholders and job seekers each connect to one site navigation, with notes on MODX editing and search structure', caption: 'Content hierarchy / Three audiences, one navigation', layout: 'wide' as const }],
-    galleryNote: 'Diagram',
-    storyTitle: 'Start with who needs the site.',
-    story: 'The previous site was rigid, weak in search and hard to manage as content grew. Workshops with the corporate communications, investor relations and sustainability teams produced a clear content hierarchy, so media, job seekers and shareholders could each find what they came for. The rebuild ran on MODX, giving the internal team control of pages and content after launch.',
+  'websites/coca-cola-femsa': {
+    value: 'Journalists, shareholders and job seekers each have a clear starting point. The internal team can publish and update its own content.',
+    headline: 'Who comes here, and what do they need?',
+    lead: 'For Ingenia, I led Coca-Cola FEMSA’s digital redesign from the first workshops through launch and training. We organized the experience around the people looking for information.',
+    photoStory: {
+      caption: 'Coca-Cola FEMSA / Product portfolio',
+    },
+    storyTitle: 'Three ways in.',
+    story: 'In workshops with corporate communications, investor relations and sustainability, we mapped what visitors came to find. Those tasks shaped the navigation. The teams then learned to publish their own updates in MODX.',
     focus: [
-      { label: 'Role', text: 'Project lead for the agency Ingenia.' },
-      { label: 'Discovery', text: 'Workshops with corporate communications, investor relations and sustainability.' },
-      { label: 'Build', text: 'Mobile-first redesign on MODX, with search structure, performance and metadata planned in.' },
-      { label: 'Handoff', text: 'Documentation and training so the internal team could manage the site from launch.' },
-    ],
-    details: [
-      { eyebrow: 'Discovery', title: 'Three teams. One hierarchy.', body: 'Each team came with its own priorities. The workshops turned them into one navigation, organized around the people arriving at the site: media looking for news, shareholders looking for results and candidates looking for roles.' },
-      { eyebrow: 'Launch', title: 'Hand over the keys.', body: 'After QA the site went live with documentation and training, so the internal team could publish and grow it on their own.' },
-      { eyebrow: 'Today', title: 'The same brief, with AI in the room.', body: 'On a project like this today, I bring a working first version to the first workshop, built with AI, so each team reacts to real pages rather than a sitemap. The judgment about who the site serves hasn’t changed.' },
+      { label: 'Role', text: 'Project lead for Ingenia, from discovery through launch.' },
+      { label: 'Build', text: 'A mobile-first redesign on MODX, with page structure and metadata planned for search.' },
+      { label: 'Handoff', text: 'Documentation and training gave the internal team control of publishing after launch.' },
     ],
   },
 };

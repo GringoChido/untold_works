@@ -9,6 +9,12 @@ const destination = join(root, 'public/images');
 const manifestPath = join(root, 'src/data/images.json');
 const images = [
   {
+    source: 'assets/music/lalah-made-in-chicago-live.png',
+    key: 'lalah-made-in-chicago-live.png',
+    base: 'lalah-made-in-chicago-live',
+    maxWidth: 2400,
+  },
+  {
     source: 'assets/music/robert-glasper-blue-note-at-sea-john-abbott.jpg',
     key: 'robert-glasper-blue-note-at-sea-john-abbott.jpg',
     base: 'robert-glasper-blue-note-at-sea-john-abbott',

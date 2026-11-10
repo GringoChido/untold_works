@@ -1,0 +1,65 @@
+.ingenia-diagram {
+  margin: 0 0 clamp(40px, 6vw, 80px);
+  scroll-margin-top: 24px;
+}
+.navigation-tree {
+  --branch: clamp(22px, 4vw, 64px);
+  display: grid;
+  grid-template-columns: minmax(0, .83fr) minmax(0, 1.5fr);
+  align-items: center;
+  padding: clamp(26px, 4vw, 58px) 0;
+}
+.navigation-root { position: relative; padding-right: 36px; }
+.navigation-root strong { display: block; font-size: clamp(30px, 4.5vw, 68px); }
+.navigation-root span { display: block; margin-top: 11px; font-size: 15px; }
+.navigation-tree ul { margin: 0; padding: 0 0 0 var(--branch); list-style: none; }
+.navigation-tree li {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1.15fr 1fr;
+  align-items: center;
+  gap: 16px;
+  padding: 16px 0 16px 24px;
+  min-height: 82px;
+}
+.navigation-tree li::before, .navigation-tree li::after {
+  content: ''; position: absolute; left: calc(-1 * var(--branch));
+}
+.navigation-tree li::before { top: 0; bottom: 0; border-left: 1px solid var(--ink); }
+.navigation-tree li:first-child::before { top: 50%; }
+.navigation-tree li:last-child::before { bottom: 50%; }
+.navigation-tree li::after { top: 50%; width: var(--branch); border-top: 1px solid var(--ink); }
+.navigation-tree li:nth-child(2)::after { left: calc(-2 * var(--branch)); width: calc(2 * var(--branch)); }
+.navigation-tree li > div::before {
+  content: ''; position: absolute; left: 0; top: 50%; width: 8px; height: 8px;
+  transform: translateY(-50%); background: var(--orange);
+}
+.navigation-tree li strong { display: block; margin-top: 4px; font-size: clamp(24px, 2.6vw, 38px); }
+.navigation-task { font-size: clamp(15px, 1.2vw, 18px); }
+.card-workflow {
+  display: grid; grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: clamp(18px, 3vw, 46px); margin: 0; padding: clamp(26px, 4vw, 56px) 0; list-style: none;
+}
+.workflow-drawing { position: relative; margin-bottom: 20px; }
+.workflow-drawing svg { display: block; width: min(100%, 154px); }
+.card-workflow li:not(:last-child) .workflow-drawing::after {
+  content: '→'; position: absolute; right: -12px; top: 50%; transform: translateY(-50%);
+  color: var(--orange-text); font-size: 30px; line-height: 1;
+}
+.card-workflow strong { display: block; font-size: clamp(24px, 2.7vw, 40px); }
+.card-workflow p { max-width: 28ch; margin: 8px 0 0; font-size: 16px; line-height: 1.45; }
+@media (max-width: 700px) {
+  .navigation-tree { display: block; --branch: 18px; }
+  .navigation-root { padding: 0 0 20px; }
+  .navigation-root br { display: none; }
+  .navigation-tree ul { margin-left: 4px; }
+  .navigation-tree li { grid-template-columns: 1fr; gap: 4px; min-height: 0; padding: 12px 0 12px 17px; }
+  .navigation-tree li:first-child::before { top: 0; }
+  .navigation-tree li:nth-child(2)::after { left: calc(-1 * var(--branch)); width: var(--branch); }
+  .card-workflow { grid-template-columns: 1fr; gap: 0; }
+  .card-workflow li { position: relative; display: grid; grid-template-columns: 84px 1fr; column-gap: 20px; align-content: center; padding: 18px 0; }
+  .workflow-drawing { grid-row: span 2; align-self: center; margin: 0; }
+  .card-workflow li:not(:last-child)::after { content: '↓'; position: absolute; left: 36px; bottom: -10px; color: var(--orange-text); }
+  .card-workflow li:not(:last-child) .workflow-drawing::after { content: none; }
+  .card-workflow p { margin-top: 5px; }
+}

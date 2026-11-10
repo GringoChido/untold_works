@@ -35,7 +35,7 @@ export const LalahHathaway = () => {
         <figure className="m-0">
           <div className="overflow-hidden bg-ink">
             <Img
-              src="lalah-made-in-chicago.jpg"
+              src="lalah-made-in-chicago-live.png"
               alt="The Made in Chicago website: Lalah Hathaway in a room lined with records, with the album title and interactive room navigation"
               sizes="(min-width: 1440px) 1312px, 100vw"
               eager

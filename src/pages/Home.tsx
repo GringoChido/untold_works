@@ -15,7 +15,7 @@ import { EMAIL, PROJECT_CONTACT_HREF } from '../site';
 const clientNeeds = [
   {
     title: '“We need photos and video. A big shoot is out of reach.”',
-    body: 'Send me the product photos you have. I can use AI to show your product in use, from a set of lifestyle images for your store to a short film for your campaign.',
+    body: 'Send us the product photos you have. We can use AI to show your product in use, from a set of lifestyle images for your store to a short film for your campaign.',
     link: 'See the film and lifestyle images',
     to: '/#ai',
   },
@@ -27,32 +27,32 @@ const clientNeeds = [
   },
   {
     title: '“The holiday sale is booked. All we have is a product list.”',
-    body: 'I can build a shoppable gift guide around who your customers are buying for, then work with your team on the ads and social posts that bring people to it.',
+    body: 'We can build a shoppable gift guide around who your customers are buying for, then work with your team on the ads and social posts that bring people to it.',
     link: 'See Billiard Factory’s holiday guides',
     to: '/work/billiard-factory-and-c-l-bailey#holiday-gift-guides',
   },
   {
     title: '“Could Claude help us run our campaigns?”',
-    body: 'Pick one campaign. I’ll show your team how to use Claude to turn the brief into a plan, with an owner, a deadline and a place to review each piece.',
+    body: 'Pick one campaign. We’ll show your team how to use Claude to turn the brief into a plan, with an owner, a deadline and a place to review each piece.',
     link: 'See Engine Room, built with Claude Code',
     to: '/work/engine-room',
   },
   {
     title: '“Will our delivery options work on Shopify?”',
-    body: 'Moving your store starts with a real order. I’ll map how customers choose a size, finish and delivery service, then test those choices with your team before switching checkout.',
+    body: 'Moving your store starts with a real order. We’ll map how customers choose a size, finish and delivery service, then test those choices with your team before switching checkout.',
     link: 'See Billiard Factory’s Shopify move',
     to: '/work/off-storis',
   },
   {
     title: '“Dealers keep asking us for the latest specs.”',
-    body: 'I can build a private dealer portal where a rep can find a product, check its dimensions and download the right image while they’re talking to a buyer.',
+    body: 'We can build a private dealer portal where a rep can find a product, check its dimensions and download the right image while they’re talking to a buyer.',
     link: 'See the C.L. Bailey dealer portal',
     to: '/work/c-l-bailey-portal-and-concierge',
   },
 ];
 
 export const Home = () => {
-  usePageMeta({ title: 'Untold.works | Creative & AI Consulting', description: 'Bring a launch, a pitch or a process that needs work. Joshua Semolik helps you shape the story, build a first version with AI and carry it through launch.', path: '/' });
+  usePageMeta({ title: 'Untold.works | Independent Creative Agency & Applied AI', description: 'Untold.works helps brands launch products, build digital experiences and equip sales teams. Bring us a pitch, a launch date or a process your team has outgrown.', path: '/' });
 
   return (
     <Layout className="home-canvas hiring-home">
@@ -66,12 +66,12 @@ export const Home = () => {
             </picture>
             <div className="studio-hero-overlay">
               <div>
-                <p className="home-eyebrow">Independent creative &amp; AI consulting</p>
-                <h1 id="home-title" className="display studio-hero-title">Show them<br />what you mean.</h1>
-                <p className="home-hero-pitch">I’m Joshua Semolik. I lead creative teams and use AI to make campaign films, build digital experiences and design tools that help teams get the work out.</p>
+                <p className="home-eyebrow">Independent creative agency · Applied AI</p>
+                <h1 id="home-title" className="display studio-hero-title">Bring us<br />the brief.</h1>
+                <p className="home-hero-pitch">We help brands launch products and make them easier to sell. We shape the pitch buyers see, design digital experiences customers can shop, and build tools your sales team can use in the room.</p>
               </div>
               <div className="hiring-actions">
-                <a href={PROJECT_CONTACT_HREF} className="hiring-button">Talk with me about your project <span aria-hidden="true">↗</span></a>
+                <a href={PROJECT_CONTACT_HREF} className="hiring-button">Talk to us about your project <span aria-hidden="true">↗</span></a>
                 <a href="#work" className="text-link">See the work <span aria-hidden="true">↓</span></a>
               </div>
             </div>
@@ -81,8 +81,8 @@ export const Home = () => {
         <section id="where-to-start" className="home-start scroll-mt-5" aria-labelledby="home-start-title">
           <h2 id="home-start-title" className="name hiring-section-title">What do you need to make happen?</h2>
           <div className="home-start-intro">
-            <p>Bring me a pitch, a launch date or a process your team has outgrown. We’ll decide what’s worth building within your budget.</p>
-            <p>I’ll make a first version you can see and try, then work alongside you or lead it through launch. Sometimes that starts with a floor plan or a single photograph.</p>
+            <p>A product sample, a launch date or a process your team has outgrown is enough to start. Together we’ll decide what’s worth building within your budget.</p>
+            <p>We use AI to put a first version in your hands early, so you can try it and decide what to change. We can build it alongside your team or lead it through launch.</p>
           </div>
         </section>
 
@@ -104,7 +104,7 @@ export const Home = () => {
             </article>
             <article id="second-son" className="hiring-lane scroll-mt-5">
               <Link to="/work/lalah-hathaway" className="hiring-image-link">
-                <Img src="lalah-made-in-chicago.jpg" alt="Lalah Hathaway in a listening room lined with records, the opening image for Made in Chicago" sizes="(min-width: 768px) 46vw, 100vw" className="hiring-work-image" />
+                <Img src="lalah-made-in-chicago-live.png" alt="Lalah Hathaway in a listening room lined with records, the opening image for Made in Chicago" sizes="(min-width: 768px) 46vw, 100vw" className="hiring-work-image" />
               </Link>
               <h3 className="name hiring-case-title"><Link to="/work/lalah-hathaway">Lalah Hathaway ↗</Link></h3>
               <p>The team had a photograph for <em>Made in Chicago</em>. I hid seven ways into the album inside it. About five days later, Lalah could try the first version herself.</p>
@@ -114,7 +114,7 @@ export const Home = () => {
         </section>
 
         <section className="home-needs" aria-labelledby="home-needs-title">
-          <h2 id="home-needs-title" className="name hiring-section-title">Ways I can help</h2>
+          <h2 id="home-needs-title" className="name hiring-section-title">Ways we can help</h2>
           <div className="home-start-grid">
             {clientNeeds.map(({ title, body, link, to }) => (
               <article key={to} className="home-start-card">
@@ -127,6 +127,23 @@ export const Home = () => {
         </section>
 
         <nav id="other-projects" className="home-related" aria-label="More selected work">
+          <div id="corporate-work" className="home-corporate scroll-mt-5">
+            <p className="lbl">Projects I led for Ingenia</p>
+            <div className="home-corporate-grid">
+              {[
+                { to: '/work/coca-cola-femsa', title: 'Coca-Cola FEMSA', summary: 'One navigation for journalists, shareholders and job seekers.', image: 'coca-cola-femsa-laptop.png', alt: 'A laptop on a wooden desk showing the Coca-Cola FEMSA corporate website and its product portfolio page' },
+                { to: '/work/tekniplex', title: 'TekniPlex', summary: 'Digital business cards for sales teams on the trade-show floor.', image: 'tekniplex-request-form.png', alt: 'A person typing on a laptop that shows the TekniPlex Digital Business Card request form' },
+              ].map(({ to, title, summary, image, alt }) => (
+                <Link key={to} to={to} className="home-project-card">
+                  <Img src={image} alt={alt} sizes="(max-width: 700px) 100vw, (min-width: 1440px) 643px, 48vw" />
+                  <div>
+                    <span className="name">{title} <span aria-hidden="true">↗</span></span>
+                    <span className="home-corporate-summary">{summary}</span>
+                  </div>
+                </Link>
+              ))}
+            </div>
+          </div>
           <div className="home-related-grid">
             {[
               { to: '/work/engine-room', title: 'Engine Room', scope: 'Campaign operations', image: 'marketing-engine-overview.png', alt: 'Campaign dashboard in Billiard Factory’s Engine Room', credit: '' },
@@ -142,21 +159,6 @@ export const Home = () => {
                 {credit && <small>{credit}</small>}
               </div>
             ))}
-          </div>
-          <div id="corporate-work" className="home-corporate scroll-mt-5">
-            <p className="lbl">Corporate clients · Projects I led for the agency Ingenia</p>
-            <div className="home-corporate-grid">
-              {[
-                { to: '/work/coca-cola-femsa', title: 'Coca-Cola FEMSA', scope: 'Corporate website', image: 'coca-cola-femsa-laptop.png', alt: 'A laptop on a wooden desk showing the Coca-Cola FEMSA corporate website and its product portfolio page' },
-                { to: '/work/tekniplex', title: 'TekniPlex', scope: 'Digital business card platform', image: 'tekniplex-request-form.png', alt: 'A person typing on a laptop that shows the TekniPlex Digital Business Card request form' },
-              ].map(({ to, title, scope, image, alt }) => (
-                <Link key={to} to={to} className="home-project-card">
-                  <Img src={image} alt={alt} sizes="(min-width: 701px) 46vw, 50vw" />
-                  <span className="lbl">{scope}</span>
-                  <span className="name">{title} <span aria-hidden="true">↗</span></span>
-                </Link>
-              ))}
-            </div>
           </div>
           <Link className="text-link" to="/work/other-projects">Explore food, hospitality and industrial brands ↗</Link>
         </nav>
@@ -222,8 +224,8 @@ export const Home = () => {
 
         <section id="contact" className="home-invitation" aria-labelledby="home-close-title">
           <div>
-            <h2 id="home-close-title" className="name">Tell me what you’re working on.</h2>
-            <p>Send me a brief, a link or a few lines about the project.</p>
+            <h2 id="home-close-title" className="name">Tell us what you’re working on.</h2>
+            <p>Send us a brief, a link or a few lines about the project.</p>
           </div>
           <a className="text-link" href={PROJECT_CONTACT_HREF}>{EMAIL} <span aria-hidden="true">↗</span></a>
         </section>

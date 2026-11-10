@@ -2122,12 +2122,35 @@
 .home-project-card .name { font-size: clamp(21px, 2vw, 30px); line-height: 1.1; }
 .home-project-card:hover .name, .home-project-card:focus-visible .name { text-decoration: underline; text-underline-offset: 4px; }
 .home-related-grid small { display: block; margin-top: 6px; font-size: 12px; }
-.home-corporate { margin-bottom: 28px; padding-top: 22px; border-top: 1px solid var(--hairline); }
+.home-corporate { margin-bottom: 28px; padding-bottom: 22px; border-bottom: 1px solid var(--hairline); }
 .home-corporate > .lbl { margin: 0 0 16px; }
 .home-corporate-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 26px; }
+.home-corporate-grid img { height: auto; aspect-ratio: 16 / 9; }
+.home-corporate-grid .home-project-card > div {
+  padding: 13px 0 0;
+  border-top: 1px solid var(--ink);
+  margin-top: 10px;
+}
+.home-corporate-summary { display: block; margin-top: 5px; font-size: 16px; line-height: 1.4; }
 @media (max-width: 700px) {
-  .home-corporate-grid { gap: 14px; }
-  .home-corporate-grid .name { font-size: 19px; }
+  .home-corporate-grid { grid-template-columns: 1fr; gap: 26px; }
+}
+/* The two Ingenia commissions pair a project photograph with the design decisions. */
+.case-photo-story {
+  display: grid;
+  grid-template-columns: minmax(0, 1.9fr) minmax(0, 1fr);
+  align-items: start;
+  column-gap: clamp(26px, 4vw, 68px);
+  border-top: 1px solid var(--ink);
+  padding: clamp(16px, 2vw, 28px) 0 clamp(40px, 5vw, 76px);
+}
+.case-photo-story figure { margin: 0; }
+.case-photo-story img { display: block; width: 100%; height: auto; }
+.case-photo-story figcaption { margin-top: 10px; font-size: 13px; }
+.case-photo-story h2 { margin: 0; max-width: 20ch; font-size: clamp(28px, 3vw, 46px); line-height: 1.02; }
+.case-photo-story p { margin: 14px 0 22px; font-size: clamp(16px, 1.3vw, 19px); line-height: 1.45; }
+@media (max-width: 800px) {
+  .case-photo-story { grid-template-columns: 1fr; row-gap: 24px; }
 }
 @media (max-width: 700px) {
   .home-related-grid { grid-template-columns: 1fr; }

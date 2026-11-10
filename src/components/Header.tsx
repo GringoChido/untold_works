@@ -32,7 +32,7 @@ export const Header = ({ crumbs }: { crumbs?: Crumb[] }) => {
           ))}
         </nav>
       ) : (
-        <span className="site-meta hidden text-[12px] md:inline">Creative &amp; AI consulting</span>
+        <span className="site-meta hidden text-[12px] md:inline">Independent creative agency</span>
       )}
     </div>
     <nav aria-label="Primary" className="site-nav flex flex-wrap items-center gap-x-6 gap-y-3 text-[13px] font-medium md:gap-x-8 md:text-[14px]">

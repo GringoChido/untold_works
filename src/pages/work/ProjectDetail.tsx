@@ -1,3 +1,4 @@
+import { FemsaNavigation, TekniPlexCardFlow } from '../../components/IngeniaDiagrams';
 import { HomeFieldFilm } from '../../components/HomeFieldFilm';
 import { Link, useLocation } from 'react-router-dom';
 import { ShopifyShowcase } from './ShopifyShowcase';
@@ -79,7 +80,7 @@ export const ProjectDetail = () => {
               </div>
             </section>
 
-            {project.projectPage === '/work/home-field' ? <HomeFieldFilm /> : (
+            {project.projectPage === '/work/home-field' ? <HomeFieldFilm /> : !copy.photoStory && (
             <figure className="m-0">
               <ProjectVisual project={project} poster={copy.visualLayout === 'poster'} />
               <figcaption className="lbl flex flex-wrap items-center justify-between gap-4 border-b border-current py-4 text-[13px]">
@@ -94,8 +95,19 @@ export const ProjectDetail = () => {
           </>
         )}
 
+        {copy.photoStory && project.visual.type === 'image' ? (
+          <section id="project-story" className="case-photo-story" aria-labelledby="project-story-title">
+            <figure>
+              <Img src={project.visual.src} alt={project.visual.alt} eager sizes="(max-width: 800px) 100vw, (min-width: 1440px) 830px, 62vw" />
+              <figcaption className="lbl">{copy.photoStory.caption}</figcaption>
+            </figure>
+            <div>
+              <h2 id="project-story-title" className="name">{copy.storyTitle}</h2>
+              <p>{copy.story}</p>
+            </div>
+          </section>
+        ) : (
         <section className="py-10 md:py-14" aria-labelledby="project-story-title">
-
           <div>
             <h2 id="project-story-title" className="name m-0 max-w-[930px] text-[clamp(38px,4.2vw,64px)] leading-[0.98]">
               {copy.storyTitle}
@@ -103,6 +115,10 @@ export const ProjectDetail = () => {
             <p className="voice m-0 mt-7 max-w-[850px] text-[clamp(19px,1.8vw,24px)] leading-[1.48]">{copy.story}</p>
           </div>
         </section>
+        )}
+
+        {project.projectPage === '/work/coca-cola-femsa' && <FemsaNavigation />}
+        {project.projectPage === '/work/tekniplex' && <TekniPlexCardFlow />}
 
         {copy.films && copy.films.length > 0 && (
           <section id="project-films" className="flex scroll-mt-6 flex-col gap-7 pb-20 md:pb-28" aria-labelledby="project-films-title">

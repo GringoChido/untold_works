@@ -13,6 +13,7 @@ export type CaseCopy = {
   value: string;
   visualLayout?: 'poster';
   visualCredit?: string;
+  photoStory?: { caption: string };
   details?: ReadonlyArray<{ eyebrow: string; title: string; body: string }>;
   focus: ReadonlyArray<{ label: string; text: string }>;
   pitch?: { href: string; label: string };

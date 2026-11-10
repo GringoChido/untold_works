@@ -1,7 +1,7 @@
 {
   "/": {
-    "title": "Untold.works | Creative & AI Consulting",
-    "description": "Bring a launch, a pitch or a process that needs work. Joshua Semolik helps you shape the story, build a first version with AI and carry it through launch.",
+    "title": "Untold.works | Independent Creative Agency & Applied AI",
+    "description": "Untold.works helps brands launch products, build digital experiences and equip sales teams. Bring us a pitch, a launch date or a process your team has outgrown.",
     "type": "WebPage",
     "image": {
       "src": "/images/untold-downtown-hero-clear-street-1200.webp",
@@ -40,10 +40,10 @@
     "description": "Explore interactive album releases, bilingual visitor experiences and shoppable collections built around what customers come to do.",
     "type": "CollectionPage",
     "image": {
-      "src": "/images/lalah-made-in-chicago-1200.webp",
+      "src": "/images/lalah-made-in-chicago-live-1200.webp",
       "alt": "The Made in Chicago artist website for Lalah Hathaway, set in a music room lined with records",
       "width": 1200,
-      "height": 750,
+      "height": 800,
       "type": "image/webp"
     }
   },
@@ -196,10 +196,10 @@
     "description": "Made in Chicago: an immersive artist website, newsletter migration and custom merchandise operations. Artist site live; public merchandise checkout awaiting launch.",
     "type": "WebPage",
     "image": {
-      "src": "/images/lalah-made-in-chicago-1200.webp",
+      "src": "/images/lalah-made-in-chicago-live-1200.webp",
       "alt": "The Made in Chicago website: Lalah Hathaway in a room lined with records, with the album title and interactive room navigation",
       "width": 1200,
-      "height": 750,
+      "height": 800,
       "type": "image/webp"
     }
   },
@@ -612,8 +612,8 @@
     }
   },
   "/work/coca-cola-femsa": {
-    "title": "Coca-Cola FEMSA Corporate Website Redesign | Untold.works",
-    "description": "Led the redesign and rebuild of Coca-Cola FEMSA’s corporate website for the agency Ingenia, from discovery workshops to launch and training.",
+    "title": "Coca-Cola FEMSA Digital Redesign | Untold.works",
+    "description": "Joshua led the digital redesign for Ingenia, helping journalists, shareholders and job seekers find their way through Coca-Cola FEMSA’s corporate content.",
     "type": "WebPage",
     "image": {
       "src": "/images/coca-cola-femsa-laptop-1200.webp",
@@ -625,7 +625,7 @@
   },
   "/work/tekniplex": {
     "title": "TekniPlex Digital Business Card Platform | Untold.works",
-    "description": "Led TekniPlex’s digital business card platform for the agency Ingenia, with QR codes, Apple and Google Wallet passes and admin controls.",
+    "description": "Joshua led this project for Ingenia so TekniPlex reps could share a branded card by QR code at events and marketing could manage the templates across divisions.",
     "type": "WebPage",
     "image": {
       "src": "/images/tekniplex-request-form-1200.webp",
