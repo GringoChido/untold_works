@@ -26,13 +26,13 @@ export const ElenaPinderhughes = () => {
 
   return (
     <div className="flex min-h-dvh flex-col bg-cream text-ink">
-      <div className="px-5 md:px-14"><Header crumbs={[{ label: 'Websites', to: '/websites' }, { label: 'Elena Pinderhughes' }]} /></div>
+      <div className="px-5 md:px-14"><Header crumbs={[{ label: 'Digital experiences', to: '/websites' }, { label: 'Elena Pinderhughes' }]} /></div>
       <main id="main" className="grow">
         <section className="grid md:min-h-[860px] md:grid-cols-2" aria-labelledby="elena-title">
           <div className="flex min-w-0 flex-col justify-between gap-8 px-5 py-10 md:px-14">
             <div className="flex items-start justify-between gap-4">
               <div className="flex flex-wrap items-center gap-3.5">
-                <span className="lbl">03 · Websites</span>
+                <span className="lbl">03 · Digital experiences</span>
                 <Chip className="border-rule border-current text-[14px] tracking-[0.08em]">Web</Chip>
               </div>
               <Stamp big="Live" small="2026" />
@@ -119,7 +119,7 @@ export const ElenaPinderhughes = () => {
           </div>
         </section>
       </main>
-      <HouseBar wide back={{ label: '← Websites', to: '/websites' }} next={{ label: 'Next: Lalah Hathaway →', to: '/work/lalah-hathaway' }} />
+      <HouseBar wide back={{ label: '← Digital experiences', to: '/websites' }} next={{ label: 'Next: Lalah Hathaway →', to: '/work/lalah-hathaway' }} />
     </div>
   );
 };

@@ -1,6 +1,7 @@
 import { useLayoutEffect } from 'react';
 import { BrowserRouter, Navigate, Route, Routes, useLocation } from 'react-router-dom';
 
+import { ProjectInquiries } from './components/ProjectInquiries';
 import { pageComponent } from './pageLoader';
 const About = pageComponent('About');
 const Category = pageComponent('Category');
@@ -65,6 +66,7 @@ const ScrollManager = () => {
 
 export const App = () => (
   <BrowserRouter>
+    <ProjectInquiries>
       <ScrollManager />
       <a
         href="#main"
@@ -97,5 +99,6 @@ export const App = () => (
         <Route path="/about" element={<About />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
+    </ProjectInquiries>
   </BrowserRouter>
 );

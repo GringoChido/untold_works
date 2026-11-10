@@ -20,10 +20,10 @@ const clientNeeds = [
     to: '/#ai',
   },
   {
-    title: '“Can we give the client something to click through?”',
-    body: 'I’ll turn your pitch for a digital experience into a working prototype. The client can open a link, try the idea and give you feedback before funding the full build.',
-    link: 'See the Village Tenders pitch',
-    to: '/work/village-tenders',
+    title: '“Which designs should we put into production?”',
+    body: 'For Billiard Factory, I used AI to design three pool cues and build the pitch. Seeing the designs side by side helped the team decide to make all three.',
+    link: 'See the Tierra cue pitch',
+    to: '/work/tierra-cue-line',
   },
   {
     title: '“The holiday sale is booked. All we have is a product list.”',
@@ -68,7 +68,7 @@ export const Home = () => {
               <div>
                 <p className="home-eyebrow">Independent creative &amp; AI consulting</p>
                 <h1 id="home-title" className="display studio-hero-title">Show them<br />what you mean.</h1>
-                <p className="home-hero-pitch">I’m Joshua Semolik. I help teams turn an idea into something they can put in front of a customer.</p>
+                <p className="home-hero-pitch">I’m Joshua Semolik. I lead creative teams and use AI to make campaign films, build digital experiences and design tools that help teams get the work out.</p>
               </div>
               <div className="hiring-actions">
                 <a href={PROJECT_CONTACT_HREF} className="hiring-button">Talk with me about your project <span aria-hidden="true">↗</span></a>
@@ -81,17 +81,8 @@ export const Home = () => {
         <section id="where-to-start" className="home-start scroll-mt-5" aria-labelledby="home-start-title">
           <h2 id="home-start-title" className="name hiring-section-title">What do you need to make happen?</h2>
           <div className="home-start-intro">
-            <p>Bring me a pitch you need to land, a brand that’s hard to explain, or a process that eats up your team’s week. We’ll work out what’s worth building within your budget.</p>
-            <p>I’ll build a first version you can see and try. From there, I can work alongside you or lead your team through launch. I use AI where it saves us time or puts something new within reach, like making a campaign film from product photos.</p>
-          </div>
-          <div className="home-start-grid">
-            {clientNeeds.map(({ title, body, link, to }) => (
-              <article key={to} className="home-start-card">
-                <h3>{title}</h3>
-                <p>{body}</p>
-                <Link to={to} className="home-start-link">{link} <span aria-hidden="true">↗</span></Link>
-              </article>
-            ))}
+            <p>Bring me a pitch, a launch date or a process your team has outgrown. We’ll decide what’s worth building within your budget.</p>
+            <p>I’ll make a first version you can see and try, then work alongside you or lead it through launch. Sometimes that starts with a floor plan or a single photograph.</p>
           </div>
         </section>
 
@@ -120,26 +111,40 @@ export const Home = () => {
               <a href="https://lalahhathaway.com/" className="text-link self-start">Step inside the artist site <span aria-hidden="true">↗</span></a>
             </article>
           </div>
-          <nav id="other-projects" className="home-related" aria-label="More selected work">
-            <div className="home-related-grid">
-              {[
-                { to: '/work/engine-room', title: 'Engine Room', scope: 'Campaign operations', image: 'marketing-engine-overview.png', alt: 'Campaign dashboard in Billiard Factory’s Engine Room', credit: '' },
-                { to: '/work/robert-glasper-blue-note', title: 'Robert Glasper & Blue Note', scope: 'Music and live events', image: 'blue-note-la-glasper.jpg', alt: 'Robert Glasper on stage at the opening of Blue Note Los Angeles', credit: 'Photo by Todd Cooper / @toddcoop' },
-                { to: '/work/savor', title: 'Savor', scope: 'Food and storytelling', image: 'savor-chef-series.jpg', alt: 'A chef preparing food for the Savor Chef Series', credit: 'Chef Series frame by IDW Studio' },
-              ].map(({ to, title, scope, image, alt, credit }) => (
-                <div key={to}>
-                  <Link to={to} className="home-project-card">
-                    <Img src={image} alt={alt} sizes="(min-width: 701px) 30vw, 100vw" />
-                    <span className="lbl">{scope}</span>
-                    <span className="name">{title} <span aria-hidden="true">↗</span></span>
-                  </Link>
-                  {credit && <small>{credit}</small>}
-                </div>
-              ))}
-            </div>
-            <Link className="text-link" to="/work/other-projects">More projects ↗</Link>
-          </nav>
         </section>
+
+        <section className="home-needs" aria-labelledby="home-needs-title">
+          <h2 id="home-needs-title" className="name hiring-section-title">Ways I can help</h2>
+          <div className="home-start-grid">
+            {clientNeeds.map(({ title, body, link, to }) => (
+              <article key={to} className="home-start-card">
+                <h3>{title}</h3>
+                <p>{body}</p>
+                <Link to={to} className="home-start-link">{link} <span aria-hidden="true">↗</span></Link>
+              </article>
+            ))}
+          </div>
+        </section>
+
+        <nav id="other-projects" className="home-related" aria-label="More selected work">
+          <div className="home-related-grid">
+            {[
+              { to: '/work/engine-room', title: 'Engine Room', scope: 'Campaign operations', image: 'marketing-engine-overview.png', alt: 'Campaign dashboard in Billiard Factory’s Engine Room', credit: '' },
+              { to: '/work/robert-glasper-blue-note', title: 'Robert Glasper & Blue Note', scope: 'Four years directing festival content', image: 'blue-note-la-glasper.jpg', alt: 'Robert Glasper on stage at the opening of Blue Note Los Angeles', credit: 'Photo by Todd Cooper / @toddcoop' },
+              { to: '/work/savor', title: 'Savor', scope: 'Food and storytelling', image: 'savor-chef-series.jpg', alt: 'A chef preparing food for the Savor Chef Series', credit: 'Chef Series frame by IDW Studio' },
+            ].map(({ to, title, scope, image, alt, credit }) => (
+              <div key={to}>
+                <Link to={to} className="home-project-card">
+                  <Img src={image} alt={alt} sizes="(min-width: 701px) 30vw, 100vw" />
+                  <span className="lbl">{scope}</span>
+                  <span className="name">{title} <span aria-hidden="true">↗</span></span>
+                </Link>
+                {credit && <small>{credit}</small>}
+              </div>
+            ))}
+          </div>
+          <Link className="text-link" to="/work/other-projects">Explore food, hospitality and industrial brands ↗</Link>
+        </nav>
 
         <section id="ai" className="home-process scroll-mt-5" aria-labelledby="home-ai-title">
           <div className="home-process-spread">
@@ -148,7 +153,7 @@ export const Home = () => {
               <h2 id="home-ai-title" className="name hiring-section-title">Applied AI &amp; Creative Production</h2>
               <p>Creative Direction · AI Product Imagery · Campaign Films · End-to-End Production</p>
               <p>For C.L. Bailey, the brief was a 10% offer. The idea was a man who keeps putting off buying a pool table. Then it starts finding him everywhere, from his morning paper to his train ride home.</p>
-              <Link to="/work-together#where-i-can-help" className="text-link">Ways to work together ↗</Link>
+              <Link to="/art-of-prompting#process" className="text-link">See how I direct AI imagery ↗</Link>
             </div>
             <CaseFilm
               {...clBaileyFactoryFilm}
@@ -169,13 +174,13 @@ export const Home = () => {
             <div className="home-photo-story-copy">
               <p className="lbl">Holiday &amp; Black Friday</p>
               <h3 id="home-gift-title" className="name">Who’s on your list?</h3>
-              <p>I turned Billiard Factory’s product list into eight gift lists, each with picks from the family behind the store.</p>
-              <Link to="/work/billiard-factory-and-c-l-bailey#holiday-gift-guides" className="text-link">Explore the gift guide project <span aria-hidden="true">↗</span></Link>
+              <p>I turned Billiard Factory’s product list into eight shoppable gift lists with picks from the family behind the store. Then I made a 30-second AI spot that aired on streaming TV and used data from earlier campaigns to choose its placements on Vibe.</p>
+              <Link to="/work/billiard-factory-and-c-l-bailey#holiday-gift-guides" className="text-link">Explore the guide and TV spot <span aria-hidden="true">↗</span></Link>
             </div>
           </section>
           <section id="noxguard" className="home-noxguard" aria-label="Noxguard brand gallery">
             <NoxguardGallery />
-            <Link to="/work/noxguard" className="text-link">Explore the Noxguard rebrand <span aria-hidden="true">↗</span></Link>
+            <Link to="/work/noxguard" className="text-link">Noxguard’s rebrand, from pallet to sales pitch <span aria-hidden="true">↗</span></Link>
           </section>
           <div id="home-field-stills" className="home-photo-story">
             <HomeFieldFilm featured />

@@ -135,6 +135,9 @@
 }
 
 .site-nav a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
   transition: opacity 180ms ease;
 }
 
@@ -2012,7 +2015,7 @@
 .hiring-button { display: inline-flex; align-items: center; gap: 28px; padding: 14px 20px; border: 1px solid currentColor; text-decoration: none; font-weight: 600; }
 .hiring-button:hover { text-decoration: underline; text-underline-offset: 4px; }
 .hiring-intro .hiring-availability { margin-top: 20px; font-size: 17px; letter-spacing: 0; }
-.hiring-work { padding: 24px 0 64px; border-bottom: 1px solid currentColor; }
+.hiring-work { padding: 24px 0 clamp(32px, 4vw, 60px); border-bottom: 1px solid currentColor; }
 .hiring-section-title { margin: 18px 0 32px; font-size: clamp(34px, 4.2vw, 62px); line-height: 1.05; }
 .hiring-lanes { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: clamp(28px, 5vw, 72px); }
 .hiring-lane { min-width: 0; display: flex; flex-direction: column; }
@@ -2060,11 +2063,12 @@
   background: linear-gradient(90deg, rgb(13 16 20 / 78%), rgb(13 16 20 / 45%) 42%, transparent 78%),
     linear-gradient(0deg, rgb(13 16 20 / 32%), transparent 40%);
 }
-.home-start { padding-bottom: clamp(40px, 6vw, 85px); }
+.home-start { padding-bottom: 8px; }
+.home-needs { padding: clamp(28px, 4vw, 56px) 0; border-bottom: 1px solid currentColor; }
 .home-start .hiring-section-title { margin: 0 0 18px; }
 .home-start-intro {
   max-width: 65ch;
-  margin-bottom: clamp(26px, 3vw, 42px);
+  margin-bottom: 0;
   font-size: clamp(18px, 1.5vw, 22px);
   line-height: 1.45;
 }
@@ -2110,7 +2114,7 @@
   .home-start-grid { grid-template-columns: 1fr; gap: 20px; }
   .home-start-card { padding-top: 16px; }
 }
-.home-related { margin-top: 38px; border-top: 1px solid currentColor; padding-top: 22px; }
+.home-related { display: block; padding: clamp(28px, 4vw, 56px) 0; border-bottom: 1px solid var(--hairline); }
 .home-related-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 26px; margin-bottom: 24px; }
 .home-project-card { display: block; text-decoration: none; }
 .home-project-card img { display: block; width: 100%; aspect-ratio: 16 / 10; object-fit: cover; }
@@ -2156,7 +2160,7 @@
 .home-noxguard figure:last-child img { object-position: center 35%; }
 .home-noxguard figcaption {
   padding-top: 7px;
-  font-size: clamp(10px, 1vw, 13px);
+  font-size: clamp(12px, 1vw, 13px);
   line-height: 1.35;
 }
 .home-noxguard > .text-link { margin-top: 12px; }

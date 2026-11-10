@@ -155,15 +155,15 @@
      },
      {
       "label": "Role",
-      "value": "Designed"
+      "value": "Product design and pitch, created with AI"
      },
      {
       "label": "What it is",
-      "value": "Three cues, one build"
+      "value": "Three designs for Billiard Factory’s own cue line"
      },
      {
       "label": "Status",
-      "value": "Direction approved; factory artwork in progress"
+      "value": "All three designs selected for production"
      }
     ],
     "projectPage": "/work/tierra-cue-line"
@@ -374,7 +374,7 @@
  {
   "slug": "websites",
   "index": "03",
-  "name": "Websites",
+  "name": "Digital experiences",
   "color": "burgundy",
   "caption": "Destinations with a clear next step.",
   "intro": "I build sites around what someone came to do. That might mean choosing a table that fits, hearing a new record or finding a café in an unfamiliar city.",
@@ -966,7 +966,7 @@
       "value": "Higgsfield · Claude Design · HyperFrames"
      },
      {
-      "label": "Scheduled to air",
+      "label": "Planned TV window",
       "value": "Oct 2026"
      }
     ],

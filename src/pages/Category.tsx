@@ -15,6 +15,7 @@ type Editorial = { featured: string[]; engagements: { name: string; to: string; 
 const selection = editorial as Record<string, Editorial>;
 
 const projectValue: Record<string, string> = {
+  '/work/noxguard': 'A rebrand for the warehouse, the road and the distributor’s sales pitch.',
   '/work/spring-stuebner-store': '27 shoppable room stories connect a 34-station floor plan to products and showroom visits.',
   '/work/c-l-bailey-portal-and-concierge': 'AI answers room-fit questions; a private portal equips dealers with product and brand materials.',
   '/work/engine-room': 'One campaign record makes briefs, files, owners, schedules and social status visible to the team.',
@@ -22,9 +23,9 @@ const projectValue: Record<string, string> = {
   '/work/savor': 'Familiar food and chef content help explain a new process for making fats.',
   '/work/lalah-hathaway': 'An immersive artist experience, newsletter migration and custom merchandise operations, with public checkout awaiting launch.',
   '/work/second-son-productions': 'Seven artist pages give each project its own story and live-event path.',
-  '/work/robtober': 'Five years of content documents a residency that changes collaborators night by night.',
+  '/work/robtober': 'Five years of content for a residency with a different cast of collaborators each night.',
   '/work/home-field': 'AI-made rooms and film connect to a live offer page, scheduled social and sales capture.',
-  '/work/black-radio-experience': 'Four years of content direction documents performances and the Napa audience experience.',
+  '/work/black-radio-experience': 'Four years directing festival content in Napa Valley, from live performances to the audience experience.',
   '/work/savor-chef-series': 'Chef-led demonstrations show how an unfamiliar ingredient performs in working kitchens.',
 };
 
@@ -50,7 +51,7 @@ export const Category = ({ slug }: { slug: string }) => {
   const config = selection[category.slug];
   const all = [...category.music, ...category.projects];
   const featuredRoutes = new Set(config.featured);
-  const featured = all.filter((project) => featuredRoutes.has(project.projectPage));
+  const featured = config.featured.flatMap((route) => all.filter((project) => project.projectPage === route));
   const supporting = all.filter((project) => !featuredRoutes.has(project.projectPage));
 
   usePageMeta({ title: category.name + ', Untold.works', description: category.intro, path: '/' + category.slug });

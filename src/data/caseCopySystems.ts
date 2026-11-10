@@ -13,7 +13,7 @@ export const caseCopySystems = {
     ],
     details: [
       { eyebrow: 'The buying journey', title: 'Discovery before the quote.', body: 'There is no direct checkout. Product pages, the room-size guide and the concierge support the questions a considered purchase raises; the call to action leads to an authorized dealer. The concierge is instructed to avoid invented prices or lead times and to hand location questions to the dealer finder.' },
-      { eyebrow: 'The other audience', title: 'Equip the people who sell it.', body: 'The dealer area is kept out of search results and behind authentication. Product and brand assets have a private download path. Screens for inventory, orders, leads and analytics currently use demonstration data rather than live operational integrations.' },
+      { eyebrow: 'The other audience', title: 'Equip the people who sell it.', body: 'A rep preparing a quote can sign in to the dealer portal, look up a table’s dimensions and download the product image for the buyer. The inventory and order screens use demonstration data.' },
     ],
   },
   'platforms/engine-room': {
@@ -39,8 +39,8 @@ export const caseCopySystems = {
     value: "AI can help make enough creative for a daily publishing cadence, while product references and human approval protect accuracy. Approved posts move into the schedule, and their status remains visible inside the related campaign in Engine Room.",
     headline: 'AI-assisted posts with approval before publishing.',
     lead: 'Content Factory is an AI-assisted publishing workflow for Billiard Factory and C.L. Bailey, designed around a daily post and story cadence.',
-    storyTitle: 'Generation is the start, not the publish button.',
-    story: 'Creative work moves from brand and product references through generated media, a review queue and a one-click approval email. Approved, scheduled posts then publish to Facebook and Instagram. I designed the system and directed the build with the team.',
+    storyTitle: 'Who approves a post?',
+    story: 'A reviewer can compare a generated image with the product reference and check its claims before approving the post by email. Approved posts publish to Facebook and Instagram on schedule. I designed the workflow and directed the team that built it.',
     focus: [
       { label: 'Cadence', text: 'Designed for a post and a story every day.' },
       { label: 'Media', text: 'Higgsfield generation and an ImageKit product and output library.' },
@@ -76,8 +76,8 @@ export const caseCopySystems = {
     value: "Routing an inquiry into the CRM gives the team a record it can assign and follow up. My work covered the form and the handoff to the sales team.",
     headline: 'Route inquiries into the sales CRM.',
     lead: 'I connected OMI Growth’s inquiry form to the CRM used by its sales team.',
-    storyTitle: 'Make each inquiry available for follow-up.',
-    story: 'Each submission creates a record the team can assign to someone for follow-up. The project covered the form and that handoff in 2024–2025.',
+    storyTitle: 'Form submission → CRM record → sales owner',
+    story: 'When a prospect submits the form, sales gets a record it can assign to the person handling the reply.',
     focus: [
       { label: 'System', text: 'Lead intake and routing connected to the CRM.' },
       { label: 'Period', text: 'Work from 2024 to 2025.' },
@@ -85,10 +85,11 @@ export const caseCopySystems = {
   },
   'platforms/casa-schuck-ops-dashboard': {
     value: "A single daily view lets the hotel team assess room, arrival and alert workflows together before funding integrations. The demo makes the operating design reviewable without presenting sample records as live data.",
+    links: [{ label: 'See the guest experience at Casa Schuck', href: '/work/casa-schuck' }],
     headline: 'The day in one view.',
     lead: 'A working dashboard demo for Casa Schuck, bringing the hotel’s rooms, arrivals, reservations and daily signals into one interface.',
-    storyTitle: 'Built as a full demo.',
-    story: 'The command center combines room state, arrivals, occupancy and alerts. Separate screens explore reservations, guests, reviews, leads and marketing so the team can see how a broader operating tool would fit together. The interface currently uses mock data; it is a full demo, not a live hotel system.',
+    storyTitle: 'What does the front desk need this morning?',
+    story: 'In the demo, a staff member can check the day’s arrivals against room status, then open a reservation to prepare for check-in. The screens use sample data.',
     focus: [
       { label: 'Command center', text: 'Rooms, arrivals, occupancy and alerts at a glance.' },
       { label: 'Work areas', text: 'Reservations, guests, reviews, leads, analytics and marketing.' },
@@ -100,6 +101,7 @@ export const caseCopySystems = {
     ],
   },
   'brand-and-product/spring-gallery': {
+    galleryColumns: 2,
     value: "The 34-station plan gives the physical redesign a shared reference. The 27 published room stories and four new décor categories let shoppers consider a complete setting, then move to its products or a showroom visit.",
     headline: 'A room system you can shop.',
     lead: 'A 34-station redesign of Billiard Factory’s Spring showroom connects to 27 live, shoppable room stories and a broader room-finishing assortment.',
@@ -117,9 +119,9 @@ export const caseCopySystems = {
       { eyebrow: 'The working system', title: 'Station codes connect plan to purchase.', body: 'The dashboard maps 34 coded stations from the floor model and contains a placed visualization for every station. Published collection pages carry those codes online. The dashboard continues to track floor decisions, materials and launch refinements as the new showroom design is built out.' },
     ],
     gallery: [
-      { src: 'spring-gallery-collections-live.jpg', alt: 'Screenshot of the live Billiard Factory Collections page with the Shop the Room heading and Station 1D room story', caption: 'Live Collections hub / station-coded room stories', layout: 'wide' },
+      { src: 'spring-stuebner-plot.svg', alt: 'Working Spring Gallery floor plan with 34 coded stations', caption: 'Working floor plan / Station 1A is Skylar Pit Lane', layout: 'landscape' },
+      { src: 'spring-gallery-skylar-live.jpg', alt: 'The shoppable Skylar Pit Lane room with the graphite pool table, gray cloth and bronze chandelier', caption: 'Station 1A online / Skylar Pit Lane', layout: 'landscape' },
       { src: 'bf-fall-opener.webp', alt: 'AI-assisted fall room scene from the live Billiard Factory storefront, with pool table, pendant lighting, artwork and rug', caption: 'Fall storefront / room-led seasonal merchandising', layout: 'wide' },
-      { src: 'spring-stuebner-plot.svg', alt: 'Working Spring Gallery floor plan with 34 coded stations', caption: 'Working floor plan / 34 coded stations', layout: 'wide' },
     ],
     links: [
       { label: 'Explore the live room collections ↗', href: 'https://billiardfactory.com/collections' },
@@ -132,7 +134,7 @@ export const caseCopySystems = {
     headline: 'One source for the brand.',
     lead: 'Billiard Factory’s Brand Hub turns guidelines into a working reference for creative, digital and physical work.',
     storyTitle: 'Reusable rules for web, campaigns and stores.',
-    story: 'The hub puts the company’s mark, color, type, voice, imagery, campaign system and applications in one place. A shared data file holds the core tokens and brand copy, so the source can inform more than one property without retyping the rules.',
+    story: 'You can see the color rules at work in the storefront header. Paper and cream carry the navigation, pine marks the top strip and a forest-green underline shows the active category. The team can look up the same palette when designing a sales email or showroom sign.',
     focus: [
       { label: 'Guidelines', text: 'A live hub spanning identity, voice, imagery and applications.' },
       { label: 'System', text: 'Shared brand data and downloadable design tokens.' },
@@ -148,7 +150,7 @@ export const caseCopySystems = {
     headline: 'A standard dealers can actually use.',
     lead: 'The C.L. Bailey Brand Bible and Guidelines Engine give a dealer-only brand a shared language across web, sales materials and physical spaces.',
     storyTitle: 'Eleven modules, one working reference.',
-    story: 'The system ties brand foundation and visual identity to editorial rules, photography, co-branding, dealer applications and AI use. It mirrors the live C.L. Bailey site’s design tokens and includes English and Spanish voice rules for a network serving both audiences.',
+    story: 'A dealer preparing a sales sheet can look up how to pair its mark with C.L. Bailey’s, which product photos to use and how to describe the table in English or Spanish. The same colors and typography carry through to the digital showroom.',
     focus: [
       { label: 'Structure', text: 'Eleven modules in a web-based guidelines engine.' },
       { label: 'Audience', text: 'Authorized dealers and the people making their assets.' },
@@ -162,18 +164,19 @@ export const caseCopySystems = {
     ],
   },
   'brand-and-product/tierra-cue-line': {
-    value: "One shared construction creates a coherent family while three graphics give buyers distinct choices. Dimensioned vector flats and color specifications turn approved concepts into material the factory can review; production remains in progress.",
-    headline: 'Three cues. One build.',
-    lead: 'Tierra is a Billiard Factory cue line with three distinct designs sharing a single butt, grip and dark carbon shaft.',
-    storyTitle: 'One family, three characters.',
-    story: 'Cascabel, Brasa and Cauce share the construction but carry different earth-toned figures and turquoise details. I developed the three designs, then turned the approved concepts into artwork for the factory. Factory render review and production details were still active in September 2026.',
+    value: "I used AI to design three cues and pitch the line. Billiard Factory chose all three for production.",
+    headline: 'They chose all three.',
+    lead: 'Billiard Factory asked me to design a new line of cues to carry its name. I used AI to design the cues, render them and build the pitch. The team compared the three designs and decided to put all three into production.',
+    storyTitle: 'One cue shape, three patterns.',
+    story: 'I kept the butt, black grip and dark carbon shaft the same across the line. In the pitch, the team could compare Cascabel’s stepped diamonds, Brasa’s terraced medallions and Cauce’s long chevrons on the same form. After the decision, I translated the patterns into full-scale artwork for the factory.',
     focus: [
       { label: 'Line', text: 'Cascabel, Brasa and Cauce.' },
       { label: 'Shared build', text: 'One butt, black textured grip and dark carbon shaft.' },
       { label: 'Factory handoff', text: 'Dimensioned 1:1 vector flats and color specifications.' },
-      { label: 'Status', text: 'Direction approved; factory translation in progress.' },
+      { label: 'Status', text: 'Billiard Factory selected Cascabel, Brasa and Cauce for production.' },
     ],
-    galleryNote: 'Concept renders, not physical samples',
+    pitch: { href: '/Tierra-Cue-Line-Pitch.pdf', label: 'Open five slides from the Tierra pitch (PDF)' },
+    galleryNote: 'AI concept renders',
     gallery: [
       { src: 'tierra-line.png', alt: 'The three Tierra cue concepts shown at full length, from top: Cascabel, Brasa and Cauce', caption: 'One build / three cue designs', layout: 'wide' },
       { src: 'tierra-cascabel.png', alt: 'Cascabel cue butt concept render with sage, stepped diamond details and a turquoise accent', caption: 'Cascabel / sage and stepped diamonds', layout: 'portrait' },
@@ -182,8 +185,8 @@ export const caseCopySystems = {
     ],
     details: [
       { eyebrow: 'The designs', title: 'A shared form with different voices.', body: 'Cascabel uses a stepped diamond chain on sage with one turquoise center. Brasa uses clay and bone terraced shapes on umber. Cauce uses longer chevrons over a midnight ground. The grip, shaft and name-panel position unify the three.' },
-      { eyebrow: 'The production problem', title: 'A render is not a manufacturing file.', body: 'The first factory renders shifted clay and oxide toward burgundy and lost some fine motifs. The response was a set of 1:1 vector flats with band dimensions, color targets, seam and bleed markings, so the factory could work from measured artwork instead of redrawing a photoreal concept by eye.' },
-      { eyebrow: 'What is still open', title: 'Materials need a factory answer.', body: 'The concept presentation labels its visuals as renders, not physical samples. Butt material, decoration method and whether the turquoise elements become print or genuine inlay remained open with the manufacturer at the documented handoff.' },
+      { eyebrow: 'The production problem', title: 'From render to factory artwork.', body: 'The first factory renders shifted clay and oxide toward burgundy and lost some fine motifs. The response was a set of 1:1 vector flats with band dimensions, color targets, seam and bleed markings, so the factory could work from measured artwork instead of redrawing a photoreal concept by eye.' },
+      { eyebrow: 'Factory handoff', title: 'Materials need a factory answer.', body: 'The concept presentation labels its visuals as renders, not physical samples. Butt material, decoration method and whether the turquoise elements become print or genuine inlay remained open with the manufacturer at the documented handoff.' },
     ],
   },
 } as const;

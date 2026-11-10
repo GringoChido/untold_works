@@ -69,7 +69,7 @@ export const EngineRoom = () => {
           <p className="lbl m-0 mb-6 text-[13px]">Engine Room / Billiard Factory</p>
           <h1 id="engine-room-title" className="display m-0 max-w-[1100px] text-[clamp(49px,6.5vw,96px)] leading-[0.95]">A marketing engine.<br />Built with AI.</h1>
           <div className="mt-9 grid items-start gap-8 border-t border-current pt-6 md:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)] md:gap-14">
-            <p className="voice m-0 max-w-[570px] text-[clamp(23px,2.3vw,32px)] leading-[1.3]">I designed and built Engine Room with Claude Code so a campaign’s brief, assets, owners, dates and channel work can be found in one place.</p>
+            <p className="voice m-0 max-w-[570px] text-[clamp(23px,2.3vw,32px)] leading-[1.3]">Which artwork is approved, who owns it and when does it run? I built Engine Room with Claude Code so the marketing team can answer those questions from the campaign brief.</p>
             <div className="flex flex-col gap-6">
             <nav className="flex flex-wrap gap-x-7 gap-y-2" aria-label="Explore the Engine Room case">
               <a href="#workflow" className="text-link min-h-[44px]">The workflow <span aria-hidden="true">↓</span></a>

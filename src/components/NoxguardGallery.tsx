@@ -19,7 +19,7 @@ export const NoxguardGallery = () => (
             className={`block h-full w-full ${image.caption === 'Product label concept' ? 'object-contain bg-[#001322]' : 'object-cover'}`}
           />
         </div>
-        <figcaption className="lbl border-t-rule border-ink pt-3 text-[14px]">{`Noxguard / ${image.caption}`}</figcaption>
+        <figcaption className="lbl border-t-rule border-ink pt-3 text-[14px]">{image.caption}</figcaption>
       </figure>
     ))}
   </div>

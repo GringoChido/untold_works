@@ -13,7 +13,7 @@ This file is a supplementary content index. The linked pages are the primary sou
 - [Home](https://untold.works/): Untold.works offers creative direction and applied AI consulting, from brand and launch work to business workflows.
 - [Brand and product](https://untold.works/brand-and-product): I help teams see how a brand will look on the shelf or in a showroom. We can test a product, a finish or a room layout before committing to production.
 - [Platforms](https://untold.works/platforms): I build tools around a task your team does every day, from finding the right product image to getting a campaign approved.
-- [Websites](https://untold.works/websites): I build sites around what someone came to do. That might mean choosing a table that fits, hearing a new record or finding a café in an unfamiliar city.
+- [Digital experiences](https://untold.works/websites): I build sites around what someone came to do. That might mean choosing a table that fits, hearing a new record or finding a café in an unfamiliar city.
 - [Campaigns](https://untold.works/campaigns): I develop the campaign idea, direct the images and films, and carry the story into the places people will see it.
 - [Landing pages](https://untold.works/work/landing-pages): I connected the sales team to GoHighLevel, then developed ten campaign pages with the team.
 - [Billiard Factory + C.L. Bailey](https://untold.works/work/billiard-factory-and-c-l-bailey): AI-assisted retail and commerce work across the new Billiard Factory front end, 27 live digital room stories, campaigns, CRM, creative systems and C.L. Bailey. Led the storefront rebuild, Shopify transition and digital Gallery with the team. I lead paid media and search, create the ads and manage the Vibe streaming TV campaign. Shopify checkout launched October 16, 2026. The XoroERP migration continues.
@@ -39,7 +39,7 @@ Visual systems for products and places. I help teams see how a brand will look o
 - Spring Gallery. Client: Billiard Factory; Showroom: 34-station design system; Online: 27 live shoppable room stories; Status: Gallery open; redesign progressing. Project page: https://untold.works/work/spring-stuebner-store
 - Brand Hub. Client: Billiard Factory; What it is: Living brand guidelines and creative hub; One source: Design tokens and guidance for builds; Status: Live ↗ (https://billiard-factory-brand-hub.netlify.app). Project page: https://untold.works/work/brand-hub
 - C.L. Bailey Brand Bible. Client: C.L. Bailey; What it is: Eleven modules, one standard; Built for: The dealer network; Status: Live ↗ (https://clbailey-brand-bible.netlify.app). Project page: https://untold.works/work/c-l-bailey-brand-bible
-- Tierra cue line. Client: Billiard Factory; Role: Designed; What it is: Three cues, one build; Status: Direction approved; factory artwork in progress. Project page: https://untold.works/work/tierra-cue-line
+- Tierra cue line. Client: Billiard Factory; Role: Product design and pitch, created with AI; What it is: Three designs for Billiard Factory’s own cue line; Status: All three designs selected for production. Project page: https://untold.works/work/tierra-cue-line
 
 ### 02. Platforms (6 projects)
 
@@ -52,7 +52,7 @@ Tools that coordinate the work. I build tools around a task your team does every
 - OMI lead intake. Client: OMI Growth; What it is: Lead intake and routing; Connected to: The CRM; Years: 2024–2025. Project page: https://untold.works/work/omi-lead-intake
 - Casa Schuck ops dashboard. Client: Casa Schuck; What it is: Hotel operations dashboard; Status: Full demo, no live data yet. Project page: https://untold.works/work/casa-schuck-ops-dashboard
 
-### 03. Websites (13 projects)
+### 03. Digital experiences (13 projects)
 
 Destinations with a clear next step. I build sites around what someone came to do. That might mean choosing a table that fits, hearing a new record or finding a café in an unfamiliar city.
 
@@ -90,7 +90,7 @@ More campaigns:
 - Savor Chef Series. Kitchens: Atelier Crenn · SingleThread · ONE65 · Jane the Bakery; Role: Content and storytelling, close with the client; Hired through: IDW Studio; Watch: Case study ↗ (https://idw.studio/cs/savor). Project page: https://untold.works/work/savor-chef-series
 - Preferred Customer Event. Event: Thu Oct 15, 2026; Where: 12 showrooms · in store only; Social: Planned countdown, six days out to Today. Project page: https://untold.works/work/preferred-customer-event
 - Landing pages. Pages: Ten, eight live; CRM foundation: GoHighLevel · sales team connected; Built with: Claude Code · Higgsfield; Inside: Open the project →. Project page: https://untold.works/work/landing-pages
-- Messes Happen. Client: Billiard Factory · Allstate Protection Plans; Role: Produced and cut, music added; Made with: Higgsfield · Claude Design · HyperFrames; Scheduled to air: Oct 2026. Project page: https://untold.works/work/messes-happen
+- Messes Happen. Client: Billiard Factory · Allstate Protection Plans; Role: Produced and cut, music added; Made with: Higgsfield · Claude Design · HyperFrames; Planned TV window: Oct 2026. Project page: https://untold.works/work/messes-happen
 - Season Opener. Runs: Aug 5–15, 2026; Role: Brief and creative direction; Shipped through: Engine Room. Project page: https://untold.works/work/season-opener
 - Labor Day Sale. Live: Aug 17, 2026; Offer: Up to $1,000 off sitewide; Role: Creative direction; Page: Build and search copy by the team. Project page: https://untold.works/work/labor-day-sale
 - Product films. Films: Custom Built · New Arrivals · Shuffleboard; Client: Billiard Factory; Runs on: billiardfactory.com. Project page: https://untold.works/work/product-films

@@ -10,7 +10,7 @@ export const caseCopyCampaigns = {
     headline: 'Make the room the destination.',
     lead: 'A fall campaign with one invitation, “This year, everyone comes to you,” carried from AI-made rooms and film into a working lead page.',
     storyTitle: 'One idea, across the whole page.',
-    story: 'Home Field runs September 14–October 11, 2026. I made its lived-in game rooms, stills and film in Higgsfield, then carried that direction into the page and social work. The page pairs the campaign story with Billiard Factory’s standing savings ladder and a GoHighLevel lead form, giving the connected sales team a path to follow up.',
+    story: 'Home Field ran September 14–October 11, 2026. I made its lived-in game rooms, stills and film in Higgsfield, then carried that direction into the page and social work. The page pairs the campaign story with Billiard Factory’s standing savings ladder and a GoHighLevel lead form, giving the connected sales team a path to follow up.',
     focus: [
       { label: 'Campaign window', text: 'September 14–October 11, 2026.' },
       { label: 'Creative', text: 'Higgsfield rooms, stills and film; page and social content.' },
@@ -68,7 +68,7 @@ export const caseCopyCampaigns = {
     headline: 'Let the kitchen lead.',
     lead: 'Content and storytelling within IDW Studio’s chef series for Savor, showing a new food ingredient through the people who use it.',
     storyTitle: 'The people and places behind the food.',
-    story: 'Savor makes fats from carbon rather than conventional agricultural inputs. The chef series shows the product in working kitchens rather than asking viewers to accept a technical claim on its own. I contributed content and storytelling while working close with Savor through IDW Studio; the wider production and post team are credited to IDW.',
+    story: 'Savor makes fats from carbon rather than conventional agricultural inputs. The chef series shows the product in working kitchens rather than asking viewers to accept a technical claim on its own. I worked on content and storytelling with Savor through IDW Studio. IDW led production and post.',
     focus: [
       { label: 'Kitchens', text: 'Atelier Crenn, SingleThread, ONE65 and Jane the Bakery.' },
       { label: 'Role', text: 'Content and storytelling, in close work with Savor.' },
@@ -79,14 +79,17 @@ export const caseCopyCampaigns = {
       { eyebrow: 'The series', title: 'Four kitchens, four voices.', body: 'The published series features Juan Contreras at Atelier Crenn, Kyle and Katina Connaughton at SingleThread, Clement Goyffon at ONE65, and Amanda Michael and Drake Jones at Jane the Bakery.' },
       { eyebrow: 'The wider campaign', title: 'Built to travel beyond an episode.', body: 'IDW’s case study also documents short social cuts, motion graphics and a color treatment for the wider series. I worked on the content and storytelling with IDW Studio.' },
     ],
-    links: [{ label: 'See IDW Studio’s Savor case ↗', href: 'https://idw.studio/cs/savor' }],
+    links: [
+      { label: 'Explore the Savor brand story', href: '/work/savor' },
+      { label: 'See IDW Studio’s Savor case ↗', href: 'https://idw.studio/cs/savor' },
+    ],
   },
   'campaigns/preferred-customer-event': {
-    value: "A one-day, in-store offer needs an unmistakable date and a route to a showroom. The page, countdown and product links are designed around that action; final terms and hours remain prelaunch decisions.",
+    value: "The pitch put October 15 at the center of the artwork, countdown and route to the showroom.",
     headline: 'Make a one-day showroom offer unmistakable.',
     lead: 'An October 15 customer event planned for twelve Billiard Factory showrooms, with the date turned into the visual idea.',
     storyTitle: 'The date is the message.',
-    story: 'The Preferred Customer Event is planned for Thursday, October 15, 2026. The proposed offer is “We pay your sales tax,” for purchases made in store that day. The landing page and social system put the 15, the showroom visit and the one-day window at the center. Final legal terms and event hours remain to be confirmed before launch.',
+    story: 'The brief proposed a one-day showroom offer for October 15, 2026. A cue ball rolled toward the number 15 to reveal “We pay your sales tax.” The page directed shoppers to their nearest showroom, and the social countdown used numbered billiard balls.',
     focus: [
       { label: 'Planned date', text: 'Thursday, October 15, 2026.' },
       { label: 'Where', text: 'Twelve showrooms · in store only.' },
@@ -99,27 +102,27 @@ export const caseCopyCampaigns = {
     ],
   },
   'campaigns/messes-happen': {
-    value: "A relatable accident gives shoppers a reason to consider protection at the point of purchase. The completed spot is ready for its planned October airing; no broadcast response is claimed.",
+    value: "A household accident gave shoppers a reason to consider protection when buying a pool table. I produced the finished TV spot for Billiard Factory.",
     headline: 'An AI-made spot for Allstate Protection Plans.',
     lead: 'A Billiard Factory TV spot for Allstate Protection Plans, produced and cut as a finished moving-image piece with music.',
     storyTitle: 'Make protection relevant to a real shopping moment.',
-    story: 'I produced and cut “Messes Happen,” then added music. The spot brings Allstate Protection Plans into Billiard Factory’s campaign mix using Higgsfield, Claude Design and HyperFrames. It is slated to air in October 2026.',
+    story: 'I used Higgsfield, Claude Design and HyperFrames to produce “Messes Happen” for Billiard Factory. I cut the spot and added music for the October 2026 TV plan.',
     focus: [
-      { label: 'Format', text: 'TV spot, scheduled for October 2026.' },
+      { label: 'Format', text: 'Finished TV spot for the October 2026 plan.' },
       { label: 'Role', text: 'Produced, cut and added music.' },
       { label: 'Tools', text: 'Higgsfield, Claude Design and HyperFrames.' },
     ],
     details: [
-      { eyebrow: 'Production', title: 'A finished spot, before air.', body: 'The case covers the produced film and my edit, including the music pass. Its broadcast window is planned for October 2026, so the work is presented as a completed spot awaiting airtime.' },
       { eyebrow: 'Credit', title: 'Two brands, one message.', body: 'Billiard Factory is the retailer and Allstate Protection Plans is the protection-plan brand in the spot. The case credits both rather than treating the service as a Billiard Factory invention.' },
     ],
   },
   'campaigns/season-opener': {
     value: "The home-gathering premise ties the campaign to the weeks before football returns. A defined brief and calendar window give the team a common direction for production rather than a collection of unrelated seasonal posts.",
+    links: [{ label: 'See how the team ran the campaign in Engine Room', href: '/work/engine-room' }],
     headline: 'The season starts at home.',
     lead: 'The Billiard Factory campaign that set the first August beat of the season, from brief and creative direction into Engine Room delivery.',
     storyTitle: 'A clear brief for the pre-season window.',
-    story: 'Season Opener ran August 5–15, 2026, before the first kickoff. I shaped the brief and creative direction, then the campaign was planned and shipped through Engine Room.',
+    story: 'Season Opener ran August 5–15, 2026, before the first kickoff. I built the brief around football’s return and the game room as the place people gather to watch. The team coordinated delivery in Engine Room.',
     focus: [
       { label: 'Campaign window', text: 'August 5–15, 2026.' },
       { label: 'Role', text: 'Brief and creative direction.' },
@@ -153,7 +156,7 @@ export const caseCopyCampaigns = {
     headline: 'Place product films inside the shopping journey.',
     lead: 'Three product-led films for Billiard Factory, placed where shoppers can move from seeing a product to exploring it.',
     storyTitle: 'Three films with a place to live.',
-    story: 'Custom Built, New Arrivals and Shuffleboard each received a film for Billiard Factory’s site and campaign work. The Custom Built and New Arrivals landing pages carry film players within pages that also explain options, merchandise and a next step.',
+    story: 'On the Custom Built page, a shopper can watch the film, explore table options and ask about a custom build. New Arrivals and Shuffleboard each had their own film and shopping context.',
     focus: [
       { label: 'Films', text: 'Custom Built, New Arrivals and Shuffleboard.' },
       { label: 'Client', text: 'Billiard Factory.' },
@@ -192,7 +195,7 @@ export const caseCopyCampaigns = {
     headline: 'Release films I directed, shot and edited.',
     lead: 'Two release films from my earlier camera-led work with Robert Glasper: Art Science and R+R=NOW.',
     storyTitle: 'A camera role from start to finish.',
-    story: 'I directed, shot and edited the release film for the Robert Glasper Experiment’s Art Science and the record-release-and-tour film for R+R=NOW. Both are public films with those roles credited in their titles, and they mark a film-making chapter within my longer work with Glasper.',
+    story: 'I directed, shot and edited the release film for the Robert Glasper Experiment’s Art Science and the record-release-and-tour film for R+R=NOW. Those films are where you can see my camera and editing work within the longer Glasper collaboration.',
     focus: [
       { label: 'Films', text: 'Art Science and R+R=NOW.' },
       { label: 'Role', text: 'Directed, shot and edited.' },

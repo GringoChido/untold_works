@@ -77,7 +77,7 @@ export const About = () => {
           </div>
           <div className="about-opening-copy">
             <p className="about-opening-statement">Show me the idea you’re still trying to explain.</p>
-            <p className="about-opening-summary">I came to consulting through photography, film and marketing. Years behind a camera taught me to ask what someone should notice first. I bring that same eye to the way a fan discovers an album, a buyer walks through a showroom or a team pitches a new idea.</p>
+            <p className="about-opening-summary">I came to consulting through photography, film and marketing. Years behind a camera taught me to ask what someone should notice first. I spent four years as Content Director for Blue Note’s Napa Valley festival, through its move into the <Link to="/work/black-radio-experience">Black Radio Experience</Link>. At Billiard Factory, that same eye shaped how shoppers move through a room and picture the pieces at home.</p>
             <p className="about-opening-summary">I like to make a first version we can look at together. I use AI to sketch the room, test the campaign or build a working tool, so you can decide what’s worth your time and budget. I can build it myself or direct your team, then stay involved through launch and the changes that follow.</p>
             <Link to="/work-together" className="text-link about-project-link">Talk with me about your project <span aria-hidden="true">↗</span></Link>
           </div>
@@ -107,7 +107,7 @@ export const About = () => {
           <ul className="about-proof-list m-0 list-none p-0" aria-labelledby="selected-work-title">
             <li><Link to="/work/billiard-factory-and-c-l-bailey"><strong>Billiard Factory + C.L. Bailey</strong><span>Retail redesign, live shoppable rooms, Shopify Plus migration, dealer tools and AI-led campaigns.</span><span aria-hidden="true">↗</span></Link></li>
             <li><Link to="/work/robert-glasper-blue-note"><strong>Second Son Productions & related music work</strong><span>Artist sites, Robert Glasper releases and distinct Blue Note content roles.</span><span aria-hidden="true">↗</span></Link></li>
-            <li><Link to="/work/savor"><strong>Savor</strong><span>Website and content storytelling through IDW Studio.</span><span aria-hidden="true">↗</span></Link></li>
+            <li><Link to="/work/savor"><strong>Savor</strong><span>Digital experience and content storytelling through IDW Studio.</span><span aria-hidden="true">↗</span></Link></li>
           </ul>
           <Link to="/work-together" className="text-link mt-8">
             Work with me <span aria-hidden="true">↗</span>

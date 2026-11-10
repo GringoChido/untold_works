@@ -5,7 +5,7 @@ export const caseCopyWebsites = {
     headline: 'A café you can find, taste and understand in three languages.',
     lead: "A digital home for Ki'bok Coffee in San Miguel de Allende, with English, Spanish and Japanese paths through the menu, beans, story and visit information.",
     storyTitle: 'One café. Three ways in.',
-    story: "The March–April 2026 site gives visitors a menu, bean information, address and contact details in English, Spanish and Japanese. Each language uses the same navigation, so the practical visit information stays easy to find.",
+    story: "A visitor reading in Japanese can check the menu and find the café in San Miguel de Allende. Someone buying beans gets the same route in English or Spanish.",
     focus: [
       { label: 'Audience', text: 'Locals and visitors to San Miguel de Allende.' },
       { label: 'Languages', text: 'English · Spanish · Japanese.' },
@@ -57,6 +57,7 @@ export const caseCopyWebsites = {
   },
   'websites/casa-schuck': {
     value: "Suite details and local experiences help guests picture a specific stay. English and Spanish paths, together with reservation or WhatsApp actions, connect that interest to an inquiry.",
+    links: [{ label: 'Explore the staff dashboard demo', href: '/work/casa-schuck-ops-dashboard' }],
     headline: 'A hotel told room by room, in two languages.',
     lead: 'Thirteen English and Spanish site pages for Casa Schuck, a boutique hotel in San Miguel de Allende, built between February and June 2026.',
     storyTitle: 'Make the stay imaginable before the inquiry.',
@@ -76,7 +77,7 @@ export const caseCopyWebsites = {
     headline: 'A body of work bigger than a discography.',
     lead: 'An artist site preview for Derrick Hodge, connecting his recordings to composition, orchestration, film work and Color of Noize.',
     storyTitle: 'Give the full practice one place to live.',
-    story: 'The February–March 2026 preview build opens with Hodge as composer, orchestrator and artist. From there, visitors can move into selected work, the three Blue Note solo albums and a dedicated Color of Noize chapter.',
+    story: 'A presenter looking for Derrick’s orchestral work can open Selected Work and go straight to the Academy Awards entry to see his orchestration and conducting credits. A listener can explore his three Blue Note solo albums or the Color of Noize chapter.',
     focus: [
       { label: 'Artist', text: 'Derrick Hodge, Blue Note recording artist.' },
       { label: 'Inside', text: 'Work archive · albums · Color of Noize · about · contact.' },
@@ -91,8 +92,8 @@ export const caseCopyWebsites = {
     value: "Credits organized by role and genre, with music visitors can hear, let potential collaborators evaluate the work rather than relying on a client list. Service and contact routes then turn that evaluation into an inquiry.",
     headline: 'A producer’s credits made navigable.',
     lead: 'A portfolio preview for Qmillion that brings mixing, production and composition into one place, with a listening-led discography.',
-    storyTitle: 'Make credits searchable by role and genre.',
-    story: 'The March 2026 preview build gives Qmillion distinct spaces for his story, services, discography, press and inquiries. The discography makes credits visible by role and genre, with featured releases visitors can hear on the page.',
+    storyTitle: 'Put the credit beside the record.',
+    story: 'A collaborator can open the discography, see Qmillion’s mixing credit on Robert Glasper Experiment’s Black Radio and hear the record. The wider archive lets them browse by genre before asking about a session.',
     focus: [
       { label: 'Format', text: 'Producer and mixer portfolio.' },
       { label: 'Practice', text: 'Mixing · production · composition.' },
@@ -108,7 +109,7 @@ export const caseCopyWebsites = {
     headline: 'A company site with room for each artist.',
     lead: 'A February–March 2026 site preview for Second Son Productions with dedicated artist pages, production context and tour-date lookups through Bandsintown.',
     storyTitle: 'Build the company around the people it represents.',
-    story: 'The February–March 2026 preview introduces the management and production company, then opens into individual artist stories. That build included pages for Robert Glasper, Lalah Hathaway, Chief Adjuah, Derrick Hodge, Kendrick Scott, Taylor McFerrin and Elena Pinderhughes. Its artist-page set is a record of the build, not a statement about the current public roster.',
+    story: 'In the February–March 2026 preview, a fan can open Robert Glasper from the roster, explore his recordings and check his live dates through Bandsintown. The build included seven artist pages.',
     focus: [
       { label: 'Scope', text: 'Company site and seven artist pages.' },
       { label: 'Inside', text: 'Roster · artist biographies · discographies · events.' },
@@ -124,7 +125,7 @@ export const caseCopyWebsites = {
     headline: 'Make a showroom easier to shop and contact.',
     lead: 'A bilingual retail site for Regal Billiards, a C.L. Bailey dealer, built March 24–25, 2026.',
     storyTitle: 'From the room to the right table.',
-    story: 'A pool table in a loft sets the visual tone. Behind it, the site organizes new and used tables, game-room furniture, games, cues and accessories, with service and contact paths nearby.',
+    story: 'In English or Spanish, a shopper can browse used tables, narrow the choices by manufacturer and style, then ask the showroom about installation.',
     focus: [
       { label: 'Client context', text: 'A C.L. Bailey dealer.' },
       { label: 'Languages', text: 'English and Spanish.' },
@@ -141,7 +142,7 @@ export const caseCopyWebsites = {
     headline: 'One retail site for an entire home experience.',
     lead: 'A website for Lexington Billiards & Spas that brings pool tables, hot tubs, grills, arcade machines and services into one browseable system.',
     storyTitle: 'Connect a broad product range to the next visit.',
-    story: 'The March 2026 build turns a multi-category showroom into clear shopping paths. The work also included a search and AI-search visibility audit, connecting the on-page experience to how people discover it.',
+    story: 'Someone shopping for a spa can go straight to that category, compare brands and find the showroom’s financing and service information. I also reviewed how search engines could discover those pages.',
     focus: [
       { label: 'Format', text: 'Multi-category retail website.' },
       { label: 'Inside', text: 'Pool tables · spas · grills · arcade machines · services.' },
@@ -157,7 +158,7 @@ export const caseCopyWebsites = {
     headline: 'Make an AI service easy to grasp and act on.',
     lead: 'A bilingual landing page with lead capture for Voztre, FoodTech AI’s phone and messaging assistant for restaurant operations.',
     storyTitle: 'A new service needs a clear first conversation.',
-    story: 'The April 2026 project introduced Voztre in two languages and gave interested operators a direct way to respond. The product promise is concrete: an AI assistant that answers, classifies and follows up on restaurant calls and messages.',
+    story: 'When a restaurant gets a call during service, Voztre can answer it, classify the request and follow up. The bilingual page explains that sequence and gives operators a way to ask for a demo.',
     focus: [
       { label: 'Client', text: 'FoodTech AI.' },
       { label: 'Format', text: 'Bilingual product landing page.' },

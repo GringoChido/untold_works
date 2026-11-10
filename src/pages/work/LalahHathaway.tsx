@@ -1,3 +1,4 @@
+import { useProjectEmail } from '../../components/ProjectInquiries';
 import { Footer } from '../../components/Footer';
 import { Header } from '../../components/Header';
 import { HouseBar } from '../../components/HouseBar';
@@ -5,11 +6,8 @@ import { Img } from '../../components/Img';
 import { LabelRow } from '../../components/LabelRow';
 import { Layout } from '../../components/Layout';
 import { usePageMeta } from '../../hooks/usePageMeta';
-import { EMAIL } from '../../site';
-
-const projectContact = `mailto:${EMAIL}?subject=${encodeURIComponent('Artist or brand website project')}`;
-
 export const LalahHathaway = () => {
+  const projectContact = useProjectEmail();
   usePageMeta({
     title: 'Lalah Hathaway: Artist Experience & Commerce | Untold.works',
     description:
@@ -19,7 +17,7 @@ export const LalahHathaway = () => {
 
   return (
     <Layout>
-      <Header crumbs={[{ label: 'Work', to: '/' }, { label: 'Websites', to: '/websites' }, { label: 'Lalah Hathaway' }]} />
+      <Header crumbs={[{ label: 'Work', to: '/' }, { label: 'Digital experiences', to: '/websites' }, { label: 'Lalah Hathaway' }]} />
       <main id="main" className="flex flex-col">
         <section className="pb-11 pt-12 md:pb-16 md:pt-16" aria-labelledby="lalah-title">
           <p className="lbl m-0 text-[13px]">Artist experience · Audience · Commerce</p>
@@ -73,8 +71,8 @@ export const LalahHathaway = () => {
               Bring the existing audience with you.
             </h2>
             <div className="flex flex-col gap-5 text-[19px] leading-[1.55]">
-              <p className="m-0">I moved the newsletter to MailerLite and tested the new signup from the website through email confirmation.</p>
-              <p className="m-0">The historical review covered 11 supplied files containing 5,466 unique email addresses. I reconciled duplicates and conflicting records, then imported 3,233 historically subscribed contacts. Unsubscribed, never-subscribed and unknown-status contacts stayed outside the active import.</p>
+              <p className="m-0">I moved 3,233 historically subscribed contacts to MailerLite and tested the new signup through email confirmation.</p>
+              <details><summary className="cursor-pointer underline underline-offset-4">How I reconciled the audience records</summary><p className="mt-3">I checked 11 files containing 5,466 unique addresses and reconciled duplicates and conflicting records. Unsubscribed, never-subscribed and unknown-status contacts stayed outside the active import.</p></details>
             </div>
           </div>
         </section>
@@ -96,7 +94,7 @@ export const LalahHathaway = () => {
           </div>
         </section>
       </main>
-      <HouseBar back={{ label: '← Websites', to: '/websites' }} next={{ label: 'Campaigns →', to: '/campaigns' }} />
+      <HouseBar back={{ label: '← Digital experiences', to: '/websites' }} next={{ label: 'Campaigns →', to: '/campaigns' }} />
       <Footer />
     </Layout>
   );

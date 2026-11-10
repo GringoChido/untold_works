@@ -132,7 +132,7 @@ export const ArtOfPrompting = () => {
         <section id="process" className="creative-collection-section" aria-labelledby="prompting-process-title">
           <div className="prompting-practice-intro">
             <h2 id="prompting-process-title" className="name">From an idea to an image.<br />Then into motion.</h2>
-            <div><p>The brief called for a bar cart someone might actually reach for. I placed it beside the sofa and checked the shelves, metalwork and casters against the original.</p></div>
+            <div><p>The brief called for a bar cart someone might actually reach for. I placed it beside the sofa and checked the shelves, metalwork and casters against the original.</p><p>On the Tierra cue line, the factory’s first renders shifted clay toward burgundy and lost fine details in the patterns. I supplied full-scale artwork and color targets for the next round.</p><Link to="/work/tierra-cue-line" className="text-link">See the three cue designs ↗</Link></div>
           </div>
           <div className="prompting-furniture-study" aria-label="Industrial Bar Cart: product reference, written scene direction and AI lifestyle image">
             <figure>

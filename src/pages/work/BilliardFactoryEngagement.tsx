@@ -144,7 +144,7 @@ export const BilliardFactoryEngagement = () => {
               <CaseLink to="/work/engine-room">Explore Engine Room</CaseLink>
             </article>
           </div>
-          <details className="bf-related"><summary>More from this engagement</summary><div className="bf-related-links">{related.map(([label, to]) => <CaseLink key={to} to={to}>{label}</CaseLink>)}</div><p>The Spring design is informing franchise planning. The Tierra cue line is in factory artwork development.</p></details>
+          <details className="bf-related"><summary>More from this engagement</summary><div className="bf-related-links">{related.map(([label, to]) => <CaseLink key={to} to={to}>{label}</CaseLink>)}</div><p>The Spring design is informing franchise planning. Billiard Factory chose all three Tierra cue designs for production.</p></details>
         </section>
 
         <section className="bf-contact" aria-labelledby="bf-contact-title">

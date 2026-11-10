@@ -96,7 +96,7 @@ export const LandingPages = () => {
             <p className="lbl">Billiard Factory · August–October 2026</p>
             <div className="flex flex-col gap-[18px]">
               <h1 className="name break-words text-[clamp(40px,6vw,84px)] leading-[0.9] tracking-[-0.035em]">Landing pages</h1>
-              <p className="voice text-[26px] leading-[1.3]">Ten campaign pages gave shoppers a next step, from exploring a showroom offer to asking a sales rep about a custom table.</p>
+              <p className="voice text-[26px] leading-[1.3]">I worked on ten Billiard Factory campaign pages. On Home Field, a shopper could claim a $150 ball-set offer and send their details to a sales rep. <a className="text-link" href="#how-headline">Follow that handoff ↓</a></p>
             </div>
             <div className="wdth-62 flex flex-col text-[16px] font-semibold uppercase leading-[1.1] tracking-[0.05em] md:text-[18px]">
               <Fact label="Live">

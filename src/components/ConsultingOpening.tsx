@@ -2,9 +2,9 @@ import { useEffect, useRef, useState } from 'react';
 import './ConsultingOpening.css';
 
 const areas = [
-  { name: 'Brand & story', line: 'Give your idea a voice of its own.', image: 'film-edit', alt: 'A photographer compares negatives through a loupe.' },
-  { name: 'Experiences', line: 'Bring your brand into the places people use it.', image: 'street', alt: 'Two people look at a phone together on a city street.' },
-  { name: 'AI & operations', line: 'Give your team more time for the work that matters.', image: 'workstation', alt: 'An editor adjusts an image on a laptop.' },
+  { name: 'Brand & story', line: 'Make it easy to understand what you sell.', image: 'film-edit', alt: 'A photographer compares negatives through a loupe.' },
+  { name: 'Experiences', line: 'Help someone find your café, choose a product or book a visit.', image: 'street', alt: 'Two people look at a phone together on a city street.' },
+  { name: 'AI & operations', line: 'Get each inquiry to someone who can follow up.', image: 'workstation', alt: 'An editor adjusts an image on a laptop.' },
 ];
 
 export function ConsultingOpening() {
@@ -43,8 +43,8 @@ export function ConsultingOpening() {
     <div className="consulting-panel" ref={panel}>
       <div className="consulting-opening">
         <div>
-          <p className="lbl">Independent AI creative studio</p>
-          <h1 id="business-title">What are you<br />trying to make<br /><em>happen?</em></h1>
+          <p className="lbl">Creative &amp; AI for small businesses</p>
+          <h1 id="business-title">Help customers<br />take the <em>next step.</em></h1>
           <p className="consulting-caption" aria-live="polite">{areas[selected].line}</p>
         </div>
         <div className="consulting-print">

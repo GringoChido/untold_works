@@ -12,7 +12,7 @@ import './ForYourBusiness.css';
 const improvements = [
   {
     number: '01',
-    title: 'A website that makes sense again.',
+    title: 'Make your next step easy to find.',
     body: 'Old pages, missing information and an unclear next step can make a good business hard to understand. I help sort the content, simplify the structure and bring the site into line with what you offer today.',
     examples: ['Clear pages and navigation', 'Current services, hours and contact details', 'Useful inquiry or purchase paths', 'Layouts that work on a phone'],
   },
@@ -64,7 +64,7 @@ export const ForYourBusiness = () => {
       <main id="main" className="business-main">
         <ConsultingOpening />
         <section className="business-section business-proof" aria-labelledby="business-proof-title">
-          <LabelRow left="Selected work" right="Websites · Brand · Content" />
+          <LabelRow left="Selected work" right="Digital experiences · Brand · Content" />
           <div className="business-section-heading">
             <h2 id="business-proof-title" className="name">The work, in practice.</h2>
             <p>A café that welcomes visitors. A technical product people need to understand. Different businesses, with a clear story and a useful destination.</p>
@@ -75,9 +75,9 @@ export const ForYourBusiness = () => {
                 <Img src="kibok-home.jpg" alt="Ki’bok Coffee’s website home page, with a coffee-making scene and clear links to the menu and café location" sizes="(max-width: 799px) 100vw, 50vw" eager className="business-case-image" />
               </Link>
               <div className="business-case-caption">
-                <p className="lbl">Ki’bok Coffee / Café website</p>
+                <p className="lbl">Ki’bok Coffee / Visitor experience</p>
                 <h3 id="business-kibok-title" className="name">A place to plan a visit.</h3>
-                <p>A website brings the café’s story, menu and location into one experience, with English, Spanish and Japanese versions.</p>
+                <p>Visitors can find the menu, choose beans and get directions in English, Spanish or Japanese.</p>
                 <Link to="/work/kibok-coffee" className="text-link">Explore Ki’bok Coffee <span aria-hidden="true">↗</span></Link>
               </div>
             </article>
@@ -86,8 +86,8 @@ export const ForYourBusiness = () => {
                 <Img src="noxguard-truck.jpg" alt="Fleet-livery concept showing the Noxguard brand on a diesel exhaust fluid truck and trailer" sizes="(max-width: 799px) 100vw, 50vw" eager className="business-case-image business-case-image--contain" />
               </Link>
               <div className="business-case-caption">
-                <p className="lbl">Noxguard / Brand, website &amp; marketing</p>
-                <h3 id="business-noxguard-title" className="name">One business, connected.</h3>
+                <p className="lbl">Noxguard / Brand &amp; marketing</p>
+                <h3 id="business-noxguard-title" className="name">A brand distributors can recognize.</h3>
                 <p>I delivered a rebrand, website, photo and video campaign, and marketing process work through Untold.works. Shown: a fleet-livery concept.</p>
                 <Link to="/work/noxguard" className="text-link">Explore Noxguard <span aria-hidden="true">↗</span></Link>
               </div>
@@ -145,7 +145,7 @@ export const ForYourBusiness = () => {
         </section>
 
         <section className="business-section business-process" aria-labelledby="business-process-title">
-          <LabelRow left="For website projects" right="A clear scope, then the work" />
+          <LabelRow left="For digital projects" right="A clear scope, then the work" />
           <div className="business-section-heading">
             <h2 id="business-process-title" className="name">Start with your site.<br />Agree on a useful next step.</h2>
             <p>You don’t need to arrive with a finished brief. Your current website and a few things you’d like to improve give us a place to begin.</p>

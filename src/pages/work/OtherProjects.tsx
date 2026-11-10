@@ -27,7 +27,7 @@ const more = [
 const archives = [
   { name: 'Brand & product', to: '/brand-and-product' },
   { name: 'Platforms', to: '/platforms' },
-  { name: 'Websites', to: '/websites' },
+  { name: 'Digital experiences', to: '/websites' },
   { name: 'Campaigns', to: '/campaigns' },
 ] as const;
 

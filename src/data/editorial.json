@@ -1,7 +1,8 @@
 {
   "brand-and-product": {
     "featured": [
-      "/work/spring-stuebner-store"
+      "/work/spring-stuebner-store",
+      "/work/noxguard"
     ],
     "engagements": [
       {
@@ -63,9 +64,9 @@
         "detail": "Release films, residency content and festival direction for distinct audience moments."
       },
       {
-        "name": "Billiard Factory + C.L. Bailey",
-        "to": "/work/billiard-factory-and-c-l-bailey",
-        "detail": "Retail campaigns link creative assets, publishing, live pages and CRM capture."
+        "name": "Holiday Gift Guide & streaming TV",
+        "to": "/work/billiard-factory-and-c-l-bailey#holiday-gift-guides",
+        "detail": "Eight shoppable gift lists became an AI-produced streaming TV spot, with placement informed by earlier campaigns."
       },
       {
         "name": "Savor",

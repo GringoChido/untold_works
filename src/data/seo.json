@@ -36,8 +36,8 @@
     }
   },
   "/websites": {
-    "title": "Artist, Retail & Business Website Projects | Untold.works",
-    "description": "Explore my website work for artists, retailers and businesses, from multilingual sites to online stores.",
+    "title": "Digital Experiences for Artists, Retailers & Businesses | Untold.works",
+    "description": "Explore interactive album releases, bilingual visitor experiences and shoppable collections built around what customers come to do.",
     "type": "CollectionPage",
     "image": {
       "src": "/images/lalah-made-in-chicago-1200.webp",
@@ -109,7 +109,7 @@
   },
   "/work/tierra-cue-line": {
     "title": "Tierra Cue Line: Product & Brand Design | Untold.works",
-    "description": "Tierra is a Billiard Factory cue line with three distinct designs sharing a single butt, grip and dark carbon shaft.",
+    "description": "Joshua Semolik used AI to design and pitch the Tierra cue line for Billiard Factory. The team chose all three designs for production.",
     "type": "WebPage",
     "image": {
       "src": "/images/tierra-cover-1200.webp",

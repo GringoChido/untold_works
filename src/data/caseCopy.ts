@@ -15,9 +15,11 @@ export type CaseCopy = {
   visualCredit?: string;
   details?: ReadonlyArray<{ eyebrow: string; title: string; body: string }>;
   focus: ReadonlyArray<{ label: string; text: string }>;
+  pitch?: { href: string; label: string };
   films?: ReadonlyArray<CaseFilmProps>;
   gallery?: ReadonlyArray<{ src: string; alt: string; caption: string; layout?: 'wide' | 'portrait' | 'landscape'; fit?: 'contain' | 'cover' }>;
   galleryNote?: string;
+  galleryColumns?: 2 | 3;
   links?: ReadonlyArray<{ label: string; href: string }>;
 };
 

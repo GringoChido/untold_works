@@ -74,6 +74,7 @@ export const ProjectDetail = () => {
               </h1>
               <div className="mt-6 flex max-w-[890px] flex-col items-start gap-4">
                 <p className="voice m-0 text-[clamp(21px,2vw,28px)] leading-[1.32]">{copy.lead}</p>
+                {copy.pitch && <a href={copy.pitch.href} className="text-link">{copy.pitch.label} <span aria-hidden="true">↗</span></a>}
                 {copy.films?.length ? <a href="#project-films" className="text-link">{copy.films.length > 1 ? 'Watch the films' : 'Watch the film'} <span aria-hidden="true">↓</span></a> : null}
               </div>
             </section>
@@ -113,14 +114,14 @@ export const ProjectDetail = () => {
         {copy.gallery && copy.gallery.length > 0 && (
           <section className="flex flex-col gap-7 pb-20 md:pb-28" aria-labelledby="project-gallery-title">
             <LabelRow left={<span id="project-gallery-title">The visual record</span>} right={copy.galleryNote ?? 'Project imagery'} />
-            <div className="grid gap-6 md:grid-cols-3">
+            <div className={`grid gap-6 ${copy.galleryColumns === 2 ? 'md:grid-cols-2' : 'md:grid-cols-3'}`}>
               {copy.gallery.map((item) => (
-                <figure key={item.src} className={`m-0 min-w-0 ${item.layout === 'wide' ? 'md:col-span-3' : ''}`}>
+                <figure key={item.src} className={`m-0 min-w-0 ${item.layout === 'wide' ? 'md:col-span-full' : ''}`}>
                   <div className={`overflow-hidden bg-cream ${item.layout === 'wide' ? 'aspect-[16/9]' : item.layout === 'landscape' ? 'aspect-[3/2]' : 'aspect-[4/5]'}`}>
                     <Img
                       src={item.src}
                       alt={item.alt}
-                      sizes={item.layout === 'wide' ? '(min-width: 1440px) 1312px, 100vw' : '(min-width: 768px) 33vw, 100vw'}
+                      sizes={item.layout === 'wide' ? '(min-width: 1440px) 1312px, 100vw' : copy.galleryColumns === 2 ? '(min-width: 768px) 48vw, 100vw' : '(min-width: 768px) 33vw, 100vw'}
                       className={`block h-full w-full ${item.fit === 'contain' || item.layout === 'wide' || item.layout === 'landscape' ? 'object-contain' : 'object-cover'}`}
                     />
                   </div>

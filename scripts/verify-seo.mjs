@@ -73,9 +73,9 @@ for (const [route, page] of pages) {
       assets.add(path);
       continue;
     }
-    if (path === '/Joshua-Semolik-Resume.pdf') {
+    if (path.endsWith('.pdf')) {
       const pdf = await readFile(join(dist, path));
-      assert(pdf.subarray(0, 5).toString() === '%PDF-', `${route}: resume download must be a real PDF`);
+      assert(pdf.subarray(0, 5).toString() === '%PDF-', `${route}: ${path} must be a real PDF`);
       continue;
     }
     assert(pages.has(path), `${route}: link to noncanonical or missing page ${path}`);
