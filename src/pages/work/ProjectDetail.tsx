@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { ShopifyShowcase } from './ShopifyShowcase';
 import { NotFound } from '../NotFound';
@@ -35,6 +36,33 @@ const ProjectVisual = ({ project, poster = false }: { project: Project; poster?:
         <Visual visual={visual} sizes="(min-width: 768px) 960px, 100vw" size="home" eager />
       </div>
     </div>
+  );
+};
+
+const HomeFieldFilm = ({ project }: { project: Project }) => {
+  const [playing, setPlaying] = useState(false);
+  return (
+    <figure id="home-field-film" className="m-0">
+      {playing ? (
+        <iframe
+          className="block aspect-video w-full border-0 bg-ink"
+          src="https://www.youtube-nocookie.com/embed/PQPKLvWnTHc?autoplay=1&playsinline=1"
+          title="Shoot Pool, Not People! by Billiard Factory"
+          allow="autoplay; encrypted-media; picture-in-picture; fullscreen"
+          referrerPolicy="strict-origin-when-cross-origin"
+          allowFullScreen
+        />
+      ) : (
+        <button type="button" className="relative block aspect-video w-full overflow-hidden bg-ink text-left" onClick={() => setPlaying(true)} aria-label="Play Shoot Pool, Not People!">
+          {project.visual.type === 'image' && <Img src={project.visual.src} alt={project.visual.alt} sizes="(min-width: 1440px) 1312px, 100vw" eager className="absolute inset-0 h-full w-full object-cover" />}
+          <span className="absolute bottom-4 left-4 bg-ink px-5 py-3 font-semibold text-cream md:bottom-7 md:left-7"><span aria-hidden="true">▶ </span>Play film</span>
+        </button>
+      )}
+      <figcaption className="flex flex-wrap items-baseline justify-between gap-3 border-b border-current py-4">
+        <span className="name text-[24px] leading-tight">Shoot Pool, Not People!</span>
+        <a className="text-link" href="https://www.youtube.com/watch?v=PQPKLvWnTHc" target="_blank" rel="noopener noreferrer">Watch on YouTube <span aria-hidden="true">↗</span></a>
+      </figcaption>
+    </figure>
   );
 };
 
@@ -77,6 +105,7 @@ export const ProjectDetail = () => {
               </div>
             </section>
 
+            {project.projectPage === '/work/home-field' ? <HomeFieldFilm project={project} /> : (
             <figure className="m-0">
               <ProjectVisual project={project} poster={copy.visualLayout === 'poster'} />
               <figcaption className="lbl flex flex-wrap items-center justify-between gap-4 border-b border-current py-4 text-[13px]">
@@ -87,6 +116,7 @@ export const ProjectDetail = () => {
                 {live && <a href={live.href} target="_blank" rel="noopener noreferrer" className="underline underline-offset-4">{destinationLabel}</a>}
               </figcaption>
             </figure>
+            )}
           </>
         )}
 
