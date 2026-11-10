@@ -109,7 +109,20 @@ export const BilliardFactoryEngagement = () => {
             <figure className="bf-guide-photo"><img src="/images/bf-gift-guide-grandparents.webp" width="1120" height="840" loading="lazy" alt="Inside the gift guide, the grandparents’ chapter opens with a family gathered around a pool table" /></figure>
             {guides.map((guide) => <a className="bf-guide" href={guide.href} key={guide.href} target="_blank" rel="noopener noreferrer"><img src={'/images/' + guide.image} width="800" height="800" alt={guide.alt} loading="lazy" /><span>Open the {guide.title} <span aria-hidden="true">↗</span></span></a>)}
           </div>
-          <p id="paid-media-ctv" className="bf-channel-note">I prepared the paid creative, social posts and publishing calendar with the team. Across campaigns, I also direct paid media, SEO/AEO and streaming TV through Vibe.</p>
+          <section id="paid-media-ctv" className="bf-holiday-tv" aria-labelledby="holiday-tv-title">
+            <div>
+              <p className="lbl">Streaming TV · Vibe</p>
+              <h3 id="holiday-tv-title">Taking the gift guide to TV.</h3>
+              <p>I used AI to turn the Holiday Gift Guide I built into a 30-second spot that aired on streaming TV. The film follows the guide’s shopping lists, from a new cue for Dad to a game room rug for Mom.</p>
+              <p>I also managed the campaign on Vibe. I used data I’d collected from earlier campaigns to decide where the spot would run.</p>
+            </div>
+            <PortfolioFilm
+              id="bf-holiday-tv-film" src="/video/bf-holiday-tv.mp4" poster="/images/bf-holiday-tv-poster.webp"
+              width={1280} height={720} label="Billiard Factory Holiday Gift Guide streaming TV spot"
+              controlLabel="holiday TV spot" caption="Holiday Gift Guide · 30-second TV spot"
+              nativeControls autoPlayWhenVisible={false}
+            />
+          </section>
         </section>
 
         <section className="bf-chapter" aria-labelledby="dealer-title">

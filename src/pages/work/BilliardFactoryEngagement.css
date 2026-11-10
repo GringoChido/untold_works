@@ -43,7 +43,7 @@
 .bf-commerce figure img { width: 100%; height: auto; }
 .bf-commerce-copy h2 { margin: 21px 0 14px; font-size: clamp(35px, 3.6vw, 54px); }
 .bf-story .bf-shopify-logo { width: 112px; height: auto; }
-.bf-commerce-copy .bf-note, .bf-story .bf-channel-note, .bf-related p { font-size: 15px; }
+.bf-commerce-copy .bf-note, .bf-related p { font-size: 15px; }
 .bf-commerce-copy .bf-note { margin-top: 12px; }
 .bf-launch {
   display: grid;
@@ -66,7 +66,17 @@
 .bf-guide-photo img, .bf-guide img { width: 100%; height: auto; }
 .bf-guide { text-decoration: none; }
 .bf-guide > span { display: block; padding-block: 9px; font-size: 15px; font-weight: 600; }
-.bf-channel-note { max-width: 82ch; margin-top: 20px !important; }
+.bf-holiday-tv {
+  display: grid;
+  grid-template-columns: minmax(0, .85fr) minmax(0, 1.15fr);
+  align-items: center;
+  gap: clamp(20px, 4vw, 64px);
+  margin-top: 32px;
+  padding-top: 24px;
+  border-top: 1px solid var(--bf-rule);
+}
+.bf-holiday-tv h3 { margin: 10px 0 16px; }
+.bf-holiday-tv p + p { margin-top: 12px; }
 .bf-tools { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: clamp(18px, 3vw, 42px); }
 .bf-tools article > img { width: 100%; aspect-ratio: 1.85; height: auto; object-fit: cover; }
 .bf-tools h3 { margin: 20px 0 10px; }
@@ -82,7 +92,7 @@
   .bf-commerce { gap: 24px; grid-template-columns: 1fr 1fr; }
 }
 @media (max-width: 720px) {
-  .bf-opening, .bf-section-head, .bf-contact, .bf-commerce, .bf-tools { grid-template-columns: minmax(0, 1fr); }
+  .bf-opening, .bf-section-head, .bf-contact, .bf-commerce, .bf-tools, .bf-holiday-tv { grid-template-columns: minmax(0, 1fr); }
   .bf-opening { gap: 20px; }
   .bf-opening h1 { font-size: clamp(44px, 9vw, 63px); max-width: 17ch; }
   .bf-opening-copy > p:not(.lbl) { max-width: 58ch; }
