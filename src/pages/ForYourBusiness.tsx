@@ -19,7 +19,7 @@ const improvements = [
   {
     number: '02',
     title: 'Ready for search and AI answers.',
-    body: 'Search engine optimization (SEO) helps search engines find and understand your pages. Answer engine optimization (AEO) focuses on making the information useful when people ask questions in AI search. Both start with clear services, accurate product details, useful answers and pages that search tools can access. I review those foundations and connect the information across your site.',
+    body: 'I check whether search engines can read your pages and whether those pages answer the questions customers ask about your products, services and locations.',
     examples: ['Check that search tools can read your pages', 'Clear service and product information', 'Useful page titles and descriptions', 'Current business and contact details'],
     source: true,
   },
@@ -63,32 +63,6 @@ export const ForYourBusiness = () => {
       <Header crumbs={[{ label: 'For your business' }]} />
       <main id="main" className="business-main">
         <ConsultingOpening />
-        <section id="business-contact" className="business-section business-contact" aria-labelledby="business-contact-title">
-          <LabelRow left="Start a conversation" right="Joshua Semolik / Untold.works" />
-          <div className="business-contact-grid">
-            <div>
-              <h2 id="business-contact-title" className="name">Where could<br />we start?</h2>
-              <p>Bring the idea you’re trying to launch, or show me something your team does the hard way. We’ll look at what you want to change, what you have to work with, and what’s worth building first.</p>
-              <p>Once we agree on the opportunity and budget, I can build a first version for you to react to. I can lead the work, build alongside your team, and help get it live and keep it current.</p>
-              <nav className="business-credentials" aria-label="More about my work">
-                <Link to="/about" className="text-link">About me <span aria-hidden="true">↗</span></Link>
-                <Link to="/work-together" className="text-link">Discuss a leadership role <span aria-hidden="true">↗</span></Link>
-              </nav>
-            </div>
-            <div className="business-contact-details">
-              <div className="business-contact-line">
-                <span className="lbl">Email me</span>
-                <a href={PROJECT_CONTACT_HREF} className="business-email">{EMAIL}<span aria-hidden="true">↗</span></a>
-              </div>
-              <div className="business-contact-line">
-                <span className="lbl">Call</span>
-                <a href={PHONE_HREF} className="business-phone">{PHONE_DISPLAY}<span aria-hidden="true">↗</span></a>
-              </div>
-              <a href={PROJECT_CONTACT_HREF} className="business-button">Start a conversation <span aria-hidden="true">↗</span></a>
-            </div>
-          </div>
-        </section>
-
         <section className="business-section business-proof" aria-labelledby="business-proof-title">
           <LabelRow left="Selected work" right="Websites · Brand · Content" />
           <div className="business-section-heading">
@@ -202,6 +176,29 @@ export const ForYourBusiness = () => {
           </div>
         </section>
 
+        <section id="business-contact" className="business-section business-contact" aria-labelledby="business-contact-title">
+          <LabelRow left="Start a conversation" right="Joshua Semolik / Untold.works" />
+          <div className="business-contact-grid">
+            <div>
+              <h2 id="business-contact-title" className="name">Where could<br />we start?</h2>
+              <p>Bring the idea you’re trying to launch, or show me something your team does the hard way. We’ll look at what you want to change, what you have to work with, and what’s worth building first.</p>
+              <nav className="business-credentials" aria-label="More about my work">
+                <Link to="/about" className="text-link">About me <span aria-hidden="true">↗</span></Link>
+                <Link to="/work-together" className="text-link">Ways to work together <span aria-hidden="true">↗</span></Link>
+              </nav>
+            </div>
+            <div className="business-contact-details">
+              <div className="business-contact-line">
+                <span className="lbl">Email me</span>
+                <a href={PROJECT_CONTACT_HREF} className="business-email">{EMAIL}<span aria-hidden="true">↗</span></a>
+              </div>
+              <div className="business-contact-line">
+                <span className="lbl">Call</span>
+                <a href={PHONE_HREF} className="business-phone">{PHONE_DISPLAY}<span aria-hidden="true">↗</span></a>
+              </div>
+            </div>
+          </div>
+        </section>
       </main>
       <Footer />
     </Layout>

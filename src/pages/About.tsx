@@ -121,13 +121,13 @@ export const About = () => {
           </div>
           <div className="mt-9 grid items-start gap-7 border-t border-current pt-6 md:grid-cols-3 md:gap-10">
               <p className="m-0 text-[18px] leading-[1.55]">
-                I took MIT Sloan’s executive education course, Artificial Intelligence: Implications for Business Strategy, in 2025. It gave me the moment of clarity I had been looking for: AI could change how work is organized, with an impact I think of in terms of the assembly line. Since that course, a day has not gone by without me working with AI, testing what it can do and putting it into practice.
+                At MIT Sloan in 2025, I studied how AI changes the way a business works. I started looking for places where a first draft could help a team make a decision sooner.
               </p>
               <p className="m-0 text-[18px] leading-[1.55]">
-                That practice now runs from campaign planning and retail systems to websites, photography and film. Higgsfield is my primary AI image and video tool. Years behind the lens shape how I direct it: lighting, framing, composition and pacing still matter. I use ChatGPT across models to think through problems, and Claude Code and Codex to turn ideas into working sites and tools.
+                On a shoot, I decide what belongs in the frame. I bring the same judgment to an AI image, down to how light hits a product and whether the details hold up.
               </p>
               <p className="m-0 text-[18px] leading-[1.55]">
-                I also teach skeptical colleagues with tasks they already need to finish: preparing campaign assets, reviewing product details and finding the next handoff. We document what works, keep approvals visible and give the team a repeatable process.
+                When I teach a team, we use work already on the calendar. We might prepare a campaign asset, check the product details together and leave the next person a process they can use.
               </p>
           </div>
         </section>

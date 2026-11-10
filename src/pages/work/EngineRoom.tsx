@@ -47,15 +47,6 @@ const subcampaigns = [
   'Designer Program', 'Custom Built', 'This Season’s Roster', 'Something’s Taking Shape', 'Preferred Customer Invitation',
 ] as const;
 
-const channels = [
-  { name: 'Paid', detail: 'Ad copy, creative links, owners and planned dates.' },
-  { name: 'Organic', detail: 'Published and scheduled social records from Content Factory.' },
-  { name: 'Email', detail: 'Authored messages and a gallery for review.' },
-  { name: 'Website', detail: 'Landing pages, banners, homepage changes and customer destinations.' },
-  { name: 'Production', detail: 'Campaign films, in-store screen loops and creative handoffs.' },
-  { name: 'SEO', detail: 'Search, AEO and blog ideas that can be promoted into production work.' },
-] as const;
-
 const CaseLink = ({ to, children }: { to: string; children: string }) => (
   <Link to={to} className="text-link">{children}<span aria-hidden="true">↗</span></Link>
 );
@@ -80,7 +71,6 @@ export const EngineRoom = () => {
           <div className="mt-9 grid items-start gap-8 border-t border-current pt-6 md:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)] md:gap-14">
             <p className="voice m-0 max-w-[570px] text-[clamp(23px,2.3vw,32px)] leading-[1.3]">I designed and built Engine Room with Claude Code so a campaign’s brief, assets, owners, dates and channel work can be found in one place.</p>
             <div className="flex flex-col gap-6">
-            <p className="m-0 text-[17px] leading-[1.55]">Teams can plan the film, posts, email and landing page against the same offer and deadline. Linked files and status indicators show what is ready, what is missing and who owns the next step.</p>
             <nav className="flex flex-wrap gap-x-7 gap-y-2" aria-label="Explore the Engine Room case">
               <a href="#workflow" className="text-link min-h-[44px]">The workflow <span aria-hidden="true">↓</span></a>
               <a href="#home-field" className="text-link min-h-[44px]">Home Field <span aria-hidden="true">↓</span></a>
@@ -157,9 +147,6 @@ export const EngineRoom = () => {
             <h2 id="channel-title" className="name m-0 text-[clamp(38px,4.3vw,64px)] leading-[0.98]">Make every handoff visible.</h2>
             <p className="m-0 text-[19px] leading-[1.55]">Each channel row shows copy, linked assets, an owner, a status and a date. Marketers can spot missing files, teammates can open or download the assets tied to a deliverable, and reviewers can see scheduled or published social in the campaign context.</p>
           </div>
-          <ul className="m-0 grid list-none gap-4 p-0 sm:grid-cols-2 lg:grid-cols-3" aria-label="Parallel campaign work lanes">
-            {channels.map((channel) => <li key={channel.name} className="flex flex-col gap-4 border-t border-current bg-ink/5 p-5"><h3 className="name m-0 text-[29px] leading-none">{channel.name}</h3><p className="m-0 text-[16px] leading-[1.5]">{channel.detail}</p></li>)}
-          </ul>
           <figure className="m-0 min-w-0">
             <Img src="home-field-social-posts.webp" alt="Home Field Organic lane with published and scheduled records from Content Factory" sizes="(min-width: 1440px) 1312px, 100vw" className="block h-auto w-full bg-ink object-contain" />
             <figcaption className="lbl border-b border-current py-4 text-[12px]">Working platform / October 2026 / Organic channel records</figcaption>
@@ -171,22 +158,21 @@ export const EngineRoom = () => {
         </section>
 
         <section id="ai-campaign-film" className="flex scroll-mt-8 flex-col gap-8 border-t border-current pb-20 pt-8 md:pb-28" aria-labelledby="factory-event-title">
-          <LabelRow left="Upcoming campaign / C.L. Bailey Factory Event" right="Prepared for October 16–31, 2026" />
+          <LabelRow left="Campaign film / C.L. Bailey Factory Event" right="Prepared for October 16–31, 2026" />
           <div className="grid gap-7 md:grid-cols-2 md:gap-16">
             <h2 id="factory-event-title" className="name m-0 text-[clamp(38px,4.3vw,64px)] leading-[0.98]">A new campaign uses the same structure.</h2>
             <div className="flex flex-col gap-5"><p className="m-0 text-[19px] leading-[1.55]">The October 16–31 Factory Event campaign brings a 10% offer on C.L. Bailey and Velocity into showrooms and online. Its creative, film and campaign destination were prepared for the October 16 opening.</p><p className="m-0 text-[16px] leading-[1.5]">“The Table Is Open,” “The Long Game” and “On The Floor” are the page’s editorial lanes. Outdoor advertising scenes are creative concepts.</p></div>
           </div>
           <CaseFilm {...clBaileyFactoryFilm} id="engine-room-factory-event-film" />
-          <div><CaseLink to="/work/c-l-bailey-factory-event">Explore the upcoming Factory Event</CaseLink></div>
+          <div><CaseLink to="/work/c-l-bailey-factory-event">See the Factory Event campaign</CaseLink></div>
         </section>
 
         <section className="border-t border-current pb-20 pt-8 md:pb-24" aria-labelledby="build-title">
-          <LabelRow left="My role" right="Strategy · Design · Build" />
-          <div className="grid items-start gap-8 pt-7 md:grid-cols-2 md:gap-14">
-            <h2 id="build-title" className="name m-0 max-w-[580px] text-[clamp(38px,4.3vw,64px)] leading-[0.98]">Give the next campaign a working starting point.</h2>
-            <p className="voice m-0 max-w-[650px] text-[24px] leading-[1.35]">I designed and built Engine Room with Claude Code around the team’s recurring tasks: plan a campaign, make assets, review them, schedule channels and track what shipped.</p>
+          <h2 id="build-title" className="name m-0 max-w-[700px] text-[clamp(32px,4vw,50px)] leading-[1.05]">Planning your next campaign?</h2>
+          <div className="mt-6 flex flex-wrap gap-x-8 gap-y-4">
+            <CaseLink to="/work-together#contact">Talk with me about your workflow</CaseLink>
+            <CaseLink to="/work/billiard-factory-and-c-l-bailey">See the Billiard Factory engagement</CaseLink>
           </div>
-          <div className="mt-8 flex flex-col gap-6 border-t border-current pt-5"><p className="m-0 max-w-[1000px] text-[18px] leading-[1.55]">Supabase persists the records; linked assets keep the output attached to its brief. Reusable kits prefill the shape of future campaigns, so the team can spend its time on the new idea and offer while retaining clear owners, dates and review steps.</p><div className="flex flex-wrap gap-x-8 gap-y-4"><CaseLink to="/work/billiard-factory-and-c-l-bailey">See the wider Billiard Factory transformation</CaseLink><CaseLink to="/about">About my AI practice</CaseLink></div></div>
         </section>
       </main>
       <HouseBar back={{ label: '← Billiard Factory', to: '/work/billiard-factory-and-c-l-bailey' }} next={{ label: 'Next: Home Field →', to: '/work/home-field' }} />

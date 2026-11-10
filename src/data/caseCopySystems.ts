@@ -56,9 +56,9 @@ export const caseCopySystems = {
   'platforms/off-storis': {
     value: 'The customer experience connects room inspiration and product discovery to the choices, prices and delivery requirements of a real retail order.',
     headline: 'Connect brand, product discovery and ecommerce.',
-    lead: 'Direction of Billiard Factory’s website rebuild and Shopify transition, connecting a custom storefront to complex products, coordinated add-ons and delivery choices.',
+    lead: 'Buying a pool table involves more than choosing a finish. I led the storefront rebuild so shoppers could select the table, add the right accessories and arrange delivery in one order.',
     storyTitle: 'A staged transition from legacy checkout to Shopify.',
-    story: 'Led the website rebuild and the move to Shopify. The team launched checkout on October 16, 2026. The customer-facing site remains the brand experience while Shopify handles the new cart and checkout path. Legacy-system dependencies and the XoroERP transition continue.',
+    story: 'The team launched Shopify checkout on October 16, 2026. Customers still browse Billiard Factory’s custom storefront. Behind it, Shopify keeps each configuration together through checkout. I’m coordinating the next stage, the Xorosoft ERP migration.',
     focus: [
       { label: 'My role', text: 'Direction of the website rebuild and Shopify transition, spanning brand, customer experience and ecommerce.' },
       { label: 'Implementation', text: 'The team built the storefront, integrated Shopify and brought the catalog online.' },
@@ -69,15 +69,15 @@ export const caseCopySystems = {
       { eyebrow: 'Product configuration', title: 'Keep the customer’s choices together.', body: 'Size, finish and other product options map to Shopify variants. Priced extras such as felt upgrades, accessories and protection plans stay associated with their table. Configuration images and readable order details connect what the shopper sees to what the business needs to fulfill.' },
       { eyebrow: 'Retail operations', title: 'Delivery is part of the purchase.', body: 'The implementation accounts for bulky products, mixed carts, regional delivery rules and white-glove installation charged per table. Delivery choices carry from the cart into checkout so the purchase reflects how the product will reach the customer.' },
       { eyebrow: 'Creative and commerce', title: 'Carry the advertised configuration into the product page.', body: 'Configuration links connect campaign imagery and product finishes to matching selections on the storefront. Product feeds, stable identifiers and canonical URLs help maintain continuity across advertising, discovery and purchase.' },
-      { eyebrow: 'Continuing work', title: 'Checkout launch is one stage of the transition.', body: 'The inspected implementation retains legacy-system fallback and documents manual Shopify order entry into STORIS. XoroERP integration and operational automation remain separate work. Project scale describes the scope of the system, without implying a measured revenue or conversion result.' },
+      { eyebrow: 'Continuing work', title: 'Checkout launch is one stage of the transition.', body: 'Staff still enter Shopify orders into STORIS by hand. Connecting those systems and automating order entry are part of the ongoing operational work.' },
     ],
   },
   'platforms/omi-lead-intake': {
     value: "Routing an inquiry into the CRM gives the team a record it can assign and follow up. My work covered the form and the handoff to the sales team.",
     headline: 'Route inquiries into the sales CRM.',
-    lead: 'Lead intake and routing for OMI Growth, connected to its CRM.',
+    lead: 'I connected OMI Growth’s inquiry form to the CRM used by its sales team.',
     storyTitle: 'Make each inquiry available for follow-up.',
-    story: 'The 2024–2025 work focused on receiving leads and routing them into OMI Growth’s CRM.',
+    story: 'Each submission creates a record the team can assign to someone for follow-up. The project covered the form and that handoff in 2024–2025.',
     focus: [
       { label: 'System', text: 'Lead intake and routing connected to the CRM.' },
       { label: 'Period', text: 'Work from 2024 to 2025.' },

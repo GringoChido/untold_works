@@ -95,16 +95,16 @@ for (const category of categories) {
   }
 }
 
-// Hiring, equal career lanes and recognizable proof precede process copy.
+// Consulting entry points and selected engagements precede the process section.
 const homeHtml = await pageHtml('/');
 const home = decode(homeHtml);
 if (/Film unavailable|Film could not load/.test(home)) fail('home: transient media error');
-['Available for senior leadership', 'Billiard Factory', 'Robert Glasper', 'Blue Note', 'Lalah Hathaway', 'Shopify', 'Paid media', 'CTV', 'nationwide and remotely', 'Download resume'].forEach((phrase) => expectIn(home, phrase, 'home'));
+['Show them', 'your budget', 'Ways to work together', 'Billiard Factory', 'Robert Glasper', 'Blue Note', 'Lalah Hathaway', 'Shopify', 'Tools & platforms', 'Engine Room'].forEach((phrase) => expectIn(home, phrase, 'home'));
 for (const route of ['/work/billiard-factory-and-c-l-bailey', '/work/robert-glasper-blue-note', '/work/lalah-hathaway', '/work/engine-room', '/work/other-projects', '/Joshua-Semolik-Resume.pdf']) expectIn(homeHtml, 'href="' + route + '"', 'homepage proof and resume');
 if (homeHtml.indexOf('id="work"') >= homeHtml.indexOf('id="ai"')) fail('home: selected work must precede process');
 expectIn(homeHtml, 'href="/art-of-prompting"', 'home creative production link');
-const hiring = await pageHtml('/work-together');
-for (const needle of ['Senior leadership opportunity', '/Joshua-Semolik-Resume.pdf', 'Music, entertainment', 'Brand storytelling, commerce']) expectIn(decodeURIComponent(hiring), needle, 'hiring page');
+const consulting = await pageHtml('/work-together');
+for (const needle of ['id="contact"', 'id="where-i-can-help"', 'mailto:', 'tel:', 'href="/work/lalah-hathaway"', 'href="/work/engine-room"']) expectIn(consulting, needle, 'consulting page');
 
 // The collection is reachable from the homepage and retains both films as full,
 // user-controlled playback rather than introducing ambient, silent previews.
@@ -125,8 +125,9 @@ for (const film of ['cl-bailey-factory-event', 'velocity-ball-launch']) {
 }
 
 const bf = await pageText('/work/billiard-factory-and-c-l-bailey');
-['Game Room Furniture Partners', 'trade-only showroom', 'interior designers'].forEach((phrase) => expectIn(bf, phrase, 'Billiard Factory trade showroom'));
-['27 room stories', '34 coded stations', 'physical redesign', 'The team brought the Gallery online', 'GoHighLevel', 'headless Shopify Plus', 'checkout launch on October 16, 2026', 'franchise planning with consultants'].forEach((phrase) => expectIn(bf, phrase, 'Billiard Factory engagement'));
+expectIn(await pageHtml('/work/billiard-factory-and-c-l-bailey'), 'href="/work/game-room-furniture-partners"', 'trade showroom detail link');
+['interior designers', '34 showroom stations', '27 room concepts', 'physical redesign', 'headless Shopify Plus', 'checkout launched October 16, 2026', 'franchise planning', 'Xorosoft', 'Holiday Gift Guide', 'Black Friday Gift Guide'].forEach((phrase) => expectIn(bf, phrase, 'Billiard Factory engagement'));
+expectIn(await pageText('/work/landing-pages'), 'GoHighLevel', 'sales handoff');
 const music = await pageText('/work/robert-glasper-blue-note');
 ['Second Son Productions', 'Other artist collaborations', 'Blue Note London', 'Rob Jones', 'Todd Cooper', 'Code Derivation', 'Black Radio Experience'].forEach((phrase) => expectIn(music, phrase, 'music engagement'));
 const other = await pageText('/work/other-projects');
@@ -144,7 +145,7 @@ for (const category of categories) {
   if (!otherHtml.includes('href="/' + category.slug + '"')) fail('other projects: missing capability index link to ' + category.slug);
 }
 const savor = await pageText('/work/savor');
-['IDW Studio', 'website and content storytelling', 'Chef Series'].forEach((phrase) => expectIn(savor, phrase, 'Savor case'));
+['IDW Studio', 'Website and content storytelling', 'Chef Series'].forEach((phrase) => expectIn(savor, phrase, 'Savor case'));
 const lalah = await pageText('/work/lalah-hathaway');
 ['original media, room concept and creative feedback', 'historically subscribed contacts', 'public vinyl and T-shirt checkout remains closed'].forEach((phrase) => expectIn(lalah, phrase, 'Lalah case'));
 

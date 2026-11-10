@@ -5,7 +5,7 @@
   "name": "Brand and product",
   "color": "ochre",
   "caption": "Visual systems for products and places.",
-  "intro": "I use identity, product and showroom design to make choices easier for teams and customers. At Billiard Factory, a 34-station floor plan connects to 27 live room stories; AI mockups help the team review rooms before physical installation.",
+  "intro": "I help teams see how a brand will look on the shelf or in a showroom. We can test a product, a finish or a room layout before committing to production.",
   "layers": [
    "Brand",
    "Product and place"
@@ -177,7 +177,7 @@
   "name": "Platforms",
   "color": "ink",
   "caption": "Tools that coordinate the work.",
-  "intro": "I design and build AI-assisted tools for campaign planning, content production, customer questions and dealer access. Engine Room links briefs, assets, owners and channel schedules; campaign forms route inquiries to the sales CRM.",
+  "intro": "I build tools around a task your team does every day, from finding the right product image to getting a campaign approved.",
   "layers": [
    "Customer AI",
    "Lead capture & CRM",
@@ -377,7 +377,7 @@
   "name": "Websites",
   "color": "burgundy",
   "caption": "Destinations with a clear next step.",
-  "intro": "I build artist, retail and service sites around what visitors need to decide: compare a product, find a show, understand a process or make an inquiry. AI helps me build and test these experiences; the site still has to serve its audience.",
+  "intro": "I build sites around what someone came to do. That might mean choosing a table that fits, hearing a new record or finding a café in an unfamiliar city.",
   "layers": [
    "Channels"
   ],
@@ -776,7 +776,7 @@
   "name": "Campaigns",
   "color": "teal",
   "caption": "Creative tied to an action.",
-  "intro": "AI helps me create campaign images and films, then carry the same idea into social, email, a page and a measurable handoff such as a lead form. Earlier music and live-event work grounds my direction in real people, performances and audiences.",
+  "intro": "I develop the campaign idea, direct the images and films, and carry the story into the places people will see it.",
   "layers": [
    "The story"
   ],
@@ -820,7 +820,7 @@
      "type": "image",
      "src": "cl-bailey-factory-event-still.jpg",
      "alt": "An AI-created city billboard scene from the C.L. Bailey Factory Event campaign film",
-     "tag": "AI campaign · Upcoming October 2026",
+     "tag": "AI campaign · October 2026",
      "fit": "cover"
     },
     "facts": [

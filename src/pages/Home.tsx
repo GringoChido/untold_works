@@ -1,13 +1,56 @@
 import { Link } from 'react-router-dom';
+import { CaseFilm } from '../components/CaseFilm';
+import { clBaileyFactoryFilm } from '../data/campaignMedia';
 import { Footer } from '../components/Footer';
 import { Header } from '../components/Header';
 import { Img } from '../components/Img';
 import { Layout } from '../components/Layout';
 import { ShowroomFilm } from '../components/ShowroomFilm';
 import { usePageMeta } from '../hooks/usePageMeta';
-import { PROJECT_CONTACT_HREF } from '../site';
+import { EMAIL, PROJECT_CONTACT_HREF } from '../site';
+
+const clientNeeds = [
+  {
+    title: '“We need photos and video. A big shoot is out of reach.”',
+    body: 'Send me the product photos you have. I can use AI to show your product in use, from a set of lifestyle images for your store to a short film for your campaign.',
+    link: 'See the film and lifestyle images',
+    to: '/#ai',
+  },
+  {
+    title: '“Can we give the client something to click through?”',
+    body: 'I’ll turn your website pitch into a working page. The client can open a link, try the idea and give you feedback before funding the full build.',
+    link: 'See the Village Tenders pitch',
+    to: '/work/village-tenders',
+  },
+  {
+    title: '“The holiday sale is booked. All we have is a product list.”',
+    body: 'I can build a shoppable gift guide around who your customers are buying for, then work with your team on the ads and social posts that bring people to it.',
+    link: 'See Billiard Factory’s holiday guides',
+    to: '/work/billiard-factory-and-c-l-bailey#holiday-gift-guides',
+  },
+  {
+    title: '“Could Claude help us run our campaigns?”',
+    body: 'Pick one campaign. I’ll show your team how to use Claude to turn the brief into a plan, with an owner, a deadline and a place to review each piece.',
+    link: 'See Engine Room, built with Claude Code',
+    to: '/work/engine-room',
+  },
+  {
+    title: '“Will our delivery options work on Shopify?”',
+    body: 'Moving your store starts with a real order. I’ll map how customers choose a size, finish and delivery service, then test those choices with your team before switching checkout.',
+    link: 'See Billiard Factory’s Shopify move',
+    to: '/work/off-storis',
+  },
+  {
+    title: '“Dealers keep asking us for the latest specs.”',
+    body: 'I can build a private dealer portal where a rep can find a product, check its dimensions and download the right image while they’re talking to a buyer.',
+    link: 'See the C.L. Bailey dealer portal',
+    to: '/work/c-l-bailey-portal-and-concierge',
+  },
+];
+
 export const Home = () => {
-  usePageMeta({ title: 'Untold.works | Creative & AI Consulting', description: 'Work with me on your brand story, digital experience or next launch. I use AI to help your team take an idea through delivery.', path: '/' });
+  usePageMeta({ title: 'Untold.works | Creative & AI Consulting', description: 'Bring a launch, a pitch or a process that needs work. Joshua Semolik helps you shape the story, build a first version with AI and carry it through launch.', path: '/' });
+
   return (
     <Layout className="home-canvas hiring-home">
       <Header />
@@ -16,82 +59,139 @@ export const Home = () => {
           <div className="studio-hero-scene">
             <picture>
               <source media="(max-width: 550px)" type="image/webp" srcSet="/images/untold-downtown-hero-clear-street-mobile-480.webp 480w, /images/untold-downtown-hero-clear-street-mobile-700.webp 700w" sizes="100vw" />
-              <Img src="untold-downtown-hero-clear-street.png" alt="Imagined downtown New York scene of a man showing a woman his phone as they walk together on the sidewalk, with pedestrians receding into the distance" sizes="100vw" eager fetchPriority="high" className="studio-hero-scene-image" />
+              <Img src="untold-downtown-hero-clear-street.png" alt="Two people sharing something on a phone as they walk down a New York street" sizes="100vw" eager fetchPriority="high" className="studio-hero-scene-image" />
             </picture>
             <div className="studio-hero-overlay">
               <div>
-                <p className="home-eyebrow">Untold.works <span aria-hidden="true">/</span> Independent creative &amp; AI studio</p>
-                <h1 id="home-title" className="display studio-hero-title">What are you trying<br /><span>to make happen?</span></h1>
+                <p className="home-eyebrow">Independent creative &amp; AI consulting</p>
+                <h1 id="home-title" className="display studio-hero-title">Show them<br />what you mean.</h1>
+                <p className="home-hero-pitch">I’m Joshua Semolik. I help teams turn an idea into something they can put in front of a customer.</p>
               </div>
-              <div className="hiring-actions"><Link to="/work-together" className="hiring-button">Let’s talk about your project <span aria-hidden="true">↗</span></Link><a href="#work" className="text-link">Explore the work <span aria-hidden="true">↓</span></a></div>
+              <div className="hiring-actions">
+                <a href={PROJECT_CONTACT_HREF} className="hiring-button">Talk with me about your project <span aria-hidden="true">↗</span></a>
+                <a href="#work" className="text-link">See the work <span aria-hidden="true">↓</span></a>
+              </div>
             </div>
           </div>
+        </section>
 
-          <div className="studio-hero-intro hiring-intro">
-            <p>I’m Joshua. Bring me a brand that needs a clearer story, a launch you want to get into the world, or a process that’s costing your team time. We’ll work out what’s worth building within your budget.</p>
-            <p className="hiring-availability">I can build it with you or lead it through launch, using AI where it saves time and expands what we can deliver.</p>
-            <div className="hiring-actions"><Link to="/work-together#where-i-can-help" className="text-link">Ways to work together ↗</Link></div>
+        <section id="where-to-start" className="home-start scroll-mt-5" aria-labelledby="home-start-title">
+          <h2 id="home-start-title" className="name hiring-section-title">What do you need to make happen?</h2>
+          <div className="home-start-intro">
+            <p>Bring me a pitch you need to land, a brand that’s hard to explain, or a process that eats up your team’s week. We’ll work out what’s worth building within your budget.</p>
+            <p>I’ll build a first version you can see and try. From there, I can work alongside you or lead your team through launch. I use AI where it saves us time or puts something new within reach, like making a campaign film from product photos.</p>
+          </div>
+          <div className="home-start-grid">
+            {clientNeeds.map(({ title, body, link, to }) => (
+              <article key={to} className="home-start-card">
+                <h3>{title}</h3>
+                <p>{body}</p>
+                <Link to={to} className="home-start-link">{link} <span aria-hidden="true">↗</span></Link>
+              </article>
+            ))}
           </div>
         </section>
 
         <section id="work" className="hiring-work scroll-mt-5" aria-labelledby="selected-work-title">
           <p className="lbl">Selected work</p>
-          <h2 id="selected-work-title" className="name hiring-section-title">What that can look like.</h2>
+          <h2 id="selected-work-title" className="name hiring-section-title">A floor plan. An album photo.<br />Two places to start.</h2>
           <div className="hiring-lanes">
-            <section id="billiard-factory" className="hiring-lane scroll-mt-5" aria-labelledby="bf-home-title">
-              <p className="lbl">Brand, retail &amp; AI transformation</p>
+            <article id="billiard-factory" className="hiring-lane scroll-mt-5">
               <div className="hiring-storefront">
                 <ShowroomFilm />
-                <Link to="/work/billiard-factory-and-c-l-bailey" className="absolute inset-0" aria-label="Explore the Billiard Factory and C.L. Bailey engagement" />
+                <Link to="/work/billiard-factory-and-c-l-bailey" className="absolute inset-0" aria-label="Explore the Billiard Factory showroom project" />
               </div>
-              <h3 id="bf-home-title" className="name hiring-case-title"><Link to="/work/billiard-factory-and-c-l-bailey">Billiard Factory</Link></h3>
-              <p>A showroom concept carried through to the online store, the campaigns that introduce it, and the tools the sales team uses.</p>
-              <ul className="hiring-proof-list">
-                <li><Link to="/work/off-storis"><strong>Shopify &amp; ecommerce ↗</strong><span>Configurable products, add-ons and delivery choices. The checkout is live.</span></Link></li>
-                <li><Link to="/work/billiard-factory-and-c-l-bailey#paid-media-ctv"><strong>Paid media, SEO/AEO &amp; CTV ↗</strong><span>Campaign creative and placement across search, paid media and streaming TV.</span></Link></li>
-                <li><Link to="/work/billiard-factory-and-c-l-bailey"><strong>Explore the full engagement ↗</strong></Link></li>
-              </ul>
-              <Link to="/work/engine-room" className="hiring-secondary"><Img src="engine-room-cover-2026.png" alt="Engine Room: a composed view of the campaign calendar and creative asset library" sizes="(min-width: 768px) 46vw, 100vw" className="hiring-work-image" /><h4 className="name hiring-case-title">Engine Room ↗</h4><p>I designed and built the marketing platform with Claude Code, connecting campaign plans, assets, owners and delivery.</p></Link>
-            </section>
-
-            <section id="second-son" className="hiring-lane scroll-mt-5" aria-labelledby="music-home-title">
-              <p className="lbl">Music &amp; entertainment creative leadership</p>
-              <Link to="/work/robert-glasper-blue-note" className="hiring-image-link"><Img src="robert-glasper-blue-note-at-sea-john-abbott.jpg" alt="Robert Glasper performing at the piano under blue and magenta lights" sizes="(min-width: 768px) 46vw, 100vw" className="hiring-work-image" /></Link>
-              <h3 id="music-home-title" className="name hiring-case-title"><Link to="/work/robert-glasper-blue-note">Robert Glasper &amp; Blue Note</Link></h3>
-              <p>Release films and Robtober stories with Robert Glasper’s team, alongside opening and festival work for Blue Note.</p>
-              <ul className="hiring-proof-list">
-                <li><Link to="/work/blue-note-los-angeles"><strong>Blue Note Los Angeles ↗</strong><span>Launch and opening content introducing the Hollywood room and its opening artist.</span></Link></li>
-                <li><Link to="/work/black-radio-experience"><strong>Blue Note Napa / Black Radio Experience ↗</strong><span>Content Director across four years of Blue Note’s Napa festival, including its evolution into the Black Radio Experience.</span></Link></li>
-                <li><Link to="/work/robert-glasper-blue-note"><strong>Explore the music work ↗</strong></Link></li>
-              </ul>
-              <Link to="/work/lalah-hathaway" className="hiring-secondary"><Img src="lalah-made-in-chicago.jpg" alt="Lalah Hathaway’s Made in Chicago interactive artist website" sizes="(min-width: 768px) 46vw, 100vw" className="hiring-work-image" /><h4 className="name hiring-case-title">Lalah Hathaway ↗</h4><p>Seven objects in an artist-supplied photograph became the navigation for an interactive album experience.</p></Link>
-              <p className="home-practice-credit">Robert Glasper photo: <a href="https://www.wbgo.org/music/2023-09-25/robert-glasper-on-robtober-his-monthlong-residency-at-the-blue-note" target="_blank" rel="noreferrer">John Abbott / Jazz Cruises ↗</a></p>
-            </section>
+              <h3 className="name hiring-case-title"><Link to="/work/billiard-factory-and-c-l-bailey">Billiard Factory ↗</Link></h3>
+              <p>Customers wanted to picture a table in their own home. I designed the showroom around complete rooms. With the team, I turned 27 of those rooms into collections customers can shop online.</p>
+              <Link to="/work/off-storis" className="text-link self-start">Inside the Shopify rebuild <span aria-hidden="true">↗</span></Link>
+            </article>
+            <article id="second-son" className="hiring-lane scroll-mt-5">
+              <Link to="/work/lalah-hathaway" className="hiring-image-link">
+                <Img src="lalah-made-in-chicago.jpg" alt="Lalah Hathaway in a listening room lined with records, the opening image for Made in Chicago" sizes="(min-width: 768px) 46vw, 100vw" className="hiring-work-image" />
+              </Link>
+              <h3 className="name hiring-case-title"><Link to="/work/lalah-hathaway">Lalah Hathaway ↗</Link></h3>
+              <p>The team had a photograph for <em>Made in Chicago</em>. I hid seven ways into the album inside it. About five days later, Lalah could try the first version herself.</p>
+              <a href="https://lalahhathaway.com/" className="text-link self-start">Step inside the artist site <span aria-hidden="true">↗</span></a>
+            </article>
           </div>
-        </section>
-
-        <section id="ai" className="hiring-approach scroll-mt-5" aria-labelledby="home-ai-title">
-          <div><p className="lbl">Approach</p><h2 id="home-ai-title" className="name hiring-section-title">Find the story.<br />Bring it to life.</h2></div>
-          <div>
-            <p>A working draft gives us something to react to. I use AI to explore directions and build an early version, then work with the people who know the brand to get the details right.</p>
-            <h3 id="home-toolkit" className="lbl mt-6">Tools &amp; platforms</h3>
-            <dl className="mt-2 space-y-2 text-[15px] leading-snug" aria-labelledby="home-toolkit">
-              <div><dt className="inline font-semibold">Creative production</dt><dd className="inline"> · Adobe Creative Cloud, Higgsfield</dd></div>
-              <div><dt className="inline font-semibold">Websites &amp; commerce</dt><dd className="inline"> · Claude Code, Shopify</dd></div>
-              <div><dt className="inline font-semibold">Retail spaces</dt><dd className="inline"> · SketchUp, AutoCAD</dd></div>
-            </dl>
-            <div className="hiring-actions">
-              <Link to="/about#toolkit" className="text-link">See the full toolkit ↗</Link>
-              <Link to="/art-of-prompting" className="text-link">AI creative production ↗</Link>
+          <nav id="other-projects" className="home-related" aria-label="More selected work">
+            <div className="home-related-grid">
+              {[
+                { to: '/work/engine-room', title: 'Engine Room', scope: 'Campaign operations', image: 'marketing-engine-overview.png', alt: 'Campaign dashboard in Billiard Factory’s Engine Room', credit: '' },
+                { to: '/work/robert-glasper-blue-note', title: 'Robert Glasper & Blue Note', scope: 'Music and live events', image: 'blue-note-la-glasper.jpg', alt: 'Robert Glasper on stage at the opening of Blue Note Los Angeles', credit: 'Photo by Todd Cooper / @toddcoop' },
+                { to: '/work/savor', title: 'Savor', scope: 'Food and storytelling', image: 'savor-chef-series.jpg', alt: 'A chef preparing food for the Savor Chef Series', credit: 'Chef Series frame by IDW Studio' },
+              ].map(({ to, title, scope, image, alt, credit }) => (
+                <div key={to}>
+                  <Link to={to} className="home-project-card">
+                    <Img src={image} alt={alt} sizes="(min-width: 701px) 30vw, 100vw" />
+                    <span className="lbl">{scope}</span>
+                    <span className="name">{title} <span aria-hidden="true">↗</span></span>
+                  </Link>
+                  {credit && <small>{credit}</small>}
+                </div>
+              ))}
             </div>
+            <Link className="text-link" to="/work/other-projects">More projects ↗</Link>
+          </nav>
+        </section>
+
+        <section id="ai" className="home-process scroll-mt-5" aria-labelledby="home-ai-title">
+          <div className="home-process-spread">
+            <div className="home-process-copy">
+              <p className="lbl">Working together</p>
+              <h2 id="home-ai-title" className="name hiring-section-title">See a first version before you commit to the rest.</h2>
+              <p>Bring me the brief and your budget. I’ll give you a first version you can react to, then build it with your team through launch.</p>
+              <p>For C.L. Bailey, the brief was a 10% offer. The idea was a man who keeps putting off buying a pool table. Then it starts finding him everywhere, from his morning paper to his train ride home.</p>
+              <Link to="/work-together#where-i-can-help" className="text-link">Ways to work together ↗</Link>
+            </div>
+            <CaseFilm
+              {...clBaileyFactoryFilm}
+              id="home-factory-event-film"
+              poster="/images/cl-bailey-waterfront-poster.jpg"
+              title="C.L. Bailey · Factory Event"
+              caption="The full campaign film, made entirely with AI. The billboards and transit ads are scenes in the film."
+              sourceHref="/work/c-l-bailey-factory-event"
+              sourceLabel="Explore the campaign"
+            />
+          </div>
+          <div id="home-field-stills" className="home-photo-story">
+            <div className="home-photo-story-copy">
+              <p className="lbl">Billiard Factory · Home Field</p>
+              <h3 className="name">A Western in one shot.</h3>
+              <p>A hat brim hides the player’s eyes. Down at cue level, you can see exactly where he’s aiming. For Home Field, I used AI to frame each game differently, right down to the overhead view of foosball on a sunlit deck.</p>
+            </div>
+            <figure>
+              <Img src="hf-filmstill.jpg" alt="A player in a cowboy hat sights along his cue, lit by a single amber light" sizes="(min-width: 701px) 38vw, 68vw" />
+              <Img src="hf-foosball.jpg" alt="Two players at a foosball table seen from above, casting long shadows across a deck" sizes="(min-width: 701px) 17vw, 30vw" />
+              <figcaption>AI film still and campaign image from <Link to="/work/home-field" className="text-link">Home Field ↗</Link></figcaption>
+            </figure>
+          </div>
+          <div className="home-toolkit-strip">
+            <div>
+              <h3 id="home-toolkit" className="lbl">Tools &amp; platforms</h3>
+              <Link to="/about#toolkit" className="text-link">Full toolkit ↗</Link>
+            </div>
+            <dl aria-labelledby="home-toolkit">
+              <div><dt>Creative production</dt><dd>Adobe Creative Cloud, Higgsfield</dd></div>
+              <div><dt>Websites &amp; commerce</dt><dd>Claude Code, Shopify</dd></div>
+              <div><dt>Retail spaces</dt><dd>SketchUp, AutoCAD</dd></div>
+            </dl>
+            <Link to="/art-of-prompting" className="text-link">See how I use AI ↗</Link>
           </div>
         </section>
-        <section id="other-projects" className="hiring-more scroll-mt-5" aria-label="Other Projects">
-          <p className="lbl">More selected work</p><div className="hiring-actions"><Link to="/work/savor" className="text-link">Savor ↗</Link><Link to="/work/noxguard" className="text-link">Noxguard ↗</Link><Link to="/work/other-projects" className="text-link">Other Projects ↗</Link></div>
-        </section>
-        <section className="home-close" aria-labelledby="home-close-title">
-          <p className="home-eyebrow">Work with Untold</p>
-          <div className="home-close-grid"><h2 id="home-close-title">Where should<br />we start?</h2><div><p>Tell me what you’re working on, what you’d like to change, or where you’re stuck.</p><div className="hiring-actions"><a href={PROJECT_CONTACT_HREF} className="text-link">Email me ↗</a></div></div></div>
+
+        <section id="contact" className="home-invitation" aria-labelledby="home-close-title">
+          <h2 id="home-close-title" className="name">What’s on<br />your desk?</h2>
+          <div className="home-invitation-photo">
+            <figure>
+              <img src="/images/about/joshua-thinking-800.webp" srcSet="/images/about/joshua-thinking-480.webp 480w, /images/about/joshua-thinking-800.webp 800w, /images/about/joshua-thinking-1200.webp 1200w" sizes="(max-width: 700px) 31vw, 30vw" alt="Joshua Semolik" width="480" height="600" loading="lazy" decoding="async" />
+              <figcaption>Joshua Semolik</figcaption>
+            </figure>
+          </div>
+          <div className="home-invitation-contact">
+            <p>Send me the deck, the link or a few lines about what you want to change. We can start there.</p>
+            <a href={PROJECT_CONTACT_HREF}>{EMAIL} <span aria-hidden="true">↗</span></a>
+          </div>
         </section>
       </main>
       <Footer />

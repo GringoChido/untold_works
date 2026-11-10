@@ -1,5 +1,4 @@
-import { Link } from 'react-router-dom';
-import { useLocation } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { NotFound } from '../NotFound';
 import { CaseFilm } from '../../components/CaseFilm';
 import { Footer } from '../../components/Footer';
@@ -64,17 +63,14 @@ export const ProjectDetail = () => {
     <Layout>
       <Header crumbs={[{ label: 'Work', to: '/' }, parent, { label: project.name }]} />
       <main id="main" className="flex flex-col">
-        <section className="pb-11 pt-12 md:pb-16 md:pt-16" aria-labelledby="project-title">
-          <p className="lbl m-0 text-[13px]">{`${category.index} / ${category.name} · ${String(project.order).padStart(2, '0')}`}</p>
+        <section className="pb-8 pt-10 md:pb-10 md:pt-14" aria-labelledby="project-title">
+          <p className="lbl m-0 text-[13px]">{project.name}</p>
           <h1 id="project-title" className="display m-0 mt-5 max-w-[1180px] break-words text-[clamp(49px,6.3vw,96px)] leading-[0.92]">
             {copy.headline}
           </h1>
-          <div className="mt-9 grid items-start gap-4 border-t border-current pt-5 md:grid-cols-[minmax(180px,0.38fr)_minmax(0,1fr)] md:gap-10">
-            <span className="name text-[clamp(22px,2.1vw,30px)] leading-[1.05]">{project.name}</span>
-            <div className="flex max-w-[850px] flex-col items-start gap-5">
-              <p className="voice m-0 text-[clamp(22px,2.2vw,30px)] leading-[1.28]">{copy.lead}</p>
-              {copy.films && copy.films.length > 0 && <a href="#project-films" className="text-link self-start">{copy.films.length > 1 ? 'Watch the films' : 'Watch the film'} <span aria-hidden="true">↓</span></a>}
-            </div>
+          <div className="mt-6 flex max-w-[890px] flex-col items-start gap-4">
+            <p className="voice m-0 text-[clamp(21px,2vw,28px)] leading-[1.32]">{copy.lead}</p>
+            {copy.films?.length ? <a href="#project-films" className="text-link">{copy.films.length > 1 ? 'Watch the films' : 'Watch the film'} <span aria-hidden="true">↓</span></a> : null}
           </div>
         </section>
 
@@ -93,17 +89,13 @@ export const ProjectDetail = () => {
           </figcaption>
         </figure>
 
-        <section className="pb-20 pt-20 md:pb-24 md:pt-24" aria-labelledby="project-story-title">
-          <LabelRow left="The work" right={project.visual.tag ?? 'Selected project'} />
-          <div className="pt-7">
+        <section className="py-10 md:py-14" aria-labelledby="project-story-title">
+
+          <div>
             <h2 id="project-story-title" className="name m-0 max-w-[930px] text-[clamp(38px,4.2vw,64px)] leading-[0.98]">
               {copy.storyTitle}
             </h2>
-            <p className="voice m-0 mt-7 max-w-[1120px] text-[clamp(22px,2.1vw,30px)] leading-[1.36]">{copy.story}</p>
-          </div>
-          <div className="mt-9 border-t border-current pt-5">
-            <span className="lbl text-[12px]">Why this work matters</span>
-            <p className="m-0 mt-4 max-w-[1040px] text-[19px] leading-[1.5]">{copy.value}</p>
+            <p className="voice m-0 mt-7 max-w-[850px] text-[clamp(19px,1.8vw,24px)] leading-[1.48]">{copy.story}</p>
           </div>
         </section>
 
@@ -137,7 +129,7 @@ export const ProjectDetail = () => {
 
         {copy.details && copy.details.length > 0 && (
           <section className="flex flex-col gap-7 pb-20 md:pb-28" aria-labelledby="project-details-title">
-            <LabelRow left={<span id="project-details-title">A closer look</span>} right={`${String(copy.details.length).padStart(2, '0')} parts`} />
+            <LabelRow left={<span id="project-details-title">A closer look</span>} />
             <div className="border-b border-current">
               {copy.details.map((detail, detailIndex) => (
                 <article key={`${detail.eyebrow}-${detailIndex}`} className="grid gap-5 border-t border-current py-8 md:grid-cols-[minmax(0,0.38fr)_minmax(0,0.82fr)_minmax(0,1.1fr)] md:gap-10 md:py-10">
@@ -150,55 +142,51 @@ export const ProjectDetail = () => {
           </section>
         )}
 
-        <section className="flex flex-col gap-9 pb-20 md:pb-28" aria-labelledby="project-focus-title">
-          <LabelRow left={<span id="project-focus-title">Inside the project</span>} right={`${String(copy.focus.length).padStart(2, '0')} details`} />
-          <div className="grid gap-x-16 gap-y-9 md:grid-cols-2">
-            {copy.focus.map((item, itemIndex) => (
-              <div key={item.label} className="flex flex-col gap-5 border-t border-current pt-5">
-                <span className="lbl text-[13px]">{`${String(itemIndex + 1).padStart(2, '0')} / ${item.label}`}</span>
-                <p className="name m-0 max-w-[570px] text-[clamp(25px,2.7vw,37px)] leading-[1.13]">{item.text}</p>
-              </div>
-            ))}
+        <details className="mb-12 border-y border-current md:mb-16">
+          <summary id="project-record-title" className="name cursor-pointer py-5 text-[clamp(23px,2.2vw,32px)]">Project details &amp; credits</summary>
+          <div className="grid gap-8 pb-8 md:grid-cols-2 md:gap-16">
+            <dl id="project-focus-title" className="m-0">
+              {copy.focus.map((item) => (
+                <div key={item.label} className="border-t border-current py-4">
+                  <dt className="lbl text-[13px]">{item.label}</dt>
+                  <dd className="m-0 mt-2 max-w-prose text-[17px] leading-[1.45]">{item.text}</dd>
+                </div>
+              ))}
+            </dl>
+            <dl className="m-0 border-b border-current">
+              {project.facts.map((fact) => (
+                <div key={fact.label} className="grid gap-2 border-t border-current py-4 sm:grid-cols-[minmax(130px,0.65fr)_minmax(0,1.35fr)] sm:gap-8">
+                  <dt className="lbl text-[13px]">{fact.label}</dt>
+                  <dd className="m-0 text-[18px] leading-[1.4]">
+                    {fact.href ? (
+                      isExternal(fact.href) ?
+                        <a href={fact.href} target="_blank" rel="noopener noreferrer" className="underline underline-offset-4">{fact.value}</a> :
+                        <Link to={factHref(fact.href)} className="underline underline-offset-4">{fact.value}</Link>
+                    ) : fact.value}
+                  </dd>
+                </div>
+              ))}
+            </dl>
           </div>
-        </section>
-
-        <section className="grid gap-8 pb-24 md:grid-cols-[minmax(0,0.8fr)_minmax(0,1.2fr)] md:gap-16 md:pb-32" aria-labelledby="project-record-title">
-          <div>
-            <LabelRow left="Project record" right="Selected facts" />
-            <h2 id="project-record-title" className="name m-0 pt-7 text-[clamp(37px,4.2vw,62px)] leading-[0.98]">At a glance.</h2>
-          </div>
-          <dl className="m-0 border-b border-current">
-            {project.facts.map((fact) => (
-              <div key={fact.label} className="grid gap-2 border-t border-current py-4 sm:grid-cols-[minmax(130px,0.65fr)_minmax(0,1.35fr)] sm:gap-8">
-                <dt className="lbl text-[13px]">{fact.label}</dt>
-                <dd className="m-0 text-[18px] leading-[1.4]">
-                  {fact.href ? (
-                    isExternal(fact.href) ?
-                      <a href={fact.href} target="_blank" rel="noopener noreferrer" className="underline underline-offset-4">{fact.value}</a> :
-                      <Link to={factHref(fact.href)} className="underline underline-offset-4">{fact.value}</Link>
-                  ) : fact.value}
-                </dd>
-              </div>
-            ))}
-          </dl>
-        </section>
+        </details>
 
         {copy.links && copy.links.length > 0 && (
-          <section className="flex flex-col gap-7 pb-24 md:pb-32" aria-labelledby="project-links-title">
+          <section className="flex flex-col gap-4 pb-10 md:pb-14" aria-labelledby="project-links-title">
             <LabelRow left={<span id="project-links-title">See the work</span>} right="Projects & destinations" />
             <div className="grid gap-x-12 md:grid-cols-2">
               {copy.links.map((link) => isExternal(link.href) ? (
-                <a key={link.href} href={link.href} target="_blank" rel="noopener noreferrer" className="name flex items-baseline justify-between gap-6 border-b border-current py-6 text-[clamp(24px,2.5vw,36px)] leading-[1.08] no-underline">
+                <a key={link.href} href={link.href} target="_blank" rel="noopener noreferrer" className="name flex items-baseline justify-between gap-6 border-b border-current py-4 text-[clamp(20px,2vw,28px)] leading-[1.08] no-underline">
                   <span>{link.label.replace(/\s*↗$/, '')}</span><span aria-hidden="true">↗</span>
                 </a>
               ) : (
-                <Link key={link.href} to={link.href} className="name flex items-baseline justify-between gap-6 border-b border-current py-6 text-[clamp(24px,2.5vw,36px)] leading-[1.08] no-underline">
+                <Link key={link.href} to={link.href} className="name flex items-baseline justify-between gap-6 border-b border-current py-4 text-[clamp(20px,2vw,28px)] leading-[1.08] no-underline">
                   <span>{link.label}</span><span aria-hidden="true">→</span>
                 </Link>
               ))}
             </div>
           </section>
         )}
+        <p className="m-0 pb-12 md:pb-16"><Link to="/work-together#contact" className="text-link">Talk with me about your project <span aria-hidden="true">↗</span></Link></p>
       </main>
       <HouseBar back={{ label: `← ${parent.label}`, to: parent.to }} next={{ label: `Next: ${nextTarget.label} →`, to: nextTarget.to }} />
       <Footer />

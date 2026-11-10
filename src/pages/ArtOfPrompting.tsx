@@ -113,7 +113,7 @@ export const ArtOfPrompting = () => {
           <div className="prompting-hero-grid">
             <h1 id="prompting-title" className="display prompting-title">The art<br />of prompting.</h1>
             <div className="prompting-hero-copy">
-              <p>I’m Joshua Semolik. This is my process for creating AI images and video: start with the idea and real product references, write precise prompts, review the images, develop motion, then edit and adapt the finished work. My experience in photography, film and creative direction shapes the lighting, framing, materials, performance and pacing.</p>
+              <p>I start with the actual product. My years behind a camera guide where the light falls, what the lens sees and when to cut. Here’s how those choices shape an AI-made campaign.</p>
               <nav className="creative-collection-nav" aria-label="Explore the art of prompting">
                 <a href="#films" className="text-link">The film <span aria-hidden="true">↓</span></a>
                 <a href="#process" className="text-link">The process <span aria-hidden="true">↓</span></a>
@@ -128,7 +128,7 @@ export const ArtOfPrompting = () => {
           <PortfolioFilm id="creative-cl-bailey-factory-event" src={clBaileyFactoryFilm.src} mobileSrc={clBaileyFactoryFilm.mobileSrc} poster="/images/cl-bailey-waterfront-poster.jpg" width={clBaileyFactoryFilm.width} height={clBaileyFactoryFilm.height} label={clBaileyFactoryFilm.title} controlLabel="C.L. Bailey Factory Event AI campaign film" caption="C.L. Bailey Factory Event / Created with AI" nativeControls autoPlayWhenVisible={false} className="prompting-feature-player" />
           <div className="prompting-feature-copy">
             <div><p className="lbl">From a premise to a campaign world</p><h2 id="prompting-film-title" className="name">The Factory Event,<br />imagined.</h2></div>
-            <div><p>“You keep putting it off. So it starts showing up everywhere.” I carried that idea through city streets, a newspaper, a train journey and the game room in a film created entirely with AI.</p><p>The film is prepared for the October 16–31, 2026 Factory Event. The outdoor and transit advertising scenes are creative visualizations.</p><Link to="/work/c-l-bailey-factory-event" className="text-link creative-collection-item-link">Explore the campaign <span aria-hidden="true">↗</span></Link></div>
+            <div><p>“You keep putting it off. So it starts showing up everywhere.” I carried that idea through city streets, a newspaper, a train journey and the game room in a film created entirely with AI.</p><p>Created for the October 2026 Factory Event. The outdoor and transit scenes are proposed placements.</p><Link to="/work/c-l-bailey-factory-event" className="text-link creative-collection-item-link">Explore the campaign <span aria-hidden="true">↗</span></Link></div>
           </div>
           <div className="prompting-scenes" aria-label="C.L. Bailey campaign mockups">
             {campaignScenes.map((scene) => <figure key={scene.src}><Img src={scene.src} alt={scene.alt} sizes="(max-width: 599px) 100vw, 33vw" /><figcaption className="lbl">{scene.caption}</figcaption></figure>)}
@@ -138,7 +138,7 @@ export const ArtOfPrompting = () => {
         <section id="process" className="creative-collection-section" aria-labelledby="prompting-process-title">
           <div className="prompting-practice-intro">
             <h2 id="prompting-process-title" className="name">From an idea to an image.<br />Then into motion.</h2>
-            <div><p>A product image can become a lifestyle scene. That scene can become a moving sequence, then a finished film and a set of campaign assets. This is a growing record of that practice and what I’m learning along the way.</p><p>The prompt changes as I review the work. Each pass makes the product, the scene and the story more specific.</p></div>
+            <div><p>The brief called for a bar cart someone might actually reach for. I placed it beside the sofa and checked the shelves, metalwork and casters against the original.</p></div>
           </div>
           <div className="prompting-furniture-study" aria-label="Industrial Bar Cart: product reference, written scene direction and AI lifestyle image">
             <figure>
@@ -178,18 +178,6 @@ export const ArtOfPrompting = () => {
           <div className="creative-collection-films">
             {supportingFilms.map((film) => <article key={film.id} className={`creative-collection-film${film.format === 'portrait' ? ' creative-collection-film--portrait' : ''}`} aria-labelledby={`${film.id}-title`}><div className="creative-collection-meta"><span className="lbl">{film.kind}</span><span>{film.duration}</span></div><PortfolioFilm id={film.id} src={film.src} mobileSrc={film.mobileSrc} poster={film.poster} width={film.width} height={film.height} label={film.label} controlLabel={film.controlLabel} caption={film.caption} nativeControls autoPlayWhenVisible={false} className="creative-collection-player" /><h3 id={`${film.id}-title`} className="name creative-collection-item-title">{film.title}</h3><p className="creative-collection-item-detail">{film.detail}</p><Link to={film.to} className="text-link creative-collection-item-link">{film.action}<span aria-hidden="true">↗</span></Link></article>)}
           </div>
-        </section>
-
-        <section className="answer-section" aria-labelledby="prompting-questions-title">
-          <p className="lbl">Inside the process</p>
-          <h2 id="prompting-questions-title" className="name answer-section-title">The decisions behind the image.</h2>
-          <div className="answer-grid">
-            <div><h3>What makes an AI product prompt useful?</h3><p>A useful prompt starts with the actual product and the intended use. I specify the proportions, materials, setting, camera position and light, then compare the result with the reference. The <a href="#process">bar-cart study</a> shows that progression from product reference to lifestyle scene.</p></div>
-            <div><h3>How does a still image become a film?</h3><p>I use selected images to develop the sequence, camera movement and action. Generated takes are reviewed for product accuracy and continuity, then edited with sound and pacing. The C.L. Bailey film above shows how one premise carries through several settings.</p></div>
-            <div><h3>Where does human judgment matter?</h3><p>In the brief, the reference selection, the product checks and the edit. AI gives me material to assess and refine. I decide which takes serve the story and whether an image represents the product well enough to use.</p></div>
-            <div><h3>How is the finished work reused?</h3><p>An approved image or film can become a page feature, a shorter social cut or a different crop. Each version needs a destination and a review step. <Link to="/work/engine-room">The Marketing Engine</Link> connects those assets with the brief, owners and publishing schedule.</p></div>
-          </div>
-          <p className="mt-8 text-[15px]"><Link to="/about" className="underline underline-offset-4">More about my creative process</Link></p>
         </section>
 
         <section className="creative-collection-section" aria-labelledby="prompting-delivery-title">

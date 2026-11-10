@@ -32,7 +32,9 @@ export const CaseFilm = ({ id, src, mobileSrc, poster, width, height, title, cap
         aria-label={title}
         aria-describedby={caption ? `${id}-caption` : undefined}
         onCanPlay={() => setFailed(false)}
-        onError={() => { if (!('__UNTOLD_PRERENDER__' in window)) setFailed(true); }}
+        onError={(event) => {
+          if (event.currentTarget.error && !('__UNTOLD_PRERENDER__' in window)) setFailed(true);
+        }}
       >
         {mobileSrc && <source src={mobileSrc} type="video/mp4" media="(max-width: 767px)" />}
         <source src={src} type="video/mp4" />

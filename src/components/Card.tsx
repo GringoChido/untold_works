@@ -1,20 +1,13 @@
 import { Link } from 'react-router-dom';
-import type { ReactNode } from 'react';
-import { factHref, isExternal, slugify, type CardColor, type Fact, type Visual as VisualData } from '../data/categories';
+import { factHref, isExternal, slugify, type Fact, type Visual as VisualData } from '../data/categories';
 import { Visual } from './visuals/Visual';
 
 type Props = {
-  index: string;
   name: string;
-  color: CardColor;
   visual: VisualData;
-  barRight: ReactNode;
   caption?: string;
-  facts?: Fact[];
-  rows?: string[];
-  to?: string;
-  nameTo?: string;
-  size?: 'home' | 'grid';
+  facts: Fact[];
+  nameTo: string;
   eager?: boolean;
 };
 
@@ -32,53 +25,24 @@ const FactValue = ({ fact }: { fact: Fact }) => {
   return <Link to={factHref(fact.href)} className="underline underline-offset-4">{fact.value}</Link>;
 };
 
-/** The category index stays uniform so each project's own imagery can lead. */
-export const Card = ({ index, name, visual, barRight, caption, facts, rows, to, nameTo, size = 'grid', eager }: Props) => {
-  const home = size === 'home';
-  const sizes = home ? '(min-width: 900px) 45vw, 100vw' : '(min-width: 768px) 48vw, 100vw';
-  const titleClass = name.length > 24 ? 'text-[29px]' : 'text-[34px]';
-
-  const body = (
+export const Card = ({ name, visual, caption, facts, nameTo, eager }: Props) => (
+  <article id={slugify(name)} className="catalog-card flex scroll-mt-6 flex-col bg-cream text-ink">
     <div className="catalog-card-body flex grow flex-col gap-4 p-5 md:p-6">
-      <div className="flex items-baseline justify-between gap-4 border-b border-ink/35 pb-3">
-        <span className="lbl">{index}</span>
-        <span className="lbl">Selected work</span>
-      </div>
-      {nameTo ? (
-        <Link to={nameTo} aria-label={`Open ${name} project`} className="block no-underline">
-          <Visual visual={visual} sizes={sizes} size={size} eager={eager} />
-        </Link>
-      ) : <Visual visual={visual} sizes={sizes} size={size} eager={eager} />}
-      <div className="flex flex-col gap-2">
-        <h2 className={['name', 'm-0', 'leading-[1.02]', titleClass].join(' ')}>
-          {nameTo ? <Link to={nameTo} className="no-underline">{name}</Link> : name}
+      <Link to={nameTo} aria-label={`Open ${name} project`} className="block no-underline">
+        <Visual visual={visual} sizes="(min-width: 768px) 48vw, 100vw" size="grid" eager={eager} />
+      </Link>
+      <div>
+        <h2 className="name m-0 text-[clamp(26px,2.7vw,36px)] leading-[1.05]">
+          <Link to={nameTo} className="no-underline">{name} <span aria-hidden="true">↗</span></Link>
         </h2>
-        {caption && <p className="voice m-0 text-[20px] leading-[1.3]">{caption}</p>}
+        {caption && <p className="voice mb-0 mt-3 max-w-prose text-[20px] leading-[1.32]">{caption}</p>}
       </div>
-      {(rows?.length || facts?.length) ? (
-        <div className="rows mt-auto pt-4">
-          {rows?.map((row) => <div key={row}><span>{row}</span></div>)}
-          {facts?.map((fact) => (
-            <div key={fact.label}>
-              <span>{fact.label}</span>
-              <FactValue fact={fact} />
-            </div>
-          ))}
+      <details className="mt-auto border-t border-current">
+        <summary className="cursor-pointer py-3 text-[15px] font-semibold">Project facts</summary>
+        <div className="rows">
+          {facts.map((fact) => <div key={fact.label}><span>{fact.label}</span><FactValue fact={fact} /></div>)}
         </div>
-      ) : null}
+      </details>
     </div>
-  );
-
-  const end = (
-    <div className="catalog-card-end flex items-center justify-between gap-5 border-t border-ink/35 px-5 py-4 text-[13px] font-medium md:px-6">
-      <span>untold.works</span>
-      <span>{nameTo ? <Link to={nameTo} className="underline underline-offset-4">Open project ↗</Link> : barRight}</span>
-    </div>
-  );
-
-  return (
-    <article id={slugify(name)} className="catalog-card flex scroll-mt-6 flex-col bg-cream text-ink">
-      {to ? <Link to={to} className="flex grow flex-col no-underline">{body}{end}</Link> : <>{body}{end}</>}
-    </article>
-  );
-};
+  </article>
+);

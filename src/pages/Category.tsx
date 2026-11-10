@@ -33,14 +33,11 @@ const FeaturedGrid = ({ projects }: { projects: Project[] }) => (
     {projects.map((project, index) => (
       <Card
         key={project.projectPage}
-        index={pad(index + 1)}
         name={project.name}
         caption={projectValue[project.projectPage]}
-        color={project.color}
         visual={project.visual}
         facts={project.facts}
         nameTo={project.projectPage}
-        barRight={pad(index + 1) + ' / ' + pad(projects.length)}
         eager={index < 2}
       />
     ))}
@@ -64,25 +61,19 @@ export const Category = ({ slug }: { slug: string }) => {
       <main id="main" className="flex flex-col">
         <CategoryHero category={category} />
 
-        <section className="flex flex-col gap-8 border-t border-current pb-20 pt-10 md:pb-24" aria-labelledby="category-engagements-title">
-          <LabelRow left={<span id="category-engagements-title">Lead engagements</span>} right={pad(config.engagements.length) + ' connected cases'} />
-          <div className="grid gap-5 md:grid-cols-2">
-            {config.engagements.map((caseItem, index) => (
-              <Link key={caseItem.to} to={caseItem.to} className="group flex min-h-[230px] flex-col justify-between gap-10 border border-current p-6 no-underline md:p-8">
-                <span className="lbl">{pad(index + 1) + ' / Case study'}</span>
-                <div>
-                  <h2 className="name m-0 max-w-[680px] text-[clamp(32px,3.3vw,50px)] leading-[1]">{caseItem.name}</h2>
-                  <p className="m-0 mt-4 max-w-[560px] text-[18px] leading-[1.4]">{caseItem.detail}</p>
-                </div>
-                <span className="text-[15px] font-semibold underline underline-offset-4">Read the engagement ↗</span>
-              </Link>
-            ))}
-          </div>
+        <section className="flex flex-col gap-8 pb-20 md:pb-24" aria-labelledby="category-evidence-title">
+          <LabelRow left={<span id="category-evidence-title">Featured projects</span>} />
+          <FeaturedGrid projects={featured} />
         </section>
 
-        <section className="flex flex-col gap-8 pb-20 md:pb-24" aria-labelledby="category-evidence-title">
-          <LabelRow left={<span id="category-evidence-title">Featured projects</span>} right={pad(featured.length) + ' cases'} />
-          <FeaturedGrid projects={featured} />
+        <section className="pb-14 md:pb-20" aria-labelledby="category-engagements-title">
+          <LabelRow left={<span id="category-engagements-title">Related engagements</span>} />
+          {config.engagements.filter((item) => !featuredRoutes.has(item.to)).map((item) => (
+            <Link key={item.to} to={item.to} className="grid items-baseline gap-2 border-b border-current py-5 no-underline md:grid-cols-2 md:gap-8">
+              <strong className="name text-[clamp(23px,2.3vw,32px)] leading-[1.1]">{item.name} <span aria-hidden="true">↗</span></strong>
+              <span className="max-w-prose text-[17px] leading-[1.45]">{item.detail}</span>
+            </Link>
+          ))}
         </section>
 
         <section className="pb-24 md:pb-32" aria-labelledby="category-more-title">

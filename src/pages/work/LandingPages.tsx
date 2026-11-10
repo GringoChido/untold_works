@@ -1,10 +1,8 @@
 import type { ReactNode } from 'react';
 import { Link } from 'react-router-dom';
-import { Chip } from '../../components/Chip';
 import { HouseBar } from '../../components/HouseBar';
 import { Img } from '../../components/Img';
 import { LabelRow } from '../../components/LabelRow';
-import { Stamp } from '../../components/Stamp';
 import { usePageMeta } from '../../hooks/usePageMeta';
 import { Header } from '../../components/Header';
 
@@ -50,21 +48,6 @@ const Arrow = ({ children }: { children: string }) => (
   </span>
 );
 
-const season = [
-  { date: 'Aug 17', name: 'Labor Day Sale', status: 'Live' },
-  { date: 'Sep 14 – Oct 11', name: 'Home Field', status: 'Live' },
-  { date: 'Oct 15', name: 'Preferred Customer Event', status: 'In progress' },
-  { date: 'Oct 16 – 31', name: 'C.L. Bailey Factory Event', status: 'Built' },
-  { date: 'Feb 2027', name: 'Big Game', status: 'Planned' },
-];
-
-const statusChip: Record<string, string> = {
-  Live: 'bg-ink text-cream',
-  'In progress': 'border-rule border-ink',
-  Built: 'border-rule border-ink',
-  Planned: 'border-rule border-ink/50 text-ink/75',
-};
-
 const strips = [
   { n: '01', path: '/new-arrivals', credit: 'My original page · adapted by the team', status: 'Live · Aug 2026', src: 'strip-new-arrivals.jpg', alt: 'The New Arrivals page, full length' },
   { n: '02', path: '/designers', credit: 'My original page · adapted by the team', status: 'Live · Aug 2026', src: 'strip-designers.jpg', alt: 'The Designer Program page, full length' },
@@ -73,7 +56,7 @@ const strips = [
   { n: '05', path: '/custom', credit: 'My original page · adapted by the team', status: 'Live · Sep 2026', src: 'strip-custom.jpg', alt: 'The Custom Built page, full length' },
   { n: '06', path: '/home-field', credit: 'My original page · adapted by the team', status: 'Live · Sep 2026', src: 'strip-home-field.jpg', alt: 'The Home Field page, full length' },
   { n: '07', path: '/financing', credit: 'By me', status: 'Live · Sep 2026', src: 'strip-financing.jpg', alt: 'The financing page, full length' },
-  { n: '08', path: '/cl-bailey-factory-event', credit: 'By me', status: 'Opens Oct 16', src: 'strip-cl-bailey-factory-event.jpg', alt: 'The C.L. Bailey Factory Event page, full length' },
+  { n: '08', path: '/cl-bailey-factory-event', credit: 'By me', status: 'October 2026', src: 'strip-cl-bailey-factory-event.jpg', alt: 'The C.L. Bailey Factory Event page, full length' },
 ];
 
 const blocks = [
@@ -108,29 +91,19 @@ export const LandingPages = () => {
       <div className="mx-auto w-full max-w-[1440px] px-5 md:px-14"><Header crumbs={[{ label: 'Campaigns', to: '/campaigns' }, { label: 'Landing pages' }]} /></div>
       <main id="main" className="mx-auto flex w-full max-w-[1440px] flex-col">
         {/* The spread */}
-        <section className="grid bg-cream text-ink md:min-h-[900px] md:grid-cols-2" aria-label="Landing pages">
+        <section className="grid bg-cream text-ink md:grid-cols-2" aria-label="Landing pages">
           <div className="flex min-w-0 flex-col justify-between gap-7 px-5 py-10 md:px-14">
-            <div className="flex items-start justify-between gap-4">
-              <div className="flex flex-wrap items-center gap-3.5">
-                <span className="lbl">04 · Campaigns</span>
-                <Chip className="border-rule border-current text-[14px] tracking-[0.08em]">Campaign</Chip>
-              </div>
-              <Stamp big="Live" small="2026" />
-            </div>
+            <p className="lbl">Billiard Factory · August–October 2026</p>
             <div className="flex flex-col gap-[18px]">
               <h1 className="name break-words text-[clamp(40px,6vw,84px)] leading-[0.9] tracking-[-0.035em]">Landing pages</h1>
-              <p className="voice text-[26px] leading-[1.3]">Ten Billiard Factory campaign pages connect an offer or product story to a specific next step, including CRM capture where appropriate.</p>
+              <p className="voice text-[26px] leading-[1.3]">Ten campaign pages gave shoppers a next step, from exploring a showroom offer to asking a sales rep about a custom table.</p>
             </div>
             <div className="wdth-62 flex flex-col text-[16px] font-semibold uppercase leading-[1.1] tracking-[0.05em] md:text-[18px]">
-              <Fact label="Client">Billiard Factory</Fact>
-              <Fact label="Shipped">Ten pages, Aug–Oct 2026</Fact>
               <Fact label="Live">
                 <a href="https://billiardfactory.com/home-field" target="_blank" rel="noopener noreferrer" className="no-underline">
-                  Eight on billiardfactory.com ↗
+                  See the Home Field page ↗
                 </a>
               </Fact>
-              <Fact label="CRM foundation">GoHighLevel · sales team connected</Fact>
-              <Fact label="Page capture">Forms and next steps vary</Fact>
               <Fact label="Stack">HTML · Netlify · Cloudflare Worker</Fact>
               <Fact label="Built with">Claude Code · Higgsfield</Fact>
               <Fact label="With" last>
@@ -149,7 +122,7 @@ export const LandingPages = () => {
               />
               <div className="flex justify-between gap-4 text-cream">
                 <Cap>/cl-bailey-factory-event</Cap>
-                <Cap>Opens Oct 16</Cap>
+                <Cap>October 2026</Cap>
               </div>
             </div>
             <div className="grid grid-cols-3 gap-3.5 text-cream">
@@ -205,7 +178,7 @@ export const LandingPages = () => {
               From the idea to the handoff, in six steps.
             </h2>
             <p className="voice text-[24px] leading-[1.35]">
-              Home Field runs sitewide from September 14 to October 11, 2026. This is the one page, start to finish.
+              Home Field, September 14–October 11, 2026.
             </p>
           </div>
 
@@ -219,7 +192,6 @@ export const LandingPages = () => {
               The savings were already standing. The brief gave them a claim: September is the last month anyone has the bandwidth to change
               the house before everybody shows up to use it. Home Field. This year, everyone comes to you.
             </Body>
-            <Cap>Source · HOME-FIELD-Campaign-Brief.md · Aug 20, 2026</Cap>
           </Step>
 
           <Step n="02" name="The copy" aside={<Shot src="hf-film.jpg" alt="The film block: Shoot Pool, Not People, beside the campaign film" sizes="(min-width: 768px) 40vw, 100vw" />}>
@@ -280,7 +252,6 @@ export const LandingPages = () => {
                 );
               })}
             </div>
-            <Cap>Source · HOME-FIELD-Landing-Page-Direction.md · Aug 21, 2026</Cap>
           </Step>
 
           <Step
@@ -348,30 +319,9 @@ export const LandingPages = () => {
           </Step>
         </section>
 
-        {/* The season */}
-        <section className="flex flex-col gap-10 bg-cream px-5 py-16 text-ink md:px-16 md:py-[72px]" aria-labelledby="season-headline">
-          <LabelRow left={<span id="season-headline">The season</span>} right="One arc, page to page" className="border-ink/50" />
-          <ol className="grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-2 lg:grid-cols-5">
-            {season.map((item) => (
-              <li key={item.name} className="flex flex-col gap-3 border-t-rule border-ink pt-4">
-                <span className="lbl">{item.date}</span>
-                <span className="name text-[30px] leading-none tracking-[-0.02em]">{item.name}</span>
-                <Chip className={`self-start ${statusChip[item.status]}`}>{item.status}</Chip>
-              </li>
-            ))}
-          </ol>
-          <p className="voice max-w-[980px] text-[26px] leading-[1.35]">
-            Each page hands off to the next. Home Field ends October 11, the Preferred Customer Event is October 15, and the C.L. Bailey
-            Factory Event opens the next morning.
-          </p>
-          <Cap className="border-t border-ink/35 pt-3.5 text-[14px]">
-            Always on · New Arrivals · Designer Program · Custom Built · Financing · In-store financing kiosk · Sitewide Sale
-          </Cap>
-        </section>
-
         {/* Every page */}
         <section className="flex flex-col gap-8 px-5 py-16 md:px-16 md:py-24" aria-labelledby="every-headline">
-          <LabelRow left={<span id="every-headline">Every page</span>} right="Ten-page program · Live and upcoming" />
+          <LabelRow left={<span id="every-headline">Campaign pages</span>} right="August–October 2026" />
           <ol className="grid grid-cols-2 items-start gap-x-3.5 gap-y-7 sm:grid-cols-4 lg:grid-cols-8">
             {strips.map((strip) => (
               <li key={strip.path} className="flex flex-col gap-3">
@@ -387,8 +337,7 @@ export const LandingPages = () => {
           </ol>
           <div className="flex flex-wrap justify-between gap-x-10 gap-y-2 border-t border-ink pt-3.5">
             <Cap className="text-[14px]">
-              Not pictured · /financing-splash, the in-store financing kiosk, built by the team · /preferred-customer-event, in progress for
-              Oct 15
+              Not pictured · /financing-splash, the in-store financing kiosk, built by the team · /preferred-customer-event, prepared for October 15
             </Cap>
             <Cap className="whitespace-nowrap text-[14px]">Full pages, top to bottom</Cap>
           </div>

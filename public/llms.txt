@@ -11,10 +11,10 @@ This file is a supplementary content index. The linked pages are the primary sou
 ## Pages
 
 - [Home](https://untold.works/): Untold.works offers creative direction and applied AI consulting, from brand and launch work to business workflows.
-- [Brand and product](https://untold.works/brand-and-product): I use identity, product and showroom design to make choices easier for teams and customers. At Billiard Factory, a 34-station floor plan connects to 27 live room stories; AI mockups help the team review rooms before physical installation.
-- [Platforms](https://untold.works/platforms): I design and build AI-assisted tools for campaign planning, content production, customer questions and dealer access. Engine Room links briefs, assets, owners and channel schedules; campaign forms route inquiries to the sales CRM.
-- [Websites](https://untold.works/websites): I build artist, retail and service sites around what visitors need to decide: compare a product, find a show, understand a process or make an inquiry. AI helps me build and test these experiences; the site still has to serve its audience.
-- [Campaigns](https://untold.works/campaigns): AI helps me create campaign images and films, then carry the same idea into social, email, a page and a measurable handoff such as a lead form. Earlier music and live-event work grounds my direction in real people, performances and audiences.
+- [Brand and product](https://untold.works/brand-and-product): I help teams see how a brand will look on the shelf or in a showroom. We can test a product, a finish or a room layout before committing to production.
+- [Platforms](https://untold.works/platforms): I build tools around a task your team does every day, from finding the right product image to getting a campaign approved.
+- [Websites](https://untold.works/websites): I build sites around what someone came to do. That might mean choosing a table that fits, hearing a new record or finding a café in an unfamiliar city.
+- [Campaigns](https://untold.works/campaigns): I develop the campaign idea, direct the images and films, and carry the story into the places people will see it.
 - [Landing pages](https://untold.works/work/landing-pages): I connected the sales team to GoHighLevel, then developed ten campaign pages with the team.
 - [Billiard Factory + C.L. Bailey](https://untold.works/work/billiard-factory-and-c-l-bailey): AI-assisted retail and commerce work across the new Billiard Factory front end, 27 live digital room stories, campaigns, CRM, creative systems and C.L. Bailey. Led the storefront rebuild, Shopify transition and digital Gallery with the team. I lead paid media and search, create the ads and manage the Vibe streaming TV campaign. Shopify checkout launched October 16, 2026. The XoroERP migration continues.
 - [Savor](https://untold.works/work/savor): Website and content storytelling through IDW Studio; IDW led the wider Chef Series production and post work.
@@ -33,7 +33,7 @@ This file is a supplementary content index. The linked pages are the primary sou
 
 ### 01. Brand and product (5 projects)
 
-Visual systems for products and places. I use identity, product and showroom design to make choices easier for teams and customers. At Billiard Factory, a 34-station floor plan connects to 27 live room stories; AI mockups help the team review rooms before physical installation.
+Visual systems for products and places. I help teams see how a brand will look on the shelf or in a showroom. We can test a product, a finish or a room layout before committing to production.
 
 - Noxguard. Client: Noxguard; Program: Brand identity, site and campaign; Practice: Untold.works project; My role: Rebrand, site, photo/video and marketing systems. Project page: https://untold.works/work/noxguard
 - Spring Gallery. Client: Billiard Factory; Showroom: 34-station design system; Online: 27 live shoppable room stories; Status: Gallery open; redesign progressing. Project page: https://untold.works/work/spring-stuebner-store
@@ -43,7 +43,7 @@ Visual systems for products and places. I use identity, product and showroom des
 
 ### 02. Platforms (6 projects)
 
-Tools that coordinate the work. I design and build AI-assisted tools for campaign planning, content production, customer questions and dealer access. Engine Room links briefs, assets, owners and channel schedules; campaign forms route inquiries to the sales CRM.
+Tools that coordinate the work. I build tools around a task your team does every day, from finding the right product image to getting a campaign approved.
 
 - C.L. Bailey portal and concierge. Client: C.L. Bailey; Dealer portal: Authenticated assets; ops screens demo; Site: Bilingual, AI concierge, dealer locator; Public site: Live ↗ (https://clbailey.com). Project page: https://untold.works/work/c-l-bailey-portal-and-concierge
 - Engine Room. Client: Billiard Factory; Role: Platform design, build and campaign direction; Connects: Briefs, assets, review, schedules and channels; Built with: Claude Code. Project page: https://untold.works/work/engine-room
@@ -54,7 +54,7 @@ Tools that coordinate the work. I design and build AI-assisted tools for campaig
 
 ### 03. Websites (13 projects)
 
-Destinations with a clear next step. I build artist, retail and service sites around what visitors need to decide: compare a product, find a show, understand a process or make an inquiry. AI helps me build and test these experiences; the site still has to serve its audience.
+Destinations with a clear next step. I build sites around what someone came to do. That might mean choosing a table that fits, hearing a new record or finding a café in an unfamiliar city.
 
 - Lalah Hathaway. My role: Creative development · Design · Build; Connected work: Artist website · Newsletter · Merchandise operations; Audience migration: 3,233 subscribed contacts imported; Status: Website live; public merch checkout awaiting launch (https://lalahhathaway.com). Project page: https://untold.works/work/lalah-hathaway
 - Elena Pinderhughes. Debut album site: 2026; Album: I Hope You Feel It Too; Status: Live ↗ (https://elenapinderhughes.com). Project page: https://untold.works/work/elena-pinderhughes
@@ -72,7 +72,7 @@ Destinations with a clear next step. I build artist, retail and service sites ar
 
 ### 04. Campaigns (15 projects)
 
-Creative tied to an action. AI helps me create campaign images and films, then carry the same idea into social, email, a page and a measurable handoff such as a lead form. Earlier music and live-event work grounds my direction in real people, performances and audiences.
+Creative tied to an action. I develop the campaign idea, direct the images and films, and carry the story into the places people will see it.
 
 Music and live work:
 

@@ -1,6 +1,4 @@
-import type { ReactNode } from 'react';
 import { Link } from 'react-router-dom';
-import { Chip } from '../../components/Chip';
 import { CaseFilm } from '../../components/CaseFilm';
 import { Footer } from '../../components/Footer';
 import { Header } from '../../components/Header';
@@ -13,13 +11,6 @@ import { Tag } from '../../components/visuals/Tag';
 import { categoryBySlug } from '../../data/categories';
 import { blackRadioRecap, rRNowFilm } from '../../data/musicMedia';
 import { usePageMeta } from '../../hooks/usePageMeta';
-
-const Fact = ({ label, children, last = false }: { label: string; children: ReactNode; last?: boolean }) => (
-  <div className={`flex justify-between gap-4 border-t-rule border-current py-[11px] ${last ? 'border-b-rule' : ''}`}>
-    <span>{label}</span>
-    <span className="text-right">{children}</span>
-  </div>
-);
 
 const records = [
   { date: 'Oct 14, 2022', title: 'Black Radio III Supreme Edition', edition: '3LP colored vinyl', note: 'Black Radio III won the Grammy for Best R&B Album.' },
@@ -91,31 +82,12 @@ export const GlasperBlueNote = () => {
       <Header crumbs={[{ label: 'Selected work', to: '/' }, { label: 'Music work' }]} />
       <main id="main" className="flex flex-col">
         {/* The spread */}
-        <section className="mt-10 grid bg-cream text-ink md:min-h-[860px] md:grid-cols-[minmax(0,1.1fr)_minmax(0,0.9fr)]" aria-labelledby="music-work-title">
-          <div className="flex min-w-0 flex-col justify-between gap-7 px-6 py-10 md:px-12">
-            <div className="flex items-start justify-between gap-4">
-              <div className="flex flex-wrap items-center gap-3.5">
-                <span className="lbl">Selected engagement</span>
-                <Chip className="border-rule border-current text-[14px] tracking-[0.08em]">Music</Chip>
-              </div>
-              <span className="lbl text-right text-[13px]">Artist sites · releases · live music</span>
-            </div>
-            <div className="flex flex-col gap-[18px]">
-              <h1 id="music-work-title" className="display break-words text-[clamp(40px,5.2vw,80px)]">Second Son Productions &amp; related music work</h1>
-              <p className="voice text-[26px] leading-[1.3]">
-                Second Son is an artist management company. My work with its roster and related teams connects sites, releases, films, social content and Blue Note’s rooms and Napa festival.
-              </p>
-            </div>
-            <div className="wdth-62 flex flex-col text-[16px] font-semibold uppercase leading-[1.15] tracking-[0.05em] md:text-[17px]">
-              <Fact label="Company">Second Son Productions · site build</Fact>
-              <Fact label="Robert Glasper">Four release teams · films · Robtober content</Fact>
-              <Fact label="Chief Adjuah">Ongoing artist collaboration</Fact>
-              <Fact label="Blue Note LA">Club launch and opening content</Fact>
-              <Fact label="Blue Note Napa">Black Radio Experience · Content Director, four years</Fact>
-              <Fact label="Artist sites" last>Lalah Hathaway · Derrick Hodge · Elena Pinderhughes · Qmillion</Fact>
-            </div>
+        <section className="mt-10 grid bg-cream text-ink md:min-h-[540px] md:grid-cols-[minmax(0,1.1fr)_minmax(0,0.9fr)]" aria-labelledby="music-work-title">
+          <div className="flex flex-col justify-end gap-5 pb-5 md:col-start-1 md:row-start-1 md:px-10 md:pt-9">
+            <p className="lbl">Second Son Productions · Music &amp; entertainment</p>
+            <h1 id="music-work-title" className="display break-words text-[clamp(40px,5.2vw,80px)]">Robert Glasper &amp; Blue Note.</h1>
           </div>
-          <div className="relative min-h-[420px] overflow-hidden bg-ink">
+          <div className="relative aspect-[4/3] overflow-hidden bg-ink md:col-start-2 md:row-span-2 md:row-start-1 md:aspect-auto">
             <Img
               src="glasper-london-portrait.jpg"
               alt="Robert Glasper in denim and a cap against a blue curtain at Blue Note London"
@@ -124,6 +96,16 @@ export const GlasperBlueNote = () => {
               className="absolute inset-0 block h-full w-full object-cover object-[50%_30%]"
             />
             <p className="absolute inset-x-0 bottom-0 m-0 bg-gradient-to-t from-ink/90 to-transparent text-cream px-6 pb-5 pt-16 text-[12px] leading-[1.5]">Blue Note London · September 23, 2026<br />Photography: Rob Jones / @hirobjones / @khromacollective</p>
+          </div>
+          <div className="flex flex-col items-start gap-6 py-6 md:col-start-1 md:row-start-2 md:px-10 md:pt-0">
+            <p className="voice m-0 max-w-prose text-[clamp(20px,2vw,27px)] leading-[1.35]">
+              With Second Son Productions, I worked on four Robert Glasper releases and five years of Robtober content. For Blue Note, I directed festival content in Napa and helped introduce the Los Angeles club.
+            </p>
+            <nav aria-label="Explore the music work" className="flex flex-wrap gap-x-6 gap-y-3">
+              <a className="text-link" href="#music-films-headline">Watch the films ↓</a>
+              <a className="text-link" href="#rooms-headline">Live events ↓</a>
+              <a className="text-link" href="#artist-sites-headline">Artist sites ↓</a>
+            </nav>
           </div>
         </section>
 
@@ -223,7 +205,7 @@ export const GlasperBlueNote = () => {
               <p className="lbl m-0 text-[12px] leading-[1.3] text-ink/70">Blue Note New York / Season 8 event artwork</p>
               <h2 className="name text-[32px] leading-none tracking-[-0.02em]">Robtober 2026</h2>
               <p className="text-[18px] leading-[1.5]">
-                Season 8 runs October 1–November 1 with 11 episodes. My ongoing work with Glasper includes content across five years of the residency.
+                The 2026 poster lists 11 episodes from October 1 to November 1. My ongoing work with Glasper includes content across five years of the residency.
               </p>
               <Link to="/work/robtober" className="text-link mt-auto">Explore Robtober <span aria-hidden="true">↗</span></Link>
             </div>

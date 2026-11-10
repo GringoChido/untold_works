@@ -31,13 +31,13 @@ export const caseCopyCampaigns = {
     ],
   },
   'campaigns/c-l-bailey-factory-event': {
-    value: "The AI-made film gives the offer a recognizable story across video, page and proposed ad placements. The landing page then brings three product categories into one destination and routes shoppers toward live store categories; the event is still upcoming.",
+    value: "The AI-made film gives the offer a recognizable story across video, page and proposed ad placements. The landing page then brings three product categories into one destination and routes shoppers toward live store categories.",
     parent: { label: 'Billiard Factory', to: '/work/billiard-factory-and-c-l-bailey' },
     next: { label: 'Marketing Engine', to: '/work/engine-room' },
     headline: 'The table keeps finding you.',
-    lead: 'An AI-created campaign film, a library of advertising concepts and an interactive landing page for the upcoming C.L. Bailey Factory Event.',
+    lead: 'An AI-created campaign film, a library of advertising concepts and an interactive landing page for the October 2026 C.L. Bailey Factory Event.',
     storyTitle: 'An idea carried from film to shopping.',
-    story: 'You keep putting it off. So it starts showing up everywhere. I created the film entirely with AI, following a man as the table finds him in a newspaper, on city billboards and through a train journey. The idea carries into campaign artwork and a landing page for 10% off C.L. Bailey and Velocity, October 16–31, 2026. It is an upcoming campaign in the marketing system I built.',
+    story: 'You keep putting it off. So it starts showing up everywhere. I created the film entirely with AI, following a man as the table finds him in a newspaper, on city billboards and through a train journey. The idea carries into campaign artwork and a landing page for 10% off C.L. Bailey and Velocity, October 16–31, 2026.',
     films: [clBaileyFactoryFilm],
     galleryNote: 'Campaign mockups / proposed placements',
     gallery: [
@@ -53,7 +53,7 @@ export const caseCopyCampaigns = {
     ],
     details: [
       { eyebrow: 'AI production', title: 'A complete film from one creative premise.', body: 'AI let me develop a consistent campaign world across city streets, print, transit and the game room. The film turns repeated encounters with the table into the story. My photography and filmmaking experience guides the framing, atmosphere and pacing; the finished film includes its soundtrack.' },
-      { eyebrow: 'The campaign system', title: 'Reuse the campaign structure for the next launch.', body: 'The Factory Event sits in the Marketing Engine calendar as the next B-tier campaign. The same structure holds its brief, production work and channel requirements, while ImageKit keeps the film and campaign artwork together. The prepared work is shown here ahead of the event opening.' },
+      { eyebrow: 'The campaign system', title: 'Reuse the campaign structure for the next launch.', body: 'The Factory Event sits in the Marketing Engine calendar as a B-tier campaign. The same structure holds its brief, production work and channel requirements, while ImageKit keeps the film and campaign artwork together.' },
       { eyebrow: 'One destination', title: 'A brand larger than one category.', body: 'The existing store split C.L. Bailey pool tables, shuffleboards and Velocity across separate destinations. This page brings those categories together with seating and accessories, then routes shoppers into the live store categories.' },
       { eyebrow: 'The interaction', title: 'Show what can change.', body: 'The Long Game lane lets a shopper see cloth on the Orbis table and switch among Skylar, Tunbridge and Viking rooms. Each room moves between a game-night and dinner setting; the page also shows the materials and objects behind the image.' },
       { eyebrow: 'The guardrails', title: 'Let the offer stay exact.', body: 'The page uses the confirmed 10% message without invented dollar prices or stacking it with sitewide savings. Product-level construction claims stay with eligible models rather than becoming a blanket promise across both brands.' },
