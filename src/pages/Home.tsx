@@ -143,6 +143,21 @@ export const Home = () => {
               </div>
             ))}
           </div>
+          <div id="corporate-work" className="home-corporate scroll-mt-5">
+            <p className="lbl">Corporate clients · Projects I led for the agency Ingenia</p>
+            <div className="home-corporate-grid">
+              {[
+                { to: '/work/coca-cola-femsa', title: 'Coca-Cola FEMSA', scope: 'Corporate website', image: 'coca-cola-femsa-laptop.png', alt: 'A laptop on a wooden desk showing the Coca-Cola FEMSA corporate website and its product portfolio page' },
+                { to: '/work/tekniplex', title: 'TekniPlex', scope: 'Digital business card platform', image: 'tekniplex-request-form.png', alt: 'A person typing on a laptop that shows the TekniPlex Digital Business Card request form' },
+              ].map(({ to, title, scope, image, alt }) => (
+                <Link key={to} to={to} className="home-project-card">
+                  <Img src={image} alt={alt} sizes="(min-width: 701px) 46vw, 50vw" />
+                  <span className="lbl">{scope}</span>
+                  <span className="name">{title} <span aria-hidden="true">↗</span></span>
+                </Link>
+              ))}
+            </div>
+          </div>
           <Link className="text-link" to="/work/other-projects">Explore food, hospitality and industrial brands ↗</Link>
         </nav>
 

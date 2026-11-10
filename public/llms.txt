@@ -41,7 +41,7 @@ Visual systems for products and places. I help teams see how a brand will look o
 - C.L. Bailey Brand Bible. Client: C.L. Bailey; What it is: Eleven modules, one standard; Built for: The dealer network; Status: Live ↗ (https://clbailey-brand-bible.netlify.app). Project page: https://untold.works/work/c-l-bailey-brand-bible
 - Tierra cue line. Client: Billiard Factory; Role: Product design and pitch, created with AI; What it is: Three designs for Billiard Factory’s own cue line; Status: All three designs selected for production. Project page: https://untold.works/work/tierra-cue-line
 
-### 02. Platforms (6 projects)
+### 02. Platforms (7 projects)
 
 Tools that coordinate the work. I build tools around a task your team does every day, from finding the right product image to getting a campaign approved.
 
@@ -51,8 +51,9 @@ Tools that coordinate the work. I build tools around a task your team does every
 - Off STORIS. Client: Billiard Factory; Shopify Plus: October 16, 2026 checkout launch documented; ERP: Xorosoft XoroERP, signed Sep 30, 2026; Status: Checkout launched; ERP transition continues. Project page: https://untold.works/work/off-storis
 - OMI lead intake. Client: OMI Growth; What it is: Lead intake and routing; Connected to: The CRM; Years: 2024–2025. Project page: https://untold.works/work/omi-lead-intake
 - Casa Schuck ops dashboard. Client: Casa Schuck; What it is: Hotel operations dashboard; Status: Full demo, no live data yet. Project page: https://untold.works/work/casa-schuck-ops-dashboard
+- TekniPlex digital business cards. Client: TekniPlex; Role: Project lead for the agency Ingenia; Platform: Digital business cards with QR and wallet passes; Reach: Multiple TekniPlex divisions. Project page: https://untold.works/work/tekniplex
 
-### 03. Digital experiences (13 projects)
+### 03. Digital experiences (14 projects)
 
 Destinations with a clear next step. I build sites around what someone came to do. That might mean choosing a table that fits, hearing a new record or finding a café in an unfamiliar city.
 
@@ -69,6 +70,7 @@ Destinations with a clear next step. I build sites around what someone came to d
 - Lexington Billiards and Spas. Retail site: Mar 12–30, 2026; Plus: A search and AI-search visibility audit; Status: Built. Project page: https://untold.works/work/lexington-billiards-and-spas
 - Voztre. Client: FoodTech AI; What it is: Bilingual landing page with lead capture; Date: Apr 2026. Project page: https://untold.works/work/voztre
 - Village Tenders. Client: Village Tenders; What it is: A proposal built as a live site; Date: Apr–May 2026. Project page: https://untold.works/work/village-tenders
+- Coca-Cola FEMSA corporate website. Client: Coca-Cola FEMSA; Role: Project lead for the agency Ingenia; Scope: Corporate website redesign and rebuild; Platform: MODX CMS. Project page: https://untold.works/work/coca-cola-femsa
 
 ### 04. Campaigns (15 projects)
 

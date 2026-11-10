@@ -189,4 +189,25 @@ export const caseCopySystems = {
       { eyebrow: 'Factory handoff', title: 'Materials need a factory answer.', body: 'The concept presentation labels its visuals as renders, not physical samples. Butt material, decoration method and whether the turquoise elements become print or genuine inlay remained open with the manufacturer at the documented handoff.' },
     ],
   },
+  'platforms/tekniplex-digital-business-cards': {
+    value: 'Locked templates protect the brand while each person personalizes a card; QR codes and wallet passes speed up contact exchange at events, and admins see usage across divisions.',
+    headline: 'A branded card for every team, in under a minute.',
+    lead: 'I led TekniPlex’s digital business card platform for the agency Ingenia: branded cards with QR codes and Apple and Google Wallet passes for teams at expos, conferences and client meetings.',
+    gallery: [{ src: 'tekniplex-card.png', alt: 'Diagram of the card flow in four steps: request form, branded card, QR code and wallet pass', caption: 'Card flow / Request, card, QR code, wallet', layout: 'wide' as const }],
+    galleryNote: 'Diagram',
+    storyTitle: 'Keep the brand locked. Keep the person in it.',
+    story: 'TekniPlex teams were trading contact details by hand at events, with no shared tool across business units. Stakeholder interviews across regions mapped how sales and event teams work, and who should control what. The platform gives marketing admins locked brand templates, user management and usage analytics, while each person creates and shares a personalized card from a phone.',
+    focus: [
+      { label: 'Role', text: 'Project lead for the agency Ingenia.' },
+      { label: 'Card engine', text: 'Personalized cards with dynamic links, one-click QR codes and Apple Wallet and Google Wallet passes.' },
+      { label: 'Admin', text: 'Roles and permissions, centralized user management and usage analytics.' },
+      { label: 'Reach', text: 'Multilingual interface, deployed across multiple TekniPlex divisions.' },
+    ],
+    details: [
+      { eyebrow: 'In the field', title: 'Built for the expo floor.', body: 'The card had to work on a phone, mid-conversation. A QR code on a booth or printed piece opens the card, and a wallet pass keeps it available offline.' },
+      { eyebrow: 'Control', title: 'Admins set the rules.', body: 'Marketing admins manage templates, users and access across business units. Each person personalizes within those limits, so every card stays on brand.' },
+      { eyebrow: 'Today', title: 'A tool like this, built with AI.', body: 'Internal tools are where I use AI most now. Engine Room, the campaign platform I built with Claude Code, follows the same idea: shared records and a clear owner for each step.' },
+    ],
+    links: [{ label: 'Engine Room', href: '/work/engine-room' }],
+  },
 } as const;

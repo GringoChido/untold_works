@@ -65,6 +65,10 @@
     <image:image><image:loc>https://untold.works/images/casa-schuck-dashboard-demo-1200.webp</image:loc></image:image>
   </url>
   <url>
+    <loc>https://untold.works/work/tekniplex</loc>
+    <image:image><image:loc>https://untold.works/images/tekniplex-request-form-1200.webp</image:loc></image:image>
+  </url>
+  <url>
     <loc>https://untold.works/work/lalah-hathaway</loc>
     <image:image><image:loc>https://untold.works/images/lalah-made-in-chicago-1200.webp</image:loc></image:image>
   </url>
@@ -115,6 +119,10 @@
   <url>
     <loc>https://untold.works/work/village-tenders</loc>
     <image:image><image:loc>https://untold.works/images/village-tenders-concept-1200.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://untold.works/work/coca-cola-femsa</loc>
+    <image:image><image:loc>https://untold.works/images/coca-cola-femsa-laptop-1200.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://untold.works/work/robert-glasper-album-releases</loc>

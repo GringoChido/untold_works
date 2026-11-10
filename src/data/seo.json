@@ -610,5 +610,29 @@
       "height": 1500,
       "type": "image/webp"
     }
+  },
+  "/work/coca-cola-femsa": {
+    "title": "Coca-Cola FEMSA Corporate Website Redesign | Untold.works",
+    "description": "Led the redesign and rebuild of Coca-Cola FEMSA’s corporate website for the agency Ingenia, from discovery workshops to launch and training.",
+    "type": "WebPage",
+    "image": {
+      "src": "/images/coca-cola-femsa-laptop-1200.webp",
+      "alt": "A laptop on a wooden desk showing the Coca-Cola FEMSA corporate website and its product portfolio page",
+      "width": 1200,
+      "height": 673,
+      "type": "image/webp"
+    }
+  },
+  "/work/tekniplex": {
+    "title": "TekniPlex Digital Business Card Platform | Untold.works",
+    "description": "Led TekniPlex’s digital business card platform for the agency Ingenia, with QR codes, Apple and Google Wallet passes and admin controls.",
+    "type": "WebPage",
+    "image": {
+      "src": "/images/tekniplex-request-form-1200.webp",
+      "alt": "A person typing on a laptop that shows the TekniPlex Digital Business Card request form",
+      "width": 1200,
+      "height": 667,
+      "type": "image/webp"
+    }
   }
 }

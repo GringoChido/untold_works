@@ -1175,5 +1175,51 @@
    1200,
    1224
   ]
+ },
+ "coca-cola-femsa-card.png": {
+  "base": "coca-cola-femsa-card",
+  "width": 1600,
+  "height": 900,
+  "widths": [
+   480,
+   800,
+   1200,
+   1600
+  ]
+ },
+ "tekniplex-card.png": {
+  "base": "tekniplex-card",
+  "width": 1600,
+  "height": 900,
+  "widths": [
+   480,
+   800,
+   1200,
+   1600
+  ]
+ },
+ "coca-cola-femsa-laptop.png": {
+  "base": "coca-cola-femsa-laptop",
+  "width": 2224,
+  "height": 1248,
+  "widths": [
+   480,
+   800,
+   1200,
+   1600,
+   2224
+  ]
+ },
+ "tekniplex-request-form.png": {
+  "base": "tekniplex-request-form",
+  "width": 2224,
+  "height": 1236,
+  "widths": [
+   480,
+   800,
+   1200,
+   1600,
+   2224
+  ]
  }
 }

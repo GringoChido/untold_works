@@ -367,6 +367,37 @@
      }
     ],
     "projectPage": "/work/casa-schuck-ops-dashboard"
+   },
+   {
+    "order": 7,
+    "name": "TekniPlex digital business cards",
+    "color": "sage",
+    "visual": {
+     "type": "image",
+     "src": "tekniplex-request-form.png",
+     "alt": "A person typing on a laptop that shows the TekniPlex Digital Business Card request form",
+     "tag": "Digital business cards",
+     "fit": "cover"
+    },
+    "facts": [
+     {
+      "label": "Client",
+      "value": "TekniPlex"
+     },
+     {
+      "label": "Role",
+      "value": "Project lead for the agency Ingenia"
+     },
+     {
+      "label": "Platform",
+      "value": "Digital business cards with QR and wallet passes"
+     },
+     {
+      "label": "Reach",
+      "value": "Multiple TekniPlex divisions"
+     }
+    ],
+    "projectPage": "/work/tekniplex"
    }
   ],
   "music": []
@@ -766,6 +797,37 @@
      }
     ],
     "projectPage": "/work/village-tenders"
+   },
+   {
+    "order": 14,
+    "name": "Coca-Cola FEMSA corporate website",
+    "color": "ink",
+    "visual": {
+     "type": "image",
+     "src": "coca-cola-femsa-laptop.png",
+     "alt": "A laptop on a wooden desk showing the Coca-Cola FEMSA corporate website and its product portfolio page",
+     "tag": "Corporate website",
+     "fit": "cover"
+    },
+    "facts": [
+     {
+      "label": "Client",
+      "value": "Coca-Cola FEMSA"
+     },
+     {
+      "label": "Role",
+      "value": "Project lead for the agency Ingenia"
+     },
+     {
+      "label": "Scope",
+      "value": "Corporate website redesign and rebuild"
+     },
+     {
+      "label": "Platform",
+      "value": "MODX CMS"
+     }
+    ],
+    "projectPage": "/work/coca-cola-femsa"
    }
   ],
   "music": []

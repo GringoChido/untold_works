@@ -108,6 +108,7 @@ export const About = () => {
             <li><Link to="/work/billiard-factory-and-c-l-bailey"><strong>Billiard Factory + C.L. Bailey</strong><span>Retail redesign, live shoppable rooms, Shopify Plus migration, dealer tools and AI-led campaigns.</span><span aria-hidden="true">↗</span></Link></li>
             <li><Link to="/work/robert-glasper-blue-note"><strong>Second Son Productions & related music work</strong><span>Artist sites, Robert Glasper releases and distinct Blue Note content roles.</span><span aria-hidden="true">↗</span></Link></li>
             <li><Link to="/work/savor"><strong>Savor</strong><span>Digital experience and content storytelling through IDW Studio.</span><span aria-hidden="true">↗</span></Link></li>
+            <li><Link to="/#corporate-work"><strong>Coca-Cola FEMSA + TekniPlex</strong><span>A corporate website rebuild and a global digital business card platform. I led both for the agency Ingenia, and now bring AI to work at that scale.</span><span aria-hidden="true">↗</span></Link></li>
           </ul>
           <Link to="/work-together" className="text-link mt-8">
             Work with me <span aria-hidden="true">↗</span>

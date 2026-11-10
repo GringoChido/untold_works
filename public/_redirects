@@ -86,6 +86,8 @@ https://untoldworks1.netlify.app/* https://untold.works/:splat 301!
 /work/omi-lead-intake/ /work/omi-lead-intake 301
 /work/casa-schuck-ops-dashboard.html /work/casa-schuck-ops-dashboard 301!
 /work/casa-schuck-ops-dashboard/ /work/casa-schuck-ops-dashboard 301
+/work/tekniplex.html /work/tekniplex 301!
+/work/tekniplex/ /work/tekniplex 301
 /work/lalah-hathaway.html /work/lalah-hathaway 301!
 /work/lalah-hathaway/ /work/lalah-hathaway 301
 /work/elena-pinderhughes.html /work/elena-pinderhughes 301!
@@ -112,6 +114,8 @@ https://untoldworks1.netlify.app/* https://untold.works/:splat 301!
 /work/voztre/ /work/voztre 301
 /work/village-tenders.html /work/village-tenders 301!
 /work/village-tenders/ /work/village-tenders 301
+/work/coca-cola-femsa.html /work/coca-cola-femsa 301!
+/work/coca-cola-femsa/ /work/coca-cola-femsa 301
 /work/robert-glasper-album-releases.html /work/robert-glasper-album-releases 301!
 /work/robert-glasper-album-releases/ /work/robert-glasper-album-releases 301
 /work/art-science-and-r-r-now-release-films.html /work/art-science-and-r-r-now-release-films 301!

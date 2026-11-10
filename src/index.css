@@ -2122,6 +2122,13 @@
 .home-project-card .name { font-size: clamp(21px, 2vw, 30px); line-height: 1.1; }
 .home-project-card:hover .name, .home-project-card:focus-visible .name { text-decoration: underline; text-underline-offset: 4px; }
 .home-related-grid small { display: block; margin-top: 6px; font-size: 12px; }
+.home-corporate { margin-bottom: 28px; padding-top: 22px; border-top: 1px solid var(--hairline); }
+.home-corporate > .lbl { margin: 0 0 16px; }
+.home-corporate-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 26px; }
+@media (max-width: 700px) {
+  .home-corporate-grid { gap: 14px; }
+  .home-corporate-grid .name { font-size: 19px; }
+}
 @media (max-width: 700px) {
   .home-related-grid { grid-template-columns: 1fr; }
 }
