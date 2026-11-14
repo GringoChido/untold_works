@@ -54,7 +54,7 @@ const llms = `# Untold.works
 
 > Untold.works is an independent creative and AI studio founded by Joshua Semolik.
 
-We help teams tell a brand or product story, build the experience around it and get it out into the world. We also build the tools and sales materials people need to keep the work moving after launch.
+We help business owners and marketing leaders decide what deserves their next marketing dollar. Then we help make and run the work.
 
 Email: joshua@untold.works. Phone: +1 917-665-1221. LinkedIn: https://www.linkedin.com/in/semolik/.
 
@@ -75,7 +75,7 @@ ${categories.map((c) => `- [${c.name}](${SITE}/${c.slug}): ${c.intro}`).join('\n
 - [Lalah Hathaway](${SITE}/work/lalah-hathaway): Made in Chicago connects an immersive artist website with newsletter migration and custom merchandise operations, built with AI around supplied artist media. We developed the digital experience, imported 3,233 historically subscribed contacts and built the merchandise backend and staff tools. The artist site is live; public vinyl and T-shirt checkout awaits launch.
 - [The art of prompting](${SITE}/art-of-prompting): An evolving practice of turning ideas and product references into precise prompts, still images, lifestyle scenes, motion, edits and campaign assets. The AI-created C.L. Bailey Factory Event film leads, with an interactive illustrative prompt and supporting work.
 - [About](${SITE}/about): Creative leadership, brand storytelling, sales enablement, career and project credits, MIT Sloan executive education, and a working toolkit organized around AI building, creative production, commerce and measurement. Hands-on tools include Claude Code, Codex, Claude Cowork, ChatGPT, Higgsfield and Adobe Premiere; we also coordinate commerce and reporting platforms with client teams.
-- [Work Together](${SITE}/work-together): Tell us about your project, timing and budget at joshua@untold.works.
+- [Work Together](${SITE}/work-together): Three ways to hire the studio: ongoing creative and marketing partner, focused project, or Marketing and AI Review. Contact joshua@untold.works.
 - [Data Studio](${SITE}/data-studio): One dashboard for your marketing. Explore a sample board across four time frames and choose a budget test with invented figures.
 
 ## Work

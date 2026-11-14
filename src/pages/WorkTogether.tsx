@@ -50,12 +50,18 @@ const scopes = [
   },
 ] as const;
 
+const services = scopes.map((scope) => ({
+  name: scope.title,
+  description: scope.body,
+  url: `/work-together#work-together-scope-${scope.number}`,
+}));
+
 export const WorkTogether = () => {
   const projectEmail = useProjectEmail();
   usePageMeta({
     title: 'Work with Untold.works | Three ways to hire us',
     description: 'Tell us about your project, timing and budget. We’ll decide together what to build first.',
-    path: '/work-together',
+    path: '/work-together', services,
   });
 
   return (

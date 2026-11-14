@@ -4,6 +4,7 @@ import pageMetadata from '../data/seo.json';
 
 type PageMeta = { title: string; description: string; type: string; image: { src: string; alt: string; width: number; height: number; type: string } };
 const metadata = pageMetadata as Record<string, PageMeta>;
+type ServiceEntity = { name: string; description: string; url: string };
 const personId = `${SITE_URL}/#joshua-semolik`;
 const studioId = `${SITE_URL}/#studio`;
 const websiteId = `${SITE_URL}/#website`;
@@ -19,7 +20,7 @@ const identity = [
     foundingDate: '2017-01', founder: { '@id': personId }, email: EMAIL, telephone: '+1-917-665-1221',
     description: 'Independent creative and AI consulting across brands, commerce, music and entertainment.' },
   { '@type': 'WebSite', '@id': websiteId, name: 'Untold.works', url: `${SITE_URL}/`,
-    inLanguage: 'en', publisher: { '@id': studioId }, about: { '@id': personId } },
+    inLanguage: 'en', publisher: { '@id': studioId }, about: { '@id': studioId } },
 ];
 
 const setMeta = (attr: 'name' | 'property', key: string, content: string) => {
@@ -32,7 +33,7 @@ const setMeta = (attr: 'name' | 'property', key: string, content: string) => {
   el.content = content;
 };
 
-export const usePageMeta = ({ title, description, path, noindex = false }: { title: string; description: string; path: string; noindex?: boolean }) => {
+export const usePageMeta = ({ title, description, path, noindex = false, services }: { title: string; description: string; path: string; noindex?: boolean; services?: readonly ServiceEntity[] }) => {
   useEffect(() => {
     const url = `${SITE_URL}${path}`;
     const meta = metadata[path];
@@ -78,10 +79,15 @@ export const usePageMeta = ({ title, description, path, noindex = false }: { tit
       name: pageTitle, description: pageDescription, inLanguage: 'en',
       isPartOf: { '@id': websiteId }, author: { '@id': personId }, publisher: { '@id': studioId },
       primaryImageOfPage: { '@type': 'ImageObject', url: SITE_URL + image.src, width: image.width, height: image.height, caption: image.alt },
+      ...(services ? { mainEntity: services.map((service) => ({
+        '@type': 'Service', name: service.name, description: service.description,
+        url: SITE_URL + service.url, provider: { '@id': studioId },
+      })) } : {}),
+      ...(path === '/' ? { mainEntity: { '@id': studioId } } : {}),
       ...(path === '/about' ? { mainEntity: { '@id': personId } } : {}),
       ...(isCase ? { mainEntity: { '@type': 'CreativeWork', '@id': `${url}#case-study`, name: pageTitle.split(' | ')[0],
         genre: 'Portfolio case study', description: pageDescription, url, author: { '@id': personId } } } : {}),
     };
     schema.textContent = JSON.stringify({ '@context': 'https://schema.org', '@graph': [...identity, page] }).replace(/</g, '\\u003c');
-  }, [title, description, path, noindex]);
+  }, [title, description, path, noindex, services]);
 };

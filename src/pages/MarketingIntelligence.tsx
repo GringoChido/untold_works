@@ -10,6 +10,9 @@ import metadata from '../data/seo.json';
 import './Practice.css';
 import './DataStudio.css';
 
+const service = { name: 'Data Studio', url: '/data-studio', description: 'Everything your marketing does and everything your business sells, in one place. AI reads it every day and tells you what to change. Every client gets their own Data Studio, built around their business.' };
+const services = [service];
+
 const promises = [
   ['One view', 'The store, the ads, the email, the social accounts, the site and the sales team, each number against its target.'],
   ['It tells you what to do', 'Every recommendation names the decision, who owns it and how sure the numbers are.'],
@@ -17,11 +20,11 @@ const promises = [
 ] as const;
 
 export function MarketingIntelligence() {
-  usePageMeta({ ...metadata['/data-studio'], path: '/data-studio' });
+  usePageMeta({ ...metadata['/data-studio'], path: '/data-studio', services });
   return <Layout><Header crumbs={[{label:'Data Studio'}]} /><main id="main" className="practice ds-page">
     <section className="intelligence-lead"><p className="folio">Data Studio</p>
       <h1>One<br /><em>dashboard.</em></h1>
-      <p>Everything your marketing does and everything your business sells, in one place. AI reads it every day and tells you what to change. Every client gets their own Data Studio, built around their business.</p></section>
+      <p>{service.description}</p></section>
 
     <section className="ds-block ds-board" aria-labelledby="ds-frames-title"><p className="folio">When you look</p>
       <h2 id="ds-frames-title">Adjust on the fly. Or weekly, monthly, yearly.</h2>
