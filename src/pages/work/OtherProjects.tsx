@@ -25,9 +25,9 @@ const more = [
 ] as const;
 
 const archives = [
-  { name: 'Brand & product', to: '/brand-and-product' },
-  { name: 'Platforms', to: '/platforms' },
-  { name: 'Digital experiences', to: '/websites' },
+  { name: 'Brand', to: '/brand-and-product' },
+  { name: 'Sales tools, data and AI', to: '/platforms' },
+  { name: 'Website and store', to: '/websites' },
   { name: 'Campaigns', to: '/campaigns' },
 ] as const;
 
@@ -39,7 +39,7 @@ export const OtherProjects = () => {
   });
   return (
     <Layout>
-      <Header crumbs={[{ label: 'Selected work', to: '/#work' }, { label: 'Other projects' }]} />
+      <Header crumbs={[{ label: 'Selected work', to: '/work' }, { label: 'Other projects' }]} />
       <main id="main" className="flex flex-col">
         <section className="grid gap-8 border-b border-current pb-16 pt-16 md:grid-cols-[minmax(0,1fr)_minmax(280px,0.6fr)] md:items-end md:gap-16 md:pb-20 md:pt-24" aria-labelledby="other-title">
           <div>
@@ -60,7 +60,7 @@ export const OtherProjects = () => {
             <LabelRow left="Featured agency collaboration" right="Site · Content" />
             <h2 id="savor-feature-title" className="name m-0 text-[clamp(42px,4.6vw,68px)]">Savor</h2>
             <p className="chapter-statement m-0 text-[clamp(28px,3vw,42px)] leading-[1.12]">Explain fats made from carbon through familiar food.</p>
-            <p className="m-0 max-w-[640px] text-[19px] leading-[1.5]">Website and chef content help explain Savor’s unfamiliar production process through foods and kitchens people recognize. I worked on the story with IDW Studio, who led the Chef Series production.</p>
+            <p className="m-0 max-w-[640px] text-[19px] leading-[1.5]">Website and chef content help explain Savor’s unfamiliar production process through foods and kitchens people recognize. Joshua worked on the story with IDW Studio, who led the Chef Series production.</p>
             <Link to="/work/savor" className="text-link">Explore the Savor case <span aria-hidden="true">↗</span></Link>
           </div>
         </section>
@@ -108,7 +108,7 @@ export const OtherProjects = () => {
           </div>
         </section>
       </main>
-      <HouseBar back={{ label: '← Selected work', to: '/#work' }} next={{ label: 'Next: About me →', to: '/about' }} />
+      <HouseBar back={{ label: '← Selected work', to: '/work' }} next={{ label: 'Next: About Joshua →', to: '/about' }} />
       <Footer />
     </Layout>
   );

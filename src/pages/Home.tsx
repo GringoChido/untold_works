@@ -1,237 +1,84 @@
-import { CollaboratorLogos } from '../components/CollaboratorLogos';
-import { NoxguardGallery } from '../components/NoxguardGallery';
-import { Link } from 'react-router-dom';
-import { PortfolioFilm } from '../components/PortfolioFilm';
-import { HomeFieldFilm } from '../components/HomeFieldFilm';
-import { CaseFilm } from '../components/CaseFilm';
-import { clBaileyFactoryFilm } from '../data/campaignMedia';
-import { Footer } from '../components/Footer';
+import { useEffect } from 'react';
 import { Header } from '../components/Header';
-import { Img } from '../components/Img';
+import { Footer } from '../components/Footer';
 import { Layout } from '../components/Layout';
-import { ShowroomFilm } from '../components/ShowroomFilm';
 import { usePageMeta } from '../hooks/usePageMeta';
-import { EMAIL, PROJECT_CONTACT_HREF } from '../site';
-
-const clientNeeds = [
-  {
-    title: '“We need photos and video. A big shoot is out of reach.”',
-    body: 'Send us the product photos you have. We can use AI to show your product in use, from a set of lifestyle images for your store to a short film for your campaign.',
-    link: 'See the film and lifestyle images',
-    to: '/#ai',
-  },
-  {
-    title: '“Which designs should we put into production?”',
-    body: 'For Billiard Factory, I used AI to design three pool cues and build the pitch. Seeing the designs side by side helped the team decide to make all three.',
-    link: 'See the Tierra cue pitch',
-    to: '/work/tierra-cue-line',
-  },
-  {
-    title: '“The holiday sale is booked. All we have is a product list.”',
-    body: 'We can build a shoppable gift guide around who your customers are buying for, then work with your team on the ads and social posts that bring people to it.',
-    link: 'See Billiard Factory’s holiday guides',
-    to: '/work/billiard-factory-and-c-l-bailey#holiday-gift-guides',
-  },
-  {
-    title: '“Could Claude help us run our campaigns?”',
-    body: 'Pick one campaign. We’ll show your team how to use Claude to turn the brief into a plan, with an owner, a deadline and a place to review each piece.',
-    link: 'See Engine Room, built with Claude Code',
-    to: '/work/engine-room',
-  },
-  {
-    title: '“Will our delivery options work on Shopify?”',
-    body: 'Moving your store starts with a real order. We’ll map how customers choose a size, finish and delivery service, then test those choices with your team before switching checkout.',
-    link: 'See Billiard Factory’s Shopify move',
-    to: '/work/off-storis',
-  },
-  {
-    title: '“Dealers keep asking us for the latest specs.”',
-    body: 'We can build a private dealer portal where a rep can find a product, check its dimensions and download the right image while they’re talking to a buyer.',
-    link: 'See the C.L. Bailey dealer portal',
-    to: '/work/c-l-bailey-portal-and-concierge',
-  },
-];
+import metadata from '../data/seo.json';
+import './HomeOffer.css';
 
 export const Home = () => {
-  usePageMeta({ title: 'Untold.works | Independent Creative Agency & Applied AI', description: 'Untold.works helps brands launch products, build digital experiences and equip sales teams. Bring us a pitch, a launch date or a process your team has outgrown.', path: '/' });
+  usePageMeta({ ...metadata['/'], path: '/' });
+
+  useEffect(() => {
+    const list = document.getElementById('collaborator-list');
+    if (!list || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    let x = 0; let last: number | null = null; let raf = 0;
+    const step = (t: number) => {
+      if (last === null) last = t;
+      const dt = Math.min(t - last, 60); last = t;
+      const half = list.scrollWidth / 2;
+      if (half > list.clientWidth / 2) { x += dt * 0.045; if (x >= half) x -= half; list.scrollLeft = x; }
+      raf = requestAnimationFrame(step);
+    };
+    raf = requestAnimationFrame(step);
+    return () => cancelAnimationFrame(raf);
+  }, []);
 
   return (
-    <Layout className="home-canvas hiring-home print-home">
+    <Layout className="home-canvas hiring-home print-home type-archivo home-offer">
       <Header />
-      <main id="main">
-        <section className="print-hero" aria-labelledby="home-title">
-          <div className="print-hero-meta"><span>Independent creative &amp; AI studio</span><Link to="/about">Joshua Semolik ↗</Link></div>
-          <h1 id="home-title" className="print-wordmark" aria-label="Untold.works">
-            <svg viewBox="0 0 1000 340" role="img" aria-hidden="true" focusable="false">
-              <text x="0" y="259" textLength="1000" lengthAdjust="spacingAndGlyphs" className="print-untold">UNTOLD</text>
-              <text x="999" y="334" textAnchor="end" className="print-works">.works</text>
-            </svg>
-          </h1>
-          <div className="print-hero-bottom"><p>Creative direction.<br />Brand storytelling. Applied AI.</p><a className="print-button" href="#work">Explore the work <span aria-hidden="true">↗</span></a></div>
-          <div className="print-hero-colophon" aria-hidden="true"><span>Ideas into experiences.</span><span>Independent by design.</span><span>Scroll to explore ↓</span></div>
-        </section>
+      <main id="main"><section className="print-hero" aria-labelledby="home-title"><div className="print-hero-meta"><span>Independent creative &amp; AI studio</span><a href="/about">Joshua Semolik ↗</a></div><h1 id="home-title" className="print-wordmark" aria-label="Untold.works"><svg viewBox="0 0 1000 340" role="img" aria-hidden="true" focusable="false"><text x="0" y="259" textLength="1000" lengthAdjust="spacingAndGlyphs" className="print-untold">UNTOLD</text><text x="999" y="334" textAnchor="end" className="print-works">.works</text></svg></h1><div className="print-hero-bottom"><p>We help business owners and marketing leaders decide what deserves their next marketing dollar. Then we help make and run the work.</p><a className="print-button" href="mailto:joshua@untold.works?subject=Let%E2%80%99s%20discuss%20a%20project">Tell us what you’re trying to solve <span aria-hidden="true">↗</span></a></div><div className="print-hero-colophon" aria-hidden="true"><span>Ideas into experiences.</span><span>Independent by design.</span><span>What you can hire us to do ↓</span></div></section><div className="print-discipline-strip" aria-label="What we deliver"><span>Brand</span><i aria-hidden="true">✳</i><span>Website and store</span><i aria-hidden="true">✳</i><span>Campaigns</span><i aria-hidden="true">✳</i><span>Photo and film</span><i aria-hidden="true">✳</i><span>Sales enablement</span><i aria-hidden="true">✳</i><span>Data and AI</span></div>
+<section id="pitch" className="v-pitch" aria-label="What I do for a client">
+  <p className="print-section-marker">01 / What we do for a client</p>
+  <p className="v-statement">If you’re launching a product, we can work with your team on what to sell, how to tell the story, where customers will see it, and what happens when they’re ready to buy. <span>Once it’s live, we help you see where people respond, where they get stuck, and what to change.</span></p>
+  <div className="v-pitch-side"><p>You can bring us in to lead that work over time or take responsibility for one piece of it.</p><nav className="v-jump" aria-label="On this page"><a href="#data-studio"><span>02</span>Data Studio: one dashboard</a><a href="#evidence"><span>03</span>What the work shows</a><a href="#hire"><span>04</span>What you can hire us to do</a><a href="#ways"><span>05</span>Three ways to hire us</a></nav></div>
+</section><section className="collaborator-logos" aria-labelledby="collaborator-title"><div className="collaborator-heading"><h2 id="collaborator-title" className="name">Clients &amp; project collaborators</h2></div><ul id="collaborator-list" aria-labelledby="collaborator-title"><li><img alt="Billiard Factory" title="Billiard Factory" width="480" height="200" loading="eager" decoding="async" src="/images/collaborators/billiard-factory.webp" /></li><li><img alt="Lalah Hathaway" title="Lalah Hathaway" width="480" height="200" loading="eager" decoding="async" src="/images/collaborators/lalah-hathaway.webp" /></li><li><img alt="Coca-Cola FEMSA" title="Coca-Cola FEMSA" width="480" height="200" loading="eager" decoding="async" src="/images/collaborators/coca-cola-femsa.webp" /></li><li><img alt="NBA" title="NBA" width="480" height="200" loading="eager" decoding="async" src="/images/collaborators/nba.webp" /></li><li><img alt="Blue Note Entertainment Group" title="Blue Note Entertainment Group" width="480" height="200" loading="eager" decoding="async" src="/images/collaborators/blue-note-entertainment-group.webp" /></li><li><img alt="Superfly" title="Superfly" width="480" height="200" loading="eager" decoding="async" src="/images/collaborators/superfly.webp" /></li><li><img alt="TekniPlex" title="TekniPlex" width="480" height="200" loading="eager" decoding="async" src="/images/collaborators/tekniplex.webp" /></li><li><img alt="WNBA" title="WNBA" width="480" height="200" loading="eager" decoding="async" src="/images/collaborators/wnba.webp" /></li><li><img alt="Bonnaroo Music &amp; Arts Festival" title="Bonnaroo Music &amp; Arts Festival" width="480" height="200" loading="eager" decoding="async" src="/images/collaborators/bonnaroo.webp" /></li><li><img alt="Noxguard" title="Noxguard" width="480" height="200" loading="eager" decoding="async" src="/images/collaborators/noxguard.webp" /></li><li><img alt="Derrick Hodge" title="Derrick Hodge" width="480" height="200" loading="eager" decoding="async" src="/images/collaborators/derrick-hodge.webp" /></li><li><img alt="Lowepro" title="Lowepro" width="480" height="200" loading="eager" decoding="async" src="/images/collaborators/lowepro.webp" /></li><li><img alt="Outside Lands Music &amp; Arts Festival" title="Outside Lands Music &amp; Arts Festival" width="480" height="200" loading="eager" decoding="async" src="/images/collaborators/outside-lands.webp" /></li><li><img alt="The C.L. Bailey Co." title="The C.L. Bailey Co." width="480" height="200" loading="eager" decoding="async" src="/images/collaborators/cl-bailey.webp" /></li><li><img alt="The Howard Stern Show" title="The Howard Stern Show" width="480" height="200" loading="eager" decoding="async" src="/images/collaborators/howard-stern-show.webp" /></li><li><img alt="Sacramento Kings" title="Sacramento Kings" width="480" height="200" loading="eager" decoding="async" src="/images/collaborators/sacramento-kings.webp" /></li><li><img alt="JOBY" title="JOBY" width="480" height="200" loading="eager" decoding="async" src="/images/collaborators/joby.webp" /></li><li><img alt="Second Son Productions" title="Second Son Productions" width="480" height="200" loading="eager" decoding="async" src="/images/collaborators/second-son-productions.webp" /></li><li><img alt="Velocity" title="Velocity" width="480" height="200" loading="eager" decoding="async" src="/images/collaborators/velocity.webp" /></li><li><img alt="Chief Adjuah" title="Chief Adjuah" width="480" height="200" loading="eager" decoding="async" src="/images/collaborators/chief-adjuah.webp" /></li><li><img alt="NorCal Cannabis Company" title="NorCal Cannabis Company" width="480" height="200" loading="eager" decoding="async" src="/images/collaborators/norcal-cannabis.webp" /></li><li><img alt="The Black Radio Experience" title="The Black Radio Experience" width="480" height="200" loading="eager" decoding="async" src="/images/collaborators/black-radio-experience.webp" /></li><li><img alt="The Level Best" title="The Level Best" width="480" height="200" loading="eager" decoding="async" src="/images/collaborators/level-best.webp" /></li><li><img alt="Color of Noize" title="Color of Noize" width="480" height="200" loading="eager" decoding="async" src="/images/collaborators/color-of-noize.webp" /></li><li><img alt="Black Radio Production" title="Black Radio Production" width="480" height="200" loading="eager" decoding="async" src="/images/collaborators/black-radio-production.webp" /></li><li><img alt="Ingenia" title="Ingenia" width="480" height="200" loading="eager" decoding="async" src="/images/collaborators/ingenia.webp" /></li><li aria-hidden="true"><img alt="" title="Billiard Factory" width="480" height="200" loading="eager" decoding="async" src="/images/collaborators/billiard-factory.webp" /></li><li aria-hidden="true"><img alt="" title="Lalah Hathaway" width="480" height="200" loading="eager" decoding="async" src="/images/collaborators/lalah-hathaway.webp" /></li><li aria-hidden="true"><img alt="" title="Coca-Cola FEMSA" width="480" height="200" loading="eager" decoding="async" src="/images/collaborators/coca-cola-femsa.webp" /></li><li aria-hidden="true"><img alt="" title="NBA" width="480" height="200" loading="eager" decoding="async" src="/images/collaborators/nba.webp" /></li><li aria-hidden="true"><img alt="" title="Blue Note Entertainment Group" width="480" height="200" loading="eager" decoding="async" src="/images/collaborators/blue-note-entertainment-group.webp" /></li><li aria-hidden="true"><img alt="" title="Superfly" width="480" height="200" loading="eager" decoding="async" src="/images/collaborators/superfly.webp" /></li><li aria-hidden="true"><img alt="" title="TekniPlex" width="480" height="200" loading="eager" decoding="async" src="/images/collaborators/tekniplex.webp" /></li><li aria-hidden="true"><img alt="" title="WNBA" width="480" height="200" loading="eager" decoding="async" src="/images/collaborators/wnba.webp" /></li><li aria-hidden="true"><img alt="" title="Bonnaroo Music &amp; Arts Festival" width="480" height="200" loading="eager" decoding="async" src="/images/collaborators/bonnaroo.webp" /></li><li aria-hidden="true"><img alt="" title="Noxguard" width="480" height="200" loading="eager" decoding="async" src="/images/collaborators/noxguard.webp" /></li><li aria-hidden="true"><img alt="" title="Derrick Hodge" width="480" height="200" loading="eager" decoding="async" src="/images/collaborators/derrick-hodge.webp" /></li><li aria-hidden="true"><img alt="" title="Lowepro" width="480" height="200" loading="eager" decoding="async" src="/images/collaborators/lowepro.webp" /></li><li aria-hidden="true"><img alt="" title="Outside Lands Music &amp; Arts Festival" width="480" height="200" loading="eager" decoding="async" src="/images/collaborators/outside-lands.webp" /></li><li aria-hidden="true"><img alt="" title="The C.L. Bailey Co." width="480" height="200" loading="eager" decoding="async" src="/images/collaborators/cl-bailey.webp" /></li><li aria-hidden="true"><img alt="" title="The Howard Stern Show" width="480" height="200" loading="eager" decoding="async" src="/images/collaborators/howard-stern-show.webp" /></li><li aria-hidden="true"><img alt="" title="Sacramento Kings" width="480" height="200" loading="eager" decoding="async" src="/images/collaborators/sacramento-kings.webp" /></li><li aria-hidden="true"><img alt="" title="JOBY" width="480" height="200" loading="eager" decoding="async" src="/images/collaborators/joby.webp" /></li><li aria-hidden="true"><img alt="" title="Second Son Productions" width="480" height="200" loading="eager" decoding="async" src="/images/collaborators/second-son-productions.webp" /></li><li aria-hidden="true"><img alt="" title="Velocity" width="480" height="200" loading="eager" decoding="async" src="/images/collaborators/velocity.webp" /></li><li aria-hidden="true"><img alt="" title="Chief Adjuah" width="480" height="200" loading="eager" decoding="async" src="/images/collaborators/chief-adjuah.webp" /></li><li aria-hidden="true"><img alt="" title="NorCal Cannabis Company" width="480" height="200" loading="eager" decoding="async" src="/images/collaborators/norcal-cannabis.webp" /></li><li aria-hidden="true"><img alt="" title="The Black Radio Experience" width="480" height="200" loading="eager" decoding="async" src="/images/collaborators/black-radio-experience.webp" /></li><li aria-hidden="true"><img alt="" title="The Level Best" width="480" height="200" loading="eager" decoding="async" src="/images/collaborators/level-best.webp" /></li><li aria-hidden="true"><img alt="" title="Color of Noize" width="480" height="200" loading="eager" decoding="async" src="/images/collaborators/color-of-noize.webp" /></li><li aria-hidden="true"><img alt="" title="Black Radio Production" width="480" height="200" loading="eager" decoding="async" src="/images/collaborators/black-radio-production.webp" /></li><li aria-hidden="true"><img alt="" title="Ingenia" width="480" height="200" loading="eager" decoding="async" src="/images/collaborators/ingenia.webp" /></li></ul></section>
+<section id="data-studio" className="sy dz" aria-labelledby="dz-title">
+  <p className="print-section-marker">02 / Data Studio</p>
+  <div className="ph-stage">
+    
+    <div className="ph-head">
+      <h2 id="dz-title" className="name sy-title"><span>One</span> <span className="sy-hot">dashboard.</span></h2>
+      <p className="sy-lead">Everything your marketing does and everything your business sells, in one place. AI reads it every day and tells you what to change.</p>
+      <p className="ph-sub">Adjust on the fly, or weekly, monthly, yearly. Every client gets their own Data Studio, built around their business.</p>
+    </div>
+    <div className="ph-row"><figure className="ph ph-a ph-ink"><img src="/images/people/restaurant.jpg" alt="A restaurant owner at the pass of her busy kitchen, smiling at a tablet" loading="lazy" width="1400" height="1750" /><figcaption><b>Today</b><span>Lunch was quiet. One offer went out at two. Tonight there’s a wait.</span></figcaption></figure>
+      <figure className="ph ph-b ph-paper"><img src="/images/people/manager.jpg" alt="An artist manager on a road case at soundcheck, smiling at his phone" loading="lazy" width="1400" height="1750" /><figcaption><b>This week</b><span>Tickets were slow on Monday. We moved the marketing. Tonight is sold out.</span></figcaption></figure>
+      <figure className="ph ph-c ph-paper"><img src="/images/people/creative.jpg" alt="Two people on a creative team laughing at a laptop in their studio" loading="lazy" width="1400" height="1750" /><figcaption><b>This month</b><span>Two campaigns ran. One paid for itself. Next month follows the winner.</span></figcaption></figure>
+      <figure className="ph ph-d ph-ink"><img src="/images/people/ceo.jpg" alt="A chief executive at his desk in a bright city office, smiling at his monitor" loading="lazy" width="1400" height="1750" /><figcaption><b>This year</b><span>Next year’s budget, set from what worked this year.</span></figcaption></figure>
+    </div>
+  </div>
+  <p className="ph-more"><a href="/data-studio">See how Data Studio works <span aria-hidden="true">↗</span></a></p>
+  <p className="ph-note">Illustrative moments. Every client’s dashboard is built around their own business.</p>
+  <div className="dz-three">
+    <div><i>1</i><b>One view</b><p>The store, the ads, the email, the social accounts, the site and the sales team, each number against its target.</p></div>
+    <div><i>2</i><b>It tells you what to do</b><p>Every recommendation names the decision, who owns it and how sure the numbers are.</p></div>
+    <div><i>3</i><b>A person decides</b><p>AI does the reading. Your team makes the call, today or at the monthly review.</p></div>
+  </div>
+</section><section id="evidence" className="v-proofs" aria-labelledby="v-proof-title">
+  <p className="print-section-marker">03 / Evidence</p>
+  <h2 id="v-proof-title" className="name hiring-section-title">What the work shows</h2>
+  <div className="v-proof-grid"><article className="v-proof"><a className="v-proof-media" href="/work/billiard-factory-and-c-l-bailey"><img src="/images/bf-holiday-guide-cover.webp" alt="Billiard Factory Holiday Gift Guide cover with four gift lists" loading="lazy" decoding="async" /></a><div className="v-proof-copy"><p className="v-role">Billiard Factory and C.L. Bailey</p><h3 className="name">How much of the business we can connect.</h3><p>We worked with logistics on inventory, product selection and pricing for a holiday gift guide. We built the guide customers could shop, created the organic Reel and the 30-second streaming-TV spot, and used earlier campaign data to inform placement. We can sit in the room where the commercial decision gets made and carry that decision all the way to what the customer sees.</p><a className="ch-link" href="/work/billiard-factory-and-c-l-bailey">See the engagement <span aria-hidden="true">↗</span></a></div></article><article className="v-proof "><a className="v-proof-media" href="/work/lalah-hathaway"><img src="/images/lalah-made-in-chicago-live-1200.webp" alt="Lalah Hathaway in a listening room lined with records, the opening image for Made in Chicago" loading="lazy" decoding="async" /></a><div className="v-proof-copy"><p className="v-role">Lalah Hathaway, Made in Chicago</p><h3 className="name">What we bring creatively.</h3><p>Her team supplied a photograph and a room concept. We saw that the objects in the room could become the navigation and built an interactive world fans could explore. We also handled work behind the experience, including newsletter migration and a practice environment where staff could rehearse merchandise fulfillment.</p><small>Photography and music supplied by the artist’s team.</small><a className="ch-link" href="/work/lalah-hathaway">See the artist experience <span aria-hidden="true">↗</span></a></div></article><article className="v-proof "><a className="v-proof-media" href="/work/engine-room"><img src="/images/home-field-shot-1200.webp" alt="Home Field campaign image of a player lining up a pool shot, made and run through Engine Room" loading="lazy" decoding="async" /></a><div className="v-proof-copy"><p className="v-role">Engine Room, Content Factory and Data Studio</p><h3 className="name">What we leave behind.</h3><p>One helps the team plan and hand off campaigns. One supports publishing. One helps leadership review what happened afterward. You get finished work today and tools your people can use for the next campaign.</p><small>Client figures stay private. Any numbers in a walkthrough are fictional.</small><a className="ch-link" href="/work/engine-room">See Engine Room <span aria-hidden="true">↗</span></a></div></article></div>
+</section>
 
-        <div className="print-discipline-strip" aria-label="Creative disciplines"><span>Brand</span><i aria-hidden="true">✳</i><span>Commerce</span><i aria-hidden="true">✳</i><span>Culture</span><i aria-hidden="true">✳</i><span>Applied AI</span></div>
 
-        <section id="where-to-start" className="home-start scroll-mt-5" aria-labelledby="home-start-title">
-          <p className="print-section-marker">01 / A place to start</p>
-          <h2 id="home-start-title" className="name hiring-section-title">What do you need to make happen?</h2>
-          <div className="home-start-intro">
-            <p>A product sample, a launch date or a process your team has outgrown is enough to start. Together we’ll decide what’s worth building within your budget.</p>
-            <p>We use AI to put a first version in your hands early, so you can try it and decide what to change. We can build it alongside your team or lead it through launch.</p>
-          </div>
-        </section>
 
-        <section id="work" className="hiring-work scroll-mt-5" aria-labelledby="selected-work-title">
-          <p className="print-section-marker">02 / Selected work</p>
-          <h2 id="selected-work-title" className="name hiring-section-title">A floor plan. An album photo.<br />Two places to start.</h2>
-          <div className="hiring-lanes">
-            <article id="billiard-factory" className="hiring-lane scroll-mt-5">
-              <div className="print-case-meta"><span>01 / Brand &amp; commerce</span><span>Ongoing engagement ↗</span></div>
-              <div className="hiring-storefront">
-                <ShowroomFilm />
-                <Link to="/work/billiard-factory-and-c-l-bailey" className="absolute inset-0" aria-label="Explore the Billiard Factory showroom project" />
-              </div>
-              <h3 className="name hiring-case-title"><Link to="/work/billiard-factory-and-c-l-bailey">Billiard Factory ↗</Link></h3>
-              <p>Customers wanted to picture a table in their own home. I designed the showroom around complete rooms. With the team, I turned 27 of those rooms into collections customers can shop online.</p>
-              <div className="flex flex-wrap items-baseline gap-x-6 gap-y-2">
-                <Link to="/work/off-storis" className="text-link">Inside the Shopify rebuild <span aria-hidden="true">↗</span></Link>
-                <Link to="/work/billiard-factory-and-c-l-bailey#velocity-launch" className="text-link">Watch the Velocity launch <span aria-hidden="true">↗</span></Link>
-              </div>
-            </article>
-            <article id="second-son" className="hiring-lane scroll-mt-5">
-              <div className="print-case-meta"><span>02 / Music &amp; culture</span><span>Artist experience ↗</span></div>
-              <Link to="/work/lalah-hathaway" className="hiring-image-link">
-                <Img src="lalah-made-in-chicago-live.png" alt="Lalah Hathaway in a listening room lined with records, the opening image for Made in Chicago" sizes="(min-width: 768px) 46vw, 100vw" className="hiring-work-image" />
-              </Link>
-              <h3 className="name hiring-case-title"><Link to="/work/lalah-hathaway">Lalah Hathaway ↗</Link></h3>
-              <p>The team had a photograph for <em>Made in Chicago</em>. I hid seven ways into the album inside it. About five days later, Lalah could try the first version herself.</p>
-              <a href="https://lalahhathaway.com/" className="text-link self-start">Step inside the artist site <span aria-hidden="true">↗</span></a>
-            </article>
-          </div>
-        </section>
+<section id="hire" className="v-caps" aria-labelledby="v-caps-title">
+  <p className="print-section-marker">04 / What you can hire us to do</p>
+  <h2 id="v-caps-title" className="name sy-title"><span>Plan.</span> <span>Make.</span> <span>Launch.</span> <span>Measure.</span> <span className="sy-hot">Adjust.</span></h2>
+  <div className="sy-intro">
+    <p className="sy-lead">We built this system and we run it every day. You get your own version.</p>
+    <p>It works for a retailer with showrooms, an artist management company or a freelance business person. Bring us in for all of it or for one piece. Each list below is what you get.</p>
+  </div>
+  <div className="v-group v-group-2" id="v-g1"><header><h3 className="name" data-n="Stage 01">Plan</h3><p>What deserves the next dollar, and why someone would choose you.</p></header><div className="v-cards"><article className="v-cap"><span className="v-num">01</span><h4>Senior creative and marketing leadership</h4><p className="v-lead">If your marketing lives across sales, an internal team and a few outside partners, we can give everyone one plan.</p><p className="v-rest">We agree on the business priority, audience, message, responsibilities, budget and launch sequence. We can direct your team and partners and stay hands-on through delivery.</p></article><article className="v-cap"><span className="v-num">02</span><h4>Brand, positioning and the offer</h4><p className="v-lead">We work with the people who know the business to decide what deserves attention, why someone would choose it, and how to present it.</p><div className="v-get"><span>What you get</span><ul><li>Brand strategy and positioning</li><li>Naming</li><li>Logo, color and type</li><li>Brand guidelines</li><li>Rebrand rollout</li></ul></div></article></div></div><div className="v-group v-group-3" id="v-g2"><header><h3 className="name" data-n="Stage 02">Make and launch</h3><p>One offer, carried through every place a customer meets it.</p></header><div className="v-cards"><article className="v-cap"><span className="v-num">03</span><h4>Campaign planning, media and execution</h4><p className="v-lead">We connect paid and organic social, email, streaming TV, landing pages and sales follow-up around one offer.</p><div className="v-get"><span>What you get</span><ul><li>Campaign plan and calendar</li><li>Email campaigns and automated follow-ups</li><li>Organic social, written and scheduled</li><li>Paid social and search ads</li><li>Streaming TV spots</li><li>Blog articles</li></ul></div></article><article className="v-cap"><span className="v-num">04</span><h4>Creative direction and production</h4><p className="v-lead">We develop concepts, direct shoots, photograph, direct and edit films, write copy and produce launch assets.</p><div className="v-get"><span>What you get</span><ul><li>Brand and campaign films</li><li>Lifestyle and product photography</li><li>AI-made images and film</li><li>Short video for social</li></ul></div></article><article className="v-cap"><span className="v-num">05</span><h4>Digital experiences, commerce and showrooms</h4><p className="v-lead">We design and build digital experiences and lead larger commerce work with implementation teams.</p><div className="v-get"><span>What you get</span><ul><li>Website</li><li>Landing pages</li><li>Online store</li><li>Buying guides and gift guides</li></ul></div></article><figure className="v-media v-film"><video muted loop autoPlay playsInline preload="metadata" poster="/images/cl-bailey-waterfront-poster.jpg" aria-label="C.L. Bailey Factory Event campaign film"><source src="/video/cl-bailey-factory-event-mobile.mp4" type="video/mp4" /></video></figure></div></div><div className="v-group v-group-3" id="v-g3"><header><h3 className="name" data-n="Stage 03">Measure and adjust</h3><p>Your people close the sale, see what happened and run it again.</p></header><div className="v-cards"><article className="v-cap"><span className="v-num">06</span><h4>Sales and dealer enablement</h4><p className="v-lead">We give the people closing the sale something they can use in the next conversation.</p><div className="v-get"><span>What you get</span><ul><li>Sales plan and playbook</li><li>Pitch decks and one-page sheets</li><li>Dealer or partner portal</li><li>CRM setup and lead follow-up</li><li>In-store screens and showroom tools</li></ul></div></article><article className="v-cap"><span className="v-num">07</span><h4>Marketing intelligence and ongoing improvement</h4><p className="v-lead">We bring campaign dates, ad activity, email, storefront changes, inquiries and sales into a shared reporting view built around your business.</p><div className="v-get"><span>What you get</span><ul><li>Data Studio dashboard</li><li>Weekly and monthly reports</li></ul></div></article><article className="v-cap"><span className="v-num">08</span><h4>Practical AI, custom tools and staff training</h4><p className="v-lead">We start with a recurring task your team knows well.</p><div className="v-get"><span>What you get</span><ul><li>Custom AI tools for your team</li><li>Staff training</li></ul></div></article><figure className="v-media v-film v-equip"><img src="/images/clbailey-concierge-1200.webp" alt="The C.L. Bailey website with a showroom manager assistant answering a shopper" loading="lazy" width="1200" height="645" /></figure></div></div>
+</section>
 
-        <CollaboratorLogos />
-
-        <section className="home-needs" aria-labelledby="home-needs-title">
-          <p className="print-section-marker">03 / From the brief</p>
-          <h2 id="home-needs-title" className="name hiring-section-title">Ways we can help</h2>
-          <div className="home-start-grid">
-            {clientNeeds.map(({ title, body, link, to }) => (
-              <article key={to} className="home-start-card">
-                <h3>{title}</h3>
-                <p>{body}</p>
-                <Link to={to} className="home-start-link">{link} <span aria-hidden="true">↗</span></Link>
-              </article>
-            ))}
-          </div>
-        </section>
-
-        <nav id="other-projects" className="home-related" aria-label="More selected work">
-          <div id="corporate-work" className="home-corporate scroll-mt-5">
-            <p className="lbl">Projects I led for Ingenia</p>
-            <div className="home-corporate-grid">
-              {[
-                { to: '/work/coca-cola-femsa', title: 'Coca-Cola FEMSA', summary: 'One navigation for journalists, shareholders and job seekers.', image: 'coca-cola-femsa-laptop.png', alt: 'A laptop on a wooden desk showing the Coca-Cola FEMSA corporate website and its product portfolio page' },
-                { to: '/work/tekniplex', title: 'TekniPlex', summary: 'Digital business cards for sales teams on the trade-show floor.', image: 'tekniplex-request-form.png', alt: 'A person typing on a laptop that shows the TekniPlex Digital Business Card request form' },
-              ].map(({ to, title, summary, image, alt }) => (
-                <Link key={to} to={to} className="home-project-card">
-                  <Img src={image} alt={alt} sizes="(max-width: 700px) 100vw, (min-width: 1440px) 643px, 48vw" />
-                  <div>
-                    <span className="name">{title} <span aria-hidden="true">↗</span></span>
-                    <span className="home-corporate-summary">{summary}</span>
-                  </div>
-                </Link>
-              ))}
-            </div>
-          </div>
-          <div className="home-related-grid">
-            {[
-              { to: '/work/engine-room', title: 'Engine Room', scope: 'Campaign operations', image: 'marketing-engine-overview.png', alt: 'Campaign dashboard in Billiard Factory’s Engine Room', credit: '' },
-              { to: '/work/robert-glasper-blue-note', title: 'Robert Glasper & Blue Note', scope: 'Four years directing festival content', image: 'blue-note-la-glasper.jpg', alt: 'Robert Glasper on stage at the opening of Blue Note Los Angeles', credit: 'Photo by Todd Cooper / @toddcoop' },
-              { to: '/work/savor', title: 'Savor', scope: 'Food and storytelling', image: 'savor-chef-series.jpg', alt: 'A chef preparing food for the Savor Chef Series', credit: 'Chef Series frame by IDW Studio' },
-            ].map(({ to, title, scope, image, alt, credit }) => (
-              <div key={to}>
-                <Link to={to} className="home-project-card">
-                  <Img src={image} alt={alt} sizes="(min-width: 701px) 30vw, 100vw" />
-                  <span className="lbl">{scope}</span>
-                  <span className="name">{title} <span aria-hidden="true">↗</span></span>
-                </Link>
-                {credit && <small>{credit}</small>}
-              </div>
-            ))}
-          </div>
-          <Link className="text-link" to="/work/other-projects">Explore food, hospitality and industrial brands ↗</Link>
-        </nav>
-
-        <section id="ai" className="home-process scroll-mt-5" aria-labelledby="home-ai-title">
-          <div className="print-ai-masthead" aria-hidden="true"><span>HUMAN LED.</span><span>AI ENABLED.</span></div>
-          <div className="home-process-spread">
-            <div className="home-process-copy">
-              <p className="print-section-marker">04 / The creative practice</p>
-              <h2 id="home-ai-title" className="name hiring-section-title">Applied AI &amp; Creative Production</h2>
-              <p>Creative Direction · AI Product Imagery · Campaign Films · End-to-End Production</p>
-              <p>For C.L. Bailey, the brief was a 10% offer. The idea was a man who keeps putting off buying a pool table. Then it starts finding him everywhere, from his morning paper to his train ride home.</p>
-              <Link to="/art-of-prompting#process" className="text-link">See how I direct AI imagery ↗</Link>
-            </div>
-            <CaseFilm
-              {...clBaileyFactoryFilm}
-              id="home-factory-event-film"
-              poster="/images/cl-bailey-waterfront-poster.jpg"
-              title="C.L. Bailey · Factory Event"
-              caption="The full campaign film, made entirely with AI. The billboards and transit ads are scenes in the film."
-              sourceHref="/work/c-l-bailey-factory-event"
-              sourceLabel="Explore the campaign"
-            />
-          </div>
-          <section id="holiday-gift-guide" className="home-photo-story home-gift-feature" aria-labelledby="home-gift-title">
-            <PortfolioFilm
-              id="home-gift-list-film" src="/video/bf-gift-list.mp4" poster="/images/bf-gift-list-poster.webp"
-              width={1920} height={1080} label="Billiard Factory’s animated holiday gift checklist"
-              controlLabel="gift guide preview" caption="Billiard Factory · Gift guide preview"
-            />
-            <div className="home-photo-story-copy">
-              <p className="lbl">Holiday &amp; Black Friday</p>
-              <h3 id="home-gift-title" className="name">Who’s on your list?</h3>
-              <p>I turned Billiard Factory’s product list into eight shoppable gift lists with picks from the family behind the store. Then I made a 30-second AI spot that aired on streaming TV and used data from earlier campaigns to choose its placements on Vibe.</p>
-              <Link to="/work/billiard-factory-and-c-l-bailey#holiday-gift-guides" className="text-link">Explore the guide and TV spot <span aria-hidden="true">↗</span></Link>
-            </div>
-          </section>
-          <section id="noxguard" className="home-noxguard" aria-label="Noxguard brand gallery">
-            <NoxguardGallery />
-            <Link to="/work/noxguard" className="text-link">Noxguard’s rebrand, from pallet to sales pitch <span aria-hidden="true">↗</span></Link>
-          </section>
-          <div id="home-field-stills" className="home-photo-story">
-            <HomeFieldFilm featured />
-            <div className="home-photo-story-copy">
-              <p className="lbl">Billiard Factory · Home Field</p>
-              <h3 className="name">Behind the film.</h3>
-              <p>For Home Field, I used AI to take the viewer from one pool room to the next. In this shot, the stained-glass lamp, the jukebox and the license plates give the room its character.</p>
-              <Link to="/work/home-field" className="text-link">Explore the Home Field campaign ↗</Link>
-            </div>
-          </div>
-          <div className="home-toolkit-strip">
-            <div>
-              <h3 id="home-toolkit" className="lbl">Tools &amp; platforms</h3>
-              <Link to="/about#toolkit" className="text-link">Full toolkit ↗</Link>
-            </div>
-            <dl aria-labelledby="home-toolkit">
-              <div><dt>Creative production</dt><dd>Adobe Creative Cloud, Higgsfield</dd></div>
-              <div><dt>Digital experiences &amp; commerce</dt><dd>Claude Code, Shopify</dd></div>
-              <div><dt>Retail spaces</dt><dd>SketchUp, AutoCAD</dd></div>
-            </dl>
-            <Link to="/art-of-prompting" className="text-link">See how I use AI ↗</Link>
-          </div>
-        </section>
-
-        <section id="contact" className="home-invitation print-contact" aria-labelledby="home-close-title">
-          <div>
-            <p className="print-section-marker">05 / Your next project</p><h2 id="home-close-title" className="name">What’s<br />next<span className="print-ivory">?</span></h2>
-            <p>Send us a brief, a link or a few lines about the project.</p>
-          </div>
-          <a className="text-link" href={PROJECT_CONTACT_HREF}>{EMAIL} <span aria-hidden="true">↗</span></a>
-        </section>
-      </main>
+<section id="ways" className="v-ways" aria-labelledby="v-ways-title">
+  <p className="print-section-marker">05 / How to start</p>
+  <h2 id="v-ways-title" className="name hiring-section-title">Three ways to hire us</h2>
+  <div className="v-way-grid"><article className="v-way v-way-hot"><img className="v-way-ph v-way-ph-owner" src="/images/people/owner.jpg" alt="The owner of a family company at his desk at the end of the day, smiling at his monitor" loading="lazy" width="1400" height="1750" /><span className="v-num">01</span><h3>Ongoing creative and marketing partner</h3><p>For a CEO who needs someone to own priorities, direct the work, stay involved through delivery and review what to do next.</p></article><article className="v-way "><img className="v-way-ph v-way-ph-retail" src="/images/people/retail.jpg" alt="A retail owner in her stockroom aisle, smiling at a tablet" loading="lazy" width="1400" height="1750" /><span className="v-num">02</span><h3>Focused project</h3><p>For a team with one clear need, such as a launch, film, shopping experience, dealer portal, reporting system or AI workflow.</p></article><article className="v-way "><img className="v-way-ph v-way-ph-freelancer" src="/images/people/freelancer.jpg" alt="A freelance consultant on a city sidewalk, smiling at his phone" loading="lazy" width="1400" height="1750" /><span className="v-num">03</span><h3>Marketing and AI Review</h3><p>For someone who knows something should work better but doesn’t know where to start. You leave with a short priority plan, one agreed working example you can try, and a walkthrough with your team.</p></article></div><p className="v-ways-note">The people pictured on this page are illustrative. They are not clients.</p>
+</section>
+<section id="contact" className="home-invitation print-contact" aria-labelledby="home-close-title"><div><p className="print-section-marker">06 / Your next project</p><h2 id="home-close-title" className="name">What’s<br />next<span className="print-ivory">?</span></h2><p>What are you trying to make happen, and where does it get stuck today?</p><a className="text-link" href="mailto:joshua@untold.works?subject=Let%E2%80%99s%20discuss%20a%20project">joshua@untold.works <span aria-hidden="true">↗</span></a></div><figure className="close-wide"><img src="/images/people/construction-wide.jpg" alt="The owner of a construction company on her building site, wearing a hard hat and smiling at a tablet" loading="lazy" width="1920" height="1080" /></figure><figure className="close-ph"><img src="/images/people/construction.jpg" alt="The owner of a construction company on an upper floor of an unfinished building, wearing a hard hat and smiling at a tablet, with her crew at work behind her" loading="lazy" width="1400" height="1750" /></figure></section></main>
       <Footer />
     </Layout>
   );

@@ -6,9 +6,11 @@ import { pageComponent } from './pageLoader';
 const About = pageComponent('About');
 const Category = pageComponent('Category');
 const Home = pageComponent('Home');
+const Work = pageComponent('Work');
+const SiteMap = pageComponent('SiteMap');
+const MarketingIntelligence = pageComponent('MarketingIntelligence');
 const ArtOfPrompting = pageComponent('ArtOfPrompting');
 const WorkTogether = pageComponent('WorkTogether');
-const ForYourBusiness = pageComponent('ForYourBusiness');
 const NotFound = pageComponent('NotFound');
 const ElenaPinderhughes = pageComponent('ElenaPinderhughes');
 const EngineRoom = pageComponent('EngineRoom');
@@ -76,6 +78,10 @@ export const App = () => (
       </a>
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/work" element={<Work />} />
+        <Route path="/site-map" element={<SiteMap />} />
+        <Route path="/marketing-intelligence" element={<Navigate to="/data-studio" replace />} />
+        <Route path="/data-studio" element={<MarketingIntelligence />} />
         <Route path="/brand-and-product" element={<Category slug="brand-and-product" />} />
         <Route path="/platforms" element={<Category slug="platforms" />} />
         <Route path="/websites" element={<Category slug="websites" />} />
@@ -93,7 +99,7 @@ export const App = () => (
         <Route path="/art-of-prompting" element={<ArtOfPrompting />} />
         <Route path="/photography-and-video" element={<LegacyCreativeCollection />} />
         <Route path="/work-together" element={<WorkTogether />} />
-        <Route path="/for-your-business" element={<ForYourBusiness />} />
+        <Route path="/for-your-business" element={<Navigate to="/" replace />} />
         <Route path="/consulting" element={<Navigate to="/work-together" replace />} />
         <Route path="/contact" element={<Navigate to="/work-together#contact" replace />} />
         <Route path="/about" element={<About />} />

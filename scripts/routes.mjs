@@ -20,7 +20,9 @@ export const routes = [
   '/work/robert-glasper-blue-note',
   '/work/other-projects',
   '/art-of-prompting',
+  '/data-studio',
+  '/work',
+  '/site-map',
   '/work-together',
-  '/for-your-business',
   '/about',
 ];

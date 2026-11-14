@@ -1,8 +1,8 @@
 # Untold.works
 
-> I’m Joshua Semolik. Untold.works is my independent creative and AI consulting practice.
+> Untold.works is an independent creative and AI studio founded by Joshua Semolik.
 
-I help teams tell a brand or product story, build the experience around it and get it out into the world. I also build the tools and sales materials people need to keep the work moving after launch.
+We help teams tell a brand or product story, build the experience around it and get it out into the world. We also build the tools and sales materials people need to keep the work moving after launch.
 
 Email: joshua@untold.works. Phone: +1 917-665-1221. LinkedIn: https://www.linkedin.com/in/semolik/.
 
@@ -11,39 +11,39 @@ This file is a supplementary content index. The linked pages are the primary sou
 ## Pages
 
 - [Home](https://untold.works/): Untold.works offers creative direction and applied AI consulting, from brand and launch work to business workflows.
-- [Brand and product](https://untold.works/brand-and-product): I help teams see how a brand will look on the shelf or in a showroom. We can test a product, a finish or a room layout before committing to production.
-- [Platforms](https://untold.works/platforms): I build tools around a task your team does every day, from finding the right product image to getting a campaign approved.
-- [Digital experiences](https://untold.works/websites): I build sites around what someone came to do. That might mean choosing a table that fits, hearing a new record or finding a café in an unfamiliar city.
-- [Campaigns](https://untold.works/campaigns): I develop the campaign idea, direct the images and films, and carry the story into the places people will see it.
-- [Landing pages](https://untold.works/work/landing-pages): I connected the sales team to GoHighLevel, then developed ten campaign pages with the team.
-- [Billiard Factory + C.L. Bailey](https://untold.works/work/billiard-factory-and-c-l-bailey): AI-assisted retail and commerce work across the new Billiard Factory front end, 27 live digital room stories, campaigns, CRM, creative systems and C.L. Bailey. Led the storefront rebuild, Shopify transition and digital Gallery with the team. I lead paid media and search, create the ads and manage the Vibe streaming TV campaign. Shopify checkout launched October 16, 2026. The XoroERP migration continues.
+- [Brand](https://untold.works/brand-and-product): We help teams see how a brand will look on the shelf or in a showroom. We can test a product, a finish or a room layout before committing to production.
+- [Sales tools, data and AI](https://untold.works/platforms): We build tools around a task your team does every day, from finding the right product image to getting a campaign approved.
+- [Website and store](https://untold.works/websites): We build sites around what someone came to do. That might mean choosing a table that fits, hearing a new record or finding a café in an unfamiliar city.
+- [Campaigns, photo and film](https://untold.works/campaigns): We develop the campaign idea, direct the images and films, and carry the story into the places people will see it.
+- [Landing pages](https://untold.works/work/landing-pages): We connected the sales team to GoHighLevel, then developed ten campaign pages with the team.
+- [Billiard Factory + C.L. Bailey](https://untold.works/work/billiard-factory-and-c-l-bailey): AI-assisted retail and commerce work across the new Billiard Factory front end, 27 live digital room stories, campaigns, CRM, creative systems and C.L. Bailey. Led the storefront rebuild, Shopify transition and digital Gallery with the team. We lead paid media and search, create the ads and manage the Vibe streaming TV campaign. Shopify checkout launched October 16, 2026. The XoroERP migration continues.
 - [Savor](https://untold.works/work/savor): Website and content storytelling through IDW Studio; IDW led the wider Chef Series production and post work.
 - [Noxguard](https://untold.works/work/noxguard): Led the rebrand, website and photo and video campaign, and helped the team organize its marketing work.
 - [Second Son Productions and related music work](https://untold.works/work/robert-glasper-blue-note): Work with an artist management company and related teams across artist sites, Robert Glasper releases and films, Robtober content, separate Blue Note venue and festival roles, and independent Elena Pinderhughes and Qmillion collaborations.
 - [Game Room Furniture Partners](https://untold.works/work/game-room-furniture-partners): Billiard Factory’s trade-only showroom at Dallas Market Center, focused on interior designers. Part of the Billiard Factory engagement.
 - [Other Projects](https://untold.works/work/other-projects): Savor, Noxguard and further independent or agency collaborations, with live and demo status distinguished.
 - [Elena Pinderhughes](https://untold.works/work/elena-pinderhughes): The debut album site for I Hope You Feel It Too.
-- [Lalah Hathaway](https://untold.works/work/lalah-hathaway): Made in Chicago connects an immersive artist website with newsletter migration and custom merchandise operations, built with AI around supplied artist media. I developed the digital experience, imported 3,233 historically subscribed contacts and built the merchandise backend and staff tools. The artist site is live; public vinyl and T-shirt checkout awaits launch.
+- [Lalah Hathaway](https://untold.works/work/lalah-hathaway): Made in Chicago connects an immersive artist website with newsletter migration and custom merchandise operations, built with AI around supplied artist media. We developed the digital experience, imported 3,233 historically subscribed contacts and built the merchandise backend and staff tools. The artist site is live; public vinyl and T-shirt checkout awaits launch.
 - [The art of prompting](https://untold.works/art-of-prompting): An evolving practice of turning ideas and product references into precise prompts, still images, lifestyle scenes, motion, edits and campaign assets. The AI-created C.L. Bailey Factory Event film leads, with an interactive illustrative prompt and supporting work.
-- [About](https://untold.works/about): Creative leadership, brand storytelling, sales enablement, career and project credits, MIT Sloan executive education, and a working toolkit organized around AI building, creative production, commerce and measurement. Hands-on tools include Claude Code, Codex, Claude Cowork, ChatGPT, Higgsfield and Adobe Premiere; I also coordinate commerce and reporting platforms with client teams.
-- [Work Together](https://untold.works/work-together): Tell me about your project, timing and budget at joshua@untold.works.
-- [For Your Business](https://untold.works/for-your-business): Creative direction, digital experiences and practical AI for businesses, from an initial opportunity through launch and ongoing improvements.
+- [About](https://untold.works/about): Creative leadership, brand storytelling, sales enablement, career and project credits, MIT Sloan executive education, and a working toolkit organized around AI building, creative production, commerce and measurement. Hands-on tools include Claude Code, Codex, Claude Cowork, ChatGPT, Higgsfield and Adobe Premiere; we also coordinate commerce and reporting platforms with client teams.
+- [Work Together](https://untold.works/work-together): Tell us about your project, timing and budget at joshua@untold.works.
+- [Data Studio](https://untold.works/data-studio): One dashboard for your marketing. Explore a sample board across four time frames and choose a budget test with invented figures.
 
 ## Work
 
-### 01. Brand and product (5 projects)
+### 01. Brand (5 projects)
 
-Visual systems for products and places. I help teams see how a brand will look on the shelf or in a showroom. We can test a product, a finish or a room layout before committing to production.
+Visual systems for products and places. We help teams see how a brand will look on the shelf or in a showroom. We can test a product, a finish or a room layout before committing to production.
 
-- Noxguard. Client: Noxguard; Program: Brand identity, site and campaign; Practice: Untold.works project; My role: Rebrand, site, photo/video and marketing systems. Project page: https://untold.works/work/noxguard
+- Noxguard. Client: Noxguard; Program: Brand identity, site and campaign; Practice: Untold.works project; What we did: Rebrand, site, photo/video and marketing systems. Project page: https://untold.works/work/noxguard
 - Spring Gallery. Client: Billiard Factory; Showroom: 34-station design system; Online: 27 live shoppable room stories; Status: Gallery open; redesign progressing. Project page: https://untold.works/work/spring-stuebner-store
 - Brand Hub. Client: Billiard Factory; What it is: Living brand guidelines and creative hub; One source: Design tokens and guidance for builds; Status: Live ↗ (https://billiard-factory-brand-hub.netlify.app). Project page: https://untold.works/work/brand-hub
 - C.L. Bailey Brand Bible. Client: C.L. Bailey; What it is: Eleven modules, one standard; Built for: The dealer network; Status: Live ↗ (https://clbailey-brand-bible.netlify.app). Project page: https://untold.works/work/c-l-bailey-brand-bible
 - Tierra cue line. Client: Billiard Factory; Role: Product design and pitch, created with AI; What it is: Three designs for Billiard Factory’s own cue line; Status: All three designs selected for production. Project page: https://untold.works/work/tierra-cue-line
 
-### 02. Platforms (7 projects)
+### 02. Sales tools, data and AI (7 projects)
 
-Tools that coordinate the work. I build tools around a task your team does every day, from finding the right product image to getting a campaign approved.
+Tools that coordinate the work. We build tools around a task your team does every day, from finding the right product image to getting a campaign approved.
 
 - C.L. Bailey portal and concierge. Client: C.L. Bailey; Dealer portal: Authenticated assets; ops screens demo; Site: Bilingual, AI concierge, dealer locator; Public site: Live ↗ (https://clbailey.com). Project page: https://untold.works/work/c-l-bailey-portal-and-concierge
 - Engine Room. Client: Billiard Factory; Role: Platform design, build and campaign direction; Connects: Briefs, assets, review, schedules and channels; Built with: Claude Code. Project page: https://untold.works/work/engine-room
@@ -53,11 +53,11 @@ Tools that coordinate the work. I build tools around a task your team does every
 - Casa Schuck ops dashboard. Client: Casa Schuck; What it is: Hotel operations dashboard; Status: Full demo, no live data yet. Project page: https://untold.works/work/casa-schuck-ops-dashboard
 - TekniPlex digital business cards. Client: TekniPlex; Role: Project lead for the agency Ingenia; Platform: Digital business cards with QR and wallet passes; Reach: Multiple TekniPlex divisions. Project page: https://untold.works/work/tekniplex
 
-### 03. Digital experiences (14 projects)
+### 03. Website and store (14 projects)
 
-Destinations with a clear next step. I build sites around what someone came to do. That might mean choosing a table that fits, hearing a new record or finding a café in an unfamiliar city.
+Destinations with a clear next step. We build sites around what someone came to do. That might mean choosing a table that fits, hearing a new record or finding a café in an unfamiliar city.
 
-- Lalah Hathaway. My role: Creative development · Design · Build; Connected work: Artist website · Newsletter · Merchandise operations; Audience migration: 3,233 subscribed contacts imported; Status: Website live; public merch checkout awaiting launch (https://lalahhathaway.com). Project page: https://untold.works/work/lalah-hathaway
+- Lalah Hathaway. What we did: Creative development · Design · Build; Connected work: Artist website · Newsletter · Merchandise operations; Audience migration: Over 5,000 audience records reviewed; Status: Website live; public merch checkout awaiting launch (https://lalahhathaway.com). Project page: https://untold.works/work/lalah-hathaway
 - Elena Pinderhughes. Debut album site: 2026; Album: I Hope You Feel It Too; Status: Live ↗ (https://elenapinderhughes.com). Project page: https://untold.works/work/elena-pinderhughes
 - Ki'bok Coffee. Café site: Mar–Apr 2026; Languages: EN · ES · JA; Status: Live ↗ (https://kibokcoffeesma.com). Project page: https://untold.works/work/kibok-coffee
 - Savor. Client: Savor, food tech; Role: Website, content and storytelling; Hired through: IDW Studio; Status: Live ↗ (https://www.savor.it). Project page: https://untold.works/work/savor
@@ -72,9 +72,9 @@ Destinations with a clear next step. I build sites around what someone came to d
 - Village Tenders. Client: Village Tenders; What it is: A proposal built as a live site; Date: Apr–May 2026. Project page: https://untold.works/work/village-tenders
 - Coca-Cola FEMSA. Client: Coca-Cola FEMSA; Role: Project lead for the agency Ingenia; Scope: Audience navigation, content management and team training; Platform: MODX CMS. Project page: https://untold.works/work/coca-cola-femsa
 
-### 04. Campaigns (15 projects)
+### 04. Campaigns, photo and film (15 projects)
 
-Creative tied to an action. I develop the campaign idea, direct the images and films, and carry the story into the places people will see it.
+Creative tied to an action. We develop the campaign idea, direct the images and films, and carry the story into the places people will see it.
 
 Music and live work:
 
@@ -99,4 +99,4 @@ More campaigns:
 
 ## Credits
 
-I directed the Spring showroom visuals and station plan. The team built the digital Gallery. I designed Content Factory and directed its implementation with the team. I supplied the Labor Day creative direction and page template. The team built the page, wrote the search copy and adapted the other landing pages. Savor work was hired through IDW Studio. This site was built with Claude.
+We directed the Spring showroom visuals and station plan. The team built the digital Gallery. We designed Content Factory and directed its implementation with the team. We supplied the Labor Day creative direction and page template. The team built the page, wrote the search copy and adapted the other landing pages. Savor work was hired through IDW Studio. This site was built with Claude.

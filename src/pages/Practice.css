@@ -1,0 +1,68 @@
+.practice { color:var(--ink); }
+.practice :where(section,nav)[id] { scroll-margin-top:24px; }
+.practice p { line-height:1.55; max-width:62ch; }
+.practice h1,.practice h2,.practice h3 { text-wrap:balance; }
+.practice section > h2,.practice .practice-pair h2,.work-directory h2,.intelligence-lead h1 {
+  font-size:clamp(42px,5.8vw,88px); font-weight:850; font-stretch:73%; letter-spacing:-.055em; line-height:.98; margin:12px 0 24px;
+}
+.practice h2 em,.intelligence-lead h1 em { font-family:Fraunces,Georgia,serif; font-weight:600; font-size:.87em; }
+.practice .print-hero-tagline { line-height:1; }
+.hero-offer { margin-top:14px; max-width:54ch; font-size:clamp(16px,1.4vw,21px); }
+.hero-actions { display:grid; gap:6px; flex-shrink:0; justify-items:start; }
+.practice .proof { display:table; text-decoration:underline; text-underline-offset:5px; font-size:15px; font-weight:650; padding-block:8px; }
+.practice .folio { font-size:11px; letter-spacing:.12em; text-transform:uppercase; font-weight:750; line-height:1.4; }
+.practice .credits { font-size:13px; line-height:1.7; margin:20px 0 8px; }
+.practice-pair { display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1.12fr); align-items:center; gap:clamp(28px,6vw,100px); padding-block:clamp(38px,6vw,88px); border-bottom:1px solid var(--print-rule); }
+.practice p + p { margin-top:14px; }
+.practice .lead-copy { font-size:clamp(24px,2.5vw,38px); line-height:1.16; letter-spacing:-.04em; font-weight:650; }
+.opening-note { align-items:start; }
+.shape-section { padding-top:clamp(32px,5vw,68px); }
+.product-proof { background:#e2d8c6; }
+.product-proof img { width:100%; aspect-ratio:1.42; object-fit:cover; }
+.product-proof figcaption { border-top:1px solid var(--ink); padding:16px 22px 20px; display:grid; gap:2px; font-size:13px; }
+.product-proof strong { font-size:clamp(25px,2.6vw,38px); letter-spacing:-.045em; }
+.ink-band { color:var(--paper); background:var(--ink); box-shadow:0 0 0 100vmax var(--ink); clip-path:inset(0 -100vmax); }
+.touchpoints,.room-section,.work-directory,.intelligence-lead { padding-block:clamp(38px,6vw,84px); }
+.media-triptych { margin:30px 0 16px; display:grid; grid-template-columns:.68fr 1.3fr .9fr; gap:clamp(16px,3vw,42px); align-items:end; }
+.media-triptych figure { min-width:0; }
+.media-triptych :is(video,img) { display:block; width:100%; height:auto; background:#171714; }
+.media-triptych figcaption { margin-top:10px; border-top:1px solid #807d73; padding-top:10px; font-size:14px; min-height:78px; line-height:1.4; }
+.media-triptych figcaption b { display:block; font-size:18px; margin-bottom:3px; }
+.media-triptych figcaption a { text-decoration:underline; }
+.room-section figure { margin:24px 0 12px; }
+.room-proof { position:relative; }
+.room-proof img { width:100%; height:auto; }
+.room-section figcaption { margin-top:8px; font-size:12px; }
+.room-pin { position:absolute; width:32px; height:32px; transform:translate(-50%,-50%); display:grid; place-items:center; border-radius:50%; color:white; background:#24231ecc; border:2px solid white; }
+.room-pin::before { content:'+'; font-size:22px; line-height:1; }
+.room-pin span { position:absolute; bottom:100%; margin-bottom:4px; padding:5px 8px; white-space:nowrap; background:#24231e; color:white; font-size:12px; }
+.music-pin { left:43%; top:18%; }.tour-pin { left:36%; top:39%; }
+.decision-section,.training-section { border-top:2px solid var(--ink); }
+.market-console { padding:clamp(18px,3vw,40px); background:#263c35; color:#f6f1e3; border-radius:3px; }
+.market-console h3 { font-size:clamp(28px,3vw,47px); font-weight:750; letter-spacing:-.04em; line-height:1.07; margin:12px 0 14px; }
+.market-console p { font-size:15px; }
+.market-tabs,.decision-buttons { display:flex; flex-wrap:wrap; gap:6px; margin:22px 0 14px; }
+.market-console button { min-height:42px; padding:8px 12px; border:1px solid #a5b3a1; font-size:14px; }
+.market-console button[aria-pressed=true] { background:#e6edc2; color:#192821; }
+.market-row { margin-block:13px; font-variant-numeric:tabular-nums; }
+.market-row > div:first-child { display:flex; justify-content:space-between; gap:8px; flex-wrap:wrap; font-size:14px; }
+.meter { height:10px; background:#45584c; margin-top:5px; }.meter i { height:100%; display:block; background:#d9e4a2; }
+.market-row + .market-row .meter i { background:#eba786; }
+.decision-result { border-top:1px solid #8f9a88; padding-top:12px; }.decision-result b { display:block; }
+.handoff-steps { list-style:decimal inside; margin-block:16px; }.handoff-steps li { border-top:1px solid var(--print-rule); padding:9px 0; }
+.work-directory > div { display:flex; flex-wrap:wrap; gap:12px 25px; }.work-directory a { text-decoration:underline; text-underline-offset:4px; }
+.intelligence-lead h1 { font-size:clamp(56px,9vw,126px); }.intelligence-lead { border-bottom:2px solid var(--ink); }
+.practice details { margin-top:20px; }.practice summary { cursor:pointer; font-weight:650; }
+.practice :focus-visible { outline:3px solid #aa4e2b; outline-offset:3px; }.market-console :focus-visible,.ink-band :focus-visible { outline-color:#f9d599; }
+@media(max-width:750px) {
+ .practice-pair { grid-template-columns:1fr; }.media-triptych { grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr); align-items:start; }
+ .media-triptych figure:first-child { grid-row:span 2; }.media-triptych figcaption { min-height:0; }
+ .practice .print-hero-bottom { flex-direction:column; align-items:flex-start; }.practice .print-hero-tagline { font-size:clamp(29px,6.4vw,47px); }
+ .room-pin { width:27px;height:27px; }.room-pin span { font-size:10px; }
+}
+@media(max-width:450px) { .media-triptych { grid-template-columns:1fr; }.media-triptych figure:first-child { grid-row:auto; }.media-triptych figure:first-child video { width:65%; }.media-triptych figure + figure { margin-top:12px; } }
+.collection-grid,.map-collections > div,.map-list { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:28px; padding-block:32px; }
+.collection-grid img { width:100%; aspect-ratio:1.9; object-fit:cover; }.collection-grid h2,.map-collections h3 { font-size:clamp(24px,3vw,42px); font-weight:750; letter-spacing:-.04em; }
+.map-list > div { border-top:1px solid var(--ink); padding-top:12px; }.map-list a { font-size:24px; font-weight:700; }.map-list p { margin-top:4px; }
+.map-collections a { text-decoration:underline; text-underline-offset:3px; }.map-collections li { margin-block:6px; }
+@media(max-width:600px){.collection-grid,.map-list,.map-collections > div { grid-template-columns:1fr; }}

@@ -3,6 +3,7 @@ import { Footer } from '../components/Footer';
 import { Header } from '../components/Header';
 import { LabelRow } from '../components/LabelRow';
 import { Layout } from '../components/Layout';
+import { WhatsNext } from '../components/WhatsNext';
 import { usePageMeta } from '../hooks/usePageMeta';
 
 const toolkit = [
@@ -77,6 +78,7 @@ export const About = () => {
           </div>
           <div className="about-opening-copy">
             <p className="about-opening-statement">Show me the idea you’re still trying to explain.</p>
+            <p className="about-opening-summary">Untold.works is the studio I founded. When the site says “we”, it means me working with your team, with AI as the build team.</p>
             <p className="about-opening-summary">I came to consulting through photography, film and marketing. Years behind a camera taught me to ask what someone should notice first. I spent four years as Content Director for Blue Note’s Napa Valley festival, through its move into the <Link to="/work/black-radio-experience">Black Radio Experience</Link>. At Billiard Factory, that same eye shaped how shoppers move through a room and picture the pieces at home.</p>
             <p className="about-opening-summary">I like to make a first version we can look at together. I use AI to sketch the room, test the campaign or build a working tool, so you can decide what’s worth your time and budget. I can build it myself or direct your team, then stay involved through launch and the changes that follow.</p>
             <Link to="/work-together" className="text-link about-project-link">Talk with me about your project <span aria-hidden="true">↗</span></Link>
@@ -103,12 +105,12 @@ export const About = () => {
           </div>
         </section>
         <section className="pb-20" aria-labelledby="selected-work-title">
-          <LabelRow left={<span id="selected-work-title">Selected work</span>} right="Roles and projects" />
+          <LabelRow left={<span id="selected-work-title">Selected work</span>} right="The work behind it" />
           <ul className="about-proof-list m-0 list-none p-0" aria-labelledby="selected-work-title">
             <li><Link to="/work/billiard-factory-and-c-l-bailey"><strong>Billiard Factory + C.L. Bailey</strong><span>Retail redesign, live shoppable rooms, Shopify Plus migration, dealer tools and AI-led campaigns.</span><span aria-hidden="true">↗</span></Link></li>
             <li><Link to="/work/robert-glasper-blue-note"><strong>Second Son Productions & related music work</strong><span>Artist sites, Robert Glasper releases and distinct Blue Note content roles.</span><span aria-hidden="true">↗</span></Link></li>
             <li><Link to="/work/savor"><strong>Savor</strong><span>Digital experience and content storytelling through IDW Studio.</span><span aria-hidden="true">↗</span></Link></li>
-            <li><Link to="/#corporate-work"><strong>Coca-Cola FEMSA + TekniPlex</strong><span>For Ingenia, I led Coca-Cola FEMSA’s digital redesign and a digital business card platform for sales teams across TekniPlex divisions.</span><span aria-hidden="true">↗</span></Link></li>
+            <li><Link to="/work#corporate-work"><strong>Coca-Cola FEMSA + TekniPlex</strong><span>For Ingenia, I led Coca-Cola FEMSA’s digital redesign and a digital business card platform for sales teams across TekniPlex divisions.</span><span aria-hidden="true">↗</span></Link></li>
           </ul>
           <Link to="/work-together" className="text-link mt-8">
             Work with me <span aria-hidden="true">↗</span>
@@ -138,20 +140,10 @@ export const About = () => {
             <h2 id="about-toolkit-title" className="name m-0 text-[clamp(34px,4.2vw,58px)] leading-[1.02]">The tools behind the work.</h2>
             <p className="m-0 text-[18px] leading-[1.5]">The tools I use to create and build, alongside the platforms I coordinate with client teams.</p>
           </div>
-          <div className="about-toolkit-grid">
-            {toolkit.map(({ group, tools }, index) => (
-              <div key={group} className="about-toolkit-group">
-                <h3 className="lbl">{String(index + 1).padStart(2, '0')} / {group}</h3>
-                <dl>
-                  {tools.map(([name, purpose]) => (
-                    <div key={name}><dt>{name}</dt><dd>{purpose}</dd></div>
-                  ))}
-                </dl>
-              </div>
-            ))}
-          </div>
+          <p className="about-toolkit-line m-0 max-w-[900px] text-[18px] leading-[1.6]">{toolkit.flatMap(({ tools }) => tools.map(([name]) => name)).join(' · ')}</p>
           <Link to="/art-of-prompting" className="text-link mt-8">Explore the art of prompting <span aria-hidden="true">↗</span></Link>
         </section>
+        <WhatsNext />
       </main>
       <div className="mt-auto" />
       <Footer />

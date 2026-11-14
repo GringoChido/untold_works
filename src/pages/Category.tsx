@@ -62,6 +62,13 @@ export const Category = ({ slug }: { slug: string }) => {
       <main id="main" className="flex flex-col">
         <CategoryHero category={category} />
 
+        <section className="pb-16 md:pb-20" aria-labelledby="category-get-title">
+          <LabelRow left={<span id="category-get-title">What you get</span>} />
+          <ul className="m-0 grid list-none gap-x-10 p-0 pt-2 sm:grid-cols-2 lg:grid-cols-3">
+            {category.deliverables.map((item) => <li key={item} className="border-b border-current py-3 text-[18px] font-medium leading-[1.3]">{item}</li>)}
+          </ul>
+        </section>
+
         <section className="flex flex-col gap-8 pb-20 md:pb-24" aria-labelledby="category-evidence-title">
           <LabelRow left={<span id="category-evidence-title">Featured projects</span>} />
           <FeaturedGrid projects={featured} />

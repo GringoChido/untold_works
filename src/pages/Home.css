@@ -1,0 +1,101 @@
+@font-face {
+  font-family: 'National Park';
+  src: url('/fonts/national-park/NationalPark.ttf') format('truetype');
+  font-weight: 200 800;
+  font-display: swap;
+}
+
+.untold-edition {
+  --paper-tone: #f1e9d7;
+  --ink-tone: #23241f;
+  --burnt: #c96e48;
+  --petrol: #24594d;
+  --mint-paper: #ced7bf;
+  --gutter: clamp(20px, 4.6vw, 80px);
+  color: var(--ink-tone);
+  background: var(--paper-tone);
+  font-family: 'National Park', Arial, sans-serif;
+}
+.untold-edition > div { max-width: 1760px; padding-inline: var(--gutter); }
+.untold-edition .site-header { padding-block: 13px; }
+.untold-edition .site-header::before, .untold-edition .print-hero::before { background: var(--burnt); }
+.untold-edition .site-header .brand-mark { font-family: Archivo, Arial, sans-serif; }
+.untold-edition .site-nav a::after { display: none; }
+.untold-edition .site-nav a:hover, .untold-edition .site-footer a:hover { background: var(--ink-tone); color: var(--paper-tone); }
+.untold-edition a { text-decoration: none; }
+.untold-edition .print-hero { padding-top: clamp(14px, 1.7vw, 24px); padding-bottom: 17px; }
+.untold-edition .print-wordmark { margin: 4px -2px 16px; }
+.untold-edition .print-hero-bottom { gap: 30px; padding-bottom: 8px; align-items: end; }
+.untold-edition .print-hero-tagline { line-height: 1; font-stretch: normal; font-weight: 700; font-size: clamp(24px, 3.1vw, 52px); letter-spacing: -.055em; }
+.edition-intro { max-width: 48ch; font-size: clamp(17px, 1.45vw, 22px); line-height: 1.32; margin-top: 9px; }
+.hero-invite { display: grid; justify-items: start; }
+.action-fill, .action-step, .closing-invite { display:inline-flex; align-items:center; gap: .7em; }
+.action-fill {
+  background: var(--ink-tone); color: var(--paper-tone);
+  padding: 13px 22px; font-weight: 650; font-size: 16px;
+}
+.action-fill:hover { background: var(--petrol); color: #fff; }
+.action-step { font-weight: 650; font-size: 15px; padding: 10px 0; width: fit-content; }
+.action-step::before { content:''; width:11px; height:14px; flex:none; background:currentColor; clip-path:polygon(0 0,40% 0,100% 50%,40% 100%,0 100%,58% 50%); }
+.action-step:hover::before { transform: translateX(3px); }
+.action-step:hover { color: var(--petrol); }
+.home-tools { font-size: 14px; }
+.home-tools summary { cursor:pointer; display:flex; align-items:center; gap:.55em; width:fit-content; min-height:32px; }
+.home-tools summary::-webkit-details-marker { display:none; }
+.home-tools summary::before { content:'+'; font-size:17px; }
+.home-tools[open] summary::before { content:'−'; }
+.home-tools > p { line-height:1.45; max-width:48ch; margin-block:4px 12px; }
+.edition-main section[id] { scroll-margin-top: 12px; }
+.edition-main h2 {
+  font-family:'National Park', Arial, sans-serif; font-size:clamp(48px,6.3vw,98px);
+  font-weight:620; letter-spacing:-.065em; line-height:.96; margin:0; text-wrap:balance;
+}
+.cap-copy { position:relative; z-index:1; }
+.cap-copy > p { max-width:45ch; margin:20px 0 14px; font-size:clamp(17px,1.45vw,22px); line-height:1.42; }
+.cap-links { display:flex; flex-wrap:wrap; align-items:center; gap:3px 18px; }
+.practice-print { display:block; width:100%; pointer-events:none; }
+.intelligence-spread {
+  display:grid; grid-template-columns: 1fr 1fr; align-items:center; gap:0;
+  padding-block:clamp(34px,5.5vw,90px); border-bottom:2px solid var(--ink-tone);
+}
+.intelligence-spread .cap-copy { padding-right:20px; }
+.intelligence-spread h2 { font-size:clamp(55px,7.6vw,125px); max-width:11ch; }
+.intelligence-print { width:calc(100% + var(--gutter)); max-width:none; align-self:center; }
+.strategy-spread { display:grid; grid-template-columns:1fr 1.12fr; margin-block:clamp(28px,4vw,65px); }
+.strategy-spread section { min-width:0; display:flex; flex-direction:column; }
+.strategy-spread .cap-copy { padding:clamp(22px,3.3vw,56px); }
+.strategy-spread h2 { font-size:clamp(40px,4.25vw,73px); }
+.shape-panel { border:1px solid var(--ink-tone); background:var(--paper-tone); }
+.reach-panel { background:var(--mint-paper); }
+.strategy-spread .practice-print { height:clamp(115px,15vw,245px); }
+.creative-spread,.team-spread { position:relative; isolation:isolate; }
+.creative-spread::before,.team-spread::before { content:''; position:absolute; inset:0; z-index:-1; width:100vw; margin-left:calc(50% - 50vw); background:var(--ink-tone); }
+.creative-spread { color:var(--paper-tone); display:grid; grid-template-columns:1.35fr .65fr; align-items:center; gap:5%; padding-block:clamp(50px,7vw,115px); }
+.creative-spread h2 { font-size:clamp(70px,9.7vw,168px); }
+.creative-spread .action-step:hover { color:#efa77f; }
+.creative-spread :focus-visible { outline-color:#ffcca6; }
+.measure-spread { display:grid; grid-template-columns:1fr 1fr; align-items:center; gap:6%; padding-block:clamp(44px,6vw,100px); }
+.measure-print { color:var(--petrol); }
+.team-spread { padding-block:clamp(44px,6vw,96px); display:grid; grid-template-columns:1.4fr .6fr; gap:8%; align-items:end; }
+.team-spread h2 { max-width:14ch; }
+.team-spread::before { background:var(--mint-paper); }
+.closing-invite { justify-content:space-between; padding:13px 0; border-top:2px solid; font-size:clamp(24px,3.3vw,54px); letter-spacing:-.05em; line-height:1.05; }
+.closing-invite:hover { color:var(--petrol); }
+.untold-edition .site-footer { border:0; padding-block:28px; margin:0; }
+
+@media(max-width:760px){
+  .untold-edition .print-hero-bottom { flex-direction:column; align-items:start; gap:16px; }
+  .untold-edition .site-header { gap:8px 16px; }
+  .untold-edition .site-nav { font-size:12px; gap:4px 14px; }
+  .intelligence-spread { grid-template-columns:1fr; padding-bottom:0; overflow:hidden; }
+  .intelligence-spread .cap-copy { padding-right:0; }
+  .intelligence-print { width:85%; justify-self:end; margin:12px -2% -2% 0; }
+  .strategy-spread { grid-template-columns:1fr; gap:18px; }
+  .strategy-spread .practice-print { height:clamp(105px,25vw,175px); }
+  .creative-spread { grid-template-columns:1fr; gap:20px; }
+  .make-print { width:56%; justify-self:end; margin-bottom:-20px; }
+  .measure-spread { grid-template-columns:1fr; gap:22px; }
+  .measure-print { width:75%; }
+  .team-spread { grid-template-columns:1fr; gap:24px; }
+  .closing-invite { max-width:330px; }
+}

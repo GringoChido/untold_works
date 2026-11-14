@@ -36,11 +36,9 @@ export const Header = ({ crumbs }: { crumbs?: Crumb[] }) => {
       )}
     </div>
     <nav aria-label="Primary" className="site-nav flex flex-wrap items-center gap-x-6 gap-y-3 text-[13px] font-medium md:gap-x-8 md:text-[14px]">
-      <Link to="/#work" className="no-underline">
+      <Link to="/data-studio" aria-current={pathname === '/data-studio' ? 'page' : undefined} className="no-underline">Data Studio</Link>
+      <Link to="/work" className="no-underline">
         Work
-      </Link>
-      <Link to="/#ai" className="no-underline">
-        Applied AI
       </Link>
       <Link to="/about" className="no-underline">
         About

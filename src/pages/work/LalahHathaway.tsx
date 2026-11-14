@@ -1,13 +1,12 @@
-import { useProjectEmail } from '../../components/ProjectInquiries';
 import { Footer } from '../../components/Footer';
 import { Header } from '../../components/Header';
 import { HouseBar } from '../../components/HouseBar';
 import { Img } from '../../components/Img';
 import { LabelRow } from '../../components/LabelRow';
 import { Layout } from '../../components/Layout';
+import { WhatsNext } from '../../components/WhatsNext';
 import { usePageMeta } from '../../hooks/usePageMeta';
 export const LalahHathaway = () => {
-  const projectContact = useProjectEmail();
   usePageMeta({
     title: 'Lalah Hathaway: Artist Experience & Commerce | Untold.works',
     description:
@@ -17,7 +16,7 @@ export const LalahHathaway = () => {
 
   return (
     <Layout>
-      <Header crumbs={[{ label: 'Work', to: '/' }, { label: 'Digital experiences', to: '/websites' }, { label: 'Lalah Hathaway' }]} />
+      <Header crumbs={[{ label: 'Work', to: '/' }, { label: 'Website and store', to: '/websites' }, { label: 'Lalah Hathaway' }]} />
       <main id="main" className="flex flex-col">
         <section className="pb-11 pt-12 md:pb-16 md:pt-16" aria-labelledby="lalah-title">
           <p className="lbl m-0 text-[13px]">Artist experience · Audience · Commerce</p>
@@ -57,9 +56,9 @@ export const LalahHathaway = () => {
               The photograph became the interface.
             </h2>
             <div className="flex flex-col gap-5 text-[19px] leading-[1.55]">
-              <p className="m-0">The team brought the original media, room concept and creative feedback. My idea was to hide the navigation inside the photograph. I built the first version with AI in about five days, so we could try it together.</p>
+              <p className="m-0">The team brought the original media, room concept and creative feedback. Our idea was to hide the navigation inside the photograph. We built the first working version in ChatGPT in about five days, so we could try it together.</p>
               <p className="m-0">We refined the light and movement around each object. A mobile menu and keyboard controls give fans another way to find the music, films and live dates.</p>
-              <p className="m-0">I extended the visual language into vinyl and T-shirt mockups, social video cards and sharing artwork, adapting the supplied media and approved product references for each format.</p>
+              <p className="m-0">We extended the visual language into vinyl and T-shirt mockups, social video cards and sharing artwork, adapting the supplied media and approved product references for each format.</p>
             </div>
           </div>
         </section>
@@ -71,8 +70,8 @@ export const LalahHathaway = () => {
               Bring the existing audience with you.
             </h2>
             <div className="flex flex-col gap-5 text-[19px] leading-[1.55]">
-              <p className="m-0">I moved 3,233 historically subscribed contacts to MailerLite and tested the new signup through email confirmation.</p>
-              <details><summary className="cursor-pointer underline underline-offset-4">How I reconciled the audience records</summary><p className="mt-3">I checked 11 files containing 5,466 unique addresses and reconciled duplicates and conflicting records. Unsubscribed, never-subscribed and unknown-status contacts stayed outside the active import.</p></details>
+              <p className="m-0">We reviewed over 5,000 audience records, moved the subscribed contacts to MailerLite and tested the new signup through email confirmation.</p>
+              <details><summary className="cursor-pointer underline underline-offset-4">How we reconciled the audience records</summary><p className="mt-3">We checked every file of addresses and reconciled duplicates and conflicting records. Unsubscribed, never-subscribed and unknown-status contacts stayed outside the active import.</p></details>
             </div>
           </div>
         </section>
@@ -84,17 +83,15 @@ export const LalahHathaway = () => {
               Build the process behind the purchase.
             </h2>
             <div className="flex flex-col gap-5 text-[19px] leading-[1.55]">
-              <p className="m-0">I built the checkout for vinyl and T-shirts. The store reserves stock at checkout. When payment clears, the buyer gets a confirmation and the team gets the order.</p>
-              <p className="m-0">Staff use a private order screen to pack the order, record the FedEx handoff and send tracking. I provided a practice environment and instructions for the team.</p>
+              <p className="m-0">We built the checkout for vinyl and T-shirts. The store reserves stock at checkout. When payment clears, the buyer gets a confirmation and the team gets the order.</p>
+              <p className="m-0">Staff use a private order screen to pack the order, record the FedEx handoff and send tracking. We provided a practice environment and instructions for the team.</p>
               <p className="m-0">The artist site is live. Staff tools are deployed, and public vinyl and T-shirt checkout remains closed pending launch.</p>
             </div>
           </div>
-          <div className="mt-8">
-              <a href={projectContact} className="mt-2 inline-flex w-fit border-b border-current pb-1 text-[16px] font-semibold no-underline">Discuss an artist or brand project ↗</a>
-          </div>
         </section>
+        <WhatsNext />
       </main>
-      <HouseBar back={{ label: '← Digital experiences', to: '/websites' }} next={{ label: 'Campaigns →', to: '/campaigns' }} />
+      <HouseBar back={{ label: '← Website and store', to: '/websites' }} next={{ label: 'Campaigns →', to: '/campaigns' }} />
       <Footer />
     </Layout>
   );

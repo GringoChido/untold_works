@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://untold.works/</loc>
-    <image:image><image:loc>https://untold.works/images/untold-city-crossing-1200.webp</image:loc></image:image>
+    <image:image><image:loc>https://untold.works/images/og.png</image:loc></image:image>
   </url>
   <url>
     <loc>https://untold.works/brand-and-product</loc>
@@ -46,7 +46,7 @@
   </url>
   <url>
     <loc>https://untold.works/work/engine-room</loc>
-    <image:image><image:loc>https://untold.works/images/marketing-engine-overview-1200.webp</image:loc></image:image>
+    <image:image><image:loc>https://untold.works/images/home-field-shot-1200.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://untold.works/work/content-factory</loc>
@@ -201,12 +201,20 @@
     <image:image><image:loc>https://untold.works/images/cl-bailey-waterfront-poster.jpg</image:loc></image:image>
   </url>
   <url>
-    <loc>https://untold.works/work-together</loc>
-    <image:image><image:loc>https://untold.works/images/about/joshua-thinking-1200.webp</image:loc></image:image>
+    <loc>https://untold.works/data-studio</loc>
+    <image:image><image:loc>https://untold.works/images/og.png</image:loc></image:image>
   </url>
   <url>
-    <loc>https://untold.works/for-your-business</loc>
-    <image:image><image:loc>https://untold.works/images/prompting-bar-cart-lifestyle-1200.webp</image:loc></image:image>
+    <loc>https://untold.works/work</loc>
+    <image:image><image:loc>https://untold.works/images/og.png</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://untold.works/site-map</loc>
+    <image:image><image:loc>https://untold.works/images/og.png</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://untold.works/work-together</loc>
+    <image:image><image:loc>https://untold.works/images/about/joshua-thinking-1200.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://untold.works/about</loc>

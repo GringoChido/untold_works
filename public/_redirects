@@ -1,6 +1,7 @@
 # Keep the public Netlify alias on the primary domain.
 https://untoldworks1.netlify.app/* https://untold.works/:splat 301!
 
+/marketing-intelligence /data-studio 301
 # Old routes from the site before October 2026, each to the nearest new route.
 /portfolio/noxguard-brand-rebrand          /work/noxguard        301
 /portfolio/omi-lead-intake-qualification   /work/omi-lead-intake 301
@@ -15,7 +16,7 @@ https://untoldworks1.netlify.app/* https://untold.works/:splat 301!
 /portfolio/second-son-productions        /work/second-son-productions 301
 /portfolio                                 /                    301
 /network-systems                           /platforms           301
-/seo-aeo                                   /for-your-business#business-improvement-02 301
+/seo-aeo                                   / 301
 /social-media                              /campaigns           301
 /ads                                       /campaigns           301
 /dashboard                                 /platforms           301
@@ -29,8 +30,8 @@ https://untoldworks1.netlify.app/* https://untold.works/:splat 301!
 /partners                                  /about               301
 /savings                                   /about               301
 /workshops                                 /about               301
-/solutions/small-business                 /for-your-business   301
-/solutions/professional-services          /for-your-business   301
+/solutions/small-business                 /   301
+/solutions/professional-services          /   301
 /solutions/*                               /platforms           301
 /solutions                                 /platforms           301
 /locations/*                               /about               301
@@ -46,12 +47,13 @@ https://untoldworks1.netlify.app/* https://untold.works/:splat 301!
 /llms-full.txt                             /llms.txt            301
 
 # Relevant former editorial pages discovered in Search Console.
-/blog/run-your-business-from-your-phone-the-real-guide /for-your-business#mobile-workflows 301
+/blog/run-your-business-from-your-phone-the-real-guide / 301
 /blog/your-creative-eye-became-the-prompt /art-of-prompting    301
 
 # The creative practice page now leads with the art of prompting.
 /photography-and-video                      /art-of-prompting     301
 /photography-and-video/                     /art-of-prompting     301
+/for-your-business                         /                    301
 
 # Generated canonical aliases. Edit scripts/write-static.mjs.
 /index.html / 301!
@@ -154,10 +156,14 @@ https://untoldworks1.netlify.app/* https://untold.works/:splat 301!
 /work/other-projects/ /work/other-projects 301
 /art-of-prompting.html /art-of-prompting 301!
 /art-of-prompting/ /art-of-prompting 301
+/data-studio.html /data-studio 301!
+/data-studio/ /data-studio 301
+/work.html /work 301!
+/work/ /work 301
+/site-map.html /site-map 301!
+/site-map/ /site-map 301
 /work-together.html /work-together 301!
 /work-together/ /work-together 301
-/for-your-business.html /for-your-business 301!
-/for-your-business/ /for-your-business 301
 /about.html /about 301!
 /about/ /about 301
 /index%202 / 301!

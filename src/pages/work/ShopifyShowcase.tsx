@@ -21,7 +21,7 @@ export function ShopifyShowcase() {
           <p className="lbl">Billiard Factory · Shopify Plus</p>
           <h1 id="project-title" className="display">From showroom<br /><em>to checkout.</em></h1>
         </div>
-        <p>When we reviewed Billiard Factory’s shopping data, the Estoris cart and checkout stood out as a problem. I led the storefront rebuild. Together, we redesigned the whole purchase flow, from choosing felt and delivery to paying through Shopify Plus.</p>
+        <p>When we reviewed Billiard Factory’s shopping data, the Estoris cart and checkout stood out as a problem. We led the storefront rebuild. Together, we redesigned the whole purchase flow, from choosing felt and delivery to paying through Shopify Plus.</p>
       </header>
       <section className="shopify-gallery" aria-label="Storefront walkthrough" aria-roledescription="carousel">
         <div className="shopify-screen" data-screen={screen.image}>

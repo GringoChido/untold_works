@@ -62,7 +62,7 @@
   .bf-launch-copy { grid-row: 1; }
   .bf-launch figure { width: min(100%, 340px); justify-self: center; }
 }
-.bf-guide-spread { display: grid; grid-template-columns: minmax(0, 1.34fr) repeat(2, minmax(0, 1fr)); gap: clamp(10px, 1.5vw, 22px); align-items: start; }
+.bf-guide-spread { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: clamp(10px, 1.5vw, 22px); align-items: start; }
 .bf-guide-photo img, .bf-guide img { width: 100%; height: auto; }
 .bf-guide { text-decoration: none; }
 .bf-guide > span { display: block; padding-block: 9px; font-size: 15px; font-weight: 600; }
@@ -108,3 +108,5 @@
   .bf-guide-photo img { max-height: 52vh; object-fit: contain; background: #eee6da; }
   .bf-tools { gap: 30px; }
 }
+
+.bf-guide-photo { grid-column:1 / -1; }.bf-guide-photo img { max-height:480px; object-fit:cover; }.bf-guide img { aspect-ratio:1; object-fit:contain; background:#e9e1d4; }

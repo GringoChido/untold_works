@@ -72,7 +72,7 @@ export const GlasperBlueNote = () => {
   usePageMeta({
     title: 'Second Son Productions and related music work, Untold.works',
     description:
-      'My work with Second Son Productions and artists including Robert Glasper, Lalah Hathaway, Derrick Hodge and Chief Adjuah, alongside related Blue Note projects.',
+      'Joshua’s work with Second Son Productions and artists including Robert Glasper, Lalah Hathaway, Derrick Hodge and Chief Adjuah, alongside related Blue Note projects.',
     path: '/work/robert-glasper-blue-note',
   });
   const albumVisual = categoryBySlug('campaigns').music[0].visual;
@@ -99,7 +99,7 @@ export const GlasperBlueNote = () => {
           </div>
           <div className="flex flex-col items-start gap-6 py-6 md:col-start-1 md:row-start-2 md:px-10 md:pt-0">
             <p className="voice m-0 max-w-prose text-[clamp(20px,2vw,27px)] leading-[1.35]">
-              With Second Son Productions, I worked on four Robert Glasper releases and five years of Robtober content. For Blue Note, I directed festival content in Napa and helped introduce the Los Angeles club.
+              With Second Son Productions, Joshua worked on four Robert Glasper releases and five years of Robtober content. For Blue Note, he directed festival content in Napa and helped introduce the Los Angeles club.
             </p>
             <nav aria-label="Explore the music work" className="flex flex-wrap gap-x-6 gap-y-3">
               <a className="text-link" href="#music-films-headline">Watch the films ↓</a>
@@ -114,7 +114,7 @@ export const GlasperBlueNote = () => {
           <LabelRow left={<span id="records-headline">Robert Glasper / records</span>} right="Release team" />
           <div className="grid gap-x-12 gap-y-5 md:grid-cols-[minmax(0,1.5fr)_minmax(0,1fr)]">
             <h2 className="name max-w-[780px] text-[clamp(36px,4.4vw,62px)] leading-[0.98]">Four releases with distinct stories and editions.</h2>
-            <p className="voice max-w-[510px] text-[22px] leading-[1.4]">I worked with the release team across four Robert Glasper records. Each needed its own identity and physical edition while remaining legible as part of his wider catalog.</p>
+            <p className="voice max-w-[510px] text-[22px] leading-[1.4]">Joshua worked with the release team across four Robert Glasper records. Each needed its own identity and physical edition while remaining legible as part of his wider catalog.</p>
           </div>
           <div className="grid items-start gap-x-12 gap-y-8 md:grid-cols-[minmax(0,1.5fr)_minmax(0,1fr)]">
             <ol className="border-b-rule border-ink">
@@ -145,11 +145,11 @@ export const GlasperBlueNote = () => {
           <LabelRow left={<span id="music-films-headline">Music / films and content production</span>} right="Selected public work" />
           <div className="grid gap-x-14 gap-y-6 md:grid-cols-[minmax(0,1.15fr)_minmax(0,0.85fr)]">
             <h2 className="name max-w-[780px] text-[clamp(36px,4.4vw,62px)] leading-[0.98]">Content for releases, residencies and live events.</h2>
-            <p className="voice max-w-[560px] text-[22px] leading-[1.4]">I develop concepts with release teams and labels, manage shoots and produce material artists can use to introduce a record, announce a show and document what happened on stage.</p>
+            <p className="voice max-w-[560px] text-[22px] leading-[1.4]">Joshua develops concepts with release teams and labels, manage shoots and produce material artists can use to introduce a record, announce a show and document what happened on stage.</p>
           </div>
           <CaseFilm {...blackRadioRecap} />
           <div className="flex flex-wrap gap-x-8 gap-y-3 text-[16px] font-semibold">
-            <span>My role across the festival program: Content Director.</span>
+            <span>Joshua’s role across the festival program: Content Director.</span>
             <Link to="/work/black-radio-experience" className="text-link">Explore the festival work <span aria-hidden="true">↗</span></Link>
           </div>
           <div className="grid gap-10 md:grid-cols-2">
@@ -173,7 +173,7 @@ export const GlasperBlueNote = () => {
                 </a>
                 <span className="lbl text-[12px]">{film.context}</span>
                 <h3 className="name m-0 text-[clamp(26px,2.6vw,36px)] leading-[1.02]">{film.title}</h3>
-                <p className="m-0 text-[17px] leading-[1.5]">{'My role: ' + film.role + '.'}</p>
+                <p className="m-0 text-[17px] leading-[1.5]">{'Joshua’s role: ' + film.role + '.'}</p>
                 <div className="mt-auto flex flex-wrap gap-x-7 gap-y-2 text-[15px] font-semibold">
                   <a href={film.href} target="_blank" rel="noopener noreferrer" className="text-link">Watch film <span aria-hidden="true">↗</span></a>
                   <Link to={film.detail} className="text-link">Project context <span aria-hidden="true">↗</span></Link>
@@ -183,7 +183,7 @@ export const GlasperBlueNote = () => {
           </div>
           <CaseFilm {...rRNowFilm} />
           <div className="grid gap-x-14 gap-y-5 border-t border-ink pt-7 md:grid-cols-[minmax(0,1fr)_minmax(0,1fr)]">
-            <p className="voice m-0 max-w-[660px] text-[21px] leading-[1.4]">Earlier, I directed, shot and edited release films for the Robert Glasper Experiment’s <em>Art Science</em> and R+R=NOW.</p>
+            <p className="voice m-0 max-w-[660px] text-[21px] leading-[1.4]">Earlier, Joshua directed, shot and edited release films for the Robert Glasper Experiment’s <em>Art Science</em> and R+R=NOW.</p>
             <div className="flex flex-wrap items-start gap-x-8 gap-y-3 text-[16px] font-semibold">
               <a href="https://www.youtube.com/watch?v=wxZb1zpfM7s" target="_blank" rel="noopener noreferrer" className="text-link">Watch Art Science <span aria-hidden="true">↗</span></a>
               <a href="https://www.youtube.com/watch?v=xxGPdk9Yj_U" target="_blank" rel="noopener noreferrer" className="text-link">Watch R+R=NOW <span aria-hidden="true">↗</span></a>
@@ -205,7 +205,7 @@ export const GlasperBlueNote = () => {
               <p className="lbl m-0 text-[12px] leading-[1.3] text-ink/70">Blue Note New York / Season 8 event artwork</p>
               <h2 className="name text-[32px] leading-none tracking-[-0.02em]">Robtober 2026</h2>
               <p className="text-[18px] leading-[1.5]">
-                The 2026 poster lists 11 episodes from October 1 to November 1. My ongoing work with Glasper includes content across five years of the residency.
+                The 2026 poster lists 11 episodes from October 1 to November 1. Joshua’s ongoing work with Glasper includes content across five years of the residency.
               </p>
               <Link to="/work/robtober" className="text-link mt-auto">Explore Robtober <span aria-hidden="true">↗</span></Link>
             </div>
@@ -217,7 +217,7 @@ export const GlasperBlueNote = () => {
               <p className="lbl m-0 text-[12px] leading-[1.3] text-ink/70">Photography: Todd Cooper / @toddcoop</p>
               <h2 className="name text-[32px] leading-none tracking-[-0.02em]">Blue Note Los Angeles</h2>
               <p className="text-[18px] leading-[1.5]">
-                I worked on launch and opening content for the club. Glasper headlined its August 2025 grand opening.
+                Joshua worked on launch and opening content for the club. Glasper headlined its August 2025 grand opening.
               </p>
               <Link to="/work/blue-note-los-angeles" className="text-link mt-auto">Explore the launch content <span aria-hidden="true">↗</span></Link>
             </div>
@@ -228,7 +228,7 @@ export const GlasperBlueNote = () => {
               <p className="lbl m-0 text-[12px] leading-[1.3] text-ink/70">Black Radio Experience / Napa Valley</p>
               <h2 className="name text-[32px] leading-none tracking-[-0.02em]">Black Radio Experience</h2>
               <p className="text-[18px] leading-[1.5]">
-                I served as Content Director for four years of Blue Note’s Napa Valley festival, curated by Glasper. It became the Black Radio Experience in 2024.
+                Joshua served as Content Director for four years of Blue Note’s Napa Valley festival, curated by Glasper. It became the Black Radio Experience in 2024.
               </p>
               <Link to="/work/black-radio-experience" className="text-link mt-auto">Explore the festival work <span aria-hidden="true">↗</span></Link>
             </div>
@@ -261,7 +261,7 @@ export const GlasperBlueNote = () => {
             </figure>
             <div className="flex flex-col items-start gap-7">
               <h2 id="chief-adjuah-title" className="name m-0 text-[clamp(36px,4.4vw,62px)] leading-[0.98]">Chief Adjuah</h2>
-              <p className="voice m-0 max-w-[540px] text-[22px] leading-[1.4]">My work with Chief Adjuah is an ongoing part of my collaboration with Second Son Productions and its artists.</p>
+              <p className="voice m-0 max-w-[540px] text-[22px] leading-[1.4]">Joshua’s work with Chief Adjuah is an ongoing part of his collaboration with Second Son Productions and its artists.</p>
               <Link to="/work/second-son-productions" className="text-link">Explore the Second Son site project <span aria-hidden="true">↗</span></Link>
             </div>
           </div>
@@ -273,7 +273,7 @@ export const GlasperBlueNote = () => {
           <div className="grid gap-x-16 gap-y-8 md:grid-cols-[minmax(0,1fr)_minmax(0,1fr)]">
             <h2 className="name max-w-[680px] text-[clamp(34px,3.6vw,52px)] leading-[0.98]">Artist sites built around each artist’s work.</h2>
             <div className="flex max-w-[650px] flex-col gap-5">
-              <p className="voice m-0 text-[22px] leading-[1.4]">Today, I use AI to build around artists’ own photography, film and music. For Lalah Hathaway’s Made in Chicago, I connected an immersive artist website to newsletter migration and custom merchandise operations. The artist site is live; public merchandise checkout awaits launch.</p>
+              <p className="voice m-0 text-[22px] leading-[1.4]">Today, Joshua uses AI to build around artists’ own photography, film and music. For Lalah Hathaway’s Made in Chicago, he connected an immersive artist website to newsletter migration and custom merchandise operations. The artist site is live; public merchandise checkout awaits launch.</p>
               <p className="m-0 text-[17px] leading-[1.5]">The Second Son company site and the artist projects below each have their own scope. Elena Pinderhughes and Qmillion are presented as separate artist collaborations.</p>
             </div>
           </div>
@@ -282,7 +282,7 @@ export const GlasperBlueNote = () => {
               <h3 className="lbl text-[14px]">Second Son Productions and roster artists</h3>
               <SiteLinks sites={companyAndRosterSites} />
               <Frame src="color-of-noize.jpg" alt="Derrick Hodge conducting the Color of Noize orchestra" tag="Color of Noize tour" fit="cover" sizes="(min-width: 768px) 40vw, 100vw" />
-              <p className="text-[18px] leading-[1.5]">I also made tour content for Derrick Hodge’s Color of Noize project.</p>
+              <p className="text-[18px] leading-[1.5]">Joshua also made tour content for Derrick Hodge’s Color of Noize project.</p>
               <Link to="/work/color-of-noize" className="text-link self-start">Explore the tour work <span aria-hidden="true">↗</span></Link>
             </div>
             <div className="flex flex-col gap-6">

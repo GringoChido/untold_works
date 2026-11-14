@@ -19,7 +19,7 @@ export const caseCopySystems = {
   'platforms/engine-room': {
     value: "A shared campaign record keeps the brief, assets, owners, dates and channel status together. Teams can see missing assets and upcoming handoffs without reconstructing the plan from separate files; reusable kits give the next campaign a starting point.",
     headline: 'A marketing engine. Built with AI.',
-    lead: 'I designed and built Engine Room with Claude Code to connect Billiard Factory’s campaign strategy, briefs, creative assets, review, scheduling and channel delivery.',
+    lead: 'We designed and built Engine Room with Claude Code to connect Billiard Factory’s campaign strategy, briefs, creative assets, review, scheduling and channel delivery.',
     storyTitle: 'One campaign. A connected body of work.',
     story: 'A rolling 12-month calendar connects campaign windows and tiers to reusable deliverable kits. Home Field shows the system at work: one central brief, supporting subcampaigns, shared assets, website destinations and parallel Paid, Organic, Email, Production and SEO lanes. Each deliverable carries copy, a linked file, owner, status and date, so the team can locate and download the work from its campaign record.',
     focus: [
@@ -31,7 +31,7 @@ export const caseCopySystems = {
     details: [
       { eyebrow: 'From brief to kit', title: 'The calendar carries the work.', body: 'A, B and C campaign tiers connect the scale of a campaign to reusable deliverable kits. Supporting briefs create distinct stories while retaining the parent campaign’s dates and offer rules.' },
       { eyebrow: 'Parallel channels', title: 'Make the handoff visible.', body: 'Paid, Organic, Email, Production and SEO have their own work lanes. Linked files let teammates open or download campaign assets, while asset-presence indicators show gaps. The October working-plan count includes items at different completion states.' },
-      { eyebrow: 'Social publishing', title: 'Engine Room coordinates. Content Factory publishes.', body: 'Content Factory creates, reviews, schedules and publishes social posts after human approval. Engine Room displays those scheduled and published records inside the related campaign, so the team can compare the plan with what went out. I designed and directed Content Factory. The team built it.' },
+      { eyebrow: 'Social publishing', title: 'Engine Room coordinates. Content Factory publishes.', body: 'Content Factory creates, reviews, schedules and publishes social posts after human approval. Engine Room displays those scheduled and published records inside the related campaign, so the team can compare the plan with what went out. We designed and directed Content Factory. The team built it.' },
       { eyebrow: 'The sales path', title: 'Give the campaign a next step.', body: 'Home Field’s landing page carries the campaign story into GoHighLevel lead capture. The sales team was connected to the CRM before the campaign system was built, giving inquiries a path to follow-up.' },
     ],
   },
@@ -40,7 +40,7 @@ export const caseCopySystems = {
     headline: 'AI-assisted posts with approval before publishing.',
     lead: 'Content Factory is an AI-assisted publishing workflow for Billiard Factory and C.L. Bailey, designed around a daily post and story cadence.',
     storyTitle: 'Who approves a post?',
-    story: 'A reviewer can compare a generated image with the product reference and check its claims before approving the post by email. Approved posts publish to Facebook and Instagram on schedule. I designed the workflow and directed the team that built it.',
+    story: 'A reviewer can compare a generated image with the product reference and check its claims before approving the post by email. Approved posts publish to Facebook and Instagram on schedule. We designed the workflow and directed the team that built it.',
     focus: [
       { label: 'Cadence', text: 'Designed for a post and a story every day.' },
       { label: 'Media', text: 'Higgsfield generation and an ImageKit product and output library.' },
@@ -56,11 +56,11 @@ export const caseCopySystems = {
   'platforms/off-storis': {
     value: 'The customer experience connects room inspiration and product discovery to the choices, prices and delivery requirements of a real retail order.',
     headline: 'Connect brand, product discovery and ecommerce.',
-    lead: 'Buying a pool table involves more than choosing a finish. I led the storefront rebuild so shoppers could select the table, add the right accessories and arrange delivery in one order.',
+    lead: 'Buying a pool table involves more than choosing a finish. We led the storefront rebuild so shoppers could select the table, add the right accessories and arrange delivery in one order.',
     storyTitle: 'One order for the table, the extras and the installation.',
-    story: 'When a shopper picks premium felt, the cart keeps that upgrade with the table it belongs to. They can choose curbside delivery or have the table installed, then review the order in Shopify. The team launched the new checkout on October 16, 2026. I’m coordinating the next stage, the Xorosoft ERP migration.',
+    story: 'When a shopper picks premium felt, the cart keeps that upgrade with the table it belongs to. They can choose curbside delivery or have the table installed, then review the order in Shopify. The team launched the new checkout on October 16, 2026. We’re coordinating the next stage, the Xorosoft ERP migration.',
     focus: [
-      { label: 'My role', text: 'Direction of the website rebuild and Shopify transition, spanning brand, customer experience and ecommerce.' },
+      { label: 'What we did', text: 'Direction of the website rebuild and Shopify transition, spanning brand, customer experience and ecommerce.' },
       { label: 'Implementation', text: 'The team built the storefront, integrated Shopify and brought the catalog online.' },
       { label: 'Project scale', text: '1,235 mapped product records and 16,366 variant mappings in the October 18 source snapshot, including active and draft products.' },
       { label: 'Status', text: 'October 16 checkout launch documented in project records; broader ERP and operational transition continues.' },
@@ -73,9 +73,9 @@ export const caseCopySystems = {
     ],
   },
   'platforms/omi-lead-intake': {
-    value: "Routing an inquiry into the CRM gives the team a record it can assign and follow up. My work covered the form and the handoff to the sales team.",
+    value: "Routing an inquiry into the CRM gives the team a record it can assign and follow up. Our work covered the form and the handoff to the sales team.",
     headline: 'Route inquiries into the sales CRM.',
-    lead: 'I connected OMI Growth’s inquiry form to the CRM used by its sales team.',
+    lead: 'We connected OMI Growth’s inquiry form to the CRM used by its sales team.',
     storyTitle: 'Form submission → CRM record → sales owner',
     story: 'When a prospect submits the form, sales gets a record it can assign to the person handling the reply.',
     focus: [
@@ -106,7 +106,7 @@ export const caseCopySystems = {
     headline: 'A room system you can shop.',
     lead: 'A 34-station redesign of Billiard Factory’s Spring showroom connects to 27 live, shoppable room stories and a broader room-finishing assortment.',
     storyTitle: 'From station plan to storefront.',
-    story: 'The existing Spring showroom is open. Its working redesign maps 34 stations and places a visual mockup at every code. The live Collections experience turns 27 station concepts into room stories with linked tables, cloth, lighting, rugs, art and wall treatments. Rugs, lighting, artwork and wallpaper now have their own storefront categories, so a shopper can build around a table rather than browse equipment in isolation. I lead the showroom design and work with the team to choose what goes in each station. The team brought the room stories online. The new physical room installations and formal relaunch continue.',
+    story: 'The existing Spring showroom is open. Its working redesign maps 34 stations and places a visual mockup at every code. The live Collections experience turns 27 station concepts into room stories with linked tables, cloth, lighting, rugs, art and wall treatments. Rugs, lighting, artwork and wallpaper now have their own storefront categories, so a shopper can build around a table rather than browse equipment in isolation. We lead the showroom design and work with the team to choose what goes in each station. The team brought the room stories online. The new physical room installations and formal relaunch continue.',
     focus: [
       { label: 'Showroom system', text: '34 station codes mapped from the store’s SketchUp model.' },
       { label: 'Live commerce', text: '27 published Shop the Room stories based on Spring station concepts.' },
@@ -164,11 +164,11 @@ export const caseCopySystems = {
     ],
   },
   'brand-and-product/tierra-cue-line': {
-    value: "I used AI to design three cues and pitch the line. Billiard Factory chose all three for production.",
+    value: "We used AI to design three cues and pitch the line. Billiard Factory chose all three for production.",
     headline: 'They chose all three.',
-    lead: 'Billiard Factory asked me to design a new line of cues to carry its name. I used AI to design the cues, render them and build the pitch. The team compared the three designs and decided to put all three into production.',
+    lead: 'Billiard Factory asked us to design a new line of cues to carry its name. We used AI to design the cues, render them and build the pitch. The team compared the three designs and decided to put all three into production.',
     storyTitle: 'One cue shape, three patterns.',
-    story: 'I kept the butt, black grip and dark carbon shaft the same across the line. In the pitch, the team could compare Cascabel’s stepped diamonds, Brasa’s terraced medallions and Cauce’s long chevrons on the same form. After the decision, I translated the patterns into full-scale artwork for the factory.',
+    story: 'We kept the butt, black grip and dark carbon shaft the same across the line. In the pitch, the team could compare Cascabel’s stepped diamonds, Brasa’s terraced medallions and Cauce’s long chevrons on the same form. After the decision, we translated the patterns into full-scale artwork for the factory.',
     focus: [
       { label: 'Line', text: 'Cascabel, Brasa and Cauce.' },
       { label: 'Shared build', text: 'One butt, black textured grip and dark carbon shaft.' },
@@ -192,7 +192,7 @@ export const caseCopySystems = {
   'platforms/tekniplex-digital-business-cards': {
     value: 'Sales reps can share contact details from a phone, and marketing can manage the brand across divisions.',
     headline: 'A business card for the trade-show floor.',
-    lead: 'TekniPlex reps were exchanging contact details by hand at events. For Ingenia, I led the project that gave them a branded digital card they could share with a scan.',
+    lead: 'TekniPlex reps were exchanging contact details by hand at events. For Ingenia, Joshua led the project that gave them a branded digital card they could share with a scan.',
     photoStory: {
       caption: 'TekniPlex / Digital business card request form',
     },

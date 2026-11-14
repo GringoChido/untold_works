@@ -10,7 +10,7 @@ export const caseCopyCampaigns = {
     headline: 'Make the room the destination.',
     lead: 'A fall campaign with one invitation, “This year, everyone comes to you,” carried from AI-made rooms and film into a working lead page.',
     storyTitle: 'One idea, across the whole page.',
-    story: 'Home Field ran September 14–October 11, 2026. I made its lived-in game rooms, stills and film in Higgsfield, then carried that direction into the page and social work. The page pairs the campaign story with Billiard Factory’s standing savings ladder and a GoHighLevel lead form, giving the connected sales team a path to follow up.',
+    story: 'Home Field ran September 14–October 11, 2026. We made its lived-in game rooms, stills and film in Higgsfield, then carried that direction into the page and social work. The page pairs the campaign story with Billiard Factory’s standing savings ladder and a GoHighLevel lead form, giving the connected sales team a path to follow up.',
     focus: [
       { label: 'Campaign window', text: 'September 14–October 11, 2026.' },
       { label: 'Creative', text: 'Higgsfield rooms, stills and film; page and social content.' },
@@ -18,12 +18,11 @@ export const caseCopyCampaigns = {
     ],
     details: [
       { eyebrow: 'The idea', title: 'The house people return to.', body: 'The hero makes a claim rather than leading with a discount. A gallery of garage, studio, deck and loft rooms gives “Home Field” more than one kind of home. The /home-field address is undated so the page can be redressed for another fall.' },
-      { eyebrow: 'The operating system', title: 'One campaign. Many connected stories.', body: 'I built the Marketing Engine that carries the work. Home Field has a main brief and supporting stories for designers, custom builds, new arrivals and the Preferred Customer Invitation. Each connects to deliverables, asset links, copy, owners and dates. Its working plan held 131 deliverables in October 2026; scheduled and published social work appears alongside that plan through Content Factory.' },
+      { eyebrow: 'The operating system', title: 'One campaign. Many connected stories.', body: 'We built the Marketing Engine that carries the work. Home Field has a main brief and supporting stories for designers, custom builds, new arrivals and the Preferred Customer Invitation. Each connects to deliverables, asset links, copy, owners and dates. Its working plan held 131 deliverables in October 2026; scheduled and published social work appears alongside that plan through Content Factory.' },
       { eyebrow: 'The page', title: 'Story first, lead last.', body: 'The page moves from the campaign claim and film to the savings ladder, product and room imagery, practical buying reassurance, then a $150 ball-set lead offer. It is static HTML served on billiardfactory.com through a Cloudflare Worker, with store navigation and Google Tag Manager.' },
       { eyebrow: 'The handoff', title: 'A lead the team can use.', body: 'The GoHighLevel form asks for name, phone and email. The page reads campaign tags and includes a thank-you conversion hook. The sales team is connected to the CRM for follow-up.' },
     ],
     gallery: [
-      { src: 'marketing-engine-home-field-assets.png', alt: 'Home Field asset gallery inside the Marketing Engine, connecting landing pages, web banners, social posts and stories', caption: 'Inside the Marketing Engine / Home Field asset library, October 2026', layout: 'wide' as const },
     ],
     links: [
       { label: 'Explore the marketing engine', href: '/work/engine-room' },
@@ -37,7 +36,7 @@ export const caseCopyCampaigns = {
     headline: 'The table keeps finding you.',
     lead: 'An AI-created campaign film, a library of advertising concepts and an interactive landing page for the October 2026 C.L. Bailey Factory Event.',
     storyTitle: 'An idea carried from film to shopping.',
-    story: 'You keep putting it off. So it starts showing up everywhere. I created the film entirely with AI, following a man as the table finds him in a newspaper, on city billboards and through a train journey. The idea carries into campaign artwork and a landing page for 10% off C.L. Bailey and Velocity, October 16–31, 2026.',
+    story: 'You keep putting it off. So it starts showing up everywhere. We created the film entirely with AI, following a man as the table finds him in a newspaper, on city billboards and through a train journey. The idea carries into campaign artwork and a landing page for 10% off C.L. Bailey and Velocity, October 16–31, 2026.',
     films: [clBaileyFactoryFilm],
     galleryNote: 'Campaign mockups / proposed placements',
     gallery: [
@@ -52,7 +51,7 @@ export const caseCopyCampaigns = {
       { label: 'Status', text: 'Film and page prepared ahead of the October 16 opening.' },
     ],
     details: [
-      { eyebrow: 'AI production', title: 'A complete film from one creative premise.', body: 'AI let me develop a consistent campaign world across city streets, print, transit and the game room. The film turns repeated encounters with the table into the story. My photography and filmmaking experience guides the framing, atmosphere and pacing; the finished film includes its soundtrack.' },
+      { eyebrow: 'AI production', title: 'A complete film from one creative premise.', body: 'AI let us develop a consistent campaign world across city streets, print, transit and the game room. The film turns repeated encounters with the table into the story. Our photography and filmmaking experience guides the framing, atmosphere and pacing; the finished film includes its soundtrack.' },
       { eyebrow: 'The campaign system', title: 'Reuse the campaign structure for the next launch.', body: 'The Factory Event sits in the Marketing Engine calendar as a B-tier campaign. The same structure holds its brief, production work and channel requirements, while ImageKit keeps the film and campaign artwork together.' },
       { eyebrow: 'One destination', title: 'A brand larger than one category.', body: 'The existing store split C.L. Bailey pool tables, shuffleboards and Velocity across separate destinations. This page brings those categories together with seating and accessories, then routes shoppers into the live store categories.' },
       { eyebrow: 'The interaction', title: 'Show what can change.', body: 'The Long Game lane lets a shopper see cloth on the Orbis table and switch among Skylar, Tunbridge and Viking rooms. Each room moves between a game-night and dinner setting; the page also shows the materials and objects behind the image.' },
@@ -68,7 +67,7 @@ export const caseCopyCampaigns = {
     headline: 'Let the kitchen lead.',
     lead: 'Content and storytelling within IDW Studio’s chef series for Savor, showing a new food ingredient through the people who use it.',
     storyTitle: 'The people and places behind the food.',
-    story: 'Savor makes fats from carbon rather than conventional agricultural inputs. The chef series shows the product in working kitchens rather than asking viewers to accept a technical claim on its own. I worked on content and storytelling with Savor through IDW Studio. IDW led production and post.',
+    story: 'Savor makes fats from carbon rather than conventional agricultural inputs. The chef series shows the product in working kitchens rather than asking viewers to accept a technical claim on its own. Joshua worked on content and storytelling with Savor through IDW Studio. IDW led production and post.',
     focus: [
       { label: 'Kitchens', text: 'Atelier Crenn, SingleThread, ONE65 and Jane the Bakery.' },
       { label: 'Role', text: 'Content and storytelling, in close work with Savor.' },
@@ -77,7 +76,7 @@ export const caseCopyCampaigns = {
     details: [
       { eyebrow: 'The format', title: 'Proof through preparation.', body: 'Each episode follows a chef’s own process, from interviews and kitchen footage to close views of demanding preparations such as laminated pastry, ganache and sabayon. The food gives the ingredient a tangible test.' },
       { eyebrow: 'The series', title: 'Four kitchens, four voices.', body: 'The published series features Juan Contreras at Atelier Crenn, Kyle and Katina Connaughton at SingleThread, Clement Goyffon at ONE65, and Amanda Michael and Drake Jones at Jane the Bakery.' },
-      { eyebrow: 'The wider campaign', title: 'Built to travel beyond an episode.', body: 'IDW’s case study also documents short social cuts, motion graphics and a color treatment for the wider series. I worked on the content and storytelling with IDW Studio.' },
+      { eyebrow: 'The wider campaign', title: 'Built to travel beyond an episode.', body: 'IDW’s case study also documents short social cuts, motion graphics and a color treatment for the wider series. Joshua worked on the content and storytelling with IDW Studio.' },
     ],
     links: [
       { label: 'Explore the Savor brand story', href: '/work/savor' },
@@ -102,11 +101,11 @@ export const caseCopyCampaigns = {
     ],
   },
   'campaigns/messes-happen': {
-    value: "A household accident gave shoppers a reason to consider protection when buying a pool table. I produced the finished TV spot for Billiard Factory.",
+    value: "A household accident gave shoppers a reason to consider protection when buying a pool table. We produced the finished TV spot for Billiard Factory.",
     headline: 'An AI-made spot for Allstate Protection Plans.',
     lead: 'A Billiard Factory TV spot for Allstate Protection Plans, produced and cut as a finished moving-image piece with music.',
     storyTitle: 'Make protection relevant to a real shopping moment.',
-    story: 'I used Higgsfield, Claude Design and HyperFrames to produce “Messes Happen” for Billiard Factory. I cut the spot and added music for the October 2026 TV plan.',
+    story: 'We used Higgsfield, Claude Design and HyperFrames to produce “Messes Happen” for Billiard Factory. We cut the spot and added music for the October 2026 TV plan.',
     focus: [
       { label: 'Format', text: 'Finished TV spot for the October 2026 plan.' },
       { label: 'Role', text: 'Produced, cut and added music.' },
@@ -122,15 +121,15 @@ export const caseCopyCampaigns = {
     headline: 'The season starts at home.',
     lead: 'The Billiard Factory campaign that set the first August beat of the season, from brief and creative direction into Engine Room delivery.',
     storyTitle: 'A clear brief for the pre-season window.',
-    story: 'Season Opener ran August 5–15, 2026, before the first kickoff. I built the brief around football’s return and the game room as the place people gather to watch. The team coordinated delivery in Engine Room.',
+    story: 'Season Opener ran August 5–15, 2026, before the first kickoff. We built the brief around football’s return and the game room as the place people gather to watch. The team coordinated delivery in Engine Room.',
     focus: [
       { label: 'Campaign window', text: 'August 5–15, 2026.' },
       { label: 'Role', text: 'Brief and creative direction.' },
       { label: 'Delivery', text: 'Shipped through Engine Room.' },
     ],
     details: [
-      { eyebrow: 'The brief', title: 'Start with the season.', body: 'The line “The season starts at home” locates the campaign in the weeks before football returns, using the game room as the place to gather. I set that creative premise in the brief and direction.' },
-      { eyebrow: 'The delivery', title: 'From direction into the calendar.', body: 'Engine Room carried the campaign through its August 5–15 window. This case identifies my contribution as the brief and creative direction, with the system used to coordinate delivery.' },
+      { eyebrow: 'The brief', title: 'Start with the season.', body: 'The line “The season starts at home” locates the campaign in the weeks before football returns, using the game room as the place to gather. We set that creative premise in the brief and direction.' },
+      { eyebrow: 'The delivery', title: 'From direction into the calendar.', body: 'Engine Room carried the campaign through its August 5–15 window. This case identifies our contribution as the brief and creative direction, with the system used to coordinate delivery.' },
     ],
   },
   'campaigns/labor-day-sale': {
@@ -138,16 +137,16 @@ export const caseCopyCampaigns = {
     headline: 'Show the savings tiers and route leads to sales.',
     lead: 'A sitewide Labor Day campaign with a clear savings ladder, a lead capture and precise credit for the page team.',
     storyTitle: 'Offer, capture and team roles.',
-    story: 'The Labor Day Sale page went live August 17, 2026, with up to $1,000 off sitewide. I set the creative direction and designed the template. The team built the page and wrote the search copy. The result carries the offer from an immediate headline into clear ways to buy online, visit a showroom or enter the sales CRM through its lead form.',
+    story: 'The Labor Day Sale page went live August 17, 2026, with up to $1,000 off sitewide. We set the creative direction and designed the template. The team built the page and wrote the search copy. The result carries the offer from an immediate headline into clear ways to buy online, visit a showroom or enter the sales CRM through its lead form.',
     focus: [
       { label: 'Live', text: 'August 17, 2026.' },
       { label: 'Offer', text: 'Up to $1,000 off sitewide.' },
-      { label: 'Credit', text: 'I directed the creative and supplied the template. The team handled the build and search copy.' },
+      { label: 'Credit', text: 'We directed the creative and supplied the template. The team handled the build and search copy.' },
     ],
     details: [
       { eyebrow: 'The offer', title: 'A ladder people can read.', body: 'Five visible savings tiers rise to $1,000, and the page says the discount applies automatically at checkout. The offer is framed alongside direct links to shop pool tables, avoiding a coupon-code step.' },
       { eyebrow: 'The lead', title: 'An additional reason to raise a hand.', body: 'A $150 ball-set offer leads to the same GoHighLevel capture used on the Sitewide Sale and Home Field pages. It sits high on the page after the savings ladder, with the rest of the page providing reassurance about showrooms, financing and room fit. The connected sales team can follow up in the CRM.' },
-      { eyebrow: 'The team', title: 'Direction, build and search copy.', body: 'I supplied the campaign direction and page template. The team built the landing page and wrote the search copy, including the sections that help shoppers choose how to buy.' },
+      { eyebrow: 'The team', title: 'Direction, build and search copy.', body: 'We supplied the campaign direction and page template. The team built the landing page and wrote the search copy, including the sections that help shoppers choose how to buy.' },
     ],
     links: [{ label: 'See the Labor Day page ↗', href: 'https://billiardfactory.com/labor-day-sale' }],
   },
@@ -172,11 +171,11 @@ export const caseCopyCampaigns = {
     ],
   },
   'campaigns/robert-glasper-album-releases': {
-    value: "Distinct release stories and physical editions help each record meet its audience as its own project. This page documents my release-team role across four records; it does not assign unverified sales or production outcomes to me.",
+    value: "Distinct release stories and physical editions help each record meet its audience as its own project. This page documents our release-team role across four records; it does not assign unverified sales or production outcomes to us.",
     headline: 'Four releases, one long collaboration.',
     lead: 'Release-team work for four Robert Glasper records, spanning the Black Radio series, a meditative record, a jazz-and-hip-hop exchange and live Blue Note recordings.',
     storyTitle: 'The records and the role.',
-    story: 'I was part of the release team for Black Radio III Supreme Edition, Let Go, Code Derivation and Keys to the City Volume One. The artist store presents them as colored 3LP, silver, gold and translucent-blue vinyl editions. Each release has its own musical premise and physical edition.',
+    story: 'Joshua was part of the release team for Black Radio III Supreme Edition, Let Go, Code Derivation and Keys to the City Volume One. The artist store presents them as colored 3LP, silver, gold and translucent-blue vinyl editions. Each release has its own musical premise and physical edition.',
     focus: [
       { label: 'Role', text: 'Part of the release team for all four records.' },
       { label: 'Releases', text: 'Black Radio III Supreme Edition, Let Go, Code Derivation and Keys to the City Volume One.' },
@@ -189,21 +188,21 @@ export const caseCopyCampaigns = {
     links: [{ label: 'See Robert Glasper’s releases ↗', href: 'https://robertglasper.com/' }],
   },
   'campaigns/art-science-and-r-r-now-release-films': {
-    value: "A short release film can translate the sound and energy of a record into something audiences and promoters can share. I carried direction, camera and edit through both pieces, giving each project a coherent visual introduction.",
+    value: "A short release film can translate the sound and energy of a record into something audiences and promoters can share. Joshua carried direction, camera and edit through both pieces, giving each project a coherent visual introduction.",
     films: [rRNowFilm],
-    visualCredit: 'Film frame / I directed, filmed and edited the release film.',
-    headline: 'Release films I directed, shot and edited.',
-    lead: 'Two release films from my earlier camera-led work with Robert Glasper: Art Science and R+R=NOW.',
+    visualCredit: 'Film frame / Joshua directed, filmed and edited the release film.',
+    headline: 'Release films Joshua directed, shot and edited.',
+    lead: 'Two release films from Joshua’s earlier camera-led work with Robert Glasper: Art Science and R+R=NOW.',
     storyTitle: 'A camera role from start to finish.',
-    story: 'I directed, shot and edited the release film for the Robert Glasper Experiment’s Art Science and the record-release-and-tour film for R+R=NOW. Those films are where you can see my camera and editing work within the longer Glasper collaboration.',
+    story: 'Joshua directed, shot and edited the release film for the Robert Glasper Experiment’s Art Science and the record-release-and-tour film for R+R=NOW. Those films are where you can see his camera and editing work within the longer Glasper collaboration.',
     focus: [
       { label: 'Films', text: 'Art Science and R+R=NOW.' },
       { label: 'Role', text: 'Directed, shot and edited.' },
       { label: 'Format', text: 'Record release and tour films.' },
     ],
     details: [
-      { eyebrow: 'Art Science', title: 'The Robert Glasper Experiment.', body: 'The Art Science piece is a concise release film for the Experiment. My role covered direction, camera and edit, covering the full path from what to shoot to what the final sequence communicates.' },
-      { eyebrow: 'R+R=NOW', title: 'A release built to move.', body: 'The R+R=NOW film connects a record release and tour in one short piece. I again directed, shot and edited, carrying the live energy of the project into its public announcement.' },
+      { eyebrow: 'Art Science', title: 'The Robert Glasper Experiment.', body: 'The Art Science piece is a concise release film for the Experiment. Joshua’s role covered direction, camera and edit, covering the full path from what to shoot to what the final sequence communicates.' },
+      { eyebrow: 'R+R=NOW', title: 'A release built to move.', body: 'The R+R=NOW film connects a record release and tour in one short piece. Joshua again directed, shot and edited, carrying the live energy of the project into its public announcement.' },
     ],
     links: [
       { label: 'Watch Art Science ↗', href: 'https://www.youtube.com/watch?v=wxZb1zpfM7s' },
@@ -213,9 +212,9 @@ export const caseCopyCampaigns = {
   'campaigns/robtober': {
     value: "A residency changes night by night. Returning content work can document collaborators and performances across the season, giving the series a visual record beyond a single announcement poster.",
     headline: 'Robtober 2026.',
-    lead: 'Robert Glasper’s 2026 residency at Blue Note New York, within my ongoing collaboration and five years of Robtober content work.',
+    lead: 'Robert Glasper’s 2026 residency at Blue Note New York, within Joshua’s ongoing collaboration and five years of Robtober content work.',
     storyTitle: 'Season 8. A room with a changing cast.',
-    story: 'The 2026 poster announces Season 8: October 1–November 1, with 11 episodes at Blue Note New York. My ongoing work around the residency is part of a longer collaboration with Robert Glasper, including content across five years of Robtober.',
+    story: 'The 2026 poster announces Season 8: October 1–November 1, with 11 episodes at Blue Note New York. Joshua’s ongoing work around the residency is part of a longer collaboration with Robert Glasper, including content across five years of Robtober.',
     visualLayout: 'poster' as const,
     visualCredit: 'Robtober NYC 2026 / Season 8 event artwork.',
     galleryNote: 'Residency archive',
@@ -230,12 +229,12 @@ export const caseCopyCampaigns = {
     ],
     details: [
       { eyebrow: 'The season', title: 'Eleven episodes in New York.', body: 'The 2026 event artwork presents Robtober as Season 8, with 11 episodes across October 1–November 1. Each chapter brings a new combination of music and collaborators into the room.' },
-      { eyebrow: 'My part', title: 'Five years of content. An ongoing collaboration.', body: 'I have returned to the residency across five years to make content around the performances. That work continues within my longer relationship with Glasper and sits alongside his release and film projects.' },
+      { eyebrow: 'Joshua’s part', title: 'Five years of content. An ongoing collaboration.', body: 'He has returned to the residency across five years to make content around the performances. That work continues within his longer relationship with Glasper and sits alongside his release and film projects.' },
     ],
     links: [{ label: 'See Robtober at Blue Note ↗', href: 'https://www.bluenotejazz.com/nyc/tm-event/robert-glasper-9/' }],
   },
   'campaigns/blue-note-los-angeles': {
-    value: "Launch and opening content gave the new Hollywood venue a way to introduce its room and opening artist. This case documents my content role around the August 2025 opening without claiming responsibility for the venue launch itself.",
+    value: "Launch and opening content gave the new Hollywood venue a way to introduce its room and opening artist. This case documents our content role around the August 2025 opening without claiming responsibility for the venue launch itself.",
     visualCredit: 'Photography: Todd Cooper / @toddcoop.',
     galleryNote: 'Opening night · August 14, 2025 · Photography by Todd Cooper',
     gallery: [
@@ -246,15 +245,15 @@ export const caseCopyCampaigns = {
     headline: 'A new room on Sunset.',
     lead: 'Launch and opening content for Blue Note Los Angeles as the club opened its Sunset Boulevard room with Robert Glasper.',
     storyTitle: 'Content for a new venue and its opening artist.',
-    story: 'Blue Note Los Angeles opened at 6372 Sunset Boulevard in Hollywood on August 14, 2025. Robert Glasper led the grand-opening celebration on August 14 and 15. I worked on launch and opening content for the new club.',
+    story: 'Blue Note Los Angeles opened at 6372 Sunset Boulevard in Hollywood on August 14, 2025. Robert Glasper led the grand-opening celebration on August 14 and 15. Joshua worked on launch and opening content for the new club.',
     focus: [
       { label: 'Opening', text: 'August 14, 2025, in Hollywood.' },
       { label: 'Role', text: 'Launch and opening content.' },
       { label: 'Opening artist', text: 'Robert Glasper.' },
     ],
     details: [
-      { eyebrow: 'The venue', title: 'A Blue Note room in Los Angeles.', body: 'The club’s Sunset Boulevard address gave Blue Note a Hollywood home. My content work followed the club from launch into its opening celebration.' },
-      { eyebrow: 'The event', title: 'Glasper opened the stage.', body: 'Blue Note’s own grand-opening listing names Glasper for August 14–15, 2025. My credited contribution is content for the club launch and opening.' },
+      { eyebrow: 'The venue', title: 'A Blue Note room in Los Angeles.', body: 'The club’s Sunset Boulevard address gave Blue Note a Hollywood home. Joshua’s content work followed the club from launch into its opening celebration.' },
+      { eyebrow: 'The event', title: 'Glasper opened the stage.', body: 'Blue Note’s own grand-opening listing names Glasper for August 14–15, 2025. Joshua’s credited contribution is content for the club launch and opening.' },
     ],
     links: [{ label: 'See Blue Note’s opening listing ↗', href: 'https://www.bluenotejazz.com/la/tm-event/robert-glasper-grand-opening-celebration/' }],
   },
@@ -264,7 +263,7 @@ export const caseCopyCampaigns = {
     headline: 'Four years with the festival.',
     lead: 'Four years of content direction for the Napa Valley festival curated by Robert Glasper, through its move into the Black Radio Experience.',
     storyTitle: 'From the festival to the experience.',
-    story: 'I served as Content Director for four years across Blue Note’s Napa Valley festival work. The Blue Note Jazz Festival took the Black Radio Experience name in 2024, with Glasper at the center of its musical direction.',
+    story: 'Joshua served as Content Director for four years across Blue Note’s Napa Valley festival work. The Blue Note Jazz Festival took the Black Radio Experience name in 2024, with Glasper at the center of its musical direction.',
     focus: [
       { label: 'Festival', text: 'Blue Note Jazz Festival, Napa Valley / Black Radio Experience.' },
       { label: 'Role', text: 'Content Director for four years.' },
@@ -272,7 +271,7 @@ export const caseCopyCampaigns = {
     ],
     details: [
       { eyebrow: 'The change', title: 'A name with a wider frame.', body: 'In 2024 the Napa festival became the Black Radio Experience. Blue Note’s event now brings jazz, hip-hop, R&B and soul together with food and wine experiences at the Meritage Resort & Spa.' },
-      { eyebrow: 'The role', title: 'Content direction across four years.', body: 'I served as Content Director across multiple festival editions, including the chapter in which the Napa event took on the Black Radio Experience name.' },
+      { eyebrow: 'The role', title: 'Content direction across four years.', body: 'Joshua served as Content Director across multiple festival editions, including the chapter in which the Napa event took on the Black Radio Experience name.' },
     ],
     links: [
       { label: 'Watch the 2024 recap ↗', href: 'https://www.youtube.com/watch?v=P9wOi_TjPWs&t=7s' },
@@ -285,7 +284,7 @@ export const caseCopyCampaigns = {
     headline: 'An orchestra on the road.',
     lead: 'Tour content for Derrick Hodge’s Color of Noize project, where a Blue Note album and band idea expanded onto the orchestral stage.',
     storyTitle: 'Connect the album to its live interpretation.',
-    story: 'Color of Noize began as the name of Hodge’s 2020 Blue Note album and live-band concept, and later reached orchestral stages. I made tour content for the project. Separately, I built Hodge’s artist site as part of my work with the Second Son Productions roster.',
+    story: 'Color of Noize began as the name of Hodge’s 2020 Blue Note album and live-band concept, and later reached orchestral stages. Joshua made tour content for the project. Separately, he built Hodge’s artist site as part of his work with the Second Son Productions roster.',
     focus: [
       { label: 'Artist', text: 'Derrick Hodge.' },
       { label: 'Role', text: 'Color of Noize tour content.' },
@@ -293,7 +292,7 @@ export const caseCopyCampaigns = {
     ],
     details: [
       { eyebrow: 'The music', title: 'A project built to expand.', body: 'Blue Note released Color of Noize in 2020 as an album, band and concept by Hodge. Its cross-genre sound later expanded onto orchestral stages.' },
-      { eyebrow: 'The work', title: 'Content around the tour.', body: 'I made tour content for Color of Noize. That work connects to the Hodge artist site and the larger Second Son Productions roster.' },
+      { eyebrow: 'The work', title: 'Content around the tour.', body: 'Joshua made tour content for Color of Noize. That work connects to the Hodge artist site and the larger Second Son Productions roster.' },
     ],
     links: [
       { label: 'Watch the Color of Noize film ↗', href: 'https://www.youtube.com/watch?v=ba3KhYBhMys' },

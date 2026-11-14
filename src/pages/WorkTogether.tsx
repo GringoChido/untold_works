@@ -10,29 +10,42 @@ import './WorkTogether.css';
 
 const scopes = [
   {
-    number: '01', title: 'Get your launch out the door.',
-    body: 'You have a product, an idea or an opening date. I can turn it into a story you can pitch, an experience customers can use, and a campaign your team is ready to publish.',
+    number: '01', title: 'Ongoing creative and marketing partner',
+    body: 'For a CEO who needs someone to own priorities, direct the work, stay involved through delivery and review what to do next.',
     examples: [
-      'A brand story, pitch and visual direction your team can present.',
-      'A shopping experience, from the storefront online to the floor plan in the showroom.',
-      'A launch campaign with finished imagery, copy, social assets and a publishing calendar.',
+      'One plan across sales, your team and outside partners.',
+      'Direction of the work, hands-on through delivery.',
+      'A regular review of what happened and what to do next.',
     ],
     proof: [
       { label: 'Billiard Factory / From showroom to storefront', to: '/work/billiard-factory-and-c-l-bailey' },
-      { label: 'Lalah Hathaway / From photo shoot to interactive album site', to: '/work/lalah-hathaway' },
     ],
   },
   {
-    number: '02', title: 'Give your team time back.',
-    body: 'If every pitch starts from scratch or an approval gets lost in email, show me one example. I can build the sales materials, shared workspace or AI-assisted process that makes the next one easier.',
+    number: '02', title: 'Focused project',
+    body: 'For a team with one clear need, such as a launch, film, shopping experience, dealer portal, reporting system or AI workflow.',
     examples: [
+      'A launch campaign with finished imagery, copy, social assets and a publishing calendar.',
+      'A shopping experience, from the storefront online to the floor plan in the showroom.',
       'Sales presentations, brand kits and dealer tools with current product information.',
       'A dashboard where a team can find approved assets, see who owns a task and hand it off.',
-      'Launch and ongoing support, including integrations, DNS setup, publishing and updates.',
     ],
     proof: [
+      { label: 'Lalah Hathaway / From photo shoot to interactive album site', to: '/work/lalah-hathaway' },
       { label: 'Engine Room / From campaign brief to handoff', to: '/work/engine-room' },
       { label: 'C.L. Bailey / Brand guidance for dealers', to: '/work/c-l-bailey-brand-bible' },
+    ],
+  },
+  {
+    number: '03', title: 'Marketing and AI Review',
+    body: 'For someone who knows something should work better but doesn’t know where to start.',
+    examples: [
+      'A short priority plan.',
+      'One agreed working example you can try.',
+      'A walkthrough with your team.',
+    ],
+    proof: [
+      { label: 'Data Studio / Try a budget decision', to: '/data-studio#compare' },
     ],
   },
 ] as const;
@@ -40,8 +53,8 @@ const scopes = [
 export const WorkTogether = () => {
   const projectEmail = useProjectEmail();
   usePageMeta({
-    title: 'Work with Untold | Creative & AI Consulting',
-    description: 'Tell me about your project, timing and budget. We’ll decide together what to build first.',
+    title: 'Work with Untold.works | Three ways to hire us',
+    description: 'Tell us about your project, timing and budget. We’ll decide together what to build first.',
     path: '/work-together',
   });
 
@@ -50,27 +63,27 @@ export const WorkTogether = () => {
       <Header crumbs={[{ label: 'Work together' }]} />
       <main id="main" className="work-together-main">
         <section className="work-together-hero" aria-labelledby="work-together-title">
-          <p className="lbl work-together-eyebrow">Creative &amp; AI consulting</p>
-          <h1 id="work-together-title" className="display work-together-title">Tell me about<br />your project.</h1>
+          <p className="lbl work-together-eyebrow">Work together</p>
+          <h1 id="work-together-title" className="display work-together-title">Three ways<br />to hire us.</h1>
           <div className="work-together-hero-bottom">
             <div className="work-together-identity">
-              <p className="work-together-name">Joshua Semolik</p>
-              <p className="lbl work-together-role">Independent consultant<br />Creative direction &amp; applied AI</p>
+              <p className="work-together-name">Untold.works</p>
+              <p className="lbl work-together-role">Independent creative<br />&amp; AI studio</p>
             </div>
             <div className="work-together-hero-copy">
-              <p>Send me a brief, a link or a few lines about the launch, pitch or team problem you’re working on. If you have a deadline or budget in mind, include it.</p>
-              <p>We’ll agree on scope, timing and budget up front. I work directly with the people making the decisions and can lead delivery or build alongside your team.</p>
+              <p>Tell us what you’re trying to solve. A link, a launch date or a few lines about what your team needs is enough to start. If you have a deadline or budget in mind, include it.</p>
+              <p>We’ll agree on scope, timing and budget up front. We work directly with the people making the decisions and can lead delivery or build alongside your team.</p>
               <div className="work-together-actions">
-                <a href={projectEmail} className="work-together-button">Email me <span aria-hidden="true">↗</span></a>
-                <a href="#where-i-can-help" className="text-link">Where I can help <span aria-hidden="true">↓</span></a>
+                <a href={projectEmail} className="work-together-button">Tell us what you’re trying to solve <span aria-hidden="true">↗</span></a>
+                <a href="#where-i-can-help" className="text-link">The three ways <span aria-hidden="true">↓</span></a>
               </div>
             </div>
           </div>
         </section>
 
         <section id="where-i-can-help" className="work-together-section work-together-scopes" aria-labelledby="work-together-scope-title">
-          <LabelRow left="Consulting" right="Ways to work together" />
-          <h2 id="work-together-scope-title" className="name work-together-section-title">Where I can help.</h2>
+          <LabelRow left="How to start" right="Three ways to hire us" />
+          <h2 id="work-together-scope-title" className="name work-together-section-title">Pick the one that fits.</h2>
           <div className="work-together-scope-list">
             {scopes.map((scope) => (
               <article key={scope.number} className="work-together-scope" aria-labelledby={`work-together-scope-${scope.number}`}>
@@ -78,7 +91,8 @@ export const WorkTogether = () => {
                 <h3 id={`work-together-scope-${scope.number}`} className="name work-together-scope-title">{scope.title}</h3>
                 <div className="work-together-scope-copy">
                   <p>{scope.body}</p>
-                  <ul className="work-together-examples" aria-label={`Examples of ${scope.title.replace(/\.$/, '').toLowerCase()}`}>
+                  <p className="lbl work-together-get">What you get</p>
+                  <ul className="work-together-examples" aria-label={`What you get: ${scope.title}`}>
                     {scope.examples.map((example) => <li key={example}>{example}</li>)}
                   </ul>
                   <div className="work-together-proof-links">
@@ -91,7 +105,7 @@ export const WorkTogether = () => {
         </section>
 
         <section id="contact" className="work-together-section work-together-contact" aria-labelledby="work-together-contact-title">
-          <LabelRow left="Start a conversation" right="Joshua Semolik / Untold.works" />
+          <LabelRow left="Start a conversation" right="Untold.works" />
           <div className="work-together-contact-grid">
             <div>
               <h2 id="work-together-contact-title" className="name work-together-section-title">Get in touch.</h2>
@@ -99,7 +113,7 @@ export const WorkTogether = () => {
             </div>
             <div className="work-together-contact-details">
               <div className="work-together-contact-line">
-                <span className="lbl">Email me</span>
+                <span className="lbl">Email us</span>
                 <a href={projectEmail} className="work-together-email">{EMAIL}<span aria-hidden="true">↗</span></a>
               </div>
               <div className="work-together-contact-line">
@@ -107,11 +121,10 @@ export const WorkTogether = () => {
                 <a href={PHONE_HREF} className="work-together-phone">{PHONE_DISPLAY}<span aria-hidden="true">↗</span></a>
               </div>
               <a href={LINKEDIN_URL} target="_blank" rel="noopener noreferrer" className="text-link">Connect on LinkedIn ↗</a>
-              <Link to="/about" className="text-link work-together-about-link">About me <span aria-hidden="true">↗</span></Link>
+              <Link to="/about" className="text-link work-together-about-link">About Joshua <span aria-hidden="true">↗</span></Link>
             </div>
           </div>
         </section>
-        <aside className="work-together-business"><div><p className="lbl">Digital experiences</p><p>Working with an existing site, product catalog or photo library?</p></div><Link to="/for-your-business#what-can-change" className="text-link">Explore what we can improve ↗</Link></aside>
       </main>
       <Footer />
     </Layout>

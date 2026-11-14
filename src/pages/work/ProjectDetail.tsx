@@ -48,7 +48,7 @@ export const ProjectDetail = () => {
 
   usePageMeta({
     title: entry ? `${entry.project.name}, Untold.works` : 'Page not found | Untold.works',
-    description: copy?.lead ?? 'This page could not be found. Explore my work or get in touch.',
+    description: copy?.lead ?? 'This page could not be found. Explore our work or get in touch.',
     path: pathname,
     noindex: !entry || !copy,
   });
@@ -207,7 +207,7 @@ export const ProjectDetail = () => {
             </div>
           </section>
         )}
-        <p className="m-0 pb-12 md:pb-16"><Link to="/work-together#contact" className="text-link">Talk with me about your project <span aria-hidden="true">↗</span></Link></p>
+        <p className="m-0 pb-12 md:pb-16"><Link to="/work-together#contact" className="text-link">Talk with us about your project <span aria-hidden="true">↗</span></Link></p>
       </main>
       <HouseBar back={{ label: `← ${parent.label}`, to: parent.to }} next={{ label: `Next: ${nextTarget.label} →`, to: nextTarget.to }} />
       <Footer />

@@ -13,7 +13,7 @@ const supportingFilms = [
     id: 'creative-velocity-ball-launch',
     kind: 'Velocity / AI-generated product launch film',
     title: 'A reveal at a different scale.',
-    detail: 'I let the shipping container establish the scale. When the doors open, the first billiard ball fills the frame.',
+    detail: 'We let the shipping container establish the scale. When the doors open, the first billiard ball fills the frame.',
     ...velocityLaunchFilm,
     caption: 'Velocity / Ball-set reveal',
     duration: '0:28',
@@ -71,12 +71,12 @@ const images = [
 ] as const;
 
 const process = [
-  { number: '01', title: 'Start with the idea.', output: 'Audience · Product · Story', detail: 'I begin with the audience, the product and the story. What should someone notice, feel or understand, and where will the finished asset live?' },
-  { number: '02', title: 'Anchor it in the product.', output: 'References · Details · Proportions', detail: 'Product photographs, details, materials and proportions give the work its foundation. I collect the references that the finished image needs to respect.' },
-  { number: '03', title: 'Write the image.', output: 'Prompt · Product image', detail: 'I describe the framing, camera position, light, surfaces and atmosphere. Specific choices in the prompt give an image a direction I can review.' },
-  { number: '04', title: 'Build the scene.', output: 'Product image · Lifestyle image', detail: 'I inspect the result, adjust the prompt and make another pass. A product image becomes a reference for the room, setting or lifestyle moment around it.' },
-  { number: '05', title: 'Give it movement.', output: 'Copy · Storyboard · Motion', detail: 'I develop the copy, storyboard, action and camera movement. A still image becomes a starting frame for a sequence, with pacing and continuity to work through.' },
-  { number: '06', title: 'Make the final edit.', output: 'Edit · Sound · Channel versions', detail: 'I choose the takes, shape the sequence and work with sound. Then I adapt the finished piece into shorter cuts, crops and assets for a page, a campaign or social media.' },
+  { number: '01', title: 'Start with the idea.', output: 'Audience · Product · Story', detail: 'We begin with the audience, the product and the story. What should someone notice, feel or understand, and where will the finished asset live?' },
+  { number: '02', title: 'Anchor it in the product.', output: 'References · Details · Proportions', detail: 'Product photographs, details, materials and proportions give the work its foundation. We collect the references that the finished image needs to respect.' },
+  { number: '03', title: 'Write the image.', output: 'Prompt · Product image', detail: 'We describe the framing, camera position, light, surfaces and atmosphere. Specific choices in the prompt give an image a direction we can review.' },
+  { number: '04', title: 'Build the scene.', output: 'Product image · Lifestyle image', detail: 'We inspect the result, adjust the prompt and make another pass. A product image becomes a reference for the room, setting or lifestyle moment around it.' },
+  { number: '05', title: 'Give it movement.', output: 'Copy · Storyboard · Motion', detail: 'We develop the copy, storyboard, action and camera movement. A still image becomes a starting frame for a sequence, with pacing and continuity to work through.' },
+  { number: '06', title: 'Make the final edit.', output: 'Edit · Sound · Channel versions', detail: 'We choose the takes, shape the sequence and work with sound. Then we adapt the finished piece into shorter cuts, crops and assets for a page, a campaign or social media.' },
 ] as const;
 
 const campaignScenes = [
@@ -86,7 +86,7 @@ const campaignScenes = [
 ] as const;
 
 const connections = [
-  { to: '/about#toolkit', title: 'The tools behind the practice.', detail: 'How I use Higgsfield, ChatGPT and Claude Code to develop ideas and build the work around them.' },
+  { to: '/about#toolkit', title: 'The tools behind the practice.', detail: 'How we use Higgsfield, ChatGPT and Claude Code to develop ideas and build the work around them.' },
   { to: '/work/engine-room', title: 'Carry it into the campaign.', detail: 'The Marketing Engine connects the brief, creative assets, review and delivery.' },
   { to: '/work-together', title: 'Bring your idea into the work.', detail: 'Discuss a campaign, an image, a film or a creative workflow for your team.' },
 ] as const;
@@ -94,20 +94,20 @@ const connections = [
 export const ArtOfPrompting = () => {
   usePageMeta({
     title: 'The Art of Prompting | Images and Motion | Untold.works',
-    description: 'How I take an idea from product references and prompts through images, motion, film and finished campaign assets.',
+    description: 'How we take an idea from product references and prompts through images, motion, film and finished campaign assets.',
     path: '/art-of-prompting',
   });
 
   return (
     <Layout>
-      <Header crumbs={[{ label: 'Applied AI', to: '/#ai' }, { label: 'The art of prompting' }]} />
+      <Header crumbs={[{ label: 'Applied AI', to: '/#hire' }, { label: 'The art of prompting' }]} />
       <main id="main" className="creative-collection prompting-page">
         <section className="prompting-hero" aria-labelledby="prompting-title">
           <p className="lbl prompting-eyebrow">Creative practice / Image making with AI</p>
           <div className="prompting-hero-grid">
             <h1 id="prompting-title" className="display prompting-title">The art<br />of prompting.</h1>
             <div className="prompting-hero-copy">
-              <p>I start with the actual product. My years behind a camera guide where the light falls, what the lens sees and when to cut. Here’s how those choices shape an AI-made campaign.</p>
+              <p>We start with the actual product. Years behind a camera guide where the light falls, what the lens sees and when to cut. Here’s how those choices shape an AI-made campaign.</p>
               <nav className="creative-collection-nav" aria-label="Explore the art of prompting">
                 <a href="#films" className="text-link">The film <span aria-hidden="true">↓</span></a>
                 <a href="#process" className="text-link">The process <span aria-hidden="true">↓</span></a>
@@ -122,7 +122,7 @@ export const ArtOfPrompting = () => {
           <PortfolioFilm id="creative-cl-bailey-factory-event" src={clBaileyFactoryFilm.src} mobileSrc={clBaileyFactoryFilm.mobileSrc} poster="/images/cl-bailey-waterfront-poster.jpg" width={clBaileyFactoryFilm.width} height={clBaileyFactoryFilm.height} label={clBaileyFactoryFilm.title} controlLabel="C.L. Bailey Factory Event AI campaign film" caption="C.L. Bailey Factory Event / Created with AI" nativeControls autoPlayWhenVisible={false} className="prompting-feature-player" />
           <div className="prompting-feature-copy">
             <div><p className="lbl">From a premise to a campaign world</p><h2 id="prompting-film-title" className="name">The Factory Event,<br />imagined.</h2></div>
-            <div><p>“You keep putting it off. So it starts showing up everywhere.” I carried that idea through city streets, a newspaper, a train journey and the game room in a film created entirely with AI.</p><p>Created for the October 2026 Factory Event. The outdoor and transit scenes are proposed placements.</p><Link to="/work/c-l-bailey-factory-event" className="text-link creative-collection-item-link">Explore the campaign <span aria-hidden="true">↗</span></Link></div>
+            <div><p>“You keep putting it off. So it starts showing up everywhere.” we carried that idea through city streets, a newspaper, a train journey and the game room in a film created entirely with AI.</p><p>Created for the October 2026 Factory Event. The outdoor and transit scenes are proposed placements.</p><Link to="/work/c-l-bailey-factory-event" className="text-link creative-collection-item-link">Explore the campaign <span aria-hidden="true">↗</span></Link></div>
           </div>
           <div className="prompting-scenes" aria-label="C.L. Bailey campaign mockups">
             {campaignScenes.map((scene) => <figure key={scene.src}><Img src={scene.src} alt={scene.alt} sizes="(max-width: 599px) 100vw, 33vw" /><figcaption className="lbl">{scene.caption}</figcaption></figure>)}
@@ -132,7 +132,7 @@ export const ArtOfPrompting = () => {
         <section id="process" className="creative-collection-section" aria-labelledby="prompting-process-title">
           <div className="prompting-practice-intro">
             <h2 id="prompting-process-title" className="name">From an idea to an image.<br />Then into motion.</h2>
-            <div><p>The brief called for a bar cart someone might actually reach for. I placed it beside the sofa and checked the shelves, metalwork and casters against the original.</p><p>On the Tierra cue line, the factory’s first renders shifted clay toward burgundy and lost fine details in the patterns. I supplied full-scale artwork and color targets for the next round.</p><Link to="/work/tierra-cue-line" className="text-link">See the three cue designs ↗</Link></div>
+            <div><p>The brief called for a bar cart someone might actually reach for. We placed it beside the sofa and checked the shelves, metalwork and casters against the original.</p><p>On the Tierra cue line, the factory’s first renders shifted clay toward burgundy and lost fine details in the patterns. We supplied full-scale artwork and color targets for the next round.</p><Link to="/work/tierra-cue-line" className="text-link">See the three cue designs ↗</Link></div>
           </div>
           <div className="prompting-furniture-study" aria-label="Industrial Bar Cart: product reference, written scene direction and AI lifestyle image">
             <figure>
@@ -156,7 +156,7 @@ export const ArtOfPrompting = () => {
         </section>
 
         <section id="inside-the-prompt" className="creative-collection-section" aria-labelledby="prompting-anatomy-title">
-          <div className="creative-collection-section-head"><div><p className="lbl">Inside the direction</p><h2 id="prompting-anatomy-title" className="name">What a precise prompt carries.</h2></div><p>The eye for an image becomes a set of choices I can put into words, test and improve.</p></div>
+          <div className="creative-collection-section-head"><div><p className="lbl">Inside the direction</p><h2 id="prompting-anatomy-title" className="name">What a precise prompt carries.</h2></div><p>The eye for an image becomes a set of choices we can put into words, test and improve.</p></div>
           <PromptAnatomy />
         </section>
 
@@ -168,7 +168,7 @@ export const ArtOfPrompting = () => {
         </section>
 
         <section id="more-films" className="creative-collection-section" aria-labelledby="prompting-more-films-title">
-          <div className="creative-collection-section-head"><div><p className="lbl">More ways to tell the story</p><h2 id="prompting-more-films-title" className="name">The Velocity launch film.</h2></div><p>I created this film entirely with AI for the launch of Billiard Factory’s Velocity Premium Billiard Ball Set.</p></div>
+          <div className="creative-collection-section-head"><div><p className="lbl">More ways to tell the story</p><h2 id="prompting-more-films-title" className="name">The Velocity launch film.</h2></div><p>We created this film entirely with AI for the launch of Billiard Factory’s Velocity Premium Billiard Ball Set.</p></div>
           <div className="creative-collection-films">
             {supportingFilms.map((film) => <article key={film.id} className={`creative-collection-film${film.format === 'portrait' ? ' creative-collection-film--portrait' : ''}`} aria-labelledby={`${film.id}-title`}><div className="creative-collection-meta"><span className="lbl">{film.kind}</span><span>{film.duration}</span></div><PortfolioFilm id={film.id} src={film.src} mobileSrc={film.mobileSrc} poster={film.poster} width={film.width} height={film.height} label={film.label} controlLabel={film.controlLabel} caption={film.caption} nativeControls autoPlayWhenVisible={false} className="creative-collection-player" /><h3 id={`${film.id}-title`} className="name creative-collection-item-title">{film.title}</h3><p className="creative-collection-item-detail">{film.detail}</p><Link to={film.to} className="text-link creative-collection-item-link">{film.action}<span aria-hidden="true">↗</span></Link></article>)}
           </div>

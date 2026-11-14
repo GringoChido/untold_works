@@ -49,14 +49,14 @@ const Arrow = ({ children }: { children: string }) => (
 );
 
 const strips = [
-  { n: '01', path: '/new-arrivals', credit: 'My original page · adapted by the team', status: 'Live · Aug 2026', src: 'strip-new-arrivals.jpg', alt: 'The New Arrivals page, full length' },
-  { n: '02', path: '/designers', credit: 'My original page · adapted by the team', status: 'Live · Aug 2026', src: 'strip-designers.jpg', alt: 'The Designer Program page, full length' },
-  { n: '03', path: '/sitewide-sale', credit: 'My original page · adapted by the team', status: 'Live · Aug 2026', src: 'strip-sitewide-sale.jpg', alt: 'The Sitewide Sale page, full length' },
-  { n: '04', path: '/labor-day-sale', credit: 'My template · build and search copy by the team', status: 'Live · Aug 2026', src: 'strip-labor-day-sale.jpg', alt: 'The Labor Day Sale page, full length' },
-  { n: '05', path: '/custom', credit: 'My original page · adapted by the team', status: 'Live · Sep 2026', src: 'strip-custom.jpg', alt: 'The Custom Built page, full length' },
-  { n: '06', path: '/home-field', credit: 'My original page · adapted by the team', status: 'Live · Sep 2026', src: 'strip-home-field.jpg', alt: 'The Home Field page, full length' },
-  { n: '07', path: '/financing', credit: 'By me', status: 'Live · Sep 2026', src: 'strip-financing.jpg', alt: 'The financing page, full length' },
-  { n: '08', path: '/cl-bailey-factory-event', credit: 'By me', status: 'October 2026', src: 'strip-cl-bailey-factory-event.jpg', alt: 'The C.L. Bailey Factory Event page, full length' },
+  { n: '01', path: '/new-arrivals', credit: 'Our original page · adapted by the Billiard Factory team', status: 'Live · Aug 2026', src: 'strip-new-arrivals.jpg', alt: 'The New Arrivals page, full length' },
+  { n: '02', path: '/designers', credit: 'Our original page · adapted by the Billiard Factory team', status: 'Live · Aug 2026', src: 'strip-designers.jpg', alt: 'The Designer Program page, full length' },
+  { n: '03', path: '/sitewide-sale', credit: 'Our original page · adapted by the Billiard Factory team', status: 'Live · Aug 2026', src: 'strip-sitewide-sale.jpg', alt: 'The Sitewide Sale page, full length' },
+  { n: '04', path: '/labor-day-sale', credit: 'Our template · build and search copy by the Billiard Factory team', status: 'Live · Aug 2026', src: 'strip-labor-day-sale.jpg', alt: 'The Labor Day Sale page, full length' },
+  { n: '05', path: '/custom', credit: 'Our original page · adapted by the Billiard Factory team', status: 'Live · Sep 2026', src: 'strip-custom.jpg', alt: 'The Custom Built page, full length' },
+  { n: '06', path: '/home-field', credit: 'Our original page · adapted by the Billiard Factory team', status: 'Live · Sep 2026', src: 'strip-home-field.jpg', alt: 'The Home Field page, full length' },
+  { n: '07', path: '/financing', credit: 'By Untold.works', status: 'Live · Sep 2026', src: 'strip-financing.jpg', alt: 'The financing page, full length' },
+  { n: '08', path: '/cl-bailey-factory-event', credit: 'By Untold.works', status: 'October 2026', src: 'strip-cl-bailey-factory-event.jpg', alt: 'The C.L. Bailey Factory Event page, full length' },
 ];
 
 const blocks = [
@@ -82,7 +82,7 @@ export const LandingPages = () => {
   usePageMeta({
     title: 'Landing pages, Untold.works',
     description:
-      'Ten Billiard Factory campaign pages in a program that connects creative to sales. I connected the sales team to GoHighLevel first, then built the pages around what customers needed to do next.',
+      'Ten Billiard Factory campaign pages in a program that connects creative to sales. We connected the sales team to GoHighLevel first, then built the pages around what customers needed to do next.',
     path: '/work/landing-pages',
   });
 
@@ -96,7 +96,7 @@ export const LandingPages = () => {
             <p className="lbl">Billiard Factory · August–October 2026</p>
             <div className="flex flex-col gap-[18px]">
               <h1 className="name break-words text-[clamp(40px,6vw,84px)] leading-[0.9] tracking-[-0.035em]">Landing pages</h1>
-              <p className="voice text-[26px] leading-[1.3]">I worked on ten Billiard Factory campaign pages. On Home Field, a shopper could claim a $150 ball-set offer and send their details to a sales rep. <a className="text-link" href="#how-headline">Follow that handoff ↓</a></p>
+              <p className="voice text-[26px] leading-[1.3]">We worked on ten Billiard Factory campaign pages. On Home Field, a shopper could claim a $150 ball-set offer and send their details to a sales rep. <a className="text-link" href="#how-headline">Follow that handoff ↓</a></p>
             </div>
             <div className="wdth-62 flex flex-col text-[16px] font-semibold uppercase leading-[1.1] tracking-[0.05em] md:text-[18px]">
               <Fact label="Live">
@@ -149,7 +149,7 @@ export const LandingPages = () => {
             <h2 id="funnel-headline" className="name m-0 max-w-[530px] text-[clamp(38px,4.4vw,64px)] leading-[0.98]">The CRM came first.</h2>
             <div className="flex max-w-[730px] flex-col gap-5">
               <p className="voice m-0 text-[clamp(23px,2.3vw,31px)] leading-[1.32]">
-                I learned GoHighLevel and connected Billiard Factory’s sales team to the CRM before building the campaign pages and the broader marketing system.
+                We learned GoHighLevel and connected Billiard Factory’s sales team to the CRM before building the campaign pages and the broader marketing system.
               </p>
               <p className="m-0 text-[18px] leading-[1.55]">
                 Each page gets a next action suited to its purpose: shop an offer, find a showroom, ask an expert or submit a lead form. Where GoHighLevel captures the inquiry, campaign tags and contact details give the sales team a usable follow-up record.

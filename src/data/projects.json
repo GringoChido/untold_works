@@ -2,10 +2,11 @@
  {
   "slug": "brand-and-product",
   "index": "01",
-  "name": "Brand and product",
+  "name": "Brand",
+  "deliverables": ["Brand strategy and positioning", "Naming", "Logo, color and type", "Brand guidelines", "Rebrand rollout"],
   "color": "ochre",
   "caption": "Visual systems for products and places.",
-  "intro": "I help teams see how a brand will look on the shelf or in a showroom. We can test a product, a finish or a room layout before committing to production.",
+  "intro": "We help teams see how a brand will look on the shelf or in a showroom. We can test a product, a finish or a room layout before committing to production.",
   "layers": [
    "Brand",
    "Product and place"
@@ -36,7 +37,7 @@
       "value": "Untold.works project"
      },
      {
-      "label": "My role",
+      "label": "What we did",
       "value": "Rebrand, site, photo/video and marketing systems"
      }
     ],
@@ -174,10 +175,11 @@
  {
   "slug": "platforms",
   "index": "02",
-  "name": "Platforms",
+  "name": "Sales tools, data and AI",
+  "deliverables": ["Sales plan and playbook", "Pitch decks and one-page sheets", "Dealer or partner portal", "CRM setup and lead follow-up", "In-store screens and showroom tools", "Data Studio dashboard", "Weekly and monthly reports", "Custom AI tools for your team", "Staff training"],
   "color": "ink",
   "caption": "Tools that coordinate the work.",
-  "intro": "I build tools around a task your team does every day, from finding the right product image to getting a campaign approved.",
+  "intro": "We build tools around a task your team does every day, from finding the right product image to getting a campaign approved.",
   "layers": [
    "Customer AI",
    "Lead capture & CRM",
@@ -223,10 +225,10 @@
     "color": "ink",
     "visual": {
      "type": "image",
-     "src": "marketing-engine-calendar.png",
-     "alt": "Working Marketing Engine campaign calendar connecting Home Field, the C.L. Bailey Factory Event and the seasonal retail program",
+     "src": "home-field-shot.jpg",
+     "alt": "Home Field campaign image of a player lining up a pool shot, made and run through Engine Room",
      "tag": "Marketing platform · Built with AI",
-     "fit": "contain"
+     "fit": "cover"
     },
     "facts": [
      {
@@ -405,10 +407,11 @@
  {
   "slug": "websites",
   "index": "03",
-  "name": "Digital experiences",
+  "name": "Website and store",
+  "deliverables": ["Website", "Landing pages", "Online store", "Buying guides and gift guides"],
   "color": "burgundy",
   "caption": "Destinations with a clear next step.",
-  "intro": "I build sites around what someone came to do. That might mean choosing a table that fits, hearing a new record or finding a café in an unfamiliar city.",
+  "intro": "We build sites around what someone came to do. That might mean choosing a table that fits, hearing a new record or finding a café in an unfamiliar city.",
   "layers": [
    "Channels"
   ],
@@ -426,7 +429,7 @@
     },
     "facts": [
      {
-      "label": "My role",
+      "label": "What we did",
       "value": "Creative development · Design · Build"
      },
      {
@@ -435,7 +438,7 @@
      },
      {
       "label": "Audience migration",
-      "value": "3,233 subscribed contacts imported"
+      "value": "Over 5,000 audience records reviewed"
      },
      {
       "label": "Status",
@@ -835,10 +838,11 @@
  {
   "slug": "campaigns",
   "index": "04",
-  "name": "Campaigns",
+  "name": "Campaigns, photo and film",
+  "deliverables": ["Campaign plan and calendar", "Email campaigns and automated follow-ups", "Organic social, written and scheduled", "Paid social and search ads", "Streaming TV spots", "Blog articles", "Brand and campaign films", "Lifestyle and product photography", "AI-made images and film", "Short video for social"],
   "color": "teal",
   "caption": "Creative tied to an action.",
-  "intro": "I develop the campaign idea, direct the images and films, and carry the story into the places people will see it.",
+  "intro": "We develop the campaign idea, direct the images and films, and carry the story into the places people will see it.",
   "layers": [
    "The story"
   ],

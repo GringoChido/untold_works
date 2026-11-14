@@ -23,6 +23,7 @@ export type Category = {
   slug: string;
   index: string;
   name: string;
+  deliverables: string[];
   color: CardColor;
   caption: string;
   intro: string;

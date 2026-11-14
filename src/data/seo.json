@@ -1,14 +1,14 @@
 {
   "/": {
     "title": "Untold.works | Independent Creative Agency & Applied AI",
-    "description": "Untold.works helps brands launch products, build digital experiences and equip sales teams. Bring us a pitch, a launch date or a process your team has outgrown.",
+    "description": "Untold builds and maintains AI-powered marketing systems. Shape an offer, create a campaign, connect performance to sales, and teach your team to run the work.",
     "type": "WebPage",
     "image": {
-      "src": "/images/untold-city-crossing-1200.webp",
-      "alt": "AI-generated street scene of a smiling businessman reading his iPhone as commuters blur past",
+      "src": "/images/og.png",
+      "alt": "Untold.works creative studio",
       "width": 1200,
-      "height": 511,
-      "type": "image/webp"
+      "height": 630,
+      "type": "image/png"
     }
   },
   "/brand-and-product": {
@@ -25,7 +25,7 @@
   },
   "/platforms": {
     "title": "AI Tools & Marketing Systems | Untold.works",
-    "description": "AI-assisted tools for campaign planning, content production, CRM and dealer access. See how I approached Engine Room, Content Factory and other tools for teams.",
+    "description": "AI-assisted tools for campaign planning, content production, CRM and dealer access. See how we approached Engine Room, Content Factory and other tools for teams.",
     "type": "CollectionPage",
     "image": {
       "src": "/images/clbailey-concierge-1200.webp",
@@ -136,10 +136,10 @@
     "description": "Built Billiard Factory’s Engine Room with AI to connect campaign briefs, creative assets, review, scheduling and delivery.",
     "type": "WebPage",
     "image": {
-      "src": "/images/marketing-engine-overview-1200.webp",
-      "alt": "The Marketing Engine overview in Billiard Factory’s working platform",
+      "src": "/images/home-field-shot-1200.webp",
+      "alt": "Home Field campaign image made and run through Engine Room",
       "width": 1200,
-      "height": 647,
+      "height": 750,
       "type": "image/webp"
     }
   },
@@ -361,7 +361,7 @@
   },
   "/work/art-science-and-r-r-now-release-films": {
     "title": "Robert Glasper: Art Science & R+R=NOW Films | Untold.works",
-    "description": "Two release films from my earlier camera-led work with Robert Glasper: Art Science and R+R=NOW.",
+    "description": "Two release films from Joshua’s earlier camera-led work with Robert Glasper: Art Science and R+R=NOW.",
     "type": "WebPage",
     "image": {
       "src": "/images/glasper-r-r-now-still-1200.webp",
@@ -373,7 +373,7 @@
   },
   "/work/robtober": {
     "title": "Robtober: Robert Glasper at Blue Note NYC | Untold.works",
-    "description": "Robert Glasper’s 2026 residency at Blue Note New York, within my ongoing collaboration and five years of Robtober content work.",
+    "description": "Robert Glasper’s 2026 residency at Blue Note New York, within Joshua’s ongoing collaboration and five years of Robtober content work.",
     "type": "WebPage",
     "image": {
       "src": "/images/robtober-2026-poster-clean-1200.webp",
@@ -529,7 +529,7 @@
   },
   "/work/billiard-factory-and-c-l-bailey": {
     "title": "Billiard Factory + C.L. Bailey | Untold.works",
-    "description": "Explore my work for Billiard Factory and C.L. Bailey, from shoppable rooms and dealer tools to a Shopify launch and the Stick family gift guides.",
+    "description": "Explore our work for Billiard Factory and C.L. Bailey, from shoppable rooms and dealer tools to a Shopify launch and the Stick family gift guides.",
     "type": "WebPage",
     "image": {
       "src": "/images/bf-storefront-poster.jpg",
@@ -541,7 +541,7 @@
   },
   "/work/robert-glasper-blue-note": {
     "title": "Second Son, Robert Glasper & Blue Note Work | Untold.works",
-    "description": "Explore my work with Second Son Productions and Robert Glasper across release films, artist sites, Robtober and related Blue Note projects.",
+    "description": "Explore Joshua’s work with Second Son Productions and Robert Glasper across release films, artist sites, Robtober and related Blue Note projects.",
     "type": "WebPage",
     "image": {
       "src": "/images/glasper-london-portrait-1200.webp",
@@ -565,7 +565,7 @@
   },
   "/art-of-prompting": {
     "title": "AI Image & Video Process: The Art of Prompting | Untold.works",
-    "description": "See how I use product references, prompts, motion and editing to turn an idea into finished campaign imagery and films.",
+    "description": "See how we use product references, prompts, motion and editing to turn an idea into finished campaign imagery and films.",
     "type": "WebPage",
     "image": {
       "src": "/images/cl-bailey-waterfront-poster.jpg",
@@ -577,25 +577,13 @@
   },
   "/work-together": {
     "title": "Work with Untold | Creative & AI Consulting",
-    "description": "Tell me about your project, timing and budget. We’ll decide together what to build first.",
+    "description": "Tell us about your project, timing and budget. We’ll decide together what to build first.",
     "type": "ContactPage",
     "image": {
       "src": "/images/about/joshua-thinking-1200.webp",
       "alt": "Joshua Semolik, creative leader and brand storyteller",
       "width": 1200,
       "height": 1500,
-      "type": "image/webp"
-    }
-  },
-  "/for-your-business": {
-    "title": "Creative & AI Consulting | Untold.works",
-    "description": "Creative direction, digital experiences and practical AI for your business, from the first working idea through launch and ongoing improvements.",
-    "type": "WebPage",
-    "image": {
-      "src": "/images/prompting-bar-cart-lifestyle-1200.webp",
-      "alt": "AI-created lifestyle study based on an Industrial Bar Cart product reference",
-      "width": 1200,
-      "height": 1200,
       "type": "image/webp"
     }
   },
@@ -633,6 +621,42 @@
       "width": 1200,
       "height": 667,
       "type": "image/webp"
+    }
+  },
+  "/data-studio": {
+    "title": "Data Studio | One dashboard for your marketing | Untold.works",
+    "description": "Everything your marketing does and everything your business sells, in one place. Try a fictional budget decision and see how a Data Studio works.",
+    "type": "WebPage",
+    "image": {
+      "src": "/images/og.png",
+      "alt": "Untold.works creative studio",
+      "width": 1200,
+      "height": 630,
+      "type": "image/png"
+    }
+  },
+  "/work": {
+    "title": "Selected Work | Untold.works",
+    "description": "Explore creative direction, brand identity, campaign production, custom platforms and digital experiences from Untold.works and its collaborators.",
+    "type": "WebPage",
+    "image": {
+      "src": "/images/og.png",
+      "alt": "Untold.works creative studio",
+      "width": 1200,
+      "height": 630,
+      "type": "image/png"
+    }
+  },
+  "/site-map": {
+    "title": "Site Map | Untold.works",
+    "description": "Browse Untold’s services, marketing intelligence demo, project categories, creative practice, case studies and ways to work together.",
+    "type": "WebPage",
+    "image": {
+      "src": "/images/og.png",
+      "alt": "Untold.works creative studio",
+      "width": 1200,
+      "height": 630,
+      "type": "image/png"
     }
   }
 }

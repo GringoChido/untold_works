@@ -3,12 +3,14 @@ import { useEffect, useState, type ComponentType } from 'react';
 // Load the first route before hydration, so its saved HTML stays intact. Later
 // navigation loads only the requested page without downloading the whole portfolio.
 const loaders = {
+  Work: () => import('./pages/Work').then((m) => m.Work),
+  SiteMap: () => import('./pages/SiteMap').then((m) => m.SiteMap),
+  MarketingIntelligence: () => import('./pages/MarketingIntelligence').then((m) => m.MarketingIntelligence),
   Home: () => import('./pages/Home').then((m) => m.Home),
   About: () => import('./pages/About').then((m) => m.About),
   Category: () => import('./pages/Category').then((m) => m.Category),
   ArtOfPrompting: () => import('./pages/ArtOfPrompting').then((m) => m.ArtOfPrompting),
   WorkTogether: () => import('./pages/WorkTogether').then((m) => m.WorkTogether),
-  ForYourBusiness: () => import('./pages/ForYourBusiness').then((m) => m.ForYourBusiness),
   NotFound: () => import('./pages/NotFound').then((m) => m.NotFound),
   ElenaPinderhughes: () => import('./pages/work/ElenaPinderhughes').then((m) => m.ElenaPinderhughes),
   EngineRoom: () => import('./pages/work/EngineRoom').then((m) => m.EngineRoom),
@@ -34,8 +36,8 @@ export const loadPage = (name: PageName) => {
 };
 
 const routePages: Record<string, PageName> = {
-  '/': 'Home', '/about': 'About', '/art-of-prompting': 'ArtOfPrompting',
-  '/work-together': 'WorkTogether', '/for-your-business': 'ForYourBusiness',
+  '/': 'Home', '/work': 'Work', '/site-map': 'SiteMap', '/data-studio': 'MarketingIntelligence', '/about': 'About', '/art-of-prompting': 'ArtOfPrompting',
+  '/work-together': 'WorkTogether',
   '/brand-and-product': 'Category', '/platforms': 'Category', '/websites': 'Category', '/campaigns': 'Category',
   '/work/elena-pinderhughes': 'ElenaPinderhughes', '/work/engine-room': 'EngineRoom',
   '/work/robert-glasper-blue-note': 'GlasperBlueNote', '/work/lalah-hathaway': 'LalahHathaway',

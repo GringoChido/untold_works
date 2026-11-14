@@ -14,7 +14,7 @@ const identity = [
     jobTitle: 'Creative Leader & Brand Storyteller', email: EMAIL, telephone: '+1-917-665-1221',
     sameAs: [LINKEDIN_URL], worksFor: { '@id': studioId },
     knowsAbout: ['Creative direction', 'Brand storytelling', 'Sales enablement', 'Brand strategy', 'Retail experiences', 'Commerce', 'Applied artificial intelligence', 'Film production', 'Marketing systems'],
-    description: 'I work with teams on brand storytelling, creative direction and digital experiences, using AI from the first idea through launch.' },
+    description: 'We work with teams on brand storytelling, creative direction and digital experiences, using AI from the first idea through launch.' },
   { '@type': 'Organization', '@id': studioId, name: 'Untold.works', url: `${SITE_URL}/`,
     foundingDate: '2017-01', founder: { '@id': personId }, email: EMAIL, telephone: '+1-917-665-1221',
     description: 'Independent creative and AI consulting across brands, commerce, music and entertainment.' },

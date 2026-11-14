@@ -12,22 +12,22 @@ const scope = [
   {
     number: '01',
     name: 'Brand',
-    detail: 'Through Untold.works, I led the rebrand across packaged and bulk product touchpoints.',
+    detail: 'Through Untold.works, we led the rebrand across packaged and bulk product touchpoints.',
   },
   {
     number: '02',
     name: 'Website',
-    detail: 'I delivered a website that explained the product and gave distributors and fleet buyers a clear public destination.',
+    detail: 'We delivered a website that explained the product and gave distributors and fleet buyers a clear public destination.',
   },
   {
     number: '03',
     name: 'Photo and video',
-    detail: 'I directed photo and video work that showed the product, people and operation buyers would be asked to trust.',
+    detail: 'We directed photo and video work that showed the product, people and operation buyers would be asked to trust.',
   },
   {
     number: '04',
     name: 'Marketing systems',
-    detail: 'I reorganized business and marketing processes so the team could support campaigns and the new brand consistently.',
+    detail: 'We reorganized business and marketing processes so the team could support campaigns and the new brand consistently.',
   },
 ];
 
@@ -41,12 +41,12 @@ export const Noxguard = () => {
 
   return (
     <Layout>
-      <Header crumbs={[{ label: 'Work', to: '/' }, { label: 'Brand and product', to: '/brand-and-product' }, { label: 'Noxguard' }]} />
+      <Header crumbs={[{ label: 'Work', to: '/' }, { label: 'Brand', to: '/brand-and-product' }, { label: 'Noxguard' }]} />
       <main id="main" className="flex flex-col">
         <section className="mt-10 grid bg-cream text-ink md:min-h-[620px] md:grid-cols-[minmax(0,0.85fr)_minmax(0,1.15fr)]" aria-labelledby="noxguard-title">
           <div className="flex min-w-0 flex-col justify-between gap-10 px-6 py-10 md:px-12 md:py-12">
             <div className="flex flex-wrap items-center gap-3.5">
-              <span className="lbl">01 · Brand and product</span>
+              <span className="lbl">01 · Brand</span>
               <Chip className="border-rule border-ink text-[14px] tracking-[0.08em]">Untold.works project</Chip>
             </div>
             <div className="flex flex-col gap-6">
@@ -57,7 +57,7 @@ export const Noxguard = () => {
                 A rebrand that had to work from the pallet to the sales conversation.
               </p>
               <p className="max-w-[620px] text-[19px] leading-[1.5]">
-                Through Untold.works, I delivered the Noxguard rebrand, website, photo and video campaign, and process work supporting its marketing systems. The work connected a consistent public identity with the way the team produced and used its marketing assets.
+                Through Untold.works, we delivered the Noxguard rebrand, website, photo and video campaign, and process work supporting its marketing systems. The work connected a consistent public identity with the way the team produced and used its marketing assets.
               </p>
             </div>
             <div className="lbl border-t-rule border-ink/50 pt-3 text-[14px] text-ink/80">
@@ -110,7 +110,7 @@ export const Noxguard = () => {
               working system: it has to be recognizable in a warehouse, on the road and during a product conversation, as well as online.
             </p>
             <p className="m-0">
-              Packaging, label and fleet-livery concepts were designed to make the product identifiable in the field. The website and photo and video campaign gave buyers a closer look at the people and operation behind it. I delivered these connected pieces through Untold.works, linking the public brand to repeatable marketing processes.
+              Packaging, label and fleet-livery concepts were designed to make the product identifiable in the field. The website and photo and video campaign gave buyers a closer look at the people and operation behind it. We delivered these connected pieces through Untold.works, linking the public brand to repeatable marketing processes.
             </p>
           </div>
         </section>
@@ -120,7 +120,7 @@ export const Noxguard = () => {
           <NoxguardGallery />
         </section>
       </main>
-      <HouseBar back={{ label: '← Brand', to: '/brand-and-product' }} next={{ label: 'Platforms →', to: '/platforms' }} />
+      <HouseBar back={{ label: '← Brand', to: '/brand-and-product' }} next={{ label: 'Sales tools, data and AI →', to: '/platforms' }} />
       <Footer />
     </Layout>
   );

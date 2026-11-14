@@ -26,7 +26,10 @@ body::after { content: ''; pointer-events: none; position: fixed; inset: 0; z-in
 .print-untold { fill: var(--ink); font-family: Archivo, 'Arial Black', sans-serif; font-weight: 900; font-stretch: 62%; font-size: 345px; }
 .print-works { fill: var(--paper); font-family: Archivo, sans-serif; font-weight: 750; font-size: 79px; letter-spacing: -4px; }
 .print-hero-bottom { display: flex; align-items: flex-end; justify-content: space-between; gap: 24px; padding-bottom: 35px; }
-.print-hero-bottom > p { font-size: clamp(18px, 2.25vw, 32px); line-height: 1.12; font-weight: 700; letter-spacing: -.045em; }
+.print-hero-tagline { margin: 0; font-size: clamp(32px, 4.2vw, 65px); font-weight: 900; font-stretch: 76%; letter-spacing: -.045em; line-height: 1; }
+.print-hero-tagline span { white-space: nowrap; }
+.print-customer-intro { border-bottom: 1px solid var(--print-rule); }
+.print-hero-bottom .print-button { flex-shrink: 0; }
 .print-button { display: inline-flex; align-items: center; justify-content: space-between; gap: 40px; padding: 14px 18px; border: 2px solid var(--ink); font-size: 15px; font-weight: 650; text-decoration: none; transition: background .2s, color .2s; }
 .print-button:hover { background: var(--ink); color: var(--paper); }
 .print-button span { font-size: 24px; line-height: 1; }
@@ -59,8 +62,6 @@ body::after { content: ''; pointer-events: none; position: fixed; inset: 0; z-in
 .print-home .home-related { padding-bottom: 70px; }
 .print-home .home-process { position: relative; isolation: isolate; padding-block: 50px 65px; color: var(--paper); }
 .print-home .home-process::before { content: ''; position: absolute; z-index: -1; inset: 0; width: 100vw; margin-left: calc(50% - 50vw); background: var(--ink); }
-.print-ai-masthead { display: flex; flex-direction: column; font-size: clamp(45px, 9.4vw, 132px); font-weight: 900; font-stretch: 62%; line-height: .91; letter-spacing: -.055em; padding-bottom: 48px; }
-.print-ai-masthead > :last-child { text-align: right; color: var(--orange); }
 .print-home .home-process-spread { border-top: 1px solid rgb(242 235 221 / 30%); padding-top: 26px; }
 .print-home .home-process-copy .hiring-section-title { font-size: clamp(35px, 4vw, 55px); }
 .print-home .home-process .text-link { color: var(--paper); }
@@ -83,7 +84,6 @@ body::after { content: ''; pointer-events: none; position: fixed; inset: 0; z-in
  .print-hero-meta { font-size: 8px; letter-spacing: .03em; }
  .print-wordmark { margin-block: 28px; }
  .print-hero-bottom { align-items: start; flex-direction: column; gap: 22px; padding-bottom: 25px; }
- .print-hero-bottom > p { font-size: 24px; }
  .print-button { font-size: 13px; padding: 11px 15px; }
  .print-hero-colophon { font-size: 7px; letter-spacing: .02em; }
  .print-hero-colophon > :nth-child(2) { display: none; }
@@ -100,7 +100,6 @@ body::after { content: ''; pointer-events: none; position: fixed; inset: 0; z-in
  .print-home .home-needs { padding-block: 45px; }
  .print-home .home-start-card { padding-left: 35px; }
  .print-home .home-related { padding-bottom: 45px; }
- .print-ai-masthead { font-size: 13.7vw; padding-bottom: 32px; }
  .print-home .home-process { padding-top: 35px; }
  .print-home .print-contact { grid-template-columns: 1fr; gap: 20px; padding-block: 38px; }
  .print-home .print-contact h2 { font-size: 132px; }

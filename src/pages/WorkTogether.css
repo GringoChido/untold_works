@@ -383,3 +383,5 @@
     font-size: clamp(24px, 6.6vw, 36px);
   }
 }
+
+.work-together-get { margin: 18px 0 0; color: var(--orange-text); }

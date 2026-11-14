@@ -46,7 +46,7 @@ export const Savor = () => {
             <p className="m-0 max-w-[690px] text-[18px] leading-[1.55]">A visitor can begin with a culinary use, then explore process, mission and evidence at their own pace.</p>
             <dl className="m-0 border-b border-current">
               <div className="grid gap-2 border-t border-current py-4 sm:grid-cols-[150px_minmax(0,1fr)]"><dt className="lbl">Client</dt><dd className="m-0">Savor</dd></div>
-              <div className="grid gap-2 border-t border-current py-4 sm:grid-cols-[150px_minmax(0,1fr)]"><dt className="lbl">My role</dt><dd className="m-0">Website and content storytelling</dd></div>
+              <div className="grid gap-2 border-t border-current py-4 sm:grid-cols-[150px_minmax(0,1fr)]"><dt className="lbl">Joshua’s role</dt><dd className="m-0">Website and content storytelling</dd></div>
               <div className="grid gap-2 border-t border-current py-4 sm:grid-cols-[150px_minmax(0,1fr)]"><dt className="lbl">Engagement</dt><dd className="m-0">Through IDW Studio</dd></div>
               <div className="grid gap-2 border-t border-current py-4 sm:grid-cols-[150px_minmax(0,1fr)]"><dt className="lbl">Status</dt><dd className="m-0">Live website</dd></div>
             </dl>
@@ -61,13 +61,13 @@ export const Savor = () => {
           <div className="flex flex-col items-start gap-7">
             <LabelRow left="The wider story" right="Chef Series" />
             <h2 id="chef-title" className="name m-0 text-[clamp(38px,4.3vw,62px)]">Let the kitchen show the product.</h2>
-            <p className="m-0 max-w-[650px] text-[19px] leading-[1.5]">The published series shows chefs using Savor in working kitchens at Atelier Crenn, SingleThread, ONE65 and Jane the Bakery. I contributed content and storytelling. IDW led the brief, production and edits.</p>
+            <p className="m-0 max-w-[650px] text-[19px] leading-[1.5]">The published series shows chefs using Savor in working kitchens at Atelier Crenn, SingleThread, ONE65 and Jane the Bakery. Joshua contributed content and storytelling. IDW led the brief, production and edits.</p>
             <Link to="/work/savor-chef-series" className="text-link">Explore the Chef Series work <span aria-hidden="true">↗</span></Link>
             <a href="https://idw.studio/cs/savor" target="_blank" rel="noopener noreferrer" className="text-link">See IDW Studio’s case <span aria-hidden="true">↗</span></a>
           </div>
         </section>
       </main>
-      <HouseBar back={{ label: '← Selected work', to: '/' }} next={{ label: 'Next: Brand & product →', to: '/brand-and-product' }} />
+      <HouseBar back={{ label: '← Selected work', to: '/' }} next={{ label: 'Next: Brand →', to: '/brand-and-product' }} />
       <Footer />
     </Layout>
   );

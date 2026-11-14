@@ -142,7 +142,7 @@ export const caseCopyWebsites = {
     headline: 'One retail site for an entire home experience.',
     lead: 'A website for Lexington Billiards & Spas that brings pool tables, hot tubs, grills, arcade machines and services into one browseable system.',
     storyTitle: 'Connect a broad product range to the next visit.',
-    story: 'Someone shopping for a spa can go straight to that category, compare brands and find the showroom’s financing and service information. I also reviewed how search engines could discover those pages.',
+    story: 'Someone shopping for a spa can go straight to that category, compare brands and find the showroom’s financing and service information. We also reviewed how search engines could discover those pages.',
     focus: [
       { label: 'Format', text: 'Multi-category retail website.' },
       { label: 'Inside', text: 'Pool tables · spas · grills · arcade machines · services.' },
@@ -188,7 +188,7 @@ export const caseCopyWebsites = {
   'websites/coca-cola-femsa': {
     value: 'Journalists, shareholders and job seekers each have a clear starting point. The internal team can publish and update its own content.',
     headline: 'Who comes here, and what do they need?',
-    lead: 'For Ingenia, I led Coca-Cola FEMSA’s digital redesign from the first workshops through launch and training. We organized the experience around the people looking for information.',
+    lead: 'For Ingenia, Joshua led Coca-Cola FEMSA’s digital redesign from the first workshops through launch and training. We organized the experience around the people looking for information.',
     photoStory: {
       caption: 'Coca-Cola FEMSA / Product portfolio',
     },

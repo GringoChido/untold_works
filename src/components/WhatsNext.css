@@ -1,0 +1,9 @@
+.wn-close { position: relative; isolation: isolate; padding-block: clamp(44px, 5vw, 76px); margin-top: clamp(40px, 5vw, 80px); color: var(--ink); }
+.wn-close::before { content: ''; position: absolute; z-index: -1; inset: 0; width: 100vw; margin-left: calc(50% - 50vw); background: var(--orange); }
+.wn-close .lbl { margin: 0; }
+.wn-close h2 { margin: 28px 0; font-family: Archivo, 'Arial Black', sans-serif; font-weight: 900; font-stretch: 62%; font-size: clamp(90px, 14vw, 200px); line-height: .8; letter-spacing: -.065em; }
+.wn-close h2 span { color: var(--paper); }
+.wn-close-q { margin: 0; max-width: 30ch; font-size: clamp(18px, 1.6vw, 24px); line-height: 1.3; letter-spacing: -.02em; font-weight: 500; }
+.wn-close a { display: inline-flex; align-items: center; gap: 8px; min-height: 44px; margin-top: clamp(22px, 2.4vw, 36px); padding-block: 12px; border-bottom: 2px solid var(--ink); font-size: clamp(16px, 2vw, 28px); text-decoration: none; }
+main section.wn-close h2.name { margin: 28px 0; font-family: Archivo, 'Arial Black', sans-serif; font-weight: 900; font-stretch: 62%; font-size: clamp(90px, 14vw, 200px); line-height: .8; letter-spacing: -.065em; max-width: none; }
+main section.wn-close { display: block; }
