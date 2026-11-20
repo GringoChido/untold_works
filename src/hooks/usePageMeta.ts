@@ -39,7 +39,7 @@ export const usePageMeta = ({ title, description, path, noindex = false, service
     const meta = metadata[path];
     const pageTitle = meta?.title ?? title;
     const pageDescription = meta?.description ?? description;
-    const image = meta?.image ?? { src: '/images/og.png', alt: 'Untold.works: creative leadership and brand storytelling', width: 1200, height: 630, type: 'image/png' };
+    const image = meta?.image ?? { src: '/images/untold-orange-u-preview.png', alt: 'Orange U. monogram with Untold.works — AI transformation. Creative direction.', width: 1200, height: 630, type: 'image/png' };
     document.title = pageTitle;
     setMeta('name', 'description', pageDescription);
     setMeta('name', 'author', 'Joshua Semolik');

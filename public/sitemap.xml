@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://untold.works/</loc>
-    <image:image><image:loc>https://untold.works/images/og.png</image:loc></image:image>
+    <image:image><image:loc>https://untold.works/images/untold-orange-u-preview.png</image:loc></image:image>
   </url>
   <url>
     <loc>https://untold.works/brand-and-product</loc>
@@ -54,7 +54,7 @@
   </url>
   <url>
     <loc>https://untold.works/work/off-storis</loc>
-    <image:image><image:loc>https://untold.works/images/og.png</image:loc></image:image>
+    <image:image><image:loc>https://untold.works/images/untold-orange-u-preview.png</image:loc></image:image>
   </url>
   <url>
     <loc>https://untold.works/work/omi-lead-intake</loc>
@@ -202,15 +202,15 @@
   </url>
   <url>
     <loc>https://untold.works/data-studio</loc>
-    <image:image><image:loc>https://untold.works/images/og.png</image:loc></image:image>
+    <image:image><image:loc>https://untold.works/images/untold-orange-u-preview.png</image:loc></image:image>
   </url>
   <url>
     <loc>https://untold.works/work</loc>
-    <image:image><image:loc>https://untold.works/images/og.png</image:loc></image:image>
+    <image:image><image:loc>https://untold.works/images/untold-orange-u-preview.png</image:loc></image:image>
   </url>
   <url>
     <loc>https://untold.works/site-map</loc>
-    <image:image><image:loc>https://untold.works/images/og.png</image:loc></image:image>
+    <image:image><image:loc>https://untold.works/images/untold-orange-u-preview.png</image:loc></image:image>
   </url>
   <url>
     <loc>https://untold.works/work-together</loc>
